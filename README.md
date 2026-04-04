@@ -8,7 +8,7 @@
 
 ## What This Is
 
-The Record is a single-file HTML application that documents Donald Trump’s political career from his father Fred’s KKK arrest in 1927 through the present day. Every entry uses a three-layer format:
+The Record is a single-file HTML application (listed as the-record.html in repo) that documents Donald Trump’s political career from his father Fred’s KKK arrest in 1927 through the present day. Every entry uses a three-layer format:
 
 - **THE FACTS** — What happened, sourced to major news organizations, court filings, congressional records, and official government documents.
 - **SIGNIFICANCE** — Why it matters in historical and political context.
