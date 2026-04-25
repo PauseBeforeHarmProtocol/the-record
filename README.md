@@ -2,7 +2,7 @@
 
 **A chronological, sourced accountability archive of Donald Trump’s political career.**
 
-4,371 entries. 5,396 sources. Six eras. 34 companion documents. One premise: accountability matters.
+4,466 entries. 5,641 sources. Six eras. 34 companion documents. One premise: accountability matters.
 
 ---
 
@@ -20,12 +20,12 @@ The archive does not editorialize in the fact layer. It does not hide its analys
 
 | Era | Period | Entries |
 |-----|--------|--------|
-| Formation | Pre-June 2015 | 330 |
+| Formation | Pre-June 2015 | 352 |
 | Campaign 1 | June 2015 – Jan 2017 | 528 |
 | Term 1 | Jan 2017 – Jan 2021 | 1,640 |
 | Post-Presidency | Jan 2021 – Nov 2022 | 462 |
 | Campaign 2 | Nov 2022 – Jan 2025 | 622 |
-| Term 2 | Jan 2025 – Present | 789 |
+| Term 2 | Jan 2025 – Present | 862 |
 
 ## Entry Types
 
@@ -75,7 +75,7 @@ Applied to The Record, PBHP means:
 The Record is a self-contained single-file HTML application (~11.5 MB). No server required — open the file in any modern browser.
 
 **Architecture:**
-- `entries_array.js` — 4,371 structured entries in JSON format
+- `entries_array.js` — 4,466 structured entries in JSON format
 - `tag_rules.js` — Automated topic classification rules
 - `ai_essays.json` — AI-generated opinion content
 - `politicians_all.json` / `pol_data_merged.json` — Politician profiles and cross-references
