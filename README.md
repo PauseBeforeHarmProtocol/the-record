@@ -2,7 +2,7 @@
 
 **A chronological, sourced accountability archive of Donald Trump’s political career.**
 
-4,494 entries. 5,735 sources. Six eras. 34 companion documents. One premise: accountability matters.
+4,495 entries. 5,741 sources. Six eras. 34 companion documents. One premise: accountability matters.
 
 ---
 
@@ -25,7 +25,7 @@ The archive does not editorialize in the fact layer. It does not hide its analys
 | Term 1 | Jan 2017 – Jan 2021 | 1,640 |
 | Post-Presidency | Jan 2021 – Nov 2022 | 462 |
 | Campaign 2 | Nov 2022 – Jan 2025 | 622 |
-| Term 2 | Jan 2025 – Present | 890 |
+| Term 2 | Jan 2025 – Present | 891 |
 
 ## Entry Types
 
