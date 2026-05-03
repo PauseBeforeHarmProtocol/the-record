@@ -221847,6 +221847,9 @@ function resetFilters(o){
   document.getElementById('bHigh').classList.remove('on');
   document.getElementById('bGP').classList.remove('on');
   document.querySelectorAll('.qb').forEach(b=>b.classList.remove('on'));
+  // Also re-render year/tag strips so visual state of those buttons resets
+  if(typeof renderYrStrip==='function')renderYrStrip();
+  if(typeof renderTagBar==='function')renderTagBar();
 }
 
 const PAGE_SIZE=100;
