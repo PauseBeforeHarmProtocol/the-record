@@ -221841,10 +221841,12 @@ function resetFilters(o){
   activeYear=o&&o.activeYear||'all';
   activeTag=o&&o.activeTag||'all';
   sigOnly=false;gpOnly=false;srch='';topicRegex=null;
+  pastWeekOnly=false;
   const si=document.getElementById('SI');if(si)si.value='';
   document.getElementById('bAll').classList.add('on');
   document.getElementById('bHigh').classList.remove('on');
   document.getElementById('bGP').classList.remove('on');
+  document.querySelectorAll('.qb').forEach(b=>b.classList.remove('on'));
 }
 
 const PAGE_SIZE=100;
@@ -222245,10 +222247,10 @@ function renderYearTabs(){
     btn.addEventListener('click',()=>{
       strip.querySelectorAll('.yrtab').forEach(b=>b.classList.remove('on'));
       btn.classList.add('on');activeYear=btn.dataset.yr;
-      // Clear search/topic when changing year — prevents empty intersections
-      // (e.g. clicking Signal-gate then clicking 2017 used to return zero results)
-      srch='';topicRegex=null;
+      // Clear search/topic/past-week when changing year — prevents empty intersections
+      srch='';topicRegex=null;pastWeekOnly=false;
       const _si=document.getElementById('SI');if(_si)_si.value='';
+      const _qbpw=document.getElementById('qbPastWeek');if(_qbpw)_qbpw.classList.remove('on');
       renderTagBar();showStatic();renderStatic();
       btn.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});
     });
@@ -222277,7 +222279,12 @@ function renderTagBar(){
   strip.querySelectorAll('.tag').forEach(btn=>{
     btn.addEventListener('click',()=>{
       strip.querySelectorAll('.tag').forEach(b=>b.classList.remove('on'));
-      btn.classList.add('on');activeTag=btn.dataset.tag;showStatic();renderStatic();
+      btn.classList.add('on');activeTag=btn.dataset.tag;
+      // Clear search/past-week when changing tag — prevents empty intersections
+      srch='';topicRegex=null;pastWeekOnly=false;
+      const _si=document.getElementById('SI');if(_si)_si.value='';
+      const _qbpw=document.getElementById('qbPastWeek');if(_qbpw)_qbpw.classList.remove('on');
+      showStatic();renderStatic();
     });
   });
   updateTagArrows();
