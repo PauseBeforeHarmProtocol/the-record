@@ -432,7 +432,6 @@ const PBHP_LOGO_LG='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAA
       <button class="btn on" id="bAll">All</button>
       <button class="btn" id="bHigh">Major Only</button>
       <button class="btn" id="bGP">Goalposts</button>
-      <button class="btn" id="bPast7" title="Show only entries from the last 7 days">Past Week</button>
       <span class="ctr" id="ctr" aria-live="polite" aria-atomic="true"></span>
     </div>
   </div>
@@ -466,6 +465,7 @@ const PBHP_LOGO_LG='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAA
     <button class="qb" data-q="DOGE musk">DOGE</button>
     <button class="qb" data-q="iran strike 2026">Iran War</button>
     <button class="qb" data-q="signal classified">Signal-gate</button>
+    <button class="qb" id="qbPastWeek" style="background:#fff8e1;border-color:#f9a825;color:#0d1b2a;font-weight:700;">&#128221; Past Week</button>
   </div>
 </div>
 
@@ -484,17 +484,6 @@ const PBHP_LOGO_LG='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAA
 
 <!-- FOLDER VIEWS -->
 <div class="folderview show" id="homeView">
-  <!-- WHAT'S HAPPENED THIS WEEK CARD -->
-  <div id="weekCard" style="background:linear-gradient(135deg,#fff8e1,#fffaf0);border:2px solid #f9a825;border-radius:12px;padding:1.2rem 1.4rem;margin:1rem;box-shadow:0 4px 16px rgba(249,168,37,.12);">
-    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.6rem;">
-      <h3 style="margin:0;font-size:1rem;color:#0d1b2a;font-family:'JetBrains Mono',monospace;letter-spacing:.04em;">&#128221; What&rsquo;s Happened This Week</h3>
-      <button id="weekBtnFull" style="font-family:'JetBrains Mono',monospace;font-size:.6rem;text-transform:uppercase;letter-spacing:.08em;padding:.4rem .9rem;border:2px solid #f9a825;background:#f9a825;color:#0d1b2a;border-radius:6px;cursor:pointer;font-weight:700;">View All Past 7 Days &rarr;</button>
-    </div>
-    <p id="weekIntro" style="font-size:.78rem;color:#555;margin:0 0 .8rem;font-family:system-ui,sans-serif;">Loading...</p>
-    <div id="weekList" style="display:flex;flex-direction:column;gap:.45rem;"></div>
-  </div>
-
-
   <div class="fv-header">
     <!-- PBHP Shield -->
     <div style="text-align:center;margin-bottom:16px;">
@@ -507,6 +496,16 @@ const PBHP_LOGO_LG='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAA
     <a href="https://www.gofundme.com/f/building-the-record-accountability-ai" target="_blank" rel="noopener" style="display:inline-block;margin-top:10px;padding:8px 24px;background:var(--green);color:#fff;text-decoration:none;border-radius:6px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;">Support This Project</a>
   </div>
   <div class="fv-grid" id="homeGrid"></div>
+
+  <!-- WHAT'S HAPPENED THIS WEEK CARD (bottom of home) -->
+  <div id="weekCard" style="background:linear-gradient(135deg,#fff8e1,#fffaf0);border:2px solid #f9a825;border-radius:12px;padding:1.2rem 1.4rem;margin:2rem 1rem 1rem;box-shadow:0 4px 16px rgba(249,168,37,.12);">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.6rem;">
+      <h3 style="margin:0;font-size:1rem;color:#0d1b2a;font-family:'JetBrains Mono',monospace;letter-spacing:.04em;">&#128221; What&rsquo;s Happened This Week</h3>
+      <button id="weekBtnFull" style="font-family:'JetBrains Mono',monospace;font-size:.6rem;text-transform:uppercase;letter-spacing:.08em;padding:.4rem .9rem;border:2px solid #f9a825;background:#f9a825;color:#0d1b2a;border-radius:6px;cursor:pointer;font-weight:700;">View All Past 7 Days &rarr;</button>
+    </div>
+    <p id="weekIntro" style="font-size:.78rem;color:#555;margin:0 0 .8rem;font-family:system-ui,sans-serif;">Loading...</p>
+    <div id="weekList" style="display:flex;flex-direction:column;gap:.45rem;"></div>
+  </div>
 </div>
 
 <div class="folderview" id="topicView">
@@ -222505,10 +222504,10 @@ document.addEventListener('DOMContentLoaded',()=>{
   });
   document.getElementById('bAll').addEventListener('click',()=>{sigOnly=false;gpOnly=false;document.getElementById('bAll').classList.add('on');document.getElementById('bHigh').classList.remove('on');document.getElementById('bGP').classList.remove('on');if(currentView!=='timeline')switchView('timeline');else renderStatic();});
   document.getElementById('bHigh').addEventListener('click',()=>{sigOnly=!sigOnly;gpOnly=false;document.getElementById('bHigh').classList.toggle('on',sigOnly);document.getElementById('bAll').classList.toggle('on',!sigOnly);document.getElementById('bGP').classList.remove('on');if(currentView!=='timeline')switchView('timeline');else renderStatic();});
-  document.getElementById('bPast7').addEventListener('click',()=>{
+  // Past Week — wired to the qbs button in the timeline datebar
+document.getElementById('qbPastWeek')?.addEventListener('click',()=>{
   pastWeekOnly=!pastWeekOnly;
-  document.getElementById('bPast7').classList.toggle('on',pastWeekOnly);
-  // Past Week is independent of Major / Goalposts toggle, but switches view to Timeline so user sees results
+  document.getElementById('qbPastWeek').classList.toggle('on',pastWeekOnly);
   if(pastWeekOnly){
     showStatic();renderStatic();
     document.querySelectorAll('.navtab').forEach(t=>t.classList.remove('on'));
@@ -222574,7 +222573,7 @@ function renderWeekCard(){
     const text=escapeHTML((e.text||'').split('.')[0].slice(0,160));
     const permalinkSort=escapeAttr(e.sort||'');
     const idx=e._idx||0;
-    return '<a href="#entry-'+permalinkSort+'-'+idx+'" onclick="pastWeekOnly=true;document.getElementById(\'bPast7\').classList.add(\'on\');showStatic();renderStatic();" style="display:flex;gap:.6rem;padding:.45rem .6rem;background:rgba(255,255,255,.6);border:1px solid rgba(249,168,37,.3);border-radius:6px;text-decoration:none;color:#0d1b2a;font-size:.78rem;line-height:1.4;align-items:flex-start;">'
+    return '<a href="#entry-'+permalinkSort+'-'+idx+'" onclick="pastWeekOnly=true;showStatic();renderStatic();document.querySelectorAll(\'.navtab\').forEach(t=>t.classList.remove(\'on\'));var tl=document.querySelector(\'.navtab[data-view=&quot;timeline&quot;]\');if(tl)tl.classList.add(\'on\');var qb=document.getElementById(\'qbPastWeek\');if(qb)qb.classList.add(\'on\');" style="display:flex;gap:.6rem;padding:.45rem .6rem;background:rgba(255,255,255,.6);border:1px solid rgba(249,168,37,.3);border-radius:6px;text-decoration:none;color:#0d1b2a;font-size:.78rem;line-height:1.4;align-items:flex-start;">'
       +'<span style="flex-shrink:0;color:#f9a825;">'+icon+'</span>'
       +'<span style="flex-shrink:0;color:#888;font-family:\'JetBrains Mono\',monospace;font-size:.65rem;min-width:80px;">'+dt+'</span>'
       +'<span style="font-weight:600;">'+text+'</span></a>';
@@ -222583,7 +222582,7 @@ function renderWeekCard(){
 
 document.getElementById('weekBtnFull')?.addEventListener('click',()=>{
   pastWeekOnly=true;
-  document.getElementById('bPast7').classList.add('on');
+  const qb=document.getElementById('qbPastWeek');if(qb)qb.classList.add('on');
   showStatic();renderStatic();
   document.querySelectorAll('.navtab').forEach(t=>t.classList.remove('on'));
   const tlTab=document.querySelector('.navtab[data-view="timeline"]');
