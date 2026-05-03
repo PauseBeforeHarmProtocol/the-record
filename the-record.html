@@ -222299,17 +222299,27 @@ function renderStatic(){
   const nr=document.getElementById('nr');
   const ctr=document.getElementById('ctr');
   if(!currentFiltered.length){
-    el.innerHTML='';nr.classList.add('show');ctr.innerHTML='';
+    nr.classList.remove('show');ctr.innerHTML='0 entries';
+    // Politician fallback — keep existing behavior when search matches a politician name
     if(srch&&POLS){
       const sq=srch.toLowerCase();
       const polMatch=POLS.find(p=>p.n.toLowerCase().includes(sq)||sq.split(/\s+/).every(w=>p.n.toLowerCase().includes(w)));
       if(polMatch){
         const pidx=POLS.indexOf(polMatch);
-        // innerHTML needed for styling; politician name escaped to prevent XSS
         el.innerHTML=`<div style="text-align:center;padding:2rem;"><p style="font-size:.95rem;color:var(--txt2);">No timeline entries found, but <strong>${escapeHTML(polMatch.n)}</strong> is in the politician roster.</p><button onclick="switchView('politicians');setTimeout(()=>showPolDetail(${pidx}),100);" style="margin-top:.8rem;padding:.6rem 1.5rem;background:var(--blue);color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:600;">View ${escapeHTML(polMatch.n)} →</button></div>`;
-        nr.classList.remove('show');
+        return;
       }
     }
+    // Rich empty-state with active filter list + Clear All button
+    const filterSummary=[];
+    if(activeEra!=='all')filterSummary.push('era: '+activeEra);
+    if(activeYear!=='all')filterSummary.push('year: '+activeYear);
+    if(activeTag!=='all')filterSummary.push('tag: '+activeTag);
+    if(srch)filterSummary.push('search: "'+escapeHTML(srch)+'"');
+    if(sigOnly)filterSummary.push('major-only');
+    if(gpOnly)filterSummary.push('goalposts-only');
+    if(pastWeekOnly)filterSummary.push('past 7 days');
+    el.innerHTML='<div style="text-align:center;padding:3rem 1.5rem;color:#555;background:#fff8e1;border:2px solid #f9a825;border-radius:12px;margin:1rem;box-shadow:0 4px 16px rgba(249,168,37,.12);"><p style="font-size:1rem;font-weight:700;margin-bottom:.5rem;color:#0d1b2a;font-family:\'JetBrains Mono\',monospace;">&#9888; No entries match these filters</p><p style="font-size:.78rem;color:#666;margin-bottom:1.2rem;">Active filters: <strong>'+(filterSummary.join(' &middot; ')||'(none)')+'</strong></p><button onclick="resetFilters();pastWeekOnly=false;document.querySelectorAll(\'.qb\').forEach(b=>b.classList.remove(\'on\'));renderTagBar();showStatic();renderStatic();" style="background:#f9a825;color:#0d1b2a;border:none;padding:.7rem 1.4rem;border-radius:6px;cursor:pointer;font-weight:700;font-family:\'JetBrains Mono\',monospace;font-size:.7rem;letter-spacing:.05em;">Clear All Filters</button></div>';
     return;
   }
   nr.classList.remove('show');
@@ -222330,19 +222340,6 @@ function renderStatic(){
 
 function renderPage(){
   const el=document.getElementById('static');
-  // Empty-state hint — silent empty results were confusing users when filters intersected to zero
-  if(currentPage===0 && currentFiltered.length===0){
-    const filterSummary=[];
-    if(activeEra!=='all')filterSummary.push('era: '+activeEra);
-    if(activeYear!=='all')filterSummary.push('year: '+activeYear);
-    if(activeTag!=='all')filterSummary.push('tag: '+activeTag);
-    if(srch)filterSummary.push('search: "'+srch+'"');
-    if(sigOnly)filterSummary.push('major-only');
-    if(gpOnly)filterSummary.push('goalposts-only');
-    if(pastWeekOnly)filterSummary.push('past 7 days');
-    el.innerHTML='<div style="text-align:center;padding:3rem 1.5rem;color:#555;background:#fff8e1;border:1px solid #f9a825;border-radius:10px;margin:1rem;"><p style="font-size:1rem;font-weight:600;margin-bottom:.5rem;color:#0d1b2a;">No entries match these filters</p><p style="font-size:.78rem;color:#666;margin-bottom:1rem;">Active filters: '+(filterSummary.join(' · ')||'(none)')+'</p><button onclick="resetFilters();renderTagBar();showStatic();renderStatic();" style="background:#f9a825;color:#0d1b2a;border:none;padding:.6rem 1.2rem;border-radius:6px;cursor:pointer;font-weight:700;font-family:\'JetBrains Mono\',monospace;font-size:.7rem;letter-spacing:.05em;">Clear All Filters</button></div>';
-    return;
-  }
   const start=currentPage*PAGE_SIZE;
   const end=Math.min(start+PAGE_SIZE,currentFiltered.length);
   const slice=currentFiltered.slice(start,end);
@@ -222526,6 +222523,12 @@ document.addEventListener('DOMContentLoaded',()=>{
   // Past Week — wired to the qbs button in the timeline datebar
 document.getElementById('qbPastWeek')?.addEventListener('click',()=>{
   pastWeekOnly=!pastWeekOnly;
+  // When toggling Past Week ON, reset other filters so the result is "what's happened in the last 7 days, full stop"
+  if(pastWeekOnly){
+    activeEra='all';activeYear='all';activeTag='all';srch='';topicRegex=null;
+    const _si=document.getElementById('SI');if(_si)_si.value='';
+    document.querySelectorAll('.qb').forEach(b=>{if(b.id!=='qbPastWeek')b.classList.remove('on');});
+  }
   document.getElementById('qbPastWeek').classList.toggle('on',pastWeekOnly);
   if(pastWeekOnly){
     showStatic();renderStatic();
@@ -222533,7 +222536,7 @@ document.getElementById('qbPastWeek')?.addEventListener('click',()=>{
     const tlTab=document.querySelector('.navtab[data-view="timeline"]');
     if(tlTab)tlTab.classList.add('on');
   }else{
-    renderStatic();
+    renderTagBar();renderStatic();
   }
 });
 
@@ -222605,6 +222608,9 @@ function renderWeekCard(){
 
 document.getElementById('weekBtnFull')?.addEventListener('click',()=>{
   pastWeekOnly=true;
+  activeEra='all';activeYear='all';activeTag='all';srch='';topicRegex=null;
+  const _si=document.getElementById('SI');if(_si)_si.value='';
+  document.querySelectorAll('.qb').forEach(b=>{if(b.id!=='qbPastWeek')b.classList.remove('on');});
   const qb=document.getElementById('qbPastWeek');if(qb)qb.classList.add('on');
   showStatic();renderStatic();
   document.querySelectorAll('.navtab').forEach(t=>t.classList.remove('on'));
