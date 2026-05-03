@@ -222244,7 +222244,12 @@ function renderYearTabs(){
   strip.querySelectorAll('.yrtab').forEach(btn=>{
     btn.addEventListener('click',()=>{
       strip.querySelectorAll('.yrtab').forEach(b=>b.classList.remove('on'));
-      btn.classList.add('on');activeYear=btn.dataset.yr;renderTagBar();showStatic();renderStatic();
+      btn.classList.add('on');activeYear=btn.dataset.yr;
+      // Clear search/topic when changing year — prevents empty intersections
+      // (e.g. clicking Signal-gate then clicking 2017 used to return zero results)
+      srch='';topicRegex=null;
+      const _si=document.getElementById('SI');if(_si)_si.value='';
+      renderTagBar();showStatic();renderStatic();
       btn.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});
     });
   });
@@ -222325,6 +222330,19 @@ function renderStatic(){
 
 function renderPage(){
   const el=document.getElementById('static');
+  // Empty-state hint — silent empty results were confusing users when filters intersected to zero
+  if(currentPage===0 && currentFiltered.length===0){
+    const filterSummary=[];
+    if(activeEra!=='all')filterSummary.push('era: '+activeEra);
+    if(activeYear!=='all')filterSummary.push('year: '+activeYear);
+    if(activeTag!=='all')filterSummary.push('tag: '+activeTag);
+    if(srch)filterSummary.push('search: "'+srch+'"');
+    if(sigOnly)filterSummary.push('major-only');
+    if(gpOnly)filterSummary.push('goalposts-only');
+    if(pastWeekOnly)filterSummary.push('past 7 days');
+    el.innerHTML='<div style="text-align:center;padding:3rem 1.5rem;color:#555;background:#fff8e1;border:1px solid #f9a825;border-radius:10px;margin:1rem;"><p style="font-size:1rem;font-weight:600;margin-bottom:.5rem;color:#0d1b2a;">No entries match these filters</p><p style="font-size:.78rem;color:#666;margin-bottom:1rem;">Active filters: '+(filterSummary.join(' · ')||'(none)')+'</p><button onclick="resetFilters();renderTagBar();showStatic();renderStatic();" style="background:#f9a825;color:#0d1b2a;border:none;padding:.6rem 1.2rem;border-radius:6px;cursor:pointer;font-weight:700;font-family:\'JetBrains Mono\',monospace;font-size:.7rem;letter-spacing:.05em;">Clear All Filters</button></div>';
+    return;
+  }
   const start=currentPage*PAGE_SIZE;
   const end=Math.min(start+PAGE_SIZE,currentFiltered.length);
   const slice=currentFiltered.slice(start,end);
@@ -222389,6 +222407,7 @@ function doDateLookup(){
 }
 
 function doQueryLookup(q){
+  if(!q||typeof q!=='string')return;
   resetFilters();
   document.getElementById('SI').value=q;srch=q.toLowerCase();
   if(currentView!=='timeline')switchView('timeline');
@@ -222526,7 +222545,11 @@ document.getElementById('bGP').addEventListener('click',()=>{gpOnly=!gpOnly;sigO
   });
   document.getElementById('lbtn').addEventListener('click',doDateLookup);
   document.getElementById('dp').addEventListener('keydown',ev=>{if(ev.key==='Enter')doDateLookup();});
-  document.querySelectorAll('.qb').forEach(btn=>btn.addEventListener('click',()=>{document.getElementById('SI').value='';srch='';doQueryLookup(btn.dataset.q);}));
+  document.querySelectorAll('.qb').forEach(btn=>btn.addEventListener('click',()=>{
+  // Skip buttons without a data-q (e.g. qbPastWeek, which is wired separately as a filter toggle)
+  if(!btn.dataset.q)return;
+  document.getElementById('SI').value='';srch='';doQueryLookup(btn.dataset.q);
+}));
   document.getElementById('apbtn').addEventListener('click',doAsk);
   document.getElementById('aq').addEventListener('keydown',ev=>{if(ev.key==='Enter'&&(ev.ctrlKey||ev.metaKey))doAsk();});
   // Infinite scroll
