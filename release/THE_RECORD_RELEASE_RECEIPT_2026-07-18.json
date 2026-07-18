@@ -1,0 +1,36 @@
+{
+  "schema": "the-record-source-receipt-v1",
+  "release_version": "8.0.0-rc1",
+  "release_date": "2026-07-18",
+  "checked_at": "2026-07-18 12:00 PM EDT",
+  "current_layer": {
+    "national_entries": 5,
+    "in6_entries": 4,
+    "source_ledger_records": 24
+  },
+  "validation": {
+    "html_routes": 9,
+    "internal_links_and_downloads": "PASS",
+    "entry_schema_and_evidence_fields": "PASS",
+    "javascript_syntax": "PASS",
+    "browser_interactions": 14,
+    "credential_pattern_scan": "PASS"
+  },
+  "preserve_paths": [
+    "the-record.html",
+    "entries_array.js",
+    "THE-RECORD-COMPLETE.pdf",
+    "docs/"
+  ],
+  "known_open_findings": [
+    "Legacy repository metadata exposes conflicting exact archive totals; count reconciliation remains open.",
+    "This current-release layer does not independently revalidate every historical entry."
+  ],
+  "non_self_artifacts": {
+    "THE_RECORD_SITE_DEPLOY_READY_2026-07-18.zip": "e3ef7f2901addd220311a2ffe820b9c1d29d3c74f64491912c1c6dd4d4f1f6a6",
+    "THE_RECORD_JULY_18_UPDATE_PACK_2026-07-18.zip": "515f0083cbb5c0e2504b67ccac2e8c2404a6ab3e225c742cc61cbbdd2c002321",
+    "THE_RECORD_NATIONAL_UPDATE_PACK_2026-07-18.zip": "fb56f45074afbf98072ebd3cd0e226289a69dd1663d235cf13f1baeacd3a48e0",
+    "THE_RECORD_IN6_UPDATE_PACK_2026-07-18.zip": "9ef9655c4f018a09baeec556a129ca98c6cefefe659035a11ba67f3325a8fab6"
+  },
+  "publication_status": "REVIEW_CANDIDATE_NOT_PRODUCTION"
+}
