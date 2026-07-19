@@ -55,6 +55,8 @@ h1 { font-size: clamp(2.7rem, 6vw, 5.8rem); line-height: .98; margin: .5rem 0 1.
 .hero-stamp { border: 1px solid #405069; border-radius: var(--radius); padding: 1.4rem; background: rgba(255,255,255,.04); }
 .hero-stamp strong { display: block; font-size: 1.25rem; }
 .hero-stamp p { font-size: .85rem; margin: .45rem 0 0; }
+.hero-art { max-width: 1240px; margin: -1.3rem auto 0; padding: 0 1.2rem 3rem; }
+.hero-art img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid #405069; border-radius: var(--radius); box-shadow: 0 24px 60px rgba(0,0,0,.28); }
 .container { max-width: 1240px; margin: auto; padding: 3rem 1.2rem; }
 .page-head { padding: 4rem 0 2rem; border-bottom: 1px solid var(--line); margin-bottom: 2rem; }
 .page-head h1 { color: var(--night); font-size: clamp(2.5rem, 5vw, 4.6rem); margin: .5rem 0 1rem; }
@@ -145,7 +147,7 @@ th { background: #ece7dc; position: sticky; top: 0; }
   .card-actions .button, .hero-actions .button { width: 100%; }
 }
 @media print {
-  .site-header, .search-panel, .card-actions, .site-footer { display: none !important; }
+  .site-header, .search-panel, .card-actions, .hero-art, .site-footer { display: none !important; }
   body { background: #fff; }
   .record-card { box-shadow: none; break-inside: avoid; }
 }

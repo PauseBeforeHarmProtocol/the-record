@@ -1,8 +1,23 @@
-# The Record
+<p align="center">
+  <img src="assets/brand/the-record-hero.png" alt="An illuminated evidence archive connecting sourced records across a living accountability timeline" width="100%">
+</p>
 
-**A chronological, sourced accountability archive of Donald Trump’s political career.**
+<h1 align="center">The Record</h1>
 
-4,495 entries. 5,741 sources. Six eras. 34 companion documents. One premise: accountability matters.
+<p align="center"><strong>Every claim sourced. Every position documented. Every correction visible.</strong></p>
+
+<p align="center">
+  <a href="index.html">Open the current front door</a> ·
+  <a href="national/index.html">National record</a> ·
+  <a href="in6/index.html">IN-6</a> ·
+  <a href="sources/index.html">Source ledger</a> ·
+  <a href="archive/index.html">Historical archive</a> ·
+  <a href="downloads/index.html">Downloads</a>
+</p>
+
+The Record pairs a dated, source-bound current layer with the complete chronological accountability archive. The July 18 front door contains five national and four IN-6 records; it preserves rather than replaces the thousands-entry historical record, complete PDF, source material, and companion documents.
+
+> **Integrity note:** Exact legacy totals are currently unreconciled across the README, repository description, and architecture notes. The current site discloses that conflict instead of presenting one disputed number as settled.
 
 ---
 

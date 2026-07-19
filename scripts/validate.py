@@ -6,6 +6,9 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'site' if (ROOT / 'site').is_dir() else ROOT
 errors = []
+hero = SITE / 'assets/brand/the-record-hero.png'
+if not hero.exists(): errors.append('missing assets/brand/the-record-hero.png')
+elif not hero.read_bytes().startswith(b'\x89PNG\r\n\x1a\n'): errors.append('the-record-hero.png is not a PNG')
 html_files = sorted(SITE.rglob('*.html'))
 for page in html_files:
     text = page.read_text(encoding='utf-8')
