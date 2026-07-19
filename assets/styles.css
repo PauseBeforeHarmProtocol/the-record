@@ -65,6 +65,14 @@ h1 { font-size: clamp(2.7rem, 6vw, 5.8rem); line-height: .98; margin: .5rem 0 1.
 .stat { background: var(--paper-2); border: 1px solid var(--line); border-top: 4px solid var(--red); border-radius: 14px; padding: 1.15rem; box-shadow: var(--shadow); }
 .stat strong { display: block; font-size: 2rem; line-height: 1; }
 .stat span { color: var(--muted); font-size: .8rem; }
+.weekly-highlight { display: grid; grid-template-columns: .85fr 1.15fr; gap: 1.5rem; align-items: start; margin: 2rem 0; padding: 1.5rem; color: #fff; background: linear-gradient(145deg, var(--night), #192b42); border: 1px solid #34475f; border-left: 5px solid var(--gold); border-radius: var(--radius); box-shadow: var(--shadow); }
+.weekly-highlight h2 { margin: .35rem 0 .5rem; font-size: clamp(1.7rem, 3vw, 2.45rem); }
+.weekly-highlight p { margin: 0 0 1rem; color: #c7d0dc; }
+.weekly-highlight ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .55rem; }
+.weekly-highlight li { display: grid; grid-template-columns: auto 1fr; gap: .6rem; align-items: start; padding: .65rem .75rem; background: rgba(255,255,255,.055); border: 1px solid #34475f; border-radius: 10px; }
+.weekly-highlight a { color: #fff; text-decoration: none; font-weight: 700; }
+.weekly-highlight a:hover { color: #e7c989; }
+.weekly-highlight .chip { margin-top: .1rem; color: var(--night); background: var(--gold); }
 .section-head { display: flex; justify-content: space-between; align-items: end; gap: 1rem; margin: 3rem 0 1.2rem; }
 .section-head h2 { margin: 0; font-size: 2rem; }
 .section-head p { margin: 0; color: var(--muted); max-width: 620px; }
@@ -79,6 +87,8 @@ h1 { font-size: clamp(2.7rem, 6vw, 5.8rem); line-height: .98; margin: .5rem 0 1.
 .search-panel { display: flex; gap: .7rem; align-items: center; background: var(--paper-2); border: 1px solid var(--line); padding: .8rem; border-radius: 14px; position: sticky; top: 90px; z-index: 20; box-shadow: 0 8px 22px rgba(11,19,32,.08); margin-bottom: 1.4rem; }
 .search-panel input { flex: 1; min-width: 0; border: 1px solid #b8b1a5; background: #fff; padding: .75rem .85rem; border-radius: 9px; }
 .search-count { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--muted); font-size: .75rem; white-space: nowrap; }
+.scope-filter { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1.25rem; }
+.scope-filter .button { min-width: 8.5rem; }
 .record-list { display: grid; gap: 1.4rem; }
 .record-card { background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.45rem; box-shadow: var(--shadow); scroll-margin-top: 130px; }
 .record-card__head { display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: start; }
@@ -102,8 +112,9 @@ h1 { font-size: clamp(2.7rem, 6vw, 5.8rem); line-height: .98; margin: .5rem 0 1.
 .sources li { margin: .45rem 0; }
 .sources li span { display: block; color: var(--muted); font-size: .75rem; }
 .micro { color: var(--muted); font-size: .76rem; }
-.record-card[hidden] { display: none; }
+.record-card[hidden], .institution-card[hidden] { display: none; }
 .institution-card ul { padding-left: 1.1rem; color: var(--ink-2); }
+.agency-section + .agency-section { margin-top: 3.5rem; padding-top: .5rem; border-top: 1px solid var(--line); }
 .table-wrap { overflow-x: auto; background: var(--paper-2); border: 1px solid var(--line); border-radius: 14px; }
 table { border-collapse: collapse; width: 100%; font-size: .85rem; }
 th, td { text-align: left; padding: .75rem; border-bottom: 1px solid var(--line); vertical-align: top; }
@@ -127,6 +138,7 @@ th { background: #ece7dc; position: sticky; top: 0; }
   .primary-nav a { padding: .75rem; }
   .update-badge { display: none; }
   .hero-inner { grid-template-columns: 1fr; }
+  .weekly-highlight { grid-template-columns: 1fr; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .route-grid, .download-grid, .institution-grid { grid-template-columns: repeat(2, 1fr); }
   .three-layer { grid-template-columns: 1fr; }
@@ -145,6 +157,7 @@ th { background: #ece7dc; position: sticky; top: 0; }
   .search-panel { top: 78px; }
   .record-card { padding: 1rem; }
   .card-actions .button, .hero-actions .button { width: 100%; }
+  .scope-filter .button { flex: 1; min-width: 0; }
 }
 @media print {
   .site-header, .search-panel, .card-actions, .hero-art, .site-footer { display: none !important; }

@@ -11,19 +11,35 @@
 
   const search = document.querySelector('[data-record-search]');
   if (search) {
-    const cards = [...document.querySelectorAll('.record-card')];
+    const cards = [...document.querySelectorAll('[data-searchable]')];
     const count = document.querySelector('.search-count');
+    const scopeButtons = [...document.querySelectorAll('[data-week-filter]')];
+    let activeScope = 'all';
     const apply = () => {
       const q = search.value.trim().toLowerCase();
       let visible = 0;
       for (const card of cards) {
-        const ok = !q || card.dataset.searchable.includes(q);
+        const matchesText = !q || card.dataset.searchable.includes(q);
+        const matchesScope = activeScope === 'all' || card.dataset.scope === activeScope;
+        const ok = matchesText && matchesScope;
         card.hidden = !ok;
         if (ok) visible += 1;
       }
       if (count) count.textContent = `${visible} / ${cards.length} shown`;
     };
     search.addEventListener('input', apply);
+    for (const button of scopeButtons) {
+      button.addEventListener('click', () => {
+        activeScope = button.dataset.weekFilter || 'all';
+        for (const candidate of scopeButtons) {
+          const selected = candidate === button;
+          candidate.setAttribute('aria-pressed', String(selected));
+          candidate.classList.toggle('button--primary', selected);
+          candidate.classList.toggle('button--ghost', !selected);
+        }
+        apply();
+      });
+    }
     apply();
   }
 
