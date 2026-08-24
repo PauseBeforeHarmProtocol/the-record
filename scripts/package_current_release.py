@@ -146,20 +146,23 @@ def national_brief(entries: list[dict], ledger: dict) -> bytes:
 
 def run_receipt(entries: list[dict], ledger: dict) -> bytes:
     by_id = {entry["id"]: entry for entry in entries}
-    added = [by_id[entry_id] for entry_id in RELEASE["new_entry_ids"]]
+    changed = [by_id[entry_id] for entry_id in RELEASE["new_entry_ids"]]
+    added = [by_id[entry_id] for entry_id in RELEASE.get("added_entry_ids", [])]
+    refreshed = [by_id[entry_id] for entry_id in RELEASE.get("refreshed_entry_ids", [])]
     rejected = RELEASE.get("rejected_candidates", [])
     lines = [
         "# The Record — Maintenance Run Receipt",
         "",
         f"- Release: {VERSION}",
         f"- Checked: {CHECKED_AT}",
-        f"- Editorial cutoff: {RELEASE['cutoff_start']} through {RELEASE_ISO}",
-        f"- Added or materially refreshed: {len(added)} national records",
+        f"- Editorial window: {RELEASE.get('window_started_at', RELEASE['cutoff_start'])} through {RELEASE.get('window_ended_at', CHECKED_AT)}",
+        f"- Added: {len(added)} national record{'s' if len(added) != 1 else ''}",
+        f"- Materially refreshed: {len(refreshed)} national record{'s' if len(refreshed) != 1 else ''}",
         f"- Current layer: {len(entries)} records backed by {len(ledger)} source-ledger records",
         "",
         "## Added or materially refreshed records",
         "",
-        *(f'- `{entry["id"]}` — {entry["title"]}' for entry in added),
+        *(f'- `{entry["id"]}` — {entry["title"]}' for entry in changed),
         "",
         "## Withheld candidates",
         "",
