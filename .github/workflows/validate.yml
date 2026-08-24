@@ -14,8 +14,8 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install beautifulsoup4
+      - run: python scripts/sync_source_ledger.py --check
       - run: python scripts/build_current_pages.py --check
-      - run: python scripts/build_legacy_bridge.py --check
       - run: python scripts/package_current_release.py --check
       - run: python scripts/validate.py
       - run: node --check assets/site.js

@@ -1,10 +1,10 @@
 # AI provenance
 
-Checked: 2026-07-19 08:15 AM EDT
+Checked: 2026-08-24 10:43 AM EDT
 
 ## Current maintenance systems
 
-The July 19 currentization uses:
+The August 24 currentization uses:
 
 - **ChatGPT 5.6 Sol Max** (OpenAI) for independent audit, analysis, code, and adversarial review.
 - **Claude Fable 5 Max (Cowork)** for research organization, drafting support, code, and quality review.
@@ -15,7 +15,7 @@ Phillip Linstrum remains the editor, acceptance authority, and accountable publi
 
 The five AI Opinion essays were originally authored by **Claude (Anthropic, Opus 4)** in April 2026. That attribution remains part of each essay and is not replaced by the names of systems used for current maintenance.
 
-This July 19 change updates surrounding disclosures and navigation. It does not silently rewrite the five DOCX essays or reassign their authorship. Their committed SHA-256 values at this boundary are:
+This August 24 change updates the current national record, surrounding disclosures, and release automation. It does not silently rewrite the five DOCX essays or reassign their authorship. Their committed SHA-256 values at this boundary are:
 
 | File | SHA-256 |
 |---|---|

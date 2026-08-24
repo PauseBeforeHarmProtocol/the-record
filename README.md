@@ -17,7 +17,7 @@
   <a href="downloads/index.html">Downloads</a>
 </p>
 
-The Record pairs a dated, source-bound current layer with the complete chronological accountability archive. The July 19 front door contains six national and four IN-6 records, a working seven-day view, and an Agencies power map. It preserves rather than replaces the thousands-entry historical record, complete PDF, source material, and companion documents.
+The Record pairs a dated, source-bound current layer with the complete chronological accountability archive. The August 24 front door contains 19 national and four IN-6 records, including 13 national records added in the August 17–24 backfill, a working seven-day view, and an Agencies power map. It preserves rather than replaces the thousands-entry historical record, complete PDF, source material, and companion documents.
 
 > **Integrity note:** Exact legacy totals are currently unreconciled across the README, repository description, and architecture notes. The current site discloses that conflict instead of presenting one disputed number as settled.
 
@@ -93,7 +93,9 @@ The Record is a self-contained single-file HTML application (~11.5 MB). No serve
 
 **Architecture:**
 - `entries_array.js` — preserved canonical legacy entries (exact total pending deterministic reconciliation)
-- `data/current_entries.json` — 10 current-layer records, including the July 19 addition
+- `data/current_entries.json` — 23 current-layer records: 19 national and four IN-6
+- `data/release.json` — the single release date, checked time, weekly window, and new-entry manifest used by every builder
+- `EDITORIAL_AUTOMATION.md` — the no-padding publication threshold, correction rule, and six-hour maintenance workflow
 - `tag_rules.js` — Automated topic classification rules
 - `ai_essays.json` — AI-generated opinion content
 - `politicians_all.json` / `pol_data_merged.json` — Politician profiles and cross-references
@@ -102,6 +104,8 @@ The Record is a self-contained single-file HTML application (~11.5 MB). No serve
 - `gen_master_pdf.py` — Compiles all DOCX files into the master PDF
 
 **Current front-door navigation:** Home, Weekly, National, IN-6, Agencies, Method, Downloads, Full archive
+
+**Currentness:** researched through August 24, 2026 at 10:43 AM EDT. The release receipt records both published and withheld candidates.
 
 **Preserved archive navigation:** Home, Browse by Topic, Browse by Year, Full Timeline, Politicians, AI Opinion, Methodology, About, Search The Record
 

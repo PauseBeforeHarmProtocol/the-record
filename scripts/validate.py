@@ -29,8 +29,15 @@ CURRENT_ROUTES = [
 ]
 CURRENT_AI = ("ChatGPT 5.6 Sol Max", "Claude Fable 5 Max (Cowork)")
 DEPRECATED_AI = ("ChatGPT 5.6 Pro", "ChatGPT 5.4 Extended Thinking")
-WEEK_START = "2026-07-13"
-WEEK_END = "2026-07-19"
+RELEASE = json.loads((ROOT / "data/release.json").read_text(encoding="utf-8"))
+RELEASE_ISO = RELEASE["release_iso"]
+RELEASE_HUMAN = RELEASE["release_human"]
+WEEK_START = RELEASE["week_start"]
+WEEK_END = RELEASE["week_end"]
+NEW_ENTRY_IDS = set(RELEASE["new_entry_ids"])
+NATIONAL_PACK_NAME = f"THE_RECORD_NATIONAL_UPDATE_PACK_{RELEASE_ISO}.zip"
+COMPLETE_PACK_NAME = f"THE_RECORD_CURRENT_UPDATE_PACK_{RELEASE_ISO}.zip"
+RUN_RECEIPT_NAME = f"THE_RECORD_RUN_RECEIPT_{RELEASE_ISO}.md"
 
 
 def fail(message: str) -> None:
@@ -90,22 +97,24 @@ for route in CURRENT_ROUTES:
     for model in DEPRECATED_AI:
         if model in text:
             fail(f"{route}: deprecated AI disclosure {model}")
-    if "July 19, 2026" not in text:
-        fail(f"{route}: missing July 19 currentness marker")
+    if RELEASE_HUMAN not in text:
+        fail(f"{route}: missing {RELEASE_HUMAN} currentness marker")
 
 entries_path = SITE / "data/current_entries.json"
 ledger_path = SITE / "data/source_ledger.json"
 entries = json.loads(entries_path.read_text(encoding="utf-8"))
 ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
-if len(entries) != 10:
-    fail(f"expected 10 current entries, found {len(entries)}")
-if len(ledger) != 28:
-    fail(f"expected 28 source-ledger records, found {len(ledger)}")
 ids = {entry["id"] for entry in entries}
 if len(ids) != len(entries):
     fail("duplicate entry IDs")
-if "NAT-2026-07-19-001" not in ids:
-    fail("missing July 19 national record")
+if not NEW_ENTRY_IDS <= ids:
+    fail(f"release metadata names missing entries: {sorted(NEW_ENTRY_IDS - ids)}")
+title_dates = {(entry["date"], re.sub(r"\W+", " ", entry["title"].lower()).strip()) for entry in entries}
+if len(title_dates) != len(entries):
+    fail("duplicate normalized date/title pairs")
+urls = [source["url"] for source in ledger.values()]
+if len(urls) != len(set(urls)):
+    fail("duplicate URLs in source ledger")
 for entry in entries:
     pack = SITE / entry["pack_path"]
     if not pack.exists():
@@ -118,6 +127,11 @@ for entry in entries:
     for source_id in entry["sources"]:
         if source_id not in ledger:
             fail(f'{entry["id"]}: unknown source {source_id}')
+    for correction in entry.get("corrections", []):
+        if not correction.get("timestamp") or not correction.get("note"):
+            fail(f'{entry["id"]}: malformed correction record')
+    if entry["id"] in NEW_ENTRY_IDS and not (RELEASE["cutoff_start"] <= entry["date"] <= RELEASE_ISO):
+        fail(f'{entry["id"]}: new-entry date falls outside the release cutoff')
 
 with (SITE / "data/source_ledger.csv").open(encoding="utf-8", newline="") as handle:
     csv_ids = {row["source_id"] for row in csv.DictReader(handle)}
@@ -143,7 +157,7 @@ if "../agencies/index.html" not in alias_text:
 
 legacy_text = (SITE / "the-record.html").read_text(encoding="utf-8")
 if "CURRENT_LAYER_BRIDGE" not in legacy_text or "NAT-2026-07-19-001" not in legacy_text:
-    fail("legacy Past Week bridge is missing current national entries")
+    fail("preserved legacy archive is missing its established current-layer bridge")
 if "ChatGPT 5.4 Extended Thinking" in legacy_text:
     fail("legacy archive still exposes deprecated current-maintenance AI credit")
 if "Written by Claude (Anthropic, Opus 4)" not in legacy_text:
@@ -168,6 +182,9 @@ for checksum_file in sorted((SITE / "artifacts").rglob("*.sha256")):
         fail(f"checksum mismatch {checksum_file.relative_to(SITE)}")
 
 sums_path = SITE / "artifacts/SHA256SUMS.txt"
+for required_artifact in (NATIONAL_PACK_NAME, COMPLETE_PACK_NAME, RUN_RECEIPT_NAME):
+    if not (SITE / "artifacts" / required_artifact).is_file():
+        fail(f"missing current release artifact {required_artifact}")
 for line in sums_path.read_text(encoding="utf-8").splitlines():
     expected, relative = line.split(maxsplit=1)
     target = sums_path.parent / relative.strip()
