@@ -172,7 +172,7 @@ def run_receipt(entries: list[dict], ledger: dict) -> bytes:
         "",
         "## Verification",
         "",
-        "Current front-door pages, individual evidence packs, aggregate packs, source ledgers, and checksums are generated deterministically. The large legacy single-file archive is preserved unchanged. Publication requires the repository validator and GitHub Actions to pass.",
+        "Current front-door pages, the archive's lightweight live bridge, individual evidence packs, aggregate packs, source ledgers, and checksums are generated deterministically. The 14 MB historical application stays stable while current national entries are supplied by current_layer_bridge.js. Publication requires the repository validator and GitHub Actions to pass.",
     ])
     return ("\n".join(lines) + "\n").encode()
 
@@ -244,11 +244,12 @@ def build_outputs() -> dict[Path, bytes]:
             "# The Record current update pack\n\n"
             f"Release: {VERSION}\nRelease date: {RELEASE_HUMAN}\nChecked: {CHECKED_AT}\n\n"
             f"Contains {len(national_entries)} national and {len(in6_entries)} IN-6 current-layer records. "
-            "Historical archives remain separate and preserved.\n"
+            "The complete Trump archive consumes the national layer through current_layer_bridge.js while its historical body remains stable.\n"
         ).encode(),
         NATIONAL_BRIEF_NAME: brief_bytes,
         RUN_RECEIPT_NAME: receipt_bytes,
         "EDITORIAL_AUTOMATION.md": (ROOT / "EDITORIAL_AUTOMATION.md").read_bytes(),
+        "current_layer_bridge.js": (ROOT / "current_layer_bridge.js").read_bytes(),
         "data/current_entries.json": (ROOT / "data/current_entries.json").read_bytes(),
         "data/release.json": (ROOT / "data/release.json").read_bytes(),
         "data/source_ledger.csv": (ROOT / "data/source_ledger.csv").read_bytes(),

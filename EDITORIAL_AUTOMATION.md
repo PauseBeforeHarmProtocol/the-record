@@ -22,9 +22,10 @@ Each entry must:
 2. Search from the last checked time through the run time. Aim for at least four qualifying national items.
 3. Publish fewer than four when fewer than four pass the threshold. Record rejected candidates and the reason; never manufacture volume.
 4. Check for corrections or material developments to existing entries before creating new IDs.
-5. Update canonical JSON and CSV, release metadata, current front-door pages, packs, checksums, and the release receipt. Keep the 14 MB legacy single-file archive immutable during scheduled runs.
-6. Run every deterministic builder and validator. Open a reviewable pull request and wait for GitHub Actions.
-7. Merge only when the evidence checks, local validation, and CI all pass. Otherwise leave the pull request open and report the blocker.
+5. Update canonical JSON and CSV, release metadata, the curated front-door pages, packs, checksums, the release receipt, and `current_layer_bridge.js`. The landing pages summarize; the full Trump archive remains the canonical long-form research layer.
+6. Run `scripts/build_legacy_bridge.py` so current national entries and release metadata reach the archive through its small generated asset. Keep the 14 MB historical `the-record.html` application stable during ordinary scheduled runs.
+7. Run every deterministic builder and validator. Open a reviewable pull request and wait for GitHub Actions.
+8. Merge only when the evidence checks, local validation, and CI all pass. Otherwise leave the pull request open and report the blocker.
 
 ## Correction rule
 

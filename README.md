@@ -8,16 +8,17 @@
 
 <p align="center">
   <a href="index.html">Open the current front door</a> ·
+  <a href="the-record.html#home">Enter the full archive</a> ·
   <a href="weekly/index.html">Weekly record</a> ·
   <a href="national/index.html">National record</a> ·
   <a href="in6/index.html">IN-6</a> ·
   <a href="agencies/index.html">Agencies</a> ·
   <a href="sources/index.html">Source ledger</a> ·
-  <a href="archive/index.html">Historical archive</a> ·
+  <a href="archive/index.html">Archive directory</a> ·
   <a href="downloads/index.html">Downloads</a>
 </p>
 
-The Record pairs a dated, source-bound current layer with the complete chronological accountability archive. The August 24 front door contains 19 national and four IN-6 records, including 13 national records added in the August 17–24 backfill, a working seven-day view, and an Agencies power map. It preserves rather than replaces the thousands-entry historical record, complete PDF, source material, and companion documents.
+The Record pairs a concise, source-bound editorial front page with the complete chronological accountability archive. The August 24 front door contains 19 national and four IN-6 records, including 13 national records added in the August 17–24 backfill, a working seven-day view, and an Agencies power map. The full archive remains the project’s primary research body and receives the same qualifying current national additions through a small generated live bridge.
 
 > **Integrity note:** Exact legacy totals are currently unreconciled across the README, repository description, and architecture notes. The current site discloses that conflict instead of presenting one disputed number as settled.
 
@@ -89,11 +90,12 @@ Applied to The Record, PBHP means:
 
 ## Technical Details
 
-The Record is a self-contained single-file HTML application (~11.5 MB). No server required — open the file in any modern browser.
+The historical application remains a portable HTML archive (~14 MB). On the published site, a small generated JavaScript bridge supplies the current national layer without rewriting the historical application on every six-hour run.
 
 **Architecture:**
 - `entries_array.js` — preserved canonical legacy entries (exact total pending deterministic reconciliation)
 - `data/current_entries.json` — 23 current-layer records: 19 national and four IN-6
+- `current_layer_bridge.js` — generated national entries and release metadata consumed by the full archive
 - `data/release.json` — the single release date, checked time, weekly window, and new-entry manifest used by every builder
 - `EDITORIAL_AUTOMATION.md` — the no-padding publication threshold, correction rule, and six-hour maintenance workflow
 - `tag_rules.js` — Automated topic classification rules
@@ -103,11 +105,11 @@ The Record is a self-contained single-file HTML application (~11.5 MB). No serve
 - DOCX generators (Node.js) — 10 scripts that produce the 34 companion documents
 - `gen_master_pdf.py` — Compiles all DOCX files into the master PDF
 
-**Current front-door navigation:** Home, Weekly, National, IN-6, Agencies, Method, Downloads, Full archive
+**Current front-door navigation:** Home, The Archive, Latest, Weekly, IN-6, Agencies, Method, Downloads
 
 **Currentness:** researched through August 24, 2026 at 10:43 AM EDT. The release receipt records both published and withheld candidates.
 
-**Preserved archive navigation:** Home, Browse by Topic, Browse by Year, Full Timeline, Politicians, AI Opinion, Methodology, About, Search The Record
+**Full archive navigation:** Latest highlights, Home, Browse by Topic, Browse by Year, Full Timeline, Politicians, AI Opinion, Methodology, About, Search The Record
 
 ## Corrections & Contact
 

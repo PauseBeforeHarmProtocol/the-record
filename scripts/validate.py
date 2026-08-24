@@ -54,6 +54,12 @@ if not hero.exists():
 elif not hero.read_bytes().startswith(b"\x89PNG\r\n\x1a\n"):
     fail("the-record-hero.png is not a PNG")
 
+mark = SITE / "assets/brand/the-record-mark.svg"
+if not mark.exists():
+    fail("missing assets/brand/the-record-mark.svg")
+elif "<svg" not in mark.read_text(encoding="utf-8"):
+    fail("the-record-mark.svg is not an SVG")
+
 for route in CURRENT_ROUTES:
     if not (SITE / route).is_file():
         fail(f"missing current route {route}")
@@ -89,8 +95,12 @@ for route in CURRENT_ROUTES:
             fail(f"{route}: Weekly is not a top-level navigation item")
         if "Agencies" not in labels:
             fail(f"{route}: Agencies is not a top-level navigation item")
+        if "The Archive" not in labels:
+            fail(f"{route}: The Archive is not a top-level navigation item")
         if "Institutions" in labels:
             fail(f"{route}: stale Institutions navigation label")
+    if "assets/brand/the-record-mark.svg" not in text:
+        fail(f"{route}: missing The Record brand mark")
     for model in CURRENT_AI:
         if model not in text:
             fail(f"{route}: missing current AI disclosure {model}")
@@ -156,8 +166,25 @@ if "../agencies/index.html" not in alias_text:
     fail("institutions compatibility route does not resolve to Agencies")
 
 legacy_text = (SITE / "the-record.html").read_text(encoding="utf-8")
-if "CURRENT_LAYER_BRIDGE" not in legacy_text or "NAT-2026-07-19-001" not in legacy_text:
-    fail("preserved legacy archive is missing its established current-layer bridge")
+bridge_path = SITE / "current_layer_bridge.js"
+if not bridge_path.exists():
+    fail("missing generated current_layer_bridge.js")
+else:
+    bridge_text = bridge_path.read_text(encoding="utf-8")
+    national_ids = {entry["id"] for entry in entries if entry["scope"] == "national"}
+    missing_bridge_ids = sorted(entry_id for entry_id in national_ids if entry_id not in bridge_text)
+    if missing_bridge_ids:
+        fail(f"archive bridge is missing national entries: {missing_bridge_ids}")
+    if "window.CURRENT_LAYER_META=" not in bridge_text or RELEASE["checked_at"] not in bridge_text:
+        fail("archive bridge is missing current release metadata")
+if 'src="current_layer_bridge.js"' not in legacy_text:
+    fail("historical archive does not load current_layer_bridge.js")
+if "Array.isArray(window.CURRENT_LAYER_BRIDGE)" not in legacy_text:
+    fail("historical archive is missing its stable live-layer hook")
+if "const CURRENT_LAYER_BRIDGE=[" in legacy_text:
+    fail("historical archive still embeds the generated current layer")
+if "assets/brand/the-record-mark.svg" not in legacy_text:
+    fail("historical archive is missing The Record brand mark")
 if "ChatGPT 5.4 Extended Thinking" in legacy_text:
     fail("legacy archive still exposes deprecated current-maintenance AI credit")
 if "Written by Claude (Anthropic, Opus 4)" not in legacy_text:
