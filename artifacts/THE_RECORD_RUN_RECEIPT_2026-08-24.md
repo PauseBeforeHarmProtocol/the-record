@@ -1,30 +1,25 @@
 # The Record — Maintenance Run Receipt
 
-- Release: 8.1.0
-- Checked: 2026-08-24 10:43 AM EDT
-- Editorial cutoff: 2026-08-17 through 2026-08-24
-- Added or materially refreshed: 13 national records
-- Current layer: 23 records backed by 45 source-ledger records
+- Release: 8.2.0
+- Checked: 2026-08-24 5:58 PM EDT
+- Editorial window: 2026-08-24 10:43 AM EDT through 2026-08-24 5:58 PM EDT
+- Added: 4 national records
+- Materially refreshed: 1 national record
+- Current layer: 27 records backed by 54 source-ledger records
 
 ## Added or materially refreshed records
 
-- `NAT-2026-08-17-001` — Trump rejects an Iran-deal extension and threatens military action against Oman
-- `NAT-2026-08-17-002` — Interior proposes a 67-million-acre seabed-mining auction near the Northern Mariana Islands
-- `NAT-2026-08-18-001` — Agriculture Department proposes rescinding the Roadless Rule
-- `NAT-2026-08-18-002` — Education Department directs schools away from race-conscious discipline reform
-- `NAT-2026-08-19-001` — Reuters review finds D.C. Guard deployment seldom involved in criminal cases
-- `NAT-2026-08-19-002` — Administration notifies Congress of $206 million for a proposed Gaza stabilization force
-- `NAT-2026-08-20-001` — Liberia agrees to receive up to 1,200 U.S. third-country deportees
-- `NAT-2026-08-20-002` — Trump sets a goal of 1,000 annual U.S. space launches and reentries by 2030
-- `NAT-2026-08-21-001` — Education staff recommend ending the ABA's federal law-school accreditation role
-- `NAT-2026-08-21-002` — Appeals court keeps DOJ subpoenas to Letitia James's office blocked
-- `NAT-2026-08-21-003` — Federal judge strikes down immigrant-visa processing suspension for 75 countries
 - `NAT-2026-08-22-001` — U.S. imposes 50% duties on selected Canadian goods as Trump announces a broader 2027 escalation
-- `NAT-2026-08-24-001` — Administration proposes a $103,265 fee for each new H-1B visa
+- `NAT-2026-08-24-002` — Supreme Court lifts one injunction blocking Trump's mail-voting directive
+- `NAT-2026-08-24-003` — Treasury sanctions nearly 60 Iran-linked targets and broadens its secondary-sanctions warning
+- `NAT-2026-08-24-004` — United States formally removes Syria from the state-sponsors-of-terrorism list
+- `NAT-2026-08-24-005` — USDA reopens the Douglas cattle crossing after a 15-month livestock-import suspension
 
 ## Withheld candidates
 
-- Reported DOJ inquiry into the 2022 Mar-a-Lago search: Withheld because the consequential claim rested on unnamed sourcing and did not yet have the second independent source required by the live-maintenance policy.
+- Reported DOJ inquiry into the 2022 Mar-a-Lago search: Still withheld because the consequential claim rested on unnamed sourcing and did not yet have the second independent source required by the live-maintenance policy.
+- Plan to revoke up to 200,000 visitor visas held by asylum seekers: Withheld because the scale and timing rested on unpublished State Department documents and unnamed officials; Reuters repeated AP's report rather than independently confirming it.
+- Joint Economic Committee minority estimate of gains in Trump's oil-and-gas holdings: Withheld pending the direct committee analysis and independent verification of the valuation method, holdings range, and conflict-of-interest estimate.
 
 ## Verification
 

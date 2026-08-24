@@ -1,9 +1,101 @@
 # The Record — National Update Brief
 
 **Release:** August 24, 2026
-**Checked:** 2026-08-24 10:43 AM EDT
+**Checked:** 2026-08-24 5:58 PM EDT
 
 Each item preserves The Record's three-layer distinction: facts, significance, and the observed response or goalpost.
+
+## August 24, 2026 — USDA reopens the Douglas cattle crossing after a 15-month livestock-import suspension
+
+Imports resumed under a phased disease-control plan; economists said the limited first step was unlikely to lower beef prices soon.
+
+**THE FACTS**
+
+- USDA reopened the Douglas, Arizona, port to cattle imports from Mexico on August 24, the first easing of the southern-border livestock suspension imposed in May 2025 over New World screwworm.
+- USDA said every animal would receive a full inspection and that the opening could be paused if risk increased. Santa Teresa and Columbus, New Mexico, remained under evaluation rather than open at the checked time.
+- Reuters reported that imports were scheduled to begin at 700 cattle per day and rise gradually. AP reported that Mexico historically supplies about 3% of the U.S. cattle supply and cited agricultural economists who did not expect a measurable near-term effect on cattle or beef prices.
+
+**SIGNIFICANCE**
+
+The reopening changes an implemented biosecurity and trade restriction while testing two competing risks: importing more cattle into the smallest U.S. herd in decades and preventing a destructive parasite from spreading. The staged volume means claims of quick consumer-price relief should be measured rather than assumed.
+
+**GOALPOST / RESPONSE**
+
+Agriculture Secretary Brooke Rollins says USDA used overlapping safeguards and a science-based protocol to protect the U.S. herd while reopening trade. Some cattle groups and state officials argue the continuing screwworm spread makes reopening risky. Import volumes, detections, pauses, herd size, and retail beef prices are the evidence tests.
+
+**Sources**
+
+- [USDA APHIS — phased reopening of southern livestock ports](https://www.aphis.usda.gov/news/agency-announcements/usda-announces-phased-reopening-southern-ports-livestock-trade-0) — primary agency announcement and implementation schedule
+- [Reuters — cattle imports resume through Douglas, Arizona](https://www.reuters.com/world/americas/mexico-boosts-sterile-fly-dispersal-us-reopens-cattle-trade-2026-08-24/) — independent reporting on implementation, safeguards, and disease risk
+- [Associated Press — economists assess the cattle reopening and beef prices](https://apnews.com/article/screwworm-beef-prices-cattle-trump-border-mexico-399cebbea159ae51a8eaa2e13eb1ef14) — independent reporting and evidence-based effectiveness context
+
+## August 24, 2026 — United States formally removes Syria from the state-sponsors-of-terrorism list
+
+The delisting took effect after a 45-day congressional review, removing a major legal and compliance barrier to assistance, finance, and investment.
+
+**THE FACTS**
+
+- The State Department formally removed Syria from the list of state sponsors of terrorism after the 45-day congressional review triggered by Trump's July 8 notification.
+- The administration also removed the Nusrah Front designation as a Specially Designated Global Terrorist organization. Cuba, Iran, and North Korea remained on the state-sponsor list.
+- The state-sponsor designation had carried restrictions on U.S. foreign assistance, defense exports and sales, dual-use items, and certain financial transactions. Broader Syria sanctions had already been terminated in July 2025, while targeted sanctions on designated individuals and groups remained separate.
+
+**SIGNIFICANCE**
+
+The formal delisting removes a distinct legal and compliance deterrent that persisted after broader Syria sanctions ended, potentially expanding banking, investment, aid, and reconstruction activity. It also transfers more of the accountability burden to targeted sanctions and continuing monitoring of Syria's conduct.
+
+**GOALPOST / RESPONSE**
+
+Secretary of State Marco Rubio said the action recognized positive steps and commitments by President Ahmed al-Sharaa's government to distance Syria from international terrorism. Syrian officials say the designation was the last major obstacle to investment. Future counterterrorism cooperation, targeted enforcement, rights conditions, and financial flows will test those claims.
+
+**Sources**
+
+- [Reuters — U.S. formally removes Syria from terrorism-sponsor list](https://www.reuters.com/world/middle-east/us-removes-syrias-designation-state-sponsor-terrorism-2026-08-24/) — independent reporting on a formal State Department and Treasury action
+
+## August 24, 2026 — Treasury sanctions nearly 60 Iran-linked targets and broadens its secondary-sanctions warning
+
+The designations took effect; threatened penalties against major third-country trading partners had not yet been imposed.
+
+**THE FACTS**
+
+- The Treasury Department imposed sanctions on nearly 60 people, entities, and vessels tied to Iran's nuclear, missile, cyber, oil, brokerage, and shadow-fleet networks across several foreign jurisdictions.
+- Treasury identified digital assets, technology, gold, aviation, and shipping as sectors that could face secondary sanctions and warned countries and businesses to wind down identified Iran-related activity.
+- Treasury Secretary Scott Bessent did not announce secondary penalties against Iran's major foreign trading partners. He said countries would receive time to disengage, leaving those broader penalties warned or proposed rather than implemented at the checked time.
+
+**SIGNIFICANCE**
+
+The blocked targets face immediate U.S. financial restrictions, while the wider warning could have much larger effects if Treasury later penalizes foreign banks, refiners, carriers, or governments. Keeping those two stages separate is necessary to measure both enforcement and effects on Iranian revenue, global finance, and energy markets.
+
+**GOALPOST / RESPONSE**
+
+The administration says the campaign is intended to sever Iran's revenue and financial access while allowing other countries time to disengage without destabilizing the global financial system. Iranian parliamentary speaker Mohammad Bagher Qalibaf said Iran's trading partners were not taking the threats seriously. Follow-on designations, actual secondary penalties, trade flows, and Iranian revenue are the evidence tests.
+
+**Sources**
+
+- [Associated Press — implemented Iran sanctions and secondary-sanctions warning](https://apnews.com/article/iran-rial-currency-bessent-trade-august-24-2026-e367634d8853c8fa4a341132cd577f31) — independent reporting from the Treasury announcement and press conference
+- [Reuters — Treasury designations and broadened secondary-sanctions threat](https://www.reuters.com/world/middle-east/us-treasury-broaden-scope-secondary-sanctions-iran-source-says-2026-08-24/) — independent reporting on implemented designations and announced future enforcement
+
+## August 24, 2026 — Supreme Court lifts one injunction blocking Trump's mail-voting directive
+
+The emergency action permits implementation work to continue, but it did not decide the directive's legality and another judicial obstacle remains.
+
+**THE FACTS**
+
+- The Supreme Court granted the Justice Department's emergency request to pause a Massachusetts federal judge's injunction that had blocked the administration from implementing the March mail-voting executive order in 23 states and the District of Columbia.
+- The order directs federal agencies to compile state voter-eligibility lists and tells the Postal Service to deliver mail ballots only to voters on approved state lists. The Postal Service had begun implementation planning before the Supreme Court acted.
+- The justices did not decide the merits. The three liberal justices dissented, additional challenges remain possible, and Reuters reported that another judicial restraint still remained at the checked time.
+
+**SIGNIFICANCE**
+
+The emergency ruling removes one immediate barrier to a federal effort that could alter mail-ballot administration shortly before the midterms. Its practical reach is still uncertain because implementation, state election authority, voter-list accuracy, remaining litigation, and the election calendar are unresolved.
+
+**GOALPOST / RESPONSE**
+
+The Justice Department says the states sued prematurely, lacked standing, and had not shown concrete injury; the administration describes the directive as an election-integrity measure. The states argue that it exceeds presidential authority, imposes administration costs, and risks disenfranchisement. The emergency ruling did not resolve those competing claims.
+
+**Sources**
+
+- [Associated Press — Supreme Court clears path for mail-voting order](https://apnews.com/article/trump-mail-voting-supreme-court-157afc3c195ce0a62c522da5ce904b04) — independent reporting on an emergency Supreme Court action
+- [Reuters — Supreme Court lifts one injunction against mail-ballot directive](https://www.reuters.com/world/us-supreme-court-lifts-judicial-hurdle-trumps-mail-in-ballot-curbs-2026-08-24/) — independent reporting on an emergency Supreme Court action
 
 ## August 24, 2026 — Administration proposes a $103,265 fee for each new H-1B visa
 
@@ -34,8 +126,9 @@ The entry separates tariffs already in force from the president's later statemen
 **THE FACTS**
 
 - Trump temporarily suspended additional duties on certain Canadian alcoholic beverages, dairy products, and motor vehicles for three days beginning August 18 while trade talks continued.
-- After the talks failed, 50% U.S. tariffs took effect August 22 on about $20 billion in Canadian goods—roughly 5% of Canada's exports—according to Reuters. Canada suspended talks and announced dollar-for-dollar retaliation.
+- After the talks failed, 50% U.S. tariffs took effect August 22 on about $20 billion in Canadian goods—roughly 5% of Canada's exports—according to Reuters. Canada suspended talks and announced dollar-for-dollar retaliation beginning September 8; the retaliation was announced but had not begun at the checked time.
 - On August 24, Trump said tariffs on all Canadian cars, trucks, parts, and steel would rise to 50% on January 1, 2027. That broader step was announced but was not yet in force at the checked time.
+- Prime Minister Mark Carney said Canada rejected U.S. proposals that would dismantle major Canadian industries. Ontario Premier Doug Ford said electricity and critical-mineral restrictions remained possible if the dispute worsened; those countermeasures were threatened, not implemented.
 
 **SIGNIFICANCE**
 
@@ -50,6 +143,7 @@ The administration says the tariffs answer Canadian discrimination against U.S. 
 - [White House — three-day suspension of additional Canada duties](https://www.whitehouse.gov/presidential-actions/2026/08/temporary-suspension-of-additional-duties-to-offset-canadian-discrimination-against-the-commerce-of-the-united-states-with-respect-to-alcoholic-beverages-dairy-and-motor-vehicles/) — primary presidential proclamation
 - [Reuters — U.S.-Canada talks fail before 50% duties take effect](https://www.reuters.com/world/americas/us-canadian-trade-teams-meet-again-tariffs-deadline-looms-2026-08-21/) — independent reporting on trade negotiations and implemented tariffs
 - [Reuters — Trump announces broader 2027 Canada tariff escalation](https://www.reuters.com/business/autos-transportation/trump-says-he-will-raise-tariffs-all-cars-trucks-50-amid-canada-trade-spat-2026-08-24/) — independent reporting on a stated future action
+- [Associated Press — Canada rejects subordination as tariff conflict escalates](https://apnews.com/article/canada-trade-trump-ontario-53c4f83c8365c14b372b314396ae8179) — independent reporting on implemented tariffs, announced escalation, and Canada's response
 
 ## August 21–22, 2026 — Federal judge strikes down immigrant-visa processing suspension for 75 countries
 
