@@ -479,6 +479,7 @@ const PBHP_LOGO_LG='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAA
     <button class="qb" data-q="iran strike 2026">Iran War</button>
     <button class="qb" data-q="signal classified">Signal-gate</button>
     <button class="qb" id="qbPastWeek" style="background:#fff8e1;border-color:#f9a825;color:#0d1b2a;font-weight:700;">&#128221; Past Week</button>
+    <button class="qb" id="timelineOrder" type="button" onclick="toggleTimelineOrder()" aria-label="Timeline order: newest first. Click to show oldest first." style="background:#e8f1fb;border-color:#4a86c8;color:#0d1b2a;font-weight:700;">Newest first ↓</button>
   </div>
 </div>
 
@@ -222011,6 +222012,7 @@ E.forEach(e=>{e.tags=autoTag(e);e.year=e.sort.slice(0,4);});
 const YEARS=[...new Set(E.map(e=>e.year))].sort();
 
 let activeEra='all',activeYear='all',activeTag='all',sigOnly=false,gpOnly=false,srch='',topicRegex=null;
+let timelineOrder='desc';
 let currentView='home';
 
 function resetFilters(o){
@@ -222058,7 +222060,7 @@ function debounce(fn, ms){
 
 function filtered(){
   const weekCutoff=pastWeekOnly?getWeekCutoff():null;
-  return E.filter(e=>{
+  const results=E.filter(e=>{
     if(activeEra!=='all'&&e.era!==activeEra)return false;
     if(activeYear!=='all'&&e.year!==activeYear)return false;
     if(activeTag!=='all'&&!e.tags.includes(activeTag))return false;
@@ -222075,6 +222077,23 @@ function filtered(){
     }
     return true;
   });
+  return results.sort((a,b)=>{
+    const byDate=(a.sort||'').localeCompare(b.sort||'');
+    if(byDate)return timelineOrder==='desc'?-byDate:byDate;
+    const byIndex=(a._idx||0)-(b._idx||0);
+    return timelineOrder==='desc'?-byIndex:byIndex;
+  });
+}
+
+function toggleTimelineOrder(){
+  timelineOrder=timelineOrder==='desc'?'asc':'desc';
+  const btn=document.getElementById('timelineOrder');
+  if(btn){
+    const newest=timelineOrder==='desc';
+    btn.textContent=newest?'Newest first ↓':'Oldest first ↑';
+    btn.setAttribute('aria-label',newest?'Timeline order: newest first. Click to show oldest first.':'Timeline order: oldest first. Click to show newest first.');
+  }
+  if(currentView==='timeline')renderStatic();
 }
 
 function buildEntry(e){
@@ -222541,7 +222560,7 @@ function renderPage(){
   const byYear={};
   slice.forEach(e=>{if(!byYear[e.year])byYear[e.year]=[];byYear[e.year].push(e);});
   let html='';
-  Object.keys(byYear).sort().forEach(yr=>{
+  Object.keys(byYear).sort((a,b)=>timelineOrder==='desc'?b.localeCompare(a):a.localeCompare(b)).forEach(yr=>{
     const list=byYear[yr];
     const eraInfo=ERAS.find(([id])=>id===list[0].era);
     const eraLabel=eraInfo?eraInfo[1]:'';
@@ -222787,6 +222806,13 @@ function _firstSentenceShort(text, maxLen){
   return s;
 }
 
+function openPastWeekTimeline(){
+  resetFilters();
+  pastWeekOnly=true;
+  const qb=document.getElementById('qbPastWeek');if(qb)qb.classList.add('on');
+  switchView('timeline');
+}
+
 function renderWeekCard(){
   const cutoff=getWeekCutoff();
   const recent=E.filter(e=>(e.sort||'')>=cutoff).sort((a,b)=>(b.sort||'').localeCompare(a.sort||''));
@@ -222811,9 +222837,8 @@ function renderWeekCard(){
     const text=escapeHTML(_firstSentenceShort(e.text||'', 200));
     const permalinkSort=escapeAttr(e.sort||'');
     const idx=e._idx||0;
-    // Permalink format matches the entry container ID built by buildEntry():
-    //   id="e-${sort}_${idx}"   (e- prefix, underscore separator)
-    return '<a href="#e-'+permalinkSort+'_'+idx+'" onclick="pastWeekOnly=true;showStatic();renderStatic();document.querySelectorAll(\'.navtab\').forEach(t=>t.classList.remove(\'on\'));var tl=document.querySelector(\'.navtab[data-view=&quot;timeline&quot;]\');if(tl)tl.classList.add(\'on\');var qb=document.getElementById(\'qbPastWeek\');if(qb)qb.classList.add(\'on\');" style="display:flex;gap:.6rem;padding:.45rem .6rem;background:rgba(255,255,255,.6);border:1px solid rgba(249,168,37,.3);border-radius:6px;text-decoration:none;color:#0d1b2a;font-size:.78rem;line-height:1.4;align-items:flex-start;">'
+    // The hash omits the DOM-only "e-" prefix; jumpToHash adds it when locating the entry.
+    return '<a href="#'+permalinkSort+'_'+idx+'" onclick="openPastWeekTimeline();" style="display:flex;gap:.6rem;padding:.45rem .6rem;background:rgba(255,255,255,.6);border:1px solid rgba(249,168,37,.3);border-radius:6px;text-decoration:none;color:#0d1b2a;font-size:.78rem;line-height:1.4;align-items:flex-start;">'
       +'<span style="flex-shrink:0;color:#f9a825;">'+icon+'</span>'
       +'<span style="flex-shrink:0;color:#888;font-family:\'JetBrains Mono\',monospace;font-size:.65rem;min-width:80px;">'+dt+'</span>'
       +'<span style="font-weight:600;">'+text+'</span></a>';
@@ -222821,15 +222846,7 @@ function renderWeekCard(){
 }
 
 document.getElementById('weekBtnFull')?.addEventListener('click',()=>{
-  pastWeekOnly=true;
-  activeEra='all';activeYear='all';activeTag='all';srch='';topicRegex=null;
-  const _si=document.getElementById('SI');if(_si)_si.value='';
-  document.querySelectorAll('.qb').forEach(b=>{if(b.id!=='qbPastWeek')b.classList.remove('on');});
-  const qb=document.getElementById('qbPastWeek');if(qb)qb.classList.add('on');
-  showStatic();renderStatic();
-  document.querySelectorAll('.navtab').forEach(t=>t.classList.remove('on'));
-  const tlTab=document.querySelector('.navtab[data-view="timeline"]');
-  if(tlTab)tlTab.classList.add('on');
+  openPastWeekTimeline();
   document.getElementById('static').scrollIntoView({behavior:'smooth',block:'start'});
 });
 

@@ -185,6 +185,30 @@ if "const CURRENT_LAYER_BRIDGE=[" in legacy_text:
     fail("historical archive still embeds the generated current layer")
 if "assets/brand/the-record-mark.svg" not in legacy_text:
     fail("historical archive is missing The Record brand mark")
+if 'id="timelineOrder"' not in legacy_text or "let timelineOrder='desc'" not in legacy_text:
+    fail("historical archive timeline does not default to newest first")
+if "timelineOrder==='desc'?b.localeCompare(a):a.localeCompare(b)" not in legacy_text:
+    fail("historical archive year groups do not honor timeline order")
+if "function toggleTimelineOrder()" not in legacy_text:
+    fail("historical archive is missing its timeline order control")
+week_helper = re.search(r"function openPastWeekTimeline\(\)\{(?P<body>.*?)\n\}", legacy_text, re.DOTALL)
+if not week_helper:
+    fail("historical archive is missing the home-to-timeline helper")
+else:
+    helper_body = week_helper.group("body")
+    if "pastWeekOnly=true" not in helper_body or "switchView('timeline')" not in helper_body:
+        fail("home past-week controls do not activate the visible timeline")
+if "href=\"#e-'+permalinkSort" in legacy_text:
+    fail("home past-week links still use the invalid e-prefixed permalink")
+if "href=\"#'+permalinkSort+'_'+idx+'\"" not in legacy_text:
+    fail("home past-week links do not use timeline permalink IDs")
+week_button = re.search(
+    r"document\.getElementById\('weekBtnFull'\).*?addEventListener\('click',\(\)=>\{(?P<body>.*?)\n\}\);",
+    legacy_text,
+    re.DOTALL,
+)
+if not week_button or "openPastWeekTimeline()" not in week_button.group("body"):
+    fail("home full-week button does not switch to the timeline")
 if "ChatGPT 5.4 Extended Thinking" in legacy_text:
     fail("legacy archive still exposes deprecated current-maintenance AI credit")
 if "Written by Claude (Anthropic, Opus 4)" not in legacy_text:
