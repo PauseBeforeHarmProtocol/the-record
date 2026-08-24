@@ -1,8 +1,25 @@
-# The Record
+<p align="center">
+  <img src="assets/brand/the-record-hero.png" alt="An illuminated evidence archive connecting sourced records across a living accountability timeline" width="100%">
+</p>
 
-**A chronological, sourced accountability archive of Donald Trump’s political career.**
+<h1 align="center">The Record</h1>
 
-4,495 entries. 5,741 sources. Six eras. 34 companion documents. One premise: accountability matters.
+<p align="center"><strong>Every claim sourced. Every position documented. Every correction visible.</strong></p>
+
+<p align="center">
+  <a href="index.html">Open the current front door</a> ·
+  <a href="weekly/index.html">Weekly record</a> ·
+  <a href="national/index.html">National record</a> ·
+  <a href="in6/index.html">IN-6</a> ·
+  <a href="agencies/index.html">Agencies</a> ·
+  <a href="sources/index.html">Source ledger</a> ·
+  <a href="archive/index.html">Historical archive</a> ·
+  <a href="downloads/index.html">Downloads</a>
+</p>
+
+The Record pairs a dated, source-bound current layer with the complete chronological accountability archive. The August 24 front door contains 19 national and four IN-6 records, including 13 national records added in the August 17–24 backfill, a working seven-day view, and an Agencies power map. It preserves rather than replaces the thousands-entry historical record, complete PDF, source material, and companion documents.
+
+> **Integrity note:** Exact legacy totals are currently unreconciled across the README, repository description, and architecture notes. The current site discloses that conflict instead of presenting one disputed number as settled.
 
 ---
 
@@ -48,12 +65,12 @@ All 34 documents are compiled into a master PDF (THE-RECORD-COMPLETE.pdf, ~2,900
 
 ## AI Transparency
 
-The Record is built with two AI systems:
+Current maintenance uses two AI systems:
 
-- **Claude** (Anthropic) — Entry drafting, code generation, quality assurance
-- **ChatGPT 5.4 Extended Thinking** (OpenAI) — Independent auditing, analysis, companion AI
+- **ChatGPT 5.6 Sol Max** (OpenAI) — Independent auditing, analysis, code, and adversarial review
+- **Claude Fable 5 Max (Cowork)** — Research organization, drafting support, code, and quality review
 
-The editor (Phillip Linstrum) reviews, edits, and approves all AI-generated content. AI opinion essays are clearly separated from the factual timeline and explicitly labeled. The archive does not use AI to fabricate events, invent sources, or generate unverified claims.
+The editor (Phillip Linstrum) reviews, edits, and approves all AI-assisted content. The five April 2026 AI Opinion essays retain their original **Claude (Anthropic, Opus 4)** attribution; current model names are not silently substituted as authors. See [AI_PROVENANCE.md](AI_PROVENANCE.md). AI output is not a source, and the archive does not use it to fabricate events, invent sources, or publish unverified claims.
 
 ## The Record Companion AI
 
@@ -75,7 +92,10 @@ Applied to The Record, PBHP means:
 The Record is a self-contained single-file HTML application (~11.5 MB). No server required — open the file in any modern browser.
 
 **Architecture:**
-- `entries_array.js` — 4,466 structured entries in JSON format
+- `entries_array.js` — preserved canonical legacy entries (exact total pending deterministic reconciliation)
+- `data/current_entries.json` — 23 current-layer records: 19 national and four IN-6
+- `data/release.json` — the single release date, checked time, weekly window, and new-entry manifest used by every builder
+- `EDITORIAL_AUTOMATION.md` — the no-padding publication threshold, correction rule, and six-hour maintenance workflow
 - `tag_rules.js` — Automated topic classification rules
 - `ai_essays.json` — AI-generated opinion content
 - `politicians_all.json` / `pol_data_merged.json` — Politician profiles and cross-references
@@ -83,7 +103,11 @@ The Record is a self-contained single-file HTML application (~11.5 MB). No serve
 - DOCX generators (Node.js) — 10 scripts that produce the 34 companion documents
 - `gen_master_pdf.py` — Compiles all DOCX files into the master PDF
 
-**Navigation (9 tabs):** Home, Browse by Topic, Browse by Year, Full Timeline, Politicians, AI Opinion, Methodology, About, Search The Record
+**Current front-door navigation:** Home, Weekly, National, IN-6, Agencies, Method, Downloads, Full archive
+
+**Currentness:** researched through August 24, 2026 at 10:43 AM EDT. The release receipt records both published and withheld candidates.
+
+**Preserved archive navigation:** Home, Browse by Topic, Browse by Year, Full Timeline, Politicians, AI Opinion, Methodology, About, Search The Record
 
 ## Corrections & Contact
 
@@ -101,6 +125,6 @@ This project is self-funded and independent.
 
 ---
 
-*Built by Phillip Linstrum with Claude (Anthropic) & ChatGPT 5.4 Extended Thinking (OpenAI)*
+*Built by Phillip Linstrum with ChatGPT 5.6 Sol Max (OpenAI) & Claude Fable 5 Max (Cowork); legacy AI Opinion authorship remains attributed to Claude (Anthropic, Opus 4).*
 
 *The goal is accuracy and completeness, not advocacy — though the archive makes no pretense of neutrality about whether accountability matters. It does. That is the premise. Everything else is evidence.*

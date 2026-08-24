@@ -1,0 +1,48 @@
+{
+  "schema": "the-record-source-receipt-v1",
+  "release_version": "8.0.1-rc1",
+  "release_date": "2026-07-19",
+  "checked_at": "2026-07-19 08:15 AM EDT",
+  "current_layer": {
+    "national_entries": 6,
+    "in6_entries": 4,
+    "weekly_entries": 7,
+    "agencies_and_institutions": 26,
+    "source_ledger_records": 28
+  },
+  "validation": {
+    "html_routes": 13,
+    "generated_current_routes": 11,
+    "internal_links_and_downloads": "PASS",
+    "entry_schema_and_evidence_fields": "PASS",
+    "javascript_syntax": "PASS",
+    "dom_interaction_suite": "PASS",
+    "legacy_past_week_bridge": "PASS",
+    "credential_pattern_scan": "PASS",
+    "real_browser_visual_smoke": "NOT_RUN_BROWSER_RUNTIME_DOWNLOAD_RETURNED_TRUNCATED_ARCHIVE"
+  },
+  "ai_provenance": {
+    "current_models": [
+      "ChatGPT 5.6 Sol Max",
+      "Claude Fable 5 Max (Cowork)"
+    ],
+    "legacy_essay_authorship_preserved": "Claude (Anthropic, Opus 4)"
+  },
+  "preserve_paths": [
+    "the-record.html",
+    "entries_array.js",
+    "THE-RECORD-COMPLETE.pdf",
+    "docs/"
+  ],
+  "non_self_artifacts": {
+    "THE_RECORD_JULY_19_UPDATE_PACK_2026-07-19.zip": "7a4429b5e2316beb35e61dc9013571075a72158dd7030deb1eac0211753a67f9",
+    "THE_RECORD_NATIONAL_UPDATE_PACK_2026-07-19.zip": "2c7f11975e7decdb1da7cf0902f2ff3a762bd3cc4db2aad937094da49065dc9e",
+    "entries/NAT-2026-07-19-001.zip": "4a21edce5f64df59694d8c27d239858ad3c933d9c11dd5fab49e6c2ea6bf36b9"
+  },
+  "known_open_findings": [
+    "Legacy repository metadata exposes conflicting exact archive totals; count reconciliation remains open.",
+    "This current-release layer does not independently revalidate every historical entry.",
+    "The temporary Chromium runtime could not be downloaded because the browser host returned an empty or truncated archive; JavaScript behavior was instead executed in a DOM runtime."
+  ],
+  "publication_status": "REVIEW_CANDIDATE_NOT_PRODUCTION"
+}
