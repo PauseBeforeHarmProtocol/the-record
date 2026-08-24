@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline' https://fonts.googleapis.com; img-src data:; font-src https://fonts.gstatic.com; connect-src 'none';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src https://fonts.gstatic.com; connect-src 'none';">
+<link rel="icon" href="assets/brand/the-record-mark.svg" type="image/svg+xml">
 <title>THE RECORD — Trump Accountability Archive</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -31,6 +32,7 @@ textarea:focus-visible{outline:2px solid var(--blue);outline-offset:2px;}
 .mh{position:sticky;top:0;z-index:90;background:rgba(255,255,255,.97);border-bottom:3px solid var(--blue);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 2px 20px rgba(0,0,0,.08);}
 .mh-top{display:flex;align-items:center;padding:.7rem 1.4rem;gap:1rem;flex-wrap:wrap;}
 .logo{display:flex;flex-direction:column;}
+.record-mark{display:block;flex-shrink:0;width:46px;height:46px;filter:drop-shadow(0 3px 8px rgba(0,51,136,.18));}
 .logo h1{font-weight:800;font-size:1.8rem;letter-spacing:.04em;color:var(--blue3);line-height:1;}
 .logo .sub{font-family:'JetBrains Mono',monospace;font-size:.52rem;text-transform:uppercase;letter-spacing:.15em;color:var(--dim);margin-top:.1rem;}
 .logo .sub em{color:var(--green);font-style:normal;font-weight:600;}
@@ -39,6 +41,7 @@ textarea:focus-visible{outline:2px solid var(--blue);outline-offset:2px;}
 .si:focus{border-color:var(--blue);}
 .si::placeholder{color:var(--dim);}
 .mh-r{display:flex;align-items:center;gap:.5rem;margin-left:auto;}
+.archive-freshness{font-family:'JetBrains Mono',monospace;font-size:.52rem;text-transform:uppercase;letter-spacing:.06em;color:var(--green2);padding:.32rem .5rem;background:var(--greenL);border:1px solid var(--greenL2);border-radius:5px;white-space:nowrap;}
 .btn{font-family:'JetBrains Mono',monospace;font-size:.6rem;text-transform:uppercase;letter-spacing:.08em;padding:.4rem .8rem;border:2px solid var(--border);background:var(--bg);color:var(--txt2);cursor:pointer;border-radius:6px;transition:all .15s;white-space:nowrap;font-weight:500;}
 .btn:hover{border-color:var(--blue);color:var(--blue);}
 .btn.on{background:var(--blue);border-color:var(--blue);color:#fff;}
@@ -50,6 +53,8 @@ textarea:focus-visible{outline:2px solid var(--blue);outline-offset:2px;}
 .navtab{font-family:'JetBrains Mono',monospace;font-size:.6rem;text-transform:uppercase;letter-spacing:.08em;padding:.55rem 1rem;border-bottom:3px solid transparent;background:transparent;color:var(--dim);cursor:pointer;white-space:nowrap;transition:all .15s;font-weight:500;border-top:none;border-left:none;border-right:none;}
 .navtab:hover{color:var(--blue);background:var(--blueL);}
 .navtab.on{color:var(--blue);border-bottom-color:var(--blue);font-weight:700;}
+.siteback{font-family:'JetBrains Mono',monospace;font-size:.6rem;text-transform:uppercase;letter-spacing:.08em;padding:.55rem 1rem;color:var(--blue3);text-decoration:none;white-space:nowrap;font-weight:700;border-right:1px solid var(--border);}
+.siteback:hover{color:var(--blue);background:var(--blueL);}
 
 /* FOLDER VIEW */
 .folderview{display:none;padding:2rem;max-width:1100px;margin:0 auto;}
@@ -223,11 +228,13 @@ input[type=date]:focus{border-color:var(--blue);}
 @media(max-width:768px){
   .mh-top{padding:.5rem .9rem;flex-wrap:wrap;}
   .logo h1{font-size:1.5rem;}
+  .archive-freshness{display:none;}
   .mh-search{max-width:100%;flex:1;order:3;width:100%;margin-top:.3rem;}
   .mh-r{margin-left:0;order:2;}
   .si{font-size:.8rem;padding:.4rem .7rem;}
   .navstrip{padding:0 .5rem;gap:.1rem;overflow-x:auto;}
   .navtab{padding:.5rem .75rem;font-size:.55rem;}
+  .siteback{padding:.5rem .75rem;font-size:.55rem;}
   .layout{grid-template-columns:1fr;}
   .sb{position:static;max-height:none;border-right:none;border-bottom:1px solid var(--border);padding:1rem .6rem;}
   .main{padding:1rem .8rem 4rem;}
@@ -262,6 +269,7 @@ input[type=date]:focus{border-color:var(--blue);}
   .ctr{font-size:.55rem;}
   .navstrip{overflow-x:auto;-webkit-overflow-scrolling:touch;}
   .navtab{padding:.45rem .6rem;font-size:.5rem;}
+  .siteback{padding:.45rem .6rem;font-size:.5rem;}
   .main{padding:.8rem .6rem 3rem;}
   .layout{grid-template-columns:1fr;}
   .sb{padding:.8rem .5rem;margin-bottom:1rem;}
@@ -420,7 +428,7 @@ const PBHP_LOGO_LG='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAA
 <header class="mh">
   <div class="mh-top">
     <div class="logo" style="flex-direction:row;align-items:center;gap:.6rem;">
-      <img id="hdrLogo" width="40" height="40" style="flex-shrink:0;border-radius:50%;" alt="PBHP">
+      <img id="hdrLogo" class="record-mark" src="assets/brand/the-record-mark.svg" width="46" height="46" alt="">
       <div>
         <h1>THE RECORD</h1>
         <div class="sub">Trump Accountability Archive · <a href="https://github.com/PauseBeforeHarmProtocol/pbhp" target="_blank" rel="noopener" style="color:#4a86c8;text-decoration:none;font-weight:600;"><em>Pause Before Harm Protocol</em></a></div>
@@ -431,6 +439,7 @@ const PBHP_LOGO_LG='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAA
       <input class="si" id="SI" type="text" placeholder="Search any date, topic, name, event...">
     </form>
     <div class="mh-r">
+      <span class="archive-freshness">Live through <span id="archiveUpdated">current release</span></span>
       <button class="btn on" id="bAll">All</button>
       <button class="btn" id="bHigh">Major Only</button>
       <button class="btn" id="bGP">Goalposts</button>
@@ -441,6 +450,7 @@ const PBHP_LOGO_LG='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAA
 
 <!-- PRIMARY NAVIGATION -->
 <nav class="navstrip" id="navstrip" role="navigation" aria-label="Primary navigation">
+  <a class="siteback" href="index.html">← Latest highlights</a>
   <button class="navtab on" data-view="home">Home</button>
   <button class="navtab" data-view="topics">Browse by Topic</button>
   <button class="navtab" data-view="years">Browse by Year</button>
@@ -488,19 +498,18 @@ const PBHP_LOGO_LG='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAA
 <!-- FOLDER VIEWS -->
 <div class="folderview show" id="homeView">
   <div class="fv-header">
-    <!-- PBHP Shield -->
+    <!-- The Record mark -->
     <div style="text-align:center;margin-bottom:16px;">
-      <img id="heroLogo" width="120" height="120" style="border-radius:50%;" alt="PBHP">
+      <img id="heroLogo" src="assets/brand/the-record-mark.svg" width="120" height="120" alt="The Record shield with a pause symbol">
     </div>
-    <h2>Welcome to The Record</h2>
-    <p style="max-width:720px;margin:0 auto 12px;font-size:14px;line-height:1.6;color:#555;text-align:left;">This is a chronological, factual archive of Donald Trump's political career — from his father Fred's KKK arrest in 1927 through the present day. Every entry uses a three-layer format: <strong>THE FACTS</strong> (what happened, sourced from major reporting), <strong>SIGNIFICANCE</strong> (why it matters in context), and <strong>GOALPOST</strong> (the argument his supporters use to explain it away). The record does not editorialize in the fact layer. It does not hide its analysis. It labels everything. You can verify any entry against the sourcing standards published in the companion methodology document. This project exists because the full story — told in sequence, without gaps — looks different than any single news cycle. Browse by topic, by politician, by year, or search for anything.</p>
+    <h2>The complete Trump Accountability Archive</h2>
+    <p style="max-width:760px;margin:0 auto 12px;font-size:14px;line-height:1.6;color:#555;text-align:left;">This is the research body of The Record—not a duplicate of the landing page. It contains the historical material and current additions that do not fit in a concise front-page digest: a chronological archive of Donald Trump's political career, research paths by topic, person, and year, source links, statistics, methodology, and the complete timeline. Every entry separates <strong>THE FACTS</strong>, <strong>SIGNIFICANCE</strong>, and <strong>GOALPOST / RESPONSE</strong>. Search any date, name, agency, topic, or event above, or use the folders below to move through the archive.</p>
     <p style="font-size:13px;color:#888;margin-bottom:8px;">Maintained by Phillip Linstrum · QA Professional · Built with ChatGPT 5.6 Sol Max (OpenAI) &amp; Claude Fable 5 Max (Cowork) · <a href="https://github.com/PauseBeforeHarmProtocol/pbhp" style="color:#4a86c8;">Pause Before Harm Protocol</a> · <a href="https://facebook.com/plinst" style="color:#4a86c8;">Facebook</a></p>
-    <p><span id="homeCount"></span> documented entries · Coverage from <span id="homeMinYear"></span> to last updated: 7/19/2026 @ 8:15 AM EDT · <span id="homeEras"></span> eras · <span id="homeTopics"></span> topics</p>
+    <p><span id="homeCount"></span> documented entries · Coverage from <span id="homeMinYear"></span> to <span id="homeUpdated">the current release</span> · <span id="homeEras"></span> eras · <span id="homeTopics"></span> topics</p>
+    <p style="margin-top:8px;font-size:12px;"><a href="index.html" style="color:var(--blue);font-weight:700;">Read the latest curated highlights →</a></p>
     <a href="https://www.gofundme.com/f/building-the-record-accountability-ai" target="_blank" rel="noopener" style="display:inline-block;margin-top:10px;padding:8px 24px;background:var(--green);color:#fff;text-decoration:none;border-radius:6px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;">Support This Project</a>
   </div>
-  <div class="fv-grid" id="homeGrid"></div>
-
-  <!-- WHAT'S HAPPENED THIS WEEK CARD (bottom of home) -->
+  <!-- CURRENT DIGEST -->
   <div id="weekCard" style="background:linear-gradient(135deg,#fff8e1,#fffaf0);border:2px solid #f9a825;border-radius:12px;padding:1.2rem 1.4rem;margin:2rem 1rem 1rem;box-shadow:0 4px 16px rgba(249,168,37,.12);">
     <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.6rem;">
       <h3 style="margin:0;font-size:1rem;color:#0d1b2a;font-family:'JetBrains Mono',monospace;letter-spacing:.04em;">&#128221; What&rsquo;s Happened This Week</h3>
@@ -509,6 +518,7 @@ const PBHP_LOGO_LG='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAA
     <p id="weekIntro" style="font-size:.78rem;color:#555;margin:0 0 .8rem;font-family:system-ui,sans-serif;">Loading...</p>
     <div id="weekList" style="display:flex;flex-direction:column;gap:.45rem;"></div>
   </div>
+  <div class="fv-grid" id="homeGrid"></div>
 </div>
 
 <div class="folderview" id="topicView">
@@ -221540,16 +221550,19 @@ const PBHP_LOGO_LG='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAA
 }
 </script>
 
+<!-- CURRENT_LAYER_BRIDGE_ASSET -->
+<script src="current_layer_bridge.js"></script>
 <script>
 // Step 1: Parse entries (3.4 MB) via JSON.parse — much faster than JS literal on iOS Safari
 const escapeHTML=(s)=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 const escapeAttr=(s)=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
-const SHIELD_ICON='<img src="'+PBHP_LOGO_SM+'" width="36" height="36" style="vertical-align:middle;border-radius:50%;">';
+const CURRENT_LAYER_META=window.CURRENT_LAYER_META||{};
+const SHIELD_ICON='<img src="assets/brand/the-record-mark.svg" width="36" height="36" style="vertical-align:middle;" alt="">';
 
 const E=JSON.parse(document.getElementById('dataEntries').textContent);
 /* CURRENT_LAYER_BRIDGE_START */
-// Generated from data/current_entries.json so the legacy Past Week control reaches the current national layer.
-const CURRENT_LAYER_BRIDGE=[{"era":"term2","sort":"2026-07-13","date":"July 13, 2026","text":"Trump reduces Bears Ears and Grand Staircase–Escalante by more than 90%. President Trump signed proclamations reducing Bears Ears National Monument from roughly 1.36 million acres to 121,100 acres and Grand Staircase–Escalante from roughly 1.87 million acres to 181,500 acres. The White House says surrounding lands will become available for multiple-use management, including grazing, timber harvest, infrastructure, resource development, and motorized recreation. Bears Ears contains cultural and archaeological sites sacred to multiple Tribal nations. Environmental advocates announced plans to challenge the reductions in court.","sig":"The action again places presidential Antiquities Act authority, Tribal consultation, conservation, and extractive land use in direct conflict. Because earlier reductions were later reversed, the durability of the boundaries is likely to depend on litigation and future administrations.","goal":"The administration calls the reductions “rightsizing” and argues the Antiquities Act requires the smallest area compatible with protecting specific objects. Opponents describe the same action as opening protected landscapes and culturally significant lands to development. The acreage change is not disputed; the legal and stewardship judgment is.","hi":0,"gp":1,"etype":"event","dprec":"day","src":[{"t":"Reuters — reductions to two Utah national monuments","url":"https://www.reuters.com/world/us/trump-slashes-size-two-utah-national-monuments-2026-07-13/"},{"t":"White House fact sheet — Utah national monuments","url":"https://www.whitehouse.gov/fact-sheets/2026/07/fact-sheet-president-donald-j-trump-modifies-two-national-monuments-restoring-sensible-land-management/"},{"t":"Presidential proclamation — Bears Ears","url":"https://www.whitehouse.gov/presidential-actions/2026/07/modifying-the-bears-ears-national-monument/"},{"t":"Presidential proclamation — Grand Staircase–Escalante","url":"https://www.whitehouse.gov/presidential-actions/2026/07/modifying-the-grand-staircase-escalante-national-monument/"}],"current_id":"NAT-2026-07-18-003"},{"era":"term2","sort":"2026-07-13","date":"July 10–13, 2026","text":"Administration tells Congress that Iran hostilities resumed July 7. President Trump sent Congress a letter dated July 10 stating that hostilities against Iran resumed on July 7. The administration views the renewed action as opening a new 60-day period for military operations without specific congressional authorization. The War Powers Resolution requires notice within 48 hours and generally requires unauthorized hostilities to end within 60 days. Members of both parties have disputed the administration’s interpretation, and Congress previously passed a resolution directing withdrawal from the conflict.","sig":"The notice is not merely procedural. It asserts that an executive branch can terminate and restart the statutory clock around ceasefires and renewed operations, potentially allowing an extended conflict without a new authorization for use of military force.","goal":"The administration says renewed strikes respond to Iranian attacks on commercial shipping and are consistent with the president’s responsibility to protect U.S. security and foreign-policy interests. Critics argue that a ceasefire cannot be used to erase months of hostilities or reset Congress’s statutory deadline. The constitutional dispute remains live.","hi":0,"gp":1,"etype":"event","dprec":"day","src":[{"t":"Reuters — formal notice that Iran hostilities resumed","url":"https://www.reuters.com/world/us/trump-sends-congress-formal-notice-that-iran-conflict-has-resumed-2026-07-13/"}],"current_id":"NAT-2026-07-18-004"},{"era":"term2","sort":"2026-07-14","date":"July 14, 2026","text":"White House launches Gold Eagle AI–cybersecurity coordination initiative. The White House announced Gold Eagle, a coordination clearinghouse for cybersecurity vulnerabilities identified with advanced AI systems. The administration says the effort includes federal agencies, open-source software partners, AI developers, and critical-infrastructure companies, and is intended to reduce duplicated scanning and prioritize remediation. The White House says the initiative was established under a June 2 executive order and has begun receiving and prioritizing vulnerabilities. The public release does not identify all participating companies or publish operating metrics, governance rules, or disclosure timelines.","sig":"AI-assisted vulnerability discovery can improve defensive speed, but a government–industry clearinghouse also raises questions about authority, disclosure control, vendor access, protection of sensitive findings, and how conflicts between national-security secrecy and public software safety will be resolved.","goal":"The administration describes Gold Eagle as a force multiplier that will patch vulnerabilities faster than adversaries can exploit them. That is an operational claim, not yet an outcome. The relevant future evidence will be time-to-remediation, coverage, false positives, disclosure discipline, and independently reviewable incident results.","hi":0,"gp":1,"etype":"event","dprec":"day","src":[{"t":"Reuters — AI and cybersecurity coordination group","url":"https://www.reuters.com/technology/us-launch-ai-cybersecurity-coordination-group-white-house-says-2026-07-14/"},{"t":"White House release — Gold Eagle initiative","url":"https://www.whitehouse.gov/releases/2026/07/white-house-launches-gold-eagle-initiative-for-unprecedented-cybersecurity-vulnerability-coordination/"}],"current_id":"NAT-2026-07-18-005"},{"era":"term2","sort":"2026-07-17","date":"July 17–18, 2026","text":"Interior ends automatic protections for newly listed threatened species. The Interior Department canceled the rule that automatically extended Endangered Species Act protections to plants and animals listed as threatened. Newly threatened species will instead require individualized protection plans, creating an interim period in which protections may not yet be in place. A second finalized change requires economic impacts to be considered when officials decide whether habitat is critical to a species’ survival. The change follows the July 10 rescission of the regulatory definition of “harm,” while direct injury or killing of listed wildlife remains prohibited.","sig":"The changes replace a default-protection model with case-by-case agency action and give economic considerations a more explicit role. The practical effect will depend on how quickly plans are written, what exemptions are granted, and how courts interpret the revised rules.","goal":"Interior argues that prior rules created regulatory overreach, imposed unnecessary costs, and reduced incentives for landowner cooperation. Conservation groups argue that delay and industry exemptions can expose already-imperiled species to the very habitat loss driving their decline. Both claims require outcome tracking, not slogans.","hi":0,"gp":1,"etype":"event","dprec":"day","src":[{"t":"Associated Press — automatic threatened-species protections canceled","url":"https://apnews.com/article/endangered-species-trump-extinction-0659d56d66285ca502b4e776c1782799"},{"t":"Interior Department — final ESA regulation reforms","url":"https://www.doi.gov/node/67431"},{"t":"Interior Department — rescission of ESA “harm” definition","url":"https://www.doi.gov/pressreleases/department-interior-restores-clear-esa-enforcement-rescinding-misguided-harm"}],"current_id":"NAT-2026-07-18-002"},{"era":"term2","sort":"2026-07-17","date":"July 16–17, 2026","text":"Trump releases election-security files and orders investigations. President Trump delivered a prime-time address on July 16 and the White House published collections of declassified and other government records concerning election-system vulnerabilities, Chinese acquisition of voter data, a Michigan registration investigation, and noncitizens on voter rolls. The White House says Chinese actors obtained data associated with roughly 220 million voter records and that intelligence officials suppressed important reporting. Its July 17 response also says the president was identifying ongoing vulnerabilities rather than claiming that a past election outcome was changed. Reuters reported that the released material did not establish altered votes and contrasted the president’s claims with the March 2021 Intelligence Community assessment, which found no indication that a foreign actor attempted to alter a technical aspect of the 2020 voting process. The White House directed the intelligence and law-enforcement agencies to investigate its suppression allegations and urged Congress to pass the SAVE America Act.","sig":"This combines presidential declassification authority, election-security policy, criminal-investigation demands, and midterm legislation in one public action. The accountability test is whether the released files support each claim made about them, whether investigations follow ordinary evidentiary rules, and whether federal action respects the primary role of state and local election administrators.","goal":"The administration says the disclosure is about serious vulnerabilities, foreign acquisition of voter data, and alleged suppression—not proof that vote totals were changed. That distinction should be preserved. It also means future claims must be measured against the documents actually released, the prior Intelligence Community assessment, and any independently reviewable investigative findings.","hi":0,"gp":1,"etype":"event","dprec":"day","src":[{"t":"Reuters — Trump election-security address and declassified files","url":"https://www.reuters.com/legal/government/with-midterms-deck-trump-deliver-primetime-speech-election-security-2026-07-16/"},{"t":"White House — election-integrity document collection","url":"https://www.whitehouse.gov/election-integrity/"},{"t":"White House — response on election-interference files","url":"https://www.whitehouse.gov/releases/2026/07/setting-the-record-straight-president-trump-declassifies-intel-on-foreign-election-interference-deep-state-coverup/"},{"t":"ODNI — foreign threats to the 2020 U.S. federal elections","url":"https://www.dni.gov/index.php/newsroom/reports-publications/reports-publications-2021/3521-intelligence-community-assessment-on-foreign-threats-to-the-2020-u-s-federal-elections"}],"current_id":"NAT-2026-07-19-001"},{"era":"term2","sort":"2026-07-18","date":"July 18, 2026","text":"Justice Department discloses subpoenas to 14 major law firms. The Justice Department disclosed subpoenas seeking detailed records and depositions from 14 major law firms that were targeted by White House executive orders or reached agreements intended to avoid those directives. The requests include communications related to the executive orders, Boris Epshteyn, and the American Bar Association. The subpoenas surfaced in the ABA’s lawsuit alleging that the administration’s policy unlawfully punished firms over prior legal work, diversity policies, and political ties. Four firms previously obtained permanent court orders blocking executive orders directed at them; appeals remain pending.","sig":"This is a test of whether federal investigative and discovery power is being used neutrally in litigation or as another pressure point against institutions that represent disfavored clients or positions. The answer affects access to counsel, law-firm independence, and the government’s ability to impose political costs through contracting and security-clearance authorities.","goal":"The Justice Department says the subpoenas seek information the ABA itself requested and argues that the association should obtain responsive material from its own members rather than directly from the White House. That is the government’s stated litigation rationale; it does not resolve the ABA’s retaliation claim.","hi":0,"gp":1,"etype":"event","dprec":"day","src":[{"t":"Reuters — DOJ subpoenas to 14 law firms","url":"https://www.reuters.com/legal/government/trump-administration-discloses-subpoenas-law-firms-fight-with-us-lawyer-group-2026-07-18/"},{"t":"Financial Times — Big Law braces for second fight","url":"https://www.ft.com/content/44a3698f-6481-4e83-a50d-7db109768ea1"}],"current_id":"NAT-2026-07-18-001"}];
+// The small generated asset is the live layer; the 14 MB historical application stays stable.
+const CURRENT_LAYER_BRIDGE=Array.isArray(window.CURRENT_LAYER_BRIDGE)?window.CURRENT_LAYER_BRIDGE:[];
 E.push(...CURRENT_LAYER_BRIDGE);
 /* CURRENT_LAYER_BRIDGE_END */
 (function(){var b=document.getElementById('loadBar'),p=document.getElementById('loadPct'),m=document.getElementById('loadMsg');if(b){b.style.width='35%';p.textContent='35%';m.textContent='Entries loaded ('+E.length.toLocaleString()+')...';}})();
@@ -222264,6 +222277,8 @@ function showAiEssay(key){
 function renderHome(){
   /* populate home stats on first load */
   const hc=document.getElementById('homeCount');if(hc)hc.textContent=E.length.toLocaleString();
+  const hu=document.getElementById('homeUpdated');if(hu)hu.textContent=CURRENT_LAYER_META.checked_at||'the current release';
+  const au=document.getElementById('archiveUpdated');if(au)au.textContent=CURRENT_LAYER_META.checked_at||'the current release';
   const he=document.getElementById('homeEras');if(he)he.textContent=ERAS.length;
   const ht=document.getElementById('homeTopics');if(ht)ht.textContent=TOPIC_FOLDERS.length;
   const minY=parseInt(E[0].sort.slice(0,4));const maxY=parseInt(E[E.length-1].sort.slice(0,4));
@@ -222692,7 +222707,7 @@ function toggleTimeline(){
 (function(){var b=document.getElementById('loadBar'),p=document.getElementById('loadPct'),m=document.getElementById('loadMsg');if(b){b.style.width='90%';p.textContent='90%';m.textContent='Building interface...';}})();
 
 document.addEventListener('DOMContentLoaded',()=>{
-  document.getElementById('hdrLogo').src=PBHP_LOGO_SM;document.getElementById('heroLogo').src=PBHP_LOGO_LG;
+  document.getElementById('hdrLogo').src='assets/brand/the-record-mark.svg';document.getElementById('heroLogo').src='assets/brand/the-record-mark.svg';
 
   renderHome();
   document.querySelectorAll('.navtab').forEach(btn=>{

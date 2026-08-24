@@ -28,4 +28,4 @@
 
 ## Verification
 
-Current front-door pages, individual evidence packs, aggregate packs, source ledgers, and checksums are generated deterministically. The large legacy single-file archive is preserved unchanged. Publication requires the repository validator and GitHub Actions to pass.
+Current front-door pages, the archive's lightweight live bridge, individual evidence packs, aggregate packs, source ledgers, and checksums are generated deterministically. The 14 MB historical application stays stable while current national entries are supplied by current_layer_bridge.js. Publication requires the repository validator and GitHub Actions to pass.
