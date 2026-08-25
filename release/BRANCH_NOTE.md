@@ -9,6 +9,6 @@ Merge without deleting the preserved legacy archive:
 - `THE-RECORD-COMPLETE.pdf`
 - `docs/`
 
-The root `index.html` is now a navigable August 24 live-release front door. `weekly/` exposes the August 18–24 window, `agencies/` is a top-level route, and `institutions/` remains as a compatibility path. Release dates, counts, packages, and checks now resolve from canonical data rather than July-specific constants.
+The root `index.html` is a navigable live-release front door. `weekly/` exposes the window declared in `data/release.json`, `agencies/` is a top-level route, and `institutions/` remains as a compatibility path. Release dates, counts, versioned aggregate packages, and checks resolve from canonical data rather than date-specific prose in this note.
 
 The five legacy Claude Opus 4 AI Opinion documents retain their supplied authorship and bytes. Current maintenance credits are documented separately in `AI_PROVENANCE.md`.

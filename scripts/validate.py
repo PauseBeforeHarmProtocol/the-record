@@ -3,7 +3,9 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import os
 import re
+import subprocess
 import sys
 import zipfile
 from collections import Counter
@@ -35,15 +37,32 @@ CURRENT_ROUTES = [
 ]
 CURRENT_AI = ("ChatGPT 5.6 Sol Max", "Claude Fable 5 Max (Cowork)")
 DEPRECATED_AI = ("ChatGPT 5.6 Pro", "ChatGPT 5.4 Extended Thinking")
+CURRENT_PUBLISHABLE_REVIEW_STATES = {"current-standard-reviewed", "corrected"}
+ALLOWED_MAINTENANCE_KINDS = {"current_maybe_therefore_backfill"}
+BASE_EDITORIAL_CARRY_EXCEPTIONS = {
+    "version",
+    "previous_version",
+    "previous_checked_at",
+    "maintenance_revision",
+}
+AGGREGATE_ARTIFACT_SPECS = (
+    ("THE_RECORD_CURRENT_UPDATE_PACK", (".zip", ".zip.sha256")),
+    ("THE_RECORD_IN6_CURRENT_BRIEF", (".md",)),
+    ("THE_RECORD_NATIONAL_UPDATE_BRIEF", (".md",)),
+    ("THE_RECORD_NATIONAL_UPDATE_PACK", (".zip", ".zip.sha256")),
+    ("THE_RECORD_RUN_RECEIPT", (".md",)),
+)
 RELEASE = json.loads((ROOT / "data/release.json").read_text(encoding="utf-8"))
 RELEASE_ISO = RELEASE["release_iso"]
 RELEASE_HUMAN = RELEASE["release_human"]
 WEEK_START = RELEASE["week_start"]
 WEEK_END = RELEASE["week_end"]
 NEW_ENTRY_IDS = set(RELEASE["new_entry_ids"])
-NATIONAL_PACK_NAME = f"THE_RECORD_NATIONAL_UPDATE_PACK_{RELEASE_ISO}.zip"
-COMPLETE_PACK_NAME = f"THE_RECORD_CURRENT_UPDATE_PACK_{RELEASE_ISO}.zip"
-RUN_RECEIPT_NAME = f"THE_RECORD_RUN_RECEIPT_{RELEASE_ISO}.md"
+RELEASE_ARTIFACT_STEM = f'{RELEASE_ISO}_v{RELEASE["version"]}'
+NATIONAL_PACK_NAME = f"THE_RECORD_NATIONAL_UPDATE_PACK_{RELEASE_ARTIFACT_STEM}.zip"
+COMPLETE_PACK_NAME = f"THE_RECORD_CURRENT_UPDATE_PACK_{RELEASE_ARTIFACT_STEM}.zip"
+RUN_RECEIPT_NAME = f"THE_RECORD_RUN_RECEIPT_{RELEASE_ARTIFACT_STEM}.md"
+IN6_CURRENT_BRIEF_NAME = f"THE_RECORD_IN6_CURRENT_BRIEF_{RELEASE_ARTIFACT_STEM}.md"
 
 
 def fail(message: str) -> None:
@@ -56,6 +75,145 @@ def sha256(path: Path) -> str:
 
 def normalized_text(value: object) -> str:
     return re.sub(r"\W+", " ", str(value or "").casefold()).strip()
+
+
+def current_maybe_therefore_parts(value: object) -> tuple[str, str] | None:
+    if not isinstance(value, str):
+        return None
+    match = re.fullmatch(
+        r"Maybe\b(?P<maybe>.*?)\bTherefore\b(?P<therefore>.*)",
+        value.strip(),
+        flags=re.DOTALL,
+    )
+    if match is None:
+        return None
+    maybe = normalized_text(match.group("maybe"))
+    therefore = normalized_text(match.group("therefore"))
+    if (
+        len(maybe.split()) < 3
+        or len(therefore.split()) < 3
+        or maybe == therefore
+    ):
+        return None
+    return match.group("maybe"), match.group("therefore")
+
+
+def git_file_bytes(ref: str, relative_path: str) -> bytes:
+    return subprocess.run(
+        ["git", "show", f"{ref}:{relative_path}"],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+    ).stdout
+
+
+def git_json(ref: str, relative_path: str) -> object:
+    return json.loads(git_file_bytes(ref, relative_path))
+
+
+def aggregate_inventory(
+    repository_paths: set[str], release: dict
+) -> set[str]:
+    release_iso = str(release.get("release_iso") or "")
+    version = str(release.get("version") or "")
+
+    def matching(stem: str) -> set[str]:
+        return {
+            f"artifacts/{prefix}_{stem}{suffix}"
+            for prefix, suffixes in AGGREGATE_ARTIFACT_SPECS
+            for suffix in suffixes
+            if f"artifacts/{prefix}_{stem}{suffix}" in repository_paths
+        }
+
+    versioned = matching(f"{release_iso}_v{version}")
+    return versioned or matching(release_iso)
+
+
+def is_persisted_maintenance_identity(
+    base_release: object, current_release: object
+) -> bool:
+    return bool(
+        isinstance(base_release, dict)
+        and isinstance(current_release, dict)
+        and isinstance(base_release.get("maintenance_revision"), dict)
+        and base_release.get("version") == current_release.get("version")
+    )
+
+
+def compare_artifacts_to_base(
+    base_ref: str, relative_paths: set[str]
+) -> None:
+    for relative_path in sorted(relative_paths):
+        path = Path(relative_path)
+        target = ROOT / path
+        if path.is_absolute() or ".." in path.parts or not target.is_file():
+            continue
+        try:
+            base_artifact = git_file_bytes(base_ref, path.as_posix())
+        except subprocess.CalledProcessError as exc:
+            fail(
+                f"cannot load preserved aggregate {relative_path!r} from "
+                f"base {base_ref!r}: {exc}"
+            )
+            continue
+        if target.read_bytes() != base_artifact:
+            fail(
+                "maintenance changed a declared preserved aggregate artifact: "
+                f"{relative_path}"
+            )
+
+
+if current_maybe_therefore_parts(
+    "Maybe a competing explanation remains plausible. Therefore the record keeps a measurable test open."
+) is None or any(
+    current_maybe_therefore_parts(value) is not None
+    for value in (
+        None,
+        {},
+        "",
+        "Maybe Therefore the competing clause is empty.",
+        "Therefore the order is reversed. Maybe uncertainty remains.",
+        "Maybe uncertainty remains without a consequence clause.",
+        "Maybe same short clause. Therefore same short clause.",
+        "Maybe one. Therefore two.",
+    )
+):
+    fail("current Maybe / Therefore validator self-test failed")
+
+_aggregate_self_test_release = {"release_iso": "2026-08-25", "version": "8.3.1"}
+_aggregate_self_test_legacy = {
+    "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-08-25.zip",
+    "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-08-25.zip.sha256",
+}
+_aggregate_self_test_versioned = {
+    "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-08-25_v8.3.1.zip",
+    "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-08-25_v8.3.1.zip.sha256",
+}
+if (
+    aggregate_inventory(_aggregate_self_test_legacy, _aggregate_self_test_release)
+    != _aggregate_self_test_legacy
+    or aggregate_inventory(
+        _aggregate_self_test_legacy | _aggregate_self_test_versioned,
+        _aggregate_self_test_release,
+    )
+    != _aggregate_self_test_versioned
+):
+    fail("release aggregate-inventory validator self-test failed")
+if (
+    not is_persisted_maintenance_identity(
+        {"version": "8.3.1", "maintenance_revision": {"remediation_kind": "test"}},
+        {"version": "8.3.1", "maintenance_revision": {"remediation_kind": "test"}},
+    )
+    or is_persisted_maintenance_identity(
+        {"version": "8.3.1", "maintenance_revision": {"remediation_kind": "test"}},
+        {"version": "8.3.2", "maintenance_revision": {"remediation_kind": "test"}},
+    )
+    or is_persisted_maintenance_identity(
+        {"version": "8.3.1"},
+        {"version": "8.3.1", "maintenance_revision": {"remediation_kind": "test"}},
+    )
+):
+    fail("persisted maintenance-identity validator self-test failed")
 
 
 def normalized_heading(value: object) -> str:
@@ -191,6 +349,334 @@ if len(ids) != len(entries):
     fail("duplicate entry IDs")
 if not NEW_ENTRY_IDS <= ids:
     fail(f"release metadata names missing entries: {sorted(NEW_ENTRY_IDS - ids)}")
+
+release_id_lists: dict[str, list[str]] = {}
+for field in ("new_entry_ids", "added_entry_ids", "refreshed_entry_ids"):
+    values = RELEASE.get(field, [])
+    if not isinstance(values, list) or any(
+        not isinstance(entry_id, str) or not entry_id.strip() for entry_id in values
+    ):
+        fail(f"release {field} must be a list of nonempty strings")
+        release_id_lists[field] = []
+    else:
+        release_id_lists[field] = values
+        if len(set(values)) != len(values):
+            fail(f"release {field} contains duplicates")
+added_ids = set(release_id_lists["added_entry_ids"])
+refreshed_ids = set(release_id_lists["refreshed_entry_ids"])
+if added_ids & refreshed_ids:
+    fail(f"release added/refreshed IDs overlap: {sorted(added_ids & refreshed_ids)}")
+if NEW_ENTRY_IDS != added_ids | refreshed_ids:
+    fail("release new_entry_ids must equal the union of added and refreshed IDs")
+
+base_ref = os.environ.get("CURRENT_REMEDIATION_BASE_REF", "").strip()
+base_release: dict | None = None
+base_entries: list[dict] | None = None
+base_repository_paths: set[str] = set()
+if base_ref and not re.fullmatch(r"0+", base_ref):
+    try:
+        loaded_base_release = git_json(base_ref, "data/release.json")
+        loaded_base_entries = git_json(base_ref, "data/current_entries.json")
+        tree_result = subprocess.run(
+            ["git", "ls-tree", "-r", "--name-only", base_ref, "--", "artifacts"],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        base_repository_paths = set(tree_result.stdout.splitlines())
+    except (subprocess.CalledProcessError, json.JSONDecodeError) as exc:
+        fail(f"cannot load current-remediation base {base_ref!r}: {exc}")
+    else:
+        if not isinstance(loaded_base_release, dict):
+            fail(f"current-remediation base {base_ref!r} has invalid release metadata")
+        else:
+            base_release = loaded_base_release
+        if not isinstance(loaded_base_entries, list) or any(
+            not isinstance(entry, dict) or not entry.get("id")
+            for entry in loaded_base_entries
+        ):
+            fail(f"current-remediation base {base_ref!r} has invalid canonical entries")
+        else:
+            base_entries = loaded_base_entries
+
+maintenance = RELEASE.get("maintenance_revision")
+base_maintenance = (
+    base_release.get("maintenance_revision")
+    if isinstance(base_release, dict)
+    else None
+)
+persisted_maintenance_identity = is_persisted_maintenance_identity(
+    base_release, RELEASE
+)
+
+if base_release is not None and base_entries is not None:
+    same_release_identity = base_release.get("version") == RELEASE.get("version")
+    if same_release_identity:
+        if RELEASE != base_release:
+            fail("release metadata changed without a new release identity")
+        if entries != base_entries:
+            fail("current entries changed without a new release identity")
+    else:
+        if RELEASE.get("previous_version") != base_release.get("version"):
+            fail("previous_version must equal the base release version")
+        if RELEASE.get("previous_checked_at") != base_release.get("checked_at"):
+            fail("previous_checked_at must equal the base checked_at")
+
+        # A regular editorial release must account exactly for every canonical
+        # current-entry change. If it cannot, the release needs an enumerated
+        # maintenance transition and its narrower field-level contract.
+        if maintenance is None:
+            base_by_id = {str(entry["id"]): entry for entry in base_entries}
+            current_by_id = {str(entry["id"]): entry for entry in entries}
+            if len(base_by_id) != len(base_entries):
+                fail(f"current-release base {base_ref!r} has duplicate entry IDs")
+            else:
+                actual_added_ids = set(current_by_id) - set(base_by_id)
+                actual_removed_ids = set(base_by_id) - set(current_by_id)
+                actual_refreshed_ids = {
+                    entry_id
+                    for entry_id in set(base_by_id) & set(current_by_id)
+                    if base_by_id[entry_id] != current_by_id[entry_id]
+                }
+                if actual_removed_ids:
+                    fail(
+                        "regular current release removes canonical entry IDs without "
+                        f"a maintenance contract: {sorted(actual_removed_ids)}"
+                    )
+                if actual_added_ids != added_ids:
+                    fail(
+                        "release added_entry_ids differ from the base-ref current-entry "
+                        f"diff: metadata={sorted(added_ids)}, "
+                        f"diff={sorted(actual_added_ids)}"
+                    )
+                if actual_refreshed_ids != refreshed_ids:
+                    fail(
+                        "release refreshed_entry_ids differ from the base-ref "
+                        "current-entry diff; unaccounted field changes require an "
+                        "enumerated maintenance contract: "
+                        f"metadata={sorted(refreshed_ids)}, "
+                        f"diff={sorted(actual_refreshed_ids)}"
+                    )
+
+# A maintenance identity remains in release.json after publication. For later
+# docs-only, feed-only, or other unrelated changes, pin that release and its
+# current canonical layer exactly instead of replaying its one-time diff.
+if persisted_maintenance_identity:
+    pinned_paths = base_maintenance.get("preserved_aggregate_artifacts", [])
+    if isinstance(pinned_paths, list) and all(
+        isinstance(path, str) and path.strip() for path in pinned_paths
+    ):
+        published_inventory = aggregate_inventory(base_repository_paths, base_release)
+        compare_artifacts_to_base(
+            base_ref, set(pinned_paths) | published_inventory
+        )
+
+remediated_ids: set[str] = set()
+review_status_materialized_ids: set[str] = set()
+preserved_aggregate_artifacts: list[str] = []
+remediation_kind: str | None = None
+if maintenance is not None and not isinstance(maintenance, dict):
+    fail("release maintenance_revision must be an object")
+elif isinstance(maintenance, dict):
+    raw_kind = maintenance.get("remediation_kind")
+    if not isinstance(raw_kind, str) or not raw_kind.strip():
+        fail("maintenance remediation_kind must be a nonempty string")
+    elif raw_kind not in ALLOWED_MAINTENANCE_KINDS:
+        fail(f"unsupported maintenance remediation_kind {raw_kind!r}")
+    else:
+        remediation_kind = raw_kind
+
+    if maintenance.get("recorded_at") != RELEASE_ISO:
+        fail("maintenance recorded_at must equal release_iso")
+    if maintenance.get("base_editorial_version") != RELEASE.get("previous_version"):
+        fail("maintenance base_editorial_version must equal previous_version")
+    if not str(maintenance.get("publication_acceptance_authority") or "").strip():
+        fail("maintenance publication_acceptance_authority must be recorded")
+    if not str(maintenance.get("artifact_identity_rule") or "").strip():
+        fail("maintenance artifact_identity_rule must be recorded")
+
+    raw_preserved_artifacts = maintenance.get("preserved_aggregate_artifacts", [])
+    if not isinstance(raw_preserved_artifacts, list) or any(
+        not isinstance(path, str) or not path.strip()
+        for path in raw_preserved_artifacts
+    ):
+        fail(
+            "maintenance preserved_aggregate_artifacts must be a list of "
+            "nonempty relative paths"
+        )
+    else:
+        preserved_aggregate_artifacts = raw_preserved_artifacts
+        if len(set(preserved_aggregate_artifacts)) != len(
+            preserved_aggregate_artifacts
+        ):
+            fail("maintenance preserved_aggregate_artifacts contains duplicates")
+        for relative_path in preserved_aggregate_artifacts:
+            path = Path(relative_path)
+            if (
+                path.is_absolute()
+                or ".." in path.parts
+                or not path.parts
+                or path.parts[0] != "artifacts"
+            ):
+                fail(
+                    "maintenance preserved aggregate path must stay under artifacts/: "
+                    f"{relative_path!r}"
+                )
+            elif not (ROOT / path).is_file():
+                fail(f"missing preserved aggregate artifact {relative_path}")
+        if not preserved_aggregate_artifacts:
+            fail("maintenance requires preserved aggregate artifact paths")
+
+    raw_remediated_ids = maintenance.get("remediated_entry_ids", [])
+    if not isinstance(raw_remediated_ids, list) or any(
+        not isinstance(entry_id, str) or not entry_id.strip()
+        for entry_id in raw_remediated_ids
+    ):
+        fail("maintenance remediated_entry_ids must be a list of nonempty strings")
+    else:
+        remediated_ids = set(raw_remediated_ids)
+        if len(remediated_ids) != len(raw_remediated_ids):
+            fail("maintenance remediated_entry_ids contains duplicates")
+        if not remediated_ids <= ids:
+            fail(
+                "maintenance metadata names missing current entries: "
+                f"{sorted(remediated_ids - ids)}"
+            )
+        editorial_change_ids = NEW_ENTRY_IDS | added_ids | refreshed_ids
+        if remediated_ids & editorial_change_ids:
+            fail(
+                "maintenance remediation IDs must remain separate from editorial change IDs: "
+                f"{sorted(remediated_ids & editorial_change_ids)}"
+            )
+        if not remediated_ids:
+            fail("current Maybe / Therefore backfill requires remediated_entry_ids")
+
+    raw_materialized_ids = maintenance.get("review_status_materialized_entry_ids", [])
+    if not isinstance(raw_materialized_ids, list) or any(
+        not isinstance(entry_id, str) or not entry_id.strip()
+        for entry_id in raw_materialized_ids
+    ):
+        fail(
+            "maintenance review_status_materialized_entry_ids must be a list "
+            "of nonempty strings"
+        )
+    else:
+        review_status_materialized_ids = set(raw_materialized_ids)
+        if len(review_status_materialized_ids) != len(raw_materialized_ids):
+            fail("maintenance review_status_materialized_entry_ids contains duplicates")
+        if not review_status_materialized_ids <= ids:
+            fail(
+                "maintenance review-status metadata names missing current entries: "
+                f"{sorted(review_status_materialized_ids - ids)}"
+            )
+        if review_status_materialized_ids != ids:
+            fail(
+                "current Maybe / Therefore backfill must materialize review status "
+                "for every current entry"
+            )
+
+    is_new_transition = bool(
+        remediation_kind in ALLOWED_MAINTENANCE_KINDS
+        and base_release is not None
+        and base_entries is not None
+        and not persisted_maintenance_identity
+    )
+    if is_new_transition:
+        base_version = base_release.get("version")
+        if RELEASE.get("version") == base_version:
+            fail("maintenance transition must increment the release version")
+        if RELEASE.get("previous_version") != base_version:
+            fail("maintenance previous_version must equal the base release version")
+        if RELEASE.get("previous_checked_at") != base_release.get("checked_at"):
+            fail("maintenance previous_checked_at must equal the base checked_at")
+        if maintenance.get("base_editorial_version") != base_version:
+            fail("maintenance base_editorial_version must equal the base release version")
+
+        carried_keys = (
+            set(base_release) | set(RELEASE)
+        ) - BASE_EDITORIAL_CARRY_EXCEPTIONS
+        changed_carried_fields = sorted(
+            key
+            for key in carried_keys
+            if base_release.get(key) != RELEASE.get(key)
+        )
+        if changed_carried_fields:
+            fail(
+                "maintenance changed base editorial release fields: "
+                f"{changed_carried_fields}"
+            )
+
+        expected_preserved = aggregate_inventory(base_repository_paths, base_release)
+        if not expected_preserved:
+            fail("base release has no discoverable aggregate artifact inventory")
+        if set(preserved_aggregate_artifacts) != expected_preserved:
+            fail(
+                "maintenance preserved_aggregate_artifacts differs from the complete "
+                "base-release aggregate inventory: "
+                f"metadata={sorted(preserved_aggregate_artifacts)}, "
+                f"base={sorted(expected_preserved)}"
+            )
+        compare_artifacts_to_base(base_ref, expected_preserved)
+
+        base_by_id = {str(entry["id"]): entry for entry in base_entries}
+        current_by_id = {str(entry["id"]): entry for entry in entries}
+        if len(base_by_id) != len(base_entries):
+            fail(f"current-remediation base {base_ref!r} has duplicate entry IDs")
+        elif set(base_by_id) != set(current_by_id):
+            fail(
+                "current-remediation release changes the canonical current-entry "
+                "inventory"
+            )
+        else:
+            maybe_changed_ids = {
+                entry_id
+                for entry_id in current_by_id
+                if base_by_id[entry_id].get("maybe_therefore")
+                != current_by_id[entry_id].get("maybe_therefore")
+            }
+            if maybe_changed_ids != remediated_ids:
+                fail(
+                    "maintenance remediated_entry_ids differ from the base-ref "
+                    "Maybe / Therefore diff: "
+                    f"metadata={sorted(remediated_ids)}, "
+                    f"diff={sorted(maybe_changed_ids)}"
+                )
+
+            review_status_changed_ids = {
+                entry_id
+                for entry_id in current_by_id
+                if base_by_id[entry_id].get("review_status")
+                != current_by_id[entry_id].get("review_status")
+            }
+            if review_status_changed_ids != review_status_materialized_ids:
+                fail(
+                    "maintenance review_status_materialized_entry_ids differ "
+                    "from the base-ref review-status diff: "
+                    f"metadata={sorted(review_status_materialized_ids)}, "
+                    f"diff={sorted(review_status_changed_ids)}"
+                )
+
+            forbidden_changes: list[str] = []
+            for entry_id in sorted(current_by_id):
+                base_core = {
+                    key: value
+                    for key, value in base_by_id[entry_id].items()
+                    if key not in {"maybe_therefore", "review_status"}
+                }
+                current_core = {
+                    key: value
+                    for key, value in current_by_id[entry_id].items()
+                    if key not in {"maybe_therefore", "review_status"}
+                }
+                if base_core != current_core:
+                    forbidden_changes.append(entry_id)
+            if forbidden_changes:
+                fail(
+                    "current Maybe / Therefore maintenance changed canonical "
+                    "fields outside maybe_therefore and review_status: "
+                    f"{forbidden_changes}"
+                )
 expected_entry_packs = {entry["pack_path"] for entry in entries}
 if len(expected_entry_packs) != len(entries):
     fail("duplicate per-entry pack paths")
@@ -392,6 +878,16 @@ for entry in entries:
     for key in ("facts", "significance", "goalpost", "sources", "institutions"):
         if not entry.get(key):
             fail(f'{entry["id"]}: empty {key}')
+    if entry.get("review_status") not in CURRENT_PUBLISHABLE_REVIEW_STATES:
+        fail(
+            f'{entry["id"]}: review_status must explicitly be '
+            "current-standard-reviewed or corrected"
+        )
+    if current_maybe_therefore_parts(entry.get("maybe_therefore")) is None:
+        fail(
+            f'{entry["id"]}: maybe_therefore requires substantive, distinct '
+            "Maybe and Therefore clauses"
+        )
     for source_id in entry["sources"]:
         if source_id not in ledger:
             fail(f'{entry["id"]}: unknown source {source_id}')
@@ -602,6 +1098,20 @@ if layer_metrics.get("maybe_therefore_present") != maybe_count:
     fail("archive Maybe / Therefore present count is stale")
 if layer_metrics.get("maybe_therefore_missing") != len(active_legacy) - maybe_count:
     fail("archive Maybe / Therefore backlog count is stale")
+current_review_states = Counter(
+    str(entry.get("review_status") or "missing") for entry in entries
+)
+current_metrics = archive_metrics.get("current", {})
+if current_metrics.get("review_states") != dict(sorted(current_review_states.items())):
+    fail("archive current-layer review-state totals are stale")
+current_reviewed = sum(
+    entry.get("review_status") in CURRENT_PUBLISHABLE_REVIEW_STATES
+    for entry in entries
+)
+if current_metrics.get("current_standard_reviewed") != current_reviewed:
+    fail("archive current-standard-reviewed count is stale")
+if current_metrics.get("current_standard_pending") != len(entries) - current_reviewed:
+    fail("archive current-standard review backlog is stale")
 if archive_metrics.get("federated", {}).get("records") != len(federated_records):
     fail("archive federated-record count is stale")
 
@@ -783,7 +1293,12 @@ for checksum_file in sorted((SITE / "artifacts").rglob("*.sha256")):
         fail(f"checksum mismatch {checksum_file.relative_to(SITE)}")
 
 sums_path = SITE / "artifacts/SHA256SUMS.txt"
-for required_artifact in (NATIONAL_PACK_NAME, COMPLETE_PACK_NAME, RUN_RECEIPT_NAME):
+for required_artifact in (
+    NATIONAL_PACK_NAME,
+    COMPLETE_PACK_NAME,
+    RUN_RECEIPT_NAME,
+    IN6_CURRENT_BRIEF_NAME,
+):
     if not (SITE / "artifacts" / required_artifact).is_file():
         fail(f"missing current release artifact {required_artifact}")
 for line in sums_path.read_text(encoding="utf-8").splitlines():

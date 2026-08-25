@@ -101,6 +101,18 @@ def load_json(path: Path) -> Any:
         raise ValueError(f"invalid JSON in {path}: {exc}") from exc
 
 
+def current_entry_is_publishable(item: Any) -> bool:
+    return bool(
+        isinstance(item, dict)
+        and item.get("id")
+        and item.get("review_status") in {"current-standard-reviewed", "corrected"}
+        and item.get("maybe_therefore")
+        and item.get("facts")
+        and item.get("significance")
+        and item.get("goalpost")
+    )
+
+
 def normalize_component(value: str) -> str:
     value = unicodedata.normalize("NFKC", value).casefold()
     value = re.sub(r"[^\w]+", " ", value, flags=re.UNICODE)
@@ -1324,6 +1336,19 @@ def refresh_self_test_fingerprints(record: dict[str, Any]) -> None:
 def run_self_test(allowed_archives: set[str], canonical_entry_ids: set[str]) -> bool:
     failures: list[str] = []
 
+    current_fixture = {
+        "id": "NAT-SELF-TEST",
+        "maybe_therefore": "Maybe a competing explanation remains. Therefore retain an explicit test.",
+        "facts": ["Synthetic fact."],
+        "significance": "Synthetic significance.",
+        "goalpost": "Synthetic goalpost.",
+    }
+    if current_entry_is_publishable(current_fixture):
+        failures.append("current entry became publishable without explicit review status")
+    current_fixture["review_status"] = "current-standard-reviewed"
+    if not current_entry_is_publishable(current_fixture):
+        failures.append("explicitly reviewed current entry was not publishable")
+
     lead = make_self_test_record("FED-SELF-LEAD")
     report = validate_collection([lead], allowed_archives)
     if report.errors:
@@ -1705,7 +1730,7 @@ def run_self_test(allowed_archives: set[str], canonical_entry_ids: set[str]) -> 
             print(f"SELF-TEST FAIL: {failure}", file=sys.stderr)
         return False
     print(
-        "SELF-TEST PASS: interpretation, AI-draft/human-publication, independently derived "
+        "SELF-TEST PASS: current review status, interpretation, AI-draft/human-publication, independently derived "
         "EO/SCOTUS identifiers, origin, canonical-ID, reciprocal/directed crosslinks, family, "
         "chronology, and lifecycle-cycle gates enforced"
     )
@@ -1768,12 +1793,7 @@ def main() -> int:
     publishable_canonical_ids = {
         str(item.get("id"))
         for item in current_entries
-        if isinstance(item, dict)
-        and item.get("id")
-        and item.get("maybe_therefore")
-        and item.get("facts")
-        and item.get("significance")
-        and item.get("goalpost")
+        if current_entry_is_publishable(item)
     }
     publishable_canonical_ids.update(
         str(item.get("legacy_id"))

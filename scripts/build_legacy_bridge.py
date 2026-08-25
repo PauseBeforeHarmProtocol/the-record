@@ -49,11 +49,7 @@ def bridge_entries(entries: list[dict], ledger: dict) -> list[dict]:
                 for source_id in entry["sources"]
             ],
             "current_id": entry["id"],
-            "review_status": (
-                "current-standard-reviewed"
-                if entry.get("maybe_therefore")
-                else "current-source-reviewed"
-            ),
+            "review_status": entry["review_status"],
             "evidence": entry["evidence"],
             "checked_at": entry["checked_at"],
             "institutions": entry["institutions"],
@@ -66,12 +62,36 @@ def bridge_asset_text() -> str:
     entries, ledger, release = canonical_data()
     bridge = bridge_entries(entries, ledger)
     metrics = json.loads((ROOT / "data/archive_metrics.json").read_text(encoding="utf-8"))
+    maintenance = release.get("maintenance_revision")
+    maintenance_active = isinstance(maintenance, dict)
     meta = {
+        "version": release["version"],
         "release": release["release_human"],
         "checked_at": release["checked_at"],
         "week_label": release["week_label"],
         "national_entry_count": len(bridge),
-        "added_this_release": len(release["new_entry_ids"]),
+        "added_this_release": (
+            0 if maintenance_active else len(release.get("added_entry_ids", []))
+        ),
+        "refreshed_this_release": (
+            0 if maintenance_active else len(release.get("refreshed_entry_ids", []))
+        ),
+        "base_editorial_version": (
+            maintenance.get("base_editorial_version") if maintenance_active else None
+        ),
+        "base_editorial_change_count": (
+            len(release["new_entry_ids"]) if maintenance_active else 0
+        ),
+        "maintenance_remediated_entry_count": (
+            len(maintenance.get("remediated_entry_ids", []))
+            if maintenance_active
+            else 0
+        ),
+        "review_status_materialized_entry_count": (
+            len(maintenance.get("review_status_materialized_entry_ids", []))
+            if maintenance_active
+            else 0
+        ),
         "canonical_legacy_entries": metrics["totals"]["canonical_legacy_entries"],
         "canonical_legacy_rows": metrics["totals"]["canonical_legacy_rows"],
         "superseded_legacy_tombstones": metrics["totals"]["superseded_legacy_tombstones"],

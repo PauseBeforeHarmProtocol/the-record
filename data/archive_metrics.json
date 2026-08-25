@@ -5,7 +5,7 @@
   "external_registry_checked_at": "2026-08-25T15:58:03Z",
   "federation_last_modified_at": "2026-08-25T14:40:23Z",
   "legacy_revisions_through": "2026-08-25",
-  "release_version": "8.3.0",
+  "release_version": "8.3.1",
   "canonical_files": {
     "legacy": "data/legacy_entries.json",
     "current": "data/current_entries.json",
@@ -16,7 +16,7 @@
   },
   "canonical_sha256": {
     "legacy": "d44f8b3e7e2ca08cc040ed82996ea9950171a306cd930dabfaaeb394cd7fe6e0",
-    "current": "69456a69c1531e59a538da101036666d636b336401f42df58bff1583dcf1586f",
+    "current": "562b86b353265ee707239bdc924114508db8861cb52bdc99bce97ef3aae94177",
     "source_ledger": "17aae9ff16078964939b65fc9bada787a63f82545c0d9bc61bf6ed4441f4b156",
     "federated": "4c2b2804949098a9b0a314b3f0ed44e74fc8ccb688ab84741922dd30fa1083f3",
     "legacy_revisions": "6bf453bac68d75eee8d503cdb0a1ff8eed08ea522d20b00e53dcd7c3a5a32a62",
@@ -389,8 +389,13 @@
     "entries_with_one_source_percent": 48.1,
     "national_entries_with_one_source": 11,
     "national_entries_with_one_source_percent": 47.8,
-    "maybe_therefore_present": 2,
-    "maybe_therefore_missing": 25,
+    "maybe_therefore_present": 27,
+    "maybe_therefore_missing": 0,
+    "review_states": {
+      "current-standard-reviewed": 27
+    },
+    "current_standard_reviewed": 27,
+    "current_standard_pending": 0,
     "most_used_publishers": [
       {
         "publisher": "Reuters",

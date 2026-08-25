@@ -46,6 +46,8 @@ jobs:
       - name: Check current pages
         run: python scripts/build_current_pages.py --check
       - name: Validate repository
+        env:
+          CURRENT_REMEDIATION_BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before }}
         run: python scripts/validate.py
       - name: Check site JavaScript
         run: node --check assets/site.js
