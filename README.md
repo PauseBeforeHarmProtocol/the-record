@@ -18,7 +18,7 @@
   <a href="downloads/index.html">Downloads</a>
 </p>
 
-The Record pairs a concise, source-bound editorial front page with the complete chronological accountability archive. The August 24 front door contains 19 national and four IN-6 records, including 13 national records added in the August 17–24 backfill, a working seven-day view, and an Agencies power map. The full archive remains the project’s primary research body and receives the same qualifying current national additions through a small generated live bridge.
+The Record pairs a concise, source-bound editorial front page with the complete chronological accountability archive. The August 24 front door contains 19 national and four IN-6 records, including 13 national records added in the August 17–24 backfill, a working seven-day view, and an Agencies power map. The full archive remains the project’s primary research body, receives the same qualifying current national additions through a small generated live bridge, and includes a separate searchable Truth Social feed that does not treat raw posts as verified archive findings.
 
 > **Integrity note:** Exact legacy totals are currently unreconciled across the README, repository description, and architecture notes. The current site discloses that conflict instead of presenting one disputed number as settled.
 
@@ -96,6 +96,9 @@ The historical application remains a portable HTML archive (~14 MB). On the publ
 - `entries_array.js` — preserved canonical legacy entries (exact total pending deterministic reconciliation)
 - `data/current_entries.json` — 23 current-layer records: 19 national and four IN-6
 - `current_layer_bridge.js` — generated national entries and release metadata consumed by the full archive
+- `data/truth_social_seed.json` — recent verified fallback for the live Truth Social feed
+- `assets/truth-feed.js` — safe live-feed loader, search, year filters, and fallback behavior
+- `scripts/update_truth_social_feed.py` — validates the public mirror and refreshes the local fallback
 - `data/release.json` — the single release date, checked time, weekly window, and new-entry manifest used by every builder
 - `EDITORIAL_AUTOMATION.md` — the no-padding publication threshold, correction rule, and six-hour maintenance workflow
 - `tag_rules.js` — Automated topic classification rules
@@ -105,7 +108,7 @@ The historical application remains a portable HTML archive (~14 MB). On the publ
 - DOCX generators (Node.js) — 10 scripts that produce the 34 companion documents
 - `gen_master_pdf.py` — Compiles all DOCX files into the master PDF
 
-**Current front-door navigation:** Home, The Archive, Latest, Weekly, IN-6, Agencies, Method, Downloads
+**Current front-door navigation:** Home, The Archive, Truth Social, Latest, Weekly, IN-6, Agencies, Method, Downloads
 
 **Currentness:** researched through August 24, 2026 at 10:43 AM EDT. The release receipt records both published and withheld candidates.
 
