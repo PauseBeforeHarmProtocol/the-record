@@ -10,14 +10,44 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install beautifulsoup4
-      - run: python scripts/sync_source_ledger.py --check
-      - run: python scripts/build_current_pages.py --check
-      - run: python scripts/build_legacy_bridge.py --check
-      - run: python scripts/package_current_release.py --check
-      - run: python scripts/validate.py
-      - run: node --check assets/site.js
-      - run: node --check assets/truth-feed.js
+          cache: pip
+      - name: Install pinned Python dependencies
+        run: python -m pip install --requirement requirements.txt
+      - name: Check source-ledger synchronization
+        run: python scripts/sync_source_ledger.py --check
+      - name: Check append-only legacy remediation ledger
+        env:
+          LEGACY_REVISIONS_BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          args=(--check)
+          if [[ -n "${LEGACY_REVISIONS_BASE_REF:-}" && ! "$LEGACY_REVISIONS_BASE_REF" =~ ^0+$ ]]; then
+            args+=(--base-ref "$LEGACY_REVISIONS_BASE_REF")
+          fi
+          python scripts/apply_legacy_remediations.py "${args[@]}"
+      - name: Check canonical legacy synchronization and duplicate IDs
+        run: python scripts/sync_legacy_data.py --check
+      - name: Check archive metrics and surface legacy duplicate candidates
+        run: |
+          python scripts/build_archive_metrics.py --check
+          python -c "import json; d=json.load(open('data/archive_metrics.json', encoding='utf-8')); print('Legacy duplicate candidates (review queue; not an automatic failure):', json.dumps(d['legacy']['duplicate_candidates'], sort_keys=True))"
+      - name: Check generated README totals
+        run: python scripts/sync_readme_metrics.py --check
+      - name: Validate federated records and block reviewed or published duplicates
+        run: python scripts/validate_federated_records.py --self-test
+      - name: Check legacy bridge
+        run: python scripts/build_legacy_bridge.py --check
+      - name: Check deterministic packaging
+        run: python scripts/package_current_release.py --check
+      - name: Check current pages
+        run: python scripts/build_current_pages.py --check
+      - name: Validate repository
+        run: python scripts/validate.py
+      - name: Check site JavaScript
+        run: node --check assets/site.js
+      - name: Check Truth Social JavaScript
+        run: node --check assets/truth-feed.js

@@ -39,6 +39,7 @@ def bridge_entries(entries: list[dict], ledger: dict) -> list[dict]:
             "text": f'{entry["title"]}. ' + " ".join(entry["facts"]),
             "sig": entry["significance"],
             "goal": entry["goalpost"],
+            **({"mt": entry["maybe_therefore"]} if entry.get("maybe_therefore") else {}),
             "hi": 0,
             "gp": 1,
             "etype": "event",
@@ -48,6 +49,15 @@ def bridge_entries(entries: list[dict], ledger: dict) -> list[dict]:
                 for source_id in entry["sources"]
             ],
             "current_id": entry["id"],
+            "review_status": (
+                "current-standard-reviewed"
+                if entry.get("maybe_therefore")
+                else "current-source-reviewed"
+            ),
+            "evidence": entry["evidence"],
+            "checked_at": entry["checked_at"],
+            "institutions": entry["institutions"],
+            "pack_path": entry["pack_path"],
         })
     return bridge
 
@@ -55,12 +65,22 @@ def bridge_entries(entries: list[dict], ledger: dict) -> list[dict]:
 def bridge_asset_text() -> str:
     entries, ledger, release = canonical_data()
     bridge = bridge_entries(entries, ledger)
+    metrics = json.loads((ROOT / "data/archive_metrics.json").read_text(encoding="utf-8"))
     meta = {
         "release": release["release_human"],
         "checked_at": release["checked_at"],
         "week_label": release["week_label"],
         "national_entry_count": len(bridge),
         "added_this_release": len(release["new_entry_ids"]),
+        "canonical_legacy_entries": metrics["totals"]["canonical_legacy_entries"],
+        "canonical_legacy_rows": metrics["totals"]["canonical_legacy_rows"],
+        "superseded_legacy_tombstones": metrics["totals"]["superseded_legacy_tombstones"],
+        "runtime_entry_count": metrics["totals"]["full_archive_runtime_entries"],
+        "runtime_source_references": metrics["totals"]["full_archive_runtime_source_references"],
+        "runtime_unique_urls": metrics["totals"]["full_archive_runtime_unique_urls"],
+        "legacy_review_states": metrics["legacy"]["review_states"],
+        "legacy_maybe_therefore": metrics["legacy"]["interpretive_layers"],
+        "known_coverage_gap": metrics["coverage"],
     }
     meta_payload = json.dumps(meta, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     bridge_payload = json.dumps(bridge, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
