@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "status": "active_registry",
-  "checked_at": "2026-08-25T14:21:06Z",
+  "checked_at": "2026-08-25T15:58:03Z",
   "registry_purpose": "Describe independent Trump-related archives as a federated research network without pretending that unlike record units are interchangeable or additive.",
   "invariants": [
     "An upstream archive is a discovery and corroboration source, not an automatic authority for The Record.",
@@ -189,7 +189,7 @@
         "content_import_permission_state": "license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-08-25T13:15:51Z",
+        "checked_at": "2026-08-25T15:58:03Z",
         "state": "success",
         "verification_pages": [
           "https://trump-archive.com/archive",
@@ -354,8 +354,8 @@
         "content_import_permission_state": "bulk_permission_or_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-08-25T13:15:51Z",
-        "state": "success",
+        "checked_at": "2026-08-25T15:58:03Z",
+        "state": "success_with_upstream_about_count_warning",
         "verification_pages": [
           "https://www.undotrump.com/",
           "https://www.undotrump.com/about.php",
@@ -418,7 +418,7 @@
           "unit": "immigration_policy_action",
           "scope": "all policies shown on the policies browse page",
           "comparability_group": "domain_policy_action",
-          "observed_at": "2026-08-25T14:21:06Z",
+          "observed_at": "2026-08-25T15:58:03Z",
           "source_url": "https://immpolicytracking.org/policies/",
           "upstream_display_date": null
         }
@@ -426,7 +426,7 @@
       "trump_1_current_status_breakdown": [
         {
           "status": "fully_in_effect",
-          "value": 660,
+          "value": 652,
           "unit": "immigration_policy",
           "source_url": "https://immpolicytracking.org/"
         },
@@ -438,7 +438,7 @@
         },
         {
           "status": "not_in_effect",
-          "value": 294,
+          "value": 291,
           "unit": "immigration_policy",
           "source_url": "https://immpolicytracking.org/"
         }
@@ -446,7 +446,7 @@
       "trump_1_subsequent_action_metrics": [
         {
           "as_reported_label": "Acted on by the Biden Administration",
-          "value": 381,
+          "value": 383,
           "unit": "immigration_policy",
           "source_url": "https://immpolicytracking.org/"
         },
@@ -463,7 +463,7 @@
           "source_url": "https://immpolicytracking.org/"
         }
       ],
-      "breakdown_note": "The three current-status values sum to 1,010, not 1,779. The upstream page does not state that the status denominator is identical to the action count, so the registry keeps them as a separately scoped measurement instead of treating the difference as missing data.",
+      "breakdown_note": "The three current-status values sum to 999, not 1,779. The upstream page does not state that the status denominator is identical to the action count, so the registry keeps them as a separately scoped measurement instead of treating the difference as missing data.",
       "provenance": {
         "source_model": "Each entry is described as containing underlying source documents, predecessor policies, relevant litigation, and later actions.",
         "editorial_model": "Professor Lucas Guttentag, Stanford and Yale law students, and immigration-law experts maintain the project.",
@@ -513,7 +513,7 @@
         "content_import_permission_state": "permission_or_documented_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-08-25T14:21:06Z",
+        "checked_at": "2026-08-25T15:58:03Z",
         "state": "success_with_upstream_scope_and_date_warnings",
         "verification_pages": [
           "https://immpolicytracking.org/",
@@ -681,7 +681,7 @@
         "content_import_permission_state": "metadata_and_citation_allowed_full_content_license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-08-25T13:15:51Z",
+        "checked_at": "2026-08-25T15:58:03Z",
         "state": "success_with_entry_total_unavailable",
         "verification_pages": [
           "https://record47.org/"
