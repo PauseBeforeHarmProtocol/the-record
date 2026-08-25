@@ -1,9 +1,92 @@
 # The Record — National Update Brief
 
 **Release:** August 25, 2026
-**Checked:** 2026-08-25 11:58 AM EDT
+**Checked:** 2026-08-25 6:00 PM EDT
 
 Each item preserves The Record's labeled distinction between facts, significance, the strongest observed response or goalpost, and any separately reviewed Maybe / Therefore layer.
+
+## August 25, 2026 — Appeals court largely preserves block on ideological conditions for transportation and homelessness grants
+
+The Ninth Circuit held that HUD and Transportation lacked authority for most new conditions attached after billions of dollars in grants had been awarded.
+
+**THE FACTS**
+
+- A 2–1 panel of the U.S. Court of Appeals for the Ninth Circuit largely upheld an injunction preventing the Departments of Housing and Urban Development and Transportation from conditioning federal grants to 31 local governments and agencies on alignment with administration positions.
+- The challenged conditions concerned federal anti-discrimination law, 'gender ideology,' elective abortion, illegal immigration, and verification of some beneficiaries' immigration status. The majority said most conditions exceeded authority granted by Congress and were imposed after the funds had been awarded.
+- The court remanded for the district judge to narrow the injunction as to compliance with federal anti-discrimination law. Judge Patrick Bumatay dissented, arguing that the agencies acted lawfully and that courts were intruding on executive discretion over federal spending.
+
+**SIGNIFICANCE**
+
+The ruling keeps billions of dollars in transportation infrastructure and homelessness-program funding insulated from most of the administration's new conditions while litigation continues. It also limits the use of executive orders and agency grant terms to redirect congressionally authorized spending after awards.
+
+**GOALPOST / RESPONSE**
+
+The administration's position is that agencies may use grant conditions to ensure federal funds do not support unlawful discrimination, abortion, unauthorized immigration, or policies it characterizes as gender ideology. The majority distinguished lawful program administration from conditions that exceeded statutory authority; the dissent favored broader executive discretion. Further review and the narrowed remand order remain evidence tests.
+
+**MAYBE / THEREFORE**
+
+Maybe the government will obtain rehearing or Supreme Court review, and a narrower anti-discrimination condition may survive on remand. Therefore the record says the appellate court largely preserved the existing block, not that every condition was permanently invalidated.
+
+**Sources**
+
+- [County of King v. Turner — Ninth Circuit opinion on federal grant conditions](https://fingfx.thomsonreuters.com/gfx/legaldocs/mopazgdxlva/08252026grants.pdf) — primary published appellate opinion
+- [Reuters — Ninth Circuit largely preserves block on transportation and homelessness grant conditions](https://www.reuters.com/legal/government/trump-cannot-impose-conditions-transportation-homelessness-grants-us-appeals-2026-08-25/) — independent reporting on the appellate ruling, dissent, and remand
+
+## August 25, 2026 — Justice Department sues Ohio court over restrictions on federal courthouse arrests
+
+The filed complaint challenges a Franklin County rule that generally requires a judicial warrant for civil arrests at or near the courthouse.
+
+**THE FACTS**
+
+- The Justice Department filed a federal lawsuit against the Franklin County Municipal Court, its presiding judge, and its security director over Local Rule 2.10.
+- The rule generally bars civil arrests of people attending court proceedings or conducting lawful court business in the courthouse and its curtilage, except arrests under a judicial warrant. DOJ's complaint says federal immigration law permits some arrests under administrative warrants or without a warrant and asks the court to declare the local rule invalid and enjoin enforcement.
+- The complaint was filed on August 25 in the Southern District of Ohio. It is an allegation and request for relief; no court ruling on the rule's validity had issued at the checked time.
+
+**SIGNIFICANCE**
+
+The case is part of the administration's broader effort to invalidate state and local limits on immigration enforcement. Its outcome could affect courthouse access, federal arrest practices, local judicial administration, and the boundary between federal supremacy and a court's authority to protect proceedings.
+
+**GOALPOST / RESPONSE**
+
+DOJ argues that courthouse arrests can reduce flight and safety risks and that Rule 2.10 conflicts with federal arrest authority. The municipal court's rule states that courts must safeguard unimpeded judicial functions and disclaims any construction that violates federal law. The evidence test is the defendants' response and the court's treatment of preemption, intergovernmental immunity, safety, and access-to-justice claims.
+
+**MAYBE / THEREFORE**
+
+Maybe the rule will be construed narrowly enough to coexist with federal law, or a court will find that judicial-warrant limits impermissibly regulate federal officers. Therefore the record treats this as filed litigation, not as proof that the Ohio rule is unlawful or that DOJ has prevailed.
+
+**Sources**
+
+- [Justice Department — lawsuit challenging Franklin County courthouse-arrest rule](https://www.justice.gov/opa/pr/justice-department-files-lawsuit-stop-ohio-courts-unlawful-obstruction-federal-law) — official administration announcement and explanation
+- [United States v. Franklin County Municipal Court — filed complaint](https://www.justice.gov/d9/2026-08/fcmc_complaint-filed.pdf) — primary federal court filing
+- [Fox News — DOJ files challenge to Ohio courthouse-arrest restriction](https://www.foxnews.com/politics/doj-sues-stop-ohio-court-blocking-courthouse-arrests) — independent reporting confirming the filed action and disputed rule
+
+## August 25, 2026 — Appeals court blocks FCC extension of candidate advertising discounts to party committees
+
+A divided Fourth Circuit held that political parties and joint fundraising committees with non-candidate members are not entitled to candidate-only broadcast rates.
+
+**THE FACTS**
+
+- A 2–1 panel of the U.S. Court of Appeals for the Fourth Circuit blocked FCC guidance that would have extended the lowest-unit broadcast advertising rate to political party committees and joint fundraising committees with non-candidate members.
+- The majority said federal campaign-finance statutes clearly reserve the discount for legally qualified candidates and rejected the FCC's characterization of the guidance as merely restating existing policy.
+- The FCC and Republican campaign committees argued that the court lacked jurisdiction because the agency had not completed its process. Judge J. Harvie Wilkinson III dissented on that ground. FCC Chair Brendan Carr did not immediately comment.
+
+**SIGNIFICANCE**
+
+The ruling prevents party and joint fundraising committees from using candidate-only broadcast discounts as the September 4 lowest-rate period approaches. It separates the Supreme Court's earlier removal of coordinated-spending limits from the distinct statutory question of who qualifies for broadcast discounts.
+
+**GOALPOST / RESPONSE**
+
+The FCC and Republican committees argued that judicial review was premature and that the agency should complete the role Congress assigned it. Challengers argued that the Communications Act limits the discount to candidates. The operative tests are any rehearing or Supreme Court review, subsequent FCC action, and broadcasters' rate treatment during the election window.
+
+**MAYBE / THEREFORE**
+
+Maybe a later court will accept the jurisdictional dissent or the FCC will issue narrower guidance after completing its process. Therefore the record states the present legal effect—the August 25 appellate ruling blocks the announced extension—without treating the dispute as finally exhausted.
+
+**Sources**
+
+- [Reuters — Fourth Circuit blocks FCC political-advertising discount extension](https://www.reuters.com/world/fcc-expands-discounted-tv-advertising-rates-party-committees-2026-08-25/) — independent reporting on the divided appellate ruling
+- [Bloomberg Law — Democrats win challenge to FCC discounted ad-rate guidance](https://news.bloomberglaw.com/litigation/democrats-win-court-challenge-to-fcc-discounted-ad-rate-guidance) — independent legal reporting on the Fourth Circuit opinion
+- [Elias Law Group — Fourth Circuit challenge to FCC discounted ad-rate guidance](https://elias.law/press-release/fourth-circuit-fast-tracks-challenge-to-fcc-guidance-giving-parties-access-to-discounted-ad-rates/) — party statement and procedural background
 
 ## August 24, 2026 — USDA reopens the Douglas cattle crossing after a 15-month livestock-import suspension
 
@@ -74,28 +157,36 @@ The administration says the campaign is intended to sever Iran's revenue and fin
 - [Associated Press — implemented Iran sanctions and secondary-sanctions warning](https://apnews.com/article/iran-rial-currency-bessent-trade-august-24-2026-e367634d8853c8fa4a341132cd577f31) — independent reporting from the Treasury announcement and press conference
 - [Reuters — Treasury designations and broadened secondary-sanctions threat](https://www.reuters.com/world/middle-east/us-treasury-broaden-scope-secondary-sanctions-iran-source-says-2026-08-24/) — independent reporting on implemented designations and announced future enforcement
 
-## August 24, 2026 — Supreme Court lifts one injunction blocking Trump's mail-voting directive
+## August 24–25, 2026 — Mail-voting directive remains blocked after court finds USPS violated its injunction
 
-The emergency action permits implementation work to continue, but it did not decide the directive's legality and another judicial obstacle remains.
+The Supreme Court lifted one injunction, but a second court found USPS violated its order by completing a final rule and the rule still cannot be implemented for the 2026 election.
 
 **THE FACTS**
 
 - The Supreme Court granted the Justice Department's emergency request to pause a Massachusetts federal judge's injunction that had blocked the administration from implementing the March mail-voting executive order in 23 states and the District of Columbia.
 - The order directs federal agencies to compile state voter-eligibility lists and tells the Postal Service to deliver mail ballots only to voters on approved state lists. The Postal Service had begun implementation planning before the Supreme Court acted.
-- The justices did not decide the merits. The three liberal justices dissented, additional challenges remain possible, and Reuters reported that another judicial restraint still remained at the checked time.
+- The justices did not decide the merits. The three liberal justices dissented, and a separate nationwide injunction obtained by voting-rights groups remained in force.
+- On August 25, U.S. District Judge Indira Talwani found that USPS violated that separate injunction when it completed and sent a final ballot-mail rule to the Federal Register. The rule would require voter lists and unique barcodes on outbound and return ballot envelopes.
+- Talwani imposed no additional remedy because USPS acknowledged that the final rule has no force for the November 3 election while her injunction remains. The final rule was issued, but its 2026-election implementation remained enjoined at the checked time.
 
 **SIGNIFICANCE**
 
-The emergency ruling removes one immediate barrier to a federal effort that could alter mail-ballot administration shortly before the midterms. Its practical reach is still uncertain because implementation, state election authority, voter-list accuracy, remaining litigation, and the election calendar are unresolved.
+The August 25 ruling clarifies that the Supreme Court's emergency action did not clear the policy for the 2026 election. It also creates a documented violation of a federal injunction while leaving the final rule available for a direct legal challenge. Practical effects remain contingent on further stays, appeals, rule litigation, voter-list accuracy, and the election calendar.
 
 **GOALPOST / RESPONSE**
 
-The Justice Department says the states sued prematurely, lacked standing, and had not shown concrete injury; the administration describes the directive as an election-integrity measure. The states argue that it exceeds presidential authority, imposes administration costs, and risks disenfranchisement. The emergency ruling did not resolve those competing claims.
+The administration says the states sued prematurely and that the final rule itself preserves the status quo while injunctions remain; it describes the directive as an election-integrity measure. Voting-rights groups argue that the executive branch lacks authority to regulate elections and that publication creates confusion. Talwani accepted that implementation remains blocked but rejected the claim that completing the rule complied with her order.
+
+**MAYBE / THEREFORE**
+
+Maybe the completed final rule will permit faster merits review and may never affect the 2026 election if the remaining injunction survives. Therefore the record distinguishes the Supreme Court's stay of one injunction, USPS's issuance of a final rule, the district court's violation finding, and the rule's still-enjoined implementation.
 
 **Sources**
 
 - [Associated Press — Supreme Court clears path for mail-voting order](https://apnews.com/article/trump-mail-voting-supreme-court-157afc3c195ce0a62c522da5ce904b04) — independent reporting on an emergency Supreme Court action
 - [Reuters — Supreme Court lifts one injunction against mail-ballot directive](https://www.reuters.com/world/us-supreme-court-lifts-judicial-hurdle-trumps-mail-in-ballot-curbs-2026-08-24/) — independent reporting on an emergency Supreme Court action
+- [U.S. District Court for the District of Massachusetts — order finding USPS violated mail-voting injunction](https://fingfx.thomsonreuters.com/gfx/legaldocs/gdpzeojynvw/08252026talwani.pdf) — primary federal court order
+- [Reuters — judge finds USPS violated mail-voting injunction while leaving existing block in place](https://www.reuters.com/world/judge-chides-us-postal-service-over-mail-in-voting-rule-wont-block-it-2026-08-25/) — independent reporting on the district-court order and rule status
 
 ## August 24, 2026 — Administration proposes a $103,265 fee for each new H-1B visa
 

@@ -1,27 +1,28 @@
 # The Record — Maintenance Run Receipt
 
-- Release: 8.3.0
-- Checked: 2026-08-25 11:58 AM EDT
-- Editorial window: 2026-08-24 5:58 PM EDT through 2026-08-25 11:58 AM EDT
-- Added: 0 national records
-- Materially refreshed: 2 national records
-- Current layer: 27 records backed by 60 source-ledger records
-- Full archive runtime: 4,667 records; 6,534 source references; 5,153 distinct stored URLs
+- Release: 8.4.0
+- Checked: 2026-08-25 6:00 PM EDT
+- Editorial window: 2026-08-25 11:58 AM EDT through 2026-08-25 6:00 PM EDT
+- Added: 3 national records
+- Materially refreshed: 1 national record
+- Current layer: 30 records backed by 70 source-ledger records
+- Full archive runtime: 4,670 records; 6,544 source references; 5,163 distinct stored URLs
 - Legacy custody: 4,647 stored rows; 4,644 active; 3 duplicate tombstones excluded from totals
 
 ## Added or materially refreshed records
 
-- `NAT-2026-08-17-001` — Trump rejects an Iran-deal extension, threatens Oman, and announces a wider Hormuz response
-- `NAT-2026-08-22-001` — U.S. imposes 50% duties on selected Canadian goods as Trump announces a broader 2027 escalation
+- `NAT-2026-08-25-001` — Appeals court blocks FCC extension of candidate advertising discounts to party committees
+- `NAT-2026-08-25-002` — Justice Department sues Ohio court over restrictions on federal courthouse arrests
+- `NAT-2026-08-25-003` — Appeals court largely preserves block on ideological conditions for transportation and homelessness grants
+- `NAT-2026-08-24-002` — Mail-voting directive remains blocked after court finds USPS violated its injunction
 
 ## Withheld candidates
 
-- Reported DOJ inquiry into the 2022 Mar-a-Lago search: Still withheld because the consequential claim rested on unnamed sourcing and did not yet have the second independent source required by the live-maintenance policy.
-- Plan to revoke up to 200,000 visitor visas held by asylum seekers: Still withheld because the report preceded this editorial window and the scale and timing rested on unpublished State Department documents and unnamed officials; Reuters repeated AP's report rather than independently confirming it.
-- Joint Economic Committee minority estimate of gains in Trump's oil-and-gas holdings: Withheld pending the direct committee analysis and independent verification of the valuation method, holdings range, and conflict-of-interest estimate.
-- Possible renaming of Lake Ontario: Withheld because the president said the idea was under consideration but no formal renaming action, legal instrument, or implementation was located.
-- EPA public-participation proposal for data-center permitting: Withheld as a new record because August 25 coverage concerned a proposal published in July; no new rule, order, implementation step, or court action occurred inside this window.
-- Renewed Truth Social promotion of reduced U.S.–South Korea exercises: Withheld as a duplicate research lead: the August 25 post repeated an August 16 announcement and an August 19 implementation development already present in the prior feed snapshot, with no new policy change inside this window.
+- Trump proclamation lowering flags after Dolly Parton's death: Withheld from the accountability timeline as a ceremonial proclamation under the archive's standing threshold. The statement and formal proclamation remain discoverable in the separate Truth Social and presidential-action source layers.
+- Charges against Air Force Major Jason Watson after impeachment advocacy: Withheld pending a public charge sheet or equivalent primary record that permits claim-level review of the three asserted UCMJ theories, the conduct charged, and the Air Force's justification beyond its confirmation of charges and due process.
+- Pennsylvania measles deaths and national outbreak growth: Withheld because the measured public-health outcome is serious but the reporting reviewed in this window did not establish a sufficiently specific causal or implementation link to a Trump-administration action for this accountability archive.
+- Reported plan to revoke visitor visas held by asylum seekers: The State Department's general plan and AP's scale estimate were published before this boundary; the estimate still relies on unpublished documents and unnamed officials and was not independently confirmed by Reuters.
+- Reported DOJ inquiry into the 2022 Mar-a-Lago search: Still withheld because the consequential claim rests on unnamed sourcing and lacks the second independent confirmation required by the maintenance policy.
 
 ## Verification
 
