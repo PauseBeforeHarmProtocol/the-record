@@ -29,6 +29,7 @@ def render_block() -> str:
     totals = metrics["totals"]
     legacy = metrics["legacy"]
     layers = legacy["interpretive_layers"]
+    current = metrics["current"]
     coverage = metrics["coverage"]
     revisions = metrics["remediation"]["legacy_revision_records"]
     federated = metrics["federated"]["records"]
@@ -53,6 +54,10 @@ Generated deterministically from canonical JSON for maintenance release **{relea
 | Full archive entries rendered at runtime | {totals['full_archive_runtime_entries']:,} |
 | Attached source references at runtime | {totals['full_archive_runtime_source_references']:,} |
 | Distinct stored source URLs at runtime | {totals['full_archive_runtime_unique_urls']:,} |
+| Current entries with Maybe / Therefore | {current['maybe_therefore_present']:,} |
+| Current entries awaiting Maybe / Therefore | {current['maybe_therefore_missing']:,} |
+| Current entries explicitly reviewed or corrected | {current['current_standard_reviewed']:,} |
+| Current entries pending current-standard review | {current['current_standard_pending']:,} |
 | Legacy entries with Maybe / Therefore | {layers['maybe_therefore_present']:,} |
 | Legacy entries awaiting Maybe / Therefore | {layers['maybe_therefore_missing']:,} |
 | Logged legacy revision records | {revisions:,} |

@@ -23,8 +23,16 @@ WEEK_LABEL = RELEASE["week_label"]
 CUTOFF_START = RELEASE["cutoff_start"]
 NEW_ENTRY_IDS = set(RELEASE["new_entry_ids"])
 AI_CREDIT = RELEASE["ai_credit"]
-NATIONAL_PACK_NAME = f"THE_RECORD_NATIONAL_UPDATE_PACK_{RELEASE_ISO}.zip"
-COMPLETE_PACK_NAME = f"THE_RECORD_CURRENT_UPDATE_PACK_{RELEASE_ISO}.zip"
+MAINTENANCE = RELEASE.get("maintenance_revision")
+BASE_EDITORIAL_VERSION = (
+    MAINTENANCE.get("base_editorial_version")
+    if isinstance(MAINTENANCE, dict)
+    else None
+)
+RELEASE_ARTIFACT_STEM = f"{RELEASE_ISO}_v{VERSION}"
+NATIONAL_PACK_NAME = f"THE_RECORD_NATIONAL_UPDATE_PACK_{RELEASE_ARTIFACT_STEM}.zip"
+COMPLETE_PACK_NAME = f"THE_RECORD_CURRENT_UPDATE_PACK_{RELEASE_ARTIFACT_STEM}.zip"
+IN6_CURRENT_BRIEF_NAME = f"THE_RECORD_IN6_CURRENT_BRIEF_{RELEASE_ARTIFACT_STEM}.md"
 SITE_ROOT = "/the-record/"
 
 
@@ -118,7 +126,7 @@ def record_card(entry: dict, ledger: dict) -> str:
 {maybe_therefore}
   </div>
 {corrections}
-  <details class="sources"><summary>Sources and verification notes</summary><ul>{source_list(entry, ledger)}</ul><p class="micro">Checked {esc(entry["checked_at"])}. Source type is shown because an official statement establishes what an institution says; it does not independently prove the institution’s interpretation.</p></details>
+  <details class="sources"><summary>Sources and verification notes</summary><ul>{source_list(entry, ledger)}</ul><p class="micro">Checked {esc(entry["checked_at"])}. Canonical review state: {esc(entry["review_status"])}. Source type is shown because an official statement establishes what an institution says; it does not independently prove the institution’s interpretation.</p></details>
   <div class="card-actions"><a class="button button--primary" href="{site_path(esc(entry["pack_path"], quote=True))}" download>Download this entry</a><button class="button button--ghost copy-link" type="button" data-copy="#{esc(entry["id"], quote=True)}">Copy entry link</button></div>
 </article>'''
 
@@ -155,7 +163,18 @@ def weekly_page(entries: list[dict], ledger: dict) -> str:
     national_count = sum(entry["scope"] == "national" for entry in weekly)
     in6_count = sum(entry["scope"] == "in6" for entry in weekly)
     cards = "\n".join(record_card(entry, ledger) for entry in weekly)
-    body = f'''<div class="container"><header class="page-head"><div class="eyebrow">What happened this week</div><h1>{WEEK_LABEL}</h1><p>This is a reproducible seven-day view anchored to the {RELEASE_DATE} release—not a browser-clock guess. It includes {len(weekly)} records: {national_count} national and {in6_count} IN-6.</p><div class="scope-filter" aria-label="Filter weekly records"><button class="button button--primary" type="button" data-week-filter="all" aria-pressed="true">All {len(weekly)}</button><button class="button button--ghost" type="button" data-week-filter="national" aria-pressed="false">National {national_count}</button><button class="button button--ghost" type="button" data-week-filter="in6" aria-pressed="false">IN-6 {in6_count}</button></div></header>{search_panel("Search this week")}<div class="integrity-note"><h2>Currentness boundary</h2><p>The national current layer was researched through {CHECKED_AT}. This backfill covers qualifying developments beginning {CUTOFF_START} and added or materially refreshed {len(NEW_ENTRY_IDS)} national records. Per-entry evidence state and check times remain visible.</p></div><section class="record-list">{cards}</section></div>'''
+    editorial_context = (
+        f"base editorial release {BASE_EDITORIAL_VERSION}"
+        if MAINTENANCE
+        else f"release {VERSION}"
+    )
+    maintenance_note = (
+        " This maintenance changes reasoning and review-state fields without "
+        "implying a later news cutoff."
+        if MAINTENANCE
+        else ""
+    )
+    body = f'''<div class="container"><header class="page-head"><div class="eyebrow">What happened this week</div><h1>{WEEK_LABEL}</h1><p>This is a reproducible seven-day view anchored to the {RELEASE_DATE} release—not a browser-clock guess. It includes {len(weekly)} records: {national_count} national and {in6_count} IN-6.</p><div class="scope-filter" aria-label="Filter weekly records"><button class="button button--primary" type="button" data-week-filter="all" aria-pressed="true">All {len(weekly)}</button><button class="button button--ghost" type="button" data-week-filter="national" aria-pressed="false">National {national_count}</button><button class="button button--ghost" type="button" data-week-filter="in6" aria-pressed="false">IN-6 {in6_count}</button></div></header>{search_panel("Search this week")}<div class="integrity-note"><h2>Currentness boundary</h2><p>The national current layer was researched through {CHECKED_AT}. The backfill in {editorial_context} covers qualifying developments beginning {CUTOFF_START} and added or materially refreshed {len(NEW_ENTRY_IDS)} national records.{maintenance_note} Per-entry evidence state and check times remain visible.</p></div><section class="record-list">{cards}</section></div>'''
     return document(title="Weekly record · The Record", description=f"The Record weekly accountability view for {WEEK_LABEL}.", body=body, active="weekly")
 
 
@@ -262,7 +281,7 @@ def quality_page() -> str:
 <article class="method-card"><h2>{sources["single_source_low_specificity_entries"]:,} first-priority records</h2><p>These entries combine a single citation with a low-specificity destination. They are the first automated remediation queue—not an allegation that every underlying event is wrong.</p></article>
 <article class="method-card"><h2>{sources["unique_domains"]:,} legacy source domains</h2><p>{sources["unique_urls"]:,} unique URLs appear across {sources["references"]:,} legacy source references. Repeated links remain visible rather than inflated into “unique sources.”</p></article>
 <article class="method-card"><h2>{legacy["duplicate_candidates"]["exact_text_groups"]} unresolved exact-text duplicate groups</h2><p>Confirmed duplicates are preserved as redirecting tombstones and removed from active totals. Candidate detection is automated; merging remains an editorial action because records can share wording while documenting different lifecycle stages.</p></article>
-<article class="method-card"><h2>{current["entries"]} structured current records</h2><p>{current["entries_with_one_source"]} are presently single-source and {current["maybe_therefore_missing"]} still need a separately reviewed Maybe / Therefore field. New federated promotions cannot pass without it.</p></article>
+<article class="method-card"><h2>{current["entries"]} structured current records</h2><p>{current["entries_with_one_source"]} are presently single-source; {current["maybe_therefore_missing"]} lack a substantive Maybe / Therefore field; {current["current_standard_reviewed"]} carry an explicit reviewed or corrected state and {current["current_standard_pending"]} remain pending. New federated promotions cannot pass without both the reasoning layer and explicit review state.</p></article>
 <article class="method-card"><h2>{interpretive["maybe_therefore_present"]:,} Maybe / Therefore layers</h2><p>{interpretive["maybe_therefore_present_percent"]}% of the legacy body already contains the competing-frame layer. The remaining {interpretive["maybe_therefore_missing"]:,} entries are a measured editorial backlog; federation publication now requires this layer.</p></article>
 <article class="method-card"><h2>{legacy["duplicate_candidates"]["same_date_heading_groups"]} same-date heading clusters</h2><p>Stable IDs, exact fingerprints, normalized date/title headings, origin IDs, canonical targets, and lifecycle relationships are checked before import. Candidates are linked for review rather than automatically copied or merged.</p></article>
 <article class="method-card"><h2>{legacy["duplicate_candidates"]["repeated_heading_any_date_groups"]} repeated-heading review groups</h2><p>These cross-date candidates are queued for adjudication. Repeated headings can represent recurring posts or distinct lifecycle stages, so they are not silently deleted or excluded until a revision names the surviving record or records the distinct-stage decision.</p></article>
@@ -356,10 +375,50 @@ def downloads_page(entries: list[dict]) -> str:
     national_count = sum(entry["scope"] == "national" for entry in entries)
     in6_count = sum(entry["scope"] == "in6" for entry in entries)
     ledger_count = len(json.loads((ROOT / "data/source_ledger.json").read_text(encoding="utf-8")))
+    maintenance = RELEASE.get("maintenance_revision")
+    base_editorial_version = (
+        maintenance.get("base_editorial_version")
+        if isinstance(maintenance, dict)
+        else None
+    )
+    national_pack_text = (
+        f"All {national_count} national entries with their current canonical Maybe / Therefore layers, individual packs, and source ledger. "
+        f"The factual and Maybe / Therefore content of the {len(NEW_ENTRY_IDS)} base editorial changes is carried forward from release {base_editorial_version}; review-status metadata is materialized separately."
+        if maintenance
+        else f"All {national_count} national entries, including {len(NEW_ENTRY_IDS)} records added in this pass, with individual packs and the source ledger."
+    )
+    base_artifact_note = ""
+    if isinstance(maintenance, dict):
+        labels = {
+            "CURRENT_UPDATE_PACK": "complete base pack",
+            "NATIONAL_UPDATE_BRIEF": "national base brief",
+            "NATIONAL_UPDATE_PACK": "national base pack",
+            "RUN_RECEIPT": "base run receipt",
+        }
+        links = []
+        for relative_path in maintenance.get("preserved_aggregate_artifacts", []):
+            if relative_path.endswith(".sha256"):
+                continue
+            filename = Path(relative_path).name
+            label = next(
+                (value for marker, value in labels.items() if marker in filename),
+                filename,
+            )
+            links.append(
+                f'<a href="{site_path(relative_path)}" download>{esc(label)}</a>'
+            )
+        if links:
+            base_artifact_note = (
+                '<div class="integrity-note"><h2>Preserved August 25 base artifacts</h2>'
+                f'<p>Release {esc(base_editorial_version)} predates same-day version-keyed naming. '
+                'Its date-only aggregate paths are frozen byte-for-byte and remain directly available: '
+                f'{" · ".join(links)}.</p></div>'
+            )
     featured = [
-        (f"Complete {RELEASE_DATE} update", f"All {len(entries)} entry packs, the national brief, source ledgers, machine-readable data, and the run receipt.", site_path(f"artifacts/{COMPLETE_PACK_NAME}"), ROOT / "artifacts" / COMPLETE_PACK_NAME, "Download complete update"),
-        ("National current brief", f"All {national_count} national entries, including {len(NEW_ENTRY_IDS)} records added in this pass, with individual packs and the source ledger.", site_path(f"artifacts/{NATIONAL_PACK_NAME}"), ROOT / "artifacts" / NATIONAL_PACK_NAME, "Download national pack"),
-        ("IN-6 current brief", f"The {in6_count} IN-6 records remain preserved from the July 18 package; this run’s requested scope was the national Trump record.", site_path("artifacts/THE_RECORD_IN6_UPDATE_PACK_2026-07-18.zip"), ROOT / "artifacts/THE_RECORD_IN6_UPDATE_PACK_2026-07-18.zip", "Download IN-6 pack"),
+        (f"Complete {RELEASE_DATE} update · v{VERSION}", f"All {len(entries)} entry packs, current national and IN-6 briefs, source ledgers, machine-readable data, preserved snapshots, and the run receipt.", site_path(f"artifacts/{COMPLETE_PACK_NAME}"), ROOT / "artifacts" / COMPLETE_PACK_NAME, "Download complete update"),
+        ("National current pack", national_pack_text, site_path(f"artifacts/{NATIONAL_PACK_NAME}"), ROOT / "artifacts" / NATIONAL_PACK_NAME, "Download national pack"),
+        ("IN-6 current brief", f"A current canonical brief for all {in6_count} IN-6 records, including each record’s explicit Maybe / Therefore reasoning.", site_path(f"artifacts/{IN6_CURRENT_BRIEF_NAME}"), ROOT / "artifacts" / IN6_CURRENT_BRIEF_NAME, "Download IN-6 brief"),
+        ("IN-6 July 18 snapshot", "The immutable July 18 IN-6 package, retained as a historical snapshot and kept distinct from the current canonical brief and regenerated entry packs.", site_path("artifacts/THE_RECORD_IN6_UPDATE_PACK_2026-07-18.zip"), ROOT / "artifacts/THE_RECORD_IN6_UPDATE_PACK_2026-07-18.zip", "Download IN-6 snapshot"),
         ("Current-entry data", f"All {len(entries)} dated entries in one JSON file for reuse in future builds or research tools.", site_path("data/current_entries.json"), ROOT / "data/current_entries.json", "Download entry JSON"),
         ("Source ledger CSV", f"A flat audit table of all {ledger_count} sources linked in this current layer.", site_path("data/source_ledger.csv"), ROOT / "data/source_ledger.csv", "Download source CSV"),
         ("Artifact checksums", "SHA-256 values for release artifacts, including every individual entry pack.", site_path("artifacts/SHA256SUMS.txt"), ROOT / "artifacts/SHA256SUMS.txt", "Download checksums"),
@@ -369,7 +428,7 @@ def downloads_page(entries: list[dict]) -> str:
         download_card(entry["title"], entry["dek"], site_path(entry["pack_path"]), sha(ROOT / entry["pack_path"]), "Download this entry")
         for entry in sorted(entries, key=lambda entry: (entry["date"], entry["id"]), reverse=True)
     )
-    body = f'''<div class="container"><header class="page-head"><div class="eyebrow">Portable evidence</div><h1>Read it here. Download it here.</h1><p>Every major section and every individual update is available without hunting through a repository. Each entry pack contains readable Markdown, JSON, source data, and a checksum.</p></header><section class="download-grid">{featured_html}</section><div class="section-head"><div><div class="eyebrow">Individual records</div><h2>One entry, one direct download</h2></div><p>The same information block shown on the site is packaged for offline review and reuse.</p></div><section class="download-grid">{individual_html}</section><div class="integrity-note"><h2>Preserved July 18 packages</h2><p>The original candidate packages remain unchanged: <a href="{site_path('artifacts/THE_RECORD_JULY_18_UPDATE_PACK_2026-07-18.zip')}" download>complete July 18</a> · <a href="{site_path('artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-07-18.zip')}" download>national July 18</a> · <a href="{site_path('artifacts/THE_RECORD_IN6_UPDATE_PACK_2026-07-18.zip')}" download>IN-6 July 18</a>.</p></div></div>'''
+    body = f'''<div class="container"><header class="page-head"><div class="eyebrow">Portable evidence</div><h1>Read it here. Download it here.</h1><p>Every major section and every individual update is available without hunting through a repository. Each entry pack contains readable Markdown, JSON, source data, and a checksum.</p></header><section class="download-grid">{featured_html}</section>{base_artifact_note}<div class="section-head"><div><div class="eyebrow">Individual records</div><h2>One entry, one direct download</h2></div><p>The same information block shown on the site is packaged for offline review and reuse.</p></div><section class="download-grid">{individual_html}</section><div class="integrity-note"><h2>Preserved July 18 packages</h2><p>The original candidate packages remain unchanged: <a href="{site_path('artifacts/THE_RECORD_JULY_18_UPDATE_PACK_2026-07-18.zip')}" download>complete July 18</a> · <a href="{site_path('artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-07-18.zip')}" download>national July 18</a> · <a href="{site_path('artifacts/THE_RECORD_IN6_UPDATE_PACK_2026-07-18.zip')}" download>IN-6 July 18</a>.</p></div></div>'''
     return document(title="Downloads · The Record", description=f"Download The Record {RELEASE_DATE} update and individual entries.", body=body, active="downloads")
 
 
@@ -377,6 +436,17 @@ def methodology_page(entries: list[dict]) -> str:
     totals = ARCHIVE_METRICS["totals"]
     legacy = ARCHIVE_METRICS["legacy"]
     coverage = ARCHIVE_METRICS["coverage"]
+    editorial_change_clause = (
+        f"carried forward from base editorial release {BASE_EDITORIAL_VERSION}"
+        if MAINTENANCE
+        else f"published in release {VERSION}"
+    )
+    maintenance_scope = (
+        f" Release {VERSION} remediates current-layer reasoning and explicit "
+        "review state without claiming a later current-affairs finding."
+        if MAINTENANCE
+        else ""
+    )
     body = f'''<div class="container"><header class="page-head"><div class="eyebrow">Methodology</div><h1>Facts are not analysis. Official claims are not independent verification.</h1><p>The Record’s value depends on keeping those categories visible, preserving corrections, and refusing to turn a large archive into an unreviewable claim of completeness.</p></header>
 <section class="method-grid">
 <article class="method-card"><h2>1. The three-layer entry</h2><p><strong>THE FACTS</strong> records the sourced event. <strong>SIGNIFICANCE</strong> states the editor’s contextual analysis. <strong>GOALPOST / RESPONSE</strong> records the strongest relevant defense, explanation, or shifting rhetorical frame without treating it as established fact.</p></article>
@@ -386,7 +456,7 @@ def methodology_page(entries: list[dict]) -> str:
 <article class="method-card"><h2>5. Generated totals and review states</h2><p>The canonical file stores {totals["canonical_legacy_rows"]:,} legacy rows: {totals["active_legacy_entries"]:,} active records and {totals["superseded_legacy_tombstones"]:,} retained duplicate tombstones. The national bridge adds {totals["bridged_national_entries"]}, producing {totals["full_archive_runtime_entries"]:,} active records at runtime. Tombstones redirect old IDs but never enter search, source totals, or the event count. The same build counts {totals["full_archive_runtime_source_references"]:,} source references and {totals["full_archive_runtime_unique_urls"]:,} distinct stored URLs.</p></article>
 <article class="method-card" id="ai-disclosure"><h2>6. AI disclosure &amp; provenance</h2><p>Current research organization, drafting support, code, and adversarial review use <strong>ChatGPT 5.6 Sol Max</strong> and <strong>Claude Fable 5 Max (Cowork)</strong>. Phillip Linstrum is the acceptance authority for canonical publication. AI output is not a source.</p><p>For auditability, the public federation JSON may expose substantive AI-assisted research drafts before review. Public accessibility does not make them published findings: staged drafts are labeled unreviewed, unauthorized for canonical publication, excluded from canonical totals, and not rendered as accepted analysis. The five April 2026 AI Opinion essays retain their original attribution to <strong>Claude (Anthropic, Opus 4)</strong>. This {RELEASE_DATE} pass updates the surrounding maintenance disclosure; it does not silently reassign or rewrite those essays’ authorship. See <a href="{site_path('AI_PROVENANCE.md')}">the provenance record</a>.</p></article>
 </section>
-<div class="integrity-note"><h2>Scope of this release</h2><p>This release contains {len(entries)} dated current-layer entries, including {len(NEW_ENTRY_IDS)} national records added or materially refreshed in the August 17–24 backfill. It does not certify the complete legacy archive, independently validate every historical source, or resolve all open IN-6 claims. The {coverage["uncovered_days_between_layers"]}-day continuity gap ({esc(coverage["known_gap_label"])}) remains disclosed pending backfill. See the <a href="{site_path('quality/index.html')}">generated quality dashboard</a>.</p></div>
+<div class="integrity-note"><h2>Scope of this release</h2><p>This release contains {len(entries)} dated current-layer entries, including {len(NEW_ENTRY_IDS)} national records added or materially refreshed in the backfill beginning August 17 {editorial_change_clause}.{maintenance_scope} It does not certify the complete legacy archive, independently validate every historical source, or resolve all open IN-6 claims. The {coverage["uncovered_days_between_layers"]}-day continuity gap ({esc(coverage["known_gap_label"])}) remains disclosed pending backfill. See the <a href="{site_path('quality/index.html')}">generated quality dashboard</a>.</p></div>
 <h2>Publication rules</h2><pre class="code-note">NO SOURCE → NO FACT CLAIM
 OFFICIAL STATEMENT → WHAT THE INSTITUTION SAYS
 INDEPENDENT REPORTING → CORROBORATION AND CONTEXT
@@ -407,7 +477,18 @@ def home_page(entries: list[dict], ledger: dict) -> str:
         f'<li><span class="chip">{"National" if entry["scope"] == "national" else "IN-6"}</span><a href="{site_path(entry["scope"] + "/index.html#" + esc(entry["id"], quote=True))}">{esc(entry["title"])}</a></li>'
         for entry in weekly[:5]
     )
-    body = f'''<section class="hero"><div class="hero-inner"><div><div class="kicker">A living Trump accountability archive · updated {RELEASE_DATE}</div><h1>The full searchable archive, not just the latest headline.</h1><p>This page is the editorial front door: a concise view of newly verified developments. The full searchable archive currently renders {totals["full_archive_runtime_entries"]:,} active dated entries with {totals["full_archive_runtime_source_references"]:,} attached source references across years, topics, people, institutions, and the timeline; its known gaps and legacy review backlog remain disclosed.</p><div class="hero-actions"><a class="button button--primary" href="{site_path('the-record.html#home')}">Enter the full archive</a><a class="button button--secondary" href="{site_path('the-record.html#timeline')}">Search the timeline</a><a class="button button--ghost" href="{site_path('weekly/index.html')}">Latest seven days</a></div></div><aside class="hero-stamp"><div class="eyebrow">Archive state</div><strong>Current through {CHECKED_AT}</strong><p>{len(NEW_ENTRY_IDS)} national records were added or materially refreshed in this editorial release. The quality layer was maintained separately without implying a later news cutoff.</p></aside></div><figure class="hero-art"><img src="{site_path('assets/brand/the-record-hero.png')}" alt="An illuminated evidence archive connecting sourced records across a living accountability timeline" width="1672" height="941" fetchpriority="high" decoding="async"></figure></section>
+    editorial_context = (
+        f"base editorial release {BASE_EDITORIAL_VERSION}"
+        if MAINTENANCE
+        else f"release {VERSION}"
+    )
+    maintenance_summary = (
+        f" Release {VERSION} maintains reasoning and explicit review state "
+        "without implying a later news cutoff."
+        if MAINTENANCE
+        else ""
+    )
+    body = f'''<section class="hero"><div class="hero-inner"><div><div class="kicker">A living Trump accountability archive · updated {RELEASE_DATE}</div><h1>The full searchable archive, not just the latest headline.</h1><p>This page is the editorial front door: a concise view of newly verified developments. The full searchable archive currently renders {totals["full_archive_runtime_entries"]:,} active dated entries with {totals["full_archive_runtime_source_references"]:,} attached source references across years, topics, people, institutions, and the timeline; its known gaps and legacy review backlog remain disclosed.</p><div class="hero-actions"><a class="button button--primary" href="{site_path('the-record.html#home')}">Enter the full archive</a><a class="button button--secondary" href="{site_path('the-record.html#timeline')}">Search the timeline</a><a class="button button--ghost" href="{site_path('weekly/index.html')}">Latest seven days</a></div></div><aside class="hero-stamp"><div class="eyebrow">Archive state</div><strong>Current through {CHECKED_AT}</strong><p>{len(NEW_ENTRY_IDS)} national records were added or materially refreshed in {editorial_context}.{maintenance_summary}</p></aside></div><figure class="hero-art"><img src="{site_path('assets/brand/the-record-hero.png')}" alt="An illuminated evidence archive connecting sourced records across a living accountability timeline" width="1672" height="941" fetchpriority="high" decoding="async"></figure></section>
 <div class="container"><section class="stats" aria-label="Archive and release statistics"><div class="stat"><strong>{totals["full_archive_runtime_entries"]:,}</strong><span>generated full-archive entries</span></div><div class="stat"><strong>{totals["full_archive_runtime_unique_urls"]:,}</strong><span>distinct full-archive source URLs</span></div><div class="stat"><strong>{national_count}</strong><span>verified current national entries</span></div><div class="stat"><strong>{len(weekly)}</strong><span>records in this seven-day window</span></div></section>
 <section class="archive-feature"><div class="archive-feature__copy"><div class="eyebrow">The research layer</div><h2>The archive is where the whole project lives.</h2><p>The landing page stays readable by showing a curated current layer. The archive brings historical entries, sources, topic folders, people, statistics, methodology, current additions, and Trump's raw Truth Social feed into one searchable application, while the quality dashboard discloses review backlogs and known gaps.</p><div class="button-row"><a class="button button--primary" href="{site_path('the-record.html#home')}">Browse the archive</a><a class="button button--ghost" href="{site_path('the-record.html#timeline')}">Open the full timeline</a><a class="button button--ghost" href="{site_path('archive/index.html#archive-network')}">Explore the Archive Network</a></div></div><div class="archive-paths" aria-label="Archive research paths"><a href="{site_path('the-record.html#topics')}"><strong>Topics</strong><span>Courts, democracy, immigration, media, foreign influence, and more</span></a><a href="{site_path('the-record.html#years')}"><strong>Years</strong><span>Move through covered dates from 1927 into the current term; see Quality for known gaps</span></a><a href="{site_path('the-record.html#politicians')}"><strong>People</strong><span>Find officeholders, advisers, opponents, and connected events</span></a><a href="{site_path('the-record.html#timeline')}"><strong>Search</strong><span>Query dates, names, agencies, events, and source-linked entries</span></a><a href="{site_path('the-record.html#feed')}"><strong>Truth Social</strong><span>Search the raw public posting record without turning every post into an archive finding</span></a><a href="{site_path('quality/index.html')}"><strong>Quality</strong><span>Inspect generated counts, source health, review status, and known coverage gaps</span></a></div></section>
 <section class="weekly-highlight"><div><div class="eyebrow">What happened this week</div><h2>{len(weekly)} records · {WEEK_LABEL}</h2><p>A compact, fixed seven-day window. Use it for the latest signal; use the full searchable archive for the broader record, with known gaps and review state disclosed.</p><a class="button button--primary" href="{site_path('weekly/index.html')}">Open the weekly record</a></div><ul>{weekly_links}</ul></section>

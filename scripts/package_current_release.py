@@ -20,10 +20,12 @@ VERSION = RELEASE["version"]
 NEW_ENTRY_IDS = set(RELEASE["new_entry_ids"])
 year, month, day = (int(part) for part in RELEASE_ISO.split("-"))
 FIXED_ZIP_TIME = (year, month, day, 12, 0, 0)
-NATIONAL_BRIEF_NAME = f"THE_RECORD_NATIONAL_UPDATE_BRIEF_{RELEASE_ISO}.md"
-RUN_RECEIPT_NAME = f"THE_RECORD_RUN_RECEIPT_{RELEASE_ISO}.md"
-NATIONAL_PACK_NAME = f"THE_RECORD_NATIONAL_UPDATE_PACK_{RELEASE_ISO}.zip"
-COMPLETE_PACK_NAME = f"THE_RECORD_CURRENT_UPDATE_PACK_{RELEASE_ISO}.zip"
+RELEASE_ARTIFACT_STEM = f"{RELEASE_ISO}_v{VERSION}"
+NATIONAL_BRIEF_NAME = f"THE_RECORD_NATIONAL_UPDATE_BRIEF_{RELEASE_ARTIFACT_STEM}.md"
+IN6_CURRENT_BRIEF_NAME = f"THE_RECORD_IN6_CURRENT_BRIEF_{RELEASE_ARTIFACT_STEM}.md"
+RUN_RECEIPT_NAME = f"THE_RECORD_RUN_RECEIPT_{RELEASE_ARTIFACT_STEM}.md"
+NATIONAL_PACK_NAME = f"THE_RECORD_NATIONAL_UPDATE_PACK_{RELEASE_ARTIFACT_STEM}.zip"
+COMPLETE_PACK_NAME = f"THE_RECORD_CURRENT_UPDATE_PACK_{RELEASE_ARTIFACT_STEM}.zip"
 
 
 def digest(data: bytes) -> str:
@@ -71,6 +73,7 @@ def entry_markdown(entry: dict, ledger: dict) -> bytes:
 **Date:** {entry["display_date"]}
 **Checked:** {entry["checked_at"]}
 **Evidence state:** {entry["evidence"]}
+**Review state:** {entry["review_status"]}
 
 {entry["dek"]}
 
@@ -108,26 +111,32 @@ def entry_pack(entry: dict, ledger: dict) -> bytes:
     })
 
 
-def national_brief(entries: list[dict], ledger: dict) -> bytes:
+def scoped_brief(
+    entries: list[dict], ledger: dict, *, scope: str, title: str
+) -> bytes:
     sections = [
-        "# The Record — National Update Brief",
+        f"# The Record — {title}",
         "",
-        f"**Release:** {RELEASE_HUMAN}",
-        f"**Checked:** {CHECKED_AT}",
+        f"**Release:** {VERSION} · {RELEASE_HUMAN}",
+        f"**Release editorial cutoff:** {CHECKED_AT}",
         "",
-        "Each item preserves The Record's labeled distinction between facts, significance, the strongest observed response or goalpost, and any separately reviewed Maybe / Therefore layer.",
+        "Each item preserves its own evidence-check time and The Record's labeled distinction between facts, significance, the strongest observed response or goalpost, and any separately reviewed Maybe / Therefore layer.",
     ]
-    national = sorted(
-        (entry for entry in entries if entry["scope"] == "national"),
+    selected = sorted(
+        (entry for entry in entries if entry["scope"] == scope),
         key=lambda entry: (entry["date"], entry["id"]),
         reverse=True,
     )
-    for entry in national:
+    for entry in selected:
         sections.extend([
             "",
             f'## {entry["display_date"]} — {entry["title"]}',
             "",
             entry["dek"],
+            "",
+            f'**Entry evidence checked:** {entry["checked_at"]}',
+            "",
+            f'**Review state:** {entry["review_status"]}',
             "",
             "**THE FACTS**",
             "",
@@ -153,36 +162,84 @@ def national_brief(entries: list[dict], ledger: dict) -> bytes:
     return ("\n".join(sections) + "\n").encode()
 
 
+def national_brief(entries: list[dict], ledger: dict) -> bytes:
+    return scoped_brief(
+        entries, ledger, scope="national", title="National Update Brief"
+    )
+
+
+def in6_current_brief(entries: list[dict], ledger: dict) -> bytes:
+    return scoped_brief(
+        entries, ledger, scope="in6", title="IN-6 Current Brief"
+    )
+
+
 def run_receipt(entries: list[dict], ledger: dict) -> bytes:
     by_id = {entry["id"]: entry for entry in entries}
     changed = [by_id[entry_id] for entry_id in RELEASE["new_entry_ids"]]
     added = [by_id[entry_id] for entry_id in RELEASE.get("added_entry_ids", [])]
     refreshed = [by_id[entry_id] for entry_id in RELEASE.get("refreshed_entry_ids", [])]
     rejected = RELEASE.get("rejected_candidates", [])
+    maintenance = RELEASE.get("maintenance_revision")
+    remediated_ids = (
+        maintenance.get("remediated_entry_ids", [])
+        if isinstance(maintenance, dict)
+        else []
+    )
+    review_status_ids = (
+        maintenance.get("review_status_materialized_entry_ids", [])
+        if isinstance(maintenance, dict)
+        else []
+    )
+    base_editorial_version = (
+        maintenance.get("base_editorial_version")
+        if isinstance(maintenance, dict)
+        else None
+    )
     lines = [
         "# The Record — Maintenance Run Receipt",
         "",
         f"- Release: {VERSION}",
         f"- Checked: {CHECKED_AT}",
         f"- Editorial window: {RELEASE.get('window_started_at', RELEASE['cutoff_start'])} through {RELEASE.get('window_ended_at', CHECKED_AT)}",
-        f"- Added: {len(added)} national record{'s' if len(added) != 1 else ''}",
-        f"- Materially refreshed: {len(refreshed)} national record{'s' if len(refreshed) != 1 else ''}",
         f"- Current layer: {len(entries)} records backed by {len(ledger)} source-ledger records",
         f"- Full archive runtime: {ARCHIVE_METRICS['totals']['full_archive_runtime_entries']:,} records; {ARCHIVE_METRICS['totals']['full_archive_runtime_source_references']:,} source references; {ARCHIVE_METRICS['totals']['full_archive_runtime_unique_urls']:,} distinct stored URLs",
         f"- Legacy custody: {ARCHIVE_METRICS['totals']['canonical_legacy_rows']:,} stored rows; {ARCHIVE_METRICS['totals']['active_legacy_entries']:,} active; {ARCHIVE_METRICS['totals']['superseded_legacy_tombstones']:,} duplicate tombstones excluded from totals",
-        "",
-        "## Added or materially refreshed records",
-        "",
-        *(f'- `{entry["id"]}` — {entry["title"]}' for entry in changed),
-        "",
-        "## Withheld candidates",
-        "",
     ]
+    if maintenance:
+        lines.extend([
+            f"- Base editorial release: {base_editorial_version or 'not recorded'}",
+            f"- Base editorial records carried forward: {len(changed)} ({len(added)} added; {len(refreshed)} materially refreshed)",
+            f"- Current-layer Maybe / Therefore records remediated: {len(remediated_ids)}",
+            f"- Current-layer review statuses materialized: {len(review_status_ids)}",
+            "",
+            "## Base editorial findings carried forward (no factual or Maybe / Therefore edits in this maintenance)",
+            "",
+            *(f'- `{entry["id"]}` — {entry["title"]}' for entry in changed),
+            "",
+            "## Base editorial withheld candidates carried forward",
+            "",
+        ])
+    else:
+        lines.extend([
+            f"- Added: {len(added)} national record{'s' if len(added) != 1 else ''}",
+            f"- Materially refreshed: {len(refreshed)} national record{'s' if len(refreshed) != 1 else ''}",
+            "",
+            "## Added or materially refreshed records",
+            "",
+            *(f'- `{entry["id"]}` — {entry["title"]}' for entry in changed),
+            "",
+            "## Withheld candidates",
+            "",
+        ])
     if rejected:
         lines.extend(f'- {item["title"]}: {item["reason"]}' for item in rejected)
     else:
-        lines.append("- None recorded in this run.")
-    maintenance = RELEASE.get("maintenance_revision")
+        lines.append(
+            "- None recorded in the base editorial release."
+            if maintenance
+            else "- None recorded in this run."
+        )
     if maintenance:
         lines.extend([
             "",
@@ -191,12 +248,27 @@ def run_receipt(entries: list[dict], ledger: dict) -> bytes:
             f'- Recorded: {maintenance.get("recorded_at", "not recorded")}',
             f'- Scope: {maintenance.get("scope", "not recorded")}',
             f'- Artifact identity: {maintenance.get("artifact_identity_rule", "not recorded")}',
+            f'- Prior aggregate artifacts preserved byte-for-byte: {len(maintenance.get("preserved_aggregate_artifacts", []))}',
+            f'- Publication acceptance authority: {maintenance.get("publication_acceptance_authority", "not recorded")}',
         ])
+        if remediated_ids:
+            lines.extend([
+                "",
+                "### Remediated current records",
+                "",
+                *(f'- `{entry_id}` — {by_id[entry_id]["title"]}' for entry_id in remediated_ids),
+            ])
+        if review_status_ids:
+            lines.extend([
+                "",
+                "Explicit current-standard review status was materialized for "
+                f"{len(review_status_ids)} current records.",
+            ])
     lines.extend([
         "",
         "## Verification",
         "",
-        "Current front-door pages, the canonical legacy dataset, archive bridge, individual evidence packs, aggregate packs, source ledgers, and checksums are generated deterministically. Ordinary six-hour current-only runs keep the historical application body stable; bounded legacy maintenance intentionally regenerates its canonical payload. Publication requires the repository validator and GitHub Actions to pass.",
+        "Current front-door pages, canonical datasets, archive bridge, individual evidence packs, versioned aggregate packs, source ledgers, and checksums are generated deterministically. Earlier date-only base aggregates remain byte-frozen and separately addressable; every new same-day aggregate is version-keyed. Candidate publication requires the repository validator and GitHub Actions to pass, followed by acceptance from the publication authority named above.",
     ])
     return ("\n".join(lines) + "\n").encode()
 
@@ -212,6 +284,18 @@ def build_outputs() -> dict[Path, bytes]:
     missing_new_ids = NEW_ENTRY_IDS - set(by_id)
     if missing_new_ids:
         raise ValueError(f"release.json names unknown entries: {sorted(missing_new_ids)}")
+    maintenance = RELEASE.get("maintenance_revision")
+    remediated_ids = (
+        maintenance.get("remediated_entry_ids", [])
+        if isinstance(maintenance, dict)
+        else []
+    )
+    missing_remediated_ids = set(remediated_ids) - set(by_id)
+    if missing_remediated_ids:
+        raise ValueError(
+            "release.json names unknown remediated entries: "
+            f"{sorted(missing_remediated_ids)}"
+        )
 
     outputs: dict[Path, bytes] = {}
     for entry in entries:
@@ -234,17 +318,35 @@ def build_outputs() -> dict[Path, bytes]:
     brief_path = ARTIFACTS / NATIONAL_BRIEF_NAME
     outputs[brief_path] = brief_bytes
 
+    in6_brief_bytes = in6_current_brief(entries, ledger)
+    in6_brief_path = ARTIFACTS / IN6_CURRENT_BRIEF_NAME
+    outputs[in6_brief_path] = in6_brief_bytes
+
     receipt_bytes = run_receipt(entries, ledger)
     receipt_path = ARTIFACTS / RUN_RECEIPT_NAME
     outputs[receipt_path] = receipt_bytes
 
     national_entries = [entry for entry in entries if entry["scope"] == "national"]
     in6_entries = [entry for entry in entries if entry["scope"] == "in6"]
+    base_editorial_version = (
+        maintenance.get("base_editorial_version")
+        if isinstance(maintenance, dict)
+        else None
+    )
+    national_release_note = (
+        f"The factual and Maybe / Therefore content of the {len(NEW_ENTRY_IDS)} base "
+        f"editorial records is carried forward from release {base_editorial_version}; "
+        "review-status metadata is materialized separately, and this maintenance remediates "
+        f"Maybe / Therefore reasoning in {len(remediated_ids)} current records and "
+        "does not imply a new post-cutoff finding.\n"
+        if maintenance
+        else f"{len(NEW_ENTRY_IDS)} records were added or materially refreshed in this run.\n"
+    )
     national_files = {
         "README.md": (
             "# NATIONAL update pack\n\n"
-            f"Release: {RELEASE_HUMAN}\nChecked: {CHECKED_AT}\n"
-            f"Contains {len(national_entries)} national records; {len(NEW_ENTRY_IDS)} were added or materially refreshed in this run.\n"
+            f"Release: {VERSION} · {RELEASE_HUMAN}\nEditorial cutoff: {CHECKED_AT}\n"
+            f"Contains {len(national_entries)} national records. {national_release_note}"
         ).encode(),
         NATIONAL_BRIEF_NAME: brief_bytes,
         RUN_RECEIPT_NAME: receipt_bytes,
@@ -269,15 +371,20 @@ def build_outputs() -> dict[Path, bytes]:
     complete_files = {
         "README.md": (
             "# The Record current update pack\n\n"
-            f"Release: {VERSION}\nRelease date: {RELEASE_HUMAN}\nChecked: {CHECKED_AT}\n\n"
+            f"Release: {VERSION}\nRelease date: {RELEASE_HUMAN}\nEditorial/base-release cutoff: {CHECKED_AT}\n\n"
             f"Contains {len(national_entries)} national and {len(in6_entries)} IN-6 current-layer records. "
+            "Each brief and entry pack preserves the individual record's evidence-check time; the release cutoff does not imply that every record was re-researched on that date. "
+            "The national and IN-6 briefs at the pack root are generated from the current canonical layer. "
+            "A separately labeled snapshots directory preserves the immutable July 18 IN-6 brief without presenting it as current. "
             f"The full searchable Trump archive renders {ARCHIVE_METRICS['totals']['full_archive_runtime_entries']:,} active canonical/bridged entries. "
             f"It retains {ARCHIVE_METRICS['totals']['superseded_legacy_tombstones']:,} duplicate tombstones outside that count. "
             "External archive units and normalized crosslinks remain separate until source review and deduplication promote a distinct event.\n"
         ).encode(),
         NATIONAL_BRIEF_NAME: brief_bytes,
+        IN6_CURRENT_BRIEF_NAME: in6_brief_bytes,
         RUN_RECEIPT_NAME: receipt_bytes,
         "EDITORIAL_AUTOMATION.md": (ROOT / "EDITORIAL_AUTOMATION.md").read_bytes(),
+        "AI_PROVENANCE.md": (ROOT / "AI_PROVENANCE.md").read_bytes(),
         "current_layer_bridge.js": (ROOT / "current_layer_bridge.js").read_bytes(),
         "data/current_entries.json": (ROOT / "data/current_entries.json").read_bytes(),
         "data/archive_metrics.json": (ROOT / "data/archive_metrics.json").read_bytes(),
@@ -292,7 +399,14 @@ def build_outputs() -> dict[Path, bytes]:
     }
     in6_brief = ARTIFACTS / "THE_RECORD_IN6_UPDATE_BRIEF_2026-07-18.md"
     if in6_brief.exists():
-        complete_files[in6_brief.name] = in6_brief.read_bytes()
+        complete_files[f"snapshots/{in6_brief.name}"] = in6_brief.read_bytes()
+        complete_files["snapshots/README.md"] = (
+            "# Preserved snapshots\n\n"
+            f"`{in6_brief.name}` is the immutable July 18 IN-6 brief. "
+            f"The current canonical IN-6 brief for release {VERSION} is "
+            f"`../{IN6_CURRENT_BRIEF_NAME}`. The snapshot and current per-entry "
+            "packs must not be treated as one contemporaneous package.\n"
+        ).encode()
     for entry in entries:
         pack_path = ENTRY_DIR / entry["pack_filename"]
         complete_files[f'entries/{entry["pack_filename"]}'] = artifact_bytes(pack_path)
