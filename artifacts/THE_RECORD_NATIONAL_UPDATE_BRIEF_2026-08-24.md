@@ -3,7 +3,7 @@
 **Release:** August 24, 2026
 **Checked:** 2026-08-24 5:58 PM EDT
 
-Each item preserves The Record's three-layer distinction: facts, significance, and the observed response or goalpost.
+Each item preserves The Record's labeled distinction between facts, significance, the strongest observed response or goalpost, and any separately reviewed Maybe / Therefore layer.
 
 ## August 24, 2026 — USDA reopens the Douglas cattle crossing after a 15-month livestock-import suspension
 

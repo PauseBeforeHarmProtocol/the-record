@@ -1,0 +1,281 @@
+[
+  {
+    "record_id": "FED-R47-003581",
+    "status": "interpretive_draft",
+    "title": "Congress publishes Trump's 2015–2020 tax returns after the access litigation",
+    "event_date": "2022-12-30",
+    "date_precision": "day",
+    "deduplication": {
+      "fingerprint_version": "federated-record-v1",
+      "dedupe_key": "sha256:ed5ef230d98211d70ac525fa0247ce47b91b326e7580918d71aafef442e37492",
+      "event_family_key": "sha256:a9b8e73138956d62d779bf2eac8ce86a4cf0303d3d550900b5fd5b3ce54beab1",
+      "fingerprint_basis": {
+        "event_date": "2022-12-30",
+        "primary_actor": "House Committee on Ways and Means",
+        "normalized_subject": "public release of Donald Trump federal tax returns for tax years 2015 through 2020",
+        "formal_identifiers": [
+          "SCOTUS 22A362"
+        ]
+      },
+      "origin_aliases": [
+        "record47:3581"
+      ],
+      "duplicate_review": {
+        "state": "clear",
+        "checked_at": "2026-08-25T13:50:19Z",
+        "reviewer": "ChatGPT 5.6 Sol Max (OpenAI)",
+        "notes": "Exact event/date/actor match to existing canonical entry LEG-003015. LEG-003016 described the same public-release event and has been superseded by LEG-003015; its unrelated citation did not support a separate canonical event. No canonical event was created."
+      }
+    },
+    "origins": [
+      {
+        "archive_id": "record47",
+        "external_id": "3581",
+        "origin_key": "record47:3581",
+        "external_url": "https://record47.org/entry/3581",
+        "external_record_unit": "one curated executive-conduct entry",
+        "unit_scope": "Record47 congressional-action entry about publication of Trump's 2015–2020 tax returns",
+        "external_record_status": "approved",
+        "origin_role": "crosswalk_target",
+        "retrieved_at": "2026-08-25T13:50:19Z",
+        "payload_sha256": "83c12eceb3fa710ba6428c999045488bdb31bbb07688c40ff49d91cebca0eabd",
+        "content_use": "metadata_and_links_only",
+        "attribution": "Record47 Executive Conduct Archive, entry 3581."
+      }
+    ],
+    "counting": {
+      "upstream_record_unit": "one curated executive-conduct entry",
+      "comparability_group": "structured_executive_conduct",
+      "additive_across_archives": false,
+      "count_disposition": "not_counted_unpublished",
+      "canonical_the_record_entry_id": "LEG-003015",
+      "rule": "Preserve upstream units separately; count a published canonical event once in The Record, never once per contributing archive."
+    },
+    "lifecycle": {
+      "stage": "implementation",
+      "stage_date": "2022-12-30",
+      "previous_record_ids": [],
+      "next_record_ids": []
+    },
+    "crosslinks": [],
+    "facts": {
+      "claims": [
+        {
+          "claim_id": "FED-R47-003581-F1",
+          "text": "On December 30, 2022, the House Ways and Means Committee published redacted personal and business tax-return materials covering tax years 2015 through 2020 for Donald Trump and associated entities.",
+          "claim_status": "documented",
+          "source_refs": [
+            "CBS-2022-12-30",
+            "GUARDIAN-2022-12-30"
+          ]
+        },
+        {
+          "claim_id": "FED-R47-003581-F2",
+          "text": "The committee's effort began in 2019; on November 22, 2022, the Supreme Court denied Trump's application to stay the lower-court mandate, and the committee released the materials the following month.",
+          "claim_status": "documented",
+          "source_refs": [
+            "SCOTUS-22A362",
+            "CBS-2022-12-30",
+            "GUARDIAN-2022-12-30"
+          ]
+        },
+        {
+          "claim_id": "FED-R47-003581-F3",
+          "text": "Trump opposed the publication and argued that the returns demonstrated business success through his use of depreciation and other tax deductions.",
+          "claim_status": "reported",
+          "source_refs": [
+            "CBS-2022-12-30",
+            "GUARDIAN-2022-12-30"
+          ]
+        }
+      ],
+      "scope_note": "This crosswalk documents the public-release event. It does not treat one return as one event, adjudicate the legality of any tax position, or create a second canonical count."
+    },
+    "sources": [
+      {
+        "source_id": "R47-3581-METADATA",
+        "title": "House Ways and Means Committee Publicly Releases Six Years of Trump Tax Returns After Three-Year Legal Battle",
+        "publisher": "Record47 Executive Conduct Archive",
+        "url": "https://record47.org/entry/3581",
+        "archived_url": null,
+        "source_type": "external_archive_metadata",
+        "publication_date": "2022-12-30",
+        "accessed_at": "2026-08-25T13:50:19Z",
+        "supports_claim_ids": [],
+        "source_independence_group": "record47",
+        "evidence_locator": "Entry ID 3581 and linked API record",
+        "notes": "Used only to identify and attribute the external record and its stable ID. No Record47 prose was imported, and this metadata is not used as evidence for the fact claims."
+      },
+      {
+        "source_id": "SCOTUS-22A362",
+        "title": "Docket for 22A362, Donald J. Trump, et al. v. Committee on Ways and Means, et al.",
+        "publisher": "Supreme Court of the United States",
+        "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/22A362.html",
+        "archived_url": null,
+        "source_type": "primary_court_record",
+        "publication_date": "2022-11-22",
+        "accessed_at": "2026-08-25T13:50:19Z",
+        "supports_claim_ids": [
+          "FED-R47-003581-F2"
+        ],
+        "source_independence_group": "U.S. Supreme Court official docket",
+        "evidence_locator": "Proceedings and Orders, November 22, 2022 entry denying application 22A362 and vacating the temporary stay",
+        "notes": "Primary record for the Supreme Court procedural step; the denial was not a merits opinion and is not described as one."
+      },
+      {
+        "source_id": "CBS-2022-12-30",
+        "title": "Trump's federal tax returns are released: Here's what we know",
+        "publisher": "CBS News",
+        "url": "https://www.cbsnews.com/live-updates/trumps-tax-returns-released-today-2022-12-30/",
+        "archived_url": null,
+        "source_type": "independent_reporting",
+        "publication_date": "2022-12-30",
+        "accessed_at": "2026-08-25T13:50:19Z",
+        "supports_claim_ids": [
+          "FED-R47-003581-F1",
+          "FED-R47-003581-F2",
+          "FED-R47-003581-F3"
+        ],
+        "source_independence_group": "CBS News",
+        "evidence_locator": "Article introduction; updates headed 'See the tax return documents here' and 'Trump says tax returns show how proudly successful I have been'",
+        "notes": "Independently inspected reporting with links to the committee release and redacted return files."
+      },
+      {
+        "source_id": "GUARDIAN-2022-12-30",
+        "title": "Trump tax returns show China bank account as six years of records released",
+        "publisher": "The Guardian",
+        "url": "https://www.theguardian.com/us-news/2022/dec/30/trump-tax-returns-released-us-house-committee",
+        "archived_url": null,
+        "source_type": "independent_reporting",
+        "publication_date": "2022-12-30",
+        "accessed_at": "2026-08-25T13:50:19Z",
+        "supports_claim_ids": [
+          "FED-R47-003581-F1",
+          "FED-R47-003581-F2",
+          "FED-R47-003581-F3"
+        ],
+        "source_independence_group": "Guardian News & Media",
+        "evidence_locator": "Report sections describing the 2015–2020 release, 2019 request and litigation, Trump response, and ranking-member privacy objection",
+        "notes": "Second independent report used to corroborate the release, sequence, response, and strongest institutional objection."
+      }
+    ],
+    "significance": {
+      "text": "The publication ended a multiyear access dispute and converted a presidential-transparency question into a source record that the public could inspect. The release itself did not establish that any tax position was criminal or unlawful.",
+      "basis_claim_ids": [
+        "FED-R47-003581-F1",
+        "FED-R47-003581-F2"
+      ],
+      "analysis_not_fact": true
+    },
+    "goalpost_response": {
+      "text": "The strongest defense has two parts: Trump said the returns showed lawful business success through depreciation and deductions, while the committee's ranking Republican argued that partisan publication of tax returns could create a dangerous privacy precedent for other taxpayers. Those objections do not alter the documented release or court sequence, but they identify the genuine merits and institutional questions separately.",
+      "response_kind": "strongest_supporting_case",
+      "source_refs": [
+        "CBS-2022-12-30",
+        "GUARDIAN-2022-12-30"
+      ]
+    },
+    "maybe_therefore": {
+      "text": "Maybe lawful deductions and loss carryforwards do not prove wrongdoing, and congressional publication raised a genuine taxpayer-privacy and precedent risk. Therefore the accountability significance is delayed transparency: the released 2015 return was unavailable to voters during the 2016 campaign; the 2015–2020 materials remained unavailable through Trump's first presidency and became public only in 2022 after litigation. None of this makes low tax liability proof of illegality.",
+      "epistemic_status": "conditional_inference",
+      "basis_claim_ids": [
+        "FED-R47-003581-F1",
+        "FED-R47-003581-F2",
+        "FED-R47-003581-F3"
+      ],
+      "assumptions": [
+        "Presidential financial disclosure is relevant to voters evaluating conflicts of interest and public financial representations.",
+        "The date of public access matters independently of whether the reported tax positions were lawful."
+      ],
+      "would_change_if": [
+        "Reliable evidence showed that voters had equivalent access to the same 2015–2020 materials before the congressional release.",
+        "A source-level audit showed that the released materials were materially incomplete for the stated 2015–2020 scope."
+      ],
+      "confidence": "medium",
+      "editorial_not_fact": true
+    },
+    "evidence": {
+      "tier": "B_primary_or_two_independent",
+      "confidence": "high",
+      "evidence_state": "corroborated",
+      "human_reviewed": false,
+      "reviewer": "ChatGPT 5.6 Sol Max (OpenAI), user-directed source-review pipeline",
+      "reviewed_at": "2026-08-25T13:50:19Z",
+      "limitations": [
+        "The now-obsolete House committee press-release URL returns 404, so the release event is corroborated through two independent reports that linked to the original materials.",
+        "The Supreme Court docket documents denial of a stay application; it is not treated as a merits ruling on public disclosure.",
+        "This pilot does not independently audit thousands of pages of tax filings or resolve the legality of individual tax positions."
+      ]
+    },
+    "provenance": {
+      "created_at": "2026-08-25T13:50:19Z",
+      "created_by": "ChatGPT 5.6 Sol Max (OpenAI), under The Record editorial direction",
+      "last_modified_at": "2026-08-25T14:40:23Z",
+      "source_level_review_completed": true,
+      "external_archive_assertions_are_not_fact_sources": true,
+      "publication_authorized": false,
+      "copyright_boundary": "Record47 contributes only stable ID, status, title-level metadata, and links. All fact and interpretive prose is newly written from independently inspected sources; no bulk upstream text is reproduced.",
+      "transformations": [
+        {
+          "performed_at": "2026-08-25T13:50:19Z",
+          "performed_by": "ChatGPT 5.6 Sol Max (OpenAI)",
+          "action": "source_review_and_original_redraft",
+          "note": "Separated three narrow fact claims from significance, strongest response, conditional inference, and consequence layers."
+        },
+        {
+          "performed_at": "2026-08-25T13:50:19Z",
+          "performed_by": "ChatGPT 5.6 Sol Max (OpenAI)",
+          "action": "canonical_crosswalk",
+          "note": "Matched Record47 entry 3581 to existing LEG-003015. The draft remains outside all totals until human editorial review; promotion would use crosswalk_only_no_new_count."
+        },
+        {
+          "performed_at": "2026-08-25T14:40:23Z",
+          "performed_by": "ChatGPT 5.6 Sol Max (OpenAI)",
+          "action": "deduplication_and_inference_correction",
+          "note": "Recorded LEG-003016 as a superseded alias of LEG-003015 and narrowed the conditional inference to delayed public access, taxpayer-privacy risk, and the absence of any inference of illegality from low tax liability alone."
+        }
+      ]
+    },
+    "consequences": [
+      {
+        "consequence_id": "FED-R47-003581-C1",
+        "text": "The immediate consequence was public access to previously nonpublic, redacted 2015–2020 return and audit materials for examination by voters, reporters, and tax experts.",
+        "direction": "unclear",
+        "observation_state": "observed",
+        "causal_confidence": "high",
+        "time_horizon": "immediate after publication",
+        "source_refs": [
+          "CBS-2022-12-30",
+          "GUARDIAN-2022-12-30"
+        ]
+      }
+    ],
+    "revisions": [
+      {
+        "revision_id": "FED-R47-003581-R1",
+        "timestamp": "2026-08-25T13:50:19Z",
+        "actor": "The Record editorial pipeline",
+        "kind": "created",
+        "summary": "Created the first source-reviewed federated crosswalk as an unpublished interpretive draft without adding a canonical event count."
+      },
+      {
+        "revision_id": "FED-R47-003581-R2",
+        "timestamp": "2026-08-25T14:40:23Z",
+        "actor": "The Record editorial pipeline",
+        "kind": "correction",
+        "summary": "Updated the duplicate review after LEG-003016 was superseded and corrected the Maybe/Therefore layer to distinguish delayed transparency, privacy risk, and legality."
+      }
+    ],
+    "tags": [
+      "congressional-oversight",
+      "financial-disclosure",
+      "tax-returns",
+      "federated-crosswalk-pilot"
+    ],
+    "institutions": [
+      "House Committee on Ways and Means",
+      "Internal Revenue Service",
+      "Supreme Court of the United States"
+    ]
+  }
+]

@@ -1,0 +1,472 @@
+{
+  "schema_version": 3,
+  "editorial_checked_at": "2026-08-24 5:58 PM EDT",
+  "quality_inputs_updated_at": "2026-08-25T14:40:23Z",
+  "external_registry_checked_at": "2026-08-25T14:21:06Z",
+  "federation_last_modified_at": "2026-08-25T14:40:23Z",
+  "legacy_revisions_through": "2026-08-25",
+  "release_version": "8.2.1",
+  "canonical_files": {
+    "legacy": "data/legacy_entries.json",
+    "current": "data/current_entries.json",
+    "source_ledger": "data/source_ledger.json",
+    "federated": "data/federated_records.json",
+    "legacy_revisions": "data/legacy_revisions.json",
+    "archive_registry": "data/archive_registry.json"
+  },
+  "canonical_sha256": {
+    "legacy": "d44f8b3e7e2ca08cc040ed82996ea9950171a306cd930dabfaaeb394cd7fe6e0",
+    "current": "a377778a7af47f4d4d1af743b35819161dc1326a323cf65769b9ce748ccc3f3c",
+    "source_ledger": "acb71fd4055ed2427a119d6850ad7f4d945fcb7af41c6a8127bf35a716c741ae",
+    "federated": "4c2b2804949098a9b0a314b3f0ed44e74fc8ccb688ab84741922dd30fa1083f3",
+    "legacy_revisions": "6bf453bac68d75eee8d503cdb0a1ff8eed08ea522d20b00e53dcd7c3a5a32a62",
+    "archive_registry": "4151b3d81ff5236617b8b2548fc92338cf6c5a04097c461adebeb527ce726647"
+  },
+  "totals": {
+    "canonical_legacy_rows": 4647,
+    "canonical_legacy_entries": 4644,
+    "active_legacy_entries": 4644,
+    "superseded_legacy_tombstones": 3,
+    "bridged_national_entries": 23,
+    "full_archive_runtime_entries": 4667,
+    "current_layer_entries": 27,
+    "legacy_source_references": 6486,
+    "current_source_references": 50,
+    "full_archive_runtime_source_references": 6528,
+    "full_archive_runtime_unique_urls": 5147
+  },
+  "coverage": {
+    "legacy_last_date": "2026-05-30",
+    "current_bridge_first_date": "2026-07-13",
+    "uncovered_days_between_layers": 43,
+    "known_gap_label": "May 31, 2026–July 12, 2026",
+    "known_gap_status": "disclosed; backfill required"
+  },
+  "legacy": {
+    "entries": 4644,
+    "coverage": {
+      "first_sort_date": "1927-01-15",
+      "last_sort_date": "2026-05-30"
+    },
+    "entry_types": {
+      "context": 342,
+      "event": 4302
+    },
+    "date_precision": {
+      "approx": 169,
+      "day": 4431,
+      "month": 32,
+      "year": 12
+    },
+    "eras": {
+      "campaign1": 529,
+      "campaign2": 633,
+      "formation": 352,
+      "post1": 465,
+      "term1": 1638,
+      "term2": 1027
+    },
+    "review_states": {
+      "in-review": 7,
+      "legacy-unreviewed": 4637
+    },
+    "sources": {
+      "references": 6486,
+      "references_with_url": 6486,
+      "unique_urls": 5105,
+      "unique_domains": 310,
+      "entries_with_one_source": 3339,
+      "entries_with_one_source_percent": 71.9,
+      "entries_with_one_domain": 3481,
+      "entries_with_one_domain_percent": 75.0,
+      "entries_with_low_specificity_source": 1615,
+      "entries_with_low_specificity_source_percent": 34.8,
+      "entries_relying_only_on_low_specificity_sources": 1371,
+      "entries_relying_only_on_low_specificity_sources_percent": 29.5,
+      "single_source_low_specificity_entries": 895,
+      "single_source_low_specificity_entries_percent": 19.3,
+      "entries_repeating_a_url_internally": 38,
+      "low_specificity_reasons": {
+        "publisher-homepage": 304,
+        "query-results": 175,
+        "search-results": 1662
+      },
+      "most_used_domains": [
+        {
+          "domain": "apnews.com",
+          "references": 1210
+        },
+        {
+          "domain": "npr.org",
+          "references": 956
+        },
+        {
+          "domain": "cnn.com",
+          "references": 498
+        },
+        {
+          "domain": "washingtonpost.com",
+          "references": 397
+        },
+        {
+          "domain": "reuters.com",
+          "references": 300
+        },
+        {
+          "domain": "fec.gov",
+          "references": 278
+        },
+        {
+          "domain": "nbcnews.com",
+          "references": 231
+        },
+        {
+          "domain": "biography.com",
+          "references": 222
+        },
+        {
+          "domain": "congress.gov",
+          "references": 201
+        },
+        {
+          "domain": "pbs.org",
+          "references": 152
+        },
+        {
+          "domain": "whitehouse.gov",
+          "references": 145
+        },
+        {
+          "domain": "cnbc.com",
+          "references": 142
+        },
+        {
+          "domain": "nytimes.com",
+          "references": 128
+        },
+        {
+          "domain": "courtlistener.com",
+          "references": 113
+        },
+        {
+          "domain": "justice.gov",
+          "references": 101
+        }
+      ],
+      "urls_reused_by_ten_or_more_entries": 25
+    },
+    "duplicate_candidates": {
+      "exact_text_groups": 0,
+      "exact_text_extra_rows": 0,
+      "exact_text_group_ids": [],
+      "same_date_heading_groups": 0,
+      "same_date_heading_extra_rows": 0,
+      "same_date_heading_group_ids": [],
+      "repeated_heading_any_date_groups": 31,
+      "repeated_heading_any_date_extra_rows": 109,
+      "repeated_heading_any_date_group_ids": [
+        [
+          "LEG-000001",
+          "LEG-000345",
+          "LEG-000801",
+          "LEG-001084",
+          "LEG-003096",
+          "LEG-003177",
+          "LEG-003248",
+          "LEG-003293",
+          "LEG-003388"
+        ],
+        [
+          "LEG-000044",
+          "LEG-002846",
+          "LEG-002881",
+          "LEG-003757"
+        ],
+        [
+          "LEG-000334",
+          "LEG-003079",
+          "LEG-003207",
+          "LEG-003361",
+          "LEG-003385",
+          "LEG-003465",
+          "LEG-003535",
+          "LEG-003702",
+          "LEG-003775",
+          "LEG-004008",
+          "LEG-004502"
+        ],
+        [
+          "LEG-000337",
+          "LEG-002611",
+          "LEG-002782",
+          "LEG-002843",
+          "LEG-002889",
+          "LEG-003025",
+          "LEG-003045",
+          "LEG-003098",
+          "LEG-003214",
+          "LEG-003216",
+          "LEG-003220",
+          "LEG-003485",
+          "LEG-004602"
+        ],
+        [
+          "LEG-000448",
+          "LEG-000626"
+        ],
+        [
+          "LEG-001120",
+          "LEG-001129"
+        ],
+        [
+          "LEG-001171",
+          "LEG-001175"
+        ],
+        [
+          "LEG-001540",
+          "LEG-002139",
+          "LEG-002940",
+          "LEG-003130",
+          "LEG-004068",
+          "LEG-004277",
+          "LEG-004561",
+          "LEG-004618",
+          "LEG-004635"
+        ],
+        [
+          "LEG-001696",
+          "LEG-001926"
+        ],
+        [
+          "LEG-001731",
+          "LEG-001756",
+          "LEG-001765",
+          "LEG-001769",
+          "LEG-001781",
+          "LEG-001794",
+          "LEG-001809",
+          "LEG-001814",
+          "LEG-001826",
+          "LEG-001833",
+          "LEG-001844",
+          "LEG-001850",
+          "LEG-001862",
+          "LEG-001870",
+          "LEG-001877",
+          "LEG-001881",
+          "LEG-001901",
+          "LEG-001908",
+          "LEG-001914",
+          "LEG-001927",
+          "LEG-001944",
+          "LEG-001949",
+          "LEG-001966",
+          "LEG-001977",
+          "LEG-001986",
+          "LEG-001992",
+          "LEG-002009",
+          "LEG-002021",
+          "LEG-002030",
+          "LEG-002037",
+          "LEG-002049",
+          "LEG-002056",
+          "LEG-002063",
+          "LEG-002071",
+          "LEG-002095",
+          "LEG-002103",
+          "LEG-002107",
+          "LEG-002116",
+          "LEG-002125",
+          "LEG-002135"
+        ],
+        [
+          "LEG-001768",
+          "LEG-001782"
+        ],
+        [
+          "LEG-001788",
+          "LEG-001812"
+        ],
+        [
+          "LEG-001796",
+          "LEG-001808"
+        ],
+        [
+          "LEG-001807",
+          "LEG-001815"
+        ],
+        [
+          "LEG-001818",
+          "LEG-001847"
+        ],
+        [
+          "LEG-001823",
+          "LEG-001835"
+        ],
+        [
+          "LEG-001828",
+          "LEG-001843"
+        ],
+        [
+          "LEG-001855",
+          "LEG-001872"
+        ],
+        [
+          "LEG-001858",
+          "LEG-001874"
+        ],
+        [
+          "LEG-001889",
+          "LEG-001910"
+        ],
+        [
+          "LEG-001891",
+          "LEG-001902"
+        ],
+        [
+          "LEG-001913",
+          "LEG-003231",
+          "LEG-004597"
+        ],
+        [
+          "LEG-001978",
+          "LEG-001996"
+        ],
+        [
+          "LEG-002000",
+          "LEG-002029"
+        ],
+        [
+          "LEG-002019",
+          "LEG-002039"
+        ],
+        [
+          "LEG-002082",
+          "LEG-002105"
+        ],
+        [
+          "LEG-002085",
+          "LEG-002100"
+        ],
+        [
+          "LEG-002113",
+          "LEG-002132"
+        ],
+        [
+          "LEG-002168",
+          "LEG-004138"
+        ],
+        [
+          "LEG-003080",
+          "LEG-003208",
+          "LEG-003386",
+          "LEG-003437",
+          "LEG-003521"
+        ],
+        [
+          "LEG-003891",
+          "LEG-004410"
+        ]
+      ]
+    },
+    "interpretive_layers": {
+      "maybe_therefore_present": 1434,
+      "maybe_therefore_present_percent": 30.9,
+      "maybe_therefore_missing": 3210,
+      "maybe_therefore_missing_percent": 69.1
+    }
+  },
+  "current": {
+    "entries": 27,
+    "national_entries": 23,
+    "in6_entries": 4,
+    "source_references": 50,
+    "national_source_references": 42,
+    "source_ledger_rows": 54,
+    "used_source_ledger_rows": 50,
+    "unused_source_ledger_rows": 4,
+    "entries_with_one_source": 14,
+    "entries_with_one_source_percent": 51.9,
+    "national_entries_with_one_source": 12,
+    "national_entries_with_one_source_percent": 52.2,
+    "maybe_therefore_present": 0,
+    "maybe_therefore_missing": 27,
+    "most_used_publishers": [
+      {
+        "publisher": "Reuters",
+        "references": 23
+      },
+      {
+        "publisher": "The White House",
+        "references": 8
+      },
+      {
+        "publisher": "Associated Press",
+        "references": 5
+      },
+      {
+        "publisher": "U.S. Department of the Interior",
+        "references": 2
+      },
+      {
+        "publisher": "Office of the Clerk, U.S. House",
+        "references": 2
+      },
+      {
+        "publisher": "Congress.gov / Library of Congress",
+        "references": 2
+      },
+      {
+        "publisher": "Office of Rep. Jefferson Shreve",
+        "references": 2
+      },
+      {
+        "publisher": "Financial Times",
+        "references": 1
+      },
+      {
+        "publisher": "Office of the Director of National Intelligence",
+        "references": 1
+      },
+      {
+        "publisher": "House Committee on Appropriations — Majority",
+        "references": 1
+      }
+    ]
+  },
+  "federated": {
+    "records": 1,
+    "states": {
+      "interpretive_draft": 1
+    },
+    "counting_rule": "Federated crosslinks are not added to The Record entry totals unless promoted as a distinct canonical event after deduplication and editorial review."
+  },
+  "remediation": {
+    "legacy_revision_records": 31,
+    "superseded_tombstones": [
+      {
+        "legacy_id": "LEG-002123",
+        "superseded_by": "LEG-002128",
+        "reason": "Generic impeachment placeholder on an unsupported date; retained as an auditable legacy alias to the December 18, 2019 House impeachment event."
+      },
+      {
+        "legacy_id": "LEG-002138",
+        "superseded_by": "LEG-002128",
+        "reason": "Generic impeachment placeholder on an unsupported date; retained as an auditable legacy alias to the December 18, 2019 House impeachment event."
+      },
+      {
+        "legacy_id": "LEG-003016",
+        "superseded_by": "LEG-003015",
+        "reason": "Same December 30, 2022 public-release event as LEG-003015; retained as an auditable legacy alias. Its cited CNN URL was unrelated to the tax-return release."
+      }
+    ]
+  },
+  "definitions": {
+    "source_reference": "One source object attached to one entry; repeated URLs count repeatedly.",
+    "unique_url": "A distinct normalized-as-stored source URL; redirects are not yet collapsed.",
+    "low_specificity": "A publisher homepage, search-results page, or query-results page rather than a direct supporting document.",
+    "review_state": "Editorial QA status; legacy-unreviewed does not mean false, only not revalidated under the current standard.",
+    "maybe_therefore": "A labeled competing-frame layer that states the strongest plausible defense or uncertainty before the record's evidence-bound consequence or test. Missing legacy layers remain a visible remediation backlog and are never silently generated as fact.",
+    "deduplication": "Superseded rows remain as permalink tombstones but are excluded from totals and search. New canonical and federated records are checked across layers using formal IDs, direct-source URLs, normalized titles and facts, date intervals, canonical targets, and lifecycle relationships before promotion."
+  }
+}

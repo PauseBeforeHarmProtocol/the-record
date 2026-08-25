@@ -1,0 +1,819 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pausebeforeharmprotocol.github.io/the-record/schemas/federated_record.schema.json",
+  "title": "The Record federated interpretive record collection",
+  "description": "External archive material may enter as a research lead, but it cannot advance or publish until it has The Record's complete sourced and interpretive structure. Upstream units and origin IDs remain intact and are never added across archives.",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/federatedRecord"
+  },
+  "$defs": {
+    "recordId": {
+      "type": "string",
+      "pattern": "^FED-[A-Z0-9][A-Z0-9._-]{2,}$"
+    },
+    "dateOrPartialDate": {
+      "type": "string",
+      "pattern": "^[0-9]{4}(?:-(?:0[1-9]|1[0-2])(?:-(?:0[1-9]|[12][0-9]|3[01]))?)?$"
+    },
+    "dateTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "nullableDateTime": {
+      "oneOf": [
+        { "$ref": "#/$defs/dateTime" },
+        { "type": "null" }
+      ]
+    },
+    "sha256Key": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "archiveId": {
+      "type": "string",
+      "enum": [
+        "trump_archive",
+        "undotrump",
+        "immigration_policy_tracking_project",
+        "record47"
+      ]
+    },
+    "lifecycleStage": {
+      "type": "string",
+      "enum": [
+        "statement",
+        "reported",
+        "announcement",
+        "proposal",
+        "order_signed",
+        "rule_proposed",
+        "rule_final",
+        "implementation",
+        "enforcement",
+        "legal_challenge",
+        "enjoined",
+        "partially_blocked",
+        "court_ruling",
+        "reversed",
+        "rescinded",
+        "expired",
+        "restored",
+        "outcome_measured",
+        "correction",
+        "context"
+      ]
+    },
+    "origin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "archive_id",
+        "external_id",
+        "origin_key",
+        "external_url",
+        "external_record_unit",
+        "unit_scope",
+        "origin_role",
+        "retrieved_at",
+        "content_use"
+      ],
+      "properties": {
+        "archive_id": { "$ref": "#/$defs/archiveId" },
+        "external_id": { "type": "string", "minLength": 1 },
+        "origin_key": {
+          "type": "string",
+          "description": "Must equal archive_id + ':' + external_id exactly; the semantic validator enforces this."
+        },
+        "external_url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "external_record_unit": { "type": "string", "minLength": 1 },
+        "unit_scope": { "type": "string", "minLength": 1 },
+        "external_record_status": { "type": ["string", "null"] },
+        "origin_role": {
+          "type": "string",
+          "enum": [
+            "discovery_lead",
+            "corroborating_archive",
+            "source_artifact",
+            "crosswalk_target"
+          ]
+        },
+        "retrieved_at": { "$ref": "#/$defs/dateTime" },
+        "payload_sha256": {
+          "type": ["string", "null"],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "content_use": {
+          "type": "string",
+          "enum": [
+            "metadata_and_links_only",
+            "licensed_excerpt",
+            "licensed_full_record",
+            "public_domain_source",
+            "permission_granted"
+          ]
+        },
+        "attribution": { "type": ["string", "null"] }
+      }
+    },
+    "fingerprintBasis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event_date",
+        "primary_actor",
+        "normalized_subject",
+        "formal_identifiers"
+      ],
+      "properties": {
+        "event_date": { "$ref": "#/$defs/dateOrPartialDate" },
+        "primary_actor": { "type": "string", "minLength": 1 },
+        "normalized_subject": {
+          "type": "string",
+          "minLength": 8,
+          "description": "An event-family description stable across later lifecycle stages, not a copied external headline."
+        },
+        "formal_identifiers": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        }
+      }
+    },
+    "duplicateReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "checked_at", "reviewer", "notes"],
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": [
+            "unreviewed",
+            "possible_duplicate",
+            "clear",
+            "merged_external_origins"
+          ]
+        },
+        "checked_at": { "$ref": "#/$defs/nullableDateTime" },
+        "reviewer": { "type": ["string", "null"] },
+        "notes": { "type": "string" }
+      }
+    },
+    "deduplication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fingerprint_version",
+        "dedupe_key",
+        "event_family_key",
+        "fingerprint_basis",
+        "origin_aliases",
+        "duplicate_review"
+      ],
+      "properties": {
+        "fingerprint_version": { "const": "federated-record-v1" },
+        "dedupe_key": {
+          "$ref": "#/$defs/sha256Key",
+          "description": "SHA-256 of the event-family key, lifecycle stage, and event date under federated-record-v1."
+        },
+        "event_family_key": {
+          "$ref": "#/$defs/sha256Key",
+          "description": "SHA-256 of normalized primary actor, stable subject, and sorted formal identifiers. Lifecycle updates share this key but receive distinct dedupe keys."
+        },
+        "fingerprint_basis": { "$ref": "#/$defs/fingerprintBasis" },
+        "origin_aliases": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 3 },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Must exactly equal the set of origin_key values; multiple archives describing one event become aliases on one record."
+        },
+        "duplicate_review": { "$ref": "#/$defs/duplicateReview" }
+      }
+    },
+    "counting": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "upstream_record_unit",
+        "comparability_group",
+        "additive_across_archives",
+        "count_disposition",
+        "canonical_the_record_entry_id",
+        "rule"
+      ],
+      "properties": {
+        "upstream_record_unit": { "type": "string", "minLength": 1 },
+        "comparability_group": {
+          "type": "string",
+          "enum": [
+            "raw_public_expression",
+            "general_policy_action",
+            "domain_policy_action",
+            "structured_executive_conduct"
+          ]
+        },
+        "additive_across_archives": { "const": false },
+        "count_disposition": {
+          "type": "string",
+          "enum": [
+            "not_counted_research_lead",
+            "not_counted_unpublished",
+            "not_counted_superseded",
+            "crosswalk_only_no_new_count",
+            "canonical_new_record_count_once"
+          ]
+        },
+        "canonical_the_record_entry_id": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^(?:LEG-[0-9]{6}|NAT-[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{3})$"
+            },
+            { "type": "null" }
+          ],
+          "description": "Existing canonical legacy or national entry ID. The semantic validator resolves it against canonical data before publication."
+        },
+        "rule": {
+          "const": "Preserve upstream units separately; count a published canonical event once in The Record, never once per contributing archive."
+        }
+      }
+    },
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stage", "stage_date", "previous_record_ids", "next_record_ids"],
+      "properties": {
+        "stage": { "$ref": "#/$defs/lifecycleStage" },
+        "stage_date": { "$ref": "#/$defs/dateOrPartialDate" },
+        "previous_record_ids": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/recordId" },
+          "uniqueItems": true
+        },
+        "next_record_ids": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/recordId" },
+          "uniqueItems": true
+        }
+      }
+    },
+    "crosslink": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["target_record_id", "relationship"],
+      "properties": {
+        "target_record_id": { "$ref": "#/$defs/recordId" },
+        "relationship": {
+          "type": "string",
+          "enum": [
+            "same_event_alias",
+            "same_action_lifecycle",
+            "previous_stage",
+            "next_stage",
+            "supersedes",
+            "superseded_by",
+            "source_artifact_for",
+            "contradicts",
+            "consequence_of",
+            "context_for"
+          ]
+        },
+        "note": { "type": "string" }
+      }
+    },
+    "factClaim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_id", "text", "claim_status", "source_refs"],
+      "properties": {
+        "claim_id": { "type": "string", "pattern": "^[A-Z0-9._-]+-F[0-9]+$" },
+        "text": { "type": "string", "minLength": 1 },
+        "claim_status": {
+          "type": "string",
+          "enum": [
+            "documented",
+            "reported",
+            "alleged",
+            "disputed",
+            "official_claim",
+            "court_finding"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "facts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claims", "scope_note"],
+      "properties": {
+        "claims": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/factClaim" }
+        },
+        "scope_note": { "type": "string" }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "title",
+        "publisher",
+        "url",
+        "source_type",
+        "publication_date",
+        "accessed_at",
+        "supports_claim_ids"
+      ],
+      "properties": {
+        "source_id": { "type": "string", "minLength": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "publisher": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "archived_url": { "type": ["string", "null"], "format": "uri" },
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "primary_law_or_order",
+            "primary_court_record",
+            "primary_agency_record",
+            "primary_data",
+            "direct_statement",
+            "independent_reporting",
+            "expert_analysis",
+            "external_archive_metadata"
+          ]
+        },
+        "publication_date": {
+          "oneOf": [
+            { "$ref": "#/$defs/dateOrPartialDate" },
+            { "type": "null" }
+          ]
+        },
+        "accessed_at": { "$ref": "#/$defs/dateTime" },
+        "supports_claim_ids": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "source_independence_group": { "type": ["string", "null"] },
+        "evidence_locator": { "type": ["string", "null"] },
+        "notes": { "type": "string" }
+      }
+    },
+    "significance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "basis_claim_ids", "analysis_not_fact"],
+      "properties": {
+        "text": { "type": "string", "minLength": 1 },
+        "basis_claim_ids": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "analysis_not_fact": { "const": true }
+      }
+    },
+    "goalpostResponse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "response_kind", "source_refs"],
+      "properties": {
+        "text": { "type": "string", "minLength": 1 },
+        "response_kind": {
+          "type": "string",
+          "enum": [
+            "official_response",
+            "strongest_supporting_case",
+            "documented_goalpost",
+            "disputed_response",
+            "no_response_identified"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        }
+      }
+    },
+    "maybeTherefore": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text",
+        "epistemic_status",
+        "basis_claim_ids",
+        "assumptions",
+        "would_change_if",
+        "confidence",
+        "editorial_not_fact"
+      ],
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Use distinct Maybe and Therefore clauses; the semantic validator rejects the collapsed phrase 'Maybe therefore'."
+        },
+        "epistemic_status": {
+          "type": "string",
+          "enum": ["inference", "conditional_inference", "hypothesis"]
+        },
+        "basis_claim_ids": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "assumptions": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "would_change_if": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1
+        },
+        "confidence": { "type": "string", "enum": ["low", "medium", "high"] },
+        "editorial_not_fact": { "const": true }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tier",
+        "confidence",
+        "evidence_state",
+        "human_reviewed",
+        "reviewer",
+        "reviewed_at",
+        "limitations"
+      ],
+      "properties": {
+        "tier": {
+          "type": "string",
+          "enum": [
+            "A_primary_plus_independent",
+            "B_primary_or_two_independent",
+            "C_single_reputable_secondary",
+            "D_research_lead",
+            "unrated"
+          ]
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["high", "medium", "low", "unresolved", "disputed"]
+        },
+        "evidence_state": {
+          "type": "string",
+          "enum": [
+            "lead_only",
+            "source_reviewed",
+            "corroborated",
+            "primary_documented",
+            "mixed_or_disputed"
+          ]
+        },
+        "human_reviewed": {
+          "type": "boolean",
+          "description": "May remain false for research leads and AI-reviewed source or interpretive drafts; editor_reviewed and published records require true."
+        },
+        "reviewer": { "type": ["string", "null"] },
+        "reviewed_at": { "$ref": "#/$defs/nullableDateTime" },
+        "limitations": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "created_at",
+        "created_by",
+        "last_modified_at",
+        "source_level_review_completed",
+        "external_archive_assertions_are_not_fact_sources",
+        "publication_authorized",
+        "copyright_boundary",
+        "transformations"
+      ],
+      "properties": {
+        "created_at": { "$ref": "#/$defs/dateTime" },
+        "created_by": { "type": "string", "minLength": 1 },
+        "last_modified_at": { "$ref": "#/$defs/dateTime" },
+        "source_level_review_completed": { "type": "boolean" },
+        "external_archive_assertions_are_not_fact_sources": { "const": true },
+        "publication_authorized": { "type": "boolean" },
+        "copyright_boundary": { "type": "string", "minLength": 1 },
+        "transformations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["performed_at", "performed_by", "action", "note"],
+            "properties": {
+              "performed_at": { "$ref": "#/$defs/dateTime" },
+              "performed_by": { "type": "string", "minLength": 1 },
+              "action": { "type": "string", "minLength": 1 },
+              "note": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    },
+    "consequence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "consequence_id",
+        "text",
+        "direction",
+        "observation_state",
+        "causal_confidence",
+        "time_horizon",
+        "source_refs"
+      ],
+      "properties": {
+        "consequence_id": { "type": "string", "minLength": 1 },
+        "text": { "type": "string", "minLength": 1 },
+        "direction": { "type": "string", "enum": ["benefit", "harm", "mixed", "unclear"] },
+        "observation_state": {
+          "type": "string",
+          "enum": ["observed", "estimated", "projected", "conditional"]
+        },
+        "causal_confidence": { "type": "string", "enum": ["high", "medium", "low", "unresolved"] },
+        "time_horizon": { "type": "string", "minLength": 1 },
+        "source_refs": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "revision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["revision_id", "timestamp", "actor", "kind", "summary"],
+      "properties": {
+        "revision_id": { "type": "string", "minLength": 1 },
+        "timestamp": { "$ref": "#/$defs/dateTime" },
+        "actor": { "type": "string", "minLength": 1 },
+        "kind": {
+          "type": "string",
+          "enum": ["created", "source_added", "interpretation_changed", "correction", "status_changed", "merged", "superseded"]
+        },
+        "summary": { "type": "string", "minLength": 1 }
+      }
+    },
+    "federatedRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "status",
+        "title",
+        "event_date",
+        "date_precision",
+        "deduplication",
+        "origins",
+        "counting",
+        "lifecycle",
+        "crosslinks",
+        "facts",
+        "sources",
+        "significance",
+        "goalpost_response",
+        "maybe_therefore",
+        "evidence",
+        "provenance",
+        "consequences",
+        "revisions",
+        "tags",
+        "institutions"
+      ],
+      "properties": {
+        "record_id": { "$ref": "#/$defs/recordId" },
+        "status": {
+          "type": "string",
+          "enum": [
+            "research_lead",
+            "source_reviewed",
+            "interpretive_draft",
+            "editor_reviewed",
+            "published",
+            "superseded"
+          ]
+        },
+        "title": { "type": "string", "minLength": 1 },
+        "event_date": { "$ref": "#/$defs/dateOrPartialDate" },
+        "date_precision": { "type": "string", "enum": ["day", "month", "year", "approximate"] },
+        "deduplication": { "$ref": "#/$defs/deduplication" },
+        "origins": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/origin" },
+          "minItems": 1
+        },
+        "counting": { "$ref": "#/$defs/counting" },
+        "lifecycle": { "$ref": "#/$defs/lifecycle" },
+        "crosslinks": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/crosslink" }
+        },
+        "facts": { "$ref": "#/$defs/facts" },
+        "sources": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/source" }
+        },
+        "significance": {
+          "oneOf": [
+            { "$ref": "#/$defs/significance" },
+            { "type": "null" }
+          ]
+        },
+        "goalpost_response": {
+          "oneOf": [
+            { "$ref": "#/$defs/goalpostResponse" },
+            { "type": "null" }
+          ]
+        },
+        "maybe_therefore": {
+          "oneOf": [
+            { "$ref": "#/$defs/maybeTherefore" },
+            { "type": "null" }
+          ]
+        },
+        "evidence": { "$ref": "#/$defs/evidence" },
+        "provenance": { "$ref": "#/$defs/provenance" },
+        "consequences": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/consequence" }
+        },
+        "revisions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/revision" }
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "institutions": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "status": { "const": "research_lead" } }
+          },
+          "then": {
+            "properties": {
+              "counting": {
+                "properties": {
+                  "count_disposition": { "const": "not_counted_research_lead" },
+                  "canonical_the_record_entry_id": { "type": "null" }
+                }
+              },
+              "evidence": {
+                "properties": {
+                  "human_reviewed": { "const": false },
+                  "evidence_state": { "const": "lead_only" }
+                }
+              },
+              "provenance": {
+                "properties": {
+                  "source_level_review_completed": { "const": false },
+                  "publication_authorized": { "const": false }
+                }
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "facts": {
+                "properties": { "claims": { "minItems": 1 } }
+              },
+              "sources": { "minItems": 1 },
+              "significance": { "$ref": "#/$defs/significance" },
+              "goalpost_response": { "$ref": "#/$defs/goalpostResponse" },
+              "maybe_therefore": { "$ref": "#/$defs/maybeTherefore" },
+              "evidence": {
+                "properties": {
+                  "reviewer": { "type": "string", "minLength": 1 },
+                  "reviewed_at": { "$ref": "#/$defs/dateTime" }
+                }
+              },
+              "provenance": {
+                "properties": {
+                  "source_level_review_completed": { "const": true }
+                }
+              },
+              "revisions": { "minItems": 1 },
+              "deduplication": {
+                "properties": {
+                  "duplicate_review": {
+                    "properties": {
+                      "state": { "enum": ["clear", "merged_external_origins"] },
+                      "checked_at": { "$ref": "#/$defs/dateTime" },
+                      "reviewer": { "type": "string", "minLength": 1 }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": { "enum": ["editor_reviewed", "published"] }
+            }
+          },
+          "then": {
+            "properties": {
+              "evidence": {
+                "properties": {
+                  "human_reviewed": { "const": true }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": ["source_reviewed", "interpretive_draft", "editor_reviewed"]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "counting": {
+                "properties": {
+                  "count_disposition": { "const": "not_counted_unpublished" }
+                }
+              },
+              "provenance": {
+                "properties": { "publication_authorized": { "const": false } }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "status": { "const": "published" } }
+          },
+          "then": {
+            "properties": {
+              "counting": {
+                "properties": {
+                  "count_disposition": {
+                    "enum": ["crosswalk_only_no_new_count", "canonical_new_record_count_once"]
+                  },
+                  "canonical_the_record_entry_id": { "type": "string", "minLength": 1 }
+                }
+              },
+              "provenance": {
+                "properties": { "publication_authorized": { "const": true } }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "status": { "const": "superseded" } }
+          },
+          "then": {
+            "properties": {
+              "counting": {
+                "properties": {
+                  "count_disposition": { "const": "not_counted_superseded" }
+                }
+              },
+              "provenance": {
+                "properties": { "publication_authorized": { "const": false } }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

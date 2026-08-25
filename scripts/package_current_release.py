@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS = ROOT / "artifacts"
 ENTRY_DIR = ARTIFACTS / "entries"
 RELEASE = json.loads((ROOT / "data/release.json").read_text(encoding="utf-8"))
+ARCHIVE_METRICS = json.loads((ROOT / "data/archive_metrics.json").read_text(encoding="utf-8"))
 RELEASE_ISO = RELEASE["release_iso"]
 RELEASE_HUMAN = RELEASE["release_human"]
 CHECKED_AT = RELEASE["checked_at"]
@@ -61,6 +62,9 @@ def entry_markdown(entry: dict, ledger: dict) -> bytes:
             f'- **{item["timestamp"]}** — {item["note"]}' for item in entry["corrections"]
         )
         corrections = f"\n## CORRECTIONS\n\n{correction_lines}\n"
+    analysis_text = entry["goalpost"]
+    if entry.get("maybe_therefore"):
+        analysis_text += f'\n\n## MAYBE / THEREFORE\n\n{entry["maybe_therefore"]}'
     text = f'''# {entry["title"]}
 
 **Entry ID:** {entry["id"]}
@@ -80,7 +84,7 @@ def entry_markdown(entry: dict, ledger: dict) -> bytes:
 
 ## GOALPOST / RESPONSE
 
-{entry["goalpost"]}
+{analysis_text}
 {corrections}
 
 ## SOURCES
@@ -111,7 +115,7 @@ def national_brief(entries: list[dict], ledger: dict) -> bytes:
         f"**Release:** {RELEASE_HUMAN}",
         f"**Checked:** {CHECKED_AT}",
         "",
-        "Each item preserves The Record's three-layer distinction: facts, significance, and the observed response or goalpost.",
+        "Each item preserves The Record's labeled distinction between facts, significance, the strongest observed response or goalpost, and any separately reviewed Maybe / Therefore layer.",
     ]
     national = sorted(
         (entry for entry in entries if entry["scope"] == "national"),
@@ -136,6 +140,11 @@ def national_brief(entries: list[dict], ledger: dict) -> bytes:
             "**GOALPOST / RESPONSE**",
             "",
             entry["goalpost"],
+            *(
+                ["", "**MAYBE / THEREFORE**", "", entry["maybe_therefore"]]
+                if entry.get("maybe_therefore")
+                else []
+            ),
             "",
             "**Sources**",
             "",
@@ -159,6 +168,8 @@ def run_receipt(entries: list[dict], ledger: dict) -> bytes:
         f"- Added: {len(added)} national record{'s' if len(added) != 1 else ''}",
         f"- Materially refreshed: {len(refreshed)} national record{'s' if len(refreshed) != 1 else ''}",
         f"- Current layer: {len(entries)} records backed by {len(ledger)} source-ledger records",
+        f"- Full archive runtime: {ARCHIVE_METRICS['totals']['full_archive_runtime_entries']:,} records; {ARCHIVE_METRICS['totals']['full_archive_runtime_source_references']:,} source references; {ARCHIVE_METRICS['totals']['full_archive_runtime_unique_urls']:,} distinct stored URLs",
+        f"- Legacy custody: {ARCHIVE_METRICS['totals']['canonical_legacy_rows']:,} stored rows; {ARCHIVE_METRICS['totals']['active_legacy_entries']:,} active; {ARCHIVE_METRICS['totals']['superseded_legacy_tombstones']:,} duplicate tombstones excluded from totals",
         "",
         "## Added or materially refreshed records",
         "",
@@ -171,11 +182,21 @@ def run_receipt(entries: list[dict], ledger: dict) -> bytes:
         lines.extend(f'- {item["title"]}: {item["reason"]}' for item in rejected)
     else:
         lines.append("- None recorded in this run.")
+    maintenance = RELEASE.get("maintenance_revision")
+    if maintenance:
+        lines.extend([
+            "",
+            "## Maintenance revision",
+            "",
+            f'- Recorded: {maintenance.get("recorded_at", "not recorded")}',
+            f'- Scope: {maintenance.get("scope", "not recorded")}',
+            f'- Artifact identity: {maintenance.get("artifact_identity_rule", "not recorded")}',
+        ])
     lines.extend([
         "",
         "## Verification",
         "",
-        "Current front-door pages, the archive's lightweight live bridge, individual evidence packs, aggregate packs, source ledgers, and checksums are generated deterministically. The 14 MB historical application stays stable while current national entries are supplied by current_layer_bridge.js. Publication requires the repository validator and GitHub Actions to pass.",
+        "Current front-door pages, the canonical legacy dataset, archive bridge, individual evidence packs, aggregate packs, source ledgers, and checksums are generated deterministically. Ordinary six-hour current-only runs keep the historical application body stable; bounded legacy maintenance intentionally regenerates its canonical payload. Publication requires the repository validator and GitHub Actions to pass.",
     ])
     return ("\n".join(lines) + "\n").encode()
 
@@ -195,12 +216,14 @@ def build_outputs() -> dict[Path, bytes]:
     outputs: dict[Path, bytes] = {}
     for entry in entries:
         entry_path = ENTRY_DIR / entry["pack_filename"]
-        if entry["id"] in NEW_ENTRY_IDS or not entry_path.exists():
-            entry_bytes = entry_pack(entry, ledger)
-            outputs[entry_path] = entry_bytes
-            outputs[entry_path.with_suffix(entry_path.suffix + ".sha256")] = adjacent_checksum(
-                entry_path.name, entry_bytes
-            )
+        # Entry packs are canonical derivatives, not immutable snapshots. Rebuild
+        # every one on every run so a source-ledger correction or a refreshed
+        # existing entry cannot leave an internally stale ZIP behind.
+        entry_bytes = entry_pack(entry, ledger)
+        outputs[entry_path] = entry_bytes
+        outputs[entry_path.with_suffix(entry_path.suffix + ".sha256")] = adjacent_checksum(
+            entry_path.name, entry_bytes
+        )
 
     def artifact_bytes(path: Path) -> bytes:
         if path in outputs:
@@ -226,6 +249,7 @@ def build_outputs() -> dict[Path, bytes]:
         NATIONAL_BRIEF_NAME: brief_bytes,
         RUN_RECEIPT_NAME: receipt_bytes,
         "data/release.json": (ROOT / "data/release.json").read_bytes(),
+        "data/archive_metrics.json": (ROOT / "data/archive_metrics.json").read_bytes(),
         "source_ledger.csv": (ROOT / "data/source_ledger.csv").read_bytes(),
         "source_ledger.json": (ROOT / "data/source_ledger.json").read_bytes(),
     }
@@ -247,16 +271,24 @@ def build_outputs() -> dict[Path, bytes]:
             "# The Record current update pack\n\n"
             f"Release: {VERSION}\nRelease date: {RELEASE_HUMAN}\nChecked: {CHECKED_AT}\n\n"
             f"Contains {len(national_entries)} national and {len(in6_entries)} IN-6 current-layer records. "
-            "The complete Trump archive consumes the national layer through current_layer_bridge.js while its historical body remains stable.\n"
+            f"The full searchable Trump archive renders {ARCHIVE_METRICS['totals']['full_archive_runtime_entries']:,} active canonical/bridged entries. "
+            f"It retains {ARCHIVE_METRICS['totals']['superseded_legacy_tombstones']:,} duplicate tombstones outside that count. "
+            "External archive units and normalized crosslinks remain separate until source review and deduplication promote a distinct event.\n"
         ).encode(),
         NATIONAL_BRIEF_NAME: brief_bytes,
         RUN_RECEIPT_NAME: receipt_bytes,
         "EDITORIAL_AUTOMATION.md": (ROOT / "EDITORIAL_AUTOMATION.md").read_bytes(),
         "current_layer_bridge.js": (ROOT / "current_layer_bridge.js").read_bytes(),
         "data/current_entries.json": (ROOT / "data/current_entries.json").read_bytes(),
+        "data/archive_metrics.json": (ROOT / "data/archive_metrics.json").read_bytes(),
+        "data/archive_registry.json": (ROOT / "data/archive_registry.json").read_bytes(),
+        "data/federated_records.json": (ROOT / "data/federated_records.json").read_bytes(),
+        "data/legacy_entries.json": (ROOT / "data/legacy_entries.json").read_bytes(),
+        "data/legacy_revisions.json": (ROOT / "data/legacy_revisions.json").read_bytes(),
         "data/release.json": (ROOT / "data/release.json").read_bytes(),
         "data/source_ledger.csv": (ROOT / "data/source_ledger.csv").read_bytes(),
         "data/source_ledger.json": (ROOT / "data/source_ledger.json").read_bytes(),
+        "schemas/federated_record.schema.json": (ROOT / "schemas/federated_record.schema.json").read_bytes(),
     }
     in6_brief = ARTIFACTS / "THE_RECORD_IN6_UPDATE_BRIEF_2026-07-18.md"
     if in6_brief.exists():
