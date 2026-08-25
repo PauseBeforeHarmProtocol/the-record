@@ -6,7 +6,10 @@ import json
 import re
 import sys
 import zipfile
+from datetime import datetime
 from pathlib import Path
+from urllib.parse import urlparse
+from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
 
@@ -191,6 +194,16 @@ if "timelineOrder==='desc'?b.localeCompare(a):a.localeCompare(b)" not in legacy_
     fail("historical archive year groups do not honor timeline order")
 if "function toggleTimelineOrder()" not in legacy_text:
     fail("historical archive is missing its timeline order control")
+if 'data-view="feed"' not in legacy_text or 'id="feedView"' not in legacy_text:
+    fail("historical archive is missing its first-class Truth Social feed view")
+if 'id="tsChecked"' not in legacy_text:
+    fail("historical archive does not display when the Truth Social feed was checked")
+if "window.TruthFeed.open()" not in legacy_text or "feed:'feed'" not in legacy_text:
+    fail("historical archive does not activate or deep-link the Truth Social feed")
+if 'src="assets/truth-feed.js"' not in legacy_text or 'href="assets/truth-feed.css"' not in legacy_text:
+    fail("historical archive is missing modular Truth Social assets")
+if "connect-src 'self' https://ix.cnn.io" not in legacy_text:
+    fail("historical archive CSP does not allow its declared live Truth Social mirror")
 if "String(s??'')" not in legacy_text:
     fail("historical archive escaping is not null-safe")
 if "typeof s==='string'?{url:s}:s" not in legacy_text:
@@ -246,6 +259,79 @@ if "ChatGPT 5.4 Extended Thinking" in legacy_text:
 if "Written by Claude (Anthropic, Opus 4)" not in legacy_text:
     fail("legacy AI Opinion authorship was not preserved")
 
+truth_script = SITE / "assets/truth-feed.js"
+truth_styles = SITE / "assets/truth-feed.css"
+truth_seed_path = SITE / "data/truth_social_seed.json"
+truth_meta_path = SITE / "data/truth_social_feed_meta.json"
+if not truth_script.exists() or not truth_styles.exists():
+    fail("missing Truth Social feed script or stylesheet")
+if not truth_seed_path.exists() or not truth_meta_path.exists():
+    fail("missing Truth Social fallback data or metadata")
+else:
+    try:
+        truth_seed = json.loads(truth_seed_path.read_text(encoding="utf-8"))
+        truth_meta = json.loads(truth_meta_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        fail(f"Truth Social fallback JSON is invalid: {exc}")
+    else:
+        if not isinstance(truth_seed, list) or len(truth_seed) < 500:
+            fail("Truth Social fallback must retain at least 500 recent posts")
+        else:
+            truth_ids = [str(post.get("id", "")) for post in truth_seed]
+            if any(not post_id for post_id in truth_ids) or len(truth_ids) != len(set(truth_ids)):
+                fail("Truth Social fallback has missing or duplicate IDs")
+            truth_dates = [str(post.get("created_at", "")) for post in truth_seed]
+            if truth_dates != sorted(truth_dates, reverse=True):
+                fail("Truth Social fallback is not newest-first")
+            if truth_meta.get("latest_post_id") != truth_ids[0]:
+                fail("Truth Social metadata latest-post ID differs from fallback")
+            if truth_meta.get("fallback_post_count") != len(truth_seed):
+                fail("Truth Social metadata fallback count differs from data")
+            source_post_count = truth_meta.get("source_post_count")
+            if not isinstance(source_post_count, int) or source_post_count < len(truth_seed):
+                fail("Truth Social metadata source count is smaller than the fallback")
+            try:
+                latest_seed_at = datetime.fromisoformat(truth_dates[0].replace("Z", "+00:00"))
+                earliest_seed_at = datetime.fromisoformat(truth_dates[-1].replace("Z", "+00:00"))
+                latest_meta_at = datetime.fromisoformat(
+                    str(truth_meta.get("latest_post_at_utc", "")).replace("Z", "+00:00")
+                )
+                earliest_meta_at = datetime.fromisoformat(
+                    str(truth_meta.get("fallback_earliest_post_at_utc", "")).replace("Z", "+00:00")
+                )
+            except (TypeError, ValueError):
+                fail("Truth Social metadata has invalid endpoint timestamps")
+            else:
+                if latest_seed_at != latest_meta_at or earliest_seed_at != earliest_meta_at:
+                    fail("Truth Social metadata endpoint timestamps differ from fallback")
+            try:
+                feed_checked_at = datetime.fromisoformat(
+                    str(truth_meta.get("checked_at_utc", "")).replace("Z", "+00:00")
+                )
+            except (TypeError, ValueError):
+                fail("Truth Social metadata has an invalid checked-at timestamp")
+            else:
+                feed_checked_eastern = feed_checked_at.astimezone(ZoneInfo("America/New_York"))
+                if feed_checked_eastern.date().isoformat() < RELEASE_ISO:
+                    fail("Truth Social fallback was checked before the current editorial release")
+            for index, post in enumerate(truth_seed):
+                post_url = urlparse(str(post.get("url", "")))
+                if (
+                    post_url.scheme != "https"
+                    or post_url.hostname != "truthsocial.com"
+                    or not re.fullmatch(r"/@realDonaldTrump/\d+/?", post_url.path)
+                ):
+                    fail(f"Truth Social fallback row {index} has an invalid post URL")
+                    break
+                media = post.get("media", [])
+                if not isinstance(media, list) or any(
+                    urlparse(str(url)).scheme != "https"
+                    or urlparse(str(url)).hostname != "static-assets-1.truthsocial.com"
+                    for url in media
+                ):
+                    fail(f"Truth Social fallback row {index} has invalid media")
+                    break
+
 provenance = SITE / "AI_PROVENANCE.md"
 if not provenance.exists():
     fail("missing AI_PROVENANCE.md")
@@ -294,5 +380,5 @@ if ERRORS:
 print(
     f"PASS: {len(html_files)} HTML files, {len(entries)} current entries, "
     f"{len(weekly_ids)} weekly records, {len(rendered_agencies)} agencies/institutions, "
-    f"all internal links, packs, checksums, AI disclosures, and credential scans passed."
+    f"Truth Social live/fallback feed, all internal links, packs, checksums, AI disclosures, and credential scans passed."
 )

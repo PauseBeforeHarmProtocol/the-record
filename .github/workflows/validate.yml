@@ -20,3 +20,4 @@ jobs:
       - run: python scripts/package_current_release.py --check
       - run: python scripts/validate.py
       - run: node --check assets/site.js
+      - run: node --check assets/truth-feed.js

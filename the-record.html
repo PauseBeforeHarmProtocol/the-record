@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src https://fonts.gstatic.com; connect-src 'none';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://static-assets-1.truthsocial.com; media-src https://static-assets-1.truthsocial.com; font-src https://fonts.gstatic.com; connect-src 'self' https://ix.cnn.io;">
 <link rel="icon" href="assets/brand/the-record-mark.svg" type="image/svg+xml">
 <title>THE RECORD — Trump Accountability Archive</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="assets/truth-feed.css" rel="stylesheet">
 <style>
 :root{
   --bg:#FFFFFF;--bg2:#F5F8FC;--bg3:#EBF0F7;
@@ -457,6 +458,7 @@ const PBHP_LOGO_LG='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAA
   <button class="navtab" data-view="timeline">Full Timeline</button>
   <button class="navtab" data-view="politicians">Politicians</button>
   <button class="navtab" data-view="ai">AI Opinion</button>
+  <button class="navtab" data-view="feed">Truth Social</button>
   <button class="navtab" data-view="stats">Stats</button>
   <button class="navtab" data-view="methodology">Methodology</button>
   <button class="navtab" data-view="about">About</button>
@@ -222135,6 +222137,7 @@ function switchView(view){
   document.getElementById('yearView').classList.toggle('show',view==='years');
   document.getElementById('polView').classList.toggle('show',view==='politicians');
   document.getElementById('aiView').classList.toggle('show',view==='ai');
+  document.getElementById('feedView')?.classList.toggle('show',view==='feed');
   document.getElementById('statsView').classList.toggle('show',view==='stats');
   document.getElementById('methodologyView').classList.toggle('show',view==='methodology');
   document.getElementById('aboutView').classList.toggle('show',view==='about');
@@ -222150,6 +222153,7 @@ function switchView(view){
   if(view==='timeline'){renderYearTabs();renderTagBar();renderStatic();buildTimelinePips();}
   if(view==='politicians')renderPolView();
   if(view==='ai')renderAiGrid();
+  if(view==='feed'&&window.TruthFeed)window.TruthFeed.open();
   if(view==='about'){const as=document.getElementById('aboutStats');if(as)as.textContent=E.length.toLocaleString()+' entries · '+E.filter(e=>e.etype==='event').length.toLocaleString()+' specific events · '+E.filter(e=>e.etype==='context').length.toLocaleString()+' context entries · '+E.filter(e=>e.hi).length.toLocaleString()+' flagged as major · '+TOPIC_FOLDERS.length+' topic folders · '+TAG_RULES.length+' auto-tags';}
 }
 
@@ -222393,7 +222397,11 @@ function openTopicFolder(id){
     document.getElementById('homeView').classList.remove('show');
     document.getElementById('topicView').classList.add('show');
     document.getElementById('yearView').classList.remove('show');
+    document.getElementById('polView').classList.remove('show');
     document.getElementById('aiView').classList.remove('show');
+    document.getElementById('feedView')?.classList.remove('show');
+    document.getElementById('statsView').classList.remove('show');
+    document.getElementById('methodologyView').classList.remove('show');
     document.getElementById('aboutView').classList.remove('show');
     document.getElementById('askView').classList.remove('show');
     document.getElementById('timelineView').style.display='none';
@@ -222679,7 +222687,7 @@ function copyPermalink(eid){
 function jumpToHash(){
   const hash=window.location.hash.slice(1);if(!hash)return;
   // View-level deep links
-  const viewMap={home:'home',topics:'topics',years:'years',timeline:'timeline',politicians:'politicians',ai:'ai',stats:'stats',methodology:'methodology',about:'about',ask:'ask'};
+  const viewMap={home:'home',topics:'topics',years:'years',timeline:'timeline',politicians:'politicians',ai:'ai',feed:'feed',stats:'stats',methodology:'methodology',about:'about',ask:'ask'};
   if(viewMap[hash]){switchView(viewMap[hash]);return;}
   // Entry-level permalink
   if(currentView!=='timeline')switchView('timeline');
@@ -222863,6 +222871,33 @@ document.getElementById('weekBtnFull')?.addEventListener('click',()=>{
 if(document.getElementById('weekCard')){renderWeekCard();}
 
 </script>
+
+<!-- TRUTH SOCIAL FEED -->
+<div id="feedView" class="folderview truth-feed-view">
+  <div class="ts-head">
+    <h2>Truth Social — Every Archived Trump Post</h2>
+    <p>A searchable raw-post timeline, separate from The Record's curated accountability entries. Times are shown in Eastern Time.</p>
+  </div>
+  <div class="truth-feed-note"><strong>Documentation, not advocacy.</strong> The full feed is loaded from a public archive mirror of Donald Trump's Truth Social account. The site carries a verified recent fallback so the tab remains usable when that mirror is unavailable. A post appearing here does not automatically qualify as a Record entry.</div>
+  <div class="truth-feed-status-card" aria-label="Truth Social feed status">
+    <div><span>Feed mode</span><strong id="tsMode">Not loaded</strong></div>
+    <div><span>Feed checked</span><strong id="tsChecked">Loading…</strong></div>
+    <div><span>Newest available post</span><strong id="tsNewest">Loading…</strong></div>
+    <div><span>Primary-source link</span><a id="tsNewestLink" href="https://truthsocial.com/@realDonaldTrump" target="_blank" rel="noopener" hidden>Open newest original ↗</a></div>
+  </div>
+  <div class="truth-feed-controls">
+    <div class="truth-feed-control-row">
+      <div><label for="tsSearch">Search the feed</label><input id="tsSearch" class="truth-feed-search" type="search" placeholder="Search every archived post by keyword"></div>
+      <button id="tsRefresh" class="truth-feed-refresh" type="button">Refresh live feed</button>
+    </div>
+    <div id="tsYears" class="truth-feed-years" aria-label="Filter posts by year"></div>
+  </div>
+  <p id="tsStatus" class="truth-feed-count" role="status" aria-live="polite">Open this tab to load the feed.</p>
+  <p id="tsCountLine" class="truth-feed-count"></p>
+  <div id="tsList"></div>
+  <noscript><p class="truth-feed-empty">JavaScript is required to search and render the Truth Social archive.</p></noscript>
+</div>
+<script src="assets/truth-feed.js"></script>
 
 <!-- SEARCH THE RECORD (GPT INTEGRATION) -->
 <div id="askView" class="folderview" style="max-width:800px;margin:0 auto;">
