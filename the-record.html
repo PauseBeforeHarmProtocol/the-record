@@ -221555,8 +221555,8 @@ const PBHP_LOGO_LG='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAA
 <script src="current_layer_bridge.js"></script>
 <script>
 // Step 1: Parse entries (3.4 MB) via JSON.parse — much faster than JS literal on iOS Safari
-const escapeHTML=(s)=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
-const escapeAttr=(s)=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+const escapeHTML=(s)=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+const escapeAttr=(s)=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 const CURRENT_LAYER_META=window.CURRENT_LAYER_META||{};
 const SHIELD_ICON='<img src="assets/brand/the-record-mark.svg" width="36" height="36" style="vertical-align:middle;" alt="">';
 
@@ -222097,7 +222097,7 @@ function toggleTimelineOrder(){
 }
 
 function buildEntry(e){
-  const parts=e.date.split(' ');
+  const parts=String(e.date??'').split(' ');
   const mon=parts[0]||'',day=(parts[1]||'').replace(',',''),yr=parts[2]||'';
   const isCtx=e.etype==='context';
   const approx=e.dprec&&e.dprec!=='day'?`<span class="eapprox">≈ ${escapeHTML(e.dprec)}</span>`:'';
@@ -222105,8 +222105,17 @@ function buildEntry(e){
   const sigHTML=e.sig?`<div class="esig ${e.hi?'hi':''}">${escapeHTML(e.sig)}</div>`:'';
   const gpHTML=e.gp&&e.goal?`<div class="egp">${escapeHTML(e.goal)}</div>`:'';
   const mtHTML=e.mt?`<div class="emt">${escapeHTML(e.mt)}</div>`:'';
-  // Escape source titles and URLs, and tag names
-  const srcHTML=e.src&&e.src.length?`<div class="esrc">${e.src.map(s=>s.url?`<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener">${escapeHTML(s.t||s.url.replace(/https?:\/\/(www\.)?/,'').split('/')[0])}</a>`:`<span style="font-size:.72rem;color:var(--dim);">${escapeHTML(s.t)}</span>`).join('')}</div>`:'';
+  // Legacy entries may store a source as a URL string; current entries use {t,url}.
+  const sourceHTML=(s)=>{
+    const source=typeof s==='string'?{url:s}:s;
+    if(!source||typeof source!=='object')return '';
+    const url=typeof source.url==='string'?source.url.trim():'';
+    const label=source.t||source.title||source.name||(url?url.replace(/https?:\/\/(www\.)?/,'').split('/')[0]:'');
+    if(url)return `<a href="${escapeAttr(url)}" target="_blank" rel="noopener">${escapeHTML(label)}</a>`;
+    return label?`<span style="font-size:.72rem;color:var(--dim);">${escapeHTML(label)}</span>`:'';
+  };
+  const sourceLinks=Array.isArray(e.src)?e.src.map(sourceHTML).filter(Boolean):[];
+  const srcHTML=sourceLinks.length?`<div class="esrc">${sourceLinks.join('')}</div>`:'';
   const tagHTML=e.tags.length?`<div style="margin-top:.3rem">${e.tags.map(t=>`<span class="etag" data-tag="${t}">${escapeHTML(t)}</span>`).join('')}</div>`:'';
   const eid=e.sort+'_'+(e._idx||0);
   return `<div class="entry ${e.hi?'hi':''} ${isCtx?'ctx':''}" data-eid="${eid}" id="e-${eid}">

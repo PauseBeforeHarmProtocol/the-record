@@ -191,6 +191,38 @@ if "timelineOrder==='desc'?b.localeCompare(a):a.localeCompare(b)" not in legacy_
     fail("historical archive year groups do not honor timeline order")
 if "function toggleTimelineOrder()" not in legacy_text:
     fail("historical archive is missing its timeline order control")
+if "String(s??'')" not in legacy_text:
+    fail("historical archive escaping is not null-safe")
+if "typeof s==='string'?{url:s}:s" not in legacy_text:
+    fail("historical archive renderer does not normalize legacy URL-string sources")
+legacy_entries_match = re.search(
+    r'<script[^>]*id="dataEntries"[^>]*>(?P<data>.*?)</script>',
+    legacy_text,
+    re.DOTALL,
+)
+if not legacy_entries_match:
+    fail("historical archive is missing its embedded entry data")
+else:
+    try:
+        legacy_entries = json.loads(legacy_entries_match.group("data"))
+    except json.JSONDecodeError as exc:
+        fail(f"historical archive entry data is invalid JSON: {exc}")
+    else:
+        unsupported_sources = []
+        for entry_index, entry in enumerate(legacy_entries):
+            for source_index, source in enumerate(entry.get("src") or []):
+                if isinstance(source, str):
+                    continue
+                if isinstance(source, dict) and any(
+                    source.get(field) for field in ("url", "t", "title", "name")
+                ):
+                    continue
+                unsupported_sources.append(f"{entry_index}:{source_index}")
+        if unsupported_sources:
+            fail(
+                "historical archive has unsupported source shapes: "
+                + ", ".join(unsupported_sources[:10])
+            )
 week_helper = re.search(r"function openPastWeekTimeline\(\)\{(?P<body>.*?)\n\}", legacy_text, re.DOTALL)
 if not week_helper:
     fail("historical archive is missing the home-to-timeline helper")
