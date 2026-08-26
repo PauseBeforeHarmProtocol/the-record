@@ -4,8 +4,8 @@
   "quality_inputs_updated_at": "2026-08-26T10:00:00Z",
   "external_registry_checked_at": "2026-08-26T10:00:00Z",
   "federation_last_modified_at": "2026-08-25T14:40:23Z",
-  "legacy_revisions_through": "2026-08-25",
-  "release_version": "8.6.0",
+  "legacy_revisions_through": "2026-08-26",
+  "release_version": "8.6.1",
   "canonical_files": {
     "legacy": "data/legacy_entries.json",
     "current": "data/current_entries.json",
@@ -15,47 +15,50 @@
     "archive_registry": "data/archive_registry.json"
   },
   "canonical_sha256": {
-    "legacy": "d44f8b3e7e2ca08cc040ed82996ea9950171a306cd930dabfaaeb394cd7fe6e0",
-    "current": "f34f06dfe337ab6f4fd383b6f236a97ff5c9b378201873a9fb074930b7353ecf",
+    "legacy": "14326848a50c01e8be141c479df7b9df175e05a36c4f6f2380b161b765d93d40",
+    "current": "e18633d90b4128da39b13e19306cd0ab3abdf4bdce55b2bad515c35c23b7d924",
     "source_ledger": "c0ec58c44a548a10258f1d90e22dc34300bfff6d9e2763dff5c406c867c37e9b",
     "federated": "4c2b2804949098a9b0a314b3f0ed44e74fc8ccb688ab84741922dd30fa1083f3",
-    "legacy_revisions": "6bf453bac68d75eee8d503cdb0a1ff8eed08ea522d20b00e53dcd7c3a5a32a62",
+    "legacy_revisions": "80b06c78fd0615f0dd1249936ac0dd1eb5c6aa6491a281b0eee6615183c9bd2a",
     "archive_registry": "5327ab05c7bcf77291b1ef14ccfdfb7fabdfe73b97fc84c3cf3745c8100678c3"
   },
   "totals": {
-    "canonical_legacy_rows": 4647,
-    "canonical_legacy_entries": 4644,
-    "active_legacy_entries": 4644,
+    "canonical_legacy_rows": 4742,
+    "canonical_legacy_entries": 4739,
+    "active_legacy_entries": 4739,
     "superseded_legacy_tombstones": 3,
     "bridged_national_entries": 28,
-    "full_archive_runtime_entries": 4672,
+    "full_archive_runtime_entries": 4767,
     "current_layer_entries": 32,
-    "legacy_source_references": 6486,
+    "legacy_source_references": 6704,
     "current_source_references": 72,
-    "full_archive_runtime_source_references": 6550,
-    "full_archive_runtime_unique_urls": 5169
+    "full_archive_runtime_source_references": 6768,
+    "full_archive_runtime_unique_urls": 5378
   },
   "coverage": {
-    "legacy_last_date": "2026-05-30",
+    "legacy_last_date": "2026-08-01",
     "current_bridge_first_date": "2026-07-13",
-    "uncovered_days_between_layers": 43,
-    "known_gap_label": "May 31, 2026–July 12, 2026",
-    "known_gap_status": "disclosed; backfill required"
+    "uncovered_days_between_layers": 0,
+    "known_gap_label": "none",
+    "known_gap_status": "no gap"
   },
   "legacy": {
-    "entries": 4644,
+    "entries": 4739,
     "coverage": {
       "first_sort_date": "1927-01-15",
-      "last_sort_date": "2026-05-30"
+      "last_sort_date": "2026-08-01"
     },
     "entry_types": {
-      "context": 342,
-      "event": 4302
+      "agency": 2,
+      "context": 343,
+      "event": 4389,
+      "legislation": 1,
+      "policy": 4
     },
     "date_precision": {
       "approx": 169,
-      "day": 4431,
-      "month": 32,
+      "day": 4525,
+      "month": 33,
       "year": 12
     },
     "eras": {
@@ -64,27 +67,28 @@
       "formation": 352,
       "post1": 465,
       "term1": 1638,
-      "term2": 1027
+      "term2": 1122
     },
     "review_states": {
+      "corrected": 1,
       "in-review": 7,
-      "legacy-unreviewed": 4637
+      "legacy-unreviewed": 4731
     },
     "sources": {
-      "references": 6486,
-      "references_with_url": 6486,
-      "unique_urls": 5105,
-      "unique_domains": 310,
-      "entries_with_one_source": 3339,
-      "entries_with_one_source_percent": 71.9,
-      "entries_with_one_domain": 3481,
-      "entries_with_one_domain_percent": 75.0,
+      "references": 6704,
+      "references_with_url": 6704,
+      "unique_urls": 5314,
+      "unique_domains": 346,
+      "entries_with_one_source": 3345,
+      "entries_with_one_source_percent": 70.6,
+      "entries_with_one_domain": 3493,
+      "entries_with_one_domain_percent": 73.7,
       "entries_with_low_specificity_source": 1615,
-      "entries_with_low_specificity_source_percent": 34.8,
+      "entries_with_low_specificity_source_percent": 34.1,
       "entries_relying_only_on_low_specificity_sources": 1371,
-      "entries_relying_only_on_low_specificity_sources_percent": 29.5,
+      "entries_relying_only_on_low_specificity_sources_percent": 28.9,
       "single_source_low_specificity_entries": 895,
-      "single_source_low_specificity_entries_percent": 19.3,
+      "single_source_low_specificity_entries_percent": 18.9,
       "entries_repeating_a_url_internally": 38,
       "low_specificity_reasons": {
         "publisher-homepage": 304,
@@ -94,23 +98,23 @@
       "most_used_domains": [
         {
           "domain": "apnews.com",
-          "references": 1210
+          "references": 1215
         },
         {
           "domain": "npr.org",
-          "references": 956
+          "references": 979
         },
         {
           "domain": "cnn.com",
-          "references": 498
+          "references": 513
         },
         {
           "domain": "washingtonpost.com",
-          "references": 397
+          "references": 407
         },
         {
           "domain": "reuters.com",
-          "references": 300
+          "references": 303
         },
         {
           "domain": "fec.gov",
@@ -118,7 +122,7 @@
         },
         {
           "domain": "nbcnews.com",
-          "references": 231
+          "references": 245
         },
         {
           "domain": "biography.com",
@@ -126,19 +130,19 @@
         },
         {
           "domain": "congress.gov",
-          "references": 201
-        },
-        {
-          "domain": "pbs.org",
-          "references": 152
+          "references": 203
         },
         {
           "domain": "whitehouse.gov",
-          "references": 145
+          "references": 161
+        },
+        {
+          "domain": "pbs.org",
+          "references": 160
         },
         {
           "domain": "cnbc.com",
-          "references": 142
+          "references": 147
         },
         {
           "domain": "nytimes.com",
@@ -146,7 +150,7 @@
         },
         {
           "domain": "courtlistener.com",
-          "references": 113
+          "references": 114
         },
         {
           "domain": "justice.gov",
@@ -159,11 +163,24 @@
       "exact_text_groups": 0,
       "exact_text_extra_rows": 0,
       "exact_text_group_ids": [],
-      "same_date_heading_groups": 0,
-      "same_date_heading_extra_rows": 0,
-      "same_date_heading_group_ids": [],
-      "repeated_heading_any_date_groups": 31,
-      "repeated_heading_any_date_extra_rows": 109,
+      "same_date_heading_groups": 3,
+      "same_date_heading_extra_rows": 3,
+      "same_date_heading_group_ids": [
+        [
+          "LEG-004656",
+          "LEG-004657"
+        ],
+        [
+          "LEG-004685",
+          "LEG-004687"
+        ],
+        [
+          "LEG-004713",
+          "LEG-004714"
+        ]
+      ],
+      "repeated_heading_any_date_groups": 33,
+      "repeated_heading_any_date_extra_rows": 125,
       "repeated_heading_any_date_group_ids": [
         [
           "LEG-000001",
@@ -231,7 +248,19 @@
           "LEG-004277",
           "LEG-004561",
           "LEG-004618",
-          "LEG-004635"
+          "LEG-004635",
+          "LEG-004656",
+          "LEG-004657",
+          "LEG-004671",
+          "LEG-004674",
+          "LEG-004685",
+          "LEG-004687",
+          "LEG-004690",
+          "LEG-004706",
+          "LEG-004711",
+          "LEG-004715",
+          "LEG-004730",
+          "LEG-004740"
         ],
         [
           "LEG-001696",
@@ -326,7 +355,9 @@
         [
           "LEG-001913",
           "LEG-003231",
-          "LEG-004597"
+          "LEG-004597",
+          "LEG-004681",
+          "LEG-004705"
         ],
         [
           "LEG-001978",
@@ -366,14 +397,22 @@
         [
           "LEG-003891",
           "LEG-004410"
+        ],
+        [
+          "LEG-004713",
+          "LEG-004714"
+        ],
+        [
+          "LEG-004721",
+          "LEG-004725"
         ]
       ]
     },
     "interpretive_layers": {
-      "maybe_therefore_present": 1434,
-      "maybe_therefore_present_percent": 30.9,
+      "maybe_therefore_present": 1529,
+      "maybe_therefore_present_percent": 32.3,
       "maybe_therefore_missing": 3210,
-      "maybe_therefore_missing_percent": 69.1
+      "maybe_therefore_missing_percent": 67.7
     }
   },
   "current": {
@@ -389,8 +428,13 @@
     "entries_with_one_source_percent": 40.6,
     "national_entries_with_one_source": 11,
     "national_entries_with_one_source_percent": 39.3,
-    "maybe_therefore_present": 8,
-    "maybe_therefore_missing": 24,
+    "maybe_therefore_present": 32,
+    "maybe_therefore_missing": 0,
+    "review_states": {
+      "current-standard-reviewed": 32
+    },
+    "current_standard_reviewed": 32,
+    "current_standard_pending": 0,
     "most_used_publishers": [
       {
         "publisher": "Reuters",
@@ -442,7 +486,7 @@
     "counting_rule": "Federated crosslinks are not added to The Record entry totals unless promoted as a distinct canonical event after deduplication and editorial review."
   },
   "remediation": {
-    "legacy_revision_records": 31,
+    "legacy_revision_records": 131,
     "superseded_tombstones": [
       {
         "legacy_id": "LEG-002123",

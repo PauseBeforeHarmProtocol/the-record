@@ -29,7 +29,7 @@ ALLOWED_REVIEW_STATES = {
     "superseded",
 }
 ALLOWED_ERAS = {"formation", "campaign1", "term1", "post1", "campaign2", "term2"}
-ALLOWED_ENTRY_TYPES = {"event", "context"}
+ALLOWED_ENTRY_TYPES = {"event", "context", "policy", "agency", "legislation"}
 ALLOWED_DATE_PRECISION = {"day", "month", "year", "approx"}
 LEGACY_ID_PATTERN = re.compile(r"LEG-\d{6,}")
 REQUIRED_TEXT_FIELDS = ("legacy_id", "review_status", "era", "sort", "date", "text", "sig", "goal")

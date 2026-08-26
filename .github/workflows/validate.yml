@@ -31,6 +31,8 @@ jobs:
           python scripts/apply_legacy_remediations.py "${args[@]}"
       - name: Check canonical legacy synchronization and duplicate IDs
         run: python scripts/sync_legacy_data.py --check
+      - name: Check recovered v13 custody, corrections, and duplicate exclusions
+        run: python scripts/restore_v13_legacy_records.py --check
       - name: Check archive metrics and surface legacy duplicate candidates
         run: |
           python scripts/build_archive_metrics.py --check
@@ -41,11 +43,15 @@ jobs:
         run: python scripts/validate_federated_records.py --self-test
       - name: Check legacy bridge
         run: python scripts/build_legacy_bridge.py --check
+      - name: Smoke-test the combined timeline runtime and compatibility redirect
+        run: python scripts/smoke_test_timeline.py
       - name: Check deterministic packaging
         run: python scripts/package_current_release.py --check
       - name: Check current pages
         run: python scripts/build_current_pages.py --check
       - name: Validate repository
+        env:
+          CURRENT_REMEDIATION_BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before }}
         run: python scripts/validate.py
       - name: Check site JavaScript
         run: node --check assets/site.js

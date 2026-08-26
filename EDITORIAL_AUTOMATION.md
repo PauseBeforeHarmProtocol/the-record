@@ -4,9 +4,11 @@ This file is the durable acceptance policy for scheduled national-record updates
 
 ## Canonical data and generated outputs
 
-Historical records are edited only in `data/legacy_entries.json`. Current national and IN-6 records are edited only in `data/current_entries.json`; release state belongs in `data/release.json`, and current source metadata belongs in `data/source_ledger.json`. Federated archive metadata must retain each upstream archive's own unit, scope, observation time, and provenance. Unlike upstream counts are never added together, and an upstream item does not become a verified Record entry without source-level editorial review, the complete reasoning-layer contract, and a duplicate/lifecycle decision.
+Historical records are edited only in `data/legacy_entries.json`. Current national and IN-6 records are edited only in `data/current_entries.json`; release state belongs in `data/release.json`, and current source metadata belongs in `data/source_ledger.json`. A current record is canonically publishable only when its explicit `review_status` is `current-standard-reviewed` or `corrected`; the presence of a Maybe / Therefore field alone must never imply that status. Federated archive metadata must retain each upstream archive's own unit, scope, observation time, and provenance. Unlike upstream counts are never added together, and an upstream item does not become a verified Record entry without source-level editorial review, the complete reasoning-layer contract, and a duplicate/lifecycle decision.
 
 The legacy blocks inside `the-record.html` and `docs/the-record.html`, the active-only compatibility view in `entries_array.js`, `data/archive_metrics.json`, `current_layer_bridge.js`, current static pages, CSV source ledger, release packs, and checksums are generated outputs. The two HTML custody representations retain superseded tombstones for stable redirects; `entries_array.js` deliberately excludes them so downstream consumers cannot double-count retired records. Do not repair or resolve one generated copy independently. Make the change in its canonical data file, regenerate every dependent output, and review the resulting diff.
+
+Earlier date-only aggregate artifact paths are a frozen compatibility boundary. When another release occurs on the same date, every new aggregate filename must include both the date and release version; a maintenance build may regenerate canonical per-entry packs, but it must not overwrite an earlier aggregate pack, brief, receipt, or checksum sidecar. When `maintenance_revision.base_editorial_version` is present, `new_entry_ids`, `added_entry_ids`, and `refreshed_entry_ids` describe the carried-forward base editorial release; the maintenance scope and its exact changed IDs belong in `maintenance_revision` and must be labeled separately in receipts and public copy.
 
 Legacy stable IDs and review states must survive edits, merges, and corrections. A legacy entry marked `legacy-unreviewed` has not yet been revalidated under the current standard; that state does not assert that the entry is false.
 
@@ -24,6 +26,7 @@ An item qualifies when it documents a material exercise, attempted exercise, rev
 
 Each entry must:
 
+- carry an explicit canonical review state rather than deriving publication readiness from the presence of analysis fields;
 - separate sourced facts from significance and from the strongest relevant administration response;
 - include a labeled **Maybe / Therefore** layer: the strongest plausible competing frame or material uncertainty, followed by the evidence-bound consequence, falsifier, or remaining test;
 - describe the evidence state precisely: announced, proposed, ordered, implemented, enjoined, reversed, reported, or independently measured;
@@ -32,6 +35,8 @@ Each entry must:
 - avoid duplicating an existing event; update an existing entry when the underlying event has evolved;
 - preserve uncertainty and avoid turning an allegation, stated intent, or pending action into an accomplished fact;
 - include a visible checked time, working source URLs, institutions, and a reproducible entry pack.
+
+For a candidate branch, `current-standard-reviewed` or `corrected` is a proposed canonical state that must be supported by the review record and exact-field diff. Phillip Linstrum remains the final publication acceptance authority: no candidate state becomes canonical merely because a generator or validator accepts its shape, and no AI system may merge it on that basis alone.
 
 ## Six-hour run
 
