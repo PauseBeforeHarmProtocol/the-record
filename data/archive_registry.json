@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "status": "active_registry",
-  "checked_at": "2026-08-26T10:00:00Z",
+  "checked_at": "2026-08-26T16:05:00Z",
   "registry_purpose": "Describe independent Trump-related archives as a federated research network without pretending that unlike record units are interchangeable or additive.",
   "invariants": [
     "An upstream archive is a discovery and corroboration source, not an automatic authority for The Record.",
@@ -115,22 +115,22 @@
         {
           "metric_id": "trump_archive.total_items",
           "as_reported_label": "total items",
-          "value": 13482,
+          "value": 13496,
           "unit": "public_statement_or_document_item",
           "scope": "all items displayed in the archive monthly index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-08-26T10:00:00Z",
+          "observed_at": "2026-08-26T16:05:00Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null
         },
         {
           "metric_id": "trump_archive.truth_social_posts",
           "as_reported_label": "Truth Social posts",
-          "value": 11136,
+          "value": 11150,
           "unit": "truth_social_post",
           "scope": "Truth Social posts within the archive index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-08-26T10:00:00Z",
+          "observed_at": "2026-08-26T16:05:00Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null
         },
@@ -141,7 +141,7 @@
           "unit": "speech_or_transcript",
           "scope": "speeches and transcripts within the archive index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-08-26T10:00:00Z",
+          "observed_at": "2026-08-26T16:05:00Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null
         }
@@ -189,7 +189,7 @@
         "content_import_permission_state": "license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-08-26T10:00:00Z",
+        "checked_at": "2026-08-26T16:05:00Z",
         "state": "success",
         "verification_pages": [
           "https://trump-archive.com/archive",
@@ -230,7 +230,7 @@
           "unit": "confirmed_policy_action",
           "scope": "Trump first and second presidential terms",
           "comparability_group": "general_policy_action",
-          "observed_at": "2026-08-26T10:00:00Z",
+          "observed_at": "2026-08-26T16:05:00Z",
           "source_url": "https://www.undotrump.com/",
           "upstream_display_date": "2026-08-24"
         },
@@ -354,7 +354,7 @@
         "content_import_permission_state": "bulk_permission_or_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-08-26T10:00:00Z",
+        "checked_at": "2026-08-26T16:05:00Z",
         "state": "success_with_upstream_about_count_warning",
         "verification_pages": [
           "https://www.undotrump.com/",
@@ -402,11 +402,11 @@
         {
           "metric_id": "iptp.trump_actions_home",
           "as_reported_label": "Trump Actions (2017-2021)",
-          "value": 1779,
+          "value": 1781,
           "unit": "immigration_policy_action",
           "scope": "The homepage labels this as 2017-2021 even though the project now covers both Trump 1.0 and 2.0; preserve that upstream label until the publisher clarifies the denominator.",
           "comparability_group": "domain_policy_action",
-          "observed_at": "2026-08-25T13:15:51Z",
+          "observed_at": "2026-08-26T16:05:00Z",
           "source_url": "https://immpolicytracking.org/",
           "upstream_display_date": "2025-09-22",
           "quality_flag": "upstream_scope_label_needs_clarification"
@@ -414,11 +414,11 @@
         {
           "metric_id": "iptp.policy_actions_browse",
           "as_reported_label": "Policy Actions",
-          "value": 1779,
+          "value": 1781,
           "unit": "immigration_policy_action",
           "scope": "all policies shown on the policies browse page",
           "comparability_group": "domain_policy_action",
-          "observed_at": "2026-08-26T10:00:00Z",
+          "observed_at": "2026-08-26T16:05:00Z",
           "source_url": "https://immpolicytracking.org/policies/",
           "upstream_display_date": null
         }
@@ -426,7 +426,7 @@
       "trump_1_current_status_breakdown": [
         {
           "status": "fully_in_effect",
-          "value": 652,
+          "value": 651,
           "unit": "immigration_policy",
           "source_url": "https://immpolicytracking.org/"
         },
@@ -452,7 +452,7 @@
         },
         {
           "as_reported_label": "Acted on by Courts",
-          "value": 189,
+          "value": 190,
           "unit": "immigration_policy",
           "source_url": "https://immpolicytracking.org/"
         },
@@ -463,7 +463,7 @@
           "source_url": "https://immpolicytracking.org/"
         }
       ],
-      "breakdown_note": "The three current-status values sum to 999, not 1,779. The upstream page does not state that the status denominator is identical to the action count, so the registry keeps them as a separately scoped measurement instead of treating the difference as missing data.",
+      "breakdown_note": "The three current-status values sum to 998, not 1,781. The upstream page does not state that the status denominator is identical to the action count, so the registry keeps them as a separately scoped measurement instead of treating the difference as missing data.",
       "provenance": {
         "source_model": "Each entry is described as containing underlying source documents, predecessor policies, relevant litigation, and later actions.",
         "editorial_model": "Professor Lucas Guttentag, Stanford and Yale law students, and immigration-law experts maintain the project.",
@@ -513,7 +513,7 @@
         "content_import_permission_state": "permission_or_documented_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-08-26T10:00:00Z",
+        "checked_at": "2026-08-26T16:05:00Z",
         "state": "success",
         "verification_pages": [
           "https://immpolicytracking.org/",
@@ -681,7 +681,7 @@
         "content_import_permission_state": "metadata_and_citation_allowed_full_content_license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-08-26T10:00:00Z",
+        "checked_at": "2026-08-26T16:05:00Z",
         "state": "page_too_large_preserving_last_measurement",
         "verification_pages": [
           "https://record47.org/"

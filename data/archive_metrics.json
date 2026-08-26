@@ -1,11 +1,11 @@
 {
   "schema_version": 3,
-  "editorial_checked_at": "2026-08-26 5:58 AM EDT",
-  "quality_inputs_updated_at": "2026-08-26T10:00:00Z",
-  "external_registry_checked_at": "2026-08-26T10:00:00Z",
+  "editorial_checked_at": "2026-08-26 12:02 PM EDT",
+  "quality_inputs_updated_at": "2026-08-26T16:05:00Z",
+  "external_registry_checked_at": "2026-08-26T16:05:00Z",
   "federation_last_modified_at": "2026-08-25T14:40:23Z",
   "legacy_revisions_through": "2026-08-26",
-  "release_version": "8.6.1",
+  "release_version": "8.7.0",
   "canonical_files": {
     "legacy": "data/legacy_entries.json",
     "current": "data/current_entries.json",
@@ -16,24 +16,24 @@
   },
   "canonical_sha256": {
     "legacy": "14326848a50c01e8be141c479df7b9df175e05a36c4f6f2380b161b765d93d40",
-    "current": "e18633d90b4128da39b13e19306cd0ab3abdf4bdce55b2bad515c35c23b7d924",
-    "source_ledger": "c0ec58c44a548a10258f1d90e22dc34300bfff6d9e2763dff5c406c867c37e9b",
+    "current": "fa0b929adefa640ba945def0d76e7db7a08f6af99c556763809104a15d08ff53",
+    "source_ledger": "e0ee9e65611490bf42d4845ea7d6eb2d8370004dc9e9d3d52d5c1452ddb7445d",
     "federated": "4c2b2804949098a9b0a314b3f0ed44e74fc8ccb688ab84741922dd30fa1083f3",
     "legacy_revisions": "80b06c78fd0615f0dd1249936ac0dd1eb5c6aa6491a281b0eee6615183c9bd2a",
-    "archive_registry": "5327ab05c7bcf77291b1ef14ccfdfb7fabdfe73b97fc84c3cf3745c8100678c3"
+    "archive_registry": "b895121f946064b17f99686fea37b13998927bb871e02971ccb16f3276e88922"
   },
   "totals": {
     "canonical_legacy_rows": 4742,
     "canonical_legacy_entries": 4739,
     "active_legacy_entries": 4739,
     "superseded_legacy_tombstones": 3,
-    "bridged_national_entries": 28,
-    "full_archive_runtime_entries": 4767,
-    "current_layer_entries": 32,
+    "bridged_national_entries": 32,
+    "full_archive_runtime_entries": 4771,
+    "current_layer_entries": 36,
     "legacy_source_references": 6704,
-    "current_source_references": 72,
-    "full_archive_runtime_source_references": 6768,
-    "full_archive_runtime_unique_urls": 5378
+    "current_source_references": 84,
+    "full_archive_runtime_source_references": 6780,
+    "full_archive_runtime_unique_urls": 5390
   },
   "coverage": {
     "legacy_last_date": "2026-08-01",
@@ -416,37 +416,41 @@
     }
   },
   "current": {
-    "entries": 32,
-    "national_entries": 28,
+    "entries": 36,
+    "national_entries": 32,
     "in6_entries": 4,
-    "source_references": 72,
-    "national_source_references": 64,
-    "source_ledger_rows": 76,
-    "used_source_ledger_rows": 72,
+    "source_references": 84,
+    "national_source_references": 76,
+    "source_ledger_rows": 88,
+    "used_source_ledger_rows": 84,
     "unused_source_ledger_rows": 4,
     "entries_with_one_source": 13,
-    "entries_with_one_source_percent": 40.6,
+    "entries_with_one_source_percent": 36.1,
     "national_entries_with_one_source": 11,
-    "national_entries_with_one_source_percent": 39.3,
-    "maybe_therefore_present": 32,
+    "national_entries_with_one_source_percent": 34.4,
+    "maybe_therefore_present": 36,
     "maybe_therefore_missing": 0,
     "review_states": {
-      "current-standard-reviewed": 32
+      "current-standard-reviewed": 36
     },
-    "current_standard_reviewed": 32,
+    "current_standard_reviewed": 36,
     "current_standard_pending": 0,
     "most_used_publishers": [
       {
         "publisher": "Reuters",
-        "references": 28
+        "references": 32
+      },
+      {
+        "publisher": "Associated Press",
+        "references": 9
       },
       {
         "publisher": "The White House",
         "references": 8
       },
       {
-        "publisher": "Associated Press",
-        "references": 7
+        "publisher": "U.S. Department of Justice",
+        "references": 3
       },
       {
         "publisher": "U.S. Department of the Interior",
@@ -462,10 +466,6 @@
       },
       {
         "publisher": "Office of Rep. Jefferson Shreve",
-        "references": 2
-      },
-      {
-        "publisher": "U.S. Department of Justice",
         "references": 2
       },
       {
