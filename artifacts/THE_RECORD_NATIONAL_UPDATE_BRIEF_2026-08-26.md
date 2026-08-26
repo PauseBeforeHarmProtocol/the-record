@@ -1,7 +1,7 @@
 # The Record — National Update Brief
 
 **Release:** August 26, 2026
-**Checked:** 2026-08-26 12:01 AM EDT
+**Checked:** 2026-08-26 5:58 AM EDT
 
 Each item preserves The Record's labeled distinction between facts, significance, the strongest observed response or goalpost, and any separately reviewed Maybe / Therefore layer.
 
@@ -115,6 +115,34 @@ Maybe a later court will accept the jurisdictional dissent or the FCC will issue
 - [Reuters — Fourth Circuit blocks FCC political-advertising discount extension](https://www.reuters.com/world/fcc-expands-discounted-tv-advertising-rates-party-committees-2026-08-25/) — independent reporting on the divided appellate ruling
 - [Bloomberg Law — Democrats win challenge to FCC discounted ad-rate guidance](https://news.bloomberglaw.com/litigation/democrats-win-court-challenge-to-fcc-discounted-ad-rate-guidance) — independent legal reporting on the Fourth Circuit opinion
 - [Elias Law Group — Fourth Circuit challenge to FCC discounted ad-rate guidance](https://elias.law/press-release/fourth-circuit-fast-tracks-challenge-to-fcc-guidance-giving-parties-access-to-discounted-ad-rates/) — party statement and procedural background
+
+## August 24–25, 2026 — Trump administration transmits classified Saudi civil-nuclear agreement to Congress
+
+The formal submission starts the Atomic Energy Act review period, while the agreement's classified terms and Trump's separate Israel-normalization condition remain unresolved.
+
+**THE FACTS**
+
+- The Trump administration transmitted the signed U.S.–Saudi civil nuclear cooperation agreement to Congress on August 24 for the review required by section 123 of the Atomic Energy Act, according to independent reports by The Wall Street Journal and the Associated Press.
+- The Energy Department announced on July 22 that Energy Secretary Chris Wright and Saudi Energy Minister Prince Abdulaziz bin Salman had signed the agreement and an accompanying safeguards agreement. Energy said the arrangement would enable U.S. participation in Saudi Arabia's civilian nuclear program and uphold nuclear-safety, security, and nonproliferation standards.
+- AP reported that the transmitted agreement is classified and that Congress has 90 days while in session to review it. The agreement can take effect without an affirmative vote unless Congress enacts a joint resolution of disapproval, but Trump has separately said implementation is conditioned on Saudi Arabia normalizing relations with Israel. The public record did not establish whether that condition appears in the classified agreement.
+
+**SIGNIFICANCE**
+
+Transmission moves the agreement from a signed executive-branch arrangement into a statutory congressional-review stage that could authorize decades of U.S. nuclear commerce with Saudi Arabia. Classification limits public scrutiny of enrichment, safeguards, and enforcement terms, while the separate normalization condition creates uncertainty about whether the agreement will take effect even if Congress does not block it.
+
+**GOALPOST / RESPONSE**
+
+The Energy Department says the agreement will expand U.S. nuclear exports, support jobs, strengthen the bilateral relationship, and maintain high nonproliferation standards. Critics cited by AP and the Journal warn that permitting enrichment on Saudi soil could increase proliferation risk. The decisive evidence will be the transmitted text or an unclassified summary, committee review, any congressional resolution, Saudi safeguards commitments, and whether the Israel-normalization condition is legally incorporated or separately enforced.
+
+**MAYBE / THEREFORE**
+
+Maybe classification protects sensitive technical and diplomatic terms while congressional committees still receive enough information to test the safeguards, and the normalization condition may prevent implementation altogether. Therefore the record treats transmission as a formal review-stage action—not an effective export authorization, completed nuclear project, or proof that Saudi Arabia may enrich uranium—and flags the undisclosed terms as the central uncertainty.
+
+**Sources**
+
+- [Department of Energy — United States and Saudi Arabia reach civil nuclear cooperation agreement](https://www.energy.gov/articles/united-states-and-saudi-arabia-reach-historic-nuclear-cooperation-agreement) — primary administration announcement of the signed section 123 agreement and stated safeguards rationale
+- [The Wall Street Journal — Trump sends Saudi nuclear agreement to Congress](https://www.wsj.com/world/middle-east/trump-sends-nuclear-agreement-with-saudi-arabia-to-congress-7f01af2c) — independent reporting on formal congressional transmission, agreement structure, and proliferation dispute
+- [Associated Press — Trump submits Saudi civil-nuclear agreement for congressional review](https://apnews.com/article/2be6c822995be2a9f2a39b2c05e8f9b0) — independent reporting based on separate administration and congressional sourcing, with statutory-review context
 
 ## August 24, 2026 — USDA reopens the Douglas cattle crossing after a 15-month livestock-import suspension
 
