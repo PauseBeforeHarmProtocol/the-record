@@ -202,6 +202,11 @@ def current_metrics(entries: list[dict], ledger: dict) -> dict:
     single_source = sum(len(entry.get("sources", [])) == 1 for entry in entries)
     national_single_source = sum(len(entry.get("sources", [])) == 1 for entry in national)
     maybe_therefore_present = sum(bool(str(entry.get("maybe_therefore") or "").strip()) for entry in entries)
+    review_states = Counter(str(entry.get("review_status") or "missing") for entry in entries)
+    current_standard_reviewed = sum(
+        entry.get("review_status") in {"current-standard-reviewed", "corrected"}
+        for entry in entries
+    )
     return {
         "entries": len(entries),
         "national_entries": len(national),
@@ -217,6 +222,9 @@ def current_metrics(entries: list[dict], ledger: dict) -> dict:
         "national_entries_with_one_source_percent": pct(national_single_source, len(national)),
         "maybe_therefore_present": maybe_therefore_present,
         "maybe_therefore_missing": len(entries) - maybe_therefore_present,
+        "review_states": dict(sorted(review_states.items())),
+        "current_standard_reviewed": current_standard_reviewed,
+        "current_standard_pending": len(entries) - current_standard_reviewed,
         "most_used_publishers": [
             {"publisher": publisher, "references": count}
             for publisher, count in publisher_counts.most_common(10)

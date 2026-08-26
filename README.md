@@ -19,30 +19,34 @@
   <a href="downloads/index.html">Downloads</a>
 </p>
 
-The Record pairs a concise, source-bound editorial front page with a full searchable chronological accountability archive. The archive remains the project’s primary research body, receives qualifying current national additions through a small generated live bridge, and includes a separate searchable Truth Social feed that does not treat raw posts as verified archive findings. Exact totals, review backlogs, retired duplicates, and known gaps below are generated from the same canonical data that powers the published archive.
+The Record pairs a concise, source-bound editorial front page with a full searchable chronological accountability archive. The archive remains the project’s primary research body, receives qualifying current national additions through a small generated live bridge, and includes a separate searchable Truth Social feed that does not treat raw posts as verified archive findings. Exact totals, review backlogs, retired duplicates, and coverage status below are generated from the same canonical data that powers the published archive.
 
 ---
 
 <!-- GENERATED_ARCHIVE_METRICS_START -->
 ## Generated Scope and Quality Snapshot
 
-Generated deterministically from canonical JSON for maintenance release **8.6.0**. Editorial news currentness was checked **2026-08-26 5:58 AM EDT**; QA inputs were updated **2026-08-26T10:00:00Z**.
+Generated deterministically from canonical JSON for maintenance release **8.6.1**. Editorial news currentness was checked **2026-08-26 5:58 AM EDT**; QA inputs were updated **2026-08-26T10:00:00Z**.
 
 | Measure | Exact count |
 |---|---:|
-| Canonical legacy rows stored | 4,647 |
-| Active canonical legacy entries | 4,644 |
+| Canonical legacy rows stored | 4,742 |
+| Active canonical legacy entries | 4,739 |
 | Superseded duplicate tombstones (excluded from totals/search) | 3 |
 | Current national entries bridged into the archive | 28 |
-| Full archive entries rendered at runtime | 4,672 |
-| Attached source references at runtime | 6,550 |
-| Distinct stored source URLs at runtime | 5,169 |
-| Legacy entries with Maybe / Therefore | 1,434 |
+| Full archive entries rendered at runtime | 4,767 |
+| Attached source references at runtime | 6,768 |
+| Distinct stored source URLs at runtime | 5,378 |
+| Current entries with Maybe / Therefore | 32 |
+| Current entries awaiting Maybe / Therefore | 0 |
+| Current entries explicitly reviewed or corrected | 32 |
+| Current entries pending current-standard review | 0 |
+| Legacy entries with Maybe / Therefore | 1,529 |
 | Legacy entries awaiting Maybe / Therefore | 3,210 |
-| Logged legacy revision records | 31 |
+| Logged legacy revision records | 131 |
 | Normalized external crosslinks | 1 |
 
-Active legacy review states: **in-review: 7, legacy-unreviewed: 4,637**. “Legacy-unreviewed” means not yet revalidated under the current standard; it does not mean false. Superseded rows remain available as stable audit redirects but do not count as active events. The known **43-day** continuity gap is **May 31, 2026–July 12, 2026** and remains queued for backfill.
+Active legacy review states: **corrected: 1, in-review: 7, legacy-unreviewed: 4,731**. “Legacy-unreviewed” means not yet revalidated under the current standard; it does not mean false. Superseded rows remain available as stable audit redirects but do not count as active events. The canonical legacy layer and generated current bridge overlap; the generated metric detects **no inter-layer continuity gap**.
 
 ### The Six Eras
 
@@ -53,7 +57,7 @@ Active legacy review states: **in-review: 7, legacy-unreviewed: 4,637**. “Lega
 | Term 1 | 1,638 |
 | Post-presidency | 465 |
 | Campaign 2 | 633 |
-| Term 2 | 1,027 |
+| Term 2 | 1,122 |
 
 Counts from other archives are shown with their own units in the [Archive Network](archive/index.html#archive-network) and are never added to The Record’s totals. See the [Quality dashboard](quality/index.html) for definitions, source-health measures, duplicate candidates, and the remediation backlog.
 <!-- GENERATED_ARCHIVE_METRICS_END -->
@@ -62,7 +66,7 @@ Counts from other archives are shown with their own units in the [Archive Networ
 
 ## What This Is
 
-The Record is a single-file HTML application (listed as the-record.html in repo) whose dated coverage runs from his father Fred’s 1927 KKK-rally arrest into the current presidential term. It is a broad archive, not a claim of gap-free coverage: the generated Quality dashboard discloses the known continuity gap, source-health risks, and review backlog. Entries use a labeled reasoning format whose migration status is visible:
+The Record is a single-file HTML application (listed as the-record.html in repo) whose dated coverage runs from his father Fred’s 1927 KKK-rally arrest into the current presidential term. It is a broad archive, not a claim of gap-free coverage: the generated Quality dashboard discloses coverage continuity status, source-health risks, and review backlog. Entries use a labeled reasoning format whose migration status is visible:
 
 - **THE FACTS** — What happened, sourced to major news organizations, court filings, congressional records, and official government documents.
 - **SIGNIFICANCE** — Why it matters in historical and political context.
@@ -122,7 +126,7 @@ The historical application remains a portable HTML archive (~14 MB). On the publ
 - `data/legacy_entries.json` — the only canonical editable legacy timeline dataset
 - root `the-record.html` and `docs/the-record.html` — generated custody representations containing active rows and retained tombstones
 - `entries_array.js` — generated active-only compatibility view; superseded tombstones are deliberately excluded to prevent downstream double-counting
-- `data/archive_metrics.json` — deterministic totals, evidence-health measures, reasoning-layer completeness, duplicate candidates, and coverage gaps
+- `data/archive_metrics.json` — deterministic totals, evidence-health measures, reasoning-layer completeness, duplicate candidates, and coverage status
 - `data/archive_registry.json` — scope-aware registry for independent archives and their fundamentally different units
 - `data/federated_records.json` — normalized external crosslinks; raw staged drafts may be public for auditability, but are explicitly unreviewed, publication-unauthorized, uncounted, and never treated as findings without review and deduplication
 - `data/legacy_revisions.json` — append-only ledger for historical corrections and cleanups

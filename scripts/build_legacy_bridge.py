@@ -12,6 +12,18 @@ START = "/* CURRENT_LAYER_BRIDGE_START */"
 END = "/* CURRENT_LAYER_BRIDGE_END */"
 ASSET_MARKER = "<!-- CURRENT_LAYER_BRIDGE_ASSET -->"
 MAIN_SCRIPT = "<script>\n// Step 1: Parse entries (3.4 MB) via JSON.parse — much faster than JS literal on iOS Safari"
+ASSET_BLOCK = f'''{ASSET_MARKER}
+<script src="current_layer_bridge.js"></script>
+<script>
+/* CURRENT_LAYER_BRIDGE_STATUS_START */
+(function(){{
+  const loaded=Array.isArray(window.CURRENT_LAYER_BRIDGE)&&window.CURRENT_LAYER_BRIDGE.length>0&&window.CURRENT_LAYER_META&&window.CURRENT_LAYER_META.checked_at;
+  const warning=document.getElementById('currentLayerLoadWarning');
+  if(warning&&!loaded)warning.hidden=false;
+}})();
+/* CURRENT_LAYER_BRIDGE_STATUS_END */
+</script>
+'''
 ARCHIVE_HOOK = f'''{START}
 // The small generated asset is the live layer; the 14 MB historical application stays stable.
 const CURRENT_LAYER_BRIDGE=Array.isArray(window.CURRENT_LAYER_BRIDGE)?window.CURRENT_LAYER_BRIDGE:[];
@@ -49,11 +61,7 @@ def bridge_entries(entries: list[dict], ledger: dict) -> list[dict]:
                 for source_id in entry["sources"]
             ],
             "current_id": entry["id"],
-            "review_status": (
-                "current-standard-reviewed"
-                if entry.get("maybe_therefore")
-                else "current-source-reviewed"
-            ),
+            "review_status": entry["review_status"],
             "evidence": entry["evidence"],
             "checked_at": entry["checked_at"],
             "institutions": entry["institutions"],
@@ -66,12 +74,36 @@ def bridge_asset_text() -> str:
     entries, ledger, release = canonical_data()
     bridge = bridge_entries(entries, ledger)
     metrics = json.loads((ROOT / "data/archive_metrics.json").read_text(encoding="utf-8"))
+    maintenance = release.get("maintenance_revision")
+    maintenance_active = isinstance(maintenance, dict)
     meta = {
+        "version": release["version"],
         "release": release["release_human"],
         "checked_at": release["checked_at"],
         "week_label": release["week_label"],
         "national_entry_count": len(bridge),
-        "added_this_release": len(release["new_entry_ids"]),
+        "added_this_release": (
+            0 if maintenance_active else len(release.get("added_entry_ids", []))
+        ),
+        "refreshed_this_release": (
+            0 if maintenance_active else len(release.get("refreshed_entry_ids", []))
+        ),
+        "base_editorial_version": (
+            maintenance.get("base_editorial_version") if maintenance_active else None
+        ),
+        "base_editorial_change_count": (
+            len(release["new_entry_ids"]) if maintenance_active else 0
+        ),
+        "maintenance_remediated_entry_count": (
+            len(maintenance.get("remediated_entry_ids", []))
+            if maintenance_active
+            else 0
+        ),
+        "review_status_materialized_entry_count": (
+            len(maintenance.get("review_status_materialized_entry_ids", []))
+            if maintenance_active
+            else 0
+        ),
         "canonical_legacy_entries": metrics["totals"]["canonical_legacy_entries"],
         "canonical_legacy_rows": metrics["totals"]["canonical_legacy_rows"],
         "superseded_legacy_tombstones": metrics["totals"]["superseded_legacy_tombstones"],
@@ -96,11 +128,14 @@ def expected_archive_text() -> str:
     start = text.index(START)
     end = text.index(END, start) + len(END)
     text = text[:start] + ARCHIVE_HOOK + text[end:]
+    if MAIN_SCRIPT not in text:
+        raise ValueError("legacy archive main-script insertion point not found")
     if ASSET_MARKER not in text:
-        asset_tag = f'{ASSET_MARKER}\n<script src="current_layer_bridge.js"></script>\n'
-        if MAIN_SCRIPT not in text:
-            raise ValueError("legacy archive main-script insertion point not found")
-        text = text.replace(MAIN_SCRIPT, asset_tag + MAIN_SCRIPT, 1)
+        text = text.replace(MAIN_SCRIPT, ASSET_BLOCK + MAIN_SCRIPT, 1)
+    else:
+        marker_index = text.index(ASSET_MARKER)
+        main_index = text.index(MAIN_SCRIPT, marker_index)
+        text = text[:marker_index] + ASSET_BLOCK + text[main_index:]
     return text
 
 
