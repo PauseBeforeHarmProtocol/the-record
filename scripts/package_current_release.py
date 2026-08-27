@@ -13,6 +13,7 @@ ARTIFACTS = ROOT / "artifacts"
 ENTRY_DIR = ARTIFACTS / "entries"
 RELEASE = json.loads((ROOT / "data/release.json").read_text(encoding="utf-8"))
 ARCHIVE_METRICS = json.loads((ROOT / "data/archive_metrics.json").read_text(encoding="utf-8"))
+TRUTH_META = json.loads((ROOT / "data/truth_social_feed_meta.json").read_text(encoding="utf-8"))
 RELEASE_ISO = RELEASE["release_iso"]
 RELEASE_HUMAN = RELEASE["release_human"]
 CHECKED_AT = RELEASE["checked_at"]
@@ -205,6 +206,9 @@ def run_receipt(entries: list[dict], ledger: dict) -> bytes:
         f"- Current layer: {len(entries)} records backed by {len(ledger)} source-ledger records",
         f"- Full archive runtime: {ARCHIVE_METRICS['totals']['full_archive_runtime_entries']:,} records; {ARCHIVE_METRICS['totals']['full_archive_runtime_source_references']:,} source references; {ARCHIVE_METRICS['totals']['full_archive_runtime_unique_urls']:,} distinct stored URLs",
         f"- Legacy custody: {ARCHIVE_METRICS['totals']['canonical_legacy_rows']:,} stored rows; {ARCHIVE_METRICS['totals']['active_legacy_entries']:,} active; {ARCHIVE_METRICS['totals']['superseded_legacy_tombstones']:,} duplicate tombstones excluded from totals",
+        f"- Truth Social source: {TRUTH_META['source_post_count']:,} posts; {TRUTH_META['fallback_post_count']:,} retained in the validated local fallback",
+        f"- Newest Truth Social post: {TRUTH_META['latest_post_at_eastern']}",
+        f"- Truth Social fallback checked: {TRUTH_META['checked_at_eastern']}",
     ]
     if maintenance:
         restored_legacy_count = int(maintenance.get("restored_legacy_entry_count", 0))
