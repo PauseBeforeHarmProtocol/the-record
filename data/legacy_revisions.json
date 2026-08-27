@@ -12715,8 +12715,8 @@
         }
       ]
     },
-    {
-      "revision_id": "LR-2026-08-26-100",
+  {
+    "revision_id": "LR-2026-08-26-100",
       "recorded_at": "2026-08-26",
       "legacy_id": "LEG-004634",
       "kind": "event-and-source-correction",
@@ -12811,5 +12811,114 @@
           ]
         }
       ]
-    }
+    },
+    {
+    "revision_id": "LR-2026-08-27-101",
+    "recorded_at": "2026-08-27",
+    "legacy_id": "LEG-001650",
+    "kind": "date-fact-and-source-correction",
+    "summary": "Correct the Kavanaugh confirmation date and vote description, replace broken or unrelated links, and complete the evidence-separated reasoning layers.",
+    "provenance": [
+      {
+        "type": "primary-congressional-record",
+        "supports": "The Senate roll call records confirmation on October 6, 2018, by a 50-48 vote.",
+        "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1152/vote_115_2_00223.htm"
+      },
+      {
+        "type": "independent-reporting",
+        "supports": "Associated Press reports the confirmation, the allegations, Kavanaugh's denial, and the 50-48 vote.",
+        "url": "https://apnews.com/article/north-america-ap-top-news-sexual-misconduct-supreme-courts-courts-8234f0b8a6194d8b89ff79f9b0c94f35"
+      },
+      {
+        "type": "independent-reporting",
+        "supports": "Reuters independently reports the October 6 confirmation and vote margin.",
+        "url": "https://www.reuters.com/article/world/after-fight-that-split-us-kavanaugh-wins-place-on-supreme-court-idUSKCN1MG0A4/"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "corrected"
+      },
+      {
+        "field": "sort",
+        "expected": "2018-10-02",
+        "replacement": "2018-10-06"
+      },
+      {
+        "field": "date",
+        "expected": "October 2, 2018",
+        "replacement": "October 6, 2018"
+      },
+      {
+        "field": "text",
+        "expected": "Kavanaugh Confirmed to Supreme Court — Senate votes 50-48 to confirm Brett Kavanaugh despite sexual assault accusations. Confirmation proceeds largely along party lines with only one Democrat voting yes and only one Republican voting no. Represents contentious culmination of confirmation battle.",
+        "replacement": "The Senate confirmed Brett Kavanaugh as an associate justice of the Supreme Court on October 6, 2018, by a 50-48 vote. Democrat Joe Manchin voted to confirm; Republican Lisa Murkowski voted present as a pairing arrangement rather than casting the no vote she had announced, and Republican Steve Daines was absent. The confirmation followed public testimony in which Christine Blasey Ford alleged Kavanaugh assaulted her when they were teenagers; Kavanaugh denied the allegation. The vote confirmed him to a lifetime seat but did not adjudicate the allegation as either proven or false."
+      },
+      {
+        "field": "sig",
+        "expected": "Supreme Court justice confirmed despite credible sexual assault allegations",
+        "replacement": "The narrow confirmation placed a third Trump nominee on the Supreme Court after a process that joined lifetime judicial power, disputed sexual-assault allegations, the scope of a supplemental background investigation, and sharply partisan institutional trust. The durable fact is the confirmation and its effect on the Court; the allegations and denial remain attributed rather than resolved by the Senate vote."
+      },
+      {
+        "field": "goal",
+        "expected": "Shows partisan approach to judicial confirmation and credibility of accusers",
+        "replacement": "Kavanaugh and his supporters said he categorically denied Ford's allegation, had a strong judicial record, and was entitled to confirmation after Senate review; opponents said the inquiry and process were too limited to resolve serious credibility questions. The strongest evidence tests are the official roll call, the testimony and investigative record, and the justice's later opinions and conduct—not retrospective claims that the vote itself proved or disproved the allegation."
+      },
+      {
+        "field": "mt",
+        "expected": "Maybe a Senate confirming a nominee 50-48 along largely party lines is exactly the constitutional design — advise and consent, majority rule — and treating a narrow confirmation as illegitimate is the losing side refusing to accept that confirmations now require winning elections. Therefore the entry engages the majority-rules argument before noting the structural problem: the entry does not say the vote was illegitimate. It documents that the vote happened with credible allegations unresolved by adequate investigation. 'Constitutionally valid' and 'normatively unobjectionable' are different claims. The 50-48 was the former. The entry is about the gap between the two.",
+        "replacement": "Maybe senators reasonably concluded that the uncorroborated allegation and Kavanaugh's denial did not justify rejecting an otherwise qualified nominee, and the Constitution assigns that judgment to the Senate. Therefore the entry records a constitutionally effective 50-48 confirmation while preserving that the vote did not resolve the disputed allegation or settle whether the review process was adequate."
+      },
+      {
+        "field": "src",
+        "expected": [
+          {
+            "t": "BBC",
+            "url": "https://www.bbc.com/news/kavanaugh-confirmed"
+          },
+          {
+            "t": "Reuters",
+            "url": "https://www.reuters.com/world/us/us-senate-votes-confirm-kavanaugh-supreme-court-2023-10-06/"
+          }
+        ],
+        "replacement": [
+          {
+            "t": "U.S. Senate roll call vote 223",
+            "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1152/vote_115_2_00223.htm"
+          },
+          {
+            "t": "Associated Press",
+            "url": "https://apnews.com/article/north-america-ap-top-news-sexual-misconduct-supreme-courts-courts-8234f0b8a6194d8b89ff79f9b0c94f35"
+          },
+          {
+            "t": "Reuters",
+            "url": "https://www.reuters.com/article/world/after-fight-that-split-us-kavanaugh-wins-place-on-supreme-court-idUSKCN1MG0A4/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "revision_id": "LR-2026-08-27-102",
+    "recorded_at": "2026-08-27",
+    "legacy_id": "LEG-001650",
+    "kind": "factual-clarification",
+    "summary": "Correct Kavanaugh's ordinal among Trump's Supreme Court nominees from third to second.",
+    "provenance": [
+      {
+        "type": "primary-congressional-record",
+        "supports": "The Senate's nomination chronology lists Neil Gorsuch before Brett Kavanaugh among Trump's Supreme Court nominations, making Kavanaugh the second confirmed nominee.",
+        "url": "https://www.senate.gov/legislative/nominations/SupremeCourtNominations1789present.htm"
+      }
+    ],
+    "changes": [
+      {
+        "field": "sig",
+        "expected": "The narrow confirmation placed a third Trump nominee on the Supreme Court after a process that joined lifetime judicial power, disputed sexual-assault allegations, the scope of a supplemental background investigation, and sharply partisan institutional trust. The durable fact is the confirmation and its effect on the Court; the allegations and denial remain attributed rather than resolved by the Senate vote.",
+        "replacement": "The narrow confirmation placed a second Trump nominee on the Supreme Court after a process that joined lifetime judicial power, disputed sexual-assault allegations, the scope of a supplemental background investigation, and sharply partisan institutional trust. The durable fact is the confirmation and its effect on the Court; the allegations and denial remain attributed rather than resolved by the Senate vote."
+      }
+    ]
+  }
 ]

@@ -1,11 +1,11 @@
 {
   "schema_version": 3,
-  "editorial_checked_at": "2026-08-27 12:00 AM EDT",
-  "quality_inputs_updated_at": "2026-08-27T04:00:00Z",
-  "external_registry_checked_at": "2026-08-27T04:00:00Z",
+  "editorial_checked_at": "2026-08-27 6:00 AM EDT",
+  "quality_inputs_updated_at": "2026-08-27T10:08:42Z",
+  "external_registry_checked_at": "2026-08-27T10:08:42Z",
   "federation_last_modified_at": "2026-08-25T14:40:23Z",
-  "legacy_revisions_through": "2026-08-26",
-  "release_version": "8.9.0",
+  "legacy_revisions_through": "2026-08-27",
+  "release_version": "9.0.0",
   "canonical_files": {
     "legacy": "data/legacy_entries.json",
     "current": "data/current_entries.json",
@@ -15,25 +15,25 @@
     "archive_registry": "data/archive_registry.json"
   },
   "canonical_sha256": {
-    "legacy": "14326848a50c01e8be141c479df7b9df175e05a36c4f6f2380b161b765d93d40",
-    "current": "f27d37be40b93e3297a9c0e8ea33440a6e09c5a9ab311d80af35c393a55dbfc3",
-    "source_ledger": "b2ac814d10978ea20521ea863c804a1476486a95248b79334fdd4a6e046f3706",
+    "legacy": "2479585b720c99c482e5af1c9ccc9f512b57a173da38175a9c3814797c0f62f6",
+    "current": "57ff31676df3aa92578132e27ce1bff490721efe42e68fde14232332b197a996",
+    "source_ledger": "549bc607a2ab8613eb244a50881df1435cdd42c3674f0a392330ab4d58883c42",
     "federated": "4c2b2804949098a9b0a314b3f0ed44e74fc8ccb688ab84741922dd30fa1083f3",
-    "legacy_revisions": "80b06c78fd0615f0dd1249936ac0dd1eb5c6aa6491a281b0eee6615183c9bd2a",
-    "archive_registry": "25320dbba2a32a422c8ce319fdab495148fe62a94d9eae6ab340704b21fd1fc4"
+    "legacy_revisions": "086e2cd503fa1490f2c306ac8c32f20fe3cbfe15e116dd449b94ed342954df8c",
+    "archive_registry": "f3349fb2549d1c014ed8b28fa859db71439b38e773b9733620ecd19efaf6cf4d"
   },
   "totals": {
     "canonical_legacy_rows": 4742,
     "canonical_legacy_entries": 4739,
     "active_legacy_entries": 4739,
     "superseded_legacy_tombstones": 3,
-    "bridged_national_entries": 38,
-    "full_archive_runtime_entries": 4777,
-    "current_layer_entries": 42,
-    "legacy_source_references": 6704,
-    "current_source_references": 97,
-    "full_archive_runtime_source_references": 6793,
-    "full_archive_runtime_unique_urls": 5403
+    "bridged_national_entries": 42,
+    "full_archive_runtime_entries": 4781,
+    "current_layer_entries": 46,
+    "legacy_source_references": 6705,
+    "current_source_references": 102,
+    "full_archive_runtime_source_references": 6799,
+    "full_archive_runtime_unique_urls": 5409
   },
   "coverage": {
     "legacy_last_date": "2026-08-01",
@@ -70,15 +70,15 @@
       "term2": 1122
     },
     "review_states": {
-      "corrected": 1,
+      "corrected": 2,
       "in-review": 7,
-      "legacy-unreviewed": 4731
+      "legacy-unreviewed": 4730
     },
     "sources": {
-      "references": 6704,
-      "references_with_url": 6704,
-      "unique_urls": 5314,
-      "unique_domains": 346,
+      "references": 6705,
+      "references_with_url": 6705,
+      "unique_urls": 5315,
+      "unique_domains": 347,
       "entries_with_one_source": 3345,
       "entries_with_one_source_percent": 70.6,
       "entries_with_one_domain": 3493,
@@ -98,7 +98,7 @@
       "most_used_domains": [
         {
           "domain": "apnews.com",
-          "references": 1215
+          "references": 1216
         },
         {
           "domain": "npr.org",
@@ -416,24 +416,24 @@
     }
   },
   "current": {
-    "entries": 42,
-    "national_entries": 38,
+    "entries": 46,
+    "national_entries": 42,
     "in6_entries": 4,
-    "source_references": 97,
-    "national_source_references": 89,
-    "source_ledger_rows": 101,
-    "used_source_ledger_rows": 97,
+    "source_references": 102,
+    "national_source_references": 94,
+    "source_ledger_rows": 106,
+    "used_source_ledger_rows": 102,
     "unused_source_ledger_rows": 4,
-    "entries_with_one_source": 14,
-    "entries_with_one_source_percent": 33.3,
-    "national_entries_with_one_source": 12,
-    "national_entries_with_one_source_percent": 31.6,
-    "maybe_therefore_present": 42,
+    "entries_with_one_source": 17,
+    "entries_with_one_source_percent": 37.0,
+    "national_entries_with_one_source": 15,
+    "national_entries_with_one_source_percent": 35.7,
+    "maybe_therefore_present": 46,
     "maybe_therefore_missing": 0,
     "review_states": {
-      "current-standard-reviewed": 42
+      "current-standard-reviewed": 46
     },
-    "current_standard_reviewed": 42,
+    "current_standard_reviewed": 46,
     "current_standard_pending": 0,
     "most_used_publishers": [
       {
@@ -450,6 +450,10 @@
       },
       {
         "publisher": "U.S. Department of Justice",
+        "references": 3
+      },
+      {
+        "publisher": "Drug Enforcement Administration",
         "references": 3
       },
       {
@@ -471,10 +475,6 @@
       {
         "publisher": "U.S. District Court for the District of Massachusetts",
         "references": 2
-      },
-      {
-        "publisher": "U.S. Equal Employment Opportunity Commission",
-        "references": 2
       }
     ]
   },
@@ -486,7 +486,7 @@
     "counting_rule": "Federated crosslinks are not added to The Record entry totals unless promoted as a distinct canonical event after deduplication and editorial review."
   },
   "remediation": {
-    "legacy_revision_records": 131,
+    "legacy_revision_records": 133,
     "superseded_tombstones": [
       {
         "legacy_id": "LEG-002123",
