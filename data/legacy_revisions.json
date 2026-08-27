@@ -12920,5 +12920,193 @@
         "replacement": "The narrow confirmation placed a second Trump nominee on the Supreme Court after a process that joined lifetime judicial power, disputed sexual-assault allegations, the scope of a supplemental background investigation, and sharply partisan institutional trust. The durable fact is the confirmation and its effect on the Court; the allegations and denial remain attributed rather than resolved by the Senate vote."
       }
     ]
+  },
+  {
+    "revision_id": "LR-2026-08-27-103",
+    "recorded_at": "2026-08-27",
+    "legacy_id": "LEG-000563",
+    "kind": "date-fact-source-and-duplicate-correction",
+    "summary": "Correct the Grand Rapids rally date, consolidate the bathroom and 'schlonged' remarks into one source-reviewed event, and complete the reasoning layers.",
+    "provenance": [
+      {
+        "type": "primary-event-transcript",
+        "supports": "The full December 21, 2015 Grand Rapids rally transcript places both remarks at the same event.",
+        "url": "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-grand-rapids-mi-december-21-2015/"
+      },
+      {
+        "type": "independent-reporting",
+        "supports": "Reuters contemporaneously reports both comments, the event date, and Trump's later explanation of the disputed term.",
+        "url": "https://www.reuters.com/article/world/us-politics/trump-uses-vulgar-term-to-describe-clintons-2008-presidential-run-idUSKBN0U51JX/"
+      },
+      {
+        "type": "independent-reporting",
+        "supports": "Associated Press independently reports the Grand Rapids remarks and controversy.",
+        "url": "https://apnews.com/general-news-united-states-presidential-election-events-e452a4c791b445cfa25183d079ed7f02"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "corrected"
+      },
+      {
+        "field": "sort",
+        "expected": "2015-12-17",
+        "replacement": "2015-12-21"
+      },
+      {
+        "field": "date",
+        "expected": "December 17, 2015",
+        "replacement": "December 21, 2015"
+      },
+      {
+        "field": "text",
+        "expected": "Refers to Clinton 'Getting Schlonged' by Obama in 2008. At a Grand Rapids, Michigan rally, Trump says Hillary Clinton 'got schlonged' by Barack Obama in the 2008 Democratic primary. 'Schlonged' is a Yiddish vulgarity for a large penis. Trump's use of a sexual term to describe a female political rival is noted.",
+        "replacement": "At a December 21, 2015 campaign rally in Grand Rapids, Michigan, Trump called Hillary Clinton's delayed return from a Democratic debate restroom break 'disgusting' and said she had been 'schlonged' by Barack Obama in the 2008 Democratic primary. The rally transcript and contemporaneous reporting place both comments at the same event; four imported timeline rows had assigned the episode to December 15, 17, 18, and 20."
+      },
+      {
+        "field": "sig",
+        "expected": "Uses a sexual Yiddish vulgarity to describe Hillary Clinton losing the 2008 primary.",
+        "replacement": "The remarks became a documented example of gendered and crude campaign rhetoric toward a female opponent. Consolidating the same rally into one event also prevents import contamination from inflating the historical timeline."
+      },
+      {
+        "field": "goal",
+        "expected": "'She got schlonged.' Using a penis-related Yiddish term to describe a female rival's political loss.",
+        "replacement": "Trump later said he used 'schlonged' to mean defeated badly and denied that it was vulgar. The exact transcript, contemporaneous context, later explanation, and any evidence of audience or electoral effects are the appropriate tests; the archive does not infer intent beyond the recorded words."
+      },
+      {
+        "field": "mt",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "Maybe Trump intended a colloquial political taunt rather than a literal sexual reference, as he later maintained. Therefore the entry records his exact words and explanation, identifies why they drew controversy, and avoids treating an interpretation of intent as established fact."
+      },
+      {
+        "field": "src",
+        "expected": [
+          {
+            "t": "AP News",
+            "url": "https://apnews.com/search?q=Refers+Clinton+Getting"
+          }
+        ],
+        "replacement": [
+          {
+            "t": "Roll Call Factba.se — rally transcript",
+            "url": "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-grand-rapids-mi-december-21-2015/"
+          },
+          {
+            "t": "Reuters",
+            "url": "https://www.reuters.com/article/world/us-politics/trump-uses-vulgar-term-to-describe-clintons-2008-presidential-run-idUSKBN0U51JX/"
+          },
+          {
+            "t": "Associated Press",
+            "url": "https://apnews.com/general-news-united-states-presidential-election-events-e452a4c791b445cfa25183d079ed7f02"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "revision_id": "LR-2026-08-27-104",
+    "recorded_at": "2026-08-27",
+    "legacy_id": "LEG-000561",
+    "kind": "duplicate-supersession",
+    "summary": "Retire a misdated bathroom-comment duplicate in favor of the source-reviewed December 21 Grand Rapids rally record.",
+    "provenance": [
+      {
+        "type": "internal-deduplication",
+        "supports": "The text describes the same December 21, 2015 Grand Rapids rally documented by LEG-000563, not a distinct December 15 event."
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "superseded"
+      },
+      {
+        "field": "superseded_by",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "LEG-000563"
+      },
+      {
+        "field": "superseded_reason",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "Same December 21, 2015 Grand Rapids rally as LEG-000563; retained as an auditable legacy alias after date and source correction."
+      }
+    ]
+  },
+  {
+    "revision_id": "LR-2026-08-27-105",
+    "recorded_at": "2026-08-27",
+    "legacy_id": "LEG-000564",
+    "kind": "duplicate-supersession",
+    "summary": "Retire a second misdated duplicate of the December 21 Grand Rapids rally remarks.",
+    "provenance": [
+      {
+        "type": "internal-deduplication",
+        "supports": "The row combines the same 'schlonged' and bathroom remarks documented by LEG-000563 and does not describe a distinct December 18 event."
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "superseded"
+      },
+      {
+        "field": "superseded_by",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "LEG-000563"
+      },
+      {
+        "field": "superseded_reason",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "Same December 21, 2015 Grand Rapids rally as LEG-000563; retained as an auditable legacy alias after date and source correction."
+      }
+    ]
+  },
+  {
+    "revision_id": "LR-2026-08-27-106",
+    "recorded_at": "2026-08-27",
+    "legacy_id": "LEG-000566",
+    "kind": "duplicate-supersession",
+    "summary": "Retire a third misdated duplicate of the December 21 Grand Rapids rally remarks.",
+    "provenance": [
+      {
+        "type": "internal-deduplication",
+        "supports": "The row repeats the same 'schlonged' remark documented by LEG-000563 and does not describe a distinct December 20 event."
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "superseded"
+      },
+      {
+        "field": "superseded_by",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "LEG-000563"
+      },
+      {
+        "field": "superseded_reason",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "Same December 21, 2015 Grand Rapids rally as LEG-000563; retained as an auditable legacy alias after date and source correction."
+      }
+    ]
   }
 ]
