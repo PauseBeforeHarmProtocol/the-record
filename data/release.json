@@ -1,52 +1,79 @@
 {
-  "version": "10.6.0",
+  "version": "10.7.0",
   "release_iso": "2026-08-31",
   "release_human": "August 31, 2026",
-  "checked_at": "2026-08-31 5:58 AM EDT",
-  "previous_version": "10.5.0",
-  "previous_checked_at": "2026-08-30 11:58 PM EDT",
-  "window_started_at": "2026-08-30 11:58 PM EDT",
-  "window_ended_at": "2026-08-31 5:58 AM EDT",
+  "checked_at": "2026-08-31 6:03 PM EDT",
+  "previous_version": "10.6.0",
+  "previous_checked_at": "2026-08-31 5:58 AM EDT",
+  "window_started_at": "2026-08-31 5:58 AM EDT",
+  "window_ended_at": "2026-08-31 6:03 PM EDT",
   "week_start": "2026-08-29",
   "week_end": "2026-09-04",
   "week_label": "August 29–September 4, 2026",
   "cutoff_start": "2026-08-17",
-  "new_entry_ids": ["NAT-2026-08-17-001", "NAT-2026-08-31-001", "NAT-2026-08-31-002", "NAT-2026-08-31-003", "NAT-2026-08-31-004"],
-  "added_entry_ids": ["NAT-2026-08-31-001", "NAT-2026-08-31-002", "NAT-2026-08-31-003", "NAT-2026-08-31-004"],
-  "refreshed_entry_ids": ["NAT-2026-08-17-001"],
-  "dedupe_resolutions": [],
+  "new_entry_ids": [
+    "NAT-2026-08-31-005",
+    "NAT-2026-08-31-006",
+    "NAT-2026-08-31-007",
+    "NAT-2026-08-31-008",
+    "NAT-2026-08-31-009",
+    "NAT-2026-08-31-010",
+    "NAT-2026-08-31-011"
+  ],
+  "added_entry_ids": [
+    "NAT-2026-08-31-005",
+    "NAT-2026-08-31-006",
+    "NAT-2026-08-31-007",
+    "NAT-2026-08-31-008",
+    "NAT-2026-08-31-009",
+    "NAT-2026-08-31-010",
+    "NAT-2026-08-31-011"
+  ],
+  "refreshed_entry_ids": [],
+  "dedupe_resolutions": [
+    {
+      "entry_id": "NAT-2026-08-31-006",
+      "target_id": "NAT-2026-08-31-007",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The records share a same-day White House fact sheet because it reports both manufacturer pricing arrangements and Medicare Bridge uptake. One is a set of announced company agreements; the other is an administration-reported program measurement. Neither duplicates the other's event or unit."
+    }
+  ],
   "rejected_candidates": [
     {
-      "title": "No new Truth Social post",
-      "reason": "The validated source remained at 35,967 posts. The newest post was still August 30 at 10:19:45 PM EDT; the fallback was checked August 31 at 5:58:04 AM EDT. No post newer than the prior snapshot existed to review as a lead."
+      "title": "Twenty-three new Truth Social posts",
+      "reason": "The source advanced from 35,967 to 35,990 posts. Most new items were rhetoric, reposts, image-only material or links to older August 16–19 stories. Trump's ballroom post was retained only as evidence that he published his characterization; the Supreme Court order, not the post, controls the legal status."
     },
     {
-      "title": "Monday publication of already recorded presidential actions",
-      "reason": "The bulk-power emergency and lean-beef quota documents published in the August 31 Federal Register were signed August 26, filed for public inspection August 28 and already have canonical records. Publication did not create duplicate events."
+      "title": "Passenger-vehicle fuel-economy reduction",
+      "reason": "Transportation Secretary Sean Duffy said lower standards would be announced soon, but no final rule was issued by cutoff. A promised rule is not an implemented standard."
     },
     {
-      "title": "Affirmative-asylum rule correction",
-      "reason": "The August 31 correction replaces a cost-and-benefit table in the July 28 interim final rule. It does not change operative referral-without-interview text, create a new implementation stage or independently supply a current-window event requiring a new count."
+      "title": "Review of U.S. position on the Falkland Islands",
+      "reason": "Trump described a review but announced no completed policy change, diplomatic instrument, sanction, recognition decision or implemented federal action."
     },
     {
-      "title": "Iranian claims about U.S. sites, drone and tanker",
-      "reason": "Iran reported an attack on a UAE base housing U.S. forces, downing of a U.S. drone and a mined tanker; the UAE denied the base attack, and no public U.S. confirmation or independent operational evidence established a separate U.S. administration action by cutoff. The confirmed Jordan response remains in the existing Hormuz record."
+      "title": "Venezuela oil-venture ownership and commercial terms",
+      "reason": "The reported U.S. stake and detailed structure still rested principally on unnamed sources, while contracts, financing and legal instruments remained undisclosed. The already-canonical framework record preserves verified developments without treating unresolved terms as fact."
     },
     {
-      "title": "Planned additional Iran bank sanction",
-      "reason": "Treasury had not issued the promised designation or another rule by cutoff. The intended sanction remains a lead rather than an implemented action."
+      "title": "Army secretary resignation and other personnel coverage",
+      "reason": "The reported resignation was confirmed as a personnel change but did not independently establish a material policy action, appropriation, ruling or implementation stage within the archive threshold."
     },
     {
-      "title": "G20 economic and Iran-pressure plans",
-      "reason": "The ministerial meeting had not produced a communique, agreement, implemented tariff change, issued sanction or other completed federal action by cutoff."
+      "title": "No troop deployment planned at midterm polling sites",
+      "reason": "The Joint Chiefs chairman's written statement provides important context but reports the absence of a plan rather than a new deployment order or other implemented action. It remains a research lead if policy changes."
+    },
+    {
+      "title": "Planned additional Iran bank sanction and G20 plans",
+      "reason": "No bank designation, final communique, agreement, implemented tariff change or other completed federal action appeared by cutoff. Announced intentions remain leads."
     },
     {
       "title": "Food-processing order still unsigned",
-      "reason": "No signed presidential order, published agency rule, funding action or implementation record appeared by cutoff. Preparation and rhetoric remain leads rather than completed federal action."
+      "reason": "No signed presidential order, published agency rule, funding action or implementation record appeared by cutoff. Preparation and rhetoric remain below the threshold."
     },
     {
-      "title": "Unresolved refinery-waiver, CIA, Watson, Mar-a-Lago, FBI-applicant, LaGuardia and Pentagon reports",
-      "reason": "No final agency action, published directive, disclosed agreement, public charge sheet, independently confirmed filing, final accident finding, troop-posture decision or primary inventory record appeared by cutoff; consequential details that still rest on unnamed sources remain below the publication threshold."
+      "title": "Previously unresolved anonymously sourced reports",
+      "reason": "No final agency action or independently corroborated primary record resolved the remaining CIA, Watson, Mar-a-Lago, FBI-applicant, LaGuardia and Pentagon leads by cutoff."
     }
   ],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork)"
