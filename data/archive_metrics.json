@@ -1,11 +1,11 @@
 {
   "schema_version": 3,
-  "editorial_checked_at": "2026-09-01 6:04 AM EDT",
-  "quality_inputs_updated_at": "2026-09-01T10:04:18Z",
-  "external_registry_checked_at": "2026-09-01T10:04:18Z",
+  "editorial_checked_at": "2026-09-01 12:03 PM EDT",
+  "quality_inputs_updated_at": "2026-09-01T16:03:23Z",
+  "external_registry_checked_at": "2026-09-01T16:03:23Z",
   "federation_last_modified_at": "2026-08-25T14:40:23Z",
   "legacy_revisions_through": "2026-08-27",
-  "release_version": "10.9.0",
+  "release_version": "10.10.0",
   "canonical_files": {
     "legacy": "data/legacy_entries.json",
     "current": "data/current_entries.json",
@@ -16,24 +16,24 @@
   },
   "canonical_sha256": {
     "legacy": "eebb3dfa2f010d5ffdca7ffe0432724975b7aebb7b28df2ee70a745347b0f49e",
-    "current": "2308409ff8d53dc78a9e34a26ca14f458fbb5266435a92b72744033aa5c18674",
-    "source_ledger": "3cdc50415405ce1e5df1894572392b1ae577845502f21a2155deeeb262fdb411",
+    "current": "2bcb0538d626bb98dbf511c3ac778a27bec9625a2e9b1225decc2a9de22fd9fe",
+    "source_ledger": "2d658355d16dfe170f707f69b1512592c54207d46d0e94fb6fe9ed7febac85f2",
     "federated": "4c2b2804949098a9b0a314b3f0ed44e74fc8ccb688ab84741922dd30fa1083f3",
     "legacy_revisions": "cdc1add989291766527f08cadc87c82647f013aab6bb8b7ca3d46f0ba6f53b7f",
-    "archive_registry": "ca4ab6988f8a1ab707ff909e232927f3b7a1f076c2842ca1b45267fa5d3fcd69"
+    "archive_registry": "523fa353704357050241d49a9ddc16482aca68019b03fbfff27ecf4cba510817"
   },
   "totals": {
     "canonical_legacy_rows": 4742,
     "canonical_legacy_entries": 4736,
     "active_legacy_entries": 4736,
     "superseded_legacy_tombstones": 6,
-    "bridged_national_entries": 87,
-    "full_archive_runtime_entries": 4823,
-    "current_layer_entries": 91,
+    "bridged_national_entries": 90,
+    "full_archive_runtime_entries": 4826,
+    "current_layer_entries": 94,
     "legacy_source_references": 6704,
-    "current_source_references": 234,
-    "full_archive_runtime_source_references": 6930,
-    "full_archive_runtime_unique_urls": 5539
+    "current_source_references": 243,
+    "full_archive_runtime_source_references": 6939,
+    "full_archive_runtime_unique_urls": 5548
   },
   "coverage": {
     "legacy_last_date": "2026-08-01",
@@ -416,37 +416,38 @@
     }
   },
   "current": {
-    "entries": 91,
-    "national_entries": 87,
+    "entries": 94,
+    "national_entries": 90,
     "in6_entries": 4,
-    "source_references": 234,
-    "national_source_references": 226,
-    "source_ledger_rows": 237,
-    "used_source_ledger_rows": 233,
+    "source_references": 243,
+    "national_source_references": 235,
+    "source_ledger_rows": 246,
+    "used_source_ledger_rows": 242,
     "unused_source_ledger_rows": 4,
-    "entries_with_one_source": 26,
-    "entries_with_one_source_percent": 28.6,
-    "national_entries_with_one_source": 24,
-    "national_entries_with_one_source_percent": 27.6,
-    "maybe_therefore_present": 91,
+    "entries_with_one_source": 28,
+    "entries_with_one_source_percent": 29.8,
+    "national_entries_with_one_source": 26,
+    "national_entries_with_one_source_percent": 28.9,
+    "maybe_therefore_present": 94,
     "maybe_therefore_missing": 0,
     "review_states": {
-      "current-standard-reviewed": 91
+      "corrected": 1,
+      "current-standard-reviewed": 93
     },
-    "current_standard_reviewed": 91,
+    "current_standard_reviewed": 94,
     "current_standard_pending": 0,
     "most_used_publishers": [
       {
         "publisher": "Reuters",
-        "references": 75
+        "references": 79
       },
       {
         "publisher": "Associated Press",
-        "references": 23
+        "references": 24
       },
       {
         "publisher": "The White House",
-        "references": 13
+        "references": 14
       },
       {
         "publisher": "U.S. Department of Justice",
@@ -461,6 +462,10 @@
         "references": 5
       },
       {
+        "publisher": "Centers for Disease Control and Prevention",
+        "references": 4
+      },
+      {
         "publisher": "White House",
         "references": 4
       },
@@ -470,10 +475,6 @@
       },
       {
         "publisher": "U.S. District Court for the District of Massachusetts",
-        "references": 3
-      },
-      {
-        "publisher": "Drug Enforcement Administration",
         "references": 3
       }
     ]

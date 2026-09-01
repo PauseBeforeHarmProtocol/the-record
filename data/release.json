@@ -1,31 +1,31 @@
 {
-  "version": "10.9.0",
+  "version": "10.10.0",
   "release_iso": "2026-09-01",
   "release_human": "September 1, 2026",
-  "checked_at": "2026-09-01 6:04 AM EDT",
-  "previous_version": "10.8.0",
-  "previous_checked_at": "2026-09-01 12:03 AM EDT",
-  "window_started_at": "2026-09-01 12:03 AM EDT",
-  "window_ended_at": "2026-09-01 6:04 AM EDT",
+  "checked_at": "2026-09-01 12:03 PM EDT",
+  "previous_version": "10.9.0",
+  "previous_checked_at": "2026-09-01 6:04 AM EDT",
+  "window_started_at": "2026-09-01 6:04 AM EDT",
+  "window_ended_at": "2026-09-01 12:03 PM EDT",
   "week_start": "2026-08-29",
   "week_end": "2026-09-04",
   "week_label": "August 29–September 4, 2026",
   "cutoff_start": "2026-08-18",
   "new_entry_ids": [
-    "NAT-2026-08-31-013",
-    "NAT-2026-09-01-001",
-    "NAT-2026-09-01-002",
-    "NAT-2026-09-01-003",
-    "NAT-2026-08-28-010"
+    "NAT-2026-09-01-004",
+    "NAT-2026-09-01-005",
+    "NAT-2026-09-01-006",
+    "NAT-2026-08-24-002",
+    "NAT-2026-08-26-004"
   ],
   "added_entry_ids": [
-    "NAT-2026-08-31-013",
-    "NAT-2026-09-01-001",
-    "NAT-2026-09-01-002",
-    "NAT-2026-09-01-003"
+    "NAT-2026-09-01-004",
+    "NAT-2026-09-01-005",
+    "NAT-2026-09-01-006"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-08-28-010"
+    "NAT-2026-08-24-002",
+    "NAT-2026-08-26-004"
   ],
   "dedupe_resolutions": [
     {
@@ -33,40 +33,38 @@
       "target_id": "NAT-2026-08-31-007",
       "decision": "distinct_lifecycle_stage",
       "notes": "The records share a same-day White House fact sheet because it reports both manufacturer pricing arrangements and Medicare Bridge uptake. One is a set of announced company agreements; the other is an administration-reported program measurement. Neither duplicates the other's event or unit."
+    },
+    {
+      "entry_id": "NAT-2026-08-26-004",
+      "target_id": "NAT-2026-09-01-006",
+      "decision": "false_positive",
+      "notes": "The shared EO 14420 token is intentionally preserved in the grid record's timestamped correction note and source description. The official Federal Register assigns EO 14421 to the August 26 grid order and EO 14420 to the August 10 vaccine order; the records concern distinct events and subjects."
     }
   ],
   "rejected_candidates": [
     {
       "title": "Two new Truth Social posts",
-      "reason": "The source advanced from 35,992 to 35,994 posts. A reposted Breitbart item supplied no independently established federal action. Trump's Chicago statement asked the mayor and governor to invite federal intervention, but no deployment order, agreement, funding action or implemented policy was located by cutoff."
+      "reason": "The feed advanced from 35,994 to 35,996 posts. Personal affordability rhetoric independently established no federal action. Trump's film-industry post named a proposed Motion Picture, Television, and Entertainment Revitalization Act and claimed bipartisan support, but no introduced bill, text, sponsor list, appropriation or enacted incentive was located; the underlying legislative request is already recorded."
     },
     {
-      "title": "Iran sanctions-effectiveness claims",
-      "reason": "Iranian officials said foreign-exchange reserves remained sufficient while the rial and inflation remained under pressure, and Treasury Secretary Scott Bessent said U.S. pressure was working. The reported indicators do not isolate sanctions from war, blockade, prior restrictions or Iranian domestic policy, and no new identified bank designation was issued by cutoff."
+      "title": "Reuters/Ipsos polling on Canada tariffs and Lake America",
+      "reason": "The poll was published immediately before the prior checked boundary and measures public opinion rather than a new policy action, court ruling or effectiveness outcome. Its results remain contextual research rather than a separate canonical event."
     },
     {
-      "title": "Japan-U.S. statement on orderly yen movements",
-      "reason": "The finance-minister statement reiterated an existing coordinated position on excessive currency volatility and disclosed no new intervention, agreement text, expenditure or operative U.S. policy change."
+      "title": "Iran diplomacy, threat and sanctions previews",
+      "reason": "Iran's conditional offer to honor an interim memorandum and Trump's response were diplomatic positions, while the anticipated bank designation remained unidentified and unissued. No new U.S. strike, sanction instrument or agreement implementation cleared the threshold by cutoff."
     },
     {
-      "title": "DOE cellulosic-biofuel incentive rescission",
-      "reason": "The final rule removed an inactive production-incentive framework under which no current payments or applicants were identified. No material ongoing program, expenditure or independently demonstrated consequence justified a separate national record."
+      "title": "Canada trade talks and economic-affordability claims",
+      "reason": "Negotiating statements and generalized claims about prices disclosed no signed agreement, tariff change, appropriation, implemented program or outcome measure attributable to a new action in the window."
     },
     {
-      "title": "FDIC reciprocal-deposit interim rule",
-      "reason": "The rule was a statutory conforming implementation of the 21st Century ROAD to Housing Act. No distinct discretionary administration action or measured bank-funding effect beyond the enacted-law requirement cleared the publication threshold."
+      "title": "COSCO espionage and other consequential anonymous reports",
+      "reason": "The most consequential operational details rested on unnamed U.S. officials or unresolved intelligence characterizations without adequate independent confirmation or a new public primary record. They remain research leads."
     },
     {
-      "title": "Passenger-vehicle fuel-economy reduction, Iran bank sanction, G20 plans and food-processing order",
-      "reason": "No final passenger-vehicle rule, identified bank designation, final G20 action, signed food-processing order, funding instrument or implementation appeared by cutoff. Announced intentions remain research leads."
-    },
-    {
-      "title": "State Department plan for European media grants and Venezuela ownership rumors",
-      "reason": "Consequential details continued to rest on unnamed sources without a public primary instrument and adequate independent confirmation. The separately disclosed White House Venezuela agreement terms were added to the existing canonical event instead."
-    },
-    {
-      "title": "Personnel, institutional and previously unresolved anonymous reports",
-      "reason": "The Army-secretary resignation, Smithsonian museum placement, routine enforcement or ceremonial material, and unresolved CIA, Watson, Mar-a-Lago, FBI-applicant, LaGuardia and Pentagon reports did not establish another material Trump-administration action under the evidence standard."
+      "title": "Routine personnel, criminal, ceremonial and duplicate coverage",
+      "reason": "Personnel speculation, private criminal matters, ceremonial events, repeated coverage of existing records and institution-only developments did not establish another material Trump-administration national action."
     }
   ],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork)"
