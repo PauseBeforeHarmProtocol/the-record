@@ -886,9 +886,9 @@
     "id": "NAT-2026-08-24-002",
     "scope": "national",
     "date": "2026-08-24",
-  "display_date": "August 24–31, 2026",
+    "display_date": "August 24–September 1, 2026",
   "title": "Federal judge temporarily blocks core USPS mail-ballot requirements",
-  "dek": "A 14-day restraining order stays mandatory ballot-envelope standards and portal registration while the judge considers longer preliminary relief on September 3.",
+    "dek": "A 14-day restraining order stays core requirements while a documented whistleblower disclosure alleges that the still-inactive ballot portal was rushed, undertested and designed with a zero-percent batch-failure rule.",
     "facts": [
       "The Supreme Court granted the Justice Department's emergency request to pause a Massachusetts federal judge's injunction that had blocked the administration from implementing the March mail-voting executive order in 23 states and the District of Columbia.",
       "The order directs federal agencies to compile state voter-eligibility lists and tells the Postal Service to deliver mail ballots only to voters on approved state lists. The Postal Service had begun implementation planning before the Supreme Court acted.",
@@ -900,12 +900,15 @@
     "On August 27, USPS said the new requirements were in effect and would apply to the November 3 election. That agency confirmation changed the evidence status from legally permitted implementation to implemented policy, but did not resolve the pending emergency motions or the rule's legality.",
     "Later on August 27, Talwani granted the challengers' motions in part and temporarily stayed the rule's mandatory outbound- and return-envelope standards and mandatory Postal Service ballot-portal registration. The 14-day order requires USPS to notify affected election officials; motions for preliminary injunctions remain under advisement for a September 3 hearing.",
     "On August 28, the administration filed a notice of appeal to the First Circuit from the temporary restraining order. The appeal did not itself stay Talwani's order, restore the mandatory requirements, or decide the rule's legality; the September 3 preliminary-injunction hearing remained scheduled.",
-    "On August 31, Talwani denied the administration's district-court stay request. The Justice Department then filed an emergency First Circuit motion seeking a stay pending appeal and a temporary administrative stay, arguing that the rule regulates mail rather than voter eligibility and that North Carolina and Alabama were scheduled to begin mailing ballots while the 14-day order remained in force. The appellate court had not ruled by cutoff, so the specified mandatory provisions remained stayed."
+      "On August 31, Talwani denied the administration's district-court stay request. The Justice Department then filed an emergency First Circuit motion seeking a stay pending appeal and a temporary administrative stay, arguing that the rule regulates mail rather than voter eligibility and that North Carolina and Alabama were scheduled to begin mailing ballots while the 14-day order remained in force.",
+      "A September 1 public disclosure from an anonymous federal official represented by Whistleblower Aid alleged that USPS tried to build the Federal Ballot Mail Portal in roughly three months rather than the year or more normally required, used unclear and changing requirements, and omitted sufficient component, internal, customer-acceptance and final integrated testing. The source's identity and underlying internal records were not public, so these are documented allegations rather than independently established system defects.",
+      "The disclosure also alleged a zero-percent physical-scan failure rule: if a sampled barcode does not match portal data, USPS would reject the entire batch until the election office resolves the discrepancy and resubmits it. The example given was one failure holding up the other 9,999 ballots in a 10,000-ballot batch; no evidence showed that any such batch had actually been rejected because the portal remained inactive.",
+      "Senator Richard Blumenthal requested explanations by September 4 and internal records by September 8 and referred the concerns to the USPS inspector general. USPS did not comment to the Associated Press; the White House has called the mail-voting provisions common-sense anti-fraud measures. At cutoff, the First Circuit had not granted a stay and the specified mandatory provisions remained temporarily blocked."
   ],
-  "significance": "The emergency stay motion puts the rule's operational status before the First Circuit days before North Carolina is scheduled to mail ballots. Talwani's order still preserves state systems temporarily while the courts assess whether a postal rule unlawfully intrudes on election administration, but neither the restraining order, the appeal nor the stay motion is a final merits judgment.",
-  "goalpost": "The administration and intervenors call the rule a modest mail-design and data-reporting measure within USPS's authority and say it leaves voter eligibility to states. Talwani found the challengers likely to succeed, while the states and voting-rights groups warned of disenfranchisement and administrative disruption. A First Circuit administrative-stay or merits ruling, the September 3 hearing, implementation notices, and ballot-delivery data are the tests.",
-  "maybe_therefore": "Maybe the temporary stay will become a longer injunction and keep the core requirements off the books through the midterms, or the First Circuit may allow some provisions to take effect before the first ballots are mailed. Therefore the record says an emergency appellate stay request is pending and specified mandatory provisions remain temporarily stayed—not that the motion restored them, the full rule has been permanently invalidated, or the litigation is over.",
-  "evidence": "primary August 27 temporary restraining order and August 31 Justice Department emergency stay motion, federal docket, and independent Reuters and Associated Press reporting; core mandatory provisions remain stayed and appellate relief is pending",
+    "significance": "The disclosure adds a specific implementation-risk claim to litigation already unfolding days before states begin mailing ballots: an undertested portal and all-or-nothing batch verification could delay large volumes if activated. The allegation is serious and formally placed before Congress and the inspector general, but it is not yet an audit finding, court finding or observed election failure.",
+    "goalpost": "The administration and intervenors call the rule a modest mail-design and data-reporting measure within USPS's authority and say it leaves eligibility to states; the White House calls its provisions common-sense fraud safeguards. Challengers and the whistleblower warn of disenfranchisement, unlawful implementation and technical failure. First Circuit and district-court rulings, USPS records and testing, inspector-general findings, portal activation, batch-rejection data, ballot-delivery times and documented voter effects are the tests.",
+    "maybe_therefore": "Maybe the whistleblower has identified genuine launch-critical defects that would disrupt ballot delivery, or later records and testing may show the described controls are narrower, remediable or inaccurately characterized. Therefore the record confirms a detailed anonymous disclosure, congressional oversight request and continuing temporary stay—not proven deliberate disenfranchisement, actual discarded ballots, a completed audit or a final ruling on the system's legality.",
+    "evidence": "primary court orders and stay motion, final rule, formally published anonymous whistleblower disclosure, congressional oversight letter and independent Associated Press and Reuters reporting; specified provisions stayed, portal inactive, allegations unadjudicated",
     "tags": [
       "Supreme Court",
       "mail voting",
@@ -935,9 +938,12 @@
     "mail_voting_docket_2026",
     "ap_usps_tro_appeal_aug28",
     "doj_usps_stay_motion_aug31",
-    "reuters_usps_stay_motion_aug31"
+    "reuters_usps_stay_motion_aug31",
+    "senate_usps_whistleblower_aug31",
+    "ap_usps_portal_whistleblower_sep1",
+    "reuters_usps_portal_whistleblower_sep1"
   ],
-  "checked_at": "2026-09-01 12:03 AM EDT",
+  "checked_at": "2026-09-01 12:03 PM EDT",
     "pack_filename": "NAT-2026-08-24-002.zip",
     "pack_path": "artifacts/entries/NAT-2026-08-24-002.zip",
     "review_status": "current-standard-reviewed"
@@ -1444,16 +1450,17 @@
     "date": "2026-08-26",
     "display_date": "August 26, 2026",
     "title": "Trump declares bulk-power emergency and restricts foreign grid equipment",
-    "dek": "Executive Order 14420 bars future covered transactions that the Energy secretary finds present specified foreign-control and security risks, and authorizes conditions on equipment already operating.",
+    "dek": "Executive Order 14421 bars future covered transactions that the Energy secretary finds present specified foreign-control and security risks, and authorizes conditions on equipment already operating.",
     "facts": [
-      "President Trump signed Executive Order 14420 declaring a national emergency over foreign supply of bulk-power system electric equipment under the International Emergency Economic Powers Act and National Emergencies Act.",
+      "President Trump signed Executive Order 14421 declaring a national emergency over foreign supply of bulk-power system electric equipment under the International Emergency Economic Powers Act and National Emergencies Act.",
       "The order prohibits post-signing acquisition, import, transfer, or installation transactions when the Energy secretary determines that covered foreign control and specified sabotage, remote-access, supply-disruption, critical-infrastructure, or national-security risks are present. It reaches associated components, software, firmware, digital and maintenance services, and remote-access capabilities; it is not a blanket ban on every foreign-made grid component.",
-      "The order also authorizes the Energy secretary to impose conditions on continued use of covered equipment already operating, directs implementation rules as needed, and requires risk identification and recommendations. Reuters reported that the action follows concerns about undocumented communication devices found in some Chinese solar inverters; the order itself does not publish a product list or establish that every covered device contains a backdoor."
+      "The order also authorizes the Energy secretary to impose conditions on continued use of covered equipment already operating, directs implementation rules as needed, and requires risk identification and recommendations. Reuters reported that the action follows concerns about undocumented communication devices found in some Chinese solar inverters; the order itself does not publish a product list or establish that every covered device contains a backdoor.",
+      "Correction — September 1, 2026: an earlier version identified the grid order as Executive Order 14420 because that number appears on the White House page. The official Federal Register assigns the August 26 grid order Executive Order 14421; Executive Order 14420 is the August 10 childhood-vaccine order."
     ],
     "significance": "The order creates a broad emergency-power framework for federal review of future grid-equipment transactions and possible operating conditions on installed equipment. It can reduce cyber and supply-chain exposure, but its eventual reach, replacement costs, and effects on grid reliability depend on Energy Department determinations and rules.",
     "goalpost": "The administration says foreign-controlled equipment can create remote-access, sabotage, and supply-disruption risks in infrastructure essential to defense, emergency services, and the economy. Utilities and suppliers may argue that vague covered-entity criteria or rapid replacement mandates could raise costs and delay capacity. The covered-entity definitions, product determinations, implementation rules, reliability analysis, and documented vulnerability findings are the evidence tests.",
     "maybe_therefore": "Maybe targeted screening and conditions will close genuine grid-security gaps without materially constraining safe imports, especially if Energy applies the order narrowly. Therefore the record distinguishes the signed emergency framework from later product-specific determinations and does not describe all foreign equipment as banned or compromised.",
-    "evidence": "signed White House executive order and fact sheet independently reported by Reuters; emergency and review authorities ordered, product-specific scope and implementation outcomes not yet measured",
+    "evidence": "official Federal Register publication assigning EO 14421, White House text whose page mislabels the number, fact sheet and independent Reuters reporting; identifier corrected, emergency and review authorities ordered, product-specific scope and outcomes unmeasured",
     "tags": [
       "electric grid",
       "national emergency",
@@ -1470,12 +1477,13 @@
     ],
     "sources": [
       "wh_bulk_power_emergency_aug26",
-      "reuters_bulk_power_emergency_aug26"
+      "reuters_bulk_power_emergency_aug26",
+      "fr_bulk_power_eo14421_aug31"
     ],
-    "checked_at": "2026-08-26 5:59 PM EDT",
+    "checked_at": "2026-09-01 12:03 PM EDT",
     "pack_filename": "NAT-2026-08-26-004.zip",
     "pack_path": "artifacts/entries/NAT-2026-08-26-004.zip",
-    "review_status": "current-standard-reviewed"
+    "review_status": "corrected"
   },
   {
     "id": "NAT-2026-08-26-005",
@@ -3291,6 +3299,84 @@
     "checked_at": "2026-09-01 6:04 AM EDT",
     "pack_filename": "NAT-2026-09-01-003.zip",
     "pack_path": "artifacts/entries/NAT-2026-09-01-003.zip",
+    "review_status": "current-standard-reviewed"
+  },
+  {
+    "id": "NAT-2026-09-01-004",
+    "scope": "national",
+    "date": "2026-09-01",
+    "display_date": "September 1, 2026",
+    "title": "FAA proposes special flight rules around Mar-a-Lago",
+    "dek": "The proposed one-nautical-mile, 2,000-foot security area would preserve specified commercial and emergency access; it is not yet a final permanent restriction.",
+    "facts": [
+      "The Federal Aviation Administration said it is proposing special flight rules in a one-nautical-mile radius and up to 2,000 feet around President Trump's Mar-a-Lago residence near President Donald J. Trump International Airport in Palm Beach.",
+      "The U.S. Secret Service requested the restrictions based on what it called adverse threat intelligence and said the rules would improve its ability to mitigate risks from unauthorized crewed aircraft and drones.",
+      "The proposal would permit commercial aircraft that follow the established procedures; the FAA said omitting that exception would essentially make the airport's primary runway unusable. Emergency, lifesaving and law-enforcement aircraft could also enter with authorization and two-way air-traffic-control communication.",
+      "The FAA said broader temporary restrictions will continue when Trump is at Mar-a-Lago and cited existing protected airspace near seven presidential or vice-presidential residences as precedent.",
+      "The announcement is a proposal. No final rule, effective date, realized security benefit, flight-delay measurement, noise finding or completed change to permanent airspace was public by cutoff."
+    ],
+    "significance": "A standing security area around a president's private residence can redistribute flight paths and operating burdens around a major airport while protecting against unauthorized aircraft. The exceptions and final boundaries will determine whether the proposal materially changes airport capacity, neighborhood exposure or security enforcement.",
+    "goalpost": "The FAA and Secret Service say the proposal responds to adverse threat intelligence while preserving necessary airline and emergency access. Airport users and nearby communities may reasonably ask whether the restriction is proportionate and how flight paths, noise, delays and enforcement will change. A published final rule, supporting record, operational data, incursions, delays and community-impact evidence are the tests.",
+    "maybe_therefore": "Maybe the tailored exceptions will provide added protection with little additional disruption, or permanent-style restrictions may shift meaningful costs to airport users and neighboring communities. Therefore the record confirms a federal airspace proposal and its stated security rationale—not a finalized permanent restriction, proof of a specific threat, a closed runway or measured safety and community outcomes.",
+    "evidence": "independent Reuters reporting quoting the FAA and Secret Service on the proposed dimensions, rationale and exceptions; proposal announced, final instrument and outcomes pending",
+    "tags": ["FAA", "aviation", "Mar-a-Lago", "presidential security", "Palm Beach", "proposed rule"],
+    "institutions": ["Federal Aviation Administration", "U.S. Secret Service", "Department of Transportation", "President Donald J. Trump International Airport"],
+    "sources": ["reuters_faa_maralago_sfra_sep1"],
+    "checked_at": "2026-09-01 12:03 PM EDT",
+    "pack_filename": "NAT-2026-09-01-004.zip",
+    "pack_path": "artifacts/entries/NAT-2026-09-01-004.zip",
+    "review_status": "current-standard-reviewed"
+  },
+  {
+    "id": "NAT-2026-09-01-005",
+    "scope": "national",
+    "date": "2026-09-01",
+    "display_date": "September 1, 2026",
+    "title": "United States presses G20 members to adopt light-touch AI principles",
+    "dek": "The Carolina Principles are a formal U.S. negotiating proposal at the G20 technology meeting—not an adopted international agreement or domestic rule.",
+    "facts": [
+      "At a G20 technology meeting in Chapel Hill, North Carolina, the United States pressed member governments to avoid new artificial-intelligence rules and new international oversight bodies.",
+      "White House technology adviser Michael Kratsios asked countries to adopt the Carolina Principles, under which signatories would reserve new regulation for novel considerations, invest in foundational research and strengthen commercial opportunities for emerging technology.",
+      "Kratsios said policymakers should not treat every emerging technology as a first-of-its-kind policy problem. A White House official said the United States would oppose creating new organizations to oversee AI development.",
+      "Canada said its delegation would advocate balancing innovation with public trust and safety. The meeting precedes the December G20 leaders' summit and included major U.S. technology executives.",
+      "No list of signatories, final G20 text, binding commitment, U.S. regulation, repeal or measured innovation or safety outcome was public by cutoff."
+    ],
+    "significance": "The proposal makes regulatory restraint an explicit U.S. objective in international AI diplomacy, potentially shaping how allied markets govern powerful systems and how U.S. firms compete abroad. Its effect depends on adoption, final language and whether safety, competition and accountability mechanisms accompany the pro-innovation framework.",
+    "goalpost": "The administration says flexible, research-oriented governance will accelerate discovery and keep countries in the American technology ecosystem. The strongest counterargument is that minimizing new oversight before risks are understood may leave public-safety and accountability gaps while benefiting incumbent firms. Signatories, final G20 language, enacted national rules, safety requirements, market outcomes and documented incidents are the tests.",
+    "maybe_therefore": "Maybe the principles will prevent duplicative regulation while supporting research and interoperable markets, or they may discourage safeguards that prove necessary as AI capabilities advance. Therefore the record confirms a formal U.S. proposal presented to G20 officials—not G20 adoption, binding international law, domestic deregulation or evidence that lighter rules are safer or more innovative.",
+    "evidence": "independent on-site Reuters reporting documenting Michael Kratsios's remarks, the proposed principles, the White House position and a Canadian response; proposal presented, adoption and effects unresolved",
+    "tags": ["artificial intelligence", "G20", "technology policy", "international diplomacy", "regulation", "Carolina Principles"],
+    "institutions": ["The White House", "Office of Science and Technology Policy", "Department of Commerce", "Group of Twenty"],
+    "sources": ["reuters_g20_carolina_principles_sep1"],
+    "checked_at": "2026-09-01 12:03 PM EDT",
+    "pack_filename": "NAT-2026-09-01-005.zip",
+    "pack_path": "artifacts/entries/NAT-2026-09-01-005.zip",
+    "review_status": "current-standard-reviewed"
+  },
+  {
+    "id": "NAT-2026-09-01-006",
+    "scope": "national",
+    "date": "2026-09-01",
+    "display_date": "January–September 1, 2026",
+    "title": "Newborn vitamin K nonreceipt rises sharply while HHS evaluates the data",
+    "dek": "A review of more than one million births measured a 57% first-half increase; the timing overlaps federal vaccine changes but does not prove that administration policy caused the refusals.",
+    "facts": [
+      "A Truveta review reported by Reuters examined 1,026,375 infants born to 825,599 mothers from January 2019 through June 2026 and found that hospital nonreceipt of the vitamin K shot within one day of birth rose from 5.2% at the end of December 2025 to 8.1% at the end of June 2026, an increase of more than 57%.",
+      "The first-half 2026 nonreceipt rate was 2.5 times the 2019–2024 average and 1.4 times the 2025 rate. The analysis measured receipt in participating health records; it did not measure a national census of refusals, later catch-up shots or resulting bleeding cases.",
+      "The Centers for Disease Control and Prevention continues to recommend the birth shot and says infants who do not receive it are 81 times more likely to develop late vitamin K deficiency bleeding. CDC says the condition is preventable and may produce brain or intestinal bleeding without warning.",
+      "The acceleration temporally overlapped January federal childhood-vaccine schedule changes and President Trump's August 10 Executive Order 14420, which reaffirmed narrower recommendation categories and directed agencies to advance them. Vitamin K is not a vaccine and the executive order does not direct parents to refuse it.",
+      "HHS said it and CDC are evaluating refusal and bleeding data, argued that declining institutional trust predates this administration and grew during the COVID-19 pandemic, and emphasized respect for individual choice. The observational trend does not isolate federal policy, political messaging, social media, hospital practice or other causes."
+    ],
+    "significance": "The measurement identifies a large and rapid change in a preventive newborn intervention with a known severe-risk differential. It is evidence of increased nonreceipt and potential exposure—not yet evidence of more bleeding events or proof that federal vaccine policy caused the change.",
+    "goalpost": "HHS says mistrust predates the administration and that it is evaluating the data while providing vitamin K information. Clinicians argue that vaccine-policy messaging can spill over to unrelated newborn care. Replicated national measurements, stated parental reasons, hospital practices, catch-up rates, confirmed bleeding incidence and designs that isolate causal drivers are the tests.",
+    "maybe_therefore": "Maybe a preexisting rise in medical mistrust accelerated for reasons only partly or not at all attributable to federal policy, or administration messaging may have amplified confusion across newborn interventions. Therefore the record supports a measured 2026 increase in vitamin K nonreceipt and a material risk signal—not a causal verdict against the administration, a count of actual injuries or evidence that every nonreceipt was an informed refusal.",
+    "evidence": "Reuters analysis of Truveta records covering more than one million births, primary CDC risk guidance, primary August 10 executive order and an on-record HHS response; nonreceipt trend measured, causation and clinical outcomes unresolved",
+    "tags": ["public health", "newborn care", "vitamin K", "vaccines", "HHS", "CDC", "measured outcomes"],
+    "institutions": ["Department of Health and Human Services", "Centers for Disease Control and Prevention", "The White House", "Truveta"],
+    "sources": ["reuters_vitamin_k_refusals_sep1", "cdc_vitamin_k_vkdb", "wh_vaccine_recommendations_aug10"],
+    "checked_at": "2026-09-01 12:03 PM EDT",
+    "pack_filename": "NAT-2026-09-01-006.zip",
+    "pack_path": "artifacts/entries/NAT-2026-09-01-006.zip",
     "review_status": "current-standard-reviewed"
   }
 ]
