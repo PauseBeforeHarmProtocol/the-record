@@ -1,31 +1,29 @@
 {
-  "version": "10.10.0",
+  "version": "10.11.0",
   "release_iso": "2026-09-01",
   "release_human": "September 1, 2026",
-  "checked_at": "2026-09-01 12:03 PM EDT",
-  "previous_version": "10.9.0",
-  "previous_checked_at": "2026-09-01 6:04 AM EDT",
-  "window_started_at": "2026-09-01 6:04 AM EDT",
-  "window_ended_at": "2026-09-01 12:03 PM EDT",
+  "checked_at": "2026-09-01 6:02 PM EDT",
+  "previous_version": "10.10.0",
+  "previous_checked_at": "2026-09-01 12:03 PM EDT",
+  "window_started_at": "2026-09-01 12:03 PM EDT",
+  "window_ended_at": "2026-09-01 6:02 PM EDT",
   "week_start": "2026-08-29",
   "week_end": "2026-09-04",
   "week_label": "August 29–September 4, 2026",
-  "cutoff_start": "2026-08-18",
+  "cutoff_start": "2026-08-17",
   "new_entry_ids": [
-    "NAT-2026-09-01-004",
-    "NAT-2026-09-01-005",
-    "NAT-2026-09-01-006",
-    "NAT-2026-08-24-002",
-    "NAT-2026-08-26-004"
+    "NAT-2026-09-01-007",
+    "NAT-2026-09-01-008",
+    "NAT-2026-09-01-009",
+    "NAT-2026-08-17-001"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-01-004",
-    "NAT-2026-09-01-005",
-    "NAT-2026-09-01-006"
+    "NAT-2026-09-01-007",
+    "NAT-2026-09-01-008",
+    "NAT-2026-09-01-009"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-08-24-002",
-    "NAT-2026-08-26-004"
+    "NAT-2026-08-17-001"
   ],
   "dedupe_resolutions": [
     {
@@ -39,32 +37,42 @@
       "target_id": "NAT-2026-09-01-006",
       "decision": "false_positive",
       "notes": "The shared EO 14420 token is intentionally preserved in the grid record's timestamped correction note and source description. The official Federal Register assigns EO 14421 to the August 26 grid order and EO 14420 to the August 10 vaccine order; the records concern distinct events and subjects."
+    },
+    {
+      "entry_id": "NAT-2026-09-01-005",
+      "target_id": "NAT-2026-09-01-007",
+      "decision": "false_positive",
+      "notes": "Both records arise from the U.S.-hosted G20 meetings on September 1, but they document distinct proposals in separate tracks: light-touch AI governance at the technology meeting and trade barriers responding to Chinese export imbalances at the finance ministerial."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Two new Truth Social posts",
-      "reason": "The feed advanced from 35,994 to 35,996 posts. Personal affordability rhetoric independently established no federal action. Trump's film-industry post named a proposed Motion Picture, Television, and Entertainment Revitalization Act and claimed bipartisan support, but no introduced bill, text, sponsor list, appropriation or enacted incentive was located; the underlying legislative request is already recorded."
+      "title": "Twenty-four new Truth Social posts",
+      "reason": "The feed advanced from 35,996 to 36,020 posts. Trump's Iran statement was used only as primary evidence of his rationale and threat after the underlying U.S. strikes were independently confirmed. The other posts were campaign endorsements, book and corporate-link promotion, repeated film-industry material, energy rhetoric, a routine CDC advisory appointment, or an asserted $5 million Iowa disaster approval for which no FEMA instrument or independent confirmation was located by cutoff."
     },
     {
-      "title": "Reuters/Ipsos polling on Canada tariffs and Lake America",
-      "reason": "The poll was published immediately before the prior checked boundary and measures public opinion rather than a new policy action, court ruling or effectiveness outcome. Its results remain contextual research rather than a separate canonical event."
+      "title": "Congressional stopgap funding bill",
+      "reason": "The House sent the Senate-passed continuing resolution to Trump, but it was not signed by cutoff. The Record will treat enactment, a veto or another operative development as the lifecycle event rather than present House passage as an appropriation already in force."
     },
     {
-      "title": "Iran diplomacy, threat and sanctions previews",
-      "reason": "Iran's conditional offer to honor an interim memorandum and Trump's response were diplomatic positions, while the anticipated bank designation remained unidentified and unissued. No new U.S. strike, sanction instrument or agreement implementation cleared the threshold by cutoff."
+      "title": "Mifepristone litigation pause",
+      "reason": "Reuters reported during the window that a judge had paused the states' case while FDA reviews the drug, but the order was entered before the checked boundary and preserved the existing procedural status rather than deciding access, safety or the merits. It remains a lifecycle lead for the existing abortion-medication record."
     },
     {
-      "title": "Canada trade talks and economic-affordability claims",
-      "reason": "Negotiating statements and generalized claims about prices disclosed no signed agreement, tariff change, appropriation, implemented program or outcome measure attributable to a new action in the window."
+      "title": "Prospective Chevron Venezuela expansion",
+      "reason": "The expected investment announcement was attributed to an unnamed U.S. official and was scheduled for the following day. No company instrument, investment amount, signed operational agreement or implemented expansion was public by cutoff."
     },
     {
-      "title": "COSCO espionage and other consequential anonymous reports",
-      "reason": "The most consequential operational details rested on unnamed U.S. officials or unresolved intelligence characterizations without adequate independent confirmation or a new public primary record. They remain research leads."
+      "title": "Iran bank sanctions and other G20 statements",
+      "reason": "The anticipated Iranian bank designation remained unidentified and unissued. Statements about Japanese monetary policy, unresolved communique language and other diplomatic positions did not create another operative U.S. policy or agreement."
     },
     {
-      "title": "Routine personnel, criminal, ceremonial and duplicate coverage",
-      "reason": "Personnel speculation, private criminal matters, ceremonial events, repeated coverage of existing records and institution-only developments did not establish another material Trump-administration national action."
+      "title": "COSCO intelligence allegations and other anonymous reports",
+      "reason": "Consequential operational claims continued to rest substantially on unnamed officials without adequate independent confirmation or a new public primary record. They remain research leads rather than findings."
+    },
+    {
+      "title": "Routine personnel, endorsements, criminal and duplicate coverage",
+      "reason": "A CDC advisory appointment, campaign endorsements, state or private litigation, personnel chatter, promotional posts and duplicate coverage did not establish another material federal action in the window."
     }
   ],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork)"
