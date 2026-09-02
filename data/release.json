@@ -1,31 +1,48 @@
 {
-  "version": "10.11.0",
-  "release_iso": "2026-09-01",
-  "release_human": "September 1, 2026",
-  "checked_at": "2026-09-01 6:02 PM EDT",
-  "previous_version": "10.10.0",
-  "previous_checked_at": "2026-09-01 12:03 PM EDT",
-  "window_started_at": "2026-09-01 12:03 PM EDT",
-  "window_ended_at": "2026-09-01 6:02 PM EDT",
+  "version": "10.12.0",
+  "release_iso": "2026-09-02",
+  "release_human": "September 2, 2026",
+  "checked_at": "2026-09-02 12:00 AM EDT",
+  "previous_version": "10.11.0",
+  "previous_checked_at": "2026-09-01 6:02 PM EDT",
+  "window_started_at": "2026-09-01 6:02 PM EDT",
+  "window_ended_at": "2026-09-02 12:00 AM EDT",
   "week_start": "2026-08-29",
   "week_end": "2026-09-04",
   "week_label": "August 29–September 4, 2026",
   "cutoff_start": "2026-08-17",
   "new_entry_ids": [
-    "NAT-2026-09-01-007",
-    "NAT-2026-09-01-008",
-    "NAT-2026-09-01-009",
-    "NAT-2026-08-17-001"
+    "NAT-2026-09-01-011",
+    "NAT-2026-09-01-010",
+    "NAT-2026-08-17-001",
+    "NAT-2026-08-28-007",
+    "NAT-2026-09-01-007"
   ],
-  "added_entry_ids": [
-    "NAT-2026-09-01-007",
-    "NAT-2026-09-01-008",
-    "NAT-2026-09-01-009"
-  ],
+  "added_entry_ids": ["NAT-2026-09-01-011", "NAT-2026-09-01-010"],
   "refreshed_entry_ids": [
-    "NAT-2026-08-17-001"
+    "NAT-2026-08-17-001",
+    "NAT-2026-08-28-007",
+    "NAT-2026-09-01-007"
   ],
   "dedupe_resolutions": [
+    {
+      "entry_id": "NAT-2026-08-17-001",
+      "target_id": "NAT-2026-08-17-001",
+      "decision": "same_event_update",
+      "notes": "CENTCOM's completion announcement, the named target categories and Iranian retaliation are later lifecycle developments in the existing Hormuz conflict record, not a second war event."
+    },
+    {
+      "entry_id": "NAT-2026-08-28-007",
+      "target_id": "NAT-2026-08-28-007",
+      "decision": "same_event_update",
+      "notes": "The reported passport draft is the proposed implementation mechanism for Executive Order 14418 and belongs in the existing birthright-citizenship record rather than a parallel entry."
+    },
+    {
+      "entry_id": "NAT-2026-09-01-007",
+      "target_id": "NAT-2026-09-01-007",
+      "decision": "same_event_update",
+      "notes": "The 19-delegation G20 chair's statement materially advances the same trade-imbalance proposal recorded six hours earlier."
+    },
     {
       "entry_id": "NAT-2026-08-31-006",
       "target_id": "NAT-2026-08-31-007",
@@ -47,24 +64,24 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Twenty-four new Truth Social posts",
-      "reason": "The feed advanced from 35,996 to 36,020 posts. Trump's Iran statement was used only as primary evidence of his rationale and threat after the underlying U.S. strikes were independently confirmed. The other posts were campaign endorsements, book and corporate-link promotion, repeated film-industry material, energy rhetoric, a routine CDC advisory appointment, or an asserted $5 million Iowa disaster approval for which no FEMA instrument or independent confirmation was located by cutoff."
+      "title": "Fourteen new Truth Social posts",
+      "reason": "The feed advanced from 36,020 to 36,034 posts. Disaster-aid posts were treated as research leads and only funding supported by located FEMA releases entered the canonical record. Trump's later Iran post documented his published position but did not independently verify operational claims. Endorsements, G20 promotion, opinion links, image-only material and routine rhetoric did not establish another qualifying federal action."
+    },
+    {
+      "title": "Uncorroborated state- and tribal-specific disaster-aid totals",
+      "reason": "Trump announced separate amounts for Kentucky, Missouri, Kansas, North Dakota, Texas, Iowa and the Oglala Sioux Tribe. The posts establish that he announced the totals, but award instruments or independent confirmation matching each amount were not located by cutoff; they remain outside the grouped FEMA record."
+    },
+    {
+      "title": "Hung Cao nomination announcement",
+      "reason": "Trump announced an intended nomination for secretary of the Navy, but no White House nomination transmission or Senate record was located by cutoff. Routine personnel announcements without a formal nomination or appointment are withheld."
     },
     {
       "title": "Congressional stopgap funding bill",
-      "reason": "The House sent the Senate-passed continuing resolution to Trump, but it was not signed by cutoff. The Record will treat enactment, a veto or another operative development as the lifecycle event rather than present House passage as an appropriation already in force."
+      "reason": "The bill had passed Congress but was not signed by cutoff. Enactment, a veto or another operative development will be recorded rather than presenting pending legislation as an appropriation already in force."
     },
     {
-      "title": "Mifepristone litigation pause",
-      "reason": "Reuters reported during the window that a judge had paused the states' case while FDA reviews the drug, but the order was entered before the checked boundary and preserved the existing procedural status rather than deciding access, safety or the merits. It remains a lifecycle lead for the existing abortion-medication record."
-    },
-    {
-      "title": "Prospective Chevron Venezuela expansion",
-      "reason": "The expected investment announcement was attributed to an unnamed U.S. official and was scheduled for the following day. No company instrument, investment amount, signed operational agreement or implemented expansion was public by cutoff."
-    },
-    {
-      "title": "Iran bank sanctions and other G20 statements",
-      "reason": "The anticipated Iranian bank designation remained unidentified and unissued. Statements about Japanese monetary policy, unresolved communique language and other diplomatic positions did not create another operative U.S. policy or agreement."
+      "title": "Iran bank sanctions and other prospective announcements",
+      "reason": "The anticipated Iranian bank designation remained unidentified and unissued. Prospective Chevron activity, additional G20 statements and other policy previews did not create another completed U.S. action or agreement by cutoff."
     },
     {
       "title": "COSCO intelligence allegations and other anonymous reports",
@@ -72,7 +89,7 @@
     },
     {
       "title": "Routine personnel, endorsements, criminal and duplicate coverage",
-      "reason": "A CDC advisory appointment, campaign endorsements, state or private litigation, personnel chatter, promotional posts and duplicate coverage did not establish another material federal action in the window."
+      "reason": "Campaign endorsements, routine personnel chatter, promotional posts, opinion links, private or state litigation and duplicate coverage did not establish another material national Trump-administration action in the window."
     }
   ],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork)"
