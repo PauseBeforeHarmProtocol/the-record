@@ -33,12 +33,13 @@ def digest(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
-def stable_zip(files: dict[str, bytes]) -> bytes:
+def stable_zip(files: dict[str, bytes], *, compress: bool = True) -> bytes:
     buffer = io.BytesIO()
-    with zipfile.ZipFile(buffer, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
+    compression = zipfile.ZIP_DEFLATED if compress else zipfile.ZIP_STORED
+    with zipfile.ZipFile(buffer, "w", compression=compression, compresslevel=9 if compress else None) as archive:
         for name in sorted(files):
             info = zipfile.ZipInfo(name, FIXED_ZIP_TIME)
-            info.compress_type = zipfile.ZIP_DEFLATED
+            info.compress_type = compression
             info.external_attr = 0o100644 << 16
             info.create_system = 3
             archive.writestr(info, files[name])
@@ -375,7 +376,10 @@ def build_outputs() -> dict[Path, bytes]:
         national_files[f'entries/{entry["pack_filename"]}.sha256'] = artifact_bytes(
             pack_path.with_suffix(pack_path.suffix + ".sha256")
         )
-    national_pack = stable_zip(national_files)
+    # Aggregate packs already contain compressed entry ZIPs. Store their members
+    # without an outer DEFLATE pass so the bytes remain identical across zlib
+    # patch versions used by local builders and GitHub Actions.
+    national_pack = stable_zip(national_files, compress=False)
     national_path = ARTIFACTS / NATIONAL_PACK_NAME
     outputs[national_path] = national_pack
     outputs[national_path.with_suffix(national_path.suffix + ".sha256")] = adjacent_checksum(
@@ -428,7 +432,7 @@ def build_outputs() -> dict[Path, bytes]:
         complete_files[f'entries/{entry["pack_filename"]}.sha256'] = artifact_bytes(
             pack_path.with_suffix(pack_path.suffix + ".sha256")
         )
-    complete_pack = stable_zip(complete_files)
+    complete_pack = stable_zip(complete_files, compress=False)
     complete_path = ARTIFACTS / COMPLETE_PACK_NAME
     outputs[complete_path] = complete_pack
     outputs[complete_path.with_suffix(complete_path.suffix + ".sha256")] = adjacent_checksum(
