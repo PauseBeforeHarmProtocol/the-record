@@ -22,6 +22,7 @@ WEEK_END = RELEASE["week_end"]
 WEEK_LABEL = RELEASE["week_label"]
 CUTOFF_START = RELEASE["cutoff_start"]
 NEW_ENTRY_IDS = set(RELEASE["new_entry_ids"])
+RELEASE_CORRECTIONS = RELEASE.get("corrections", [])
 AI_CREDIT = RELEASE["ai_credit"]
 MAINTENANCE = RELEASE.get("maintenance_revision")
 BASE_EDITORIAL_VERSION = (
@@ -404,7 +405,11 @@ def downloads_page(entries: list[dict]) -> str:
         f"All {national_count} national entries with their current canonical Maybe / Therefore layers, individual packs, and source ledger. "
         f"The factual and Maybe / Therefore content of the {len(NEW_ENTRY_IDS)} base editorial {base_change_word} is carried forward from release {base_editorial_version}; review-status metadata is materialized separately."
         if maintenance
-        else f"All {national_count} national entries, including {len(NEW_ENTRY_IDS)} records added in this pass, with individual packs and the source ledger."
+        else (
+            f"All {national_count} national entries are carried forward unchanged; this patch release publishes legacy corrections while preserving the national-news cutoff."
+            if not NEW_ENTRY_IDS and RELEASE_CORRECTIONS
+            else f"All {national_count} national entries, including {len(NEW_ENTRY_IDS)} records added in this pass, with individual packs and the source ledger."
+        )
     )
     base_artifact_note = ""
     if isinstance(maintenance, dict):
@@ -473,16 +478,25 @@ def methodology_page(entries: list[dict]) -> str:
     totals = ARCHIVE_METRICS["totals"]
     legacy = ARCHIVE_METRICS["legacy"]
     coverage = ARCHIVE_METRICS["coverage"]
+    correction_only = bool(not NEW_ENTRY_IDS and RELEASE_CORRECTIONS)
     editorial_change_clause = (
         f"carried forward from base editorial release {BASE_EDITORIAL_VERSION}"
         if MAINTENANCE
-        else f"published in release {VERSION}"
+        else (
+            f"carried forward unchanged from release {RELEASE['previous_version']}"
+            if correction_only
+            else f"published in release {VERSION}"
+        )
     )
     maintenance_scope = (
         f" Release {VERSION} remediates current-layer reasoning and explicit "
         "review state without claiming a later current-affairs finding."
         if MAINTENANCE
-        else ""
+        else (
+            f" Release {VERSION} publishes {len(RELEASE_CORRECTIONS)} legacy correction groups without claiming a later current-affairs finding."
+            if correction_only
+            else ""
+        )
     )
     record_word = "record" if len(NEW_ENTRY_IDS) == 1 else "records"
     if coverage["uncovered_days_between_layers"]:
@@ -538,7 +552,12 @@ def home_page(entries: list[dict], ledger: dict) -> str:
     )
     new_record_word = "record" if len(NEW_ENTRY_IDS) == 1 else "records"
     new_record_verb = "was" if len(NEW_ENTRY_IDS) == 1 else "were"
-    body = f'''<section class="hero"><div class="hero-inner"><div><div class="kicker">A living Trump accountability archive · updated {RELEASE_DATE}</div><h1>The full searchable archive, not just the latest headline.</h1><p>This page is the editorial front door: a concise view of newly verified developments. The full searchable archive currently renders {totals["full_archive_runtime_entries"]:,} active dated entries with {totals["full_archive_runtime_source_references"]:,} attached source references across years, topics, people, institutions, and the timeline; its coverage status and legacy review backlog remain disclosed.</p><div class="hero-actions"><a class="button button--primary" href="{site_path('the-record.html#home')}">Enter the full archive</a><a class="button button--secondary" href="{site_path('the-record.html#timeline')}">Search the timeline</a><a class="button button--ghost" href="{site_path('weekly/index.html')}">Latest seven days</a></div></div><aside class="hero-stamp"><div class="eyebrow">Archive state</div><strong>Current through {CHECKED_AT}</strong><p>{len(NEW_ENTRY_IDS)} national {new_record_word} {new_record_verb} added or materially refreshed in {editorial_context}.{maintenance_summary}</p></aside></div><figure class="hero-art"><img src="{site_path('assets/brand/the-record-hero.png')}" alt="An illuminated evidence archive connecting sourced records across a living accountability timeline" width="1672" height="941" fetchpriority="high" decoding="async"></figure></section>
+    archive_state_summary = (
+        f"{len(RELEASE_CORRECTIONS)} legacy correction groups were published in patch release {VERSION}; the national-news cutoff remains unchanged."
+        if not NEW_ENTRY_IDS and RELEASE_CORRECTIONS
+        else f"{len(NEW_ENTRY_IDS)} national {new_record_word} {new_record_verb} added or materially refreshed in {editorial_context}.{maintenance_summary}"
+    )
+    body = f'''<section class="hero"><div class="hero-inner"><div><div class="kicker">A living Trump accountability archive · updated {RELEASE_DATE}</div><h1>The full searchable archive, not just the latest headline.</h1><p>This page is the editorial front door: a concise view of newly verified developments. The full searchable archive currently renders {totals["full_archive_runtime_entries"]:,} active dated entries with {totals["full_archive_runtime_source_references"]:,} attached source references across years, topics, people, institutions, and the timeline; its coverage status and legacy review backlog remain disclosed.</p><div class="hero-actions"><a class="button button--primary" href="{site_path('the-record.html#home')}">Enter the full archive</a><a class="button button--secondary" href="{site_path('the-record.html#timeline')}">Search the timeline</a><a class="button button--ghost" href="{site_path('weekly/index.html')}">Latest seven days</a></div></div><aside class="hero-stamp"><div class="eyebrow">Archive state</div><strong>Current through {CHECKED_AT}</strong><p>{archive_state_summary}</p></aside></div><figure class="hero-art"><img src="{site_path('assets/brand/the-record-hero.png')}" alt="An illuminated evidence archive connecting sourced records across a living accountability timeline" width="1672" height="941" fetchpriority="high" decoding="async"></figure></section>
 <div class="container"><section class="stats" aria-label="Archive and release statistics"><div class="stat"><strong>{totals["full_archive_runtime_entries"]:,}</strong><span>generated full-archive entries</span></div><div class="stat"><strong>{totals["full_archive_runtime_unique_urls"]:,}</strong><span>distinct full-archive source URLs</span></div><div class="stat"><strong>{national_count}</strong><span>verified current national entries</span></div><div class="stat"><strong>{len(weekly)}</strong><span>records in this seven-day window</span></div></section>
 <section class="archive-feature"><div class="archive-feature__copy"><div class="eyebrow">The research layer</div><h2>The archive is where the whole project lives.</h2><p>The landing page stays readable by showing a curated current layer. The archive brings historical entries, sources, topic folders, people, statistics, methodology, current additions, and Trump's raw Truth Social feed into one searchable application, while the quality dashboard discloses review backlogs and generated coverage status.</p><div class="button-row"><a class="button button--primary" href="{site_path('the-record.html#home')}">Browse the archive</a><a class="button button--ghost" href="{site_path('the-record.html#timeline')}">Open the full timeline</a><a class="button button--ghost" href="{site_path('archive/index.html#archive-network')}">Explore the Archive Network</a></div></div><div class="archive-paths" aria-label="Archive research paths"><a href="{site_path('the-record.html#topics')}"><strong>Topics</strong><span>Courts, democracy, immigration, media, foreign influence, and more</span></a><a href="{site_path('the-record.html#years')}"><strong>Years</strong><span>Move through covered dates from 1927 into the current term; see Quality for coverage status</span></a><a href="{site_path('the-record.html#politicians')}"><strong>People</strong><span>Find officeholders, advisers, opponents, and connected events</span></a><a href="{site_path('the-record.html#timeline')}"><strong>Search</strong><span>Query dates, names, agencies, events, and source-linked entries</span></a><a href="{site_path('the-record.html#feed')}"><strong>Truth Social</strong><span>Search the raw public posting record without turning every post into an archive finding</span></a><a href="{site_path('quality/index.html')}"><strong>Quality</strong><span>Inspect generated counts, source health, review status, and coverage continuity</span></a></div></section>
 <section class="weekly-highlight"><div><div class="eyebrow">What happened this week</div><h2>{len(weekly)} records · {WEEK_LABEL}</h2><p>A compact, fixed seven-day window. Use it for the latest signal; use the full searchable archive for the broader record, with coverage status and review state disclosed.</p><a class="button button--primary" href="{site_path('weekly/index.html')}">Open the weekly record</a></div><ul>{weekly_links}</ul></section>

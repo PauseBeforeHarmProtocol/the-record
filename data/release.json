@@ -1,30 +1,19 @@
 {
-  "version": "10.18.0",
+  "version": "10.18.1",
   "release_iso": "2026-09-03",
   "release_human": "September 3, 2026",
   "checked_at": "2026-09-03 12:03 PM EDT",
-  "previous_version": "10.17.0",
-  "previous_checked_at": "2026-09-03 6:02 AM EDT",
+  "previous_version": "10.18.0",
+  "previous_checked_at": "2026-09-03 12:03 PM EDT",
   "window_started_at": "2026-09-03 6:02 AM EDT",
   "window_ended_at": "2026-09-03 12:03 PM EDT",
   "week_start": "2026-08-29",
   "week_end": "2026-09-04",
   "week_label": "August 29–September 4, 2026",
   "cutoff_start": "2026-08-17",
-  "new_entry_ids": [
-    "NAT-2026-09-03-002",
-    "NAT-2026-09-03-001",
-    "NAT-2026-08-27-012",
-    "NAT-2026-08-17-001"
-  ],
-  "added_entry_ids": [
-    "NAT-2026-09-03-002",
-    "NAT-2026-09-03-001"
-  ],
-  "refreshed_entry_ids": [
-    "NAT-2026-08-27-012",
-    "NAT-2026-08-17-001"
-  ],
+  "new_entry_ids": [],
+  "added_entry_ids": [],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-08-27-012",
@@ -49,46 +38,56 @@
       "target_id": "NAT-2026-08-31-007",
       "decision": "distinct_lifecycle_stage",
       "notes": "The records share a same-day White House fact sheet because it reports both manufacturer pricing arrangements and Medicare Bridge uptake. One is a set of announced company agreements; the other is an administration-reported program measurement."
+    },
+    {
+      "entry_id": "LEG-003316",
+      "target_id": "LEG-003396",
+      "decision": "same_event_update",
+      "notes": "The February-dated row expressly described the May 30, 2024 New York verdict and did not identify a distinct event. It is retained as a superseded stable-ID tombstone redirecting to the corrected canonical verdict record."
+    },
+    {
+      "entry_id": "LEG-003393",
+      "target_id": "LEG-003396",
+      "decision": "same_event_update",
+      "notes": "The same-day row describes the same May 30, 2024 jury verdict. Fundraising and polling commentary do not make it a distinct adjudicative event, so the stable ID redirects to the corrected canonical record."
+    },
+    {
+      "entry_id": "LEG-003406",
+      "target_id": "LEG-003396",
+      "decision": "same_event_update",
+      "notes": "The June 14 row expressly describes the May 30, 2024 verdict and identifies no distinct later lifecycle event. It is retained as a superseded redirect."
+    },
+    {
+      "entry_id": "LEG-003408",
+      "target_id": "LEG-003396",
+      "decision": "same_event_update",
+      "notes": "The June 15 row repeats the May 30, 2024 verdict and adds no distinct lifecycle action. It is retained as a superseded redirect."
+    },
+    {
+      "entry_id": "LEG-003418",
+      "target_id": "LEG-003407",
+      "decision": "same_event_update",
+      "notes": "After correction of its reversed holding and bad date, the row proved to be the same June 14, 2024 Garland v. Cargill decision already represented by LEG-003407. Its stable ID now redirects to the corrected canonical decision record."
     }
   ],
-  "rejected_candidates": [
+  "rejected_candidates": [],
+  "corrections": [
     {
-      "title": "Trump request for retroactive European payments for Ukraine aid",
-      "reason": "Trump stated an intention to seek repayment, but no formal diplomatic request, amount, legal basis, agreement, invoice or payment was public by cutoff."
+      "checked_at": "2026-09-03",
+      "summary": "Legacy re-audit corrected LEG-003040: Adam Schiff's House censure occurred June 21, 2023, not February 3. Direct House and independent sources replace a generic search-results link, and disputed motive claims are now attributed."
     },
     {
-      "title": "Trump ammunition-stockpile and allied-sales statements",
-      "reason": "Truth Social posts asserted virtually unlimited ammunition and suggested withholding some sales to allies, but no Defense Department directive, inventory evidence, implemented sale suspension or independent verification was located."
+      "checked_at": "2026-09-03",
+      "summary": "Legacy re-audit corrected LEG-003261: the House impeached Alejandro Mayorkas on February 13, 2024, not December 13, 2023. The record now gives the 214-213 vote, three Republican no votes and the prior failed attempt without presenting House allegations as proven misconduct."
     },
     {
-      "title": "USPS mail-ballot portal hearing",
-      "reason": "The court was considering whether to extend existing temporary relief, but no new order had issued by cutoff; a hearing is not a ruling or policy implementation."
+      "checked_at": "2026-09-03",
+      "summary": "Legacy re-audit corrected LEG-003396 and superseded four same-event imports (LEG-003316, LEG-003393, LEG-003406 and LEG-003408): the May 30, 2024 New York case produced 34 guilty verdicts for falsifying business records, not a sexual-abuse conviction. Every retired stable ID remains as a redirect tombstone."
     },
     {
-      "title": "United States Space Academy executive order publication",
-      "reason": "Federal Register publication duplicated the already-recorded executive order and produced no new funding, site, accreditation, opening date or first class."
-    },
-    {
-      "title": "Routine and narrow regulatory notices",
-      "reason": "Technical classifications, information collections and internal personnel or emergency-use notices did not clear the archive's national materiality threshold or duplicate existing lifecycle records."
-    },
-    {
-      "title": "Meetings, campaign rhetoric and foreign-policy commentary",
-      "reason": "Canada rhetoric, praise for Syrian shipping plans, meetings and other statements did not establish a signed instrument, implemented action, appropriation, court ruling or measured outcome."
-    },
-    {
-      "title": "Anonymous-source and prospective claims",
-      "reason": "Consequential claims resting mainly on unnamed sources lacked sufficient independent confirmation, while prospective statements lacked an issued instrument or completed action."
-    },
-    {
-      "title": "Legacy same-date heading candidates",
-      "reason": "The three generated pairs were inspected and concern distinct events sharing a date and missing imported headings, not duplicate text. They remain visible in the quality queue because a responsible remediation requires direct record-specific source review and complete reasoning-layer reconstruction, not a same-date inference."
-    },
-    {
-      "title": "External archive discovery leads",
-      "reason": "Updated, unit-specific measurements remain separate discovery inputs and contribute zero canonical entries by default. No upstream archive item advanced without original-source inspection and full Record review."
+      "checked_at": "2026-09-03",
+      "summary": "Legacy re-audit corrected canonical LEG-003407 and superseded duplicate LEG-003418: Garland v. Cargill was decided June 14, 2024 and invalidated the Trump-era bump-stock rule on statutory grounds. The duplicate import had reversed the Court's holding and the administration's role."
     }
   ],
-  "corrections": [],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork)"
 }

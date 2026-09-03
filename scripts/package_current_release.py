@@ -182,6 +182,7 @@ def run_receipt(entries: list[dict], ledger: dict) -> bytes:
     added = [by_id[entry_id] for entry_id in RELEASE.get("added_entry_ids", [])]
     refreshed = [by_id[entry_id] for entry_id in RELEASE.get("refreshed_entry_ids", [])]
     rejected = RELEASE.get("rejected_candidates", [])
+    release_corrections = RELEASE.get("corrections", [])
     maintenance = RELEASE.get("maintenance_revision")
     remediated_ids = (
         maintenance.get("remediated_entry_ids", [])
@@ -255,6 +256,17 @@ def run_receipt(entries: list[dict], ledger: dict) -> bytes:
             if maintenance
             else "- None recorded in this run."
         )
+    if release_corrections:
+        lines.extend([
+            "",
+            "## Corrections",
+            "",
+            *(
+                f'- **{item.get("checked_at", "date not recorded")}** — '
+                f'{item.get("summary", "Correction summary not recorded.")}'
+                for item in release_corrections
+            ),
+        ])
     if maintenance:
         lines.extend([
             "",
