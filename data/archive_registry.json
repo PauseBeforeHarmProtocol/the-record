@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "status": "active_registry",
-  "checked_at": "2026-09-02T22:02:53Z",
+  "checked_at": "2026-09-03T04:02:15Z",
   "registry_purpose": "Describe independent Trump-related archives as a federated research network without pretending that unlike record units are interchangeable or additive.",
   "invariants": [
     "An upstream archive is a discovery and corroboration source, not an automatic authority for The Record.",
@@ -115,22 +115,22 @@
         {
           "metric_id": "trump_archive.total_items",
           "as_reported_label": "total items",
-          "value": 13748,
+          "value": 13749,
           "unit": "public_statement_or_document_item",
           "scope": "all items displayed in the archive monthly index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-09-02T22:02:53Z",
+          "observed_at": "2026-09-03T04:02:15Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null
         },
         {
           "metric_id": "trump_archive.truth_social_posts",
           "as_reported_label": "Truth Social posts",
-          "value": 11381,
+          "value": 11382,
           "unit": "truth_social_post",
           "scope": "Truth Social posts within the archive index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-09-02T22:02:53Z",
+          "observed_at": "2026-09-03T04:02:15Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null
         },
@@ -141,7 +141,7 @@
           "unit": "speech_or_transcript",
           "scope": "speeches and transcripts within the archive index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-09-02T22:02:53Z",
+          "observed_at": "2026-09-03T04:02:15Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null
         }
@@ -189,7 +189,7 @@
         "content_import_permission_state": "license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-09-02T22:02:53Z",
+        "checked_at": "2026-09-03T04:02:15Z",
         "state": "success",
         "verification_pages": [
           "https://trump-archive.com/archive",
@@ -230,9 +230,9 @@
           "unit": "confirmed_policy_action",
           "scope": "Trump first and second presidential terms",
           "comparability_group": "general_policy_action",
-          "observed_at": "2026-09-02T22:02:53Z",
+          "observed_at": "2026-09-03T04:02:15Z",
           "source_url": "https://www.undotrump.com/",
-          "upstream_display_date": "2026-09-01"
+          "upstream_display_date": "2026-09-02"
         },
         {
           "metric_id": "undotrump.term_1_actions",
@@ -296,16 +296,46 @@
         }
       ],
       "category_breakdown": [
-        { "category": "environment", "value": 97 },
-        { "category": "healthcare", "value": 107 },
-        { "category": "immigration", "value": 148 },
-        { "category": "civil_rights", "value": 76 },
-        { "category": "economy", "value": 272 },
-        { "category": "education", "value": 49 },
-        { "category": "foreign_policy", "value": 287 },
-        { "category": "democracy", "value": 186 },
-        { "category": "science", "value": 36 },
-        { "category": "housing", "value": 6 }
+        {
+          "category": "environment",
+          "value": 97
+        },
+        {
+          "category": "healthcare",
+          "value": 107
+        },
+        {
+          "category": "immigration",
+          "value": 148
+        },
+        {
+          "category": "civil_rights",
+          "value": 76
+        },
+        {
+          "category": "economy",
+          "value": 272
+        },
+        {
+          "category": "education",
+          "value": 49
+        },
+        {
+          "category": "foreign_policy",
+          "value": 287
+        },
+        {
+          "category": "democracy",
+          "value": 186
+        },
+        {
+          "category": "science",
+          "value": 36
+        },
+        {
+          "category": "housing",
+          "value": 6
+        }
       ],
       "breakdown_note": "The six observed status filters and the ten displayed category counts each reconcile independently to 1,264. Status and category are separate dimensions and must not be added together.",
       "provenance": {
@@ -354,7 +384,7 @@
         "content_import_permission_state": "bulk_permission_or_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-09-02T22:02:53Z",
+        "checked_at": "2026-09-03T04:02:15Z",
         "state": "success_homepage_measurement_only",
         "verification_pages": [
           "https://www.undotrump.com/"
@@ -411,7 +441,7 @@
           "unit": "immigration_policy_action",
           "scope": "all policies shown on the policies browse page",
           "comparability_group": "domain_policy_action",
-          "observed_at": "2026-09-02T22:02:53Z",
+          "observed_at": "2026-09-03T04:02:15Z",
           "source_url": "https://immpolicytracking.org/policies/",
           "upstream_display_date": null
         }
@@ -506,7 +536,7 @@
         "content_import_permission_state": "permission_or_documented_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-09-02T22:02:53Z",
+        "checked_at": "2026-09-03T04:02:15Z",
         "state": "success_policy_browse_measurement_verified",
         "verification_pages": [
           "https://immpolicytracking.org/",
@@ -640,15 +670,51 @@
         "access": "public_read_only_json",
         "rate_limit": "CDN-level rate limiting; numeric threshold not stated",
         "verified_endpoints": [
-          { "method": "GET", "path": "/entries", "purpose": "approved entries with pagination and tag or pattern filters" },
-          { "method": "GET", "path": "/entries/:id", "purpose": "one entry with sources, tags, contradictions, and entities" },
-          { "method": "GET", "path": "/entries/:id/history", "purpose": "correction and edit history" },
-          { "method": "GET", "path": "/entries/:id/related", "purpose": "records related by entity, tag, parent, or child lineage" },
-          { "method": "GET", "path": "/search", "purpose": "full-text, fielded, and regex search" },
-          { "method": "POST", "path": "/verify", "purpose": "rank archive matches for submitted text" },
-          { "method": "GET", "path": "/entities", "purpose": "entities with entry and contradiction counts" },
-          { "method": "GET", "path": "/entities/:name", "purpose": "entity record with entries, contradictions, co-occurrences, and tags" },
-          { "method": "GET", "path": "/feed", "purpose": "RSS 2.0 feed with optional tag or pattern filters" }
+          {
+            "method": "GET",
+            "path": "/entries",
+            "purpose": "approved entries with pagination and tag or pattern filters"
+          },
+          {
+            "method": "GET",
+            "path": "/entries/:id",
+            "purpose": "one entry with sources, tags, contradictions, and entities"
+          },
+          {
+            "method": "GET",
+            "path": "/entries/:id/history",
+            "purpose": "correction and edit history"
+          },
+          {
+            "method": "GET",
+            "path": "/entries/:id/related",
+            "purpose": "records related by entity, tag, parent, or child lineage"
+          },
+          {
+            "method": "GET",
+            "path": "/search",
+            "purpose": "full-text, fielded, and regex search"
+          },
+          {
+            "method": "POST",
+            "path": "/verify",
+            "purpose": "rank archive matches for submitted text"
+          },
+          {
+            "method": "GET",
+            "path": "/entities",
+            "purpose": "entities with entry and contradiction counts"
+          },
+          {
+            "method": "GET",
+            "path": "/entities/:name",
+            "purpose": "entity record with entries, contradictions, co-occurrences, and tags"
+          },
+          {
+            "method": "GET",
+            "path": "/feed",
+            "purpose": "RSS 2.0 feed with optional tag or pattern filters"
+          }
         ]
       },
       "federation": {
@@ -673,13 +739,14 @@
         "content_import_permission_state": "metadata_and_citation_allowed_full_content_license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-09-02T22:02:53Z",
-        "state": "success_api_verified",
+        "checked_at": "2026-09-03T04:02:15Z",
+        "state": "partial_homepage_returned_api_403_preserved_last_verified_measurements",
         "verification_pages": [
           "https://record47.org/",
           "https://api.record47.org/counts",
           "https://api.record47.org/entries?limit=1"
-        ]
+        ],
+        "note": "The public homepage returned but its dynamic entry total did not render, and the counts API returned HTTP 403. Prior API-verified measurements were preserved; non-equivalent static homepage feature figures were not substituted."
       }
     }
   ],
