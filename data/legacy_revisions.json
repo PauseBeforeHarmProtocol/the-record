@@ -13108,5 +13108,623 @@
         "replacement": "Same December 21, 2015 Grand Rapids rally as LEG-000563; retained as an auditable legacy alias after date and source correction."
       }
     ]
+  },
+  {
+    "revision_id": "LR-2026-09-03-107",
+    "recorded_at": "2026-09-03",
+    "legacy_id": "LEG-003040",
+    "kind": "date-fact-source-and-reasoning-correction",
+    "summary": "Correct Adam Schiff's House censure from February 3 to June 21, 2023, replace a search-results link with direct records, and separate the vote from disputed motive claims.",
+    "provenance": [
+      {
+        "type": "primary-house-roll-call",
+        "supports": "The House Clerk records adoption of H.Res. 521 on June 21, 2023 by 213-209, with six members voting present.",
+        "url": "https://clerk.house.gov/Votes/2023283"
+      },
+      {
+        "type": "primary-congressional-record",
+        "supports": "Congress.gov provides the resolution text, actions and stated grounds for censure.",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/521"
+      },
+      {
+        "type": "independent-reporting",
+        "supports": "Associated Press reports the vote, historical context and competing explanations from Schiff and House Republicans.",
+        "url": "https://apnews.com/article/schiff-censure-house-republicans-russia-trump-318300df0f7b4f51c5b0ba5dd91edd23"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "corrected"
+      },
+      {
+        "field": "sort",
+        "expected": "2023-02-03",
+        "replacement": "2023-06-21"
+      },
+      {
+        "field": "date",
+        "expected": "February 03, 2023",
+        "replacement": "June 21, 2023"
+      },
+      {
+        "field": "text",
+        "expected": "The Republican-controlled House of Representatives voted to censure Representative Adam Schiff, formally condemning his conduct during impeachment proceedings and his statements about Trump and Russia.",
+        "replacement": "On June 21, 2023, the Republican-controlled House adopted H.Res. 521 by 213-209, with six members voting present, censuring Representative Adam Schiff over statements and actions connected to investigations of Donald Trump and Russia. The resolution's accusations were the House majority's stated grounds for censure; the vote did not remove Schiff from office or constitute a criminal or judicial finding."
+      },
+      {
+        "field": "sig",
+        "expected": "Schiff's censure represented unprecedented partisan retaliation by House Republicans and became a defining moment of political polarization.",
+        "replacement": "Censure is a formal institutional rebuke. Here it punished a former House Intelligence Committee chair for conduct tied to investigations of Trump, but its evidentiary meaning is limited to what the House voted to declare."
+      },
+      {
+        "field": "goal",
+        "expected": "Schiff's censure represented unprecedented partisan retaliation by House Republicans and became a defining moment of political polarization.",
+        "replacement": "Supporters said Schiff abused his position and misled the public; Schiff and opponents described the resolution as retaliation for investigating Trump. The roll call and resolution establish the action and its stated rationale, not the truth of every partisan characterization."
+      },
+      {
+        "field": "mt",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "Maybe the House was exercising its constitutional authority to police member conduct rather than retaliating. Therefore this entry records the formal censure, vote, stated grounds and competing explanation without treating either side's motive claim as established fact."
+      },
+      {
+        "field": "src",
+        "expected": [
+          {
+            "t": "Congress.gov - Congressional Record",
+            "url": "https://www.congress.gov/search?q=The%20Republicancontrolled%20House%20of%20Representatives%20voted%20to"
+          }
+        ],
+        "replacement": [
+          {
+            "t": "House Clerk — Roll Call 283",
+            "url": "https://clerk.house.gov/Votes/2023283"
+          },
+          {
+            "t": "Congress.gov — H.Res. 521",
+            "url": "https://www.congress.gov/bill/118th-congress/house-resolution/521"
+          },
+          {
+            "t": "Associated Press",
+            "url": "https://apnews.com/article/schiff-censure-house-republicans-russia-trump-318300df0f7b4f51c5b0ba5dd91edd23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "revision_id": "LR-2026-09-03-108",
+    "recorded_at": "2026-09-03",
+    "legacy_id": "LEG-003261",
+    "kind": "date-fact-source-and-reasoning-correction",
+    "summary": "Correct Alejandro Mayorkas's impeachment from December 13, 2023 to February 13, 2024, document the one-vote margin and prior failed vote, and distinguish House allegations from established findings.",
+    "provenance": [
+      {
+        "type": "primary-house-roll-call",
+        "supports": "The House Clerk records adoption of H.Res. 863 on February 13, 2024 by 214-213, with three Republicans voting no.",
+        "url": "https://clerk.house.gov/Votes/202443"
+      },
+      {
+        "type": "primary-house-roll-call",
+        "supports": "The House Clerk records the earlier February 6 attempt failing 214-216.",
+        "url": "https://clerk.house.gov/Votes/202437"
+      },
+      {
+        "type": "primary-congressional-record",
+        "supports": "Congress.gov provides the two impeachment articles, action history and stated grounds.",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/863"
+      },
+      {
+        "type": "independent-reporting",
+        "supports": "Associated Press reports the successful vote, historical rarity and competing constitutional and policy arguments.",
+        "url": "https://apnews.com/article/house-mayorkas-impeachment-vote-border-security-80cbd5bbb8f512c6814f155f825a1214"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "corrected"
+      },
+      {
+        "field": "sort",
+        "expected": "2023-12-13",
+        "replacement": "2024-02-13"
+      },
+      {
+        "field": "date",
+        "expected": "December 13, 2023",
+        "replacement": "February 13, 2024"
+      },
+      {
+        "field": "text",
+        "expected": "House Impeaches Alejandro Mayorkas — No Evidence of High Crimes. House Republicans impeach DHS Secretary Alejandro Mayorkas on a party-line vote, making him only the second cabinet secretary impeached in US history. Constitutional scholars across the spectrum say the charges do not meet the constitutional standard.",
+        "replacement": "On February 13, 2024, the House adopted H.Res. 863 by 214-213 and impeached Homeland Security Secretary Alejandro Mayorkas after a 214-216 attempt failed one week earlier. The two articles alleged willful and systemic refusal to comply with the law and breach of public trust over border policy and statements to Congress. Three Republicans joined Democrats in voting no. The vote made Mayorkas the second Cabinet secretary impeached in U.S. history and the first since 1876; impeachment itself did not remove him or establish criminal guilt."
+      },
+      {
+        "field": "sig",
+        "expected": "House impeaches DHS secretary. Constitutional scholars say it does not meet the standard.",
+        "replacement": "The House used its impeachment power against a Cabinet secretary over alleged noncompliance and public-trust breaches rooted largely in immigration administration. The one-vote result and earlier failed attempt show the action's narrow political margin."
+      },
+      {
+        "field": "goal",
+        "expected": "Using impeachment as a political weapon rather than a constitutional remedy. The precedent: impeachment is now a routine partisan tool.",
+        "replacement": "House supporters said impeachment was necessary accountability for failure to enforce immigration law and misleading Congress. Mayorkas and the Biden administration argued the articles converted policy disagreement into impeachment and distracted from legislative border solutions."
+      },
+      {
+        "field": "mt",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "Maybe impeachment can reach serious noncriminal abuses and Congress need not wait for a court judgment. Therefore this entry records the House's allegations, vote and historical rarity while not presenting disputed legal conclusions as proven misconduct or implying that Mayorkas was convicted or removed."
+      },
+      {
+        "field": "src",
+        "expected": [
+          {
+            "t": "Congress.gov - Congressional Record",
+            "url": "https://www.congress.gov/search?q=House%20Impeaches%20Alejandro%20Mayorkas%20%20No%20Evidence%20of%20High%20Cri"
+          }
+        ],
+        "replacement": [
+          {
+            "t": "House Clerk — Roll Call 43",
+            "url": "https://clerk.house.gov/Votes/202443"
+          },
+          {
+            "t": "House Clerk — Roll Call 37",
+            "url": "https://clerk.house.gov/Votes/202437"
+          },
+          {
+            "t": "Congress.gov — H.Res. 863",
+            "url": "https://www.congress.gov/bill/118th-congress/house-resolution/863"
+          },
+          {
+            "t": "Associated Press",
+            "url": "https://apnews.com/article/house-mayorkas-impeachment-vote-border-security-80cbd5bbb8f512c6814f155f825a1214"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "revision_id": "LR-2026-09-03-109",
+    "recorded_at": "2026-09-03",
+    "legacy_id": "LEG-003396",
+    "kind": "fact-source-and-reasoning-correction",
+    "summary": "Correct the New York verdict's description so it does not imply a sexual-abuse conviction, replace a generic search link with direct court and independent sources, and complete the reasoning layers.",
+    "provenance": [
+      {
+        "type": "primary-court-record",
+        "supports": "The official verdict sheet records guilty findings on all 34 counts of falsifying business records in the first degree.",
+        "url": "https://nycourts.gov/LegacyPDFS/press/PDFs/Trump-Verdict-Sheet.pdf"
+      },
+      {
+        "type": "primary-court-case-page",
+        "supports": "The New York courts case page collects the official public filings and trial records.",
+        "url": "https://www.nycourts.gov/public-information/people-v-donald-j-trump-criminal"
+      },
+      {
+        "type": "independent-reporting",
+        "supports": "Associated Press reports the verdict, charged records scheme, historical context and Trump's response.",
+        "url": "https://apnews.com/article/trump-trial-deliberations-jury-testimony-verdict-85558c6d08efb434d05b694364470aa0"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "corrected"
+      },
+      {
+        "field": "text",
+        "expected": "Trump convicted on 34 felony counts (May 30, 2024) including falsifying business records related to hush money payments to Stormy Daniels. Jury found Trump guilty on all counts. Trial documented Cohen's testimony, Trump Organization invoices, check stubs, and Trump's own statements. Jury of 12 New Yorkers deliberated and convicted Trump on all counts. Trump became first former U.S. president convicted of felonies.",
+        "replacement": "On May 30, 2024, a New York jury found Donald Trump guilty on all 34 counts of falsifying business records in the first degree. The counts concerned invoices, ledger entries and checks that recorded reimbursements to Michael Cohen as legal expenses after Cohen paid $130,000 to Stormy Daniels before the 2016 election. The verdict made Trump the first former U.S. president convicted of felony crimes. The case did not charge Trump with sexual abuse. Trump denied wrongdoing, called the prosecution politically motivated and said he would appeal."
+      },
+      {
+        "field": "sig",
+        "expected": "34 felony convictions; sexual abuse hush money crimes",
+        "replacement": "The verdict imposed criminal liability for a documented records scheme tied to concealing an election-period payment. Its significance is the jury's unanimous finding on the charged business-record offenses, not an uncharged finding about the underlying sexual encounter or sexual abuse."
+      },
+      {
+        "field": "goal",
+        "expected": "criminal accountability",
+        "replacement": "Trump argued the prosecution was politically motivated, the legal theory and venue were unfair, and the verdict should be overturned on appeal. Those are challenges to legitimacy and legal validity; the jury verdict remained the operative trial judgment unless reversed."
+      },
+      {
+        "field": "mt",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "Maybe appellate courts could later find legal or procedural error, and a conviction is not proof of every surrounding allegation. Therefore this entry records only the 34 guilty verdicts, the charged records scheme, Trump's denial and the possibility of appellate reversal; it does not describe the case as a sexual-abuse conviction."
+      },
+      {
+        "field": "src",
+        "expected": [
+          {
+            "t": "CourtListener",
+            "url": "https://www.courtlistener.com/?q=Trump%20convicted%20on%2034%20felony%20counts%20May%2030%202024"
+          }
+        ],
+        "replacement": [
+          {
+            "t": "New York Courts — verdict sheet",
+            "url": "https://nycourts.gov/LegacyPDFS/press/PDFs/Trump-Verdict-Sheet.pdf"
+          },
+          {
+            "t": "New York Courts — case page",
+            "url": "https://www.nycourts.gov/public-information/people-v-donald-j-trump-criminal"
+          },
+          {
+            "t": "Associated Press",
+            "url": "https://apnews.com/article/trump-trial-deliberations-jury-testimony-verdict-85558c6d08efb434d05b694364470aa0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "revision_id": "LR-2026-09-03-110",
+    "recorded_at": "2026-09-03",
+    "legacy_id": "LEG-003316",
+    "kind": "duplicate-supersession",
+    "summary": "Retire a February-dated duplicate of the May 30, 2024 New York verdict in favor of the source-reviewed canonical record.",
+    "provenance": [
+      {
+        "type": "internal-deduplication",
+        "supports": "The row expressly describes the same May 30, 2024 verdict as LEG-003396 and does not identify a distinct February event."
+      },
+      {
+        "type": "primary-court-record",
+        "supports": "The official verdict sheet dates the 34 guilty verdicts to May 30, 2024.",
+        "url": "https://nycourts.gov/LegacyPDFS/press/PDFs/Trump-Verdict-Sheet.pdf"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "superseded"
+      },
+      {
+        "field": "superseded_by",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "LEG-003396"
+      },
+      {
+        "field": "superseded_reason",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "Same May 30, 2024 New York verdict as LEG-003396; retained as an auditable legacy alias after date, source and charge-characterization correction."
+      }
+    ]
+  },
+  {
+    "revision_id": "LR-2026-09-03-111",
+    "recorded_at": "2026-09-03",
+    "legacy_id": "LEG-003418",
+    "kind": "date-fact-source-and-reasoning-correction",
+    "summary": "Correct the date and reverse the imported description of Garland v. Cargill to match the Supreme Court's June 14, 2024 holding that ATF lacked statutory authority for the Trump-era bump-stock rule.",
+    "provenance": [
+      {
+        "type": "primary-supreme-court-opinion",
+        "supports": "The Court held 6-3 that a semiautomatic rifle equipped with a bump stock is not a machinegun under 26 U.S.C. 5845(b) and that ATF exceeded its statutory authority.",
+        "url": "https://www.supremecourt.gov/opinions/23pdf/22-976new_i4dk.pdf"
+      },
+      {
+        "type": "independent-reporting",
+        "supports": "Associated Press reports the June 14 decision, the Trump administration's 2018 rule and the competing majority, concurrence and dissenting views.",
+        "url": "https://apnews.com/article/supreme-court-guns-bump-stocks-b3bd1b4163d78514a6d5acc5b44c8b3d"
+      },
+      {
+        "type": "independent-reporting",
+        "supports": "Reuters independently reports that the ruling invalidated the federal ban on statutory grounds.",
+        "url": "https://www.reuters.com/legal/us-supreme-court-backs-challenge-federal-ban-gun-bump-stocks-2024-06-14/"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "corrected"
+      },
+      {
+        "field": "sort",
+        "expected": "2024-06-28",
+        "replacement": "2024-06-14"
+      },
+      {
+        "field": "date",
+        "expected": "Fri 28, 2024",
+        "replacement": "June 14, 2024"
+      },
+      {
+        "field": "text",
+        "expected": "Supreme Court issued decision in bump stock case, ruling that federal government has authority to ban devices that convert semi-automatic rifles to fully automatic fire, striking down Trump administration's controversial deregulation.",
+        "replacement": "In Garland v. Cargill, the Supreme Court ruled 6-3 on June 14, 2024 that a semiautomatic rifle equipped with a bump stock is not a machinegun under the federal statutory definition and that ATF exceeded its authority by classifying bump stocks as machineguns. The decision invalidated the 2018 Trump-administration rule adopted after the Las Vegas massacre; it did not hold that Congress lacks power to ban bump stocks."
+      },
+      {
+        "field": "sig",
+        "expected": "Reversed Trump's effort to weaken gun regulations and established government authority over firearm mechanisms.",
+        "replacement": "The ruling removed a federal gun restriction created during Trump's first term and clarified that this policy change required Congress rather than ATF's interpretation. The imported entry had reversed both the result and the Trump administration's role."
+      },
+      {
+        "field": "goal",
+        "expected": "Remember when the rule of law was non-negotiable? They moved the goalpost to: courts are just another political obstacle.",
+        "replacement": "The majority treated the case as statutory interpretation: the existing definition did not cover bump stocks. Justice Alito wrote that Congress could amend the law. The government and dissent argued the devices function like machineguns, but the Court did not decide a Second Amendment question."
+      },
+      {
+        "field": "mt",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "Maybe the decision can be defended as enforcing Congress's text rather than endorsing bump stocks. Therefore the record should state the narrower result: ATF lacked authority under the existing definition, the Trump-era rule fell and a legislative ban remained possible."
+      },
+      {
+        "field": "src",
+        "expected": [
+          {
+            "t": "CNN",
+            "url": "https://www.cnn.com/search?q=Supreme%20Court%20issued%20decision%20in%20bump%20stock%20case%202024"
+          }
+        ],
+        "replacement": [
+          {
+            "t": "Supreme Court — Garland v. Cargill opinion",
+            "url": "https://www.supremecourt.gov/opinions/23pdf/22-976new_i4dk.pdf"
+          },
+          {
+            "t": "Associated Press",
+            "url": "https://apnews.com/article/supreme-court-guns-bump-stocks-b3bd1b4163d78514a6d5acc5b44c8b3d"
+          },
+          {
+            "t": "Reuters",
+            "url": "https://www.reuters.com/legal/us-supreme-court-backs-challenge-federal-ban-gun-bump-stocks-2024-06-14/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "revision_id": "LR-2026-09-03-112",
+    "recorded_at": "2026-09-03",
+    "legacy_id": "LEG-003407",
+    "kind": "fact-source-and-reasoning-correction",
+    "summary": "Replace shorthand and unsupported superlatives in the canonical Garland v. Cargill row with the Supreme Court's statutory holding, direct sources and complete reasoning layers.",
+    "provenance": [
+      {
+        "type": "primary-supreme-court-opinion",
+        "supports": "The Court held 6-3 that a semiautomatic rifle equipped with a bump stock is not a machinegun under 26 U.S.C. 5845(b) and that ATF exceeded its statutory authority.",
+        "url": "https://www.supremecourt.gov/opinions/23pdf/22-976new_i4dk.pdf"
+      },
+      {
+        "type": "independent-reporting",
+        "supports": "Associated Press reports the June 14 decision, the Trump administration's 2018 rule and the competing majority, concurrence and dissenting views.",
+        "url": "https://apnews.com/article/supreme-court-guns-bump-stocks-b3bd1b4163d78514a6d5acc5b44c8b3d"
+      },
+      {
+        "type": "independent-reporting",
+        "supports": "Reuters independently reports that the ruling invalidated the federal ban on statutory grounds.",
+        "url": "https://www.reuters.com/legal/us-supreme-court-backs-challenge-federal-ban-gun-bump-stocks-2024-06-14/"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "corrected"
+      },
+      {
+        "field": "text",
+        "expected": "Supreme Court Strikes Down Bump Stock Ban — In Garland v. Cargill, Supreme Court rules 6-3 that Trump's bump stock ban exceeded ATF authority. Trump's only gun restriction invalidated",
+        "replacement": "In Garland v. Cargill, the Supreme Court ruled 6-3 on June 14, 2024 that a semiautomatic rifle equipped with a bump stock is not a machinegun under the federal statutory definition and that ATF exceeded its authority by classifying bump stocks as machineguns. The decision invalidated the 2018 Trump-administration rule adopted after the Las Vegas massacre; it did not hold that Congress lacks power to ban bump stocks."
+      },
+      {
+        "field": "sig",
+        "expected": "Trump-appointed justices strike down Trump's lone gun control action; bump stocks now legal again",
+        "replacement": "The ruling removed a federal gun restriction created during Trump's first term and clarified that this policy change required Congress rather than ATF's interpretation. It was a statutory ruling, not a holding that the Second Amendment protects bump stocks."
+      },
+      {
+        "field": "goal",
+        "expected": "Trump's entire gun policy legacy reduced to zero; even his modest restriction erased",
+        "replacement": "The majority treated the case as statutory interpretation: the existing definition did not cover bump stocks. Justice Alito wrote that Congress could amend the law. The government and dissent argued the devices function like machineguns, but the Court did not decide a Second Amendment question."
+      },
+      {
+        "field": "mt",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "Maybe the decision can be defended as enforcing Congress's text rather than endorsing bump stocks. Therefore the record states the narrower result: ATF lacked authority under the existing definition, the Trump-era rule fell and a legislative ban remained possible."
+      },
+      {
+        "field": "src",
+        "expected": [
+          {
+            "t": "AP News",
+            "url": "https://apnews.com/search?q=Supreme%20Court%20Strikes%20Down%20Bump%20Stock%20Ban%20In%202024"
+          },
+          {
+            "t": "Reuters",
+            "url": "https://www.reuters.com/search/news?query=Supreme%20Court%20Strikes%20Down%20Bump%20Stock%20Ban%20%20In%20Garland%20v%20Ca"
+          }
+        ],
+        "replacement": [
+          {
+            "t": "Supreme Court — Garland v. Cargill opinion",
+            "url": "https://www.supremecourt.gov/opinions/23pdf/22-976new_i4dk.pdf"
+          },
+          {
+            "t": "Associated Press",
+            "url": "https://apnews.com/article/supreme-court-guns-bump-stocks-b3bd1b4163d78514a6d5acc5b44c8b3d"
+          },
+          {
+            "t": "Reuters",
+            "url": "https://www.reuters.com/legal/us-supreme-court-backs-challenge-federal-ban-gun-bump-stocks-2024-06-14/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "revision_id": "LR-2026-09-03-113",
+    "recorded_at": "2026-09-03",
+    "legacy_id": "LEG-003418",
+    "kind": "duplicate-supersession",
+    "summary": "Retire the misdated, reversed-holding Garland v. Cargill import in favor of the source-reviewed June 14 canonical record.",
+    "provenance": [
+      {
+        "type": "internal-deduplication",
+        "supports": "After its holding and date were corrected, the row describes the same June 14, 2024 Supreme Court decision as LEG-003407."
+      },
+      {
+        "type": "primary-supreme-court-opinion",
+        "supports": "The official opinion identifies one June 14, 2024 Garland v. Cargill decision.",
+        "url": "https://www.supremecourt.gov/opinions/23pdf/22-976new_i4dk.pdf"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "corrected",
+        "replacement": "superseded"
+      },
+      {
+        "field": "superseded_by",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "LEG-003407"
+      },
+      {
+        "field": "superseded_reason",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "Same June 14, 2024 Garland v. Cargill decision as LEG-003407; the imported reversal of the holding remains visible in revision history and this stable ID redirects to the corrected canonical record."
+      }
+    ]
+  },
+  {
+    "revision_id": "LR-2026-09-03-114",
+    "recorded_at": "2026-09-03",
+    "legacy_id": "LEG-003393",
+    "kind": "duplicate-supersession",
+    "summary": "Retire a same-day duplicate of the May 30, 2024 New York verdict in favor of the source-reviewed canonical record.",
+    "provenance": [
+      {
+        "type": "internal-deduplication",
+        "supports": "The row describes the same jury verdict as LEG-003396; fundraising and polling commentary do not create a separate adjudicative event."
+      },
+      {
+        "type": "primary-court-record",
+        "supports": "The official verdict sheet records a single set of 34 guilty verdicts on May 30, 2024.",
+        "url": "https://nycourts.gov/LegacyPDFS/press/PDFs/Trump-Verdict-Sheet.pdf"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "superseded"
+      },
+      {
+        "field": "superseded_by",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "LEG-003396"
+      },
+      {
+        "field": "superseded_reason",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "Same May 30, 2024 New York verdict as LEG-003396; retained as an auditable stable-ID redirect rather than counted as a separate event."
+      }
+    ]
+  },
+  {
+    "revision_id": "LR-2026-09-03-115",
+    "recorded_at": "2026-09-03",
+    "legacy_id": "LEG-003406",
+    "kind": "duplicate-supersession",
+    "summary": "Retire a June-dated duplicate of the May 30, 2024 New York verdict in favor of the source-reviewed canonical record.",
+    "provenance": [
+      {
+        "type": "internal-deduplication",
+        "supports": "The row describes the same May 30 jury verdict as LEG-003396 and does not identify a distinct June 14 event."
+      },
+      {
+        "type": "primary-court-record",
+        "supports": "The official verdict sheet dates the 34 guilty verdicts to May 30, 2024.",
+        "url": "https://nycourts.gov/LegacyPDFS/press/PDFs/Trump-Verdict-Sheet.pdf"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "superseded"
+      },
+      {
+        "field": "superseded_by",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "LEG-003396"
+      },
+      {
+        "field": "superseded_reason",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "Same May 30, 2024 New York verdict as LEG-003396; retained as an auditable stable-ID redirect after its imported June date was rejected."
+      }
+    ]
+  },
+  {
+    "revision_id": "LR-2026-09-03-116",
+    "recorded_at": "2026-09-03",
+    "legacy_id": "LEG-003408",
+    "kind": "duplicate-supersession",
+    "summary": "Retire another later-dated duplicate of the May 30, 2024 New York verdict in favor of the source-reviewed canonical record.",
+    "provenance": [
+      {
+        "type": "internal-deduplication",
+        "supports": "The row expressly describes the May 30 verdict already preserved as LEG-003396 and adds no distinct June 15 lifecycle event."
+      },
+      {
+        "type": "primary-court-record",
+        "supports": "The official verdict sheet records a single set of 34 guilty verdicts on May 30, 2024.",
+        "url": "https://nycourts.gov/LegacyPDFS/press/PDFs/Trump-Verdict-Sheet.pdf"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "superseded"
+      },
+      {
+        "field": "superseded_by",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "LEG-003396"
+      },
+      {
+        "field": "superseded_reason",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "Same May 30, 2024 New York verdict as LEG-003396; retained as an auditable stable-ID redirect rather than counted as a separate event."
+      }
+    ]
   }
 ]

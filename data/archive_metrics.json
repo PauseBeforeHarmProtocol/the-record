@@ -4,8 +4,8 @@
   "quality_inputs_updated_at": "2026-09-03T16:03:06Z",
   "external_registry_checked_at": "2026-09-03T16:03:06Z",
   "federation_last_modified_at": "2026-08-25T14:40:23Z",
-  "legacy_revisions_through": "2026-08-27",
-  "release_version": "10.18.0",
+  "legacy_revisions_through": "2026-09-03",
+  "release_version": "10.18.1",
   "canonical_files": {
     "legacy": "data/legacy_entries.json",
     "current": "data/current_entries.json",
@@ -15,25 +15,25 @@
     "archive_registry": "data/archive_registry.json"
   },
   "canonical_sha256": {
-    "legacy": "eebb3dfa2f010d5ffdca7ffe0432724975b7aebb7b28df2ee70a745347b0f49e",
+    "legacy": "e52844d9b60fa692b3dd73a05871a055b5ca8680a3e2c2aeca1e8b43ecb75cec",
     "current": "15b048f67565414a687d9908decf2922586559646ebb715c2ddcd7bc7fdab93f",
     "source_ledger": "93bfeeab644c3920fbc2563b809e2901dffe169cad80fbbf27d46ab1e976172f",
     "federated": "4c2b2804949098a9b0a314b3f0ed44e74fc8ccb688ab84741922dd30fa1083f3",
-    "legacy_revisions": "cdc1add989291766527f08cadc87c82647f013aab6bb8b7ca3d46f0ba6f53b7f",
+    "legacy_revisions": "3402dfe07e990aac56f27d30dbc0f60a51bc05268e0d06f52afa66c2fd69d3b5",
     "archive_registry": "43adb3c0f30d859eb9e892c1ebca54dfbef106ea5580de4556c3910ceb7c7618"
   },
   "totals": {
     "canonical_legacy_rows": 4742,
-    "canonical_legacy_entries": 4736,
-    "active_legacy_entries": 4736,
-    "superseded_legacy_tombstones": 6,
+    "canonical_legacy_entries": 4731,
+    "active_legacy_entries": 4731,
+    "superseded_legacy_tombstones": 11,
     "bridged_national_entries": 114,
-    "full_archive_runtime_entries": 4850,
+    "full_archive_runtime_entries": 4845,
     "current_layer_entries": 118,
-    "legacy_source_references": 6704,
+    "legacy_source_references": 6705,
     "current_source_references": 315,
-    "full_archive_runtime_source_references": 7011,
-    "full_archive_runtime_unique_urls": 5620
+    "full_archive_runtime_source_references": 7012,
+    "full_archive_runtime_unique_urls": 5624
   },
   "coverage": {
     "legacy_last_date": "2026-08-01",
@@ -43,7 +43,7 @@
     "known_gap_status": "no gap"
   },
   "legacy": {
-    "entries": 4736,
+    "entries": 4731,
     "coverage": {
       "first_sort_date": "1927-01-15",
       "last_sort_date": "2026-08-01"
@@ -51,66 +51,66 @@
     "entry_types": {
       "agency": 2,
       "context": 343,
-      "event": 4386,
+      "event": 4381,
       "legislation": 1,
       "policy": 4
     },
     "date_precision": {
       "approx": 169,
-      "day": 4522,
+      "day": 4517,
       "month": 33,
       "year": 12
     },
     "eras": {
       "campaign1": 526,
-      "campaign2": 633,
+      "campaign2": 628,
       "formation": 352,
       "post1": 465,
       "term1": 1638,
       "term2": 1122
     },
     "review_states": {
-      "corrected": 3,
+      "corrected": 7,
       "in-review": 7,
-      "legacy-unreviewed": 4726
+      "legacy-unreviewed": 4717
     },
     "sources": {
-      "references": 6704,
-      "references_with_url": 6704,
-      "unique_urls": 5314,
-      "unique_domains": 347,
-      "entries_with_one_source": 3341,
+      "references": 6705,
+      "references_with_url": 6705,
+      "unique_urls": 5318,
+      "unique_domains": 348,
+      "entries_with_one_source": 3335,
       "entries_with_one_source_percent": 70.5,
-      "entries_with_one_domain": 3489,
-      "entries_with_one_domain_percent": 73.7,
-      "entries_with_low_specificity_source": 1611,
-      "entries_with_low_specificity_source_percent": 34.0,
-      "entries_relying_only_on_low_specificity_sources": 1367,
-      "entries_relying_only_on_low_specificity_sources_percent": 28.9,
-      "single_source_low_specificity_entries": 891,
-      "single_source_low_specificity_entries_percent": 18.8,
+      "entries_with_one_domain": 3483,
+      "entries_with_one_domain_percent": 73.6,
+      "entries_with_low_specificity_source": 1605,
+      "entries_with_low_specificity_source_percent": 33.9,
+      "entries_relying_only_on_low_specificity_sources": 1362,
+      "entries_relying_only_on_low_specificity_sources_percent": 28.8,
+      "single_source_low_specificity_entries": 886,
+      "single_source_low_specificity_entries_percent": 18.7,
       "entries_repeating_a_url_internally": 38,
       "low_specificity_reasons": {
-        "publisher-homepage": 304,
+        "publisher-homepage": 302,
         "query-results": 175,
-        "search-results": 1658
+        "search-results": 1654
       },
       "most_used_domains": [
         {
           "domain": "apnews.com",
-          "references": 1213
+          "references": 1216
         },
         {
           "domain": "npr.org",
-          "references": 979
+          "references": 977
         },
         {
           "domain": "cnn.com",
-          "references": 513
+          "references": 512
         },
         {
           "domain": "washingtonpost.com",
-          "references": 407
+          "references": 406
         },
         {
           "domain": "reuters.com",
@@ -122,7 +122,7 @@
         },
         {
           "domain": "nbcnews.com",
-          "references": 245
+          "references": 244
         },
         {
           "domain": "biography.com",
@@ -150,7 +150,7 @@
         },
         {
           "domain": "courtlistener.com",
-          "references": 114
+          "references": 112
         },
         {
           "domain": "justice.gov",
@@ -409,10 +409,10 @@
       ]
     },
     "interpretive_layers": {
-      "maybe_therefore_present": 1530,
-      "maybe_therefore_present_percent": 32.3,
-      "maybe_therefore_missing": 3206,
-      "maybe_therefore_missing_percent": 67.7
+      "maybe_therefore_present": 1533,
+      "maybe_therefore_present_percent": 32.4,
+      "maybe_therefore_missing": 3198,
+      "maybe_therefore_missing_percent": 67.6
     }
   },
   "current": {
@@ -487,7 +487,7 @@
     "counting_rule": "Federated crosslinks are not added to The Record entry totals unless promoted as a distinct canonical event after deduplication and editorial review."
   },
   "remediation": {
-    "legacy_revision_records": 137,
+    "legacy_revision_records": 147,
     "superseded_tombstones": [
       {
         "legacy_id": "LEG-000561",
@@ -518,6 +518,31 @@
         "legacy_id": "LEG-003016",
         "superseded_by": "LEG-003015",
         "reason": "Same December 30, 2022 public-release event as LEG-003015; retained as an auditable legacy alias. Its cited CNN URL was unrelated to the tax-return release."
+      },
+      {
+        "legacy_id": "LEG-003316",
+        "superseded_by": "LEG-003396",
+        "reason": "Same May 30, 2024 New York verdict as LEG-003396; retained as an auditable legacy alias after date, source and charge-characterization correction."
+      },
+      {
+        "legacy_id": "LEG-003393",
+        "superseded_by": "LEG-003396",
+        "reason": "Same May 30, 2024 New York verdict as LEG-003396; retained as an auditable stable-ID redirect rather than counted as a separate event."
+      },
+      {
+        "legacy_id": "LEG-003406",
+        "superseded_by": "LEG-003396",
+        "reason": "Same May 30, 2024 New York verdict as LEG-003396; retained as an auditable stable-ID redirect after its imported June date was rejected."
+      },
+      {
+        "legacy_id": "LEG-003418",
+        "superseded_by": "LEG-003407",
+        "reason": "Same June 14, 2024 Garland v. Cargill decision as LEG-003407; the imported reversal of the holding remains visible in revision history and this stable ID redirects to the corrected canonical record."
+      },
+      {
+        "legacy_id": "LEG-003408",
+        "superseded_by": "LEG-003396",
+        "reason": "Same May 30, 2024 New York verdict as LEG-003396; retained as an auditable stable-ID redirect rather than counted as a separate event."
       }
     ]
   },
