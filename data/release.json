@@ -1,93 +1,36 @@
 {
-  "version": "10.18.1",
+  "version": "10.19.0",
   "release_iso": "2026-09-03",
   "release_human": "September 3, 2026",
-  "checked_at": "2026-09-03 12:03 PM EDT",
-  "previous_version": "10.18.0",
+  "checked_at": "2026-09-03 6:02 PM EDT",
+  "previous_version": "10.18.1",
   "previous_checked_at": "2026-09-03 12:03 PM EDT",
-  "window_started_at": "2026-09-03 6:02 AM EDT",
-  "window_ended_at": "2026-09-03 12:03 PM EDT",
+  "window_started_at": "2026-09-03 12:03 PM EDT",
+  "window_ended_at": "2026-09-03 6:02 PM EDT",
   "week_start": "2026-08-29",
   "week_end": "2026-09-04",
   "week_label": "August 29–September 4, 2026",
   "cutoff_start": "2026-08-17",
-  "new_entry_ids": [],
-  "added_entry_ids": [],
-  "refreshed_entry_ids": [],
+  "new_entry_ids": ["NAT-2026-08-17-001", "NAT-2026-08-24-002", "NAT-2026-08-28-012", "NAT-2026-09-03-003", "NAT-2026-09-03-004", "NAT-2026-09-03-005", "NAT-2026-09-03-006"],
+  "added_entry_ids": ["NAT-2026-09-03-003", "NAT-2026-09-03-004", "NAT-2026-09-03-005", "NAT-2026-09-03-006"],
+  "refreshed_entry_ids": ["NAT-2026-08-17-001", "NAT-2026-08-24-002", "NAT-2026-08-28-012"],
   "dedupe_resolutions": [
-    {
-      "entry_id": "NAT-2026-08-27-012",
-      "target_id": "NAT-2026-08-27-012",
-      "decision": "same_event_update",
-      "notes": "The Pentagon research chief's asserted continuing Anthropic supply-chain-risk designation is a legal and implementation development in the existing blacklist record, not a second designation count; the public statement did not identify which authority remains operative."
-    },
-    {
-      "entry_id": "NAT-2026-08-17-001",
-      "target_id": "NAT-2026-08-17-001",
-      "decision": "same_event_update",
-      "notes": "Lutnick's correction of his false statement about U.S. deaths concerns the casualty record and official-account reliability within the existing Iran/Hormuz war event."
-    },
-    {
-      "entry_id": "NAT-2026-08-26-004",
-      "target_id": "NAT-2026-09-01-006",
-      "decision": "false_positive",
-      "notes": "The shared EO 14420 token is intentionally preserved in the grid record's timestamped correction note and source description. The official Federal Register assigns EO 14421 to the August 26 grid order and EO 14420 to the August 10 vaccine order; the records concern distinct events and subjects."
-    },
-    {
-      "entry_id": "NAT-2026-08-31-006",
-      "target_id": "NAT-2026-08-31-007",
-      "decision": "distinct_lifecycle_stage",
-      "notes": "The records share a same-day White House fact sheet because it reports both manufacturer pricing arrangements and Medicare Bridge uptake. One is a set of announced company agreements; the other is an administration-reported program measurement."
-    },
-    {
-      "entry_id": "LEG-003316",
-      "target_id": "LEG-003396",
-      "decision": "same_event_update",
-      "notes": "The February-dated row expressly described the May 30, 2024 New York verdict and did not identify a distinct event. It is retained as a superseded stable-ID tombstone redirecting to the corrected canonical verdict record."
-    },
-    {
-      "entry_id": "LEG-003393",
-      "target_id": "LEG-003396",
-      "decision": "same_event_update",
-      "notes": "The same-day row describes the same May 30, 2024 jury verdict. Fundraising and polling commentary do not make it a distinct adjudicative event, so the stable ID redirects to the corrected canonical record."
-    },
-    {
-      "entry_id": "LEG-003406",
-      "target_id": "LEG-003396",
-      "decision": "same_event_update",
-      "notes": "The June 14 row expressly describes the May 30, 2024 verdict and identifies no distinct later lifecycle event. It is retained as a superseded redirect."
-    },
-    {
-      "entry_id": "LEG-003408",
-      "target_id": "LEG-003396",
-      "decision": "same_event_update",
-      "notes": "The June 15 row repeats the May 30, 2024 verdict and adds no distinct lifecycle action. It is retained as a superseded redirect."
-    },
-    {
-      "entry_id": "LEG-003418",
-      "target_id": "LEG-003407",
-      "decision": "same_event_update",
-      "notes": "After correction of its reversed holding and bad date, the row proved to be the same June 14, 2024 Garland v. Cargill decision already represented by LEG-003407. Its stable ID now redirects to the corrected canonical decision record."
-    }
+    {"entry_id": "NAT-2026-08-17-001", "target_id": "NAT-2026-08-17-001", "decision": "same_event_update", "notes": "The announced U.S. inquiry into the reported Sirik wedding strike belongs to the existing Iran/Hormuz war record; it is a casualty-accountability development, not a separate strike count or finding of responsibility."},
+    {"entry_id": "NAT-2026-08-24-002", "target_id": "NAT-2026-08-24-002", "decision": "same_event_update", "notes": "DOJ's Supreme Court stay application is the next appellate stage of the existing USPS mail-ballot rule dispute and does not create a parallel policy or ruling record."},
+    {"entry_id": "NAT-2026-08-28-012", "target_id": "NAT-2026-08-28-012", "decision": "same_event_update", "notes": "The announced excavation timetable advances the already-recorded Triumphal Arch project; no separate construction event is counted before site work occurs."},
+    {"entry_id": "NAT-2026-08-26-004", "target_id": "NAT-2026-09-01-006", "decision": "false_positive", "notes": "The shared EO 14420 token is intentionally preserved in the grid record's timestamped correction note and source description. The official Federal Register assigns EO 14421 to the August 26 grid order and EO 14420 to the August 10 vaccine order; the records concern distinct events and subjects."},
+    {"entry_id": "NAT-2026-08-31-006", "target_id": "NAT-2026-08-31-007", "decision": "distinct_lifecycle_stage", "notes": "The records share a same-day White House fact sheet because it reports both manufacturer pricing arrangements and Medicare Bridge uptake. One is a set of announced company agreements; the other is an administration-reported program measurement."}
   ],
-  "rejected_candidates": [],
-  "corrections": [
-    {
-      "checked_at": "2026-09-03",
-      "summary": "Legacy re-audit corrected LEG-003040: Adam Schiff's House censure occurred June 21, 2023, not February 3. Direct House and independent sources replace a generic search-results link, and disputed motive claims are now attributed."
-    },
-    {
-      "checked_at": "2026-09-03",
-      "summary": "Legacy re-audit corrected LEG-003261: the House impeached Alejandro Mayorkas on February 13, 2024, not December 13, 2023. The record now gives the 214-213 vote, three Republican no votes and the prior failed attempt without presenting House allegations as proven misconduct."
-    },
-    {
-      "checked_at": "2026-09-03",
-      "summary": "Legacy re-audit corrected LEG-003396 and superseded four same-event imports (LEG-003316, LEG-003393, LEG-003406 and LEG-003408): the May 30, 2024 New York case produced 34 guilty verdicts for falsifying business records, not a sexual-abuse conviction. Every retired stable ID remains as a redirect tombstone."
-    },
-    {
-      "checked_at": "2026-09-03",
-      "summary": "Legacy re-audit corrected canonical LEG-003407 and superseded duplicate LEG-003418: Garland v. Cargill was decided June 14, 2024 and invalidated the Trump-era bump-stock rule on statutory grounds. The duplicate import had reversed the Court's holding and the administration's role."
-    }
+  "rejected_candidates": [
+    {"title": "EPA PFAS wastewater-data review", "reason": "The fresh report supports that an industry survey remains pending at OMB, but no new agency action, formal disposition or current official explanation established why review continues; intent and effect remain insufficiently sourced."},
+    {"title": "Great Lakes invasive-carp project stop-work reversal", "reason": "The reported reversal occurred before the review boundary and no new public Army Corps instrument or independently verifiable implementation milestone was located in this window."},
+    {"title": "Trump request for retroactive European payments for Ukraine aid", "reason": "Trump stated an intention to seek repayment, but no formal diplomatic request, amount, legal basis, agreement, invoice or payment was public by cutoff."},
+    {"title": "Immigration officer personnel case", "reason": "Reporting about a possible individual indictment relied on unnamed sourcing and did not establish a filed public charge, administration policy or systemic action by cutoff."},
+    {"title": "Routine, ceremonial and duplicate developments", "reason": "Campaign rhetoric, meetings, personnel chatter, duplicate publications and narrow technical notices did not establish a distinct material action, ruling, expenditure or measured outcome."},
+    {"title": "Anonymous-source and prospective claims", "reason": "Consequential claims resting mainly on unnamed sources lacked sufficient independent confirmation, while prospective statements lacked an issued instrument or completed action."},
+    {"title": "Legacy quality queue", "reason": "The dedicated 10.18.1 re-audit immediately preceding this release corrected the objective high-risk batch. Remaining candidates stay visible because responsible remediation requires direct source review and full reasoning-layer reconstruction, not a hurried parallel rewrite."},
+    {"title": "External archive discovery leads", "reason": "Updated, unit-specific measurements remain separate discovery inputs and contribute zero canonical entries by default. No upstream archive item advanced without original-source inspection and full Record review."}
   ],
+  "corrections": [],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork)"
 }
