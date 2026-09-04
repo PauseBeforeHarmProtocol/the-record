@@ -1,33 +1,36 @@
 {
-  "version": "10.22.0",
+  "version": "10.23.0",
   "release_iso": "2026-09-04",
   "release_human": "September 4, 2026",
-  "checked_at": "2026-09-04 12:00 PM EDT",
-  "previous_version": "10.21.0",
-  "previous_checked_at": "2026-09-04 6:02 AM EDT",
-  "window_started_at": "2026-09-04 6:02 AM EDT",
-  "window_ended_at": "2026-09-04 12:00 PM EDT",
+  "checked_at": "2026-09-04 6:00 PM EDT",
+  "previous_version": "10.22.0",
+  "previous_checked_at": "2026-09-04 12:00 PM EDT",
+  "window_started_at": "2026-09-04 12:00 PM EDT",
+  "window_ended_at": "2026-09-04 6:00 PM EDT",
   "week_start": "2026-08-29",
   "week_end": "2026-09-04",
   "week_label": "August 29–September 4, 2026",
   "cutoff_start": "2026-08-17",
   "new_entry_ids": [
-    "NAT-2026-09-04-004",
-    "NAT-2026-09-04-006",
-    "NAT-2026-09-04-007",
-    "NAT-2026-09-04-008",
-    "NAT-2026-09-04-009",
-    "NAT-2026-09-03-011"
+    "NAT-2026-08-17-001",
+    "NAT-2026-08-24-002",
+    "NAT-2026-09-04-010",
+    "NAT-2026-09-04-011",
+    "NAT-2026-09-04-012",
+    "NAT-2026-09-04-013",
+    "NAT-2026-09-04-014"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-04-004",
-    "NAT-2026-09-04-006",
-    "NAT-2026-09-04-007",
-    "NAT-2026-09-04-008",
-    "NAT-2026-09-04-009",
-    "NAT-2026-09-03-011"
+    "NAT-2026-09-04-010",
+    "NAT-2026-09-04-011",
+    "NAT-2026-09-04-012",
+    "NAT-2026-09-04-013",
+    "NAT-2026-09-04-014"
   ],
-  "refreshed_entry_ids": [],
+  "refreshed_entry_ids": [
+    "NAT-2026-08-17-001",
+    "NAT-2026-08-24-002"
+  ],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-08-31-014",
@@ -52,36 +55,56 @@
       "target_id": "NAT-2026-09-04-006",
       "decision": "distinct_lifecycle_stage",
       "notes": "The August employment release is an independently measured economic outcome. Trump's subsequent trade threat used the report as context but is a distinct presidential risk statement with no implementing instrument; neither record substitutes for the other."
+    },
+    {
+      "entry_id": "NAT-2026-09-04-010",
+      "target_id": "NAT-2026-08-26-005",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The September 4 orders direct ranching, competition, processing, wolf and labeling actions. The August 26 proclamation separately implemented a temporary lean-beef import quota increase; the instruments and outcome tests are distinct."
+    },
+    {
+      "entry_id": "NAT-2026-09-04-014",
+      "target_id": "NAT-2026-08-31-008",
+      "decision": "false_positive",
+      "notes": "The national measles surveillance outcome concerns a vaccine-preventable infectious disease. The August 31 newborn record measures vitamin K nonreceipt, which is not a vaccine and involves a different intervention, population and outcome."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Trump demand to pass the SAVE America Act",
-      "reason": "The post repeated a legislative demand already documented as part of the July election-files record. It identified no new administration action, enacted bill, committee vote or implementing instrument after the boundary."
+      "title": "Trump and Michael Cohen posts about prior criminal cases",
+      "reason": "Trump's claim that Cohen fully recanted and the linked Cohen essay establish what they published, not a court filing, dismissal, verified recantation or administration action. The personal-litigation commentary remains in the raw feed."
     },
     {
-      "title": "Data-center pledge and Ukraine missile opinion links",
-      "reason": "The two Truth Social links promoted outside opinion columns urging future congressional or administration action. Neither documented an enacted law, appropriation, order, contract, delivery or independently verified policy change."
+      "title": "Truth Social jobs, inflation and Iran rhetoric",
+      "reason": "The posts repeated economic claims and attacked critics without an implementing instrument or independently verified new policy. The independently sourced employment measurement and Iran record already preserve the relevant developments."
     },
     {
-      "title": "Image-only Truth Social post",
-      "reason": "The post contained no reviewable text or independently established federal action. It remains in the separate raw feed and does not support a canonical finding."
+      "title": "Announced Witkoff and Kushner Ukraine peace mission",
+      "reason": "Trump identified envoys and an unspecified new idea but disclosed no proposal terms or completed travel, agreement, ceasefire or policy commitment by cutoff. It remains an announced diplomatic lead."
     },
     {
-      "title": "White House arcade website",
-      "reason": "The newly publicized games promoted administration themes but did not create, implement or measurably change federal policy. The item was treated as political messaging below the national publication threshold."
+      "title": "Triumphal Arch opponents' renewed request for relief",
+      "reason": "The filing sought to block site work but produced no injunction or merits ruling by cutoff. The existing arch record already documents the announced excavation timetable, promised notice and unresolved litigation."
     },
     {
-      "title": "Reported request to remove a Pennsylvania measles death from CDC tally",
-      "reason": "The consequential causal claim still depended primarily on unnamed sources and lacked confirmation from a second independent outlet or a public directive. It remains a research lead rather than a canonical finding."
+      "title": "Trump super-PAC midterm spending plan",
+      "reason": "The prospective use of private campaign money is campaign activity rather than a federal-administration action, expenditure or policy."
     },
     {
-      "title": "Truth Social posts without independently qualifying action",
-      "reason": "Five posts appeared after the prior snapshot. One supplied the primary record for the separately corroborated trade threat; the SAVE America demand, two opinion links and image-only post remained in the raw feed because they added no qualifying federal action."
+      "title": "Reported U.S.-China AI-safety talks",
+      "reason": "The mid-September dialogue remained prospective, with participants, location and agenda not final. No joint statement, signed framework or implemented safeguard existed by cutoff."
+    },
+    {
+      "title": "COSCO denial of earlier intelligence allegations",
+      "reason": "The denial is relevant but did not independently resolve the consequential allegations, which still rest chiefly on unnamed administration sources. No public intelligence finding or second independent confirmation was located."
+    },
+    {
+      "title": "Immigration-judge continuance training",
+      "reason": "Reporting described consequential internal direction, but no public directive or training record and no second strong independent confirmation were located by cutoff. The item remains a research lead."
     },
     {
       "title": "Ongoing disputes, prospective claims and duplicate coverage",
-      "reason": "Repeated Iran, Venezuela, mail-ballot, Smithsonian, Triumphal Arch and personnel coverage added no independently verified lifecycle change after the boundary. Prospective claims without an instrument or sufficient confirmation were withheld."
+      "reason": "Repeated Iran, Venezuela, Smithsonian and personnel coverage added no independently verified lifecycle change after the boundary. Threats or plans without an instrument were withheld unless they materially changed an existing record."
     },
     {
       "title": "External archive discovery leads",
@@ -90,8 +113,12 @@
   ],
   "corrections": [
     {
-      "checked_at": "2026-09-04 12:00 PM EDT",
-      "summary": "Restored the FAA's September 3 announcement of 191 Airport Infrastructure Grants totaling $481 million after it was omitted from prior review windows. The entry retains its actual September 3 date and describes announced awards—not completed disbursement, construction or safety outcomes."
+      "checked_at": "2026-09-04 6:00 PM EDT",
+      "summary": "Restored three September 4 developments published immediately before the prior cutoff: the EPA-Army Corps supplemental WOTUS proposal, Northern Command's reported border-drone laser results and CDC's 3,134-case measles surveillance total. Each retains its actual date and precise evidence status; none is presented as a final water rule, independently verified cartel attribution or policy-specific causal finding."
+    },
+    {
+      "checked_at": "2026-09-04 6:00 PM EDT",
+      "summary": "Corrected two contaminated historical imports while preserving their stable IDs: LEG-003530 now carries the actual February 26, 2025 date and direct public-health sources for the first Texas measles death, and LEG-003956 now carries the April 8, 2025 ICE-custody death date and relevant ICE and independent reporting instead of an unrelated CDC measles link. Both entries now separate sourced facts, significance, competing explanations, Maybe and Therefore."
     }
   ],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork)"
