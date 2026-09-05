@@ -13901,5 +13901,82 @@
         ]
       }
     ]
+  },
+  {
+    "revision_id": "LR-2026-09-05-119",
+    "recorded_at": "2026-09-05",
+    "legacy_id": "LEG-004024",
+    "kind": "date-fact-source-and-reasoning-correction",
+    "summary": "Correct Moody's U.S. sovereign-rating downgrade to May 16, 2025, replace an unrelated FEC search with the rating action and independent reporting, and remove the false claim that a major budget bill had already been signed.",
+    "provenance": [
+      {
+        "type": "primary-rating-action",
+        "supports": "Moody's announced on May 16, 2025 that it lowered the U.S. long-term issuer and senior unsecured ratings from Aaa to Aa1 and changed the outlook to stable.",
+        "url": "https://ratings.moodys.com/ratings-news/443154"
+      },
+      {
+        "type": "independent-reporting",
+        "supports": "Reuters reported the downgrade, Moody's fiscal rationale, the prior S&P and Fitch downgrades, and the administration response.",
+        "url": "https://www.reuters.com/markets/us/moodys-downgrades-us-aa1-rating-2025-05-16/"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "corrected"
+      },
+      {
+        "field": "sort",
+        "expected": "2025-05-23",
+        "replacement": "2025-05-16"
+      },
+      {
+        "field": "date",
+        "expected": "May 23, 2025",
+        "replacement": "May 16, 2025"
+      },
+      {
+        "field": "text",
+        "expected": "Moody's Downgrades US Credit Rating — Last AAA Gone. Moody's downgrades the United States from Aaa to Aa1 — the last of the three major rating agencies to strip the US of its perfect credit rating. The reason: unsustainable debt trajectory.",
+        "replacement": "Moody's lowered the U.S. long-term issuer and senior unsecured ratings from Aaa to Aa1 on May 16, 2025 and changed the outlook from negative to stable. It cited the long-running rise in government debt and interest-payment ratios and the failure of successive administrations and Congresses to agree on measures reversing large annual deficits. After earlier S&P and Fitch actions, none of the three major rating agencies rated the United States at its top grade."
+      },
+      {
+        "field": "sig",
+        "expected": "US loses its last perfect credit rating. All three agencies now below AAA.",
+        "replacement": "The action removed the final top-grade U.S. sovereign rating among the three major agencies and documented concern about federal debt and interest costs. A rating opinion can influence risk perceptions and borrowing costs, but the downgrade alone does not establish a specific market effect or assign the accumulated fiscal trajectory to one president or Congress."
+      },
+      {
+        "field": "goal",
+        "expected": "The United States loses its last perfect credit rating the week after signing a bill that adds $3.8 trillion to the national debt.",
+        "replacement": "Moody's said the stable outlook reflected exceptional U.S. credit strengths, including the economy's size, resilience and dynamism and the dollar's reserve-currency role. The administration disputed the downgrade. Future ratings, Treasury yields, debt-service costs, enacted fiscal policy and measured deficits are the relevant tests; a budget package under debate was not yet signed when Moody's acted."
+      },
+      {
+        "field": "mt",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "Maybe the one-notch change primarily formalized fiscal risks already priced by markets and had little independent effect because U.S. economic and monetary strengths remained substantial. Therefore the record establishes Moody's May 16 rating action and stated rationale, not that one administration caused the downgrade or that it produced a measured increase in federal borrowing costs."
+      },
+      {
+        "field": "src",
+        "expected": [
+          {
+            "t": "FEC",
+            "url": "https://www.fec.gov/data/receipts/?contributor_name=Moodys+Downgrades+US+Credit"
+          }
+        ],
+        "replacement": [
+          {
+            "t": "Moody's Ratings",
+            "url": "https://ratings.moodys.com/ratings-news/443154"
+          },
+          {
+            "t": "Reuters",
+            "url": "https://www.reuters.com/markets/us/moodys-downgrades-us-aa1-rating-2025-05-16/"
+          }
+        ]
+      }
+    ]
   }
 ]
