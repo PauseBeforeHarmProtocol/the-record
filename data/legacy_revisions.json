@@ -14055,5 +14055,87 @@
         ]
       }
     ]
+  },
+  {
+    "revision_id": "LR-2026-09-05-121",
+    "recorded_at": "2026-09-05",
+    "legacy_id": "LEG-004706",
+    "kind": "fact-source-and-reasoning-correction",
+    "summary": "Replace secondary-only SAVE-database coverage with the June 22 court opinion and wire reporting, remove categorical and unquantified claims, and distinguish the district judgment from later appellate proceedings.",
+    "provenance": [
+      {
+        "type": "primary-court-opinion",
+        "supports": "The district court granted summary judgment, identified Social Security Act, Privacy Act and Administrative Procedure Act violations, and vacated the modified SAVE system.",
+        "url": "https://law.justia.com/cases/federal/district-courts/district-of-columbia/dcdce/1:2025cv03501/285454/111/"
+      },
+      {
+        "type": "independent-reporting",
+        "supports": "Associated Press reported the ruling's operational scope, the modified system's election use and evidence concerning inaccurate citizenship flags.",
+        "url": "https://apnews.com/article/a9612cfffa40c938e67b99f265c9e817"
+      },
+      {
+        "type": "independent-reporting",
+        "supports": "Reuters reported the June judgment, administration rationale, use of Social Security-number and bulk searches and the resulting compliance steps.",
+        "url": "https://www.reuters.com/world/judge-blocks-trumps-use-revamped-immigration-database-voter-checks-2026-06-22/"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "corrected"
+      },
+      {
+        "field": "text",
+        "expected": "U.S. District Judge Sparkle Sooknanan (D.D.C.) ruled the administration acted unlawfully when it overhauled the SAVE immigration-status system into a centralized database of Americans' personal information, including citizenship data and Social Security numbers, that states used to screen voter rolls. Sooknanan found the administration violated three federal laws, siding with a voting-rights group and a privacy nonprofit; reporting documented cases in which states using the revamped system incorrectly flagged and removed U.S. citizens from voter rolls. The ruling blocks the 2025 overhaul but leaves the decades-old underlying SAVE program intact; the administration subsequently paused bulk-search and SSN-search features to comply.",
+        "replacement": "U.S. District Judge Sparkle Sooknanan granted summary judgment to the challengers and vacated the Trump administration's 2025 modifications to the Systematic Alien Verification for Entitlements system. The overhaul added records concerning U.S. citizens, Social Security-number searches and bulk queries used by election officials. The court found violations of the Social Security Act, Privacy Act and Administrative Procedure Act. It left the older SAVE program intact and did not hold that states may never verify voter citizenship."
+      },
+      {
+        "field": "sig",
+        "expected": "A court found the administration built and deployed a national citizenship database for voter-roll purges without legal authority, and that actual citizens lost registrations. **Pattern-fit: election-administration power centralized in the executive through data infrastructure, checked by courts after deployment.**",
+        "replacement": "The judgment halted a nationwide election-data system after deployment because the court found that agencies combined and disclosed sensitive federal information without complying with statutory limits. Evidence concerning stale citizenship records also showed a concrete risk that eligible naturalized citizens could be wrongly burdened or removed, though the ruling did not quantify every affected voter."
+      },
+      {
+        "field": "goal",
+        "expected": "\"Ensuring only citizens vote is a core election-integrity duty; SAVE already existed, the upgrade simply made a clunky federal verification tool usable by states, and the ruling turned on procedural statutes, not on any finding that noncitizen-voting concerns are illegitimate.\"",
+        "replacement": "The administration said modified SAVE made an existing federal verification program usable for election integrity and argued that states need efficient citizenship checks. The court distinguished that policy objective from the statutory authority and procedures used. Compliance, correction mechanisms, the separate Florida order and appellate review are the tests."
+      },
+      {
+        "field": "mt",
+        "expected": "Maybe giving states a workable verification tool is a legitimate goal. Therefore the entry still records it because the court found three statutory violations and citizens were wrongly purged, showing the tool ran ahead of both law and accuracy.",
+        "replacement": "Maybe a modernized verification tool can help states maintain accurate rolls if agencies use reliable records and follow Congress's privacy and administrative requirements, or mass matching of stale data may wrongly expose and burden eligible citizens. Therefore this entry establishes the June 22 district-court judgment and its statutory findings—not final appellate resolution, proof that every SAVE result was inaccurate or a ban on all voter-citizenship verification."
+      },
+      {
+        "field": "src",
+        "expected": [
+          {
+            "t": "NPR",
+            "url": "https://www.npr.org/2026/06/22/nx-s1-5866719/save-voter-data-trump-judge-unlawful"
+          },
+          {
+            "t": "CBS News",
+            "url": "https://www.cbsnews.com/news/judge-trump-database-save-system-voter-rolls/"
+          },
+          {
+            "t": "Votebeat",
+            "url": "https://www.votebeat.org/national/2026/06/22/judge-rules-against-trump-overhaul-save-database-noncitizen-voters/"
+          }
+        ],
+        "replacement": [
+          {
+            "t": "U.S. District Court for the District of Columbia via Justia",
+            "url": "https://law.justia.com/cases/federal/district-courts/district-of-columbia/dcdce/1:2025cv03501/285454/111/"
+          },
+          {
+            "t": "Associated Press",
+            "url": "https://apnews.com/article/a9612cfffa40c938e67b99f265c9e817"
+          },
+          {
+            "t": "Reuters",
+            "url": "https://www.reuters.com/world/judge-blocks-trumps-use-revamped-immigration-database-voter-checks-2026-06-22/"
+          }
+        ]
+      }
+    ]
   }
 ]

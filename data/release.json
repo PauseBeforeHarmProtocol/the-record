@@ -1,109 +1,43 @@
 {
-  "version": "10.26.0",
+  "version": "10.27.0",
   "release_iso": "2026-09-05",
   "release_human": "September 5, 2026",
-  "checked_at": "2026-09-05 12:00 PM EDT",
-  "previous_version": "10.25.0",
-  "previous_checked_at": "2026-09-05 6:00 AM EDT",
-  "window_started_at": "2026-09-05 6:00 AM EDT",
-  "window_ended_at": "2026-09-05 12:00 PM EDT",
+  "checked_at": "2026-09-05 6:00 PM EDT",
+  "previous_version": "10.26.0",
+  "previous_checked_at": "2026-09-05 12:00 PM EDT",
+  "window_started_at": "2026-09-05 12:00 PM EDT",
+  "window_ended_at": "2026-09-05 6:00 PM EDT",
   "week_start": "2026-08-30",
   "week_end": "2026-09-05",
   "week_label": "August 30–September 5, 2026",
   "cutoff_start": "2026-08-17",
-  "new_entry_ids": [
-    "NAT-2026-08-17-001",
-    "NAT-2026-09-05-001",
-    "NAT-2026-09-04-016"
-  ],
-  "added_entry_ids": [
-    "NAT-2026-09-05-001",
-    "NAT-2026-09-04-016"
-  ],
-  "refreshed_entry_ids": [
-    "NAT-2026-08-17-001"
-  ],
+  "new_entry_ids": ["NAT-2026-08-17-001", "NAT-2026-09-04-017", "NAT-2026-09-04-018", "NAT-2026-09-05-002"],
+  "added_entry_ids": ["NAT-2026-09-04-017", "NAT-2026-09-04-018", "NAT-2026-09-05-002"],
+  "refreshed_entry_ids": ["NAT-2026-08-17-001"],
   "dedupe_resolutions": [
-    {
-      "entry_id": "NAT-2026-08-31-014",
-      "target_id": "NAT-2026-08-17-001",
-      "decision": "false_positive",
-      "notes": "Vance's end-times statement was made in a broad faith interview and did not explicitly concern Iran or any particular official act. It remains a distinct governance and risk-framing statement rather than being merged into the Iran/Hormuz war record."
-    },
-    {
-      "entry_id": "NAT-2026-08-26-004",
-      "target_id": "NAT-2026-09-01-006",
-      "decision": "false_positive",
-      "notes": "The shared EO 14420 token is intentionally preserved in the grid record's timestamped correction note and source description. The official Federal Register assigns EO 14421 to the August 26 grid order and EO 14420 to the August 10 vaccine order; the records concern distinct events and subjects."
-    },
-    {
-      "entry_id": "NAT-2026-08-31-006",
-      "target_id": "NAT-2026-08-31-007",
-      "decision": "distinct_lifecycle_stage",
-      "notes": "The shared White House fact sheet reports both manufacturer pricing arrangements and Medicare Bridge uptake. One record concerns announced company agreements; the other concerns an administration-reported program measurement."
-    },
-    {
-      "entry_id": "NAT-2026-09-04-004",
-      "target_id": "NAT-2026-09-04-006",
-      "decision": "distinct_lifecycle_stage",
-      "notes": "The August employment release is an independently measured economic outcome. Trump's subsequent trade threat used the report as context but is a distinct presidential risk statement with no implementing instrument; neither record substitutes for the other."
-    },
-    {
-      "entry_id": "NAT-2026-09-04-010",
-      "target_id": "NAT-2026-08-26-005",
-      "decision": "distinct_lifecycle_stage",
-      "notes": "The September 4 orders direct ranching, competition, processing, wolf and labeling actions. The August 26 proclamation separately implemented a temporary lean-beef import quota increase; the instruments and outcome tests are distinct."
-    },
-    {
-      "entry_id": "NAT-2026-09-04-014",
-      "target_id": "NAT-2026-08-31-008",
-      "decision": "false_positive",
-      "notes": "The national measles surveillance outcome concerns a vaccine-preventable infectious disease. The August 31 newborn record measures vitamin K nonreceipt, which is not a vaccine and involves a different intervention, population and outcome."
-    }
+    {"entry_id":"NAT-2026-08-31-014","target_id":"NAT-2026-08-17-001","decision":"false_positive","notes":"Vance's end-times statement was made in a broad faith interview and did not explicitly concern Iran or any particular official act. It remains a distinct governance and risk-framing statement rather than being merged into the Iran/Hormuz war record."},
+    {"entry_id":"NAT-2026-08-26-004","target_id":"NAT-2026-09-01-006","decision":"false_positive","notes":"The shared EO 14420 token is intentionally preserved in the grid record's timestamped correction note and source description. The official Federal Register assigns EO 14421 to the August 26 grid order and EO 14420 to the August 10 vaccine order; the records concern distinct events and subjects."},
+    {"entry_id":"NAT-2026-08-31-006","target_id":"NAT-2026-08-31-007","decision":"distinct_lifecycle_stage","notes":"The shared White House fact sheet reports both manufacturer pricing arrangements and Medicare Bridge uptake. One record concerns announced company agreements; the other concerns an administration-reported program measurement."},
+    {"entry_id":"NAT-2026-09-04-004","target_id":"NAT-2026-09-04-006","decision":"distinct_lifecycle_stage","notes":"The August employment release is an independently measured economic outcome. Trump's subsequent trade threat used the report as context but is a distinct presidential risk statement with no implementing instrument; neither record substitutes for the other."},
+    {"entry_id":"NAT-2026-09-04-010","target_id":"NAT-2026-08-26-005","decision":"distinct_lifecycle_stage","notes":"The September 4 orders direct ranching, competition, processing, wolf and labeling actions. The August 26 proclamation separately implemented a temporary lean-beef import quota increase; the instruments and outcome tests are distinct."},
+    {"entry_id":"NAT-2026-09-04-014","target_id":"NAT-2026-08-31-008","decision":"false_positive","notes":"The national measles surveillance outcome concerns a vaccine-preventable infectious disease. The August 31 newborn record measures vitamin K nonreceipt, which is not a vaccine and involves a different intervention, population and outcome."},
+    {"entry_id":"NAT-2026-09-04-017","target_id":"LEG-004706","decision":"distinct_lifecycle_stage","notes":"LEG-004706 records the June 22 district-court summary judgment vacating modified SAVE. The new record covers the September 4 appellate refusal to stay that judgment and the expedited merits appeal; both stages remain cross-referenced under the same litigation."},
+    {"entry_id":"NAT-2026-09-04-018","target_id":"NAT-2026-08-29-001","decision":"distinct_lifecycle_stage","notes":"The Central African Republic record covers a second implemented flight to that country. The Guyana record covers the first implemented group under a separate bilateral arrangement, different people and different post-transfer terms."},
+    {"entry_id":"NAT-2026-09-04-018","target_id":"NAT-2026-08-20-001","decision":"distinct_lifecycle_stage","notes":"The Liberia record documents a separate agreement and capacity announcement. The Guyana record documents actual arrival of a different six-person group under a one-year temporary arrangement; neither is a duplicate of the other."}
   ],
   "rejected_candidates": [
-    {
-      "title": "No new Truth Social posts",
-      "reason": "The validated fallback remained at 36,081 posts. Its newest post was still published September 4 at 10:56:04 PM EDT, before the prior snapshot, so no new post supplied a research lead in this window."
-    },
-    {
-      "title": "Reported pause in the federal investigation of Alejandro Betancourt",
-      "reason": "Reuters' consequential claims that Florida prosecutors paused a money-laundering investigation and that Betancourt aided U.S. Venezuela planning relied primarily on unnamed sources. A Swiss prosecutor confirmed a separate case remains open, but no second independent outlet or U.S. primary record confirmed the federal pause or operational role by cutoff."
-    },
-    {
-      "title": "U.S. ambassador visit to a Palestinian American West Bank town",
-      "reason": "The ambassador's visit and condemnation of settler violence were diplomatically notable, but the embassy acknowledged it had no enforcement power and no sanction, aid condition, investigation or other completed federal action resulted by cutoff."
-    },
-    {
-      "title": "Anti-weaponization fund discovery order",
-      "reason": "The magistrate judge's discovery order sought identities and records concerning a fund the Justice Department says never became operative. The limited procedural order did not revive the fund, decide legality or produce a disclosed national-policy change by cutoff."
-    },
-    {
-      "title": "Missouri redistricting emergency application",
-      "reason": "Missouri's request to the U.S. Supreme Court concerned a state map and state litigation. Presidential support did not convert the filing into a federal-administration action, and the Supreme Court had not ruled by cutoff."
-    },
-    {
-      "title": "NATO hybrid-threat remarks and ongoing Pentagon leak reports",
-      "reason": "The ambassador's general warning did not announce a new NATO or U.S. response. Reported Pentagon polygraphs and personnel reviews lacked a public instrument and sufficient independent confirmation; no finding or disciplinary action was established."
-    },
-    {
-      "title": "Ongoing disputes, campaign activity and duplicate coverage",
-      "reason": "Repeated mail-ballot, Cuba, Mount Sinai, measles, clemency, Triumphal Arch and campaign coverage added no independently verified lifecycle change after the boundary. Routine announcements, rhetoric and plans without an instrument remained outside the canonical layer."
-    },
-    {
-      "title": "External archive discovery leads",
-      "reason": "Unit-specific external measurements remain separate discovery inputs and contribute zero canonical entries by default. No upstream item advanced without original-source inspection and full Record review."
-    }
+    {"title":"No new Truth Social posts","reason":"The validated fallback remained at 36,081 posts. Its newest post was still published September 4 at 10:56:04 PM EDT, before the prior snapshot, so no new post supplied a research lead in this window."},
+    {"title":"MAGA Inc. contribution to Ken Paxton's Senate campaign","reason":"The reported $10 million super-PAC contribution is campaign activity rather than an action of the federal administration and produced no governmental policy or legal lifecycle change."},
+    {"title":"Kennedy Center ceiling collapse and renewed shutdown request","reason":"The physical incident caused no injuries and prompted advocacy from the center's leadership, but no new federal order, contract, appropriation, closure or court ruling existed by cutoff."},
+    {"title":"Missouri redistricting emergency application","reason":"Missouri's request to the U.S. Supreme Court concerns a state map and state litigation. Presidential support does not convert the filing into a federal-administration action, and the Court had not ruled by cutoff."},
+    {"title":"Ambassador's West Bank remarks and Moscow diplomacy follow-up","reason":"The ambassador's condemnation of settler violence announced no sanction or aid condition. Later praise for the Moscow contacts did not disclose an agreement, broader ceasefire or verified change beyond the already recorded diplomatic mission."},
+    {"title":"Reported Pentagon reviews and Venezuela allegations","reason":"Consequential personnel and operational claims continued to depend mainly on unnamed sources, lacked sufficient independent confirmation and produced no public finding or completed federal action by cutoff."},
+    {"title":"Ongoing disputes, routine notices and duplicate coverage","reason":"Repeated Iran, Cuba, mail-ballot, measles, clemency and Triumphal Arch coverage added no separately verified lifecycle change beyond records already updated. Routine rhetoric, ceremonial material and plans without an instrument remained outside the canonical layer."},
+    {"title":"External archive discovery leads","reason":"Unit-specific external measurements remain separate discovery inputs and contribute zero canonical entries by default. No upstream item advanced without original-source inspection and full Record review."}
   ],
   "corrections": [
-    {
-      "checked_at": "2026-09-05 12:00 PM EDT",
-      "summary": "Restored the September 4 Stars and Stripes preliminary-injunction ruling after locating the primary order and Associated Press reporting during this review. The record preserves the ruling's actual date and distinguishes denial of emergency relief from a final judgment on the journalists' claims."
-    },
-    {
-      "checked_at": "2026-09-05 12:00 PM EDT",
-      "summary": "Legacy re-audit corrected LEG-004012: the House passed H.R. 1 on May 22, 2025, not May 18; a generated Congress.gov search was replaced with the official roll call and CBO score, and unsupported claims about a historical superlative, enactment-stage effects and dollar amounts were removed. The stable LEG ID and guarded revision history were preserved."
-    }
+    {"checked_at":"2026-09-05 6:00 PM EDT","summary":"Restored the Namibia PEPFAR transition and Labor Day fuel-price measurement after locating reports published before the prior cutoff. Both retain their actual September 5 dates; the gasoline forecast is explicitly distinguished from observed prices and no single-cause attribution is made."},
+    {"checked_at":"2026-09-05 6:00 PM EDT","summary":"Legacy re-audit corrected LEG-004706 by adding the June 22 court opinion, removing categorical and unquantified claims, and distinguishing the district judgment from the later appellate stay ruling. The stable LEG ID and guarded revision history were preserved."}
   ],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork)"
 }
