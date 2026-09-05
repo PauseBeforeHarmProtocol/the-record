@@ -13978,5 +13978,82 @@
         ]
       }
     ]
+  },
+  {
+    "revision_id": "LR-2026-09-05-120",
+    "recorded_at": "2026-09-05",
+    "legacy_id": "LEG-004012",
+    "kind": "date-fact-source-and-reasoning-correction",
+    "summary": "Correct the House passage of H.R. 1 from May 18 to May 22, 2025, replace a generated Congress.gov search with the official roll call and CBO score, and remove unsupported superlative and budget claims.",
+    "provenance": [
+      {
+        "type": "primary-congressional-record",
+        "supports": "The House Clerk records passage of H.R. 1 on May 22, 2025 by 215–214, with one member voting present and two not voting.",
+        "url": "https://clerk.house.gov/Votes/2025145"
+      },
+      {
+        "type": "primary-nonpartisan-budget-analysis",
+        "supports": "CBO identifies its June 4 estimate as covering H.R. 1 as passed by the House on May 22, while noting limits on the analysis then completed.",
+        "url": "https://www.cbo.gov/publication/61461"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "corrected"
+      },
+      {
+        "field": "sort",
+        "expected": "2025-05-18",
+        "replacement": "2025-05-22"
+      },
+      {
+        "field": "date",
+        "expected": "May 18, 2025",
+        "replacement": "May 22, 2025"
+      },
+      {
+        "field": "text",
+        "expected": "Big Beautiful Bill Passes House 215-214 — Closest Major Legislation Vote in History. The Big Beautiful Bill passes the House 215-214 — the closest margin for major legislation in modern American history. The bill cuts Medicaid by $700 billion, eliminates food stamps for millions, and adds $3.8 trillion to the deficit.",
+        "replacement": "The House passed H.R. 1, then titled the One Big Beautiful Bill Act, on May 22, 2025 by 215–214, with one member voting present and two not voting. The vote sent the House version to the Senate; it did not enact the bill. CBO subsequently issued an estimate specifically for the House-passed version, and the measure later changed before becoming law on July 4."
+      },
+      {
+        "field": "sig",
+        "expected": "Big Beautiful Bill passes 215-214. Closest major legislation vote in history.",
+        "replacement": "The one-vote House margin advanced the central tax-and-spending package of Trump's second-term agenda while showing how little intraparty dissent Republican leaders could absorb. The roll call establishes the narrow passage; it does not support the original claim that this was the closest major-legislation vote in U.S. history."
+      },
+      {
+        "field": "goal",
+        "expected": "One vote. $700 billion in Medicaid cuts. Food stamps eliminated for millions. $3.8 trillion added to the deficit. Passed on a one-vote margin.",
+        "replacement": "Supporters described the package as delivering tax, border, energy and spending priorities; opponents focused on health, nutrition and deficit effects. The appropriate tests are the text and CBO estimate for the House-passed bill, subsequent Senate and House votes, the final enacted text and measured implementation—not figures imported from a different version or date."
+      },
+      {
+        "field": "mt",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "Maybe the narrow vote reflected ordinary reconciliation bargaining around a broad agenda package rather than unusual weakness, and later amendments could materially change the effects debated on May 22. Therefore this entry establishes House passage of that version by 215–214—not enactment, a record-setting margin, the final law's exact effects or the unsupported dollar and beneficiary claims in the imported text."
+      },
+      {
+        "field": "src",
+        "expected": [
+          {
+            "t": "Congress.gov",
+            "url": "https://www.congress.gov/search?q=Big%20Beautiful%20Bill%20Passes%20House%20215214%20%20Closest%20Major%20Legi"
+          }
+        ],
+        "replacement": [
+          {
+            "t": "Office of the Clerk, U.S. House of Representatives",
+            "url": "https://clerk.house.gov/Votes/2025145"
+          },
+          {
+            "t": "Congressional Budget Office",
+            "url": "https://www.cbo.gov/publication/61461"
+          }
+        ]
+      }
+    ]
   }
 ]
