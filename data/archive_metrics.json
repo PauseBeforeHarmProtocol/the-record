@@ -5,14 +5,16 @@
   "external_registry_checked_at": "2026-09-07T16:02:20Z",
   "federation_last_modified_at": "2026-08-25T14:40:23Z",
   "legacy_revisions_through": "2026-09-05",
-  "release_version": "10.31.1",
+  "release_version": "10.32.0",
   "canonical_files": {
     "legacy": "data/legacy_entries.json",
     "current": "data/current_entries.json",
     "source_ledger": "data/source_ledger.json",
     "federated": "data/federated_records.json",
     "legacy_revisions": "data/legacy_revisions.json",
-    "archive_registry": "data/archive_registry.json"
+    "archive_registry": "data/archive_registry.json",
+    "editorial_state": "data/editorial_state.json",
+    "truth_social_reviews": "data/truth_social_reviews.json"
   },
   "canonical_sha256": {
     "legacy": "0e7fcb525c2dc082e18ca14510fec7528726d1343612f2be0857dccaecfdf8bf",
@@ -20,7 +22,9 @@
     "source_ledger": "4a45c491eb1c94f7baef78fb04d23f0387f71e5e0972a9bcb90b7af6ffb7911b",
     "federated": "4c2b2804949098a9b0a314b3f0ed44e74fc8ccb688ab84741922dd30fa1083f3",
     "legacy_revisions": "c234d3f8e76ea8c79ed8395367e7ef230065db904174adcf998833ed676feb33",
-    "archive_registry": "0c8a18184190204f73393cb8c919968f24b1ac7acd58cbb4ec94e43b0366ffef"
+    "archive_registry": "0c8a18184190204f73393cb8c919968f24b1ac7acd58cbb4ec94e43b0366ffef",
+    "editorial_state": "a6faff3f6b58527b9366581445dd28c8d853bedfb1f1b2625fa2d485fbf61b80",
+    "truth_social_reviews": "274a24a2965a3b4ad29613fb080e7179faa02732108782e4437d73ec280b4765"
   },
   "totals": {
     "canonical_legacy_rows": 4742,
@@ -478,6 +482,20 @@
         "references": 4
       }
     ]
+  },
+  "review_traceability": {
+    "current_entries_with_content_bound_review": 0,
+    "current_entries_with_prior_status_only": 150,
+    "material_development_records": 118,
+    "retained_posts": 1000,
+    "retained_post_text_states": {
+      "not_recorded": 1000
+    },
+    "retained_post_media_states": {
+      "not_applicable": 536,
+      "not_recorded": 464
+    },
+    "definition": "Review-receipt coverage is separate from prior canonical review-state labels. Missing inspection records do not establish that content is false or that it was reviewed. Post-state counts refer only to the retained fallback, not the upstream archive total."
   },
   "federated": {
     "records": 1,

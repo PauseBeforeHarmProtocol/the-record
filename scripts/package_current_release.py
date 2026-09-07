@@ -7,6 +7,8 @@ import json
 import zipfile
 from pathlib import Path
 
+from editorial_state import artifact_names, entry_content_hash, load_state, matching_review, validate_snapshot
+
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS = ROOT / "artifacts"
@@ -27,6 +29,11 @@ IN6_CURRENT_BRIEF_NAME = f"THE_RECORD_IN6_CURRENT_BRIEF_{RELEASE_ARTIFACT_STEM}.
 RUN_RECEIPT_NAME = f"THE_RECORD_RUN_RECEIPT_{RELEASE_ARTIFACT_STEM}.md"
 NATIONAL_PACK_NAME = f"THE_RECORD_NATIONAL_UPDATE_PACK_{RELEASE_ARTIFACT_STEM}.zip"
 COMPLETE_PACK_NAME = f"THE_RECORD_CURRENT_UPDATE_PACK_{RELEASE_ARTIFACT_STEM}.zip"
+RESOLVED_NAMES = artifact_names(RELEASE)
+NATIONAL_PACK_NAME = RESOLVED_NAMES["national_pack"]
+COMPLETE_PACK_NAME = RESOLVED_NAMES["complete_pack"]
+NATIONAL_BRIEF_NAME = RESOLVED_NAMES["national_brief"]
+IN6_CURRENT_BRIEF_NAME = RESOLVED_NAMES["in6_brief"]
 
 
 def digest(data: bytes) -> str:
@@ -105,11 +112,16 @@ This entry is a dated, source-bound update. It does not by itself revalidate eve
 
 def entry_pack(entry: dict, ledger: dict) -> bytes:
     source_subset = {source_id: ledger[source_id] for source_id in entry["sources"]}
+    review = matching_review(entry, ledger, load_state())
     return stable_zip({
         "ENTRY.md": entry_markdown(entry, ledger),
         "VERIFY.txt": b"Verify this pack by comparing its SHA-256 digest with the adjacent .sha256 file.\n",
         "entry.json": as_json(entry),
         "sources.json": as_json(source_subset),
+        "review_provenance.json": as_json({
+            "content_sha256": entry_content_hash(entry, ledger), "review": review,
+            "scope_note": "A null review means no claim-level receipt has been recorded; prior canonical review status is retained without asserting a new source inspection."
+        }),
     })
 
 
@@ -297,6 +309,23 @@ def run_receipt(entries: list[dict], ledger: dict) -> bytes:
         "",
         "Current front-door pages, canonical datasets, archive bridge, individual evidence packs, versioned aggregate packs, source ledgers, and checksums are generated deterministically. Earlier date-only base aggregates remain byte-frozen and separately addressable; every new same-day aggregate is version-keyed. Candidate publication requires the repository validator and GitHub Actions to pass, followed by acceptance from the publication authority named above.",
     ])
+    if RELEASE.get("engineering_revision"):
+        lines.extend(["", "## Software maintenance", "", RELEASE["engineering_revision"]["scope"],
+                      "", "No new news research, factual-content change or retrospective source review is asserted. The prior editorial cutoff is preserved."])
+    state = load_state()
+    mapped = sum(matching_review(e, ledger, state) is not None for e in entries)
+    feed_reviews = json.loads((ROOT / "data/truth_social_reviews.json").read_text())
+    lines.extend(["", "## Review traceability", "",
+                  f"- Current entries with content-bound claim-level receipts: {mapped} / {len(entries)}",
+                  "- Prior review-state labels are distinct from claim-level review receipt coverage.",
+                  f"- Stored post inspection-state records: {len(feed_reviews)}. Acquisition is not inspection.",
+                  "- Per-post text/media states: data/truth_social_reviews.json; deferred follow-ups: data/research_queue.json.",
+                  "- Actual acceptance results are recorded by scripts/accept_release.py and retained as a CI artifact; this generated receipt is not a test attestation."])
+    if RELEASE.get("artifact_mode") == "feed-only":
+        lines.extend(["", "## Reused editorial snapshot", "",
+                      f"Editorial snapshot v{RELEASE['editorial_snapshot']['version']} is byte-preserved. Its embedded release metadata and metrics remain historical; only this feed receipt is current.",
+                      f"- Current feed data SHA-256: {digest((ROOT / 'data/truth_social_seed.json').read_bytes())}",
+                      f"- Current feed metadata SHA-256: {digest((ROOT / 'data/truth_social_feed_meta.json').read_bytes())}"])
     return ("\n".join(lines) + "\n").encode()
 
 
@@ -307,6 +336,15 @@ def adjacent_checksum(name: str, data: bytes) -> bytes:
 def build_outputs() -> dict[Path, bytes]:
     entries = json.loads((ROOT / "data/current_entries.json").read_text(encoding="utf-8"))
     ledger = json.loads((ROOT / "data/source_ledger.json").read_text(encoding="utf-8"))
+    validate_snapshot(RELEASE)
+    if RELEASE.get("artifact_mode") == "feed-only":
+        receipt = ARTIFACTS / RUN_RECEIPT_NAME
+        outputs = {receipt: run_receipt(entries, ledger)}
+        candidates = {*ARTIFACTS.glob("*.md"), *ARTIFACTS.glob("*.zip"), *ENTRY_DIR.glob("*.zip"), receipt}
+        rows = [f"{digest(outputs[path] if path in outputs else path.read_bytes())}  {path.relative_to(ARTIFACTS).as_posix()}"
+                for path in sorted(candidates)]
+        outputs[ARTIFACTS / "SHA256SUMS.txt"] = ("\n".join(rows) + "\n").encode()
+        return outputs
     by_id = {entry["id"]: entry for entry in entries}
     missing_new_ids = NEW_ENTRY_IDS - set(by_id)
     if missing_new_ids:
@@ -426,6 +464,10 @@ def build_outputs() -> dict[Path, bytes]:
         "data/release.json": (ROOT / "data/release.json").read_bytes(),
         "data/source_ledger.csv": (ROOT / "data/source_ledger.csv").read_bytes(),
         "data/source_ledger.json": (ROOT / "data/source_ledger.json").read_bytes(),
+        "data/editorial_state.json": (ROOT / "data/editorial_state.json").read_bytes(),
+        "data/research_queue.json": (ROOT / "data/research_queue.json").read_bytes(),
+        "data/truth_social_reviews.json": (ROOT / "data/truth_social_reviews.json").read_bytes(),
+        "schemas/editorial_state.schema.json": (ROOT / "schemas/editorial_state.schema.json").read_bytes(),
         "schemas/federated_record.schema.json": (ROOT / "schemas/federated_record.schema.json").read_bytes(),
     }
     in6_brief = ARTIFACTS / "THE_RECORD_IN6_UPDATE_BRIEF_2026-07-18.md"

@@ -10,13 +10,53 @@ from pathlib import Path
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 
+from editorial_state import post_content_hash
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SOURCE = "https://ix.cnn.io/data/truth-social/truth_archive.json"
 DEFAULT_LIMIT = 1000
 SEED_PATH = ROOT / "data/truth_social_seed.json"
 META_PATH = ROOT / "data/truth_social_feed_meta.json"
-EASTERN = ZoneInfo("America/New_York")
+EASTERN = ZoneInfo("America/Indiana/Indianapolis")
+REVIEWS_PATH = ROOT / "data/truth_social_reviews.json"
+
+
+def pending_reviews(rows: list[dict], existing: list[dict]) -> list[dict]:
+    result = list(existing)
+    known = {(r["post_id"], r["content_sha256"]) for r in result}
+    for post in rows:
+        signature = post_content_hash(post)
+        if (post["id"], signature) not in known:
+            result.append({"post_id": post["id"], "content_sha256": signature,
+                           "text_status": "pending", "media_status": "pending" if post["media"] else "not_applicable",
+                           "reviewer": None, "reviewed_at": None,
+                           "note": "Acquired as a research lead; source content and media have not been reviewed by this updater."})
+            known.add((post["id"], signature))
+    return result
+
+
+def validate_local() -> None:
+    raw = json.loads(SEED_PATH.read_text())
+    rows = normalize(raw)
+    metadata = json.loads(META_PATH.read_text())
+    if rows != raw or len(rows) != metadata["fallback_post_count"]:
+        raise ValueError("fallback normalization/count differs")
+    if len(rows) < 500 or metadata["source_post_count"] < len(rows):
+        raise ValueError("fallback/source count is invalid")
+    for prefix, row in (("latest", rows[0]), ("fallback_earliest", rows[-1])):
+        timestamp = parse_timestamp(row["created_at"])
+        if timestamp != parse_timestamp(metadata[f"{prefix}_post_at_utc"]):
+            raise ValueError("fallback endpoint differs from metadata")
+    if metadata["latest_post_id"] != rows[0]["id"]:
+        raise ValueError("latest post ID differs")
+    if metadata["latest_post_at_eastern"] != format_eastern(parse_timestamp(rows[0]["created_at"])):
+        raise ValueError("latest post local date/time differs")
+    checked = parse_timestamp(metadata["checked_at_utc"])
+    if metadata["checked_at_eastern"] != format_eastern(checked):
+        raise ValueError("fallback check-time conversion differs")
+    if checked < parse_timestamp(rows[0]["created_at"]):
+        raise ValueError("latest post postdates the snapshot check")
 
 
 def parse_timestamp(value: object) -> datetime:
@@ -110,6 +150,10 @@ def write_outputs(rows: list[dict], source_url: str, limit: int, checked_at: dat
     if len(rows) < limit:
         raise ValueError(f"source contains {len(rows)} posts, fewer than requested fallback size {limit}")
     seed = rows[:limit]
+    if SEED_PATH.exists():
+        previous = normalize(json.loads(SEED_PATH.read_text()))
+        if parse_timestamp(seed[0]["created_at"]) < parse_timestamp(previous[0]["created_at"]):
+            raise ValueError("upstream snapshot regressed; validated local snapshot preserved")
     latest_timestamp = parse_timestamp(seed[0]["created_at"])
     earliest_timestamp = parse_timestamp(seed[-1]["created_at"])
     metadata = {
@@ -125,8 +169,14 @@ def write_outputs(rows: list[dict], source_url: str, limit: int, checked_at: dat
         "fallback_earliest_post_at_utc": earliest_timestamp.isoformat().replace("+00:00", "Z"),
         "scope_note": "Raw public posts are leads and primary records of publication, not independent verification of claims inside them.",
     }
-    SEED_PATH.write_text(json.dumps(seed, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    META_PATH.write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    existing = json.loads(REVIEWS_PATH.read_text()) if REVIEWS_PATH.exists() else []
+    reviews = pending_reviews(seed, existing)
+    # Stage each payload before replacing its destination. The offline check
+    # rejects any interrupted multi-file refresh before publication.
+    for path, payload in ((SEED_PATH, seed), (META_PATH, metadata), (REVIEWS_PATH, reviews)):
+        staged = path.with_suffix(path.suffix + ".tmp")
+        staged.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        staged.replace(path)
 
 
 def main() -> int:
@@ -135,12 +185,21 @@ def main() -> int:
     parser.add_argument("--input", type=Path, help="use an already-downloaded JSON archive instead of the network")
     parser.add_argument("--limit", type=int, default=DEFAULT_LIMIT, help="number of recent posts retained locally")
     parser.add_argument("--checked-at", help="ISO-8601 check time; defaults to the current time")
+    parser.add_argument("--check", action="store_true", help="validate retained snapshot offline; never refresh check time")
     args = parser.parse_args()
+    if args.check:
+        try:
+            validate_local()
+        except (OSError, ValueError, KeyError, IndexError) as exc:
+            print(f"FAIL: {exc}", file=sys.stderr)
+            return 1
+        print("PASS: retained Truth Social fallback and Indianapolis timestamps")
+        return 0
     if args.limit < 100:
         parser.error("--limit must be at least 100")
-    checked_at = parse_timestamp(args.checked_at) if args.checked_at else datetime.now(timezone.utc)
     try:
         rows = normalize(load_source(args.source, args.input))
+        checked_at = parse_timestamp(args.checked_at) if args.checked_at else datetime.now(timezone.utc)
         write_outputs(rows, args.source, args.limit, checked_at)
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         print(f"FAIL: {exc}", file=sys.stderr)

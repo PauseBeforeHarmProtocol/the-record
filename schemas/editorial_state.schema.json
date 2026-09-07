@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "baseline", "developments", "reviews", "deferred_candidates"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "baseline": {
+      "type": "object", "additionalProperties": false,
+      "required": ["commit", "release_version", "policy", "entry_hashes"],
+      "properties": {
+        "commit": {"type": "string", "pattern": "^[a-f0-9]{40}$"},
+        "release_version": {"type": "string"},
+        "policy": {"type": "string", "minLength": 20},
+        "entry_hashes": {"type": "object", "additionalProperties": {"$ref": "#/$defs/hash"}}
+      }
+    },
+    "developments": {"type": "array", "items": {
+      "type": "object", "additionalProperties": false,
+      "required": ["change_id", "entry_id", "as_of_utc", "timestamp_precision", "kind", "release_version", "summary", "provenance_path", "provenance_sha256", "note"],
+      "properties": {
+        "change_id": {"type": "string", "minLength": 1}, "entry_id": {"type": "string"},
+        "as_of_utc": {"type": "string", "format": "date-time"},
+        "timestamp_precision": {"enum": ["minute", "second"]},
+        "kind": {"enum": ["published_development", "added", "material_refresh", "correction"]},
+        "release_version": {"type": "string"}, "summary": {"type": "string", "minLength": 10},
+        "provenance_path": {"type": "string"}, "provenance_sha256": {"$ref": "#/$defs/hash"},
+        "note": {"type": "string"}
+      }
+    }},
+    "reviews": {"type": "array", "items": {
+      "type": "object", "additionalProperties": false,
+      "required": ["review_id", "entry_id", "content_sha256", "reviewed_at", "reviewer", "claims", "reasoning_review", "unresolved_questions"],
+      "properties": {
+        "review_id": {"type": "string", "minLength": 1}, "entry_id": {"type": "string"},
+        "content_sha256": {"$ref": "#/$defs/hash"}, "reviewed_at": {"type": "string", "format": "date-time"},
+        "reviewer": {"type": "object", "additionalProperties": false, "required": ["name", "kind"], "properties": {
+          "name": {"type": "string", "minLength": 1}, "kind": {"enum": ["human", "ai_assisted", "automated"]}
+        }},
+        "claims": {"type": "array", "minItems": 1, "items": {
+          "type": "object", "additionalProperties": false,
+          "required": ["fact_index", "fact_sha256", "relies_on_unnamed_sources", "supports"],
+          "properties": {
+            "fact_index": {"type": "integer", "minimum": 0}, "fact_sha256": {"$ref": "#/$defs/hash"},
+            "relies_on_unnamed_sources": {"type": "boolean"},
+            "supports": {"type": "array", "minItems": 1, "items": {
+              "type": "object", "additionalProperties": false,
+              "required": ["source_id", "locator", "inspected_at", "document_sha256", "origin_group", "evidence_status"],
+              "properties": {
+                "source_id": {"type": "string", "minLength": 1}, "locator": {"type": "string", "minLength": 3},
+                "inspected_at": {"type": "string", "format": "date-time"}, "document_sha256": {"$ref": "#/$defs/hash"},
+                "origin_group": {"type": "string", "minLength": 1},
+                "evidence_status": {"enum": ["announced", "proposed", "ordered", "implemented", "enjoined", "reversed", "reported", "measured", "publication_only"]}
+              }
+            }}
+          }
+        }},
+        "reasoning_review": {"type": "array", "minItems": 3, "maxItems": 3, "items": {
+          "type": "object", "additionalProperties": false,
+          "required": ["field", "text_sha256", "review_note"], "properties": {
+            "field": {"enum": ["significance", "goalpost", "maybe_therefore"]},
+            "text_sha256": {"$ref": "#/$defs/hash"}, "review_note": {"type": "string", "minLength": 10}
+          }
+        }},
+        "unresolved_questions": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    }},
+    "deferred_candidates": {"type": "array", "maxItems": 0, "description": "Reserved; active research queue lives separately so feed-only receipts can update it."}
+  },
+  "$defs": {"hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}
+}

@@ -4,6 +4,8 @@ import argparse
 import json
 from pathlib import Path
 
+from editorial_state import activity_date, developments, load_state, rolling_window
+
 
 ROOT = Path(__file__).resolve().parents[1]
 ARCHIVE = ROOT / "the-record.html"
@@ -40,6 +42,7 @@ def canonical_data() -> tuple[list[dict], dict, dict]:
 
 def bridge_entries(entries: list[dict], ledger: dict) -> list[dict]:
     bridge = []
+    editorial_state = load_state()
     for entry in sorted(
         (item for item in entries if item["scope"] == "national"),
         key=lambda item: (item["date"], item["id"]),
@@ -64,6 +67,8 @@ def bridge_entries(entries: list[dict], ledger: dict) -> list[dict]:
             "review_status": entry["review_status"],
             "evidence": entry["evidence"],
             "checked_at": entry["checked_at"],
+            "last_material_update": activity_date(entry, editorial_state),
+            "development_history": developments(entry, editorial_state),
             "institutions": entry["institutions"],
             "pack_path": entry["pack_path"],
         })
@@ -80,7 +85,7 @@ def bridge_asset_text() -> str:
         "version": release["version"],
         "release": release["release_human"],
         "checked_at": release["checked_at"],
-        "week_label": release["week_label"],
+        "week_label": " through ".join(rolling_window(release)),
         "national_entry_count": len(bridge),
         "added_this_release": (
             0 if maintenance_active else len(release.get("added_entry_ids", []))
