@@ -1,11 +1,11 @@
 {
   "schema_version": 3,
-  "editorial_checked_at": "2026-09-07 12:02 PM EDT",
-  "quality_inputs_updated_at": "2026-09-07T16:02:20Z",
-  "external_registry_checked_at": "2026-09-07T16:02:20Z",
+  "editorial_checked_at": "2026-09-07 6:10 PM EDT",
+  "quality_inputs_updated_at": "2026-09-07T22:09:30Z",
+  "external_registry_checked_at": "2026-09-07T22:09:30Z",
   "federation_last_modified_at": "2026-08-25T14:40:23Z",
   "legacy_revisions_through": "2026-09-05",
-  "release_version": "10.32.0",
+  "release_version": "10.33.0",
   "canonical_files": {
     "legacy": "data/legacy_entries.json",
     "current": "data/current_entries.json",
@@ -18,26 +18,26 @@
   },
   "canonical_sha256": {
     "legacy": "0e7fcb525c2dc082e18ca14510fec7528726d1343612f2be0857dccaecfdf8bf",
-    "current": "08ac82a7c64a0ac9d94a56520c254b26f5eb34bb7a032a0d4915c7738aa69782",
-    "source_ledger": "4a45c491eb1c94f7baef78fb04d23f0387f71e5e0972a9bcb90b7af6ffb7911b",
+    "current": "d466599c9adec1b406a646f23f4b383a637e3adf4a735a2592f0aa6d94d4f5aa",
+    "source_ledger": "ac27e879a49cf2cdda4203a365a686fb5114fe5f8a9fc55238b31d7c5d8010bb",
     "federated": "4c2b2804949098a9b0a314b3f0ed44e74fc8ccb688ab84741922dd30fa1083f3",
     "legacy_revisions": "c234d3f8e76ea8c79ed8395367e7ef230065db904174adcf998833ed676feb33",
-    "archive_registry": "0c8a18184190204f73393cb8c919968f24b1ac7acd58cbb4ec94e43b0366ffef",
-    "editorial_state": "a6faff3f6b58527b9366581445dd28c8d853bedfb1f1b2625fa2d485fbf61b80",
-    "truth_social_reviews": "274a24a2965a3b4ad29613fb080e7179faa02732108782e4437d73ec280b4765"
+    "archive_registry": "832e7b86dcd1c9b4cf66fad7fb27fbd0fd0deedece29f4fdb27c17be19820ecc",
+    "editorial_state": "80f9f72edc9b81bc66b917bad541b3b333892e05e11c92178b8446bcb2f2939c",
+    "truth_social_reviews": "d594603cba895ee4860e2aa20811ef495cadf9249a544a67ce706f80fd53b408"
   },
   "totals": {
     "canonical_legacy_rows": 4742,
     "canonical_legacy_entries": 4731,
     "active_legacy_entries": 4731,
     "superseded_legacy_tombstones": 11,
-    "bridged_national_entries": 146,
-    "full_archive_runtime_entries": 4877,
-    "current_layer_entries": 150,
+    "bridged_national_entries": 147,
+    "full_archive_runtime_entries": 4878,
+    "current_layer_entries": 151,
     "legacy_source_references": 6711,
-    "current_source_references": 416,
-    "full_archive_runtime_source_references": 7119,
-    "full_archive_runtime_unique_urls": 5731
+    "current_source_references": 418,
+    "full_archive_runtime_source_references": 7121,
+    "full_archive_runtime_unique_urls": 5733
   },
   "coverage": {
     "legacy_last_date": "2026-08-01",
@@ -420,30 +420,30 @@
     }
   },
   "current": {
-    "entries": 150,
-    "national_entries": 146,
+    "entries": 151,
+    "national_entries": 147,
     "in6_entries": 4,
-    "source_references": 416,
-    "national_source_references": 408,
-    "source_ledger_rows": 419,
-    "used_source_ledger_rows": 415,
+    "source_references": 418,
+    "national_source_references": 410,
+    "source_ledger_rows": 421,
+    "used_source_ledger_rows": 417,
     "unused_source_ledger_rows": 4,
     "entries_with_one_source": 39,
-    "entries_with_one_source_percent": 26.0,
+    "entries_with_one_source_percent": 25.8,
     "national_entries_with_one_source": 37,
-    "national_entries_with_one_source_percent": 25.3,
-    "maybe_therefore_present": 150,
+    "national_entries_with_one_source_percent": 25.2,
+    "maybe_therefore_present": 151,
     "maybe_therefore_missing": 0,
     "review_states": {
       "corrected": 2,
-      "current-standard-reviewed": 148
+      "current-standard-reviewed": 149
     },
-    "current_standard_reviewed": 150,
+    "current_standard_reviewed": 151,
     "current_standard_pending": 0,
     "most_used_publishers": [
       {
         "publisher": "Reuters",
-        "references": 137
+        "references": 138
       },
       {
         "publisher": "Associated Press",
@@ -466,6 +466,10 @@
         "references": 5
       },
       {
+        "publisher": "Truth Social / Donald J. Trump",
+        "references": 5
+      },
+      {
         "publisher": "Centers for Disease Control and Prevention",
         "references": 5
       },
@@ -474,26 +478,26 @@
         "references": 5
       },
       {
-        "publisher": "Truth Social / Donald J. Trump",
-        "references": 4
-      },
-      {
         "publisher": "The Guardian",
         "references": 4
       }
     ]
   },
   "review_traceability": {
-    "current_entries_with_content_bound_review": 0,
+    "current_entries_with_content_bound_review": 1,
     "current_entries_with_prior_status_only": 150,
-    "material_development_records": 118,
+    "material_development_records": 119,
     "retained_posts": 1000,
     "retained_post_text_states": {
-      "not_recorded": 1000
+      "not_recorded": 27,
+      "pending": 969,
+      "reviewed": 4
     },
     "retained_post_media_states": {
-      "not_applicable": 536,
-      "not_recorded": 464
+      "not_applicable": 538,
+      "not_recorded": 19,
+      "pending": 438,
+      "unavailable": 5
     },
     "definition": "Review-receipt coverage is separate from prior canonical review-state labels. Missing inspection records do not establish that content is false or that it was reviewed. Post-state counts refer only to the retained fallback, not the upstream archive total."
   },

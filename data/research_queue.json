@@ -22,5 +22,17 @@
     "next_check_at": null,
     "provenance": "artifacts/THE_RECORD_RUN_RECEIPT_2026-09-07_v10.31.1.md",
     "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260907-1800-UNAVAILABLE-MEDIA",
+    "title": "Four new Truth Social media posts unavailable for inspection",
+    "first_seen_at": "2026-09-07T21:47:58Z",
+    "timestamp_precision": "second",
+    "status": "blocked",
+    "reason": "Posts 117231197837851334, 117231928888969402, 117231954791116629 and 117231955365539795 contain image or video assets that the source host returned as HTTP 403 during review. No claim inside those assets was used.",
+    "recheck_trigger": "The media becomes accessible and its content is inspected against the retained post-content hash.",
+    "next_check_at": null,
+    "provenance": "data/truth_social_reviews.json",
+    "canonical_id": null
   }
 ]

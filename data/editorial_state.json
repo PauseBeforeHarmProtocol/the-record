@@ -1573,8 +1573,82 @@
       "provenance_path": "artifacts/THE_RECORD_RUN_RECEIPT_2026-09-07_v10.31.0.md",
       "provenance_sha256": "48db339c25c768bc31fd7771eb1b5f0662293c8a0bf74302e94c829a8b906d12",
       "note": "Migrated from the publication receipt, not a fresh source inspection or a new event date."
+    },
+    {
+      "change_id": "10.33.0:NAT-2026-09-07-001",
+      "entry_id": "NAT-2026-09-07-001",
+      "as_of_utc": "2026-09-07T22:10:00Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.33.0",
+      "summary": "Added the announced Bombardier market-access threat with explicit non-implementation limits.",
+      "provenance_path": "artifacts/THE_RECORD_RUN_RECEIPT_2026-09-07_v10.33.0.md",
+      "provenance_sha256": "06178901d0e3342bd11288e90c892cd9a88072f7fbf6e29d2694a17ab992f7c5",
+      "note": "The event date remains September 7; this receipt records the evidence cutoff and publication decision."
     }
   ],
-  "reviews": [],
+  "reviews": [
+    {
+      "review_id": "10.33.0:NAT-2026-09-07-001:42b1c6e1",
+      "entry_id": "NAT-2026-09-07-001",
+      "content_sha256": "42b1c6e153cd62924bb3c07e76e78460bf1612cb20d90f04c86cf60828c8899d",
+      "reviewed_at": "2026-09-07T22:09:50Z",
+      "reviewer": {"name": "OpenAI Codex editorial maintenance", "kind": "ai_assisted"},
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "e6eeeab81fd7251709a988da8e7d6ea44d6bffc427d923ae1900273d6a3e3d7c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {"source_id":"truth_trump_bombardier_sep7","locator":"full retained post text and timestamp","inspected_at":"2026-09-07T22:09:30Z","document_sha256":"c1f22fdb61184f32c831c11fa074aced722b94951ba3493c1c3c9d051e7955a0","origin_group":"Donald J. Trump / Truth Social","evidence_status":"publication_only"},
+            {"source_id":"reuters_bombardier_sales_threat_sep7","locator":"article body, paragraphs reporting the statement and action status","inspected_at":"2026-09-07T22:09:30Z","document_sha256":"b23ad9f5ffabd58f69830a2227c5d9b3826e9ec8f0d919cd6d9853b38db69b45","origin_group":"Reuters","evidence_status":"reported"}
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "7040f2493ee1f67639bf8e2855d193735494cb2fa48f6c331b73dbe8f7b80d04",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {"source_id":"reuters_bombardier_sales_threat_sep7","locator":"article body, enforcement and regulatory-status paragraphs","inspected_at":"2026-09-07T22:09:30Z","document_sha256":"b23ad9f5ffabd58f69830a2227c5d9b3826e9ec8f0d919cd6d9853b38db69b45","origin_group":"Reuters","evidence_status":"reported"}
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "e4b8469b903969bd2f7afb19e987852585f7606cfd14241b9095523916ee96b9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {"source_id":"reuters_bombardier_sales_threat_sep7","locator":"article body, U.S. footprint and USMCA paragraphs","inspected_at":"2026-09-07T22:09:30Z","document_sha256":"b23ad9f5ffabd58f69830a2227c5d9b3826e9ec8f0d919cd6d9853b38db69b45","origin_group":"Reuters","evidence_status":"reported"}
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "51cba224fb56f4fe185e31a8e3fa519597c222b613a1c95a44bc3a07302bc0e7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {"source_id":"truth_trump_bombardier_sep7","locator":"full retained post text stating the president's rationale","inspected_at":"2026-09-07T22:09:30Z","document_sha256":"c1f22fdb61184f32c831c11fa074aced722b94951ba3493c1c3c9d051e7955a0","origin_group":"Donald J. Trump / Truth Social","evidence_status":"publication_only"},
+            {"source_id":"reuters_bombardier_sales_threat_sep7","locator":"article body, quoted rationale and trade-dispute context","inspected_at":"2026-09-07T22:09:30Z","document_sha256":"b23ad9f5ffabd58f69830a2227c5d9b3826e9ec8f0d919cd6d9853b38db69b45","origin_group":"Reuters","evidence_status":"reported"}
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "02faef075bd88076f233ab3c5158996a125243271aa62d21459c976332b623ea",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {"source_id":"reuters_bombardier_sales_threat_sep7","locator":"article body, January threat and subsequent-status paragraph","inspected_at":"2026-09-07T22:09:30Z","document_sha256":"b23ad9f5ffabd58f69830a2227c5d9b3826e9ec8f0d919cd6d9853b38db69b45","origin_group":"Reuters","evidence_status":"reported"}
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {"field":"significance","text_sha256":"9a38838ed9538fffa51a74b7d22c6ab788555b3613e397ac4de29294b37003ef","review_note":"Separates immediate uncertainty from prospective and unmeasured downstream effects."},
+        {"field":"goalpost","text_sha256":"65f166e610a2c5360f1327afce8f13a6af613cf085ae23cfef53e315f2900901","review_note":"Preserves the president's stated reciprocity rationale and lists observable implementation and outcome tests."},
+        {"field":"maybe_therefore","text_sha256":"a6f789dc3d240787e9b460dd767712ef27cbd2908d9773a3eb697dc7fdde2cf3","review_note":"States the strongest leverage interpretation while limiting the conclusion to an announced threat."}
+      ],
+      "unresolved_questions": [
+        "What legal authority or instrument, if any, will the administration use?",
+        "Will FAA approvals, customs treatment, tariffs, sales or deliveries change?",
+        "Will Canada change market access for Gulfstream or will Bombardier add U.S. manufacturing?"
+      ]
+    }
+  ],
   "deferred_candidates": []
 }
