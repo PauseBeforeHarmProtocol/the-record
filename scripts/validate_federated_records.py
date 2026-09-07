@@ -4,9 +4,8 @@
 The JSON Schema supplies the portable shape contract. This script adds semantic
 rules JSON Schema cannot express cleanly: deterministic fingerprints, origin
 uniqueness, independently derived collision signals, claim/source linkage,
-non-additive counting, and lifecycle graph integrity. It intentionally uses
-only the standard library; if ``jsonschema`` is installed, full Draft 2020-12
-validation runs as an additional check.
+non-additive counting, and lifecycle graph integrity. Full Draft 2020-12
+validation through the pinned jsonschema dependency is mandatory.
 """
 
 from __future__ import annotations
@@ -434,7 +433,8 @@ def validate_schema_with_optional_library(records: Any, schema: Any, report: Rep
     try:
         import jsonschema  # type: ignore
     except ImportError:
-        return "not installed; semantic validator still ran"
+        report.error("schema", "jsonschema is required; install requirements.txt before acceptance")
+        return "unavailable (required)"
 
     try:
         validator_class = jsonschema.validators.validator_for(schema)

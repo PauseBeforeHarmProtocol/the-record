@@ -44,6 +44,14 @@
   }
 
   const toast = document.querySelector('.toast');
+  const revealTarget = () => {
+    let id;
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
+    const card = id && document.getElementById(id);
+    if (card) card.querySelectorAll('details.record-history').forEach((detail) => { detail.open = true; });
+  };
+  window.addEventListener('hashchange', revealTarget);
+  revealTarget();
   const showToast = (msg) => {
     if (!toast) return;
     toast.textContent = msg;

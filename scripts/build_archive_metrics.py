@@ -7,6 +7,8 @@ import re
 from collections import Counter, defaultdict
 from datetime import date, timedelta
 from pathlib import Path
+
+from editorial_state import load_state, matching_review, post_content_hash
 from urllib.parse import parse_qs, urlparse
 
 
@@ -246,6 +248,21 @@ def build_metrics() -> dict:
     registry = json.loads(REGISTRY_PATH.read_text(encoding="utf-8"))
     legacy_result = legacy_metrics(active_legacy)
     current_result = current_metrics(current, ledger)
+    editorial_state = load_state()
+    mapped = sum(matching_review(e, ledger, editorial_state) is not None for e in current)
+    post_reviews = json.loads((ROOT / "data/truth_social_reviews.json").read_text())
+    posts = json.loads((ROOT / "data/truth_social_seed.json").read_text())
+    post_index = {(r["post_id"], r["content_sha256"]): r for r in post_reviews}
+    post_states = [post_index.get((p["id"], post_content_hash(p)), {}) for p in posts]
+    review_traceability = {
+        "current_entries_with_content_bound_review": mapped,
+        "current_entries_with_prior_status_only": len(current) - mapped,
+        "material_development_records": len(editorial_state["developments"]),
+        "retained_posts": len(posts),
+        "retained_post_text_states": dict(sorted(Counter(r.get("text_status", "not_recorded") for r in post_states).items())),
+        "retained_post_media_states": dict(sorted(Counter(r.get("media_status", "not_recorded" if p["media"] else "not_applicable") for p, r in zip(posts, post_states)).items())),
+        "definition": "Review-receipt coverage is separate from prior canonical review-state labels. Missing inspection records do not establish that content is false or that it was reviewed. Post-state counts refer only to the retained fallback, not the upstream archive total.",
+    }
     national_current = current_result["national_entries"]
     national_source_references = current_result["national_source_references"]
     legacy_urls = {
@@ -311,6 +328,8 @@ def build_metrics() -> dict:
             "federated": "data/federated_records.json",
             "legacy_revisions": "data/legacy_revisions.json",
             "archive_registry": "data/archive_registry.json",
+            "editorial_state": "data/editorial_state.json",
+            "truth_social_reviews": "data/truth_social_reviews.json",
         },
         "canonical_sha256": {
             "legacy": sha256(LEGACY_PATH),
@@ -319,6 +338,8 @@ def build_metrics() -> dict:
             "federated": sha256(FEDERATED_PATH),
             "legacy_revisions": sha256(REVISION_PATH),
             "archive_registry": sha256(REGISTRY_PATH),
+            "editorial_state": sha256(ROOT / "data/editorial_state.json"),
+            "truth_social_reviews": sha256(ROOT / "data/truth_social_reviews.json"),
         },
         "totals": {
             "canonical_legacy_rows": len(legacy_rows),
@@ -346,6 +367,7 @@ def build_metrics() -> dict:
         },
         "legacy": legacy_result,
         "current": current_result,
+        "review_traceability": review_traceability,
         "federated": {
             "records": len(federated),
             "states": dict(sorted(federated_states.items())),

@@ -18,42 +18,14 @@ jobs:
           cache: pip
       - name: Install pinned Python dependencies
         run: python -m pip install --requirement requirements.txt
-      - name: Check source-ledger synchronization
-        run: python scripts/sync_source_ledger.py --check
-      - name: Check append-only legacy remediation ledger
+      - name: Run complete acceptance suite
         env:
-          LEGACY_REVISIONS_BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before }}
-        run: |
-          args=(--check)
-          if [[ -n "${LEGACY_REVISIONS_BASE_REF:-}" && ! "$LEGACY_REVISIONS_BASE_REF" =~ ^0+$ ]]; then
-            args+=(--base-ref "$LEGACY_REVISIONS_BASE_REF")
-          fi
-          python scripts/apply_legacy_remediations.py "${args[@]}"
-      - name: Check canonical legacy synchronization and duplicate IDs
-        run: python scripts/sync_legacy_data.py --check
-      - name: Check recovered v13 custody, corrections, and duplicate exclusions
-        run: python scripts/restore_v13_legacy_records.py --check
-      - name: Check archive metrics and surface legacy duplicate candidates
-        run: |
-          python scripts/build_archive_metrics.py --check
-          python -c "import json; d=json.load(open('data/archive_metrics.json', encoding='utf-8')); print('Legacy duplicate candidates (review queue; not an automatic failure):', json.dumps(d['legacy']['duplicate_candidates'], sort_keys=True))"
-      - name: Check generated README totals
-        run: python scripts/sync_readme_metrics.py --check
-      - name: Validate federated records and block reviewed or published duplicates
-        run: python scripts/validate_federated_records.py --self-test
-      - name: Check legacy bridge
-        run: python scripts/build_legacy_bridge.py --check
-      - name: Smoke-test the combined timeline runtime and compatibility redirect
-        run: python scripts/smoke_test_timeline.py
-      - name: Check deterministic packaging
-        run: python scripts/package_current_release.py --check
-      - name: Check current pages
-        run: python scripts/build_current_pages.py --check
-      - name: Validate repository
-        env:
-          CURRENT_REMEDIATION_BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before }}
-        run: python scripts/validate.py
-      - name: Check site JavaScript
-        run: node --check assets/site.js
-      - name: Check Truth Social JavaScript
-        run: node --check assets/truth-feed.js
+          RECORD_BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: python scripts/accept_release.py --receipt "$RUNNER_TEMP/acceptance.json"
+      - name: Preserve actual acceptance results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: acceptance-receipt
+          path: ${{ runner.temp }}/acceptance.json
+          if-no-files-found: error

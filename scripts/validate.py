@@ -17,6 +17,8 @@ from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
 
+from editorial_state import artifact_names, load_state, rolling_window, weekly_entries, validate_snapshot
+
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site" if (ROOT / "site").is_dir() else ROOT
@@ -58,14 +60,17 @@ AGGREGATE_ARTIFACT_SPECS = (
 RELEASE = json.loads((ROOT / "data/release.json").read_text(encoding="utf-8"))
 RELEASE_ISO = RELEASE["release_iso"]
 RELEASE_HUMAN = RELEASE["release_human"]
-WEEK_START = RELEASE["week_start"]
-WEEK_END = RELEASE["week_end"]
+WEEK_START, WEEK_END = rolling_window(RELEASE)
 NEW_ENTRY_IDS = set(RELEASE["new_entry_ids"])
 RELEASE_ARTIFACT_STEM = f'{RELEASE_ISO}_v{RELEASE["version"]}'
 NATIONAL_PACK_NAME = f"THE_RECORD_NATIONAL_UPDATE_PACK_{RELEASE_ARTIFACT_STEM}.zip"
 COMPLETE_PACK_NAME = f"THE_RECORD_CURRENT_UPDATE_PACK_{RELEASE_ARTIFACT_STEM}.zip"
 RUN_RECEIPT_NAME = f"THE_RECORD_RUN_RECEIPT_{RELEASE_ARTIFACT_STEM}.md"
 IN6_CURRENT_BRIEF_NAME = f"THE_RECORD_IN6_CURRENT_BRIEF_{RELEASE_ARTIFACT_STEM}.md"
+RESOLVED_ARTIFACTS = artifact_names(RELEASE)
+NATIONAL_PACK_NAME = RESOLVED_ARTIFACTS["national_pack"]
+COMPLETE_PACK_NAME = RESOLVED_ARTIFACTS["complete_pack"]
+IN6_CURRENT_BRIEF_NAME = RESOLVED_ARTIFACTS["in6_brief"]
 
 
 def fail(message: str) -> None:
@@ -905,7 +910,7 @@ with (SITE / "data/source_ledger.csv").open(encoding="utf-8", newline="") as han
 if csv_ids != set(ledger):
     fail("CSV and JSON source-ledger IDs differ")
 
-weekly_ids = {entry["id"] for entry in entries if WEEK_START <= entry["date"] <= WEEK_END}
+weekly_ids = {entry["id"] for entry in weekly_entries(entries, RELEASE, load_state())}
 weekly_soup = BeautifulSoup((SITE / "weekly/index.html").read_text(encoding="utf-8"), "html.parser")
 rendered_weekly_ids = {card.get("id") for card in weekly_soup.select("[data-week-card]")}
 if rendered_weekly_ids != weekly_ids:

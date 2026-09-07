@@ -1,5 +1,9 @@
 # Merge instructions
 
+The required acceptance entry point is `python scripts/accept_release.py --base-ref BASE_COMMIT --receipt /tmp/record-acceptance.json`. Use the actual PR base commit; missing or invalid ancestry must fail, not skip checks. GitHub Actions invokes the identical runner and uploads its machine-readable receipt. The ordered checks below remain the dependency specification, not a substitute for the complete runner.
+
+For 10.32.0 onward, also apply the reliability contract in `EDITORIAL_AUTOMATION.md`: content-bound claim and reasoning review receipts, exact research windows, append-only publication history, durable candidate dispositions, separate text/media inspection states, and immutable full-snapshot references for strictly feed-only releases. No migration or successful structural test constitutes a new source inspection. On software-only releases, preserve the news cutoff and canonical factual content; disclose missing historic claim-level receipts instead of fabricating them.
+
 1. Review the maintenance branch against `main`.
 2. Confirm historical edits were made in `data/legacy_entries.json`, not independently in `the-record.html`, `docs/the-record.html`, or `entries_array.js`. Preserve `THE-RECORD-COMPLETE.pdf`, companion documents, and historical release artifacts unless the pull request explicitly replaces them with regenerated, reviewed versions.
 3. Run the deterministic acceptance sequence in this exact order:

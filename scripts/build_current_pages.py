@@ -7,6 +7,9 @@ import json
 from collections import defaultdict
 from pathlib import Path
 
+from editorial_state import (LOCAL_ZONE, activity_date, activity_key, artifact_names, developments,
+                             load_state, matching_review, parse_utc, rolling_window, weekly_entries)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 RELEASE = json.loads((ROOT / "data/release.json").read_text(encoding="utf-8"))
@@ -17,9 +20,9 @@ VERSION = RELEASE["version"]
 RELEASE_ISO = RELEASE["release_iso"]
 RELEASE_DATE = RELEASE["release_human"]
 CHECKED_AT = RELEASE["checked_at"]
-WEEK_START = RELEASE["week_start"]
-WEEK_END = RELEASE["week_end"]
-WEEK_LABEL = RELEASE["week_label"]
+EDITORIAL_STATE = load_state()
+WEEK_START, WEEK_END = rolling_window(RELEASE)
+WEEK_LABEL = f"{WEEK_START} through {WEEK_END}"
 CUTOFF_START = RELEASE["cutoff_start"]
 NEW_ENTRY_IDS = set(RELEASE["new_entry_ids"])
 RELEASE_CORRECTIONS = RELEASE.get("corrections", [])
@@ -34,6 +37,10 @@ RELEASE_ARTIFACT_STEM = f"{RELEASE_ISO}_v{VERSION}"
 NATIONAL_PACK_NAME = f"THE_RECORD_NATIONAL_UPDATE_PACK_{RELEASE_ARTIFACT_STEM}.zip"
 COMPLETE_PACK_NAME = f"THE_RECORD_CURRENT_UPDATE_PACK_{RELEASE_ARTIFACT_STEM}.zip"
 IN6_CURRENT_BRIEF_NAME = f"THE_RECORD_IN6_CURRENT_BRIEF_{RELEASE_ARTIFACT_STEM}.md"
+ARTIFACT_NAMES = artifact_names(RELEASE)
+NATIONAL_PACK_NAME = ARTIFACT_NAMES["national_pack"]
+COMPLETE_PACK_NAME = ARTIFACT_NAMES["complete_pack"]
+IN6_CURRENT_BRIEF_NAME = ARTIFACT_NAMES["in6_brief"]
 SITE_ROOT = "/the-record/"
 
 
@@ -100,12 +107,39 @@ def source_list(entry: dict, ledger: dict) -> str:
     )
 
 
+def review_coverage_panel() -> str:
+    review = ARCHIVE_METRICS["review_traceability"]
+    return f'''<section class="integrity-note"><h2>Review receipt coverage</h2><table><thead><tr><th>Distinct measure</th><th>Count</th></tr></thead><tbody><tr><td>Current entries with a content-bound claim-level receipt</td><td>{review["current_entries_with_content_bound_review"]}</td></tr><tr><td>Current entries retaining only their prior review-state label</td><td>{review["current_entries_with_prior_status_only"]}</td></tr><tr><td>Preserved material-development records (not additional events)</td><td>{review["material_development_records"]}</td></tr></tbody></table><p>Existing review labels were not converted into new inspection claims. New or changed content must carry source mappings and a review tied to its exact version. <a href="{site_path('data/editorial_state.json')}">Inspect the ledger</a>. Text and media inspection coverage for the retained feed is recorded separately in <a href="{site_path('data/archive_metrics.json')}">metrics JSON</a>.</p></section>'''
+
+
 def record_card(entry: dict, ledger: dict) -> str:
     searchable = " ".join([
         entry["title"], entry["dek"], entry.get("maybe_therefore", ""),
         *entry["tags"], *entry["institutions"], *entry["facts"]
     ]).lower()
-    facts = "".join(f"<li>{esc(fact)}</li>" for fact in entry["facts"])
+    review = matching_review(entry, ledger, EDITORIAL_STATE)
+    claims = {c["fact_index"]: c for c in review["claims"]} if review else {}
+    facts = ""
+    for index, fact in enumerate(entry["facts"]):
+        citations = " ".join(
+            f'<a href="{esc(ledger[s["source_id"]]["url"], quote=True)}" target="_blank" rel="noopener" title="{esc(s["locator"], quote=True)}">[{n + 1}]</a>'
+            for n, s in enumerate(claims.get(index, {}).get("supports", []))
+        )
+        facts += f'<li>{esc(fact)} {citations}</li>'
+    changes = developments(entry, EDITORIAL_STATE)
+    updated = activity_date(entry, EDITORIAL_STATE)
+    history = ""
+    if changes:
+        items = "".join(f'<li><time>{esc(parse_utc(c["as_of_utc"]).astimezone(LOCAL_ZONE).strftime("%Y-%m-%d %-I:%M %p %Z"))}</time> — {esc(c["summary"])} '
+                        f'<a href="{site_path(esc(c["provenance_path"], quote=True))}">Publication receipt</a></li>' for c in changes)
+        history = f'<aside class="integrity-note"><strong>Last recorded material update: {updated}</strong><p>{esc(changes[0]["summary"])}</p><details><summary>Dated update history ({len(changes)})</summary><ul>{items}</ul><p class="micro">These are update evidence-as-of times in Indianapolis, not original event dates or deployment times. Migrated receipts do not assert a new source inspection.</p></details></aside>'
+    audit_note = (
+        f'Claim-level review recorded by {esc(review["reviewer"]["name"])} ({esc(review["reviewer"]["kind"])}), {esc(review["reviewed_at"])}; bound to this content version.'
+        if review else 'Prior review state retained. Claim-level source mapping and a content-bound review receipt have not yet been recorded; this maintenance does not assert a new review.'
+    )
+    expanded = len(entry["facts"]) <= 6 and not changes
+    evidence_open = '' if expanded else '<details class="record-history"><summary>Read complete facts, analysis and response</summary>'
+    evidence_close = '' if expanded else '</details>'
     chips = "".join(f'<span class="chip">{esc(tag)}</span>' for tag in entry["tags"])
     corrections = ""
     if entry.get("corrections"):
@@ -120,14 +154,17 @@ def record_card(entry: dict, ledger: dict) -> str:
     return f'''<article class="record-card" id="{esc(entry["id"], quote=True)}" data-week-card data-scope="{esc(entry["scope"], quote=True)}" data-searchable="{esc(searchable, quote=True)}">
   <div class="record-card__head"><div><div class="eyebrow">{esc(entry["id"])} · {esc(entry["display_date"])}</div><h2>{esc(entry["title"])}</h2><p class="dek">{esc(entry["dek"])}</p></div><span class="status-pill">{esc(entry["evidence"])}</span></div>
   <div class="chips">{chips}</div>
+{history}
+{evidence_open}
   <div class="three-layer">
     <section class="layer layer--facts"><h3>The facts</h3><ul>{facts}</ul></section>
     <section class="layer layer--significance"><h3>Significance</h3><p>{esc(entry["significance"])}</p></section>
     <section class="layer layer--goalpost"><h3>Goalpost / response</h3><p>{esc(entry["goalpost"])}</p></section>
 {maybe_therefore}
   </div>
+{evidence_close}
 {corrections}
-  <details class="sources"><summary>Sources and verification notes</summary><ul>{source_list(entry, ledger)}</ul><p class="micro">Checked {esc(entry["checked_at"])}. Canonical review state: {esc(entry["review_status"])}. Source type is shown because an official statement establishes what an institution says; it does not independently prove the institution’s interpretation.</p></details>
+  <details class="sources"><summary>Sources and verification notes</summary><ul>{source_list(entry, ledger)}</ul><p class="micro">Checked {esc(entry["checked_at"])}. Canonical review state: {esc(entry["review_status"])}. Source type is shown because an official statement establishes what an institution says; it does not independently prove the institution’s interpretation.</p><p class="micro">{audit_note} <a href="{site_path('data/editorial_state.json')}">Review ledger</a></p></details>
   <div class="card-actions"><a class="button button--primary" href="{site_path(esc(entry["pack_path"], quote=True))}" download>Download this entry</a><button class="button button--ghost copy-link" type="button" data-copy="#{esc(entry["id"], quote=True)}">Copy entry link</button></div>
 </article>'''
 
@@ -147,7 +184,7 @@ def scoped_page(entries: list[dict], ledger: dict, scope: str) -> str:
         download_text = "Download IN-6 section"
     selected = sorted(
         (entry for entry in entries if entry["scope"] == scope),
-        key=lambda entry: (entry["date"], entry["id"]),
+        key=lambda entry: activity_key(entry, EDITORIAL_STATE),
         reverse=True,
     )
     cards = "\n".join(record_card(entry, ledger) for entry in selected)
@@ -156,11 +193,7 @@ def scoped_page(entries: list[dict], ledger: dict, scope: str) -> str:
 
 
 def weekly_page(entries: list[dict], ledger: dict) -> str:
-    weekly = sorted(
-        (entry for entry in entries if WEEK_START <= entry["date"] <= WEEK_END),
-        key=lambda entry: (entry["date"], entry["id"]),
-        reverse=True,
-    )
+    weekly = weekly_entries(entries, RELEASE, EDITORIAL_STATE)
     national_count = sum(entry["scope"] == "national" for entry in weekly)
     in6_count = sum(entry["scope"] == "in6" for entry in weekly)
     cards = "\n".join(record_card(entry, ledger) for entry in weekly)
@@ -176,7 +209,7 @@ def weekly_page(entries: list[dict], ledger: dict) -> str:
         else ""
     )
     new_record_word = "record" if len(NEW_ENTRY_IDS) == 1 else "records"
-    body = f'''<div class="container"><header class="page-head"><div class="eyebrow">What happened this week</div><h1>{WEEK_LABEL}</h1><p>This is a reproducible seven-day view anchored to the {RELEASE_DATE} release—not a browser-clock guess. It includes {len(weekly)} records: {national_count} national and {in6_count} IN-6.</p><div class="scope-filter" aria-label="Filter weekly records"><button class="button button--primary" type="button" data-week-filter="all" aria-pressed="true">All {len(weekly)}</button><button class="button button--ghost" type="button" data-week-filter="national" aria-pressed="false">National {national_count}</button><button class="button button--ghost" type="button" data-week-filter="in6" aria-pressed="false">IN-6 {in6_count}</button></div></header>{search_panel("Search this week")}<div class="integrity-note"><h2>Currentness boundary</h2><p>The national current layer was researched through {CHECKED_AT}. The backfill in {editorial_context} covers qualifying developments beginning {CUTOFF_START} and added or materially refreshed {len(NEW_ENTRY_IDS)} national {new_record_word}.{maintenance_note} Per-entry evidence state and check times remain visible.</p></div><section class="record-list">{cards}</section></div>'''
+    body = f'''<div class="container"><header class="page-head"><div class="eyebrow">What happened this week</div><h1>{WEEK_LABEL}</h1><p>This rolling seven-day view ends at the preserved editorial cutoff, not the browser clock. Original event dates remain unchanged. It includes original events and recorded material updates, counted once each: {len(weekly)} records; {national_count} national and {in6_count} IN-6.</p><div class="scope-filter" aria-label="Filter weekly records"><button class="button button--primary" type="button" data-week-filter="all" aria-pressed="true">All {len(weekly)}</button><button class="button button--ghost" type="button" data-week-filter="national" aria-pressed="false">National {national_count}</button><button class="button button--ghost" type="button" data-week-filter="in6" aria-pressed="false">IN-6 {in6_count}</button></div></header>{search_panel("Search this week")}<div class="integrity-note"><h2>Currentness boundary</h2><p>The national current layer was researched through {CHECKED_AT}. The backfill in {editorial_context} covers qualifying developments beginning {CUTOFF_START} and added or materially refreshed {len(NEW_ENTRY_IDS)} national {new_record_word}.{maintenance_note} Per-entry evidence state and check times remain visible.</p></div><section class="record-list">{cards}</section></div>'''
     return document(title="Weekly record · The Record", description=f"The Record weekly accountability view for {WEEK_LABEL}.", body=body, active="weekly")
 
 
@@ -294,6 +327,7 @@ def quality_page() -> str:
     body = f'''<div class="container"><header class="page-head"><div class="eyebrow">Generated QA inputs updated {esc(ARCHIVE_METRICS["quality_inputs_updated_at"])}</div><h1>Archive quality dashboard</h1><p>Editorial news coverage remains checked through <strong>{esc(ARCHIVE_METRICS["editorial_checked_at"])}</strong>; archive-network measurements were checked through <strong>{esc(ARCHIVE_METRICS["external_registry_checked_at"])}</strong>, and legacy revisions are recorded through <strong>{esc(ARCHIVE_METRICS["legacy_revisions_through"])}</strong>. These totals are generated from canonical JSON. “Legacy-unreviewed” does not mean false; it means the record has not yet been revalidated under the stronger current-layer standard. Missing interpretive layers are measured as work to do, never silently invented.</p><div class="button-row"><a class="button button--primary" href="{site_path('data/archive_metrics.json')}" download>Download metrics JSON</a><a class="button button--ghost" href="{site_path('data/legacy_entries.json')}" download>Download canonical legacy JSON</a><a class="button button--ghost" href="{site_path('data/legacy_revisions.json')}" download>Download revision ledger</a><a class="button button--ghost" href="{site_path('data/federated_records.json')}" download>Download federation crosswalks</a><a class="button button--ghost" href="{site_path('archive/index.html#archive-network')}">Open Archive Network</a></div></header>
 <section class="stats" aria-label="Generated archive totals"><div class="stat"><strong>{totals["full_archive_runtime_entries"]:,}</strong><span>active entries rendered in the full archive</span></div><div class="stat"><strong>{totals["full_archive_runtime_source_references"]:,}</strong><span>attached source references</span></div><div class="stat"><strong>{totals["full_archive_runtime_unique_urls"]:,}</strong><span>distinct source URLs</span></div><div class="stat"><strong>{awaiting_review:,}</strong><span>active legacy entries awaiting completed current-standard review</span></div><div class="stat"><strong>{interpretive["maybe_therefore_missing"]:,}</strong><span>active legacy entries awaiting Maybe / Therefore</span></div><div class="stat"><strong>{totals["superseded_legacy_tombstones"]:,}</strong><span>retired duplicate tombstones excluded from totals</span></div></section>
 {coverage_note}
+{review_coverage_panel()}
 <div class="section-head"><div><div class="eyebrow">Evidence health</div><h2>What the generated audit found</h2></div><p>Source presence and source sufficiency are different controls.</p></div><section class="method-grid">
 <article class="method-card"><h2>{sources["entries_with_one_source"]:,} single-source entries</h2><p>{sources["entries_with_one_source_percent"]}% of legacy entries currently cite one source. A single direct primary record may be sufficient for a narrow formal fact; otherwise these records enter the remediation queue.</p></article>
 <article class="method-card"><h2>{sources["entries_relying_only_on_low_specificity_sources"]:,} weak-link-only entries</h2><p>{sources["entries_relying_only_on_low_specificity_sources_percent"]}% currently rely only on publisher homepages, search results, or query-result pages rather than direct supporting documents.</p></article>
@@ -465,6 +499,19 @@ def downloads_page(entries: list[dict]) -> str:
         ("Source ledger CSV", f"A flat audit table of all {ledger_count} sources linked in this current layer.", site_path("data/source_ledger.csv"), ROOT / "data/source_ledger.csv", "Download source CSV"),
         ("Artifact checksums", "SHA-256 values for release artifacts, including every individual entry pack.", site_path("artifacts/SHA256SUMS.txt"), ROOT / "artifacts/SHA256SUMS.txt", "Download checksums"),
     ]
+    featured.extend([
+        ("Review and development ledger", "Content-bound claim/source mappings, reasoning-review receipts and dated publication history. Missing mappings remain explicitly unrecorded.", site_path("data/editorial_state.json"), ROOT / "data/editorial_state.json", "Download review ledger"),
+        ("Post inspection states", "Text and media inspection states are separate from feed acquisition and from independent verification of claims.", site_path("data/truth_social_reviews.json"), ROOT / "data/truth_social_reviews.json", "Download post review states"),
+        ("Deferred research queue", "Unresolved candidates retain their reasons, provenance and recheck triggers.", site_path("data/research_queue.json"), ROOT / "data/research_queue.json", "Download research queue"),
+        ("Latest release receipt", "Release scope, feed check time and review coverage; actual test results are retained separately with CI.", site_path(f"artifacts/{ARTIFACT_NAMES['receipt']}"), ROOT / "artifacts" / ARTIFACT_NAMES["receipt"], "Download latest receipt"),
+    ])
+    if RELEASE.get("artifact_mode") == "feed-only":
+        snapshot_version = RELEASE["editorial_snapshot"]["version"]
+        for index in range(3):
+            title, text, href, path, label = featured[index]
+            snapshot_label = ("Complete evidence pack", "National evidence pack", "IN-6 brief")[index]
+            featured[index] = (f"Editorial snapshot v{snapshot_version} — {snapshot_label}",
+                               "Unchanged canonical records. Embedded release metadata, metrics, bridge and receipt belong to that historical snapshot, not the latest feed check.", href, path, label)
     featured_html = "".join(download_card(title, text, href, sha(path), label) for title, text, href, path, label in featured)
     individual_html = "".join(
         download_card(entry["title"], entry["dek"], site_path(entry["pack_path"]), sha(ROOT / entry["pack_path"]), "Download this entry")
@@ -531,10 +578,7 @@ CORRECTION → TIMESTAMPED AND PRESERVED</pre></div>'''
 def home_page(entries: list[dict], ledger: dict) -> str:
     national_count = sum(entry["scope"] == "national" for entry in entries)
     totals = ARCHIVE_METRICS["totals"]
-    weekly = sorted(
-        (entry for entry in entries if WEEK_START <= entry["date"] <= WEEK_END),
-        key=lambda entry: (entry["date"], entry["id"]), reverse=True
-    )
+    weekly = weekly_entries(entries, RELEASE, EDITORIAL_STATE)
     weekly_links = "".join(
         f'<li><span class="chip">{"National" if entry["scope"] == "national" else "IN-6"}</span><a href="{site_path(entry["scope"] + "/index.html#" + esc(entry["id"], quote=True))}">{esc(entry["title"])}</a></li>'
         for entry in weekly[:5]
@@ -560,7 +604,7 @@ def home_page(entries: list[dict], ledger: dict) -> str:
     body = f'''<section class="hero"><div class="hero-inner"><div><div class="kicker">A living Trump accountability archive · updated {RELEASE_DATE}</div><h1>The full searchable archive, not just the latest headline.</h1><p>This page is the editorial front door: a concise view of newly verified developments. The full searchable archive currently renders {totals["full_archive_runtime_entries"]:,} active dated entries with {totals["full_archive_runtime_source_references"]:,} attached source references across years, topics, people, institutions, and the timeline; its coverage status and legacy review backlog remain disclosed.</p><div class="hero-actions"><a class="button button--primary" href="{site_path('the-record.html#home')}">Enter the full archive</a><a class="button button--secondary" href="{site_path('the-record.html#timeline')}">Search the timeline</a><a class="button button--ghost" href="{site_path('weekly/index.html')}">Latest seven days</a></div></div><aside class="hero-stamp"><div class="eyebrow">Archive state</div><strong>Current through {CHECKED_AT}</strong><p>{archive_state_summary}</p></aside></div><figure class="hero-art"><img src="{site_path('assets/brand/the-record-hero.png')}" alt="An illuminated evidence archive connecting sourced records across a living accountability timeline" width="1672" height="941" fetchpriority="high" decoding="async"></figure></section>
 <div class="container"><section class="stats" aria-label="Archive and release statistics"><div class="stat"><strong>{totals["full_archive_runtime_entries"]:,}</strong><span>generated full-archive entries</span></div><div class="stat"><strong>{totals["full_archive_runtime_unique_urls"]:,}</strong><span>distinct full-archive source URLs</span></div><div class="stat"><strong>{national_count}</strong><span>verified current national entries</span></div><div class="stat"><strong>{len(weekly)}</strong><span>records in this seven-day window</span></div></section>
 <section class="archive-feature"><div class="archive-feature__copy"><div class="eyebrow">The research layer</div><h2>The archive is where the whole project lives.</h2><p>The landing page stays readable by showing a curated current layer. The archive brings historical entries, sources, topic folders, people, statistics, methodology, current additions, and Trump's raw Truth Social feed into one searchable application, while the quality dashboard discloses review backlogs and generated coverage status.</p><div class="button-row"><a class="button button--primary" href="{site_path('the-record.html#home')}">Browse the archive</a><a class="button button--ghost" href="{site_path('the-record.html#timeline')}">Open the full timeline</a><a class="button button--ghost" href="{site_path('archive/index.html#archive-network')}">Explore the Archive Network</a></div></div><div class="archive-paths" aria-label="Archive research paths"><a href="{site_path('the-record.html#topics')}"><strong>Topics</strong><span>Courts, democracy, immigration, media, foreign influence, and more</span></a><a href="{site_path('the-record.html#years')}"><strong>Years</strong><span>Move through covered dates from 1927 into the current term; see Quality for coverage status</span></a><a href="{site_path('the-record.html#politicians')}"><strong>People</strong><span>Find officeholders, advisers, opponents, and connected events</span></a><a href="{site_path('the-record.html#timeline')}"><strong>Search</strong><span>Query dates, names, agencies, events, and source-linked entries</span></a><a href="{site_path('the-record.html#feed')}"><strong>Truth Social</strong><span>Search the raw public posting record without turning every post into an archive finding</span></a><a href="{site_path('quality/index.html')}"><strong>Quality</strong><span>Inspect generated counts, source health, review status, and coverage continuity</span></a></div></section>
-<section class="weekly-highlight"><div><div class="eyebrow">What happened this week</div><h2>{len(weekly)} records · {WEEK_LABEL}</h2><p>A compact, fixed seven-day window. Use it for the latest signal; use the full searchable archive for the broader record, with coverage status and review state disclosed.</p><a class="button button--primary" href="{site_path('weekly/index.html')}">Open the weekly record</a></div><ul>{weekly_links}</ul></section>
+<section class="weekly-highlight"><div><div class="eyebrow">What happened this week</div><h2>{len(weekly)} records · {WEEK_LABEL}</h2><p>A rolling seven-day view of original events and recorded material updates. Use it for recent changes; use the full searchable archive for the broader record, with coverage status and review state disclosed.</p><a class="button button--primary" href="{site_path('weekly/index.html')}">Open the weekly record</a></div><ul>{weekly_links}</ul></section>
 <div class="section-head"><div><div class="eyebrow">Current layer</div><h2>Focused views for the newest material</h2></div><p>These pages summarize and package recent verified additions. They do not create a second count for records already bridged into the searchable archive.</p></div><section class="route-grid">
 <article class="route-card"><div class="eyebrow">Latest</div><h3>National current record</h3><p>{national_count} sourced developments, each separated into facts, significance, and the administration’s response.</p><a class="button button--ghost" href="{site_path('national/index.html')}">Open latest national</a></article>
 <article class="route-card"><div class="eyebrow">Weekly</div><h3>What happened this week</h3><p>{len(weekly)} current records in a stable {WEEK_LABEL} window, with scope filters and search.</p><a class="button button--ghost" href="{site_path('weekly/index.html')}">Open weekly</a></article>
