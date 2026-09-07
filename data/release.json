@@ -1,34 +1,26 @@
 {
-  "version": "10.32.0",
+  "version": "10.33.0",
   "artifact_mode": "full",
-  "engineering_revision": {
-    "base_version": "10.31.1",
-    "base_commit": "06d25595b582f214c6367ad52f9a7df8e5845de3",
-    "scope": "Update-aware digest, content-bound review ledger, explicit feed inspection states, durable candidate queue, strict shared acceptance and immutable feed-only snapshot reuse.",
-    "editorial_content_changed": false,
-    "news_research_performed": false,
-    "authorization": "Phillip Linstrum authorized the proposed software upgrades; this does not assert a new human review of archived factual content."
-  },
   "research_window": {
-    "from_utc": "2026-09-07T10:02:00Z",
-    "through_utc": "2026-09-07T16:02:00Z",
-    "precision": "minute",
+    "from_utc": "2026-09-07T16:02:00Z",
+    "through_utc": "2026-09-07T22:10:00Z",
+    "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Migrated from the existing displayed editorial window; seconds were not recorded. No later research coverage is claimed by this engineering release."
+    "note": "Continuous research coverage begins at the prior release's preserved UTC boundary and ends at this run's evidence cutoff."
   },
   "release_iso": "2026-09-07",
   "release_human": "September 7, 2026",
-  "checked_at": "2026-09-07 12:02 PM EDT",
-  "previous_version": "10.31.1",
+  "checked_at": "2026-09-07 6:10 PM EDT",
+  "previous_version": "10.32.0",
   "previous_checked_at": "2026-09-07 12:02 PM EDT",
-  "window_started_at": "2026-09-07 6:02 AM EDT",
-  "window_ended_at": "2026-09-07 12:02 PM EDT",
+  "window_started_at": "2026-09-07 12:02 PM EDT",
+  "window_ended_at": "2026-09-07 6:10 PM EDT",
   "week_start": "2026-09-06",
   "week_end": "2026-09-12",
   "week_label": "September 6–12, 2026",
   "cutoff_start": "2026-08-17",
-  "new_entry_ids": [],
-  "added_entry_ids": [],
+  "new_entry_ids": ["NAT-2026-09-07-001"],
+  "added_entry_ids": ["NAT-2026-09-07-001"],
   "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {"entry_id":"NAT-2026-08-31-014","target_id":"NAT-2026-08-17-001","decision":"false_positive","notes":"Vance's end-times statement was made in a broad faith interview and did not explicitly concern Iran or any particular official act. It remains a distinct governance and risk-framing statement rather than being merged into the Iran/Hormuz war record."},
@@ -39,18 +31,19 @@
     {"entry_id":"NAT-2026-09-04-014","target_id":"NAT-2026-08-31-008","decision":"false_positive","notes":"The national measles surveillance outcome concerns a vaccine-preventable infectious disease. The August 31 newborn record measures vitamin K nonreceipt, which is not a vaccine and involves a different intervention, population and outcome."},
     {"entry_id":"NAT-2026-09-04-017","target_id":"LEG-004706","decision":"distinct_lifecycle_stage","notes":"LEG-004706 records the June 22 district-court summary judgment vacating modified SAVE. The new record covers the September 4 appellate refusal to stay that judgment and the expedited merits appeal; both stages remain cross-referenced under the same litigation."},
     {"entry_id":"NAT-2026-09-04-018","target_id":"NAT-2026-08-29-001","decision":"distinct_lifecycle_stage","notes":"The Central African Republic record covers a second implemented flight to that country. The Guyana record covers the first implemented group under a separate bilateral arrangement, different people and different post-transfer terms."},
-    {"entry_id":"NAT-2026-09-04-018","target_id":"NAT-2026-08-20-001","decision":"distinct_lifecycle_stage","notes":"The Liberia record documents a separate agreement and capacity announcement. The Guyana record documents actual arrival of a different six-person group under a one-year temporary arrangement; neither is a duplicate of the other."}
+    {"entry_id":"NAT-2026-09-04-018","target_id":"NAT-2026-08-20-001","decision":"distinct_lifecycle_stage","notes":"The Liberia record documents a separate agreement and capacity announcement. The Guyana record documents actual arrival of a different six-person group under a one-year temporary arrangement; neither is a duplicate of the other."},
+    {"entry_id":"NAT-2026-09-07-001","target_id":"NAT-2026-09-04-006","decision":"distinct_lifecycle_stage","notes":"The September 4 record concerns a conditional threat to restrict trade with unspecified deficit countries if the Federal Reserve did not cut rates. The September 7 Bombardier statement names one company, ties U.S. market access to domestic manufacturing and arises in a separate Canada aviation dispute; neither threat had an implementing instrument by its cutoff."}
   ],
   "rejected_candidates": [
-    {"title":"Twenty-four new Trump Truth Social posts","reason":"The posts comprised Labor Day and midterm rhetoric, repeated SAVE America Act advocacy, a link to an Iran opinion report, a February ETF-tax claim, routine monument and fountain maintenance, and 15 image-only posts. They remain in the separate raw-post feed because none independently established a new material federal action, ruling, expenditure or measured policy result."},
-    {"title":"Repeated threat to sue the Center for American Progress and its supporters","reason":"Trump republished a threat whose substance and proposed contributor defendants had already been reported in August. No complaint, docket, demand or other new legal lifecycle event was located by cutoff, so the post is retained as presidential publication evidence rather than promoted as a new action."},
-    {"title":"Labor Day fuel-price follow-up","reason":"Associated Press repeated the $4.14 regular-gas average, record diesel prices, 98% refinery utilization and overlapping war, refinery and global-supply causes already captured in the Iran/Hormuz record. The later story supplied corroboration but no materially different measurement, government action or policy outcome."},
-    {"title":"Record U.S. imports of Congolese copper","reason":"Reuters measured a July import shift associated with increased Congolese output, improved quality, discounts and shipments ahead of a possible tariff. Because no tariff was implemented and the multi-cause market result does not yet test a completed administration action, it remains a research lead rather than a padded national record."},
-    {"title":"Mail-ballot and Ukraine diplomacy follow-ups","reason":"New reporting produced no Supreme Court order, ceasefire, agreement or other lifecycle change beyond the pending filing and completed meetings already captured in existing records."},
-    {"title":"September 8 Federal Register public-inspection queue","reason":"Potentially material FCC direct-to-device and Interior Alaska production-site proposals were filed before this review window and carry September 8 publication dates after the cutoff. They were not backdated into this release and remain candidates for the next evidence window."},
-    {"title":"Legacy duplicate-candidate batch","reason":"The three surfaced same-date heading pairs were inspected and concern different courts, parties, authorities and events. No responsible merge, correction or guarded historical revision was warranted; the disclosed queue remains visible."},
-    {"title":"External archive discovery leads","reason":"All four registered archives were rechecked at their primary project pages or official public endpoints. Their independently labeled measurements remained unchanged or could not be freshly verified, and no upstream item advanced without original-source inspection and full Record review."}
+    {"title":"Six other new Trump Truth Social posts","reason":"A Columbus-statue message was ceremonial, a July producer-price story was old, and four posts were image, video or a media repost whose files could not be independently retrieved for inspection. Their text states and media-access limits are recorded separately; none supplied independently verified evidence of a new material federal action."},
+    {"title":"New Mexico renaming suggestion","reason":"Trump promoted renaming New Mexico as New America, but no federal instrument was issued and the federal government cannot unilaterally rename a state. The suggestion remains rhetoric rather than an operative national action."},
+    {"title":"Cuba sanctions and negotiations follow-up","reason":"Cuba's foreign minister attributed severe economic and electricity effects to U.S. policy and said no negotiations were under way. The consequential figures and causal claims were Cuban government assertions, and the no-talks posture did not independently establish a new U.S. action or measured policy result beyond the existing Cuba record."},
+    {"title":"Ukraine diplomacy follow-ups","reason":"British and Russian statements described continued interest in a ceasefire or possible future talks but announced no negotiation schedule, agreement, nationwide ceasefire or other lifecycle change beyond the completed meetings already recorded."},
+    {"title":"United Nations criticism of U.S. detention deaths and electric-shock gloves","reason":"The remarks repeated concerns about subjects already documented but did not add a new U.S. order, investigation, adjudicated finding or independently measured implementation result in this window."},
+    {"title":"September 8 Federal Register public-inspection queue","reason":"Potentially material FCC direct-to-device and Interior Alaska production-site proposals carry September 8 publication dates after this cutoff. They remain queued and were not backdated into this release."},
+    {"title":"Legacy quality batch","reason":"No objective record-specific date, source, contamination or duplicate correction was established in the small review batch, so no historical text or revision ledger was changed."},
+    {"title":"External archive discovery leads","reason":"All four registered archives were rechecked. Their measurements remain in separate upstream units, and no external item advanced without original-source inspection and full Record review."}
   ],
   "corrections": [],
-  "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (scheduled feed validation)"
+  "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence."
 }
