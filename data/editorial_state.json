@@ -1585,6 +1585,66 @@
       "provenance_path": "artifacts/THE_RECORD_RUN_RECEIPT_2026-09-07_v10.33.0.md",
       "provenance_sha256": "06178901d0e3342bd11288e90c892cd9a88072f7fbf6e29d2694a17ab992f7c5",
       "note": "The event date remains September 7; this receipt records the evidence cutoff and publication decision."
+    },
+    {
+      "change_id": "10.34.0:NAT-2026-08-25-005",
+      "entry_id": "NAT-2026-08-25-005",
+      "as_of_utc": "2026-09-08T04:01:32Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.34.0",
+      "summary": "Materially refreshed with the September 5 Pacific interdiction and vessel sinking.",
+      "provenance_path": "data/release.json",
+      "provenance_sha256": "a9e5ded7f9bc472dff29572e4641248c29d116a1bee12bacfcf0bfdf0bd8f3d0",
+      "note": "The original event date remains preserved; this development records the evidence cutoff and publication decision."
+    },
+    {
+      "change_id": "10.34.0:NAT-2026-09-08-002",
+      "entry_id": "NAT-2026-09-08-002",
+      "as_of_utc": "2026-09-08T04:01:32Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.34.0",
+      "summary": "Added in release 10.34.0.",
+      "provenance_path": "data/release.json",
+      "provenance_sha256": "a9e5ded7f9bc472dff29572e4641248c29d116a1bee12bacfcf0bfdf0bd8f3d0",
+      "note": "The original event date remains preserved; this development records the evidence cutoff and publication decision."
+    },
+    {
+      "change_id": "10.34.0:NAT-2026-09-08-001",
+      "entry_id": "NAT-2026-09-08-001",
+      "as_of_utc": "2026-09-08T04:01:32Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.34.0",
+      "summary": "Added in release 10.34.0.",
+      "provenance_path": "data/release.json",
+      "provenance_sha256": "a9e5ded7f9bc472dff29572e4641248c29d116a1bee12bacfcf0bfdf0bd8f3d0",
+      "note": "The original event date remains preserved; this development records the evidence cutoff and publication decision."
+    },
+    {
+      "change_id": "10.34.0:NAT-2026-09-08-003",
+      "entry_id": "NAT-2026-09-08-003",
+      "as_of_utc": "2026-09-08T04:01:32Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.34.0",
+      "summary": "Added in release 10.34.0.",
+      "provenance_path": "data/release.json",
+      "provenance_sha256": "a9e5ded7f9bc472dff29572e4641248c29d116a1bee12bacfcf0bfdf0bd8f3d0",
+      "note": "The original event date remains preserved; this development records the evidence cutoff and publication decision."
+    },
+    {
+      "change_id": "10.34.0:NAT-2026-08-31-015",
+      "entry_id": "NAT-2026-08-31-015",
+      "as_of_utc": "2026-09-08T04:01:32Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.34.0",
+      "summary": "Added in release 10.34.0.",
+      "provenance_path": "data/release.json",
+      "provenance_sha256": "a9e5ded7f9bc472dff29572e4641248c29d116a1bee12bacfcf0bfdf0bd8f3d0",
+      "note": "The original event date remains preserved; this development records the evidence cutoff and publication decision."
     }
   ],
   "reviews": [
@@ -1593,15 +1653,32 @@
       "entry_id": "NAT-2026-09-07-001",
       "content_sha256": "42b1c6e153cd62924bb3c07e76e78460bf1612cb20d90f04c86cf60828c8899d",
       "reviewed_at": "2026-09-07T22:09:50Z",
-      "reviewer": {"name": "OpenAI Codex editorial maintenance", "kind": "ai_assisted"},
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
       "claims": [
         {
           "fact_index": 0,
           "fact_sha256": "e6eeeab81fd7251709a988da8e7d6ea44d6bffc427d923ae1900273d6a3e3d7c",
           "relies_on_unnamed_sources": false,
           "supports": [
-            {"source_id":"truth_trump_bombardier_sep7","locator":"full retained post text and timestamp","inspected_at":"2026-09-07T22:09:30Z","document_sha256":"c1f22fdb61184f32c831c11fa074aced722b94951ba3493c1c3c9d051e7955a0","origin_group":"Donald J. Trump / Truth Social","evidence_status":"publication_only"},
-            {"source_id":"reuters_bombardier_sales_threat_sep7","locator":"article body, paragraphs reporting the statement and action status","inspected_at":"2026-09-07T22:09:30Z","document_sha256":"b23ad9f5ffabd58f69830a2227c5d9b3826e9ec8f0d919cd6d9853b38db69b45","origin_group":"Reuters","evidence_status":"reported"}
+            {
+              "source_id": "truth_trump_bombardier_sep7",
+              "locator": "full retained post text and timestamp",
+              "inspected_at": "2026-09-07T22:09:30Z",
+              "document_sha256": "c1f22fdb61184f32c831c11fa074aced722b94951ba3493c1c3c9d051e7955a0",
+              "origin_group": "Donald J. Trump / Truth Social",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "reuters_bombardier_sales_threat_sep7",
+              "locator": "article body, paragraphs reporting the statement and action status",
+              "inspected_at": "2026-09-07T22:09:30Z",
+              "document_sha256": "b23ad9f5ffabd58f69830a2227c5d9b3826e9ec8f0d919cd6d9853b38db69b45",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
           ]
         },
         {
@@ -1609,7 +1686,14 @@
           "fact_sha256": "7040f2493ee1f67639bf8e2855d193735494cb2fa48f6c331b73dbe8f7b80d04",
           "relies_on_unnamed_sources": false,
           "supports": [
-            {"source_id":"reuters_bombardier_sales_threat_sep7","locator":"article body, enforcement and regulatory-status paragraphs","inspected_at":"2026-09-07T22:09:30Z","document_sha256":"b23ad9f5ffabd58f69830a2227c5d9b3826e9ec8f0d919cd6d9853b38db69b45","origin_group":"Reuters","evidence_status":"reported"}
+            {
+              "source_id": "reuters_bombardier_sales_threat_sep7",
+              "locator": "article body, enforcement and regulatory-status paragraphs",
+              "inspected_at": "2026-09-07T22:09:30Z",
+              "document_sha256": "b23ad9f5ffabd58f69830a2227c5d9b3826e9ec8f0d919cd6d9853b38db69b45",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
           ]
         },
         {
@@ -1617,7 +1701,14 @@
           "fact_sha256": "e4b8469b903969bd2f7afb19e987852585f7606cfd14241b9095523916ee96b9",
           "relies_on_unnamed_sources": false,
           "supports": [
-            {"source_id":"reuters_bombardier_sales_threat_sep7","locator":"article body, U.S. footprint and USMCA paragraphs","inspected_at":"2026-09-07T22:09:30Z","document_sha256":"b23ad9f5ffabd58f69830a2227c5d9b3826e9ec8f0d919cd6d9853b38db69b45","origin_group":"Reuters","evidence_status":"reported"}
+            {
+              "source_id": "reuters_bombardier_sales_threat_sep7",
+              "locator": "article body, U.S. footprint and USMCA paragraphs",
+              "inspected_at": "2026-09-07T22:09:30Z",
+              "document_sha256": "b23ad9f5ffabd58f69830a2227c5d9b3826e9ec8f0d919cd6d9853b38db69b45",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
           ]
         },
         {
@@ -1625,8 +1716,22 @@
           "fact_sha256": "51cba224fb56f4fe185e31a8e3fa519597c222b613a1c95a44bc3a07302bc0e7",
           "relies_on_unnamed_sources": false,
           "supports": [
-            {"source_id":"truth_trump_bombardier_sep7","locator":"full retained post text stating the president's rationale","inspected_at":"2026-09-07T22:09:30Z","document_sha256":"c1f22fdb61184f32c831c11fa074aced722b94951ba3493c1c3c9d051e7955a0","origin_group":"Donald J. Trump / Truth Social","evidence_status":"publication_only"},
-            {"source_id":"reuters_bombardier_sales_threat_sep7","locator":"article body, quoted rationale and trade-dispute context","inspected_at":"2026-09-07T22:09:30Z","document_sha256":"b23ad9f5ffabd58f69830a2227c5d9b3826e9ec8f0d919cd6d9853b38db69b45","origin_group":"Reuters","evidence_status":"reported"}
+            {
+              "source_id": "truth_trump_bombardier_sep7",
+              "locator": "full retained post text stating the president's rationale",
+              "inspected_at": "2026-09-07T22:09:30Z",
+              "document_sha256": "c1f22fdb61184f32c831c11fa074aced722b94951ba3493c1c3c9d051e7955a0",
+              "origin_group": "Donald J. Trump / Truth Social",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "reuters_bombardier_sales_threat_sep7",
+              "locator": "article body, quoted rationale and trade-dispute context",
+              "inspected_at": "2026-09-07T22:09:30Z",
+              "document_sha256": "b23ad9f5ffabd58f69830a2227c5d9b3826e9ec8f0d919cd6d9853b38db69b45",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
           ]
         },
         {
@@ -1634,19 +1739,610 @@
           "fact_sha256": "02faef075bd88076f233ab3c5158996a125243271aa62d21459c976332b623ea",
           "relies_on_unnamed_sources": false,
           "supports": [
-            {"source_id":"reuters_bombardier_sales_threat_sep7","locator":"article body, January threat and subsequent-status paragraph","inspected_at":"2026-09-07T22:09:30Z","document_sha256":"b23ad9f5ffabd58f69830a2227c5d9b3826e9ec8f0d919cd6d9853b38db69b45","origin_group":"Reuters","evidence_status":"reported"}
+            {
+              "source_id": "reuters_bombardier_sales_threat_sep7",
+              "locator": "article body, January threat and subsequent-status paragraph",
+              "inspected_at": "2026-09-07T22:09:30Z",
+              "document_sha256": "b23ad9f5ffabd58f69830a2227c5d9b3826e9ec8f0d919cd6d9853b38db69b45",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
           ]
         }
       ],
       "reasoning_review": [
-        {"field":"significance","text_sha256":"9a38838ed9538fffa51a74b7d22c6ab788555b3613e397ac4de29294b37003ef","review_note":"Separates immediate uncertainty from prospective and unmeasured downstream effects."},
-        {"field":"goalpost","text_sha256":"65f166e610a2c5360f1327afce8f13a6af613cf085ae23cfef53e315f2900901","review_note":"Preserves the president's stated reciprocity rationale and lists observable implementation and outcome tests."},
-        {"field":"maybe_therefore","text_sha256":"a6f789dc3d240787e9b460dd767712ef27cbd2908d9773a3eb697dc7fdde2cf3","review_note":"States the strongest leverage interpretation while limiting the conclusion to an announced threat."}
+        {
+          "field": "significance",
+          "text_sha256": "9a38838ed9538fffa51a74b7d22c6ab788555b3613e397ac4de29294b37003ef",
+          "review_note": "Separates immediate uncertainty from prospective and unmeasured downstream effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "65f166e610a2c5360f1327afce8f13a6af613cf085ae23cfef53e315f2900901",
+          "review_note": "Preserves the president's stated reciprocity rationale and lists observable implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "a6f789dc3d240787e9b460dd767712ef27cbd2908d9773a3eb697dc7fdde2cf3",
+          "review_note": "States the strongest leverage interpretation while limiting the conclusion to an announced threat."
+        }
       ],
       "unresolved_questions": [
         "What legal authority or instrument, if any, will the administration use?",
         "Will FAA approvals, customs treatment, tariffs, sales or deliveries change?",
         "Will Canada change market access for Gulfstream or will Bombardier add U.S. manufacturing?"
+      ]
+    },
+    {
+      "review_id": "10.34.0:NAT-2026-08-25-005:0e753d2b",
+      "entry_id": "NAT-2026-08-25-005",
+      "content_sha256": "0e753d2b4fa9a4abe546f85ee514876c7414e421ba78d81fe53443cc26783861",
+      "reviewed_at": "2026-09-08T04:01:20Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "a1dfe4ea0385a4b3fcca80b4ae844c495c028e131dc83005a7d3d9db3018f9ee",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_caribbean_strike_aug25",
+              "locator": "previously reviewed official August 25 release",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "aecf11b9bc33789aee266886d005730eae8dd0124bab3a0ac06bba34f8aaf54b",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_caribbean_strike_aug25",
+              "locator": "previously reviewed August 25 campaign report",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "0277731031a901418a7082962f83cd76db9170b5b42b575d67c5dd5cc68112ca",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "e5b0ef823e15b00513275ea3402a0a070935dbf2dc04b8f783c9e435f48f9e11",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_caribbean_strike_aug25",
+              "locator": "previously reviewed official August 25 release",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "aecf11b9bc33789aee266886d005730eae8dd0124bab3a0ac06bba34f8aaf54b",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_caribbean_strike_aug25",
+              "locator": "previously reviewed August 25 campaign report",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "0277731031a901418a7082962f83cd76db9170b5b42b575d67c5dd5cc68112ca",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "56f7930f28e027ca2177b10f04dd866eb46d9b9a3f8292d0dc7d000639843aed",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_refueling_vessel_sep5",
+              "locator": "official release body and embedded video description",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "62ee2038f655038fbbf6ee39d7b90a12f6f21f12413fe062baf7d049c36816a5",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_ecuador_refueling_vessel_sep8",
+              "locator": "article body reporting operation, crew disposition, campaign totals and unresolved claims",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "74d89401b4cee2226158ff864aded582a33847d42ab74cbc93e824c213511139",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "563412df433b446230ad9f8db87992bf789a9c56a2624c96dc4ae1aefb088552",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_refueling_vessel_sep5",
+              "locator": "official release body and embedded video description",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "62ee2038f655038fbbf6ee39d7b90a12f6f21f12413fe062baf7d049c36816a5",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_ecuador_refueling_vessel_sep8",
+              "locator": "article body reporting operation, crew disposition, campaign totals and unresolved claims",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "74d89401b4cee2226158ff864aded582a33847d42ab74cbc93e824c213511139",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "1d7afc921711950cf71cd3bfe5c5610e44ad8aab5fa81bd5e39d045b8f03e28f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_ecuador_refueling_vessel_sep8",
+              "locator": "article body reporting operation, crew disposition, campaign totals and unresolved claims",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "74d89401b4cee2226158ff864aded582a33847d42ab74cbc93e824c213511139",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "1102bcfc497465779707d7ee3f3d3766ea79d87524d83edc53e24cc761d2f985",
+          "review_note": "Separates the documented action from prospective or unmeasured consequences."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "96a775bd7f9a7d50a5fa4c75f62841a838b9cb710eda710ee27b64ba9ed5c4b9",
+          "review_note": "Preserves the agency or administration rationale and lists observable implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "7f6ab5ad4df589230341f3d40d40038e053db074de7adc48d31b444066732ab5",
+          "review_note": "States a strong alternative interpretation while limiting the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "What later implementation, legal review and measurable outcomes will follow?",
+        "Will primary records disclose the missing scope, cost, participation or evidence details identified in the entry?"
+      ]
+    },
+    {
+      "review_id": "10.34.0:NAT-2026-09-08-002:cb465800",
+      "entry_id": "NAT-2026-09-08-002",
+      "content_sha256": "3cdc3486f6ce27ab720be95c62bf214f072e05c7c6891747fa3d0b01eb07a1b3",
+      "reviewed_at": "2026-09-08T04:01:20Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "c34d5c8108d7d85756250a53ea81d28d36b5aeacc916f4909e9849687bdff560",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_fcc_direct_to_device_sep8",
+              "locator": "summary, proposal sections, cost-benefit discussion and ordering clauses",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "9e3d8c6a0a3fda512061575ca1ad94e06d9ec4a5d82b87dbf3555d4cdc839ff8",
+              "origin_group": "Federal Communications Commission / Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "54013340205dd7db23d31c635434fde050183c5521256db8a093c3a8e0d28a58",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_fcc_direct_to_device_sep8",
+              "locator": "summary, proposal sections, cost-benefit discussion and ordering clauses",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "9e3d8c6a0a3fda512061575ca1ad94e06d9ec4a5d82b87dbf3555d4cdc839ff8",
+              "origin_group": "Federal Communications Commission / Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "2136e299b1a831d01b485c880c6d592d42e78027e257f232adfb73eddf88dae0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_fcc_direct_to_device_sep8",
+              "locator": "summary, proposal sections, cost-benefit discussion and ordering clauses",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "9e3d8c6a0a3fda512061575ca1ad94e06d9ec4a5d82b87dbf3555d4cdc839ff8",
+              "origin_group": "Federal Communications Commission / Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "75c3a66f4f0b26fca12dd838d846b22c16bc66f911d76b32e3cdecaa5419b84c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_fcc_direct_to_device_sep8",
+              "locator": "summary, proposal sections, cost-benefit discussion and ordering clauses",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "9e3d8c6a0a3fda512061575ca1ad94e06d9ec4a5d82b87dbf3555d4cdc839ff8",
+              "origin_group": "Federal Communications Commission / Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "0c71a22b9028bb6637e341763c1f4b1b69e9c9b7a6f2c27620c3b04cf286de22",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_fcc_direct_to_device_sep8",
+              "locator": "summary, proposal sections, cost-benefit discussion and ordering clauses",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "9e3d8c6a0a3fda512061575ca1ad94e06d9ec4a5d82b87dbf3555d4cdc839ff8",
+              "origin_group": "Federal Communications Commission / Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "770deb18b529ddd10b6370549c125ac43ef0056844a02cbb9dddf32e11cceb55",
+          "review_note": "Separates the documented action from prospective or unmeasured consequences."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "72cfe01e346f5c1bcba1831e0bb0398b1f13010a5fb83933abb9690f110c01d9",
+          "review_note": "Preserves the agency or administration rationale and lists observable implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "11f656bb2f1e37548a0740645c4fcdba4d24a2ed17dd6e403d3d855b4b1b577c",
+          "review_note": "States a strong alternative interpretation while limiting the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "What later implementation, legal review and measurable outcomes will follow?",
+        "Will primary records disclose the missing scope, cost, participation or evidence details identified in the entry?"
+      ]
+    },
+    {
+      "review_id": "10.34.0:NAT-2026-09-08-001:1df8d6f3",
+      "entry_id": "NAT-2026-09-08-001",
+      "content_sha256": "1df8d6f37faeb422901b1936d8724aa7a7bfea636e411fce04fdcd4b445b60cf",
+      "reviewed_at": "2026-09-08T04:01:20Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "ae816ff80f2f6c0ef7ce9f41958008f902d5f451ecd711449f86d2f45d3d4e1b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_blm_npra_sites_sep8",
+              "locator": "summary, eligibility criteria, 60-day process, economic analysis and proposed safeguards",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "7285a49f7fb9874f484f6e9d353d0bfcf8a50aa904d51e187083526f5972f2dd",
+              "origin_group": "Bureau of Land Management / Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5455a6af8947b7c4cced174efa704131490113b819397f180642beb5982127e1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_blm_npra_sites_sep8",
+              "locator": "summary, eligibility criteria, 60-day process, economic analysis and proposed safeguards",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "7285a49f7fb9874f484f6e9d353d0bfcf8a50aa904d51e187083526f5972f2dd",
+              "origin_group": "Bureau of Land Management / Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "fdf19134b55a6fec1ab0425e158bd9e4900de58ee00b58b92e9403a6f89e2b52",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_blm_npra_sites_sep8",
+              "locator": "summary, eligibility criteria, 60-day process, economic analysis and proposed safeguards",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "7285a49f7fb9874f484f6e9d353d0bfcf8a50aa904d51e187083526f5972f2dd",
+              "origin_group": "Bureau of Land Management / Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "b83540495b7276b5c9c5b4047e4d43d48bd4533b4a9d56bd45a8cf5a82ad9e72",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_blm_npra_sites_sep8",
+              "locator": "summary, eligibility criteria, 60-day process, economic analysis and proposed safeguards",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "7285a49f7fb9874f484f6e9d353d0bfcf8a50aa904d51e187083526f5972f2dd",
+              "origin_group": "Bureau of Land Management / Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "88fa4c53f997aab855a09ef2354a61f7a5e512228632b7618f20784a7c25e43a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_blm_npra_sites_sep8",
+              "locator": "summary, eligibility criteria, 60-day process, economic analysis and proposed safeguards",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "7285a49f7fb9874f484f6e9d353d0bfcf8a50aa904d51e187083526f5972f2dd",
+              "origin_group": "Bureau of Land Management / Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "ce1a76608591c07209781684b1a10bfb73e8b265a11db683716fb7b6ef925f69",
+          "review_note": "Separates the documented action from prospective or unmeasured consequences."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "3c57e2e59a2b18fe4be1aad7ec33b26f1c4e372c2d47f0786bb0d6d57b8a4ba6",
+          "review_note": "Preserves the agency or administration rationale and lists observable implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "ed11b8f6145c9ce01cb64cd6bcec29336f370b1a746556e762601287e4429bed",
+          "review_note": "States a strong alternative interpretation while limiting the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "What later implementation, legal review and measurable outcomes will follow?",
+        "Will primary records disclose the missing scope, cost, participation or evidence details identified in the entry?"
+      ]
+    },
+    {
+      "review_id": "10.34.0:NAT-2026-09-08-003:5dca2919",
+      "entry_id": "NAT-2026-09-08-003",
+      "content_sha256": "97d4e6a2a02d41b1cded5f2544343ac47a08578f05952aa29e02878402e6529d",
+      "reviewed_at": "2026-09-08T04:01:20Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "83247845f1e8dcc123d24d7bdb99069c3d078354a7b4ad6f865b58dd592a104d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_irs_car_loan_interest_sep8",
+              "locator": "summary, statutory background, eligibility and reporting rules, effective date and regulatory analysis",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "aa1269f0042053b4ff4c32fb74adaec5f643afbc8cc0990c3791443226bf4759",
+              "origin_group": "Treasury and IRS / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "43218048dfd005db428c93c8f91236a46424b664dad87c728e9626fe910abdbf",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_irs_car_loan_interest_sep8",
+              "locator": "summary, statutory background, eligibility and reporting rules, effective date and regulatory analysis",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "aa1269f0042053b4ff4c32fb74adaec5f643afbc8cc0990c3791443226bf4759",
+              "origin_group": "Treasury and IRS / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "3462d90b0a49088f2010802c2d3605975e4684be404a19dc4ec1f8767f9e6a26",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_irs_car_loan_interest_sep8",
+              "locator": "summary, statutory background, eligibility and reporting rules, effective date and regulatory analysis",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "aa1269f0042053b4ff4c32fb74adaec5f643afbc8cc0990c3791443226bf4759",
+              "origin_group": "Treasury and IRS / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "7019d46ba096e78a11bbe289e010edc4e912b3ebe29dea169ce3bdde168a6779",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_irs_car_loan_interest_sep8",
+              "locator": "summary, statutory background, eligibility and reporting rules, effective date and regulatory analysis",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "aa1269f0042053b4ff4c32fb74adaec5f643afbc8cc0990c3791443226bf4759",
+              "origin_group": "Treasury and IRS / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "2e510c264f08a8ac8bcea0786a4fc90f53dafc78ea7eed52466c9fd28eae34a5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_irs_car_loan_interest_sep8",
+              "locator": "summary, statutory background, eligibility and reporting rules, effective date and regulatory analysis",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "aa1269f0042053b4ff4c32fb74adaec5f643afbc8cc0990c3791443226bf4759",
+              "origin_group": "Treasury and IRS / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "250863a58c740f56253dad02b26b1a914ce0a4accd58b09027f8d8ecc393fa31",
+          "review_note": "Separates the documented action from prospective or unmeasured consequences."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "a64cfb3d933a90b576632933e23e61eb7600face676ff2aec205edd4c5514c2e",
+          "review_note": "Preserves the agency or administration rationale and lists observable implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "b5d4e05d8de84b74ac0bf397ec2e0539884aef15611eb61297d21550e96ff559",
+          "review_note": "States a strong alternative interpretation while limiting the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "What later implementation, legal review and measurable outcomes will follow?",
+        "Will primary records disclose the missing scope, cost, participation or evidence details identified in the entry?"
+      ]
+    },
+    {
+      "review_id": "10.34.0:NAT-2026-08-31-015:da076d8b",
+      "entry_id": "NAT-2026-08-31-015",
+      "content_sha256": "da076d8bc305b4dd14ecc33922bd53b446cd849ddcbb5260e5892f18e5f657b1",
+      "reviewed_at": "2026-09-08T04:01:20Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "7d0754095e8d8b5a2b53ad9f3b4a0ebaa158282acac0447badd23fc960d9f4e9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_commerce_mower_orders_sep8",
+              "locator": "summary, sunset-review history, revocation and effective-date sections",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "4d9ecbc51f0e2af2da17e840e221b2e371f7fe0bcd53a3a5c523ac1eb9e8d7de",
+              "origin_group": "International Trade Administration / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "cf332f77d1a13b9d6fde2b0727104b9e62dba8d128edbce5c3589bf4581fbb3e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_commerce_mower_orders_sep8",
+              "locator": "summary, sunset-review history, revocation and effective-date sections",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "4d9ecbc51f0e2af2da17e840e221b2e371f7fe0bcd53a3a5c523ac1eb9e8d7de",
+              "origin_group": "International Trade Administration / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "028f566aeb30777d068155fc70e9286d0e4011849f58b954d8adeaa91fe264bb",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_commerce_mower_orders_sep8",
+              "locator": "summary, sunset-review history, revocation and effective-date sections",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "4d9ecbc51f0e2af2da17e840e221b2e371f7fe0bcd53a3a5c523ac1eb9e8d7de",
+              "origin_group": "International Trade Administration / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "3f158d6bc5198c750e265ce198460456700a59470f7c5b05ace219701612bb4f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_commerce_mower_orders_sep8",
+              "locator": "summary, sunset-review history, revocation and effective-date sections",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "4d9ecbc51f0e2af2da17e840e221b2e371f7fe0bcd53a3a5c523ac1eb9e8d7de",
+              "origin_group": "International Trade Administration / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "18168b8dd1aa87571b3f91c63fc097d3161c699bcaf22b8226c5dc4c0767c2fd",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_commerce_mower_orders_sep8",
+              "locator": "summary, sunset-review history, revocation and effective-date sections",
+              "inspected_at": "2026-09-08T04:01:20Z",
+              "document_sha256": "4d9ecbc51f0e2af2da17e840e221b2e371f7fe0bcd53a3a5c523ac1eb9e8d7de",
+              "origin_group": "International Trade Administration / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "e340846a74a2455967f8deea38083b922e073d053dc0d1f9197781c550ef7981",
+          "review_note": "Separates the documented action from prospective or unmeasured consequences."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "aaf9516cf69440006bdc69f15e0ab7cb365a5ce0bfc3d0908e7d0ee461ddee4c",
+          "review_note": "Preserves the agency or administration rationale and lists observable implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "5c9e683f067ff5f8e9fc19b9a78948d40d66c5ef63d35fc03820ac9d0edf13f8",
+          "review_note": "States a strong alternative interpretation while limiting the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "What later implementation, legal review and measurable outcomes will follow?",
+        "Will primary records disclose the missing scope, cost, participation or evidence details identified in the entry?"
       ]
     }
   ],
