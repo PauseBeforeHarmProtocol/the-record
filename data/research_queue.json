@@ -4,12 +4,26 @@
     "title": "Deferred September 8 public-inspection proposals",
     "first_seen_at": "2026-09-07T16:02:00Z",
     "timestamp_precision": "minute",
-    "status": "pending",
-    "reason": "Carried from release 10.31.1's deferred-publication queue; original public availability, action date and formal publication date must be distinguished at review.",
-    "recheck_trigger": "Formal publication or a verified earlier material action; inspect original documents before disposition.",
-    "next_check_at": "2026-09-08T12:00:00Z",
-    "provenance": "artifacts/THE_RECORD_RUN_RECEIPT_2026-09-07_v10.31.1.md",
-    "canonical_id": null
+    "status": "published",
+    "reason": "Formal September 8 publication was inspected. The FCC direct-to-device and BLM Alaska production-site proposals were published as NAT-2026-09-08-002 and NAT-2026-09-08-001; separately reviewed IRS and Commerce documents also qualified.",
+    "recheck_trigger": "Track comments, final rules, litigation and implementation as later lifecycle stages.",
+    "next_check_at": null,
+    "provenance": "data/release.json",
+    "canonical_id": "NAT-2026-09-08-002",
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20260907-FEDERAL-REGISTER",
+        "title": "Deferred September 8 public-inspection proposals",
+        "first_seen_at": "2026-09-07T16:02:00Z",
+        "timestamp_precision": "minute",
+        "status": "pending",
+        "reason": "Carried from release 10.31.1's deferred-publication queue; original public availability, action date and formal publication date must be distinguished at review.",
+        "recheck_trigger": "Formal publication or a verified earlier material action; inspect original documents before disposition.",
+        "next_check_at": "2026-09-08T12:00:00Z",
+        "provenance": "artifacts/THE_RECORD_RUN_RECEIPT_2026-09-07_v10.31.1.md",
+        "canonical_id": null
+      }
+    ]
   },
   {
     "candidate_id": "QUEUE-20260907-UNMAPPED-MEDIA",
@@ -30,6 +44,18 @@
     "timestamp_precision": "second",
     "status": "blocked",
     "reason": "Posts 117231197837851334, 117231928888969402, 117231954791116629 and 117231955365539795 contain image or video assets that the source host returned as HTTP 403 during review. No claim inside those assets was used.",
+    "recheck_trigger": "The media becomes accessible and its content is inspected against the retained post-content hash.",
+    "next_check_at": null,
+    "provenance": "data/truth_social_reviews.json",
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260908-0000-UNAVAILABLE-MEDIA",
+    "title": "Five new Truth Social videos unavailable for inspection",
+    "first_seen_at": "2026-09-08T01:27:33Z",
+    "timestamp_precision": "second",
+    "status": "blocked",
+    "reason": "Posts 117232818816225564, 117232688233470694, 117232685404378611, 117232228056672165 and 117232144486548525 contain no retained text and their videos returned HTTP 403. No claim inside them was used.",
     "recheck_trigger": "The media becomes accessible and its content is inspected against the retained post-content hash.",
     "next_check_at": null,
     "provenance": "data/truth_social_reviews.json",
