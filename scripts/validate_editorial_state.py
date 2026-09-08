@@ -17,6 +17,25 @@ def git_json(ref: str, path: str, root: Path) -> object:
     return json.loads(subprocess.check_output(["git", "show", f"{ref}:{path}"], cwd=root, text=True))
 
 
+def safe_provenance_hardening(old: dict, current: dict, base_ref: str, root: Path) -> bool:
+    """Allow only a mutable release pointer to move to its immutable receipt."""
+    if old.get("provenance_path") != "data/release.json":
+        return False
+    receipt = Path(str(current.get("provenance_path", "")))
+    expected_suffix = f'_v{old.get("release_version")}.md'
+    if receipt.parent != Path("artifacts") or not receipt.name.startswith("THE_RECORD_RUN_RECEIPT_") or not receipt.name.endswith(expected_suffix):
+        return False
+    try:
+        old_release = subprocess.check_output(["git", "show", f"{base_ref}:data/release.json"], cwd=root)
+        receipt_bytes = (root / receipt).read_bytes()
+    except (OSError, subprocess.CalledProcessError):
+        return False
+    if digest(old_release) != old.get("provenance_sha256") or digest(receipt_bytes) != current.get("provenance_sha256"):
+        return False
+    expected = {**old, "provenance_path": receipt.as_posix(), "provenance_sha256": digest(receipt_bytes)}
+    return current == expected
+
+
 def validate(root: Path = ROOT, base_ref: str | None = None) -> dict:
     state = load_state(root)
     schema = json.loads((root / "schemas/editorial_state.schema.json").read_text())
@@ -91,7 +110,12 @@ def validate(root: Path = ROOT, base_ref: str | None = None) -> dict:
             require(state["baseline"] == old["baseline"], "review migration baseline is immutable")
             for field, identity in (("developments", "change_id"), ("reviews", "review_id")):
                 current = {r[identity]: r for r in state[field]}
-                require(all(current.get(r[identity]) == r for r in old[field]), f"{field} is append-only")
+                require(all(
+                    current.get(r[identity]) == r
+                    or (field == "developments" and current.get(r[identity]) is not None
+                        and safe_provenance_hardening(r, current[r[identity]], base_ref, root))
+                    for r in old[field]
+                ), f"{field} is append-only")
         else:
             baseline = state["baseline"]
             original = git_json(baseline["commit"], "data/current_entries.json", root)
