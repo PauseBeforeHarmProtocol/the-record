@@ -1669,6 +1669,54 @@
       "provenance_path": "artifacts/THE_RECORD_RUN_RECEIPT_2026-09-08_v10.35.0.md",
       "provenance_sha256": "b3e0e9c223e2e388430fcf4a7b981baf1cbb8c009fb8bb00008a3deb1fc6cc82",
       "note": "AP published the evidence review after the prior research boundary; the FDA's August 27 figures are restored under their actual measurement date."
+    },
+    {
+      "change_id": "10.36.0:NAT-2026-09-08-004",
+      "entry_id": "NAT-2026-09-08-004",
+      "as_of_utc": "2026-09-08T15:57:30Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.36.0",
+      "summary": "DOE financially closed a loan of up to $1.9 billion for the Duane Arnold restart while NRC approval and operation remain pending.",
+      "provenance_path": "artifacts/THE_RECORD_RUN_RECEIPT_2026-09-08_v10.36.0.md",
+      "provenance_sha256": "fb5db50f5c82f2f6b86e91e7f9c4225d9777387d2d22f12dac03a1f4c228621e",
+      "note": "A financing close is recorded separately from disbursement, licensing, construction and operating outcomes."
+    },
+    {
+      "change_id": "10.36.0:NAT-2026-09-04-007",
+      "entry_id": "NAT-2026-09-04-007",
+      "as_of_utc": "2026-09-08T15:57:30Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.36.0",
+      "summary": "Added OFAC's implemented September 8 aviation-sector designations, license suspension and wind-down authorizations.",
+      "provenance_path": "artifacts/THE_RECORD_RUN_RECEIPT_2026-09-08_v10.36.0.md",
+      "provenance_sha256": "fb5db50f5c82f2f6b86e91e7f9c4225d9777387d2d22f12dac03a1f4c228621e",
+      "note": "The update attributes underlying conduct allegations and does not infer blocked assets, grounded flights or diplomatic success."
+    },
+    {
+      "change_id": "10.36.0:NAT-2026-08-25-005",
+      "entry_id": "NAT-2026-08-25-005",
+      "as_of_utc": "2026-09-08T15:57:30Z",
+      "timestamp_precision": "second",
+      "kind": "correction",
+      "release_version": "10.36.0",
+      "summary": "Corrected AP's fifth-vessel attribution to September 7 and added SOUTHCOM's separate board-transfer-sink operation that day.",
+      "provenance_path": "artifacts/THE_RECORD_RUN_RECEIPT_2026-09-08_v10.36.0.md",
+      "provenance_sha256": "fb5db50f5c82f2f6b86e91e7f9c4225d9777387d2d22f12dac03a1f4c228621e",
+      "note": "The September 5 operation remains documented by its primary release; the correction is visible in release metadata."
+    },
+    {
+      "change_id": "10.36.0:NAT-2026-09-05-001",
+      "entry_id": "NAT-2026-09-05-001",
+      "as_of_utc": "2026-09-08T15:57:30Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.36.0",
+      "summary": "Recorded the expiration of the capital-specific pause and renewed Kyiv attacks after the U.S. envoys departed.",
+      "provenance_path": "artifacts/THE_RECORD_RUN_RECEIPT_2026-09-08_v10.36.0.md",
+      "provenance_sha256": "fb5db50f5c82f2f6b86e91e7f9c4225d9777387d2d22f12dac03a1f4c228621e",
+      "note": "The update treats resumed attacks as an effectiveness finding, not proof that diplomacy cannot later produce an agreement."
     }
   ],
   "reviews": [
@@ -2594,6 +2642,650 @@
         "Which named scientists, laboratories and methods will preserve USDA's remaining cyclospora research?",
         "Will FDA's foreign-food inspection rate, duration and staffing recover, and how will the one-day pilot be evaluated?",
         "What additional source attribution or prevention findings will the outbreak investigation establish?"
+      ]
+    },
+    {
+      "review_id": "10.36.0:NAT-2026-09-08-004:16c5b5b5",
+      "entry_id": "NAT-2026-09-08-004",
+      "content_sha256": "16c5b5b5327adc9b06715e8121d56ee57592572b63498d4497f9182da921db70",
+      "reviewed_at": "2026-09-08T15:58:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "336a63761773f40ac8fb1f9c83bc730138b04ca0da4dccd1ff959590e7329404",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doe_duane_arnold_loan_sep8",
+              "locator": "announcement body on financial close, loan ceiling, capacity, projections and pending NRC approvals",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "f3c81c00cde5aa2721ae66b629469c8e7082cda0057cf3cb90603f4c45bdad7c",
+              "origin_group": "Department of Energy",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "99a1253232b8ac43cc26b0e9753299c135050d737bc951f3422f99f3e3b08709",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doe_duane_arnold_loan_sep8",
+              "locator": "announcement body on financial close, loan ceiling, capacity, projections and pending NRC approvals",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "f3c81c00cde5aa2721ae66b629469c8e7082cda0057cf3cb90603f4c45bdad7c",
+              "origin_group": "Department of Energy",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_duane_arnold_loan_sep8",
+              "locator": "article body on loan closing, schedule, licensing and power-purchase agreement",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "44d2bf8a1c5bfd52d3baecef1561814a4a2bdab3476cf843ef9a478b429077d9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "4faaa59f7d05c8c9fc5293a755d26a06e73417351dbd216770f6405007c075be",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doe_duane_arnold_loan_sep8",
+              "locator": "announcement body on financial close, loan ceiling, capacity, projections and pending NRC approvals",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "f3c81c00cde5aa2721ae66b629469c8e7082cda0057cf3cb90603f4c45bdad7c",
+              "origin_group": "Department of Energy",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "7e9f00118f987ab690fa440a0de96592485f48f7528bebf7745f1c94b645e545",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_duane_arnold_loan_sep8",
+              "locator": "article body on loan closing, schedule, licensing and power-purchase agreement",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "44d2bf8a1c5bfd52d3baecef1561814a4a2bdab3476cf843ef9a478b429077d9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "3271a5468df10b16164b5920bd42bc17b9fa536457ff982b97a311e780a93f5c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doe_duane_arnold_loan_sep8",
+              "locator": "announcement body on financial close, loan ceiling, capacity, projections and pending NRC approvals",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "f3c81c00cde5aa2721ae66b629469c8e7082cda0057cf3cb90603f4c45bdad7c",
+              "origin_group": "Department of Energy",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_duane_arnold_loan_sep8",
+              "locator": "article body on loan closing, schedule, licensing and power-purchase agreement",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "44d2bf8a1c5bfd52d3baecef1561814a4a2bdab3476cf843ef9a478b429077d9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "2ae637522f5198b528b7f62c0b9287c3d425c215d9ba0024b031b2b95c8c6a53",
+          "review_note": "Separates documented action or measured consequence from projected and unmeasured outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "61c379842ce1dda9984f3991d635f192c8a42ee01011144995435a70910ddd60",
+          "review_note": "Preserves the strongest relevant administration explanation and identifies observable tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "77ab72e5783f4a9a105c2a319bce203f13b955e5f30902acc5ce865e5751bb51",
+          "review_note": "States a reasonable competing interpretation and limits the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "How much of the loan is disbursed and repaid?",
+        "Will NRC approvals and construction permit an early-2029 restart?",
+        "What generation, price, reliability and employment results are measured after operation?"
+      ]
+    },
+    {
+      "review_id": "10.36.0:NAT-2026-09-04-007:78d8e508",
+      "entry_id": "NAT-2026-09-04-007",
+      "content_sha256": "78d8e508fc43bea40990ddc7fa0850538fc889862df30e73d1eb856e03e95d06",
+      "reviewed_at": "2026-09-08T15:58:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "baa10ba127137fc7495491315e5f214ae4d6ed12faf3db2c9e7cfe5ba6cf6cd9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_iran_turkey_designations_sep4",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "c0abda9e10a5812308cfac1626ed689824fb43ea816980aeb2935fab262e18f9",
+              "origin_group": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "c2a2f3709c9ae176bcb5a19ab08b7575c825516a03485e4a58ff433b8afda685",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_iran_turkey_designations_sep4",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "c0abda9e10a5812308cfac1626ed689824fb43ea816980aeb2935fab262e18f9",
+              "origin_group": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "703bcec6e5ac4ff454097fe4d7d01631edc4d1cbe458f40a48b12682591a0a44",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_iran_turkey_designations_sep4",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "c0abda9e10a5812308cfac1626ed689824fb43ea816980aeb2935fab262e18f9",
+              "origin_group": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "f900b50ac1a30813f24443f93dc0e6bbc249947341486f60cfcbe04511e63a2c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_turkey_sanctions_sep4",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "5ddb656d3eabde1726831b4cbffd55030591e0d79a94381bd4e71ec6c4c51e7c",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "3be4f496ec753bb66749401332cb18d535e7f1371148a73367b79217052fb4c8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_iran_aviation_sep8",
+              "locator": "recent-action notice, SDN additions, J-1 suspension and General Licenses DD and 37",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "c9d9bcc3e34b1ae41d51b8132deb909d8e063092bd7ae6db5190928dcb50b079",
+              "origin_group": "Office of Foreign Assets Control",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "0625bf5e7c51db007674f3b7d2dca4e686357f83ff3fac93543c3daff80be48b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_iran_aviation_sep8",
+              "locator": "recent-action notice, SDN additions, J-1 suspension and General Licenses DD and 37",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "c9d9bcc3e34b1ae41d51b8132deb909d8e063092bd7ae6db5190928dcb50b079",
+              "origin_group": "Office of Foreign Assets Control",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "7ffd53cc635cec31e1bd41ee51f92edd252deb2ee78e8ed83ed72fdf961d047f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_iran_aviation_sep8",
+              "locator": "recent-action notice, SDN additions, J-1 suspension and General Licenses DD and 37",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "c9d9bcc3e34b1ae41d51b8132deb909d8e063092bd7ae6db5190928dcb50b079",
+              "origin_group": "Office of Foreign Assets Control",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_iran_aviation_sanctions_sep8",
+              "locator": "article body on designation count, aviation networks and Treasury rationale",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "c8146227cc59c861345e320bf6f881caea5d8e7d385eab2371cbeaf2ac48c049",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_iran_aviation_sanctions_sep8",
+              "locator": "article body on aviation-sector targets, foreign providers and administration response",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "9cc127643824528a785556120628ee42f7ad544743357c4a20f6e9899850113c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "0351d74533969842b1d278b2de5865ca1f714c14142c597d5782495f34ca6779",
+          "review_note": "Separates documented action or measured consequence from projected and unmeasured outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "0e7842766cbe077c28e7f47b8ec77ded498f108f56cb7bd339ff23bd0446ee91",
+          "review_note": "Preserves the strongest relevant administration explanation and identifies observable tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "0e041f3996219fe90d784280440d8d9285adc32ce655b9162e36b7ab5354e004",
+          "review_note": "States a reasonable competing interpretation and limits the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "What assets and transactions are actually blocked?",
+        "How do airlines, intermediaries and foreign governments comply or evade?",
+        "Do the measures change Iranian conduct or create measurable civilian-aviation effects?"
+      ]
+    },
+    {
+      "review_id": "10.36.0:NAT-2026-08-25-005:f245f2f7",
+      "entry_id": "NAT-2026-08-25-005",
+      "content_sha256": "f245f2f731012263420c35c9d2df73ec309c0376d116d7908f7cd35f5ed6289c",
+      "reviewed_at": "2026-09-08T15:58:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "a1dfe4ea0385a4b3fcca80b4ae844c495c028e131dc83005a7d3d9db3018f9ee",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_caribbean_strike_aug25",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "32cb5ab5e0a4c8a7b6ab47970dffe6fe94dc0cb66b85214441e850077fd1f64c",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_caribbean_strike_aug25",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "8bdf8eca61910c9032a2f1d44244a7a4539dbbfe2615918783a7f3aea38f9302",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "e5b0ef823e15b00513275ea3402a0a070935dbf2dc04b8f783c9e435f48f9e11",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_caribbean_strike_aug25",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "32cb5ab5e0a4c8a7b6ab47970dffe6fe94dc0cb66b85214441e850077fd1f64c",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_caribbean_strike_aug25",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "8bdf8eca61910c9032a2f1d44244a7a4539dbbfe2615918783a7f3aea38f9302",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "56f7930f28e027ca2177b10f04dd866eb46d9b9a3f8292d0dc7d000639843aed",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_refueling_vessel_sep5",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "a4d31c7a7254a53a4f424e1ce0b24b20f36a7f59b1322da156a1c23b38715cab",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "563412df433b446230ad9f8db87992bf789a9c56a2624c96dc4ae1aefb088552",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_refueling_vessel_sep5",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "a4d31c7a7254a53a4f424e1ce0b24b20f36a7f59b1322da156a1c23b38715cab",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "e1dd9fa212c9c1813e5746e07be350424bdd694f2c23c376dec7565f4c3843a5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_refueling_vessel_sep7",
+              "locator": "entire release and video description",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "1bfb1fa02c2fee3edb5596d1dd160a46cd4eb7c641870bac46773f7cc646d79f",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_ecuador_refueling_vessel_sep8",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "a7b6768e68c033e589b614889085cd05e8e9ccdc91d67de7cac2fa00d39c9007",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "43e9ecbb2bf0f624b84429620168695d576a79d2b472094559dc5c775383ed5d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_ecuador_refueling_vessel_sep8",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "a7b6768e68c033e589b614889085cd05e8e9ccdc91d67de7cac2fa00d39c9007",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "eb181d0aab0349272e452b4dc4d35c1146f6ec371e31b5730eb3efaf08cb62f8",
+          "review_note": "Separates documented action or measured consequence from projected and unmeasured outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "96a775bd7f9a7d50a5fa4c75f62841a838b9cb710eda710ee27b64ba9ed5c4b9",
+          "review_note": "Preserves the strongest relevant administration explanation and identifies observable tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "c0d0a0809a5bf21affdfd9fede971696889d41c7927c3088246c381692c91053",
+          "review_note": "States a reasonable competing interpretation and limits the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "What cargo, intelligence and legal authority supported each operation?",
+        "Who was transferred to Ecuador and what proceedings followed?",
+        "What independently measured trafficking or civilian-harm effects result?"
+      ]
+    },
+    {
+      "review_id": "10.36.0:NAT-2026-09-05-001:d95e0119",
+      "entry_id": "NAT-2026-09-05-001",
+      "content_sha256": "d95e0119a07f17360e18ab0d5f95dc0d78c8428ddb478a307012faf916441022",
+      "reviewed_at": "2026-09-08T15:58:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "10c055fece60d88e7c200fe1067a4de8ed214d2333a2cfc77d1cac26f67aca07",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_envoys_sep5",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "3299668fef893e74f116d0c5ec1e1df00509cc1888577af10735971492a1ec89",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_capitals_pause_sep5",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "e81af7f355673764a18e9942c45fe4b920de701747b979dfe74a1f249652c5b9",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "1e9b597a6895ea506724aa2c4b7885aec7b498f2d2b9a3661474188a6dcf0acc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_envoys_sep5",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "3299668fef893e74f116d0c5ec1e1df00509cc1888577af10735971492a1ec89",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "1077ef51c7d724a4a88bd928bac53b853e8ead6627b46c24b13c7bc18c455f42",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_ukraine_capitals_pause_sep5",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "e81af7f355673764a18e9942c45fe4b920de701747b979dfe74a1f249652c5b9",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "67c3d4ad35dd6da5e7fdf74224ab5ec010ea58aa80f9f36e19eb66efec7a0246",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_ukraine_capitals_pause_sep5",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "e81af7f355673764a18e9942c45fe4b920de701747b979dfe74a1f249652c5b9",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "6496ce4ac176503a7ad610d4ff51f23f758e48818a2e6e07dd3a4b2bd76e8797",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_envoys_sep5",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "3299668fef893e74f116d0c5ec1e1df00509cc1888577af10735971492a1ec89",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "08676b76ed456cbc9df3599d8ab3551cd52689ce88ed8a6d275f852f7df83100",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_kyiv_talks_sep6",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "a178aa3dafc958225c44d8f22bdbb4d16735b2a436d6ddfddf7e0ded54bd0e6e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "c2681b1d4e8449994f78e53729b1b15a74d6deb0f490b30bbed7e7a144d8ce3a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_kyiv_talks_sep6",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "a178aa3dafc958225c44d8f22bdbb4d16735b2a436d6ddfddf7e0ded54bd0e6e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_kyiv_talks_sep6",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "a6eccb75fcf70a3affec760d8ebb96b0598fea728b5ef8f92de14113b0c06c72",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "21e5bb5168ea5be545cf0300209d60dc5cd5ee7198713d9bde480acc3cb7d925",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_kyiv_talks_sep6",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "a178aa3dafc958225c44d8f22bdbb4d16735b2a436d6ddfddf7e0ded54bd0e6e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_kyiv_talks_sep6",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "a6eccb75fcf70a3affec760d8ebb96b0598fea728b5ef8f92de14113b0c06c72",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "727b415e37f5441c51639790d2c449f1c6151e07dbf72eb5e66f9f115d1b8de7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_kyiv_strikes_sep8",
+              "locator": "article body on pause expiration, attacks, casualties and damage",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "df1ef7cfbfe7c4c793d38cf32f81f8feb20254eff62c4541171a4220f27a6291",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "ap_ukraine_kyiv_strikes_sep8",
+              "locator": "article body on renewed strikes, casualties, diplomacy assessment and unresolved agreement",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "29ed40b7b0e55a9e6fa5dc69ba25a598ec7323cab74207347306ef05403697b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "5b81d6efc199b2d556a7aa7f35122c7ed006ef515d561c7bdab16a707896a200",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_ukraine_kyiv_strikes_sep8",
+              "locator": "article body on renewed strikes, casualties, diplomacy assessment and unresolved agreement",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "29ed40b7b0e55a9e6fa5dc69ba25a598ec7323cab74207347306ef05403697b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "fa7927bae5ff5c7694cf5ce3611312e1a28f5eccf9d22acf94660ffa93f869fd",
+          "review_note": "Separates documented action or measured consequence from projected and unmeasured outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "a95ad692eff63d5a25c9cfab761a27bab90f6f7156c97c9779dccd2f02f22ba4",
+          "review_note": "Preserves the strongest relevant administration explanation and identifies observable tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "196c7fc932eefa7df187a9d3fee9b09995d4a57086b0caccf0745b236ed902c7",
+          "review_note": "States a reasonable competing interpretation and limits the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Will proposal terms be published?",
+        "Will any nationwide ceasefire, security guarantee, prisoner exchange or territorial agreement follow?",
+        "Do attacks measurably and durably decline?"
       ]
     }
   ],
