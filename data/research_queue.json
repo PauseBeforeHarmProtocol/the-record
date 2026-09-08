@@ -84,5 +84,53 @@
     "next_check_at": null,
     "provenance": "data/release.json",
     "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260908-USPS-OIG",
+    "title": "USPS OIG announces independent review of ballot-system allegations",
+    "status": "pending",
+    "first_seen_at": "2026-09-08T22:15:28.882920Z",
+    "reason": "Reuters’s report was inspected; complete primary scope and content-bound refresh of NAT-2026-08-24-002 remain to be reviewed. The announcement is not an investigation finding.",
+    "recheck_trigger": "Inspect the OIG announcement or named-official confirmation and refresh the existing mail-ballot record.",
+    "next_check_at": "2026-09-09T04:00:00Z",
+    "provenance": [
+      "https://www.reuters.com/world/us-watchdog-conduct-review-whistleblower-warning-mail-in-voting-rules-2026-09-08/"
+    ]
+  },
+  {
+    "candidate_id": "QUEUE-20260908-ABA-206",
+    "title": "ABA council repeals diversity standard during recognition dispute",
+    "status": "pending",
+    "first_seen_at": "2026-09-08T22:15:28.882920Z",
+    "reason": "The original publisher’s indexed repeal report was inspected, but the full adopted text and its interaction with the recognition recommendation remain to be reviewed.",
+    "recheck_trigger": "Inspect the adopted council action and update NAT-2026-08-21-001; do not confuse council repeal with federal revocation.",
+    "next_check_at": "2026-09-09T04:00:00Z",
+    "provenance": [
+      "https://www.abajournal.com/web/article/legal-ed-council-kills-dei-standard"
+    ]
+  },
+  {
+    "candidate_id": "QUEUE-20260908-LEG-003957",
+    "title": "LEG-003957 IRS/DOGE account has unrelated source",
+    "status": "pending",
+    "first_seen_at": "2026-09-08T22:15:28.882920Z",
+    "reason": "The stored NPR link concerns Treasury payment access rather than the claimed CNN IRS account; exact original date and record-specific replacement need verification. Stable ID and honest unreviewed state retained.",
+    "recheck_trigger": "Locate original CNN reporting and append a guarded legacy revision only after record-specific source inspection.",
+    "next_check_at": "2026-09-09T04:00:00Z",
+    "provenance": [
+      "data/legacy_entries.json#LEG-003957"
+    ]
+  },
+  {
+    "candidate_id": "QUEUE-20260908-AI-DISTILLATION",
+    "title": "Joint U.S. agency allegation about Chinese AI distillation",
+    "status": "pending",
+    "first_seen_at": "2026-09-08T22:15:28.882920Z",
+    "reason": "Discovery only: the original joint statement and technical evidence have not completed review. No underlying theft, military use or new enforcement action is established here.",
+    "recheck_trigger": "Inspect original agency statement, independent corroboration and relevant company/government response.",
+    "next_check_at": "2026-09-09T04:00:00Z",
+    "provenance": [
+      "https://www.reuters.com/technology/us-accuses-chinese-ai-firms-industrial-scale-theft-ai-technology-2026-09-08/"
+    ]
   }
 ]
