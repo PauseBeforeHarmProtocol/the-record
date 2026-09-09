@@ -14137,5 +14137,92 @@
         ]
       }
     ]
+  },
+  {
+    "revision_id": "LR-2026-09-09-122",
+    "recorded_at": "2026-09-09",
+    "legacy_id": "LEG-004702",
+    "kind": "fact-source-and-reasoning-correction",
+    "summary": "Replace unsupported final-cost and personal-benefit claims with inspected reporting on the Qatari aircraft’s acceptance, stated retrofit estimate, June unveiling, July operational use and planned security work.",
+    "provenance": [
+      {
+        "type": "independent-reporting",
+        "supports": "Reuters reported acceptance of the aircraft, Trump’s rationale, Qatar’s response and the proposed eventual library disposition.",
+        "url": "https://www.reuters.com/world/us/white-house-confirms-qatar-offered-plane-us-2025-05-12/"
+      },
+      {
+        "type": "independent-reporting-with-named-official",
+        "supports": "Reuters reported Air Force Secretary Troy Meink’s under-$400-million retrofit estimate and his explanation that some costs would have been incurred regardless.",
+        "url": "https://www.reuters.com/business/aerospace-defense/retrofitting-qatari-jet-air-force-one-trump-cost-hundreds-millions-dollars-air-2025-06-05/"
+      },
+      {
+        "type": "independent-reporting-with-official-response",
+        "supports": "Reuters reported the June 19 unveiling, accelerated conversion and Air Force statement that the aircraft met presidential-mission standards.",
+        "url": "https://www.reuters.com/business/aerospace-defense/trump-unveils-qatari-747-ahead-joining-air-force-one-fleet-2026-06-19/"
+      },
+      {
+        "type": "independent-reporting",
+        "supports": "Reuters reported that Trump began using the aircraft July 1 and said it would undergo about 60 days of additional security work beginning in October.",
+        "url": "https://www.reuters.com/world/trump-says-emergency-slide-is-being-checked-qatar-gifted-air-force-one-2026-09-09/"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "corrected"
+      },
+      {
+        "field": "text",
+        "expected": "President Trump unveiled a roughly $400 million jet gifted by Qatar, repainted in a red-white-and-blue scheme resembling his personal plane, to temporarily replace the existing Air Force One. Reporting indicates the refit is estimated at over $1 billion and that the aircraft is slated to transfer to Trump's presidential library after he leaves office. The unveiling doubled as a venue for Trump to praise Netanyahu as a 'warrior prime minister.'",
+        "replacement": "On June 19, 2026, Trump unveiled a Boeing 747-8 that Qatar had given to the U.S. military for temporary presidential use. The Air Force said its accelerated conversion met presidential-mission standards, while the final conversion cost remained undisclosed; Air Force Secretary Troy Meink had previously told Congress the retrofit would probably cost less than $400 million, while Democratic lawmakers offered higher estimates. Trump began flying aboard the aircraft July 1 and later said it would leave service in October for about 60 days of additional, unspecified security upgrades."
+      },
+      {
+        "field": "sig",
+        "expected": "Raises emoluments and self-dealing concerns: a foreign-government gift converted for presidential use and ultimately destined for the president's personal library foundation. **Pattern-fit: blurring the line between official assets and personal benefit.**",
+        "replacement": "Acceptance and operational use of an exceptionally valuable foreign-government aircraft created ethics, security, procurement and public-cost questions. The record establishes the gift, conversion and use; it does not establish that Qatar purchased influence, that the aircraft was unsafe, or that a final transfer to a presidential library occurred."
+      },
+      {
+        "field": "goal",
+        "expected": "\"The jet is a gift to the United States government for official use, not to Trump personally, and any library transfer follows precedent for decommissioned presidential aircraft.\"",
+        "replacement": "Trump said rejecting a free aircraft would be foolish and described it as a temporary bridge while Boeing’s purpose-built replacements remained delayed. Qatar said the transfer was a normal ally-to-ally gift and not an attempt to buy influence; the Air Force said safety and security were its highest priorities. Final conversion costs, ownership and disposal records, congressional action, completed security work and operational performance are the tests."
+      },
+      {
+        "field": "mt",
+        "expected": "Maybe decommissioned aircraft have gone to libraries before. Therefore the entry still records it because a foreign state's $400 million gift, refit at taxpayer expense above $1 billion and slated for the president's library, sits squarely in emoluments territory.",
+        "replacement": "Maybe accepting and converting an available aircraft was a practical bridge to delayed replacement planes, with costs the Air Force would partly have incurred anyway, or a foreign-government gift of this scale may create avoidable influence and security risks. Therefore the corrected entry establishes government acceptance, an accelerated conversion and operational use—not bribery, an adjudicated Emoluments Clause violation, a billion-dollar final retrofit cost, unsafe flight or a completed transfer for Trump’s personal benefit."
+      },
+      {
+        "field": "src",
+        "expected": [
+          {
+            "t": "CNBC",
+            "url": "https://www.cnbc.com/2026/06/19/trump-unveils-the-new-air-force-one-a-converted-qatari-jet.html"
+          },
+          {
+            "t": "CNN",
+            "url": "https://www.cnn.com/2026/06/19/politics/trump-plane-air-force-one"
+          }
+        ],
+        "replacement": [
+          {
+            "t": "Reuters — acceptance and ethics debate",
+            "url": "https://www.reuters.com/world/us/white-house-confirms-qatar-offered-plane-us-2025-05-12/"
+          },
+          {
+            "t": "Reuters — Air Force retrofit estimate",
+            "url": "https://www.reuters.com/business/aerospace-defense/retrofitting-qatari-jet-air-force-one-trump-cost-hundreds-millions-dollars-air-2025-06-05/"
+          },
+          {
+            "t": "Reuters — June 19 unveiling and Air Force response",
+            "url": "https://www.reuters.com/business/aerospace-defense/trump-unveils-qatari-747-ahead-joining-air-force-one-fleet-2026-06-19/"
+          },
+          {
+            "t": "Reuters — July operational use and planned security work",
+            "url": "https://www.reuters.com/world/trump-says-emergency-slide-is-being-checked-qatar-gifted-air-force-one-2026-09-09/"
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -1,37 +1,35 @@
 {
-  "version": "10.40.0",
+  "version": "10.41.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-09T10:00:31Z",
-    "through_utc": "2026-09-09T16:01:38Z",
+    "from_utc": "2026-09-09T16:01:38Z",
+    "through_utc": "2026-09-09T22:01:56Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous research coverage begins at the prior release's preserved UTC boundary and ends at this run's evidence cutoff."
+    "note": "Continuous research coverage begins at the prior release’s preserved UTC boundary and ends at this run’s evidence cutoff."
   },
   "release_iso": "2026-09-09",
   "release_human": "September 9, 2026",
-  "checked_at": "2026-09-09 12:01 PM EDT",
-  "previous_version": "10.39.0",
-  "previous_checked_at": "2026-09-09 6:00 AM EDT",
-  "window_started_at": "2026-09-09 6:00 AM EDT",
-  "window_ended_at": "2026-09-09 12:01 PM EDT",
+  "checked_at": "2026-09-09 6:01 PM EDT",
+  "previous_version": "10.40.0",
+  "previous_checked_at": "2026-09-09 12:01 PM EDT",
+  "window_started_at": "2026-09-09 12:01 PM EDT",
+  "window_ended_at": "2026-09-09 6:01 PM EDT",
   "week_start": "2026-09-06",
   "week_end": "2026-09-12",
   "week_label": "September 6–12, 2026",
-  "cutoff_start": "2026-08-17",
+  "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-09-001",
-    "NAT-2026-09-04-019",
-    "NAT-2026-08-26-004",
-    "NAT-2026-08-28-007"
+    "NAT-2026-09-09-002",
+    "NAT-2026-09-09-003",
+    "NAT-2026-07-18-002"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-09-001",
-    "NAT-2026-09-04-019"
+    "NAT-2026-09-09-002",
+    "NAT-2026-09-09-003"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-08-26-004",
-    "NAT-2026-08-28-007"
+    "NAT-2026-07-18-002"
   ],
   "dedupe_resolutions": [
     {
@@ -105,38 +103,59 @@
       "target_id": "LEG-003957",
       "decision": "distinct_lifecycle_stage",
       "notes": "The September 8 appellate ruling in No. 26-5006 is distinct from the April 2025 DOGE-management account. The latter remains unreviewed and queued for source repair; it is not counted as the same court event."
+    },
+    {
+      "entry_id": "NAT-2026-09-09-003",
+      "target_id": "NAT-2026-08-25-002",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The Los Tiguerones legal designations and Ecuador assistance package are distinct from the SOUTHCOM vessel-interdiction campaign; the records concern different instruments and outcome tests."
+    },
+    {
+      "entry_id": "NAT-2026-09-09-002",
+      "target_id": "NAT-2026-08-28-007",
+      "decision": "false_positive",
+      "notes": "Both records touch immigration status, but the Census proposal concerns decennial apportionment and questionnaire design while the birthright-citizenship record concerns citizenship and permanent residence under a separate order and rule."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Two new Truth Social posts remained feed-only",
-      "reason": "The source advanced from 36,204 to 36,206 posts. One praised an energy analyst and linked an MP4 that returned HTTP 403; the other linked retrospective partisan reporting about Michael Flynn. Neither text announced a new federal action, and no unavailable media claim was used."
+      "title": "Five new media-only Truth Social posts remained feed-only",
+      "reason": "The fallback advanced from 36,206 to 36,211 posts. All five additions lacked text, and each sole media asset returned HTTP 403; no visual claim was inferred or used as evidence."
     },
     {
-      "title": "USDA geographic-preference wording rule",
-      "reason": "USDA expressly says the direct final rule clarifies existing child-nutrition procurement language without changing its meaning or implementation. It did not independently clear the materiality threshold."
+      "title": "Putin call and Ukraine deal statements",
+      "reason": "Trump described the call positively and repeated that Putin wanted a deal, but no ceasefire, public framework, commitment or implemented action resulted by cutoff. The existing diplomacy record therefore was not padded with another rhetoric-only update."
     },
     {
-      "title": "Hungary and Poland immigrant-visa processing",
-      "reason": "The reported operational change still rests on unnamed sources; no State Department directive, embassy notice or second independent confirmation was located."
+      "title": "Possible Michael Cohen pardon",
+      "reason": "Trump said he would consider a pardon. No warrant, grant, commutation or formal review action was identified."
     },
     {
-      "title": "West Point, USPS OIG, ABA and Florida grand-jury candidates",
-      "reason": "The necessary primary filings, public scope documents, adopted text or independent confirmation remained incomplete. None is converted into a final ruling, investigation finding, charge or federal policy."
+      "title": "El Salvador temporary protected status",
+      "reason": "DHS said a decision would come at an appropriate time and current protection remained in place. No termination, extension or final status decision had issued."
     },
     {
-      "title": "Speeches, campaign activity and duplicate follow-ups",
-      "reason": "Bessent's policy advocacy, campaign material, retrospective Flynn coverage and follow-up Iran or immigration commentary did not establish a new instrument or lifecycle change."
+      "title": "Air Force One emergency-slide incident",
+      "reason": "The brief delay was operationally trivial. The underlying Qatar-aircraft record was corrected only for material lifecycle evidence: actual July use and announced October security work."
     },
     {
-      "title": "Legacy-quality batch",
-      "reason": "LEG-003957 retains its visible mismatched-citation warning. The exact underlying April 15 article still could not be fully inspected, so no guarded correction or unsupported review upgrade was made."
+      "title": "Pending West Point, USPS inspector-general, ABA, Florida grand-jury and Chinese-AI leads",
+      "reason": "Complete primary records, independent confirmation or full source review remained insufficient. None was converted into a final ruling, charge, finding or implemented policy."
+    },
+    {
+      "title": "LEG-003957 citation repair",
+      "reason": "The mismatched citation remains visibly queued because a record-specific replacement source still could not be fully inspected."
     },
     {
       "title": "External archive measurements",
-      "reason": "No external archive item was auto-promoted. Measurements were changed only if a current scoped value could be verified from the registered project itself; otherwise prior values and observation times were preserved."
+      "reason": "No external item was auto-promoted. Trump Archive measurements were updated from its primary index; UndoTrump and IPTP counts remained unchanged, and Record47 counts remained preserved because its project page exposed no current values."
     }
   ],
-  "corrections": [],
+  "corrections": [
+    {
+      "checked_at": "2026-09-09 6:01 PM EDT",
+      "summary": "LEG-004702 now replaces an unsupported billion-dollar final retrofit cost and categorical personal-benefit claim with sourced Air Force estimate, operational-use and security-upgrade lifecycle evidence."
+    }
+  ],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence."
 }
