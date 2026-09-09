@@ -1,37 +1,37 @@
 {
-  "version": "10.39.0",
+  "version": "10.40.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-09T03:58:50Z",
-    "through_utc": "2026-09-09T10:00:31Z",
+    "from_utc": "2026-09-09T10:00:31Z",
+    "through_utc": "2026-09-09T16:01:38Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
     "note": "Continuous research coverage begins at the prior release's preserved UTC boundary and ends at this run's evidence cutoff."
   },
   "release_iso": "2026-09-09",
   "release_human": "September 9, 2026",
-  "checked_at": "2026-09-09 6:00 AM EDT",
-  "previous_version": "10.38.0",
-  "previous_checked_at": "2026-09-08 11:58 PM EDT",
-  "window_started_at": "2026-09-08 11:58 PM EDT",
-  "window_ended_at": "2026-09-09 6:00 AM EDT",
+  "checked_at": "2026-09-09 12:01 PM EDT",
+  "previous_version": "10.39.0",
+  "previous_checked_at": "2026-09-09 6:00 AM EDT",
+  "window_started_at": "2026-09-09 6:00 AM EDT",
+  "window_ended_at": "2026-09-09 12:01 PM EDT",
   "week_start": "2026-09-06",
   "week_end": "2026-09-12",
   "week_label": "September 6–12, 2026",
   "cutoff_start": "2026-08-17",
   "new_entry_ids": [
-    "NAT-2026-09-06-001",
-    "NAT-2026-09-08-010",
-    "NAT-2026-09-08-011",
-    "NAT-2026-08-17-001"
+    "NAT-2026-09-09-001",
+    "NAT-2026-09-04-019",
+    "NAT-2026-08-26-004",
+    "NAT-2026-08-28-007"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-06-001",
-    "NAT-2026-09-08-010",
-    "NAT-2026-09-08-011"
+    "NAT-2026-09-09-001",
+    "NAT-2026-09-04-019"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-08-17-001"
+    "NAT-2026-08-26-004",
+    "NAT-2026-08-28-007"
   ],
   "dedupe_resolutions": [
     {
@@ -109,36 +109,32 @@
   ],
   "rejected_candidates": [
     {
-      "title": "No new Truth Social posts",
-      "reason": "The validated fallback remains at 36,204 posts. The newest was published September 8 at 10:25:12 PM EDT; the source was checked September 9 at 6:01:13 AM EDT. No newer post required text or media review."
+      "title": "Two new Truth Social posts remained feed-only",
+      "reason": "The source advanced from 36,204 to 36,206 posts. One praised an energy analyst and linked an MP4 that returned HTTP 403; the other linked retrospective partisan reporting about Michael Flynn. Neither text announced a new federal action, and no unavailable media claim was used."
     },
     {
-      "title": "Prior-window court and transportation omissions",
-      "reason": "The Ahmed ruling and NTSB preliminary briefing were published shortly before the prior 03:58:50Z boundary but were not available in that release's review. They are restored transparently under their actual September 8 and September 6 event dates rather than misdated as new actions."
+      "title": "USDA geographic-preference wording rule",
+      "reason": "USDA expressly says the direct final rule clarifies existing child-nutrition procurement language without changing its meaning or implementation. It did not independently clear the materiality threshold."
     },
     {
       "title": "Hungary and Poland immigrant-visa processing",
-      "reason": "Reuters reported resumed processing based on four unnamed sources, and the State Department declined to comment. No public directive or second independent confirmation satisfied the archive's rule for a consequential unnamed-source claim."
+      "reason": "The reported operational change still rests on unnamed sources; no State Department directive, embassy notice or second independent confirmation was located."
     },
     {
-      "title": "West Point, USPS OIG and ABA candidates",
-      "reason": "The complete West Point stipulation, public USPS OIG scope and adopted ABA council text were not available for direct inspection. Each remains queued, and none is converted into a final merits ruling, investigation finding or federal recognition decision."
+      "title": "West Point, USPS OIG, ABA and Florida grand-jury candidates",
+      "reason": "The necessary primary filings, public scope documents, adopted text or independent confirmation remained incomplete. None is converted into a final ruling, investigation finding, charge or federal policy."
     },
     {
-      "title": "Bessent speech and Arlington memorial webpage",
-      "reason": "The Treasury secretary's policy advocacy did not announce a new instrument, and edits to a memorial webpage did not independently clear the materiality threshold."
-    },
-    {
-      "title": "September 9 Federal Register documents",
-      "reason": "The DHS, NHTSA, USDA, DOE and CDC documents were scheduled for official publication after this run's 10:00:31Z evidence cutoff. They are queued for the next continuous window rather than pulled backward across the boundary."
+      "title": "Speeches, campaign activity and duplicate follow-ups",
+      "reason": "Bessent's policy advocacy, campaign material, retrospective Flynn coverage and follow-up Iran or immigration commentary did not establish a new instrument or lifecycle change."
     },
     {
       "title": "Legacy-quality batch",
-      "reason": "LEG-003957 still has a mismatched citation. Indexed and syndicated reporting narrowed the likely source, but the exact April 15 article was not fully inspectable, so no guarded historical correction or unsupported review upgrade was made."
+      "reason": "LEG-003957 retains its visible mismatched-citation warning. The exact underlying April 15 article still could not be fully inspected, so no guarded correction or unsupported review upgrade was made."
     },
     {
       "title": "External archive measurements",
-      "reason": "Trump Archive advanced to 13,928 items, including 11,546 Truth Social posts and 1,753 speeches and transcripts. UndoTrump remained at 1,264 actions and IPTP at 1,790 policies. Record47 counts could not be freshly verified, so its prior scoped measurements and observation times were preserved. No external item was auto-promoted."
+      "reason": "No external archive item was auto-promoted. Measurements were changed only if a current scoped value could be verified from the registered project itself; otherwise prior values and observation times were preserved."
     }
   ],
   "corrections": [],
