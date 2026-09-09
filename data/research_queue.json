@@ -384,15 +384,31 @@
   {
     "candidate_id": "QUEUE-20260909-FR-POSTCUTOFF",
     "title": "September 9 Federal Register publication batch",
-    "status": "pending",
+    "status": "published",
     "first_seen_at": "2026-09-09T10:00:31Z",
     "timestamp_precision": "second",
-    "reason": "Several material DHS, NHTSA, USDA, DOE and CDC documents were scheduled for official publication after the preserved 10:00:31Z evidence cutoff and cannot be pulled backward into this window.",
-    "recheck_trigger": "Inspect the final published documents and any independent context after their official publication time.",
-    "next_check_at": "2026-09-09T16:00:00Z",
+    "reason": "The final published documents were inspected. The DHS interim rule and DOE implementation inquiry materially refreshed NAT-2026-08-28-007 and NAT-2026-08-26-004; the NHTSA final rule and effective CDC reorganization were published as NAT-2026-09-09-001 and NAT-2026-09-04-019. USDA's wording-only direct final rule was withheld because the agency says it changes neither meaning nor implementation.",
+    "recheck_trigger": "Track comments, litigation, final implementation measures, compliance, staffing and measured outcomes as later lifecycle stages.",
+    "next_check_at": null,
     "provenance": [
       "https://www.federalregister.gov/documents/2026/09/09"
     ],
-    "canonical_id": null
+    "canonical_id": "NAT-2026-09-09-001",
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20260909-FR-POSTCUTOFF",
+        "title": "September 9 Federal Register publication batch",
+        "status": "pending",
+        "first_seen_at": "2026-09-09T10:00:31Z",
+        "timestamp_precision": "second",
+        "reason": "Several material DHS, NHTSA, USDA, DOE and CDC documents were scheduled for official publication after the preserved 10:00:31Z evidence cutoff and cannot be pulled backward into this window.",
+        "recheck_trigger": "Inspect the final published documents and any independent context after their official publication time.",
+        "next_check_at": "2026-09-09T16:00:00Z",
+        "provenance": [
+          "https://www.federalregister.gov/documents/2026/09/09"
+        ],
+        "canonical_id": null
+      }
+    ]
   }
 ]

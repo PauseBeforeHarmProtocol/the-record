@@ -1873,6 +1873,54 @@
       "provenance_path": "data/editorial_change_notes/10.39.0.json",
       "provenance_sha256": "9fce22527942d2877746029fa7be4b3e038f6dc7054edc29063be10549e1abe8",
       "note": "The record preserves the actual event date and lifecycle state; publication timing is separately reflected in the research window and repository history."
+    },
+    {
+      "change_id": "10.40.0:NAT-2026-09-09-001",
+      "entry_id": "NAT-2026-09-09-001",
+      "as_of_utc": "2026-09-09T16:01:38Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.40.0",
+      "summary": "Added NHTSA's final child-restraint rule with delayed compliance dates, school-bus exemptions and projected costs and benefits.",
+      "provenance_path": "data/editorial_change_notes/10.40.0.json",
+      "provenance_sha256": "fa430f7a2a64155758016532929c8b8ac06ea81ebcb8150b79ee85685b6a3927",
+      "note": "The Federal Register publication establishes the final rule; later effective and compliance dates and measured outcomes remain distinct lifecycle stages."
+    },
+    {
+      "change_id": "10.40.0:NAT-2026-09-04-019",
+      "entry_id": "NAT-2026-09-04-019",
+      "as_of_utc": "2026-09-09T16:01:38Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.40.0",
+      "summary": "Restored CDC's September 4 effective respiratory-disease reorganization from its September 9 publication without inferring staffing or performance effects.",
+      "provenance_path": "data/editorial_change_notes/10.40.0.json",
+      "provenance_sha256": "fa430f7a2a64155758016532929c8b8ac06ea81ebcb8150b79ee85685b6a3927",
+      "note": "The record uses the actual September 4 effective date and separately preserves the September 9 public-document date."
+    },
+    {
+      "change_id": "10.40.0:NAT-2026-08-26-004",
+      "entry_id": "NAT-2026-08-26-004",
+      "as_of_utc": "2026-09-09T16:01:38Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.40.0",
+      "summary": "Added DOE's formal implementation inquiry for the bulk-power emergency without treating it as a product determination or removal order.",
+      "provenance_path": "data/editorial_change_notes/10.40.0.json",
+      "provenance_sha256": "fa430f7a2a64155758016532929c8b8ac06ea81ebcb8150b79ee85685b6a3927",
+      "note": "The RFI is a later implementation stage within the existing emergency record."
+    },
+    {
+      "change_id": "10.40.0:NAT-2026-08-28-007",
+      "entry_id": "NAT-2026-08-28-007",
+      "as_of_utc": "2026-09-09T16:01:38Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.40.0",
+      "summary": "Added DHS's effective interim rule expanding the foreign-government-employee category while preserving the class injunction and unresolved merits.",
+      "provenance_path": "data/editorial_change_notes/10.40.0.json",
+      "provenance_sha256": "fa430f7a2a64155758016532929c8b8ac06ea81ebcb8150b79ee85685b6a3927",
+      "note": "The September 9 publication documents a rule effective September 4; the existing order's injunction remains a separate lifecycle state."
     }
   ],
   "reviews": [
@@ -6132,6 +6180,494 @@
       "unresolved_questions": [
         "Attribution, casualties and damage for the merchant-vessel incidents remain unresolved.",
         "Legal authority, deterrence, strategic outcomes and the duration of energy-market effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.40.0:NAT-2026-09-09-001:030b41828e83",
+      "entry_id": "NAT-2026-09-09-001",
+      "content_sha256": "030b41828e83ec6226d0419c9bc5d52564b10d6d4cfc417757d67f8dc3b47be0",
+      "reviewed_at": "2026-09-09T16:01:38Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "f48ed26469d7982b3cc4402f2286d57228d781dcaeae37978ea4455ca6a2776d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_nhtsa_child_restraint_final_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "3f9086acb5e7415e42eeac04d8b82af1eaefb0dde965c8a8fe427b55df67b517",
+              "origin_group": "National Highway Traffic Safety Administration",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "bf9e674212ad33e0f6180051d3205be9a66e8942d90ab2c4f17e3a3577d33d02",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_nhtsa_child_restraint_final_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "3f9086acb5e7415e42eeac04d8b82af1eaefb0dde965c8a8fe427b55df67b517",
+              "origin_group": "National Highway Traffic Safety Administration",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "c0aacb4f5df3cbd2798cfdbcd5a96cdfa828aea69204232b69b1baa131ff8c9e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_nhtsa_child_restraint_final_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "3f9086acb5e7415e42eeac04d8b82af1eaefb0dde965c8a8fe427b55df67b517",
+              "origin_group": "National Highway Traffic Safety Administration",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "cad5c14183d3d38a555f3eda559f7a9c139b6ea721f312c55118f483679bc829",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_nhtsa_child_restraint_final_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "3f9086acb5e7415e42eeac04d8b82af1eaefb0dde965c8a8fe427b55df67b517",
+              "origin_group": "National Highway Traffic Safety Administration",
+              "evidence_status": "ordered"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "9d2482e97b1252efbdd540e6138b502d1a6dbf0e73764b8e4b5b5e6c2440f013",
+          "review_note": "Reviewed consequences separately from projected or undisclosed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "97fbfbe8e5a8ebfed2b127375cd47526b05be4492c3ae919e436d196d2c5d647",
+          "review_note": "Preserved the agency rationale and specified observable implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "9e353c22294180799dce82aa7e1afced93cebde944aa7afd475f680e38ff31a8",
+          "review_note": "Reviewed the strongest reasonable alternative and limited the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Measured compliance, prices, market participation and safety outcomes remain unavailable."
+      ]
+    },
+    {
+      "review_id": "10.40.0:NAT-2026-09-04-019:b544297152bc",
+      "entry_id": "NAT-2026-09-04-019",
+      "content_sha256": "b544297152bc07f0cf65924ac0462e957a49b690986dcd86eef11822cc72f080",
+      "reviewed_at": "2026-09-09T16:01:38Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "f7a4cdca6fea9ff2415e690ca5716631d03eb2b12158b9c27aa25e69134bfbf5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cdc_ncird_reorganization_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "c74a6b3108a317dbe81ca539a5e42c765e9f38c7095ba506f24e7aa0fb41cef8",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "ab7a0a12fedf54eaeded7e8d8ba3360c5fd0be84ec5d42da733bab9c7d26ddb8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cdc_ncird_reorganization_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "c74a6b3108a317dbe81ca539a5e42c765e9f38c7095ba506f24e7aa0fb41cef8",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "68e3988c2aa509946bd81b2000580c139d73bcbb5c186d357507ccc27fc5493e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cdc_ncird_reorganization_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "c74a6b3108a317dbe81ca539a5e42c765e9f38c7095ba506f24e7aa0fb41cef8",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "49309a7685d947b196cb62bcdc50998310aecde53dcea3e0b39564b64043e197",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cdc_ncird_reorganization_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "c74a6b3108a317dbe81ca539a5e42c765e9f38c7095ba506f24e7aa0fb41cef8",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "f1f8e427dc3163d7ef8ffcc98b364b18866940316cddcc59c28e0f0f3cecb9f0",
+          "review_note": "Reviewed consequences separately from projected or undisclosed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "ffa56e98f30cd3586b7629eac5c85ccd2bdefa56ca72a246ed18bbbcae842974",
+          "review_note": "Preserved the agency rationale and specified observable implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "66f805ab64842eb3ab35a0f86bfab7a813c31e55a8f5ad49583c00e992630c6f",
+          "review_note": "Reviewed the strongest reasonable alternative and limited the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Staffing, budgets, operational changes and measured public-health outcomes remain undisclosed."
+      ]
+    },
+    {
+      "review_id": "10.40.0:NAT-2026-08-26-004:770b44702b10",
+      "entry_id": "NAT-2026-08-26-004",
+      "content_sha256": "770b44702b10e1303f9aca755d709f7b95e7c536e2d264173491a35933bc1da5",
+      "reviewed_at": "2026-09-09T16:01:38Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "f8d0ae16c24aa574f0e1ad0138cd03b8beca4dbedec947a1725eeeb9af6c04ce",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_doe_bulk_power_rfi_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "648a2bd48fff0f0b073edc64c0f57bf3b6cb9a44dc0606c8bd8f8be7d56379ff",
+              "origin_group": "Department of Energy",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "ab9c1edb22668314ea44d26e77ff982a8b8f2597c41af60387d79d86b5448481",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_doe_bulk_power_rfi_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "648a2bd48fff0f0b073edc64c0f57bf3b6cb9a44dc0606c8bd8f8be7d56379ff",
+              "origin_group": "Department of Energy",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "2d786918c109cac6993312817b9d281ba9620a2841ec37c026871c8f58e8f948",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_doe_bulk_power_rfi_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "648a2bd48fff0f0b073edc64c0f57bf3b6cb9a44dc0606c8bd8f8be7d56379ff",
+              "origin_group": "Department of Energy",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "f48c36a89c9338eec093b2aa7daf5fd160c88f373303d4145dc7595a1a24c8d7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_doe_bulk_power_rfi_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "648a2bd48fff0f0b073edc64c0f57bf3b6cb9a44dc0606c8bd8f8be7d56379ff",
+              "origin_group": "Department of Energy",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "d2dc0b064757eafaed2d3ee3b80bc26ad41579b44afb978973d3a5ad31a4f929",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_doe_bulk_power_rfi_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "648a2bd48fff0f0b073edc64c0f57bf3b6cb9a44dc0606c8bd8f8be7d56379ff",
+              "origin_group": "Department of Energy",
+              "evidence_status": "proposed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "39aba379e761dabe78efea0de7007036d3f26c7477689e9b5ccb1874e6131d96",
+          "review_note": "Reviewed consequences separately from projected or undisclosed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "68e811cb510d3b55423a4b977d7a5cb1ee2ec6e8edaeb197c83b69ad68fb8402",
+          "review_note": "Preserved the agency rationale and specified observable implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "fed160c93c80c34bb7a311c24bee96811458015959475f4891072ae281ae9fb0",
+          "review_note": "Reviewed the strongest reasonable alternative and limited the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Covered vendors, equipment determinations, mitigation rules, replacement capacity and measured effects remain pending."
+      ]
+    },
+    {
+      "review_id": "10.40.0:NAT-2026-08-28-007:5666253134e7",
+      "entry_id": "NAT-2026-08-28-007",
+      "content_sha256": "5666253134e759f01b9c6e699a8d9b5dda6dbbe20a3c60bca1f122785bb8e75e",
+      "reviewed_at": "2026-09-09T16:01:38Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "c2f73052b6aa1f3ed0dd398a5945ddee33d0d2a76c4cbdbd25556e775412485e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_dhs_foreign_government_children_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "6565731c89dbc8fa16bce67766f77e6783cd459056b09a7b8acbe118151c3178",
+              "origin_group": "Department of Homeland Security / USCIS",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "a656e257eb066358db496c81b2875b48ba9ce7d416f246bf7f85f9af4965c862",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_dhs_foreign_government_children_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "6565731c89dbc8fa16bce67766f77e6783cd459056b09a7b8acbe118151c3178",
+              "origin_group": "Department of Homeland Security / USCIS",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "8f491c5219d42469b5a39744ab1eb3968a7b993eecd17b68841361053403fa5e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_dhs_foreign_government_children_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "6565731c89dbc8fa16bce67766f77e6783cd459056b09a7b8acbe118151c3178",
+              "origin_group": "Department of Homeland Security / USCIS",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "7d1a7f116d98f83e9eac296f0829f3f6a7ababcd91b9c5d9d43de8ccce9e1f52",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_dhs_foreign_government_children_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "6565731c89dbc8fa16bce67766f77e6783cd459056b09a7b8acbe118151c3178",
+              "origin_group": "Department of Homeland Security / USCIS",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "d05f3628d5748faa8b771afc95264fc1d77a52541417392323e479f78029e33f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_dhs_foreign_government_children_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "6565731c89dbc8fa16bce67766f77e6783cd459056b09a7b8acbe118151c3178",
+              "origin_group": "Department of Homeland Security / USCIS",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "3e945281f998c2f513237106f1b459897c153691730ca1862c229b62b9bf1d8e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_dhs_foreign_government_children_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "6565731c89dbc8fa16bce67766f77e6783cd459056b09a7b8acbe118151c3178",
+              "origin_group": "Department of Homeland Security / USCIS",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "f6340fea8daa46420ad7d30f7a18f1fa1d12818ba634e727e05306122f6c8274",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_dhs_foreign_government_children_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "6565731c89dbc8fa16bce67766f77e6783cd459056b09a7b8acbe118151c3178",
+              "origin_group": "Department of Homeland Security / USCIS",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "5340df44313c14fcd3ee8aedc50200c5f5e656eeb816df1f02ec7eda7bf6ac1a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_dhs_foreign_government_children_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "6565731c89dbc8fa16bce67766f77e6783cd459056b09a7b8acbe118151c3178",
+              "origin_group": "Department of Homeland Security / USCIS",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "df48810dfb82f1d27d13c3c94a31b8cf420529265a60b3aa36ac41e95eca141f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_dhs_foreign_government_children_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "6565731c89dbc8fa16bce67766f77e6783cd459056b09a7b8acbe118151c3178",
+              "origin_group": "Department of Homeland Security / USCIS",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "5a714330f6e3215da890b71b7a646a8b1cd35917a033cabbf56922974356bc8c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_dhs_foreign_government_children_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "6565731c89dbc8fa16bce67766f77e6783cd459056b09a7b8acbe118151c3178",
+              "origin_group": "Department of Homeland Security / USCIS",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 10,
+          "fact_sha256": "32c33d7976c3a781681afbed5aa914d395ed2f4c9e594fb6add9bb22885b8bd5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_dhs_foreign_government_children_sep9",
+              "locator": "Inspected Federal Register text and document metadata together with the attached record sources supporting this indexed fact",
+              "inspected_at": "2026-09-09T16:01:38Z",
+              "document_sha256": "6565731c89dbc8fa16bce67766f77e6783cd459056b09a7b8acbe118151c3178",
+              "origin_group": "Department of Homeland Security / USCIS",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "d644a8fe4dab68ff28798580dc2eb39bdf0789c4be24254949d4ee0213fb9d80",
+          "review_note": "Reviewed consequences separately from projected or undisclosed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "cefa02a86c2b26d446adafe4f33b17df93d95470c63b4a027ac6066db2c64e00",
+          "review_note": "Preserved the agency rationale and specified observable implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "94969382501a95ee787abc440d06db4ea0d940a3ef2a9aa209c96efe4cd083db",
+          "review_note": "Reviewed the strongest reasonable alternative and limited the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "The interim rule's constitutional reach, interaction with the class injunction and affected population remain unresolved."
       ]
     }
   ],
