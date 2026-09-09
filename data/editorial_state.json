@@ -1921,6 +1921,42 @@
       "provenance_path": "data/editorial_change_notes/10.40.0.json",
       "provenance_sha256": "fa430f7a2a64155758016532929c8b8ac06ea81ebcb8150b79ee85685b6a3927",
       "note": "The September 9 publication documents a rule effective September 4; the existing order's injunction remains a separate lifecycle state."
+    },
+    {
+      "change_id": "10.41.0:NAT-2026-09-09-002",
+      "entry_id": "NAT-2026-09-09-002",
+      "as_of_utc": "2026-09-09T22:01:56Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.41.0",
+      "summary": "Added the two-part Census Bureau proposal without treating it as a changed 2030 census, a lawful final rule or a measured apportionment outcome.",
+      "provenance_path": "data/editorial_change_notes/10.41.0.json",
+      "provenance_sha256": "227e23956735c4bccba88d18e211701fabaaebf2811da9621f05642c5e5b06fd",
+      "note": "The primary proposal was filed before the prior cutoff but was restored transparently once independently reported and fully inspected."
+    },
+    {
+      "change_id": "10.41.0:NAT-2026-09-09-003",
+      "entry_id": "NAT-2026-09-09-003",
+      "as_of_utc": "2026-09-09T22:01:56Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.41.0",
+      "summary": "Added the signed Los Tiguerones designations and announced Ecuador assistance while preserving publication, funding and delivery lifecycle limits.",
+      "provenance_path": "data/editorial_change_notes/10.41.0.json",
+      "provenance_sha256": "227e23956735c4bccba88d18e211701fabaaebf2811da9621f05642c5e5b06fd",
+      "note": "The legal notices are separated from later effectiveness and from the independently reported assistance announcement."
+    },
+    {
+      "change_id": "10.41.0:NAT-2026-07-18-002",
+      "entry_id": "NAT-2026-07-18-002",
+      "as_of_utc": "2026-09-09T22:01:56Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.41.0",
+      "summary": "Added two multistate lawsuits as allegations at filing, with no complaint-text inspection, merits ruling, injunction or change to the challenged rules.",
+      "provenance_path": "data/editorial_change_notes/10.41.0.json",
+      "provenance_sha256": "227e23956735c4bccba88d18e211701fabaaebf2811da9621f05642c5e5b06fd",
+      "note": "This is a later litigation stage within the existing regulatory record."
     }
   ],
   "reviews": [
@@ -6668,6 +6704,353 @@
       ],
       "unresolved_questions": [
         "The interim rule's constitutional reach, interaction with the class injunction and affected population remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.41.0:NAT-2026-09-09-002:7650a2a476c1",
+      "entry_id": "NAT-2026-09-09-002",
+      "content_sha256": "7650a2a476c1b34c4746af643ca616e622e441f8dbbfc818b459101e02ef4bd7",
+      "reviewed_at": "2026-09-09T22:01:56Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "736bf1423b1cd6502141b9392c423ca8bf32b112e32cb544bde952d5b2047236",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_census_residence_demographics_proposal_sep9",
+              "locator": "Inspected the filed primary text and document metadata supporting this indexed fact.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "3982ae279a8d520c7828be6ea1474e4f646050239984a693805863a9462a4457",
+              "origin_group": "U.S. Census Bureau",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "b2b5f265972ee8f892ce309e942e6d008276242a4f6c592dc1cb5fe1e1606dab",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_census_residence_demographics_proposal_sep9",
+              "locator": "Inspected the filed primary text and document metadata supporting this indexed fact.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "3982ae279a8d520c7828be6ea1474e4f646050239984a693805863a9462a4457",
+              "origin_group": "U.S. Census Bureau",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "reuters_census_proposal_sep9",
+              "locator": "Inspected independent reporting supporting this indexed fact; digest identifies the extracted source-level representation.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "d75d9d296b36549ec08a828a28830f5a2305ad3a1dd49bd05f81bbf7aa97f69a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "87e3aa07ef93739cf3973af5d3284ce028adc254aa59b62f8bba03515b4b156c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_census_residence_demographics_proposal_sep9",
+              "locator": "Inspected the filed primary text and document metadata supporting this indexed fact.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "3982ae279a8d520c7828be6ea1474e4f646050239984a693805863a9462a4457",
+              "origin_group": "U.S. Census Bureau",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "643f07a34bd954059275502d15fbc58999afbeb4c66cce552f73d00b1bf205ff",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_census_residence_demographics_proposal_sep9",
+              "locator": "Inspected the filed primary text and document metadata supporting this indexed fact.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "3982ae279a8d520c7828be6ea1474e4f646050239984a693805863a9462a4457",
+              "origin_group": "U.S. Census Bureau",
+              "evidence_status": "proposed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "dcf7db40eeb969999308206c5d74c5def01ce57d69b0e23922ac32fab3915057",
+          "review_note": "Reviewed consequences separately from projected, alleged or unmeasured outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "6ebfebc9ece7a185d28e571f8eee4762e1991a5ff53a1ed52e80ab2e304bef47",
+          "review_note": "Preserved the strongest relevant administration rationale and specified observable legal and implementation tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "9af61f07dbb137b9df73643680a0c5984c9c4ee9ca525bbdaa077cea694a1a74",
+          "review_note": "Reviewed the strongest reasonable alternative and limited the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Final text, legal validity, enumeration operations, state apportionment effects and response or privacy outcomes remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.41.0:NAT-2026-09-09-003:a208beecd1bd",
+      "entry_id": "NAT-2026-09-09-003",
+      "content_sha256": "a208beecd1bd7f0089c51f4ad778c3b87045705dddddb54fa3eb40a39ece1930",
+      "reviewed_at": "2026-09-09T22:01:56Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "63749f0b6f4bd1079bb07d47b42a97f96968e17cf1c87697efba14d9e8368bb6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_los_tiguerones_fto_sep9",
+              "locator": "Inspected the filed primary text and document metadata supporting this indexed fact.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "7f305f7b3a962d5baa34c48fd509a71fe2f7d3fcc38cfb84e661ac272eb065a1",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fr_los_tiguerones_sdgt_sep9",
+              "locator": "Inspected the filed primary text and document metadata supporting this indexed fact.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "c372cba1d0cd01ed8ab5fbbe7fdf6a012cea58d1e747358c18a7c07b7f23c271",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "77f1279436b43d7e3a4971d6794168596b50e3eed178b1e9508fa7f829e1e7a7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_los_tiguerones_sdgt_sep9",
+              "locator": "Inspected the filed primary text and document metadata supporting this indexed fact.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "c372cba1d0cd01ed8ab5fbbe7fdf6a012cea58d1e747358c18a7c07b7f23c271",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "7f32d7415b4f4ab1d21488524649ccf2002a5c1a9c9e150a47420136c2cbed1e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ecuador_security_sep9",
+              "locator": "Inspected independent reporting supporting this indexed fact; digest identifies the extracted source-level representation.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "9792fafbf73951ac333b0d0a1f8e5358dc3bd56388d333e03814cf45d93a5b24",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ecuador_security_sep9",
+              "locator": "Inspected independent reporting supporting this indexed fact; digest identifies the extracted source-level representation.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "54da7c733e85f9ef277f0f3dc47f8aa9923fb77bf06c11d806250df78f07110d",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "49e6e5d51b8772a84fd41cfb53bd2dd97f62a4a200176e973ab449d4bccac0e7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ecuador_security_sep9",
+              "locator": "Inspected independent reporting supporting this indexed fact; digest identifies the extracted source-level representation.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "9792fafbf73951ac333b0d0a1f8e5358dc3bd56388d333e03814cf45d93a5b24",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ecuador_security_sep9",
+              "locator": "Inspected independent reporting supporting this indexed fact; digest identifies the extracted source-level representation.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "54da7c733e85f9ef277f0f3dc47f8aa9923fb77bf06c11d806250df78f07110d",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "159b1980a85c1cb13960567db8d8f1be9f0e608b26cd7bd8e26ae69dba093b72",
+          "review_note": "Reviewed consequences separately from projected, alleged or unmeasured outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "68c3aa05e6015cce7fb9965f751b21a901a0f304345113f11f1ca2ead6c13988",
+          "review_note": "Preserved the strongest relevant administration rationale and specified observable legal and implementation tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "29a30acfd229867cd9137398e296e93adb5d0203951c6314b94db2d518cfaebc",
+          "review_note": "Reviewed the strongest reasonable alternative and limited the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Congressional funding action, vessel transfer dates, designation implementation, underlying evidentiary records and measured security effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.41.0:NAT-2026-07-18-002:b32e5feb005f",
+      "entry_id": "NAT-2026-07-18-002",
+      "content_sha256": "b32e5feb005f613ab4e7490f3bb036ef73c61a426a084a95d130d7a9744ad876",
+      "reviewed_at": "2026-09-09T22:01:56Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "0bd7edb646397ddb27ee508580e985fd8375dc723a7177580b7ff2efc25e57b3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_esa",
+              "locator": "Inspected independent reporting supporting this indexed fact; digest identifies the extracted source-level representation.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "c3b84ea4bc1eba5925800b47bb1e11050843e2c002b266848ec0ede9e18f46d3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "doi_esa_final",
+              "locator": "Inspected the filed primary text and document metadata supporting this indexed fact.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "45fcab277a9e92338b78d315d5e9c2674ee145012ffa791b06318b6324a702a9",
+              "origin_group": "U.S. Department of the Interior",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5ad90429c4218a86bed6d257ee09d9e6ba8e39152e897205e08aed858bd30880",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_esa",
+              "locator": "Inspected independent reporting supporting this indexed fact; digest identifies the extracted source-level representation.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "c3b84ea4bc1eba5925800b47bb1e11050843e2c002b266848ec0ede9e18f46d3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "doi_esa_final",
+              "locator": "Inspected the filed primary text and document metadata supporting this indexed fact.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "45fcab277a9e92338b78d315d5e9c2674ee145012ffa791b06318b6324a702a9",
+              "origin_group": "U.S. Department of the Interior",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "944bb16e202dbe87d0ca7528e42d0e103db8d5a643acc841771a30ce38f48d36",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_esa",
+              "locator": "Inspected independent reporting supporting this indexed fact; digest identifies the extracted source-level representation.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "c3b84ea4bc1eba5925800b47bb1e11050843e2c002b266848ec0ede9e18f46d3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "doi_harm",
+              "locator": "Inspected the filed primary text and document metadata supporting this indexed fact.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "599851ad555db883b48586bd377f80835487198a07958fdaeec277fdd472965a",
+              "origin_group": "U.S. Department of the Interior",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "36530e0a54b0f77668d21eb18d6fcd7ad5a8d3e61b5dd0c51f3aa449271cd058",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_esa_states_lawsuits_sep9",
+              "locator": "Inspected independent reporting supporting this indexed fact; digest identifies the extracted source-level representation.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "63e36ae9285c6e8c71c5dba79ccccf38657830c22e2f97dbaaeb854c30cd7254",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "569454a45f8caebb5f04a4eddcff8f6658c98866e3b3aee177c2a7eae09ffe13",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_esa_states_lawsuits_sep9",
+              "locator": "Inspected independent reporting supporting this indexed fact; digest identifies the extracted source-level representation.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "63e36ae9285c6e8c71c5dba79ccccf38657830c22e2f97dbaaeb854c30cd7254",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "1baa343917b05761936d3609cf22f4e2efd7a3c5b70c3bbc09a1691480fb870b",
+          "review_note": "Reviewed consequences separately from projected, alleged or unmeasured outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "cd1d3f0e54ad5ad72a48a83598a182b6704a10f45b8e8f59c3699073bb48a9ab",
+          "review_note": "Preserved the strongest relevant administration rationale and specified observable legal and implementation tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "b264f21da329787a6e68d72094eb92242483824e4109b1f2c36b2e2118752d2b",
+          "review_note": "Reviewed the strongest reasonable alternative and limited the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "The complaints’ exact requested relief, injunction status, merits and ecological effects remain unresolved."
       ]
     }
   ],
