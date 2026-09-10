@@ -445,16 +445,75 @@
   {
     "candidate_id": "QUEUE-20260910-LOS-TIGUERONES-PUBLICATION",
     "title": "Final publication and effectiveness of Los Tiguerones designations",
-    "status": "pending",
+    "status": "published",
     "first_seen_at": "2026-09-10T04:02:20Z",
     "timestamp_precision": "second",
-    "reason": "The signed notices were scheduled for September 10 publication, but their final published edition was not yet inspectable by the 12:02 AM EDT cutoff. NAT-2026-09-09-003 therefore remains at the signed-but-not-yet-effective stage.",
-    "recheck_trigger": "Inspect the final Federal Register publications and update the existing canonical record if the FTO designation becomes effective as scheduled.",
-    "next_check_at": "2026-09-10T10:02:20Z",
+    "reason": "The final September 10 publications were inspected. The existing FTO record now states publication-triggered effectiveness; announced assistance is not treated as delivered.",
+    "recheck_trigger": "New designation litigation, funding instruments, transfer records or measured security effects.",
+    "next_check_at": null,
     "provenance": [
       "https://www.federalregister.gov/public-inspection/2026-18442/foreign-terrorist-organization-designation-of-los-tiguerones",
       "https://www.federalregister.gov/public-inspection/2026-18443/specially-designated-global-terrorist-designation-of-los-tiguerones"
     ],
-    "canonical_id": "NAT-2026-09-09-003"
+    "canonical_id": "NAT-2026-09-09-003",
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20260910-LOS-TIGUERONES-PUBLICATION",
+        "title": "Final publication and effectiveness of Los Tiguerones designations",
+        "status": "pending",
+        "first_seen_at": "2026-09-10T04:02:20Z",
+        "timestamp_precision": "second",
+        "reason": "The signed notices were scheduled for September 10 publication, but their final published edition was not yet inspectable by the 12:02 AM EDT cutoff. NAT-2026-09-09-003 therefore remains at the signed-but-not-yet-effective stage.",
+        "recheck_trigger": "Inspect the final Federal Register publications and update the existing canonical record if the FTO designation becomes effective as scheduled.",
+        "next_check_at": "2026-09-10T10:02:20Z",
+        "provenance": [
+          "https://www.federalregister.gov/public-inspection/2026-18442/foreign-terrorist-organization-designation-of-los-tiguerones",
+          "https://www.federalregister.gov/public-inspection/2026-18443/specially-designated-global-terrorist-designation-of-los-tiguerones"
+        ],
+        "canonical_id": "NAT-2026-09-09-003"
+      }
+    ]
+  },
+  {
+    "candidate_id": "QUEUE-20260910-ACA-REFUNDS",
+    "title": "$500 ACA refund announcement",
+    "status": "pending",
+    "first_seen_at": "2026-09-10T16:09:31.994324Z",
+    "timestamp_precision": "second",
+    "reason": "Reuters and AP report announced October payments. Complete primary eligibility, funding authority and implementation documents were not inspected, so the lead is queued and no payment is recorded as made.",
+    "recheck_trigger": "Inspect complete primary instruments, chronology and canonical duplicate matches before publishing a precise lifecycle update.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.reuters.com/world/us-issue-500-obamacare-refunds-nearly-million-americans-2026-09-10/"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260910-WORK-VISA-GRACE",
+    "title": "H-1B and other work-visa grace-period proposal",
+    "status": "pending",
+    "first_seen_at": "2026-09-10T16:09:31.994324Z",
+    "timestamp_precision": "second",
+    "reason": "Reuters reports a proposal ending the 60-day grace period. The complete primary notice and affected-category exceptions require inspection before publication; the existing grace period is not recorded as already removed.",
+    "recheck_trigger": "Inspect complete primary instruments, chronology and canonical duplicate matches before publishing a precise lifecycle update.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.reuters.com/legal/government/trump-administration-proposes-waiving-grace-period-h-1b-holders-after-job-loss-2026-09-10/"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260910-TERRORISM-EMERGENCY",
+    "title": "September 10 publication of previously announced measures",
+    "status": "pending",
+    "first_seen_at": "2026-09-10T16:09:31.994324Z",
+    "timestamp_precision": "second",
+    "reason": "The census proposal and ranching orders already have records. Their publication alone was not treated as a new event. The September 8 annual terrorism-emergency continuation remains queued for original chronology and legacy deduplication review.",
+    "recheck_trigger": "Inspect complete primary instruments, chronology and canonical duplicate matches before publishing a precise lifecycle update.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.federalregister.gov/documents/2026/09/10/2026-18589/continuation-of-the-national-emergency-with-respect-to-certain-terrorist-attacks"
+    ],
+    "canonical_id": null
   }
 ]

@@ -2005,6 +2005,54 @@
       "provenance_path": "data/editorial_change_notes/10.42.0.json",
       "provenance_sha256": "6566eb15009ed23a8deea7d4beeb9dcc40f6e4b4dce3801f18242620e5dfed9f",
       "note": "The cockpit-recording update is a later evidentiary stage within the same open NTSB investigation."
+    },
+    {
+      "change_id": "10.43.0:NAT-2026-09-10-001",
+      "entry_id": "NAT-2026-09-10-001",
+      "as_of_utc": "2026-09-10T15:57:35Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.43.0",
+      "summary": "Added the Supreme Court’s stay of the conflicting Missouri federal map order; no final merits holding is asserted.",
+      "provenance_path": "data/editorial_change_notes/10.43.0.json",
+      "provenance_sha256": "7c1187f7d75597fdd121a76141661a096eb7c2be5a60933d307cbc0952717663",
+      "note": "Source inspection completion is separately timestamped; coverage cutoff and original action dates are preserved."
+    },
+    {
+      "change_id": "10.43.0:NAT-2026-09-10-002",
+      "entry_id": "NAT-2026-09-10-002",
+      "as_of_utc": "2026-09-10T15:57:35Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.43.0",
+      "summary": "Added the NRC’s proposed groundwater and decommissioning changes with comment deadline, agency rationale and outcome limits.",
+      "provenance_path": "data/editorial_change_notes/10.43.0.json",
+      "provenance_sha256": "7c1187f7d75597fdd121a76141661a096eb7c2be5a60933d307cbc0952717663",
+      "note": "Source inspection completion is separately timestamped; coverage cutoff and original action dates are preserved."
+    },
+    {
+      "change_id": "10.43.0:NAT-2026-09-09-003",
+      "entry_id": "NAT-2026-09-09-003",
+      "as_of_utc": "2026-09-10T15:57:35Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.43.0",
+      "summary": "Updated the existing designation record to effective FTO status upon September 10 publication; assistance remains separately announced.",
+      "provenance_path": "data/editorial_change_notes/10.43.0.json",
+      "provenance_sha256": "7c1187f7d75597fdd121a76141661a096eb7c2be5a60933d307cbc0952717663",
+      "note": "Source inspection completion is separately timestamped; coverage cutoff and original action dates are preserved."
+    },
+    {
+      "change_id": "10.43.0:NAT-2026-09-04-007",
+      "entry_id": "NAT-2026-09-04-007",
+      "as_of_utc": "2026-09-10T15:57:35Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.43.0",
+      "summary": "Specified three regulatory sections and J-1 within the already-recorded September 8 licensing action; September 10 is publication, not a new effective date.",
+      "provenance_path": "data/editorial_change_notes/10.43.0.json",
+      "provenance_sha256": "7c1187f7d75597fdd121a76141661a096eb7c2be5a60933d307cbc0952717663",
+      "note": "Source inspection completion is separately timestamped; coverage cutoff and original action dates are preserved."
     }
   ],
   "reviews": [
@@ -7183,7 +7231,7 @@
               "inspected_at": "2026-09-10T04:02:20Z",
               "document_sha256": "936457f534a3f6a3b9fcba11c0401507b6ec251e1c105a5c088d3388cf4ce0bc",
               "origin_group": "Reuters",
-            "evidence_status": "reported"
+              "evidence_status": "reported"
             },
             {
               "source_id": "ap_el_salvador_tps_sep9",
@@ -7191,7 +7239,7 @@
               "inspected_at": "2026-09-10T04:02:20Z",
               "document_sha256": "bc647b1c0daa380ab72b2c2570d25052c7c5e327ad00f35beef774de36687619",
               "origin_group": "Associated Press",
-            "evidence_status": "reported"
+              "evidence_status": "reported"
             }
           ]
         }
@@ -7506,7 +7554,7 @@
               "inspected_at": "2026-09-10T04:02:20Z",
               "document_sha256": "26362da265e1cccd18d0c309cbf42a2cadfe46f12117a536ffc8617552e4323b",
               "origin_group": "National Transportation Safety Board",
-            "evidence_status": "reported"
+              "evidence_status": "reported"
             }
           ]
         },
@@ -7582,7 +7630,7 @@
               "inspected_at": "2026-09-10T04:02:20Z",
               "document_sha256": "26362da265e1cccd18d0c309cbf42a2cadfe46f12117a536ffc8617552e4323b",
               "origin_group": "National Transportation Safety Board",
-            "evidence_status": "reported"
+              "evidence_status": "reported"
             }
           ]
         }
@@ -7606,6 +7654,459 @@
       ],
       "unresolved_questions": [
         "Probable cause, causal responsibility and resulting safety recommendations remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.43.0:NAT-2026-09-10-001:ddeb8d01f5ef",
+      "entry_id": "NAT-2026-09-10-001",
+      "content_sha256": "ddeb8d01f5ef4ee4c0b23b9a15fa465ab9ca984d239f92b0bf682510eee334a9",
+      "reviewed_at": "2026-09-10T16:09:31.994324Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "c72602d29271521e4c8c10502b4649426133022b829242945da0fd127a9c2000",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_missouri_stay_sep10",
+              "locator": "One-page order, application 26A326; grant and duration.",
+              "inspected_at": "2026-09-10T16:09:31.994324Z",
+              "document_sha256": "021e673669d304d29f7027c87679a97f8d847c2e63d33e8d7e5cffc56d59b6ad",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "af9b6568c42dc3cb1dc840a02de1c2eba79d574f3b29731ba333a0ad464c3512",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_missouri_stay_sep10",
+              "locator": "One-page order; termination conditions and unsigned form.",
+              "inspected_at": "2026-09-10T16:09:31.994324Z",
+              "document_sha256": "021e673669d304d29f7027c87679a97f8d847c2e63d33e8d7e5cffc56d59b6ad",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "4c6e7ec303e3021d4a88a67fb922730ea2e331c2c3ef16905618859e66209bfc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_missouri_stay_sep10",
+              "locator": "Article paragraphs on required map, state-court referendum and Trump-backed redistricting.",
+              "inspected_at": "2026-09-10T16:09:31.994324Z",
+              "document_sha256": "8f6e9c842e3dea3f8bbb0cf8bd72793c1cb7ef920fd4a5beb03db2e084423898",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "74acce4cee6751f14c8b968f6a22d8bc36ab910e484df754d1786b66e73aca29",
+          "review_note": "Reviewed institutional effects separately from unmeasured outcomes and final merits."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "6a01032724b575b65872d12bd4841f8ce8a6456ff087efc6fb28d85397c9f1a7",
+          "review_note": "Reviewed the strongest documented agency or relevant party rationale without inventing an administration response."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "82133884f86a78db5cb16bffcdac78d9f8d9d489caa8073beda267d32ee78761",
+          "review_note": "Reviewed the plausible alternative and limited Therefore to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, litigation and measured outcomes require subsequent evidence; no unsupported outcome or merits conclusion is asserted."
+      ]
+    },
+    {
+      "review_id": "10.43.0:NAT-2026-09-10-002:b853ff6bd88a",
+      "entry_id": "NAT-2026-09-10-002",
+      "content_sha256": "b853ff6bd88a201e15ad9a621b429232a7b95f78ca4252b7737669b43f28226f",
+      "reviewed_at": "2026-09-10T16:09:31.994324Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "2e065a701dd9b56c38dd7e8b4c23eb39fbd6006f63529ae096c017020e2e5f53",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_nrc_isr_decommissioning_sep10",
+              "locator": "Agency/action/dates; October 13 comment deadline.",
+              "inspected_at": "2026-09-10T16:09:31.994324Z",
+              "document_sha256": "0776df4f3d84aae8c35143ccf7865c83e7aa922399948bbf8dc7529d30e08218",
+              "origin_group": "Nuclear Regulatory Commission",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "074456e932beb22831bde3f8d4ee87f8b4d814e9f55436a60f00468887eede67",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_nrc_isr_decommissioning_sep10",
+              "locator": "Executive Summary A–B; ISR-specific groundwater standards and alternate concentration limits.",
+              "inspected_at": "2026-09-10T16:09:31.994324Z",
+              "document_sha256": "0776df4f3d84aae8c35143ccf7865c83e7aa922399948bbf8dc7529d30e08218",
+              "origin_group": "Nuclear Regulatory Commission",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "e054275a3549bbb0ce5c7c7a73f381f5471289b2e671427a7d2370f4771f71b9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_nrc_isr_decommissioning_sep10",
+              "locator": "Executive Summary A–B; notification flexibility and 10 CFR 50.12 exemption process.",
+              "inspected_at": "2026-09-10T16:09:31.994324Z",
+              "document_sha256": "0776df4f3d84aae8c35143ccf7865c83e7aa922399948bbf8dc7529d30e08218",
+              "origin_group": "Nuclear Regulatory Commission",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "cb55f83d09eafaab70af2e57b005c9e21f1ae89f145dfe5b0d7d9afe6daff9ed",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_nrc_isr_decommissioning_sep10",
+              "locator": "Executive Summary C and Section II; projected savings, unquantified aggregate and EO 14300.",
+              "inspected_at": "2026-09-10T16:09:31.994324Z",
+              "document_sha256": "0776df4f3d84aae8c35143ccf7865c83e7aa922399948bbf8dc7529d30e08218",
+              "origin_group": "Nuclear Regulatory Commission",
+              "evidence_status": "proposed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "0119fc678d4cf06020688bea1199d71cf294b78a907ea5f6db40382c92164085",
+          "review_note": "Reviewed institutional effects separately from unmeasured outcomes and final merits."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "a4949e0f64cac5d1bb05f022b355227593085e7f3234335355972215852a58a0",
+          "review_note": "Reviewed the strongest documented agency or relevant party rationale without inventing an administration response."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "fe0219796a7cb38997549ca337d4d52f38c481f0a9fd3af5b3f93008691666be",
+          "review_note": "Reviewed the plausible alternative and limited Therefore to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, litigation and measured outcomes require subsequent evidence; no unsupported outcome or merits conclusion is asserted."
+      ]
+    },
+    {
+      "review_id": "10.43.0:NAT-2026-09-09-003:87d55b0189f7",
+      "entry_id": "NAT-2026-09-09-003",
+      "content_sha256": "87d55b0189f79946486e70c7a61d092452de99d842bd4252bbb69f1011e69565",
+      "reviewed_at": "2026-09-10T16:09:31.994324Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "20946abe118338b5b9e09cb0c4e610cfedcf0dcd73e8b888f54b54d07932d0c6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_los_tiguerones_fto_published_sep10",
+              "locator": "Published edition header, aliases, signature date and publication-trigger sentence.",
+              "inspected_at": "2026-09-10T16:09:31.994324Z",
+              "document_sha256": "1ef70ddca17cbda2ac7e0ac290ce4e852545b457827732a9c7a0bafa0d5f930e",
+              "origin_group": "Department of State",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "fr_los_tiguerones_sdgt_published_sep10",
+              "locator": "Published edition header and August 3 signature.",
+              "inspected_at": "2026-09-10T16:09:31.994324Z",
+              "document_sha256": "079d2001acd2249aa1430f3ffe1a1c2d20b4b80977856771f7c3c057c06da75e",
+              "origin_group": "Department of State",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "77f1279436b43d7e3a4971d6794168596b50e3eed178b1e9508fa7f829e1e7a7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_los_tiguerones_sdgt_sep9",
+              "locator": "Inspected the filed primary text and document metadata supporting this indexed fact.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "c372cba1d0cd01ed8ab5fbbe7fdf6a012cea58d1e747358c18a7c07b7f23c271",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "7f32d7415b4f4ab1d21488524649ccf2002a5c1a9c9e150a47420136c2cbed1e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ecuador_security_sep9",
+              "locator": "Inspected independent reporting supporting this indexed fact; digest identifies the extracted source-level representation.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "9792fafbf73951ac333b0d0a1f8e5358dc3bd56388d333e03814cf45d93a5b24",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ecuador_security_sep9",
+              "locator": "Inspected independent reporting supporting this indexed fact; digest identifies the extracted source-level representation.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "54da7c733e85f9ef277f0f3dc47f8aa9923fb77bf06c11d806250df78f07110d",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "49e6e5d51b8772a84fd41cfb53bd2dd97f62a4a200176e973ab449d4bccac0e7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ecuador_security_sep9",
+              "locator": "Inspected independent reporting supporting this indexed fact; digest identifies the extracted source-level representation.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "9792fafbf73951ac333b0d0a1f8e5358dc3bd56388d333e03814cf45d93a5b24",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ecuador_security_sep9",
+              "locator": "Inspected independent reporting supporting this indexed fact; digest identifies the extracted source-level representation.",
+              "inspected_at": "2026-09-09T22:01:56Z",
+              "document_sha256": "54da7c733e85f9ef277f0f3dc47f8aa9923fb77bf06c11d806250df78f07110d",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "0527175bc3edc1d3a41f828c78492dd97c8fd291b9679bf66bc2f66d33f845ae",
+          "review_note": "Reviewed institutional effects separately from unmeasured outcomes and final merits."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "68c3aa05e6015cce7fb9965f751b21a901a0f304345113f11f1ca2ead6c13988",
+          "review_note": "Reviewed the strongest documented agency or relevant party rationale without inventing an administration response."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "2d8e415c0b9a214a78b51c9c88907d78e52fda9d1491f148933fc54097c36021",
+          "review_note": "Reviewed the plausible alternative and limited Therefore to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, litigation and measured outcomes require subsequent evidence; no unsupported outcome or merits conclusion is asserted."
+      ]
+    },
+    {
+      "review_id": "10.43.0:NAT-2026-09-04-007:24e4d1e9addd",
+      "entry_id": "NAT-2026-09-04-007",
+      "content_sha256": "24e4d1e9addd14bb449b08654130b5c72926068f54f6187641fc7253dbed8295",
+      "reviewed_at": "2026-09-10T16:09:31.994324Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "baa10ba127137fc7495491315e5f214ae4d6ed12faf3db2c9e7cfe5ba6cf6cd9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_iran_turkey_designations_sep4",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "c0abda9e10a5812308cfac1626ed689824fb43ea816980aeb2935fab262e18f9",
+              "origin_group": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "c2a2f3709c9ae176bcb5a19ab08b7575c825516a03485e4a58ff433b8afda685",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_iran_turkey_designations_sep4",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "c0abda9e10a5812308cfac1626ed689824fb43ea816980aeb2935fab262e18f9",
+              "origin_group": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "703bcec6e5ac4ff454097fe4d7d01631edc4d1cbe458f40a48b12682591a0a44",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_iran_turkey_designations_sep4",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "c0abda9e10a5812308cfac1626ed689824fb43ea816980aeb2935fab262e18f9",
+              "origin_group": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "f900b50ac1a30813f24443f93dc0e6bbc249947341486f60cfcbe04511e63a2c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_turkey_sanctions_sep4",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "5ddb656d3eabde1726831b4cbffd55030591e0d79a94381bd4e71ec6c4c51e7c",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "3be4f496ec753bb66749401332cb18d535e7f1371148a73367b79217052fb4c8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_iran_aviation_sep8",
+              "locator": "recent-action notice, SDN additions, J-1 suspension and General Licenses DD and 37",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "c9d9bcc3e34b1ae41d51b8132deb909d8e063092bd7ae6db5190928dcb50b079",
+              "origin_group": "Office of Foreign Assets Control",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "0625bf5e7c51db007674f3b7d2dca4e686357f83ff3fac93543c3daff80be48b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_iran_aviation_sep8",
+              "locator": "recent-action notice, SDN additions, J-1 suspension and General Licenses DD and 37",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "c9d9bcc3e34b1ae41d51b8132deb909d8e063092bd7ae6db5190928dcb50b079",
+              "origin_group": "Office of Foreign Assets Control",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "7ffd53cc635cec31e1bd41ee51f92edd252deb2ee78e8ed83ed72fdf961d047f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_iran_aviation_sep8",
+              "locator": "recent-action notice, SDN additions, J-1 suspension and General Licenses DD and 37",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "c9d9bcc3e34b1ae41d51b8132deb909d8e063092bd7ae6db5190928dcb50b079",
+              "origin_group": "Office of Foreign Assets Control",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_iran_aviation_sanctions_sep8",
+              "locator": "article body on designation count, aviation networks and Treasury rationale",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "c8146227cc59c861345e320bf6f881caea5d8e7d385eab2371cbeaf2ac48c049",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_iran_aviation_sanctions_sep8",
+              "locator": "article body on aviation-sector targets, foreign providers and administration response",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "9cc127643824528a785556120628ee42f7ad544743357c4a20f6e9899850113c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "2266cc2945d6df898204d445bc3c27c77b3afaefa2cd1d89d66aa55db73794e9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_iran_license_suspensions_sep10",
+              "locator": "DATES, Rules To Be Stayed and operative amendment; September 8 effectiveness, September 10 edition.",
+              "inspected_at": "2026-09-10T16:09:31.994324Z",
+              "document_sha256": "ad22e32ee0c55086f310fb1e0037cf19642fff37132b194845e338e7462179df",
+              "origin_group": "Department of the Treasury / OFAC",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "2f0e2edb7f28aaa51d1e8736278d5397580275d334b8db564833a2e1a4357f58",
+          "review_note": "Reviewed institutional effects separately from unmeasured outcomes and final merits."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "b8cd05b9af59c76fa8b9c8d8560c70421516a11cdd0af510ee9cfd54ef2b29a0",
+          "review_note": "Reviewed the strongest documented agency or relevant party rationale without inventing an administration response."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "e4794cc47f36d03339b20f883960a3fdf49684729e34c425d0545dc1312075d8",
+          "review_note": "Reviewed the plausible alternative and limited Therefore to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, litigation and measured outcomes require subsequent evidence; no unsupported outcome or merits conclusion is asserted."
       ]
     }
   ],
