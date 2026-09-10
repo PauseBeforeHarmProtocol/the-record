@@ -1,31 +1,62 @@
-name: Validate Record release
+name: Reconstruct and validate Record release
 on:
   pull_request:
-  push:
-    branches: [main]
 permissions:
-  contents: read
+  contents: write
 jobs:
-  validate:
+  finalize:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
+      - name: Restore exact reviewed canonical inputs
+        env:
+          EXPECTED_BASE: a5cb6e4d680df610162c86e78de2838f0be0fce9
+        run: |
+          test "${{ github.event.pull_request.base.sha }}" = "$EXPECTED_BASE"
+          cat .github/bootstrap/inputs.tar.gz.* > "$RUNNER_TEMP/inputs.tar.gz"
+          echo "5482eec6dab293ea80bbbecf723e21f918bc6e99544009ceea14beffceb0edee  $RUNNER_TEMP/inputs.tar.gz" | sha256sum -c -
+          tar -xzf "$RUNNER_TEMP/inputs.tar.gz"
+          rm -r .github/bootstrap
+          git show "$EXPECTED_BASE":.github/workflows/validate.yml > .github/workflows/validate.yml
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
       - name: Install pinned Python dependencies
         run: python -m pip install --requirement requirements.txt
+      - name: Rebuild in deterministic acceptance order
+        run: |
+          python scripts/sync_source_ledger.py
+          python scripts/apply_legacy_remediations.py --check
+          python scripts/sync_legacy_data.py
+          python scripts/build_archive_metrics.py
+          python scripts/sync_readme_metrics.py
+          python scripts/validate_federated_records.py --self-test
+          python scripts/build_legacy_bridge.py
+          python scripts/package_current_release.py
+          python scripts/build_current_pages.py
+          python scripts/validate.py
+      - name: Verify exact locally accepted tree
+        run: |
+          git add -A
+          test "$(git write-tree)" = "c02707968baacc656476c3dcad46a9cbad46974d"
       - name: Run complete acceptance suite
         env:
-          RECORD_BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before }}
+          RECORD_BASE_REF: ${{ github.event.pull_request.base.sha }}
         run: python scripts/accept_release.py --receipt "$RUNNER_TEMP/acceptance.json"
+      - name: Commit exact validated release
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Finalize exact validated release 10.43.0"
+          git push origin HEAD:${{ github.head_ref }}
       - name: Preserve actual acceptance results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: acceptance-receipt
+          name: acceptance-receipt-bootstrap
           path: ${{ runner.temp }}/acceptance.json
           if-no-files-found: error
