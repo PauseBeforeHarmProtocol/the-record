@@ -1957,6 +1957,54 @@
       "provenance_path": "data/editorial_change_notes/10.41.0.json",
       "provenance_sha256": "227e23956735c4bccba88d18e211701fabaaebf2811da9621f05642c5e5b06fd",
       "note": "This is a later litigation stage within the existing regulatory record."
+    },
+    {
+      "change_id": "10.42.0:NAT-2026-09-09-004",
+      "entry_id": "NAT-2026-09-09-004",
+      "as_of_utc": "2026-09-10T04:02:20Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.42.0",
+      "summary": "Added the statutory temporary continuation of Salvadoran TPS while preserving that DHS has not issued a final country determination.",
+      "provenance_path": "data/editorial_change_notes/10.42.0.json",
+      "provenance_sha256": "6566eb15009ed23a8deea7d4beeb9dcc40f6e4b4dce3801f18242620e5dfed9f",
+      "note": "The continuation is a current legal-status event; a later final DHS decision remains a separate lifecycle stage."
+    },
+    {
+      "change_id": "10.42.0:NAT-2026-09-09-005",
+      "entry_id": "NAT-2026-09-09-005",
+      "as_of_utc": "2026-09-10T04:02:20Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.42.0",
+      "summary": "Added Trump's conditional $5,000 payment proposal without treating it as enacted, funded, authorized or payable.",
+      "provenance_path": "data/editorial_change_notes/10.42.0.json",
+      "provenance_sha256": "6566eb15009ed23a8deea7d4beeb9dcc40f6e4b4dce3801f18242620e5dfed9f",
+      "note": "The speech materially changes a proposed fiscal commitment but creates no legal entitlement."
+    },
+    {
+      "change_id": "10.42.0:NAT-2026-08-25-005",
+      "entry_id": "NAT-2026-08-25-005",
+      "as_of_utc": "2026-09-10T04:02:20Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.42.0",
+      "summary": "Added the September 8 nonlethal interdiction and September 9 lethal strike with source-attribution and verification limits.",
+      "provenance_path": "data/editorial_change_notes/10.42.0.json",
+      "provenance_sha256": "6566eb15009ed23a8deea7d4beeb9dcc40f6e4b4dce3801f18242620e5dfed9f",
+      "note": "The September 8 release restores a prior-window omission; the September 9 strike is a later operation within the same campaign."
+    },
+    {
+      "change_id": "10.42.0:NAT-2026-09-06-001",
+      "entry_id": "NAT-2026-09-06-001",
+      "as_of_utc": "2026-09-10T04:02:20Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.42.0",
+      "summary": "Added the NTSB cockpit-recording sequence while preserving the ongoing investigation and absence of probable cause.",
+      "provenance_path": "data/editorial_change_notes/10.42.0.json",
+      "provenance_sha256": "6566eb15009ed23a8deea7d4beeb9dcc40f6e4b4dce3801f18242620e5dfed9f",
+      "note": "The cockpit-recording update is a later evidentiary stage within the same open NTSB investigation."
     }
   ],
   "reviews": [
@@ -7051,6 +7099,513 @@
       ],
       "unresolved_questions": [
         "The complaints’ exact requested relief, injunction status, merits and ecological effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.42.0:NAT-2026-09-09-004:da2706d51499",
+      "entry_id": "NAT-2026-09-09-004",
+      "content_sha256": "da2706d514990446419611356a1e544a303db10cc67d4fdb4350bcfbf19de758",
+      "reviewed_at": "2026-09-10T04:02:20Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "ee215396598df4b29c83a3b5045e412a35af56e3fd32359680b7bd8884779033",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_el_salvador_tps_sep9",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "936457f534a3f6a3b9fcba11c0401507b6ec251e1c105a5c088d3388cf4ce0bc",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_el_salvador_tps_sep9",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "bc647b1c0daa380ab72b2c2570d25052c7c5e327ad00f35beef774de36687619",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "6c343e0f26039c55cb90c2511223ce6f73a14957eb176aec937463e1b8c5144f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_el_salvador_tps_sep9",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "bc647b1c0daa380ab72b2c2570d25052c7c5e327ad00f35beef774de36687619",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "9436b5abfa99da5ef45c913d920cef06072c5727db6561091d9d7e035a1ce192",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_el_salvador_tps_sep9",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "936457f534a3f6a3b9fcba11c0401507b6ec251e1c105a5c088d3388cf4ce0bc",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_el_salvador_tps_sep9",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "bc647b1c0daa380ab72b2c2570d25052c7c5e327ad00f35beef774de36687619",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "3e430e20c784f6cb1e2f1f230a0ed86efdf95ae69de3025c188b1936610099ba",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_el_salvador_tps_sep9",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "936457f534a3f6a3b9fcba11c0401507b6ec251e1c105a5c088d3388cf4ce0bc",
+              "origin_group": "Reuters",
+            "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_el_salvador_tps_sep9",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "bc647b1c0daa380ab72b2c2570d25052c7c5e327ad00f35beef774de36687619",
+              "origin_group": "Associated Press",
+            "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "27b8b2c702c39dc0bd7435d430d256de5f30766f92d235a71b78ba17594b4892",
+          "review_note": "Reviewed consequences separately from projected, alleged or unmeasured outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "1fb0b0deb4a93c6d78c0c0d42a8c629e85569888b72bf3e5fb22d4c24009f2eb",
+          "review_note": "Preserved the strongest relevant administration rationale and specified observable legal and implementation tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "bc3c4649aea764b44a9b25ee52f64c59328d5c32076e042ddda8416dbefe550b",
+          "review_note": "Reviewed the strongest reasonable alternative and limited the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "DHS's final El Salvador determination, effective period beyond the statutory continuation and country-conditions rationale remain pending."
+      ]
+    },
+    {
+      "review_id": "10.42.0:NAT-2026-09-09-005:bc1c28152e8f",
+      "entry_id": "NAT-2026-09-09-005",
+      "content_sha256": "bc1c28152e8f23822d27a738ac81feea51af9da8b60e76d3d138b1eb7e6bf95a",
+      "reviewed_at": "2026-09-10T04:02:20Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "6504c3e3c4fdd4b2a32ae4b371028b4dd27c7c2428f2f934351b5eb8165eecbf",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_trump_dividend_sep10",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "09b07026ce8b05e632765a423f06dc85be463da87318477533075b5ef2a6bbe9",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_trump_dividend_sep10",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "69bc621bb0c7ddcb66aa054fc026fe913d864afc100e18c15f42e73999eb6308",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "3b2dd118454ecd4bb9a5cc256f30a45f0683b61618e0636629054d1f5c905448",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_trump_dividend_sep10",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "09b07026ce8b05e632765a423f06dc85be463da87318477533075b5ef2a6bbe9",
+              "origin_group": "Reuters",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "ap_trump_dividend_sep10",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "69bc621bb0c7ddcb66aa054fc026fe913d864afc100e18c15f42e73999eb6308",
+              "origin_group": "Associated Press",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "6cd5b1ab54acb43fb0345a29ed036e2437b5c372f200dd1a6e9da998adb2fcf0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_trump_dividend_sep10",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "69bc621bb0c7ddcb66aa054fc026fe913d864afc100e18c15f42e73999eb6308",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "25d769d560947b6a0eb3671335f51d82d019ad03e5e2ef16e93b4545471b4384",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_trump_dividend_sep10",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "69bc621bb0c7ddcb66aa054fc026fe913d864afc100e18c15f42e73999eb6308",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "103ad41a83b9766593baf774d90fcd0e1a6076e3277bbe6b1404e7182a01255f",
+          "review_note": "Reviewed consequences separately from projected, alleged or unmeasured outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "db5f97e8871b0efbccd48312fec68d2d6fb23933b36e027f94968f89f5371d8b",
+          "review_note": "Preserved the strongest relevant administration rationale and specified observable legal and implementation tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "78b357521d3754cd8af39e248f6a1da31d39d60ff4e630ef72b3ac874fd52712",
+          "review_note": "Reviewed the strongest reasonable alternative and limited the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "No bill, appropriation, eligibility rule, funding mechanism, payment schedule or enacted program exists."
+      ]
+    },
+    {
+      "review_id": "10.42.0:NAT-2026-08-25-005:c5220e9fda3f",
+      "entry_id": "NAT-2026-08-25-005",
+      "content_sha256": "c5220e9fda3f4c1ca38e419e4b41d16e54c5004db6c847e1fdf7600cb6665aa2",
+      "reviewed_at": "2026-09-10T04:02:20Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "18caac31a3829396a957d253bd884045b9fc1906cc3c285e56aea7ee32b6fad8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_caribbean_strike_aug25",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "6dacd9d6ec6a07eed4365d4ead62704d1247f78734d4b0162d80d717b59da4f4",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "a8c299eacb3635a8981cdca7fc3ff512ad1663182e51f3071bb3b3aa7d09bdd1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_caribbean_strike_aug25",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "6dacd9d6ec6a07eed4365d4ead62704d1247f78734d4b0162d80d717b59da4f4",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "2b29217af66573de08a161bb3d860588b10e8ee2729421b70109432916bb597e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_refueling_vessel_sep5",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "90a2110261f0bb1afc0dd86725e1abce8a11f07aed6ab38de456a749125f60d2",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "f8a85969f110a68d396066620a644c11959eeaeefc6bfe235e8445c2aab8551d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_refueling_vessel_sep5",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "90a2110261f0bb1afc0dd86725e1abce8a11f07aed6ab38de456a749125f60d2",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "fcfce7dde50c9dfe3755ebe9efdff7a11a41907413eaa38db4fc85a5e8e304da",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_refueling_vessel_sep7",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "4b1a4f458ce565dd3b3f0ad82794c2d73339e27f14635872f60609285d2e1cdc",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "452d781081dac4416709a2442d0bcb42b15fa159a1e648f26f39a55c0b7ad31b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_refueling_vessel_sep8",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "53b426dae98cd79dfbd5f7c18dad4bb88c35b7c0abbcbc3c1d9185b3f1a4d822",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "ccd66709a251d5301c4261146f3cda0187f7b109d5c5cbf5dd0646afe0db95d3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_caribbean_strike_sep9",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "88c89326a40af2de56468c83821ab958c2a7cf2010bfce7dfbbb6262bf44a835",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_caribbean_strike_sep10",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "f2560f527dc4a8b2d16d6c01b6cf4b25c0d1e08566879f96d6980de304b12201",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "c44c2e5e5997f2f262cf0cd649cd60721254ca6b6737eb315140b766553a6698",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_ecuador_refueling_vessel_sep8",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "19de17fb15172ca52b42b09c9d97a049a68e267518cbf83773daa84d4bb51bd3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "b2e0e5820fbfe410c4447d044f580509ae76401acef12981b6c4b655efd5a3e8",
+          "review_note": "Reviewed consequences separately from projected, alleged or unmeasured outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "b14400c10ef6f4fd4a6c6c20a48476c03c7b77d202aedf882577ac5351c8ff6d",
+          "review_note": "Preserved the strongest relevant administration rationale and specified observable legal and implementation tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "1c2a26c7431d921cfb596ffb71a33c7736c97ab51d7396cb65006f92a688ed4b",
+          "review_note": "Reviewed the strongest reasonable alternative and limited the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Target evidence, cargo, identities, legal authority, transfer records and independently measured campaign effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.42.0:NAT-2026-09-06-001:17510d8ead9f",
+      "entry_id": "NAT-2026-09-06-001",
+      "content_sha256": "17510d8ead9fa3cac508ccef462014fe487eabb87184aefa39609f83b2c14d82",
+      "reviewed_at": "2026-09-10T04:02:20Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "a98c6dc6150aeb62d4d5274ebb46251efaac94ad15d16cd92bbd03648daa7d6b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ntsb_miami_cargo_dca26ma352",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "26362da265e1cccd18d0c309cbf42a2cadfe46f12117a536ffc8617552e4323b",
+              "origin_group": "National Transportation Safety Board",
+            "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "34ecd0f98e904490375d8e55a85b909ad7834a937898ce67f8bef6aabca9e61e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_miami_cargo_investigation_sep9",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "02892f8e6a1ba1951effa7c8697f2802dc0efa871ec11b3352439a12e6248856",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "a7bb5ef8680e98e308fdf80735ec18975d967ca4539211b1ff128c332238d359",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_miami_cargo_fdr_sep9",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "9589ab60290a5e5371e3b16ed7505d9865a352d396b0462a17e430fdc025d056",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_miami_cargo_investigation_sep9",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "02892f8e6a1ba1951effa7c8697f2802dc0efa871ec11b3352439a12e6248856",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "6ccb40f48288b272b9f1803bf7ff3ac201046dbbfc649a14b50decc236fae113",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_miami_cargo_cvr_sep9",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "c24c410bc4adf381bf79a36210c93f4e40888d5b246d24ee76db25a031495f23",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "54ddbb8a343ce82312c5b62360ed1d1337414ad5c3376e17a3c3a828135f0c53",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_miami_cargo_cvr_sep9",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "c24c410bc4adf381bf79a36210c93f4e40888d5b246d24ee76db25a031495f23",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ntsb_miami_cargo_dca26ma352",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "26362da265e1cccd18d0c309cbf42a2cadfe46f12117a536ffc8617552e4323b",
+              "origin_group": "National Transportation Safety Board",
+            "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "d8827966e2bc5c6aa8e848a65d1d78a55c7f783950d2de8ce7142935a9b78247",
+          "review_note": "Reviewed consequences separately from projected, alleged or unmeasured outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "e7c19f9562f409ad09d6bfd7d6bf045eaeeae3b841b5b812aed7e294e3715356",
+          "review_note": "Preserved the strongest relevant administration rationale and specified observable legal and implementation tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "337c15004160ffdd86ab80ca6cb610aa43d42e34351dbc0a59f6a27a5295b084",
+          "review_note": "Reviewed the strongest reasonable alternative and limited the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Probable cause, causal responsibility and resulting safety recommendations remain unresolved."
       ]
     }
   ],

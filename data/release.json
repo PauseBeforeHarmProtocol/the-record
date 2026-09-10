@@ -1,35 +1,37 @@
 {
-  "version": "10.41.0",
+  "version": "10.42.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-09T16:01:38Z",
-    "through_utc": "2026-09-09T22:01:56Z",
+    "from_utc": "2026-09-09T22:01:56Z",
+    "through_utc": "2026-09-10T04:02:20Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
     "note": "Continuous research coverage begins at the prior release’s preserved UTC boundary and ends at this run’s evidence cutoff."
   },
-  "release_iso": "2026-09-09",
-  "release_human": "September 9, 2026",
-  "checked_at": "2026-09-09 6:01 PM EDT",
-  "previous_version": "10.40.0",
-  "previous_checked_at": "2026-09-09 12:01 PM EDT",
-  "window_started_at": "2026-09-09 12:01 PM EDT",
-  "window_ended_at": "2026-09-09 6:01 PM EDT",
+  "release_iso": "2026-09-10",
+  "release_human": "September 10, 2026",
+  "checked_at": "2026-09-10 12:02 AM EDT",
+  "previous_version": "10.41.0",
+  "previous_checked_at": "2026-09-09 6:01 PM EDT",
+  "window_started_at": "2026-09-09 6:01 PM EDT",
+  "window_ended_at": "2026-09-10 12:02 AM EDT",
   "week_start": "2026-09-06",
   "week_end": "2026-09-12",
   "week_label": "September 6–12, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-09-002",
-    "NAT-2026-09-09-003",
-    "NAT-2026-07-18-002"
+    "NAT-2026-09-09-004",
+    "NAT-2026-09-09-005",
+    "NAT-2026-08-25-005",
+    "NAT-2026-09-06-001"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-09-002",
-    "NAT-2026-09-09-003"
+    "NAT-2026-09-09-004",
+    "NAT-2026-09-09-005"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-07-18-002"
+    "NAT-2026-08-25-005",
+    "NAT-2026-09-06-001"
   ],
   "dedupe_resolutions": [
     {
@@ -115,28 +117,40 @@
       "target_id": "NAT-2026-08-28-007",
       "decision": "false_positive",
       "notes": "Both records touch immigration status, but the Census proposal concerns decennial apportionment and questionnaire design while the birthright-citizenship record concerns citizenship and permanent residence under a separate order and rule."
+    },
+    {
+      "entry_id": "NAT-2026-09-09-004",
+      "target_id": "LEG-001443",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "LEG-001443 concerns the first-term 2018 termination announcement. The new record concerns a separate 2026 statutory continuation and pending DHS determination; the historical ID and later status remain distinct."
+    },
+    {
+      "entry_id": "NAT-2026-09-09-005",
+      "target_id": "NAT-2026-08-31-001",
+      "decision": "false_positive",
+      "notes": "The shared tariff-revenue theme does not make Trump's new conditional $5,000 payment pledge the same event as the earlier court ruling on tariff authority. One is an unfunded campaign proposal; the other is a judicial lifecycle stage."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Five new media-only Truth Social posts remained feed-only",
-      "reason": "The fallback advanced from 36,206 to 36,211 posts. All five additions lacked text, and each sole media asset returned HTTP 403; no visual claim was inferred or used as evidence."
+      "title": "No new Truth Social post",
+      "reason": "The validated fallback remained at 36,211 posts. The newest post was still the media-only September 9 item at 4:53:19 PM EDT, already reviewed in release 10.41.0; no new text or media claim entered the archive."
     },
     {
-      "title": "Putin call and Ukraine deal statements",
-      "reason": "Trump described the call positively and repeated that Putin wanted a deal, but no ceasefire, public framework, commitment or implemented action resulted by cutoff. The existing diplomacy record therefore was not padded with another rhetoric-only update."
+      "title": "Repeated Pickaxe Mountain strike threat",
+      "reason": "Trump again threatened a possible strike based on unspecified activity, but no new military order, strike or independently verified activity was established. The rhetoric did not change the existing Iran/Hormuz action state."
     },
     {
-      "title": "Possible Michael Cohen pardon",
-      "reason": "Trump said he would consider a pardon. No warrant, grant, commutation or formal review action was identified."
+      "title": "Reported private warning that the Iran conflict could last through Trump's term",
+      "reason": "The consequential account relied on unnamed officials and lacked a second independent confirmation or public administration document by cutoff."
     },
     {
-      "title": "El Salvador temporary protected status",
-      "reason": "DHS said a decision would come at an appropriate time and current protection remained in place. No termination, extension or final status decision had issued."
+      "title": "Los Tiguerones final Federal Register publication",
+      "reason": "The notices were scheduled for September 10 but the final published edition was not inspectable by cutoff. The existing record remains at the signed, scheduled stage and the effectiveness check is queued."
     },
     {
-      "title": "Air Force One emergency-slide incident",
-      "reason": "The brief delay was operationally trivial. The underlying Qatar-aircraft record was corrected only for material lifecycle evidence: actual July use and announced October security work."
+      "title": "Possible Michael Cohen pardon and Putin statements",
+      "reason": "No pardon, warrant, ceasefire, public framework, commitment or implemented action resulted. Repeated statements alone did not justify parallel records."
     },
     {
       "title": "Pending West Point, USPS inspector-general, ABA, Florida grand-jury and Chinese-AI leads",
@@ -148,14 +162,9 @@
     },
     {
       "title": "External archive measurements",
-      "reason": "No external item was auto-promoted. Trump Archive measurements were updated from its primary index; UndoTrump and IPTP counts remained unchanged, and Record47 counts remained preserved because its project page exposed no current values."
+      "reason": "No external item was auto-promoted. Trump Archive measurements changed; UndoTrump and IPTP stayed unchanged; Record47's approved-entry total was reverified while feature counts were preserved because its counts endpoint remained unavailable."
     }
   ],
-  "corrections": [
-    {
-      "checked_at": "2026-09-09 6:01 PM EDT",
-      "summary": "LEG-004702 now replaces an unsupported billion-dollar final retrofit cost and categorical personal-benefit claim with sourced Air Force estimate, operational-use and security-upgrade lifecycle evidence."
-    }
-  ],
+  "corrections": [],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence."
 }
