@@ -477,30 +477,62 @@
   {
     "candidate_id": "QUEUE-20260910-ACA-REFUNDS",
     "title": "$500 ACA refund announcement",
-    "status": "pending",
+    "status": "published",
     "first_seen_at": "2026-09-10T16:09:31.994324Z",
     "timestamp_precision": "second",
-    "reason": "Reuters and AP report announced October payments. Complete primary eligibility, funding authority and implementation documents were not inspected, so the lead is queued and no payment is recorded as made.",
-    "recheck_trigger": "Inspect complete primary instruments, chronology and canonical duplicate matches before publishing a precise lifecycle update.",
+    "reason": "Resolved a prior-window queued lead through primary inspection: targeted ACA refunds announced for October, not disbursed.",
+    "recheck_trigger": "New implementation instruments, final rules, funding records, litigation or measured results.",
     "next_check_at": null,
     "provenance": [
       "https://www.reuters.com/world/us-issue-500-obamacare-refunds-nearly-million-americans-2026-09-10/"
     ],
-    "canonical_id": null
+    "canonical_id": "NAT-2026-09-10-003",
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20260910-ACA-REFUNDS",
+        "title": "$500 ACA refund announcement",
+        "status": "pending",
+        "first_seen_at": "2026-09-10T16:09:31.994324Z",
+        "timestamp_precision": "second",
+        "reason": "Reuters and AP report announced October payments. Complete primary eligibility, funding authority and implementation documents were not inspected, so the lead is queued and no payment is recorded as made.",
+        "recheck_trigger": "Inspect complete primary instruments, chronology and canonical duplicate matches before publishing a precise lifecycle update.",
+        "next_check_at": null,
+        "provenance": [
+          "https://www.reuters.com/world/us-issue-500-obamacare-refunds-nearly-million-americans-2026-09-10/"
+        ],
+        "canonical_id": null
+      }
+    ]
   },
   {
     "candidate_id": "QUEUE-20260910-WORK-VISA-GRACE",
     "title": "H-1B and other work-visa grace-period proposal",
-    "status": "pending",
+    "status": "published",
     "first_seen_at": "2026-09-10T16:09:31.994324Z",
     "timestamp_precision": "second",
-    "reason": "Reuters reports a proposal ending the 60-day grace period. The complete primary notice and affected-category exceptions require inspection before publication; the existing grace period is not recorded as already removed.",
-    "recheck_trigger": "Inspect complete primary instruments, chronology and canonical duplicate matches before publishing a precise lifecycle update.",
+    "reason": "Resolved a prior-window queued lead through primary inspection: discretionary grace-period removal proposed, not effective.",
+    "recheck_trigger": "New implementation instruments, final rules, funding records, litigation or measured results.",
     "next_check_at": null,
     "provenance": [
       "https://www.reuters.com/legal/government/trump-administration-proposes-waiving-grace-period-h-1b-holders-after-job-loss-2026-09-10/"
     ],
-    "canonical_id": null
+    "canonical_id": "NAT-2026-09-10-004",
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20260910-WORK-VISA-GRACE",
+        "title": "H-1B and other work-visa grace-period proposal",
+        "status": "pending",
+        "first_seen_at": "2026-09-10T16:09:31.994324Z",
+        "timestamp_precision": "second",
+        "reason": "Reuters reports a proposal ending the 60-day grace period. The complete primary notice and affected-category exceptions require inspection before publication; the existing grace period is not recorded as already removed.",
+        "recheck_trigger": "Inspect complete primary instruments, chronology and canonical duplicate matches before publishing a precise lifecycle update.",
+        "next_check_at": null,
+        "provenance": [
+          "https://www.reuters.com/legal/government/trump-administration-proposes-waiving-grace-period-h-1b-holders-after-job-loss-2026-09-10/"
+        ],
+        "canonical_id": null
+      }
+    ]
   },
   {
     "candidate_id": "QUEUE-20260910-TERRORISM-EMERGENCY",
@@ -513,6 +545,35 @@
     "next_check_at": null,
     "provenance": [
       "https://www.federalregister.gov/documents/2026/09/10/2026-18589/continuation-of-the-national-emergency-with-respect-to-certain-terrorist-attacks"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260910-FINANCIAL-REGULATION-COMPLAINT",
+    "title": "Better Markets Federal Reserve lawsuit and ICE polling-place lawsuit",
+    "status": "pending",
+    "first_seen_at": "2026-09-10T22:08:22.692626Z",
+    "timestamp_precision": "second",
+    "reason": "Discovery reports were not accompanied by fully inspected primary complaints in this run; allegations, remedies and legal posture require verification before publication.",
+    "recheck_trigger": "Inspect exact primary records and canonical event matches; distinguish original action dates and measured units.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.reuters.com/legal/transactional/washington-nonprofit-better-markets-sues-federal-reserve-over-capital-rule-2026-09-10/"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260910-IRAN-SANCTIONS-MEASUREMENTS",
+    "title": "New Iran sanctions, wholesale prices and diesel-price leads",
+    "status": "pending",
+    "first_seen_at": "2026-09-10T22:08:22.692626Z",
+    "timestamp_precision": "second",
+    "reason": "New discovery inputs require inspection of the exact Treasury instruments or measurement releases and canonical event matches; no estimated or headline value was promoted without scope verification.",
+    "recheck_trigger": "Inspect exact primary records and canonical event matches; distinguish original action dates and measured units.",
+    "next_check_at": null,
+    "provenance": [
+      "https://home.treasury.gov/news/press-releases",
+      "https://www.bls.gov/ppi/"
     ],
     "canonical_id": null
   }

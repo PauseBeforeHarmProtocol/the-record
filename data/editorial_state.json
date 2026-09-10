@@ -2053,6 +2053,54 @@
       "provenance_path": "data/editorial_change_notes/10.43.0.json",
       "provenance_sha256": "7c1187f7d75597fdd121a76141661a096eb7c2be5a60933d307cbc0952717663",
       "note": "Source inspection completion is separately timestamped; coverage cutoff and original action dates are preserved."
+    },
+    {
+      "change_id": "10.44.0:NAT-2026-09-10-003",
+      "entry_id": "NAT-2026-09-10-003",
+      "as_of_utc": "2026-09-10T21:57:49Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.44.0",
+      "summary": "Resolved a prior-window queued lead through primary inspection: targeted ACA refunds announced for October, not disbursed.",
+      "provenance_path": "data/editorial_change_notes/10.44.0.json",
+      "provenance_sha256": "0150d26520fec928210176a920b82c4258453fe38f559b6c3f639aa90d3a4595",
+      "note": "Coverage cutoff preserved independently of later source inspection time; earlier queued leads explicitly identified."
+    },
+    {
+      "change_id": "10.44.0:NAT-2026-09-10-004",
+      "entry_id": "NAT-2026-09-10-004",
+      "as_of_utc": "2026-09-10T21:57:49Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.44.0",
+      "summary": "Resolved a prior-window queued lead through primary inspection: discretionary grace-period removal proposed, not effective.",
+      "provenance_path": "data/editorial_change_notes/10.44.0.json",
+      "provenance_sha256": "0150d26520fec928210176a920b82c4258453fe38f559b6c3f639aa90d3a4595",
+      "note": "Coverage cutoff preserved independently of later source inspection time; earlier queued leads explicitly identified."
+    },
+    {
+      "change_id": "10.44.0:NAT-2026-09-10-005",
+      "entry_id": "NAT-2026-09-10-005",
+      "as_of_utc": "2026-09-10T21:57:49Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.44.0",
+      "summary": "Added Fourth Circuit affirmance of bond-hearing eligibility in two consolidated habeas cases; no universal release asserted.",
+      "provenance_path": "data/editorial_change_notes/10.44.0.json",
+      "provenance_sha256": "0150d26520fec928210176a920b82c4258453fe38f559b6c3f639aa90d3a4595",
+      "note": "Coverage cutoff preserved independently of later source inspection time; earlier queued leads explicitly identified."
+    },
+    {
+      "change_id": "10.44.0:NAT-2026-08-24-002",
+      "entry_id": "NAT-2026-08-24-002",
+      "as_of_utc": "2026-09-10T21:57:49Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.44.0",
+      "summary": "Updated the same mail-voting event with September 10 stay denial. Condensed current facts to the freshly inspected order; the complete former chronology is retained in this version note, without fabricated retrospective review.",
+      "provenance_path": "data/editorial_change_notes/10.44.0.json",
+      "provenance_sha256": "0150d26520fec928210176a920b82c4258453fe38f559b6c3f639aa90d3a4595",
+      "note": "Coverage cutoff preserved independently of later source inspection time; earlier queued leads explicitly identified."
     }
   ],
   "reviews": [
@@ -8107,6 +8155,374 @@
       ],
       "unresolved_questions": [
         "Implementation, litigation and measured outcomes require subsequent evidence; no unsupported outcome or merits conclusion is asserted."
+      ]
+    },
+    {
+      "review_id": "10.44.0:NAT-2026-09-10-003:61e02b448760",
+      "entry_id": "NAT-2026-09-10-003",
+      "content_sha256": "61e02b4487608b04a436a394c9516a7eb87cacdb9f4c58c9565313e74b61d50e",
+      "reviewed_at": "2026-09-10T22:08:22.692626Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "e84841f66bd4c58b918ef87cc9ea63109cb6c19fd1bbe46e4bc1b9187ede5dd2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_aca_refunds_sep10",
+              "locator": "Announcement, beneficiary scope and list of 30 states.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "d656eaf2e8ff6875bf3dc7b5944a67e356de2c35ddc688eabfe5a8df64047baf",
+              "origin_group": "White House",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "0f25bd80f335dfb62b4f241ffd6bc26a0d95803dff6647991ade00d0d1229be0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_aca_refunds_sep10",
+              "locator": "October schedule and agency explanation of user fees.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "d656eaf2e8ff6875bf3dc7b5944a67e356de2c35ddc688eabfe5a8df64047baf",
+              "origin_group": "White House",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "a9e7a187c1c40262df056198bfaa06313647e341ea465e6bb6aa07303178fef3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_aca_refunds_sep10",
+              "locator": "Full operative announcement and its scope; comparison to the separately retained campaign record.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "d656eaf2e8ff6875bf3dc7b5944a67e356de2c35ddc688eabfe5a8df64047baf",
+              "origin_group": "White House",
+              "evidence_status": "announced"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "947cee5e7f5bef60d74effc7a3359d986d10186292f114928e904dda6718aeb2",
+          "review_note": "Reviewed institutional significance separately from outcomes not yet measured."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "e30db95e104114adc0cf25eee3299152d7ac211cff9e974462cb958276fd8815",
+          "review_note": "Reviewed strongest documented administration rationale and, for detention, the opposing judicial statutory interpretation."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "ade6191be2d260cdaf8f321061d51a52de016bdbb037013b20c51d5476a03d07",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to the actual announcement, proposal or judicial posture."
+        }
+      ],
+      "unresolved_questions": [
+        "Actual implementation, further litigation and measured outcomes require subsequent original evidence."
+      ]
+    },
+    {
+      "review_id": "10.44.0:NAT-2026-09-10-004:b1dbaed57231",
+      "entry_id": "NAT-2026-09-10-004",
+      "content_sha256": "b1dbaed572318a2307b8aabc7ebcb1057f002377dfdfc9fa089049fd6726868a",
+      "reviewed_at": "2026-09-10T22:08:22.692626Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "a2ed81d99dd5735b88bb7e84334812dffbbd29f3402a72c77da4ab4895a0ffb1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dhs_grace_proposal_sep10",
+              "locator": "Cover sheet, summary and operative deletion of 8 CFR 214.1(l)(2).",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "b9a81dc960724c1a3b9ba84bee1924c77dfce683cdb386ed037b9fc33b3ba3e5",
+              "origin_group": "Department of Homeland Security",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "e8c7f3ea218ebc9177199e8e7fe64708cd85e118a30bbd2950d12e8bb49bd31a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dhs_grace_proposal_sep10",
+              "locator": "Executive Summary II.A; classifications, dependents and otherwise-authorized exception.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "b9a81dc960724c1a3b9ba84bee1924c77dfce683cdb386ed037b9fc33b3ba3e5",
+              "origin_group": "Department of Homeland Security",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "a36f81839f22b84a14aab7fb027a882802ded9bffd4a758df553e67e8d773f07",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dhs_grace_proposal_sep10",
+              "locator": "DATES; proposed-rule form and scheduled publication cover sheet.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "b9a81dc960724c1a3b9ba84bee1924c77dfce683cdb386ed037b9fc33b3ba3e5",
+              "origin_group": "Department of Homeland Security",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "73ce2b69983330f89eced2871f6ac10aa4e92f10b264dc9877b29bea3237feea",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dhs_grace_proposal_sep10",
+              "locator": "Section IV.D reliance interests and Section V.A Table 2 costs and benefits.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "b9a81dc960724c1a3b9ba84bee1924c77dfce683cdb386ed037b9fc33b3ba3e5",
+              "origin_group": "Department of Homeland Security",
+              "evidence_status": "proposed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "a4ab030189dbf266d40cbe4f3169ed9e2b179d2c97f646b40f1a805c0552bdfc",
+          "review_note": "Reviewed institutional significance separately from outcomes not yet measured."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "1c0d37c53d161bd8db97e86c8502bcb9a1837051d822de41c8bf5772d0d8fc07",
+          "review_note": "Reviewed strongest documented administration rationale and, for detention, the opposing judicial statutory interpretation."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "49bd06c67e656d43f8d976dd6fd1917448f8ace9e6be1e652716143270ae0fc7",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to the actual announcement, proposal or judicial posture."
+        }
+      ],
+      "unresolved_questions": [
+        "Actual implementation, further litigation and measured outcomes require subsequent original evidence."
+      ]
+    },
+    {
+      "review_id": "10.44.0:NAT-2026-09-10-005:6e12b0453b7f",
+      "entry_id": "NAT-2026-09-10-005",
+      "content_sha256": "6e12b0453b7f5c0a613b96a75aec7c8f05c1030167c3300a9547226528a9f600",
+      "reviewed_at": "2026-09-10T22:08:22.692626Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "a6f98c85f4e51dd9bb918f225703724c2e6ff392433d809afe87f8acdca2a86f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca4_bond_lopez_rivera_sep10",
+              "locator": "Pages 1–6; parties, consolidated appeals, panel and disposition.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "455c2d97078cb47980b32629c53cf4466a0b05d294259c9ec18de183715e3393",
+              "origin_group": "U.S. Court of Appeals for the Fourth Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "423c8a9221c8bff1449414014fa2772179571f9423707ab79046e0b9fe550de9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca4_bond_lopez_rivera_sep10",
+              "locator": "Pages 5–6 and 50–51; governing provision and bond-hearing holding.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "455c2d97078cb47980b32629c53cf4466a0b05d294259c9ec18de183715e3393",
+              "origin_group": "U.S. Court of Appeals for the Fourth Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "859d27aa307c080ccd020ca3a72ed1d33a661b8b9ab48f577848ad83d1cda290",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca4_bond_lopez_rivera_sep10",
+              "locator": "Pages 5–6, 49–52; policy chronology, reasoning and dissent.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "455c2d97078cb47980b32629c53cf4466a0b05d294259c9ec18de183715e3393",
+              "origin_group": "U.S. Court of Appeals for the Fourth Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "4e04693eb2e3b500d57619c6ec4c6ae9b1fc8b22b3cb19439f7669a65a44403d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca4_bond_lopez_rivera_sep10",
+              "locator": "Pages 5–6 and 50–52; limited holding and acknowledged circuit split.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "455c2d97078cb47980b32629c53cf4466a0b05d294259c9ec18de183715e3393",
+              "origin_group": "U.S. Court of Appeals for the Fourth Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "f0a2573a2c2730b33221acef6c18dbe506eb0f09520a377d5ac8baf4b8b60045",
+          "review_note": "Reviewed institutional significance separately from outcomes not yet measured."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "ca191b8358f4d846f6ec9998b0a9117ce1dbfdfb1d8ff9e6cf65e8419cef1731",
+          "review_note": "Reviewed strongest documented administration rationale and, for detention, the opposing judicial statutory interpretation."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "75b57222b1aea41f61e96adf28b5eb7f3636dd176f9436eefc986cdb94846789",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to the actual announcement, proposal or judicial posture."
+        }
+      ],
+      "unresolved_questions": [
+        "Actual implementation, further litigation and measured outcomes require subsequent original evidence."
+      ]
+    },
+    {
+      "review_id": "10.44.0:NAT-2026-08-24-002:da4e669612e8",
+      "entry_id": "NAT-2026-08-24-002",
+      "content_sha256": "da4e669612e8cd53673dade33fe24a1ae26f22faa4769f8799ed894bec8769f2",
+      "reviewed_at": "2026-09-10T22:08:22.692626Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "4c32ece7c124eb1291c605d68e20ce298bf95fdf5866d44df1423d7d6c8da036",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca1_mail_stay_denial_sep10",
+              "locator": "Pages 4–5, 9; September 10 order and stay denial.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "482d208bcc89d10531c5641582ab3a823824ca40f12d5ad57dca78748559d3e7",
+              "origin_group": "U.S. Court of Appeals for the First Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "d05ca3db12f6429134d88ac5152a3285a70a9c0c4a67de51ad28eb9e69e9f5bc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca1_mail_stay_denial_sep10",
+              "locator": "Page 5; rule requirements and plaintiff scope.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "482d208bcc89d10531c5641582ab3a823824ca40f12d5ad57dca78748559d3e7",
+              "origin_group": "U.S. Court of Appeals for the First Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "cdab6f1e33c371ce77e962b9852e66249b651339914a2da33da7cfc482e45c6e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca1_mail_stay_denial_sep10",
+              "locator": "Pages 5–6, footnote 2; Elections Clause and limited likely-success analysis.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "482d208bcc89d10531c5641582ab3a823824ca40f12d5ad57dca78748559d3e7",
+              "origin_group": "U.S. Court of Appeals for the First Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "6adf02c1d753091863d1d3f193c1f2dbe405aa896f45585cadcd3cafb6dfc034",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca1_mail_stay_denial_sep10",
+              "locator": "Pages 6–7; implementation record and prospective harm.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "482d208bcc89d10531c5641582ab3a823824ca40f12d5ad57dca78748559d3e7",
+              "origin_group": "U.S. Court of Appeals for the First Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "07187c0ac33d0bcd7cd770dbb616f7728cf3972ba320397946cd0ef6ec10a92b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca1_mail_stay_denial_sep10",
+              "locator": "Pages 4–9; emergency procedural posture. Editorial preservation is documented in this release’s exact before-and-after note.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "482d208bcc89d10531c5641582ab3a823824ca40f12d5ad57dca78748559d3e7",
+              "origin_group": "U.S. Court of Appeals for the First Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "99309e8ee0e52c8b08a2dc17074b9b883b3ffc5e1318cd5034f9a5a19d282ceb",
+          "review_note": "Reviewed institutional significance separately from outcomes not yet measured."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "7b17833ce529871b6025852795550834cf40a63231bf738f61886a3c1e43b674",
+          "review_note": "Reviewed strongest documented administration rationale and, for detention, the opposing judicial statutory interpretation."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "46a47af4f1ceeeefe1cc7c1bab5802e18b348b915123614020d89bea33fb439e",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to the actual announcement, proposal or judicial posture."
+        }
+      ],
+      "unresolved_questions": [
+        "Actual implementation, further litigation and measured outcomes require subsequent original evidence."
       ]
     }
   ],
