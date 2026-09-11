@@ -2221,6 +2221,54 @@
       "provenance_path": "data/editorial_change_notes/10.46.0.json",
       "provenance_sha256": "618907c764a0e62ae8d3a8277a50d6757fcbe9e9982add0007b241c396c213b2",
       "note": "Coverage cutoff and evidence status are preserved; later rule effectiveness, compliance, licensing, tax and immigration outcomes are not inferred."
+    },
+    {
+      "change_id": "10.47.0:NAT-2026-09-11-005",
+      "entry_id": "NAT-2026-09-11-005",
+      "as_of_utc": "2026-09-11T16:02:20Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.47.0",
+      "summary": "Added the announced $99.6 million EXIM loan to Africell, preserving unresolved disbursement and outcome status.",
+      "provenance_path": "data/editorial_change_notes/10.47.0.json",
+    "provenance_sha256": "8301d2b8aa435ebc8dee86debcddca9a4ef25aabb710b4c6bee9d13164ab5b4b",
+      "note": "The evidence status and cutoff are preserved; later policy, market, legal, health and financing outcomes are not inferred."
+    },
+    {
+      "change_id": "10.47.0:NAT-2026-09-11-006",
+      "entry_id": "NAT-2026-09-11-006",
+      "as_of_utc": "2026-09-11T16:02:20Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.47.0",
+      "summary": "Added August consumer-price measurements with category detail and no single-cause attribution.",
+      "provenance_path": "data/editorial_change_notes/10.47.0.json",
+    "provenance_sha256": "8301d2b8aa435ebc8dee86debcddca9a4ef25aabb710b4c6bee9d13164ab5b4b",
+      "note": "The evidence status and cutoff are preserved; later policy, market, legal, health and financing outcomes are not inferred."
+    },
+    {
+      "change_id": "10.47.0:NAT-2026-09-11-007",
+      "entry_id": "NAT-2026-09-11-007",
+      "as_of_utc": "2026-09-11T16:02:20Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.47.0",
+      "summary": "Added DOJ's reported first completed Alien Terrorist Removal Court deportation after the respondent waived challenges.",
+      "provenance_path": "data/editorial_change_notes/10.47.0.json",
+    "provenance_sha256": "8301d2b8aa435ebc8dee86debcddca9a4ef25aabb710b4c6bee9d13164ab5b4b",
+      "note": "The evidence status and cutoff are preserved; later policy, market, legal, health and financing outcomes are not inferred."
+    },
+    {
+      "change_id": "10.47.0:NAT-2026-08-30-002",
+      "entry_id": "NAT-2026-08-30-002",
+      "as_of_utc": "2026-09-11T16:02:20Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.47.0",
+      "summary": "Refreshed the existing Cyclospora record with formal outbreak closure, final case counts and the still-open root-cause investigation.",
+      "provenance_path": "data/editorial_change_notes/10.47.0.json",
+    "provenance_sha256": "8301d2b8aa435ebc8dee86debcddca9a4ef25aabb710b4c6bee9d13164ab5b4b",
+      "note": "The evidence status and cutoff are preserved; later policy, market, legal, health and financing outcomes are not inferred."
     }
   ],
   "reviews": [
@@ -10344,7 +10392,7 @@
               "inspected_at": "2026-09-11T10:12:09.583135Z",
               "document_sha256": "26b82a3fc913480a98a513fc2200b48e25c0475f200c6a80a395cb723ca687d8",
               "origin_group": "Department of the Treasury and Internal Revenue Service",
-                "evidence_status": "reported"
+              "evidence_status": "reported"
             }
           ]
         }
@@ -10460,6 +10508,445 @@
       ],
       "unresolved_questions": [
         "Final implementation, compliance, litigation, transaction-level activity, fiscal effects and measured outcomes require later original evidence as applicable."
+      ]
+    },
+    {
+      "review_id": "10.47.0:NAT-2026-09-11-005:b6ec93587d68",
+      "entry_id": "NAT-2026-09-11-005",
+      "content_sha256": "b6ec93587d68c94b9768387cd47d412caa14df9a745bf7d5258fa5518ebd383b",
+      "reviewed_at": "2026-09-11T16:13:54.166597Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "69685a68e4fbc88c845cb02444d89bd5fef2ff3b330c3a1cc4fe9064099668c7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_africell_exim_sep11",
+              "locator": "Loan amount, issuing agency and September 11 operator announcement",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "07986c5bdaa44a6a41f2c8d170ded3ebe5a4f77ece8de2c4c1540c2fcd1d1e51",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_africell_exim_sep11",
+              "locator": "Published release and financing description",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "872f1aa0b8d6dd9c65c10e0fcf4da440b5838a485bf005c76f6f07b4bfa268c1",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "96090875f608ed86d44ec113a11dbd79662cebf382dfd89508a442e12a1cb2c9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_africell_exim_sep11",
+              "locator": "Africell statement on technology purchases and U.S. employment",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "07986c5bdaa44a6a41f2c8d170ded3ebe5a4f77ece8de2c4c1540c2fcd1d1e51",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "88b388fa91d5216d57be6eeafc3ba7345a503923bd14a7b214e4b421d58113d2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_africell_exim_sep11",
+              "locator": "Markets served and 2025 U.S. technology-promotion policy context",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "872f1aa0b8d6dd9c65c10e0fcf4da440b5838a485bf005c76f6f07b4bfa268c1",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "7d84937721b5c2a19b2ca25c2ab179cb3ac89350d70c8f03918fddcf9daaec2f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_africell_exim_sep11",
+              "locator": "Huawei market estimate, denial and Chinese embassy response",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "872f1aa0b8d6dd9c65c10e0fcf4da440b5838a485bf005c76f6f07b4bfa268c1",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "f923b8f1eca19b883f7dd9572ccafed5b824b50f5f561c216f6dc85b20d55839",
+          "review_note": "Reviewed significance separately from causal claims and downstream outcomes not established by the sources."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "bd80bb0bb268ad6992c03357bcbfc727eb278c43910d5bbfa0166ee4f0ab7faf",
+          "review_note": "Reviewed the strongest relevant rationale or response and stated concrete tests for later evaluation."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "b6d4757d1b5c47dd38b4a1b194f7370580db6dda6bbaf004c7035d55801a296f",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to the verified evidence and lifecycle status."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation, disbursement, investigation results, revisions and measured outcomes require new original evidence as applicable."
+      ]
+    },
+    {
+      "review_id": "10.47.0:NAT-2026-09-11-006:8e7b42889a87",
+      "entry_id": "NAT-2026-09-11-006",
+      "content_sha256": "8e7b42889a875f27a01c226c69e6412a490d4b6349f5d6ee139593546abd8d04",
+      "reviewed_at": "2026-09-11T16:13:54.166597Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "a02e8e0766c6fdd5a5a5fa32d22cc9edf3952ddc88b049df56924c9d6d48cbb8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_cpi_aug2026",
+              "locator": "CPI summary and all-items monthly and 12-month changes",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "8b4d352b4f1ffc6604d953d304c151993c722f8a096a4030765183105ade9484",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "558171cb2d164bdfde331aa498c0521f2a0a0c603017ff504d7e0ff817ca6030",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_cpi_aug2026",
+              "locator": "Energy, gasoline and fuel-oil indexes",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "8b4d352b4f1ffc6604d953d304c151993c722f8a096a4030765183105ade9484",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "b64d6b6ab6c83654479eef8aa0c037dd1643c2a976ef719762c93c71e9fd3e76",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_cpi_aug2026",
+              "locator": "Food, food-at-home and shelter indexes",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "8b4d352b4f1ffc6604d953d304c151993c722f8a096a4030765183105ade9484",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "81c0ca34bba2f52a8133d9e6ff82d75932e362d06f19c5030b7473ca368d498d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_cpi_aug2026",
+              "locator": "All-items-less-food-and-energy index",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "8b4d352b4f1ffc6604d953d304c151993c722f8a096a4030765183105ade9484",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_cpi_aug2026",
+              "locator": "Post-release market-implied rate expectation",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "07e48b0b5d0568c5c260a3a3196fa2e2de83e23fd1d6bc37358e3ffc97712681",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "fa76f3f86632f5c2531dd3119296aa0523ea55bc9ee7e81b02152647b55e59da",
+          "review_note": "Reviewed significance separately from causal claims and downstream outcomes not established by the sources."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "0bd76ff356436bac6fa6913031f8af92e1a6db32008a679d8b4c427fcc9d5a4e",
+          "review_note": "Reviewed the strongest relevant rationale or response and stated concrete tests for later evaluation."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "ea9d38c6423f23a6a2a8fd9feae084a45d85845b9c2780952971edf97dcadc80",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to the verified evidence and lifecycle status."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation, disbursement, investigation results, revisions and measured outcomes require new original evidence as applicable."
+      ]
+    },
+    {
+      "review_id": "10.47.0:NAT-2026-09-11-007:31bdd51c7bc3",
+      "entry_id": "NAT-2026-09-11-007",
+      "content_sha256": "31bdd51c7bc3d789069f893294e57283c9db4bf7844b279ab247861d14fb33e4",
+      "reviewed_at": "2026-09-11T16:13:54.166597Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "1499a9ce0a670d8bc7bcf86c4dc6470b4cc81f03e6bbde20bc44453b11d6b0e9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_atrc_removal_sep11",
+              "locator": "DOJ-reported deportation, waiver and undisclosed timing or destination",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "67212b536f71588a90e292cbd0969e546d8a0b96834a5bf43990a0f224bce634",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "4616d3d1e79a8fc38ff2e17e342f8d235d07078094e34016366ad06968908ac5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_atrc_removal_sep11",
+              "locator": "First tribunal case, respondent status and institutional structure",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "67212b536f71588a90e292cbd0969e546d8a0b96834a5bf43990a0f224bce634",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_atrc_first_case_jul30",
+              "locator": "July first hearing and statutory-court background",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "93d1186d496f67055cb01163db1c15985dae1fc0b96bf0a1af456feda47b1a64",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "2795ae67211e453cee34e232e78475abe74784e25276af19fe3cf65d1c528e4c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_atrc_removal_sep11",
+              "locator": "Government allegations and related convictions",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "67212b536f71588a90e292cbd0969e546d8a0b96834a5bf43990a0f224bce634",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_atrc_first_case_jul30",
+              "locator": "No criminal charge against respondent and classified-evidence posture",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "93d1186d496f67055cb01163db1c15985dae1fc0b96bf0a1af456feda47b1a64",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "6e0124a67f0c82019c0bc1e051c15b27e0ab36e210e3745751d8c4ab343ca8f8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_atrc_removal_sep11",
+              "locator": "Defense due-process position and administration response",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "67212b536f71588a90e292cbd0969e546d8a0b96834a5bf43990a0f224bce634",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "1817327866b621c97f601c763407274ea167c6b4597ee080ad291456ec85e15c",
+          "review_note": "Reviewed significance separately from causal claims and downstream outcomes not established by the sources."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "2b6f6e8b8b509aedef85b347923e8a403dd65ca047f0b6a858e2925b0e2fe26e",
+          "review_note": "Reviewed the strongest relevant rationale or response and stated concrete tests for later evaluation."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "d8ffda19a92b0323b3fc95226f56f0cddd4c6c7aef3948cc4399ac55d682d3eb",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to the verified evidence and lifecycle status."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation, disbursement, investigation results, revisions and measured outcomes require new original evidence as applicable."
+      ]
+    },
+    {
+  "review_id": "10.47.0:NAT-2026-08-30-002:93e0370b4534",
+      "entry_id": "NAT-2026-08-30-002",
+  "content_sha256": "93e0370b45348e0c114fc730b195c040d8afd474e20085e230ce88c5aa1bbac4",
+      "reviewed_at": "2026-09-11T16:13:54.166597Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "0bb65da89705499777437d38cf02fd3dc1525959c7860946f540cd50198c1a74",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fda_cyclospora_iceberg_aug27",
+              "locator": "September 11 status and current update",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "a682cac22495e20f6cd5416b5383d044708baf76f14b92322408900a90449f38",
+              "origin_group": "U.S. Food and Drug Administration",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "ce93ebe3669761bb8f0f8fcf774762ec8e8dfbfa1e4b8c9fcc1aabd828575222",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fda_cyclospora_iceberg_aug27",
+              "locator": "Case counts, hospitalizations, deaths and latest onset",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "a682cac22495e20f6cd5416b5383d044708baf76f14b92322408900a90449f38",
+              "origin_group": "U.S. Food and Drug Administration",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_cyclospora_end_sep11",
+              "locator": "Broader surveillance count distinction",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "783f5c2bfd6b531f74dcb3c6829858215401b6ae11ca8640b0ce60877cf3867c",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "d15626549f4425619381bb1cd803b126e5ed576db7af0f0cbdc41b16f5f623dc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fda_cyclospora_iceberg_aug27",
+              "locator": "Inspection completion, pending sample analysis and July correction",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "a682cac22495e20f6cd5416b5383d044708baf76f14b92322408900a90449f38",
+              "origin_group": "U.S. Food and Drug Administration",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_cyclospora_end_sep11",
+              "locator": "Unresolved contamination mechanism",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "cfad549d20f3820b3ff0ddd73e27b6eca7f8405a8c3e04902095699717802e40",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "f8d2cd53f582a7bf61a617a358ffaca3ec8517bf2a6090fcee2ee7534d02eb14",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_usda_cyclospora_aug30",
+              "locator": "Research funding and relocation dispute",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "aaddf88317697da4a29b6c21836edcb302e37a9e6c384d4519d41e9ba5d2c151",
+              "origin_group": "Reuters via MarketScreener",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "cdc_cyclospora_cases_aug25",
+              "locator": "Earlier seasonal surveillance baseline",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "31d1558eaa98e513dfe0839d18ac257339a0b24ee97969baff618bd32c0c3ca6",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "900e0c827295e6ac7de5a490fc72d633cf42d9f1e3e8c80a2b8cdc0db4ceb826",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_fda_foreign_food_inspections_sep8",
+              "locator": "Inspection counts, staffing context and FDA response",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "21717ecc482408981644bf449bf6283c657a5d999d63b6055b4a0fe97bc9c979",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "965fe6cccf0499d48b54c35e9fabb8b552b2354d1926a1075cfddf90d008033d",
+          "review_note": "Reviewed significance separately from causal claims and downstream outcomes not established by the sources."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "4387df1d38c83334afcd4245e6c76e40c8ce44ab0c5661f2ab0c17e38a0816a1",
+          "review_note": "Reviewed the strongest relevant rationale or response and stated concrete tests for later evaluation."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "66a1640ce101cad72f04520c9662d3e9fd426a2ca333f328fa97ba8267dc25a5",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to the verified evidence and lifecycle status."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation, disbursement, investigation results, revisions and measured outcomes require new original evidence as applicable."
       ]
     }
   ],
