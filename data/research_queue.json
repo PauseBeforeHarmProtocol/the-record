@@ -565,15 +565,46 @@
   {
     "candidate_id": "QUEUE-20260910-IRAN-SANCTIONS-MEASUREMENTS",
     "title": "New Iran sanctions, wholesale prices and diesel-price leads",
-    "status": "pending",
+    "status": "published",
     "first_seen_at": "2026-09-10T22:08:22.692626Z",
     "timestamp_precision": "second",
-    "reason": "New discovery inputs require inspection of the exact Treasury instruments or measurement releases and canonical event matches; no estimated or headline value was promoted without scope verification.",
-    "recheck_trigger": "Inspect exact primary records and canonical event matches; distinguish original action dates and measured units.",
+    "reason": "Primary and independent review resolved the bundled lead across NAT-2026-09-04-007 (sanctions), NAT-2026-09-10-006 (PPI) and NAT-2026-08-17-001 (diesel). The sanctions record is the queue's canonical target; the reason preserves the other distinct measurement targets.",
+    "recheck_trigger": "New designations, enforcement records, monthly inflation releases, fuel measurements or independently established consequences.",
     "next_check_at": null,
     "provenance": [
       "https://home.treasury.gov/news/press-releases",
       "https://www.bls.gov/ppi/"
+    ],
+    "canonical_id": "NAT-2026-09-04-007",
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20260910-IRAN-SANCTIONS-MEASUREMENTS",
+        "title": "New Iran sanctions, wholesale prices and diesel-price leads",
+        "status": "pending",
+        "first_seen_at": "2026-09-10T22:08:22.692626Z",
+        "timestamp_precision": "second",
+        "reason": "New discovery inputs require inspection of the exact Treasury instruments or measurement releases and canonical event matches; no estimated or headline value was promoted without scope verification.",
+        "recheck_trigger": "Inspect exact primary records and canonical event matches; distinguish original action dates and measured units.",
+        "next_check_at": null,
+        "provenance": [
+          "https://home.treasury.gov/news/press-releases",
+          "https://www.bls.gov/ppi/"
+        ],
+        "canonical_id": null
+      }
+    ]
+  },
+  {
+    "candidate_id": "QUEUE-20260910-2119-UNAVAILABLE-MEDIA",
+    "title": "Truth Social post 117249775492910498 inaccessible MP4",
+    "status": "blocked",
+    "first_seen_at": "2026-09-11T01:19:51.872Z",
+    "timestamp_precision": "second",
+    "reason": "The post has no text and its sole MP4 returned HTTP 403 on direct retrieval. No visual claim was reviewed or promoted.",
+    "recheck_trigger": "Retry the asset or inspect an accessible official duplicate before using any claim from the media.",
+    "next_check_at": null,
+    "provenance": [
+      "https://truthsocial.com/@realDonaldTrump/117249775492910498"
     ],
     "canonical_id": null
   }
