@@ -654,17 +654,34 @@
   },
   {
     "candidate_id": "QUEUE-20260911-AFRICELL-EXIM",
-    "title": "Reported prospective EXIM financing for Africell",
-    "status": "pending",
+    "title": "EXIM financing for Africell announced",
+    "status": "published",
     "first_seen_at": "2026-09-11T04:03:34Z",
     "timestamp_precision": "second",
-    "reason": "Reuters relied on one unnamed source and a draft release expected later September 11; no final EXIM approval or announcement was available at cutoff.",
-    "recheck_trigger": "Inspect a final EXIM board action, press release, financing record or independently confirmed approval.",
+    "reason": "Advanced after Africell published the financing announcement and AP and Reuters independently reported the $99.6 million EXIM loan. Disbursement and outcomes remain unresolved.",
+    "recheck_trigger": "EXIM transaction record, disbursement, supplier awards, repayment, employment or measured network and security outcomes.",
     "next_check_at": null,
     "provenance": [
+      "https://apnews.com/article/trump-huawei-africell-tech-us-china-a755a634563876d52c9738dce4e5d7f4",
       "https://www.reuters.com/world/china/trump-administration-lend-100-million-africell-countering-huawei-africa-2026-09-11/"
     ],
-    "canonical_id": null
+    "canonical_id": "NAT-2026-09-11-005",
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20260911-AFRICELL-EXIM",
+        "title": "Reported prospective EXIM financing for Africell",
+        "status": "pending",
+        "first_seen_at": "2026-09-11T04:03:34Z",
+        "timestamp_precision": "second",
+        "reason": "Reuters relied on one unnamed source and a draft release expected later September 11; no final EXIM approval or announcement was available at cutoff.",
+        "recheck_trigger": "Inspect a final EXIM board action, press release, financing record or independently confirmed approval.",
+        "next_check_at": null,
+        "provenance": [
+          "https://www.reuters.com/world/china/trump-administration-lend-100-million-africell-countering-huawei-africa-2026-09-11/"
+        ],
+        "canonical_id": null
+      }
+    ]
   },
   {
     "candidate_id": "QUEUE-20260911-HOUTHI-NO-STRIKES",
@@ -679,5 +696,51 @@
       "https://www.reuters.com/world/trump-declines-saudi-crown-princes-call-us-strikes-houthis-axios-reports-2026-09-11/"
     ],
     "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260911-CPI-AUGUST",
+    "title": "August 2026 Consumer Price Index",
+    "status": "published",
+    "first_seen_at": "2026-09-11T12:30:00Z",
+    "timestamp_precision": "minute",
+    "reason": "Primary BLS release supplied measured monthly, annual and category-level consumer-price changes without a single-cause attribution.",
+    "recheck_trigger": "BLS revision, later CPI or PCE release, real-earnings measurement or Federal Reserve decision.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.bls.gov/news.release/cpi.nr0.htm",
+      "https://www.reuters.com/world/us/us-consumer-inflation-picks-up-august-2026-09-11/"
+    ],
+    "canonical_id": "NAT-2026-09-11-006"
+  },
+  {
+    "candidate_id": "QUEUE-20260911-ATRC-REMOVAL",
+    "title": "First Alien Terrorist Removal Court respondent deported after waiver",
+    "status": "published",
+    "first_seen_at": "2026-09-11T14:29:31Z",
+    "timestamp_precision": "second",
+    "reason": "AP reported DOJ's implemented removal statement and the defense waiver; prior Reuters court reporting supports procedural context. Consent left allegations and constitutional objections unresolved.",
+    "recheck_trigger": "Official removal documentation, a contested tribunal case, appellate review or disclosed procedural safeguards.",
+    "next_check_at": null,
+    "provenance": [
+      "https://apnews.com/article/terrorism-court-justice-department-afghan-39bd2b9ef8874b0ffddcef9efdf4ec5f",
+      "https://www.reuters.com/legal/government/first-case-secretive-us-court-meant-deport-alleged-terrorists-2026-07-30/"
+    ],
+    "canonical_id": "NAT-2026-09-11-007"
+  },
+  {
+    "candidate_id": "QUEUE-20260911-CYCLOSPORA-END",
+    "title": "Cyclospora outbreak declared ended with investigation open",
+    "status": "published",
+    "first_seen_at": "2026-09-11T14:06:51Z",
+    "timestamp_precision": "second",
+    "reason": "FDA and CDC formally ended the outbreak and published final case counts while preserving pending sample analysis and unresolved root cause; the existing record was refreshed rather than duplicated.",
+    "recheck_trigger": "FDA root-cause findings, sample results, prevention actions, inspection metrics or research-continuity evidence.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.fda.gov/food/outbreaks-foodborne-illness/investigation-multistate-outbreak-cyclospora-illnesses-iceberg-lettuce-july-2026",
+      "https://apnews.com/article/cyclospora-outbreak-iceberg-lettuce-9b2c348b2f378b7554b2abfbf1780550",
+      "https://www.reuters.com/business/healthcare-pharmaceuticals/us-declares-end-largest-recorded-cyclosporiasis-outbreak-2026-09-11/"
+    ],
+    "canonical_id": "NAT-2026-08-30-002"
   }
 ]
