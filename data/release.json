@@ -1,37 +1,37 @@
 {
-  "version": "10.47.0",
+  "version": "10.48.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-11T09:58:03Z",
-    "through_utc": "2026-09-11T16:02:20Z",
+    "from_utc": "2026-09-11T16:02:20Z",
+    "through_utc": "2026-09-11T21:58:10Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
     "note": "Continuous research coverage begins at the prior release’s preserved UTC boundary and ends at this run’s evidence cutoff."
   },
   "release_iso": "2026-09-11",
   "release_human": "September 11, 2026",
-  "checked_at": "2026-09-11 12:02 PM EDT",
-  "previous_version": "10.46.0",
-  "previous_checked_at": "2026-09-11 5:58 AM EDT",
-  "window_started_at": "2026-09-11 5:58 AM EDT",
-  "window_ended_at": "2026-09-11 12:02 PM EDT",
+  "checked_at": "2026-09-11 5:58 PM EDT",
+  "previous_version": "10.47.0",
+  "previous_checked_at": "2026-09-11 12:02 PM EDT",
+  "window_started_at": "2026-09-11 12:02 PM EDT",
+  "window_ended_at": "2026-09-11 5:58 PM EDT",
   "week_start": "2026-09-06",
   "week_end": "2026-09-12",
   "week_label": "September 6–12, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-11-005",
-    "NAT-2026-09-11-006",
-    "NAT-2026-09-11-007",
-    "NAT-2026-08-30-002"
+    "NAT-2026-09-11-008",
+    "NAT-2026-09-11-009",
+    "NAT-2026-09-11-010",
+    "NAT-2026-09-09-005"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-11-005",
-    "NAT-2026-09-11-006",
-    "NAT-2026-09-11-007"
+    "NAT-2026-09-11-008",
+    "NAT-2026-09-11-009",
+    "NAT-2026-09-11-010"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-08-30-002"
+    "NAT-2026-09-09-005"
   ],
   "dedupe_resolutions": [
     {
@@ -129,28 +129,38 @@
       "target_id": "NAT-2026-08-31-001",
       "decision": "false_positive",
       "notes": "The shared tariff-revenue theme does not make Trump's new conditional $5,000 payment pledge the same event as the earlier court ruling on tariff authority. One is an unfunded campaign proposal; the other is a judicial lifecycle stage."
+    },
+    {
+      "entry_id": "NAT-2026-09-09-005",
+      "target_id": "NAT-2026-09-11-009",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The payment record uses the August Treasury statement only to test the pledge's asserted funding scale. NAT-2026-09-11-009 independently records the government's complete monthly and fiscal-year-to-date cash-flow measurement; a campaign proposal and an official fiscal outcome remain distinct events."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Truth Social",
-      "reason": "No new post appeared after the prior snapshot. The source count remains 36,236; the newest post was published September 10 at 9:19:51 PM EDT, and the fallback was validated September 11 at 12:03:12 PM EDT."
+      "title": "Truth Social campaign and inaccessible media",
+      "reason": "Seven new posts were reviewed. Four media-only posts returned HTTP 403 and supplied no usable visual evidence; two link posts concerned convention crowds. The $5,000 pledge post was used only to establish Trump's own statement and was independently contextualized in the existing record."
     },
     {
-      "title": "Reported Houthi support decision",
-      "reason": "Reuters reported U.S. intelligence and targeting support based on two unnamed sources after an Axios account; the White House and Saudi embassy did not confirm it. No formal war-powers record or second independent confirmation established the consequential decision."
+      "title": "Reflecting Pool construction report",
+      "reason": "Reuters summarized contractor records reviewed by the New York Times, but the underlying contractor documents were not directly available for inspection. The derivative report was withheld pending primary records or independent record-level confirmation."
     },
     {
-      "title": "Missouri map, mail-voting and Fourth Circuit follow-ups",
-      "reason": "New coverage added context but no later court order or material change beyond the existing Supreme Court stay, First Circuit denial and bond-hearing ruling."
+      "title": "Prospective Defense Production Act refinery action",
+      "reason": "Reuters reported internal consideration based on unnamed sources. No final presidential or agency decision, order or implemented refinery action existed by cutoff."
     },
     {
-      "title": "S. 858 monument-location law and September 11 ceremonies",
-      "reason": "The signed law authorizes a commemorative Medal of Honor work, and the day's presidential events were ceremonial; neither independently cleared the national materiality threshold."
+      "title": "Reported Houthi assistance and prospective sanctions",
+      "reason": "Consequential war-support and future-sanctions reports relied on unnamed sources or described intended future action without a formal instrument or sufficient independent confirmation."
     },
     {
-      "title": "Convention speech, ratings and campaign spending",
-      "reason": "Campaign rhetoric, viewership and super-PAC spending added no implemented administration action. The conditional $5,000 proposal remains in NAT-2026-09-09-005 rather than being duplicated."
+      "title": "Senate artificial-intelligence negotiations",
+      "reason": "Draft legislative negotiations were not a formal administration action and had not produced enacted or introduced text clearing the threshold."
+    },
+    {
+      "title": "September 11 ceremonies and campaign crowd coverage",
+      "reason": "Ceremonial events, proclamations and crowd-size commentary did not independently establish material national policy action."
     },
     {
       "title": "Legacy source-health queue",
