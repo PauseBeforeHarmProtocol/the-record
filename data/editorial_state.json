@@ -2161,6 +2161,66 @@
       "provenance_path": "data/editorial_change_notes/10.45.0.json",
       "provenance_sha256": "4455562127fd86c04875c6e3c094a8fabf57af2b2048919b4abd68c8d3cb5a58",
       "note": "Coverage cutoff is preserved independently of later source-inspection time; explicitly queued prior-window leads are identified as restored omissions."
+    },
+    {
+      "change_id": "10.46.0:NAT-2026-09-11-001",
+      "entry_id": "NAT-2026-09-11-001",
+      "as_of_utc": "2026-09-11T09:58:03Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.46.0",
+      "summary": "Added the FCC's final prospective Covered List component and online-marketplace authorization rule.",
+      "provenance_path": "data/editorial_change_notes/10.46.0.json",
+      "provenance_sha256": "618907c764a0e62ae8d3a8277a50d6757fcbe9e9982add0007b241c396c213b2",
+      "note": "Coverage cutoff and evidence status are preserved; later rule effectiveness, compliance, licensing, tax and immigration outcomes are not inferred."
+    },
+    {
+      "change_id": "10.46.0:NAT-2026-09-11-002",
+      "entry_id": "NAT-2026-09-11-002",
+      "as_of_utc": "2026-09-11T09:58:03Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.46.0",
+      "summary": "Added the State Department's one-year continuation of Cyprus defense-trade eligibility.",
+      "provenance_path": "data/editorial_change_notes/10.46.0.json",
+      "provenance_sha256": "618907c764a0e62ae8d3a8277a50d6757fcbe9e9982add0007b241c396c213b2",
+      "note": "Coverage cutoff and evidence status are preserved; later rule effectiveness, compliance, licensing, tax and immigration outcomes are not inferred."
+    },
+    {
+      "change_id": "10.46.0:NAT-2026-09-11-003",
+      "entry_id": "NAT-2026-09-11-003",
+      "as_of_utc": "2026-09-11T09:58:03Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.46.0",
+      "summary": "Added Treasury and IRS's proposed foreign-income deduction-allocation regulations.",
+      "provenance_path": "data/editorial_change_notes/10.46.0.json",
+      "provenance_sha256": "618907c764a0e62ae8d3a8277a50d6757fcbe9e9982add0007b241c396c213b2",
+      "note": "Coverage cutoff and evidence status are preserved; later rule effectiveness, compliance, licensing, tax and immigration outcomes are not inferred."
+    },
+    {
+      "change_id": "10.46.0:NAT-2026-09-11-004",
+      "entry_id": "NAT-2026-09-11-004",
+      "as_of_utc": "2026-09-11T09:58:03Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.46.0",
+      "summary": "Added Treasury and IRS's proposed Opportunity Zone reporting and certification regulations with agency burden estimates.",
+      "provenance_path": "data/editorial_change_notes/10.46.0.json",
+      "provenance_sha256": "618907c764a0e62ae8d3a8277a50d6757fcbe9e9982add0007b241c396c213b2",
+      "note": "Coverage cutoff and evidence status are preserved; later rule effectiveness, compliance, licensing, tax and immigration outcomes are not inferred."
+    },
+    {
+      "change_id": "10.46.0:NAT-2026-09-10-004",
+      "entry_id": "NAT-2026-09-10-004",
+      "as_of_utc": "2026-09-11T09:58:03Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.46.0",
+      "summary": "Updated the work-visa grace-period proposal from public inspection to formal Federal Register publication and recorded its November 10 comment deadline.",
+      "provenance_path": "data/editorial_change_notes/10.46.0.json",
+      "provenance_sha256": "618907c764a0e62ae8d3a8277a50d6757fcbe9e9982add0007b241c396c213b2",
+      "note": "Coverage cutoff and evidence status are preserved; later rule effectiveness, compliance, licensing, tax and immigration outcomes are not inferred."
     }
   ],
   "reviews": [
@@ -9940,6 +10000,466 @@
       ],
       "unresolved_questions": [
         "Implementation, litigation, enforcement, causal attribution and measured downstream effects require subsequent original evidence as applicable."
+      ]
+    },
+    {
+      "review_id": "10.46.0:NAT-2026-09-11-001:56a02b318935",
+      "entry_id": "NAT-2026-09-11-001",
+      "content_sha256": "56a02b3189354c2c11d390032a355a7db9c346336b5dbd4ae15bf53e418289c2",
+      "reviewed_at": "2026-09-11T10:12:09.583135Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "d55a8a929435a36610f8838495985290ad590faf3caf3e85f2a535d804c0c33f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fcc_supply_chain_final_sep11",
+              "locator": "Dates, summary and adopted component rule",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "bdb6481a68caf926c5d0285e7971427480250cd67b7dbdbaa00d0e961898b0eb",
+              "origin_group": "Federal Communications Commission",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "b7e5a0327282b4ceec18cad20b62130795be366e34f51ac3edd8358f8096131e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fcc_supply_chain_final_sep11",
+              "locator": "Prospective scope, pending applications and declined extensions",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "bdb6481a68caf926c5d0285e7971427480250cd67b7dbdbaa00d0e961898b0eb",
+              "origin_group": "Federal Communications Commission",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "9e653b0accf4a51cb5e80411abbd43cb13564cb358ef0b2aff17f039d360207b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fcc_supply_chain_final_sep11",
+              "locator": "Online-marketplace requirements and differentiated compliance dates",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "bdb6481a68caf926c5d0285e7971427480250cd67b7dbdbaa00d0e961898b0eb",
+              "origin_group": "Federal Communications Commission",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "a4e4526738b0994a8c2534509021ea6b64f3d7b818abb88008342ef2eae2fdfe",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fcc_supply_chain_final_sep11",
+              "locator": "Recertification, transition treatment and limits of the action",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "bdb6481a68caf926c5d0285e7971427480250cd67b7dbdbaa00d0e961898b0eb",
+              "origin_group": "Federal Communications Commission",
+              "evidence_status": "ordered"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "7215869367a3f57bbcb9f7e3a41d0d56b17b7010134f1cb338ea988715bd65fa",
+          "review_note": "Reviewed institutional or economic significance separately from downstream effects not established by the source."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "9634e3f1b78e96125946f39c7dda9fdc8bdc4811da8c1cecc5d4073869983343",
+          "review_note": "Reviewed the agency rationale and stated concrete evidence tests for implementation and outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "999c5f9acf20acd54e19f8f4327b37321f1033d300147f5372c25c289aebb701",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to the verified lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Final implementation, compliance, litigation, transaction-level activity, fiscal effects and measured outcomes require later original evidence as applicable."
+      ]
+    },
+    {
+      "review_id": "10.46.0:NAT-2026-09-11-002:4dc925c44d34",
+      "entry_id": "NAT-2026-09-11-002",
+      "content_sha256": "4dc925c44d341eec25758d6c9df5db62c9e00fc715074ca92fdd2ac7b39a6253",
+      "reviewed_at": "2026-09-11T10:12:09.583135Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "9568311c8cdc7825bf8699d257489bb5b873963ba9cf679fbb4f2b13e34691d8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "state_cyprus_itar_sep11",
+              "locator": "Dates and amended 22 CFR 126.1 Cyprus provision",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "36143c701ab2629f77f633d776f7e0786481cea4131b88d0c5b8c75a21c30dc4",
+              "origin_group": "Department of State",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "f2a06ab33b2468a65b9c25f5ac7774b7989cbc3c7b49df820743a1456e9224fa",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "state_cyprus_itar_sep11",
+              "locator": "Scope of suspension and licensing exemptions",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "36143c701ab2629f77f633d776f7e0786481cea4131b88d0c5b8c75a21c30dc4",
+              "origin_group": "Department of State",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "df18644f5b37b133927e3667c81685d2ef1602c5db3a79c4021b72bf5f5fd043",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "state_cyprus_itar_sep11",
+              "locator": "July 10 statutory certification and stated conditions",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "36143c701ab2629f77f633d776f7e0786481cea4131b88d0c5b8c75a21c30dc4",
+              "origin_group": "Department of State",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "c702f2a771c8105f844ea3baa84485274ac3054c366931aa477fd86233bcf7ee",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "state_cyprus_itar_sep11",
+              "locator": "Case-by-case licensing framework and rule limits",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "36143c701ab2629f77f633d776f7e0786481cea4131b88d0c5b8c75a21c30dc4",
+              "origin_group": "Department of State",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "ecc039feca807021b2b31bf4b7cd1d6e15ac4f4ce0b8a554be6c2c94ae822879",
+          "review_note": "Reviewed institutional or economic significance separately from downstream effects not established by the source."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "c2e04ce072bf0f04ff97b0b8980472b8f687035ce984e64a34f71a585d28094c",
+          "review_note": "Reviewed the agency rationale and stated concrete evidence tests for implementation and outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "29dc1ded19bdcd7a0a5849dfd32b755df7fb9be4af9c60fa4960e46186191e0a",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to the verified lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Final implementation, compliance, litigation, transaction-level activity, fiscal effects and measured outcomes require later original evidence as applicable."
+      ]
+    },
+    {
+      "review_id": "10.46.0:NAT-2026-09-11-003:b1647081d165",
+      "entry_id": "NAT-2026-09-11-003",
+      "content_sha256": "b1647081d1656c61e8572a198508ac340b945c3717f454f2e949cf3d1bc7e797",
+      "reviewed_at": "2026-09-11T10:12:09.583135Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "c4721a488a59f351642d4fa34eed230930273ae9e6c936d737045323aca7d8b9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "irs_951a_allocation_proposal_sep11",
+              "locator": "Summary and dates",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "5de7d6d0f283dd3282ea7bd526a9f4dc7da3a6c19b6104ae0e25fb719ddaeab1",
+              "origin_group": "Department of the Treasury and Internal Revenue Service",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "6580038f287786ec9388a0f65ec48991ae4dd19a97e3947208a1dbc1bdd49b12",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "irs_951a_allocation_proposal_sep11",
+              "locator": "Applicability and 2025 statutory amendments",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "5de7d6d0f283dd3282ea7bd526a9f4dc7da3a6c19b6104ae0e25fb719ddaeab1",
+              "origin_group": "Department of the Treasury and Internal Revenue Service",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "a251797c45448e479cb3c1b5fc99582b4ee1a96bd8e39f85c6a1c6e610ed14e4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "irs_951a_allocation_proposal_sep11",
+              "locator": "Section 951A deduction-allocation mechanics",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "5de7d6d0f283dd3282ea7bd526a9f4dc7da3a6c19b6104ae0e25fb719ddaeab1",
+              "origin_group": "Department of the Treasury and Internal Revenue Service",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "55636e2728662878cf6f9214858e69dfbd27fc87a748b30e95ec97fd1675650e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "irs_951a_allocation_proposal_sep11",
+              "locator": "Executive-order and Regulatory Flexibility analyses",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "5de7d6d0f283dd3282ea7bd526a9f4dc7da3a6c19b6104ae0e25fb719ddaeab1",
+              "origin_group": "Department of the Treasury and Internal Revenue Service",
+              "evidence_status": "proposed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "06ac605bd0678437ef1bf44b0988a17ed0bdbbcfbc067bb9849d9f5f9801dce9",
+          "review_note": "Reviewed institutional or economic significance separately from downstream effects not established by the source."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "09c2eb4a3331598914da0fe8be3a214d9f34cc394b985622fa8748f43aefd5ec",
+          "review_note": "Reviewed the agency rationale and stated concrete evidence tests for implementation and outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "ea7d85fe39202b5baff996182233b01aebed03340149f6fb2db9671127cb9ab9",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to the verified lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Final implementation, compliance, litigation, transaction-level activity, fiscal effects and measured outcomes require later original evidence as applicable."
+      ]
+    },
+    {
+      "review_id": "10.46.0:NAT-2026-09-11-004:58c03a742bdc",
+      "entry_id": "NAT-2026-09-11-004",
+      "content_sha256": "58c03a742bdc448f3da772332412c9b3c816b9b1a4a7f5cf470f9e1c3dc4751c",
+      "reviewed_at": "2026-09-11T10:12:09.583135Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "25d9acc9138f51441a21aa7a637c48664880f912396919c966dac5400d590af3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "irs_qoz_reporting_proposal_sep11",
+              "locator": "Summary, comment and hearing dates",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "26b82a3fc913480a98a513fc2200b48e25c0475f200c6a80a395cb723ca687d8",
+              "origin_group": "Department of the Treasury and Internal Revenue Service",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "c795e72d52914cab4ef0eaf5d39dfc6c2bc951f80c51abe59197c2ab5218f3c3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "irs_qoz_reporting_proposal_sep11",
+              "locator": "Reporting, penalty and certification provisions",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "26b82a3fc913480a98a513fc2200b48e25c0475f200c6a80a395cb723ca687d8",
+              "origin_group": "Department of the Treasury and Internal Revenue Service",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "7837005fbd7585a1b702dbe6656714813aafceb25cfa6a30e9f5d53f263cdd0c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "irs_qoz_reporting_proposal_sep11",
+              "locator": "Stated reporting purposes",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "26b82a3fc913480a98a513fc2200b48e25c0475f200c6a80a395cb723ca687d8",
+              "origin_group": "Department of the Treasury and Internal Revenue Service",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "010306d3abc4a18fbdb374c086ada1b259b437ebb474edcc8b0895fabdde87c1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "irs_qoz_reporting_proposal_sep11",
+              "locator": "Regulatory Flexibility Act estimates and uncertainty",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "26b82a3fc913480a98a513fc2200b48e25c0475f200c6a80a395cb723ca687d8",
+              "origin_group": "Department of the Treasury and Internal Revenue Service",
+                "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "048cbeb66faee965a2f6954ee8c36222ad4cd32d427707afcc8241c1fbe9498b",
+          "review_note": "Reviewed institutional or economic significance separately from downstream effects not established by the source."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "fb13b0cc1d8957d0d19a289700fd59597fe397e97fca2a915e135429ff323c52",
+          "review_note": "Reviewed the agency rationale and stated concrete evidence tests for implementation and outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "d02720060fcc3306bcd72dd4c87913b4173ae92db4a5ca092cf37d293f9328d3",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to the verified lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Final implementation, compliance, litigation, transaction-level activity, fiscal effects and measured outcomes require later original evidence as applicable."
+      ]
+    },
+    {
+      "review_id": "10.46.0:NAT-2026-09-10-004:a3ac9b8db1cb",
+      "entry_id": "NAT-2026-09-10-004",
+      "content_sha256": "a3ac9b8db1cbf980d3ced0396f5c8e6ce4a8394117b7c809c39d9b941f44f051",
+      "reviewed_at": "2026-09-11T10:12:09.583135Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "cd7aaa6deb1d1a2ef451990d89779ff0cd2024cfc30d8af826c0e0aed12c5150",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dhs_grace_proposal_sep10",
+              "locator": "Publication history and proposed deletion of 8 CFR 214.1(l)(2)",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "65f1abaffc373ecac8990a75868214c832e9d485fde5b1d778f3e3dde48727b7",
+              "origin_group": "Department of Homeland Security",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "e8c7f3ea218ebc9177199e8e7fe64708cd85e118a30bbd2950d12e8bb49bd31a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dhs_grace_proposal_sep10",
+              "locator": "Affected classifications and proposed post-employment status rule",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "65f1abaffc373ecac8990a75868214c832e9d485fde5b1d778f3e3dde48727b7",
+              "origin_group": "Department of Homeland Security",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "e7ddb8a3578a5e0d2e7dd1f7880a285e6f7c9c7590a55eac313882f93f8460e1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dhs_grace_proposal_sep10",
+              "locator": "Dates and legal status of notice",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "65f1abaffc373ecac8990a75868214c832e9d485fde5b1d778f3e3dde48727b7",
+              "origin_group": "Department of Homeland Security",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "73ce2b69983330f89eced2871f6ac10aa4e92f10b264dc9877b29bea3237feea",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dhs_grace_proposal_sep10",
+              "locator": "Reliance-interest and accounting-statement discussions",
+              "inspected_at": "2026-09-11T10:12:09.583135Z",
+              "document_sha256": "65f1abaffc373ecac8990a75868214c832e9d485fde5b1d778f3e3dde48727b7",
+              "origin_group": "Department of Homeland Security",
+              "evidence_status": "proposed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "a4ab030189dbf266d40cbe4f3169ed9e2b179d2c97f646b40f1a805c0552bdfc",
+          "review_note": "Reviewed institutional or economic significance separately from downstream effects not established by the source."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "1c0d37c53d161bd8db97e86c8502bcb9a1837051d822de41c8bf5772d0d8fc07",
+          "review_note": "Reviewed the agency rationale and stated concrete evidence tests for implementation and outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "49bd06c67e656d43f8d976dd6fd1917448f8ace9e6be1e652716143270ae0fc7",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to the verified lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Final implementation, compliance, litigation, transaction-level activity, fiscal effects and measured outcomes require later original evidence as applicable."
       ]
     }
   ],
