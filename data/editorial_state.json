@@ -2365,6 +2365,18 @@
       "provenance_path": "data/editorial_change_notes/10.49.0.json",
       "provenance_sha256": "44942345ed1850582cdbd7396f6c2a0a1041f574204f04fd2088f4a7f9981f68",
       "note": "Evidence status and cutoff preserved; later legal, fiscal, military, cultural and operational outcomes are not inferred."
+    },
+    {
+      "change_id": "10.50.0:NAT-2026-09-12-001",
+      "entry_id": "NAT-2026-09-12-001",
+      "as_of_utc": "2026-09-12T22:00:54Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.50.0",
+      "summary": "Added AP's measured case-by-case outcomes for protest-related federal assault prosecutions, with cohort, comparison and inference limits preserved.",
+      "provenance_path": "data/editorial_change_notes/10.50.0.json",
+      "provenance_sha256": "7b79df94a7b86e79b756e13d7e1088c8c74df93cc12c6833d315c8b9d2e67af1",
+      "note": "Evidence status and cohort limits preserved; individual charging validity, prosecutorial motive and final pending-case outcomes are not inferred."
     }
   ],
   "reviews": [
@@ -12786,6 +12798,114 @@
       ],
       "unresolved_questions": [
         "Later merits decisions, appeals, domestic tax adoption, military actions, museum decisions and measured outcomes require new original evidence as applicable."
+      ]
+    },
+    {
+      "review_id": "10.50.0:NAT-2026-09-12-001:e8d16bd2b618",
+      "entry_id": "NAT-2026-09-12-001",
+      "content_sha256": "e8d16bd2b618667d35ebcb03b57ca720ac61a529ae0510aa186c19c7028e1ce0",
+      "reviewed_at": "2026-09-12T22:06:10Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "8ae62434f0a93c13b5cea25279a844ab66789affb9ca345682bfe6f9374fd331",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_protest_prosecution_analysis_sep12",
+              "locator": "Complete AP article inspected via PBS syndication; extracted-page-text digest records the reviewed representation",
+              "inspected_at": "2026-09-12T22:06:10Z",
+              "document_sha256": "87ae081e97071bb2afcaa24ed491d3f5562361dfb154aba261fed0c808135376",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "a4ca186810099effc21b9f00f73a5069cfcfd589bce29553858f1318f28ba4ee",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_protest_prosecution_analysis_sep12",
+              "locator": "Complete AP article inspected via PBS syndication; extracted-page-text digest records the reviewed representation",
+              "inspected_at": "2026-09-12T22:06:10Z",
+              "document_sha256": "87ae081e97071bb2afcaa24ed491d3f5562361dfb154aba261fed0c808135376",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "6c70fa370d53a1b6cbc77ff8891cca262a0a115e7ac3ffbbbb502026456cb153",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_protest_prosecution_analysis_sep12",
+              "locator": "Complete AP article inspected via PBS syndication; extracted-page-text digest records the reviewed representation",
+              "inspected_at": "2026-09-12T22:06:10Z",
+              "document_sha256": "87ae081e97071bb2afcaa24ed491d3f5562361dfb154aba261fed0c808135376",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "fe5bcf25da7ea6a2af0424351f06c9933be498513d9d41bc3db75d2e47d063d0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_protest_prosecution_analysis_sep12",
+              "locator": "Complete AP article inspected via PBS syndication; extracted-page-text digest records the reviewed representation",
+              "inspected_at": "2026-09-12T22:06:10Z",
+              "document_sha256": "87ae081e97071bb2afcaa24ed491d3f5562361dfb154aba261fed0c808135376",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "e2b1118300488feb85e5dd4fcb6cb4301380c73b7965da3ff1411e9be226a497",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_protest_prosecution_analysis_sep12",
+              "locator": "Complete AP article inspected via PBS syndication; extracted-page-text digest records the reviewed representation",
+              "inspected_at": "2026-09-12T22:06:10Z",
+              "document_sha256": "87ae081e97071bb2afcaa24ed491d3f5562361dfb154aba261fed0c808135376",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "477cd81289031d1cfd78132aade3da14dd5d8aa347dd3ab4f0cbce02c26a97a7",
+          "review_note": "Reviewed significance separately from individual-case guilt, motive and causation claims not established by aggregate outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "b2ae38ecc2fedb796e7362a168178bc965ce2a6160ba6e0fc5c9cde8b715e8dc",
+          "review_note": "Reviewed the Justice Department's strongest case-specific response and stated concrete future tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "23d447357775e6af08ea5cbe19cfeebab8bce929466081f5123d1e5cd3faa89e",
+          "review_note": "Reviewed alternative explanations and limited Therefore to the defined cohort, observed outcomes and comparison caveats."
+        }
+      ],
+      "unresolved_questions": [
+        "The outcomes of the final three trials and any appeals remain unresolved.",
+        "The underlying 167-case dataset was not independently reproduced from every docket in this run."
       ]
     }
   ],
