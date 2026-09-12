@@ -1,38 +1,46 @@
 {
-  "version": "10.49.0",
-  "artifact_mode": "full",
+  "version": "10.49.1",
+  "artifact_mode": "feed-only",
   "research_window": {
-    "from_utc": "2026-09-11T21:58:10Z",
-    "through_utc": "2026-09-12T04:01:35Z",
+    "from_utc": "2026-09-12T04:01:35Z",
+    "through_utc": "2026-09-12T10:01:37Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
     "note": "Continuous research coverage begins at the prior release’s preserved UTC boundary and ends at this run’s evidence cutoff."
   },
   "release_iso": "2026-09-12",
   "release_human": "September 12, 2026",
-  "checked_at": "2026-09-12 12:01 AM EDT",
-  "previous_version": "10.48.0",
-  "previous_checked_at": "2026-09-11 5:58 PM EDT",
-  "window_started_at": "2026-09-11 5:58 PM EDT",
-  "window_ended_at": "2026-09-12 12:01 AM EDT",
+  "checked_at": "2026-09-12 6:01 AM EDT",
+  "previous_version": "10.49.0",
+  "previous_checked_at": "2026-09-12 12:01 AM EDT",
+  "window_started_at": "2026-09-12 12:01 AM EDT",
+  "window_ended_at": "2026-09-12 6:01 AM EDT",
   "week_start": "2026-09-06",
   "week_end": "2026-09-12",
   "week_label": "September 6–12, 2026",
   "cutoff_start": "2026-07-17",
-  "new_entry_ids": [
-    "NAT-2026-09-11-011",
-    "NAT-2026-09-11-012",
-    "NAT-2026-08-17-001",
-    "NAT-2026-08-28-015"
-  ],
-  "added_entry_ids": [
-    "NAT-2026-09-11-011",
-    "NAT-2026-09-11-012"
-  ],
-  "refreshed_entry_ids": [
-    "NAT-2026-08-17-001",
-    "NAT-2026-08-28-015"
-  ],
+  "editorial_snapshot": {
+    "version": "10.49.0",
+    "complete_pack": {
+      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-09-12_v10.49.0.zip",
+      "sha256": "91111ff110e6eb7d9324f4340019d6181fad5149562da84e24fd7aa26be71e21"
+    },
+    "national_pack": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-09-12_v10.49.0.zip",
+      "sha256": "151455c1db40c94918dc3e9b4b5dbb74f87b7dc6adec8c79872ba208b2b1764f"
+    },
+    "national_brief": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-09-12_v10.49.0.md",
+      "sha256": "4dcd4c65d1305b550b916a4b7bf6bc87f87cbcec44b6ded156e5cc68528cb1bd"
+    },
+    "in6_brief": {
+      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-09-12_v10.49.0.md",
+      "sha256": "cb3de37802c9c476e4557a637d4b535e7ec2f1b783d5807f0c8adf63e6a08fea"
+    }
+  },
+  "new_entry_ids": [],
+  "added_entry_ids": [],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-08-31-014",
@@ -139,28 +147,24 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Truth Social inaccessible media",
-      "reason": "Four new posts were reviewed. Two text posts supplied the Smithsonian requests; the image attached to one and two media-only posts returned HTTP 403. No visual claim was used, and the media-only items remain feed-only."
+      "title": "Truth Social golfer post",
+      "reason": "One new text post was inspected. It praised a golfer and identified no material national action, proposal, threat, investigation, ruling, expenditure or measured outcome. Its attached video timed out during direct retrieval; no visual claim was used and the post remains feed-only."
     },
     {
-      "title": "Maricopa County sheriff oversight ruling",
-      "reason": "Associated Press described a federal judge's denial of a request to end local civil-rights supervision, but the complete ruling was not located for inspection before cutoff. The matter remains queued rather than being padded into national maintenance."
-    },
-    {
-      "title": "Prospective Russia sanctions legislation",
-      "reason": "The Senate-passed measure was being scheduled for House consideration, but the House had not completed a vote and the president had not signed it by cutoff."
+      "title": "Ireland meetings and golf-tournament visit",
+      "reason": "Independent reporting described presidential meetings followed by attendance at the Irish Open at Trump's Doonbeg property, but no material signed action, formal proposal, appropriation, procurement, implemented policy or measured result was identified by cutoff."
     },
     {
       "title": "Trump statement on Chinese automakers",
-      "reason": "The interview expressed openness to Chinese vehicle manufacturing in the United States but identified no formal proposal, order, investment or implemented policy."
+      "reason": "The interview repeated openness to Chinese vehicle manufacturing in the United States but identified no formal proposal, order, investment or implemented policy. It remains a duplicate rhetorical follow-up to the prior withheld candidate."
     },
     {
-      "title": "Reported Saudi request for U.S. military help and Iranian direction of Houthis",
-      "reason": "Consequential claims about a military-assistance request, U.S. intelligence support and direct Iranian operational guidance relied on unnamed sources without sufficient independent or primary confirmation. They were excluded from the war record."
+      "title": "Duplicate or non-final follow-ups",
+      "reason": "Independent Smithsonian, OPM and coal-plant coverage did not establish a new decision beyond records already published; Russia sanctions legislation remained pending House action; and analytical war coverage added no sufficiently corroborated new U.S. action."
     },
     {
-      "title": "September 11 ceremonies and campaign material",
-      "reason": "Commemorations, retrospective rhetoric and campaign coverage did not independently establish a material national action."
+      "title": "Unnamed-source war claims",
+      "reason": "Consequential claims about prospective military assistance, intelligence support, operational control or new sanctions lacked sufficient independent or primary confirmation and were excluded."
     },
     {
       "title": "Legacy source-health queue",
@@ -168,7 +172,7 @@
     },
     {
       "title": "External archives",
-      "reason": "All four registered primary project pages or official endpoints were checked. Their differently scoped measurements remain separate, and no upstream item was promoted automatically."
+      "reason": "Record47's endpoint remained unchanged at 6,183 approved entries and 3,620 primary sources. The other three registered primary project pages timed out, so their last verified, differently scoped measurements were preserved and no upstream item was promoted."
     }
   ],
   "corrections": [],
