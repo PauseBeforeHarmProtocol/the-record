@@ -2377,6 +2377,18 @@
       "provenance_path": "data/editorial_change_notes/10.50.0.json",
       "provenance_sha256": "7b79df94a7b86e79b756e13d7e1088c8c74df93cc12c6833d315c8b9d2e67af1",
       "note": "Evidence status and cohort limits preserved; individual charging validity, prosecutorial motive and final pending-case outcomes are not inferred."
+    },
+    {
+      "change_id": "10.51.0:NAT-2026-09-03-009",
+      "entry_id": "NAT-2026-09-03-009",
+      "as_of_utc": "2026-09-13T04:00:56Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.51.0",
+      "summary": "Refreshed the ABC/FCC record with the changed distribution of a Senate-candidate interview and Chair Carr's stated equal-time distinction for a cable appearance by a noncandidate.",
+      "provenance_path": "data/editorial_change_notes/10.51.0.json",
+      "provenance_sha256": "773efde19b98cc2e08a0ab1c16c8fabcc63e87cd05988258dfb954bf9b7a0b7d",
+      "note": "No equal-time violation, penalty, retaliation finding or license disposition is inferred; the complete earlier record remains in version history."
     }
   ],
   "reviews": [
@@ -12906,6 +12918,140 @@
       "unresolved_questions": [
         "The outcomes of the final three trials and any appeals remain unresolved.",
         "The underlying 167-case dataset was not independently reproduced from every docket in this run."
+      ]
+    },
+    {
+      "review_id": "10.51.0:NAT-2026-09-03-009:da1773577cd7",
+      "entry_id": "NAT-2026-09-03-009",
+      "content_sha256": "da1773577cd7a5b2d3ef38f5e266d2e35f04ac10f5fc25f4a56681da2c237a79",
+      "reviewed_at": "2026-09-13T04:07:07Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "3339735a0aec1655fd6eb74ea33efefe769260e500899c66fdf775435d7531b1",
+          "relies_on_unnamed_sources": false,
+          "supports": [{
+            "source_id": "fcc_abc_early_renewal_apr28",
+            "document_sha256": "302eddec4b59004e9fac44870e21275717fcc41089a8b3262f12bf97510d8469",
+            "locator": "DA 26-416 paragraphs 1–3; extracted-text representation inspected in full",
+            "inspected_at": "2026-09-13T04:07:07Z",
+            "origin_group": "Federal Communications Commission",
+            "evidence_status": "ordered"
+          }]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "fbbe53d5fef19715ba3a78c2f2249aab978b28b290adfc7f0915a814fd3d455b",
+          "relies_on_unnamed_sources": false,
+          "supports": [{
+            "source_id": "fcc_abc_pleading_cycle_may29",
+            "document_sha256": "623662b10e2076934d3d8042563b2d8eb32e46908611041b69eae696a9f5883b",
+            "locator": "DA 26-541 pages 1–3 and appendix; extracted-text representation inspected in full",
+            "inspected_at": "2026-09-13T04:07:07Z",
+            "origin_group": "Federal Communications Commission",
+            "evidence_status": "implemented"
+          }]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "1c0cb4f3608f25adc38acc46b888d0ee1ec9a46f016ebe6fdd9ba1ce1908f629",
+          "relies_on_unnamed_sources": false,
+          "supports": [{
+            "source_id": "ap_abc_fcc_lawsuit_aug18",
+            "document_sha256": "05890c1589deda8327b0e6fa752c947484c9fa30749e7bc9c3848d65bb02e72a",
+            "locator": "Associated Press account of complaint allegations and agency posture; extracted-text representation",
+            "inspected_at": "2026-09-13T04:07:07Z",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "99a40a7004b770ba75289cfcfd7834f64992d441bc609a43d3c8a94ed390478e",
+          "relies_on_unnamed_sources": false,
+          "supports": [{
+            "source_id": "fcc_abc_motion_dismiss_sep3",
+            "document_sha256": "d48849c9415ceb0e5d20179da4f0f423cc0c3afd411455dcffc3d1d09a4dc6a7",
+            "locator": "Government dismissal filing's jurisdictional and merits arguments; extracted-text representation",
+            "inspected_at": "2026-09-13T04:07:07Z",
+            "origin_group": "Federal Communications Commission and Department of Justice",
+            "evidence_status": "proposed"
+          }]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "2d2a11c9563d8392b901687e9b3699a86fca512f54432974381f0b3ada213e32",
+          "relies_on_unnamed_sources": false,
+          "supports": [{
+            "source_id": "reuters_fcc_abc_motion_sep3",
+            "document_sha256": "ea4c2742c89a79253f84c8117c4fd7994b9cd16df720e9b24a0f4ad835fbb14b",
+            "locator": "Reuters account of early-review history, Carr's response and court schedule; extracted-text representation",
+            "inspected_at": "2026-09-13T04:07:07Z",
+            "origin_group": "Reuters",
+            "evidence_status": "reported"
+          }]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "c51546ea58af173174ff17c3686a4deceeece4ba550e300442cbd0e3d2c19aac",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_kimmel_talarico_equal_time_sep10",
+              "document_sha256": "99dfae203c04ef75bee75b574952593f625ecdaa4eb6e860c8e361a6a2342345",
+              "locator": "Complete Reuters article on Kimmel's announcement and the ABC distribution decision; extracted-text representation",
+              "inspected_at": "2026-09-13T04:07:07Z",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_kimmel_talarico_equal_time_sep10",
+              "document_sha256": "6c779de11361aebe148f0bfced7ee6a6b7b032c13b8da70b31cc9cb7797d1955",
+              "locator": "Associated Press account of the online-only publication decision and absence of a reported penalty; extracted-text representation",
+              "inspected_at": "2026-09-13T04:07:07Z",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "9ad188cdc8dc851fac431688f2e44b92edac39a24553894815e2da1e40359123",
+          "relies_on_unnamed_sources": false,
+          "supports": [{
+            "source_id": "reuters_carr_cruz_equal_time_sep13",
+            "document_sha256": "3afc2c856ef80bd5754898486cf098189ed89aea752d61639e3113c30122d30a",
+            "locator": "Complete Reuters article filed 2026-09-13 03:04 UTC, carrying Carr's and Cruz's named statements; extracted-text representation",
+            "inspected_at": "2026-09-13T04:07:07Z",
+            "origin_group": "Reuters",
+            "evidence_status": "reported"
+          }]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "42abc8afdaebd210a70f5e5aed2e10e55620442e28e159332d00b5907aa3f16d",
+          "review_note": "Reviewed the documented distribution consequence separately from unadjudicated constitutional and motive claims."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "e4e6affa98d4cd17d433b4d4af7636ceb3a5e8bad18ce227b05caa347f6667dc",
+          "review_note": "Preserved the FCC chair's strongest statutory explanation, Disney's response and observable enforcement and litigation tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "89fd1a7389edc639003c74f49d8bd2406efda6f9d9feaa5ae86d9063a3403169",
+          "review_note": "Reviewed the lawful statutory distinction and chilling-effect alternative; Therefore is limited to the verified distribution change and stated agency position."
+        }
+      ],
+      "unresolved_questions": [
+        "No formal complaint, penalty or adjudicated equal-time violation concerning this interview was identified by cutoff.",
+        "The dismissal motion, early-renewal proceedings and any constitutional merits ruling remain unresolved."
       ]
     }
   ],
