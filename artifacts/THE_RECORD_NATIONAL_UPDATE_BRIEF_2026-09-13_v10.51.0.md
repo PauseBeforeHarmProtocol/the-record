@@ -1,7 +1,7 @@
 # The Record — National Update Brief
 
 **Release:** 10.51.0 · September 13, 2026
-**Release editorial cutoff:** 2026-09-13 12:00 AM EDT
+**Release editorial cutoff:** 2026-09-13 6:01 AM EDT
 
 Each item preserves its own evidence-check time and The Record's labeled distinction between facts, significance, the strongest observed response or goalpost, and any separately reviewed Maybe / Therefore layer.
 
@@ -36,6 +36,41 @@ Maybe the results reflect rushed or overly aggressive charging, or they may part
 **Sources**
 
 - [Associated Press — outcomes of protest-related federal assault prosecutions](https://apnews.com/article/54db940f84a0e89c61ba53a2eed43a25) — independent case-by-case legal analysis
+
+## September 11–13, 2026 — Court rules DHS and FEMA staffing actions unlawful while leaving remedies unresolved
+
+A federal judge granted partial summary judgment on four APA claims over DHS control of FEMA personnel and a roughly 50% staffing plan; the court has not yet ordered relief.
+
+**Entry evidence checked:** 2026-09-13 6:01 AM EDT
+
+**Review state:** current-standard-reviewed
+
+**THE FACTS**
+
+- In American Federation of Government Employees v. Trump, No. 25-cv-03698-SI, the Northern District of California granted plaintiffs partial summary judgment on September 11 on four Administrative Procedure Act claims concerning DHS control of FEMA personnel decisions and FEMA's fiscal 2026 staffing plan. The court declined to reach two alternative ultra vires claims and denied the government's cross-motion.
+- The court held that DHS unlawfully removed FEMA's longstanding authority to renew Cadre of On-Call Response/Recovery Employees and that DHS and FEMA actions conflicted with the Post-Katrina Emergency Management Reform Act and the continuing resolution. It also found the renewal restrictions, employee nonrenewals and a plan projecting 11,383 personnel—approximately half the prior staffing level—arbitrary and capricious for lack of reasoned decision-making.
+- The opinion says the planned 50% staffing reduction had not been fully carried out and notes later appointments and leadership changes. Associated Press reported that some previously terminated employees had been rehired. The ruling therefore does not establish that FEMA lost half its workforce or that every staffing change was unlawful.
+- The court did not order a remedy in this decision. It directed the parties to meet and confer and file a joint statement about remaining relief by October 9, after which it said it would rule. Any injunction, restoration order, appeal or final staffing result remains unresolved.
+- The opinion also summarizes a separate evidence-preservation ruling finding that high-level FEMA and DHS officials intentionally deleted relevant Signal messages and ordering an adverse presumption, limits on hindsight testimony and plaintiffs' fees. Those are court findings in this litigation, not a criminal judgment.
+- FEMA told Associated Press that DHS and FEMA were ready for the 2026 hurricane season and were maintaining workforce stability and a strong deployable force while making the agency leaner and faster. DHS did not separately respond to AP or Reuters before their reports were published.
+
+**SIGNIFICANCE**
+
+The ruling is a merits-stage judicial finding that DHS overrode statutory limits protecting FEMA's personnel authority and that the half-staffing plan lacked reasoned support. Because FEMA supplies national disaster-response capacity, the decision bears directly on executive reorganization power and preparedness, while the practical remedy and staffing consequences remain unsettled.
+
+**GOALPOST / RESPONSE**
+
+The administration says FEMA retains flexibility to choose proper staffing and says the agency remains ready, stable and deployable while becoming leaner and faster. The October relief ruling, any appeal or stay, restored renewal authority, actual staffing levels, deployment capacity, response performance and congressional action are the tests.
+
+**MAYBE / THEREFORE**
+
+Maybe later relief restores FEMA's internal staffing authority without requiring a particular headcount, or appellate review may narrow or reverse the district court's reasoning. Therefore the record confirms partial summary judgment against DHS and FEMA on four APA claims—not a final appellate judgment, a completed remedy, restoration of every job or proof that FEMA currently lacks disaster-response capacity.
+
+**Sources**
+
+- [Northern District of California — FEMA staffing partial-summary-judgment order](https://storage.courtlistener.com/recap/gov.uscourts.cand.448664/gov.uscourts.cand.448664.491.0.pdf) — primary judicial opinion
+- [Reuters — FEMA staffing partial-summary-judgment ruling](https://www.reuters.com/legal/government/us-judge-rules-that-trump-plan-halve-fema-workforce-violated-law-2026-09-12/) — independent legal reporting
+- [Associated Press — FEMA staffing cuts ruling and agency response](https://apnews.com/article/e56494458ed43faacccebb3d62eeb30f) — independent legal reporting
 
 ## September 11, 2026 — OECD publishes revised global-minimum-tax return implementing the U.S. side-by-side framework
 
@@ -5935,11 +5970,11 @@ Maybe a lease sale could diversify critical-mineral supply, and exploration coul
 
 - [Reuters — proposed seabed-mining auction near Northern Mariana Islands](https://www.reuters.com/legal/litigation/us-proposes-seabed-mining-auction-off-northern-mariana-islands-2026-08-17/) — independent reporting on an official proposed auction
 
-## August 17–September 11, 2026 — Trump widens the Hormuz war as U.S. forces strike Iranian military and oil targets
+## August 17–September 13, 2026 — Trump widens the Hormuz war as U.S. forces strike Iranian military and oil targets
 
-The conflict now reaches both Gulf shipping chokepoints as Saudi Arabia closes a major cross-country oil pipeline and Houthis seize Mayun Island.
+The conflict now reaches both Gulf shipping chokepoints; a commercial vessel was struck in Hormuz while Trump attributed the Saudi pipeline attack without publishing supporting evidence.
 
-**Entry evidence checked:** 2026-09-12 12:01 AM EDT
+**Entry evidence checked:** 2026-09-13 6:01 AM EDT
 
 **Review state:** current-standard-reviewed
 
@@ -5991,18 +6026,21 @@ The conflict now reaches both Gulf shipping chokepoints as Saudi Arabia closes a
 - Saudi Arabia's Energy Ministry said on September 11 that it temporarily shut the 1,200-kilometer East-West oil pipeline as a precaution after drone attacks the previous day. The ministry did not identify the attacker. Reuters reported that the pipeline can carry roughly 4 million to 5 million barrels per day, about 4% to 5% of global oil supply; the public record did not establish the repair timeline, lost volume or ultimate attribution by cutoff.
 - Yemen's Houthi movement captured Mayun, also called Perim, in the Bab el-Mandeb Strait. Associated Press reported confirmation from a senior official of Yemen's internationally recognized government and a Houthi official; Reuters separately cited four Yemeni government sources. The capture extends Houthi reach at a shipping chokepoint used as an alternative to Hormuz, but does not establish that the group controls all passage or has closed the strait.
 - The two developments compound pressure on an oil-export route Saudi Arabia had expanded as Hormuz traffic fell. Reports that Saudi Arabia requested direct U.S. military help, that Washington limited assistance to intelligence, or that Iran directly guided the Houthi offensive relied on unnamed sources and were not treated as established without sufficient independent or primary confirmation.
+- On September 12, Trump told reporters that Iran was probably responsible for the Saudi pipeline attack, confirmed speaking with Crown Prince Mohammed bin Salman and said the Houthis had contacted his administration seeking to avoid direct U.S. involvement. Those remarks establish the president's attribution and description of the contacts—not Iran's responsibility, the Houthis' operational intent or a completed U.S. force decision.
+- Reuters separately reported, citing three unnamed sources, that the Saudi crown prince requested U.S. military help and was told Washington would not intervene directly for now but would share intelligence. Because that consequential account lacked a published decision and sufficient independent confirmation by cutoff, the archive does not treat it as an established U.S. commitment.
+- On September 13, UK Maritime Trade Operations reported that a projectile struck a vessel transiting Hormuz, causing a fire and prompting local authorities to evacuate the crew. Associated Press identified it from Iranian state reporting as an Iranian commercial vessel and reported one death and four injuries; the U.S. military had not commented. The incident and evacuation are reported, but the attacker, weapon, U.S. involvement and final casualty assessment remain unresolved.
 
 **SIGNIFICANCE**
 
-The war's energy and shipping consequences now reach both Hormuz and Bab el-Mandeb, while a pipeline designed to bypass Gulf disruption is temporarily closed. The territorial gain and shutdown deepen supply risk, but control of the strait, attack attribution, lost barrels and U.S. military escalation remain unresolved.
+The war's energy and shipping consequences now reach both Hormuz and Bab el-Mandeb, while a pipeline designed to bypass Gulf disruption is temporarily closed and another commercial vessel has been struck. The events deepen supply and escalation risk, but attack attribution, lost barrels, chokepoint control and the U.S. military response remain unresolved.
 
 **GOALPOST / RESPONSE**
 
-The administration says military and economic pressure will protect U.S. forces, deny Iran revenue and restore energy flows; Houthis frame their campaign as pressure on Saudi Arabia. Reopening dates, verified pipeline damage and attribution, Bab el-Mandeb traffic, Houthi control, U.S. force decisions, fuel inventories and consumer prices are the tests.
+The administration says military and economic pressure will protect U.S. forces, deny Iran revenue and restore energy flows; Trump now says Iran was probably responsible for the Saudi attack, while Houthis seek to deter direct U.S. intervention. Reopening dates, verified damage and attribution, maritime traffic, Houthi control, published U.S. force or intelligence decisions, fuel inventories and consumer prices are the tests.
 
 **MAYBE / THEREFORE**
 
-Maybe the pipeline closure is brief and other routes absorb the disruption, or Houthi control near Bab el-Mandeb may turn a temporary shock into a wider, costlier blockade. Therefore the record confirms an official precautionary pipeline shutdown and independently corroborated island capture—not the attacker, full closure of either chokepoint, direct Iranian command or an independently verified U.S. military commitment.
+Maybe the pipeline closure and latest vessel strike remain contained while diplomacy and other routes limit disruption, or attacks around both chokepoints may widen the conflict and force a larger U.S. response. Therefore the record confirms a further Hormuz vessel incident and Trump's public attribution—not who attacked either target, direct Iranian command, closure of all passage or an independently verified U.S. military commitment.
 
 **Sources**
 
@@ -6048,6 +6086,10 @@ Maybe the pipeline closure is brief and other routes absorb the disruption, or H
 - [Reuters — U.S. average diesel price passes $6](https://www.reuters.com/business/energy/us-average-diesel-prices-cross-6-gallon-first-time-gasbuddy-says-2026-09-10/) — independent measurement reporting citing GasBuddy and EIA data
 - [Reuters — Saudi pipeline shutdown and Houthi Red Sea gains](https://www.reuters.com/business/energy/saudis-shut-down-oil-pipeline-houthis-tighten-grip-red-sea-shipping-2026-09-12/) — independent conflict and energy reporting
 - [Associated Press — Saudi pipeline shutdown and Houthi capture of Mayun](https://apnews.com/article/yemen-houthis-iran-mokha-mandeb-shipping-saudi-025d052a14d9481258d51009a76d0bd6) — independent conflict and energy reporting
+- [Reuters — Trump attributes Saudi pipeline attack and describes Houthi contact](https://www.reuters.com/business/energy/trump-says-iran-probably-responsible-attack-saudi-pipeline-2026-09-12/) — independent reporting of presidential statements
+- [UK Maritime Trade Operations — Hormuz vessel projectile and fire notice](https://www.ukmto.org/) — primary maritime-security notice
+- [Reuters — vessel struck in Strait of Hormuz](https://www.reuters.com/business/energy/new-report-attack-strait-hormuz-shipping-fans-fears-threats-oil-supplies-2026-09-13/) — independent conflict and energy reporting
+- [Associated Press — Iranian commercial vessel struck near Hormuz](https://apnews.com/article/aa034da0d8226f5a3b4794b10afb8b3b) — independent conflict reporting
 
 ## July 18, 2026 — Justice Department discloses subpoenas to 14 major law firms
 

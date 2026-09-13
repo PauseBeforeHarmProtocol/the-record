@@ -1,7 +1,7 @@
 # The Record — IN-6 Current Brief
 
 **Release:** 10.51.0 · September 13, 2026
-**Release editorial cutoff:** 2026-09-13 12:00 AM EDT
+**Release editorial cutoff:** 2026-09-13 6:01 AM EDT
 
 Each item preserves its own evidence-check time and The Record's labeled distinction between facts, significance, the strongest observed response or goalpost, and any separately reviewed Maybe / Therefore layer.
 
