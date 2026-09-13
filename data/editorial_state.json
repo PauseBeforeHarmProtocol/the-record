@@ -2449,6 +2449,42 @@
       "provenance_path": "data/editorial_change_notes/10.52.0.json",
       "provenance_sha256": "79c12517debace1794b33e0e3d0684b22d913ff8c621297828c919e6fda48ebb",
       "note": "The older comparator, selected-business examples and absence of a causal national estimate are explicit; the complete earlier chronology remains in version history."
+    },
+    {
+      "change_id": "10.53.0:NAT-2026-08-31-005",
+      "entry_id": "NAT-2026-08-31-005",
+      "as_of_utc": "2026-09-13T21:59:24Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.53.0",
+      "summary": "Restored the East Wing replacement and ballroom plans, eleven official renderings, project scale and funding claims to the canonical record while preserving the Supreme Court stay and unresolved legality.",
+      "provenance_path": "data/editorial_change_notes/10.53.0.json",
+      "provenance_sha256": "8ec33f540993419eea7e0464fd7b81850209e54b93be96b279ae53794bacd431",
+      "note": "Evidence status and implementation limits are preserved; publication does not convert plans, claims or announcements into completed outcomes."
+    },
+    {
+      "change_id": "10.53.0:NAT-2026-09-09-005",
+      "entry_id": "NAT-2026-09-09-005",
+      "as_of_utc": "2026-09-13T21:59:24Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.53.0",
+      "summary": "Restored Trump's September 13 100% pledge and Speaker Johnson's acknowledgment that Congress must act and stated intent to try, while preserving the absence of legislation or funding.",
+      "provenance_path": "data/editorial_change_notes/10.53.0.json",
+      "provenance_sha256": "8ec33f540993419eea7e0464fd7b81850209e54b93be96b279ae53794bacd431",
+      "note": "Evidence status and implementation limits are preserved; publication does not convert plans, claims or announcements into completed outcomes."
+    },
+    {
+      "change_id": "10.53.0:NAT-2026-09-13-002",
+      "entry_id": "NAT-2026-09-13-002",
+      "as_of_utc": "2026-09-13T21:59:24Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.53.0",
+      "summary": "Added Trump's announced removal of the 10% Irish-whiskey tariff, explicitly distinguishing the announcement from customs implementation and broader EU alcohol treatment.",
+      "provenance_path": "data/editorial_change_notes/10.53.0.json",
+      "provenance_sha256": "8ec33f540993419eea7e0464fd7b81850209e54b93be96b279ae53794bacd431",
+      "note": "Evidence status and implementation limits are preserved; publication does not convert plans, claims or announcements into completed outcomes."
     }
   ],
   "reviews": [
@@ -15550,6 +15586,462 @@
       "unresolved_questions": [
         "The September 15 and 29 U.S. measures had not taken effect by cutoff.",
         "National causal effects on prices, employment, output and bilateral trade remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.53.0:NAT-2026-08-31-005:c6f64123d074",
+      "entry_id": "NAT-2026-08-31-005",
+      "content_sha256": "c6f64123d074387f77726f8f495d8ef825ec039c0723d1262a816ed9dbab4922",
+      "reviewed_at": "2026-09-13T22:15:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "432ad08e315b2929b91e7546c72cd971fee9580e95b4d57839d4ab10c952c4f5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_east_wing_expansion_sep13",
+              "locator": "East Wing expansion text naming the size, capacity, replacement, architecture and project team",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "70dd195a08a29ec02bd8e8b5aa0aecb055e9d04bf324ce4213b87185f9dbd889",
+              "origin_group": "The White House",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "70ab8e1f14419baa277b1fc70a6d44b2d12e39b3bae269671325aa04f37ec4d4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_east_wing_expansion_sep13",
+              "locator": "Eleven labeled renderings plus construction, cost and donor-funding assertions",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "70dd195a08a29ec02bd8e8b5aa0aecb055e9d04bf324ce4213b87185f9dbd889",
+              "origin_group": "The White House",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "2bb1acc846724bb070ba0c3754795897f81ad28a33e5957c3ec8d3b177229e60",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_ballroom_rendering_sep13",
+              "locator": "Complete retained post text; attached image returned HTTP 403",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "0914086b5bfe40e7a9cafa14f503fda741993b3a295f97013dab514115557126",
+              "origin_group": "Truth Social",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "wh_east_wing_expansion_sep13",
+              "locator": "Accessible official rendering index used only to confirm plan publication and labels",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "70dd195a08a29ec02bd8e8b5aa0aecb055e9d04bf324ce4213b87185f9dbd889",
+              "origin_group": "The White House",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "a6d954e46728a4b41948d29ef2bafbc20b5e8cf6f883b10b992e5910a9053719",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_ballroom_stay_aug31",
+              "locator": "Supreme Court disposition and scope of preliminary injunction",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "51a7f84d4a6d68483c21b8832fafc8ead579d72f7f9626e8f293f36bd66d6f8a",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "d8424b4e4c0f2f4076b1ab3f74aaa7307e174f23bf5f04a4f324d582d4ab066a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_ballroom_stay_aug31",
+              "locator": "Majority likelihood, irreparable-harm and equities analysis",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "51a7f84d4a6d68483c21b8832fafc8ead579d72f7f9626e8f293f36bd66d6f8a",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "3d7071a7eb94d8017179881f306ea6869660a4e0827736750c0bc85260683466",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_ballroom_stay_aug31",
+              "locator": "Express merits reservation and duration of stay",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "51a7f84d4a6d68483c21b8832fafc8ead579d72f7f9626e8f293f36bd66d6f8a",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "8db61b28d136b86619dbc3421d8e0f19fd1aa56ff1bf7ae1ffa5714c96882638",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_ballroom_stay_aug31",
+              "locator": "Roberts dissent on 40 U.S.C. § 8106 and standing",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "51a7f84d4a6d68483c21b8832fafc8ead579d72f7f9626e8f293f36bd66d6f8a",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "3d8b088f7dfd1d95d65ef339926086e6a6b3dc0d1867948fd6c60f66403ace86",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_social_ballroom_aug31",
+              "locator": "Trump's post characterizing the stay",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "9a0266416d1f6fc11381c0854073b78f2e12bfd251f91599115e6696d1992a63",
+              "origin_group": "Truth Social",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "scotus_ballroom_stay_aug31",
+              "locator": "Order's actual temporary legal effect",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "51a7f84d4a6d68483c21b8832fafc8ead579d72f7f9626e8f293f36bd66d6f8a",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "enjoined"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "be69f5c20829005813340fc51fc379e048c882cb03e181c6a5bf93b2f65072d3",
+          "review_note": "Reviewed significance separately from unimplemented, unaudited or unresolved claims and outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "35c5ba01c8636d4fd1cebbdbcb911f5623021573a98efe52a912c37b683d0028",
+          "review_note": "Preserved the strongest relevant administration explanation or response and stated observable tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "ce49869ee4edfd651d09411b7f8970731f131ee3dc385d2ae4d42996bd05c4da",
+          "review_note": "Reviewed plausible competing frames; Therefore remains limited to the evidence status at cutoff."
+        }
+      ],
+      "unresolved_questions": [
+        "Complete donor instruments, expenditure records and any taxpayer-supported security or infrastructure costs remain unresolved.",
+        "The Truth Social image was unavailable; final design changes, congressional authorization and merits disposition remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.53.0:NAT-2026-09-09-005:a01385933083",
+      "entry_id": "NAT-2026-09-09-005",
+      "content_sha256": "a01385933083661ef512920bf4078e2243df203c208676aa03eef7636663277d",
+      "reviewed_at": "2026-09-13T22:15:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "6504c3e3c4fdd4b2a32ae4b371028b4dd27c7c2428f2f934351b5eb8165eecbf",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_trump_dividend_sep10",
+              "locator": "September 9 convention pledge and election condition",
+              "inspected_at": "2026-09-11T22:14:16.618542Z",
+              "document_sha256": "caf461b09cadccabefe549f8134cabd8f1f3ec90a018c6ac7ff0096841ab2c57",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_trump_dividend_sep10",
+              "locator": "Direct quotation and domestic-spending condition",
+              "inspected_at": "2026-09-11T22:14:16.618542Z",
+              "document_sha256": "d2db283684e7438ab046ee6ea98f1b9a7d69ab77a5930e5bd3493c8b117e15e6",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "f12a72911d820f64f224b289b051e9d6d93b71528b3e7b113e29066079cbd38b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_trump_dividend_sep11",
+              "locator": "Validated text of post 117253978301857789",
+              "inspected_at": "2026-09-11T22:14:16.618542Z",
+              "document_sha256": "0679957b786a0eb24ef11c6e3565152908c8cba384c22266b87a7492ed4f322d",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "1050adc6f464cab3c78f8e221fb29a5847f2639cb5f2dc15f9fb41055c3f82e3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_dividend_followup_sep11",
+              "locator": "Trump's no-Congress statement and constitutional spending authority",
+              "inspected_at": "2026-09-11T22:14:16.618542Z",
+              "document_sha256": "3b810b5ee654812d42f6396602422fd04df632e79d65bd7bc3421085231a2952",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "afff288225bb9f96ff80290b916e9e216c6492cffbfe15177a9148f9701af5fb",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_dividend_legal_sep10",
+              "locator": "Adult-population cost estimate",
+              "inspected_at": "2026-09-11T22:14:16.618542Z",
+              "document_sha256": "2b4734bad89d09e6031e980381169f488bf34974c530b0913fe1834900f8c9bb",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "treasury_mts_aug2026",
+              "locator": "Fiscal-year-to-date net customs receipts",
+              "inspected_at": "2026-09-11T22:14:16.618542Z",
+              "document_sha256": "99c1aeb069f1338101fb0b775b438937bc0cc1dac5f2739517d01efa508c849b",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "26afcf24b421155cfdf9bf8013802775843a81890305f071c200e172c9e8ff81",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_dividend_followup_sep11",
+              "locator": "Earlier rebate proposals and congressional source of military payment",
+              "inspected_at": "2026-09-11T22:14:16.618542Z",
+              "document_sha256": "3b810b5ee654812d42f6396602422fd04df632e79d65bd7bc3421085231a2952",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "22a31543273a844723077b2ed9ceea1f49d8ed2010e832c7ee5d620d3cff3b9c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_dividend_legal_sep10",
+              "locator": "Federal vote-payment statutes, universal-policy distinction and precedent",
+              "inspected_at": "2026-09-11T22:14:16.618542Z",
+              "document_sha256": "2b4734bad89d09e6031e980381169f488bf34974c530b0913fe1834900f8c9bb",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "5827363669de1130860da4ddee62d88b076be66f8a47ec895ce0b8ea43b8058d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_dividend_congress_sep13",
+              "locator": "Trump's affordability claim, Speaker Johnson's approval requirement and Lawler's cost concern",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "762a0e63decc38b1958c4c704179f179602836ad29f9c991a72c2cd32f970435",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_dividend_congress_sep13",
+              "locator": "Trump's 100% pledge and Johnson's stated intent to seek congressional action",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "40b59ba94000e7b6af63374aaa298904eb55c8eaefc03079c823bb8e51d3793e",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "6e1ee4d902b5c6d918a030a211ede68c60d7531df0e2ddd65e92fd21cce7f949",
+          "review_note": "Reviewed significance separately from unimplemented, unaudited or unresolved claims and outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "30c3363faa2e9e48b294820b533e09c3a4176a34959ebc8627e1b3d15bd85e02",
+          "review_note": "Preserved the strongest relevant administration explanation or response and stated observable tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "8ab2436fb4b7110eb19e5022b5d0588b556781d7374e40ea6b4637fb5fc4608e",
+          "review_note": "Reviewed plausible competing frames; Therefore remains limited to the evidence status at cutoff."
+        }
+      ],
+      "unresolved_questions": [
+        "No introduced bill, score, appropriation, funding mechanism, eligibility rule or payment schedule was public by cutoff.",
+        "Passage, implementation and any legal or enforcement finding remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.53.0:NAT-2026-09-13-002:4adfa653109e",
+      "entry_id": "NAT-2026-09-13-002",
+      "content_sha256": "4adfa653109e520a1eab0194a4cdff71b9cf026217e22b51d8b17aea658c889c",
+      "reviewed_at": "2026-09-13T22:15:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "f5c3696f3efcdf5f1bb77294472d49248da0481a7c948b5decca42b51c18b43f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_irish_whiskey_sep13",
+              "locator": "Eyewitness report of Trump's announcement",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "697c07cb5bc8ef312fd1dad677eaf49fb0fbd1264788411fa984789dccdc558f",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_irish_whiskey_sep13",
+              "locator": "Independent eyewitness report of the announcement",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "64451a4b2783adedbc4f6bfc950a23a9a4ced200231ab07d62db5aed7845696e",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "18f67263773f92cbdff1043a760327b974509f74cbc4c21ebba05e34acfb703c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_irish_whiskey_sep13",
+              "locator": "Current EU spirits tariff context",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "697c07cb5bc8ef312fd1dad677eaf49fb0fbd1264788411fa984789dccdc558f",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_irish_whiskey_sep13",
+              "locator": "Corrected current rate and earlier U.K.-whiskey chronology",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "64451a4b2783adedbc4f6bfc950a23a9a4ced200231ab07d62db5aed7845696e",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "68e10e3222c6b0a5ecd60577dd90026c1abcb285452cda4e1f24059e83c7e7cb",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_irish_whiskey_sep13",
+              "locator": "Trump's rationale and Irish Whiskey Association response",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "697c07cb5bc8ef312fd1dad677eaf49fb0fbd1264788411fa984789dccdc558f",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_irish_whiskey_sep13",
+              "locator": "Requests preceding the announcement and industry context",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "64451a4b2783adedbc4f6bfc950a23a9a4ced200231ab07d62db5aed7845696e",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "4a1ba70b0b774e8e79164a11f8762256447e2d01139320beb0ccf077d0fc2eba",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_irish_whiskey_sep13",
+              "locator": "Association awaits implementation",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "697c07cb5bc8ef312fd1dad677eaf49fb0fbd1264788411fa984789dccdc558f",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_irish_whiskey_sep13",
+              "locator": "Effective date unavailable",
+              "inspected_at": "2026-09-13T22:15:00Z",
+              "document_sha256": "64451a4b2783adedbc4f6bfc950a23a9a4ced200231ab07d62db5aed7845696e",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "3c362c45167a589251812b7e9137a8163ca5cb408123439c2afe3dce0188ae85",
+          "review_note": "Reviewed significance separately from unimplemented, unaudited or unresolved claims and outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "02e4d06af7406cb0e64b828bed6685d5334ffef6182d647f244744f28fa5edfd",
+          "review_note": "Preserved the strongest relevant administration explanation or response and stated observable tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "a1bb09b20428648aaab1d898d013942d57e0fecd8e6853ab325ae487757008ed",
+          "review_note": "Reviewed plausible competing frames; Therefore remains limited to the evidence status at cutoff."
+        }
+      ],
+      "unresolved_questions": [
+        "No signed implementing instrument, customs guidance or effective date was located by cutoff.",
+        "Covered tariff lines, reciprocal treatment and measured price or trade effects remain unresolved."
       ]
     }
   ],

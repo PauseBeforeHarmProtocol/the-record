@@ -1,35 +1,35 @@
 {
-  "version": "10.52.0",
+  "version": "10.53.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-13T10:01:55Z",
-    "through_utc": "2026-09-13T15:59:58Z",
+    "from_utc": "2026-09-13T15:59:58Z",
+    "through_utc": "2026-09-13T21:59:24Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous research coverage begins at the prior release’s preserved UTC boundary and ends at this run’s evidence cutoff. The Canadian sourcing analysis is transparently restored as a prior-window omission."
+    "note": "Continuous research coverage begins at the prior release's exact UTC boundary and ends at this run's evidence cutoff. The September 13 dividend follow-up is transparently restored as a prior-window omission."
   },
   "release_iso": "2026-09-13",
   "release_human": "September 13, 2026",
-  "checked_at": "2026-09-13 11:59 AM EDT",
-  "previous_version": "10.51.0",
-  "previous_checked_at": "2026-09-13 6:01 AM EDT",
-  "window_started_at": "2026-09-13 6:01 AM EDT",
-  "window_ended_at": "2026-09-13 11:59 AM EDT",
+  "checked_at": "2026-09-13 5:59 PM EDT",
+  "previous_version": "10.52.0",
+  "previous_checked_at": "2026-09-13 11:59 AM EDT",
+  "window_started_at": "2026-09-13 11:59 AM EDT",
+  "window_ended_at": "2026-09-13 5:59 PM EDT",
   "week_start": "2026-09-07",
   "week_end": "2026-09-13",
   "week_label": "September 7–13, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-13-001",
-    "NAT-2026-08-17-001",
-    "NAT-2026-08-22-001"
+    "NAT-2026-08-31-005",
+    "NAT-2026-09-09-005",
+    "NAT-2026-09-13-002"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-13-001"
+    "NAT-2026-09-13-002"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-08-17-001",
-    "NAT-2026-08-22-001"
+    "NAT-2026-08-31-005",
+    "NAT-2026-09-09-005"
   ],
   "dedupe_resolutions": [
     {
@@ -139,28 +139,34 @@
       "target_id": "LEG-004698",
       "decision": "distinct_lifecycle_stage",
       "notes": "LEG-004698 records the June 2026 collapse of Minnesota church-protest prosecutions. The new record is a later, separately measured outcome analysis of 167 arrests in Los Angeles, Chicago, Portland and Washington; geography, case set and measurement date differ, and neither record is counted as the other."
+    },
+    {
+      "entry_id": "NAT-2026-09-13-002",
+      "target_id": "NAT-2026-08-22-001",
+      "decision": "false_positive",
+      "notes": "Both records concern alcoholic-beverage tariffs, but the new record is a product-specific Irish/EU tariff-removal announcement while the existing record concerns implemented and scheduled Canada measures under separate instruments and dates."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Trump AI-risk remarks",
-      "reason": "Trump criticized AI-risk warnings and supported U.S. leadership but announced no rule, order, formal proposal, expenditure or enforcement change. The remarks remained routine policy rhetoric."
+      "title": "Additional September 11 records",
+      "reason": "Trump said he would consider a request but issued no declassification order, agency directive, release schedule or documents."
     },
     {
-      "title": "Saudi export-stock and global-supply forecast",
-      "reason": "Reuters' forecast that the pipeline outage could remove up to 4% of global supply relied on unnamed buyers and traders, varied repair estimates and no completed Saudi export measurement. The existing pipeline closure remains recorded, but the prospective loss was withheld pending primary data or independent confirmation."
+      "title": "United Ireland remarks",
+      "reason": "Trump expressed support but announced no formal U.S. diplomatic proposal, agreement, directive, expenditure or operational change."
     },
     {
-      "title": "Duplicate weekend conflict and campaign coverage",
-      "reason": "The September 13 Hormuz vessel incident, Saudi pipeline closure and Houthi territorial advance were already captured in the existing Iran record. Ireland, golf, campaign and ceremonial coverage did not establish a new qualifying national action."
+      "title": "AI-risk remarks",
+      "reason": "The remarks still identified no rule, order, formal proposal, procurement decision or enforcement change."
     },
     {
-      "title": "East Wing and White House ballroom plans",
-      "reason": "NAT-2026-08-31-005 remains intact and already covers East Wing demolition and replacement, ballroom construction plans, funding claims, congressional-authority dispute, litigation and the Supreme Court stay. No new verified construction or legal milestone warranted a parallel entry."
+      "title": "Duplicate conflict, campaign and ceremonial coverage",
+      "reason": "Already-recorded Iran, Ukraine and campaign developments and golf-event coverage supplied no separate qualifying action or measured outcome."
     },
     {
-      "title": "Truth Social fallback",
-      "reason": "No new post appeared. The validated feed remains at 36,250 posts with the newest published September 13 at 5:06:55 AM EDT; engagement-only changes did not create a new research lead."
+      "title": "Truth Social image access",
+      "reason": "The new ballroom post's text was reviewed and linked to the existing record, but its JPEG returned HTTP 403. No visual claim was used; the accessible White House project page independently lists eleven plan renderings."
     },
     {
       "title": "Legacy source-health queue",
@@ -168,7 +174,7 @@
     },
     {
       "title": "External archives",
-      "reason": "Trump Archive advanced to 13,995 total items and 11,592 Truth Social posts while speeches and transcripts remained 1,773; UndoTrump remained at 1,264 actions and IPTP at 1,791 policy actions. Record47's live API remained unavailable, so prior verified measurements were preserved. Units stayed separate and no upstream item was promoted automatically."
+      "reason": "Trump Archive advanced to 13,996 total items and 11,593 Truth Social posts while speeches and transcripts remained 1,773; UndoTrump remained at 1,264 actions and IPTP at 1,791 policy actions. Record47's live API remained unavailable, so prior verified measurements were preserved. Units stayed separate and no upstream item was promoted automatically."
     }
   ],
   "corrections": [],
