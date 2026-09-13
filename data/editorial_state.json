@@ -2413,6 +2413,42 @@
       "provenance_path": "data/editorial_change_notes/10.51.0.json",
       "provenance_sha256": "3b4bbfd724194cc30bb02b81db3dd1ad507e68fbde917c200b40e772f147e943",
       "note": "Preserves the court's APA holdings, separate spoliation findings, agency response and the absence of a completed remedy or appellate judgment."
+    },
+    {
+      "change_id": "10.52.0:NAT-2026-09-13-001",
+      "entry_id": "NAT-2026-09-13-001",
+      "as_of_utc": "2026-09-13T15:59:58Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.52.0",
+      "summary": "Added Trump's public request that Ukraine stop attacks on Russian diesel infrastructure, with implementation and causation limits.",
+      "provenance_path": "data/editorial_change_notes/10.52.0.json",
+      "provenance_sha256": "79c12517debace1794b33e0e3d0684b22d913ff8c621297828c919e6fda48ebb",
+      "note": "No Ukrainian acceptance, enforceable order, aid condition, ceasefire or single-cause price finding is inferred."
+    },
+    {
+      "change_id": "10.52.0:NAT-2026-08-17-001",
+      "entry_id": "NAT-2026-08-17-001",
+      "as_of_utc": "2026-09-13T15:59:58Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.52.0",
+      "summary": "Added Trump's stated possibility of remaining in Iran to control oil to the existing war and Hormuz chronology.",
+      "provenance_path": "data/editorial_change_notes/10.52.0.json",
+      "provenance_sha256": "79c12517debace1794b33e0e3d0684b22d913ff8c621297828c919e6fda48ebb",
+      "note": "Preserves the difference between a presidential statement and an implemented occupation, legal authority, agreement or resource-control program."
+    },
+    {
+      "change_id": "10.52.0:NAT-2026-08-22-001",
+      "entry_id": "NAT-2026-08-22-001",
+      "as_of_utc": "2026-09-13T15:59:58Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.52.0",
+      "summary": "Restored Reuters' measured Canadian grocery-sourcing and import-share evidence as a prior-window omission.",
+      "provenance_path": "data/editorial_change_notes/10.52.0.json",
+      "provenance_sha256": "79c12517debace1794b33e0e3d0684b22d913ff8c621297828c919e6fda48ebb",
+      "note": "The older comparator, selected-business examples and absence of a causal national estimate are explicit; the complete earlier chronology remains in version history."
     }
   ],
   "reviews": [
@@ -14188,6 +14224,1332 @@
       "unresolved_questions": [
         "The district court has not yet entered the remedy described in the September 11 opinion.",
         "Any appeal, stay, restored renewal authority, final staffing level and measured disaster-response performance remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.52.0:NAT-2026-09-13-001:4e423f7fe639",
+      "entry_id": "NAT-2026-09-13-001",
+      "content_sha256": "4e423f7fe639854d4b7fc437c32e7eb2f50da01434df519187c986d919e2b67c",
+      "reviewed_at": "2026-09-13T16:15:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "2349796aa0d76b0b39f70520a2eb875e2672ea5ab46b7c2949da2b251e047a57",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_diesel_request_sep13",
+              "locator": "Trump's on-record account of his call and request; no written implementation reported",
+              "inspected_at": "2026-09-13T16:15:00Z",
+              "document_sha256": "cbbcd7c2f198d9fc9f037e26e625794935491f2dec519cafb4d55c9fbddc909a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_diesel_request_sep13",
+              "locator": "Independent report of Trump's public request and absence of established Ukrainian acceptance",
+              "inspected_at": "2026-09-13T16:15:00Z",
+              "document_sha256": "fa0928065dcd1001f3f54eb9274ce2f2aa9373273db1d8bc7722432ae85cbff7",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "0d368047b92063384e9865e2565c87ad98ae056e4748d9e33aa245e1e6699dc5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_diesel_request_sep13",
+              "locator": "Presidential causal claim, refinery-output effects and overlapping global supply pressures",
+              "inspected_at": "2026-09-13T16:15:00Z",
+              "document_sha256": "5b29507003520e11aab08672f83c137e986107e06f3c0bc112b960b73c12de2f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_diesel_request_sep13",
+              "locator": "Diesel-price context, Russian export restriction and Iran-conflict pressure",
+              "inspected_at": "2026-09-13T16:15:00Z",
+              "document_sha256": "566e4cf8495e93ca1da43007ddb8eed2d2698fb4bd24c21d3729f648a6866589",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "36d4f2033ea69c00c16d960c69a9e9a18324565b2ea2621ce4be2ad8851eba16",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_diesel_request_sep13",
+              "locator": "Ukrainian targeting rationale and Russian attacks on Ukrainian energy infrastructure",
+              "inspected_at": "2026-09-13T16:15:00Z",
+              "document_sha256": "c28b9da364c07a8caddb744e18838cb316574247a41006d7c82bed801c89e911",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_diesel_request_sep13",
+              "locator": "Conflict context and reciprocal energy-infrastructure attacks",
+              "inspected_at": "2026-09-13T16:15:00Z",
+              "document_sha256": "69013945b1665c115414d73aacae2d31387d028b23ece8ab6916db8e9c700008",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "93a16f51a4522f64d57a17cda977cd7b1d3a1d65972309f8028206c43ddcd30a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_diesel_request_sep13",
+              "locator": "Complete report reviewed for the request's stated form and lack of an announced enforcement instrument",
+              "inspected_at": "2026-09-13T16:15:00Z",
+              "document_sha256": "5696841449ad1a947f19d788d13b4f045ee6692349851e725cc2ebd92dde96b1",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_diesel_request_sep13",
+              "locator": "Independent complete report reviewed for policy-status limits",
+              "inspected_at": "2026-09-13T16:15:00Z",
+              "document_sha256": "d0c08298f3f48b47416209110127935673e5e8c65c966b2858a91b3932450692",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "cb050e82e25e589d2eb7124723f1236f803d0f1a579e86ef17643189222ad6bc",
+          "review_note": "Reviewed the potential strategic and market significance separately from unestablished implementation and price causation."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "55cf8624240a98eb7a322844fe24ce26aeead27a967aa644e878ac893870abc9",
+          "review_note": "Preserved Trump's shortage rationale, Ukraine's military rationale and observable policy, operational and market tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "d51e2ac4c7acd0c13370064471635b7a40357ddf96b794bbe0a5458976017f53",
+          "review_note": "Reviewed reciprocal-restraint and asymmetric-constraint alternatives; Therefore is limited to the public request and stated rationale."
+        }
+      ],
+      "unresolved_questions": [
+        "Ukraine's response, any U.S. policy condition, later strike activity and reciprocal Russian restraint remain unresolved.",
+        "The contribution of Ukrainian strikes relative to the Iran conflict, export restrictions and other supply pressures remains unresolved."
+      ]
+    },
+    {
+      "review_id": "10.52.0:NAT-2026-08-17-001:60a0038f7474",
+      "entry_id": "NAT-2026-08-17-001",
+      "content_sha256": "60a0038f74749035121aa8f23787a772b8b30ddf8ceb7b44c3a1e3cb412d13f3",
+      "reviewed_at": "2026-09-13T16:15:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "c054c9ccb647b6894a555b014b1ed2028763e6b0d79011db95edfcdf21020775",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_ultimatum",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "d961ab24f3d8bef53a4ac074c249fad012b24f56560abfd99cfae66b5f5a6be5",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "3f3ca17b33ddcd917cd4b55c698e419dcead3ffdc55c84a30f11634264ff40a5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_ultimatum",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "d961ab24f3d8bef53a4ac074c249fad012b24f56560abfd99cfae66b5f5a6be5",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "ec324e7b225aa2be9bcc48ea81793d6cd076011fc21168f2728ced70b7109de3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_ultimatum",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "d961ab24f3d8bef53a4ac074c249fad012b24f56560abfd99cfae66b5f5a6be5",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "f8218584705247d3e3feeab322170df24cb2e9487b0cb0fa0a48d05baddf82f3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_hormuz_aug25",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "2ebf7e9e266c31dd5369bd7d19102a27b8cf0059b78e44874144722d9b764dc7",
+              "origin_group": "Truth Social",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "f2c1d1f564c4017f10215dfbcba7359189895ed1a756afb468d50eb7d9f42691",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "centcom_hormuz_clearance",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "edd6d3e84edb1597fb9178f3ebb7e8818322e686ee53a5632b8a4f524da2d42c",
+              "origin_group": "U.S. Central Command",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_hormuz_aug25",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "dcf1642b34e427a04a9aff03a20250f2d578dd08d65a68dcdf9f383df57c1668",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "abbfc66f3ad6d0e29d24c3f79d66bf8112b58e4f0da154f4d5d98f85bd63a8aa",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_iran_larak_strike_aug30",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "bfa65c0ab9ea2e31b99d34bd422801fd9d379d465467acc1931fa2123c4a294d",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_iran_larak_strike_aug30",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "2f9faca0942f4dfcecec90fe3f26b2643f7a4c40a3e9da2cf8205f14a34f6508",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "adbde0aaa865b6377d200ebc12a7e792c579e4f09db380020e59488e1475fb3c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_iran_larak_strike_aug30",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "bfa65c0ab9ea2e31b99d34bd422801fd9d379d465467acc1931fa2123c4a294d",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_iran_larak_strike_aug30",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "2f9faca0942f4dfcecec90fe3f26b2643f7a4c40a3e9da2cf8205f14a34f6508",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "98a710a1fe38527a06d738deed33085e0b94d15956e4b0227beb9480bd612173",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_iran_larak_strike_aug30",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "bfa65c0ab9ea2e31b99d34bd422801fd9d379d465467acc1931fa2123c4a294d",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "4864370ed0ac1f16d875b4b6c77fcfa84b70757e5604c840ce6049c2be59a908",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_social_kharg_aug30",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "55e2594aeac69b33d7e05306ec1a22b129f41b44fdf60094654bfcbf06fc0a29",
+              "origin_group": "Truth Social",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "reuters_kharg_claim_aug31",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "ba30a830cd46ddf2f34605ef01f42ac28c0faf74d20df2f52f8bbc06eb2b5af4",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "07d91814eb6cd81b909e2ac9d6c811bc58d13163e9df1b49bb7f639010e8cb3e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_denies_kharg_aug31",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "f0cb1431023f6c0ec913d291abb3e9367e737a9d749c955b51998759c5b13089",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 10,
+          "fact_sha256": "53168dc2327e4d1a19646df1228078cbfe7b7b1728b01b6085836605a8766282",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "centcom_iran_strikes_sep1",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "73dd9a318cfec96b1885badfc3c447cfaa07130fef96da63706857ddac9f77bc",
+              "origin_group": "U.S. Central Command",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 11,
+          "fact_sha256": "ca170d031a1b511b1df05eff1e6edead1fe234d27d848e3cffc1175e814ba81c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_strikes_sep1",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "5834bd6d157d964c615c1138ce8604ad22c3d523905d365f201f81b3836396d8",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 12,
+          "fact_sha256": "914fb68caa224c9bf05072fbc3035320b0500d0b7c4a0b20b1af189af6710df4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_social_iran_strikes_sep1",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "b53e343d1721be571682150ac5790d06cb5332b68431ef62552360349bdeb320",
+              "origin_group": "Truth Social / Donald Trump",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "ap_iran_strikes_sep1",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "93b5df23f0345df872e95bbaa491ae27d9917e49eef26e7d7fe93252cc430fae",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 13,
+          "fact_sha256": "5890d48be980c7de2c5d62af676d6e8161820becaec6dd7bca7170726e351872",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_iran_strikes_sep1",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "93b5df23f0345df872e95bbaa491ae27d9917e49eef26e7d7fe93252cc430fae",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 14,
+          "fact_sha256": "9f5f10d50d224bcca0710b656ed6dbb3f9bb39734bb5a1e3d22fc55e51330ed0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_strike_completion_sep1",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "9937ceed8d49dbfaece6e369d50cf35553b750c59770b65df6942012d4cb40fa",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 15,
+          "fact_sha256": "d250fd95f02c67be1de55af6344e5168da7d097e6a114040354ba6c1166584ce",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_strike_completion_sep1",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "9937ceed8d49dbfaece6e369d50cf35553b750c59770b65df6942012d4cb40fa",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 16,
+          "fact_sha256": "2076bcc3c8221fc6bc070ae970850dd84d4ea275c5fdd0133ab05f4248ec1c19",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_strike_completion_sep1",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "9937ceed8d49dbfaece6e369d50cf35553b750c59770b65df6942012d4cb40fa",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 17,
+          "fact_sha256": "32513c7970c85549db2dfebd23d30c2a420964ebe466940c7dd46eed5d196d85",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_social_lutnick_correction_sep3",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "004ad383b0faf553b4633494598e1462b4ecd47bc97f8e33262293583c7db4c8",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "lutnick_x_iran_correction_sep3",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "b05d6d95f7f7d7154ca75afcf9e032de7e11d685888108ce52ecf960b62b6c27",
+              "origin_group": "X / Howard Lutnick",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "reuters_lutnick_iran_correction_sep3",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "7d3b282d44bcdab15cff5f4904047a3fb343ef105147997a0e14ee4973ecd658",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 18,
+          "fact_sha256": "0295aa0705a6d6c8514442476ba5e83a52a55292ecb71dda8b482b1266d60b9d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_vance_wedding_inquiry_sep3",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "4ceb2c6dc6a0bb8858c1a1b7fc616d78a00f3c907f1d035da8dde4af27995478",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 19,
+          "fact_sha256": "66dac30a686aa2a4aee4d77b0132a635930521126df1359faefa666d14c5536b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_vance_wedding_inquiry_sep3",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "4ceb2c6dc6a0bb8858c1a1b7fc616d78a00f3c907f1d035da8dde4af27995478",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 20,
+          "fact_sha256": "2930963efc0624159a05196390019ac2da2c2819f5a4b89a551adb30122b4749",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_pickaxe_threat_sep4",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "9a64b31d314fde261d04d4901f2659d2c2094f0fbd95a8fd36e42bc08203eda7",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 21,
+          "fact_sha256": "b97bfeebbf9aca4d8cf60e6d40187bb736bae26723e0db9502cc1d95a6ac38d5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_trump_iran_framing_sep4",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "c19bb5564c285b2eb166348827d031364acd7c00677c7eaf7a239bd6379cb4d6",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 22,
+          "fact_sha256": "b87205882bc419b52ba3066f9dac32839a6b323ea39003a2f9df0a033dfcc83c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "centcom_iran_tanker_strikes_sep5",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "004d46c83040bdef9559d56eaa6c4a0077339353ccdca8032c14c8b0c26405e8",
+              "origin_group": "U.S. Central Command",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_iran_tanker_strikes_sep5",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "6c5b2c76713977863088c0bf97835808475c980c7d370b21bbe5f4e45f8086a9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_iran_tanker_strikes_sep5",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "1b37147f9381282ae7b8f8f9368227e404d75327b51cf64e22645758cc2666e4",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 23,
+          "fact_sha256": "4990fd071270d6499dd7a6c467cf3ec072fdd4533f09ad27979c7fccb66cdc70",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "centcom_iran_tanker_strikes_sep5",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "004d46c83040bdef9559d56eaa6c4a0077339353ccdca8032c14c8b0c26405e8",
+              "origin_group": "U.S. Central Command",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_iran_tanker_strikes_sep5",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "1b37147f9381282ae7b8f8f9368227e404d75327b51cf64e22645758cc2666e4",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 24,
+          "fact_sha256": "76bb0283cd04a3cfcadbba57bd73a3f48ad6ef8c4b163f83774eb94fcc7fdf36",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "centcom_iran_tanker_strikes_sep5",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "004d46c83040bdef9559d56eaa6c4a0077339353ccdca8032c14c8b0c26405e8",
+              "origin_group": "U.S. Central Command",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 25,
+          "fact_sha256": "dbc4f17dd26d5ee0757ecd8128d322069155363402e13ca134105da720adcf6e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_labor_day_gas_sep5",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "1239536eb7239f734d431c3799acafc763a88d8a3f6c66892719b8efd7326484",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "gasbuddy_labor_day_forecast_sep1",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "a8bad88ae717ec54623d4a1236d0e153fcb1eb65a75a0bdd49e638214b8ac0fc",
+              "origin_group": "GasBuddy",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 26,
+          "fact_sha256": "994f14ec36667ba4d172523f268b389bfe7105fa1d73df0ca1894582591200a0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_labor_day_gas_sep5",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "1239536eb7239f734d431c3799acafc763a88d8a3f6c66892719b8efd7326484",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 27,
+          "fact_sha256": "a09537c51a8f5e06178fbdfa5c55e1e179072f1a90df401f57ad17130df80555",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_iran_hormuz_denial_sep6",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "559f3ce065d2ba8b38341156634c75d708586fba28f4bb7f4b885e719492fed1",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 28,
+          "fact_sha256": "500e6096f49c4abe5e7f15b4f7c58f3639f8156481410fc59022f4566856da57",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_iran_hormuz_denial_sep6",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "559f3ce065d2ba8b38341156634c75d708586fba28f4bb7f4b885e719492fed1",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 29,
+          "fact_sha256": "468efb3d7b995de04b05b56de89b6672f1cd38a88f22fe2ff436d3a1d3557bde",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_hormuz_squeeze_sep6",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "c1fb7ea8c68841182fde4335a6cd4dc84f4f539b3f0b6eddcaad1ea7d581088d",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_iran_economy_aug21",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "7bb140cad1f426f8c9381d1f05f27d5440330bfa76602af0e035bdb3b199a373",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 30,
+          "fact_sha256": "f9dd5498366f2bcc0db838ad904d82a4ce2ce33ec64b9039152785b44db14a09",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_fuel_price_sep6",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "02dd68c22825181122142b2cc8c6d0d2c1cffaa02e858cfacc84b8072aa4d494",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 31,
+          "fact_sha256": "431d3490bdbc23120cf990ef09ef5bdcc026158439d429f73edb12c71cdaacf6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_oil_hormuz_sep7",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "1ae848ff13ef7ca98a6be1e199e99884e4dc0c6a9f4eb3b8c9478274e68f2cfc",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 32,
+          "fact_sha256": "4d46851e2193cf16c6284dddcf2a532fd88923e7179b661c07d7f29d4e912ef9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ship_fuel_shortage_sep7",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "2cb9522f20442b87a6b8c6af809cfd1c65e55ba37bbd61553190555b752ba44d",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 33,
+          "fact_sha256": "c79a134f4772a976bb10a0baaeda99358afa6914768138206a3f63e8c7fd9290",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "aaa_national_fuel_prices_sep7",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "66a7f6ddb0c5d5817b54c3f1607c5df963f890d76047cdce3ea8d91f994b476b",
+              "origin_group": "AAA",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 34,
+          "fact_sha256": "3419bc3c61c14bee27a957f0ee5b15d9afba6a233492b93d95c4f9efad0e2100",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_restricted_zone_sep7",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "a34c065af87f9a15470a1f22f0e7b7d56e8725cfb5ce946d1bf8503c26f06553",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 35,
+          "fact_sha256": "ebb8fc60f786c2c2faf588d0d9b7e3b5ef8fd358090fdcdf4d8a973b5eaf81e3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "centcom_iran_tanker_strikes_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "63ab8365d0a2ec0cdfb4b8251c5e8645f4e65eff0f9653fadad688943a71644a",
+              "origin_group": "U.S. Central Command",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_iran_tanker_strikes_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "7c6400043c0fe937126a47d007cb9deb65ca3b3c365645d30e0fa44396f08828",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_iran_tanker_strikes_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "fb6cb6c841004a5951e13175c30bca10f5a52e2c4252c41d55f0a2b6b9c2cf50",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 36,
+          "fact_sha256": "a5c83dc65d7c26910b96903314aeb9739d6b5bff74efcf0666ad5cbd19221fec",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "centcom_iran_tanker_strikes_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "63ab8365d0a2ec0cdfb4b8251c5e8645f4e65eff0f9653fadad688943a71644a",
+              "origin_group": "U.S. Central Command",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_iran_tanker_strikes_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "7c6400043c0fe937126a47d007cb9deb65ca3b3c365645d30e0fa44396f08828",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_iran_tanker_strikes_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "fb6cb6c841004a5951e13175c30bca10f5a52e2c4252c41d55f0a2b6b9c2cf50",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 37,
+          "fact_sha256": "35025653521f460bae888093afc8e49f9a39b8ae6affcb41d28bbf8f3d068b5a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_tanker_strikes_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "7c6400043c0fe937126a47d007cb9deb65ca3b3c365645d30e0fa44396f08828",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_iran_tanker_strikes_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "fb6cb6c841004a5951e13175c30bca10f5a52e2c4252c41d55f0a2b6b9c2cf50",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 38,
+          "fact_sha256": "38d552363079c9054d5d1b6ea9edf6e462c450e3084d9ae2534f0b4f2afab13d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "centcom_iran_tanker_strikes_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "63ab8365d0a2ec0cdfb4b8251c5e8645f4e65eff0f9653fadad688943a71644a",
+              "origin_group": "U.S. Central Command",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_iran_tanker_strikes_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "7c6400043c0fe937126a47d007cb9deb65ca3b3c365645d30e0fa44396f08828",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 39,
+          "fact_sha256": "0c3683f61b62e72979273d5a8388e78aeaf418166341b188f9b42b29f3bcc26a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_jordan_shipping_sep9",
+              "locator": "IRGC claim, Jordan interception statement and U.S. force-protection assessment",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "3b07d7633d9c1eeabd9ea663cbdc6437d09a1b9e7f7a0db440b0f8299d367d3e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 40,
+          "fact_sha256": "24d8e9051b9a5a419f7f8a14caf53d9f5043ba0e7c014964e252b1e66be516e2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_gulf_vessels_fire_sep9",
+              "locator": "UKMTO merchant-vessel incident notices and unresolved attribution",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "1edced7821e5a693dc21839742ba075f6981205cec2182a8c878cd785ef7dfad",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 41,
+          "fact_sha256": "8983572aed874a64b3c255e02d1ebdc1d1231d1629093b93bd8ed2c495247bce",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_brent_100_sep9",
+              "locator": "Brent intraday price, Hormuz flow estimates and IEA global-supply projection",
+              "inspected_at": "2026-09-09T10:00:31Z",
+              "document_sha256": "d147d5177992444672d94de72d16579902f1e00c63e10b2a9baa1c145b9ec919",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 42,
+          "fact_sha256": "5836a722d320812478b13bf8706323d84744e2a688b9e7e2019ddaea58b33dc3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_diesel_six_dollars_sep10",
+              "locator": "GasBuddy, market-settlement and EIA measurements plus overlapping-cause reporting",
+              "inspected_at": "2026-09-11T04:10:37.183260Z",
+              "document_sha256": "f0ff05c0e51ece4fbae6e8ab59c2a2588416b2b71d4b786aa4f2bae31f84395e",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 43,
+          "fact_sha256": "19c032eed5bb3544a817a3ba905426ffe3a521c01c23c8707ab1ab712ccc1538",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_saudi_pipeline_houthi_sep12",
+              "locator": "Saudi ministry shutdown, date, capacity and unresolved attribution",
+              "inspected_at": "2026-09-12T04:14:38.055801Z",
+              "document_sha256": "b42e30fe38a2c9218d675ac5d633bc0965ab2ce3b9da41854b45b29dc65d3835",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_saudi_pipeline_houthi_sep12",
+              "locator": "Saudi ministry precautionary-shutdown statement",
+              "inspected_at": "2026-09-12T04:14:38.055801Z",
+              "document_sha256": "97c244ad275adc7d1db513591b6757ff238ef5c0b3edca5cbb8baa5410654353",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 44,
+          "fact_sha256": "37c580940470812780c179786a274c558120ea665877fbaab43f8ccdf68f94fe",
+          "relies_on_unnamed_sources": true,
+          "supports": [
+            {
+              "source_id": "ap_saudi_pipeline_houthi_sep12",
+              "locator": "Independent confirmations from opposing Yemeni sides and chokepoint context",
+              "inspected_at": "2026-09-12T04:14:38.055801Z",
+              "document_sha256": "97c244ad275adc7d1db513591b6757ff238ef5c0b3edca5cbb8baa5410654353",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_saudi_pipeline_houthi_sep12",
+              "locator": "Separate multi-source territorial confirmation",
+              "inspected_at": "2026-09-12T04:14:38.055801Z",
+              "document_sha256": "b42e30fe38a2c9218d675ac5d633bc0965ab2ce3b9da41854b45b29dc65d3835",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 45,
+          "fact_sha256": "3ea1943e424477c3c9579e4b91d174cfb97d9d995cb9692ecdfa99855a8b20f9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_saudi_pipeline_houthi_sep12",
+              "locator": "Route context and source-limit review; unnamed military claims excluded",
+              "inspected_at": "2026-09-12T04:14:38.055801Z",
+              "document_sha256": "b42e30fe38a2c9218d675ac5d633bc0965ab2ce3b9da41854b45b29dc65d3835",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_saudi_pipeline_houthi_sep12",
+              "locator": "Independent route and conflict context",
+              "inspected_at": "2026-09-12T04:14:38.055801Z",
+              "document_sha256": "97c244ad275adc7d1db513591b6757ff238ef5c0b3edca5cbb8baa5410654353",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 46,
+          "fact_sha256": "406439ac7b962c1dab1bf74ff244c13a6f9130483f945adc678c9adf9e8a8f8d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_trump_iran_pipeline_sep12",
+              "locator": "Complete Reuters report of Trump's named remarks and described contacts; extracted-text representation",
+              "inspected_at": "2026-09-13T10:12:46Z",
+              "document_sha256": "c33bbd33b7f1e4ff810fde542b58723e4183bdfc773020aeabe28364e7bd23e6",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 47,
+          "fact_sha256": "071570bac70524f07aafab7d2e711afba6349b86cb4fee706a5572674e9d37cb",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_trump_iran_pipeline_sep12",
+              "locator": "Reuters article's explicitly unnamed-source intelligence-sharing account, retained only as unconfirmed reporting",
+              "inspected_at": "2026-09-13T10:12:46Z",
+              "document_sha256": "ea4e28eb2d572425fdea7c3dad87184bdf0cc9717de58afd6f537c1ab9bc9e75",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 48,
+          "fact_sha256": "bc5d5ca729076910692ecc8880f674970500de588588c3eedef50c441a713a77",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ukmto_hormuz_vessel_sep13",
+              "locator": "UKMTO incident notice reporting projectile strike, fire and crew evacuation",
+              "inspected_at": "2026-09-13T10:12:46Z",
+              "document_sha256": "d2df80adeba5784ae9397bcc8a0c0c8c013d42d1e4ae20762045a1a92e2eb204",
+              "origin_group": "UK Maritime Trade Operations",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_hormuz_vessel_sep13",
+              "locator": "Complete Reuters report on the maritime incident and unresolved attribution",
+              "inspected_at": "2026-09-13T10:12:46Z",
+              "document_sha256": "02b3bf472d466a96a38b70e207e39a5190bb7572d11367592bd88c7a5a0db900",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_hormuz_vessel_sep13",
+              "locator": "Complete AP report identifying the vessel from Iranian state reporting, casualty claim and U.S. nonresponse",
+              "inspected_at": "2026-09-13T10:12:46Z",
+              "document_sha256": "a42332210ead8d4e34f86e15256aaca042e5b69cfe30a6aaffc3b0361c9ab536",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 49,
+          "fact_sha256": "afdb914bdd6309d68cb174552f0a82bb324db039af5c016df177b77caca3bd9e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_keep_oil_sep13",
+              "locator": "Complete Reuters report of Trump's on-record continued-presence, oil-control, settlement-timing and price remarks; extracted-text representation",
+              "inspected_at": "2026-09-13T16:15:00Z",
+              "document_sha256": "ae79cee7b4585dd55597b758882c5ae15c24d90766556e62550ed00d9aaccf9e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "385e54fda8c18ed0dbd9fb88b47e78039c71805531eacd643c6ac54e5195f1fa",
+          "review_note": "Reviewed the resource-control and war-duration significance separately from the absence of an implementing plan or legal authority."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "ee347654a2088ce8c8ac3f398c2cba4b2e9cb038212586732deda1a21dae0400",
+          "review_note": "Preserved the administration's pressure rationale and specified legal, military, diplomatic, oil-custody and market tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "9943d85f148acb04750432f05ffccf06030b36ac8b24124586301047c827f78d",
+          "review_note": "Reviewed negotiating-leverage and prolonged-presence alternatives; Therefore does not convert the remarks into implemented policy."
+        }
+      ],
+      "unresolved_questions": [
+        "No occupation order, legal authority, congressional authorization, agreement with Iran or oil-control implementation was public by cutoff.",
+        "Attack attribution, final casualties, maritime traffic, pipeline repairs and later force decisions remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.52.0:NAT-2026-08-22-001:8ddb31ca500a",
+      "entry_id": "NAT-2026-08-22-001",
+      "content_sha256": "8ddb31ca500ac7a25f4b171360141441b13fd0515d1fb0f8d0a0e2b3e0b66bbe",
+      "reviewed_at": "2026-09-13T16:15:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "dcf83b14c04a3f59b350a462ed1833d7676ed8af465b6dbb99ea518e520d3c6f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_canada_tariffs",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "0fe67557cacc0967fe40c6492bec48e43311c3ca11bd8c5fe560c450241eef33",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "1391f5166d0be60095cb64f9a825a44f1a30c5d9a6024852ad7ddbec3932f382",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "canada_countertariff_list_effective_sep8",
+              "locator": "backgrounder paragraphs 1–10 and tariff schedule",
+              "inspected_at": "2026-09-08T05:15:00Z",
+              "document_sha256": "a0052b7675fe3d79ae54e847460d5dc6836dd8d5ed62a3abd08d7d3160a5f4ae",
+              "origin_group": "Government of Canada",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_canada_countertariffs_effective_sep8",
+              "locator": "article body on implementation, covered trade, exemptions and talks",
+              "inspected_at": "2026-09-08T05:15:00Z",
+              "document_sha256": "4530513a359f0b3fdbb8679728ad20392a8f9194edc0646ee4b1359df683a8b9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_canada_countertariffs_effective_sep8",
+              "locator": "article body on order-in-council implementation, product rates and future threats",
+              "inspected_at": "2026-09-08T05:15:00Z",
+              "document_sha256": "8e2a4585ee871ef712dff398bd783a3cc576f6d82633e9209a40e1f25ebe67bb",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "b5038d90fe05987118a0422763ebf65ed25df1366e0d1c426569b12d18ba5bfa",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_canada_countertariffs_effective_sep8",
+              "locator": "article body on implementation, covered trade, exemptions and talks",
+              "inspected_at": "2026-09-08T05:15:00Z",
+              "document_sha256": "4530513a359f0b3fdbb8679728ad20392a8f9194edc0646ee4b1359df683a8b9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "46b1c9e9af5d3da65ac59051ebde2c5d3d8f7f9cba0da4d99464be4f6fb89b25",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_canada_motor_tariff_scope_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "c2521597360788ee8b7e8936be4823f47e48974af73564af508351ac5bc9bf66",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "wh_canada_alcohol_tariff_scope_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "228ac0a828cb7bf689b070491fa0d88b8c3e6f1d9dd3fd0cefb439b34009c6f4",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "wh_canada_alcohol_ban_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "af3f2b9ea88ea7b9026b49a14e5bbf2286d4b3da0501f130218aad5411ab7f1c",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "wh_canada_dairy_ban_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "daee6a859d2ef58ceadd9e3da08712c42ff5ebf142d0e6fb84ce3c47e18459e7",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "wh_canada_motor_ban_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "1109c99b0e9f02dd974b7de04a1dd9f11d62e9906c26aa9a7848c115cfd63c31",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "ap_canada_import_bans_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "541e4201461453fa452068d8bbbcbcbe95a4d067717930734ce91779567cf4b3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "cfffe7b061f3130319c299efb24a49e553c792bcc4fcd05b76aeb6b2ded3b2af",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_canada_motor_tariff_scope_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "6da9b0d0896f78db104e3b9bf54fe8c41d6f9e9ae9b74e08f53eaa9b32c0e3c0",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "wh_canada_alcohol_tariff_scope_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "3cba062f5f69405ff3efa3f59b5fc7936fcb0feb3d3e59772559496a8c60fcda",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "wh_canada_alcohol_ban_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "fb6ab76c8051c0805c95a3d691fbac8605496a5e4ce7ab8ffa899ab9e64ba2de",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "wh_canada_dairy_ban_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "6f2479eb9710b245e70144c5d0bcaffbaeee2c0900a3ed87d4677740768f0a73",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "wh_canada_motor_ban_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "e3b924ff702db33b084d46c5296bcb30d156beba0b9aae684a7d41ac1a83fbaa",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "ap_canada_import_bans_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "504dba3a5fca58b08eec90c467d83a637bcb2935efa78063d53750d81e5c4648",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "d8b6ebf712bee5ceeca35364dcc0129093c8fb5283fd6af0897568698e21147f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_canada_tariffs",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "3747aedaad30d79b235d3724970ac11f1a5c76344b9fe9c61706a7daa0eea602",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "7e359035b7fadb43a9a463d917a8d391e1ba3bb403ca6e1d61db92651058c133",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_canada_boycott_supply_sep12",
+              "locator": "Reuters grocery observations, Canadian government import-share data, origin-labeling examples and greenhouse-investment plan; extracted-text representation",
+              "inspected_at": "2026-09-13T16:15:00Z",
+              "document_sha256": "69e7b970433be905a8e5ee8e5a01e23a54b26186e2d79f3aedd3fdda974049f0",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "d92cffe05cc98fc3558b658ffbceb2e934d3214746ef1f4862b881f03a4d8fe8",
+          "review_note": "Reviewed observed sourcing adaptation separately from national causation, aggregate welfare and U.S. outcome claims."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "39cb37e144607e7b61239e240b27ba369618c8232d41512caa002d329526d60a",
+          "review_note": "Preserved the administration's reciprocity rationale and Canada's diversification response with product-level implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "0f1ff416826b02885711f893a99f54dbabc0fd8a6fd69257709e264d2fdbb823",
+          "review_note": "Reviewed limited leverage and sustained-diversification alternatives; Therefore is limited to measured selected-market changes and scheduled instruments."
+        }
+      ],
+      "unresolved_questions": [
+        "The September 15 and 29 U.S. measures had not taken effect by cutoff.",
+        "National causal effects on prices, employment, output and bilateral trade remain unresolved."
       ]
     }
   ],
