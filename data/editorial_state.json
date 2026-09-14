@@ -2485,6 +2485,18 @@
       "provenance_path": "data/editorial_change_notes/10.53.0.json",
       "provenance_sha256": "8ec33f540993419eea7e0464fd7b81850209e54b93be96b279ae53794bacd431",
       "note": "Evidence status and implementation limits are preserved; publication does not convert plans, claims or announcements into completed outcomes."
+    },
+    {
+      "change_id": "10.54.0:NAT-2026-08-24-002",
+      "entry_id": "NAT-2026-08-24-002",
+      "as_of_utc": "2026-09-14T09:58:05Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.54.0",
+      "summary": "Added the separate September 13 D.C. preliminary injunction against the USPS mail-ballot rule while preserving the First Circuit chronology, Supreme Court posture and the absence of a final merits judgment.",
+      "provenance_path": "data/editorial_change_notes/10.54.0.json",
+      "provenance_sha256": "d815ad2a6d2204cca0882870ffc5cfecf855d3b66604932de00737c365a33380",
+      "note": "The complete D.C. order was unavailable during review, so the added holding is limited to the portions independently reported and directly quoted by Associated Press and Reuters."
     }
   ],
   "reviews": [
@@ -16042,6 +16054,137 @@
       "unresolved_questions": [
         "No signed implementing instrument, customs guidance or effective date was located by cutoff.",
         "Covered tariff lines, reciprocal treatment and measured price or trade effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.54.0:NAT-2026-08-24-002:5b72db768af2",
+      "entry_id": "NAT-2026-08-24-002",
+      "content_sha256": "5b72db768af2d62c268a26080c482e0dae4b0a37f5f695d31f476e4608465b20",
+      "reviewed_at": "2026-09-14T10:20:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "4c32ece7c124eb1291c605d68e20ce298bf95fdf5866d44df1423d7d6c8da036",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca1_mail_stay_denial_sep10",
+              "locator": "Pages 4–5 and 9; September 10 stay denial and consolidated appeals.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "482d208bcc89d10531c5641582ab3a823824ca40f12d5ad57dca78748559d3e7",
+              "origin_group": "U.S. Court of Appeals for the First Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "d05ca3db12f6429134d88ac5152a3285a70a9c0c4a67de51ad28eb9e69e9f5bc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca1_mail_stay_denial_sep10",
+              "locator": "Page 5; rule requirements and plaintiff scope.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "482d208bcc89d10531c5641582ab3a823824ca40f12d5ad57dca78748559d3e7",
+              "origin_group": "U.S. Court of Appeals for the First Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "cdab6f1e33c371ce77e962b9852e66249b651339914a2da33da7cfc482e45c6e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca1_mail_stay_denial_sep10",
+              "locator": "Pages 5–6 and footnote 2; Elections Clause and limited likely-success analysis.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "482d208bcc89d10531c5641582ab3a823824ca40f12d5ad57dca78748559d3e7",
+              "origin_group": "U.S. Court of Appeals for the First Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "6adf02c1d753091863d1d3f193c1f2dbe405aa896f45585cadcd3cafb6dfc034",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca1_mail_stay_denial_sep10",
+              "locator": "Pages 6–7; implementation record and prospective harm.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "482d208bcc89d10531c5641582ab3a823824ca40f12d5ad57dca78748559d3e7",
+              "origin_group": "U.S. Court of Appeals for the First Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "07187c0ac33d0bcd7cd770dbb616f7728cf3972ba320397946cd0ef6ec10a92b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca1_mail_stay_denial_sep10",
+              "locator": "Pages 4–9; emergency procedural posture and preserved version history.",
+              "inspected_at": "2026-09-10T22:08:22.692626Z",
+              "document_sha256": "482d208bcc89d10531c5641582ab3a823824ca40f12d5ad57dca78748559d3e7",
+              "origin_group": "U.S. Court of Appeals for the First Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "461670bebf11c6f3d0707ec0adfc67e91757d74a381996ba7339bea88732891f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_usps_nichols_injunction_sep13",
+              "locator": "Late September 13 preliminary injunction, quoted risk finding and relationship to the Massachusetts restraint.",
+              "inspected_at": "2026-09-14T10:10:00Z",
+              "document_sha256": "4f1074dfe52e15977b829666f137da1f01288ab99d29ba4d35d227fda90b74a4",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_usps_nichols_injunction_sep14",
+              "locator": "Independent confirmation of injunction and reported statutory-authority holding.",
+              "inspected_at": "2026-09-14T10:10:00Z",
+              "document_sha256": "6666cb0d56ce20fc1bfc8d62af605857b254c21657d3e40415ad22d3cedde781",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "0bcede2e872213fb76b6da483c568cb87cb39befaa65eedadcaa427a79cbc551",
+          "review_note": "Reviewed institutional significance separately from unresolved merits and unmeasured ballot effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "d6ae02ad52dbafe63ac3197bebb3749e398d8915e237fb2a8bcdff0d6e8979d5",
+          "review_note": "Preserved the administration's postal-regulation rationale and specified the Supreme Court, merits and implementation tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "dcd13e7c3d89431c553800b7d198a9fdd942a3001760ec975b93b3b27cdbb63e",
+          "review_note": "Reviewed competing legal paths; Therefore remains limited to overlapping preliminary relief."
+        }
+      ],
+      "unresolved_questions": [
+        "The complete September 13 D.C. order was not publicly retrievable during review.",
+        "Supreme Court disposition, final merits, implementation and measured ballot effects remain unresolved."
       ]
     }
   ],
