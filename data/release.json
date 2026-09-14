@@ -1,38 +1,37 @@
 {
-  "version": "10.55.0",
+  "version": "10.56.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-14T09:58:05Z",
-    "through_utc": "2026-09-14T15:58:38Z",
+    "from_utc": "2026-09-14T15:58:38Z",
+    "through_utc": "2026-09-14T22:00:28Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
     "note": "Continuous research coverage begins at the prior release's exact UTC boundary and ends at this run's evidence cutoff."
   },
   "release_iso": "2026-09-14",
   "release_human": "September 14, 2026",
-  "checked_at": "2026-09-14 11:58 AM EDT",
-  "previous_version": "10.54.0",
-  "previous_checked_at": "2026-09-14 5:58 AM EDT",
-  "window_started_at": "2026-09-14 5:58 AM EDT",
-  "window_ended_at": "2026-09-14 11:58 AM EDT",
+  "checked_at": "2026-09-14 6:00 PM EDT",
+  "previous_version": "10.55.0",
+  "previous_checked_at": "2026-09-14 11:58 AM EDT",
+  "window_started_at": "2026-09-14 11:58 AM EDT",
+  "window_ended_at": "2026-09-14 6:00 PM EDT",
   "week_start": "2026-09-14",
   "week_end": "2026-09-20",
   "week_label": "September 14–20, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-13-001",
-    "NAT-2026-09-14-001",
-    "NAT-2026-09-14-002",
-    "NAT-2026-09-14-003"
+    "NAT-2026-09-14-004",
+    "NAT-2026-09-14-005",
+    "NAT-2026-09-14-006",
+    "NAT-2026-09-14-007"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-14-001",
-    "NAT-2026-09-14-002",
-    "NAT-2026-09-14-003"
+    "NAT-2026-09-14-004",
+    "NAT-2026-09-14-005",
+    "NAT-2026-09-14-006",
+    "NAT-2026-09-14-007"
   ],
-  "refreshed_entry_ids": [
-    "NAT-2026-09-13-001"
-  ],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-08-31-014",
@@ -147,32 +146,42 @@
       "target_id": "NAT-2026-08-22-001",
       "decision": "false_positive",
       "notes": "Both records concern alcoholic-beverage tariffs, but the new record is a product-specific Irish/EU tariff-removal announcement while the existing record concerns implemented and scheduled Canada measures under separate instruments and dates."
+    },
+    {
+      "entry_id": "NAT-2026-09-14-005",
+      "target_id": "NAT-2026-09-04-007",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "Both records use Executive Order 13902, but NAT-2026-09-04-007 covers Turkish financial institutions, later aviation and proxy-network listings, licenses and a civil settlement. NAT-2026-09-14-005 records a separate OFAC designation of Russia’s VTB Bank under Iran authority with different counterparties and secondary-sanctions consequences."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Expected EPA repeal of power-plant carbon limits",
-      "reason": "Reuters and Associated Press described an expected announcement, but no final rule or primary EPA release was available by cutoff. Prospective reporting was not converted into a completed repeal."
+      "title": "Federal judge blocks fixed-duration F, J and I admissions rule",
+      "reason": "Reuters reported a consequential ruling minutes before cutoff, but the complete district-court order was not publicly retrievable and no equivalent primary record or independent second report was inspected. The final DHS rule and docket remain queued for a precise lifecycle update."
+    },
+    {
+      "title": "FDA psychedelic-drug public hearing",
+      "reason": "FDA held the announced listening session and accepted comments, but the event approved no drug, changed no scheduling rule and adopted no therapeutic standard. It remains a formal research lead pending a substantive agency action."
+    },
+    {
+      "title": "Possible Defense Production Act use and oil-export-ban discussion",
+      "reason": "The administration was reported to be weighing possible production authorities while the Interior secretary said an export ban was unlikely to help. No order, invocation, published proposal or implemented restriction existed by cutoff."
     },
     {
       "title": "AI guardrails and data-center rhetoric",
-      "reason": "Trump's posts rejected guardrails, threatened unnamed leakers and praised investment but identified no signed order, formal proposal, enforcement action or implementation milestone."
+      "reason": "Nine new retained posts included repeated AI claims and attacks on regulation but identified no signed order, formal proposal, enforcement action or implementation milestone."
     },
     {
-      "title": "Possible engagement with Iran",
-      "reason": "Trump stated that he would decide whether to engage, but no confirmed talks, agreement, order, sanctions change or implemented diplomatic action was established."
+      "title": "Truth Social renovation claims",
+      "reason": "The newest post asserted White House heliport and entrance work was ahead of schedule, under budget and gifted, but no inspected contract, cost ledger, milestone report or independent audit supported those claims. Its image timed out during review, so no visual claim was used."
     },
     {
       "title": "Pending crypto-bill ethics provisions",
       "reason": "No independently inspected updated legislative text or second independent confirmation resolved the consequential provisions, and the legislation remained pending."
     },
     {
-      "title": "Truth Social fallback",
-      "reason": "The validated fallback advanced from 36,260 to 36,264 posts. All four additions were reviewed; one materially refreshed an existing record with explicit limits and the other three remained feed-only."
-    },
-    {
       "title": "East Wing replacement and White House ballroom",
-      "reason": "NAT-2026-08-31-005 remains fully included with the replacement plans, 90,000-square-foot and 650-seat scale, eleven official renderings, project team, funding claims, construction, litigation and Supreme Court stay. No new independently verified cost or schedule milestone warranted a parallel entry or refresh."
+      "reason": "NAT-2026-08-31-005 remains fully included with the demolition and replacement plans, 90,000-square-foot and 650-seat scale, eleven official renderings, project team, funding claims, construction, litigation and Supreme Court stay. No parallel record was created."
     },
     {
       "title": "Legacy source-health queue",
@@ -180,7 +189,11 @@
     },
     {
       "title": "External archives",
-      "reason": "The four registered project pages were checked as discovery inputs. Only measurements whose value, scope, unit and primary page remained verifiable were retained; unlike units were kept separate and no upstream item was promoted automatically."
+      "reason": "The four registered project pages were checked as discovery inputs. Measurements were updated only where the displayed value, scope, unit and primary page were verified; unlike units remained separate and no upstream item was promoted automatically."
+    },
+    {
+      "title": "Truth Social fallback",
+      "reason": "The validated fallback advanced from 36,264 to 36,273 posts. All nine additions received separate text and media dispositions and remained feed-only because their underlying claims did not independently clear the publication threshold."
     }
   ],
   "corrections": [],
