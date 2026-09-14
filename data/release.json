@@ -1,36 +1,46 @@
 {
-  "version": "10.53.0",
-  "artifact_mode": "full",
+  "version": "10.53.1",
+  "artifact_mode": "feed-only",
   "research_window": {
-    "from_utc": "2026-09-13T15:59:58Z",
-    "through_utc": "2026-09-13T21:59:24Z",
+    "from_utc": "2026-09-13T21:59:24Z",
+    "through_utc": "2026-09-14T04:01:49Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous research coverage begins at the prior release's exact UTC boundary and ends at this run's evidence cutoff. The September 13 dividend follow-up is transparently restored as a prior-window omission."
+    "note": "Continuous research coverage begins at the prior release's exact UTC boundary and ends at this run's evidence cutoff. No candidate independently cleared the publication threshold; the release is limited to a materially newer validated Truth Social fallback."
   },
-  "release_iso": "2026-09-13",
-  "release_human": "September 13, 2026",
-  "checked_at": "2026-09-13 5:59 PM EDT",
-  "previous_version": "10.52.0",
-  "previous_checked_at": "2026-09-13 11:59 AM EDT",
-  "window_started_at": "2026-09-13 11:59 AM EDT",
-  "window_ended_at": "2026-09-13 5:59 PM EDT",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
-  "week_label": "September 7–13, 2026",
+  "release_iso": "2026-09-14",
+  "release_human": "September 14, 2026",
+  "checked_at": "2026-09-14 12:01 AM EDT",
+  "previous_version": "10.53.0",
+  "previous_checked_at": "2026-09-13 5:59 PM EDT",
+  "window_started_at": "2026-09-13 5:59 PM EDT",
+  "window_ended_at": "2026-09-14 12:01 AM EDT",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
+  "week_label": "September 14–20, 2026",
   "cutoff_start": "2026-07-17",
-  "new_entry_ids": [
-    "NAT-2026-08-31-005",
-    "NAT-2026-09-09-005",
-    "NAT-2026-09-13-002"
-  ],
-  "added_entry_ids": [
-    "NAT-2026-09-13-002"
-  ],
-  "refreshed_entry_ids": [
-    "NAT-2026-08-31-005",
-    "NAT-2026-09-09-005"
-  ],
+  "editorial_snapshot": {
+    "version": "10.53.0",
+    "complete_pack": {
+      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-09-13_v10.53.0.zip",
+      "sha256": "585392174cca52c9912710d9b275739b4a598670de0db24535d09fee82cd86a2"
+    },
+    "national_pack": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-09-13_v10.53.0.zip",
+      "sha256": "2eef89c21866ecd600f4778e786fe2e2322d52075fa2232f231b0debbe7cded8"
+    },
+    "national_brief": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-09-13_v10.53.0.md",
+      "sha256": "5d46c8795377761a2d46b4d61da87b60ccb918492073ed27ee328468b3d26e3a"
+    },
+    "in6_brief": {
+      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-09-13_v10.53.0.md",
+      "sha256": "428e51f6ef0fb2d3f0c21f261c9a32a24bf6f4026a6ca2c165a9ab166a351979"
+    }
+  },
+  "new_entry_ids": [],
+  "added_entry_ids": [],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-08-31-014",
@@ -149,24 +159,24 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Additional September 11 records",
-      "reason": "Trump said he would consider a request but issued no declassification order, agency directive, release schedule or documents."
+      "title": "White House exterior-renovation Truth Social post",
+      "reason": "Trump attributed exterior work to the Interior Department and contractors and made strong condition, savings and necessity claims, but no contract, expenditure record, inspection, completion record or independent verification was available by cutoff. Both images were inaccessible, so no visual claim was used and the post remains feed-only."
     },
     {
-      "title": "United Ireland remarks",
-      "reason": "Trump expressed support but announced no formal U.S. diplomatic proposal, agreement, directive, expenditure or operational change."
+      "title": "Ballroom interior-rendering Truth Social post",
+      "reason": "The East Wing replacement and ballroom plans remain fully included in NAT-2026-08-31-005. The new post's 'on budget' and 'ahead of schedule' assertions lacked audited cost or milestone records, and all three images were inaccessible; the text is retained only as evidence that Trump published those claims."
     },
     {
-      "title": "AI-risk remarks",
-      "reason": "The remarks still identified no rule, order, formal proposal, procurement decision or enforcement change."
+      "title": "Crypto-bill ethics agreement",
+      "reason": "Three Republican authors announced agreement on a meaningful state-attorney-general role, but the detailed divestment, blind-trust and exchange-enforcement terms rested chiefly on an anonymous aide. No independently inspected updated bill text or second independent confirmation was available by cutoff, and the bill remained pending a Tuesday vote."
     },
     {
-      "title": "Duplicate conflict, campaign and ceremonial coverage",
-      "reason": "Already-recorded Iran, Ukraine and campaign developments and golf-event coverage supplied no separate qualifying action or measured outcome."
+      "title": "China-Iran satellite-imagery response",
+      "reason": "Trump dismissed an anonymously sourced Wall Street Journal report, which Reuters could not verify, and announced no investigation, sanction, diplomatic demand, military decision or other qualifying action."
     },
     {
-      "title": "Truth Social image access",
-      "reason": "The new ballroom post's text was reviewed and linked to the existing record, but its JPEG returned HTTP 403. No visual claim was used; the accessible White House project page independently lists eleven plan renderings."
+      "title": "Routine and inaccessible Truth Social material",
+      "reason": "A golfer-praise post, a news link and five media-only posts identified no independently verified qualifying action. Direct retrieval of the new feed's images and videos returned HTTP 403 or timed out, so no visual or audio claim was used."
     },
     {
       "title": "Legacy source-health queue",
@@ -174,7 +184,7 @@
     },
     {
       "title": "External archives",
-      "reason": "Trump Archive advanced to 13,996 total items and 11,593 Truth Social posts while speeches and transcripts remained 1,773; UndoTrump remained at 1,264 actions and IPTP at 1,791 policy actions. Record47's live API remained unavailable, so prior verified measurements were preserved. Units stayed separate and no upstream item was promoted automatically."
+      "reason": "Trump Archive displayed 14,009 total items, 11,602 Truth Social posts and 1,777 speeches or transcripts; UndoTrump remained at 1,264 actions and IPTP at 1,791 policy actions. Record47's homepage exposed differently scoped partial counts but no verifiable current entry total. Because this is a strict feed-only release, registry measurements remain byte-preserved; units stayed separate and no upstream item was promoted automatically."
     }
   ],
   "corrections": [],
