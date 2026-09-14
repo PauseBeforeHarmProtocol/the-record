@@ -1,46 +1,31 @@
 {
-  "version": "10.53.1",
-  "artifact_mode": "feed-only",
+  "version": "10.54.0",
+  "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-13T21:59:24Z",
-    "through_utc": "2026-09-14T04:01:49Z",
+    "from_utc": "2026-09-14T04:01:49Z",
+    "through_utc": "2026-09-14T09:58:05Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous research coverage begins at the prior release's exact UTC boundary and ends at this run's evidence cutoff. No candidate independently cleared the publication threshold; the release is limited to a materially newer validated Truth Social fallback."
+    "note": "Continuous research coverage begins at the prior release's exact UTC boundary and ends at this run's evidence cutoff."
   },
   "release_iso": "2026-09-14",
   "release_human": "September 14, 2026",
-  "checked_at": "2026-09-14 12:01 AM EDT",
-  "previous_version": "10.53.0",
-  "previous_checked_at": "2026-09-13 5:59 PM EDT",
-  "window_started_at": "2026-09-13 5:59 PM EDT",
-  "window_ended_at": "2026-09-14 12:01 AM EDT",
+  "checked_at": "2026-09-14 5:58 AM EDT",
+  "previous_version": "10.53.1",
+  "previous_checked_at": "2026-09-14 12:01 AM EDT",
+  "window_started_at": "2026-09-14 12:01 AM EDT",
+  "window_ended_at": "2026-09-14 5:58 AM EDT",
   "week_start": "2026-09-14",
   "week_end": "2026-09-20",
   "week_label": "September 14–20, 2026",
   "cutoff_start": "2026-07-17",
-  "editorial_snapshot": {
-    "version": "10.53.0",
-    "complete_pack": {
-      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-09-13_v10.53.0.zip",
-      "sha256": "585392174cca52c9912710d9b275739b4a598670de0db24535d09fee82cd86a2"
-    },
-    "national_pack": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-09-13_v10.53.0.zip",
-      "sha256": "2eef89c21866ecd600f4778e786fe2e2322d52075fa2232f231b0debbe7cded8"
-    },
-    "national_brief": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-09-13_v10.53.0.md",
-      "sha256": "5d46c8795377761a2d46b4d61da87b60ccb918492073ed27ee328468b3d26e3a"
-    },
-    "in6_brief": {
-      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-09-13_v10.53.0.md",
-      "sha256": "428e51f6ef0fb2d3f0c21f261c9a32a24bf6f4026a6ca2c165a9ab166a351979"
-    }
-  },
-  "new_entry_ids": [],
+  "new_entry_ids": [
+    "NAT-2026-08-24-002"
+  ],
   "added_entry_ids": [],
-  "refreshed_entry_ids": [],
+  "refreshed_entry_ids": [
+    "NAT-2026-08-24-002"
+  ],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-08-31-014",
@@ -159,24 +144,28 @@
   ],
   "rejected_candidates": [
     {
-      "title": "White House exterior-renovation Truth Social post",
-      "reason": "Trump attributed exterior work to the Interior Department and contractors and made strong condition, savings and necessity claims, but no contract, expenditure record, inspection, completion record or independent verification was available by cutoff. Both images were inaccessible, so no visual claim was used and the post remains feed-only."
+      "title": "Companies reportedly returning some sourcing to China",
+      "reason": "Reuters documented company anecdotes and narrowing tariff differentials but reported no aggregate data showing how much sourcing returned. A central company example relied on unnamed sources and undisclosed values, so no national outcome was inferred."
     },
     {
-      "title": "Ballroom interior-rendering Truth Social post",
-      "reason": "The East Wing replacement and ballroom plans remain fully included in NAT-2026-08-31-005. The new post's 'on budget' and 'ahead of schedule' assertions lacked audited cost or milestone records, and all three images were inaccessible; the text is retained only as evidence that Trump published those claims."
+      "title": "Kennedy Center bankruptcy warning",
+      "reason": "A Reuters report relayed a Washington Post account of a trustees' report forecasting possible closure, but the underlying report was unavailable, the Kennedy Center did not respond and the item predated this window. The claim remains a prior-window lead pending the primary financial record."
     },
     {
       "title": "Crypto-bill ethics agreement",
-      "reason": "Three Republican authors announced agreement on a meaningful state-attorney-general role, but the detailed divestment, blind-trust and exchange-enforcement terms rested chiefly on an anonymous aide. No independently inspected updated bill text or second independent confirmation was available by cutoff, and the bill remained pending a Tuesday vote."
+      "reason": "Updated ethics and state-enforcement details still rested chiefly on an anonymous aide, and no independently inspected updated bill text or second independent confirmation was available. The legislation remained pending."
     },
     {
-      "title": "China-Iran satellite-imagery response",
-      "reason": "Trump dismissed an anonymously sourced Wall Street Journal report, which Reuters could not verify, and announced no investigation, sanction, diplomatic demand, military decision or other qualifying action."
+      "title": "Routine rhetoric and duplicate coverage",
+      "reason": "AI comments, campaign material and already-recorded conflict or tariff developments supplied no separate qualifying instrument, implementation milestone or measured outcome."
     },
     {
-      "title": "Routine and inaccessible Truth Social material",
-      "reason": "A golfer-praise post, a news link and five media-only posts identified no independently verified qualifying action. Direct retrieval of the new feed's images and videos returned HTTP 403 or timed out, so no visual or audio claim was used."
+      "title": "Truth Social fallback",
+      "reason": "No new post appeared. The validated feed remains at 36,260 posts with the newest published September 13 at 9:03:56 PM EDT; engagement-only changes supplied no new research lead."
+    },
+    {
+      "title": "East Wing replacement and White House ballroom",
+      "reason": "NAT-2026-08-31-005 remains fully included with the replacement plans, 90,000-square-foot and 650-seat scale, eleven official renderings, project team, funding claims, construction, litigation and Supreme Court stay. No new independently verified milestone warranted a parallel entry or refresh."
     },
     {
       "title": "Legacy source-health queue",
@@ -184,7 +173,7 @@
     },
     {
       "title": "External archives",
-      "reason": "Trump Archive displayed 14,009 total items, 11,602 Truth Social posts and 1,777 speeches or transcripts; UndoTrump remained at 1,264 actions and IPTP at 1,791 policy actions. Record47's homepage exposed differently scoped partial counts but no verifiable current entry total. Because this is a strict feed-only release, registry measurements remain byte-preserved; units stayed separate and no upstream item was promoted automatically."
+      "reason": "The four registered project pages were checked as discovery inputs. Only measurements whose value, scope, unit and primary page remained verifiable were retained; unlike units were kept separate and no upstream item was promoted automatically."
     }
   ],
   "corrections": [],
