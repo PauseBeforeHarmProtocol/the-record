@@ -2641,6 +2641,18 @@
       "provenance_path": "data/editorial_change_notes/10.57.0.json",
       "provenance_sha256": "a30c1c6685b0b2fa1b45060e715debf52ef3a9f45c1fa3deab6be4b30f962300",
       "note": "Evidence status and lifecycle limits are preserved; publication does not convert allegations, preliminary relief, phased implementation or estimates into final or measured outcomes."
+    },
+    {
+      "change_id": "10.58.0:NAT-2026-09-14-010",
+      "entry_id": "NAT-2026-09-14-010",
+      "as_of_utc": "2026-09-15T04:31:51Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.58.0",
+      "summary": "Added the signed $25 million Accenture settlement with payment status, allegations, denials and reserved claims preserved.",
+      "provenance_path": "data/editorial_change_notes/10.58.0.json",
+      "provenance_sha256": "593fe58f8c7f2a2476ab9e1f56a1dc0ca34285fe9a22e3e2b32546b3f5877e17",
+      "note": "This is a prior-window omission restoration. The agreement is signed; payment was due, and the allegations and merits remain unresolved."
     }
   ],
   "reviews": [
@@ -17915,6 +17927,137 @@
       ],
       "unresolved_questions": [
         "Preliminary relief, administrative record, merits, appeals, final project plans and construction outcomes remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.58.0:NAT-2026-09-14-010:9ffef36081d9",
+      "entry_id": "NAT-2026-09-14-010",
+      "content_sha256": "9ffef36081d987b1b229bcb59a230288bbb3b9bfd058fed0814978e925f85934",
+      "reviewed_at": "2026-09-15T04:48:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "51b2b008f6170cdc3846df02f9359b91e2b314dbe73c90b991f7a5dea082823d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_accenture_settlement_agreement_sep14",
+              "locator": "Agreement pages 1–3 and 9–10; parties, $25 million amount, restitution allocation, interest, payment deadline and effective date.",
+              "inspected_at": "2026-09-15T04:42:00Z",
+              "document_sha256": "2b8888b65ff30253b63795b6a52b0f208c48c58980543bf0aad9e1e3b4413da2",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "9c1b03c2bf6156a70c07ccf1ad837c5bdcf16cd4d6b3be99032789988b3329a5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_accenture_settlement_agreement_sep14",
+              "locator": "Agreement pages 1–2; United States’ False Claims Act contentions concerning contract certifications, hiring, promotions and allocated costs.",
+              "inspected_at": "2026-09-15T04:42:00Z",
+              "document_sha256": "2b8888b65ff30253b63795b6a52b0f208c48c58980543bf0aad9e1e3b4413da2",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "doj_accenture_settlement_release_sep14",
+              "locator": "Official allegation summary and covered 2017-to-effective-date period.",
+              "inspected_at": "2026-09-15T04:42:00Z",
+              "document_sha256": "62ac6a480552bfd99862840a39c4d7714b80a23e3a76db73a1624423bd32ce1b",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "0bff1e7642c64e9c5097be419021fb1dbaa7c816616e7a186802baac52827844",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_accenture_settlement_agreement_sep14",
+              "locator": "Agreement pages 2–3; training and opportunity allegations, denial and no-admission/no-concession clauses.",
+              "inspected_at": "2026-09-15T04:42:00Z",
+              "document_sha256": "2b8888b65ff30253b63795b6a52b0f208c48c58980543bf0aad9e1e3b4413da2",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_accenture_settlement_sep15",
+              "locator": "Independent account of allegations and Accenture denial.",
+              "inspected_at": "2026-09-15T04:42:00Z",
+              "document_sha256": "20796af29f24c5883f3da7d38ebdb4c18a15cdffa6dca4c4b7362bbeb555f47c",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "fb26b936fd14262ff7e35233851ea6fc2430b00173ad6d87980cb81ddaf314a9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_accenture_settlement_agreement_sep14",
+              "locator": "Agreement pages 3–8; conditioned release and expressly reserved criminal, tax, administrative, EEOC, individual and other claims.",
+              "inspected_at": "2026-09-15T04:42:00Z",
+              "document_sha256": "2b8888b65ff30253b63795b6a52b0f208c48c58980543bf0aad9e1e3b4413da2",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "ded9f5b2e28fd12d6663bc85117df488fd91c72505c38d0fab00ddbc51cc4886",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_accenture_settlement_sep15",
+              "locator": "Accenture response explaining cooperation, denial and litigation-cost rationale.",
+              "inspected_at": "2026-09-15T04:42:00Z",
+              "document_sha256": "20796af29f24c5883f3da7d38ebdb4c18a15cdffa6dca4c4b7362bbeb555f47c",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "doj_accenture_settlement_agreement_sep14",
+              "locator": "Agreement pages 6–8; unallowable-cost, repayment and audit provisions and liability limits.",
+              "inspected_at": "2026-09-15T04:42:00Z",
+              "document_sha256": "2b8888b65ff30253b63795b6a52b0f208c48c58980543bf0aad9e1e3b4413da2",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "ae9313c828ea1e2a1d39a73a523a543da67e2a9a59bb3951e2132441ed4e63a9",
+          "review_note": "Reviewed enforcement significance separately from unresolved liability, causation and measured effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "9ca22b2ee758871f0e90490d0752290ef5147fb7a439607a42451814aa047f2c",
+          "review_note": "Preserved the Justice Department rationale, Accenture response and concrete compliance and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "591eaf366db4129862ffe05c0e746995630185d28d5a182fd9ce18b57d031a46",
+          "review_note": "Reviewed competing plausible effects; Therefore is limited to the signed settlement and current payment status."
+        }
+      ],
+      "unresolved_questions": [
+        "Receipt of payment, audits, unallowable-cost recovery, any EEOC or debarment action, contested merits and measured employment outcomes remain unresolved."
       ]
     }
   ],
