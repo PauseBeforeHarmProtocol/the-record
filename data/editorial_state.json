@@ -2653,6 +2653,30 @@
       "provenance_path": "data/editorial_change_notes/10.58.0.json",
       "provenance_sha256": "593fe58f8c7f2a2476ab9e1f56a1dc0ca34285fe9a22e3e2b32546b3f5877e17",
       "note": "This is a prior-window omission restoration. The agreement is signed; payment was due, and the allegations and merits remain unresolved."
+    },
+    {
+      "change_id": "10.59.0:NAT-2026-09-13-001",
+      "entry_id": "NAT-2026-09-13-001",
+      "as_of_utc": "2026-09-15T10:02:42Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.59.0",
+      "summary": "Added Ukraine's direct conditional response and denial that a formal reciprocal energy-target agreement already existed.",
+      "provenance_path": "data/editorial_change_notes/10.59.0.json",
+      "provenance_sha256": "1d84347b5cd61cf2aa20be257116fc5a2aa53833576942f63e1af7886b64053c",
+      "note": "The response narrows the claimed lifecycle state; no bilateral terms, reciprocal Russian confirmation or observed compliance were established."
+    },
+    {
+      "change_id": "10.59.0:NAT-2026-09-15-001",
+      "entry_id": "NAT-2026-09-15-001",
+      "as_of_utc": "2026-09-15T10:02:42Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.59.0",
+      "summary": "Added documented election-official legal, security, outreach and cyber contingency preparations reported across parties.",
+      "provenance_path": "data/editorial_change_notes/10.59.0.json",
+      "provenance_sha256": "1d84347b5cd61cf2aa20be257116fc5a2aa53833576942f63e1af7886b64053c",
+      "note": "Implemented preparations and reduced federal support are separated from uncompleted feared interventions and election outcomes."
     }
   ],
   "reviews": [
@@ -18058,6 +18082,298 @@
       ],
       "unresolved_questions": [
         "Receipt of payment, audits, unallowable-cost recovery, any EEOC or debarment action, contested merits and measured employment outcomes remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.59.0:NAT-2026-09-13-001:6eec50457820",
+      "entry_id": "NAT-2026-09-13-001",
+      "content_sha256": "6eec504578200fa4c6630e1d3a062b12b14de6c8a8234f0f459590bdcf55c40b",
+      "reviewed_at": "2026-09-15T10:18:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "b697765816ab02c19ab2987563e0d14facd1666b2002018e97af5f84984a62ef",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_conditional_energy_sep14",
+              "locator": "Directly reported Zelenskyy statement denying formal endorsement and conditioning Ukrainian restraint on reliable Russian reciprocity.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "f266c60b7276af30a04e30a0b07a2f89d4d9cd99716cebb54f3306885ed49726",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_conditional_energy_sep14",
+              "locator": "Directly reported Ukrainian conditional response, absence of Russian confirmation and prior partial-ceasefire failures.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "4a83060b898ddc49a3e26e559419667e3c6f2ee4507278f78dd12338fef091a3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "0d368047b92063384e9865e2565c87ad98ae056e4748d9e33aa245e1e6699dc5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_conditional_energy_sep14",
+              "locator": "Directly reported Zelenskyy statement denying formal endorsement and conditioning Ukrainian restraint on reliable Russian reciprocity.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "f266c60b7276af30a04e30a0b07a2f89d4d9cd99716cebb54f3306885ed49726",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_conditional_energy_sep14",
+              "locator": "Directly reported Ukrainian conditional response, absence of Russian confirmation and prior partial-ceasefire failures.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "4a83060b898ddc49a3e26e559419667e3c6f2ee4507278f78dd12338fef091a3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "36d4f2033ea69c00c16d960c69a9e9a18324565b2ea2621ce4be2ad8851eba16",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_conditional_energy_sep14",
+              "locator": "Directly reported Zelenskyy statement denying formal endorsement and conditioning Ukrainian restraint on reliable Russian reciprocity.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "f266c60b7276af30a04e30a0b07a2f89d4d9cd99716cebb54f3306885ed49726",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_conditional_energy_sep14",
+              "locator": "Directly reported Ukrainian conditional response, absence of Russian confirmation and prior partial-ceasefire failures.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "4a83060b898ddc49a3e26e559419667e3c6f2ee4507278f78dd12338fef091a3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "b65a79023e11cc731c95e58cca680038aed0c0bf06877f511c500ad2b2976cc1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_conditional_energy_sep14",
+              "locator": "Directly reported Zelenskyy statement denying formal endorsement and conditioning Ukrainian restraint on reliable Russian reciprocity.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "f266c60b7276af30a04e30a0b07a2f89d4d9cd99716cebb54f3306885ed49726",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_conditional_energy_sep14",
+              "locator": "Directly reported Ukrainian conditional response, absence of Russian confirmation and prior partial-ceasefire failures.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "4a83060b898ddc49a3e26e559419667e3c6f2ee4507278f78dd12338fef091a3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "2820c614934f4595e9721c2715394c94a3f4845b03e81b3c0a9f9a0fb274220f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_conditional_energy_sep14",
+              "locator": "Directly reported Zelenskyy statement denying formal endorsement and conditioning Ukrainian restraint on reliable Russian reciprocity.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "f266c60b7276af30a04e30a0b07a2f89d4d9cd99716cebb54f3306885ed49726",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_conditional_energy_sep14",
+              "locator": "Directly reported Ukrainian conditional response, absence of Russian confirmation and prior partial-ceasefire failures.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "4a83060b898ddc49a3e26e559419667e3c6f2ee4507278f78dd12338fef091a3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "589e831fb4fb17240cd8bd57629a10099b213be04d16f7bacab06be09c0cc7d5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_conditional_energy_sep14",
+              "locator": "Directly reported Zelenskyy statement denying formal endorsement and conditioning Ukrainian restraint on reliable Russian reciprocity.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "f266c60b7276af30a04e30a0b07a2f89d4d9cd99716cebb54f3306885ed49726",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_conditional_energy_sep14",
+              "locator": "Directly reported Ukrainian conditional response, absence of Russian confirmation and prior partial-ceasefire failures.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "4a83060b898ddc49a3e26e559419667e3c6f2ee4507278f78dd12338fef091a3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "db4650be6e2e1b81ad897c1939ba26680c39fb4afa5de33b609c14ca3918f10f",
+          "review_note": "Reviewed significance separately from factual status, anticipated scenarios and unresolved causal effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "b2261b4aca432ae0e0f06ddebeafcc61e9dfa0b4d947cd6c1af3ee5771bb2a6c",
+          "review_note": "Preserved the strongest documented administration or competing response and concrete future tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "270f70a54087154e7cb94db54c6e9dd882e3b8765f4d06fdb2259d808480b3dd",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to the established evidence and lifecycle state."
+        }
+      ],
+      "unresolved_questions": [
+        "Written terms, reciprocal Russian confirmation, monitored compliance, U.S. conditions and causal fuel-market effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.59.0:NAT-2026-09-15-001:250bc1f31bd7",
+      "entry_id": "NAT-2026-09-15-001",
+      "content_sha256": "250bc1f31bd7a476f7264434c82fdbf0c4b2ec280ec900e8ee43b5dd01758ecf",
+      "reviewed_at": "2026-09-15T10:18:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "13e16c5732692b6013ee0503609d5ab7e496baf99e4ff4b442aff0b41822c801",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+            "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5c1fd948c44f4fc397f74ec70766456f35fd55524f9d2ad6b92a7e1c6236096d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+            "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "dfa486cba537cd35b767fecb69d2a4e395cd93df18c6cfc04ac346138f340181",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+            "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "b116c5b45a437276769649e93bbc9c178dce43faffdff88b124f164dc93bdaa5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+            "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "a854a85cf55de1fe381280487ae4482253f846fd3e489cfbc74a3d7eab78e4dc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+            "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "2269c3d0b22849a6ab540889cd453e102a3c05b873ad0e747f2ea28d700b4924",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+            "evidence_status": "measured"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "368c06c5637a9c45d652b5baea4ecbc226e6a55e26ea7ed05fcbeaccff495f9c",
+          "review_note": "Reviewed significance separately from factual status, anticipated scenarios and unresolved causal effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "2d8e84d273cfd148e061c150c544eef2952bdb1a688082e24eab7bc5106eae4d",
+          "review_note": "Preserved the strongest documented administration or competing response and concrete future tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "d4a56f9f11bb2a6e2c2386db21c08dd3e445d27dc92453e33b928a1ee162e9ae",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to the established evidence and lifecycle state."
+        }
+      ],
+      "unresolved_questions": [
+        "Actual federal polling-site deployments, future seizures, court outcomes, measured costs, voter-access effects and successful cyber incidents remain unresolved."
       ]
     }
   ],
