@@ -1,30 +1,36 @@
 {
-  "version": "10.59.0",
+  "version": "10.60.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-15T04:31:51Z",
-    "through_utc": "2026-09-15T10:02:42Z",
+    "from_utc": "2026-09-15T10:02:42Z",
+    "through_utc": "2026-09-15T16:00:20Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous research coverage begins at the prior release’s exact UTC boundary and ends at this run’s evidence cutoff. One independently corroborated prior-window lifecycle omission is restored in the existing Ukraine record."
+    "note": "Continuous coverage begins at the prior exact boundary. Three September 15 Federal Register publications and the first implementation evidence on the Ukraine energy-strike claim are transparently restored as prior-window omissions."
   },
   "release_iso": "2026-09-15",
   "release_human": "September 15, 2026",
-  "checked_at": "2026-09-15 6:02 AM EDT",
-  "previous_version": "10.58.0",
-  "previous_checked_at": "2026-09-15 12:31 AM EDT",
-  "window_started_at": "2026-09-15 12:31 AM EDT",
-  "window_ended_at": "2026-09-15 6:02 AM EDT",
+  "checked_at": "2026-09-15 12:00 PM EDT",
+  "previous_version": "10.59.0",
+  "previous_checked_at": "2026-09-15 6:02 AM EDT",
+  "window_started_at": "2026-09-15 6:02 AM EDT",
+  "window_ended_at": "2026-09-15 12:00 PM EDT",
   "week_start": "2026-09-14",
   "week_end": "2026-09-20",
   "week_label": "September 14–20, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-15-001",
+    "NAT-2026-09-15-002",
+    "NAT-2026-09-15-003",
+    "NAT-2026-09-15-004",
+    "NAT-2026-09-15-005",
     "NAT-2026-09-13-001"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-15-001"
+    "NAT-2026-09-15-002",
+    "NAT-2026-09-15-003",
+    "NAT-2026-09-15-004",
+    "NAT-2026-09-15-005"
   ],
   "refreshed_entry_ids": [
     "NAT-2026-09-13-001"
@@ -155,32 +161,30 @@
       "target_id": "LEG-004698",
       "decision": "false_positive",
       "notes": "The Big Bend land-use and statutory-authority lawsuit is unrelated to the Minnesota protest-prosecution record despite a broad litigation token match."
+    },
+    {
+      "entry_id": "NAT-2026-09-15-005",
+      "target_id": "NAT-2026-09-03-002",
+      "decision": "false_positive",
+      "notes": "Both records cite Executive Order 14192 only as a deregulatory-policy framework. The September 15 proposal concerns banking organizations' third-party risk management, while NAT-2026-09-03-002 concerns a separate regulatory action with different agencies, requirements and outcome tests."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Fewer than four qualifying changes",
-      "reason": "One new investigation-based consequence record and one material lifecycle refresh cleared the threshold. Other leads remained prospective, personal, routine or unsupported by a completed instrument, so the release was not padded."
+      "title": "Fourth Circuit hearing in Comey and James cases",
+      "reason": "Oral argument did not produce an appellate ruling or new operative order by cutoff; the appointment dispute remains pending."
     },
     {
-      "title": "U.S.–Belarus prisoner-release talks",
-      "reason": "The envoy meeting was confirmed, but no new release, sanctions instrument, signed exchange or measurable outcome was announced by cutoff; the lead remains queued."
+      "title": "Senate digital-asset bill vote",
+      "reason": "A scheduled procedural vote and reported revisions did not establish a completed roll call by cutoff; updated text and any vote remain queued."
     },
     {
-      "title": "Deep-sea mining permit timing",
-      "reason": "The Interior secretary predicted permits in coming months but confirmed that none had issued. The existing proposed seabed-auction record remains canonical; the lead is queued for an implemented lifecycle change."
+      "title": "South Korean workers' Georgia-raid claims",
+      "reason": "Consequential allegations were attributed to another outlet; original filings and agency responses were unavailable and independent confirmation was not established."
     },
     {
-      "title": "Donald Trump Jr. wedding funding",
-      "reason": "Reporting concerned a private family celebration and did not establish a presidential or federal action, investigation, sanctions decision or governmental consequence meeting the national archive threshold."
-    },
-    {
-      "title": "Federal Reserve rate forecast",
-      "reason": "A prospective market forecast about an independent central-bank decision was not treated as an administration action or as a completed rate change."
-    },
-    {
-      "title": "Truth Social fallback",
-      "reason": "No new posts appeared. The validated source remained at 36,288 posts; the newest remained September 14 at 11:54:14 PM EDT, and only check-time metadata advanced."
+      "title": "Three new Truth Social posts",
+      "reason": "Supreme Court criticism duplicated recorded rulings; Butler/FBI and Kennedy Center claims lacked inspected independent or official evidence of a new finding or action. All remain feed-only."
     },
     {
       "title": "East Wing replacement and White House ballroom",
@@ -192,7 +196,7 @@
     },
     {
       "title": "External archives",
-      "reason": "All four registered primary project pages were checked as discovery inputs. Only directly verified measurements were refreshed; unlike units remain separate and no upstream item was promoted automatically."
+      "reason": "All four registered primary project pages were checked as discovery inputs. Measurements remained stable or could not be safely reverified; unlike units remain separate and no upstream item was promoted automatically."
     }
   ],
   "corrections": [],
