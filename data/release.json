@@ -1,39 +1,37 @@
 {
-  "version": "10.60.0",
+  "version": "10.61.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-15T10:02:42Z",
-    "through_utc": "2026-09-15T16:00:20Z",
+    "from_utc": "2026-09-15T16:00:20Z",
+    "through_utc": "2026-09-15T22:02:29Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous coverage begins at the prior exact boundary. Three September 15 Federal Register publications and the first implementation evidence on the Ukraine energy-strike claim are transparently restored as prior-window omissions."
+    "note": "Continuous coverage begins at the prior exact boundary. All accepted developments were published or completed inside the new window."
   },
   "release_iso": "2026-09-15",
   "release_human": "September 15, 2026",
-  "checked_at": "2026-09-15 12:00 PM EDT",
-  "previous_version": "10.59.0",
-  "previous_checked_at": "2026-09-15 6:02 AM EDT",
-  "window_started_at": "2026-09-15 6:02 AM EDT",
-  "window_ended_at": "2026-09-15 12:00 PM EDT",
+  "checked_at": "2026-09-15 6:02 PM EDT",
+  "previous_version": "10.60.0",
+  "previous_checked_at": "2026-09-15 12:00 PM EDT",
+  "window_started_at": "2026-09-15 12:00 PM EDT",
+  "window_ended_at": "2026-09-15 6:02 PM EDT",
   "week_start": "2026-09-14",
   "week_end": "2026-09-20",
   "week_label": "September 14–20, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-15-002",
-    "NAT-2026-09-15-003",
-    "NAT-2026-09-15-004",
-    "NAT-2026-09-15-005",
-    "NAT-2026-09-13-001"
+    "NAT-2026-08-17-001",
+    "NAT-2026-09-02-013",
+    "NAT-2026-09-15-006",
+    "NAT-2026-09-15-007"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-15-002",
-    "NAT-2026-09-15-003",
-    "NAT-2026-09-15-004",
-    "NAT-2026-09-15-005"
+    "NAT-2026-09-15-006",
+    "NAT-2026-09-15-007"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-09-13-001"
+    "NAT-2026-08-17-001",
+    "NAT-2026-09-02-013"
   ],
   "dedupe_resolutions": [
     {
@@ -167,24 +165,32 @@
       "target_id": "NAT-2026-09-03-002",
       "decision": "false_positive",
       "notes": "Both records cite Executive Order 14192 only as a deregulatory-policy framework. The September 15 proposal concerns banking organizations' third-party risk management, while NAT-2026-09-03-002 concerns a separate regulatory action with different agencies, requirements and outcome tests."
+    },
+    {
+      "entry_id": "NAT-2026-09-15-006",
+      "target_id": "LEG-004657",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "LEG-004657 records the May injunction against closure and renaming; the new record covers the September board vote, implemented closure, new naming restraint and appeal."
+    },
+    {
+      "entry_id": "NAT-2026-09-15-006",
+      "target_id": "LEG-004686",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "LEG-004686 records the June stay denial and removal of Trump's name; the September record is a later court order and closure decision with separate consequences."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Fourth Circuit hearing in Comey and James cases",
-      "reason": "Oral argument did not produce an appellate ruling or new operative order by cutoff; the appointment dispute remains pending."
+      "title": "Unspecified new FBI information about the Butler shooter",
+      "reason": "No published finding, evidence, investigative record or formal action was available; political-plot claims remained unsupported."
     },
     {
-      "title": "Senate digital-asset bill vote",
-      "reason": "A scheduled procedural vote and reported revisions did not establish a completed roll call by cutoff; updated text and any vote remain queued."
+      "title": "Truth Social promotional and inaccessible-media posts",
+      "reason": "Three posts were promotional or had no retained text; inaccessible images and video were not used as evidence. The Kennedy Center text was independently checked and incorporated separately."
     },
     {
-      "title": "South Korean workers' Georgia-raid claims",
-      "reason": "Consequential allegations were attributed to another outlet; original filings and agency responses were unavailable and independent confirmation was not established."
-    },
-    {
-      "title": "Three new Truth Social posts",
-      "reason": "Supreme Court criticism duplicated recorded rulings; Butler/FBI and Kennedy Center claims lacked inspected independent or official evidence of a new finding or action. All remain feed-only."
+      "title": "Routine personnel, economic and AI rhetoric",
+      "reason": "An EEOC nomination, dollar commentary and AI criticism supplied no implemented national action or independently measured outcome."
     },
     {
       "title": "East Wing replacement and White House ballroom",
