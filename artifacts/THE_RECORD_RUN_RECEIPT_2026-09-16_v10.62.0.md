@@ -1,15 +1,15 @@
 # The Record — Maintenance Run Receipt
 
 - Release: 10.62.0
-- Checked: 2026-09-16 1:03 AM EDT
-- Editorial window: 2026-09-15 6:02 PM EDT through 2026-09-16 1:03 AM EDT
-- Current layer: 216 records backed by 628 source-ledger records
-- Full archive runtime: 4,943 records; 7,324 source references; 5,935 distinct stored URLs
+- Checked: 2026-09-16 1:17 AM EDT
+- Editorial window: 2026-09-15 6:02 PM EDT through 2026-09-16 1:17 AM EDT
+- Current layer: 217 records backed by 630 source-ledger records
+- Full archive runtime: 4,944 records; 7,326 source references; 5,937 distinct stored URLs
 - Legacy custody: 4,742 stored rows; 4,731 active; 11 duplicate tombstones excluded from totals
 - Truth Social source: 36,296 posts; 1,000 retained in the validated local fallback
 - Newest Truth Social post: 2026-09-15 10:19:13 PM EDT
-- Truth Social fallback checked: 2026-09-16 1:09:54 AM EDT
-- Added: 5 national records
+- Truth Social fallback checked: 2026-09-16 1:19:45 AM EDT
+- Added: 6 national records
 - Materially refreshed: 1 national record
 
 ## Added or materially refreshed records
@@ -20,6 +20,7 @@
 - `NAT-2026-09-15-010` — Justice Department backs bond demand in Paramount–Warner Bros antitrust fight
 - `NAT-2026-09-15-011` — Justice Department charges five alleged Russian intelligence network members
 - `NAT-2026-09-15-012` — State Department notifies Congress of $52 million military-aid shift
+- `NAT-2026-09-15-013` — Administration informally briefs Congress on planned $2.8 billion Israel bomb sale
 
 ## Withheld candidates
 
@@ -39,7 +40,7 @@ Current front-door pages, canonical datasets, archive bridge, individual evidenc
 
 ## Review traceability
 
-- Current entries with content-bound claim-level receipts: 82 / 216
+- Current entries with content-bound claim-level receipts: 83 / 217
 - Prior review-state labels are distinct from claim-level review receipt coverage.
 - Stored post inspection-state records: 1119. Acquisition is not inspection.
 - Per-post text/media states: data/truth_social_reviews.json; deferred follow-ups: data/research_queue.json.

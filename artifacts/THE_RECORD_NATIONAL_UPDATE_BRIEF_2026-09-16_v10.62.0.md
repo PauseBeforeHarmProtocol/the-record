@@ -1,9 +1,42 @@
 # The Record — National Update Brief
 
 **Release:** 10.62.0 · September 16, 2026
-**Release editorial cutoff:** 2026-09-16 1:03 AM EDT
+**Release editorial cutoff:** 2026-09-16 1:17 AM EDT
 
 Each item preserves its own evidence-check time and The Record's labeled distinction between facts, significance, the strongest observed response or goalpost, and any separately reviewed Maybe / Therefore layer.
+
+## September 15, 2026 — Administration informally briefs Congress on planned $2.8 billion Israel bomb sale
+
+Reuters and AP independently reported a pending 40,000-bomb package; it was not final, formally notified, approved, contracted or delivered by cutoff.
+
+**Entry evidence checked:** 2026-09-16 1:17 AM EDT
+
+**Review state:** current-standard-reviewed
+
+**THE FACTS**
+
+- Reuters and Associated Press independently reported that the Trump administration was planning a $2.8 billion munitions package for Israel containing 20,000 MK 84 and 20,000 BLU-117 2,000-pound bombs. Both reports relied on unnamed U.S. officials or people familiar with the plan, so the record treats the package as a corroborated report rather than a public final instrument.
+- Relevant congressional committees had been informally notified, according to both outlets. Associated Press explicitly reported that the package was not yet final; informal consultation is a preparatory step, not the formal statutory notification or final State Department approval that would establish a completed sale decision.
+- Associated Press reported that most of the package would be financed through U.S. foreign military financing. That describes the reported funding plan and potential taxpayer exposure, not an appropriation made by this report, an executed contract or a completed transfer.
+- The administration had not publicly commented by Reuters's publication time. Israel says its military operations respond to threats and attacks, while scrutiny of 2,000-pound bombs centers on their destructive effects in densely populated areas; those competing positions do not establish how, where or whether weapons from this pending package would be used.
+- No public Defense Security Cooperation Agency notice, final congressional notification, contract, delivery schedule or transfer record for this reported package was located by cutoff. The record therefore distinguishes a reported, informally briefed plan from an approved or implemented arms sale.
+
+**SIGNIFICANCE**
+
+A package of 40,000 heavy bombs would be a major extension of U.S. military support for Israel and could create substantial fiscal, humanitarian and regional consequences. At this stage, however, the documented consequence is congressional consultation around a reported proposal, not a completed authorization or weapons transfer.
+
+**GOALPOST / RESPONSE**
+
+Supporters frame continued arms support as strengthening Israel's capacity to defend itself; critics focus on civilian-harm risks associated with 2,000-pound bombs in populated areas. A formal State Department or DSCA notice, congressional review, final approval, contract terms, financing obligations, delivery records, end-use controls and independently measured operational effects are the tests.
+
+**MAYBE / THEREFORE**
+
+Maybe the package is revised, delayed or conditioned during review, or it may advance substantially as reported and increase Israel's stock of heavy munitions. Therefore the record establishes independently corroborated reporting that officials informally briefed Congress on a pending $2.8 billion, 40,000-bomb plan—not a final sale, formal notification, executed contract, delivery or proof of future use.
+
+**Sources**
+
+- [Reuters — administration plans $2.8 billion munitions sale to Israel](https://www.reuters.com/world/us/trump-administration-plans-28-billion-munitions-sale-israel-sources-say-2026-09-15/) — independent reporting based on a U.S. official; informal congressional communication is reported and the package is not treated as final or implemented
+- [Associated Press — pending $2.8 billion Israel weapons package](https://apnews.com/article/trump-israel-weapons-sales-gaza-eb48cb7ecf773ffc472fbafc995aef2a) — independent reporting based on two U.S. officials and a person familiar; package not final and Congress informally notified
 
 ## September 15, 2026 — State Department notifies Congress of $52 million military-aid shift
 
