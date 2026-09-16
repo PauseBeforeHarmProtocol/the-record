@@ -1,38 +1,37 @@
 {
-  "version": "10.65.0",
+  "version": "10.66.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-16T10:31:56Z",
-    "through_utc": "2026-09-16T16:01:00Z",
+    "from_utc": "2026-09-16T16:01:00Z",
+    "through_utc": "2026-09-16T16:33:57Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous coverage begins at the prior exact boundary. Three developments first published or completed in the window cleared the threshold; one September 15 GAO omission was restored without changing its event date."
+    "note": "Continuous coverage begins at the prior exact boundary. No separate event first published in the 32-minute window cleared the threshold; four evidence-backed prior-window or same-day omissions were restored without changing their event dates."
   },
   "release_iso": "2026-09-16",
   "release_human": "September 16, 2026",
-  "checked_at": "2026-09-16 12:01 PM EDT",
-  "previous_version": "10.64.0",
-  "previous_checked_at": "2026-09-16 6:31 AM EDT",
-  "window_started_at": "2026-09-16 6:31 AM EDT",
-  "window_ended_at": "2026-09-16 12:01 PM EDT",
+  "checked_at": "2026-09-16 12:33 PM EDT",
+  "previous_version": "10.65.0",
+  "previous_checked_at": "2026-09-16 12:01 PM EDT",
+  "window_started_at": "2026-09-16 12:01 PM EDT",
+  "window_ended_at": "2026-09-16 12:33 PM EDT",
   "week_start": "2026-09-14",
   "week_end": "2026-09-20",
   "week_label": "September 14–20, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-16-001",
-    "NAT-2026-09-15-015",
-    "NAT-2026-09-16-003",
-    "NAT-2026-09-11-016"
+    "NAT-2026-09-10-009",
+    "NAT-2026-09-15-016",
+    "NAT-2026-09-15-017",
+    "NAT-2026-09-15-018"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-15-015",
-    "NAT-2026-09-16-003",
-    "NAT-2026-09-11-016"
+    "NAT-2026-09-10-009",
+    "NAT-2026-09-15-016",
+    "NAT-2026-09-15-017",
+    "NAT-2026-09-15-018"
   ],
-  "refreshed_entry_ids": [
-    "NAT-2026-09-16-001"
-  ],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -183,28 +182,38 @@
       "target_id": "LEG-004686",
       "decision": "distinct_lifecycle_stage",
       "notes": "LEG-004686 records the June stay denial and removal of Trump's name; the September record is a later court order and closure decision with separate consequences."
+    },
+    {
+      "entry_id": "NAT-2026-09-15-017",
+      "target_id": "NAT-2026-08-27-014",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The August 27 record tests EPA's estimated savings from a vehicle-emissions rollback. The September 15 record measures subsequent EV-factory cancellations and auto-employment outcomes across multiple tax, regulatory, trade and immigration policies; the study subjects and lifecycle stages differ."
     }
   ],
   "rejected_candidates": [
     {
       "title": "House Russia and Iran sanctions bill",
-      "reason": "The House vote was scheduled but had not occurred by the exact cutoff; a pending vote was not converted into passage."
+      "reason": "The House vote remained pending at the exact cutoff; scheduling and debate were not converted into passage."
+    },
+    {
+      "title": "House data-center power-cost bill",
+      "reason": "Reuters described a scheduled House vote on the Ratepayer Protection Act, but no recorded vote or enacted requirement existed by cutoff."
     },
     {
       "title": "Reported U.S.-Houthi Oman meeting",
-      "reason": "The report relied mainly on unnamed sources and lacked a second independent confirmation or official readout by cutoff."
+      "reason": "The consequential diplomatic claim still rested mainly on unnamed sources without a second independent confirmation or official readout."
     },
     {
-      "title": "Health-nominee and Federal Reserve coverage",
-      "reason": "Nominee questioning produced no operative appointment or policy action, and the independent central bank's expected rate decision was not treated as a Trump-administration act."
+      "title": "DOJ foreign-agent liability reminder",
+      "reason": "The release restated existing FARA and 18 U.S.C. § 951 obligations without a new rule, charging decision, formal guidance or disclosed enforcement action."
+    },
+    {
+      "title": "Federal Reserve and campaign coverage",
+      "reason": "The independent central bank's rate decision was not treated as an administration act, and campaign appearances produced no qualifying government action."
     },
     {
       "title": "Truth Social feed",
       "reason": "No new post appeared after September 15 at 10:19:13 PM EDT; the newest opinion-link repost remained feed-only."
-    },
-    {
-      "title": "Duplicate and campaign coverage",
-      "reason": "South Africa visa restrictions, Kennedy Center litigation, the Iran war-powers vote, orbital weapons and other already recorded events were deduplicated; campaign material was excluded."
     },
     {
       "title": "Legacy source-health queue",
@@ -212,7 +221,7 @@
     },
     {
       "title": "External archives",
-      "reason": "All four primary project pages were checked. Trump Archive remained 14,053 items, UndoTrump 1,264 actions, Immigration Policy Tracking 1,792 actions, and Record47 6,217 entries with its separate feature counts unchanged; unlike units remain separate."
+      "reason": "Trump Archive remained 14,053 items, UndoTrump 1,264 actions and Immigration Policy Tracking 1,792 actions. Record47's API was unavailable during the check, so its last verified unlike-unit measurements were preserved rather than replaced by stale client-rendered homepage figures."
     }
   ],
   "corrections": [],
