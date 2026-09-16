@@ -2869,6 +2869,66 @@
       "provenance_path": "data/editorial_change_notes/10.62.0.json",
       "provenance_sha256": "9252390cd3210f86258f378032b622cf30e243bfd242084da4f64feab5765833",
       "note": "Bound to the immutable before/after release change note and separately reviewed facts, significance, response, Maybe and Therefore layers."
+    },
+    {
+      "change_id": "10.63.0:NAT-2026-08-24-004",
+      "entry_id": "NAT-2026-08-24-004",
+      "as_of_utc": "2026-09-16T09:45:00Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.63.0",
+      "summary": "Added the effective waiver of the remaining Syria arms-sales and foreign-military-financing restrictions without treating it as a transaction approval.",
+      "provenance_path": "data/editorial_change_notes/10.63.0.json",
+      "provenance_sha256": "a1dccdc0b054b7a8b953c844500b0b15687cd0f51af8bb4e6f52cfb92ad7c1b6",
+      "note": "Bound to the immutable before/after release change note and separately reviewed facts, significance, response, Maybe and Therefore layers."
+    },
+    {
+      "change_id": "10.63.0:NAT-2026-09-11-014",
+      "entry_id": "NAT-2026-09-11-014",
+      "as_of_utc": "2026-09-16T09:45:00Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.63.0",
+      "summary": "Added CDC's time-limited Ebola entry-suspension continuation with statutory and operational scopes distinguished.",
+      "provenance_path": "data/editorial_change_notes/10.63.0.json",
+      "provenance_sha256": "a1dccdc0b054b7a8b953c844500b0b15687cd0f51af8bb4e6f52cfb92ad7c1b6",
+      "note": "Bound to the immutable before/after release change note and separately reviewed facts, significance, response, Maybe and Therefore layers."
+    },
+    {
+      "change_id": "10.63.0:NAT-2026-09-11-015",
+      "entry_id": "NAT-2026-09-11-015",
+      "as_of_utc": "2026-09-16T09:45:00Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.63.0",
+      "summary": "Added the one-year Executive Order 13224 national-emergency continuation without inferring a new designation or operation.",
+      "provenance_path": "data/editorial_change_notes/10.63.0.json",
+      "provenance_sha256": "a1dccdc0b054b7a8b953c844500b0b15687cd0f51af8bb4e6f52cfb92ad7c1b6",
+      "note": "Bound to the immutable before/after release change note and separately reviewed facts, significance, response, Maybe and Therefore layers."
+    },
+    {
+      "change_id": "10.63.0:NAT-2026-09-15-014",
+      "entry_id": "NAT-2026-09-15-014",
+      "as_of_utc": "2026-09-16T09:45:00Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.63.0",
+      "summary": "Added the South Africa-related visa-restriction policy while preserving its unnamed and not-yet-measured implementation status.",
+      "provenance_path": "data/editorial_change_notes/10.63.0.json",
+      "provenance_sha256": "a1dccdc0b054b7a8b953c844500b0b15687cd0f51af8bb4e6f52cfb92ad7c1b6",
+      "note": "Bound to the immutable before/after release change note and separately reviewed facts, significance, response, Maybe and Therefore layers."
+    },
+    {
+      "change_id": "10.63.0:NAT-2026-09-16-001",
+      "entry_id": "NAT-2026-09-16-001",
+      "as_of_utc": "2026-09-16T09:59:18Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.63.0",
+      "summary": "Added reported beginning of Belarus prisoner releases under a 25-person interim framework while withholding completion claims.",
+      "provenance_path": "data/editorial_change_notes/10.63.0.json",
+      "provenance_sha256": "a1dccdc0b054b7a8b953c844500b0b15687cd0f51af8bb4e6f52cfb92ad7c1b6",
+      "note": "Bound to the immutable before/after release change note and separately reviewed facts, significance, response, Maybe and Therefore layers."
     }
   ],
   "reviews": [
@@ -22843,6 +22903,807 @@
       ],
       "unresolved_questions": [
         "No public formal notification, final approval, contract, financing obligation, delivery schedule or end-use condition was located by cutoff."
+      ]
+    },
+    {
+      "review_id": "10.63.0:NAT-2026-08-24-004:cd5ef06cd8b9",
+      "entry_id": "NAT-2026-08-24-004",
+      "content_sha256": "cd5ef06cd8b951ba6e4166874096800b9bce3d2e1e3536bafe59d48005b6f714",
+      "reviewed_at": "2026-09-16T09:59:18Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "1b86abb55190e6bdcb27fe644bfd1aadc3b85c10b243ddd9c9177d86da8152b7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_syria_sst_delisting",
+              "locator": "Reuters independently reports the earlier completed state-sponsor delisting.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9994f229001485df4e08e41fbfb9648e786fb8d665226745b97e4bed8562d355",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "fr_syria_chemical_waiver_sep16",
+              "locator": "The Federal Register determination identifies the two remaining restrictions and effective waiver.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "cd74e9933ec98cbd07bcfc0d15491e7f1c37d935cb7299e083135f8fd536e6ed",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "f848e8d22cefd75351723d3f7cc6ca26172a8f7cfb6675ac80fafdcafc2c3cca",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_syria_sst_delisting",
+              "locator": "Reuters independently reports the earlier completed state-sponsor delisting.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9994f229001485df4e08e41fbfb9648e786fb8d665226745b97e4bed8562d355",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "fr_syria_chemical_waiver_sep16",
+              "locator": "The Federal Register determination identifies the two remaining restrictions and effective waiver.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "cd74e9933ec98cbd07bcfc0d15491e7f1c37d935cb7299e083135f8fd536e6ed",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "1f4311e266592d60641d2cb7a7e1962fa8545cd52bcee63f154258848e90d16d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_syria_sst_delisting",
+              "locator": "Reuters independently reports the earlier completed state-sponsor delisting.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9994f229001485df4e08e41fbfb9648e786fb8d665226745b97e4bed8562d355",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "fr_syria_chemical_waiver_sep16",
+              "locator": "The Federal Register determination identifies the two remaining restrictions and effective waiver.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "cd74e9933ec98cbd07bcfc0d15491e7f1c37d935cb7299e083135f8fd536e6ed",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "21e44a80b110b80a4f6c36d653f430284f9e89e37e6be21717c5156d052a0f3c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_syria_sst_delisting",
+              "locator": "Reuters independently reports the earlier completed state-sponsor delisting.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9994f229001485df4e08e41fbfb9648e786fb8d665226745b97e4bed8562d355",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "fr_syria_chemical_waiver_sep16",
+              "locator": "The Federal Register determination identifies the two remaining restrictions and effective waiver.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "cd74e9933ec98cbd07bcfc0d15491e7f1c37d935cb7299e083135f8fd536e6ed",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "43314b8dde24f7ea1dd26b3de895db020909e44716135c06844ee733d92e9a15",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_syria_sst_delisting",
+              "locator": "Reuters independently reports the earlier completed state-sponsor delisting.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9994f229001485df4e08e41fbfb9648e786fb8d665226745b97e4bed8562d355",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "fr_syria_chemical_waiver_sep16",
+              "locator": "The Federal Register determination identifies the two remaining restrictions and effective waiver.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "cd74e9933ec98cbd07bcfc0d15491e7f1c37d935cb7299e083135f8fd536e6ed",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "dccbda096a3709206b60a56f730d096a786dbffd5f9d0a23e5e0a440e0f33679",
+          "review_note": "Reviewed significance separately from factual status, causal claims and lifecycle evidence."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "ac22cdb4d938a583c1103c3b269f8587258d1d5d0efb35e80ec42af51ec3e644",
+          "review_note": "Preserved the strongest documented administration or competing response and concrete future tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "7eecce4a6be5a5f5ebb97e5ee07fddf8fbc15d2d9f003c607d1f0aa994621f37",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to established evidence and current lifecycle status."
+        }
+      ],
+      "unresolved_questions": [
+        "No specific license, sale, financing obligation, contract, delivery or end-use condition was public by cutoff."
+      ]
+    },
+    {
+      "review_id": "10.63.0:NAT-2026-09-11-014:279dda8c5c36",
+      "entry_id": "NAT-2026-09-11-014",
+      "content_sha256": "279dda8c5c3692f41e506f08f0641d84c828691fc214ee25aa3e5276cb111e95",
+      "reviewed_at": "2026-09-16T09:59:18Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "c32516dccbff0b026a57c6487f5b809703271f180283eca0adbcb18a14fd8c03",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cdc_ebola_order_sep16",
+              "locator": "The Federal Register notice supplies scope, dates, findings, exceptions and comment history.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "77c97c5a14cc99eaaa0198e868452ab70035bdde2caa5e3f8a9f4e88b2e7156e",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_order_sep11",
+              "locator": "The signed CDC order establishes the operative legal text.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9d5dd2cd859c44bfb651d046146dca4a05db6153059a0767475403705aefc49c",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_traveler_page_sep16",
+              "locator": "CDC operational guidance distinguishes boarding and airport-routing requirements.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "2599bd09f4b8b486cdb6dc8ea86fa901cd49f8bb228c0474752daf86cb163a35",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "82c6b4d0ec68ef5013dd521917d06f42c11f4d94d6d49b43ff6a39659bab90eb",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cdc_ebola_order_sep16",
+              "locator": "The Federal Register notice supplies scope, dates, findings, exceptions and comment history.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "77c97c5a14cc99eaaa0198e868452ab70035bdde2caa5e3f8a9f4e88b2e7156e",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_order_sep11",
+              "locator": "The signed CDC order establishes the operative legal text.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9d5dd2cd859c44bfb651d046146dca4a05db6153059a0767475403705aefc49c",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_traveler_page_sep16",
+              "locator": "CDC operational guidance distinguishes boarding and airport-routing requirements.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "2599bd09f4b8b486cdb6dc8ea86fa901cd49f8bb228c0474752daf86cb163a35",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "4673676b426cd7bc452a403cec3aa4a904c43a1d21be39c9a11d5b0f1bd5fbf8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cdc_ebola_order_sep16",
+              "locator": "The Federal Register notice supplies scope, dates, findings, exceptions and comment history.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "77c97c5a14cc99eaaa0198e868452ab70035bdde2caa5e3f8a9f4e88b2e7156e",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_order_sep11",
+              "locator": "The signed CDC order establishes the operative legal text.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9d5dd2cd859c44bfb651d046146dca4a05db6153059a0767475403705aefc49c",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_traveler_page_sep16",
+              "locator": "CDC operational guidance distinguishes boarding and airport-routing requirements.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "2599bd09f4b8b486cdb6dc8ea86fa901cd49f8bb228c0474752daf86cb163a35",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "15e52c84489d8f92bd04fb28dde8f25213dac288fdc84f6cd663475296f6edb9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cdc_ebola_order_sep16",
+              "locator": "The Federal Register notice supplies scope, dates, findings, exceptions and comment history.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "77c97c5a14cc99eaaa0198e868452ab70035bdde2caa5e3f8a9f4e88b2e7156e",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_order_sep11",
+              "locator": "The signed CDC order establishes the operative legal text.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9d5dd2cd859c44bfb651d046146dca4a05db6153059a0767475403705aefc49c",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_traveler_page_sep16",
+              "locator": "CDC operational guidance distinguishes boarding and airport-routing requirements.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "2599bd09f4b8b486cdb6dc8ea86fa901cd49f8bb228c0474752daf86cb163a35",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "ff84dd65aae7d8a867b6824a7718d587ad4c40ebb7366d4cd434b921ce1e40c5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cdc_ebola_order_sep16",
+              "locator": "The Federal Register notice supplies scope, dates, findings, exceptions and comment history.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "77c97c5a14cc99eaaa0198e868452ab70035bdde2caa5e3f8a9f4e88b2e7156e",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_order_sep11",
+              "locator": "The signed CDC order establishes the operative legal text.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9d5dd2cd859c44bfb651d046146dca4a05db6153059a0767475403705aefc49c",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_traveler_page_sep16",
+              "locator": "CDC operational guidance distinguishes boarding and airport-routing requirements.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "2599bd09f4b8b486cdb6dc8ea86fa901cd49f8bb228c0474752daf86cb163a35",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "6e18c09f035054a7db0db698e8b02758681e777fd896a97cf762bbb3f059946c",
+          "review_note": "Reviewed significance separately from factual status, causal claims and lifecycle evidence."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "a40ba2c6c9a734851c1d51e61fc9d8d9f0f1c39f2ecd45631ec23db016a094c1",
+          "review_note": "Preserved the strongest documented administration or competing response and concrete future tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "c2575576b206f6c3ce2833ed1e3955d01722b0d96b698fb813186e3574f25bad",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to established evidence and current lifecycle status."
+        }
+      ],
+      "unresolved_questions": [
+        "Effectiveness, exception use, legal challenges and post-October 11 status remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.63.0:NAT-2026-09-11-015:639dd347db77",
+      "entry_id": "NAT-2026-09-11-015",
+      "content_sha256": "639dd347db77305b2a041527e6db8466b2f47e4d4459c7e31a8f53e3d9fd0693",
+      "reviewed_at": "2026-09-16T09:59:18Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "423aafd9272d1211b9ac6cee831df7764f3295c545cbba65c6c07e3a817177ef",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_eo13224_emergency_continuation_sep16",
+              "locator": "The presidential notice establishes the one-year continuation and stated threat finding.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9f2d939c03ce45ed855d54b80492fa07bf965a256d0c03ea3e370cb3b89271ee",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "f4ad420027075721658a387eff34f31f6ae79ed604205f9bb9d11313667ef1db",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_eo13224_emergency_continuation_sep16",
+              "locator": "The presidential notice establishes the one-year continuation and stated threat finding.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9f2d939c03ce45ed855d54b80492fa07bf965a256d0c03ea3e370cb3b89271ee",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "3131ba8ca8b32f8718e15e94601469c3465e97044ed2884e7fc500dadd2fefe5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_eo13224_emergency_continuation_sep16",
+              "locator": "The presidential notice establishes the one-year continuation and stated threat finding.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9f2d939c03ce45ed855d54b80492fa07bf965a256d0c03ea3e370cb3b89271ee",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "922e1ac1f885c797c10807affb9eabac5c00028be97310d91bc59cd41431a25d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_eo13224_emergency_continuation_sep16",
+              "locator": "The presidential notice establishes the one-year continuation and stated threat finding.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9f2d939c03ce45ed855d54b80492fa07bf965a256d0c03ea3e370cb3b89271ee",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "f0be1d4edabcdeb87f03fb20916eaf3bc27ce0f782ce46e7c236d01dcc3e2480",
+          "review_note": "Reviewed significance separately from factual status, causal claims and lifecycle evidence."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "8d276c5a6b8288d49427ad2c4841bebb9f6152af7df419b6c5b55ab53e7f98c2",
+          "review_note": "Preserved the strongest documented administration or competing response and concrete future tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "45224e572cc6bc84156eef08678a3105b4095d9c37bf22358420dd5d58626676",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to established evidence and current lifecycle status."
+        }
+      ],
+      "unresolved_questions": [
+        "The notice supplies no new designation-level evidence or quantitative effectiveness measure."
+      ]
+    },
+    {
+      "review_id": "10.63.0:NAT-2026-09-15-014:2a845198ba92",
+      "entry_id": "NAT-2026-09-15-014",
+      "content_sha256": "2a845198ba92fbdc6cd7edb2e56ff55ad2c2512ead6f55e358443292469b8d16",
+      "reviewed_at": "2026-09-16T09:59:18Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "207c1ff2c58b6a1602fad8b228b1b562e9c420f364febed172538cd4991de5f5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "state_south_africa_visa_policy_sep15",
+              "locator": "The official release states the legal authority and policy scope.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "6c91c2b402a361e01c5e055b3202dee1a6ed42701548ddf02526f56c13fa2060",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "publicnow_state_sa_visa_release_sep15",
+              "locator": "The preserved full-text mirror reproduces the official release when the State page returned an access error.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "1bb4964af7e8aab3a3f3128c5fae0d1c2e630aa72565ff976e54d6dc46f1aade",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_south_africa_visa_curbs_sep15",
+              "locator": "Reuters reports the policy and South African response.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "f97d9526eac464ada0d97ad93aeb9b684a9521881348e6bc3891a1ce2c9287fb",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_south_africa_visa_curbs_sep15",
+              "locator": "AP independently reports the policy and dispute context.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "6b5aa17a1223f367803dab0d2266ac15e20bddf3ab0cbf5c8a1b47158ce35713",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "a2d850cfec8e11fe886ac35796973b75c5d6d1f025b0f2699b0d35618f795cd0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "state_south_africa_visa_policy_sep15",
+              "locator": "The official release states the legal authority and policy scope.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "6c91c2b402a361e01c5e055b3202dee1a6ed42701548ddf02526f56c13fa2060",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "publicnow_state_sa_visa_release_sep15",
+              "locator": "The preserved full-text mirror reproduces the official release when the State page returned an access error.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "1bb4964af7e8aab3a3f3128c5fae0d1c2e630aa72565ff976e54d6dc46f1aade",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_south_africa_visa_curbs_sep15",
+              "locator": "Reuters reports the policy and South African response.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "f97d9526eac464ada0d97ad93aeb9b684a9521881348e6bc3891a1ce2c9287fb",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_south_africa_visa_curbs_sep15",
+              "locator": "AP independently reports the policy and dispute context.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "6b5aa17a1223f367803dab0d2266ac15e20bddf3ab0cbf5c8a1b47158ce35713",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "74c8bcad0438d08c276e39ec8e086ff4c9057b776c6dfa667b215433c5de7163",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "state_south_africa_visa_policy_sep15",
+              "locator": "The official release states the legal authority and policy scope.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "6c91c2b402a361e01c5e055b3202dee1a6ed42701548ddf02526f56c13fa2060",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "publicnow_state_sa_visa_release_sep15",
+              "locator": "The preserved full-text mirror reproduces the official release when the State page returned an access error.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "1bb4964af7e8aab3a3f3128c5fae0d1c2e630aa72565ff976e54d6dc46f1aade",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_south_africa_visa_curbs_sep15",
+              "locator": "Reuters reports the policy and South African response.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "f97d9526eac464ada0d97ad93aeb9b684a9521881348e6bc3891a1ce2c9287fb",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_south_africa_visa_curbs_sep15",
+              "locator": "AP independently reports the policy and dispute context.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "6b5aa17a1223f367803dab0d2266ac15e20bddf3ab0cbf5c8a1b47158ce35713",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "551f5afce25fca222ef8197a2573da75afbdf85aa5cdbda3e11946a93d25f460",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "state_south_africa_visa_policy_sep15",
+              "locator": "The official release states the legal authority and policy scope.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "6c91c2b402a361e01c5e055b3202dee1a6ed42701548ddf02526f56c13fa2060",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "publicnow_state_sa_visa_release_sep15",
+              "locator": "The preserved full-text mirror reproduces the official release when the State page returned an access error.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "1bb4964af7e8aab3a3f3128c5fae0d1c2e630aa72565ff976e54d6dc46f1aade",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_south_africa_visa_curbs_sep15",
+              "locator": "Reuters reports the policy and South African response.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "f97d9526eac464ada0d97ad93aeb9b684a9521881348e6bc3891a1ce2c9287fb",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_south_africa_visa_curbs_sep15",
+              "locator": "AP independently reports the policy and dispute context.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "6b5aa17a1223f367803dab0d2266ac15e20bddf3ab0cbf5c8a1b47158ce35713",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "e8570bb839c25befed0dd7f7c42ebd3c72d9c792d40364d65ba8aed7bccfe11c",
+          "review_note": "Reviewed significance separately from factual status, causal claims and lifecycle evidence."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "9c08c250f11209cd0506ee9aebcfae72cdfe765ebf12f9c08250386381d78c8e",
+          "review_note": "Preserved the strongest documented administration or competing response and concrete future tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "b29fed9f6778ef4836f576aaab31740667964d9b522470696ae95443722cdeae",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to established evidence and current lifecycle status."
+        }
+      ],
+      "unresolved_questions": [
+        "No named target, denial count, case record or review procedure was public by cutoff."
+      ]
+    },
+    {
+      "review_id": "10.63.0:NAT-2026-09-16-001:e8a14b19166e",
+      "entry_id": "NAT-2026-09-16-001",
+      "content_sha256": "e8a14b19166e3a72017f754023b6e0314f93f026e0f8479af4c7706ba1c10424",
+      "reviewed_at": "2026-09-16T09:59:18Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "117d10c7ae594d971b973a671d227a2305e3f20a18fbf2faf3931f1e9cd9c839",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_belarus_prisoner_release_sep16",
+              "locator": "Reuters reports the interim framework, pardons and attributed Viasna pickup notices.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "7f08aaa78647b8974c19826141fd5772a3d74bbf9ee5bb93ce398065a3d376dd",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_belarus_talks_sep15",
+              "locator": "Reuters supplies prior negotiation and unresolved financing context.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "d31ffe378967564df4aec3d9b20f240f4cf4eb8a699de381a2973cc7f9de45a3",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_belarus_talks_sep15",
+              "locator": "AP independently supplies negotiation and political-prisoner context.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "d216d8b6768026e5469a8613e56aa890287268fd878773421c81217a967abf6a",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "d09f8f5d87fb4c63bbecc8afafd2bd722bc9a092d9dca60d6534f600e4d438b0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_belarus_prisoner_release_sep16",
+              "locator": "Reuters reports the interim framework, pardons and attributed Viasna pickup notices.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "7f08aaa78647b8974c19826141fd5772a3d74bbf9ee5bb93ce398065a3d376dd",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_belarus_talks_sep15",
+              "locator": "Reuters supplies prior negotiation and unresolved financing context.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "d31ffe378967564df4aec3d9b20f240f4cf4eb8a699de381a2973cc7f9de45a3",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_belarus_talks_sep15",
+              "locator": "AP independently supplies negotiation and political-prisoner context.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "d216d8b6768026e5469a8613e56aa890287268fd878773421c81217a967abf6a",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "769ecb84361df068661b7f890497b0aa30c007b1def491f307be91a5c9a37869",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_belarus_prisoner_release_sep16",
+              "locator": "Reuters reports the interim framework, pardons and attributed Viasna pickup notices.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "7f08aaa78647b8974c19826141fd5772a3d74bbf9ee5bb93ce398065a3d376dd",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_belarus_talks_sep15",
+              "locator": "Reuters supplies prior negotiation and unresolved financing context.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "d31ffe378967564df4aec3d9b20f240f4cf4eb8a699de381a2973cc7f9de45a3",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_belarus_talks_sep15",
+              "locator": "AP independently supplies negotiation and political-prisoner context.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "d216d8b6768026e5469a8613e56aa890287268fd878773421c81217a967abf6a",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "0c43e50d93e74da31aae7281c4dfe34887aac0ae68e4fd6392f272fe9b8deb0f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_belarus_prisoner_release_sep16",
+              "locator": "Reuters reports the interim framework, pardons and attributed Viasna pickup notices.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "7f08aaa78647b8974c19826141fd5772a3d74bbf9ee5bb93ce398065a3d376dd",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_belarus_talks_sep15",
+              "locator": "Reuters supplies prior negotiation and unresolved financing context.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "d31ffe378967564df4aec3d9b20f240f4cf4eb8a699de381a2973cc7f9de45a3",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_belarus_talks_sep15",
+              "locator": "AP independently supplies negotiation and political-prisoner context.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "d216d8b6768026e5469a8613e56aa890287268fd878773421c81217a967abf6a",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "e8dff4e2a7455522856483345e496c5126856f66d86538832891064632c670eb",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_belarus_prisoner_release_sep16",
+              "locator": "Reuters reports the interim framework, pardons and attributed Viasna pickup notices.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "7f08aaa78647b8974c19826141fd5772a3d74bbf9ee5bb93ce398065a3d376dd",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_belarus_talks_sep15",
+              "locator": "Reuters supplies prior negotiation and unresolved financing context.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "d31ffe378967564df4aec3d9b20f240f4cf4eb8a699de381a2973cc7f9de45a3",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_belarus_talks_sep15",
+              "locator": "AP independently supplies negotiation and political-prisoner context.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "d216d8b6768026e5469a8613e56aa890287268fd878773421c81217a967abf6a",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "35c34b32ee3b8a45a1d0fecc953284e5fbc1ed63e41dad4093d858d134cf2dde",
+          "review_note": "Reviewed significance separately from factual status, causal claims and lifecycle evidence."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "b5b652de8b68177774853e4b48bab94b521b7acfd90c8b896d2ef370d35a2e90",
+          "review_note": "Preserved the strongest documented administration or competing response and concrete future tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "c2774f57b0581c125fd2013be32da7ae2826b77ca87c9d8ada29c96b12299276",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to established evidence and current lifecycle status."
+        }
+      ],
+      "unresolved_questions": [
+        "A complete 25-person release list and effective U.S. sanctions-relief instrument were not public by cutoff."
       ]
     }
   ],

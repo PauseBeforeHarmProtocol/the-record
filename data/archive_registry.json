@@ -189,7 +189,7 @@
         "content_import_permission_state": "license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-09-16T04:25:00Z",
+        "checked_at": "2026-09-16T10:11:34Z",
         "state": "success",
         "verification_pages": [
           "https://trump-archive.com/archive"
@@ -382,7 +382,7 @@
         "content_import_permission_state": "bulk_permission_or_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-09-16T04:25:00Z",
+        "checked_at": "2026-09-16T10:11:34Z",
         "state": "partial_success",
         "verification_pages": [
           "https://www.undotrump.com/"
@@ -435,13 +435,15 @@
         {
           "metric_id": "iptp.policy_actions_browse",
           "as_reported_label": "Policy Actions",
-          "value": 1792,
+          "value": 1791,
           "unit": "immigration_policy_action",
           "scope": "all policies shown on the policies browse page",
           "comparability_group": "domain_policy_action",
-          "observed_at": "2026-09-16T04:25:00Z",
+          "observed_at": "2026-09-16T10:11:34Z",
           "source_url": "https://immpolicytracking.org/policies/",
-          "upstream_display_date": null
+          "upstream_display_date": null,
+          "quality_flag": "unexpected_upstream_count_decrease_under_review",
+          "note": "The primary policies page displayed 1,791 actions, down from the previously observed 1,792. The decrease is preserved and flagged rather than treated as deletion or parser error."
         }
       ],
       "trump_1_current_status_breakdown": [
@@ -534,8 +536,8 @@
         "content_import_permission_state": "permission_or_documented_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-09-16T04:25:00Z",
-        "state": "partial_success",
+        "checked_at": "2026-09-16T10:11:34Z",
+        "state": "success_with_quality_flag",
         "verification_pages": [
           "https://immpolicytracking.org/policies/"
         ]
@@ -575,13 +577,13 @@
         {
           "metric_id": "record47.approved_entries",
           "as_reported_label": "Entries",
-          "value": 6201,
+          "value": 6217,
           "unit": "executive_conduct_entry",
           "scope": "approved archive entries",
           "comparability_group": "structured_executive_conduct",
-          "observed_at": "2026-09-16T04:25:00Z",
+          "observed_at": "2026-09-16T10:11:34Z",
           "source_url": "https://api.record47.org/entries?limit=1",
-          "note": "The official public entries endpoint returned total 6,201 approved entries; the pagination limit is not used as the archive count."
+          "note": "The official public entries endpoint returned 6,217 approved entries; the pagination limit is not used as the archive count."
         },
         {
           "metric_id": "record47.contradictions",
@@ -590,20 +592,20 @@
           "unit": "contradiction_record",
           "scope": "documented conflicts and course changes",
           "comparability_group": "archive_feature_metric",
-          "observed_at": "2026-09-12T22:06:10Z",
+          "observed_at": "2026-09-16T10:11:34Z",
           "source_url": "https://api.record47.org/counts",
           "note": "The official public counts endpoint returned 332 contradiction records; this feature count is separate from approved entries."
         },
         {
           "metric_id": "record47.primary_sources",
           "as_reported_label": "Primary Sources",
-          "value": 3624,
+          "value": 3625,
           "unit": "distinct_primary_source_document",
           "scope": "distinct primary-source documents in the archive",
           "comparability_group": "archive_feature_metric",
-          "observed_at": "2026-09-16T04:25:00Z",
+          "observed_at": "2026-09-16T10:11:34Z",
           "source_url": "https://api.record47.org/counts",
-          "note": "The official public counts endpoint returned 3,624 distinct primary-source documents; the approved-entry total is measured separately."
+          "note": "The official public counts endpoint returned 3,625 distinct primary-source documents; the approved-entry total is measured separately."
         },
         {
           "metric_id": "record47.sequences",
@@ -612,7 +614,7 @@
           "unit": "documented_sequence",
           "scope": "linked multi-event sequences",
           "comparability_group": "archive_feature_metric",
-          "observed_at": "2026-09-12T22:06:10Z",
+          "observed_at": "2026-09-16T10:11:34Z",
           "source_url": "https://api.record47.org/counts",
           "note": "The official public counts endpoint returned 38 documented sequences; this feature count is separate from approved entries."
         },
@@ -623,7 +625,7 @@
           "unit": "truth_social_or_twitter_post",
           "scope": "Truth Social and Twitter posts available for statement-to-record comparison",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-09-16T04:25:00Z",
+          "observed_at": "2026-09-16T10:11:34Z",
           "source_url": "https://api.record47.org/counts",
           "note": "The official public counts endpoint returned 6,449 Truth Social and Twitter posts; these source artifacts are not added to the approved-entry total."
         }
@@ -739,8 +741,8 @@
         "content_import_permission_state": "metadata_and_citation_allowed_full_content_license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-09-16T04:25:00Z",
-        "state": "partial_success",
+        "checked_at": "2026-09-16T10:11:34Z",
+        "state": "success",
         "verification_pages": [
           "https://record47.org/"
         ]
