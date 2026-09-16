@@ -2953,6 +2953,54 @@
       "provenance_path": "data/editorial_change_notes/10.64.0.json",
       "provenance_sha256": "39c2ba32a97d95fa2f31d8062a2dca52a26a1595b19395fe4fd2f7b2346fca94",
       "note": "Bound to the immutable before/after release change note and separately reviewed facts, significance, response, Maybe and Therefore layers."
+    },
+    {
+      "change_id": "10.65.0:NAT-2026-09-16-001",
+      "entry_id": "NAT-2026-09-16-001",
+      "as_of_utc": "2026-09-16T13:16:00Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.65.0",
+      "summary": "Confirmed completion of the 25-person Belarus release while preserving the missing public U.S. sanctions instrument and continuing-repression caveats.",
+      "provenance_path": "data/editorial_change_notes/10.65.0.json",
+      "provenance_sha256": "7ae813aee2d4e3feb754991f9a9558be2232d269099b2f69a3f12bcde2bbb812",
+      "note": "Bound to the immutable before/after release change note and separately reviewed facts, significance, response, Maybe and Therefore layers."
+    },
+    {
+      "change_id": "10.65.0:NAT-2026-09-15-015",
+      "entry_id": "NAT-2026-09-15-015",
+      "as_of_utc": "2026-09-15T22:12:00Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.65.0",
+      "summary": "Added GAO's estimated deferred-resignation leave cost, data-quality limitations and open recommendations.",
+      "provenance_path": "data/editorial_change_notes/10.65.0.json",
+      "provenance_sha256": "7ae813aee2d4e3feb754991f9a9558be2232d269099b2f69a3f12bcde2bbb812",
+      "note": "Bound to the immutable before/after release change note and separately reviewed facts, significance, response, Maybe and Therefore layers."
+    },
+    {
+      "change_id": "10.65.0:NAT-2026-09-16-003",
+      "entry_id": "NAT-2026-09-16-003",
+      "as_of_utc": "2026-09-16T10:35:53Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.65.0",
+      "summary": "Added the nationwide grant-disruption estimate with mixed-lifecycle and audit caveats.",
+      "provenance_path": "data/editorial_change_notes/10.65.0.json",
+      "provenance_sha256": "7ae813aee2d4e3feb754991f9a9558be2232d269099b2f69a3f12bcde2bbb812",
+      "note": "Bound to the immutable before/after release change note and separately reviewed facts, significance, response, Maybe and Therefore layers."
+    },
+    {
+      "change_id": "10.65.0:NAT-2026-09-11-016",
+      "entry_id": "NAT-2026-09-11-016",
+      "as_of_utc": "2026-09-11T16:00:00Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.65.0",
+      "summary": "Added CFTC's final 30 percent presumption for eligible smaller whistleblower awards.",
+      "provenance_path": "data/editorial_change_notes/10.65.0.json",
+      "provenance_sha256": "7ae813aee2d4e3feb754991f9a9558be2232d269099b2f69a3f12bcde2bbb812",
+      "note": "Bound to the immutable before/after release change note and separately reviewed facts, significance, response, Maybe and Therefore layers."
     }
   ],
   "reviews": [
@@ -24062,6 +24110,554 @@
       ],
       "unresolved_questions": [
         "State implementation costs, actual disclosure volumes, fraud recoveries and any later national-database proposal are not yet measured."
+      ]
+    },
+    {
+      "review_id": "10.65.0:NAT-2026-09-16-001:5e65b8d3c469",
+      "entry_id": "NAT-2026-09-16-001",
+      "content_sha256": "5e65b8d3c469488c43d6d44e9d3a1dccf7eecaed889be31450945a1706bc9e5a",
+      "reviewed_at": "2026-09-16T16:01:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "52096b0127e34c17cecbe0b49e01e0b3b74c7b0c2526c300f17808d9d42e48c9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_belarus_prisoner_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "b04e8f99a979a56ff5adc873fe7cc21f48f10194dbe94c17c8321193b56a38e2",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_belarus_completed_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "70af5a85518874b94c4012be7776a680fc256925e68720fbb1fb6c63e2f3684f",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "3ced615f1f84dbb7d0d7c3c27d03d016ecf6ea92d39f14bd236e0de13ab1f2ba",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_belarus_prisoner_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "b04e8f99a979a56ff5adc873fe7cc21f48f10194dbe94c17c8321193b56a38e2",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_belarus_completed_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "70af5a85518874b94c4012be7776a680fc256925e68720fbb1fb6c63e2f3684f",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "476064b30cbf67cabee259830214e7745bfb3a52314b41c91500a54e059dab50",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_belarus_prisoner_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "b04e8f99a979a56ff5adc873fe7cc21f48f10194dbe94c17c8321193b56a38e2",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_belarus_completed_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "70af5a85518874b94c4012be7776a680fc256925e68720fbb1fb6c63e2f3684f",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "adaa0fa68a4cfc875bbf6b02c05b45ee379387c7d20f9100ba58d0f9b604f6aa",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_belarus_prisoner_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "b04e8f99a979a56ff5adc873fe7cc21f48f10194dbe94c17c8321193b56a38e2",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_belarus_completed_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "70af5a85518874b94c4012be7776a680fc256925e68720fbb1fb6c63e2f3684f",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "3bd8eca1f52002021ed838a1b4c9d5e99ce6ea460ea9fc3736016406ac1bab53",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_belarus_prisoner_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "b04e8f99a979a56ff5adc873fe7cc21f48f10194dbe94c17c8321193b56a38e2",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_belarus_completed_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "70af5a85518874b94c4012be7776a680fc256925e68720fbb1fb6c63e2f3684f",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "00066c73f8bcae79f6868d65266f0646210f239c76a07e94ecc1e34e31b69050",
+          "review_note": "Reviewed consequences separately from factual status, causal claims and unresolved outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "bb5b1f82ae6abd0461150513c4610998ed6658567746a5b4e628881f1fd569f0",
+          "review_note": "Preserved the strongest documented administration or agency rationale and concrete future tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "9eb01df84112a4a8ba3663ac5cfa175e603b59ed239849344e9d8e67ae27c8f9",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to established evidence and current lifecycle status."
+        }
+      ],
+      "unresolved_questions": [
+        "A public U.S. sanctions-relief instrument and complete official Belarusian release list were not located by cutoff."
+      ]
+    },
+    {
+      "review_id": "10.65.0:NAT-2026-09-15-015:0b63b87dfaa9",
+      "entry_id": "NAT-2026-09-15-015",
+      "content_sha256": "0b63b87dfaa9196968786f470311e4a0648be8acb4e805c1e326752dcec2334c",
+      "reviewed_at": "2026-09-16T16:01:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "1ac95b848f0a6480caa1042b4d2bb25fdd8d7d27d40a2ed79123ebd76de5391c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "gao_deferred_resignation_leave_sep15",
+              "locator": "Inspected GAO methodology, payroll coverage, cost estimates, data-quality limitations, recommendations and OPM concurrence.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "297ca3bfa8f510decd6e2d0497517687096a2c95b30410bc9f4fb16b8304a1d1",
+              "origin_group": "U.S. Government Accountability Office",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "2e8ae3c1f63a891b0e375fd210c4ae0dda5ba6a7917556942efe64b18ba210c6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "gao_deferred_resignation_leave_sep15",
+              "locator": "Inspected GAO methodology, payroll coverage, cost estimates, data-quality limitations, recommendations and OPM concurrence.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "297ca3bfa8f510decd6e2d0497517687096a2c95b30410bc9f4fb16b8304a1d1",
+              "origin_group": "U.S. Government Accountability Office",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "28621fc7776483d436d3d3d2ad6ffb5762c606a52be92d7e75b8b263cea2cf1f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "gao_deferred_resignation_leave_sep15",
+              "locator": "Inspected GAO methodology, payroll coverage, cost estimates, data-quality limitations, recommendations and OPM concurrence.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "297ca3bfa8f510decd6e2d0497517687096a2c95b30410bc9f4fb16b8304a1d1",
+              "origin_group": "U.S. Government Accountability Office",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "fa447812a50a71b7d7c14627e2fa9025b21f2853c119f5ea54619078c34dcff0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "gao_deferred_resignation_leave_sep15",
+              "locator": "Inspected GAO methodology, payroll coverage, cost estimates, data-quality limitations, recommendations and OPM concurrence.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "297ca3bfa8f510decd6e2d0497517687096a2c95b30410bc9f4fb16b8304a1d1",
+              "origin_group": "U.S. Government Accountability Office",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "75f9677dbbd2f56bffea20f3587e88ec29932d20e58c4d0a4df1c0ee04850161",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "gao_deferred_resignation_leave_sep15",
+              "locator": "Inspected GAO methodology, payroll coverage, cost estimates, data-quality limitations, recommendations and OPM concurrence.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "297ca3bfa8f510decd6e2d0497517687096a2c95b30410bc9f4fb16b8304a1d1",
+              "origin_group": "U.S. Government Accountability Office",
+              "evidence_status": "measured"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "de7c4411e1c3d333d07fdac570c1e5ed1b0b8c45d4f200e69d5a01646d9ac4d1",
+          "review_note": "Reviewed consequences separately from factual status, causal claims and unresolved outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "fb4a758a680ff071de2f47569b1faa34700cd1e1bdc53356d6248400104f51eb",
+          "review_note": "Preserved the strongest documented administration or agency rationale and concrete future tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "9637a786e950c01b74be8c39f2e7dca77e4b7a1c5e54910920bf0537585c6129",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to established evidence and current lifecycle status."
+        }
+      ],
+      "unresolved_questions": [
+        "Net long-term savings, replacement hiring, service effects and corrected historical leave data remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.65.0:NAT-2026-09-16-003:69a1afef1f6e",
+      "entry_id": "NAT-2026-09-16-003",
+      "content_sha256": "69a1afef1f6eaa2855eee87b44c85dc9052489b4d286d9106730c1ecadbb7568",
+      "reviewed_at": "2026-09-16T16:01:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "f098df16fd3d06058b1da80ebd78b55fb989823189928e7d54a33d2b70e5d38d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_lost_funds_grants_sep16",
+              "locator": "Inspected the reported nationwide aggregate, categories, states, public-data methodology and mixed lifecycle limitations.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "c74c2dab943d77f4547161ded02154139c9744bbf8dca61f4983df36f0c797bc",
+              "origin_group": "Associated Press and Grant Witness",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "grant_witness_methodology_sep16",
+              "locator": "Inspected the reported nationwide aggregate, categories, states, public-data methodology and mixed lifecycle limitations.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "4700b00db2b8d724ee10e6db3c476370d1804a26229a505d15ceb18b5ee5019c",
+              "origin_group": "Associated Press and Grant Witness",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "bc6bcc862a49a8fb2dd054ec00bd6f7cdc4a22d8f0dce0aee3d470fa526e3e79",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_lost_funds_grants_sep16",
+              "locator": "Inspected the reported nationwide aggregate, categories, states, public-data methodology and mixed lifecycle limitations.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "c74c2dab943d77f4547161ded02154139c9744bbf8dca61f4983df36f0c797bc",
+              "origin_group": "Associated Press and Grant Witness",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "grant_witness_methodology_sep16",
+              "locator": "Inspected the reported nationwide aggregate, categories, states, public-data methodology and mixed lifecycle limitations.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "4700b00db2b8d724ee10e6db3c476370d1804a26229a505d15ceb18b5ee5019c",
+              "origin_group": "Associated Press and Grant Witness",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "9da67f8cb9c6a7fbb752157228c1b51a259b00ef141ab0a2f46b8119a7fedac1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_lost_funds_grants_sep16",
+              "locator": "Inspected the reported nationwide aggregate, categories, states, public-data methodology and mixed lifecycle limitations.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "c74c2dab943d77f4547161ded02154139c9744bbf8dca61f4983df36f0c797bc",
+              "origin_group": "Associated Press and Grant Witness",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "grant_witness_methodology_sep16",
+              "locator": "Inspected the reported nationwide aggregate, categories, states, public-data methodology and mixed lifecycle limitations.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "4700b00db2b8d724ee10e6db3c476370d1804a26229a505d15ceb18b5ee5019c",
+              "origin_group": "Associated Press and Grant Witness",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "bca80be40fcd331ef7987d4cd966e1e9dd8fdd654dda37b306ab34ce4f9723a7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_lost_funds_grants_sep16",
+              "locator": "Inspected the reported nationwide aggregate, categories, states, public-data methodology and mixed lifecycle limitations.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "c74c2dab943d77f4547161ded02154139c9744bbf8dca61f4983df36f0c797bc",
+              "origin_group": "Associated Press and Grant Witness",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "grant_witness_methodology_sep16",
+              "locator": "Inspected the reported nationwide aggregate, categories, states, public-data methodology and mixed lifecycle limitations.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "4700b00db2b8d724ee10e6db3c476370d1804a26229a505d15ceb18b5ee5019c",
+              "origin_group": "Associated Press and Grant Witness",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "7323c576c4fbf20283b6d1db19b23955ab406543445c00d37ad1964c559dab21",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_lost_funds_grants_sep16",
+              "locator": "Inspected the reported nationwide aggregate, categories, states, public-data methodology and mixed lifecycle limitations.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "c74c2dab943d77f4547161ded02154139c9744bbf8dca61f4983df36f0c797bc",
+              "origin_group": "Associated Press and Grant Witness",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "grant_witness_methodology_sep16",
+              "locator": "Inspected the reported nationwide aggregate, categories, states, public-data methodology and mixed lifecycle limitations.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "4700b00db2b8d724ee10e6db3c476370d1804a26229a505d15ceb18b5ee5019c",
+              "origin_group": "Associated Press and Grant Witness",
+              "evidence_status": "measured"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "c6ae867b739d37d508d9cc32519891abde2b2e4c66d1ccc8d5d733ad90b75747",
+          "review_note": "Reviewed consequences separately from factual status, causal claims and unresolved outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "9ab8b79abd9e672f2dc9cb48ae7b8cee407c0a28a49e1b69a839b262620c141f",
+          "review_note": "Preserved the strongest documented administration or agency rationale and concrete future tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "21543df0328e0e93b8422d7c1711c1a34a0bb3cef283204353e2332fd1954f0b",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to established evidence and current lifecycle status."
+        }
+      ],
+      "unresolved_questions": [
+        "A lifecycle-separated independently audited total and comprehensive White House reconciliation were not available by cutoff."
+      ]
+    },
+    {
+      "review_id": "10.65.0:NAT-2026-09-11-016:deee8638dbcc",
+      "entry_id": "NAT-2026-09-11-016",
+      "content_sha256": "deee8638dbccd5afde5a9f55cc6d140cf7be7123ea91885a4ad72bd4b0d7add7",
+      "reviewed_at": "2026-09-16T16:01:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "f6be521b45857206ca100cef241bbe5b0ea11c907d6af588850248df45e4da68",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cftc_whistleblower_final_sep16",
+              "locator": "Inspected final-rule text, conditions, threshold, statutory range, agency rationale, historical estimate and effective date.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "08fab27933489b2732e64e7e47e76ea1e67bf544e5c337a26e25f6a7358aa11e",
+              "origin_group": "Commodity Futures Trading Commission",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "cftc_whistleblower_final_release_sep11",
+              "locator": "Inspected final-rule text, conditions, threshold, statutory range, agency rationale, historical estimate and effective date.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "4e67ddc0da672bb084771315ba5193418195f87ccfe5bb631f7c3c86c61f3ad9",
+              "origin_group": "Commodity Futures Trading Commission",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "4c6ae1d48256493456523a5669ae9147125e34d0d7d064db551c1dc282af7245",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cftc_whistleblower_final_sep16",
+              "locator": "Inspected final-rule text, conditions, threshold, statutory range, agency rationale, historical estimate and effective date.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "08fab27933489b2732e64e7e47e76ea1e67bf544e5c337a26e25f6a7358aa11e",
+              "origin_group": "Commodity Futures Trading Commission",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "cftc_whistleblower_final_release_sep11",
+              "locator": "Inspected final-rule text, conditions, threshold, statutory range, agency rationale, historical estimate and effective date.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "4e67ddc0da672bb084771315ba5193418195f87ccfe5bb631f7c3c86c61f3ad9",
+              "origin_group": "Commodity Futures Trading Commission",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "a836ead234f5cfae97fd5d08e77c767ee2fc57cc3fce17ee85543eb0c9ddf8f2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cftc_whistleblower_final_sep16",
+              "locator": "Inspected final-rule text, conditions, threshold, statutory range, agency rationale, historical estimate and effective date.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "08fab27933489b2732e64e7e47e76ea1e67bf544e5c337a26e25f6a7358aa11e",
+              "origin_group": "Commodity Futures Trading Commission",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "cftc_whistleblower_final_release_sep11",
+              "locator": "Inspected final-rule text, conditions, threshold, statutory range, agency rationale, historical estimate and effective date.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "4e67ddc0da672bb084771315ba5193418195f87ccfe5bb631f7c3c86c61f3ad9",
+              "origin_group": "Commodity Futures Trading Commission",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "57c640cf6f4cb0dcf006c365cd08e77b30e15356a3550c6d561e7933402472e7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cftc_whistleblower_final_sep16",
+              "locator": "Inspected final-rule text, conditions, threshold, statutory range, agency rationale, historical estimate and effective date.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "08fab27933489b2732e64e7e47e76ea1e67bf544e5c337a26e25f6a7358aa11e",
+              "origin_group": "Commodity Futures Trading Commission",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "cftc_whistleblower_final_release_sep11",
+              "locator": "Inspected final-rule text, conditions, threshold, statutory range, agency rationale, historical estimate and effective date.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "4e67ddc0da672bb084771315ba5193418195f87ccfe5bb631f7c3c86c61f3ad9",
+              "origin_group": "Commodity Futures Trading Commission",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "1399f1aed7d938f926a0ddef0d1545d2349f6788a9f1c995d51188aecf69d16d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cftc_whistleblower_final_sep16",
+              "locator": "Inspected final-rule text, conditions, threshold, statutory range, agency rationale, historical estimate and effective date.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "08fab27933489b2732e64e7e47e76ea1e67bf544e5c337a26e25f6a7358aa11e",
+              "origin_group": "Commodity Futures Trading Commission",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "cftc_whistleblower_final_release_sep11",
+              "locator": "Inspected final-rule text, conditions, threshold, statutory range, agency rationale, historical estimate and effective date.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "4e67ddc0da672bb084771315ba5193418195f87ccfe5bb631f7c3c86c61f3ad9",
+              "origin_group": "Commodity Futures Trading Commission",
+              "evidence_status": "publication_only"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "9cb8142ef73f166cd10a76f6a74a0472c3bd2a8def9ed6fa3658839b112806c8",
+          "review_note": "Reviewed consequences separately from factual status, causal claims and unresolved outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "368bc0e70e18d4bd53fe156abdd5f979942084a6f70424e03cc1337208cb7f18",
+          "review_note": "Preserved the strongest documented administration or agency rationale and concrete future tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "1c2daa46772e1909d5de271621fc408b8ff1710851ca6c437af7218cd5a77d8b",
+          "review_note": "Reviewed plausible alternatives; Therefore is limited to established evidence and current lifecycle status."
+        }
+      ],
+      "unresolved_questions": [
+        "Processing-time, payment, exception-use and enforcement effects remain unmeasured until after the October 16 effective date."
       ]
     }
   ],
