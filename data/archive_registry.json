@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "status": "active_registry",
-  "checked_at": "2026-09-16T04:25:00Z",
+  "checked_at": "2026-09-16T10:38:43Z",
   "registry_purpose": "Describe independent Trump-related archives as a federated research network without pretending that unlike record units are interchangeable or additive.",
   "invariants": [
     "An upstream archive is a discovery and corroboration source, not an automatic authority for The Record.",
@@ -189,7 +189,7 @@
         "content_import_permission_state": "license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-09-16T10:11:34Z",
+        "checked_at": "2026-09-16T10:38:43Z",
         "state": "success",
         "verification_pages": [
           "https://trump-archive.com/archive"
@@ -382,8 +382,8 @@
         "content_import_permission_state": "bulk_permission_or_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-09-16T10:11:34Z",
-        "state": "partial_success",
+        "checked_at": "2026-09-16T10:38:43Z",
+        "state": "success",
         "verification_pages": [
           "https://www.undotrump.com/"
         ]
@@ -435,15 +435,14 @@
         {
           "metric_id": "iptp.policy_actions_browse",
           "as_reported_label": "Policy Actions",
-          "value": 1791,
+          "value": 1792,
           "unit": "immigration_policy_action",
           "scope": "all policies shown on the policies browse page",
           "comparability_group": "domain_policy_action",
-          "observed_at": "2026-09-16T10:11:34Z",
+          "observed_at": "2026-09-16T10:38:43Z",
           "source_url": "https://immpolicytracking.org/policies/",
           "upstream_display_date": null,
-          "quality_flag": "unexpected_upstream_count_decrease_under_review",
-          "note": "The primary policies page displayed 1,791 actions, down from the previously observed 1,792. The decrease is preserved and flagged rather than treated as deletion or parser error."
+          "note": "The primary policies page displayed 1,792 actions. This restores the prior value after a transient 1,791 reading and is preserved as a newly verified observation, not added to other archive units."
         }
       ],
       "trump_1_current_status_breakdown": [
@@ -536,8 +535,8 @@
         "content_import_permission_state": "permission_or_documented_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-09-16T10:11:34Z",
-        "state": "success_with_quality_flag",
+        "checked_at": "2026-09-16T10:38:43Z",
+        "state": "success",
         "verification_pages": [
           "https://immpolicytracking.org/policies/"
         ]
@@ -741,10 +740,12 @@
         "content_import_permission_state": "metadata_and_citation_allowed_full_content_license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-09-16T10:11:34Z",
+        "checked_at": "2026-09-16T10:38:43Z",
         "state": "success",
         "verification_pages": [
-          "https://record47.org/"
+          "https://record47.org/",
+          "https://api.record47.org/counts",
+          "https://api.record47.org/entries?limit=1"
         ]
       }
     }
