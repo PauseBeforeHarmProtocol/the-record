@@ -3205,6 +3205,66 @@
       "provenance_path": "data/editorial_change_notes/10.68.0.json",
       "provenance_sha256": "c2975445ad2910521e389228cee43563dfa80314415b6c92c6823385337c494c",
       "note": "As-of time is the editorial cutoff, not the event occurrence or source-inspection time; original event dates retained."
+    },
+    {
+      "change_id": "10.69.0:NAT-2026-09-17-001",
+      "entry_id": "NAT-2026-09-17-001",
+      "as_of_utc": "2026-09-17T22:01:27Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.69.0",
+      "summary": "Added the implemented BitBank network designations; kept transfer accusations attributed and effectiveness unmeasured.",
+      "provenance_path": "data/editorial_change_notes/10.69.0.json",
+      "provenance_sha256": "3cf3fa32e7863a45f77462c524ee1ed039b58da1e61df47d053a8c1708379333",
+      "note": "As-of time is the research cutoff, not the source inspection or event time. Original event dates retained."
+    },
+    {
+      "change_id": "10.69.0:NAT-2026-09-17-002",
+      "entry_id": "NAT-2026-09-17-002",
+      "as_of_utc": "2026-09-17T22:01:27Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.69.0",
+      "summary": "Added eight enterprise and three official listings; did not count aliases as additional targets.",
+      "provenance_path": "data/editorial_change_notes/10.69.0.json",
+      "provenance_sha256": "3cf3fa32e7863a45f77462c524ee1ed039b58da1e61df47d053a8c1708379333",
+      "note": "As-of time is the research cutoff, not the source inspection or event time. Original event dates retained."
+    },
+    {
+      "change_id": "10.69.0:NAT-2026-09-16-008",
+      "entry_id": "NAT-2026-09-16-008",
+      "as_of_utc": "2026-09-17T22:01:27Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.69.0",
+      "summary": "Restored the September 16 committee vote as a prior-window omission; did not treat it as enactment.",
+      "provenance_path": "data/editorial_change_notes/10.69.0.json",
+      "provenance_sha256": "3cf3fa32e7863a45f77462c524ee1ed039b58da1e61df47d053a8c1708379333",
+      "note": "As-of time is the research cutoff, not the source inspection or event time. Original event dates retained."
+    },
+    {
+      "change_id": "10.69.0:NAT-2026-09-16-001",
+      "entry_id": "NAT-2026-09-16-001",
+      "as_of_utc": "2026-09-17T22:01:27Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.69.0",
+      "summary": "Confirmed OFAC delisting of Lakokraska and Bellesbumprom, replacing the prior documentary gap without recounting the 25 releases.",
+      "provenance_path": "data/editorial_change_notes/10.69.0.json",
+      "provenance_sha256": "3cf3fa32e7863a45f77462c524ee1ed039b58da1e61df47d053a8c1708379333",
+      "note": "As-of time is the research cutoff, not the source inspection or event time. Original event dates retained."
+    },
+    {
+      "change_id": "10.69.0:NAT-2026-09-15-006",
+      "entry_id": "NAT-2026-09-15-006",
+      "as_of_utc": "2026-09-17T22:01:27Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.69.0",
+      "summary": "Added independently reported 30-day notice requirement and temporary safety-closure explanation; complete order retrieval remains a disclosed limitation.",
+      "provenance_path": "data/editorial_change_notes/10.69.0.json",
+      "provenance_sha256": "3cf3fa32e7863a45f77462c524ee1ed039b58da1e61df47d053a8c1708379333",
+      "note": "As-of time is the research cutoff, not the source inspection or event time. Original event dates retained."
     }
   ],
   "reviews": [
@@ -27655,6 +27715,728 @@
       ],
       "unresolved_questions": [
         "Implementation, later court or legislative action and independently measured consequences remain open. Unchanged historical claims retain their original inspection metadata, not a fabricated reinspection."
+      ]
+    },
+    {
+      "review_id": "10.69.0:NAT-2026-09-17-001:a808c99cae75",
+      "entry_id": "NAT-2026-09-17-001",
+      "content_sha256": "a808c99cae751368a6c0f8d0a3b27c0145e6b1f57a9e530efed28a516db16cfc",
+      "reviewed_at": "2026-09-17T22:15:05.742553Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "ce61a30215cb25d5eb4489047722b6b0b51b169ec0419ad2f9efee177fd438a6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_iran_cuba_belarus_sep17",
+              "document_sha256": "2a7a891db2e3bebe58e6d3d31935e5c08e25aed971c368d08cc74b5ea549b977",
+              "locator": "September 17 action: named additions, program tags and deletion section; aliases are not counted as separate companies. Hash identifies the retained indexed-document extraction, not publisher HTML bytes.",
+              "inspected_at": "2026-09-17T22:15:05.742553Z",
+              "origin_group": "U.S. Treasury / OFAC",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "treasury_bitbank_sep17",
+              "document_sha256": "01b239da32319c5b67774234659e1fbc8b3c52ddd61262566489a545a8ff4fd3",
+              "locator": "Operative designation paragraphs, BitBank section and Sanctions Implications; allegations distinguished from listing effects. Hash identifies the retained indexed-document extraction, not publisher HTML bytes.",
+              "inspected_at": "2026-09-17T22:15:05.742553Z",
+              "origin_group": "U.S. Treasury / OFAC",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "29618ae88130243f91440fbb6933f861b4e9d593f11551fc717cad3ca9f1fdec",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_bitbank_sep17",
+              "document_sha256": "01b239da32319c5b67774234659e1fbc8b3c52ddd61262566489a545a8ff4fd3",
+              "locator": "Operative designation paragraphs, BitBank section and Sanctions Implications; allegations distinguished from listing effects. Hash identifies the retained indexed-document extraction, not publisher HTML bytes.",
+              "inspected_at": "2026-09-17T22:15:05.742553Z",
+              "origin_group": "U.S. Treasury / OFAC",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "05c8a0c9daef2e72d800282cb99e0195cc2dcd85043fa7248c42b0e7b2fb2aac",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_bitbank_sep17",
+              "document_sha256": "01b239da32319c5b67774234659e1fbc8b3c52ddd61262566489a545a8ff4fd3",
+              "locator": "Operative designation paragraphs, BitBank section and Sanctions Implications; allegations distinguished from listing effects. Hash identifies the retained indexed-document extraction, not publisher HTML bytes.",
+              "inspected_at": "2026-09-17T22:15:05.742553Z",
+              "origin_group": "U.S. Treasury / OFAC",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ofac_iran_cuba_belarus_sep17",
+              "document_sha256": "2a7a891db2e3bebe58e6d3d31935e5c08e25aed971c368d08cc74b5ea549b977",
+              "locator": "September 17 action: named additions, program tags and deletion section; aliases are not counted as separate companies. Hash identifies the retained indexed-document extraction, not publisher HTML bytes.",
+              "inspected_at": "2026-09-17T22:15:05.742553Z",
+              "origin_group": "U.S. Treasury / OFAC",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "2ee6d7e0345465547c9ef86fbc7cea82b104f591e375f6520dd3afa4d3f189b9",
+          "review_note": "Reviewed institutional consequences independently of claims of measured effectiveness; no success or harm estimate inferred."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "02710a50201e834f264c56d73d577219a6694cb8ecd1d5012b66f42d9829ba30",
+          "review_note": "Reviewed the strongest available official rationale and relevant response, with documentary tests for subsequent outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "320ec32d2cd14e1655a16782c958d533a577edc67ebe63ae9e8761f0ea0acd01",
+          "review_note": "Reviewed alternatives separately; Therefore is confined to the evidenced procedural or implemented stage, with unresolved outcomes explicit."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation and measurable consequences remain open. Unchanged historical claims retain prior inspection metadata; no reinspection is implied."
+      ]
+    },
+    {
+      "review_id": "10.69.0:NAT-2026-09-17-002:3d53e950aace",
+      "entry_id": "NAT-2026-09-17-002",
+      "content_sha256": "3d53e950aacee27e167913cadbfe4636f11faff2f437381f62e30cdcfd9f39fe",
+      "reviewed_at": "2026-09-17T22:15:05.742553Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "716405648fd7d1b3e6dfa0d5c4667925b6dcb0bbceeab295c2c451a764afc7d3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_iran_cuba_belarus_sep17",
+              "document_sha256": "2a7a891db2e3bebe58e6d3d31935e5c08e25aed971c368d08cc74b5ea549b977",
+              "locator": "September 17 action: named additions, program tags and deletion section; aliases are not counted as separate companies. Hash identifies the retained indexed-document extraction, not publisher HTML bytes.",
+              "inspected_at": "2026-09-17T22:15:05.742553Z",
+              "origin_group": "U.S. Treasury / OFAC",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "9a0812980b7167eee3221cc93ead7f3b567c0d28dce28c2552d75563aff0e6e8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_iran_cuba_belarus_sep17",
+              "document_sha256": "2a7a891db2e3bebe58e6d3d31935e5c08e25aed971c368d08cc74b5ea549b977",
+              "locator": "September 17 action: named additions, program tags and deletion section; aliases are not counted as separate companies. Hash identifies the retained indexed-document extraction, not publisher HTML bytes.",
+              "inspected_at": "2026-09-17T22:15:05.742553Z",
+              "origin_group": "U.S. Treasury / OFAC",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "42e613650d1c16932267584be1d26cbd1cb77edb0083a7508ec4115e191f906e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_cuba_nickel_sep17",
+              "document_sha256": "7895380cd89c25e2408144b95f5bf8e9674822310b896f615e99479df19dd20f",
+              "locator": "September 17 18:31 UTC report: Rubio rationale, four nickel entities, four military enterprises, three officials and earlier Cuban response. Hash identifies the retained indexed-document extraction, not publisher HTML bytes.",
+              "inspected_at": "2026-09-17T22:15:05.742553Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "eaf85db4d85064ea19b5e2ad1a9f730d69529c80b86d00650cee58671f89b538",
+          "review_note": "Reviewed institutional consequences independently of claims of measured effectiveness; no success or harm estimate inferred."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "5e614f1638326e21faec8896c665e57033a1251fafc31d8428d808aa9821f9af",
+          "review_note": "Reviewed the strongest available official rationale and relevant response, with documentary tests for subsequent outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "a20d6487912bb06b268e8330097361e4a0d8ba191739141fe6b7b34635913d0c",
+          "review_note": "Reviewed alternatives separately; Therefore is confined to the evidenced procedural or implemented stage, with unresolved outcomes explicit."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation and measurable consequences remain open. Unchanged historical claims retain prior inspection metadata; no reinspection is implied."
+      ]
+    },
+    {
+      "review_id": "10.69.0:NAT-2026-09-16-008:e82b98ef5598",
+      "entry_id": "NAT-2026-09-16-008",
+      "content_sha256": "e82b98ef5598980cc04e32d252f737062a73c88c656addb63b6ea415b227c703",
+      "reviewed_at": "2026-09-17T22:15:05.742553Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "388e0134d587d4d0d23a4778ea45ee0f0a3a5271c83719051f85acf90c4a4650",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "senate_ag_farm_passage_sep16",
+              "document_sha256": "50e62892ecc4b55d7863b3de57c36ddd867a90c9fb7599ec20cd45887693fe17",
+              "locator": "September 16 passage announcement and chairman's explanation; no enacted-law claim. Hash identifies the retained indexed-document extraction, not publisher HTML bytes.",
+              "inspected_at": "2026-09-17T22:15:05.742553Z",
+              "origin_group": "U.S. Senate Agriculture Committee",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "agwired_farm_vote_sep17",
+              "document_sha256": "292889f734f0d9f728927aecac3722a8e32fb2ae05634586a4a22cfd1ad29e7b",
+              "locator": "Cindy Zimmerman report: 12–11 committee vote, resumed August markup, Ernst amendment dispute and Klobuchar's SNAP cost-share position. AgNewsWire syndication is not a second origin. Hash identifies the retained indexed-document extraction, not publisher HTML bytes.",
+              "inspected_at": "2026-09-17T22:15:05.742553Z",
+              "origin_group": "AgWired / Cindy Zimmerman",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5adc562869a6e55bc49aeb3f1977d25929e201b1870c30b73adaf4814b9fd56f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "senate_ag_farm_passage_sep16",
+              "document_sha256": "50e62892ecc4b55d7863b3de57c36ddd867a90c9fb7599ec20cd45887693fe17",
+              "locator": "September 16 passage announcement and chairman's explanation; no enacted-law claim. Hash identifies the retained indexed-document extraction, not publisher HTML bytes.",
+              "inspected_at": "2026-09-17T22:15:05.742553Z",
+              "origin_group": "U.S. Senate Agriculture Committee",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "ca78ce705749a4d6f17f2b368bbdec51c48b268c1b4448ae9d198df1f7d05cda",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "agwired_farm_vote_sep17",
+              "document_sha256": "292889f734f0d9f728927aecac3722a8e32fb2ae05634586a4a22cfd1ad29e7b",
+              "locator": "Cindy Zimmerman report: 12–11 committee vote, resumed August markup, Ernst amendment dispute and Klobuchar's SNAP cost-share position. AgNewsWire syndication is not a second origin. Hash identifies the retained indexed-document extraction, not publisher HTML bytes.",
+              "inspected_at": "2026-09-17T22:15:05.742553Z",
+              "origin_group": "AgWired / Cindy Zimmerman",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "a0aa7002bc0a1750ef0387936748e93c96ff037333f0e139cc68fdb977659514",
+          "review_note": "Reviewed institutional consequences independently of claims of measured effectiveness; no success or harm estimate inferred."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "4e144b7ca36add709afeb44e8e670db20bcaa65394c3a6c4091e7fff4b18fb4e",
+          "review_note": "Reviewed the strongest available official rationale and relevant response, with documentary tests for subsequent outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "cbe8342a092b37b258ee89ca6bf3ee16182b0df79831051b4765063c6c3ebf07",
+          "review_note": "Reviewed alternatives separately; Therefore is confined to the evidenced procedural or implemented stage, with unresolved outcomes explicit."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation and measurable consequences remain open. Unchanged historical claims retain prior inspection metadata; no reinspection is implied."
+      ]
+    },
+    {
+      "review_id": "10.69.0:NAT-2026-09-16-001:bc65014a2bf9",
+      "entry_id": "NAT-2026-09-16-001",
+      "content_sha256": "bc65014a2bf9134ca7a77a134b6af31655ceef01a02e2201e4c00bf53fa6a9f1",
+      "reviewed_at": "2026-09-17T22:15:05.742553Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "52096b0127e34c17cecbe0b49e01e0b3b74c7b0c2526c300f17808d9d42e48c9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_belarus_prisoner_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "b04e8f99a979a56ff5adc873fe7cc21f48f10194dbe94c17c8321193b56a38e2",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_belarus_completed_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "70af5a85518874b94c4012be7776a680fc256925e68720fbb1fb6c63e2f3684f",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "3ced615f1f84dbb7d0d7c3c27d03d016ecf6ea92d39f14bd236e0de13ab1f2ba",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_belarus_prisoner_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "b04e8f99a979a56ff5adc873fe7cc21f48f10194dbe94c17c8321193b56a38e2",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_belarus_completed_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "70af5a85518874b94c4012be7776a680fc256925e68720fbb1fb6c63e2f3684f",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "b00f450bdbd350e1d65d122b059458419520d9e20660aaf0b89084ca18166940",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_belarus_prisoner_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "b04e8f99a979a56ff5adc873fe7cc21f48f10194dbe94c17c8321193b56a38e2",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_belarus_completed_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "70af5a85518874b94c4012be7776a680fc256925e68720fbb1fb6c63e2f3684f",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "adaa0fa68a4cfc875bbf6b02c05b45ee379387c7d20f9100ba58d0f9b604f6aa",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_belarus_prisoner_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "b04e8f99a979a56ff5adc873fe7cc21f48f10194dbe94c17c8321193b56a38e2",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_belarus_completed_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "70af5a85518874b94c4012be7776a680fc256925e68720fbb1fb6c63e2f3684f",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "3bd8eca1f52002021ed838a1b4c9d5e99ce6ea460ea9fc3736016406ac1bab53",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_belarus_prisoner_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "b04e8f99a979a56ff5adc873fe7cc21f48f10194dbe94c17c8321193b56a38e2",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_belarus_completed_release_sep16",
+              "locator": "Inspected on-site reporting, released-prisoner accounts, named U.S. envoy statements, company names and contemporaneous political-prisoner counts.",
+              "inspected_at": "2026-09-16T16:01:00Z",
+              "document_sha256": "70af5a85518874b94c4012be7776a680fc256925e68720fbb1fb6c63e2f3684f",
+              "origin_group": "Reuters and Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "171e18d0384e0b067ce2bae3816d25edc554853c66471ad5cd9f5b45e2401234",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_iran_cuba_belarus_sep17",
+              "document_sha256": "2a7a891db2e3bebe58e6d3d31935e5c08e25aed971c368d08cc74b5ea549b977",
+              "locator": "September 17 action: named additions, program tags and deletion section; aliases are not counted as separate companies. Hash identifies the retained indexed-document extraction, not publisher HTML bytes.",
+              "inspected_at": "2026-09-17T22:15:05.742553Z",
+              "origin_group": "U.S. Treasury / OFAC",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "f0bc45db7b4d859bca25151bd610770157539e45877d92b55fb86eab0b7850cb",
+          "review_note": "Reviewed institutional consequences independently of claims of measured effectiveness; no success or harm estimate inferred."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "676d3c37659c0de0fd1534e426747f09b61595a91f832aef84c55b8918eb7c8a",
+          "review_note": "Reviewed the strongest available official rationale and relevant response, with documentary tests for subsequent outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "2f412d584d424d4a86ed04db757ce0e290fc5d3c3809e0d9d7e600aeafe9450f",
+          "review_note": "Reviewed alternatives separately; Therefore is confined to the evidenced procedural or implemented stage, with unresolved outcomes explicit."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation and measurable consequences remain open. Unchanged historical claims retain prior inspection metadata; no reinspection is implied."
+      ]
+    },
+    {
+      "review_id": "10.69.0:NAT-2026-09-15-006:81c29c6d3b2a",
+      "entry_id": "NAT-2026-09-15-006",
+      "content_sha256": "81c29c6d3b2aa3ca0d3a62acdf9ed60c8a5315ac64812736bd69107967efdd54",
+      "reviewed_at": "2026-09-17T22:15:05.742553Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "64bdfafc542c233be62b8e455c22a28df740dafe65d923cf79c144409e54df23",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_kennedy_center_order_sep15",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "fe51b7f3b3c9ed400d9d35ce313ed5286942d98670fffb8beba730e825288f06",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_kennedy_center_closure_sep15",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "2d960c1b5763570cb11d6cd4cfdbc1839000e5edcbb159843e3a4da10bc35f3d",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "truth_kennedy_center_closure_sep15",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "0b7c944baabbb555c16649c6df2c8130424f43565083277e1179544be0c3218e",
+              "origin_group": "Truth Social",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_kennedy_closure_order_sep16",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "880a6c59a4d1c26fcab004d9f24ecc61387f773281d12b79f179e8d4bc75eb0c",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_kennedy_fencing_sep16",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "6a1095935ab40a232f72c8c8b52570912d482696f6e214cd496c44c81cd6a6fd",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "10645d4ee9be95464de573deefa31e9bcc333ab3ca929a6efc3834475ba0fc60",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_kennedy_center_order_sep15",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "fe51b7f3b3c9ed400d9d35ce313ed5286942d98670fffb8beba730e825288f06",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_kennedy_center_closure_sep15",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "2d960c1b5763570cb11d6cd4cfdbc1839000e5edcbb159843e3a4da10bc35f3d",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "truth_kennedy_center_closure_sep15",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "0b7c944baabbb555c16649c6df2c8130424f43565083277e1179544be0c3218e",
+              "origin_group": "Truth Social",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_kennedy_closure_order_sep16",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "880a6c59a4d1c26fcab004d9f24ecc61387f773281d12b79f179e8d4bc75eb0c",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_kennedy_fencing_sep16",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "6a1095935ab40a232f72c8c8b52570912d482696f6e214cd496c44c81cd6a6fd",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "edaacabe05dc9c698b4e5485d506119ddbcc7cfa0c963254a203e7ecf58015b1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_kennedy_center_order_sep15",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "fe51b7f3b3c9ed400d9d35ce313ed5286942d98670fffb8beba730e825288f06",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_kennedy_center_closure_sep15",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "2d960c1b5763570cb11d6cd4cfdbc1839000e5edcbb159843e3a4da10bc35f3d",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "truth_kennedy_center_closure_sep15",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "0b7c944baabbb555c16649c6df2c8130424f43565083277e1179544be0c3218e",
+              "origin_group": "Truth Social",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_kennedy_closure_order_sep16",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "880a6c59a4d1c26fcab004d9f24ecc61387f773281d12b79f179e8d4bc75eb0c",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_kennedy_fencing_sep16",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "6a1095935ab40a232f72c8c8b52570912d482696f6e214cd496c44c81cd6a6fd",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "42619f5a2c4d5461a56a1a02fb1dd2dc2e1be2bc952d1059ab909504fe548a73",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_kennedy_center_order_sep15",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "fe51b7f3b3c9ed400d9d35ce313ed5286942d98670fffb8beba730e825288f06",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_kennedy_center_closure_sep15",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "2d960c1b5763570cb11d6cd4cfdbc1839000e5edcbb159843e3a4da10bc35f3d",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "truth_kennedy_center_closure_sep15",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "0b7c944baabbb555c16649c6df2c8130424f43565083277e1179544be0c3218e",
+              "origin_group": "Truth Social",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_kennedy_closure_order_sep16",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "880a6c59a4d1c26fcab004d9f24ecc61387f773281d12b79f179e8d4bc75eb0c",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_kennedy_fencing_sep16",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "6a1095935ab40a232f72c8c8b52570912d482696f6e214cd496c44c81cd6a6fd",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "a47644dd36cf70eb413058b954b799de621789bca7a5fd4d2e6aecc17d4cd0c2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_kennedy_center_order_sep15",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "fe51b7f3b3c9ed400d9d35ce313ed5286942d98670fffb8beba730e825288f06",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_kennedy_center_closure_sep15",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "2d960c1b5763570cb11d6cd4cfdbc1839000e5edcbb159843e3a4da10bc35f3d",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "truth_kennedy_center_closure_sep15",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "0b7c944baabbb555c16649c6df2c8130424f43565083277e1179544be0c3218e",
+              "origin_group": "Truth Social",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_kennedy_closure_order_sep16",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "880a6c59a4d1c26fcab004d9f24ecc61387f773281d12b79f179e8d4bc75eb0c",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_kennedy_fencing_sep16",
+              "locator": "Inspected the source's operative facts, status, attribution, response and stated limitations relevant to this record.",
+              "inspected_at": "2026-09-16T21:58:16Z",
+              "document_sha256": "6a1095935ab40a232f72c8c8b52570912d482696f6e214cd496c44c81cd6a6fd",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "49c7557b7b4426f7539763833baede310d29f2d2b2171fdb10b377243a0bc1fb",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_kennedy_demolition_filing_sep17",
+              "document_sha256": "cb1bbd83df0fd0a3c50c7da9615f4e86806fdd38527db6ac6c9fdd340e1d8513",
+              "locator": "September 17 14:05 UTC article: attributed presidential remarks, plaintiff filing and explicit lack of photograph verification; SHA-256 identifies the retained indexed-document extraction, not publisher HTML bytes.",
+              "inspected_at": "2026-09-17T16:19:49.578820Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "f1ed76b7fcb89f40efc03402e1981a65a5e92b05b867d0edd4c560a629536989",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_kennedy_demolition_filing_sep17",
+              "document_sha256": "5905eda62257da9f84e288240b28405c7ee6a413ff19874680d0c3524a24aed1",
+              "locator": "Updated September 17 article, opening and Emergency Hearing Denied section: 30-day notice, hearing denied and seven-day safety explanation. This is a later content version of the existing URL. Hash identifies the retained indexed-document extraction, not publisher HTML bytes.",
+              "inspected_at": "2026-09-17T22:15:05.742553Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_kennedy_notice_order_sep17",
+              "document_sha256": "2fbaefd9c4c7c1c9945380884e5e6df8a39b7418f202c948d0e76c7e7c88eb79",
+              "locator": "Opening, Floca safety explanation and paragraph reporting denial of emergency hearing; distinguishes temporary safety closure and broader board plan. Hash identifies the retained indexed-document extraction, not publisher HTML bytes.",
+              "inspected_at": "2026-09-17T22:15:05.742553Z",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "e0cc453eaf39f46fcb804d2bc1ac011bda22c2b8144e394b2d24e30a8a5fbc8e",
+          "review_note": "Reviewed institutional consequences independently of claims of measured effectiveness; no success or harm estimate inferred."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "fb5fec00592514e7736a6df82ed70a86d5b6949b71b351c49123e3c5959aed96",
+          "review_note": "Reviewed the strongest available official rationale and relevant response, with documentary tests for subsequent outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "92fb9a69fdcce847012c6d5569ed4450f75abb52af1ae1906815c8778e5e2da6",
+          "review_note": "Reviewed alternatives separately; Therefore is confined to the evidenced procedural or implemented stage, with unresolved outcomes explicit."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation and measurable consequences remain open. Unchanged historical claims retain prior inspection metadata; no reinspection is implied."
       ]
     }
   ],

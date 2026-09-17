@@ -1,40 +1,38 @@
 {
-  "version": "10.68.0",
+  "version": "10.69.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-16T21:58:16Z",
-    "through_utc": "2026-09-17T16:01:25Z",
+    "from_utc": "2026-09-17T16:01:25Z",
+    "through_utc": "2026-09-17T22:01:27Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Coverage begins at current main, not the unpublished draft boundary. Four new records and two material updates passed individual review. Source retrieval/check times are recorded separately from the editorial cutoff."
+    "note": "Three new records and two material refreshes; the September 16 farm-bill committee vote is a prior-window omission. Retrieval and review times are separate from the publication cutoff."
   },
   "release_iso": "2026-09-17",
   "release_human": "September 17, 2026",
-  "checked_at": "2026-09-17 12:01 PM EDT",
-  "previous_version": "10.67.0",
-  "previous_checked_at": "2026-09-16 5:58 PM EDT",
-  "window_started_at": "2026-09-16 5:58 PM EDT",
-  "window_ended_at": "2026-09-17 12:01 PM EDT",
+  "checked_at": "2026-09-17 6:01 PM EDT",
+  "previous_version": "10.68.0",
+  "previous_checked_at": "2026-09-17 12:01 PM EDT",
+  "window_started_at": "2026-09-17 12:01 PM EDT",
+  "window_ended_at": "2026-09-17 6:01 PM EDT",
   "week_start": "2026-09-14",
   "week_end": "2026-09-20",
   "week_label": "September 14–20, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-16-004",
-    "NAT-2026-09-16-005",
-    "NAT-2026-09-16-006",
-    "NAT-2026-09-16-007",
-    "NAT-2026-09-08-005",
+    "NAT-2026-09-17-001",
+    "NAT-2026-09-17-002",
+    "NAT-2026-09-16-008",
+    "NAT-2026-09-16-001",
     "NAT-2026-09-15-006"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-16-004",
-    "NAT-2026-09-16-005",
-    "NAT-2026-09-16-006",
-    "NAT-2026-09-16-007"
+    "NAT-2026-09-17-001",
+    "NAT-2026-09-17-002",
+    "NAT-2026-09-16-008"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-09-08-005",
+    "NAT-2026-09-16-001",
     "NAT-2026-09-15-006"
   ],
   "dedupe_resolutions": [
@@ -193,52 +191,68 @@
       "target_id": "NAT-2026-08-27-014",
       "decision": "distinct_lifecycle_stage",
       "notes": "The August 27 record tests EPA's estimated savings from a vehicle-emissions rollback. The September 15 record measures subsequent EV-factory cancellations and auto-employment outcomes across multiple tax, regulatory, trade and immigration policies; the study subjects and lifecycle stages differ."
+    },
+    {
+      "entry_id": "NAT-2026-09-17-001",
+      "target_id": "NAT-2026-09-17-002",
+      "decision": "false_positive",
+      "notes": "One OFAC daily notice covers distinct Iran and Cuba target-level actions under different programs; shared URL is not shared event."
+    },
+    {
+      "entry_id": "NAT-2026-09-17-001",
+      "target_id": "NAT-2026-09-16-001",
+      "decision": "false_positive",
+      "notes": "The OFAC daily notice includes both Iranian additions and Belarus deletions; these are different targets, programs and directions of legal change."
+    },
+    {
+      "entry_id": "NAT-2026-09-17-002",
+      "target_id": "NAT-2026-09-16-001",
+      "decision": "false_positive",
+      "notes": "The shared daily notice does not merge Cuba additions with the implementation of a separate Belarus diplomatic exchange."
+    },
+    {
+      "entry_id": "NAT-2026-09-17-001",
+      "target_id": "NAT-2026-09-04-007",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The shared EO 13902 authority covers distinct designation actions. September 17 identifies BitBank, its developer and three individuals rather than the earlier banking, aviation and proxy targets."
+    },
+    {
+      "entry_id": "NAT-2026-09-17-001",
+      "target_id": "NAT-2026-09-14-005",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The September 17 digital-asset listings are a distinct target-level action from VTB's September 14 listing, despite shared Iran authority."
+    },
+    {
+      "entry_id": "NAT-2026-09-17-002",
+      "target_id": "NAT-2026-09-03-003",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The September 17 nickel and military-research targets differ from the September 3 Cuba action; neither set is counted again."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Fuel-hauler hours waiver",
-      "reason": "The complete waiver could not be retrieved in this review. The earlier unpublished draft’s 16-hour/14-hour comparison requires verification against the actual rule and waiver; no prior draft review is treated as source evidence."
+      "title": "FCC Paramount foreign-investment approval details",
+      "reason": "A late-window Reuters report describes conditional approval, but the original Media Bureau decision, ownership limits and complete conditions were not retrieved. Keep the regulatory lead distinct from the existing DOJ bond-position record."
     },
     {
-      "title": "Palestinian visa sanctions",
-      "reason": "The primary State Department notice and full independent report were not successfully retrieved for renewed source-level review; preserve the unpublished lead without claiming a fresh validation."
+      "title": "Endangered Species Act intentional-take enforcement directive",
+      "reason": "AP reports a consequential Fish and Wildlife Service directive, but the complete directive and operative scope were not inspected. Do not equate a reported enforcement interpretation with a statutory repeal."
     },
     {
-      "title": "U.N. Iran findings",
-      "reason": "The earlier unpublished draft’s source-to-claim mapping cannot be reused as inspection evidence; original report and claim-specific verification remain pending."
+      "title": "Saudi F-35 sale and Senate college-sports vote",
+      "reason": "Discovery and social leads lacked inspected original notification or roll-call/bill records. No delivered aircraft, enacted sports law or verified polling result is inferred."
     },
     {
-      "title": "SEC tokenized-stock exemption",
-      "reason": "A potentially material new exemption was discovered, but its original order, eligibility and conditions were not inspected; headline alone is insufficient."
+      "title": "Poland base and promotional social claims",
+      "reason": "Trump's Poland post is conditional, with no inspected agreement, appropriation or implementation record. A viewed image repost asserts convention audience numbers without independent measurement; another image was unavailable. These remain feed-only."
     },
     {
-      "title": "Preventive Services Task Force appointments",
-      "reason": "Reuters reports eight appointments; original appointment/roster evidence, agency rationale and a separately reviewed entry remain pending. No changed coverage recommendation is inferred."
+      "title": "Previously deferred source-inspection leads",
+      "reason": "Fuel-hauler waiver, Palestinian visa sanctions, UN Iran findings, SEC exemption, health appointments and East Potomac award leads remain in the existing queue. No prior draft or discovery summary was promoted as fresh documentary verification."
     },
     {
-      "title": "Senate speech-pressure bill",
-      "reason": "The prior-window 18–10 committee vote is a lead pending inspection of the bill and committee record. It is not enacted protection."
-    },
-    {
-      "title": "East Potomac golf contract",
-      "reason": "Underlying award documents remain uninspected; no contract terms or expenditures are inferred from the earlier lead."
-    },
-    {
-      "title": "Truth Social posts and media",
-      "reason": "Eight posts newer than main remain in the separate feed. Promotional audience and faith-achievement claims lack independent outcome verification; Lake America coverage duplicates an existing event. Inaccessible media supply no visual evidence."
-    },
-    {
-      "title": "Kennedy Center photograph",
-      "reason": "Reuters expressly says the circulating photograph was not independently verified. It is not evidence of an approved or implemented demolition plan."
-    },
-    {
-      "title": "Legacy source-health queue",
-      "reason": "LEG-003957 still pairs an IRS/DOGE claim dated April 15 with an unrelated February 4 NPR payments-system source. No direct corrective source was established, so its warning and review state remain unchanged."
-    },
-    {
-      "title": "Other discovery exclusions",
-      "reason": "Unconfirmed Houthi-meeting reporting, anticipated USPS personnel changes, campaign rhetoric and independent Federal Reserve decisions were not converted into administration actions."
+      "title": "Legacy source-health remediation",
+      "reason": "LEG-003957 still has an unrelated NPR payments-system citation for an IRS/DOGE account. No record-specific corrective source was established; its warning and unreviewed state remain visible. Duplicate candidates remain queued, not mass-rewritten."
     }
   ],
   "corrections": [],
