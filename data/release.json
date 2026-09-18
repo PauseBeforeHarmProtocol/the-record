@@ -1,39 +1,40 @@
 {
-  "version": "10.72.0",
+  "version": "10.73.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-18T09:59:38Z",
-    "through_utc": "2026-09-18T16:00:10Z",
+    "from_utc": "2026-09-18T16:00:10Z",
+    "through_utc": "2026-09-18T21:59:46Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Five new records from independently inspected Federal Register instruments. Publication, effective dates and proposed status are kept distinct. Retrieval and review times are separate from the publication cutoff."
+    "note": "Three new records and two material lifecycle refreshes from a complete appellate opinion, a primary FAA determination, document-based cost reporting and consequential presidential announcements. Announced, measured and implemented states remain distinct; retrieval and review times are separate from the publication cutoff."
   },
   "release_iso": "2026-09-18",
   "release_human": "September 18, 2026",
-  "checked_at": "2026-09-18 12:00 PM EDT",
-  "previous_version": "10.71.0",
-  "previous_checked_at": "2026-09-18 5:59 AM EDT",
-  "window_started_at": "2026-09-18 5:59 AM EDT",
-  "window_ended_at": "2026-09-18 12:00 PM EDT",
+  "checked_at": "2026-09-18 5:59 PM EDT",
+  "previous_version": "10.72.0",
+  "previous_checked_at": "2026-09-18 12:00 PM EDT",
+  "window_started_at": "2026-09-18 12:00 PM EDT",
+  "window_ended_at": "2026-09-18 5:59 PM EDT",
   "week_start": "2026-09-14",
   "week_end": "2026-09-20",
   "week_label": "September 14–20, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-18-001",
-    "NAT-2026-09-18-002",
-    "NAT-2026-09-18-003",
-    "NAT-2026-09-18-004",
-    "NAT-2026-09-18-005"
+    "NAT-2026-09-18-006",
+    "NAT-2026-09-18-007",
+    "NAT-2026-09-18-008",
+    "NAT-2026-08-17-001",
+    "NAT-2026-08-28-012"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-18-001",
-    "NAT-2026-09-18-002",
-    "NAT-2026-09-18-003",
-    "NAT-2026-09-18-004",
-    "NAT-2026-09-18-005"
+    "NAT-2026-09-18-006",
+    "NAT-2026-09-18-007",
+    "NAT-2026-09-18-008"
   ],
-  "refreshed_entry_ids": [],
+  "refreshed_entry_ids": [
+    "NAT-2026-08-17-001",
+    "NAT-2026-08-28-012"
+  ],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -242,36 +243,36 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Reported nationwide Medicaid most-favored-nation drug pricing",
-      "reason": "Reuters now attributes the anticipated announcement to a White House official, but the action remained prospective by cutoff and no operative agreement, drug list, state participation terms, price schedule or effective date was published."
+      "title": "Solar for All termination ruling",
+      "reason": "Reuters and AP independently reported that the district court vacated EPA's $7 billion program termination, but the complete September 18 opinion was not retrievable from the public docket by cutoff. The ruling remains queued for primary-record inspection rather than being reconstructed from coverage."
     },
     {
-      "title": "Virginia voter-record investigation allegations",
-      "reason": "Associated Press reported a state inquiry and whistleblower allegations, but the underlying records were not completely inspected and no verified violation, charge or adjudicated result was established."
+      "title": "Nationwide Medicaid most-favored-nation drug pricing",
+      "reason": "Reuters reported an administration announcement, but no complete CMS or White House instrument, participating-state terms, covered-drug list, price schedule or effective date was available for inspection."
     },
     {
-      "title": "ICE nomination withdrawal",
-      "reason": "The White House withdrew Lance Schroyer's nomination, but the personnel action created no new enforcement authority or policy and the archive already records the agency's operational and oversight developments."
+      "title": "Pharmaceutical licensing from China",
+      "reason": "Reporting about a possible administration plan relied substantially on unnamed sources and no independently confirmed rule, order or contract was established."
+    },
+    {
+      "title": "Virginia voter-record allegations",
+      "reason": "Underlying investigative records remained unavailable; allegations and an inquiry do not establish a violation, charge or adjudicated result."
+    },
+    {
+      "title": "Truth Social campaign, promotional and media-only posts",
+      "reason": "Twenty-two new posts received separate text and media states. Campaign endorsements, promotional claims and media-only posts announced no qualifying government action; seventeen attachments returned HTTP 403 or timed out, so no visual or audio claim was used."
     },
     {
       "title": "Previously deferred source-inspection leads",
-      "reason": "The ESA directive, FCC approval conditions, East Potomac award documents and conditional Poland-base claim remain queued pending complete operative records or measurable outcomes."
-    },
-    {
-      "title": "Truth Social posts",
-      "reason": "Two new posts were reviewed. A CNN attack and an opinion-link repost announced no order, investigation, sanction or independently verified government action and remain feed-only."
+      "reason": "ESA, FCC, East Potomac, Poland-base and other prior leads remain queued pending complete operative records or measurable outcomes."
     },
     {
       "title": "Legacy source-health remediation",
       "reason": "LEG-003957 still lacks a record-specific corrective source. Its visible warning and legacy-unreviewed state remain unchanged."
     },
     {
-      "title": "Uranium-enrichment capacity comments",
-      "reason": "Energy Department officials urged faster supplier development, but the cited $900 million awards were previously executed and no new contract, funding action or binding requirement was established in the interview."
-    },
-    {
       "title": "External archive measurements",
-      "reason": "Trump Archive advanced to 14,099 total items, including 11,670 Truth Social posts and 1,791 speeches or transcripts. UndoTrump and Immigration Policy Tracking were unchanged. Record47's API was unavailable and its rendered homepage showed lower summary values than later verified API observations, so the prior verified measurements were preserved rather than regressed. Unlike units remain separate."
+      "reason": "Trump Archive advanced to 14,101 total items and 11,672 Truth Social posts, while its speech/transcript count remained 1,791. UndoTrump and Immigration Policy Tracking were unchanged. Record47's API remained unavailable and lower rendered-homepage values did not replace later verified API observations; unlike units remain separate."
     }
   ],
   "corrections": [],

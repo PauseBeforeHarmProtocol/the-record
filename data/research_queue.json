@@ -2764,13 +2764,30 @@
     "first_seen_at": "2026-09-18T09:51:00Z",
     "timestamp_precision": "second",
     "status": "withheld",
-    "reason": "Reuters attributed the report to Semafor, could not independently verify it and received no confirmation from the White House or HHS. No operative agreement, state list, drug list or implementation record was inspected.",
-    "recheck_trigger": "A White House, HHS, CMS, manufacturer or state agreement specifying participants, medicines, prices and effective dates.",
+    "reason": "Reuters reported an administration announcement, but no complete CMS or White House instrument, participating-state terms, covered-drug list, price schedule or effective date was available for inspection. Announcement is not implementation.",
+    "recheck_trigger": "A complete White House or CMS instrument specifying states, medicines, prices, legal authority and effective dates.",
     "next_check_at": null,
     "provenance": [
-      "https://www.reuters.com/"
+      "https://www.reuters.com/world/us-plans-medicaid-most-favored-nation-pricing-some-drugs-all-states-semafor-2026-09-18/"
     ],
-    "canonical_id": null
+    "canonical_id": null,
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20260918-0600-01",
+        "title": "Reported nationwide Medicaid most-favored-nation drug pricing",
+        "first_seen_at": "2026-09-18T09:51:00Z",
+        "timestamp_precision": "second",
+        "status": "withheld",
+        "reason": "Reuters attributed the report to Semafor, could not independently verify it and received no confirmation from the White House or HHS. No operative agreement, state list, drug list or implementation record was inspected.",
+        "recheck_trigger": "A White House, HHS, CMS, manufacturer or state agreement specifying participants, medicines, prices and effective dates.",
+        "next_check_at": null,
+        "provenance": [
+          "https://www.reuters.com/"
+        ],
+        "canonical_id": null
+      }
+    ],
+    "last_checked_at": "2026-09-18T22:20:00Z"
   },
   {
     "candidate_id": "QUEUE-20260918-0600-02",
@@ -2826,6 +2843,51 @@
     "provenance": [
       "https://truthsocial.com/@realDonaldTrump/117292378116430890",
       "https://truthsocial.com/@realDonaldTrump/117292605168784403"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260918-1800-01",
+    "title": "Solar for All termination ruling",
+    "first_seen_at": "2026-09-18T19:30:00Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "reason": "Reuters and AP independently reported that the district court vacated EPA's $7 billion program termination, but the complete September 18 opinion was not retrievable from the public docket by cutoff. No holding is reconstructed beyond the independently reported result.",
+    "recheck_trigger": "Complete district-court opinion or official judgment and any appeal or stay.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.reuters.com/legal/litigation/trumps-epa-unlawfully-terminated-7-billion-solar-grant-program-judge-rules-2026-09-18/",
+      "https://apnews.com/article/climate-solar-for-all-trump-biden-lawsuit-0bae42fcf85906ea48ee0f6f4d6c83a9",
+      "https://www.courtlistener.com/docket/71560315/rhode-island-afl-cio-v-united-states-environmental-protection-agency/"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260918-1800-02",
+    "title": "Reported pharmaceutical licensing plan involving China",
+    "first_seen_at": "2026-09-18T20:05:00Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "reason": "The consequential account relied substantially on unnamed sources and no independently confirmed rule, order, agreement or contract was established by cutoff.",
+    "recheck_trigger": "A published government instrument, named-source confirmation or two independent reports supported by inspected operative terms.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.reuters.com/"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260918-1800-03",
+    "title": "Campaign, promotional and inaccessible-media Truth Social posts",
+    "first_seen_at": "2026-09-18T17:00:00Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "reason": "Campaign endorsements, promotional claims and media-only posts did not independently establish a qualifying government action. Seventeen media attachments returned HTTP 403 or timed out, so no visual or audio claim was used.",
+    "recheck_trigger": "An operative government instrument, independently verified qualifying action or retrievable evidence establishing a material development.",
+    "next_check_at": null,
+    "provenance": [
+      "https://truthsocial.com/@realDonaldTrump/117294006211890226",
+      "https://truthsocial.com/@realDonaldTrump/117293338603423306"
     ],
     "canonical_id": null
   }
