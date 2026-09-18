@@ -1,40 +1,27 @@
 {
-  "version": "10.70.0",
-  "artifact_mode": "full",
+  "version": "10.70.1",
+  "artifact_mode": "feed-only",
   "research_window": {
-    "from_utc": "2026-09-17T22:01:27Z",
-    "through_utc": "2026-09-18T04:00:08Z",
+    "from_utc": "2026-09-18T04:00:08Z",
+    "through_utc": "2026-09-18T04:33:02Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Three new records and two material refreshes. Retrieval and review times are separate from the publication cutoff."
+    "note": "Continuous research coverage begins at the prior release's exact UTC boundary. No separate candidate cleared the publication threshold; this release is limited to a materially newer validated Truth Social fallback. Feed retrieval and review times are recorded separately from the research cutoff."
   },
   "release_iso": "2026-09-18",
   "release_human": "September 18, 2026",
-  "checked_at": "2026-09-18 12:00 AM EDT",
-  "previous_version": "10.69.0",
-  "previous_checked_at": "2026-09-17 6:01 PM EDT",
-  "window_started_at": "2026-09-17 6:01 PM EDT",
-  "window_ended_at": "2026-09-18 12:00 AM EDT",
+  "checked_at": "2026-09-18 12:33 AM EDT",
+  "previous_version": "10.70.0",
+  "previous_checked_at": "2026-09-18 12:00 AM EDT",
+  "window_started_at": "2026-09-18 12:00 AM EDT",
+  "window_ended_at": "2026-09-18 12:33 AM EDT",
   "week_start": "2026-09-14",
   "week_end": "2026-09-20",
   "week_label": "September 14–20, 2026",
   "cutoff_start": "2026-07-17",
-  "new_entry_ids": [
-    "NAT-2026-09-17-003",
-    "NAT-2026-09-17-004",
-    "NAT-2026-09-17-005",
-    "NAT-2026-08-24-002",
-    "NAT-2026-09-14-001"
-  ],
-  "added_entry_ids": [
-    "NAT-2026-09-17-003",
-    "NAT-2026-09-17-004",
-    "NAT-2026-09-17-005"
-  ],
-  "refreshed_entry_ids": [
-    "NAT-2026-08-24-002",
-    "NAT-2026-09-14-001"
-  ],
+  "new_entry_ids": [],
+  "added_entry_ids": [],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -243,30 +230,45 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Endangered Species Act intentional-take enforcement directive",
-      "reason": "AP reports consequential Fish and Wildlife Service guidance, but the complete directive and operative scope remained unavailable. The existing ESA rule record was not expanded beyond inspected evidence."
+      "title": "Threat against alleged Iran-related leakers in Truth Social post",
+      "reason": "The post links to an opinion column and threatens unidentified alleged leakers, but identifies no order, investigation, charge, sanction or other independently verified government action. Its image returned HTTP 403, so no visual claim was used; the post remains feed-only."
     },
     {
-      "title": "FCC Paramount foreign-investment approval details",
-      "reason": "The original Media Bureau decision and complete conditions remained unavailable; the Reuters lead stays distinct from the existing DOJ bond-position record."
+      "title": "Short-window national developments",
+      "reason": "No separate signed action, formal proposal, court ruling, appropriation, implemented policy or independently measured administration outcome first established during the 32-minute research window cleared the publication threshold."
     },
     {
-      "title": "Personnel and nomination developments",
-      "reason": "The withdrawn ICE nominee and committee action on a CFPB nominee are routine personnel stages without an independently qualifying policy outcome."
-    },
-    {
-      "title": "Truth Social endorsements, fraud claims and inaccessible media",
-      "reason": "Campaign endorsements and promotional claims did not change government policy; ten attachments returned HTTP 403, so no visual or audiovisual claim was used."
-    },
-    {
-      "title": "Poland base and previously deferred leads",
-      "reason": "The Poland statement remained conditional and earlier source-inspection candidates remain queued pending operative instruments or measurable outcomes."
+      "title": "Previously deferred source-inspection leads",
+      "reason": "The ESA directive, FCC approval conditions and other unresolved candidates remain queued pending complete operative records or independently measurable outcomes. No unsupported promotion was made during this feed-only release."
     },
     {
       "title": "Legacy source-health remediation",
-      "reason": "LEG-003957 still lacks a record-specific corrective source; its visible warning and unreviewed state remain unchanged."
+      "reason": "LEG-003957 still lacks a record-specific corrective source. Its visible warning and legacy-unreviewed state remain unchanged."
+    },
+    {
+      "title": "External archive measurements",
+      "reason": "A strict feed-only release preserves the 10.70.0 canonical editorial snapshot and registry measurements byte-for-byte; unlike upstream units remain separate and no external item was promoted automatically."
     }
   ],
   "corrections": [],
-  "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence."
+  "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence.",
+  "editorial_snapshot": {
+    "version": "10.70.0",
+    "complete_pack": {
+      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-09-18_v10.70.0.zip",
+      "sha256": "6f9b0513acec90a7dc137eb961a8d3fcd22b7ff20684075588b2ec200c2dd96b"
+    },
+    "national_pack": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-09-18_v10.70.0.zip",
+      "sha256": "379f183a017d3da1c23b898a538b934e7677065df6237cc2798da541cc0e4b1e"
+    },
+    "national_brief": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-09-18_v10.70.0.md",
+      "sha256": "69e65dc610d5a1c558b3fe22de593b2179af488bdedccdf267d197e851d5bec8"
+    },
+    "in6_brief": {
+      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-09-18_v10.70.0.md",
+      "sha256": "16a0e5c09a7fca1f1b1d8df5ba8edd358a4a720d4c96f551d94dbf0b171a9021"
+    }
+  }
 }
