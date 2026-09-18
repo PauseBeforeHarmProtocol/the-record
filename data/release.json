@@ -1,39 +1,39 @@
 {
-  "version": "10.69.0",
+  "version": "10.70.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-17T16:01:25Z",
-    "through_utc": "2026-09-17T22:01:27Z",
+    "from_utc": "2026-09-17T22:01:27Z",
+    "through_utc": "2026-09-18T04:00:08Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Three new records and two material refreshes; the September 16 farm-bill committee vote is a prior-window omission. Retrieval and review times are separate from the publication cutoff."
+    "note": "Three new records and two material refreshes. Retrieval and review times are separate from the publication cutoff."
   },
-  "release_iso": "2026-09-17",
-  "release_human": "September 17, 2026",
-  "checked_at": "2026-09-17 6:01 PM EDT",
-  "previous_version": "10.68.0",
-  "previous_checked_at": "2026-09-17 12:01 PM EDT",
-  "window_started_at": "2026-09-17 12:01 PM EDT",
-  "window_ended_at": "2026-09-17 6:01 PM EDT",
+  "release_iso": "2026-09-18",
+  "release_human": "September 18, 2026",
+  "checked_at": "2026-09-18 12:00 AM EDT",
+  "previous_version": "10.69.0",
+  "previous_checked_at": "2026-09-17 6:01 PM EDT",
+  "window_started_at": "2026-09-17 6:01 PM EDT",
+  "window_ended_at": "2026-09-18 12:00 AM EDT",
   "week_start": "2026-09-14",
   "week_end": "2026-09-20",
   "week_label": "September 14–20, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-17-001",
-    "NAT-2026-09-17-002",
-    "NAT-2026-09-16-008",
-    "NAT-2026-09-16-001",
-    "NAT-2026-09-15-006"
+    "NAT-2026-09-17-003",
+    "NAT-2026-09-17-004",
+    "NAT-2026-09-17-005",
+    "NAT-2026-08-24-002",
+    "NAT-2026-09-14-001"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-17-001",
-    "NAT-2026-09-17-002",
-    "NAT-2026-09-16-008"
+    "NAT-2026-09-17-003",
+    "NAT-2026-09-17-004",
+    "NAT-2026-09-17-005"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-09-16-001",
-    "NAT-2026-09-15-006"
+    "NAT-2026-08-24-002",
+    "NAT-2026-09-14-001"
   ],
   "dedupe_resolutions": [
     {
@@ -227,32 +227,44 @@
       "target_id": "NAT-2026-09-03-003",
       "decision": "distinct_lifecycle_stage",
       "notes": "The September 17 nickel and military-research targets differ from the September 3 Cuba action; neither set is counted again."
+    },
+    {
+      "entry_id": "NAT-2026-09-17-004",
+      "target_id": "NAT-2026-09-15-013",
+      "decision": "false_positive",
+      "notes": "Both concern Middle East arms transfers, but the Saudi F-35 notification and proposed Israel bomb package have different recipients, equipment, review paths and consequences."
+    },
+    {
+      "entry_id": "NAT-2026-09-17-005",
+      "target_id": "NAT-2026-09-16-008",
+      "decision": "false_positive",
+      "notes": "The shared Senate procedural context does not merge the college-sports proposal with the separate agriculture and nutrition bill."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "FCC Paramount foreign-investment approval details",
-      "reason": "A late-window Reuters report describes conditional approval, but the original Media Bureau decision, ownership limits and complete conditions were not retrieved. Keep the regulatory lead distinct from the existing DOJ bond-position record."
-    },
-    {
       "title": "Endangered Species Act intentional-take enforcement directive",
-      "reason": "AP reports a consequential Fish and Wildlife Service directive, but the complete directive and operative scope were not inspected. Do not equate a reported enforcement interpretation with a statutory repeal."
+      "reason": "AP reports consequential Fish and Wildlife Service guidance, but the complete directive and operative scope remained unavailable. The existing ESA rule record was not expanded beyond inspected evidence."
     },
     {
-      "title": "Saudi F-35 sale and Senate college-sports vote",
-      "reason": "Discovery and social leads lacked inspected original notification or roll-call/bill records. No delivered aircraft, enacted sports law or verified polling result is inferred."
+      "title": "FCC Paramount foreign-investment approval details",
+      "reason": "The original Media Bureau decision and complete conditions remained unavailable; the Reuters lead stays distinct from the existing DOJ bond-position record."
     },
     {
-      "title": "Poland base and promotional social claims",
-      "reason": "Trump's Poland post is conditional, with no inspected agreement, appropriation or implementation record. A viewed image repost asserts convention audience numbers without independent measurement; another image was unavailable. These remain feed-only."
+      "title": "Personnel and nomination developments",
+      "reason": "The withdrawn ICE nominee and committee action on a CFPB nominee are routine personnel stages without an independently qualifying policy outcome."
     },
     {
-      "title": "Previously deferred source-inspection leads",
-      "reason": "Fuel-hauler waiver, Palestinian visa sanctions, UN Iran findings, SEC exemption, health appointments and East Potomac award leads remain in the existing queue. No prior draft or discovery summary was promoted as fresh documentary verification."
+      "title": "Truth Social endorsements, fraud claims and inaccessible media",
+      "reason": "Campaign endorsements and promotional claims did not change government policy; ten attachments returned HTTP 403, so no visual or audiovisual claim was used."
+    },
+    {
+      "title": "Poland base and previously deferred leads",
+      "reason": "The Poland statement remained conditional and earlier source-inspection candidates remain queued pending operative instruments or measurable outcomes."
     },
     {
       "title": "Legacy source-health remediation",
-      "reason": "LEG-003957 still has an unrelated NPR payments-system citation for an IRS/DOGE account. No record-specific corrective source was established; its warning and unreviewed state remain visible. Duplicate candidates remain queued, not mass-rewritten."
+      "reason": "LEG-003957 still lacks a record-specific corrective source; its visible warning and unreviewed state remain unchanged."
     }
   ],
   "corrections": [],
