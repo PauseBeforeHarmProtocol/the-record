@@ -3325,6 +3325,66 @@
       "provenance_path": "data/editorial_change_notes/10.70.0.json",
       "provenance_sha256": "4be421a5b4928ad02afd2481f4cb896e7e37c56ee9af9e79e8a2bef89eb0e1d8",
       "note": "As-of time is the research cutoff, not the source inspection or event time. Original event dates retained."
+    },
+    {
+      "change_id": "10.71.0:NAT-2026-09-02-012",
+      "entry_id": "NAT-2026-09-02-012",
+      "as_of_utc": "2026-09-18T09:59:38Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.71.0",
+      "summary": "Refreshed the military-health record after the Pentagon resumed mandatory screening, while preserving the missing revised guidance and unmeasured outcomes.",
+      "provenance_path": "data/editorial_change_notes/10.71.0.json",
+      "provenance_sha256": "f6d4811f8f749de37ca36c48c0817318248e1ac60aa8d440df883ed8a21f19fe",
+      "note": "As-of time is the research cutoff, not the source inspection or event time. Original event dates retained."
+    },
+    {
+      "change_id": "10.71.0:NAT-2026-09-17-006",
+      "entry_id": "NAT-2026-09-17-006",
+      "as_of_utc": "2026-09-18T09:59:38Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.71.0",
+      "summary": "Added the implemented USPSTF appointments while separating panel membership from future recommendations and coverage effects.",
+      "provenance_path": "data/editorial_change_notes/10.71.0.json",
+      "provenance_sha256": "f6d4811f8f749de37ca36c48c0817318248e1ac60aa8d440df883ed8a21f19fe",
+      "note": "As-of time is the research cutoff, not the source inspection or event time. Original event dates retained."
+    },
+    {
+      "change_id": "10.71.0:NAT-2026-09-17-007",
+      "entry_id": "NAT-2026-09-17-007",
+      "as_of_utc": "2026-09-18T09:59:38Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.71.0",
+      "summary": "Added restricted visa approval for Iran's core UN delegation without inferring travel or diplomatic results.",
+      "provenance_path": "data/editorial_change_notes/10.71.0.json",
+      "provenance_sha256": "f6d4811f8f749de37ca36c48c0817318248e1ac60aa8d440df883ed8a21f19fe",
+      "note": "As-of time is the research cutoff, not the source inspection or event time. Original event dates retained."
+    },
+    {
+      "change_id": "10.71.0:NAT-2026-09-17-008",
+      "entry_id": "NAT-2026-09-17-008",
+      "as_of_utc": "2026-09-18T09:59:38Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.71.0",
+      "summary": "Added the failed U.S. proposal and expired monitoring mandate while preserving the underlying sanctions.",
+      "provenance_path": "data/editorial_change_notes/10.71.0.json",
+      "provenance_sha256": "f6d4811f8f749de37ca36c48c0817318248e1ac60aa8d440df883ed8a21f19fe",
+      "note": "As-of time is the research cutoff, not the source inspection or event time. Original event dates retained."
+    },
+    {
+      "change_id": "10.71.0:NAT-2026-09-04-014",
+      "entry_id": "NAT-2026-09-04-014",
+      "as_of_utc": "2026-09-18T09:59:38Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.71.0",
+      "summary": "Refreshed the measles record with Pennsylvania's four-death classification and conditional CDC assistance request, without resolving case-level causation or aid delivery.",
+      "provenance_path": "data/editorial_change_notes/10.71.0.json",
+      "provenance_sha256": "f6d4811f8f749de37ca36c48c0817318248e1ac60aa8d440df883ed8a21f19fe",
+      "note": "As-of time is the research cutoff, not the source inspection or event time. Original event dates retained."
     }
   ],
   "reviews": [
@@ -29087,6 +29147,636 @@
       ],
       "unresolved_questions": [
         "Later implementation, appeal, legislative action or measured consequences remain open. Unchanged historical facts retain their prior provenance; no new event is inferred."
+      ]
+    },
+    {
+      "review_id": "10.71.0:NAT-2026-09-02-012:0974ee46613f",
+      "entry_id": "NAT-2026-09-02-012",
+      "content_sha256": "0974ee46613f74db05644bf3fdf421d64d29682998ddcb44fe1fe19c918c0ece",
+      "reviewed_at": "2026-09-18T10:12:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "b80b8af8b64d8a0c0c013d621eecbc687219df3bbc935ab13e0114b74ac0f719",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dod_testosterone_screening_memo_jul15",
+              "document_sha256": "8c9d8dbc3565a38fc330ce792169d8d7f2c534a53cf202666826b74b8eca92f8",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "U.S. Department of Defense",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "e1ac1297f479c89e6c3ff49759881dfc387b7acef50d44d0087f8bf371cf6ccd",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_testosterone_guidance_sep2",
+              "document_sha256": "d4175733e4e68aec369a81f4496c23401194b45c6378ddac4aa2e291c92acfc5",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "6de0da9787e9a558eafe0ef893f56a93c958cd5d5f5ba5bcbd21582f9faf20cb",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_testosterone_rescission_sep3",
+              "document_sha256": "14d001643cd19ba2786f1ac31340e4d0780809029d3c389ca565957b4a0ff1d4",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reversed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "f01697912d60ef63a4a8e30789a51e0858a10f71d6aa85fadabccbcbe50035d0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_testosterone_resumption_sep17",
+              "document_sha256": "1c12c78fa9d77277f87d6c188e6bddbf35a9a7eda5e793d558c877c5b4ac0732",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "35b860e21ed52b24c437202b6cca81a30684c6466bfd9d57bdcd2e7a930800c6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_testosterone_resumption_sep17",
+              "document_sha256": "1c12c78fa9d77277f87d6c188e6bddbf35a9a7eda5e793d558c877c5b4ac0732",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "12fec90af0b7185d9fd8a4953ff0540109a5765483ac206010a3846140a89c1c",
+          "review_note": "Reviewed institutional consequences separately from outcome and causation claims."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "af1729a9ca374e3ba27af6a3dd97014d29f143c596547fd2ddfc61d93bed16e8",
+          "review_note": "Reviewed the strongest available administration explanation or response and stated documentary outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "7f31bed7fc34d99a2d6122f66fce299fa41ec8dbc7d534c7570ee9451c25a81a",
+          "review_note": "Reviewed alternatives separately; Therefore is limited to the evidenced lifecycle stage and preserves unresolved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation, diplomatic action or measured consequences remain open; no unobserved outcome is inferred."
+      ]
+    },
+    {
+      "review_id": "10.71.0:NAT-2026-09-17-006:f00dfefbb478",
+      "entry_id": "NAT-2026-09-17-006",
+      "content_sha256": "f00dfefbb4788e0442e490fb42c64edd9a9d1df7e6846b7473f38e26935a0abe",
+      "reviewed_at": "2026-09-18T10:12:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "98f1f8b5084426dbd1c83cf2b1c9947c60c2ba8f3436ca5be161ed8077841d72",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "uspstf_members_sep17",
+              "document_sha256": "7d0cc67095bcc289556cae96cfed85fe291a8b0a2d95372dfd1466812aac3d6d",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "U.S. Preventive Services Task Force",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "23925d95b2f38d59287c9d8b12a8585760715f15f332486aef1461fe5d7f3412",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "uspstf_members_sep17",
+              "document_sha256": "7d0cc67095bcc289556cae96cfed85fe291a8b0a2d95372dfd1466812aac3d6d",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "U.S. Preventive Services Task Force",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "09ac79695d05dc4e4c6c5ae5e791a050251334778116a957d74fa206f06dedf4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "uspstf_members_sep17",
+              "document_sha256": "7d0cc67095bcc289556cae96cfed85fe291a8b0a2d95372dfd1466812aac3d6d",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "U.S. Preventive Services Task Force",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_uspstf_members_sep17",
+              "document_sha256": "a7cd33a5b64c754c37c4a5ecd9aaf75767a8aff1048e004044ce2d365880193f",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "5aafd97c80502015208bdb09a42b782db0dd29d2814830e4a80aeb2553c04637",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_uspstf_members_sep17",
+              "document_sha256": "a7cd33a5b64c754c37c4a5ecd9aaf75767a8aff1048e004044ce2d365880193f",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "1c668c79d8cda003ee021095397dc1665cc05993bc62557470639469383325dc",
+          "review_note": "Reviewed institutional consequences separately from outcome and causation claims."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "30c6736c3a6543808e8f01acc800b8274e1c07dd63e3b00a4eda275e59bf4fe3",
+          "review_note": "Reviewed the strongest available administration explanation or response and stated documentary outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "7367c64e82150146e0d1d07ad445c1c638c3b2a76001f96e97d45193e6f3bad0",
+          "review_note": "Reviewed alternatives separately; Therefore is limited to the evidenced lifecycle stage and preserves unresolved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation, diplomatic action or measured consequences remain open; no unobserved outcome is inferred."
+      ]
+    },
+    {
+      "review_id": "10.71.0:NAT-2026-09-17-007:be13052535e5",
+      "entry_id": "NAT-2026-09-17-007",
+      "content_sha256": "be13052535e5814cb0632f078d97977a5ef16bc3e4168d9ec9395263d8d75d79",
+      "reviewed_at": "2026-09-18T10:12:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "e68939da269f37bb8a397a056a981c83909d10520f0f48a1661fe3bfae746a1d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_un_visas_sep17",
+              "document_sha256": "c8530774d3739aa2dc36b5a8289870a462549b8c1b20f57e56e21c1c999cc3ea",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_iran_un_visas_sep17",
+              "document_sha256": "6551a0ddfddb2104b3213cfcb7e705cb0a67f9613bb39f09eed7b8f9eec137b6",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "0e612b8dedc8cb534c6af56aafa0c8b360c7ef68b052f064f95894858cd2a872",
+          "relies_on_unnamed_sources": true,
+          "supports": [
+            {
+              "source_id": "reuters_iran_un_visas_sep17",
+              "document_sha256": "c8530774d3739aa2dc36b5a8289870a462549b8c1b20f57e56e21c1c999cc3ea",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_iran_un_visas_sep17",
+              "document_sha256": "6551a0ddfddb2104b3213cfcb7e705cb0a67f9613bb39f09eed7b8f9eec137b6",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "9feb3537afeb0c66dc5221c03836a9967e26c58fb38250dce4f68635963e4999",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_un_visas_sep17",
+              "document_sha256": "c8530774d3739aa2dc36b5a8289870a462549b8c1b20f57e56e21c1c999cc3ea",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_iran_un_visas_sep17",
+              "document_sha256": "6551a0ddfddb2104b3213cfcb7e705cb0a67f9613bb39f09eed7b8f9eec137b6",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "c6c94e61831f5dcc035dc6f14ab7c635a7d24bcfa60b55a8d2863ce5efe4e35f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_iran_un_visas_sep17",
+              "document_sha256": "c8530774d3739aa2dc36b5a8289870a462549b8c1b20f57e56e21c1c999cc3ea",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_iran_un_visas_sep17",
+              "document_sha256": "6551a0ddfddb2104b3213cfcb7e705cb0a67f9613bb39f09eed7b8f9eec137b6",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "6804cdfbc4b71ccf1b4270f85a08b595bbbeee9a690a364f283d36bf595ad488",
+          "review_note": "Reviewed institutional consequences separately from outcome and causation claims."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "05b782852eafebf512caf7daa1c3c20dcae7ee2b068c9ca13bf0aa6a0c77b959",
+          "review_note": "Reviewed the strongest available administration explanation or response and stated documentary outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "456cedf3cc426aae5f59ddada8b81c0170597607fc70b9cfa8520f1777e62ec6",
+          "review_note": "Reviewed alternatives separately; Therefore is limited to the evidenced lifecycle stage and preserves unresolved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation, diplomatic action or measured consequences remain open; no unobserved outcome is inferred."
+      ]
+    },
+    {
+      "review_id": "10.71.0:NAT-2026-09-17-008:0ee24790467d",
+      "entry_id": "NAT-2026-09-17-008",
+      "content_sha256": "0ee24790467d4ba0ff91bd038ef830f458f024a6986f1116346b24b62c5febd4",
+      "reviewed_at": "2026-09-18T10:12:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "8b4cc8c3d1c290ebadd20db700eada7932589fd1703f1318577743dc592dc63d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_unsc_iran_panel_veto_sep17",
+              "document_sha256": "6a34ff0836c8783d1ff354124752912b60aea63bbcc35e37aef351e053c6446c",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_unsc_iran_panel_veto_sep17",
+              "document_sha256": "9145e713bc9522ef25494b5a2ee5f37f985b247c3c06066f0ecd72e5e1875589",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "1c521a029814402ecb5bb9339ddbbf576770bacb982d2ccc8eb0f202f8cf31f5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_unsc_iran_panel_veto_sep17",
+              "document_sha256": "6a34ff0836c8783d1ff354124752912b60aea63bbcc35e37aef351e053c6446c",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_unsc_iran_panel_veto_sep17",
+              "document_sha256": "9145e713bc9522ef25494b5a2ee5f37f985b247c3c06066f0ecd72e5e1875589",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "37a156c05541deffdbc086824e8c9b6ee4a84aaf1ee4b80b73c64c4d1a7131c3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_unsc_iran_panel_veto_sep17",
+              "document_sha256": "6a34ff0836c8783d1ff354124752912b60aea63bbcc35e37aef351e053c6446c",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_unsc_iran_panel_veto_sep17",
+              "document_sha256": "9145e713bc9522ef25494b5a2ee5f37f985b247c3c06066f0ecd72e5e1875589",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "2f54914bc7d0e0add7ad991adbe0714d328b95ed2b64b4c02af1021d59b7128b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_unsc_iran_panel_veto_sep17",
+              "document_sha256": "6a34ff0836c8783d1ff354124752912b60aea63bbcc35e37aef351e053c6446c",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_unsc_iran_panel_veto_sep17",
+              "document_sha256": "9145e713bc9522ef25494b5a2ee5f37f985b247c3c06066f0ecd72e5e1875589",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "971d3bcf07f388feeff8c65b6f7868976a10edd8e54c7a7897f0479c44cf1928",
+          "review_note": "Reviewed institutional consequences separately from outcome and causation claims."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "41e04cf75e7c783d6513c5eecd8d225e309a6f7b2913a530dbbc3af8b5f6b028",
+          "review_note": "Reviewed the strongest available administration explanation or response and stated documentary outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "98f867fe8def97aa7490e9b072abc754f6dc49d56b928350a89fb4644e0af391",
+          "review_note": "Reviewed alternatives separately; Therefore is limited to the evidenced lifecycle stage and preserves unresolved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation, diplomatic action or measured consequences remain open; no unobserved outcome is inferred."
+      ]
+    },
+    {
+      "review_id": "10.71.0:NAT-2026-09-04-014:a6fd2ade01f9",
+      "entry_id": "NAT-2026-09-04-014",
+      "content_sha256": "a6fd2ade01f9b8a15519c0476d16c5bf8fb9c5117fd0f489f47aa53cf1dbddb1",
+      "reviewed_at": "2026-09-18T10:12:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "e9377dcd7c8d365986d4a8c7af6495922ea124ac1155b066a854f1f2daacd3b0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_measles_count_sep4",
+              "document_sha256": "d3f97d8f6623802af4ef2cd9007c47fc80c911fe43f402d409280095a006554f",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "94295874acabb634438e0774aa4d92239c83b44541dd5fa8bc883853ae850aee",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cdc_measles_cases_sep4",
+              "document_sha256": "2e4b454aad74c654969e08e89c60d1821d62e793fe22be75245049cab473db61",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "ffaf0512f88c9ca6d563f962dc018e7c8f26a0bc6729ad33338352908979964f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cdc_measles_cases_sep4",
+              "document_sha256": "2e4b454aad74c654969e08e89c60d1821d62e793fe22be75245049cab473db61",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "1e046d56ba597b05dbdbfc5122dca0b1c10007e9776c51f7459885fe1bfc5683",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cdc_measles_cases_sep4",
+              "document_sha256": "2e4b454aad74c654969e08e89c60d1821d62e793fe22be75245049cab473db61",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "9c3043770aba3421c7b90222b56d524ebe7d0ee983ca829aa13d097ee50de89f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "kennedy_measles_statement_sep4",
+              "document_sha256": "8757743c2896f1b7759ae2edf83e89c7efed5d6c0051e22ab8bec75e35eb21c6",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "U.S. Department of Health and Human Services",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "0968c42ec1fcb267839a537321f58f2d5a98c4ff31872abdbbd81e0715ad91c8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cdc_measles_cases_sep4",
+              "document_sha256": "2e4b454aad74c654969e08e89c60d1821d62e793fe22be75245049cab473db61",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "b87996824cf677cbfe30adb517293354f30802bd74f487d2f21726adcc81e8cc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_measles_deaths_sep5",
+              "document_sha256": "74fd4c43a0f22db71614c96ffa3baeed4ed75ee37fd5aa939ecc15e018d0670a",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "28d44c430667061fea241f6f83494492a291da7a1832fce3654a08c1dfdb045b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_pa_measles_aid_sep17",
+              "document_sha256": "4f4557e3ade9dc151e5d43b35c943da733d509daa0ce45698b82e4fe600a92ee",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_pa_measles_fourth_death_sep16",
+              "document_sha256": "7a4c99955cc621b8418920af62fceeacd6ab57849297f037a1b7863f9fc773c3",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "8803b48afe92d89ce8fac4023e1c4a8303f9a2d14d4ba0acdf82ef503c4e58b4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_pa_measles_aid_sep17",
+              "document_sha256": "4f4557e3ade9dc151e5d43b35c943da733d509daa0ce45698b82e4fe600a92ee",
+              "locator": "Inspected source record and retained indexed extraction; hash identifies the canonical source-ledger record, not publisher HTML bytes.",
+              "inspected_at": "2026-09-18T10:12:00Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "688681d316acc80ef77569d67e30160afc0587c4dbc533b9ee18797088b13b90",
+          "review_note": "Reviewed institutional consequences separately from outcome and causation claims."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "f527407e10becb1fb79f32bbdd55acf76111914cad9ac770466925efbfe83b89",
+          "review_note": "Reviewed the strongest available administration explanation or response and stated documentary outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "d68bdecd911119e2250e15782a4c30c3105513276df3888b1afe13a206e963ce",
+          "review_note": "Reviewed alternatives separately; Therefore is limited to the evidenced lifecycle stage and preserves unresolved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation, diplomatic action or measured consequences remain open; no unobserved outcome is inferred."
       ]
     }
   ],
