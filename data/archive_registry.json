@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "status": "active_registry",
-  "checked_at": "2026-09-18T04:09:14Z",
+  "checked_at": "2026-09-18T16:15:00Z",
   "registry_purpose": "Describe independent Trump-related archives as a federated research network without pretending that unlike record units are interchangeable or additive.",
   "invariants": [
     "An upstream archive is a discovery and corroboration source, not an automatic authority for The Record.",
@@ -115,33 +115,33 @@
         {
           "metric_id": "trump_archive.total_items",
           "as_reported_label": "total items",
-          "value": 14088,
+          "value": 14099,
           "unit": "public_statement_or_document_item",
           "scope": "all items displayed in the archive monthly index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-09-18T04:09:14Z",
+          "observed_at": "2026-09-18T16:15:00Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null
         },
         {
           "metric_id": "trump_archive.truth_social_posts",
           "as_reported_label": "Truth Social posts",
-          "value": 11660,
+          "value": 11670,
           "unit": "truth_social_post",
           "scope": "Truth Social posts within the archive index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-09-18T04:09:14Z",
+          "observed_at": "2026-09-18T16:15:00Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null
         },
         {
           "metric_id": "trump_archive.speeches_transcripts",
           "as_reported_label": "speeches & transcripts",
-          "value": 1790,
+          "value": 1791,
           "unit": "speech_or_transcript",
           "scope": "speeches and transcripts within the archive index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-09-18T04:09:14Z",
+          "observed_at": "2026-09-18T16:15:00Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null
         }
@@ -189,7 +189,7 @@
         "content_import_permission_state": "license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-09-18T04:09:14Z",
+        "checked_at": "2026-09-18T16:15:00Z",
         "state": "success",
         "verification_pages": [
           "https://trump-archive.com/archive"
@@ -382,7 +382,7 @@
         "content_import_permission_state": "bulk_permission_or_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-09-18T04:09:14Z",
+        "checked_at": "2026-09-18T16:15:00Z",
         "state": "success",
         "verification_pages": [
           "https://www.undotrump.com/"
@@ -535,7 +535,7 @@
         "content_import_permission_state": "permission_or_documented_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-09-18T04:09:14Z",
+        "checked_at": "2026-09-18T16:15:00Z",
         "state": "success",
         "verification_pages": [
           "https://immpolicytracking.org/policies/"
@@ -740,14 +740,14 @@
         "content_import_permission_state": "metadata_and_citation_allowed_full_content_license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-09-18T04:09:14Z",
-        "state": "success",
+        "checked_at": "2026-09-18T16:15:00Z",
+        "state": "partial",
         "verification_pages": [
           "https://record47.org/",
           "https://api.record47.org/counts",
           "https://api.record47.org/entries?limit=1"
         ],
-        "note": "Homepage and both official API endpoints retrieved. Approved entries and distinct feature units remain separate."
+        "note": "The rendered homepage was available but displayed lower summary values than the later verified API observations. The API was unavailable during this check, so prior verified measurements are preserved rather than regressed."
       }
     }
   ],

@@ -3386,6 +3386,71 @@
       "provenance_sha256": "f6d4811f8f749de37ca36c48c0817318248e1ac60aa8d440df883ed8a21f19fe",
       "note": "As-of time is the research cutoff, not the source inspection or event time. Original event dates retained."
     }
+  ,
+  {
+    "change_id": "10.72.0:NAT-2026-09-18-001",
+    "entry_id": "NAT-2026-09-18-001",
+    "as_of_utc": "2026-09-18T16:00:10Z",
+    "timestamp_precision": "second",
+    "kind": "added",
+    "release_version": "10.72.0",
+    "summary": "Added the published UUV export-control revision while preserving its future effective date and continuing Commerce controls.",
+    "provenance_path": "data/editorial_change_notes/10.72.0.json",
+    "provenance_sha256": "4be4fe695ed0c4e5dda79639a1587ea883b4b96a161cad6ff6716cbc90339729",
+    "note": "As-of time is the research cutoff, not the source inspection or event time. Original event dates retained."
+  }
+  ,
+  {
+    "change_id": "10.72.0:NAT-2026-09-18-002",
+    "entry_id": "NAT-2026-09-18-002",
+    "as_of_utc": "2026-09-18T16:00:10Z",
+    "timestamp_precision": "second",
+    "kind": "added",
+    "release_version": "10.72.0",
+    "summary": "Added the effective ITAR country-policy and ally-list rule without inferring any completed license or transfer.",
+    "provenance_path": "data/editorial_change_notes/10.72.0.json",
+    "provenance_sha256": "4be4fe695ed0c4e5dda79639a1587ea883b4b96a161cad6ff6716cbc90339729",
+    "note": "As-of time is the research cutoff, not the source inspection or event time. Original event dates retained."
+  }
+  ,
+  {
+    "change_id": "10.72.0:NAT-2026-09-18-003",
+    "entry_id": "NAT-2026-09-18-003",
+    "as_of_utc": "2026-09-18T16:00:10Z",
+    "timestamp_precision": "second",
+    "kind": "added",
+    "release_version": "10.72.0",
+    "summary": "Added DHS's finalized domestic-PPE acquisition framework while preserving statutory exceptions and unmeasured outcomes.",
+    "provenance_path": "data/editorial_change_notes/10.72.0.json",
+    "provenance_sha256": "4be4fe695ed0c4e5dda79639a1587ea883b4b96a161cad6ff6716cbc90339729",
+    "note": "As-of time is the research cutoff, not the source inspection or event time. Original event dates retained."
+  }
+  ,
+  {
+    "change_id": "10.72.0:NAT-2026-09-18-004",
+    "entry_id": "NAT-2026-09-18-004",
+    "as_of_utc": "2026-09-18T16:00:10Z",
+    "timestamp_precision": "second",
+    "kind": "added",
+    "release_version": "10.72.0",
+    "summary": "Added the consolidated four-part FAR overhaul proposal without treating proposed text or expected savings as final.",
+    "provenance_path": "data/editorial_change_notes/10.72.0.json",
+    "provenance_sha256": "4be4fe695ed0c4e5dda79639a1587ea883b4b96a161cad6ff6716cbc90339729",
+    "note": "As-of time is the research cutoff, not the source inspection or event time. Original event dates retained."
+  }
+  ,
+  {
+    "change_id": "10.72.0:NAT-2026-09-18-005",
+    "entry_id": "NAT-2026-09-18-005",
+    "as_of_utc": "2026-09-18T16:00:10Z",
+    "timestamp_precision": "second",
+    "kind": "added",
+    "release_version": "10.72.0",
+    "summary": "Added DOE's effective nonenforcement notice while distinguishing it from future HUD replacement standards.",
+    "provenance_path": "data/editorial_change_notes/10.72.0.json",
+    "provenance_sha256": "4be4fe695ed0c4e5dda79639a1587ea883b4b96a161cad6ff6716cbc90339729",
+    "note": "As-of time is the research cutoff, not the source inspection or event time. Original event dates retained."
+  }
   ],
   "reviews": [
     {
@@ -29779,6 +29844,619 @@
         "Later implementation, litigation, diplomatic action or measured consequences remain open; no unobserved outcome is inferred."
       ]
     }
+  ,
+  {
+    "review_id": "10.72.0:NAT-2026-09-18-001:294a3c1be678",
+    "entry_id": "NAT-2026-09-18-001",
+    "content_sha256": "294a3c1be67839c67bdf24885f7e44630f423dafa5e73d6cbfe4bf0746022f9e",
+    "reviewed_at": "2026-09-18T16:12:00Z",
+    "reviewer": {
+      "name": "OpenAI Codex editorial maintenance",
+      "kind": "ai_assisted"
+    },
+    "claims": [
+      {
+        "fact_index": 0,
+        "fact_sha256": "efb839a31e1e238081682eea216871409da10f13fa2aa32bf9445f34ebb3be3b",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_itar_uuv_rule_sep18",
+            "locator": "Federal Register 91 FR 59063–59065; complete rule, scope thresholds and October 19 effective date inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "9e5bdb383267bea48c9d1388aa1ba01e2e554a9e0f1e9a87866b5b76f6934301",
+            "origin_group": "U.S. Department of State",
+            "evidence_status": "publication_only"
+          }
+        ]
+      },
+      {
+        "fact_index": 1,
+        "fact_sha256": "6f722d0d3c6973225994ec9cf9f6b2274cd9a25e09ece05d7fb0fa66ac337c93",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_itar_uuv_rule_sep18",
+            "locator": "Federal Register 91 FR 59063–59065; complete rule, scope thresholds and October 19 effective date inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "9e5bdb383267bea48c9d1388aa1ba01e2e554a9e0f1e9a87866b5b76f6934301",
+            "origin_group": "U.S. Department of State",
+            "evidence_status": "publication_only"
+          }
+        ]
+      },
+      {
+        "fact_index": 2,
+        "fact_sha256": "74f7a50154f9b568251c0da0290eb5fbcdb703dd91fc4ef4e5576aca2900e4e4",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_itar_uuv_rule_sep18",
+            "locator": "Federal Register 91 FR 59063–59065; complete rule, scope thresholds and October 19 effective date inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "9e5bdb383267bea48c9d1388aa1ba01e2e554a9e0f1e9a87866b5b76f6934301",
+            "origin_group": "U.S. Department of State",
+            "evidence_status": "publication_only"
+          }
+        ]
+      },
+      {
+        "fact_index": 3,
+        "fact_sha256": "52a940c3740f1ade8024b1ccf31e90c4da6806dd92a8e676db1d45166f3312f8",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_itar_uuv_rule_sep18",
+            "locator": "Federal Register 91 FR 59063–59065; complete rule, scope thresholds and October 19 effective date inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "9e5bdb383267bea48c9d1388aa1ba01e2e554a9e0f1e9a87866b5b76f6934301",
+            "origin_group": "U.S. Department of State",
+            "evidence_status": "publication_only"
+          }
+        ]
+      },
+      {
+        "fact_index": 4,
+        "fact_sha256": "19c5e1a1a6c09b584454ac63e0339eb5fba611eabaaf347f15a9d51f6614f2f7",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_itar_uuv_rule_sep18",
+            "locator": "Federal Register 91 FR 59063–59065; complete rule, scope thresholds and October 19 effective date inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "9e5bdb383267bea48c9d1388aa1ba01e2e554a9e0f1e9a87866b5b76f6934301",
+            "origin_group": "U.S. Department of State",
+            "evidence_status": "publication_only"
+          }
+        ]
+      }
+    ],
+    "reasoning_review": [
+      {
+        "field": "significance",
+        "text_sha256": "c59beb89dadecab6b4c90619fa55e1317336ad73a5e8dc8015f643177654fc0e",
+        "review_note": "Reviewed institutional consequences separately from implementation and measured outcomes."
+      },
+      {
+        "field": "goalpost",
+        "text_sha256": "ae9277c6251b019eea2258cf8fb4d1a76aece67dae478bbdd9230b9dfdf54d5a",
+        "review_note": "Reviewed the administration rationale and identified documentary, implementation and outcome tests."
+      },
+      {
+        "field": "maybe_therefore",
+        "text_sha256": "39665d5def7233893af1eacaeca248c31bd11b19a350d308c678faf904cbbb7d",
+        "review_note": "Reviewed alternatives separately; Therefore is limited to the evidenced lifecycle stage."
+      }
+    ],
+    "unresolved_questions": [
+      "Final implementation, transaction-level activity, litigation and measured consequences remain open; no unobserved outcome is inferred."
+    ]
+  }
+  ,
+  {
+    "review_id": "10.72.0:NAT-2026-09-18-002:ef58249f07d8",
+    "entry_id": "NAT-2026-09-18-002",
+    "content_sha256": "ef58249f07d897b35dcbd1549fabfc956c59d4d166144a84e00f63b2bbbc371f",
+    "reviewed_at": "2026-09-18T16:12:00Z",
+    "reviewer": {
+      "name": "OpenAI Codex editorial maintenance",
+      "kind": "ai_assisted"
+    },
+    "claims": [
+      {
+        "fact_index": 0,
+        "fact_sha256": "a90767411f717274da452c3465aa8c23e549482f3acd5d6e75adb820f62c8f39",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_itar_country_policy_rule_sep18",
+            "locator": "Federal Register 91 FR 59059–59061; complete rule, country-policy changes and immediate effective date inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "9a2b43111d09a0d3ca82f3e51b5aecb9723b41a653ba1df2870bbd1423b15190",
+            "origin_group": "U.S. Department of State",
+            "evidence_status": "implemented"
+          }
+        ]
+      },
+      {
+        "fact_index": 1,
+        "fact_sha256": "8ba85958766c27538f6679de367734f0b534a4056410d8089bfa5e58b2277839",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_itar_country_policy_rule_sep18",
+            "locator": "Federal Register 91 FR 59059–59061; complete rule, country-policy changes and immediate effective date inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "9a2b43111d09a0d3ca82f3e51b5aecb9723b41a653ba1df2870bbd1423b15190",
+            "origin_group": "U.S. Department of State",
+            "evidence_status": "implemented"
+          }
+        ]
+      },
+      {
+        "fact_index": 2,
+        "fact_sha256": "95372c38b29714d489b73f59f4e105301bfd57e2345f3af11f73b471a51c9ac8",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_itar_country_policy_rule_sep18",
+            "locator": "Federal Register 91 FR 59059–59061; complete rule, country-policy changes and immediate effective date inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "9a2b43111d09a0d3ca82f3e51b5aecb9723b41a653ba1df2870bbd1423b15190",
+            "origin_group": "U.S. Department of State",
+            "evidence_status": "implemented"
+          }
+        ]
+      },
+      {
+        "fact_index": 3,
+        "fact_sha256": "4caf87bd6e06f12deff49cf13b7b1af86a6de4b4453e3d64cdfbeee52c509ed0",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_itar_country_policy_rule_sep18",
+            "locator": "Federal Register 91 FR 59059–59061; complete rule, country-policy changes and immediate effective date inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "9a2b43111d09a0d3ca82f3e51b5aecb9723b41a653ba1df2870bbd1423b15190",
+            "origin_group": "U.S. Department of State",
+            "evidence_status": "implemented"
+          }
+        ]
+      },
+      {
+        "fact_index": 4,
+        "fact_sha256": "86b2d179757f98b89793ef73cfc46e71e51d75eb17ca514eaabc358ffca5e3ac",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_itar_country_policy_rule_sep18",
+            "locator": "Federal Register 91 FR 59059–59061; complete rule, country-policy changes and immediate effective date inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "9a2b43111d09a0d3ca82f3e51b5aecb9723b41a653ba1df2870bbd1423b15190",
+            "origin_group": "U.S. Department of State",
+            "evidence_status": "implemented"
+          }
+        ]
+      }
+    ],
+    "reasoning_review": [
+      {
+        "field": "significance",
+        "text_sha256": "d901d38474ae9d8a2f5075705aad024e890610cb08d694715fe5697db6a9f357",
+        "review_note": "Reviewed institutional consequences separately from implementation and measured outcomes."
+      },
+      {
+        "field": "goalpost",
+        "text_sha256": "cc9ef88e7ea9a63b56df616a927a3ed242179678fd88ad830e318391906b3d3c",
+        "review_note": "Reviewed the administration rationale and identified documentary, implementation and outcome tests."
+      },
+      {
+        "field": "maybe_therefore",
+        "text_sha256": "c93959b998ab365a611e38ceb536a2ae52462b873571411000fe35815b6023e7",
+        "review_note": "Reviewed alternatives separately; Therefore is limited to the evidenced lifecycle stage."
+      }
+    ],
+    "unresolved_questions": [
+      "Final implementation, transaction-level activity, litigation and measured consequences remain open; no unobserved outcome is inferred."
+    ]
+  }
+  ,
+  {
+    "review_id": "10.72.0:NAT-2026-09-18-003:1e4272f3a5c9",
+    "entry_id": "NAT-2026-09-18-003",
+    "content_sha256": "1e4272f3a5c98627fd30215386eb4ce2feec1bf7a5c24518e9343ae40ac24142",
+    "reviewed_at": "2026-09-18T16:12:00Z",
+    "reviewer": {
+      "name": "OpenAI Codex editorial maintenance",
+      "kind": "ai_assisted"
+    },
+    "claims": [
+      {
+        "fact_index": 0,
+        "fact_sha256": "c750b1a6d65bda45639bb20cfd5fdbc0a44280d631f206e9694abb1973583751",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_dhs_ppe_rule_sep18",
+            "locator": "Federal Register final rule; covered PPE, domestic sourcing, contract duration, exceptions and October 19 effective date inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "03853173952c513e1ae5901974ec933f3640fc2d5152040c698f430c07ee798c",
+            "origin_group": "U.S. Department of Homeland Security",
+            "evidence_status": "publication_only"
+          }
+        ]
+      },
+      {
+        "fact_index": 1,
+        "fact_sha256": "f6575b221ce2a094144690a8a4a2d6a1a80c309d78223e4e9d72bc1e515bdc6b",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_dhs_ppe_rule_sep18",
+            "locator": "Federal Register final rule; covered PPE, domestic sourcing, contract duration, exceptions and October 19 effective date inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "03853173952c513e1ae5901974ec933f3640fc2d5152040c698f430c07ee798c",
+            "origin_group": "U.S. Department of Homeland Security",
+            "evidence_status": "publication_only"
+          }
+        ]
+      },
+      {
+        "fact_index": 2,
+        "fact_sha256": "8db941ea13d36c54e7ee25ff8d01dc7b9a3b9943705e20777f3421c853475f0b",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_dhs_ppe_rule_sep18",
+            "locator": "Federal Register final rule; covered PPE, domestic sourcing, contract duration, exceptions and October 19 effective date inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "03853173952c513e1ae5901974ec933f3640fc2d5152040c698f430c07ee798c",
+            "origin_group": "U.S. Department of Homeland Security",
+            "evidence_status": "publication_only"
+          }
+        ]
+      },
+      {
+        "fact_index": 3,
+        "fact_sha256": "089574fcbe84fff276151c3c9c14a86202b0fac97bd318a7e6692d45010156f0",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_dhs_ppe_rule_sep18",
+            "locator": "Federal Register final rule; covered PPE, domestic sourcing, contract duration, exceptions and October 19 effective date inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "03853173952c513e1ae5901974ec933f3640fc2d5152040c698f430c07ee798c",
+            "origin_group": "U.S. Department of Homeland Security",
+            "evidence_status": "publication_only"
+          }
+        ]
+      },
+      {
+        "fact_index": 4,
+        "fact_sha256": "26de00d8d3c8149d07a2a1f88391e89b3af23cc5c9fd91ebe5df71f23bb010b3",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_dhs_ppe_rule_sep18",
+            "locator": "Federal Register final rule; covered PPE, domestic sourcing, contract duration, exceptions and October 19 effective date inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "03853173952c513e1ae5901974ec933f3640fc2d5152040c698f430c07ee798c",
+            "origin_group": "U.S. Department of Homeland Security",
+            "evidence_status": "publication_only"
+          }
+        ]
+      }
+    ],
+    "reasoning_review": [
+      {
+        "field": "significance",
+        "text_sha256": "071ee9f393d42f02aea4f57b9a2deec9002c758b19552aad70e8802722cb90d9",
+        "review_note": "Reviewed institutional consequences separately from implementation and measured outcomes."
+      },
+      {
+        "field": "goalpost",
+        "text_sha256": "5c8436a64b4fc6bb16c77102d553ef02754031a858f009739a19fd4650a6999f",
+        "review_note": "Reviewed the administration rationale and identified documentary, implementation and outcome tests."
+      },
+      {
+        "field": "maybe_therefore",
+        "text_sha256": "970f5bce931be1f38908d9791d46e2d064350aa1ce2fb4963fb3585e1d26e515",
+        "review_note": "Reviewed alternatives separately; Therefore is limited to the evidenced lifecycle stage."
+      }
+    ],
+    "unresolved_questions": [
+      "Final implementation, transaction-level activity, litigation and measured consequences remain open; no unobserved outcome is inferred."
+    ]
+  }
+  ,
+  {
+    "review_id": "10.72.0:NAT-2026-09-18-004:57c1127890cd",
+    "entry_id": "NAT-2026-09-18-004",
+    "content_sha256": "57c1127890cd893b70540336861575a583aaf84de44cc8f9db16b4900de1dfca",
+    "reviewed_at": "2026-09-18T16:12:00Z",
+    "reviewer": {
+      "name": "OpenAI Codex editorial maintenance",
+      "kind": "ai_assisted"
+    },
+    "claims": [
+      {
+        "fact_index": 0,
+        "fact_sha256": "3522bd27c1bfec8aa10755c35425d81c0aeeb8bc83fbb611aa3a4916084833cd",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_far_overhaul_8_12_sep18",
+            "locator": "Federal Register proposed rule 2026-19162; complete preamble and proposed regulatory text inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "49d744affc0fd345eebd71a98d4808e589fba125597d654c11b06fcb9d81e242",
+            "origin_group": "Federal Acquisition Regulatory Council",
+            "evidence_status": "proposed"
+          },
+          {
+            "source_id": "fr_far_overhaul_16_17_sep18",
+            "locator": "Federal Register proposed rule 2026-19160; complete preamble and proposed regulatory text inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "08a3c40b2499893383e7812c37d978c0c3ee8e596e3c632cd4b6655a64fabd0c",
+            "origin_group": "Federal Acquisition Regulatory Council",
+            "evidence_status": "proposed"
+          },
+          {
+            "source_id": "fr_far_overhaul_9_27_sep18",
+            "locator": "Federal Register proposed rule 2026-19159; complete preamble and proposed regulatory text inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "b59d735c8774c61621ee99db9fd6d0012bca94685a0d683837efc5c8afb600db",
+            "origin_group": "Federal Acquisition Regulatory Council",
+            "evidence_status": "proposed"
+          },
+          {
+            "source_id": "fr_far_overhaul_14_28_sep18",
+            "locator": "Federal Register proposed rule 2026-19158; complete preamble and proposed regulatory text inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "a4d9e500009959e93b8f20707ccfbefe3af8fe2699c4ef4d4fe074e6e43b2971",
+            "origin_group": "Federal Acquisition Regulatory Council",
+            "evidence_status": "proposed"
+          }
+        ]
+      },
+      {
+        "fact_index": 1,
+        "fact_sha256": "4e553358fbf5b976a3f191f4db068a9c525b3a961a6e5e58ab0524569df32ed9",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_far_overhaul_8_12_sep18",
+            "locator": "Federal Register proposed rule 2026-19162; complete preamble and proposed regulatory text inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "49d744affc0fd345eebd71a98d4808e589fba125597d654c11b06fcb9d81e242",
+            "origin_group": "Federal Acquisition Regulatory Council",
+            "evidence_status": "proposed"
+          },
+          {
+            "source_id": "fr_far_overhaul_16_17_sep18",
+            "locator": "Federal Register proposed rule 2026-19160; complete preamble and proposed regulatory text inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "08a3c40b2499893383e7812c37d978c0c3ee8e596e3c632cd4b6655a64fabd0c",
+            "origin_group": "Federal Acquisition Regulatory Council",
+            "evidence_status": "proposed"
+          },
+          {
+            "source_id": "fr_far_overhaul_9_27_sep18",
+            "locator": "Federal Register proposed rule 2026-19159; complete preamble and proposed regulatory text inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "b59d735c8774c61621ee99db9fd6d0012bca94685a0d683837efc5c8afb600db",
+            "origin_group": "Federal Acquisition Regulatory Council",
+            "evidence_status": "proposed"
+          },
+          {
+            "source_id": "fr_far_overhaul_14_28_sep18",
+            "locator": "Federal Register proposed rule 2026-19158; complete preamble and proposed regulatory text inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "a4d9e500009959e93b8f20707ccfbefe3af8fe2699c4ef4d4fe074e6e43b2971",
+            "origin_group": "Federal Acquisition Regulatory Council",
+            "evidence_status": "proposed"
+          }
+        ]
+      },
+      {
+        "fact_index": 2,
+        "fact_sha256": "7d6ac7d504be63f163012823e097a3401433c65b5dd75fdc7a7202fe9071a849",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_far_overhaul_8_12_sep18",
+            "locator": "Federal Register proposed rule 2026-19162; complete preamble and proposed regulatory text inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "49d744affc0fd345eebd71a98d4808e589fba125597d654c11b06fcb9d81e242",
+            "origin_group": "Federal Acquisition Regulatory Council",
+            "evidence_status": "proposed"
+          }
+        ]
+      },
+      {
+        "fact_index": 3,
+        "fact_sha256": "91cf274f1776f74237aac09e94b51f28815a0bfa5bb72e5fe815d3668fa67c5c",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_far_overhaul_16_17_sep18",
+            "locator": "Federal Register proposed rule 2026-19160; complete preamble and proposed regulatory text inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "08a3c40b2499893383e7812c37d978c0c3ee8e596e3c632cd4b6655a64fabd0c",
+            "origin_group": "Federal Acquisition Regulatory Council",
+            "evidence_status": "proposed"
+          },
+          {
+            "source_id": "fr_far_overhaul_9_27_sep18",
+            "locator": "Federal Register proposed rule 2026-19159; complete preamble and proposed regulatory text inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "b59d735c8774c61621ee99db9fd6d0012bca94685a0d683837efc5c8afb600db",
+            "origin_group": "Federal Acquisition Regulatory Council",
+            "evidence_status": "proposed"
+          },
+          {
+            "source_id": "fr_far_overhaul_14_28_sep18",
+            "locator": "Federal Register proposed rule 2026-19158; complete preamble and proposed regulatory text inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "a4d9e500009959e93b8f20707ccfbefe3af8fe2699c4ef4d4fe074e6e43b2971",
+            "origin_group": "Federal Acquisition Regulatory Council",
+            "evidence_status": "proposed"
+          }
+        ]
+      },
+      {
+        "fact_index": 4,
+        "fact_sha256": "0ce22e0d09c397f3c96d0172dd876de68c83eb4bbebb7eb7e6091c8388bc218d",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_far_overhaul_8_12_sep18",
+            "locator": "Federal Register proposed rule 2026-19162; complete preamble and proposed regulatory text inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "49d744affc0fd345eebd71a98d4808e589fba125597d654c11b06fcb9d81e242",
+            "origin_group": "Federal Acquisition Regulatory Council",
+            "evidence_status": "proposed"
+          },
+          {
+            "source_id": "fr_far_overhaul_16_17_sep18",
+            "locator": "Federal Register proposed rule 2026-19160; complete preamble and proposed regulatory text inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "08a3c40b2499893383e7812c37d978c0c3ee8e596e3c632cd4b6655a64fabd0c",
+            "origin_group": "Federal Acquisition Regulatory Council",
+            "evidence_status": "proposed"
+          },
+          {
+            "source_id": "fr_far_overhaul_9_27_sep18",
+            "locator": "Federal Register proposed rule 2026-19159; complete preamble and proposed regulatory text inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "b59d735c8774c61621ee99db9fd6d0012bca94685a0d683837efc5c8afb600db",
+            "origin_group": "Federal Acquisition Regulatory Council",
+            "evidence_status": "proposed"
+          },
+          {
+            "source_id": "fr_far_overhaul_14_28_sep18",
+            "locator": "Federal Register proposed rule 2026-19158; complete preamble and proposed regulatory text inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "a4d9e500009959e93b8f20707ccfbefe3af8fe2699c4ef4d4fe074e6e43b2971",
+            "origin_group": "Federal Acquisition Regulatory Council",
+            "evidence_status": "proposed"
+          }
+        ]
+      }
+    ],
+    "reasoning_review": [
+      {
+        "field": "significance",
+        "text_sha256": "9279663cdb550a68344f302c910fd9a1b9b06df930ba1da72c9aa920cb49fd2f",
+        "review_note": "Reviewed institutional consequences separately from implementation and measured outcomes."
+      },
+      {
+        "field": "goalpost",
+        "text_sha256": "5377d129ac4b7a66736fe915ec6d2674d470db8df3830c9dd69f226f5d7af548",
+        "review_note": "Reviewed the administration rationale and identified documentary, implementation and outcome tests."
+      },
+      {
+        "field": "maybe_therefore",
+        "text_sha256": "a92b3ef711be82987fb0e88068bf88786c9db70c3d752a1c9f7fe534c8118bb9",
+        "review_note": "Reviewed alternatives separately; Therefore is limited to the evidenced lifecycle stage."
+      }
+    ],
+    "unresolved_questions": [
+      "Final implementation, transaction-level activity, litigation and measured consequences remain open; no unobserved outcome is inferred."
+    ]
+  }
+  ,
+  {
+    "review_id": "10.72.0:NAT-2026-09-18-005:79df747645b8",
+    "entry_id": "NAT-2026-09-18-005",
+    "content_sha256": "79df747645b86dc1872e87264388bde82e32a643abbed5fd2d8baad0bac7280b",
+    "reviewed_at": "2026-09-18T16:12:00Z",
+    "reviewer": {
+      "name": "OpenAI Codex editorial maintenance",
+      "kind": "ai_assisted"
+    },
+    "claims": [
+      {
+        "fact_index": 0,
+        "fact_sha256": "bb4762a30cdd40038f7177fda79b638670d577a1d41d75d060676b0e1e56f4cd",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_doe_manufactured_housing_sep18",
+            "locator": "Federal Register 91 FR 59048; complete legal-effect notification and statutory chronology inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "2054ead3993ad70ddf128903a82d267a2f7a8f8e3709eebd0fefd9926a1f7826",
+            "origin_group": "U.S. Department of Energy",
+            "evidence_status": "implemented"
+          }
+        ]
+      },
+      {
+        "fact_index": 1,
+        "fact_sha256": "8eb176f897bacb0de2694666fed4947c6cc3ae2627f97ee436d703f567ed2018",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_doe_manufactured_housing_sep18",
+            "locator": "Federal Register 91 FR 59048; complete legal-effect notification and statutory chronology inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "2054ead3993ad70ddf128903a82d267a2f7a8f8e3709eebd0fefd9926a1f7826",
+            "origin_group": "U.S. Department of Energy",
+            "evidence_status": "implemented"
+          }
+        ]
+      },
+      {
+        "fact_index": 2,
+        "fact_sha256": "9d64fc27a5863f2960b6f380fca08c8d9ffab524859413992f86add4446e743f",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_doe_manufactured_housing_sep18",
+            "locator": "Federal Register 91 FR 59048; complete legal-effect notification and statutory chronology inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "2054ead3993ad70ddf128903a82d267a2f7a8f8e3709eebd0fefd9926a1f7826",
+            "origin_group": "U.S. Department of Energy",
+            "evidence_status": "implemented"
+          }
+        ]
+      },
+      {
+        "fact_index": 3,
+        "fact_sha256": "5db95cc073ff45eba10d83f273336961779a05eb6febf844d79a0e6c4a94b670",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "fr_doe_manufactured_housing_sep18",
+            "locator": "Federal Register 91 FR 59048; complete legal-effect notification and statutory chronology inspected.",
+            "inspected_at": "2026-09-18T16:10:00Z",
+            "document_sha256": "2054ead3993ad70ddf128903a82d267a2f7a8f8e3709eebd0fefd9926a1f7826",
+            "origin_group": "U.S. Department of Energy",
+            "evidence_status": "implemented"
+          }
+        ]
+      }
+    ],
+    "reasoning_review": [
+      {
+        "field": "significance",
+        "text_sha256": "813217ce24246e541f2b76b600ff237f787e984ec0b6940d9e7a39a69fb70bb3",
+        "review_note": "Reviewed institutional consequences separately from implementation and measured outcomes."
+      },
+      {
+        "field": "goalpost",
+        "text_sha256": "07af4e579646cd456d2839c360be395c37908793d36c30196b1b31e1b80378f5",
+        "review_note": "Reviewed the administration rationale and identified documentary, implementation and outcome tests."
+      },
+      {
+        "field": "maybe_therefore",
+        "text_sha256": "ba0d4ca594e8ee304ef2c44a46995e749605da213eab58dcb473ea35debfbfef",
+        "review_note": "Reviewed alternatives separately; Therefore is limited to the evidenced lifecycle stage."
+      }
+    ],
+    "unresolved_questions": [
+      "Final implementation, transaction-level activity, litigation and measured consequences remain open; no unobserved outcome is inferred."
+    ]
+  }
   ],
   "deferred_candidates": []
 }
