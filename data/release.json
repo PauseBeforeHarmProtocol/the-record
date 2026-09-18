@@ -1,27 +1,40 @@
 {
-  "version": "10.70.1",
-  "artifact_mode": "feed-only",
+  "version": "10.71.0",
+  "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-18T04:00:08Z",
-    "through_utc": "2026-09-18T04:33:02Z",
+    "from_utc": "2026-09-18T04:33:02Z",
+    "through_utc": "2026-09-18T09:59:38Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous research coverage begins at the prior release's exact UTC boundary. No separate candidate cleared the publication threshold; this release is limited to a materially newer validated Truth Social fallback. Feed retrieval and review times are recorded separately from the research cutoff."
+    "note": "Three new records and two material refreshes. No separate development first established during the new window cleared the threshold; prior-window omissions and evolving records are labeled. Retrieval and review times are separate from the publication cutoff."
   },
   "release_iso": "2026-09-18",
   "release_human": "September 18, 2026",
-  "checked_at": "2026-09-18 12:33 AM EDT",
-  "previous_version": "10.70.0",
-  "previous_checked_at": "2026-09-18 12:00 AM EDT",
-  "window_started_at": "2026-09-18 12:00 AM EDT",
-  "window_ended_at": "2026-09-18 12:33 AM EDT",
+  "checked_at": "2026-09-18 5:59 AM EDT",
+  "previous_version": "10.70.1",
+  "previous_checked_at": "2026-09-18 12:33 AM EDT",
+  "window_started_at": "2026-09-18 12:33 AM EDT",
+  "window_ended_at": "2026-09-18 5:59 AM EDT",
   "week_start": "2026-09-14",
   "week_end": "2026-09-20",
   "week_label": "September 14–20, 2026",
   "cutoff_start": "2026-07-17",
-  "new_entry_ids": [],
-  "added_entry_ids": [],
-  "refreshed_entry_ids": [],
+  "new_entry_ids": [
+    "NAT-2026-09-02-012",
+    "NAT-2026-09-17-006",
+    "NAT-2026-09-17-007",
+    "NAT-2026-09-17-008",
+    "NAT-2026-09-04-014"
+  ],
+  "added_entry_ids": [
+    "NAT-2026-09-17-006",
+    "NAT-2026-09-17-007",
+    "NAT-2026-09-17-008"
+  ],
+  "refreshed_entry_ids": [
+    "NAT-2026-09-02-012",
+    "NAT-2026-09-04-014"
+  ],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -230,16 +243,24 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Threat against alleged Iran-related leakers in Truth Social post",
-      "reason": "The post links to an opinion column and threatens unidentified alleged leakers, but identifies no order, investigation, charge, sanction or other independently verified government action. Its image returned HTTP 403, so no visual claim was used; the post remains feed-only."
+      "title": "Reported nationwide Medicaid most-favored-nation drug pricing",
+      "reason": "Reuters could not independently verify the Semafor report, and the White House and HHS did not confirm it. No operative instrument was available."
     },
     {
-      "title": "Short-window national developments",
-      "reason": "No separate signed action, formal proposal, court ruling, appropriation, implemented policy or independently measured administration outcome first established during the 32-minute research window cleared the publication threshold."
+      "title": "Virginia voter-record investigation allegations",
+      "reason": "The underlying attorney-general letter and whistleblower record were unavailable; allegations and an inquiry were not converted into established misconduct or completed federal action."
+    },
+    {
+      "title": "Federal Register AI search tool",
+      "reason": "The brief, removed feature lacked an established security incident, operative policy consequence or measured harm."
     },
     {
       "title": "Previously deferred source-inspection leads",
-      "reason": "The ESA directive, FCC approval conditions and other unresolved candidates remain queued pending complete operative records or independently measurable outcomes. No unsupported promotion was made during this feed-only release."
+      "reason": "The ESA directive, FCC approval conditions, East Potomac award documents and conditional Poland-base claim remain queued pending complete operative records or measurable outcomes."
+    },
+    {
+      "title": "Truth Social posts",
+      "reason": "No new post appeared after the prior snapshot. The newest remains the September 18 threat against unidentified alleged leakers, which announced no independently verified government action; its image remained unavailable."
     },
     {
       "title": "Legacy source-health remediation",
@@ -247,28 +268,9 @@
     },
     {
       "title": "External archive measurements",
-      "reason": "A strict feed-only release preserves the 10.70.0 canonical editorial snapshot and registry measurements byte-for-byte; unlike upstream units remain separate and no external item was promoted automatically."
+      "reason": "No safely verified scope-and-unit change was established during this run; prior measurements remain separate and unchanged."
     }
   ],
   "corrections": [],
-  "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence.",
-  "editorial_snapshot": {
-    "version": "10.70.0",
-    "complete_pack": {
-      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-09-18_v10.70.0.zip",
-      "sha256": "6f9b0513acec90a7dc137eb961a8d3fcd22b7ff20684075588b2ec200c2dd96b"
-    },
-    "national_pack": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-09-18_v10.70.0.zip",
-      "sha256": "379f183a017d3da1c23b898a538b934e7677065df6237cc2798da541cc0e4b1e"
-    },
-    "national_brief": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-09-18_v10.70.0.md",
-      "sha256": "69e65dc610d5a1c558b3fe22de593b2179af488bdedccdf267d197e851d5bec8"
-    },
-    "in6_brief": {
-      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-09-18_v10.70.0.md",
-      "sha256": "16a0e5c09a7fca1f1b1d8df5ba8edd358a4a720d4c96f551d94dbf0b171a9021"
-    }
-  }
+  "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence."
 }
