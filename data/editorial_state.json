@@ -3613,6 +3613,42 @@
       "provenance_path": "data/editorial_change_notes/10.76.0.json",
       "provenance_sha256": "2f70e57c14c21097ee23d2407ff6a1a54ada6e6c5e7d23b294d458c12b2c2994",
       "note": "As-of time is the research cutoff, not the source inspection or event time. Original event date retained."
+    },
+    {
+      "change_id": "10.77.0:NAT-2026-09-18-007",
+      "entry_id": "NAT-2026-09-18-007",
+      "as_of_utc": "2026-09-19T16:01:18Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.77.0",
+      "summary": "Refreshed the press-access record after named reporters were denied entry and credentials were disabled or confiscated, while preserving uncertainty about the written scope and legal disposition.",
+      "provenance_path": "data/editorial_change_notes/10.77.0.json",
+      "provenance_sha256": "07da78ff5df6c2414027c151ac5df04ba0d91d7d9011b5f13fb64e51ffac26b9",
+      "note": "As-of time is the research cutoff, not the source inspection or event time. Original event date retained."
+    },
+    {
+      "change_id": "10.77.0:NAT-2026-09-18-015",
+      "entry_id": "NAT-2026-09-18-015",
+      "as_of_utc": "2026-09-19T16:01:18Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.77.0",
+      "summary": "Added the Ethiopia-emergency expiration and Eritrea-related delistings without treating aliases as additional targets or delisting as exoneration.",
+      "provenance_path": "data/editorial_change_notes/10.77.0.json",
+      "provenance_sha256": "07da78ff5df6c2414027c151ac5df04ba0d91d7d9011b5f13fb64e51ffac26b9",
+      "note": "As-of time is the research cutoff, not the source inspection or event time. Original event date retained."
+    },
+    {
+      "change_id": "10.77.0:NAT-2026-09-18-016",
+      "entry_id": "NAT-2026-09-18-016",
+      "as_of_utc": "2026-09-19T16:01:18Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.77.0",
+      "summary": "Added the time-limited Lukoil negotiation and maintenance authorization without treating it as approval or completion of a sale.",
+      "provenance_path": "data/editorial_change_notes/10.77.0.json",
+      "provenance_sha256": "07da78ff5df6c2414027c151ac5df04ba0d91d7d9011b5f13fb64e51ffac26b9",
+      "note": "As-of time is the research cutoff, not the source inspection or event time. Original event date retained."
     }
   ],
   "reviews": [
@@ -33234,6 +33270,337 @@
         {
           "field": "maybe_therefore",
           "text_sha256": "b923fc3d8d16e047e74fb12834e71ed18a06c352f05f850d21adfdd84ce714ea",
+          "review_note": "Reviewed plausible alternatives separately; Therefore is limited to verified action and excludes unobserved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation records, litigation, independently measured effects and any corrections remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.77.0:NAT-2026-09-18-007:bdfe2da513ac",
+      "entry_id": "NAT-2026-09-18-007",
+      "content_sha256": "bdfe2da513ac87e612153f51b714c9f02bb2ac0154dd2c94c96a7b682f86d121",
+      "reviewed_at": "2026-09-19T16:12:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "5c945c344213dc046c6caf819aea1cd55e29f207cfea45fe6a112600b037f9c7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_press_ban_sep18",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "3253333a96a4ae155d24a6c5b84f6728e2dedefdedec9e4e29a90507d9d2de55",
+              "origin_group": "Truth Social",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5bf466084b306fd107b133b8d9a439aff90184b5bbcbac8506ef36b11cbbc146",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_press_ban_sep18",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "3253333a96a4ae155d24a6c5b84f6728e2dedefdedec9e4e29a90507d9d2de55",
+              "origin_group": "Truth Social",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "debb411800b063544ac689d29ff696c376b0d6eab69a2d1de0fdde09bd69fa59",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_press_ban_sep18",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "c18ed9a79053442fca4706763a03c55bbf35c261c84ed76c0cb7ded8ca61b42a",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_press_ban_sep18",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "351e956a1d97171bdae4334d710b19b0dba94de5ef06b95bf904853c63e83174",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "848e9d75d82cef39939c189fd5aa74283cc4d2003602c25bc34d3d5d2405f3af",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_press_ban_enforced_sep19",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "4a480d55bd614801b233d1a3e45e3bba74fc02f4411834e426fb280fdf89fa26",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "ca00d9bb7eeacc4214f3211e9cf3e8b7ea83b4312839eb3008eee0eb87d54609",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_press_ban_enforced_sep19",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "4a480d55bd614801b233d1a3e45e3bba74fc02f4411834e426fb280fdf89fa26",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "ed902f02a09acfbb715ae66f5a76e862bdf6c6d4da468e11728c42e42a81f7cf",
+          "review_note": "Reviewed institutional consequences separately from the evidenced lifecycle stage and unresolved outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "78a4ffac6d0bb875a5682db055a2e6ddb3ae3e1b89b90bf25c18f1db00c5eae6",
+          "review_note": "Reviewed the strongest administration rationale or response and specified documentary, implementation, litigation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "ffe4d3be1b92458849425371e9ce5b52b2c3f9d5021bd9e07b94c1a2aa4554a4",
+          "review_note": "Reviewed plausible alternatives separately; Therefore is limited to verified action and excludes unobserved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation records, litigation, independently measured effects and any corrections remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.77.0:NAT-2026-09-18-015:93a32a665bd7",
+      "entry_id": "NAT-2026-09-18-015",
+      "content_sha256": "93a32a665bd756b93a6685668e6e99105b34d2889bedef91c836760e7d992442",
+      "reviewed_at": "2026-09-19T16:12:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "f996f624ef2c4152fb176d067f43be8036cb9f1681ef4fd53dcf1dfbbda89728",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_ethiopia_expiration_sep18",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "590b378f37290782bd0d0019d2f7f516721b2b19317c9fb406964b5f17a976e6",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "913d5808882b290f06715500e6c18ce6b4a0d299561debe0c9c6999c221ccc6b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_ethiopia_expiration_sep18",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "590b378f37290782bd0d0019d2f7f516721b2b19317c9fb406964b5f17a976e6",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "17bd042e82ed7f23cbb8962121af2080035f77939bfb1d0f71c10f0fc38a1cf5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_ethiopia_expiration_sep18",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "590b378f37290782bd0d0019d2f7f516721b2b19317c9fb406964b5f17a976e6",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "97957930cf8e1afc85aee0a94b3edcc00e591278db710660b13a59f73016bb94",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_eritrean_delistings_sep19",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "e9b624155e77dce070db6d8a2c7b2ee41b3868085b842df59d4868573341cd04",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "70f55c581d99d5d3baa56531429f10c8a856e0cc0a4fe9de3c24d66f59b17398",
+          "review_note": "Reviewed institutional consequences separately from the evidenced lifecycle stage and unresolved outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "98b38f23e62a3ab845021512e8fea5cd2ca0d2c22019e76cf4e1f7484c30ace7",
+          "review_note": "Reviewed the strongest administration rationale or response and specified documentary, implementation, litigation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "2521967e29228e6ee1f532946389db4dce962497bac89055335fef6dbad04bcd",
+          "review_note": "Reviewed plausible alternatives separately; Therefore is limited to verified action and excludes unobserved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation records, litigation, independently measured effects and any corrections remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.77.0:NAT-2026-09-18-016:f304baeb6a17",
+      "entry_id": "NAT-2026-09-18-016",
+      "content_sha256": "f304baeb6a176fceace3318f0c66eb05ed5d716dcafa0eafc98270a311d53e98",
+      "reviewed_at": "2026-09-19T16:12:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "6137e1ac53ab15edc0f87bab5db3caadb106cab3950e79f2103636d77f8fb2cc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_lukoil_gl131j_sep18",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "d32158d2521339ff5d34611af26c4a508a552cc5c2eb51678ce4d0ccb62b0331",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ofac_lukoil_faqs_sep18",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "34bce9a233152abe77f48e5a85a508c0ae19168e6851f74487f5780a6b08966d",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "c2465907cc7a3df8d8f7154dcf201c97981e0b1075f6f82c1404d57b8575468f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_lukoil_gl131j_sep18",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "d32158d2521339ff5d34611af26c4a508a552cc5c2eb51678ce4d0ccb62b0331",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ofac_lukoil_faqs_sep18",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "34bce9a233152abe77f48e5a85a508c0ae19168e6851f74487f5780a6b08966d",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "60eeca2caa8254ffb57a3958d55c7662f119822c94058683ca4bcef43f45a065",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_lukoil_gl131j_sep18",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "d32158d2521339ff5d34611af26c4a508a552cc5c2eb51678ce4d0ccb62b0331",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ofac_lukoil_faqs_sep18",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "34bce9a233152abe77f48e5a85a508c0ae19168e6851f74487f5780a6b08966d",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "7f0333aef802ebe54f4696f79ad7e01034a5a9209de111066475bbbcb06af492",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_lukoil_gl131j_sep18",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "d32158d2521339ff5d34611af26c4a508a552cc5c2eb51678ce4d0ccb62b0331",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ofac_lukoil_faqs_sep18",
+              "locator": "Complete linked instrument or report inspected for the indexed fact and stated limitations.",
+              "inspected_at": "2026-09-19T16:10:00Z",
+              "document_sha256": "34bce9a233152abe77f48e5a85a508c0ae19168e6851f74487f5780a6b08966d",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "6900d7c4b8a42db293ee842bd266646aebdf59362ea6a1c9ad983fbab5656b8c",
+          "review_note": "Reviewed institutional consequences separately from the evidenced lifecycle stage and unresolved outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "52ed116007aed4e4884212058cafbac1b16e3cbfd62c26fa1825a1d5c8dd05c4",
+          "review_note": "Reviewed the strongest administration rationale or response and specified documentary, implementation, litigation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "2990d922746dae10a53c5b07ed57efe9a8897a880e7280fdc1bd615d63c33cb0",
           "review_note": "Reviewed plausible alternatives separately; Therefore is limited to verified action and excludes unobserved outcomes."
         }
       ],
