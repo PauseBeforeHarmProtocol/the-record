@@ -3649,6 +3649,30 @@
       "provenance_path": "data/editorial_change_notes/10.77.0.json",
       "provenance_sha256": "07da78ff5df6c2414027c151ac5df04ba0d91d7d9011b5f13fb64e51ffac26b9",
       "note": "As-of time is the research cutoff, not the source inspection or event time. Original event date retained."
+    },
+    {
+      "change_id": "10.78.0:NAT-2026-09-18-008",
+      "entry_id": "NAT-2026-09-18-008",
+      "as_of_utc": "2026-09-19T22:01:16Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.78.0",
+      "summary": "Refreshed the Greenland record after Denmark and Greenland acknowledged a proposed framework, while preserving the unsigned status and explicit sovereignty limits.",
+      "provenance_path": "data/editorial_change_notes/10.78.0.json",
+      "provenance_sha256": "4011824fb5e9e631905f94225bea28abb1d3004862a91fea72b164ee4d55b630",
+      "note": "As-of time is the research cutoff, not the source inspection or event time. Original event date retained."
+    },
+    {
+      "change_id": "10.78.0:NAT-2026-09-19-001",
+      "entry_id": "NAT-2026-09-19-001",
+      "as_of_utc": "2026-09-19T22:01:16Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.78.0",
+      "summary": "Added the announced AI Force and future AI-czar proposal without treating a social-media statement as an operative charter, appointment or implemented agency.",
+      "provenance_path": "data/editorial_change_notes/10.78.0.json",
+      "provenance_sha256": "4011824fb5e9e631905f94225bea28abb1d3004862a91fea72b164ee4d55b630",
+      "note": "As-of time is the research cutoff, not the source inspection or event time. Original event date retained."
     }
   ],
   "reviews": [
@@ -33606,6 +33630,206 @@
       ],
       "unresolved_questions": [
         "Later implementation records, litigation, independently measured effects and any corrections remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.78.0:NAT-2026-09-19-001:97c6df400cb3",
+      "entry_id": "NAT-2026-09-19-001",
+      "content_sha256": "97c6df400cb3e0cccde563bffe394c09edee4d1fa3e42fe7bf48106695dd096f",
+      "reviewed_at": "2026-09-19T22:18:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "5ada67a072b1999b7f26967a8cd9a92521deebd724e9f17c3f158f5944651387",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_ai_force_sep19",
+              "locator": "Complete retained presidential post; used to establish the announcement and quoted policy rationale only.",
+              "inspected_at": "2026-09-19T22:18:00Z",
+              "document_sha256": "23c37ac97645a1c2e16cfb87055b10ffefd25ffd560b76667738f7b6c6df774b",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "reuters_ai_force_sep19",
+              "locator": "Complete linked report inspected for the announcement, absence of implementation details and lack of immediate White House comment.",
+              "inspected_at": "2026-09-19T22:18:00Z",
+              "document_sha256": "1785f91dbe014281dc20bd474d8a468dc65654d184d582b726663c45e8124b87",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "96fd7a53cc7b18ce2bf1aac01ef888ff7192a7cb197bd7e857aae4556f49c076",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_ai_force_sep19",
+              "locator": "Complete retained presidential post; used to establish the announcement and quoted policy rationale only.",
+              "inspected_at": "2026-09-19T22:18:00Z",
+              "document_sha256": "23c37ac97645a1c2e16cfb87055b10ffefd25ffd560b76667738f7b6c6df774b",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "3baecce7b9af98c7852ff2f170ffb2d60e87e5fc4bba889eb948edc8cc3f411b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ai_force_sep19",
+              "locator": "Complete linked report inspected for the announcement, absence of implementation details and lack of immediate White House comment.",
+              "inspected_at": "2026-09-19T22:18:00Z",
+              "document_sha256": "1785f91dbe014281dc20bd474d8a468dc65654d184d582b726663c45e8124b87",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "b2e78deab521dca7354eb7ecbf496f29e9279c15eaedc5fc527c3ec92a959a35",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ai_force_sep19",
+              "locator": "Complete linked report inspected for the announcement, absence of implementation details and lack of immediate White House comment.",
+              "inspected_at": "2026-09-19T22:18:00Z",
+              "document_sha256": "1785f91dbe014281dc20bd474d8a468dc65654d184d582b726663c45e8124b87",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "241812078da6e7ae74615cf5cdbcb05a6655b0518b333b7b91acf0e02b4457c0",
+          "review_note": "Reviewed institutional consequences separately from the evidenced lifecycle stage and unresolved outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "7b1613db094ea5f7b679d545d4cf5f99fcdf10ffc6c80952077e10a200b7bbf5",
+          "review_note": "Reviewed the strongest administration rationale or response and specified documentary, implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "561a47dfec01f56aa4fa361eeaab0d0bd2722fdb8ffd8ba7bfca9cefe57d6641",
+          "review_note": "Reviewed plausible alternatives separately; Therefore is limited to verified action and excludes unobserved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "A written instrument, institutional placement, appointee, authorities, budget, membership and implementation remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.78.0:NAT-2026-09-18-008:f7cdeb30a1f6",
+      "entry_id": "NAT-2026-09-18-008",
+      "content_sha256": "f7cdeb30a1f6b02b6f42979c6ecea3d0cfe9bcb63df748c10c7fbf0dc5505548",
+      "reviewed_at": "2026-09-19T22:18:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "a3e13398a134857586e4c1a4efe2498524bcefff76ba058a5cc18db720c7edbf",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_greenland_agreement_claim_sep18",
+              "locator": "Complete retained presidential post; used only to establish publication and the president's claimed terms.",
+              "inspected_at": "2026-09-19T22:18:00Z",
+              "document_sha256": "f366954597f5ea938e00a9da5a58ff92d7eb508c63c93527192dea2f5cec9bed",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "fddbfcdf520de09530259f1c61253894d471ad23795b4ac260df7b32063d632c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_greenland_agreement_claim_sep18",
+              "locator": "Complete retained presidential post; used only to establish publication and the president's claimed terms.",
+              "inspected_at": "2026-09-19T22:18:00Z",
+              "document_sha256": "f366954597f5ea938e00a9da5a58ff92d7eb508c63c93527192dea2f5cec9bed",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "1544aafabd0af0b2575feb31145b82b52eaa3cc295782ece39cec37041dab94e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_greenland_framework_sep19",
+              "locator": "Complete linked report inspected for named Danish and Greenlandic statements, the proposed framework and expected future signature.",
+              "inspected_at": "2026-09-19T22:18:00Z",
+              "document_sha256": "3cf886b407cc328599c380c8e501b584803c69c23bc9deaf7ee5ab1221d565c6",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "71781a4259c0893681ec584d115d5594d1d769280e0206a33a43f9d17c037cee",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_greenland_framework_sep19",
+              "locator": "Complete linked report inspected for named Danish and Greenlandic statements, the proposed framework and expected future signature.",
+              "inspected_at": "2026-09-19T22:18:00Z",
+              "document_sha256": "3cf886b407cc328599c380c8e501b584803c69c23bc9deaf7ee5ab1221d565c6",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_greenland_agreement_claim_sep18",
+              "locator": "Independent report inspected for existing defense context and the earlier absence of public terms.",
+              "inspected_at": "2026-09-19T22:18:00Z",
+              "document_sha256": "67caca438da33efc406bf3b9aca833c6cf9050d62651536cf130ac21fa26eb78",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "a4b235fb373ccbf01f50c786cdd5d0f82a61062e8de450645f34b4297c4859b1",
+          "review_note": "Reviewed institutional consequences separately from the evidenced lifecycle stage and unresolved outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "2a672066144d22b311116e2c34b3bf7b83b1547b65ac1acadae4347329e87577",
+          "review_note": "Reviewed the strongest administration rationale or response and specified documentary, implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "bc594e8f8c43aa3cb84ec5e4e1cd38b42322d3e236b290c966a79fb5d1ae948d",
+          "review_note": "Reviewed plausible alternatives separately; Therefore is limited to verified action and excludes unobserved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "A signed public instrument, exact authorities, cost, basing plans, legislative or self-government review and implementation remain unresolved."
       ]
     }
   ],
