@@ -1,26 +1,30 @@
 {
-  "version": "10.74.1",
-  "artifact_mode": "feed-only",
+  "version": "10.75.0",
+  "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-18T22:32:34Z",
-    "through_utc": "2026-09-18T23:07:21Z",
+    "from_utc": "2026-09-18T23:07:21Z",
+    "through_utc": "2026-09-19T04:02:04Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous research coverage begins at the prior release's exact UTC boundary. No separate candidate cleared the publication threshold; this release is limited to a materially newer validated Truth Social fallback. Feed retrieval and review times are recorded separately from the research cutoff."
+    "note": "Continuous research coverage begins at the prior release's exact UTC boundary. The complete primary order and judgment resolved a prior-window Solar for All lead that had been withheld rather than reconstructed from coverage. Feed retrieval and review times are recorded separately from the research cutoff."
   },
-  "release_iso": "2026-09-18",
-  "release_human": "September 18, 2026",
-  "checked_at": "2026-09-18 7:07 PM EDT",
-  "previous_version": "10.74.0",
-  "previous_checked_at": "2026-09-18 6:32 PM EDT",
-  "window_started_at": "2026-09-18 6:32 PM EDT",
-  "window_ended_at": "2026-09-18 7:07 PM EDT",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
-  "week_label": "September 14–20, 2026",
+  "release_iso": "2026-09-19",
+  "release_human": "September 19, 2026",
+  "checked_at": "2026-09-19 12:02 AM EDT",
+  "previous_version": "10.74.1",
+  "previous_checked_at": "2026-09-18 7:07 PM EDT",
+  "window_started_at": "2026-09-18 7:07 PM EDT",
+  "window_ended_at": "2026-09-19 12:02 AM EDT",
+  "week_start": "2026-09-13",
+  "week_end": "2026-09-19",
+  "week_label": "September 13–19, 2026",
   "cutoff_start": "2026-07-17",
-  "new_entry_ids": [],
-  "added_entry_ids": [],
+  "new_entry_ids": [
+    "NAT-2026-09-18-011"
+  ],
+  "added_entry_ids": [
+    "NAT-2026-09-18-011"
+  ],
   "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
@@ -230,10 +234,6 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Solar for All termination ruling",
-      "reason": "Reuters and AP independently reported that the district court vacated EPA's $7 billion program termination, but the complete September 18 opinion remained unavailable for inspection. The ruling stays queued rather than being reconstructed from coverage."
-    },
-    {
       "title": "Nationwide Medicaid most-favored-nation drug pricing",
       "reason": "Reuters and AP reported nationwide participation in the announced GENEROUS model, but no complete CMS or White House instrument, participating-state terms, covered-drug list, price schedule or effective date was available for inspection. Broader savings claims therefore remain unverified."
     },
@@ -246,8 +246,12 @@
       "reason": "Underlying investigative records remained unavailable; allegations and an inquiry do not establish a violation, charge or adjudicated result."
     },
     {
-      "title": "Top 25 accomplishments Truth Social post",
-      "reason": "The new post introduces a two-image accomplishments list but announces no independently established government action in its retained text. Both attachments returned HTTP 403, so no visual claim was used; the item remains feed-only."
+      "title": "DHS asylum-claim dismissal directive",
+      "reason": "The Immigration Policy Tracking Project newly indexed reported internal guidance seeking early dismissal of facially insufficient asylum claims, but the directive itself remained unavailable and the lead rested on one news account. It remains a discovery lead rather than a canonical record."
+    },
+    {
+      "title": "Truth Social feed",
+      "reason": "No post newer than September 18 at 6:50:11 PM EDT appeared in the validated fallback. The prior accomplishments-list post remains feed-only because it announced no independently established government action and its images were unavailable."
     },
     {
       "title": "Previously deferred source-inspection leads",
@@ -259,28 +263,9 @@
     },
     {
       "title": "External archive measurements",
-      "reason": "A strict feed-only release preserves the 10.74.0 canonical editorial snapshot and registry measurements byte-for-byte; unlike upstream units remain separate and no external item was promoted automatically."
+      "reason": "Trump Archive and Immigration Policy Tracking measurements were refreshed from their primary project pages. UndoTrump remained unchanged and Record47's prior verified API values were preserved because its API was unavailable; unlike units remain separate and no external item was promoted automatically."
     }
   ],
   "corrections": [],
-  "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence.",
-  "editorial_snapshot": {
-    "version": "10.74.0",
-    "complete_pack": {
-      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-09-18_v10.74.0.zip",
-      "sha256": "f3d13cc2a63fa80af35bab5d922760bd788d44588033e26568ba10320e87a009"
-    },
-    "national_pack": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-09-18_v10.74.0.zip",
-      "sha256": "872c82fe30559050a0657005ebab36932c62456cbb17e3376e5c9b5ecb2c02b6"
-    },
-    "national_brief": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-09-18_v10.74.0.md",
-      "sha256": "bbfdd9a0ccb621986bfd6c1f825515f2aa638f6c7de66af4e0fcb27d561bffa8"
-    },
-    "in6_brief": {
-      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-09-18_v10.74.0.md",
-      "sha256": "6b6ceb96d0732962adb97526b3f0d92631b21a43cff4fa68ceae3f11b38085b6"
-    }
-  }
+  "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence."
 }
