@@ -1,31 +1,27 @@
 {
-  "version": "10.79.0",
-  "artifact_mode": "full",
+  "version": "10.79.1",
+  "artifact_mode": "feed-only",
   "research_window": {
-    "from_utc": "2026-09-19T22:01:16Z",
-    "through_utc": "2026-09-20T04:00:48Z",
+    "from_utc": "2026-09-20T04:00:48Z",
+    "through_utc": "2026-09-20T10:01:47Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous research coverage begins at the prior release's exact UTC boundary. The September 19 Caribbean strike was reported within this window and materially refreshes the existing SOUTHCOM campaign record. Feed retrieval and review times are recorded separately from the research cutoff."
+    "note": "Continuous research coverage begins at the prior release's exact UTC boundary. No separate candidate cleared the publication threshold; this release is limited to the materially newer validated Truth Social fallback. Feed retrieval and review times are recorded separately from the research cutoff."
   },
   "release_iso": "2026-09-20",
   "release_human": "September 20, 2026",
-  "checked_at": "2026-09-20 12:00 AM EDT",
-  "previous_version": "10.78.0",
-  "previous_checked_at": "2026-09-19 6:01 PM EDT",
-  "window_started_at": "2026-09-19 6:01 PM EDT",
-  "window_ended_at": "2026-09-20 12:00 AM EDT",
+  "checked_at": "2026-09-20 6:01 AM EDT",
+  "previous_version": "10.79.0",
+  "previous_checked_at": "2026-09-20 12:00 AM EDT",
+  "window_started_at": "2026-09-20 12:00 AM EDT",
+  "window_ended_at": "2026-09-20 6:01 AM EDT",
   "week_start": "2026-09-14",
   "week_end": "2026-09-20",
   "week_label": "September 14–20, 2026",
   "cutoff_start": "2026-07-17",
-  "new_entry_ids": [
-    "NAT-2026-08-25-005"
-  ],
+  "new_entry_ids": [],
   "added_entry_ids": [],
-  "refreshed_entry_ids": [
-    "NAT-2026-08-25-005"
-  ],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -247,23 +243,23 @@
   "rejected_candidates": [
     {
       "title": "Truth Social feed",
-      "reason": "No new posts appeared after the prior snapshot. The feed remains at 36,358 posts; the newest remains the September 19 1:27:35 PM EDT image post whose media was previously unavailable for visual review."
+      "reason": "The feed advanced from 36,358 to 36,359 posts. The complete retained text of the September 20 1:14:43 AM EDT post was reviewed; it praises an interview attacking AI-risk concerns but announces no order, appointment, policy instrument or implementation, so it remains feed-only."
+    },
+    {
+      "title": "Scheduled Bessent-He economic meeting",
+      "reason": "Reuters reported a meeting scheduled for 10:30 AM EDT, after this release's cutoff. No completed meeting, agreement, decision or implemented action existed by cutoff."
+    },
+    {
+      "title": "North Korean missile launches",
+      "reason": "AP reported North Korea's launches and information sharing among South Korea, the United States and Japan. The reporting established no new U.S. order, deployment, sanction or other operative administration action, and no causal effectiveness finding about the scaled-back exercise."
     },
     {
       "title": "Reported NIH grant-control executive order",
-      "reason": "Reuters relayed Politico's report citing two unnamed administration officials about a draft executive order. No order, board, grant decision or independent confirmation was available, and the White House, OMB and HHS did not comment."
+      "reason": "The prior-window report still rests on Politico and two unnamed administration officials. No signed order, review board, grant decision or independent confirmation was available, and the White House, OMB and HHS did not comment."
     },
     {
-      "title": "White House press-access follow-up coverage",
-      "reason": "Reuters corroborated the already-recorded denial of access to CNN, MS NOW and Politico, but established no new outlet ban, court filing, ruling or other material lifecycle change after the prior release."
-    },
-    {
-      "title": "Scheduled U.S.-China economic meeting",
-      "reason": "Reporting described a planned Bessent-He meeting but established no completed meeting, agreement, decision or implemented action by cutoff."
-    },
-    {
-      "title": "Weekend analysis and private litigation",
-      "reason": "Oil-market analysis, campaign coverage and a private AI-company antitrust complaint supplied no new administration instrument, adjudicated finding or independently measured policy outcome."
+      "title": "Foreign symbolic response, weekend analysis and private litigation",
+      "reason": "A symbolic Macron-Carney meeting responding to Trump's map, analysis of Trump-Xi positioning and a private AI-company antitrust complaint supplied no new administration instrument, adjudicated finding or independently measured policy outcome."
     },
     {
       "title": "Previously deferred source-inspection leads",
@@ -275,9 +271,28 @@
     },
     {
       "title": "External archive measurements",
-      "reason": "Trump Archive remained at 14,150 items, including 11,700 Truth Social posts and 1,810 speeches or transcripts. UndoTrump remained at 1,264 actions and Immigration Policy Tracking at 1,793 actions. Record47's API timed out, so its prior verified measurements were preserved rather than replaced by lower rendered-homepage figures. Unlike units remain separate and no external item was promoted automatically."
+      "reason": "The four registered archive projects were checked as discovery inputs. This strict feed-only release preserves the verified 10.79.0 measurements and editorial snapshot byte-for-byte; unlike units remain separate and no external item was promoted automatically."
     }
   ],
+  "editorial_snapshot": {
+    "version": "10.79.0",
+    "complete_pack": {
+      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-09-20_v10.79.0.zip",
+      "sha256": "bb62be22a8566278656f75d66ce00578290af2ddfba17c024032e8193e9c087e"
+    },
+    "national_pack": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-09-20_v10.79.0.zip",
+      "sha256": "a8e9ca84acd0b003b12a2771046b02f8e87c3a57b68f809e34a2038f22af9a2a"
+    },
+    "national_brief": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-09-20_v10.79.0.md",
+      "sha256": "b77786b553c20206b35547d754cf62d9971b80d7c5f1d264824224097c044abf"
+    },
+    "in6_brief": {
+      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-09-20_v10.79.0.md",
+      "sha256": "c1091047b33b187aa017f432d678d10dca5dff2e21824b7d8bb9215f04f66f6c"
+    }
+  },
   "corrections": [],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence."
 }
