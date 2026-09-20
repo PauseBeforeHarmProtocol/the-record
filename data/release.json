@@ -1,31 +1,27 @@
 {
-  "version": "10.80.0",
-  "artifact_mode": "full",
+  "version": "10.80.1",
+  "artifact_mode": "feed-only",
   "research_window": {
-    "from_utc": "2026-09-20T10:01:47Z",
-    "through_utc": "2026-09-20T16:01:07Z",
+    "from_utc": "2026-09-20T16:01:07Z",
+    "through_utc": "2026-09-20T21:57:29Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous research coverage begins at the prior release's exact UTC boundary. Feed retrieval and review times are recorded separately from the research cutoff."
+    "note": "Continuous research coverage begins at the prior release's exact UTC boundary. No separate candidate cleared the publication threshold; this release is limited to the materially newer validated Truth Social fallback. Feed retrieval and review times are recorded separately from the research cutoff."
   },
   "release_iso": "2026-09-20",
   "release_human": "September 20, 2026",
-  "checked_at": "2026-09-20 12:01 PM EDT",
-  "previous_version": "10.79.1",
-  "previous_checked_at": "2026-09-20 6:01 AM EDT",
-  "window_started_at": "2026-09-20 6:01 AM EDT",
-  "window_ended_at": "2026-09-20 12:01 PM EDT",
+  "checked_at": "2026-09-20 5:57 PM EDT",
+  "previous_version": "10.80.0",
+  "previous_checked_at": "2026-09-20 12:01 PM EDT",
+  "window_started_at": "2026-09-20 12:01 PM EDT",
+  "window_ended_at": "2026-09-20 5:57 PM EDT",
   "week_start": "2026-09-14",
   "week_end": "2026-09-20",
   "week_label": "September 14–20, 2026",
   "cutoff_start": "2026-07-17",
-  "new_entry_ids": [
-    "NAT-2026-08-28-012"
-  ],
+  "new_entry_ids": [],
   "added_entry_ids": [],
-  "refreshed_entry_ids": [
-    "NAT-2026-08-28-012"
-  ],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -247,23 +243,27 @@
   "rejected_candidates": [
     {
       "title": "Truth Social feed",
-      "reason": "The feed advanced from 36,359 to 36,362 posts. All three additions were reviewed: the Triumphal Arch statement supported a material refresh only after independent reporting; the AI-renaming poll remained feed-only; and the empty-text video returned HTTP 403, so no visual or audio claim was used."
+      "reason": "The feed advanced from 36,362 to 36,367 posts. All five additions contain no text and each attached image returned HTTP 403. The text states were reviewed as empty and the media states were marked unavailable; no visual claim or independently verified qualifying action was used."
     },
     {
       "title": "Bessent-He trade, AI and critical-minerals talks",
-      "reason": "Reuters established that the bilateral meeting began around 10:30 AM EDT, but talks remained underway and produced no completed agreement, formal proposal, decision or implemented action by cutoff."
+      "reason": "Reuters established that the bilateral meeting began around 10:30 AM EDT, but no completed meeting readout, agreement, tariff or export-control decision, formal AI safeguard proposal or critical-minerals commitment was available by cutoff."
     },
     {
-      "title": "North Korean missile launches",
-      "reason": "Associated Press reported the launches and allied information sharing but no new U.S. order, deployment, sanction or other operative administration action."
+      "title": "Austin ICE-agent shooting",
+      "reason": "Associated Press and The Wall Street Journal reported that an ICE agent shot and wounded a man. Early accounts relied on local officials, DHS and ICE had not supplied an account, the man's condition and the sequence remained unsettled, and no completed independent investigation or legal finding existed by cutoff."
     },
     {
       "title": "Reported NIH grant-control executive order",
       "reason": "The report still rests on Politico and two unnamed administration officials. No signed order, review board, grant decision or independent confirmation was available, and the White House, OMB and HHS did not comment."
     },
     {
-      "title": "AI-renaming poll and empty-text video",
-      "reason": "The poll revises promotional terminology without a policy instrument. The separate video could not be retrieved because the media server returned HTTP 403; no media claim was used."
+      "title": "Reported organization-wide ICC sanctions",
+      "reason": "Reuters independently corroborated a Wall Street Journal report that organization-wide sanctions had been prepared, but both accounts relied on unnamed sources. No OFAC instrument, State Department announcement, effective date or implementation existed by cutoff, and timing remained unclear."
+    },
+    {
+      "title": "Planned Trump-Zelenskiy meeting",
+      "reason": "Zelenskiy said the leaders agreed to meet during the U.N. General Assembly, but the meeting had not occurred and no agreement, order, security commitment or other operative outcome existed by cutoff."
     },
     {
       "title": "Previously deferred source-inspection leads",
@@ -275,9 +275,28 @@
     },
     {
       "title": "External archive measurements",
-      "reason": "All four registered archive projects were checked as discovery inputs. Trump Archive advanced to 14,152 total items and 11,702 Truth Social posts; UndoTrump remained at 1,264 actions and Immigration Policy Tracking at 1,793 actions. Record47's rendered site was available but its public API was inaccessible, so prior verified API measurements were preserved. Unlike units remain separate and no external item was promoted automatically."
+      "reason": "The four registered archive projects remain discovery inputs. This strict feed-only release preserves the verified 10.80.0 measurements and editorial snapshot byte-for-byte; unlike units remain separate and no external item was promoted automatically."
     }
   ],
+  "editorial_snapshot": {
+    "version": "10.80.0",
+    "complete_pack": {
+      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-09-20_v10.80.0.zip",
+      "sha256": "2408881f35692f16350e752e54e7de93a7dd94173fab2eb1af821de83c95611e"
+    },
+    "national_pack": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-09-20_v10.80.0.zip",
+      "sha256": "7862e1b04236ab3306cdd7d987c75fb6660339247e2aad79167f41110b63f694"
+    },
+    "national_brief": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-09-20_v10.80.0.md",
+      "sha256": "18fe4b06fe6a36ccdc00b4d35ce6a82a1327d9736b227f5faef25d471d485954"
+    },
+    "in6_brief": {
+      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-09-20_v10.80.0.md",
+      "sha256": "4fd861b75cabbeffef2c670a65b7f7d360feb523a483a5bbb42b7f9885a29995"
+    }
+  },
   "corrections": [],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence."
 }
