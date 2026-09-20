@@ -3685,6 +3685,18 @@
       "provenance_path": "data/editorial_change_notes/10.79.0.json",
       "provenance_sha256": "b6fcb4514f13a37e7ccada3d1699605f0a4f9c371b8fb3bc78e0ee5735689606",
       "note": "As-of time is the research cutoff, not the source inspection or event time. Original event date retained."
+    },
+    {
+      "change_id": "10.80.0:NAT-2026-08-28-012",
+      "entry_id": "NAT-2026-08-28-012",
+      "as_of_utc": "2026-09-20T16:01:07Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.80.0",
+      "summary": "Refreshed the existing Triumphal Arch record with Trump's announced drone, sniper and ammunition functions, while preserving absent Pentagon corroboration and unresolved approvals, authority, funding and implementation.",
+      "provenance_path": "data/editorial_change_notes/10.80.0.json",
+      "provenance_sha256": "5aa4224dad6288478da82391a84b3dfe507c04185fc471aadc7677cab360e8ac",
+      "note": "As-of time is the research cutoff, not the source inspection or event time. Original event date retained."
     }
   ],
   "reviews": [
@@ -34025,6 +34037,274 @@
       ],
       "unresolved_questions": [
         "The identities and conduct of those killed, vessel cargo, intelligence, legal authority, congressional reporting and independently measured campaign effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.80.0:NAT-2026-08-28-012:9a531b3e6339",
+      "entry_id": "NAT-2026-08-28-012",
+      "content_sha256": "9a531b3e6339986b86d85f5d7d23dbd93e0df82c2ba7e9377582af727e5281b1",
+      "reviewed_at": "2026-09-20T16:14:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "da332a3bd70e7aeeaf25a37ec2698c93ca83f03b69d358cede5ccc71e7f63be8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "nps_triumphal_arch_assessment_aug28",
+              "locator": "Complete revised National Park Service assessment describing the proposed 250-foot arch.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "ce6d35f5b62a9a245624f87d0cd508b15df06b4332ac78917b21dbf7903abf61",
+              "origin_group": "National Park Service",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "037f4f2fb304df30f2adc4e2c5f160f7a256a9f6cd68ed516593d793d6f2eb81",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "nps_triumphal_arch_assessment_aug28",
+              "locator": "Primary assessment's adverse-effect findings and affected historic properties.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "ce6d35f5b62a9a245624f87d0cd508b15df06b4332ac78917b21dbf7903abf61",
+              "origin_group": "National Park Service",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "fcd218ed064ab47c9c17ea253fcc04b4b72440c40d58cea8643776e7cbfbdc3f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "nps_triumphal_arch_assessment_aug28",
+              "locator": "Primary assessment's site rationale and alternatives discussion.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "ce6d35f5b62a9a245624f87d0cd508b15df06b4332ac78917b21dbf7903abf61",
+              "origin_group": "National Park Service",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "7887ec9080b3198ed42c04f7f527c8adc1794a7c41626e7fff3d3e9447cc33f7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "nps_triumphal_arch_assessment_aug28",
+              "locator": "Primary assessment's procedural status and remaining approvals.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "ce6d35f5b62a9a245624f87d0cd508b15df06b4332ac78917b21dbf7903abf61",
+              "origin_group": "National Park Service",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_triumphal_arch_aug28",
+              "locator": "Independent report on project status and litigation.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "32098c83a86fc2fccefc2c0ad9c8598df6d936052811c06152891b1a22914945",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "81fda6ad79663fc07b894d1357605a7cbc508d57c7e4a178de4390f1deb39c08",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_triumphal_arch_excavation_sep3",
+              "locator": "Named administration timetable and stated dimensions.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "584517baf4d36daf9d65bfc33be38792b0f8a9ff8f4f2e482880a7bcc19f9058",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "0e75fcf4d6c3b7ade7cf5d06f0137fb7abfbd6609b0d8f138e7c1be9055761dd",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_triumphal_arch_excavation_sep3",
+              "locator": "Independent report distinguishes the announced timetable from completed work and resolved authority.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "584517baf4d36daf9d65bfc33be38792b0f8a9ff8f4f2e482880a7bcc19f9058",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "f13baa35818d472ef177e9befe5e8973f61e66182d6d11d646899bed4d850e39",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "faa_triumphal_arch_sep18",
+              "locator": "FAA September 18 statement describing the aeronautical study and no-hazard result.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "6310f2f0132c940eebff7a8282f691c3cdf8bcfd18a3deb4daf6646be043f201",
+              "origin_group": "Federal Aviation Administration",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "8c070ec60176fbcf337dd89526737bdccf7eb6dd4baa020849668544f6b77f51",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "faa_triumphal_arch_sep18",
+              "locator": "FAA statement identifies the eternal-flame and floodlight conditions.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "6310f2f0132c940eebff7a8282f691c3cdf8bcfd18a3deb4daf6646be043f201",
+              "origin_group": "Federal Aviation Administration",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_triumphal_arch_sep18",
+              "locator": "Independent report of review period and lighting conditions.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "de17504a000c5a4263c4a71989a91365be19b80eee48a7a9678073c6c3be6a22",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "600414a5ce082d1d676ecb2b1025a9527027cf111d60a90f5934cac59f186a03",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "faa_triumphal_arch_sep18",
+              "locator": "Agency statement is limited to the aeronautical determination.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "6310f2f0132c940eebff7a8282f691c3cdf8bcfd18a3deb4daf6646be043f201",
+              "origin_group": "Federal Aviation Administration",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_triumphal_arch_sep18",
+              "locator": "Independent report distinguishes aviation clearance from wider approvals and litigation.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "de17504a000c5a4263c4a71989a91365be19b80eee48a7a9678073c6c3be6a22",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "c4a65365a9d39be03dc2840fcef8122b80babf49d3d0b68224f40da37b532e91",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_triumphal_arch_military_sep20",
+              "locator": "Complete retained presidential post inspected; used to establish publication, the announced drone, sniper and ammunition functions, and Trump's claimed rationale only.",
+              "inspected_at": "2026-09-20T16:14:00Z",
+              "document_sha256": "51d2ac8159b51515cde7ea609052eb88e03c7dd14eee1be2f07648316ad41c76",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "reuters_triumphal_arch_military_sep20",
+              "locator": "Complete linked report inspected for the presidential announcement, asserted military request, absent specific threat and lack of White House or Defense Department response.",
+              "inspected_at": "2026-09-20T16:14:00Z",
+              "document_sha256": "676d88ba43cfdb039d9f71e87e874f0c5dabd46b29e62278fd33d7315bffc727",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_triumphal_arch_military_sep20",
+              "locator": "Complete linked report inspected for the announcement, Pentagon's lack of additional information, pending planning approval and congressional-authorization litigation.",
+              "inspected_at": "2026-09-20T16:14:00Z",
+              "document_sha256": "5a29a654b5530061fd0811bc8ad224288260afc17ae08a4029b7f3450bfc5689",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 10,
+          "fact_sha256": "b2e95bf148e0cd06b2a46888ed4d7367d57fafceb8c50d5d62482753d4389730",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_triumphal_arch_military_sep20",
+              "locator": "Complete linked report inspected for the presidential announcement, asserted military request, absent specific threat and lack of White House or Defense Department response.",
+              "inspected_at": "2026-09-20T16:14:00Z",
+              "document_sha256": "676d88ba43cfdb039d9f71e87e874f0c5dabd46b29e62278fd33d7315bffc727",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_triumphal_arch_military_sep20",
+              "locator": "Complete linked report inspected for the announcement, Pentagon's lack of additional information, pending planning approval and congressional-authorization litigation.",
+              "inspected_at": "2026-09-20T16:14:00Z",
+              "document_sha256": "5a29a654b5530061fd0811bc8ad224288260afc17ae08a4029b7f3450bfc5689",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 11,
+          "fact_sha256": "90597c594a9534234cd5aa2206d43d4d9e548f433f283353c4377ab848d27c34",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_triumphal_arch_military_sep20",
+              "locator": "Complete linked report inspected for the presidential announcement, asserted military request, absent specific threat and lack of White House or Defense Department response.",
+              "inspected_at": "2026-09-20T16:14:00Z",
+              "document_sha256": "676d88ba43cfdb039d9f71e87e874f0c5dabd46b29e62278fd33d7315bffc727",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_triumphal_arch_military_sep20",
+              "locator": "Complete linked report inspected for the announcement, Pentagon's lack of additional information, pending planning approval and congressional-authorization litigation.",
+              "inspected_at": "2026-09-20T16:14:00Z",
+              "document_sha256": "5a29a654b5530061fd0811bc8ad224288260afc17ae08a4029b7f3450bfc5689",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "da5a6ffa22ce4703b06e2476d9d0e29523c94b990a2301bf437a1439f9d08447",
+          "review_note": "Reviewed the changed operational purpose and public-site risks separately from the unbuilt and uncorroborated status."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "a9ed0d3d9b109398d03ec4d951cbae5e243ba2592112871546ee7247015e8d0c",
+          "review_note": "Preserved Trump's military-request and national-security rationale while specifying documentary, approval, safety and implementation tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "d4ec9c4e3ed9135efc6ab4382d336c6dd1f51508303bca8f8052575787864332",
+          "review_note": "Reviewed a plausible classified-planning explanation and limited the conclusion to announced intent rather than Pentagon adoption or implementation."
+        }
+      ],
+      "unresolved_questions": [
+        "A published military request or operational plan, identified authority and threat, final planning approval, funding, contracts, safeguards, construction and implementation remain unresolved."
       ]
     }
   ],
