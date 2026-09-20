@@ -3673,6 +3673,18 @@
       "provenance_path": "data/editorial_change_notes/10.78.0.json",
       "provenance_sha256": "4011824fb5e9e631905f94225bea28abb1d3004862a91fea72b164ee4d55b630",
       "note": "As-of time is the research cutoff, not the source inspection or event time. Original event date retained."
+    },
+    {
+      "change_id": "10.79.0:NAT-2026-08-25-005",
+      "entry_id": "NAT-2026-08-25-005",
+      "as_of_utc": "2026-09-20T04:00:48Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.79.0",
+      "summary": "Refreshed the existing SOUTHCOM campaign record with the September 19 Caribbean strike and independently reported campaign totals, while preserving uncertainty about identities, cargo, intelligence and legal authority.",
+      "provenance_path": "data/editorial_change_notes/10.79.0.json",
+      "provenance_sha256": "8d93dbbc240fe80d199a8a7db632fcfddebe756a6323f96aa07cd297031ec64f",
+      "note": "As-of time is the research cutoff, not the source inspection or event time. Original event date retained."
     }
   ],
   "reviews": [
@@ -33830,6 +33842,189 @@
       ],
       "unresolved_questions": [
         "A signed public instrument, exact authorities, cost, basing plans, legislative or self-government review and implementation remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.79.0:NAT-2026-08-25-005:eacf2c9b5ea0",
+      "entry_id": "NAT-2026-08-25-005",
+      "content_sha256": "eacf2c9b5ea08a2244806c03bdfbd1f76fe5a3cb3c9eeaee84447069a64c3008",
+      "reviewed_at": "2026-09-20T04:15:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "18caac31a3829396a957d253bd884045b9fc1906cc3c285e56aea7ee32b6fad8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_caribbean_strike_aug25",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "6dacd9d6ec6a07eed4365d4ead62704d1247f78734d4b0162d80d717b59da4f4",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "a8c299eacb3635a8981cdca7fc3ff512ad1663182e51f3071bb3b3aa7d09bdd1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_caribbean_strike_aug25",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "6dacd9d6ec6a07eed4365d4ead62704d1247f78734d4b0162d80d717b59da4f4",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "2b29217af66573de08a161bb3d860588b10e8ee2729421b70109432916bb597e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_refueling_vessel_sep5",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "90a2110261f0bb1afc0dd86725e1abce8a11f07aed6ab38de456a749125f60d2",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "f8a85969f110a68d396066620a644c11959eeaeefc6bfe235e8445c2aab8551d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_refueling_vessel_sep5",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "90a2110261f0bb1afc0dd86725e1abce8a11f07aed6ab38de456a749125f60d2",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "fcfce7dde50c9dfe3755ebe9efdff7a11a41907413eaa38db4fc85a5e8e304da",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_refueling_vessel_sep7",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "4b1a4f458ce565dd3b3f0ad82794c2d73339e27f14635872f60609285d2e1cdc",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "452d781081dac4416709a2442d0bcb42b15fa159a1e648f26f39a55c0b7ad31b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_refueling_vessel_sep8",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "53b426dae98cd79dfbd5f7c18dad4bb88c35b7c0abbcbc3c1d9185b3f1a4d822",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "ccd66709a251d5301c4261146f3cda0187f7b109d5c5cbf5dd0646afe0db95d3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "southcom_caribbean_strike_sep9",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "88c89326a40af2de56468c83821ab958c2a7cf2010bfce7dfbbb6262bf44a835",
+              "origin_group": "U.S. Southern Command",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_caribbean_strike_sep10",
+              "locator": "Inspected the source text and document metadata supporting this indexed fact; digest identifies the source-level representation.",
+              "inspected_at": "2026-09-10T04:02:20Z",
+              "document_sha256": "f2560f527dc4a8b2d16d6c01b6cf4b25c0d1e08566879f96d6980de304b12201",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "c1c1148973fa423baa746d25ba6eeee52b968129e55364a9657a53b81b03e0bd",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_caribbean_strike_sep19",
+              "locator": "Complete linked report inspected for the September 19 military announcement, attributed intelligence claim, four reported deaths and absence of published supporting detail.",
+              "inspected_at": "2026-09-20T04:15:00Z",
+              "document_sha256": "8a52ada0320b9450836dd9577ef030cea5975090dfbd627009d9c99d1c05fffc",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_caribbean_strike_sep19",
+              "locator": "Complete linked report inspected for the September 19 strike, four reported deaths and explicit statement that the military supplied no evidence the vessel carried drugs.",
+              "inspected_at": "2026-09-20T04:15:00Z",
+              "document_sha256": "cd2121f2247c803cd5fff0917619f76ee58b3b73478864cfa6e931e6f7ab95d1",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "0c11db4b9a1b703539148c843ff21af9fa8c446c01f95385e03eab67bb0a3a87",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_caribbean_strike_sep19",
+              "locator": "Complete linked report inspected for the independently reported campaign count of at least 231 deaths across 69 strikes.",
+              "inspected_at": "2026-09-20T04:15:00Z",
+              "document_sha256": "cd2121f2247c803cd5fff0917619f76ee58b3b73478864cfa6e931e6f7ab95d1",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "fa5fb18af23d5d8f3459a89d8bdc8728de1b802ef9314c820779b17bfca1252e",
+          "review_note": "Reviewed the reported campaign toll separately from unresolved legal, identification, proportionality and accountability questions."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "896f71a355587b22a3d587c8039e8f2e02d4c01fddcabfc4832b74a23766d183",
+          "review_note": "Preserved the administration intelligence and public-safety rationale while specifying observable evidence, legal and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "8d966cba2d5181c9f4941b38f93203d823f821cd50b646fc05e11a29cf6b96fd",
+          "review_note": "Reviewed the strongest reasonable classified-intelligence explanation and limited the conclusion to the announced strike and reported deaths."
+        }
+      ],
+      "unresolved_questions": [
+        "The identities and conduct of those killed, vessel cargo, intelligence, legal authority, congressional reporting and independently measured campaign effects remain unresolved."
       ]
     }
   ],
