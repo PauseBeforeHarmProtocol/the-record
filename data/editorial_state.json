@@ -3745,6 +3745,54 @@
       "provenance_path": "data/editorial_change_notes/10.81.0.json",
       "provenance_sha256": "3e582b70667c8654803abca02fcf988de099e5953b81f2b663873e3bfac31d01",
       "note": "As-of time is the research cutoff, not the event date. Original event date retained; earlier signed orders are disclosed prior-window omissions."
+    },
+    {
+      "change_id": "10.82.0:NAT-2026-09-16-010",
+      "entry_id": "NAT-2026-09-16-010",
+      "as_of_utc": "2026-09-21T16:01:57Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.82.0",
+      "summary": "Added the SEC shareholder-proposal and proxy-solicitation proposals as one linked prior-window event, preserving their proposed status and pending comment process.",
+      "provenance_path": "data/editorial_change_notes/10.82.0.json",
+      "provenance_sha256": "69812bf7540923a9aa5766078fb8a39ec26c3cc0ca16c4317dadf0b90f6b036b",
+      "note": "As-of time is the research cutoff, not the event date. Original event date retained; the later official publication disclosed this prior-window omission."
+    },
+    {
+      "change_id": "10.82.0:NAT-2026-09-17-011",
+      "entry_id": "NAT-2026-09-17-011",
+      "as_of_utc": "2026-09-21T16:01:57Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.82.0",
+      "summary": "Added DHS's 180-day nationwide mass-influx extension as a prior-window omission without inferring state participation, officer authorization or measured outcomes.",
+      "provenance_path": "data/editorial_change_notes/10.82.0.json",
+      "provenance_sha256": "69812bf7540923a9aa5766078fb8a39ec26c3cc0ca16c4317dadf0b90f6b036b",
+      "note": "As-of time is the research cutoff, not the event date. Original event date retained; the later official publication disclosed this prior-window omission."
+    },
+    {
+      "change_id": "10.82.0:NAT-2026-09-18-007",
+      "entry_id": "NAT-2026-09-18-007",
+      "as_of_utc": "2026-09-21T16:01:57Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.82.0",
+      "summary": "Refreshed the White House press-access record after three outlets filed suit and sought emergency relief; no judicial ruling was inferred.",
+      "provenance_path": "data/editorial_change_notes/10.82.0.json",
+      "provenance_sha256": "69812bf7540923a9aa5766078fb8a39ec26c3cc0ca16c4317dadf0b90f6b036b",
+      "note": "As-of time is the research cutoff, not the filing or event date. The stable canonical event ID is preserved across the litigation lifecycle."
+    },
+    {
+      "change_id": "10.82.0:NAT-2026-09-20-001",
+      "entry_id": "NAT-2026-09-20-001",
+      "as_of_utc": "2026-09-21T16:01:57Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.82.0",
+      "summary": "Refreshed the U.S.-China AI record after Bessent described an agreed dialogue, incident line and next meeting; no joint instrument or operating protocol was inferred.",
+      "provenance_path": "data/editorial_change_notes/10.82.0.json",
+      "provenance_sha256": "69812bf7540923a9aa5766078fb8a39ec26c3cc0ca16c4317dadf0b90f6b036b",
+      "note": "As-of time is the research cutoff. The stable canonical event ID is preserved across the negotiation lifecycle."
     }
   ],
   "reviews": [
@@ -34785,6 +34833,491 @@
       ],
       "unresolved_questions": [
         "The administration says the proposals can manage AI national-security risks and identify nonsensitive trade for possible tariff relief. A joint readout, accepted definitions, notification and confidentiality rules, governance, named products, legal tariff changes, implementation records and independently observed use remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.82.0:NAT-2026-09-16-010:cb178602d0d5",
+      "entry_id": "NAT-2026-09-16-010",
+      "content_sha256": "cb178602d0d5565a16be4c774ddc73509698df2acc4439788a079fa2bd328ef5",
+      "reviewed_at": "2026-09-21T16:01:57Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "678bd8e2453d2819b264a532829aec41c93127e0ec2cfa5b81d57b29cf56209a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_sec_shareholder_proposals_sep21",
+              "locator": "Complete proposed rule inspected for rescission, discretionary-voting mechanism, legal rationale, comment deadline and nonfinal status.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "342a69abcd97be131ae0b6b8c9f37129afd056573ea6af297aedf322dbc173b9",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "sec_proxy_proposals_release_sep16",
+              "locator": "Official release inspected for the commission's proposal summary, rationale and vote.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "3c3ad3f9796d1bc6783c35aae6b251fc9c4d7f070467368ad9e77ddb8cb39ea9",
+              "origin_group": "Securities and Exchange Commission",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "64f79c0071a2ca98db1b02619b2782e2c322042b2b187bfbb16f239772bad03f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_sec_shareholder_proposals_sep21",
+              "locator": "Complete proposed rule inspected for rescission, discretionary-voting mechanism, legal rationale, comment deadline and nonfinal status.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "342a69abcd97be131ae0b6b8c9f37129afd056573ea6af297aedf322dbc173b9",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "545e9c65468992b215710bdad3895d57326f5ad02fbd7ab28a1b2761eca1d9ab",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_sec_proxy_modernization_sep21",
+              "locator": "Complete proposed rule inspected for delivery, timing, notice, broker-search and cover-page amendments and nonfinal status.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "76cb930fc401a48a4003eafee2822571e6bab383e54108abc60d3de2d6620d3b",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "e7fcf639d78b69af9c15cc168e40ef19ab909cad7e44f60bd380e660de0edf1b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_sec_shareholder_proposals_sep21",
+              "locator": "Complete proposed rule inspected for rescission, discretionary-voting mechanism, legal rationale, comment deadline and nonfinal status.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "342a69abcd97be131ae0b6b8c9f37129afd056573ea6af297aedf322dbc173b9",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "fr_sec_proxy_modernization_sep21",
+              "locator": "Complete proposed rule inspected for delivery, timing, notice, broker-search and cover-page amendments and nonfinal status.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "76cb930fc401a48a4003eafee2822571e6bab383e54108abc60d3de2d6620d3b",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "sec_proxy_proposals_release_sep16",
+              "locator": "Official release inspected for the commission's proposal summary, rationale and vote.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "3c3ad3f9796d1bc6783c35aae6b251fc9c4d7f070467368ad9e77ddb8cb39ea9",
+              "origin_group": "Securities and Exchange Commission",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "reuters_sec_proxy_proposals_sep16",
+              "locator": "Complete linked report inspected for independent context and criticism without treating projected effects as measured.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "a2843168c577806640ff504549ba0f45e54d07f3c18a97cc8a9f8d480e69bd99",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "14ebe430061e50684be77651fbfb2ee8dede9e3482f1095eab3296c85a824c18",
+          "review_note": "Reviewed institutional significance separately from the evidenced lifecycle stage and unmeasured downstream effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "4851b9e9e1ef1d2717ad33d4511e844275abaf47951f01c46e2ebdb53d7fc1bf",
+          "review_note": "Preserved the strongest administration rationale or response and identified documentary, implementation, litigation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "545d2cd63e68e04442009233758fa3750d7ee53853548ed8e17304a360c54bf6",
+          "review_note": "Reviewed plausible alternatives separately; Therefore is limited to verified action and excludes unobserved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "The SEC says federal law does not authorize the current shareholder-proposal regime and that modernization can reduce burdens without sacrificing investor protection. Comment records, a final rule, legal challenges, company practices, proposal volume, voting participation, compliance costs and investor-access outcomes remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.82.0:NAT-2026-09-17-011:545f53a8169c",
+      "entry_id": "NAT-2026-09-17-011",
+      "content_sha256": "545f53a8169c42739e84989b5893d9eb7a4aac94f5d641fc1b5479867a475ee5",
+      "reviewed_at": "2026-09-21T16:01:57Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "fc48290984884a67fae4b6409da8d3d80750171dd96e0639645ecbb9b7c0d9b5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_dhs_mass_influx_sep21",
+              "locator": "Complete official finding inspected for dates, nationwide request, statutory authority, agency findings and limits.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "80abfc8c3dfa72927cc1cc32e214931e98818bf899a814a730f781ce4aa88715",
+              "origin_group": "Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "08ce205f5856f69941d80e15868b56517db77d5e7439703f628bb444e37b5932",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_dhs_mass_influx_sep21",
+              "locator": "Complete official finding inspected for dates, nationwide request, statutory authority, agency findings and limits.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "80abfc8c3dfa72927cc1cc32e214931e98818bf899a814a730f781ce4aa88715",
+              "origin_group": "Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "41564a5826c20193ca20cd93c525fac808432a03e96a186028b7903268cb4261",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_dhs_mass_influx_sep21",
+              "locator": "Complete official finding inspected for dates, nationwide request, statutory authority, agency findings and limits.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "80abfc8c3dfa72927cc1cc32e214931e98818bf899a814a730f781ce4aa88715",
+              "origin_group": "Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "d8f85a08ce120fe5cbed0920a0b03c0bc59664ca38608c8114cb590ee329be38",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_dhs_mass_influx_sep21",
+              "locator": "Complete official finding inspected for dates, nationwide request, statutory authority, agency findings and limits.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "80abfc8c3dfa72927cc1cc32e214931e98818bf899a814a730f781ce4aa88715",
+              "origin_group": "Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "8a06819d252f57d4288faec18e9874c237f5a2a441c4f0b1eef2e59f62e3bfed",
+          "review_note": "Reviewed institutional significance separately from the evidenced lifecycle stage and unmeasured downstream effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "7616be34bab382c5811ce414de60b79f2841b71e383c27cdb8f88ceeb01f6b39",
+          "review_note": "Preserved the strongest administration rationale or response and identified documentary, implementation, litigation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "e2a2c46e83db0d1ed839646ac2a24b188652025f6db2fec66f7c7702d04e5b46",
+          "review_note": "Reviewed plausible alternatives separately; Therefore is limited to verified action and excludes unobserved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "DHS says border, detention and public-safety conditions require continued state and local assistance even while encounter levels are lower than in prior years. Participating jurisdictions, written authorizations, trained officers, deployments, arrests and removals, detention capacity, encounter data, costs, legal challenges and rights outcomes remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.82.0:NAT-2026-09-18-007:4acc8d867ebf",
+      "entry_id": "NAT-2026-09-18-007",
+      "content_sha256": "4acc8d867ebf4778bc2470b5ae9ddd3278fa4625c100c0d839c8b97bf4fd39f1",
+      "reviewed_at": "2026-09-21T16:01:57Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "5c945c344213dc046c6caf819aea1cd55e29f207cfea45fe6a112600b037f9c7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_press_ban_sep18",
+              "locator": "Complete post inspected as evidence of Trump's original announcement and rationale.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "3253333a96a4ae155d24a6c5b84f6728e2dedefdedec9e4e29a90507d9d2de55",
+              "origin_group": "Truth Social",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5bf466084b306fd107b133b8d9a439aff90184b5bbcbac8506ef36b11cbbc146",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_press_ban_sep18",
+              "locator": "Complete post inspected as evidence of Trump's original announcement and rationale.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "3253333a96a4ae155d24a6c5b84f6728e2dedefdedec9e4e29a90507d9d2de55",
+              "origin_group": "Truth Social",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "debb411800b063544ac689d29ff696c376b0d6eab69a2d1de0fdde09bd69fa59",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_press_ban_sep18",
+              "locator": "Complete linked report inspected for the initial access status and stated limitations.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "c18ed9a79053442fca4706763a03c55bbf35c261c84ed76c0cb7ded8ca61b42a",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_press_ban_sep18",
+              "locator": "Complete linked report inspected for the initial access status and stated limitations.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "351e956a1d97171bdae4334d710b19b0dba94de5ef06b95bf904853c63e83174",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "848e9d75d82cef39939c189fd5aa74283cc4d2003602c25bc34d3d5d2405f3af",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_press_ban_enforced_sep19",
+              "locator": "Complete linked report inspected for named reporters, badge actions and observed access denials.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "4a480d55bd614801b233d1a3e45e3bba74fc02f4411834e426fb280fdf89fa26",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "7887eb66d5522869ce9361bae361a8f2bcefcf3df131a4ade284e8784bbacb0a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_press_lawsuit_sep21",
+              "locator": "Complete linked report inspected for the filed complaint, requested temporary restraining order, assignment and unresolved disposition.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "7d9e08a4391a87023921dcc62ee3b67679337539f5a331888a3f08b89bb3ee10",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_press_lawsuit_sep21",
+              "locator": "Complete linked report inspected for independent confirmation of the filed claims, emergency request and unresolved disposition.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "503f5829c6d6747a2e423e7cb3e78e3d28b2876ea65feed919cfc16f99235399",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "337660f4fbb15f78216b89305201089a881ee4f9b25d46b37d6d1f539c6690a2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_press_lawsuit_sep21",
+              "locator": "Complete linked report inspected for the filed complaint, requested temporary restraining order, assignment and unresolved disposition.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "7d9e08a4391a87023921dcc62ee3b67679337539f5a331888a3f08b89bb3ee10",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_press_lawsuit_sep21",
+              "locator": "Complete linked report inspected for independent confirmation of the filed claims, emergency request and unresolved disposition.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "503f5829c6d6747a2e423e7cb3e78e3d28b2876ea65feed919cfc16f99235399",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "4316945999d075ae3c350dc6972eccd4ab233aaa63ea0256c53c15aa9eb4d183",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_press_response_sep21",
+              "locator": "Complete post inspected only as evidence of Trump's stated response and rationale.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "e0873ad8204f9d74f7743559faf83ad35e31f472181e09c21bbbf3c076e6d542",
+              "origin_group": "Truth Social",
+              "evidence_status": "publication_only"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "5d29f9f32209096eac45eae66293949047013a410158ad31208e53dc4dfa806d",
+          "review_note": "Reviewed institutional significance separately from the evidenced lifecycle stage and unmeasured downstream effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "cfe090b34e38a34e4d8dd584c5b1315e203aff9e7242a6c42ad8b24a74379b07",
+          "review_note": "Preserved the strongest administration rationale or response and identified documentary, implementation, litigation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "91caa340b7c084d90a00ba93b5940af9223a057e7f0dc615867682ade734e53e",
+          "review_note": "Reviewed plausible alternatives separately; Therefore is limited to verified action and excludes unobserved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Trump says the restriction protects against false reporting and a national-security threat; the outlets say it is viewpoint discrimination imposed without due process. The complaint, government response, emergency order, evidentiary record, written access policy, final judgment and actual restoration or continued denial remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.82.0:NAT-2026-09-20-001:6bddda34fda0",
+      "entry_id": "NAT-2026-09-20-001",
+      "content_sha256": "6bddda34fda0888f43ce9fef29ffb946ac7bbbf695e893949c742826eb16963c",
+      "reviewed_at": "2026-09-21T16:01:57Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "922e4e8c54c496dff9bd81418d5de3eb2f95f46edaf67a3ee4c96270e23a33f2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_china_ai_dialogue_sep21",
+              "locator": "Complete linked report inspected for Bessent's named account of agreement, incident line, Shenzhen meeting and absent operative instrument.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "5bc69d4a52ad7a3e5d3d024c85b360a2780a4f87a600b942fe18f7e564182b34",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "d8c70957e226fc5b6e1455057594de5a9c86e854c37c6f93804e09d8f6627812",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_china_ai_dialogue_sep21",
+              "locator": "Complete linked report inspected for Bessent's named account of agreement, incident line, Shenzhen meeting and absent operative instrument.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "5bc69d4a52ad7a3e5d3d024c85b360a2780a4f87a600b942fe18f7e564182b34",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "e98602e1c15e5a611dca9f5e9c1b112ce9b0ced6644b8f2d011174edf06d4162",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_china_ai_dialogue_sep21",
+              "locator": "Complete linked report inspected for Bessent's named account of agreement, incident line, Shenzhen meeting and absent operative instrument.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "5bc69d4a52ad7a3e5d3d024c85b360a2780a4f87a600b942fe18f7e564182b34",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "ed5c0c98da76cf99f554316c23e615d6c5fe99b934a6a1aaa46142c832257963",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_bessent_he_ai_sep20",
+              "locator": "Complete linked report inspected for the completed talks and earlier U.S. proposals and trade process.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "f141d62a3e2620f88f0dafcdc26fbfe53bfe5d8f93f70ff935b3ad45acbdb372",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_bessent_he_ai_sep20",
+              "locator": "Complete linked report inspected for independent confirmation and the earlier Chinese public account.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "8a1ee197796d2a42c2aca29da1f7be8393bba72cddc6610d6f4d489e1fc2854f",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_china_ai_dialogue_sep21",
+              "locator": "Complete linked report inspected for Bessent's named account of agreement, incident line, Shenzhen meeting and absent operative instrument.",
+              "inspected_at": "2026-09-21T16:01:57Z",
+              "document_sha256": "5bc69d4a52ad7a3e5d3d024c85b360a2780a4f87a600b942fe18f7e564182b34",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "4476da59231031f3581199d8b2fd4b12935321b87d8e61cc4fd45588a063cf95",
+          "review_note": "Reviewed institutional significance separately from the evidenced lifecycle stage and unmeasured downstream effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "0aad89d29f79166f9306d5c06c5f1b8b4c393e89c518faaf244ce231259bbbc3",
+          "review_note": "Preserved the strongest administration rationale or response and identified documentary, implementation, litigation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "a2c8a44058be00dd020df190ed8a5a1ca6de8f9b3663e8df6db57ad81cc36022",
+          "review_note": "Reviewed plausible alternatives separately; Therefore is limited to verified action and excludes unobserved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Bessent says the dialogue can create shared understandings of AI danger and improve communication during incidents. A joint readout, Chinese confirmation, named agencies, accepted definitions, notification and confidentiality rules, the Shenzhen meeting, operating records and independently observed use remain unresolved."
       ]
     }
   ],
