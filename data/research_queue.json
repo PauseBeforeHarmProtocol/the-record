@@ -3009,7 +3009,9 @@
         "reason": "Associated Press independently observed and named reporters whose badges were disabled or confiscated. The existing September 18 announcement record was refreshed rather than duplicated.",
         "recheck_trigger": "Track a written directive, full scope, restoration, litigation, injunction or later credential action.",
         "next_check_at": null,
-        "provenance": ["https://apnews.com/article/trump-ban-ms-now-media-d160e253453229600ce54f8e91351523"],
+        "provenance": [
+          "https://apnews.com/article/trump-ban-ms-now-media-d160e253453229600ce54f8e91351523"
+        ],
         "canonical_id": "NAT-2026-09-18-007"
       }
     ]
@@ -3323,14 +3325,32 @@
     "first_seen_at": "2026-09-20T18:45:00Z",
     "timestamp_precision": "minute",
     "status": "withheld",
-    "reason": "Reuters independently corroborated a Wall Street Journal report that organization-wide sanctions had been prepared, but both accounts relied on unnamed sources. No OFAC instrument, State Department announcement, effective date or implementation existed by cutoff, and timing remained unclear.",
+    "reason": "Reuters published a consequence analysis, but organization-wide sanctions remained based on unnamed-source reporting. No OFAC instrument, State Department announcement, effective date or implementation existed by cutoff.",
     "recheck_trigger": "An OFAC or State Department instrument, official announcement, effective date, implementation evidence or named-source confirmation.",
     "next_check_at": null,
     "provenance": [
       "https://www.reuters.com/world/trump-administration-prepares-sanction-international-criminal-court-wsj-reports-2026-09-20/",
-      "https://www.wsj.com/world/trump-administration-preparing-sanctions-on-international-criminal-court-ae763c60"
+      "https://www.wsj.com/world/trump-administration-preparing-sanctions-on-international-criminal-court-ae763c60",
+      "https://www.reuters.com/legal/government/how-us-sanctions-would-undermine-global-war-crimes-court-2026-09-21/"
     ],
-    "canonical_id": null
+    "canonical_id": null,
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20260920-1757-03",
+        "title": "Reported organization-wide International Criminal Court sanctions",
+        "first_seen_at": "2026-09-20T18:45:00Z",
+        "timestamp_precision": "minute",
+        "status": "withheld",
+        "reason": "Reuters independently corroborated a Wall Street Journal report that organization-wide sanctions had been prepared, but both accounts relied on unnamed sources. No OFAC instrument, State Department announcement, effective date or implementation existed by cutoff, and timing remained unclear.",
+        "recheck_trigger": "An OFAC or State Department instrument, official announcement, effective date, implementation evidence or named-source confirmation.",
+        "next_check_at": null,
+        "provenance": [
+          "https://www.reuters.com/world/trump-administration-prepares-sanction-international-criminal-court-wsj-reports-2026-09-20/",
+          "https://www.wsj.com/world/trump-administration-preparing-sanctions-on-international-criminal-court-ae763c60"
+        ],
+        "canonical_id": null
+      }
+    ]
   },
   {
     "candidate_id": "QUEUE-20260920-1757-04",
@@ -3433,7 +3453,9 @@
     "reason": "The complete operative notice extends the finding, requests assistance from every state and preserves the statutory authorization path. It is restored as a disclosed prior-window omission without inferring participation or outcomes.",
     "recheck_trigger": "Participating jurisdictions, written officer authorizations, deployments, litigation, early termination or measured enforcement and rights outcomes.",
     "next_check_at": null,
-    "provenance": ["https://www.federalregister.gov/documents/2026/09/21/2026-19253/finding-of-mass-influx-of-aliens"],
+    "provenance": [
+      "https://www.federalregister.gov/documents/2026/09/21/2026-19253/finding-of-mass-influx-of-aliens"
+    ],
     "canonical_id": "NAT-2026-09-17-011"
   },
   {
@@ -3442,11 +3464,30 @@
     "first_seen_at": "2026-09-21T14:47:18Z",
     "timestamp_precision": "second",
     "status": "withheld",
-    "reason": "Trump said the United States is working on a large purchase at prices below Canadian supply, but no contract, quantity, price, buyer, procurement authority, delivery, payment or independent confirmation was available by cutoff.",
+    "reason": "Reuters confirmed Trump's public announcement and reported Lukashenko's earlier claim that Belarus had resumed potash sales to the United States, but no contract, quantity, price, buyer, procurement authority, delivery, payment or independently verified operative agreement was public by cutoff.",
     "recheck_trigger": "A signed public contract, government procurement notice, named counterparties and terms, delivery evidence or independent confirmation of an operative agreement.",
     "next_check_at": null,
-    "provenance": ["https://truthsocial.com/@realDonaldTrump/117309573610238654"],
-    "canonical_id": null
+    "provenance": [
+      "https://truthsocial.com/@realDonaldTrump/117309573610238654",
+      "https://www.reuters.com/world/americas/trump-says-us-is-working-deal-purchase-potash-belarus-2026-09-21/"
+    ],
+    "canonical_id": null,
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20260921-1201-03",
+        "title": "Announced U.S. negotiation to purchase Belarus potash",
+        "first_seen_at": "2026-09-21T14:47:18Z",
+        "timestamp_precision": "second",
+        "status": "withheld",
+        "reason": "Trump said the United States is working on a large purchase at prices below Canadian supply, but no contract, quantity, price, buyer, procurement authority, delivery, payment or independent confirmation was available by cutoff.",
+        "recheck_trigger": "A signed public contract, government procurement notice, named counterparties and terms, delivery evidence or independent confirmation of an operative agreement.",
+        "next_check_at": null,
+        "provenance": [
+          "https://truthsocial.com/@realDonaldTrump/117309573610238654"
+        ],
+        "canonical_id": null
+      }
+    ]
   },
   {
     "candidate_id": "QUEUE-20260921-1201-04",
@@ -3464,5 +3505,128 @@
       "https://truthsocial.com/@realDonaldTrump/117309814170246776"
     ],
     "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260921-1801-01",
+    "title": "Seven afternoon Truth Social posts",
+    "first_seen_at": "2026-09-21T17:18:05Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "reason": "The fallback advanced from 36,379 to 36,386 posts. The seven additions were a ceremonial visit, duplicative press-access argument, three campaign endorsements with inaccessible video, a helipad announcement and filibuster rhetoric; none independently established a new qualifying government action.",
+    "recheck_trigger": "Independent evidence of a signed action, operative instrument, expenditure, ruling or measured outcome connected to a post.",
+    "next_check_at": null,
+    "provenance": [
+      "https://truthsocial.com/@realDonaldTrump/117310166479352147",
+      "https://truthsocial.com/@realDonaldTrump/117310364553695688",
+      "https://truthsocial.com/@realDonaldTrump/117310494630713204",
+      "https://truthsocial.com/@realDonaldTrump/117310501298755407",
+      "https://truthsocial.com/@realDonaldTrump/117310502008279319",
+      "https://truthsocial.com/@realDonaldTrump/117310724294153031",
+      "https://truthsocial.com/@realDonaldTrump/117310775870715938"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260921-1801-02",
+    "title": "ICE removes final-order detainees from online locator",
+    "first_seen_at": "2026-09-21T16:36:38Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "reason": "Associated Press reported the change through unnamed current and former ICE officials and lawyers, but ICE did not confirm it and no second independent outlet or published directive was available. The claim remains queued under the two-source rule.",
+    "recheck_trigger": "A published ICE directive, named official confirmation or a second independent outlet with direct records.",
+    "next_check_at": null,
+    "provenance": [
+      "https://apnews.com/article/ice-detainee-locator-disappear-removal-orders-c3329a70bce424879bc5880b286c019c"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260921-1801-03",
+    "title": "White House helipad inaugural use",
+    "first_seen_at": "2026-09-21T18:08:27Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "reason": "Trump and Associated Press documented inaugural use, but the event was routine infrastructure and ceremonial activity; exact private funding terms and final cost remained unpublished, and no material national policy consequence was established.",
+    "recheck_trigger": "Published funding terms, final cost, appropriation or a material national operational consequence.",
+    "next_check_at": null,
+    "provenance": [
+      "https://truthsocial.com/@realDonaldTrump/117310364553695688",
+      "https://apnews.com/article/trump-helipad-cnn-ban-press-xi-61667fb3faaa9a7e9cfc9ffb4f7dc90e"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260921-1801-04",
+    "title": "Planned U.K.–U.S. AI defense partnership",
+    "first_seen_at": "2026-09-21T21:33:00Z",
+    "timestamp_precision": "minute",
+    "status": "withheld",
+    "reason": "The British announcement was scheduled for September 22. No signed instrument, completed announcement, authority, funding, deployment or measured outcome existed by cutoff.",
+    "recheck_trigger": "A completed announcement, signed public instrument, assigned authority, funding, deployment or measured outcome.",
+    "next_check_at": "2026-09-22T00:00:00Z",
+    "provenance": [
+      "https://www.reuters.com/world/uk/uks-burnham-announce-new-ai-defence-partnership-with-us-2026-09-21/"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260921-1801-05",
+    "title": "FAA Northeast dual-connectivity outage",
+    "first_seen_at": "2026-09-21T17:00:00Z",
+    "timestamp_precision": "minute",
+    "status": "published",
+    "reason": "Named officials and independent AP and Reuters reporting established the dual failure and measured flight disruption; the event was consolidated into the existing FAA modernization record.",
+    "recheck_trigger": "Root-cause findings, restored redundancy, final repair and diversion costs, reliability data or modernization milestones.",
+    "next_check_at": null,
+    "provenance": [
+      "https://apnews.com/article/faa-flights-laguardia-newark-jfk-airport-85e2321733ff604f7a5e93ce136945b9",
+      "https://www.reuters.com/world/us/faa-halts-some-us-east-coast-flights-due-communication-issues-2026-09-21/"
+    ],
+    "canonical_id": "NAT-2026-09-14-001"
+  },
+  {
+    "candidate_id": "QUEUE-20260921-1801-06",
+    "title": "Transfer and first appearance of 18 Haiti assassination defendants",
+    "first_seen_at": "2026-09-21T16:01:57Z",
+    "timestamp_precision": "second",
+    "status": "published",
+    "reason": "Named U.S. and Haitian officials confirmed transfer, and AP observed the federal court appearance; allegations remain explicitly unadjudicated.",
+    "recheck_trigger": "Motions, pleas, trials, judgments, appeals or material Haiti–U.S. coordination.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.reuters.com/world/americas/suspects-2021-killing-haitian-president-flown-us-face-trial-2026-09-20/",
+      "https://apnews.com/article/haiti-assassination-us-charges-9fcfd67d71952037038ae62b5ed1b0a1"
+    ],
+    "canonical_id": "NAT-2026-09-20-002"
+  },
+  {
+    "candidate_id": "QUEUE-20260921-1801-07",
+    "title": "CDFI grants emergency lawsuit",
+    "first_seen_at": "2026-09-21T18:16:00Z",
+    "timestamp_precision": "minute",
+    "status": "published",
+    "reason": "Federal docket metadata and Reuters reporting establish the filed suit, nearly $300 million fiscal 2025 dispute and requested emergency relief; no ruling or disbursement was inferred.",
+    "recheck_trigger": "Government response, emergency order, fund obligation, disbursement, merits ruling or measured lender effects.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.pacermonitor.com/public/case/66912651/FREEDOM_ECONOMY_BUSINESS_ASSOCIATION_v_UNITED_STATES_DEPARTMENT_OF_THE_TREASURY_et_al",
+      "https://www.reuters.com/legal/government/trump-administration-sued-over-withheld-federal-grants-us-community-lenders-2026-09-21/"
+    ],
+    "canonical_id": "NAT-2026-09-21-001"
+  },
+  {
+    "candidate_id": "QUEUE-20260921-1801-08",
+    "title": "Television-pool suspension after White House press ban",
+    "first_seen_at": "2026-09-21T16:01:57Z",
+    "timestamp_precision": "second",
+    "status": "published",
+    "reason": "Reuters and AP reported that television networks suspended pool operations, an operational consequence crosslinked to the existing access and litigation record.",
+    "recheck_trigger": "Restoration of pool operations, written access policy, emergency ruling or final judgment.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.reuters.com/world/cnn-ms-now-politico-file-lawsuit-against-trump-administration-over-white-house-2026-09-21/",
+      "https://apnews.com/article/72f9acf68244ca70e9078d9d3661c722"
+    ],
+    "canonical_id": "NAT-2026-09-18-007"
   }
 ]
