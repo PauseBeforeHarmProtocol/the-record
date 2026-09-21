@@ -1,26 +1,36 @@
 {
-  "version": "10.80.1",
-  "artifact_mode": "feed-only",
+  "version": "10.81.0",
+  "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-20T16:01:07Z",
-    "through_utc": "2026-09-20T21:57:29Z",
+    "from_utc": "2026-09-20T21:57:29Z",
+    "through_utc": "2026-09-21T03:58:02Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous research coverage begins at the prior release's exact UTC boundary. No separate candidate cleared the publication threshold; this release is limited to the materially newer validated Truth Social fallback. Feed retrieval and review times are recorded separately from the research cutoff."
+    "note": "Continuous research coverage begins at the prior release's exact UTC boundary. Three signed executive orders are restored as disclosed prior-window omissions after direct inspection; their event dates are preserved. Feed retrieval and review times are recorded separately from the research cutoff."
   },
   "release_iso": "2026-09-20",
   "release_human": "September 20, 2026",
-  "checked_at": "2026-09-20 5:57 PM EDT",
-  "previous_version": "10.80.0",
-  "previous_checked_at": "2026-09-20 12:01 PM EDT",
-  "window_started_at": "2026-09-20 12:01 PM EDT",
-  "window_ended_at": "2026-09-20 5:57 PM EDT",
+  "checked_at": "2026-09-20 11:58 PM EDT",
+  "previous_version": "10.80.1",
+  "previous_checked_at": "2026-09-20 5:57 PM EDT",
+  "window_started_at": "2026-09-20 5:57 PM EDT",
+  "window_ended_at": "2026-09-20 11:58 PM EDT",
   "week_start": "2026-09-14",
   "week_end": "2026-09-20",
   "week_label": "September 14–20, 2026",
   "cutoff_start": "2026-07-17",
-  "new_entry_ids": [],
-  "added_entry_ids": [],
+  "new_entry_ids": [
+    "NAT-2026-09-16-009",
+    "NAT-2026-09-17-009",
+    "NAT-2026-09-17-010",
+    "NAT-2026-09-20-001"
+  ],
+  "added_entry_ids": [
+    "NAT-2026-09-16-009",
+    "NAT-2026-09-17-009",
+    "NAT-2026-09-17-010",
+    "NAT-2026-09-20-001"
+  ],
   "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
@@ -243,60 +253,41 @@
   "rejected_candidates": [
     {
       "title": "Truth Social feed",
-      "reason": "The feed advanced from 36,362 to 36,367 posts. All five additions contain no text and each attached image returned HTTP 403. The text states were reviewed as empty and the media states were marked unavailable; no visual claim or independently verified qualifying action was used."
-    },
-    {
-      "title": "Bessent-He trade, AI and critical-minerals talks",
-      "reason": "Reuters established that the bilateral meeting began around 10:30 AM EDT, but no completed meeting readout, agreement, tariff or export-control decision, formal AI safeguard proposal or critical-minerals commitment was available by cutoff."
+      "reason": "The fallback advanced from 36,367 to 36,369 posts. The newest post made broad price comparisons but announced no action; the other was a personal golf caption whose video returned HTTP 403. Both were reviewed and remain feed-only, and claims inside them were not treated as independently verified."
     },
     {
       "title": "Austin ICE-agent shooting",
-      "reason": "Associated Press and The Wall Street Journal reported that an ICE agent shot and wounded a man. Early accounts relied on local officials, DHS and ICE had not supplied an account, the man's condition and the sequence remained unsettled, and no completed independent investigation or legal finding existed by cutoff."
+      "reason": "Associated Press later identified the wounded man and reported that he entered ICE custody, but DHS and ICE still supplied no account, the precise sequence and location remained unresolved, and no body-camera record, completed investigation, charging decision or legal finding existed by cutoff."
     },
     {
       "title": "Reported NIH grant-control executive order",
-      "reason": "The report still rests on Politico and two unnamed administration officials. No signed order, review board, grant decision or independent confirmation was available, and the White House, OMB and HHS did not comment."
+      "reason": "The report still rests on an unsigned draft and unnamed administration officials. No signed order, review board, grant decision or sufficient independent confirmation was available."
     },
     {
       "title": "Reported organization-wide ICC sanctions",
-      "reason": "Reuters independently corroborated a Wall Street Journal report that organization-wide sanctions had been prepared, but both accounts relied on unnamed sources. No OFAC instrument, State Department announcement, effective date or implementation existed by cutoff, and timing remained unclear."
+      "reason": "Reports based on unnamed sources said organization-wide sanctions were prepared, but no OFAC instrument, State Department announcement, effective date or implementation existed by cutoff."
     },
     {
       "title": "Planned Trump-Zelenskiy meeting",
-      "reason": "Zelenskiy said the leaders agreed to meet during the U.N. General Assembly, but the meeting had not occurred and no agreement, order, security commitment or other operative outcome existed by cutoff."
+      "reason": "The meeting had not occurred and no agreement, order, security commitment or other operative outcome existed by cutoff."
+    },
+    {
+      "title": "Endangered Species Act take directive",
+      "reason": "Associated Press reported and Interior described internal guidance narrowing when killing wildlife counts as take, but the complete directive was not published or inspected. It remains withheld rather than treating a reported internal instruction as a complete operative record."
     },
     {
       "title": "Previously deferred source-inspection leads",
-      "reason": "Medicaid pricing, China-pharmaceutical licensing, Virginia voter allegations, the DHS asylum directive, ESA, FCC, East Potomac, Poland-base and Taiwan-arms leads remain queued pending complete operative records or adequate corroboration."
+      "reason": "Medicaid pricing, China-pharmaceutical licensing, Virginia voter allegations, the DHS asylum directive, FCC conditions, East Potomac, Poland-base and Taiwan-arms leads remain queued pending complete operative records or adequate corroboration."
     },
     {
       "title": "Legacy source-health remediation",
-      "reason": "LEG-003957 still lacks a record-specific corrective source. Its visible warning and legacy-unreviewed state remain unchanged."
+      "reason": "LEG-003957 still lacks a record-specific corrective source. Its visible warning and legacy-unreviewed state remain unchanged; no unsupported historical edit was made."
     },
     {
       "title": "External archive measurements",
-      "reason": "The four registered archive projects remain discovery inputs. This strict feed-only release preserves the verified 10.80.0 measurements and editorial snapshot byte-for-byte; unlike units remain separate and no external item was promoted automatically."
+      "reason": "All four registered primary project pages were checked. Measurements remain separate by unit; verified Trump Archive and Record47 changes were refreshed, unchanged UndoTrump and Immigration Policy Tracking values were re-observed, and no external item was automatically promoted."
     }
   ],
-  "editorial_snapshot": {
-    "version": "10.80.0",
-    "complete_pack": {
-      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-09-20_v10.80.0.zip",
-      "sha256": "2408881f35692f16350e752e54e7de93a7dd94173fab2eb1af821de83c95611e"
-    },
-    "national_pack": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-09-20_v10.80.0.zip",
-      "sha256": "7862e1b04236ab3306cdd7d987c75fb6660339247e2aad79167f41110b63f694"
-    },
-    "national_brief": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-09-20_v10.80.0.md",
-      "sha256": "18fe4b06fe6a36ccdc00b4d35ce6a82a1327d9736b227f5faef25d471d485954"
-    },
-    "in6_brief": {
-      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-09-20_v10.80.0.md",
-      "sha256": "4fd861b75cabbeffef2c670a65b7f7d360feb523a483a5bbb42b7f9885a29995"
-    }
-  },
   "corrections": [],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence."
 }

@@ -3697,6 +3697,54 @@
       "provenance_path": "data/editorial_change_notes/10.80.0.json",
       "provenance_sha256": "5aa4224dad6288478da82391a84b3dfe507c04185fc471aadc7677cab360e8ac",
       "note": "As-of time is the research cutoff, not the source inspection or event time. Original event date retained."
+    },
+    {
+      "change_id": "10.81.0:NAT-2026-09-16-009",
+      "entry_id": "NAT-2026-09-16-009",
+      "as_of_utc": "2026-09-21T03:58:02Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.81.0",
+      "summary": "Added Executive Order 14428 as a prior-window omission, preserving the distinction between ordered reassessment and downstream funding, fee and water-quality results.",
+      "provenance_path": "data/editorial_change_notes/10.81.0.json",
+      "provenance_sha256": "3e582b70667c8654803abca02fcf988de099e5953b81f2b663873e3bfac31d01",
+      "note": "As-of time is the research cutoff, not the event date. Original event date retained; earlier signed orders are disclosed prior-window omissions."
+    },
+    {
+      "change_id": "10.81.0:NAT-2026-09-17-009",
+      "entry_id": "NAT-2026-09-17-009",
+      "as_of_utc": "2026-09-21T03:58:02Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.81.0",
+      "summary": "Added the signed hunting-access order as a prior-window omission, preserving pending rules, site-level access and conservation outcomes.",
+      "provenance_path": "data/editorial_change_notes/10.81.0.json",
+      "provenance_sha256": "3e582b70667c8654803abca02fcf988de099e5953b81f2b663873e3bfac31d01",
+      "note": "As-of time is the research cutoff, not the event date. Original event date retained; earlier signed orders are disclosed prior-window omissions."
+    },
+    {
+      "change_id": "10.81.0:NAT-2026-09-17-010",
+      "entry_id": "NAT-2026-09-17-010",
+      "as_of_utc": "2026-09-21T03:58:02Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.81.0",
+      "summary": "Added the signed saltwater-angling order as a prior-window omission, preserving pending regulations, systems, permits and fishery outcomes.",
+      "provenance_path": "data/editorial_change_notes/10.81.0.json",
+      "provenance_sha256": "3e582b70667c8654803abca02fcf988de099e5953b81f2b663873e3bfac31d01",
+      "note": "As-of time is the research cutoff, not the event date. Original event date retained; earlier signed orders are disclosed prior-window omissions."
+    },
+    {
+      "change_id": "10.81.0:NAT-2026-09-20-001",
+      "entry_id": "NAT-2026-09-20-001",
+      "as_of_utc": "2026-09-21T03:58:02Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.81.0",
+      "summary": "Added the completed U.S.-China talks and formal U.S. AI incident-notification proposal without inferring Chinese acceptance, tariff changes or implementation.",
+      "provenance_path": "data/editorial_change_notes/10.81.0.json",
+      "provenance_sha256": "3e582b70667c8654803abca02fcf988de099e5953b81f2b663873e3bfac31d01",
+      "note": "As-of time is the research cutoff, not the event date. Original event date retained; earlier signed orders are disclosed prior-window omissions."
     }
   ],
   "reviews": [
@@ -34305,6 +34353,438 @@
       ],
       "unresolved_questions": [
         "A published military request or operational plan, identified authority and threat, final planning approval, funding, contracts, safeguards, construction and implementation remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.81.0:NAT-2026-09-16-009:3c58a2a7eef2",
+      "entry_id": "NAT-2026-09-16-009",
+      "content_sha256": "3c58a2a7eef29f3a6360375005416096b363c79d14f81fb0ccf2dac7fc018954",
+      "reviewed_at": "2026-09-21T03:58:02Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "9fa3e3e6f976c7592a400ff124f0c0e6ca9268bd36cfdd762252aea82062aede",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_chesapeake_bay_eo_sep16",
+              "locator": "Complete signed Executive Order 14428 inspected for revocation, agency duties, rationale and limitations.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "12b016b9a6fc315a2b9d1d455c0ea73f6fede39cc8caff63936362ac87614ce3",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fr_chesapeake_bay_eo_sep21",
+              "locator": "Official Federal Register text inspected to confirm the signed order, date, number and operative language.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "e94dd08f4758f12f5a55dbe500cfed2a0fb32a3014b74ca7259ab8edebe8cbd5",
+              "origin_group": "Federal Register",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "0c3a1e15b825b0119c946f063d48552ea7c042b7c2ba83922d2d73f62ed6f922",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_chesapeake_bay_eo_sep16",
+              "locator": "Complete signed Executive Order 14428 inspected for revocation, agency duties, rationale and limitations.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "12b016b9a6fc315a2b9d1d455c0ea73f6fede39cc8caff63936362ac87614ce3",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fr_chesapeake_bay_eo_sep21",
+              "locator": "Official Federal Register text inspected to confirm the signed order, date, number and operative language.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "e94dd08f4758f12f5a55dbe500cfed2a0fb32a3014b74ca7259ab8edebe8cbd5",
+              "origin_group": "Federal Register",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "06638635cc8eba034333ec541344161ead819a33d1c4d7172431eacdc573cfa3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_chesapeake_bay_eo_sep16",
+              "locator": "Complete signed Executive Order 14428 inspected for revocation, agency duties, rationale and limitations.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "12b016b9a6fc315a2b9d1d455c0ea73f6fede39cc8caff63936362ac87614ce3",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fr_chesapeake_bay_eo_sep21",
+              "locator": "Official Federal Register text inspected to confirm the signed order, date, number and operative language.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "e94dd08f4758f12f5a55dbe500cfed2a0fb32a3014b74ca7259ab8edebe8cbd5",
+              "origin_group": "Federal Register",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "ec69693f46c61c045273686bd0cd5fe9e9a4356d12ff48933b962fcb10eaab94",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_chesapeake_bay_eo_sep16",
+              "locator": "Complete signed Executive Order 14428 inspected for revocation, agency duties, rationale and limitations.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "12b016b9a6fc315a2b9d1d455c0ea73f6fede39cc8caff63936362ac87614ce3",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fr_chesapeake_bay_eo_sep21",
+              "locator": "Official Federal Register text inspected to confirm the signed order, date, number and operative language.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "e94dd08f4758f12f5a55dbe500cfed2a0fb32a3014b74ca7259ab8edebe8cbd5",
+              "origin_group": "Federal Register",
+              "evidence_status": "ordered"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "6c3f66b2ab7ed98013b9c461caba5fc346f7861a4975c8e76ce8902a27b39b30",
+          "review_note": "Reviewed policy significance separately from the completed legal status and unmeasured downstream effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "2bcadee1a10c9ac0cdea6c4fd6334c4d4205fab60eeb3bdec2924c740988fc14",
+          "review_note": "Preserved the strongest administration rationale and identified documentary and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "4237b87dc3adcb0a7bd8bd97384486d67524e62bb13a6c6bf69e3f0f9fb84b86",
+          "review_note": "Reviewed a plausible favorable explanation and limited the conclusion to what the evidence establishes."
+        }
+      ],
+      "unresolved_questions": [
+        "The administration says measurable, on-the-ground projects can improve Bay health without costly stormwater fees. Agency resource assessments, identified reallocations, grant decisions, local fee changes, nutrient and sediment data, water-quality trends and legal challenges remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.81.0:NAT-2026-09-17-009:fdfe61af95c0",
+      "entry_id": "NAT-2026-09-17-009",
+      "content_sha256": "fdfe61af95c07e51d6ced7cc1c9dd0af32e2d6f190cbd1579330673c10f34e85",
+      "reviewed_at": "2026-09-21T03:58:02Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "0fd2123a7c8cabd9df10b69c763e26ea84e527d88aa4aa026da204a8e09475b4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_hunting_heritage_eo_sep17",
+              "locator": "Complete signed order inspected for deadlines, exceptions, program instructions and appropriations limitation.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "285ea54d24d04e081752f9c43ae9d477488db959bc5e9ed22d9c7673a53c1be8",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "f61b8916c831816cf17a2ac82be34da191c3760c0b2a956a80d0f90aa374f347",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_hunting_heritage_eo_sep17",
+              "locator": "Complete signed order inspected for deadlines, exceptions, program instructions and appropriations limitation.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "285ea54d24d04e081752f9c43ae9d477488db959bc5e9ed22d9c7673a53c1be8",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "438470d6b98ffc189db170f01b6317cf055d36818eb3c72e352a7ce244b836ef",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_hunting_heritage_eo_sep17",
+              "locator": "Complete signed order inspected for deadlines, exceptions, program instructions and appropriations limitation.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "285ea54d24d04e081752f9c43ae9d477488db959bc5e9ed22d9c7673a53c1be8",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "7af59f77a27c09af3646f3c39f69da43149c90f830c1c48d79f1722101913c2c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_hunting_heritage_eo_sep17",
+              "locator": "Complete signed order inspected for deadlines, exceptions, program instructions and appropriations limitation.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "285ea54d24d04e081752f9c43ae9d477488db959bc5e9ed22d9c7673a53c1be8",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "ac736ebaa0b3c6e9f2555ddea621980703d4314c6767f4392acebe180aeb82b5",
+          "review_note": "Reviewed policy significance separately from the completed legal status and unmeasured downstream effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "a9bea0b2c83bb6911c466df771d86688186ecd349bc6fb625db95bc1b43555e0",
+          "review_note": "Preserved the strongest administration rationale and identified documentary and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "2552ed545f0dc795b3a6df5685ef5ec165932044f999f313333244fc055aea4f",
+          "review_note": "Reviewed a plausible favorable explanation and limited the conclusion to what the evidence establishes."
+        }
+      ],
+      "unresolved_questions": [
+        "The administration says hunters and anglers finance and perform conservation and that regulatory reform will restore access while protecting wildlife. Published agency actions, monument access rules, environmental and health analyses, participation data, habitat and game-population outcomes, and any litigation remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.81.0:NAT-2026-09-17-010:19d096bea178",
+      "entry_id": "NAT-2026-09-17-010",
+      "content_sha256": "19d096bea178317efb80aacb50186530aae724e0368bdf344261bca368349a23",
+      "reviewed_at": "2026-09-21T03:58:02Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "7ed0884926bddf1a11578fb629c7a942e1b1b7e2efeed9b57356bd3663df6831",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_saltwater_angling_eo_sep17",
+              "locator": "Complete signed order inspected for data, permitting, reef, predator and funding instructions and limitations.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "2f3097f43c1b2d54559b80b932ed21e4178a909abe3cebd33978febbbe55bdd3",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "1ac0cefaf40cf825c058df62ebec3992b571933a76fcff171c5a5717809ca016",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_saltwater_angling_eo_sep17",
+              "locator": "Complete signed order inspected for data, permitting, reef, predator and funding instructions and limitations.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "2f3097f43c1b2d54559b80b932ed21e4178a909abe3cebd33978febbbe55bdd3",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "ad74ca631d22194f054c6fae41949956b1197ca89656165514059535401b0441",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_saltwater_angling_eo_sep17",
+              "locator": "Complete signed order inspected for data, permitting, reef, predator and funding instructions and limitations.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "2f3097f43c1b2d54559b80b932ed21e4178a909abe3cebd33978febbbe55bdd3",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "f2a2233dd21edb949d86286fbbe5354c3758901a47103ff3154a42d74f7f506d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_saltwater_angling_eo_sep17",
+              "locator": "Complete signed order inspected for data, permitting, reef, predator and funding instructions and limitations.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "2f3097f43c1b2d54559b80b932ed21e4178a909abe3cebd33978febbbe55bdd3",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "b9a6a13ebd68545432a5b6a4ca15e7bd5d869a0eceff8a3a6dfdd78cc00dceae",
+          "review_note": "Reviewed policy significance separately from the completed legal status and unmeasured downstream effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "26a4733b686fbf30d617b2830be54a6e58bbc2ef3be6ddff4b0e35a137a16dc8",
+          "review_note": "Preserved the strongest administration rationale and identified documentary and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "0e8a277a6292790beb1a4c1051cc3d2b1ffdf95cbb5f016872c7efb17bbbcf18",
+          "review_note": "Reviewed a plausible favorable explanation and limited the conclusion to what the evidence establishes."
+        }
+      ],
+      "unresolved_questions": [
+        "The administration says current federal data and rules unnecessarily restrict recreational access and that mobile reporting, state partnerships and streamlined permits will improve management. Final rules and guidance, survey validation, data quality, portal deployment, permit times, stock assessments, catch limits, safety and environmental outcomes remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.81.0:NAT-2026-09-20-001:8d083b604b72",
+      "entry_id": "NAT-2026-09-20-001",
+      "content_sha256": "8d083b604b725868aec93f7c52b65f5fb58a84a395e459d71a0acbd13eb49719",
+      "reviewed_at": "2026-09-21T03:58:02Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "68621541009d708f61e2bda1fe2122fa23773fe59ed974f469779d883aaf6654",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_bessent_he_ai_sep20",
+              "locator": "Complete linked report inspected for named-official descriptions of the completed talks, AI proposal and trade process.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "de2dbf4a7d9ea0347dfb52a4adc5406db39ef829ebe3c1547ec1856d6db09b2d",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_bessent_he_ai_sep20",
+              "locator": "Complete linked report inspected for independent confirmation, the Chinese public account and absent implementation.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "e777e1450c856ae34c33a5dc8484d27dce6361cde6c7eb15cf75a81cd36fac5c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "28d7cff09f4c066ad7e7efe419bc7e23f4b544d1e4d9d69f65bbbc139398c820",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_bessent_he_ai_sep20",
+              "locator": "Complete linked report inspected for named-official descriptions of the completed talks, AI proposal and trade process.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "de2dbf4a7d9ea0347dfb52a4adc5406db39ef829ebe3c1547ec1856d6db09b2d",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_bessent_he_ai_sep20",
+              "locator": "Complete linked report inspected for independent confirmation, the Chinese public account and absent implementation.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "e777e1450c856ae34c33a5dc8484d27dce6361cde6c7eb15cf75a81cd36fac5c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "d8dcefcacc3022c278671e4f0a797c6d9cab61073f257535d5888d3856aa0c7c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_bessent_he_ai_sep20",
+              "locator": "Complete linked report inspected for named-official descriptions of the completed talks, AI proposal and trade process.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "de2dbf4a7d9ea0347dfb52a4adc5406db39ef829ebe3c1547ec1856d6db09b2d",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_bessent_he_ai_sep20",
+              "locator": "Complete linked report inspected for independent confirmation, the Chinese public account and absent implementation.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "e777e1450c856ae34c33a5dc8484d27dce6361cde6c7eb15cf75a81cd36fac5c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "b1f7fb735073479127aea313f122d978e0c37040beb3c580b1d2a8772253573f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_bessent_he_ai_sep20",
+              "locator": "Complete linked report inspected for named-official descriptions of the completed talks, AI proposal and trade process.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "de2dbf4a7d9ea0347dfb52a4adc5406db39ef829ebe3c1547ec1856d6db09b2d",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_bessent_he_ai_sep20",
+              "locator": "Complete linked report inspected for independent confirmation, the Chinese public account and absent implementation.",
+              "inspected_at": "2026-09-21T03:58:02Z",
+              "document_sha256": "e777e1450c856ae34c33a5dc8484d27dce6361cde6c7eb15cf75a81cd36fac5c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "51959f4bf672a55ac5669c277e76bdbd2e82d8dc544787a61480465a401b61a1",
+          "review_note": "Reviewed policy significance separately from the completed legal status and unmeasured downstream effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "1abcf1a4884d9fd7f4f3d2e85db466da32adfbfbcf3afc396239475d80f8a83a",
+          "review_note": "Preserved the strongest administration rationale and identified documentary and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "d98f64ede56ff579dae4bd80cf8be37ce2b089a022687215708f0b8395401f84",
+          "review_note": "Reviewed a plausible favorable explanation and limited the conclusion to what the evidence establishes."
+        }
+      ],
+      "unresolved_questions": [
+        "The administration says the proposals can manage AI national-security risks and identify nonsensitive trade for possible tariff relief. A joint readout, accepted definitions, notification and confidentiality rules, governance, named products, legal tariff changes, implementation records and independently observed use remain unresolved."
       ]
     }
   ],
