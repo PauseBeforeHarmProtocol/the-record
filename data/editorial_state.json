@@ -3901,6 +3901,54 @@
       "provenance_path": "data/editorial_change_notes/10.85.0.json",
       "provenance_sha256": "0eef97e6381522d30e979a25f58ea7e81fe8400ad16a8030d865013652c9b644",
       "note": "Content-bound change note records the exact added version reviewed for this release."
+    },
+    {
+      "change_id": "10.86.0:NAT-2026-09-18-008",
+      "entry_id": "NAT-2026-09-18-008",
+      "as_of_utc": "2026-09-22T16:02:46Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.86.0",
+      "summary": "Refreshed the Greenland record after the three governments signed the Arctic security agreement; unpublished terms and implementation remain unresolved.",
+      "provenance_path": "data/editorial_change_notes/10.86.0.json",
+      "provenance_sha256": "14fa1bace03526d48c456748f61142c96896d3288c3010fea600172fe35714ad",
+      "note": "Content-bound change note records the exact before/after version reviewed for this release."
+    },
+    {
+      "change_id": "10.86.0:NAT-2026-09-22-005",
+      "entry_id": "NAT-2026-09-22-005",
+      "as_of_utc": "2026-09-22T16:02:46Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.86.0",
+      "summary": "Added the immediately effective CMS Marketplace broker-registration moratorium and separately attributed cancellation and screening actions.",
+      "provenance_path": "data/editorial_change_notes/10.86.0.json",
+      "provenance_sha256": "14fa1bace03526d48c456748f61142c96896d3288c3010fea600172fe35714ad",
+      "note": "Content-bound change note records the exact added version reviewed for this release."
+    },
+    {
+      "change_id": "10.86.0:NAT-2026-09-21-003",
+      "entry_id": "NAT-2026-09-21-003",
+      "as_of_utc": "2026-09-22T16:02:46Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.86.0",
+      "summary": "Added the administration certiorari petition in the Suri detention case without inferring Supreme Court review or a merits result.",
+      "provenance_path": "data/editorial_change_notes/10.86.0.json",
+      "provenance_sha256": "14fa1bace03526d48c456748f61142c96896d3288c3010fea600172fe35714ad",
+      "note": "The filing predates the cutoff boundary but first became publicly discoverable in this research window; timestamps remain separate."
+    },
+    {
+      "change_id": "10.86.0:NAT-2026-09-21-004",
+      "entry_id": "NAT-2026-09-21-004",
+      "as_of_utc": "2026-09-22T16:02:46Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.86.0",
+      "summary": "Added the United States Apple–Epic amicus position without inferring a Supreme Court holding or platform change.",
+      "provenance_path": "data/editorial_change_notes/10.86.0.json",
+      "provenance_sha256": "14fa1bace03526d48c456748f61142c96896d3288c3010fea600172fe35714ad",
+      "note": "The filing predates the cutoff boundary but first became publicly discoverable in this research window; timestamps remain separate."
     }
   ],
   "reviews": [
@@ -36486,6 +36534,420 @@
       ],
       "unresolved_questions": [
         "FDA says broader terminology reflects statutory recognition of nonclinical tests and supports alternatives without weakening safety standards or adding requirements. Adverse comments, the confirmation or withdrawal notice, later guidance, accepted submissions, validation results, animal-use data and product-safety outcomes are the tests."
+      ]
+    },
+    {
+      "review_id": "10.86.0:NAT-2026-09-18-008:b31a9f07efe8",
+      "entry_id": "NAT-2026-09-18-008",
+      "content_sha256": "b31a9f07efe88f71118cbf0b1e3a2e11de342ced175256e4d99495e0026ffb43",
+      "reviewed_at": "2026-09-22T16:12:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "a3e13398a134857586e4c1a4efe2498524bcefff76ba058a5cc18db720c7edbf",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_greenland_agreement_claim_sep18",
+              "locator": "Complete retained presidential post; used only to establish publication and the president's claimed terms.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "f366954597f5ea938e00a9da5a58ff92d7eb508c63c93527192dea2f5cec9bed",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "fddbfcdf520de09530259f1c61253894d471ad23795b4ac260df7b32063d632c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_greenland_agreement_claim_sep18",
+              "locator": "Complete retained presidential post; used only to establish publication and the president's claimed terms.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "f366954597f5ea938e00a9da5a58ff92d7eb508c63c93527192dea2f5cec9bed",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "e07fd227f41620e20a0282316896bd42fcbd4b986cc4c79424114b7c98f5fb48",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_greenland_signed_sep22",
+              "locator": "Complete post-signing report inspected for the completed ceremony, named leaders, announced bases, sovereignty statements and absent public details.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "1f5e30dfc16d3ca799b358c9810247bc30cc83aa286d923ebf2703a8ef9ade69",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "df1842f064d9f25851846be021132a2d8fe866026565abf88f7520a44e1b5829",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_greenland_signed_sep22",
+              "locator": "Complete post-signing report inspected for the completed ceremony, named leaders, announced bases, sovereignty statements and absent public details.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "1f5e30dfc16d3ca799b358c9810247bc30cc83aa286d923ebf2703a8ef9ade69",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "54a32197d7d00f58f3de4eb64e21618f868090163df34b1e50550b9a7065fe60",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_greenland_signed_sep22",
+              "locator": "Complete post-signing report inspected for the completed ceremony, named leaders, announced bases, sovereignty statements and absent public details.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "1f5e30dfc16d3ca799b358c9810247bc30cc83aa286d923ebf2703a8ef9ade69",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "55d8c5c721472eaf1561da6595a83dd77a0c4d81da513f573b72fb8c5d22111a",
+          "review_note": "Reviewed institutional significance separately from the evidenced lifecycle stage and unmeasured downstream effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "87b9c59e6cd10b32ad21170ba5fb37ae51133227e12d859cdb5efc41cf42bea8",
+          "review_note": "Preserved the strongest relevant administration explanation or response and identified documentary, litigation, implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "03740b4978f4e9e31cdd86b1621c4daf769e4a8b515efec4d4d96ea069a10f5e",
+          "review_note": "Reviewed plausible alternatives separately; Therefore is limited to verified action and excludes unobserved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Publication of the signed instrument, defined authorities, appropriations, site approvals, construction, deployments and observed effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.86.0:NAT-2026-09-22-005:1c58bf684022",
+      "entry_id": "NAT-2026-09-22-005",
+      "content_sha256": "1c58bf6840225d9efc1bed85c38ad85eca9a9c762ab21a7cd172083b12b43770",
+      "reviewed_at": "2026-09-22T16:12:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "0107eb81870376821d9b5093e9eee9260cb80fd8901acc4fcd93a081fb18b224",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_cms_broker_moratorium_sep22",
+              "locator": "Complete 2026-19493 interim final rule and notice inspected for effective date, scope, duration, registration effects, estimates and stated rationale.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "d737b69bacbe085e8097c2f51a20a0dea4846a7f09ce9177c48fd58064553635",
+              "origin_group": "Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "02691dbd0de1ceec643f0b31138a88c29baa3e9c2f9f21f1ab48c3dc5edcb13c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_cms_broker_moratorium_sep22",
+              "locator": "Complete 2026-19493 interim final rule and notice inspected for effective date, scope, duration, registration effects, estimates and stated rationale.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "d737b69bacbe085e8097c2f51a20a0dea4846a7f09ce9177c48fd58064553635",
+              "origin_group": "Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "8fa6fd721f0e9817dd8a5b68d2bc4a324181521a4f13af0609008e354da7f0ed",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_cms_broker_moratorium_sep22",
+              "locator": "Complete 2026-19493 interim final rule and notice inspected for effective date, scope, duration, registration effects, estimates and stated rationale.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "d737b69bacbe085e8097c2f51a20a0dea4846a7f09ce9177c48fd58064553635",
+              "origin_group": "Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "2848cc8a9fe706530edcdf717d61fd06083de4101ab1f3715ca5a3d9bf4bc4b0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_cms_broker_moratorium_sep22",
+              "locator": "Complete 2026-19493 interim final rule and notice inspected for effective date, scope, duration, registration effects, estimates and stated rationale.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "d737b69bacbe085e8097c2f51a20a0dea4846a7f09ce9177c48fd58064553635",
+              "origin_group": "Federal Register",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_cms_marketplace_cancellations_sep22",
+              "locator": "Complete indexed report inspected for the agency-reported cancellations, people affected, broker notices, fiscal estimates and named trade-group response.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "ac799b57998af4fd8f42fc9b29c467de5691ad2b7dafcc685757e44aedea561b",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "52a83b22eb9d13106f7bd5cdf770190ff687d630b0775b1808ea326e1bded7ef",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_cms_marketplace_cancellations_sep22",
+              "locator": "Complete indexed report inspected for the agency-reported cancellations, people affected, broker notices, fiscal estimates and named trade-group response.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "ac799b57998af4fd8f42fc9b29c467de5691ad2b7dafcc685757e44aedea561b",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "dca6d0cae86201918c08b8e3245cf79ed4dd9e69bb7fcd88a1862146666d3ad1",
+          "review_note": "Reviewed institutional significance separately from the evidenced lifecycle stage and unmeasured downstream effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "c6c63a0a5114a82fd4bdc48fd3c07e9442f321a533cf33fb9484f6c9370f540c",
+          "review_note": "Preserved the strongest relevant administration explanation or response and identified documentary, litigation, implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "62cfaf6e7af07c61aacce1f3844d5e7edc56c19310e3e06df70ac46da3c1207c",
+          "review_note": "Reviewed plausible alternatives separately; Therefore is limited to verified action and excludes unobserved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Comment review, broker appeals, litigation, corrected coverage records, fraud findings, enrollment access and audited fiscal effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.86.0:NAT-2026-09-21-003:3364003c3e97",
+      "entry_id": "NAT-2026-09-21-003",
+      "content_sha256": "3364003c3e9758f19ba9bc189a7afd88d59d6f65c74923c078e3cc26058bb733",
+      "reviewed_at": "2026-09-22T16:12:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "3220a3aaa1f578384fe0dbe6c3aa74a200c2886aea5bb47a472c2b61f401158d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_suri_cert_petition_sep21",
+              "locator": "Complete 196-page certiorari petition inspected for the question presented, procedural history, requested relief and government jurisdiction arguments.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "f9df325f0438735669157f79099272f33b9075cab82e15c44eb29a64c4a4d685",
+              "origin_group": "U.S. Department of Justice / Supreme Court filing",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "3151b694544fbc215307e71c970c256ee7a3b595ce1ac4c949afb13f7a55d833",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_suri_cert_petition_sep21",
+              "locator": "Complete 196-page certiorari petition inspected for the question presented, procedural history, requested relief and government jurisdiction arguments.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "f9df325f0438735669157f79099272f33b9075cab82e15c44eb29a64c4a4d685",
+              "origin_group": "U.S. Department of Justice / Supreme Court filing",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "2d0da6f8c7020001661bb3b57c3f370420054c4c1e08c0ed82ac8613bdc2f042",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_suri_cert_petition_sep21",
+              "locator": "Complete 196-page certiorari petition inspected for the question presented, procedural history, requested relief and government jurisdiction arguments.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "f9df325f0438735669157f79099272f33b9075cab82e15c44eb29a64c4a4d685",
+              "origin_group": "U.S. Department of Justice / Supreme Court filing",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "336b5e144796c05be0835774aa5939e826e53562ae1bf0df0bfdcc39722c0d26",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_suri_cert_petition_sep22",
+              "locator": "Complete indexed legal report inspected for filing timing, the competing characterizations and unresolved Supreme Court disposition.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "45872b5180bbf3d744c23e9646ace0675d9c50e0f2e56b77afaade74efaf993a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "420d8536a8b692fb44dd56dc8158c74f359c6aeda78db0a9490870060b95b085",
+          "review_note": "Reviewed institutional significance separately from the evidenced lifecycle stage and unmeasured downstream effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "5c0fe1261647d49ce5832dd70f2b49b5492398f3f32c273305f485a89a1b1f19",
+          "review_note": "Preserved the strongest relevant administration explanation or response and identified documentary, litigation, implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "9b92a3f5adc9d3680ab71f1f9a7ffda6fe20ab1a1589cc6a9701b899a4a95bde",
+          "review_note": "Reviewed plausible alternatives separately; Therefore is limited to verified action and excludes unobserved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Supreme Court docketing, certiorari disposition, any stay, the merits and Suri's custody and removal proceedings remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.86.0:NAT-2026-09-21-004:c13682c7ea9e",
+      "entry_id": "NAT-2026-09-21-004",
+      "content_sha256": "c13682c7ea9ecd8cc39e16ee98fb700c686e6f9b9e0947ce771e805dd02c0a2f",
+      "reviewed_at": "2026-09-22T16:12:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "306b3bdaadcabc51842ef2fd39416b7165f6b095790889be0315e7ef283d0d3e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_apple_epic_amicus_sep21",
+              "locator": "Complete United States amicus brief inspected for the proposed contempt standard, application to each Apple restriction, remand request and express nonpositions.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "9fe55cf70acf2428ed1f43a78521dd276a3c9b2c2ec67a22c59b87a60092c446",
+              "origin_group": "U.S. Department of Justice / Supreme Court filing",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "1188b9854c57e358ae0db5449c19fa93d20a37983a69dedd17cb3b34f63e3af1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_apple_epic_amicus_sep21",
+              "locator": "Complete United States amicus brief inspected for the proposed contempt standard, application to each Apple restriction, remand request and express nonpositions.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "9fe55cf70acf2428ed1f43a78521dd276a3c9b2c2ec67a22c59b87a60092c446",
+              "origin_group": "U.S. Department of Justice / Supreme Court filing",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "b26d2fb15cf10c01f65662f639bb9b72e714373c74fdd5440d3c525843c38ea6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_apple_epic_amicus_sep21",
+              "locator": "Complete United States amicus brief inspected for the proposed contempt standard, application to each Apple restriction, remand request and express nonpositions.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "9fe55cf70acf2428ed1f43a78521dd276a3c9b2c2ec67a22c59b87a60092c446",
+              "origin_group": "U.S. Department of Justice / Supreme Court filing",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "0f72fca0ee16c27b20e3f42279eeb18d599dc8e60c0f57568cec871103890cab",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_apple_epic_amicus_sep21",
+              "locator": "Complete United States amicus brief inspected for the proposed contempt standard, application to each Apple restriction, remand request and express nonpositions.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "9fe55cf70acf2428ed1f43a78521dd276a3c9b2c2ec67a22c59b87a60092c446",
+              "origin_group": "U.S. Department of Justice / Supreme Court filing",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "reuters_apple_epic_amicus_sep22",
+              "locator": "Complete indexed legal report inspected for filing timing, scope and unresolved Supreme Court disposition.",
+              "inspected_at": "2026-09-22T16:12:00Z",
+              "document_sha256": "4e1b37a471ff2cc1cd69bb9902d7bdc490d33e9de03dc968286c5da4fa9fcb3b",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "225dc05ae7e0e6ef7f7f356770601350bbb9259909a4cb15147a70c9b944c367",
+          "review_note": "Reviewed institutional significance separately from the evidenced lifecycle stage and unmeasured downstream effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "32add8e1308a42a8490a181a8dd63e6ec5722bb13c5ed2f871f8a225f5e625f6",
+          "review_note": "Preserved the strongest relevant administration explanation or response and identified documentary, litigation, implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "d8b7e1c4e68af82be4a8a48a77bdd65de6c630cafa830be56f880bf7d26a5e18",
+          "review_note": "Reviewed plausible alternatives separately; Therefore is limited to verified action and excludes unobserved outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Supreme Court judgment, treatment of each restriction, remand, sanctions and subsequent platform compliance remain unresolved."
       ]
     }
   ],
