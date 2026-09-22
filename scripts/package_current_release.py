@@ -429,7 +429,7 @@ def build_outputs() -> dict[Path, bytes]:
     # Aggregate packs already contain compressed entry ZIPs. Store their members
     # without an outer DEFLATE pass so the bytes remain identical across zlib
     # patch versions used by local builders and GitHub Actions.
-    national_pack = stable_zip(national_files, compress=False)
+    national_pack = stable_zip(national_files, compress=True)
     national_path = ARTIFACTS / NATIONAL_PACK_NAME
     outputs[national_path] = national_pack
     outputs[national_path.with_suffix(national_path.suffix + ".sha256")] = adjacent_checksum(
@@ -486,7 +486,7 @@ def build_outputs() -> dict[Path, bytes]:
         complete_files[f'entries/{entry["pack_filename"]}.sha256'] = artifact_bytes(
             pack_path.with_suffix(pack_path.suffix + ".sha256")
         )
-    complete_pack = stable_zip(complete_files, compress=False)
+    complete_pack = stable_zip(complete_files, compress=True)
     complete_path = ARTIFACTS / COMPLETE_PACK_NAME
     outputs[complete_path] = complete_pack
     outputs[complete_path.with_suffix(complete_path.suffix + ".sha256")] = adjacent_checksum(
