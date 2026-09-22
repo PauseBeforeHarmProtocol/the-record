@@ -3853,6 +3853,54 @@
       "provenance_path": "data/editorial_change_notes/10.84.0.json",
       "provenance_sha256": "8a4bb96993a97f445cd748ab4dfa2e9f29d253207d4d378f30331eeea2b7882e",
       "note": "Content-bound change note records the exact reviewed version; the ruling itself was reported by Associated Press and was not independently retrieved."
+    },
+    {
+      "change_id": "10.85.0:NAT-2026-09-22-001",
+      "entry_id": "NAT-2026-09-22-001",
+      "as_of_utc": "2026-09-22T09:57:32Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.85.0",
+      "summary": "Added the proposed FDIC merger-review framework without inferring adoption, an approved merger or measured effects.",
+      "provenance_path": "data/editorial_change_notes/10.85.0.json",
+      "provenance_sha256": "0eef97e6381522d30e979a25f58ea7e81fe8400ad16a8030d865013652c9b644",
+      "note": "Content-bound change note records the exact added version reviewed for this release."
+    },
+    {
+      "change_id": "10.85.0:NAT-2026-09-22-002",
+      "entry_id": "NAT-2026-09-22-002",
+      "as_of_utc": "2026-09-22T09:57:32Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.85.0",
+      "summary": "Added the proposed state-bank parity interpretation without treating it as a preemption ruling or final rule.",
+      "provenance_path": "data/editorial_change_notes/10.85.0.json",
+      "provenance_sha256": "0eef97e6381522d30e979a25f58ea7e81fe8400ad16a8030d865013652c9b644",
+      "note": "Content-bound change note records the exact added version reviewed for this release."
+    },
+    {
+      "change_id": "10.85.0:NAT-2026-09-22-003",
+      "entry_id": "NAT-2026-09-22-003",
+      "as_of_utc": "2026-09-22T09:57:32Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.85.0",
+      "summary": "Added the proposed GSA schedule-ordering framework without inferring implementation, savings or procurement outcomes.",
+      "provenance_path": "data/editorial_change_notes/10.85.0.json",
+      "provenance_sha256": "0eef97e6381522d30e979a25f58ea7e81fe8400ad16a8030d865013652c9b644",
+      "note": "Content-bound change note records the exact added version reviewed for this release."
+    },
+    {
+      "change_id": "10.85.0:NAT-2026-09-22-004",
+      "entry_id": "NAT-2026-09-22-004",
+      "as_of_utc": "2026-09-22T09:57:32Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.85.0",
+      "summary": "Added FDA's paired conditional rulemaking without treating the direct final rule as effective or alternatives as validated.",
+      "provenance_path": "data/editorial_change_notes/10.85.0.json",
+      "provenance_sha256": "0eef97e6381522d30e979a25f58ea7e81fe8400ad16a8030d865013652c9b644",
+      "note": "Content-bound change note records the exact added version reviewed for this release."
     }
   ],
   "reviews": [
@@ -36038,6 +36086,406 @@
       ],
       "unresolved_questions": [
         "The full court order, merits record, appeal status, deed and valuation documents, completed exchange, development approvals and measured habitat effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.85.0:NAT-2026-09-22-001:59f721b3ce55",
+      "entry_id": "NAT-2026-09-22-001",
+      "content_sha256": "59f721b3ce550f2dd45de9dff8dfadf68934d8a27dd00367efddeea08b44cc87",
+      "reviewed_at": "2026-09-22T10:08:28Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "34b5cc7c1825a275429e61c6756bb20fbbdf9dfede0e6a67e0825c6d9409504c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_fdic_merger_proposal_sep22",
+              "locator": "Complete 91 FR 60196-60248 text inspected for lifecycle, filing, deemed-approval, competition, statutory-factor and effect-analysis provisions.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "08a8b75755af7c45ed8f2fbb86ba2c0b744f6e5cb7035b99cb620f5f6c6cde8c",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "12551a8be6dcd9c1b6d1ab2fda8337b49a1cc9b1d7d80ee5b772aa411aa13234",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_fdic_merger_proposal_sep22",
+              "locator": "Complete 91 FR 60196-60248 text inspected for lifecycle, filing, deemed-approval, competition, statutory-factor and effect-analysis provisions.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "08a8b75755af7c45ed8f2fbb86ba2c0b744f6e5cb7035b99cb620f5f6c6cde8c",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "7a8e75a0dfd940fa536cf9e32e5e81cc1126c1af8f43230c67b3b02d4705fcf3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_fdic_merger_proposal_sep22",
+              "locator": "Complete 91 FR 60196-60248 text inspected for lifecycle, filing, deemed-approval, competition, statutory-factor and effect-analysis provisions.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "08a8b75755af7c45ed8f2fbb86ba2c0b744f6e5cb7035b99cb620f5f6c6cde8c",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "ce37ac4fa1d43291dac7b38b517c8c332b52bc26e72d4b8947f596a413781857",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_fdic_merger_proposal_sep22",
+              "locator": "Complete 91 FR 60196-60248 text inspected for lifecycle, filing, deemed-approval, competition, statutory-factor and effect-analysis provisions.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "08a8b75755af7c45ed8f2fbb86ba2c0b744f6e5cb7035b99cb620f5f6c6cde8c",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "758b38fdbc7554cb865b5c806d086294361852e8e0b7dfe77fe57c92e3889c0c",
+          "review_note": "Reviewed separately from the documented proposal and from unmeasured downstream effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "28c225cbeb582c4fff8f51cee8748bb6869c809d66900aea50a4749db63a3e68",
+          "review_note": "Preserves the agency's strongest explanation and identifies finalization, implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "0ed2148b92a7ca3877c43917a21b96340043fc97b24a829b9b3966615b0698c5",
+          "review_note": "Reviews competing plausible effects separately and limits Therefore to the verified lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "The FDIC argues that the framework recognizes credit unions and modern deposit booking, reduces unnecessary burden and preserves case-specific escalation. Commenters can test the de minimis thresholds, deemed-approval safeguards, market definitions and statutory-factor standards; the final rule, implementation data, merger outcomes and competition or service measurements are the goalposts."
+      ]
+    },
+    {
+      "review_id": "10.85.0:NAT-2026-09-22-002:155cf454b899",
+      "entry_id": "NAT-2026-09-22-002",
+      "content_sha256": "155cf454b899ebbd093a8be4433b3b95658df5bee354c94f5b5441ab014a1905",
+      "reviewed_at": "2026-09-22T10:08:28Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "b342395a77125d8839c08df51a9ad5bb481bbd3cbadcdf5a14b0ce6a4142b9e6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_fdic_state_parity_proposal_sep22",
+              "locator": "Complete 91 FR 60018-60031 text inspected for lifecycle, branch and branchless parity interpretation, exclusions, Illinois example and effect analysis.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "01ef7b12c806f3782b2204fb7aa29225dcefdb3c1431bf939ff29f2fa46d9c31",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "334ab61280db5f84896d1bef943c77764980ff3bfdb2f8eeace79946ca8caca1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_fdic_state_parity_proposal_sep22",
+              "locator": "Complete 91 FR 60018-60031 text inspected for lifecycle, branch and branchless parity interpretation, exclusions, Illinois example and effect analysis.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "01ef7b12c806f3782b2204fb7aa29225dcefdb3c1431bf939ff29f2fa46d9c31",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "105a07498b7d6d0fd921da239b5fc447765627b7768284788bb4472b704ab950",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_fdic_state_parity_proposal_sep22",
+              "locator": "Complete 91 FR 60018-60031 text inspected for lifecycle, branch and branchless parity interpretation, exclusions, Illinois example and effect analysis.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "01ef7b12c806f3782b2204fb7aa29225dcefdb3c1431bf939ff29f2fa46d9c31",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "e5ec6abef45c4388dab0ca0672186e84c8d4fc93eb8f70d897582cf5b92094ed",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_fdic_state_parity_proposal_sep22",
+              "locator": "Complete 91 FR 60018-60031 text inspected for lifecycle, branch and branchless parity interpretation, exclusions, Illinois example and effect analysis.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "01ef7b12c806f3782b2204fb7aa29225dcefdb3c1431bf939ff29f2fa46d9c31",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "7b0c188b4ed02598dfdc6d1f10714ecd28b161a02e6d3382052167afbf145901",
+          "review_note": "Reviewed separately from the documented proposal and from unmeasured downstream effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "b244d8a105575669c3667180fb930eb4f1cfd3676391ae276432a106b71713cf",
+          "review_note": "Preserves the agency's strongest explanation and identifies finalization, implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "76e581bb7d429b31f62dba01c64b95cbbbb90ce0a11b495438242b3d976a2e79",
+          "review_note": "Reviews competing plausible effects separately and limits Therefore to the verified lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "The FDIC says Congress intended parity between national and state banks and that branchless digital banking makes the existing text uncertain. The scope of applicable state laws, preemption decisions, final language, litigation, bank compliance changes and measured effects on merchants and consumers are the tests."
+      ]
+    },
+    {
+      "review_id": "10.85.0:NAT-2026-09-22-003:03187098ae61",
+      "entry_id": "NAT-2026-09-22-003",
+      "content_sha256": "03187098ae6125500feabeb887f0b71ba54051056819443ab245711c2dc4ec7a",
+      "reviewed_at": "2026-09-22T10:08:28Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "e5306fe30c6857f3ce701810c2cc06ad09bae844798e6c556f9dfeec4d5e9741",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_gsa_fss_ordering_proposal_sep22",
+              "locator": "Complete 91 FR 60063-60070 text inspected for lifecycle, threshold procedures, FAR exclusions, order-level determinations and retained safeguards.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "0bfd53757c5d97d1be311a09a100309694f56c42932995c745fecf3c4e10ad8e",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "3ff9c109dcb876f711855856552dbe510a732481fed3770ca2b66c1b27a57419",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_gsa_fss_ordering_proposal_sep22",
+              "locator": "Complete 91 FR 60063-60070 text inspected for lifecycle, threshold procedures, FAR exclusions, order-level determinations and retained safeguards.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "0bfd53757c5d97d1be311a09a100309694f56c42932995c745fecf3c4e10ad8e",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "7979b8c68470173bcdd5f2476a380b0bd13426652c4bd80b90e0e58af9c713f3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_gsa_fss_ordering_proposal_sep22",
+              "locator": "Complete 91 FR 60063-60070 text inspected for lifecycle, threshold procedures, FAR exclusions, order-level determinations and retained safeguards.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "0bfd53757c5d97d1be311a09a100309694f56c42932995c745fecf3c4e10ad8e",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "9bd7b9daf6c1ccefc77bc1c8e75c28bf2e31a6c8c84feeec20c9518fe93e1ba9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_gsa_fss_ordering_proposal_sep22",
+              "locator": "Complete 91 FR 60063-60070 text inspected for lifecycle, threshold procedures, FAR exclusions, order-level determinations and retained safeguards.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "0bfd53757c5d97d1be311a09a100309694f56c42932995c745fecf3c4e10ad8e",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "54dec0fa5d0766fffe38b57021699f3ae44988b72c5421793e791fca7a7dc468",
+          "review_note": "Reviewed separately from the documented proposal and from unmeasured downstream effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "83304d4467335d4dd97e5ec10a805fea3dfa0991c098d0dfd1eb85acde5e67a7",
+          "review_note": "Preserves the agency's strongest explanation and identifies finalization, implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "bedb443f2fdd1f367cd81ca6f1219be046b2d75dc3b668682e27ad326f5baa2c",
+          "review_note": "Reviews competing plausible effects separately and limits Therefore to the verified lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "GSA presents the proposal as an essential-requirements approach that relies on contract-level vetting while preserving threshold-based competition and sole-source controls. The final GSAR text, agency guidance, procurement files, protest decisions, cycle time, participation, prices and independently measured savings are the goalposts."
+      ]
+    },
+    {
+      "review_id": "10.85.0:NAT-2026-09-22-004:6c3701ba4b16",
+      "entry_id": "NAT-2026-09-22-004",
+      "content_sha256": "6c3701ba4b16ae1ff4ca796c3e7fc4821dd7610674328f26e69205b081defbd5",
+      "reviewed_at": "2026-09-22T10:08:28Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "0f2304e445960206920a5a64704c5420b8c626585aa1d961086bba3704371e35",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_fda_nonclinical_direct_final_sep22",
+              "locator": "Complete direct-final-rule text inspected for conditional effective date, terminology, definitions, rationale and withdrawal procedure.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "be71edacef8eb7b85f351f2b4640ea85edc459a11731fd951a18b81f0a01b115",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "federal_register_fda_nonclinical_proposal_sep22",
+              "locator": "Complete companion proposed-rule text inspected for lifecycle, definitions, rationale and adverse-comment procedure.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "6d288ea843885fdacc7c4b5b4f7fae31eadf272fdaddb13cb394fb25da21c60a",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "379c5c01c29fa9546a5cbd7cfc15098df9b4bcf1f80e76005b0df0bae5687cef",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_fda_nonclinical_direct_final_sep22",
+              "locator": "Complete direct-final-rule text inspected for conditional effective date, terminology, definitions, rationale and withdrawal procedure.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "be71edacef8eb7b85f351f2b4640ea85edc459a11731fd951a18b81f0a01b115",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "federal_register_fda_nonclinical_proposal_sep22",
+              "locator": "Complete companion proposed-rule text inspected for lifecycle, definitions, rationale and adverse-comment procedure.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "6d288ea843885fdacc7c4b5b4f7fae31eadf272fdaddb13cb394fb25da21c60a",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "89e6fa1632a3e8f88c1535cb5ea6b9931d6715d3a809e74c7e99fdfb3b3176b9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_fda_nonclinical_direct_final_sep22",
+              "locator": "Complete direct-final-rule text inspected for conditional effective date, terminology, definitions, rationale and withdrawal procedure.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "be71edacef8eb7b85f351f2b4640ea85edc459a11731fd951a18b81f0a01b115",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "federal_register_fda_nonclinical_proposal_sep22",
+              "locator": "Complete companion proposed-rule text inspected for lifecycle, definitions, rationale and adverse-comment procedure.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "6d288ea843885fdacc7c4b5b4f7fae31eadf272fdaddb13cb394fb25da21c60a",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "9896aa2dee364cb840e0843a64026a5b539ab0007489b189638c973aed54d077",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_fda_nonclinical_direct_final_sep22",
+              "locator": "Complete direct-final-rule text inspected for conditional effective date, terminology, definitions, rationale and withdrawal procedure.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "be71edacef8eb7b85f351f2b4640ea85edc459a11731fd951a18b81f0a01b115",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "federal_register_fda_nonclinical_proposal_sep22",
+              "locator": "Complete companion proposed-rule text inspected for lifecycle, definitions, rationale and adverse-comment procedure.",
+              "inspected_at": "2026-09-22T10:08:28Z",
+              "document_sha256": "6d288ea843885fdacc7c4b5b4f7fae31eadf272fdaddb13cb394fb25da21c60a",
+              "origin_group": "Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "3dccf42384bce8f757b1eaa8e5e73914d931d58b7e07cc4fe9b126bb19e9c0c3",
+          "review_note": "Reviewed separately from the documented proposal and from unmeasured downstream effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "8c7b5362ca623cb7e78392e63f98d71fa9a2e0b16a72c10ab8e18e2d4d91a461",
+          "review_note": "Preserves the agency's strongest explanation and identifies finalization, implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "80ece1e8161cfa1c8a6b447f72f5ba26dce98c969e85df10d25dc75eb2b5eb74",
+          "review_note": "Reviews competing plausible effects separately and limits Therefore to the verified lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "FDA says broader terminology reflects statutory recognition of nonclinical tests and supports alternatives without weakening safety standards or adding requirements. Adverse comments, the confirmation or withdrawal notice, later guidance, accepted submissions, validation results, animal-use data and product-safety outcomes are the tests."
       ]
     }
   ],
