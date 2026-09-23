@@ -1,36 +1,27 @@
 {
-  "version": "10.87.0",
-  "artifact_mode": "full",
+  "version": "10.87.1",
+  "artifact_mode": "feed-only",
   "research_window": {
-    "from_utc": "2026-09-22T16:02:46Z",
-    "through_utc": "2026-09-23T03:59:49Z",
+    "from_utc": "2026-09-23T03:59:49Z",
+    "through_utc": "2026-09-23T09:57:09Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous research coverage begins at the prior exact UTC boundary. One qualifying record was added and two existing events were materially refreshed without padding; feed retrieval, source inspection and archive observation times remain separately recorded."
+    "note": "Continuous research coverage begins at the prior exact UTC boundary. No independently verified national development cleared the publication threshold; the release updates only the validated Truth Social fallback and its review metadata. Feed retrieval and review times are recorded separately from the research cutoff."
   },
-  "release_iso": "2026-09-22",
-  "release_human": "September 22, 2026",
-  "checked_at": "2026-09-22 11:59 PM EDT",
-  "previous_version": "10.86.0",
-  "previous_checked_at": "2026-09-22 12:02 PM EDT",
-  "window_started_at": "2026-09-22 12:02 PM EDT",
-  "window_ended_at": "2026-09-22 11:59 PM EDT",
+  "release_iso": "2026-09-23",
+  "release_human": "September 23, 2026",
+  "checked_at": "2026-09-23 5:57 AM EDT",
+  "previous_version": "10.87.0",
+  "previous_checked_at": "2026-09-22 11:59 PM EDT",
+  "window_started_at": "2026-09-22 11:59 PM EDT",
+  "window_ended_at": "2026-09-23 5:57 AM EDT",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
   "week_label": "September 21–27, 2026",
   "cutoff_start": "2026-07-17",
-  "new_entry_ids": [
-    "NAT-2026-09-22-006",
-    "NAT-2026-08-17-001",
-    "NAT-2026-08-28-008"
-  ],
-  "added_entry_ids": [
-    "NAT-2026-09-22-006"
-  ],
-  "refreshed_entry_ids": [
-    "NAT-2026-08-17-001",
-    "NAT-2026-08-28-008"
-  ],
+  "new_entry_ids": [],
+  "added_entry_ids": [],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -252,19 +243,15 @@
   "rejected_candidates": [
     {
       "title": "Truth Social feed",
-      "reason": "The fallback advanced from 36,390 to 36,392 posts. One addition linked an unadjudicated investigative allegation without an inspected primary record; the other was duplicative rhetoric around the existing press-access dispute. Both remain feed-only."
+      "reason": "The fallback advanced from 36,392 to 36,396 posts. Three additions linked commentary about Trump's economy, Azerbaijan's assessment of possible Iran diplomacy and an Israeli election poll; the fourth was a video-only post whose media returned HTTP 403. The retained text establishes only that Trump published the links, and the unavailable video supplied no inspectable claim. None independently established a qualifying government action or outcome, so all four remain feed-only."
     },
     {
-      "title": "Reported Argentina minerals and energy package",
-      "reason": "The $7 billion report rested on a document seen by Reuters and one unnamed source and described a later announcement; no public operative financing instrument or completed commitment existed by cutoff."
-    },
-    {
-      "title": "Diplomatic contacts without operative outcomes",
-      "reason": "Belarus potash discussion, the Venezuela pull-aside and South Korea investment talks produced no public final terms, agreement, implemented action or measurable outcome by cutoff."
+      "title": "Overnight national-development sweep",
+      "reason": "No signed instrument, implemented action, formal proposal, court ruling, appropriation, credible investigative finding or independently measured outcome published after the prior cutoff cleared the archive threshold. Search results concerning ACA cancellations, Greenland, Iran talks, offshore-wind litigation, AI terminology and press access duplicated developments already adjudicated in release 10.87.0 or earlier."
     },
     {
       "title": "Previously deferred source-inspection leads",
-      "reason": "Reported ICC-wide sanctions, ICE locator changes, the NIH order, Medicaid pricing, pharmaceutical licensing, voter allegations, asylum, ESA, FCC, East Potomac, Poland-base and Taiwan-arms leads remain queued pending operative records, stable findings or adequate corroboration."
+      "reason": "The reported Argentina package, Belarus and Venezuela discussions, ICC-wide sanctions, ICE locator changes, the NIH order, Medicaid pricing, pharmaceutical licensing, voter allegations, asylum, ESA, FCC, East Potomac, Poland-base and Taiwan-arms leads remain queued pending operative records, stable findings or adequate corroboration."
     },
     {
       "title": "Legacy source-health remediation",
@@ -272,10 +259,28 @@
     },
     {
       "title": "External archive measurements",
-      "reason": "All four registered primary project endpoints were checked. Trump Archive advanced to 14,201 items, including 11,734 Truth Social posts and 1,827 speeches/transcripts; Immigration Policy Tracking advanced to 1,795 actions; UndoTrump remained at 1,264 actions. Record47 advanced to 6,272 entries, 6,488 social posts and 3,634 primary sources; its other measured units remained unchanged. Unlike units remain separate and no external item was promoted automatically."
+      "reason": "The four registered primary project endpoints were checked. Trump Archive displayed 14,205 items, including 11,738 Truth Social posts and 1,827 speeches/transcripts; Immigration Policy Tracking displayed 1,795 actions and UndoTrump displayed 1,264 actions. Record47's API was temporarily unavailable, so its prior verified measurements were preserved. This strict feed-only release preserves the 10.87.0 editorial snapshot byte-for-byte; unlike units remain separate and no external item was promoted automatically."
     }
   ],
-  "editorial_snapshot": null,
+  "editorial_snapshot": {
+    "version": "10.87.0",
+    "complete_pack": {
+      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-09-22_v10.87.0.zip",
+      "sha256": "cc38b0635c991cc04809f7162a0a6e1ddfd8ec41917057503e3cfc9b57bab746"
+    },
+    "national_pack": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-09-22_v10.87.0.zip",
+      "sha256": "df7938a86522c090e7e0053453519a4c3361d549ac2b048fe8170cfadeadcfa3"
+    },
+    "national_brief": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-09-22_v10.87.0.md",
+      "sha256": "926d67eaa9bfd359d65415c477ea87004cb532a3ffec909841ce897ed88f9a74"
+    },
+    "in6_brief": {
+      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-09-22_v10.87.0.md",
+      "sha256": "91111d07c0f4e8807f9952d12a75d401df3ae8809475d0feece160f7428aba81"
+    }
+  },
   "corrections": [],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence."
 }
