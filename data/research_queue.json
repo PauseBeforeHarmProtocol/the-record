@@ -4042,17 +4042,33 @@
   },
   {
     "candidate_id": "QUEUE-20260923-1202-04",
-    "title": "White House press-access injunction hearing preview",
+    "title": "White House press-access injunction hearing",
     "first_seen_at": "2026-09-23T10:05:00Z",
     "timestamp_precision": "minute",
     "status": "withheld",
-    "reason": "The hearing was scheduled for 3:30 p.m. EDT, after the research cutoff; no judicial ruling or implemented access change existed by cutoff.",
+    "reason": "The hearing occurred and the judge questioned whether the ban followed due-process precedent, but no judicial ruling or implemented access change existed by cutoff.",
     "recheck_trigger": "A docketed order, ruling, settlement or implemented access change.",
-    "next_check_at": "2026-09-23T19:30:00Z",
+    "next_check_at": null,
     "provenance": [
       "https://www.reuters.com/legal/government/news-outlets-will-ask-judge-end-trumps-white-house-ban-hearing-2026-09-23/"
     ],
-    "canonical_id": "NAT-2026-09-19-002"
+    "canonical_id": "NAT-2026-09-19-002",
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20260923-1202-04",
+        "title": "White House press-access injunction hearing preview",
+        "first_seen_at": "2026-09-23T10:05:00Z",
+        "timestamp_precision": "minute",
+        "status": "withheld",
+        "reason": "The hearing was scheduled for 3:30 p.m. EDT, after the research cutoff; no judicial ruling or implemented access change existed by cutoff.",
+        "recheck_trigger": "A docketed order, ruling, settlement or implemented access change.",
+        "next_check_at": "2026-09-23T19:30:00Z",
+        "provenance": [
+          "https://www.reuters.com/legal/government/news-outlets-will-ask-judge-end-trumps-white-house-ban-hearing-2026-09-23/"
+        ],
+        "canonical_id": "NAT-2026-09-19-002"
+      }
+    ]
   },
   {
     "candidate_id": "QUEUE-20260923-1202-05",
@@ -4065,6 +4081,106 @@
     "next_check_at": null,
     "provenance": [
       "https://www.reuters.com/business/energy/us-fund-7-billion-argentina-mineral-energy-projects-document-shows-2026-09-23/"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260923-1757-01",
+    "title": "Second district court vacates EPA Solar for All termination",
+    "first_seen_at": "2026-09-23T18:16:00Z",
+    "timestamp_precision": "minute",
+    "status": "published",
+    "reason": "The District of Columbia opinion is a second merits ruling against EPA's program-wide termination premise and materially advances the existing Solar for All record without implying payment or completed implementation.",
+    "recheck_trigger": "A stay, appeal, agency guidance, grant-specific decision, disbursement or measured program outcome.",
+    "next_check_at": null,
+    "provenance": [
+      "https://fingfx.thomsonreuters.com/gfx/legaldocs/lbpgxozbjvq/09232026epa.pdf",
+      "https://www.reuters.com/legal/government/second-judge-finds-trumps-epa-unlawfully-nixed-7-billion-solar-grant-program-2026-09-23/"
+    ],
+    "canonical_id": "NAT-2026-09-18-011"
+  },
+  {
+    "candidate_id": "QUEUE-20260923-1757-02",
+    "title": "Justice Department noncitizen-voting prosecution surge",
+    "first_seen_at": "2026-09-23T19:48:00Z",
+    "timestamp_precision": "minute",
+    "status": "published",
+    "reason": "Reuters' court-record review and named Justice Department response materially add a bounded enforcement measurement to the existing constitutional-challenge and registration-error record.",
+    "recheck_trigger": "Case dispositions, complete court rulings, confirmed ballot counts, removal outcomes or measured election effects.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.reuters.com/legal/government/trump-ramps-up-noncitizen-voting-prosecutions-ahead-midterms-2026-09-23/"
+    ],
+    "canonical_id": "NAT-2026-09-15-003"
+  },
+  {
+    "candidate_id": "QUEUE-20260923-1757-03",
+    "title": "White House and energy secretary disavow flat diesel-export ban",
+    "first_seen_at": "2026-09-23T18:57:00Z",
+    "timestamp_precision": "minute",
+    "status": "published",
+    "reason": "Named administration statements materially narrow the prior proposal while leaving voluntary or efficiency measures under discussion; no restriction was inferred.",
+    "recheck_trigger": "A written instrument, authority, defined scope, participant commitment, implementation or measured market effect.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.reuters.com/world/us/white-house-denies-report-us-is-considering-diesel-export-ban-2026-09-23/"
+    ],
+    "canonical_id": "NAT-2026-09-22-006"
+  },
+  {
+    "candidate_id": "QUEUE-20260923-1757-04",
+    "title": "FAA clarifies arch review did not assess drone operations",
+    "first_seen_at": "2026-09-23T20:35:00Z",
+    "timestamp_precision": "minute",
+    "status": "published",
+    "reason": "The FAA administrator's testimony materially clarifies the scope of the existing no-hazard determination and the unresolved safety review for Trump's later drone proposal.",
+    "recheck_trigger": "A new or amended FAA evaluation, final planning approval, military plan, appropriation, contract, construction or operational authorization.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.reuters.com/world/faa-says-trump-arch-with-signal-flame-got-no-special-treatment-review-2026-09-23/"
+    ],
+    "canonical_id": "NAT-2026-08-28-012"
+  },
+  {
+    "candidate_id": "QUEUE-20260923-1757-05",
+    "title": "Two new Truth Social posts",
+    "first_seen_at": "2026-09-23T19:50:55Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "reason": "One post contained no text; the other ceremonially identified passengers on Marine One. Both images returned HTTP 403, so no visual claim was used, and neither post established a qualifying government action or outcome.",
+    "recheck_trigger": "Publicly retrievable primary media or an independently verified operative government action or outcome.",
+    "next_check_at": null,
+    "provenance": [
+      "https://truthsocial.com/@realDonaldTrump/117322092055919832",
+      "https://truthsocial.com/@realDonaldTrump/117322065119445871"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260923-1757-06",
+    "title": "HIV-funding restriction hearing",
+    "first_seen_at": "2026-09-23T19:29:00Z",
+    "timestamp_precision": "minute",
+    "status": "withheld",
+    "reason": "The judge appeared receptive to blocking transgender-related limits on HIV funding but issued no ruling by cutoff; hearing impressions were not treated as an injunction or funding outcome.",
+    "recheck_trigger": "A docketed order, agency change, disbursement decision or measured funding consequence.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.reuters.com/legal/government/judge-appears-open-blocking-trumps-transgender-related-limits-hiv-funding-2026-09-23/"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260923-1757-07",
+    "title": "Venezuela debt-restructuring discussion",
+    "first_seen_at": "2026-09-23T20:06:00Z",
+    "timestamp_precision": "minute",
+    "status": "withheld",
+    "reason": "Trump and Delcy Rodríguez discussed debt restructuring, but no agreement, instrument, terms, creditor treatment, appropriation or implemented restructuring was announced by cutoff.",
+    "recheck_trigger": "A signed or published agreement, operative financing instrument, creditor terms, appropriation, disbursement or implemented restructuring.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.reuters.com/business/finance/trump-venezuelas-rodriguez-discuss-debt-restructuring-rubio-says-2026-09-23/"
     ],
     "canonical_id": null
   }

@@ -3997,6 +3997,54 @@
       "provenance_path": "data/editorial_change_notes/10.88.0.json",
       "provenance_sha256": "74e2811b76648a4cb0aefb2695a51119c08b027b72e5091ca1463a15cd84f0c6",
       "note": "Content-bound change note records the exact refreshed version reviewed for this release."
+    },
+    {
+      "change_id": "10.89.0:NAT-2026-08-28-012",
+      "entry_id": "NAT-2026-08-28-012",
+      "as_of_utc": "2026-09-23T21:57:47Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.89.0",
+      "summary": "Clarified that the FAA used its standard obstruction process but did not evaluate the later-proposed drone operations.",
+      "provenance_path": "data/editorial_change_notes/10.89.0.json",
+      "provenance_sha256": "25dc2327b83c08875dbb4b039138b06cc052c075d7962bddeee8ded75b8d95e5",
+      "note": "Content-bound change note records the exact materially refreshed version reviewed for this release."
+    },
+    {
+      "change_id": "10.89.0:NAT-2026-09-15-003",
+      "entry_id": "NAT-2026-09-15-003",
+      "as_of_utc": "2026-09-23T21:57:47Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.89.0",
+      "summary": "Added a bounded measurement of the September noncitizen-voting prosecution surge while separating charges from convictions, ballots and election effects.",
+      "provenance_path": "data/editorial_change_notes/10.89.0.json",
+      "provenance_sha256": "25dc2327b83c08875dbb4b039138b06cc052c075d7962bddeee8ded75b8d95e5",
+      "note": "Content-bound change note records the exact materially refreshed version reviewed for this release."
+    },
+    {
+      "change_id": "10.89.0:NAT-2026-09-18-011",
+      "entry_id": "NAT-2026-09-18-011",
+      "as_of_utc": "2026-09-23T21:57:47Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.89.0",
+      "summary": "Added the second district-court vacatur of EPA’s program-wide Solar for All termination premise.",
+      "provenance_path": "data/editorial_change_notes/10.89.0.json",
+      "provenance_sha256": "25dc2327b83c08875dbb4b039138b06cc052c075d7962bddeee8ded75b8d95e5",
+      "note": "Content-bound change note records the exact materially refreshed version reviewed for this release."
+    },
+    {
+      "change_id": "10.89.0:NAT-2026-09-22-006",
+      "entry_id": "NAT-2026-09-22-006",
+      "as_of_utc": "2026-09-23T21:57:47Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.89.0",
+      "summary": "Added named administration statements disavowing a flat diesel-export ban while narrower measures remained under discussion.",
+      "provenance_path": "data/editorial_change_notes/10.89.0.json",
+      "provenance_sha256": "25dc2327b83c08875dbb4b039138b06cc052c075d7962bddeee8ded75b8d95e5",
+      "note": "Content-bound change note records the exact materially refreshed version reviewed for this release."
     }
   ],
   "reviews": [
@@ -38487,6 +38535,784 @@
       ],
       "unresolved_questions": [
         "The number of affected people who voted nationally, final state revisions, pending court rulings, registration-system fixes and any measured election effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.89.0:NAT-2026-08-28-012:c8b9dd56ab6d",
+      "entry_id": "NAT-2026-08-28-012",
+      "content_sha256": "c8b9dd56ab6d097568ce6ce75d4a48f05a58a7b83d5e1a00e97eef80cfdc56ae",
+      "reviewed_at": "2026-09-23T22:10:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "da332a3bd70e7aeeaf25a37ec2698c93ca83f03b69d358cede5ccc71e7f63be8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "nps_triumphal_arch_assessment_aug28",
+              "locator": "Complete revised National Park Service assessment describing the proposed 250-foot arch.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "ce6d35f5b62a9a245624f87d0cd508b15df06b4332ac78917b21dbf7903abf61",
+              "origin_group": "National Park Service",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "037f4f2fb304df30f2adc4e2c5f160f7a256a9f6cd68ed516593d793d6f2eb81",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "nps_triumphal_arch_assessment_aug28",
+              "locator": "Primary assessment's adverse-effect findings and affected historic properties.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "ce6d35f5b62a9a245624f87d0cd508b15df06b4332ac78917b21dbf7903abf61",
+              "origin_group": "National Park Service",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "fcd218ed064ab47c9c17ea253fcc04b4b72440c40d58cea8643776e7cbfbdc3f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "nps_triumphal_arch_assessment_aug28",
+              "locator": "Primary assessment's site rationale and alternatives discussion.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "ce6d35f5b62a9a245624f87d0cd508b15df06b4332ac78917b21dbf7903abf61",
+              "origin_group": "National Park Service",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "7887ec9080b3198ed42c04f7f527c8adc1794a7c41626e7fff3d3e9447cc33f7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "nps_triumphal_arch_assessment_aug28",
+              "locator": "Primary assessment's procedural status and remaining approvals.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "ce6d35f5b62a9a245624f87d0cd508b15df06b4332ac78917b21dbf7903abf61",
+              "origin_group": "National Park Service",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_triumphal_arch_aug28",
+              "locator": "Independent report on project status and litigation.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "32098c83a86fc2fccefc2c0ad9c8598df6d936052811c06152891b1a22914945",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "81fda6ad79663fc07b894d1357605a7cbc508d57c7e4a178de4390f1deb39c08",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_triumphal_arch_excavation_sep3",
+              "locator": "Named administration timetable and stated dimensions.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "584517baf4d36daf9d65bfc33be38792b0f8a9ff8f4f2e482880a7bcc19f9058",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "0e75fcf4d6c3b7ade7cf5d06f0137fb7abfbd6609b0d8f138e7c1be9055761dd",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_triumphal_arch_excavation_sep3",
+              "locator": "Independent report distinguishes the announced timetable from completed work and resolved authority.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "584517baf4d36daf9d65bfc33be38792b0f8a9ff8f4f2e482880a7bcc19f9058",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "f13baa35818d472ef177e9befe5e8973f61e66182d6d11d646899bed4d850e39",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "faa_triumphal_arch_sep18",
+              "locator": "FAA September 18 statement describing the aeronautical study and no-hazard result.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "6310f2f0132c940eebff7a8282f691c3cdf8bcfd18a3deb4daf6646be043f201",
+              "origin_group": "Federal Aviation Administration",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "8c070ec60176fbcf337dd89526737bdccf7eb6dd4baa020849668544f6b77f51",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "faa_triumphal_arch_sep18",
+              "locator": "FAA statement identifies the eternal-flame and floodlight conditions.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "6310f2f0132c940eebff7a8282f691c3cdf8bcfd18a3deb4daf6646be043f201",
+              "origin_group": "Federal Aviation Administration",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_triumphal_arch_sep18",
+              "locator": "Independent report of review period and lighting conditions.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "de17504a000c5a4263c4a71989a91365be19b80eee48a7a9678073c6c3be6a22",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "600414a5ce082d1d676ecb2b1025a9527027cf111d60a90f5934cac59f186a03",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "faa_triumphal_arch_sep18",
+              "locator": "Agency statement is limited to the aeronautical determination.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "6310f2f0132c940eebff7a8282f691c3cdf8bcfd18a3deb4daf6646be043f201",
+              "origin_group": "Federal Aviation Administration",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_triumphal_arch_sep18",
+              "locator": "Independent report distinguishes aviation clearance from wider approvals and litigation.",
+              "inspected_at": "2026-09-18T22:20:00Z",
+              "document_sha256": "de17504a000c5a4263c4a71989a91365be19b80eee48a7a9678073c6c3be6a22",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "c4a65365a9d39be03dc2840fcef8122b80babf49d3d0b68224f40da37b532e91",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_triumphal_arch_military_sep20",
+              "locator": "Complete retained presidential post inspected; used to establish publication, the announced drone, sniper and ammunition functions, and Trump's claimed rationale only.",
+              "inspected_at": "2026-09-20T16:14:00Z",
+              "document_sha256": "51d2ac8159b51515cde7ea609052eb88e03c7dd14eee1be2f07648316ad41c76",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "reuters_triumphal_arch_military_sep20",
+              "locator": "Complete linked report inspected for the presidential announcement, asserted military request, absent specific threat and lack of White House or Defense Department response.",
+              "inspected_at": "2026-09-20T16:14:00Z",
+              "document_sha256": "676d88ba43cfdb039d9f71e87e874f0c5dabd46b29e62278fd33d7315bffc727",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_triumphal_arch_military_sep20",
+              "locator": "Complete linked report inspected for the announcement, Pentagon's lack of additional information, pending planning approval and congressional-authorization litigation.",
+              "inspected_at": "2026-09-20T16:14:00Z",
+              "document_sha256": "5a29a654b5530061fd0811bc8ad224288260afc17ae08a4029b7f3450bfc5689",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 10,
+          "fact_sha256": "b2e95bf148e0cd06b2a46888ed4d7367d57fafceb8c50d5d62482753d4389730",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_triumphal_arch_military_sep20",
+              "locator": "Complete linked report inspected for the presidential announcement, asserted military request, absent specific threat and lack of White House or Defense Department response.",
+              "inspected_at": "2026-09-20T16:14:00Z",
+              "document_sha256": "676d88ba43cfdb039d9f71e87e874f0c5dabd46b29e62278fd33d7315bffc727",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_triumphal_arch_military_sep20",
+              "locator": "Complete linked report inspected for the announcement, Pentagon's lack of additional information, pending planning approval and congressional-authorization litigation.",
+              "inspected_at": "2026-09-20T16:14:00Z",
+              "document_sha256": "5a29a654b5530061fd0811bc8ad224288260afc17ae08a4029b7f3450bfc5689",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 11,
+          "fact_sha256": "90597c594a9534234cd5aa2206d43d4d9e548f433f283353c4377ab848d27c34",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_triumphal_arch_military_sep20",
+              "locator": "Complete linked report inspected for the presidential announcement, asserted military request, absent specific threat and lack of White House or Defense Department response.",
+              "inspected_at": "2026-09-20T16:14:00Z",
+              "document_sha256": "676d88ba43cfdb039d9f71e87e874f0c5dabd46b29e62278fd33d7315bffc727",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_triumphal_arch_military_sep20",
+              "locator": "Complete linked report inspected for the announcement, Pentagon's lack of additional information, pending planning approval and congressional-authorization litigation.",
+              "inspected_at": "2026-09-20T16:14:00Z",
+              "document_sha256": "5a29a654b5530061fd0811bc8ad224288260afc17ae08a4029b7f3450bfc5689",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 12,
+          "fact_sha256": "39bf4514bf578dd31ac324f87ee46614a9a2629da516ca63fc2b9550a8a43094",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_triumphal_arch_faa_followup_sep23",
+              "locator": "Complete indexed report inspected for Administrator Bedford’s standard-review testimony, exclusion of drone operations and the unresolved follow-up review.",
+              "inspected_at": "2026-09-23T21:50:00Z",
+              "document_sha256": "21815380e78e43bb9b14fc57dd5dc6943a607b45e002a74ec3374b46bd122707",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 13,
+          "fact_sha256": "dda5e8cc1f89ab8c20b724094ba15430d6d194a7555b9cca69d9e297089e4720",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_triumphal_arch_faa_followup_sep23",
+              "locator": "Complete indexed report inspected for Representative Beyer’s safety-review question, Bedford’s response and the absence of a new FAA decision.",
+              "inspected_at": "2026-09-23T21:50:00Z",
+              "document_sha256": "5bdc0ac0a4b66c1fbdd8cbc63105e991843c3cbbd80e002d3dbb29b7f6068282",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "1d18d42109a12953c523554e35c90d10e786f7e220dc5efa58305764becb4634",
+          "review_note": "Reviewed significance separately from the sourced facts and unresolved implementation or outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "df3c31a0a9aeb2cb674472760a35d03674ce7271588a4b5e930ba1e1993d0809",
+          "review_note": "Preserved the strongest relevant administration position and defined documentary, implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "266ad7fc60aa2c8599fbb69d6e70b8dc0f9097d51a062b87c47b6b09fdb00003",
+          "review_note": "Reviewed plausible alternatives separately and bounded the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Any new FAA safety review, military plan, final approval, appropriation, construction and operational safeguards remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.89.0:NAT-2026-09-15-003:e379d9e0fd77",
+      "entry_id": "NAT-2026-09-15-003",
+      "content_sha256": "e379d9e0fd77af399215583ace71723f5691fcdb979868be64774c09a40e3d56",
+      "reviewed_at": "2026-09-23T22:10:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "fdc6d9d3965c1cc37b99262c04383d8dcef7c6c7f0e8a10138f3ac0ff0093308",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Reuters lines 161–193: five pending motions, statutory arguments, DOJ response, 129-case analysis, deportation consequences and separate denial.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "140ae3f19a842a9e665c31e7b8e0e622486c949ff4dce3d3b6093291e34f17d4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Reuters lines 161–193: five pending motions, statutory arguments, DOJ response, 129-case analysis, deportation consequences and separate denial.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "51ad3ea6bddddd50579ddf1acd0404c4980668a75363999d4f271e773ae46c07",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Reuters lines 161–193: five pending motions, statutory arguments, DOJ response, 129-case analysis, deportation consequences and separate denial.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "64fb09c949575bf258f413500c13b5e4d3a564fc34dfa6fc909fa13f70b8a06e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Reuters lines 161–193: five pending motions, statutory arguments, DOJ response, 129-case analysis, deportation consequences and separate denial.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "94a7b85f51eac85fb3370c49ed0611898fd59e94ab9cb2bb3cb202e692910d66",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Reuters lines 161–193: five pending motions, statutory arguments, DOJ response, 129-case analysis, deportation consequences and separate denial.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "7aa10f9e36fbd390a438d71667232f2f6f65211ff708b7b5138221dff0dba6b8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_state_registration_errors_sep23",
+              "locator": "Inspected Reuters article text: nationwide records review, state examples, ballot limits, administrative-error analysis, expert context and White House response.",
+              "inspected_at": "2026-09-23T16:13:45Z",
+              "document_sha256": "dbfc45687ac84a6a6c91119f76697cee90fcce93c72dafc82135c9eeb100c963",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "ca98b9e248de595569607cc85854183473af71281a86959ad78005db75dad7d1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_state_registration_errors_sep23",
+              "locator": "Inspected Reuters article text: nationwide records review, state examples, ballot limits, administrative-error analysis, expert context and White House response.",
+              "inspected_at": "2026-09-23T16:13:45Z",
+              "document_sha256": "dbfc45687ac84a6a6c91119f76697cee90fcce93c72dafc82135c9eeb100c963",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "8cab4d7474706fb40b4dc4390392adae5c8adf6ba58b73d2f35c8c17baf3370d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_state_registration_errors_sep23",
+              "locator": "Inspected Reuters article text: nationwide records review, state examples, ballot limits, administrative-error analysis, expert context and White House response.",
+              "inspected_at": "2026-09-23T16:13:45Z",
+              "document_sha256": "dbfc45687ac84a6a6c91119f76697cee90fcce93c72dafc82135c9eeb100c963",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "e3ebd062fa6e5262a93c03968492c7715db76c56c3c744c34062f91fd65f74e5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_prosecutions_sep23",
+              "locator": "Complete indexed report inspected for September charging counts, historical comparison and the named Justice Department response.",
+              "inspected_at": "2026-09-23T21:50:00Z",
+              "document_sha256": "3fb5d79eb11b499bed314a3290b9c74420d3102f819697e0a1b3b774b7f1dbda",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "a2fed40e49a3a321159f45223035f0dd39f6db53501ee9076618d16c4aae3c43",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_prosecutions_sep23",
+              "locator": "Complete indexed report inspected for charge status, McCotter’s explanation and limits on inferences about prevalence or election effects.",
+              "inspected_at": "2026-09-23T21:50:00Z",
+              "document_sha256": "5d53540afa3267ecf401106e0b57189bc2a415ddd3dc00c9921391a2e48c227d",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "b25b16afaf5c6e50908ed2187ca8d2d87e66d1d4978d3aec6a0e88616629821f",
+          "review_note": "Reviewed significance separately from the sourced facts and unresolved implementation or outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "b6320e7c7051f163f793eedb9a77b55fbd76a9876a69c576c8775afc821a6e9d",
+          "review_note": "Preserved the strongest relevant administration position and defined documentary, implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "a35cc02dd9d985baaa87e45022e042210c62a54324352c6910937f775963f5a8",
+          "review_note": "Reviewed plausible alternatives separately and bounded the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Case dispositions, confirmed ballots, state data revisions, registration-system fixes and measured election effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.89.0:NAT-2026-09-18-011:470901ea1f56",
+      "entry_id": "NAT-2026-09-18-011",
+      "content_sha256": "470901ea1f56c9f37c7fa49cf41d566213852cb763e5b866916c77cfc468123e",
+      "reviewed_at": "2026-09-23T22:10:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "2af79dfb34b51b23752ac8eba19bb09f85a538bb168d067a9586a89d51325ca6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dri_solar_for_all_order_sep18",
+              "locator": "Document 48, pages 1 and 20; complete order inspected.",
+              "inspected_at": "2026-09-19T04:12:00Z",
+              "document_sha256": "5ef98b7abfb2ee88aed0f2558f953cd5fa895427ab04ddc7d9da947168e6a89c",
+              "origin_group": "U.S. District Court for the District of Rhode Island",
+              "evidence_status": "reversed"
+            },
+            {
+              "source_id": "dri_solar_for_all_judgment_sep18",
+              "locator": "Document 49, complete one-page judgment inspected.",
+              "inspected_at": "2026-09-19T04:12:00Z",
+              "document_sha256": "3a5ea00e45bfa240a8586692f63c7a78ec8223e612712a627fb7032c1ef5e233",
+              "origin_group": "U.S. District Court for the District of Rhode Island",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "f07ebdf81aac25c85e318bcd964d8467e9dc157739b61646a235f85199a981bf",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dri_solar_for_all_order_sep18",
+              "locator": "Document 48, pages 2–6 and 18; appropriation, obligation, repeal and statutory-authority analysis inspected.",
+              "inspected_at": "2026-09-19T04:12:00Z",
+              "document_sha256": "5ef98b7abfb2ee88aed0f2558f953cd5fa895427ab04ddc7d9da947168e6a89c",
+              "origin_group": "U.S. District Court for the District of Rhode Island",
+              "evidence_status": "reversed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "df81c1f0279fae006d0823d80f2ae9d9280ff39e45561d9157c69c19f05400df",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dri_solar_for_all_order_sep18",
+              "locator": "Document 48, pages 7–18; standing, jurisdiction, finality, reviewability and merits limits inspected.",
+              "inspected_at": "2026-09-19T04:12:00Z",
+              "document_sha256": "5ef98b7abfb2ee88aed0f2558f953cd5fa895427ab04ddc7d9da947168e6a89c",
+              "origin_group": "U.S. District Court for the District of Rhode Island",
+              "evidence_status": "reversed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "8262e1de067c5571e7955cc0eabd5dce64df443661827ac7cbd6050cd0c754df",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dri_solar_for_all_order_sep18",
+              "locator": "Document 48, pages 18–20; remedy arguments, vacatur and denial of permanent injunction inspected.",
+              "inspected_at": "2026-09-19T04:12:00Z",
+              "document_sha256": "5ef98b7abfb2ee88aed0f2558f953cd5fa895427ab04ddc7d9da947168e6a89c",
+              "origin_group": "U.S. District Court for the District of Rhode Island",
+              "evidence_status": "reversed"
+            },
+            {
+              "source_id": "ap_solar_for_all_ruling_sep18",
+              "locator": "Inspected report text for EPA's stated review and possible-appeal response.",
+              "inspected_at": "2026-09-19T04:15:00Z",
+              "document_sha256": "fb32ea25af4eb388e7766b74c3e6a1e2bdc276a494bb922144d8cdde88a49e66",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "4f5c11ee306ddd86fd8152c43666922006f40e4b1c3487b1a395060540a4e8f1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ddc_solar_for_all_opinion_sep22",
+              "locator": "Memorandum opinion pages 1–19 inspected for the arbitrary-and-capricious and statutory-authority holdings, vacatur and denial of injunction without prejudice.",
+              "inspected_at": "2026-09-23T21:50:00Z",
+              "document_sha256": "759c1f0674e6afb1696ede497a6009b89d225b482649c1ea05667cab26a8c49a",
+              "origin_group": "U.S. District Court for the District of Columbia",
+              "evidence_status": "reversed"
+            },
+            {
+              "source_id": "reuters_solar_for_all_second_ruling_sep23",
+              "locator": "Complete indexed report inspected for the second ruling and litigation posture.",
+              "inspected_at": "2026-09-23T21:50:00Z",
+              "document_sha256": "ceffdb05e1b0a1c3b08251e95b71bb36e36cfbb08a0c2a1320f15dd0b1b0b554",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "45bce76ec2715a11ef314757048f50f06e19e8dd2cc28fd990a132f7fb668748",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ddc_solar_for_all_opinion_sep22",
+              "locator": "Memorandum opinion inspected for the unobligated-balance analysis and grant-specific limits of the remedy.",
+              "inspected_at": "2026-09-23T21:50:00Z",
+              "document_sha256": "6701d6d940eeb12303082b25e7ddffffd13d19314100d94296438766f09a98bc",
+              "origin_group": "U.S. District Court for the District of Columbia",
+              "evidence_status": "reversed"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "6fcb5f92441240017d9560f62d3e09beee06c9064087fc178e535bd8631d58f7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_solar_for_all_second_ruling_sep23",
+              "locator": "Complete indexed report inspected for EPA’s stated appeal consideration and unresolved implementation.",
+              "inspected_at": "2026-09-23T21:50:00Z",
+              "document_sha256": "99359b0203725be4331f1b1e63c1b207a0c85112d3b742df925a50e62ab772c5",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "46e03a871afa59d8fece7d56e9aded5ee1c84f2b42583842d5b146f9443d6a46",
+          "review_note": "Reviewed significance separately from the sourced facts and unresolved implementation or outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "fb6a090dbae3f5605f33aaf4cbdbd1da0fd930a2388a4d7c7465e574f5aa809b",
+          "review_note": "Preserved the strongest relevant administration position and defined documentary, implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "6e04c0020adc3f2260439b0a12102e1dc931719f52011cec3193e080be58f69a",
+          "review_note": "Reviewed plausible alternatives separately and bounded the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Any stay, appeal, agency guidance, grant-specific decision, disbursement and measured program outcome remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.89.0:NAT-2026-09-22-006:03a3670dce3a",
+      "entry_id": "NAT-2026-09-22-006",
+      "content_sha256": "03a3670dce3ade734760318d653a790bd5aa3aa8bfde414102186013b25d1005",
+      "reviewed_at": "2026-09-23T22:10:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "9d494bcd400f0b13780cd8a5cadaa7a14fc53227a8b5e8ee18e843071c989057",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_diesel_export_ban_proposal_sep22",
+              "locator": "Complete indexed report inspected for the named presidential endorsement, Treasury review, cabinet objections and unresolved policy stage.",
+              "inspected_at": "2026-09-23T04:08:00Z",
+              "document_sha256": "107a7eb695e1d1387548582c9ed8e47ee10a0695cb46ea1ed4df1c8b47a3d173",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "c555e93410c452fe802ba2edf21144d1f9ad89d378fa9dda3bb2cfe51db9a648",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_diesel_export_ban_proposal_sep22",
+              "locator": "Complete indexed report inspected for the named presidential endorsement, Treasury review, cabinet objections and unresolved policy stage.",
+              "inspected_at": "2026-09-23T04:08:00Z",
+              "document_sha256": "107a7eb695e1d1387548582c9ed8e47ee10a0695cb46ea1ed4df1c8b47a3d173",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "d81b83415bfbcfadbbb4ada41f992500ee413d17340c611ed6f7faebebc9eedb",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_diesel_export_ban_proposal_sep22",
+              "locator": "Complete indexed report inspected for the named presidential endorsement, Treasury review, cabinet objections and unresolved policy stage.",
+              "inspected_at": "2026-09-23T04:08:00Z",
+              "document_sha256": "107a7eb695e1d1387548582c9ed8e47ee10a0695cb46ea1ed4df1c8b47a3d173",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "061aafaf3d2cb625cb12b91d1ca8f6b3295d654f40fe40e9ba4cb28857e1b256",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_diesel_export_ban_proposal_sep22",
+              "locator": "Complete indexed report inspected for the named presidential endorsement, Treasury review, cabinet objections and unresolved policy stage.",
+              "inspected_at": "2026-09-23T04:08:00Z",
+              "document_sha256": "107a7eb695e1d1387548582c9ed8e47ee10a0695cb46ea1ed4df1c8b47a3d173",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "6e8b444c6cb80c58246c7a4f4dfd611a5141f348c42e913e817ddf208db6ba7f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_diesel_export_denial_sep23",
+              "locator": "Complete indexed report inspected for the White House denial and Energy Secretary Wright’s named flat-ban statement.",
+              "inspected_at": "2026-09-23T21:50:00Z",
+              "document_sha256": "fb973a6cc9ed1c23243dbe65e393b4c7557fd07012db8697b26eb09922e35358",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "2f13f4bca54d3ac60bc3c13f997c4384646c4e1026e51dcc21556ee32ea7d5b1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_diesel_export_denial_sep23",
+              "locator": "Complete indexed report inspected for Wright’s description of narrower voluntary and efficiency discussions and the absence of an operative measure.",
+              "inspected_at": "2026-09-23T21:50:00Z",
+              "document_sha256": "563505d0c66c19d119f85d7fa510601a0eda3aca873fbef359b931436fca4b38",
+              "origin_group": "Reuters",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "3682cade2a1f38ef5ffb6ce01b7f06b2cb2c9eb117db38ecd0c8e09bb77162a4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_diesel_export_denial_sep23",
+              "locator": "Complete indexed report inspected for the distinction between the named denial and the separately reported unnamed-source 90-day scenario.",
+              "inspected_at": "2026-09-23T21:50:00Z",
+              "document_sha256": "9df6583629c989a59e987ef40a397e02ce01be8fb869d812f4ef5a30a3add12e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "17eaa40a58211cc22d9dbba8450fce10c90c3d69185d4eae61deb60bf9437921",
+          "review_note": "Reviewed significance separately from the sourced facts and unresolved implementation or outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "f8f89e61519b8fc6a119e224fe6dd9e39d09d8e0e13ce0b1bcf4c97097b1ed9e",
+          "review_note": "Preserved the strongest relevant administration position and defined documentary, implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "2f2803a6c24e706899bee01d4f84bf062a16696de5cd693920c9a60cacd6630b",
+          "review_note": "Reviewed plausible alternatives separately and bounded the conclusion to the evidenced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Any written measure, authority, defined scope, participant commitment, implementation and measured supply or price effect remain unresolved."
       ]
     }
   ],

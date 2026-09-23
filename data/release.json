@@ -1,30 +1,36 @@
 {
-  "version": "10.88.0",
+  "version": "10.89.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-23T09:57:09Z",
-    "through_utc": "2026-09-23T16:34:41Z",
+    "from_utc": "2026-09-23T16:34:41Z",
+    "through_utc": "2026-09-23T21:57:47Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous research coverage begins at the prior exact UTC boundary. One existing national record was materially refreshed with a new evidence-based finding without padding; feed retrieval, source inspection and archive observation times remain separately recorded."
+    "note": "Continuous research coverage begins at the prior exact UTC boundary. Four existing national records were materially refreshed without creating parallel events; feed retrieval, source inspection and archive observation times remain separately recorded."
   },
   "release_iso": "2026-09-23",
   "release_human": "September 23, 2026",
-  "checked_at": "2026-09-23 12:34 PM EDT",
-  "previous_version": "10.87.1",
-  "previous_checked_at": "2026-09-23 5:57 AM EDT",
-  "window_started_at": "2026-09-23 5:57 AM EDT",
-  "window_ended_at": "2026-09-23 12:34 PM EDT",
+  "checked_at": "2026-09-23 5:57 PM EDT",
+  "previous_version": "10.88.0",
+  "previous_checked_at": "2026-09-23 12:34 PM EDT",
+  "window_started_at": "2026-09-23 12:34 PM EDT",
+  "window_ended_at": "2026-09-23 5:57 PM EDT",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
   "week_label": "September 21–27, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-15-003"
+    "NAT-2026-08-28-012",
+    "NAT-2026-09-15-003",
+    "NAT-2026-09-18-011",
+    "NAT-2026-09-22-006"
   ],
   "added_entry_ids": [],
   "refreshed_entry_ids": [
-    "NAT-2026-09-15-003"
+    "NAT-2026-08-28-012",
+    "NAT-2026-09-15-003",
+    "NAT-2026-09-18-011",
+    "NAT-2026-09-22-006"
   ],
   "dedupe_resolutions": [
     {
@@ -247,15 +253,23 @@
   "rejected_candidates": [
     {
       "title": "Truth Social feed",
-      "reason": "The fallback advanced from 36,396 to 36,399 posts. One text-only post criticized Canadian immigration and economic conditions; two promoted video commentary, and both attached videos returned HTTP 403 during direct retrieval. The retained text establishes only that Trump published the statements. No post independently established a qualifying U.S. government action or outcome, and no inaccessible-media claim was used."
+      "reason": "The source advanced from 36,399 to 36,401 posts. One addition contained no text; the other ceremonially identified passengers on Marine One. Both attached images returned HTTP 403 during direct retrieval, so no visual claim was used. Neither post independently established a qualifying government action or outcome, and both remain feed-only."
     },
     {
-      "title": "U.S.–Iran shuttle-talks follow-up",
-      "reason": "A September 23 report added Iranian positions and conditions after the already-recorded mediated contact, but no new U.S. instrument, concession, ceasefire, settlement or verified operational change was announced by cutoff."
+      "title": "White House press-access injunction hearing",
+      "reason": "The judge questioned whether the access ban followed due-process precedent but issued no ruling by cutoff. Argument and judicial questions were not converted into an injunction or implemented access change; the candidate remains queued for a docketed order."
     },
     {
-      "title": "White House press-access hearing preview",
-      "reason": "The requested injunction hearing was scheduled for 3:30 p.m. EDT, after this release's cutoff. No ruling or implemented access change existed by cutoff, so the preview remains queued rather than being treated as a court outcome."
+      "title": "HIV-funding restriction hearing",
+      "reason": "A judge appeared receptive to blocking transgender-related limits on HIV funding but issued no ruling by cutoff. The hearing did not establish an injunction, final agency change or funding outcome."
+    },
+    {
+      "title": "Reported 90-day diesel-export plan",
+      "reason": "The report rested on unnamed sources and was directly contradicted by a White House official and Energy Secretary Chris Wright. The named denial and narrower discussions were added to the existing record; the unverified 90-day plan was not treated as adopted policy."
+    },
+    {
+      "title": "Venezuela debt-restructuring discussion",
+      "reason": "Trump and Delcy Rodríguez discussed debt restructuring, but no agreement, instrument, terms, creditor treatment, appropriation or implemented restructuring was announced by cutoff."
     },
     {
       "title": "Previously deferred source-inspection leads",
@@ -267,7 +281,7 @@
     },
     {
       "title": "External archive measurements",
-      "reason": "All four registered primary project endpoints were checked. Trump Archive displayed 14,208 items, including 11,741 Truth Social posts and 1,827 speeches/transcripts; Immigration Policy Tracking displayed 1,795 actions and UndoTrump displayed 1,264 actions. Record47 displayed 6,272 entries, 3,637 primary sources, 6,488 social posts, 332 contradictions and 38 sequences. Unlike units remain separate and no external item was promoted automatically."
+      "reason": "All four registered primary project endpoints were checked. Trump Archive advanced to 14,210 items, including 11,743 Truth Social posts and 1,827 speeches/transcripts; Immigration Policy Tracking remained at 1,795 actions and UndoTrump at 1,264 actions. Record47's public page exposed incomplete and internally inconsistent dynamic counts, so its prior API-verified measurements were preserved. Unlike units remain separate and no external item was promoted automatically."
     }
   ],
   "corrections": [],
