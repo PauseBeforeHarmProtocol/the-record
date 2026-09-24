@@ -4057,6 +4057,44 @@
       "provenance_path": "data/editorial_change_notes/10.90.0.json",
       "provenance_sha256": "fe620f67b829250a591c37718bb2977991ce8b46a104f82908a47bdad91685c3",
       "note": "Content-bound change note records the exact materially refreshed version reviewed for this release."
+    },
+  {
+        "change_id": "10.91.0:NAT-2026-09-18-007",
+        "entry_id": "NAT-2026-09-18-007",
+        "as_of_utc": "2026-09-24T10:02:57Z",
+        "timestamp_precision": "second",
+        "kind": "material_refresh",
+        "release_version": "10.91.0",
+        "summary": "Refreshed the White House press-access record after a federal judge ordered immediate restoration of the three outlets' passes and temporarily blocked enforcement for 14 days while preserving the nonfinal posture.",
+        "provenance_path": "data/editorial_change_notes/10.91.0.json",
+        "provenance_sha256": "c398244b91852821c7213b2d33c18a0625b01eaf7dfa25fdbdf64b74b85f2e20",
+        "note": "Content-bound change note records the exact added or materially refreshed version reviewed for this release."
+    }
+,
+  {
+        "change_id": "10.91.0:NAT-2026-09-23-001",
+        "entry_id": "NAT-2026-09-23-001",
+        "as_of_utc": "2026-09-24T10:02:57Z",
+        "timestamp_precision": "second",
+        "kind": "added",
+        "release_version": "10.91.0",
+        "summary": "Added the formally launched U.S.-Argentina Andes-Atlantic infrastructure corridor while distinguishing an EXIM financing ceiling of up to $7 billion through 2027 from approvals, disbursements, construction and outcomes.",
+        "provenance_path": "data/editorial_change_notes/10.91.0.json",
+        "provenance_sha256": "c398244b91852821c7213b2d33c18a0625b01eaf7dfa25fdbdf64b74b85f2e20",
+        "note": "Content-bound change note records the exact added or materially refreshed version reviewed for this release."
+    }
+,
+  {
+        "change_id": "10.91.0:NAT-2026-09-23-002",
+        "entry_id": "NAT-2026-09-23-002",
+        "as_of_utc": "2026-09-24T10:02:57Z",
+        "timestamp_precision": "second",
+        "kind": "added",
+        "release_version": "10.91.0",
+        "summary": "Added the FBI's formal investigation and mitigation response to a claimed FBIJobs.gov compromise while keeping the attack path, authenticity, scope and exfiltration unverified.",
+        "provenance_path": "data/editorial_change_notes/10.91.0.json",
+        "provenance_sha256": "c398244b91852821c7213b2d33c18a0625b01eaf7dfa25fdbdf64b74b85f2e20",
+        "note": "Content-bound change note records the exact added or materially refreshed version reviewed for this release."
     }
   ],
   "reviews": [
@@ -39418,6 +39456,515 @@
       "unresolved_questions": [
         "Chinese confirmation, a joint readout, an implementing tariff instrument, the revised tariff schedule, AI operating rules and independently observed use remain unresolved."
       ]
+    },
+  {
+        "review_id": "10.91.0:NAT-2026-09-18-007:96b5930fb472",
+        "entry_id": "NAT-2026-09-18-007",
+        "content_sha256": "96b5930fb472638154ec69221e793ffcf4ef4c1e43ae7d095488f66efb33801f",
+        "reviewed_at": "2026-09-24T10:14:00Z",
+        "reviewer": {
+            "name": "OpenAI Codex editorial maintenance",
+            "kind": "ai_assisted"
+        },
+        "claims": [
+            {
+                "fact_index": 0,
+                "fact_sha256": "5c945c344213dc046c6caf819aea1cd55e29f207cfea45fe6a112600b037f9c7",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "truth_press_ban_sep18",
+                        "locator": "Complete post inspected as evidence of Trump's original announcement and rationale.",
+                        "inspected_at": "2026-09-21T16:01:57Z",
+                        "document_sha256": "3253333a96a4ae155d24a6c5b84f6728e2dedefdedec9e4e29a90507d9d2de55",
+                        "origin_group": "Truth Social",
+                        "evidence_status": "publication_only"
+                    }
+                ]
+            },
+            {
+                "fact_index": 1,
+                "fact_sha256": "5bf466084b306fd107b133b8d9a439aff90184b5bbcbac8506ef36b11cbbc146",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "truth_press_ban_sep18",
+                        "locator": "Complete post inspected as evidence of Trump's original announcement and rationale.",
+                        "inspected_at": "2026-09-21T16:01:57Z",
+                        "document_sha256": "3253333a96a4ae155d24a6c5b84f6728e2dedefdedec9e4e29a90507d9d2de55",
+                        "origin_group": "Truth Social",
+                        "evidence_status": "publication_only"
+                    }
+                ]
+            },
+            {
+                "fact_index": 2,
+                "fact_sha256": "debb411800b063544ac689d29ff696c376b0d6eab69a2d1de0fdde09bd69fa59",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "ap_press_ban_sep18",
+                        "locator": "Complete linked report inspected for the initial access status and stated limitations.",
+                        "inspected_at": "2026-09-21T16:01:57Z",
+                        "document_sha256": "c18ed9a79053442fca4706763a03c55bbf35c261c84ed76c0cb7ded8ca61b42a",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    },
+                    {
+                        "source_id": "reuters_press_ban_sep18",
+                        "locator": "Complete linked report inspected for the initial access status and stated limitations.",
+                        "inspected_at": "2026-09-21T16:01:57Z",
+                        "document_sha256": "351e956a1d97171bdae4334d710b19b0dba94de5ef06b95bf904853c63e83174",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 3,
+                "fact_sha256": "848e9d75d82cef39939c189fd5aa74283cc4d2003602c25bc34d3d5d2405f3af",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "ap_press_ban_enforced_sep19",
+                        "locator": "Complete linked report inspected for named reporters, badge actions and observed access denials.",
+                        "inspected_at": "2026-09-21T16:01:57Z",
+                        "document_sha256": "4a480d55bd614801b233d1a3e45e3bba74fc02f4411834e426fb280fdf89fa26",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "implemented"
+                    }
+                ]
+            },
+            {
+                "fact_index": 4,
+                "fact_sha256": "7887eb66d5522869ce9361bae361a8f2bcefcf3df131a4ade284e8784bbacb0a",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_press_lawsuit_sep21",
+                        "locator": "Complete linked report inspected for the filed complaint, requested temporary restraining order, assignment and unresolved disposition.",
+                        "inspected_at": "2026-09-21T16:01:57Z",
+                        "document_sha256": "7d9e08a4391a87023921dcc62ee3b67679337539f5a331888a3f08b89bb3ee10",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    },
+                    {
+                        "source_id": "ap_press_lawsuit_sep21",
+                        "locator": "Complete linked report inspected for independent confirmation of the filed claims, emergency request and unresolved disposition.",
+                        "inspected_at": "2026-09-21T16:01:57Z",
+                        "document_sha256": "503f5829c6d6747a2e423e7cb3e78e3d28b2876ea65feed919cfc16f99235399",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 5,
+                "fact_sha256": "337660f4fbb15f78216b89305201089a881ee4f9b25d46b37d6d1f539c6690a2",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_press_lawsuit_sep21",
+                        "locator": "Complete linked report inspected for the filed complaint, requested temporary restraining order, assignment and unresolved disposition.",
+                        "inspected_at": "2026-09-21T16:01:57Z",
+                        "document_sha256": "7d9e08a4391a87023921dcc62ee3b67679337539f5a331888a3f08b89bb3ee10",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    },
+                    {
+                        "source_id": "ap_press_lawsuit_sep21",
+                        "locator": "Complete linked report inspected for independent confirmation of the filed claims, emergency request and unresolved disposition.",
+                        "inspected_at": "2026-09-21T16:01:57Z",
+                        "document_sha256": "503f5829c6d6747a2e423e7cb3e78e3d28b2876ea65feed919cfc16f99235399",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 6,
+                "fact_sha256": "4316945999d075ae3c350dc6972eccd4ab233aaa63ea0256c53c15aa9eb4d183",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "truth_press_response_sep21",
+                        "locator": "Complete post inspected only as evidence of Trump's stated response and rationale.",
+                        "inspected_at": "2026-09-21T16:01:57Z",
+                        "document_sha256": "e0873ad8204f9d74f7743559faf83ad35e31f472181e09c21bbbf3c076e6d542",
+                        "origin_group": "Truth Social",
+                        "evidence_status": "publication_only"
+                    }
+                ]
+            },
+            {
+                "fact_index": 7,
+                "fact_sha256": "5cad001867575a1707cd8612acb37a5a8dc2fd89df7bc423280bc69c9e15bbd0",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_press_lawsuit_sep21",
+                        "locator": "Reuters report inspected for lawsuit, assignment, administration response and television-pool suspension.",
+                        "inspected_at": "2026-09-21T22:01:39Z",
+                        "document_sha256": "9fc2feb81a412dbc17e228b2d0515113989ad43e3eeb5ec050f5ef3c904949f4",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    },
+                    {
+                        "source_id": "ap_press_lawsuit_sep21",
+                        "locator": "Associated Press report inspected for the filed claims, access effects and television-pool response.",
+                        "inspected_at": "2026-09-21T22:01:39Z",
+                        "document_sha256": "b2ea15643fbb8640ba48014d4e7a837322302c12376460c08abe1ebc285aba09",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 8,
+                "fact_sha256": "19b1521c00fcf093eda1beeeef2e836b8448eddfc9661abfb0ee6f4ee7740ec8",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_press_tro_sep24",
+                        "locator": "Complete linked reports inspected for the 14-day temporary restraining order, immediate pass-restoration direction and continued nonfinal posture.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "30d75ad7500661bb3dcceaddd71e5e6efdce5486e772dca2ea6366032eaa725c",
+                        "origin_group": "Reuters",
+                        "evidence_status": "enjoined"
+                    },
+                    {
+                        "source_id": "ap_press_tro_sep24",
+                        "locator": "Complete linked reports inspected for the 14-day temporary restraining order, immediate pass-restoration direction and continued nonfinal posture.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "dcddef97e9945f37780313e02c790f84b91a8b0f08516b086636a24ca159e948",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "enjoined"
+                    }
+                ]
+            },
+            {
+                "fact_index": 9,
+                "fact_sha256": "d012680ac8f4fec34f551a5485d95325dc93df314cb2b8a0ece6b5a3e13cde11",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_press_tro_sep24",
+                        "locator": "Complete linked reports inspected for the judge's likely-success findings, reported evidentiary basis and the disclosed absence of an independently retrieved full order.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "30d75ad7500661bb3dcceaddd71e5e6efdce5486e772dca2ea6366032eaa725c",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    },
+                    {
+                        "source_id": "ap_press_tro_sep24",
+                        "locator": "Complete linked reports inspected for the judge's likely-success findings, reported evidentiary basis and the disclosed absence of an independently retrieved full order.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "dcddef97e9945f37780313e02c790f84b91a8b0f08516b086636a24ca159e948",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 10,
+                "fact_sha256": "e6ec37b2b887daabc91395085f72240d569bfc343cc1f785b7d55c403c6b60dc",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_press_tro_sep24",
+                        "locator": "Complete linked reports inspected for DOJ's stated defense, the temporary-stage rejection, absent immediate White House comment and unresolved appellate posture.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "30d75ad7500661bb3dcceaddd71e5e6efdce5486e772dca2ea6366032eaa725c",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    },
+                    {
+                        "source_id": "ap_press_tro_sep24",
+                        "locator": "Complete linked reports inspected for DOJ's stated defense, the temporary-stage rejection, absent immediate White House comment and unresolved appellate posture.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "dcddef97e9945f37780313e02c790f84b91a8b0f08516b086636a24ca159e948",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            }
+        ],
+        "reasoning_review": [
+            {
+                "field": "significance",
+                "text_sha256": "27b858c7afc584716405219e53b764cb239aac7d338add9e39f8524ffeb4c294",
+                "review_note": "Reviewed the temporary constitutional and access significance separately from compliance, appeal and final-merits outcomes."
+            },
+            {
+                "field": "goalpost",
+                "text_sha256": "6b021d890cbd07ce9e1231fb111cfef85eb636910a89caec3911bfdb3cb6c3fe",
+                "review_note": "Preserved the strongest administration rationale and defined pass restoration, appellate, evidentiary and final-judgment tests."
+            },
+            {
+                "field": "maybe_therefore",
+                "text_sha256": "5bae4e8f0ae2a026fc0f1689d5e8a5aa8616d93a747eb15f34353fcfc7df36d0",
+                "review_note": "Reviewed alternatives separately and limited the conclusion to the 14-day temporary order rather than a permanent merits result."
+            }
+        ],
+        "unresolved_questions": [
+            "Actual pass restoration, resumed pool participation, any appeal or stay, a preliminary injunction, a complete written order and final judgment remain unresolved."
+        ]
+    }
+,
+  {
+        "review_id": "10.91.0:NAT-2026-09-23-001:e7fed474b734",
+        "entry_id": "NAT-2026-09-23-001",
+        "content_sha256": "e7fed474b7342dc358e260f5be06c477e0de7011777dbce2f5ca0256500d40d6",
+        "reviewed_at": "2026-09-24T10:14:00Z",
+        "reviewer": {
+            "name": "OpenAI Codex editorial maintenance",
+            "kind": "ai_assisted"
+        },
+        "claims": [
+            {
+                "fact_index": 0,
+                "fact_sha256": "9046469acfe23fb84e992e874e1c6155981fb48192f9e4ae501f4a7a1cf0dd8e",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "state_andes_atlantic_joint_sep23",
+                        "locator": "Complete joint statement inspected for the named launch, officials and corridor scope.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "fe26ae4c6096ea48a39ce59c3038aae4f8892f20c9616636b427c7f50abbab60",
+                        "origin_group": "U.S. Department of State",
+                        "evidence_status": "announced"
+                    },
+                    {
+                        "source_id": "ap_argentina_corridor_sep24",
+                        "locator": "Complete report inspected for independent confirmation of the launch and scope.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "4ebc55fc314877cfa35c3a789c4f191e91f9d308a5e5e47baf0c2714d610d2a4",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 1,
+                "fact_sha256": "4a2549415b9feb9ff430f867070259e3d252a272c71ae41784da34899d0503dc",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "state_andes_atlantic_joint_sep23",
+                        "locator": "Complete joint statement inspected for listed infrastructure sectors, project participation and financing tools.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "fe26ae4c6096ea48a39ce59c3038aae4f8892f20c9616636b427c7f50abbab60",
+                        "origin_group": "U.S. Department of State",
+                        "evidence_status": "announced"
+                    }
+                ]
+            },
+            {
+                "fact_index": 2,
+                "fact_sha256": "30accfe4231a91a82e77bf55759c6edd6fbe4c30e3dac23e197b1b772ecd456d",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "state_andes_atlantic_fact_sheet_sep23",
+                        "locator": "Complete State Department fact sheet inspected for the EXIM ceiling, 2027 horizon and framework status.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "abd1745a03d7d353877d0c8041374293b3c0c9f8d1f7f5e9acd4c8ce1735aa28",
+                        "origin_group": "U.S. Department of State",
+                        "evidence_status": "announced"
+                    },
+                    {
+                        "source_id": "ap_argentina_corridor_sep24",
+                        "locator": "Complete report inspected for independent context on the financing ceiling and unresolved project approvals.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "4ebc55fc314877cfa35c3a789c4f191e91f9d308a5e5e47baf0c2714d610d2a4",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 3,
+                "fact_sha256": "9f8984118cdab1abc6391b42add7d2693f7c964b1d6138119c4a54bce45db260",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "state_andes_atlantic_joint_sep23",
+                        "locator": "Complete joint statement inspected for the agencies named as potential financing and technical-support channels.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "fe26ae4c6096ea48a39ce59c3038aae4f8892f20c9616636b427c7f50abbab60",
+                        "origin_group": "U.S. Department of State",
+                        "evidence_status": "announced"
+                    },
+                    {
+                        "source_id": "state_andes_atlantic_fact_sheet_sep23",
+                        "locator": "Complete fact sheet inspected for named financing agencies and ceiling.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "abd1745a03d7d353877d0c8041374293b3c0c9f8d1f7f5e9acd4c8ce1735aa28",
+                        "origin_group": "U.S. Department of State",
+                        "evidence_status": "announced"
+                    },
+                    {
+                        "source_id": "reuters_argentina_financing_sep23",
+                        "locator": "Complete earlier report inspected for the pre-announcement document and source-attributed planned package.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "8225eec98ad4098a7f2b2c7cfcd7fc623ea9c79604b566b5337b551f10eb3461",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 4,
+                "fact_sha256": "8bee61860476dc06a6e9022aafa137703881c6baa8abdf3720cec8dd4fd85624",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "state_andes_atlantic_joint_sep23",
+                        "locator": "Complete joint statement inspected for the governments' stated supply-chain, export and U.S.-business objectives.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "fe26ae4c6096ea48a39ce59c3038aae4f8892f20c9616636b427c7f50abbab60",
+                        "origin_group": "U.S. Department of State",
+                        "evidence_status": "announced"
+                    },
+                    {
+                        "source_id": "ap_argentina_corridor_sep24",
+                        "locator": "Complete report inspected for independent context and the absence of completed project outcomes.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "4ebc55fc314877cfa35c3a789c4f191e91f9d308a5e5e47baf0c2714d610d2a4",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            }
+        ],
+        "reasoning_review": [
+            {
+                "field": "significance",
+                "text_sha256": "4d27fb96595ab123e82a9199594417e3cc419d37b3013e23791f2fc7c6b2b06e",
+                "review_note": "Reviewed strategic and financing significance separately from transaction approvals, spending, construction and measured results."
+            },
+            {
+                "field": "goalpost",
+                "text_sha256": "a20a23102f833e8ab49eb3264536010a30af1ef4ed2f4cbb849fbc7b4eb967f3",
+                "review_note": "Preserved the governments' stated objectives and defined project, financing, safeguards, disbursement and outcome tests."
+            },
+            {
+                "field": "maybe_therefore",
+                "text_sha256": "6e79b62bbfe0f08d9af10f53e160bb58463c1ab015965769e2e56c767b6db1ab",
+                "review_note": "Reviewed execution alternatives separately and bounded the conclusion to the launched framework and financing ceiling."
+            }
+        ],
+        "unresolved_questions": [
+            "Project lists, agency approvals, final financing terms, appropriations, borrowers, competitive awards, safeguards, disbursements, construction and measured export or employment results remain unresolved."
+        ]
+    }
+,
+  {
+        "review_id": "10.91.0:NAT-2026-09-23-002:efe10862f2b2",
+        "entry_id": "NAT-2026-09-23-002",
+        "content_sha256": "efe10862f2b2b4bf9b448cec8c43e77a6fca765e670c85d50421c8bc70076651",
+        "reviewed_at": "2026-09-24T10:14:00Z",
+        "reviewer": {
+            "name": "OpenAI Codex editorial maintenance",
+            "kind": "ai_assisted"
+        },
+        "claims": [
+            {
+                "fact_index": 0,
+                "fact_sha256": "b8a0a295944bd76f193d6bb6990321a4d80a4317302bd875d97387dc056f44e0",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "ap_fbijobs_investigation_sep23",
+                        "locator": "Complete AP report inspected for the FBI's on-record investigation and mitigation statement.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "6a255014c8d83ee67017bcb8a3a81f4c93e98d5120ac677639aba971b5f63b11",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 1,
+                "fact_sha256": "95e1b1dfb3a854142d88765e31970e2de0764d7e79081a393d2a286f2c8b8db6",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "ap_fbijobs_investigation_sep23",
+                        "locator": "Complete AP report inspected for the FBI's unresolved breach point and the reporter's observed portal status.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "6a255014c8d83ee67017bcb8a3a81f4c93e98d5120ac677639aba971b5f63b11",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 2,
+                "fact_sha256": "45dab727744920fcd068b624c3f23e738a7a1f6d8e2e56acbd58193569e7f9d8",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "ap_fbijobs_investigation_sep23",
+                        "locator": "Complete AP report inspected for the clearly attributed ShinyHunters claim and AP's inability to verify it.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "6a255014c8d83ee67017bcb8a3a81f4c93e98d5120ac677639aba971b5f63b11",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 3,
+                "fact_sha256": "f8ed2d9108ffcbdc4970df31ebadf28e1d5582d3036843062b37e23553347dea",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "ap_fbijobs_investigation_sep23",
+                        "locator": "Complete AP report inspected for the clearly attributed third-party sample and theory, neither confirmed by the FBI.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "6a255014c8d83ee67017bcb8a3a81f4c93e98d5120ac677639aba971b5f63b11",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 4,
+                "fact_sha256": "53469fed247073fa54524b506c88f4a54a8cc923db4d66cfd47d6c1283979708",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "ap_fbijobs_investigation_sep23",
+                        "locator": "Complete AP report inspected for the documented response and the absence of public forensic, notification, attribution or completed-remediation findings.",
+                        "inspected_at": "2026-09-24T10:14:00Z",
+                        "document_sha256": "6a255014c8d83ee67017bcb8a3a81f4c93e98d5120ac677639aba971b5f63b11",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            }
+        ],
+        "reasoning_review": [
+            {
+                "field": "significance",
+                "text_sha256": "7aa209c8f6fa5bbdb92bd3a0284d8613218a1e99e1e1a945f57b338d13b8aa63",
+                "review_note": "Reviewed the potential personnel-security significance separately from the unverified breach, scope and harm claims."
+            },
+            {
+                "field": "goalpost",
+                "text_sha256": "95ee8e901d9d43e1ebc1335a0e17017a710f329b62e10bbc747256d4e9494d66",
+                "review_note": "Preserved the FBI response and hacker assertion separately and defined forensic, notification, attribution, enforcement and remediation tests."
+            },
+            {
+                "field": "maybe_therefore",
+                "text_sha256": "d3f6c434842aeb1688c5f4dbf7d7f7ffde1afbd13ddd8ac408e5813a7b2c70d9",
+                "review_note": "Reviewed competing explanations separately and limited the conclusion to the formal investigation and observed portal outage."
+            }
+        ],
+        "unresolved_questions": [
+            "The entry point, authenticated data set, victim count, exfiltration, notifications, attribution, enforcement action, restored service and completed remediation remain unresolved."
+        ]
     }
   ],
   "deferred_candidates": []

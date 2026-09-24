@@ -1,30 +1,35 @@
 {
-  "version": "10.90.0",
+  "version": "10.91.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-23T21:57:47Z",
-    "through_utc": "2026-09-24T04:00:35Z",
+    "from_utc": "2026-09-24T04:00:35Z",
+    "through_utc": "2026-09-24T10:02:57Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous research coverage begins at the prior exact UTC boundary. One existing national record was materially refreshed without creating a parallel event; feed retrieval, source inspection and archive observation times remain separately recorded."
+    "note": "Continuous research coverage begins at the prior exact UTC boundary. One existing national record was materially refreshed and two prior-window candidates were transparently resolved after public records became discoverable; feed retrieval, source inspection and archive observation times remain separately recorded."
   },
   "release_iso": "2026-09-24",
   "release_human": "September 24, 2026",
-  "checked_at": "2026-09-24 12:00 AM EDT",
-  "previous_version": "10.89.0",
-  "previous_checked_at": "2026-09-23 5:57 PM EDT",
-  "window_started_at": "2026-09-23 5:57 PM EDT",
-  "window_ended_at": "2026-09-24 12:00 AM EDT",
+  "checked_at": "2026-09-24 6:02 AM EDT",
+  "previous_version": "10.90.0",
+  "previous_checked_at": "2026-09-24 12:00 AM EDT",
+  "window_started_at": "2026-09-24 12:00 AM EDT",
+  "window_ended_at": "2026-09-24 6:02 AM EDT",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
   "week_label": "September 21–27, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-20-001"
+    "NAT-2026-09-18-007",
+    "NAT-2026-09-23-001",
+    "NAT-2026-09-23-002"
   ],
-  "added_entry_ids": [],
+  "added_entry_ids": [
+    "NAT-2026-09-23-001",
+    "NAT-2026-09-23-002"
+  ],
   "refreshed_entry_ids": [
-    "NAT-2026-09-20-001"
+    "NAT-2026-09-18-007"
   ],
   "dedupe_resolutions": [
     {
@@ -247,11 +252,7 @@
   "rejected_candidates": [
     {
       "title": "Truth Social feed",
-      "reason": "The source advanced from 36,401 to 36,404 posts. One post made an uncorroborated commercial-aircraft claim, one denied reporting about renaming Ford's Theatre, and one contained no text with a video that returned HTTP 403. No unavailable-media claim was used, and none independently established a qualifying government action or outcome; all remain feed-only."
-    },
-    {
-      "title": "White House press-access injunction hearing",
-      "reason": "The hearing still had not produced a docketed ruling by cutoff. Argument and judicial questions were not converted into an injunction or implemented access change; the candidate remains queued for an order."
+      "reason": "No new post appeared after the prior validated 36,404-post snapshot. The newest retained post remained the September 23, 9:51:54 PM EDT commercial-aircraft claim; it is uncorroborated and remains feed-only."
     },
     {
       "title": "HIV-funding restriction hearing",
@@ -270,8 +271,12 @@
       "reason": "Xi's arrival and ceremonial events did not themselves establish a qualifying U.S. policy action, while separately reported Boeing negotiations remained unsettled and relied on unnamed sources. No signed aircraft agreement, financing instrument or implemented government measure was public by cutoff."
     },
     {
+      "title": "Rediscovered or duplicative policy coverage",
+      "reason": "Current coverage of the August Medicaid gender-care funding rule and the previously announced refugee cap did not establish a new action or lifecycle stage. Both were withheld from this release rather than counted again."
+    },
+    {
       "title": "Previously deferred source-inspection leads",
-      "reason": "The reported Argentina package, Belarus and Venezuela discussions, ICC-wide sanctions, ICE locator changes, the NIH order, Medicaid pricing, pharmaceutical licensing, asylum, ESA, FCC, East Potomac, Poland-base and Taiwan-arms leads remain queued pending operative records, stable findings or adequate corroboration."
+      "reason": "Belarus and Venezuela discussions, ICC-wide sanctions, ICE locator changes, the NIH order, Medicaid pricing, pharmaceutical licensing, asylum, ESA, FCC, East Potomac, Poland-base and Taiwan-arms leads remain queued pending operative records, stable findings or adequate corroboration."
     },
     {
       "title": "Legacy source-health remediation",
@@ -279,7 +284,7 @@
     },
     {
       "title": "External archive measurements",
-      "reason": "All four registered primary project endpoints were checked. Immigration Policy Tracking advanced to 1,796 actions; Trump Archive remained at 14,210 items, including 11,743 Truth Social posts and 1,827 speeches/transcripts, and UndoTrump remained at 1,264 actions. Record47's prior API-verified measurements were preserved because its current dynamic page exposed inconsistent counts. Unlike units remain separate and no external item was promoted automatically."
+      "reason": "All four registered primary project endpoints were checked. Trump Archive advanced to 14,213 items, including 11,746 Truth Social posts and 1,827 speeches/transcripts; Immigration Policy Tracking remained at 1,796 actions and UndoTrump at 1,264. Record47's prior API-verified measurements were preserved because its current dynamic page again exposed inconsistent counts. Unlike units remain separate and no external item was promoted automatically."
     }
   ],
   "corrections": [],
