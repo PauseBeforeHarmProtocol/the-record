@@ -4045,6 +4045,18 @@
       "provenance_path": "data/editorial_change_notes/10.89.0.json",
       "provenance_sha256": "25dc2327b83c08875dbb4b039138b06cc052c075d7962bddeee8ded75b8d95e5",
       "note": "Content-bound change note records the exact materially refreshed version reviewed for this release."
+    },
+    {
+      "change_id": "10.90.0:NAT-2026-09-20-001",
+      "entry_id": "NAT-2026-09-20-001",
+      "as_of_utc": "2026-09-24T04:00:35Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.90.0",
+      "summary": "Added Bessent's announcement that the U.S.–China trade truce was extended through January 10 while preserving the absent joint text, Chinese confirmation and implementing instrument.",
+      "provenance_path": "data/editorial_change_notes/10.90.0.json",
+      "provenance_sha256": "fe620f67b829250a591c37718bb2977991ce8b46a104f82908a47bdad91685c3",
+      "note": "Content-bound change note records the exact materially refreshed version reviewed for this release."
     }
   ],
   "reviews": [
@@ -39313,6 +39325,98 @@
       ],
       "unresolved_questions": [
         "Any written measure, authority, defined scope, participant commitment, implementation and measured supply or price effect remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.90.0:NAT-2026-09-20-001:14a864d14b40",
+      "entry_id": "NAT-2026-09-20-001",
+      "content_sha256": "14a864d14b40143f2e01fb6342b7b7c218ff1cc1d2c76146e0a0da80fd07eb27",
+      "reviewed_at": "2026-09-24T04:10:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "922e4e8c54c496dff9bd81418d5de3eb2f95f46edaf67a3ee4c96270e23a33f2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_china_ai_dialogue_sep21",
+              "locator": "Complete linked report inspected for Bessent's named account of the AI-dialogue agreement, incident line and absent operative instrument.",
+              "inspected_at": "2026-09-24T04:10:00Z",
+              "document_sha256": "5bc69d4a52ad7a3e5d3d024c85b360a2780a4f87a600b942fe18f7e564182b34",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "d8c70957e226fc5b6e1455057594de5a9c86e854c37c6f93804e09d8f6627812",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_china_ai_dialogue_sep21",
+              "locator": "Complete linked report inspected for the planned Shenzhen meeting and named possible subjects.",
+              "inspected_at": "2026-09-24T04:10:00Z",
+              "document_sha256": "5bc69d4a52ad7a3e5d3d024c85b360a2780a4f87a600b942fe18f7e564182b34",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "e98602e1c15e5a611dca9f5e9c1b112ce9b0ced6644b8f2d011174edf06d4162",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_china_ai_dialogue_sep21",
+              "locator": "Complete linked report inspected for the named announcement and absence of published operating details.",
+              "inspected_at": "2026-09-24T04:10:00Z",
+              "document_sha256": "5bc69d4a52ad7a3e5d3d024c85b360a2780a4f87a600b942fe18f7e564182b34",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "bdb9e0370f38b6bec44a15dd8816e95498c67e2fade7c6b0d1fa48c985f0f80b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_china_trade_truce_sep23",
+              "locator": "Complete indexed report inspected for Bessent's named announcement of the January 10 extension, China's absent immediate comment and the unpublished joint terms.",
+              "inspected_at": "2026-09-24T04:10:00Z",
+              "document_sha256": "301090c6b09a2ed6982226fa351b5b53ea75d4d65b48f78d5788c363dab5e1d0",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "0fffd13d7292b329c5a272c0d64ab36d225494b268419ec587e72070c94ceeda",
+          "review_note": "Reviewed the prospective diplomatic and tariff significance separately from publication, implementation and measured outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "c8d015b6e74b88ca122f12b50d731a53c89102ec97ead0ed5e14852410dbd6dd",
+          "review_note": "Preserved the named administration account and defined joint-text, implementation and operating tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "68145951100a5031a5fcf51af8a166eee70cb2e5e065f7fa1676110269c55afd",
+          "review_note": "Reviewed plausible alternatives separately and bounded the conclusion to the announced lifecycle stage."
+        }
+      ],
+      "unresolved_questions": [
+        "Chinese confirmation, a joint readout, an implementing tariff instrument, the revised tariff schedule, AI operating rules and independently observed use remain unresolved."
       ]
     }
   ],
