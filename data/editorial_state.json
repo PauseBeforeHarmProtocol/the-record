@@ -4095,7 +4095,55 @@
         "provenance_path": "data/editorial_change_notes/10.91.0.json",
         "provenance_sha256": "c398244b91852821c7213b2d33c18a0625b01eaf7dfa25fdbdf64b74b85f2e20",
         "note": "Content-bound change note records the exact added or materially refreshed version reviewed for this release."
-    }
+    },
+  {
+    "change_id": "10.92.0:NAT-2026-09-18-007",
+    "entry_id": "NAT-2026-09-18-007",
+    "as_of_utc": "2026-09-24T16:00:21Z",
+    "timestamp_precision": "second",
+    "kind": "material_refresh",
+    "release_version": "10.92.0",
+    "summary": "Refreshed the White House press-access record with the outlets' emergency filing and reported continued exclusion after the temporary order while preserving that no contempt finding existed by cutoff.",
+    "provenance_path": "data/editorial_change_notes/10.92.0.json",
+    "provenance_sha256": "102465cd1b7fb9850a5918072acf1195e7c3dadf69120aba12ff644ca72a7688",
+    "note": "Content-bound change note records the exact added or materially refreshed version reviewed for this release."
+  },
+  {
+    "change_id": "10.92.0:NAT-2026-09-23-003",
+    "entry_id": "NAT-2026-09-23-003",
+    "as_of_utc": "2026-09-24T16:00:21Z",
+    "timestamp_precision": "second",
+    "kind": "added",
+    "release_version": "10.92.0",
+    "summary": "Added the Pentagon investigation and retrieval effort after F-35 components were routed through Hong Kong while leaving exposure, attribution and operational consequences unresolved.",
+    "provenance_path": "data/editorial_change_notes/10.92.0.json",
+    "provenance_sha256": "102465cd1b7fb9850a5918072acf1195e7c3dadf69120aba12ff644ca72a7688",
+    "note": "Content-bound change note records the exact added or materially refreshed version reviewed for this release."
+  },
+  {
+    "change_id": "10.92.0:NAT-2026-09-23-004",
+    "entry_id": "NAT-2026-09-23-004",
+    "as_of_utc": "2026-09-24T16:00:21Z",
+    "timestamp_precision": "second",
+    "kind": "added",
+    "release_version": "10.92.0",
+    "summary": "Added the First Circuit stay dissolution in the third-country-removal litigation and bounded the reported flight consequence and announced Supreme Court response.",
+    "provenance_path": "data/editorial_change_notes/10.92.0.json",
+    "provenance_sha256": "102465cd1b7fb9850a5918072acf1195e7c3dadf69120aba12ff644ca72a7688",
+    "note": "Content-bound change note records the exact added or materially refreshed version reviewed for this release."
+  },
+  {
+    "change_id": "10.92.0:NAT-2026-09-24-001",
+    "entry_id": "NAT-2026-09-24-001",
+    "as_of_utc": "2026-09-24T16:00:21Z",
+    "timestamp_precision": "second",
+    "kind": "added",
+    "release_version": "10.92.0",
+    "summary": "Added DOE's selection of 31 grid projects for intended federal support while separating announced selections and projections from final awards, construction and outcomes.",
+    "provenance_path": "data/editorial_change_notes/10.92.0.json",
+    "provenance_sha256": "102465cd1b7fb9850a5918072acf1195e7c3dadf69120aba12ff644ca72a7688",
+    "note": "Content-bound change note records the exact added or materially refreshed version reviewed for this release."
+  }
   ],
   "reviews": [
     {
@@ -39965,7 +40013,667 @@
         "unresolved_questions": [
             "The entry point, authenticated data set, victim count, exfiltration, notifications, attribution, enforcement action, restored service and completed remediation remain unresolved."
         ]
-    }
+    },
+  {
+    "review_id": "10.92.0:NAT-2026-09-18-007:be48e956091a",
+    "entry_id": "NAT-2026-09-18-007",
+    "content_sha256": "be48e956091a3d0bb5a0bac57dba064f0916b44c8c3fe638db5499d6b3ceb259",
+    "reviewed_at": "2026-09-24T16:15:28Z",
+    "reviewer": {
+      "name": "OpenAI Codex editorial maintenance",
+      "kind": "ai_assisted"
+    },
+    "claims": [
+      {
+        "fact_index": 0,
+        "fact_sha256": "5c945c344213dc046c6caf819aea1cd55e29f207cfea45fe6a112600b037f9c7",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "truth_press_ban_sep18",
+            "locator": "Complete source inspected for fact 1, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "3253333a96a4ae155d24a6c5b84f6728e2dedefdedec9e4e29a90507d9d2de55",
+            "origin_group": "Donald J. Trump / Truth Social",
+            "evidence_status": "announced"
+          }
+        ]
+      },
+      {
+        "fact_index": 1,
+        "fact_sha256": "5bf466084b306fd107b133b8d9a439aff90184b5bbcbac8506ef36b11cbbc146",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "truth_press_ban_sep18",
+            "locator": "Complete source inspected for fact 2, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "3253333a96a4ae155d24a6c5b84f6728e2dedefdedec9e4e29a90507d9d2de55",
+            "origin_group": "Donald J. Trump / Truth Social",
+            "evidence_status": "announced"
+          }
+        ]
+      },
+      {
+        "fact_index": 2,
+        "fact_sha256": "debb411800b063544ac689d29ff696c376b0d6eab69a2d1de0fdde09bd69fa59",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "ap_press_ban_sep18",
+            "locator": "Complete source inspected for fact 3, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "c18ed9a79053442fca4706763a03c55bbf35c261c84ed76c0cb7ded8ca61b42a",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          },
+          {
+            "source_id": "reuters_press_ban_sep18",
+            "locator": "Complete source inspected for fact 3, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "351e956a1d97171bdae4334d710b19b0dba94de5ef06b95bf904853c63e83174",
+            "origin_group": "Reuters",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 3,
+        "fact_sha256": "848e9d75d82cef39939c189fd5aa74283cc4d2003602c25bc34d3d5d2405f3af",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "ap_press_ban_enforced_sep19",
+            "locator": "Complete source inspected for fact 4, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "4a480d55bd614801b233d1a3e45e3bba74fc02f4411834e426fb280fdf89fa26",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 4,
+        "fact_sha256": "7887eb66d5522869ce9361bae361a8f2bcefcf3df131a4ade284e8784bbacb0a",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "reuters_press_lawsuit_sep21",
+            "locator": "Complete source inspected for fact 5, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "7d9e08a4391a87023921dcc62ee3b67679337539f5a331888a3f08b89bb3ee10",
+            "origin_group": "Reuters",
+            "evidence_status": "reported"
+          },
+          {
+            "source_id": "ap_press_lawsuit_sep21",
+            "locator": "Complete source inspected for fact 5, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "503f5829c6d6747a2e423e7cb3e78e3d28b2876ea65feed919cfc16f99235399",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 5,
+        "fact_sha256": "337660f4fbb15f78216b89305201089a881ee4f9b25d46b37d6d1f539c6690a2",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "reuters_press_lawsuit_sep21",
+            "locator": "Complete source inspected for fact 6, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "7d9e08a4391a87023921dcc62ee3b67679337539f5a331888a3f08b89bb3ee10",
+            "origin_group": "Reuters",
+            "evidence_status": "reported"
+          },
+          {
+            "source_id": "ap_press_lawsuit_sep21",
+            "locator": "Complete source inspected for fact 6, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "503f5829c6d6747a2e423e7cb3e78e3d28b2876ea65feed919cfc16f99235399",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 6,
+        "fact_sha256": "4316945999d075ae3c350dc6972eccd4ab233aaa63ea0256c53c15aa9eb4d183",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "truth_press_response_sep21",
+            "locator": "Complete source inspected for fact 7, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "e0873ad8204f9d74f7743559faf83ad35e31f472181e09c21bbbf3c076e6d542",
+            "origin_group": "Truth Social / Donald J. Trump",
+            "evidence_status": "announced"
+          }
+        ]
+      },
+      {
+        "fact_index": 7,
+        "fact_sha256": "5cad001867575a1707cd8612acb37a5a8dc2fd89df7bc423280bc69c9e15bbd0",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "reuters_press_tro_sep24",
+            "locator": "Complete source inspected for fact 8, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "77e4ac8937e431429212ddc152ed54f843e6906ae17cb6845d06875f3af28f58",
+            "origin_group": "Reuters",
+            "evidence_status": "reported"
+          },
+          {
+            "source_id": "ap_press_tro_sep24",
+            "locator": "Complete source inspected for fact 8, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "714cf77740fcfa086eea156b71e26cb2140745ff198a160cfd38d5e69223f0b7",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 8,
+        "fact_sha256": "19b1521c00fcf093eda1beeeef2e836b8448eddfc9661abfb0ee6f4ee7740ec8",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "reuters_press_tro_sep24",
+            "locator": "Complete source inspected for fact 9, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "77e4ac8937e431429212ddc152ed54f843e6906ae17cb6845d06875f3af28f58",
+            "origin_group": "Reuters",
+            "evidence_status": "reported"
+          },
+          {
+            "source_id": "ap_press_tro_sep24",
+            "locator": "Complete source inspected for fact 9, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "714cf77740fcfa086eea156b71e26cb2140745ff198a160cfd38d5e69223f0b7",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 9,
+        "fact_sha256": "d012680ac8f4fec34f551a5485d95325dc93df314cb2b8a0ece6b5a3e13cde11",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "reuters_press_tro_sep24",
+            "locator": "Complete source inspected for fact 10, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "77e4ac8937e431429212ddc152ed54f843e6906ae17cb6845d06875f3af28f58",
+            "origin_group": "Reuters",
+            "evidence_status": "reported"
+          },
+          {
+            "source_id": "ap_press_tro_sep24",
+            "locator": "Complete source inspected for fact 10, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "714cf77740fcfa086eea156b71e26cb2140745ff198a160cfd38d5e69223f0b7",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 10,
+        "fact_sha256": "e6ec37b2b887daabc91395085f72240d569bfc343cc1f785b7d55c403c6b60dc",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "reuters_press_tro_sep24",
+            "locator": "Complete source inspected for fact 11, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "77e4ac8937e431429212ddc152ed54f843e6906ae17cb6845d06875f3af28f58",
+            "origin_group": "Reuters",
+            "evidence_status": "reported"
+          },
+          {
+            "source_id": "ap_press_tro_sep24",
+            "locator": "Complete source inspected for fact 11, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "714cf77740fcfa086eea156b71e26cb2140745ff198a160cfd38d5e69223f0b7",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 11,
+        "fact_sha256": "e7f92d1dc036426ece3f0c2f773040bf6f1af67af36a3c2f6b985da7299413a9",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "reuters_press_noncompliance_sep24",
+            "locator": "Complete source inspected for fact 12, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "2e62d70fc4c49d7471f971316346a908ee51210e30620157bce20756b59e68f2",
+            "origin_group": "Reuters",
+            "evidence_status": "reported"
+          },
+          {
+            "source_id": "ap_press_tro_sep24",
+            "locator": "Complete source inspected for fact 12, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "714cf77740fcfa086eea156b71e26cb2140745ff198a160cfd38d5e69223f0b7",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 12,
+        "fact_sha256": "4d0512ee3db24e0a1612751d90cb7c14d41235678cfac6f4ebd098a80c13a8a6",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "reuters_press_noncompliance_sep24",
+            "locator": "Complete source inspected for fact 13, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "2e62d70fc4c49d7471f971316346a908ee51210e30620157bce20756b59e68f2",
+            "origin_group": "Reuters",
+            "evidence_status": "reported"
+          },
+          {
+            "source_id": "ap_press_tro_sep24",
+            "locator": "Complete source inspected for fact 13, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "714cf77740fcfa086eea156b71e26cb2140745ff198a160cfd38d5e69223f0b7",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      }
+    ],
+    "reasoning_review": [
+      {
+        "field": "significance",
+        "text_sha256": "2033852828cc991c3488119e906f4dc4dfbb56a5e94a890218a32dcf96ac0cc7",
+        "review_note": "Reviewed significance separately from unverified or projected consequences."
+      },
+      {
+        "field": "goalpost",
+        "text_sha256": "f64c278662e2f0ef31e39403901b4bbc0716e1bffbb4cdd9e68d3469872d08ec",
+        "review_note": "Preserved the strongest relevant administration explanation and defined observable legal, implementation and outcome tests."
+      },
+      {
+        "field": "maybe_therefore",
+        "text_sha256": "1c2402f8d473859c9211038cdcb9ef7cfdd4a636eb88b3e0795dfc8849a60e9e",
+        "review_note": "Reviewed plausible alternatives separately and bounded the conclusion to the evidenced lifecycle stage."
+      }
+    ],
+    "unresolved_questions": [
+      "Verified pass restoration, any enforcement or contempt finding, appeal, later injunction, written access procedure and final judgment remain unresolved."
+    ]
+  },
+  {
+    "review_id": "10.92.0:NAT-2026-09-23-003:c7e3aca1e8d6",
+    "entry_id": "NAT-2026-09-23-003",
+    "content_sha256": "c7e3aca1e8d626e4859248b33277b46d8b4542f3cb7ea55075b775a87c6f9cc5",
+    "reviewed_at": "2026-09-24T16:15:28Z",
+    "reviewer": {
+      "name": "OpenAI Codex editorial maintenance",
+      "kind": "ai_assisted"
+    },
+    "claims": [
+      {
+        "fact_index": 0,
+        "fact_sha256": "a47f8a1f80f9845531d40bc971e0e87cf9a8038549ece4052d65ae30138e8154",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "ap_f35_shipment_investigation_sep23",
+            "locator": "Complete source inspected for fact 1, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "4edea30a7015083a650184e5d0bca5714274a97bdb1e189a25caf846f6599782",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 1,
+        "fact_sha256": "1d9be80b804d96583083bcc64a0e28be2084e9bf5137d5eed749505158dafeb3",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "ap_f35_shipment_investigation_sep23",
+            "locator": "Complete source inspected for fact 2, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "4edea30a7015083a650184e5d0bca5714274a97bdb1e189a25caf846f6599782",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 2,
+        "fact_sha256": "bce6abf5bdf9fb80b56fecc273b81fdb07468f069c745b94b0181156ed59e501",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "ap_f35_shipment_investigation_sep23",
+            "locator": "Complete source inspected for fact 3, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "4edea30a7015083a650184e5d0bca5714274a97bdb1e189a25caf846f6599782",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 3,
+        "fact_sha256": "95b042be8bf834f5f43e0eb212fc99f68f52454f9a50c41e5c97469f3c267403",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "ap_f35_shipment_investigation_sep23",
+            "locator": "Complete source inspected for fact 4, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "4edea30a7015083a650184e5d0bca5714274a97bdb1e189a25caf846f6599782",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 4,
+        "fact_sha256": "d9296a1b1fc36ec01f159b49104bddb2a68db177422565b76f73e8f71346fe5f",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "ap_f35_shipment_investigation_sep23",
+            "locator": "Complete source inspected for fact 5, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "4edea30a7015083a650184e5d0bca5714274a97bdb1e189a25caf846f6599782",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      }
+    ],
+    "reasoning_review": [
+      {
+        "field": "significance",
+        "text_sha256": "6c08006913f1e41f860ff295a227788fa81b580ff4b0bab15b6f7825c8fcfa46",
+        "review_note": "Reviewed significance separately from unverified or projected consequences."
+      },
+      {
+        "field": "goalpost",
+        "text_sha256": "21d9390280fe658809d2de92ea8b158999333a93ec299a833c2a422c44c8a88d",
+        "review_note": "Preserved the strongest relevant administration explanation and defined observable legal, implementation and outcome tests."
+      },
+      {
+        "field": "maybe_therefore",
+        "text_sha256": "003abd8f86befc2eb7bd87a5669f18acf9652cfccd405c31b7c1dc7a3415b21c",
+        "review_note": "Reviewed plausible alternatives separately and bounded the conclusion to the evidenced lifecycle stage."
+      }
+    ],
+    "unresolved_questions": [
+      "Component identity, chain of custody, retrieval, exposure, responsibility, corrective controls and any cost, delay or readiness consequence remain unresolved."
+    ]
+  },
+  {
+    "review_id": "10.92.0:NAT-2026-09-23-004:46672c6bf3dd",
+    "entry_id": "NAT-2026-09-23-004",
+    "content_sha256": "46672c6bf3dd5ca619d170511babe50ae423685a6c2b29473019d4378b0c520e",
+    "reviewed_at": "2026-09-24T16:15:28Z",
+    "reviewer": {
+      "name": "OpenAI Codex editorial maintenance",
+      "kind": "ai_assisted"
+    },
+    "claims": [
+      {
+        "fact_index": 0,
+        "fact_sha256": "32d55f16bde9e9f9154e6a366f1246d66faf348f49d909faed0249ababe56de9",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "reuters_third_country_appeal_sep24",
+            "locator": "Complete source inspected for fact 1, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "a0d66d5cb53ba1e67c88fa583196513c7316e71a404c0c48ba1545732e8ce5f5",
+            "origin_group": "Reuters",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 1,
+        "fact_sha256": "21d24385f7a66c4c4563e5f8cbf5d513b605765db42043edb52daad7debc61ad",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "reuters_third_country_appeal_sep24",
+            "locator": "Complete source inspected for fact 2, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "a0d66d5cb53ba1e67c88fa583196513c7316e71a404c0c48ba1545732e8ce5f5",
+            "origin_group": "Reuters",
+            "evidence_status": "reported"
+          },
+          {
+            "source_id": "ap_third_country_district_feb25",
+            "locator": "Complete source inspected for fact 2, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "55414f5f9a190e50df79e501147d786002993f2ec81bbd91a0447b6236048444",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 2,
+        "fact_sha256": "262bfddce045c89a77ffc7d43afe62be4e91e7e450dc6a115c8d1925d0be3e69",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "reuters_third_country_appeal_sep24",
+            "locator": "Complete source inspected for fact 3, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "a0d66d5cb53ba1e67c88fa583196513c7316e71a404c0c48ba1545732e8ce5f5",
+            "origin_group": "Reuters",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 3,
+        "fact_sha256": "7176839870fd6db33367823bf2d8e20d3dd56ee6cd74f7cdbc88a4c4ba13486c",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "reuters_third_country_appeal_sep24",
+            "locator": "Complete source inspected for fact 4, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "a0d66d5cb53ba1e67c88fa583196513c7316e71a404c0c48ba1545732e8ce5f5",
+            "origin_group": "Reuters",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 4,
+        "fact_sha256": "49fe61ac275b083739d7fbec278722ee511dd75534867917e34d9f7673e169fa",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "reuters_third_country_appeal_sep24",
+            "locator": "Complete source inspected for fact 5, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "a0d66d5cb53ba1e67c88fa583196513c7316e71a404c0c48ba1545732e8ce5f5",
+            "origin_group": "Reuters",
+            "evidence_status": "reported"
+          },
+          {
+            "source_id": "ap_third_country_district_feb25",
+            "locator": "Complete source inspected for fact 5, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "55414f5f9a190e50df79e501147d786002993f2ec81bbd91a0447b6236048444",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      }
+    ],
+    "reasoning_review": [
+      {
+        "field": "significance",
+        "text_sha256": "1524fba97ef54a07193789bd5740702c498563c175f192fa1588f4210bb1dbcc",
+        "review_note": "Reviewed significance separately from unverified or projected consequences."
+      },
+      {
+        "field": "goalpost",
+        "text_sha256": "aa148503ed4a431c85f84f43b2146b0131e8bd163a8c85afde64975f2d67dc26",
+        "review_note": "Preserved the strongest relevant administration explanation and defined observable legal, implementation and outcome tests."
+      },
+      {
+        "field": "maybe_therefore",
+        "text_sha256": "e28421277c1978d66133d34eee82b4909deb08b5d5084eca3a7e4981f2f8e898",
+        "review_note": "Reviewed plausible alternatives separately and bounded the conclusion to the evidenced lifecycle stage."
+      }
+    ],
+    "unresolved_questions": [
+      "A filed Supreme Court application or order, published DHS procedure, protection-claim outcomes and later removals remain unresolved."
+    ]
+  },
+  {
+    "review_id": "10.92.0:NAT-2026-09-24-001:3b0a66e1a866",
+    "entry_id": "NAT-2026-09-24-001",
+    "content_sha256": "3b0a66e1a8664fe8148bcc7b40ca93519889f3b2a439d45cee8dfb831e41c7db",
+    "reviewed_at": "2026-09-24T16:15:28Z",
+    "reviewer": {
+      "name": "OpenAI Codex editorial maintenance",
+      "kind": "ai_assisted"
+    },
+    "claims": [
+      {
+        "fact_index": 0,
+        "fact_sha256": "6eaf39a3b1feee6d4117606da6be8ed8325e2c81b9e13f2d196741023560f9bb",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "doe_speed_to_power_sep24",
+            "locator": "Complete source inspected for fact 1, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "c4cbf9498a5123fc4364796f5cb25a3f2e9818b890034f5349e95c5576eaf52f",
+            "origin_group": "U.S. Department of Energy",
+            "evidence_status": "announced"
+          },
+          {
+            "source_id": "ap_speed_to_power_sep24",
+            "locator": "Complete source inspected for fact 1, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "1fda806ee79318c6b2bb006d5c2cc8318c898c2b7e29252c06e7293853ffa037",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 1,
+        "fact_sha256": "666b17c00d740f4dcb9bf794e900ad5504429597b39bf1e259ca04830a5be039",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "doe_speed_to_power_sep24",
+            "locator": "Complete source inspected for fact 2, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "c4cbf9498a5123fc4364796f5cb25a3f2e9818b890034f5349e95c5576eaf52f",
+            "origin_group": "U.S. Department of Energy",
+            "evidence_status": "announced"
+          }
+        ]
+      },
+      {
+        "fact_index": 2,
+        "fact_sha256": "502de29eb24851f113cc74e94ddbc86c1d3842aa274a20d5c5f1e0184588287c",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "doe_speed_to_power_sep24",
+            "locator": "Complete source inspected for fact 3, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "c4cbf9498a5123fc4364796f5cb25a3f2e9818b890034f5349e95c5576eaf52f",
+            "origin_group": "U.S. Department of Energy",
+            "evidence_status": "announced"
+          },
+          {
+            "source_id": "ap_speed_to_power_sep24",
+            "locator": "Complete source inspected for fact 3, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "1fda806ee79318c6b2bb006d5c2cc8318c898c2b7e29252c06e7293853ffa037",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 3,
+        "fact_sha256": "d21809bac7f5018e8629ce729a8e28ffa773b7b8bab8f3fcf07284d5748cb5b8",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "ap_speed_to_power_sep24",
+            "locator": "Complete source inspected for fact 4, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "1fda806ee79318c6b2bb006d5c2cc8318c898c2b7e29252c06e7293853ffa037",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      },
+      {
+        "fact_index": 4,
+        "fact_sha256": "01f644e6a2d1d2196f3957ea2295ba38027a420e44e201a4987ba93490c2c288",
+        "relies_on_unnamed_sources": false,
+        "supports": [
+          {
+            "source_id": "doe_speed_to_power_sep24",
+            "locator": "Complete source inspected for fact 5, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "c4cbf9498a5123fc4364796f5cb25a3f2e9818b890034f5349e95c5576eaf52f",
+            "origin_group": "U.S. Department of Energy",
+            "evidence_status": "announced"
+          },
+          {
+            "source_id": "ap_speed_to_power_sep24",
+            "locator": "Complete source inspected for fact 5, including attributed claims, stated limitations and unresolved outcomes.",
+            "inspected_at": "2026-09-24T16:15:28Z",
+            "document_sha256": "1fda806ee79318c6b2bb006d5c2cc8318c898c2b7e29252c06e7293853ffa037",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }
+        ]
+      }
+    ],
+    "reasoning_review": [
+      {
+        "field": "significance",
+        "text_sha256": "2f705ac5ae48f42273f908d54ca404f435a28c3e15bf8504f41e031951a3d28c",
+        "review_note": "Reviewed significance separately from unverified or projected consequences."
+      },
+      {
+        "field": "goalpost",
+        "text_sha256": "239fdb117814debf6041d9903b7530328b1dc15669b55d7fa482fa601360f8af",
+        "review_note": "Preserved the strongest relevant administration explanation and defined observable legal, implementation and outcome tests."
+      },
+      {
+        "field": "maybe_therefore",
+        "text_sha256": "7a7c7331f03c56fbe37f3cfa4836fd85e00f1895fba56d1a6a0d9565fd884c5b",
+        "review_note": "Reviewed plausible alternatives separately and bounded the conclusion to the evidenced lifecycle stage."
+      }
+    ],
+    "unresolved_questions": [
+      "Project-level awards, obligations, disbursements, permits, construction, energized capacity and measured reliability or bill effects remain unresolved."
+    ]
+  }
   ],
   "deferred_candidates": []
 }
