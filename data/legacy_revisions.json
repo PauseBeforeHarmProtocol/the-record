@@ -14224,5 +14224,73 @@
         ]
       }
     ]
+  },
+  {
+    "revision_id": "LR-2026-09-24-123",
+    "recorded_at": "2026-09-24",
+    "legacy_id": "LEG-004279",
+    "kind": "date-fact-source-and-reasoning-correction",
+    "summary": "Correct the imported January date and unsupported categorical description to the February 25 district-court judgment, replace an unrelated tracker link with record-specific reporting, and add complete reasoning layers.",
+    "provenance": [
+      {
+        "type": "independent-legal-reporting",
+        "supports": "Associated Press reported the February 25 judgment, the meaningful-notice and protection-claim requirements, and the administration's position.",
+        "url": "https://apnews.com/article/148cee2906dc7286b074116d3eec6fd4"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "corrected"
+      },
+      {
+        "field": "sort",
+        "expected": "2026-01-04",
+        "replacement": "2026-02-25"
+      },
+      {
+        "field": "date",
+        "expected": "January 4, 2026",
+        "replacement": "February 25, 2026"
+      },
+      {
+        "field": "text",
+        "expected": "Court ruling declares Trump administration policy to deport immigrants to 'third countries' unlawful. Judges find no legal authority for sending deportees to nations other than country of origin.",
+        "replacement": "U.S. District Judge Brian Murphy ruled that the administration's third-country removal policy was unlawful because it did not give people meaningful notice and an opportunity to raise claims that removal would expose them to persecution or torture. The judgment required a process before removal to a country not named in the original order; it did not categorically bar every third-country removal."
+      },
+      {
+        "field": "sig",
+        "expected": "Third-country deportation policy blocked; raises questions about legality of alternative detention and removal schemes.",
+        "replacement": "The judgment imposed a procedural safeguard against removal to possible persecution or torture and became the foundation for later appellate litigation. It established a district-court merits ruling, not a final Supreme Court disposition or proof that every proposed destination was unsafe."
+      },
+      {
+        "field": "goal",
+        "expected": "Monitor whether administration appealed, modified policy, or pursued alternative methods to circumvent ruling.",
+        "replacement": "The administration argued that the policy lawfully used executive removal authority, while challengers said meaningful notice and screening were necessary to prevent torture or persecution. Appellate review, published DHS procedures, actual notice, adjudicated protection claims and documented removals are the tests."
+      },
+      {
+        "field": "mt",
+        "expected": {
+          "$missing": true
+        },
+        "replacement": "Maybe a lawful notice-and-screening process can preserve third-country removals while protecting people from persecution or torture, or later appellate review may alter the district court's requirements. Therefore this entry records the February 25 district-court judgment—not a categorical ban on all third-country removals, a final Supreme Court ruling or a finding that every destination is unsafe."
+      },
+      {
+        "field": "src",
+        "expected": [
+          {
+            "t": "NBC News",
+            "url": "https://www.nbcnews.com/data-graphics/us-immigration-tracker-follow-arrests-detentions-border-crossings-rcna189148"
+          }
+        ],
+        "replacement": [
+          {
+            "t": "Associated Press",
+            "url": "https://apnews.com/article/148cee2906dc7286b074116d3eec6fd4"
+          }
+        ]
+      }
+    ]
   }
 ]
