@@ -1,27 +1,44 @@
 {
-  "version": "10.93.1",
-  "artifact_mode": "feed-only",
+  "version": "10.94.0",
+  "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-24T22:02:47Z",
-    "through_utc": "2026-09-25T04:02:07Z",
+    "from_utc": "2026-09-25T04:02:07Z",
+    "through_utc": "2026-09-25T15:59:16Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous research coverage begins at the prior exact UTC boundary. No independently verified national development cleared the publication threshold; the release updates only the validated Truth Social fallback and its review metadata. Feed retrieval and review times are recorded separately from the research cutoff."
+    "note": "Continuous research coverage begins at the prior exact UTC boundary. Four formal national actions were added and three existing records materially refreshed; feed retrieval, source inspection and archive observation times are recorded separately."
   },
   "release_iso": "2026-09-25",
   "release_human": "September 25, 2026",
-  "checked_at": "2026-09-25 12:02 AM EDT",
-  "previous_version": "10.93.0",
-  "previous_checked_at": "2026-09-24 6:02 PM EDT",
-  "window_started_at": "2026-09-24 6:02 PM EDT",
-  "window_ended_at": "2026-09-25 12:02 AM EDT",
+  "checked_at": "2026-09-25 11:59 AM EDT",
+  "previous_version": "10.93.1",
+  "previous_checked_at": "2026-09-25 12:02 AM EDT",
+  "window_started_at": "2026-09-25 12:02 AM EDT",
+  "window_ended_at": "2026-09-25 11:59 AM EDT",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
   "week_label": "September 21–27, 2026",
   "cutoff_start": "2026-07-17",
-  "new_entry_ids": [],
-  "added_entry_ids": [],
-  "refreshed_entry_ids": [],
+  "new_entry_ids": [
+    "NAT-2026-09-04-017",
+    "NAT-2026-08-27-012",
+    "NAT-2026-09-18-007",
+    "NAT-2026-09-25-001",
+    "NAT-2026-09-25-002",
+    "NAT-2026-09-25-003",
+    "NAT-2026-09-25-004"
+  ],
+  "added_entry_ids": [
+    "NAT-2026-09-25-001",
+    "NAT-2026-09-25-002",
+    "NAT-2026-09-25-003",
+    "NAT-2026-09-25-004"
+  ],
+  "refreshed_entry_ids": [
+    "NAT-2026-09-04-017",
+    "NAT-2026-08-27-012",
+    "NAT-2026-09-18-007"
+  ],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -254,24 +271,28 @@
   ],
   "rejected_candidates": [
     {
-      "title": "One new Truth Social post",
-      "reason": "The fallback advanced from 36,428 to 36,429 posts. The addition announced Jim Copenhaver's death, offered condolences and recounted his injury at the 2024 Butler rally. It independently establishes only that Trump published the statement, not a qualifying government action, and remains feed-only."
+      "title": "Three new Truth Social posts",
+      "reason": "The additions were condolences, a Census link and an uncorroborated characterization of the Xi meeting. None independently established a qualifying operative action; all remain feed-only."
     },
     {
-      "title": "Government-paid Trump television advertisement",
-      "reason": "Associated Press documented the government-labeled advertisement and AdImpact's reported $14,000 placement estimate before this window, but the paying agency, contract, invoice, appropriation, approval chain and any formal ethics or legal finding remain unidentified. No new evidence justified reversing the prior withheld decision."
+      "title": "Trump–Xi meeting and 'super intelligence' terminology",
+      "reason": "No public joint text, signed agreement, implementing instrument or measurable U.S. policy change was identified by cutoff. The Truth Social statement is preserved only as evidence of publication."
     },
     {
-      "title": "Trump-Xi state visit",
-      "reason": "The visit and discussions were principally ceremonial and diplomatic. No new joint text, signed agreement, implementing instrument or independently verified policy change was public by cutoff; the already-recorded trade-truce announcement was not counted again."
+      "title": "Senate pilot and air-traffic-controller mental-health bill",
+      "reason": "Senate passage alone did not establish enactment, appropriation, implementation or a new administration action; House and presidential action remained pending."
     },
     {
-      "title": "Possible Cuban travel restrictions",
-      "reason": "Reporting described restrictions the administration may impose, but no order, rule, directive, scope or effective date was published by cutoff. A prospective measure was not treated as ordered or implemented."
+      "title": "Voter-data review background report",
+      "reason": "The retrospective account and scheduled hearing did not establish a separate operative directive or completed outcome beyond the Supreme Court SAVE order, which was added to the existing litigation record."
     },
     {
-      "title": "Overnight national-development sweep",
-      "reason": "No other signed instrument, implemented action, formal proposal, court ruling, appropriation, credible investigative finding or independently measured outcome published after the prior cutoff cleared the archive threshold. Later coverage of the third-country-removal application duplicated release 10.93.0 and no Supreme Court order existed by cutoff."
+      "title": "Prospective Canada, AI and Cuba measures",
+      "reason": "Trade remarks, a reported future AI meeting and possible Cuba travel restrictions lacked operative public instruments by cutoff."
+    },
+    {
+      "title": "Government-paid television advertisement",
+      "reason": "The paying agency, contract, approval chain and final expenditure record remained unidentified, so the lead remains queued."
     },
     {
       "title": "Previously deferred source-inspection leads",
@@ -283,28 +304,9 @@
     },
     {
       "title": "External archive measurements",
-      "reason": "All four registered primary project endpoints were checked. Trump Archive displayed 14,238 items, including 11,771 Truth Social posts and 1,827 speeches/transcripts; Immigration Policy Tracking remained at 1,796 actions and UndoTrump at 1,264. Record47's prior API-verified measurements were preserved because its API remained unavailable and the dynamic page did not provide a stable replacement measurement. This feed-only release preserves the 10.93.0 editorial snapshot; unlike units remain separate and no external item was promoted automatically."
+      "reason": "The four registered primary projects were rechecked; only measurements directly and consistently exposed by the upstream projects may advance. Unlike units remain separate and no external item was promoted automatically."
     }
   ],
-  "editorial_snapshot": {
-    "version": "10.93.0",
-    "complete_pack": {
-      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-09-24_v10.93.0.zip",
-      "sha256": "a136810054726669af440f63c8da605af1a2aaa9509404488b77bd144118516c"
-    },
-    "national_pack": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-09-24_v10.93.0.zip",
-      "sha256": "60c6399e94a52f4248fb64cade2c9acb2810afe600e1fab3cd5928d97e63d5a5"
-    },
-    "national_brief": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-09-24_v10.93.0.md",
-      "sha256": "7988e44d4ad0f7443a69cf087deaa396eb8c104d796ce1ee82f353c3c97fe8d8"
-    },
-    "in6_brief": {
-      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-09-24_v10.93.0.md",
-      "sha256": "2636f57ab79bf44e324063f5bb554054016b402535e06d31d92cbe1ffa9d1ec5"
-    }
-  },
   "corrections": [],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence."
 }
