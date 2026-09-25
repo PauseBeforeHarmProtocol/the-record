@@ -1,44 +1,37 @@
 {
-  "version": "10.94.0",
+  "version": "10.95.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-25T04:02:07Z",
-    "through_utc": "2026-09-25T15:59:16Z",
+    "from_utc": "2026-09-25T15:59:16Z",
+    "through_utc": "2026-09-25T21:59:55Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous research coverage begins at the prior exact UTC boundary. Four formal national actions were added and three existing records materially refreshed; feed retrieval, source inspection and archive observation times are recorded separately."
+    "note": "Continuous research coverage begins at the prior exact UTC boundary. Four enacted national actions were added; feed retrieval, source inspection and archive observation times are recorded separately."
   },
   "release_iso": "2026-09-25",
   "release_human": "September 25, 2026",
-  "checked_at": "2026-09-25 11:59 AM EDT",
-  "previous_version": "10.93.1",
-  "previous_checked_at": "2026-09-25 12:02 AM EDT",
-  "window_started_at": "2026-09-25 12:02 AM EDT",
-  "window_ended_at": "2026-09-25 11:59 AM EDT",
+  "checked_at": "2026-09-25 5:59 PM EDT",
+  "previous_version": "10.94.0",
+  "previous_checked_at": "2026-09-25 11:59 AM EDT",
+  "window_started_at": "2026-09-25 11:59 AM EDT",
+  "window_ended_at": "2026-09-25 5:59 PM EDT",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
   "week_label": "September 21–27, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-04-017",
-    "NAT-2026-08-27-012",
-    "NAT-2026-09-18-007",
-    "NAT-2026-09-25-001",
-    "NAT-2026-09-25-002",
-    "NAT-2026-09-25-003",
-    "NAT-2026-09-25-004"
+    "NAT-2026-09-25-005",
+    "NAT-2026-09-25-006",
+    "NAT-2026-09-25-007",
+    "NAT-2026-09-25-008"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-25-001",
-    "NAT-2026-09-25-002",
-    "NAT-2026-09-25-003",
-    "NAT-2026-09-25-004"
+    "NAT-2026-09-25-005",
+    "NAT-2026-09-25-006",
+    "NAT-2026-09-25-007",
+    "NAT-2026-09-25-008"
   ],
-  "refreshed_entry_ids": [
-    "NAT-2026-09-04-017",
-    "NAT-2026-08-27-012",
-    "NAT-2026-09-18-007"
-  ],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -267,32 +260,64 @@
       "target_id": "NAT-2026-08-29-001",
       "decision": "distinct_lifecycle_stage",
       "notes": "NAT-2026-08-29-001 records a completed transfer of seven people to the Central African Republic. The new record concerns program-wide appellate procedure and a later planned flight reported blocked; implemented transfer and litigation stages remain distinct."
+    },
+    {
+      "entry_id": "NAT-2026-09-25-005",
+      "target_id": "NAT-2026-09-25-006",
+      "decision": "false_positive",
+      "notes": "The White House announced six bill signings on one page, but these records concern separate enacted bills with different statutory texts, institutions, duties and outcome tests; the shared signing URL does not make them one event."
+    },
+    {
+      "entry_id": "NAT-2026-09-25-005",
+      "target_id": "NAT-2026-09-25-007",
+      "decision": "false_positive",
+      "notes": "The White House announced six bill signings on one page, but these records concern separate enacted bills with different statutory texts, institutions, duties and outcome tests; the shared signing URL does not make them one event."
+    },
+    {
+      "entry_id": "NAT-2026-09-25-005",
+      "target_id": "NAT-2026-09-25-008",
+      "decision": "false_positive",
+      "notes": "The White House announced six bill signings on one page, but these records concern separate enacted bills with different statutory texts, institutions, duties and outcome tests; the shared signing URL does not make them one event."
+    },
+    {
+      "entry_id": "NAT-2026-09-25-006",
+      "target_id": "NAT-2026-09-25-007",
+      "decision": "false_positive",
+      "notes": "The White House announced six bill signings on one page, but these records concern separate enacted bills with different statutory texts, institutions, duties and outcome tests; the shared signing URL does not make them one event."
+    },
+    {
+      "entry_id": "NAT-2026-09-25-006",
+      "target_id": "NAT-2026-09-25-008",
+      "decision": "false_positive",
+      "notes": "The White House announced six bill signings on one page, but these records concern separate enacted bills with different statutory texts, institutions, duties and outcome tests; the shared signing URL does not make them one event."
+    },
+    {
+      "entry_id": "NAT-2026-09-25-007",
+      "target_id": "NAT-2026-09-25-008",
+      "decision": "false_positive",
+      "notes": "The White House announced six bill signings on one page, but these records concern separate enacted bills with different statutory texts, institutions, duties and outcome tests; the shared signing URL does not make them one event."
     }
   ],
   "rejected_candidates": [
     {
       "title": "Three new Truth Social posts",
-      "reason": "The additions were condolences, a Census link and an uncorroborated characterization of the Xi meeting. None independently established a qualifying operative action; all remain feed-only."
+      "reason": "The additions denied a possible appointment, described a ceremonial China visit and endorsed a state political-party official. None independently established an operative federal action; all remain feed-only."
     },
     {
-      "title": "Trump–Xi meeting and 'super intelligence' terminology",
-      "reason": "No public joint text, signed agreement, implementing instrument or measurable U.S. policy change was identified by cutoff. The Truth Social statement is preserved only as evidence of publication."
+      "title": "S. 603 and S. 790 commemorative measures",
+      "reason": "The site-affiliation designation and interpretive-center renaming are ceremonial or naming actions below the national archive's materiality threshold."
     },
     {
-      "title": "Senate pilot and air-traffic-controller mental-health bill",
-      "reason": "Senate passage alone did not establish enactment, appropriation, implementation or a new administration action; House and presidential action remained pending."
+      "title": "Trump–Xi state-visit summary and 'super intelligence' statements",
+      "reason": "No public joint text, signed agreement, appointment or implementing instrument was identified by cutoff."
     },
     {
-      "title": "Voter-data review background report",
-      "reason": "The retrospective account and scheduled hearing did not establish a separate operative directive or completed outcome beyond the Supreme Court SAVE order, which was added to the existing litigation record."
+      "title": "Reported Ukraine-assistance deadline",
+      "reason": "The account described expected delivery and relied materially on unnamed officials; no completed delivery or public operative instrument was established by cutoff."
     },
     {
-      "title": "Prospective Canada, AI and Cuba measures",
-      "reason": "Trade remarks, a reported future AI meeting and possible Cuba travel restrictions lacked operative public instruments by cutoff."
-    },
-    {
-      "title": "Government-paid television advertisement",
-      "reason": "The paying agency, contract, approval chain and final expenditure record remained unidentified, so the lead remains queued."
+      "title": "Government-paid television advertisement and prospective Canada, AI and Cuba measures",
+      "reason": "The advertisement's paying agency, contract and approval chain remain unidentified, and the prospective measures still lack operative public instruments."
     },
     {
       "title": "Previously deferred source-inspection leads",
@@ -304,7 +329,7 @@
     },
     {
       "title": "External archive measurements",
-      "reason": "The four registered primary projects were rechecked; only measurements directly and consistently exposed by the upstream projects may advance. Unlike units remain separate and no external item was promoted automatically."
+      "reason": "All four registered primary projects were rechecked. Trump Archive and UndoTrump exposed consistent measurements; Immigration Policy Tracking was temporarily unavailable, and Record47's dynamic page remained inconsistent with its last API-verified values. Unlike units remain separate and no external item was promoted automatically."
     }
   ],
   "corrections": [],
