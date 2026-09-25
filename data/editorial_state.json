@@ -4261,6 +4261,54 @@
       "provenance_path": "data/editorial_change_notes/10.94.0.json",
       "provenance_sha256": "ee1785bc9a4a9ae7ba91e52876b3f2b15a1b9be81b076d4924207eb81e379052",
       "note": "Source-reviewed within the exact release window; evidence status and unresolved outcomes are preserved in the canonical entry."
+    },
+    {
+      "change_id": "10.95.0:NAT-2026-09-25-005",
+      "entry_id": "NAT-2026-09-25-005",
+      "as_of_utc": "2026-09-25T21:59:55Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.95.0",
+      "summary": "FERC must report annually on specified pending hydropower licensing applications, beginning within 180 days; the law creates reporting duties, not project approvals or shorter licensing times.",
+      "provenance_path": "data/editorial_change_notes/10.95.0.json",
+      "provenance_sha256": "cd367d815196256a06ec3755c11822743bae5d654387e96668e1a45e18156443",
+      "note": "Source-reviewed within the exact release window; enacted duties and unresolved implementation or outcomes are preserved separately."
+    },
+    {
+      "change_id": "10.95.0:NAT-2026-09-25-006",
+      "entry_id": "NAT-2026-09-25-006",
+      "as_of_utc": "2026-09-25T21:59:55Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.95.0",
+      "summary": "The law replaces 2026 with 2028 in two authorization provisions; it does not itself state a funding amount, obligate money or establish completed construction.",
+      "provenance_path": "data/editorial_change_notes/10.95.0.json",
+      "provenance_sha256": "cd367d815196256a06ec3755c11822743bae5d654387e96668e1a45e18156443",
+      "note": "Source-reviewed within the exact release window; enacted duties and unresolved implementation or outcomes are preserved separately."
+    },
+    {
+      "change_id": "10.95.0:NAT-2026-09-25-007",
+      "entry_id": "NAT-2026-09-25-007",
+      "as_of_utc": "2026-09-25T21:59:55Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.95.0",
+      "summary": "The Court of Federal Claims may hear one Treaty of Grouseland claim without limitations defenses if filed within a year; other Illinois land claims are extinguished.",
+      "provenance_path": "data/editorial_change_notes/10.95.0.json",
+      "provenance_sha256": "cd367d815196256a06ec3755c11822743bae5d654387e96668e1a45e18156443",
+      "note": "Source-reviewed within the exact release window; enacted duties and unresolved implementation or outcomes are preserved separately."
+    },
+    {
+      "change_id": "10.95.0:NAT-2026-09-25-008",
+      "entry_id": "NAT-2026-09-25-008",
+      "as_of_utc": "2026-09-25T21:59:55Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.95.0",
+      "summary": "Commerce must standardize and publish geospatial information on fishing and recreational restrictions within multi-year deadlines while protecting Tribal waters and sensitive information.",
+      "provenance_path": "data/editorial_change_notes/10.95.0.json",
+      "provenance_sha256": "cd367d815196256a06ec3755c11822743bae5d654387e96668e1a45e18156443",
+      "note": "Source-reviewed within the exact release window; enacted duties and unresolved implementation or outcomes are preserved separately."
     }
   ],
   "reviews": [
@@ -43299,6 +43347,391 @@
       ],
       "unresolved_questions": [
         "Implementation, litigation and measured outcomes remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.95.0:NAT-2026-09-25-005:c4b29d2c8e39",
+      "entry_id": "NAT-2026-09-25-005",
+      "content_sha256": "c4b29d2c8e39c42fd01dfc99b77dff1f63dafea34bd86f4218befe6a776f94ec",
+      "reviewed_at": "2026-09-25T22:06:02Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "57d3b0707f325652c27af518472e0bfa12796aa1274a001beb811a180cc5ecc3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "govinfo_hr3657_enrolled_sep25",
+              "locator": "Enrolled text, section 2 adding Federal Power Act section 37; reporting deadline, covered applications and required report fields.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "8778cf3e3291ae68f370c6bc134db81483f70fd44d92aae203380fa495ce0d50",
+              "origin_group": "U.S. Congress / Government Publishing Office",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "whitehouse_bills_signed_sep25",
+              "locator": "Signing statement identifies the bill among six measures signed on September 25, 2026.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "c35ae59ae927ed2142478846d8de0c9ae3a991a4ace6d6a5664345825d2eeecd",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "91b46d42763b062c4f7044e9875edf71cf5d2a0b81e9b4805ab2ed4d33408ae8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "govinfo_hr3657_enrolled_sep25",
+              "locator": "Enrolled text, section 2 adding Federal Power Act section 37; reporting deadline, covered applications and required report fields.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "8778cf3e3291ae68f370c6bc134db81483f70fd44d92aae203380fa495ce0d50",
+              "origin_group": "U.S. Congress / Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "f023bf7ff7464f730b7fc079e6d91bb9f296ee8254d11e80cb009d33b4110150",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "govinfo_hr3657_enrolled_sep25",
+              "locator": "Enrolled text, section 2 adding Federal Power Act section 37; reporting deadline, covered applications and required report fields.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "8778cf3e3291ae68f370c6bc134db81483f70fd44d92aae203380fa495ce0d50",
+              "origin_group": "U.S. Congress / Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "a0ec5c557d7d9333fcfdc29530ccff668df94c438d8f6a28fed87dfe5cbdbe4a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "govinfo_hr3657_enrolled_sep25",
+              "locator": "Enrolled text, section 2 adding Federal Power Act section 37; reporting deadline, covered applications and required report fields.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "8778cf3e3291ae68f370c6bc134db81483f70fd44d92aae203380fa495ce0d50",
+              "origin_group": "U.S. Congress / Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "116a304984c361eee403e7c9532820f752e13fcbff34fa8b830076b455a95c99",
+          "review_note": "Reviewed the enacted legal change separately from prospective or unmeasured consequences."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "de67581aa2f3c9d3c7547aacc165660f6007f897ba79995ba96b042bb88f46f1",
+          "review_note": "Preserved the strongest relevant rationale and defined observable implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "dccadabc98ecbcf918f6926e18f9e5713a9a7d7980ea70a8779bd9c9f8523efc",
+          "review_note": "Reviewed plausible alternatives and bounded the conclusion to the verified enacted status."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, funding where applicable, litigation and measured outcomes remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.95.0:NAT-2026-09-25-006:5d63030119b7",
+      "entry_id": "NAT-2026-09-25-006",
+      "content_sha256": "5d63030119b7aa5869bd35b24afa965e3b0866207c7df9396d7825a1bbc00a94",
+      "reviewed_at": "2026-09-25T22:06:02Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "61ce3fd9fe66c80e052abf0b163609e613a62816ea348257f38f73e1616f5818",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "govinfo_hr7250_enrolled_sep25",
+              "locator": "Complete two-section enrolled text; section 2 replaces 2026 with 2028 in section 9(a)(1) and 9(b) of the existing Act.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "e3b061763bca6d1f10cf6d72c03911d6063a41789a09e64b26549cee1aad48e5",
+              "origin_group": "U.S. Congress / Government Publishing Office",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "whitehouse_bills_signed_sep25",
+              "locator": "Signing statement identifies the bill among six measures signed on September 25, 2026.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "c35ae59ae927ed2142478846d8de0c9ae3a991a4ace6d6a5664345825d2eeecd",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "b22a28adb590372d838bb919b8416c98fd3f7ca9604865bb1f959a279475c476",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "govinfo_hr7250_enrolled_sep25",
+              "locator": "Complete two-section enrolled text; section 2 replaces 2026 with 2028 in section 9(a)(1) and 9(b) of the existing Act.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "e3b061763bca6d1f10cf6d72c03911d6063a41789a09e64b26549cee1aad48e5",
+              "origin_group": "U.S. Congress / Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "2fee49aa32f50bc4ea58eebc9bddcc01a16660c289276112b5481418bf33e70c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "govinfo_hr7250_enrolled_sep25",
+              "locator": "Complete two-section enrolled text; section 2 replaces 2026 with 2028 in section 9(a)(1) and 9(b) of the existing Act.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "e3b061763bca6d1f10cf6d72c03911d6063a41789a09e64b26549cee1aad48e5",
+              "origin_group": "U.S. Congress / Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "506a0461bff6c023e126c07f6f4099a731f8ecd4479c10a89371cbc82f7028e5",
+          "review_note": "Reviewed the enacted legal change separately from prospective or unmeasured consequences."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "4bbe03858ad4e7d225b26ae26c2d2cd9da1a377a84f5bcbf204e6726d5eeb412",
+          "review_note": "Preserved the strongest relevant rationale and defined observable implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "37dd3a6f6f5080bdb7b2e452c83be84b6814bddd667a9383e39116e036c961bc",
+          "review_note": "Reviewed plausible alternatives and bounded the conclusion to the verified enacted status."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, funding where applicable, litigation and measured outcomes remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.95.0:NAT-2026-09-25-007:84d981e28704",
+      "entry_id": "NAT-2026-09-25-007",
+      "content_sha256": "84d981e287043fcee6084dda1520ab8fed1da25cb245082fffcbbd853124a8ea",
+      "reviewed_at": "2026-09-25T22:06:02Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "e0e8e9936e8fc0f8777d6c56d6678e532983d1ad9f82c5b82d89dc10e4ba1acd",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "govinfo_s550_enrolled_sep25",
+              "locator": "Enrolled text, sections 2–4; special jurisdiction, one-year filing period, extinguishment and rule of construction.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "c7f6c1d644f9fc434c75d43e17773fecbcdcffc411fcdebcb27876047fd87ea0",
+              "origin_group": "U.S. Congress / Government Publishing Office",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "whitehouse_bills_signed_sep25",
+              "locator": "Signing statement identifies the bill among six measures signed on September 25, 2026.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "c35ae59ae927ed2142478846d8de0c9ae3a991a4ace6d6a5664345825d2eeecd",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "e5e9bb175d64615c7e071f96ece4b9c2a603a8a3d7f6ecee823d7ae7b0a8d053",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "govinfo_s550_enrolled_sep25",
+              "locator": "Enrolled text, sections 2–4; special jurisdiction, one-year filing period, extinguishment and rule of construction.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "c7f6c1d644f9fc434c75d43e17773fecbcdcffc411fcdebcb27876047fd87ea0",
+              "origin_group": "U.S. Congress / Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "dd586db54b765655ba65fb218b54b67ed15b76ce9e6c9481e1c5e5a38747a453",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "govinfo_s550_enrolled_sep25",
+              "locator": "Enrolled text, sections 2–4; special jurisdiction, one-year filing period, extinguishment and rule of construction.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "c7f6c1d644f9fc434c75d43e17773fecbcdcffc411fcdebcb27876047fd87ea0",
+              "origin_group": "U.S. Congress / Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "2c062f8c3ac019b1bd8f1e0b12db1a2f4576763c140929c7da481d5b6c316288",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "govinfo_s550_enrolled_sep25",
+              "locator": "Enrolled text, sections 2–4; special jurisdiction, one-year filing period, extinguishment and rule of construction.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "c7f6c1d644f9fc434c75d43e17773fecbcdcffc411fcdebcb27876047fd87ea0",
+              "origin_group": "U.S. Congress / Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "d95ad303d1f6ec0ef87e554a42a299e820975c91bfb0112211db3ad23dbf96b5",
+          "review_note": "Reviewed the enacted legal change separately from prospective or unmeasured consequences."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "6b39bd70ef9f9a07a08ca765e3c62f33582cf39c7196dbcf919229d84f416cb3",
+          "review_note": "Preserved the strongest relevant rationale and defined observable implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "eb29be9276ab5a9419b0697c90ecc0d16fc6eab8f416a493352073521c0ab144",
+          "review_note": "Reviewed plausible alternatives and bounded the conclusion to the verified enacted status."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, funding where applicable, litigation and measured outcomes remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.95.0:NAT-2026-09-25-008:f210772c9c55",
+      "entry_id": "NAT-2026-09-25-008",
+      "content_sha256": "f210772c9c555e6753a0da603b90bc6ab0293c8123f185be2da6d9d633bc0ac3",
+      "reviewed_at": "2026-09-25T22:06:02Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "5de927e52e691c2245eec16747458b2b30fc0f65023ba78d140d19b1e60d18c1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "govinfo_s759_enrolled_sep25",
+              "locator": "Enrolled text, sections 3–7; deadlines, covered data, update requirements, exclusions and rules of construction.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "68196d714366138e954051caaa5a5ce80f5a5cda9558fd61a6fe5a220906422e",
+              "origin_group": "U.S. Congress / Government Publishing Office",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "whitehouse_bills_signed_sep25",
+              "locator": "Signing statement identifies the bill among six measures signed on September 25, 2026.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "c35ae59ae927ed2142478846d8de0c9ae3a991a4ace6d6a5664345825d2eeecd",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "8d2e29b81ad663dc6565c05c2092e0c76ad41dc23ad4ba7c1edf02e1b624019b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "govinfo_s759_enrolled_sep25",
+              "locator": "Enrolled text, sections 3–7; deadlines, covered data, update requirements, exclusions and rules of construction.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "68196d714366138e954051caaa5a5ce80f5a5cda9558fd61a6fe5a220906422e",
+              "origin_group": "U.S. Congress / Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "e33e6ac8f2ab6a64a842a6eefd18f7590b0b25058ac1020ea2e2194a3f7619fb",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "govinfo_s759_enrolled_sep25",
+              "locator": "Enrolled text, sections 3–7; deadlines, covered data, update requirements, exclusions and rules of construction.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "68196d714366138e954051caaa5a5ce80f5a5cda9558fd61a6fe5a220906422e",
+              "origin_group": "U.S. Congress / Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "69011fd4bc49fdbbb4a2d6fb6e396bfb6a08190143d72581c5be08acfa3ce4ba",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "govinfo_s759_enrolled_sep25",
+              "locator": "Enrolled text, sections 3–7; deadlines, covered data, update requirements, exclusions and rules of construction.",
+              "inspected_at": "2026-09-25T22:06:02Z",
+              "document_sha256": "68196d714366138e954051caaa5a5ce80f5a5cda9558fd61a6fe5a220906422e",
+              "origin_group": "U.S. Congress / Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "dc8015439582821a8ccb8d6b53bd2706eab1be6c26742ea0350b6e88da69e225",
+          "review_note": "Reviewed the enacted legal change separately from prospective or unmeasured consequences."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "65662e8b0c38a0b82c677d98ba5e62d9ad5ae10830e543fde26fcb3b87a37788",
+          "review_note": "Preserved the strongest relevant rationale and defined observable implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "a977899e86c4ae20b866a1c35c8365821b5b73dcc61975008c17be715a117784",
+          "review_note": "Reviewed plausible alternatives and bounded the conclusion to the verified enacted status."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, funding where applicable, litigation and measured outcomes remain unresolved."
       ]
     }
   ],
