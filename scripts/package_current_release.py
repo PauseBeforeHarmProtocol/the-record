@@ -268,6 +268,20 @@ def run_receipt(entries: list[dict], ledger: dict) -> bytes:
             if maintenance
             else "- None recorded in this run."
         )
+    tv = RELEASE.get("trump_tv_monitoring")
+    if tv:
+        lines.extend([
+            "", "## Trump TV monitoring", "",
+            f"- Checked: {tv['checked_at_eastern']}",
+            f"- Inspection state: {tv['inspection_status']}",
+            f"- Current official stream link: {tv['stream_url']}",
+            f"- Last successful complete broadcast review: {tv.get('last_successful_broadcast_review_through') or 'none; coverage boundary unknown'}",
+            "", tv["summary"], "", "Sources and material actually inspected:", "",
+            *(f"- {url}" for url in tv["sources"]),
+            *(f"- {item['inspection']} ({item['url']})" for item in tv.get("items", [])),
+            "", "Access gaps and recheck requirements:", "",
+            *(f"- {gap}" for gap in tv["gaps"]),
+        ])
     if release_corrections:
         lines.extend([
             "",
