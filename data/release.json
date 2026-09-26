@@ -1,38 +1,31 @@
 {
-  "version": "10.97.0",
+  "version": "10.98.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-26T04:01:04Z",
-    "through_utc": "2026-09-26T15:57:41Z",
+    "from_utc": "2026-09-26T15:57:41Z",
+    "through_utc": "2026-09-26T21:57:30Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Research resumes at the previous exact cutoff. September 24–25 ad oversight is explicit source-completion backfill; observation times are separate. Trump TV baseline is partial metadata inspection, not continuous broadcast coverage."
+    "note": "Research resumes at the previous exact cutoff. Trump TV review is a partial official-page and metadata inspection, not continuous recording or complete broadcast-minute coverage."
   },
   "release_iso": "2026-09-26",
   "release_human": "September 26, 2026",
-  "checked_at": "2026-09-26 11:57 AM EDT",
-  "previous_version": "10.96.0",
-  "previous_checked_at": "2026-09-26 12:01 AM EDT",
-  "window_started_at": "2026-09-26 12:01 AM EDT",
-  "window_ended_at": "2026-09-26 11:57 AM EDT",
+  "checked_at": "2026-09-26 5:57 PM EDT",
+  "previous_version": "10.97.0",
+  "previous_checked_at": "2026-09-26 11:57 AM EDT",
+  "window_started_at": "2026-09-26 11:57 AM EDT",
+  "window_ended_at": "2026-09-26 5:57 PM EDT",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
   "week_label": "September 21–27, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-08-17-001",
-    "NAT-2026-09-18-007",
-    "NAT-2026-09-20-001",
-    "NAT-2026-09-24-002"
+    "NAT-2026-09-26-001"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-24-002"
+    "NAT-2026-09-26-001"
   ],
-  "refreshed_entry_ids": [
-    "NAT-2026-08-17-001",
-    "NAT-2026-09-18-007",
-    "NAT-2026-09-20-001"
-  ],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -301,24 +294,16 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Anonymous future Iran bombing scenario",
-      "reason": "Reuters relays a Wall Street Journal account; no second independent original confirmation or operative strike order was inspected."
+      "title": "Six non-CAFE Truth Social posts",
+      "reason": "The accessible material was campaign or ceremonial content, broad unverified claims, political coverage, or textless video. Four media assets could not be retrieved; no claim about inaccessible media was used and all six posts remain feed-only."
     },
     {
       "title": "Cuba and Venezuela negotiating rhetoric",
       "reason": "No executed agreement, public operative terms or verified policy change located in the material reviewed."
     },
     {
-      "title": "Meatpacking disruption and loss estimates",
-      "reason": "The original industry statement and measurement basis were not inspected; industry allegations and agency rebuttal require further source review before an effectiveness finding."
-    },
-    {
-      "title": "Trump TV footage and fiscal attribution",
-      "reason": "Official page and library metadata were inspected, but the linked stream could not be retrieved and no complete recording or transcript was reviewed. No common funding with the paid advertisement was established."
-    },
-    {
-      "title": "Truth Social media and repeated claims",
-      "reason": "All 18 new media assets returned HTTP 403; 17 posts have no retained text. Accessible texts were rhetoric, commentary, duplicate coverage or unverified claims and remained feed-only."
+      "title": "Trump TV follow-up",
+      "reason": "The official Trump TV and live pages still exposed the same stream ID and the latest dated video, remarks and release listings did not advance beyond the prior baseline. No complete recording, captions or transcript were retrieved, so no broadcast-minute coverage is claimed and no qualifying new item was located in the material reviewed."
     },
     {
       "title": "Legacy source mismatch LEG-003957",
@@ -333,11 +318,11 @@
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-09-26T16:08:30Z",
-    "checked_at_eastern": "2026-09-26 12:08:30 PM EDT",
-    "inspection_status": "partial_metadata_baseline",
+    "checked_at": "2026-09-26T21:57:30Z",
+    "checked_at_eastern": "2026-09-26 5:57:30 PM EDT",
+    "inspection_status": "partial_metadata_followup",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-09-26T16:08:30Z",
+    "last_successful_page_inspection_at": "2026-09-26T21:57:30Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -345,80 +330,50 @@
       "https://www.whitehouse.gov/trumptv/",
       "https://www.whitehouse.gov/live/",
       "https://www.whitehouse.gov/videos/",
-      "https://www.whitehouse.gov/videos/page/2/",
       "https://www.whitehouse.gov/remarks/",
-      "https://www.whitehouse.gov/videos/trump-tv-the-essentials-station/",
-      "https://www.whitehouse.gov/videos/site-visit-with-the-president-of-china-and-madame-peng/",
-      "https://www.whitehouse.gov/videos/president-trump-and-the-first-lady-participate-in-a-tea-with-the-president-of-china-and-madame-peng/",
-      "https://www.whitehouse.gov/videos/president-trump-and-the-first-lady-greet-the-president-of-china-and-madame-peng-2/",
-      "https://www.whitehouse.gov/videos/president-trump-and-the-president-of-china-deliver-remarks-at-a-state-dinner/"
+      "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "First dedicated baseline: official channel, current stream link, video-library titles and dates, launch page dated September 21, and remarks index inspected. No earlier broadcast monitoring is claimed. No qualifying new item located in the material reviewed. The channel is distinct from private Truth+, campaign media and separately paid television advertising.",
+    "summary": "Follow-up inspection of the official Trump TV page, White House live page, dated video library, remarks index and releases index. The Trump TV and live pages still exposed the same official YouTube stream ID. No newer dated video, remarks or release listing was found after the prior baseline in the material reviewed. No complete footage, captions or transcript were retrieved, no broadcast-minute coverage is claimed, and no qualifying new item was located in the material reviewed.",
     "items": [
       {
-        "url": "https://www.whitehouse.gov/videos/trump-tv-the-essentials-station/",
-        "posted_date": "2026-09-21",
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "format": "promotional launch clip; metadata only",
-        "inspection": "Title and displayed date; footage not retrieved."
+        "observed_at": "2026-09-26T21:57:30Z",
+        "format": "official stream page; current live/replay state unverified",
+        "inspection": "Page source exposed YouTube video ID A4gNgHfZ-v4, unchanged from the baseline. The page's fallback error text was not treated as proof that the stream was offline."
       },
       {
         "url": "https://www.whitehouse.gov/videos/",
         "posted_date": "2026-09-25",
         "original_event_date": null,
         "broadcast_time": null,
+        "observed_at": "2026-09-26T21:57:30Z",
         "format": "dated recording listings; footage unreviewed",
-        "inspection": "Site visit, tea, greeting and dinner listings; no inference of a new action from upload date."
+        "inspection": "Newest displayed recordings remained the September 25 China-state-visit items already present at baseline; no newly dated recording was located."
       },
       {
-        "url": "https://www.whitehouse.gov/videos/page/2/",
-        "posted_date": "2026-09-24",
-        "original_event_date": "2026-09-23",
+        "url": "https://www.whitehouse.gov/remarks/",
+        "posted_date": "2026-09-22",
+        "original_event_date": null,
         "broadcast_time": null,
-        "format": "retrospective upload",
-        "inspection": "Press-upon-arrival title identifies September 23; September 24 upload is not a new government action."
+        "observed_at": "2026-09-26T21:57:30Z",
+        "format": "supplementary remarks index",
+        "inspection": "Newest displayed remarks remained dated September 22; the index was not assumed to be a complete transcript feed."
       },
       {
-        "url": "https://www.whitehouse.gov/videos/site-visit-with-the-president-of-china-and-madame-peng/",
+        "url": "https://www.whitehouse.gov/releases/",
         "posted_date": "2026-09-25",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-09-26T16:08:30Z",
-        "format": "recording page; live/replay/edit status unverified",
-        "inspection": "Site visit title, displayed date and official YouTube link inspected; footage and transcript not retrieved."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-and-the-first-lady-participate-in-a-tea-with-the-president-of-china-and-madame-peng/",
-        "posted_date": "2026-09-25",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-09-26T16:08:30Z",
-        "format": "recording page; live/replay/edit status unverified",
-        "inspection": "Tea title, displayed date and official YouTube link inspected; footage and transcript not retrieved."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-and-the-first-lady-greet-the-president-of-china-and-madame-peng-2/",
-        "posted_date": "2026-09-25",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-09-26T16:08:30Z",
-        "format": "recording page; live/replay/edit status unverified",
-        "inspection": "Greeting title, displayed date and official YouTube link inspected; footage and transcript not retrieved."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-and-the-president-of-china-deliver-remarks-at-a-state-dinner/",
-        "posted_date": "2026-09-25",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-09-26T16:08:30Z",
-        "format": "recording page; live/replay/edit status unverified",
-        "inspection": "State-dinner remarks title, displayed date and official YouTube link inspected; footage and transcript not retrieved."
+        "observed_at": "2026-09-26T21:57:30Z",
+        "format": "supplementary official releases index",
+        "inspection": "Newest displayed release remained dated September 25; the index was used only as a supplementary lead source."
       }
     ],
     "gaps": [
-      "Official stream link retrieval failed; fallback error text does not establish an offline stream.",
-      "No complete recording, captions or transcript retrieved; no footage watched and no minute-by-minute coverage claimed.",
+      "The official stream page and stable video ID were inspected, but no complete recording, captions or transcript was retrieved; no footage was watched and no minute-by-minute coverage is claimed.",
       "Broadcast coverage boundary remains unknown; later checks must revisit inaccessible material and discover current official video IDs.",
       "Remarks and releases are supplementary sources, not assumed complete transcript feeds.",
       "No verified channel budget, contract, staffing allocation or shared funding with the separately paid advertisement was located."

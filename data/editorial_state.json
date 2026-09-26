@@ -4369,6 +4369,18 @@
       "provenance_path": "data/editorial_change_notes/10.97.0.json",
       "provenance_sha256": "ca678130d84ae88116203e204fb925a4ea3cd3c08c08e8e33b0ab3ed830a4416",
       "note": "Source-completion backfill of explicitly dated September 24–25 oversight; no September 26 event-date inference."
+    },
+    {
+      "change_id": "10.98.0:NAT-2026-09-26-001",
+      "entry_id": "NAT-2026-09-26-001",
+      "as_of_utc": "2026-09-26T21:57:30Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.98.0",
+      "summary": "DOT officials announced that substantially lower light-vehicle fuel-economy standards would be finalized September 28; no final rule text, publication, effective date or implementation existed at cutoff.",
+      "provenance_path": "data/editorial_change_notes/10.98.0.json",
+      "provenance_sha256": "54fae5bda5d34adc5eb44ef0a397322d45edf5c078668ee2754728e0dd93ce27",
+      "note": "Published as an announced finalization following an existing proposal; the final instrument remains queued for September 28 verification."
     }
   ],
   "reviews": [
@@ -45686,6 +45698,114 @@
       ],
       "unresolved_questions": [
         "Payer, contract, appropriation and total expenditure remain unresolved. No common Trump TV funding or personnel was established. No legality finding is asserted."
+      ]
+    },
+    {
+      "review_id": "10.98.0:NAT-2026-09-26-001:1302169134d0",
+      "entry_id": "NAT-2026-09-26-001",
+      "content_sha256": "1302169134d0c27401e65115a66624b0a3a7ec950c3941c1b02c2e4aea98a83e",
+      "reviewed_at": "2026-09-26T21:59:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "a96f82dd748d860e172da24979e2394c41bbfe2eb25a0724ff43d1a689590d24",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_trump_cafe_approval_sep26",
+              "locator": "Retained post text beginning 'I have just approved new Fuel Economy Standards'; used only to establish Trump's published statement.",
+              "inspected_at": "2026-09-26T21:58:56Z",
+              "document_sha256": "57d5353e11ac6f9295600839bd1e39b5c772154d5d004b482a2b83b1390f063f",
+              "origin_group": "Donald J. Trump on Truth Social",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_cafe_finalization_sep26",
+              "locator": "Article lines 151–181: headline, September 26 timestamp, Duffy's Monday timing and distinction between approval statement and future finalization.",
+              "inspected_at": "2026-09-26T21:57:30Z",
+              "document_sha256": "ef7e26770a52b98f29f5ce9cae3c7ea2b8bf14a1e92f476814a84e9f2055e0c6",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5ed2f3ff449a9b660581a03be788a1ce8472ac5d2b12c170717a2718eea60926",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "nhtsa_cafe_nprm_dec3",
+              "locator": "Signed NPRM pages 1–2 and DOT announcement lines 29–39: model years, 34.5-mpg projection and proposed 2028 credit-trading change.",
+              "inspected_at": "2026-09-26T21:57:30Z",
+              "document_sha256": "a58a05e54c066816dc02847a562a01c12ca8b8fd6c97f60bc1f58be0627e66d3",
+              "origin_group": "National Highway Traffic Safety Administration",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "5a311e2c91113fd12d58e6b3aee02173406d3b65808a880621cfb5ac6b5f515e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_cafe_finalization_sep26",
+              "locator": "Article lines 172–181: DOT proposal's modeled vehicle-cost, fuel-use, fuel-spending and emissions estimates.",
+              "inspected_at": "2026-09-26T21:57:30Z",
+              "document_sha256": "ef7e26770a52b98f29f5ce9cae3c7ea2b8bf14a1e92f476814a84e9f2055e0c6",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "41a2f06157699bd3cf06a71b44543763fc42b811067a7d77abf1cfae9a337b76",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "nhtsa_cafe_nprm_dec3",
+              "locator": "NPRM summary and DOT announcement lines 20–41: agency affordability, choice and safety rationale and proposed—not final—status.",
+              "inspected_at": "2026-09-26T21:57:30Z",
+              "document_sha256": "a58a05e54c066816dc02847a562a01c12ca8b8fd6c97f60bc1f58be0627e66d3",
+              "origin_group": "National Highway Traffic Safety Administration",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "reuters_cafe_finalization_sep26",
+              "locator": "Article lines 167–181: announced Monday finalization, administration rationale, Buttigieg response and absence of published final text at cutoff.",
+              "inspected_at": "2026-09-26T21:57:30Z",
+              "document_sha256": "ef7e26770a52b98f29f5ce9cae3c7ea2b8bf14a1e92f476814a84e9f2055e0c6",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "ec088b662104685e68150981fc589c94bb7b065aa63f9625096b76b81b0bd8d4",
+          "review_note": "Separated the policy significance and modeled tradeoff from any claim that a final rule was already operative."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "77c0bbf680e6b022b5d2f582467965b7b79bbd9716675800921ac575ff67c404",
+          "review_note": "Preserved the administration's affordability, choice and safety rationale, the strongest opposing cost-and-competitiveness case, and concrete outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "c986f7e1b3f44209d6867ef74a3388efe5a06df265f77bea6d7c17f7e03a93e8",
+          "review_note": "Separately reviewed competing purchase-price and lifetime-cost possibilities and bounded the conclusion to announced finalization."
+        }
+      ],
+      "unresolved_questions": [
+        "Final rule text, signature, Federal Register publication, effective dates, revised regulatory analysis and implementation were not public by cutoff; the September 28 instrument must be checked separately."
       ]
     }
   ],
