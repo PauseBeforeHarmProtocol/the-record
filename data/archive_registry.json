@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "status": "active_registry",
-  "checked_at": "2026-09-25T22:06:02Z",
+  "checked_at": "2026-09-26T04:08:10Z",
   "registry_purpose": "Describe independent Trump-related archives as a federated research network without pretending that unlike record units are interchangeable or additive.",
   "invariants": [
     "An upstream archive is a discovery and corroboration source, not an automatic authority for The Record.",
@@ -115,33 +115,33 @@
         {
           "metric_id": "trump_archive.total_items",
           "as_reported_label": "total items",
-          "value": 14250,
+          "value": 14277,
           "unit": "public_statement_or_document_item",
           "scope": "all items displayed in the archive monthly index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-09-25T22:06:02Z",
+          "observed_at": "2026-09-26T04:08:10Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null
         },
         {
           "metric_id": "trump_archive.truth_social_posts",
           "as_reported_label": "Truth Social posts",
-          "value": 11777,
+          "value": 11801,
           "unit": "truth_social_post",
           "scope": "Truth Social posts within the archive index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-09-25T22:06:02Z",
+          "observed_at": "2026-09-26T04:08:10Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null
         },
         {
           "metric_id": "trump_archive.speeches_transcripts",
           "as_reported_label": "speeches & transcripts",
-          "value": 1832,
+          "value": 1835,
           "unit": "speech_or_transcript",
           "scope": "speeches and transcripts within the archive index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-09-25T22:06:02Z",
+          "observed_at": "2026-09-26T04:08:10Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null
         }
@@ -189,7 +189,7 @@
         "content_import_permission_state": "license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-09-25T22:06:02Z",
+        "checked_at": "2026-09-26T04:08:10Z",
         "state": "success",
         "verification_pages": [
           "https://trump-archive.com/archive"
@@ -228,7 +228,7 @@
           "unit": "confirmed_policy_action",
           "scope": "Trump first and second presidential terms",
           "comparability_group": "general_policy_action",
-          "observed_at": "2026-09-25T22:06:02Z",
+          "observed_at": "2026-09-26T04:08:10Z",
           "source_url": "https://www.undotrump.com/",
           "upstream_display_date": "2026-09-25"
         },
@@ -382,7 +382,7 @@
         "content_import_permission_state": "bulk_permission_or_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-09-25T22:06:02Z",
+        "checked_at": "2026-09-26T04:08:10Z",
         "state": "success",
         "verification_pages": [
           "https://www.undotrump.com/"
@@ -439,7 +439,7 @@
           "unit": "immigration_policy_action",
           "scope": "all policies shown on the policies browse page",
           "comparability_group": "domain_policy_action",
-          "observed_at": "2026-09-24T22:09:27Z",
+          "observed_at": "2026-09-26T04:08:10Z",
           "source_url": "https://immpolicytracking.org/policies/",
           "upstream_display_date": "2026-09-22",
           "note": "The primary policies page displayed 1,796 actions. This domain-policy measurement is kept separate from other archive units, and no upstream item is promoted without original-source review."
@@ -535,8 +535,8 @@
         "content_import_permission_state": "permission_or_documented_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-09-25T22:06:02Z",
-        "state": "temporary_fetch_failure",
+        "checked_at": "2026-09-26T04:08:10Z",
+        "state": "success",
         "verification_pages": [
           "https://immpolicytracking.org/policies/"
         ]
@@ -576,11 +576,11 @@
         {
           "metric_id": "record47.approved_entries",
           "as_reported_label": "Entries",
-          "value": 6272,
+          "value": 6293,
           "unit": "executive_conduct_entry",
           "scope": "approved archive entries",
           "comparability_group": "structured_executive_conduct",
-          "observed_at": "2026-09-23T16:13:32Z",
+          "observed_at": "2026-09-26T04:08:10Z",
           "source_url": "https://api.record47.org/entries?limit=1",
           "note": "Verified against the original project API; this executive_conduct_entry measurement is not summed with other units."
         },
@@ -591,7 +591,7 @@
           "unit": "contradiction_record",
           "scope": "documented conflicts and course changes",
           "comparability_group": "archive_feature_metric",
-          "observed_at": "2026-09-23T16:13:32Z",
+          "observed_at": "2026-09-26T04:08:10Z",
           "source_url": "https://api.record47.org/counts",
           "note": "The official public counts endpoint returned 332 contradiction records; this feature count is separate from approved entries."
         },
@@ -602,7 +602,7 @@
           "unit": "distinct_primary_source_document",
           "scope": "distinct primary-source documents in the archive",
           "comparability_group": "archive_feature_metric",
-          "observed_at": "2026-09-23T16:13:32Z",
+          "observed_at": "2026-09-26T04:08:10Z",
           "source_url": "https://api.record47.org/counts",
           "note": "Verified against the original project API; this distinct_primary_source_document measurement is not summed with other units."
         },
@@ -613,18 +613,18 @@
           "unit": "documented_sequence",
           "scope": "linked multi-event sequences",
           "comparability_group": "archive_feature_metric",
-          "observed_at": "2026-09-23T16:13:32Z",
+          "observed_at": "2026-09-26T04:08:10Z",
           "source_url": "https://api.record47.org/counts",
           "note": "The official public counts endpoint returned 38 documented sequences; this feature count is separate from approved entries."
         },
         {
           "metric_id": "record47.social_posts",
           "as_reported_label": "social posts",
-          "value": 6488,
+          "value": 6501,
           "unit": "truth_social_or_twitter_post",
           "scope": "Truth Social and Twitter posts available for statement-to-record comparison",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-09-23T16:13:32Z",
+          "observed_at": "2026-09-26T04:08:10Z",
           "source_url": "https://api.record47.org/counts",
           "note": "Verified against the original project API; this truth_social_or_twitter_post measurement is not summed with other units."
         }
@@ -740,8 +740,8 @@
         "content_import_permission_state": "metadata_and_citation_allowed_full_content_license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-09-25T22:06:02Z",
-        "state": "temporary_fetch_failure",
+        "checked_at": "2026-09-26T04:08:10Z",
+        "state": "success",
         "verification_pages": [
           "https://record47.org/"
         ]
