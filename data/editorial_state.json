@@ -4309,6 +4309,18 @@
       "provenance_path": "data/editorial_change_notes/10.95.0.json",
       "provenance_sha256": "cd367d815196256a06ec3755c11822743bae5d654387e96668e1a45e18156443",
       "note": "Source-reviewed within the exact release window; enacted duties and unresolved implementation or outcomes are preserved separately."
+    },
+    {
+      "change_id": "10.96.0:NAT-2026-09-25-009",
+      "entry_id": "NAT-2026-09-25-009",
+      "as_of_utc": "2026-09-26T04:01:04Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.96.0",
+      "summary": "The White House identified eleven funding pools for cancellation five days before the fiscal year ended; GAO says timing a rescission to let appropriations expire cannot lawfully bypass Congress.",
+      "provenance_path": "data/editorial_change_notes/10.96.0.json",
+      "provenance_sha256": "2b75f91d8c29b5309f5bf7909b4dc7e2881f13414037bc76b9422192df0d59eb",
+      "note": "Source-reviewed within the exact release window; ordered withholding, disputed legality and unresolved fiscal or program outcomes are preserved separately."
     }
   ],
   "reviews": [
@@ -43732,6 +43744,139 @@
       ],
       "unresolved_questions": [
         "Implementation, funding where applicable, litigation and measured outcomes remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.96.0:NAT-2026-09-25-009:ba27e4d822ec",
+      "entry_id": "NAT-2026-09-25-009",
+      "content_sha256": "ba27e4d822ecb68b557596df3bdd4eba72386aa4d0e083dc983580537cde3b44",
+      "reviewed_at": "2026-09-26T04:08:10Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "df0a7e2cf69b09b58f83cc62692cb58715d1f8c5152e5cc95d6b49004d44b4f2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "whitehouse_pocket_rescission_sep25",
+              "locator": "Lines 147–198; announcement, eleven program categories, stated rationales and listed amounts totaling $810 million.",
+              "inspected_at": "2026-09-26T04:08:10Z",
+              "document_sha256": "4b5589aaf381a2edb75199f66daa1add06d380af7426558ef4c92c0b2ef9cffd",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "ap_pocket_rescission_sep25",
+              "locator": "Published 7:45 PM EDT and updated 8:43 PM EDT; paragraphs 101–130 on timing, program scope, statutory dispute and congressional responses.",
+              "inspected_at": "2026-09-26T04:08:10Z",
+              "document_sha256": "f030fc7103db9d4c3529c451a6d9c6bd1c77822e739a69613fdce2b413f1fb48",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "fbd4a91127c117fc113a8d000affac13627177722387e9ab09fada46812f634c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "whitehouse_pocket_rescission_sep25",
+              "locator": "Lines 147–198; announcement, eleven program categories, stated rationales and listed amounts totaling $810 million.",
+              "inspected_at": "2026-09-26T04:08:10Z",
+              "document_sha256": "4b5589aaf381a2edb75199f66daa1add06d380af7426558ef4c92c0b2ef9cffd",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "ap_pocket_rescission_sep25",
+              "locator": "Published 7:45 PM EDT and updated 8:43 PM EDT; paragraphs 101–130 on timing, program scope, statutory dispute and congressional responses.",
+              "inspected_at": "2026-09-26T04:08:10Z",
+              "document_sha256": "f030fc7103db9d4c3529c451a6d9c6bd1c77822e739a69613fdce2b413f1fb48",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "4b04273e07b3607b29225f35d5d207b17ef4f1ed07b3196967f0dfe3dfef97b9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_pocket_rescission_sep25",
+              "locator": "Published 7:45 PM EDT and updated 8:43 PM EDT; paragraphs 101–130 on timing, program scope, statutory dispute and congressional responses.",
+              "inspected_at": "2026-09-26T04:08:10Z",
+              "document_sha256": "f030fc7103db9d4c3529c451a6d9c6bd1c77822e739a69613fdce2b413f1fb48",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "gao_pocket_rescission_legality",
+              "locator": "GAO explainer sections on the 45-day review period, expiration of funds and GAO's conclusion that pocket rescissions violate the Impoundment Control Act.",
+              "inspected_at": "2026-09-26T04:08:10Z",
+              "document_sha256": "f3d1cecf5170bed47094f7328b029ccade304f20365d44756c00cdd1a8df2b28",
+              "origin_group": "U.S. Government Accountability Office",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "d7d04a5d4e080200d3c554bd3c822fedd87a2f3f5da3e2f0a1e4e385b8316c4e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "whitehouse_pocket_rescission_sep25",
+              "locator": "Lines 147–198; announcement, eleven program categories, stated rationales and listed amounts totaling $810 million.",
+              "inspected_at": "2026-09-26T04:08:10Z",
+              "document_sha256": "4b5589aaf381a2edb75199f66daa1add06d380af7426558ef4c92c0b2ef9cffd",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "ap_pocket_rescission_sep25",
+              "locator": "Published 7:45 PM EDT and updated 8:43 PM EDT; paragraphs 101–130 on timing, program scope, statutory dispute and congressional responses.",
+              "inspected_at": "2026-09-26T04:08:10Z",
+              "document_sha256": "f030fc7103db9d4c3529c451a6d9c6bd1c77822e739a69613fdce2b413f1fb48",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "gao_pocket_rescission_legality",
+              "locator": "GAO explainer sections on the 45-day review period, expiration of funds and GAO's conclusion that pocket rescissions violate the Impoundment Control Act.",
+              "inspected_at": "2026-09-26T04:08:10Z",
+              "document_sha256": "f3d1cecf5170bed47094f7328b029ccade304f20365d44756c00cdd1a8df2b28",
+              "origin_group": "U.S. Government Accountability Office",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "26f64d607ee3b33ee70e93428bca9bdf7053292dfc5575e6a4d0dbfa3076d54c",
+          "review_note": "Reviewed the institutional power-of-the-purse consequence separately from legal outcome and program-effect claims."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "101bb29778f83df9c83577275eb41791eeefb559f260230377a2f810cd700a79",
+          "review_note": "Preserved the administration's stated waste and need rationale, the strongest congressional and GAO response, and concrete legal and fiscal tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "b48e4321cbfbebc109551e8d1cb39c6617f1c4751fc2079386efbf757413939d",
+          "review_note": "Reviewed plausible unused-funds and unlawful-delay alternatives and bounded the conclusion to the verified late-year attempt."
+        }
+      ],
+      "unresolved_questions": [
+        "The original 2026 special message and account-level apportionment records were not independently retrieved.",
+        "Congressional action, agency obligations, litigation, legal resolution and measured program effects remain unresolved."
       ]
     }
   ],
