@@ -1,30 +1,26 @@
 {
-  "version": "10.98.0",
-  "artifact_mode": "full",
+  "version": "10.98.1",
+  "artifact_mode": "feed-only",
   "research_window": {
-    "from_utc": "2026-09-26T15:57:41Z",
-    "through_utc": "2026-09-26T21:57:30Z",
+    "from_utc": "2026-09-26T21:57:30Z",
+    "through_utc": "2026-09-27T03:58:29Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Research resumes at the previous exact cutoff. Trump TV review is a partial official-page and metadata inspection, not continuous recording or complete broadcast-minute coverage."
+    "note": "Research resumes at the previous exact cutoff. No independently verified national development cleared the publication threshold; this release updates the validated Truth Social fallback and inspection metadata while byte-preserving the 10.98.0 editorial snapshot. Feed and Trump TV inspection times are recorded separately from the research cutoff."
   },
   "release_iso": "2026-09-26",
   "release_human": "September 26, 2026",
-  "checked_at": "2026-09-26 5:57 PM EDT",
-  "previous_version": "10.97.0",
-  "previous_checked_at": "2026-09-26 11:57 AM EDT",
-  "window_started_at": "2026-09-26 11:57 AM EDT",
-  "window_ended_at": "2026-09-26 5:57 PM EDT",
+  "checked_at": "2026-09-26 11:58 PM EDT",
+  "previous_version": "10.98.0",
+  "previous_checked_at": "2026-09-26 5:57 PM EDT",
+  "window_started_at": "2026-09-26 5:57 PM EDT",
+  "window_ended_at": "2026-09-26 11:58 PM EDT",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
   "week_label": "September 21–27, 2026",
   "cutoff_start": "2026-07-17",
-  "new_entry_ids": [
-    "NAT-2026-09-26-001"
-  ],
-  "added_entry_ids": [
-    "NAT-2026-09-26-001"
-  ],
+  "new_entry_ids": [],
+  "added_entry_ids": [],
   "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
@@ -294,20 +290,24 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Six non-CAFE Truth Social posts",
-      "reason": "The accessible material was campaign or ceremonial content, broad unverified claims, political coverage, or textless video. Four media assets could not be retrieved; no claim about inaccessible media was used and all six posts remain feed-only."
+      "title": "Twenty-two new Truth Social posts",
+      "reason": "The fallback advanced from 36,497 to 36,519 posts. Thirteen retrieved images were inspected and showed social-media replies about Representative Maria Elvira Salazar and a possible future primary; seven attached videos returned HTTP 403, so no footage was watched or media claim used. The remaining texts were an unsupported economic superlative, a self-repost label and a repetition of the already-recorded election-conditioned $5,000 pledge in NAT-2026-09-09-005. None independently established a new qualifying federal action or outcome, so all remain feed-only."
     },
     {
-      "title": "Cuba and Venezuela negotiating rhetoric",
-      "reason": "No executed agreement, public operative terms or verified policy change located in the material reviewed."
+      "title": "Trump TV follow-up and September 26 departure gaggle",
+      "reason": "The official Trump TV and live pages still exposed stream ID A4gNgHfZ-v4. The dated video library newly exposed a 6:39 September 26 departure-gaggle recording with YouTube ID 0hVrUaD0fqY, but only its official title, duration, date and link metadata were inspected; no footage, captions or transcript were retrieved. The underlying Cuba remarks occurred before this run boundary and were already withheld in 10.98.0 because no executed agreement or operative terms were public. A later upload or replay is not a new government action, and no qualifying new item was located in the material reviewed."
     },
     {
-      "title": "Trump TV follow-up",
-      "reason": "The official Trump TV and live pages still exposed the same stream ID and the latest dated video, remarks and release listings did not advance beyond the prior baseline. No complete recording, captions or transcript were retrieved, so no broadcast-minute coverage is claimed and no qualifying new item was located in the material reviewed."
+      "title": "National-development sweep",
+      "reason": "No signed instrument, implemented action, formal proposal, court ruling, appropriation, credible investigative finding or independently measured outcome published after the prior exact cutoff cleared the archive threshold. Search results were older, duplicative, state-level, ceremonial or unsupported by an operative record."
+    },
+    {
+      "title": "External archive measurements",
+      "reason": "The four registered primary project pages were checked. Trump Archive displayed 14,336 total items, including 11,860 Truth Social posts and 1,835 speeches/transcripts; Immigration Policy Tracking remained at 1,796 actions and UndoTrump at 1,264. Record47 displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts, but its entry and total-record counters were not stably rendered and its API could not be retrieved, so prior verified entry measurements were preserved. Unlike units remain separate and no external item was promoted automatically."
     },
     {
       "title": "Legacy source mismatch LEG-003957",
-      "reason": "The retained NPR payments-system source does not resolve the CNN/IRS claim. No responsible record-specific correction was established; the warning remains visible."
+      "reason": "The retained NPR payments-system source still does not resolve the CNN/IRS claim. No responsible record-specific correction was established; the warning and legacy-unreviewed state remain visible."
     },
     {
       "title": "Earlier unresolved leads",
@@ -318,11 +318,11 @@
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-09-26T21:57:30Z",
-    "checked_at_eastern": "2026-09-26 5:57:30 PM EDT",
+    "checked_at": "2026-09-27T04:04:26Z",
+    "checked_at_eastern": "2026-09-27 12:04:26 AM EDT",
     "inspection_status": "partial_metadata_followup",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-09-26T21:57:30Z",
+    "last_successful_page_inspection_at": "2026-09-27T04:04:26Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -333,32 +333,50 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Follow-up inspection of the official Trump TV page, White House live page, dated video library, remarks index and releases index. The Trump TV and live pages still exposed the same official YouTube stream ID. No newer dated video, remarks or release listing was found after the prior baseline in the material reviewed. No complete footage, captions or transcript were retrieved, no broadcast-minute coverage is claimed, and no qualifying new item was located in the material reviewed.",
+    "summary": "Follow-up inspection of the official Trump TV page, White House live page, dated video library, remarks index and releases index. The Trump TV and live pages still exposed the same official YouTube stream ID. The video library newly displayed a dated September 26 departure-gaggle recording; only official page and link metadata were inspected, not the footage. Remarks and releases did not advance beyond September 22 and September 25 respectively. No complete recording, captions or transcript was retrieved, no broadcast-minute coverage is claimed, and no qualifying new item was located in the material reviewed.",
     "items": [
       {
         "url": "https://www.whitehouse.gov/trumptv/",
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-09-26T21:57:30Z",
+        "observed_at": "2026-09-27T04:04:26Z",
         "format": "official stream page; current live/replay state unverified",
-        "inspection": "Page source exposed YouTube video ID A4gNgHfZ-v4, unchanged from the baseline. The page's fallback error text was not treated as proof that the stream was offline."
+        "inspection": "Page metadata still exposed YouTube video ID A4gNgHfZ-v4. The page fallback error text was not treated as proof that the stream was offline."
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-09-27T04:04:26Z",
+        "format": "official live hub; Trump TV channel metadata",
+        "inspection": "The live hub still exposed Trump TV YouTube video ID A4gNgHfZ-v4 and did not establish whether the stream was live, replayed or temporarily inaccessible at observation time."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-the-white-house-sep-26-2026/",
+        "posted_date": "2026-09-26",
+        "original_event_date": "2026-09-26",
+        "broadcast_time": null,
+        "observed_at": "2026-09-27T04:04:26Z",
+        "format": "dated official recording (06:39); footage and captions unreviewed",
+        "inspection": "The official page exposed the title, date and YouTube video ID 0hVrUaD0fqY. No footage was watched and no transcript was retrieved. The event predates this run boundary; independently reported Cuba remarks were already withheld in release 10.98.0 for lack of an operative agreement."
       },
       {
         "url": "https://www.whitehouse.gov/videos/",
-        "posted_date": "2026-09-25",
+        "posted_date": "2026-09-26",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-09-26T21:57:30Z",
-        "format": "dated recording listings; footage unreviewed",
-        "inspection": "Newest displayed recordings remained the September 25 China-state-visit items already present at baseline; no newly dated recording was located."
+        "observed_at": "2026-09-27T04:04:26Z",
+        "format": "dated recording listings",
+        "inspection": "The newest displayed listing was the September 26 departure gaggle; later dated recordings were not located."
       },
       {
         "url": "https://www.whitehouse.gov/remarks/",
         "posted_date": "2026-09-22",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-09-26T21:57:30Z",
+        "observed_at": "2026-09-27T04:04:26Z",
         "format": "supplementary remarks index",
         "inspection": "Newest displayed remarks remained dated September 22; the index was not assumed to be a complete transcript feed."
       },
@@ -367,16 +385,36 @@
         "posted_date": "2026-09-25",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-09-26T21:57:30Z",
+        "observed_at": "2026-09-27T04:04:26Z",
         "format": "supplementary official releases index",
         "inspection": "Newest displayed release remained dated September 25; the index was used only as a supplementary lead source."
       }
     ],
     "gaps": [
-      "The official stream page and stable video ID were inspected, but no complete recording, captions or transcript was retrieved; no footage was watched and no minute-by-minute coverage is claimed.",
+      "The official stream pages and stable video IDs were inspected, but no complete recording, captions or transcript was retrieved; no minute-by-minute coverage is claimed.",
+      "The September 26 gaggle footage remains unreviewed; only official title, date, duration and link metadata were available in this check.",
       "Broadcast coverage boundary remains unknown; later checks must revisit inaccessible material and discover current official video IDs.",
       "Remarks and releases are supplementary sources, not assumed complete transcript feeds.",
       "No verified channel budget, contract, staffing allocation or shared funding with the separately paid advertisement was located."
     ]
+  },
+  "editorial_snapshot": {
+    "version": "10.98.0",
+    "complete_pack": {
+      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-09-26_v10.98.0.zip",
+      "sha256": "d4e3687d7d8e605c5a37fa3d409faa8ed2f2f20affe23f971d95836ec2b0f135"
+    },
+    "national_pack": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-09-26_v10.98.0.zip",
+      "sha256": "6e2b857524a8ed71ac92a814dce4d5aa0a484dd00b139230b1d34f0ba2ee2baf"
+    },
+    "national_brief": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-09-26_v10.98.0.md",
+      "sha256": "c82cb6c046bd7a3c8b492c7a5b6c76d336d908721c6b90663d599c039db497b4"
+    },
+    "in6_brief": {
+      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-09-26_v10.98.0.md",
+      "sha256": "ed9c39e7c320cad58c447a73de749be743b88a50395b11647276c819690686e4"
+    }
   }
 }
