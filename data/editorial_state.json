@@ -4381,6 +4381,42 @@
       "provenance_path": "data/editorial_change_notes/10.98.0.json",
       "provenance_sha256": "54fae5bda5d34adc5eb44ef0a397322d45edf5c078668ee2754728e0dd93ce27",
       "note": "Published as an announced finalization following an existing proposal; the final instrument remains queued for September 28 verification."
+    },
+    {
+      "change_id": "10.99.0:NAT-2026-09-24-002",
+      "entry_id": "NAT-2026-09-24-002",
+      "as_of_utc": "2026-09-28T03:57:52Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.99.0",
+      "summary": "Retrospective September 27 AP source completion identifies campaign-video reuse and an attributed spending estimate without claiming adjudicated misuse.",
+      "provenance_path": "data/editorial_change_notes/10.99.0.json",
+      "provenance_sha256": "e82f103defa54cb6ae3d4abc9e59de423b4480e5108ca3530749d56a8be2df2d",
+      "note": "Original event date and ID retained; source inspection occurred after evidence cutoff and is separately timestamped."
+    },
+    {
+      "change_id": "10.99.0:NAT-2026-09-04-017",
+      "entry_id": "NAT-2026-09-04-017",
+      "as_of_utc": "2026-09-28T03:57:52Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.99.0",
+      "summary": "Retrospective September 25 primary-opinion completion records the provisional statutory rationale and preserved voter-removal limitations.",
+      "provenance_path": "data/editorial_change_notes/10.99.0.json",
+      "provenance_sha256": "e82f103defa54cb6ae3d4abc9e59de423b4480e5108ca3530749d56a8be2df2d",
+      "note": "Original event date and ID retained; source inspection occurred after evidence cutoff and is separately timestamped."
+    },
+    {
+      "change_id": "10.99.0:NAT-2026-09-20-001",
+      "entry_id": "NAT-2026-09-20-001",
+      "as_of_utc": "2026-09-28T03:57:52Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.99.0",
+      "summary": "September 27 primary documents publish the trade-board process and approved product lists while reserving future tariff reductions to domestic implementation.",
+      "provenance_path": "data/editorial_change_notes/10.99.0.json",
+      "provenance_sha256": "e82f103defa54cb6ae3d4abc9e59de423b4480e5108ca3530749d56a8be2df2d",
+      "note": "Original event date and ID retained; source inspection occurred after evidence cutoff and is separately timestamped."
     }
   ],
   "reviews": [
@@ -45806,6 +45842,473 @@
       ],
       "unresolved_questions": [
         "Final rule text, signature, Federal Register publication, effective dates, revised regulatory analysis and implementation were not public by cutoff; the September 28 instrument must be checked separately."
+      ]
+    },
+    {
+      "review_id": "10.99.0:NAT-2026-09-24-002:f2552b0fbc6b",
+      "entry_id": "NAT-2026-09-24-002",
+      "content_sha256": "f2552b0fbc6bbc0e72cfb7eb05953d291a59ed888a4cfb629e40081dae807367",
+      "reviewed_at": "2026-09-28T04:05:16.156650Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "eeb8f3807fd4594a5572218872077e7b2598974d6ace33fd6c118cca7a5c4f70",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "jec_hassan_ad_records_sep24",
+              "locator": "Full reproduced September 24 letter and five records requests; October 8 response deadline.",
+              "inspected_at": "2026-09-26T16:06:37Z",
+              "document_sha256": "318ce9b2252b788b608fdf21a5f217ac4c9e1a5d023b1e6bb16932a4d13a8376",
+              "origin_group": "U.S. Congress Joint Economic Committee Democrats",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "56018645c695908e41ea69f8075d48c71c91f4049b050bb60629b47b433169fc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "jec_hassan_ad_records_sep24",
+              "locator": "Full reproduced September 24 letter and five records requests; October 8 response deadline.",
+              "inspected_at": "2026-09-26T16:06:37Z",
+              "document_sha256": "318ce9b2252b788b608fdf21a5f217ac4c9e1a5d023b1e6bb16932a4d13a8376",
+              "origin_group": "U.S. Congress Joint Economic Committee Democrats",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "e8cf76107712d061ff2f924314f1635ff09a38cb72a91374384bfa23617a8f61",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_ad_response_sep25",
+              "locator": "Lines 147–155: official patriotic-education and non-campaign explanation.",
+              "inspected_at": "2026-09-26T16:06:37Z",
+              "document_sha256": "6e99a863340c1e0d45aee0e58fd0df1dbf942c813de8145bc3f77f8fba127ccb",
+              "origin_group": "The White House",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "tnnd_ad_oversight_sep25",
+              "locator": "News4SanAntonio article lines 54–79: disclosure, records request, response and unidentified appropriation.",
+              "inspected_at": "2026-09-26T16:06:37Z",
+              "document_sha256": "d9364926418aa402d351a5665afb55120ba0d2e657794fb65bb9f37f7b734b49",
+              "origin_group": "The National News Desk",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "03bdf63af5d8a25dd7379153288c89321feec847dd04483f3cb409dacac3bb54",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "jec_hassan_ad_records_sep24",
+              "locator": "Full reproduced September 24 letter and five records requests; October 8 response deadline.",
+              "inspected_at": "2026-09-26T16:06:37Z",
+              "document_sha256": "318ce9b2252b788b608fdf21a5f217ac4c9e1a5d023b1e6bb16932a4d13a8376",
+              "origin_group": "U.S. Congress Joint Economic Committee Democrats",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "wh_ad_response_sep25",
+              "locator": "Lines 147–155: official patriotic-education and non-campaign explanation.",
+              "inspected_at": "2026-09-26T16:06:37Z",
+              "document_sha256": "6e99a863340c1e0d45aee0e58fd0df1dbf942c813de8145bc3f77f8fba127ccb",
+              "origin_group": "The White House",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "tnnd_ad_oversight_sep25",
+              "locator": "News4SanAntonio article lines 54–79: disclosure, records request, response and unidentified appropriation.",
+              "inspected_at": "2026-09-26T16:06:37Z",
+              "document_sha256": "d9364926418aa402d351a5665afb55120ba0d2e657794fb65bb9f37f7b734b49",
+              "origin_group": "The National News Desk",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "5631a633c971cc8f78d46829aea5e45c07dce6051c0cd539acafcde64b9318a6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_campaign_ad_sep27",
+              "locator": "Article paragraphs beginning WASHINGTON through White House response; published September 27 at 5:19 PM EDT.",
+              "inspected_at": "2026-09-28T04:05:16.156650Z",
+              "document_sha256": "366e1fecc03538905e4fa137f5b7b6be36aa7bfd0a5789833c54dd0f288341e8",
+              "origin_group": "Associated Press via News4JAX",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "070440e760c4a03bc6549a2b18cef95bd4ad4653ae4e776ba2053464f35ac3ff",
+          "review_note": "Reviewed institutional implications separately from proved outcomes; no unsupported causal or legal finding added."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "093e7912b8a5d41a5dd92b92b91ea407b00e226a0c2102fd0a965aca1578762d",
+          "review_note": "Preserved strongest official justification and concrete contrary evidence or limitations; historical claim supports retain prior actual inspection times."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "72c3f705f20eb018e30167110c1b1d33f6ac74c88fca9776f7a6ce0b71398540",
+          "review_note": "Separately reviewed competing explanations and bounded the conclusion to the inspected evidence state."
+        }
+      ],
+      "unresolved_questions": [
+        "Paying agency, contract, appropriations account, total expenditure and legal disposition; no common Trump TV funding established."
+      ]
+    },
+    {
+      "review_id": "10.99.0:NAT-2026-09-04-017:39c35772bb27",
+      "entry_id": "NAT-2026-09-04-017",
+      "content_sha256": "39c35772bb270e31d7bafc4b979ab220c5ac4eee2f8ce6829e0faf5ae96f0ed2",
+      "reviewed_at": "2026-09-28T04:05:16.156650Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "8673c77ce197de372158e426c94dc449abcc2fe1d6de33629b5f0c5f7f4c5ee3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_save_appeal_sep5",
+              "document_sha256": "2e88c465e506114583114f465eaaf635e9101a080a6dd2b47f7f42154d31f98d",
+              "locator": "Original Reuters body describing September 4 split stay denial and Florida order; extracted-text representation",
+              "inspected_at": "2026-09-08T22:15:28.882920Z",
+              "origin_group": "Reuters",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "0b3070612b11223ab0607faff8e468908af1dc10df50e4b584fcffec91462b95",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "justia_save_opinion_jun22",
+              "document_sha256": "136ba34976dea57cc2b177566cdc6026d16c0a86537414d02815564ba25145ca",
+              "locator": "Opinion opening statutory findings, indexed source passages; extracted-text representation",
+              "inspected_at": "2026-09-08T22:15:28.882920Z",
+              "origin_group": "U.S. District Court for the District of Columbia via Justia",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "1e67681cfab1299441a541817513ccb960a159ae0c14cbcc7e5a5cf20afc4627",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dd_save_scotus_sep8",
+              "document_sha256": "8b0e987d4495391f1df5d0e55921e30bce65851f7cdd3e82b465af96a6183770",
+              "locator": "Original article passages quoting the application and reporting September 15 response deadline; extracted-text representation",
+              "inspected_at": "2026-09-08T22:15:28.882920Z",
+              "origin_group": "Democracy Docket",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "1b1716a6922851d7b9fc26106d8f20f7bed2648c341cdbcb6388d5b821498f00",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dd_save_scotus_sep8",
+              "document_sha256": "8b0e987d4495391f1df5d0e55921e30bce65851f7cdd3e82b465af96a6183770",
+              "locator": "Original article passages quoting the application and reporting September 15 response deadline; extracted-text representation",
+              "inspected_at": "2026-09-08T22:15:28.882920Z",
+              "origin_group": "Democracy Docket",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "352f6df0f8232bb7d95303bc41461ce537bdb86e0661e34dca0dbadb444cfd9e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_save_appeal_sep5",
+              "document_sha256": "2e88c465e506114583114f465eaaf635e9101a080a6dd2b47f7f42154d31f98d",
+              "locator": "Original Reuters body describing September 4 split stay denial and Florida order; extracted-text representation",
+              "inspected_at": "2026-09-08T22:15:28.882920Z",
+              "origin_group": "Reuters",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "0412c7d21a91d2dcae2f9dc69e05403e8b86bb4dc7e0041ef4910c5a8bed3b7a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_save_scotus_order_sep25",
+              "locator": "Complete Reuters report inspected for the procedural development, attributed evidence, implementation status and unresolved merits.",
+              "inspected_at": "2026-09-25T16:07:08Z",
+              "document_sha256": "5d34d38e6cd3d2fbde1bbc80705176d0a4d7f9b07088a23a60acdb812c32bdd3",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "cd70c900e9dcc069de432cd5bdfb7ca2c7296e2285e45fdf9b7f57e7a225e1b1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_save_opinion_sep25",
+              "locator": "Printed pages 3–5: standing, section 1373 and likelihood of reversal.",
+              "inspected_at": "2026-09-28T04:05:16.156650Z",
+              "document_sha256": "9f401c171e16498100bb2bd3962bba4cca37803e3b941b78d03f6f9d5c3fe45a",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "9782a7593ff9582c5368d308a737562812570bf2b20760107582c1a280825615",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_save_opinion_sep25",
+              "locator": "Printed pages 6–7 and footnote 2: NVRA limit, reserved question and stay duration.",
+              "inspected_at": "2026-09-28T04:05:16.156650Z",
+              "document_sha256": "9f401c171e16498100bb2bd3962bba4cca37803e3b941b78d03f6f9d5c3fe45a",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "ordered"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "c9ed81180ef5dbe31cfcaad755fce55f9baeeee8e3b9ee5991425eea1b6b761e",
+          "review_note": "Reviewed institutional implications separately from proved outcomes; no unsupported causal or legal finding added."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "0b6ef4fe495935867b6e2ac290101d59bef21bb6a2953370bcc7511be1787e30",
+          "review_note": "Preserved strongest official justification and concrete contrary evidence or limitations; historical claim supports retain prior actual inspection times."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "21bbce885036bff33409e0337d8f5a6ecfdefb1340fbd21ed1cb8dd36c047c63",
+          "review_note": "Separately reviewed competing explanations and bounded the conclusion to the inspected evidence state."
+        }
+      ],
+      "unresolved_questions": [
+        "Final merits, NVRA scope in the separate case, actual state use and correction outcomes."
+      ]
+    },
+    {
+      "review_id": "10.99.0:NAT-2026-09-20-001:42631b569b7f",
+      "entry_id": "NAT-2026-09-20-001",
+      "content_sha256": "42631b569b7fe99c350c60859a7113e51c79e5b3e7bf9c87c2fd53a2641096d7",
+      "reviewed_at": "2026-09-28T04:05:16.156650Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "f610ae7ef9045eda09d428b58e75756a77136cd0abdcb849da4543607ed8c8ef",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_china_ai_dialogue_sep21",
+              "locator": "Complete linked report inspected for Bessent's named account of the AI-dialogue agreement, incident line and absent operative instrument.",
+              "inspected_at": "2026-09-24T04:10:00Z",
+              "document_sha256": "5bc69d4a52ad7a3e5d3d024c85b360a2780a4f87a600b942fe18f7e564182b34",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "d8c70957e226fc5b6e1455057594de5a9c86e854c37c6f93804e09d8f6627812",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_china_ai_dialogue_sep21",
+              "locator": "Complete linked report inspected for the planned Shenzhen meeting and named possible subjects.",
+              "inspected_at": "2026-09-24T04:10:00Z",
+              "document_sha256": "5bc69d4a52ad7a3e5d3d024c85b360a2780a4f87a600b942fe18f7e564182b34",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "e98602e1c15e5a611dca9f5e9c1b112ce9b0ced6644b8f2d011174edf06d4162",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_china_ai_dialogue_sep21",
+              "locator": "Complete linked report inspected for the named announcement and absence of published operating details.",
+              "inspected_at": "2026-09-24T04:10:00Z",
+              "document_sha256": "5bc69d4a52ad7a3e5d3d024c85b360a2780a4f87a600b942fe18f7e564182b34",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "40433a761722ef354779fce62b23bf60a22a8006c5e99c89b366d2f018d51ca9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_china_trade_truce_sep23",
+              "locator": "Complete indexed report inspected for Bessent's named announcement of the January 10 extension, China's absent immediate comment and the unpublished joint terms.",
+              "inspected_at": "2026-09-24T04:10:00Z",
+              "document_sha256": "301090c6b09a2ed6982226fa351b5b53ea75d4d65b48f78d5788c363dab5e1d0",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "ef4439775fbb0a5643652261502e089ffd1fcdaf5ebf730d8f5aabc46f0051bc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "china_eight_deliverables_sep26",
+              "locator": "Items 5, 7 and final paragraph: trade endorsement, AI agreement and prospective military memorandum.",
+              "inspected_at": "2026-09-26T16:06:37Z",
+              "document_sha256": "a3e9a9a709947ef0a02f5dff5b6f809c08e402886a45aeaa068210ab67f4fbca",
+              "origin_group": "Ministry of Foreign Affairs of China",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_china_readouts_sep26",
+              "locator": "KRMG AP article lines 59–74: bilateral statements and limits of agreement.",
+              "inspected_at": "2026-09-26T16:06:37Z",
+              "document_sha256": "d9364926418aa402d351a5665afb55120ba0d2e657794fb65bb9f37f7b734b49",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "0422af890fecd5f5235dc5322640df14c7e861420fa70500023abb82f4fe4be5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "china_eight_deliverables_sep26",
+              "locator": "Items 5, 7 and final paragraph: trade endorsement, AI agreement and prospective military memorandum.",
+              "inspected_at": "2026-09-26T16:06:37Z",
+              "document_sha256": "a3e9a9a709947ef0a02f5dff5b6f809c08e402886a45aeaa068210ab67f4fbca",
+              "origin_group": "Ministry of Foreign Affairs of China",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_china_readouts_sep26",
+              "locator": "KRMG AP article lines 59–74: bilateral statements and limits of agreement.",
+              "inspected_at": "2026-09-26T16:06:37Z",
+              "document_sha256": "d9364926418aa402d351a5665afb55120ba0d2e657794fb65bb9f37f7b734b49",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "c204fdd660cf9a456487afa3b24de0ef1ca05d6e8a3874aedd100bdbb470a36e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_board_terms_sep27",
+              "locator": "Page 1: approved lists, 2024 trade-value basis and future domestic implementation.",
+              "inspected_at": "2026-09-28T04:05:16.156650Z",
+              "document_sha256": "1b31013a4b567ee40b621b4d30150867024f5200c29c591f2238e6ef12ea07eb",
+              "origin_group": "The White House",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "wh_board_trade_sep27",
+              "locator": "September 27 release, list labels and qualification concerning domestic laws.",
+              "inspected_at": "2026-09-28T04:05:16.156650Z",
+              "document_sha256": "548738c4412fd07b57acd60d597a9177329eb57236ec541a7a01e6a8ef378d15",
+              "origin_group": "The White House",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "569d3a417cf4548b82dc6d097bf1cbcf4ecfe9beea5eabd3fe00265a205266c9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_board_procedures_sep27",
+              "locator": "Pages 1–2: leadership and meeting schedule.",
+              "inspected_at": "2026-09-28T04:05:16.156650Z",
+              "document_sha256": "069aa88b7b56043ca319f9fc6a4451d59d76af30ef162e1cecc90bc0bd6c68b0",
+              "origin_group": "The White House",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ustr_board_trade_sep27",
+              "locator": "September 27 statement paragraphs 1–3: recommendations and claimed future benefits.",
+              "inspected_at": "2026-09-28T04:05:16.156650Z",
+              "document_sha256": "259821ac2f3b793ffbe2f1351b2a1254a3401482bc5db867f2a9ac59a3375897",
+              "origin_group": "Office of the United States Trade Representative",
+              "evidence_status": "announced"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "0e4c911bc8b2ce390fafdc98fec7b332b95f1460b84a7f9d4d504225825d11e9",
+          "review_note": "Reviewed institutional implications separately from proved outcomes; no unsupported causal or legal finding added."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "5f27d843367ced2a13ba8578e3b7cc0299c8f31debe28f14057c46c3fe798bd9",
+          "review_note": "Preserved strongest official justification and concrete contrary evidence or limitations; historical claim supports retain prior actual inspection times."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "839e0ad4264e44597ec44c04ad7987407a673a65ab123e11074230e0806a64cc",
+          "review_note": "Separately reviewed competing explanations and bounded the conclusion to the inspected evidence state."
+        }
+      ],
+      "unresolved_questions": [
+        "Tariff rates, domestic implementing instruments and effective dates; AI channel operational protocol and outcomes."
       ]
     }
   ],
