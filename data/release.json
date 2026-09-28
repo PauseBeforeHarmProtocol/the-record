@@ -1,36 +1,26 @@
 {
-  "version": "10.100.0",
-  "artifact_mode": "full",
+  "version": "10.100.1",
+  "artifact_mode": "feed-only",
   "research_window": {
-    "from_utc": "2026-09-28T03:57:52Z",
-    "through_utc": "2026-09-28T04:30:44Z",
+    "from_utc": "2026-09-28T04:30:44Z",
+    "through_utc": "2026-09-28T10:01:06Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact boundary sweep and dated retrospective review of four documents filed for public inspection September 25, now published in the September 28 Federal Register. Publication date does not assert an exact upload time. Source inspection and feed fetch occur separately after cutoff."
+    "note": "Continuous research coverage begins at the prior exact cutoff. No independently verified national development cleared the publication threshold. One post timestamped 69 seconds before the prior research cutoff appeared only in the newer source snapshot; this release records that acquisition lag, updates the validated Truth Social fallback and inspection metadata, and byte-preserves the 10.100.0 editorial snapshot. Feed and Trump TV inspection times are separate from the research cutoff."
   },
   "release_iso": "2026-09-28",
   "release_human": "September 28, 2026",
-  "checked_at": "2026-09-28 12:30 AM EDT",
-  "previous_version": "10.99.0",
-  "previous_checked_at": "2026-09-27 11:57 PM EDT",
-  "window_started_at": "2026-09-27 11:57 PM EDT",
-  "window_ended_at": "2026-09-28 12:30 AM EDT",
+  "checked_at": "2026-09-28 6:01 AM EDT",
+  "previous_version": "10.100.0",
+  "previous_checked_at": "2026-09-28 12:30 AM EDT",
+  "window_started_at": "2026-09-28 12:30 AM EDT",
+  "window_ended_at": "2026-09-28 6:01 AM EDT",
   "week_start": "2026-09-22",
   "week_end": "2026-09-28",
   "week_label": "September 22–28, 2026",
   "cutoff_start": "2026-07-17",
-  "new_entry_ids": [
-    "NAT-2026-09-28-001",
-    "NAT-2026-09-28-002",
-    "NAT-2026-09-28-003",
-    "NAT-2026-09-28-004"
-  ],
-  "added_entry_ids": [
-    "NAT-2026-09-28-001",
-    "NAT-2026-09-28-002",
-    "NAT-2026-09-28-003",
-    "NAT-2026-09-28-004"
-  ],
+  "new_entry_ids": [],
+  "added_entry_ids": [],
   "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
@@ -300,43 +290,35 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Six new Truth Social media-only posts",
-      "reason": "All six original MP4 requests returned HTTP 403; no retained text or verified media content establishes a canonical action. All remain feed-only with unavailable-media states. Retained fallback inspection counts: {\"media_status\": {\"not_applicable\": 461, \"not_recorded\": 19, \"pending\": 285, \"reviewed\": 30, \"unavailable\": 205}, \"text_status\": {\"not_recorded\": 134, \"pending\": 596, \"reviewed\": 270}}."
+      "title": "One newly acquired Truth Social media-only post",
+      "reason": "The validated fallback advanced from 36,550 to 36,551 posts. The post is timestamped September 28 at 12:29:12 AM EDT, 69 seconds before the prior editorial cutoff, but was absent from the prior source snapshot and appeared only in this fetch. It contains no retained text, and its original MP4 returned HTTP 403. No footage or media claim was inspected or used; it remains feed-only with an unavailable-media state."
     },
     {
       "title": "Trump TV follow-up",
-      "reason": "Same September 27 clip metadata and stream ID; recordings/captions unavailable. No qualifying new item located in the material reviewed. No inference about whether the stream was offline or what aired."
+      "reason": "The official Trump TV and live pages retained stream ID A4gNgHfZ-v4, and the video library still showed the same three September 27 clips. Raw official metadata exposed the previously unresolved Chicago-arrival ID and exact upload timestamps for all three clips, but YouTube retrieval was throttled. Upload time is not treated as broadcast time; no footage or captions were reviewed, and no qualifying new item was located in the material reviewed."
     },
     {
-      "title": "Trump–Amodei dinner",
-      "reason": "Located Reuters and AP material describes a planned dinner and repeated AI stance; no inspected agreement, order, safeguard or changed designation. Earlier queue remains open."
+      "title": "National-development sweep",
+      "reason": "No signed instrument, implemented action, formal proposal, court ruling, appropriation, credible investigative finding or independently measured outcome published from the previous exact cutoff through September 28 at 6:01 AM EDT cleared the archive threshold. Located results were older, duplicative, ceremonial, already recorded or unsupported by a new operative record."
     },
     {
-      "title": "Repeated China and Taiwan reports",
-      "reason": "Reuters September 28 articles were timestamped 03:07Z and 03:24Z, before the prior boundary. China’s truce/AI confirmation is already encompassed by the existing bilateral record; Taiwan’s historical-narrative objection does not establish a new U.S. policy instrument."
+      "title": "External archive measurements",
+      "reason": "All four registered primary project pages were checked. Trump Archive displayed 14,369 items, including 11,893 Truth Social posts and 1,835 speeches/transcripts; Immigration Policy Tracking remained at 1,796 actions and UndoTrump at 1,264. Record47's API remained at 6,296 approved entries, 6,521 social posts, 3,637 primary sources, 332 contradictions and 38 sequences. Unlike units remain separate, no external item was promoted automatically, and the no-op rule leaves the 10.100.0 canonical registry snapshot unchanged."
     },
     {
-      "title": "Other September 28 Federal Register leads",
-      "reason": "PHMSA transport-tank code incorporation and ACF/Defense records notices require a separate scoped review of operative provisions and consequences; not promoted from index metadata. Aircraft-specific directives, fisheries, local disposal-site rules, corrections and routine notices were not added to meet a quota."
-    },
-    {
-      "title": "Legacy quality review",
-      "reason": "Rechecked LEG-003757 and LEG-003957 and generated totals/queue. Their mismatched source links remain unresolved; no responsible historical correction was established. Existing warnings and duplicate candidates remain visible."
-    },
-    {
-      "title": "Earlier unresolved leads",
-      "reason": "Trump TV trademark, channel costs/contracts and staffing, CAFE final text, Cuba, Perdue arms-sale remarks and other unresolved items remain queued. No shared funding between Trump TV and the separate government-paid advertisement is inferred."
+      "title": "Legacy-quality queue",
+      "reason": "No newly inspected record-specific evidence resolved the existing LEG-003757 or LEG-003957 source mismatches or the disclosed duplicate-candidate queue. No historical correction was made, and existing warnings remain visible."
     }
   ],
   "corrections": [],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-09-28T04:38:43.979998Z",
-    "checked_at_eastern": "2026-09-28 12:38:43 AM EDT",
+    "checked_at": "2026-09-28T10:04:55.428356Z",
+    "checked_at_eastern": "2026-09-28 6:04:55 AM EDT",
     "inspection_status": "partial_metadata_followup",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-09-28T04:38:43.979998Z",
+    "last_successful_page_inspection_at": "2026-09-28T10:04:55.428356Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -346,65 +328,50 @@
       "https://www.whitehouse.gov/videos/",
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/news/",
+      "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-the-white-house-sep-26-2026/",
       "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-arrival-at-chicago-il-sep-27-2026/",
       "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-the-white-house-sep-27-2026/",
       "https://www.whitehouse.gov/videos/president-trump-attends-texas-v-tn-football-game/"
     ],
-    "summary": "Rechecked the official Trump TV/live pages, video library, three September 27 clip pages, September 26 gaggle gap, remarks and news indexes. The Trump TV page still links A4gNgHfZ-v4. Two clip IDs were newly recoverable, but YouTube retrieval was throttled and no footage or captions were reviewed. The same three September 27 listings remain; repeated metadata is not a new action. The latest official news item is the already-recorded September 27 trade-board release. No qualifying new item located in the material reviewed. No complete broadcast coverage is claimed.",
+    "summary": "Follow-up inspection of the official Trump TV page, live hub, dated video library, remarks and news indexes. The stream ID and three September 27 listings were unchanged. Raw official page metadata resolved the Chicago-arrival video ID and exact upload timestamps for all three clips. YouTube retrieval was throttled, so no footage or captions were reviewed, upload time was not treated as broadcast time, no complete broadcast boundary was advanced, and no qualifying new item was located in the material reviewed.",
     "items": [
       {
         "url": "https://www.whitehouse.gov/trumptv/",
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-09-28T04:38:43.979998Z",
+        "observed_at": "2026-09-28T10:04:55.428356Z",
         "format": "official stream page; current live/replay state unverified",
-        "inspection": "Page metadata still exposed YouTube video ID A4gNgHfZ-v4. The page fallback error text was not treated as proof that the stream was offline."
+        "inspection": "Page metadata still exposed YouTube video ID A4gNgHfZ-v4. Fallback error text was not treated as proof that the stream was offline."
       },
       {
         "url": "https://www.whitehouse.gov/live/",
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-09-28T04:38:43.979998Z",
+        "observed_at": "2026-09-28T10:04:55.428356Z",
         "format": "official live hub; Trump TV channel metadata",
-        "inspection": "Live hub metadata retrieved via web text; direct HTML returned 403. The current stream ID was independently rediscovered from the Trump TV page as A4gNgHfZ-v4; no playback or caption review was possible."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-the-white-house-sep-26-2026/",
-        "posted_date": "2026-09-26",
-        "original_event_date": "2026-09-26",
-        "broadcast_time": null,
-        "observed_at": "2026-09-28T04:38:43.979998Z",
-        "format": "dated official recording (06:39); footage and captions unreviewed",
-        "inspection": "Rechecked official title/date/link metadata; footage and captions remain unreviewed. Direct HTML retrieval returned HTTP 403; prior video identifier, if recorded, remains historical."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "posted_date": "2026-09-22",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-09-28T04:38:43.979998Z",
-        "format": "supplementary remarks index",
-        "inspection": "Newest displayed remarks remained dated September 22; the index was not assumed to be a complete transcript feed."
+        "inspection": "The live hub exposed the same Trump TV link and did not establish whether the stream was live, replayed or temporarily inaccessible."
       },
       {
         "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-arrival-at-chicago-il-sep-27-2026/",
         "posted_date": "2026-09-27",
         "original_event_date": "2026-09-27",
         "broadcast_time": null,
-        "observed_at": "2026-09-28T04:38:43.979998Z",
-        "format": "official dated clip listing (00:54); live/replay/editing state not verified",
-        "inspection": "Rechecked official title/date/link metadata; footage and captions remain unreviewed. Direct HTML retrieval returned HTTP 403; prior video identifier, if recorded, remains historical."
+        "observed_at": "2026-09-28T10:04:55.428356Z",
+        "format": "dated official clip (00:54); footage and captions unreviewed",
+        "inspection": "Official JSON-LD exposed video ID pDZENkdZdMc and upload time 2026-09-27T17:36:28Z. The upload timestamp is not asserted as broadcast time. YouTube retrieval was throttled.",
+        "video_id": "pDZENkdZdMc",
+        "video_url": "https://www.youtube.com/watch?v=pDZENkdZdMc"
       },
       {
         "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-the-white-house-sep-27-2026/",
         "posted_date": "2026-09-27",
         "original_event_date": "2026-09-27",
         "broadcast_time": null,
-        "observed_at": "2026-09-28T04:38:43.979998Z",
-        "format": "official dated clip listing (01:39); live/replay/editing state not verified",
-        "inspection": "Rechecked official title/date/link metadata; footage and captions remain unreviewed. Current linked ID nU4BDNg8BlA recovered from official HTML; YouTube retrieval throttled.",
+        "observed_at": "2026-09-28T10:04:55.428356Z",
+        "format": "dated official clip (01:39); footage and captions unreviewed",
+        "inspection": "Official JSON-LD exposed video ID nU4BDNg8BlA and upload time 2026-09-27T14:25:36Z. The upload timestamp is not asserted as broadcast time. YouTube retrieval was throttled.",
         "video_id": "nU4BDNg8BlA",
         "video_url": "https://www.youtube.com/watch?v=nU4BDNg8BlA"
       },
@@ -413,61 +380,98 @@
         "posted_date": "2026-09-27",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-09-28T04:38:43.979998Z",
-        "format": "official dated clip listing (00:37); live/replay/editing state not verified",
-        "inspection": "Rechecked official title/date/link metadata; footage and captions remain unreviewed. Current linked ID WR_xuE-Ipaw recovered from official HTML; YouTube retrieval throttled.",
+        "observed_at": "2026-09-28T10:04:55.428356Z",
+        "format": "dated official clip (00:37); footage and captions unreviewed",
+        "inspection": "Official JSON-LD exposed video ID WR_xuE-Ipaw and upload time 2026-09-27T13:26:04Z. The title does not establish the original event date, and the upload timestamp is not asserted as broadcast time. YouTube retrieval was throttled.",
         "video_id": "WR_xuE-Ipaw",
         "video_url": "https://www.youtube.com/watch?v=WR_xuE-Ipaw"
       },
       {
-        "url": "https://www.whitehouse.gov/news/",
-        "posted_date": "2026-09-27",
-        "original_event_date": null,
+        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-the-white-house-sep-26-2026/",
+        "posted_date": "2026-09-26",
+        "original_event_date": "2026-09-26",
         "broadcast_time": null,
-        "observed_at": "2026-09-28T04:38:43.979998Z",
-        "format": "official release index",
-        "inspection": "Official index still lists the September 27 U.S.-China Board of Trade release; already recorded in NAT-2026-09-20-001. No new source-document review asserted."
+        "observed_at": "2026-09-28T10:04:55.428356Z",
+        "format": "dated official recording (06:39); footage and captions unreviewed",
+        "inspection": "Official video-library JSON-LD still exposed video ID 0hVrUaD0fqY and upload time 2026-09-26T15:09:22Z. The upload timestamp is not asserted as broadcast time; substantive review remains an access gap.",
+        "video_id": "0hVrUaD0fqY",
+        "video_url": "https://www.youtube.com/watch?v=0hVrUaD0fqY"
       },
       {
         "url": "https://www.whitehouse.gov/videos/",
         "posted_date": "2026-09-27",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-09-28T04:38:43.979998Z",
-        "format": "dated video index; recurring listings",
-        "inspection": "Same September 27 Chicago arrival (00:54), White House departure (01:39) and football (00:37) listings. Original football event date and exact upload times remain unknown."
+        "observed_at": "2026-09-28T10:04:55.428356Z",
+        "format": "dated video-library listings and JSON-LD metadata",
+        "inspection": "The same three September 27 clips remained newest; no September 28 listing was located."
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "posted_date": "2026-09-22",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-09-28T10:04:55.428356Z",
+        "format": "supplementary remarks index",
+        "inspection": "Newest displayed remarks remained dated September 22; the index was not assumed to be a complete transcript feed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/news/",
+        "posted_date": "2026-09-27",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-09-28T10:04:55.428356Z",
+        "format": "supplementary official news index",
+        "inspection": "Newest displayed item remained the September 27 U.S.-China Board of Trade release already encompassed by NAT-2026-09-20-001."
       }
     ],
     "gaps": [
-      "The official stream pages and stable video IDs were inspected, but no complete recording, captions or transcript was retrieved; no minute-by-minute coverage is claimed.",
-      "The September 26 gaggle footage remains unreviewed; only official title, date, duration and link metadata were available in this check.",
-      "Broadcast coverage boundary remains unknown; later checks must revisit inaccessible material and discover current official video IDs.",
+      "No complete recording, captions or transcript was retrieved; no minute-by-minute or continuous broadcast coverage is claimed.",
+      "Broadcast coverage boundary remains unknown; later checks must revisit inaccessible material and rediscover the current official stream and clip IDs.",
       "Remarks and news listings are supplementary sources, not assumed complete transcript feeds.",
       "No verified channel budget, contract, staffing allocation or shared funding with the separately paid advertisement was located.",
-      "Three September 27 clips remain unreviewed beyond title/date/link metadata; recheck captions and original media.",
-      "The trademark filing is not yet directly inspected; registration, licensing arrangements and costs are unknown.",
-      "YouTube retrieval for A4gNgHfZ-v4, nU4BDNg8BlA and WR_xuE-Ipaw was throttled. No live/replay classification or completed caption review can be claimed."
+      "YouTube retrieval for A4gNgHfZ-v4, pDZENkdZdMc, nU4BDNg8BlA and WR_xuE-Ipaw was throttled; live/replay classification and substantive clip review remain unresolved.",
+      "The Trump TV trademark filing remains uninspected at the original filing level; registration, licensing and funding implications remain unknown."
     ],
-    "previous_page_inspection_at": "2026-09-28T04:05:16.156650Z"
+    "previous_page_inspection_at": "2026-09-28T04:38:43.979998Z"
   },
   "truth_social_inspection": {
     "scope": "1000 retained fallback posts; current content hashes only",
     "counts": {
       "text_status": {
-        "not_recorded": 134,
+        "not_recorded": 135,
         "reviewed": 270,
-        "pending": 596
+        "pending": 595
       },
       "media_status": {
-        "unavailable": 205,
-        "not_applicable": 461,
-        "reviewed": 30,
+        "not_applicable": 460,
+        "not_recorded": 19,
+        "unavailable": 206,
         "pending": 285,
-        "not_recorded": 19
+        "reviewed": 30
       }
     },
-    "new_posts": 6,
+    "new_posts": 1,
     "new_media_reviewed": 0,
-    "new_media_unavailable": 6
+    "new_media_unavailable": 1
+  },
+  "editorial_snapshot": {
+    "version": "10.100.0",
+    "complete_pack": {
+      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-09-28_v10.100.0.zip",
+      "sha256": "62800e0d9f32a6f63ece1215c81ef260232b9ea0d734f5a5748ab6dae80b68a9"
+    },
+    "national_pack": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-09-28_v10.100.0.zip",
+      "sha256": "dcb4ba85d74019781e58268fbb3af04b3c5e078ff0ab4d98a77228541406809a"
+    },
+    "national_brief": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-09-28_v10.100.0.md",
+      "sha256": "21c2e83beedc3e1b2dd532e5a1151d7f99bfe286c1121fd53ab2866893f9e3aa"
+    },
+    "in6_brief": {
+      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-09-28_v10.100.0.md",
+      "sha256": "32cde1151de3d94516b2e0a8ab4e8dd6eaccd76f6d8e8328aa26273d21d9fe38"
+    }
   }
 }

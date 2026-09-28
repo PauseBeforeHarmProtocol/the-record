@@ -4740,16 +4740,39 @@
     "first_seen_at": "2026-09-26T16:06:37Z",
     "timestamp_precision": "second",
     "status": "withheld",
-    "reason": "Official page and library metadata were inspected, but the linked stream could not be retrieved and no complete recording or transcript was reviewed. No common funding with the paid advertisement was established.",
+    "reason": "Official Trump TV, live, video, remarks and news pages were rechecked. The stream and three September 27 listings were unchanged. Raw official JSON-LD resolved the Chicago-arrival ID and exact upload timestamps for all three clips, but YouTube retrieval was throttled; no footage, captions or complete broadcast boundary was reviewed. No common funding with the separate paid advertisement was established.",
     "recheck_trigger": "Accessible recording or transcript, dated programming notice, contract or account-level spending documentation.",
     "next_check_at": null,
     "provenance": [
       "https://www.whitehouse.gov/trumptv/",
       "https://www.whitehouse.gov/live/",
       "https://www.whitehouse.gov/videos/",
-      "https://www.whitehouse.gov/remarks/"
+      "https://www.whitehouse.gov/remarks/",
+      "https://www.whitehouse.gov/news/",
+      "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-arrival-at-chicago-il-sep-27-2026/",
+      "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-the-white-house-sep-27-2026/",
+      "https://www.whitehouse.gov/videos/president-trump-attends-texas-v-tn-football-game/"
     ],
-    "canonical_id": null
+    "canonical_id": null,
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20260926-1200-04",
+        "title": "Trump TV footage and fiscal attribution",
+        "first_seen_at": "2026-09-26T16:06:37Z",
+        "timestamp_precision": "second",
+        "status": "withheld",
+        "reason": "Official page and library metadata were inspected, but the linked stream could not be retrieved and no complete recording or transcript was reviewed. No common funding with the paid advertisement was established.",
+        "recheck_trigger": "Accessible recording or transcript, dated programming notice, contract or account-level spending documentation.",
+        "next_check_at": null,
+        "provenance": [
+          "https://www.whitehouse.gov/trumptv/",
+          "https://www.whitehouse.gov/live/",
+          "https://www.whitehouse.gov/videos/",
+          "https://www.whitehouse.gov/remarks/"
+        ],
+        "canonical_id": null
+      }
+    ]
   },
   {
     "candidate_id": "QUEUE-20260926-1200-05",
@@ -5084,5 +5107,19 @@
       "https://www.govinfo.gov/content/pkg/FR-2026-09-28/pdf/2026-19774.pdf"
     ],
     "canonical_id": "NAT-2026-09-28-004"
+  },
+  {
+    "candidate_id": "QUEUE-20260928-0601-01",
+    "title": "One newly acquired Truth Social media-only post",
+    "first_seen_at": "2026-09-28T10:04:55.428356Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "reason": "The post was timestamped September 28 at 12:29:12 AM EDT but appeared only in the newer source snapshot. It contains no retained text, and the original MP4 returned HTTP 403; no media claim was inspected or used. It remains feed-only with an unavailable-media state.",
+    "recheck_trigger": "Accessible original media or an independently verified operative action or consequence.",
+    "next_check_at": null,
+    "provenance": [
+      "https://truthsocial.com/@realDonaldTrump/117346779325099881"
+    ],
+    "canonical_id": null
   }
 ]
