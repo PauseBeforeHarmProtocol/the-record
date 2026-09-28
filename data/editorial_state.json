@@ -4417,6 +4417,54 @@
       "provenance_path": "data/editorial_change_notes/10.99.0.json",
       "provenance_sha256": "e82f103defa54cb6ae3d4abc9e59de423b4480e5108ca3530749d56a8be2df2d",
       "note": "Original event date and ID retained; source inspection occurred after evidence cutoff and is separately timestamped."
+    },
+    {
+      "change_id": "10.100.0:NAT-2026-09-28-001",
+      "entry_id": "NAT-2026-09-28-001",
+      "as_of_utc": "2026-09-28T04:30:44Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.100.0",
+      "summary": "The policy takes effect September 29; remaining exemptions require separate rescissions, and accident causation remains under investigation.",
+      "provenance_path": "data/editorial_change_notes/10.100.0.json",
+      "provenance_sha256": "71c9491a7fe56d5ff2439dac07129f290fdd2489d189770a0d939d3b64293314",
+      "note": "First public inspection September 25, 2026 at 8:45 AM EDT; publication date September 28. Inspection timestamp is later and separate from evidence cutoff; no exact midnight publication time is asserted."
+    },
+    {
+      "change_id": "10.100.0:NAT-2026-09-28-002",
+      "entry_id": "NAT-2026-09-28-002",
+      "as_of_utc": "2026-09-28T04:30:44Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.100.0",
+      "summary": "The announced fee rises from 0.58% to 1.05%, applicable October 28, but collection requires statutory authorization.",
+      "provenance_path": "data/editorial_change_notes/10.100.0.json",
+      "provenance_sha256": "71c9491a7fe56d5ff2439dac07129f290fdd2489d189770a0d939d3b64293314",
+      "note": "First public inspection September 25, 2026 at 8:45 AM EDT; publication date September 28. Inspection timestamp is later and separate from evidence cutoff; no exact midnight publication time is asserted."
+    },
+    {
+      "change_id": "10.100.0:NAT-2026-09-28-003",
+      "entry_id": "NAT-2026-09-28-003",
+      "as_of_utc": "2026-09-28T04:30:44Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.100.0",
+      "summary": "New firm commitments from October 1 face a 1.5% standard fee; the Skilled Workers demonstration fee becomes 1%, while annual fees stay zero.",
+      "provenance_path": "data/editorial_change_notes/10.100.0.json",
+      "provenance_sha256": "71c9491a7fe56d5ff2439dac07129f290fdd2489d189770a0d939d3b64293314",
+      "note": "First public inspection September 25, 2026 at 8:45 AM EDT; publication date September 28. Inspection timestamp is later and separate from evidence cutoff; no exact midnight publication time is asserted."
+    },
+    {
+      "change_id": "10.100.0:NAT-2026-09-28-004",
+      "entry_id": "NAT-2026-09-28-004",
+      "as_of_utc": "2026-09-28T04:30:44Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.100.0",
+      "summary": "The proposal changes monitoring and testing provisions while retaining numerical emission limits and existing compliance dates; comments close November 12.",
+      "provenance_path": "data/editorial_change_notes/10.100.0.json",
+      "provenance_sha256": "71c9491a7fe56d5ff2439dac07129f290fdd2489d189770a0d939d3b64293314",
+      "note": "First public inspection September 25, 2026 at 8:45 AM EDT; publication date September 28. Inspection timestamp is later and separate from evidence cutoff; no exact midnight publication time is asserted."
     }
   ],
   "reviews": [
@@ -46309,6 +46357,352 @@
       ],
       "unresolved_questions": [
         "Tariff rates, domestic implementing instruments and effective dates; AI channel operational protocol and outcomes."
+      ]
+    },
+    {
+      "review_id": "10.100.0:NAT-2026-09-28-001:48fe72910d08",
+      "entry_id": "NAT-2026-09-28-001",
+      "content_sha256": "48fe72910d088169170bb54a8ee28f15e73bb946d32ac7955ce3f1a67e7a1714",
+      "reviewed_at": "2026-09-28T04:38:43.979998Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "3b6b56dd1971a72004231244a21744172e4e96fc9b539a071a95db45c1d8e8c4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_2026_19843",
+              "locator": "91 FR 61135: Summary, Dates; 61136: signature, filing and Disposition.",
+              "inspected_at": "2026-09-28T04:38:43.979998Z",
+              "document_sha256": "d38005c83cbbaafbe018f24719d9b233ebc76bceaf390ecaf56ad94b79342d09",
+              "origin_group": "Federal Aviation Administration",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "13bdb66b5b556f2d110244f17b6acaa50346ce4d5274c26458e56f0aa0c6de06",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_2026_19843",
+              "locator": "91 FR 61136: compliance-review paragraphs.",
+              "inspected_at": "2026-09-28T04:38:43.979998Z",
+              "document_sha256": "d38005c83cbbaafbe018f24719d9b233ebc76bceaf390ecaf56ad94b79342d09",
+              "origin_group": "Federal Aviation Administration",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "aviationweek_citation_exemptions_sep25",
+              "locator": "September 25 article paragraphs on the compliance review and 13 of 14 exemption holders; corroborates FAA account, not an independent accident-data audit.",
+              "inspected_at": "2026-09-28T04:38:43.979998Z",
+              "document_sha256": "e366cf91c0d24cec08489e3e85b865d34bc9a97f1e379df127e568ccf547669d",
+              "origin_group": "Aviation Week",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "60483fe6065baf1fb65338c6e704697354375bf6deb990e0a6d3a66726af7b56",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_2026_19843",
+              "locator": "91 FR 61136: accident comparison, footnote 5 and pending investigations.",
+              "inspected_at": "2026-09-28T04:38:43.979998Z",
+              "document_sha256": "d38005c83cbbaafbe018f24719d9b233ebc76bceaf390ecaf56ad94b79342d09",
+              "origin_group": "Federal Aviation Administration",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "b9cd351dace695fa4082f1dc5427d421e54ea6a308a631e7709b4979fe3be3b1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_2026_19843",
+              "locator": "91 FR 61136: Disposition; 61135: model scope.",
+              "inspected_at": "2026-09-28T04:38:43.979998Z",
+              "document_sha256": "d38005c83cbbaafbe018f24719d9b233ebc76bceaf390ecaf56ad94b79342d09",
+              "origin_group": "Federal Aviation Administration",
+              "evidence_status": "announced"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "0f77e2b65ee9ff5c737e6b615f0c4afb9f8a5427f679c7533aac7bf30221ecc5",
+          "review_note": "Reviewed as institutional consequence of the specified instrument; no measured outcome inferred."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "df034ae308f68b5eef042a509b878e9232230ee22609211e8b92941ebb3ae809",
+          "review_note": "Preserved the issuing agency’s strongest explanation and identified evidence needed to test it."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "a5ae655c77445385152d444eae6a25d801f95cd2ded5dab677a953cc0e8a377d",
+          "review_note": "Separately reviewed competing explanation, uncertainty, future conditions and bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, legal challenges, independently measured costs and outcomes; primary document establishes the instrument, not independent validation of agency predictions."
+      ]
+    },
+    {
+      "review_id": "10.100.0:NAT-2026-09-28-002:ebbf2de156ab",
+      "entry_id": "NAT-2026-09-28-002",
+      "content_sha256": "ebbf2de156ab91601c2db344d6763a4f98612164eb7b16f290c89ff0dd3fad26",
+      "reviewed_at": "2026-09-28T04:38:43.979998Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "f54adce4a2df63c1e35e0aab6d4bd2df0f8ce413e077dbc7f99105b4e8f543e7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_2026_19743",
+              "locator": "91 FR 61137: Summary and Dates.",
+              "inspected_at": "2026-09-28T04:38:43.979998Z",
+              "document_sha256": "152e074f5054ef860ed8b33716fc6f1a2827252f678a50e969886ebd9a555c63",
+              "origin_group": "Department of Housing and Urban Development",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "dda6a5fed5d53ac14bebca0d9b602967e74120c64b9842ef0ebfa0430f1016cb",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_2026_19743",
+              "locator": "91 FR 61137: Section II statutory condition and disbursement timing.",
+              "inspected_at": "2026-09-28T04:38:43.979998Z",
+              "document_sha256": "152e074f5054ef860ed8b33716fc6f1a2827252f678a50e969886ebd9a555c63",
+              "origin_group": "Department of Housing and Urban Development",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "650ca1547541d602b96a0977e9006482340f1365803e321ebd094d64b1935533",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_2026_19743",
+              "locator": "91 FR 61137–61138: credit-subsidy calculation, no guarantee payouts and CDBG limitation.",
+              "inspected_at": "2026-09-28T04:38:43.979998Z",
+              "document_sha256": "152e074f5054ef860ed8b33716fc6f1a2827252f678a50e969886ebd9a555c63",
+              "origin_group": "Department of Housing and Urban Development",
+              "evidence_status": "announced"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "b662da43cf226e13fce6d006c20765f952a6b31942e6ef267de31e0977d984ac",
+          "review_note": "Reviewed as institutional consequence of the specified instrument; no measured outcome inferred."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "2643e94097802d4c6cd889b45eb91699986ecd95b259a1d4778a104fa8a33ad9",
+          "review_note": "Preserved the issuing agency’s strongest explanation and identified evidence needed to test it."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "8a52d278d90432ee0a71a7d393f5022e2b8bb48740e081228d4f1881d57623d7",
+          "review_note": "Separately reviewed competing explanation, uncertainty, future conditions and bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, legal challenges, independently measured costs and outcomes; primary document establishes the instrument, not independent validation of agency predictions."
+      ]
+    },
+    {
+      "review_id": "10.100.0:NAT-2026-09-28-003:7e2b87266695",
+      "entry_id": "NAT-2026-09-28-003",
+      "content_sha256": "7e2b872666954aa2fd92e022ca4ad9b7dd2f7addffdb1792c3319ce4a5a1cf74",
+      "reviewed_at": "2026-09-28T04:38:43.979998Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "dd8f42ab8d13dbc23b14b132140cc7e3f4c8a21e137c5bf3f8b298a8bace2828",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_2026_19782",
+              "locator": "91 FR 61245 Summary and 61246 Section II.",
+              "inspected_at": "2026-09-28T04:38:43.979998Z",
+              "document_sha256": "e0fdbbe59d4c812df1fd8a3c78b5a4cefc2b8001ed7eb6112742e2962a928c5b",
+              "origin_group": "Department of Housing and Urban Development",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5c0e250a08334565527ae4db295ecdd1924a51e8b78aca5dbc7cb5524f94f008",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_2026_19782",
+              "locator": "91 FR 61245 Summary and 61246 Section II: demonstration, existing loans and annual fee.",
+              "inspected_at": "2026-09-28T04:38:43.979998Z",
+              "document_sha256": "e0fdbbe59d4c812df1fd8a3c78b5a4cefc2b8001ed7eb6112742e2962a928c5b",
+              "origin_group": "Department of Housing and Urban Development",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "f99db219687f88e01dfda97718e138d4e68ec50ea799c25469514bd5835a355c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_2026_19782",
+              "locator": "91 FR 61245–61246 Section I: attributed default rate and self-sustaining rationale.",
+              "inspected_at": "2026-09-28T04:38:43.979998Z",
+              "document_sha256": "e0fdbbe59d4c812df1fd8a3c78b5a4cefc2b8001ed7eb6112742e2962a928c5b",
+              "origin_group": "Department of Housing and Urban Development",
+              "evidence_status": "announced"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "f20f61fbd4de16bba2dd5bb4480e1b90b4a679f2e9c63508c4b9e36d8a4d1ed3",
+          "review_note": "Reviewed as institutional consequence of the specified instrument; no measured outcome inferred."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "e4992e6aa7e26a4134d649f5a9ddabf0b9576a72ffbb79cc5aabab0b945a3029",
+          "review_note": "Preserved the issuing agency’s strongest explanation and identified evidence needed to test it."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "863b18a07ebf74e4330ced4fb257937e181a681f2e91c7c92f3cc311b11ab2fd",
+          "review_note": "Separately reviewed competing explanation, uncertainty, future conditions and bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, legal challenges, independently measured costs and outcomes; primary document establishes the instrument, not independent validation of agency predictions."
+      ]
+    },
+    {
+      "review_id": "10.100.0:NAT-2026-09-28-004:83a7111337f4",
+      "entry_id": "NAT-2026-09-28-004",
+      "content_sha256": "83a7111337f4dbef6eab192a08dfa23ebaebdc178167690c8f66b985c576c8b5",
+      "reviewed_at": "2026-09-28T04:38:43.979998Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "b9e4d2c11db980d8e442a72aa236ee65cd06322aa803133897cc2e61bae80efc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_2026_19774",
+              "locator": "91 FR 61175 Summary and Dates; end-of-document public-inspection filing.",
+              "inspected_at": "2026-09-28T04:38:43.979998Z",
+              "document_sha256": "e1e7d7ac2c9aca972041c3b046560849fdb89c8d972fd98ee73d0dfe475a97bb",
+              "origin_group": "Environmental Protection Agency",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "4151e6c7dfe735137f46eca7048873743c2c6056f84dda48b54cbb7f1f42a4d3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_2026_19774",
+              "locator": "91 FR 61177–61178 Section I.A executive summary.",
+              "inspected_at": "2026-09-28T04:38:43.979998Z",
+              "document_sha256": "e1e7d7ac2c9aca972041c3b046560849fdb89c8d972fd98ee73d0dfe475a97bb",
+              "origin_group": "Environmental Protection Agency",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "6864cd0a475c6d0890e7cde3eab1922328ef1c852597693507531a71a1ce288a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_2026_19774",
+              "locator": "Section III.C: What compliance dates are we proposing; retained 2024 dates and request for comments.",
+              "inspected_at": "2026-09-28T04:38:43.979998Z",
+              "document_sha256": "e1e7d7ac2c9aca972041c3b046560849fdb89c8d972fd98ee73d0dfe475a97bb",
+              "origin_group": "Environmental Protection Agency",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "c8c3076eb8d26b43224d4c245787feaf30d22442ec460f03e136e08977c56b7e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_2026_19774",
+              "locator": "Section I.A and IV.B–C: alternative annual cost estimates and attributed emissions expectations.",
+              "inspected_at": "2026-09-28T04:38:43.979998Z",
+              "document_sha256": "e1e7d7ac2c9aca972041c3b046560849fdb89c8d972fd98ee73d0dfe475a97bb",
+              "origin_group": "Environmental Protection Agency",
+              "evidence_status": "proposed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "ea1597cd46f2293c23580b5b4ae362cb337ba019606eb370277ed16e37ce0dad",
+          "review_note": "Reviewed as institutional consequence of the specified instrument; no measured outcome inferred."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "18a615a8162a94f878d4d8048b46ab21c685010b26029d7bc5bc2919727b60d7",
+          "review_note": "Preserved the issuing agency’s strongest explanation and identified evidence needed to test it."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "fb1e99522e91bcc8428bce2d89722fff03dd1b3761855308bf42810b697a923c",
+          "review_note": "Separately reviewed competing explanation, uncertainty, future conditions and bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, legal challenges, independently measured costs and outcomes; primary document establishes the instrument, not independent validation of agency predictions."
       ]
     }
   ],
