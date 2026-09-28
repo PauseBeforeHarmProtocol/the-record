@@ -442,7 +442,7 @@ def downloads_page(entries: list[dict]) -> str:
         else (
             f"All {national_count} national entries are carried forward unchanged; this patch release publishes legacy corrections while preserving the national-news cutoff."
             if not NEW_ENTRY_IDS and RELEASE_CORRECTIONS
-            else f"All {national_count} national entries, including {len(NEW_ENTRY_IDS)} records added in this pass, with individual packs and the source ledger."
+            else f"All {national_count} national entries, including {len(NEW_ENTRY_IDS)} records added or materially refreshed in this pass, with individual packs and the source ledger."
         )
     )
     base_artifact_note = ""
