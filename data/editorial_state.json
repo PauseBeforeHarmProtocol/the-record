@@ -4585,6 +4585,42 @@
       "provenance_path": "data/editorial_change_notes/10.102.0.json",
       "provenance_sha256": "e14bf26a806394537e6bd01b450301c786a8d250a348582ad7931669db1de547",
       "note": "Source inspection completed after the exact research cutoff; the event or publication fell within the covered window and inspection time is recorded separately."
+    },
+    {
+      "change_id": "10.103.0:NAT-2026-09-28-011",
+      "entry_id": "NAT-2026-09-28-011",
+      "as_of_utc": "2026-09-29T09:58:04Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.103.0",
+      "summary": "The State Department announced a regional visa-restriction policy and used it against 27 officials, former officials and relatives; allegations and individual status remain bounded.",
+      "provenance_path": "data/editorial_change_notes/10.103.0.json",
+      "provenance_sha256": "97bff0906e9a90a6a8921d809d6136f0465e5a7328c3ef3f66a3f32db52b77b0",
+      "note": "Retrospective source-completion item from the preceding window; added when the formal action was identified during the current inspection."
+    },
+    {
+      "change_id": "10.103.0:NAT-2026-09-28-012",
+      "entry_id": "NAT-2026-09-28-012",
+      "as_of_utc": "2026-09-29T09:58:04Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.103.0",
+      "summary": "A September 22 Defense memorandum reported September 28 prioritizes military intelligence and cyber capabilities against foreign election interference without ordering domestic election administration.",
+      "provenance_path": "data/editorial_change_notes/10.103.0.json",
+      "provenance_sha256": "97bff0906e9a90a6a8921d809d6136f0465e5a7328c3ef3f66a3f32db52b77b0",
+      "note": "Retrospective source-completion item from the preceding window; added when the formal directive was identified during the current inspection."
+    },
+    {
+      "change_id": "10.103.0:NAT-2026-09-10-007",
+      "entry_id": "NAT-2026-09-10-007",
+      "as_of_utc": "2026-09-29T09:58:04Z",
+      "timestamp_precision": "second",
+    "kind": "material_refresh",
+      "release_version": "10.103.0",
+      "summary": "Three independent outlets now report Kurt Olsen's resignation, resolving the earlier single-outlet corroboration gap while preserving the anonymous-source and status caveats.",
+      "provenance_path": "data/editorial_change_notes/10.103.0.json",
+      "provenance_sha256": "97bff0906e9a90a6a8921d809d6136f0465e5a7328c3ef3f66a3f32db52b77b0",
+      "note": "Same-event development consolidated into the stable canonical ID; no parallel record created."
     }
   ],
   "reviews": [
@@ -48129,6 +48165,369 @@
       ],
       "unresolved_questions": [
         "Later legislative, judicial, funding, implementation and independently measured outcomes remain unresolved where identified in the entry."
+      ]
+    },
+    {
+      "review_id": "10.103.0:NAT-2026-09-28-011:9477dba7d038",
+      "entry_id": "NAT-2026-09-28-011",
+      "content_sha256": "9477dba7d038e9463bf54b64607a15f6e443f7c997d41ce5cf30e134632e1d25",
+      "reviewed_at": "2026-09-29T10:04:38.986658Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "b7ba17959f68671a522d7540d6e68969b583555c8aba1ca918f8e2a47f31c21e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_western_hemisphere_visa_restrictions_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "5b86f9b226ead8bbfb556629aff37c1caa8652e41577c929fbde1bba95bdfc3b",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "90e6d1afa89a8a92faa4d1040e48cab627059d568bd8365b4b661952d1c1ff76",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_western_hemisphere_visa_restrictions_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "5b86f9b226ead8bbfb556629aff37c1caa8652e41577c929fbde1bba95bdfc3b",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "1a1eeabb3678d540d74c45d683de5e9dc67accf0d40e039068ed37cf713b3efd",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_western_hemisphere_visa_restrictions_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "5b86f9b226ead8bbfb556629aff37c1caa8652e41577c929fbde1bba95bdfc3b",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "1db7db48b4f8ecd787f944f517e101d3964c2dff8340cb3cbd0532ab863f5a26",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_western_hemisphere_visa_restrictions_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "5b86f9b226ead8bbfb556629aff37c1caa8652e41577c929fbde1bba95bdfc3b",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "1114b91f9bc6388b812fb3e5bafdd8375ded2ac84bb26fd697f44eb9db0e56e6",
+          "review_note": "Reviewed as the bounded institutional consequence of the sourced lifecycle development; no unmeasured outcome inferred."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "036820e15aaf57fe780d0321624b3ce1395a616131e946e7a299f6842bd2b74b",
+          "review_note": "Preserved the strongest relevant administration explanation or response and identified concrete tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "5861a8a7c4e42dd2ada8c2fdc55170a29967804fafc1ecdad7353feeb218ab70",
+          "review_note": "Separately reviewed the strongest competing frame, material uncertainty and evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Later official confirmation, implementation, litigation, oversight and independently measured outcomes remain unresolved where identified in the entry."
+      ]
+    },
+    {
+      "review_id": "10.103.0:NAT-2026-09-28-012:717e32c5fc77",
+      "entry_id": "NAT-2026-09-28-012",
+      "content_sha256": "717e32c5fc77652b8c9bbf2e8724f882f0857059117fbdc18ca87912307b127b",
+      "reviewed_at": "2026-09-29T10:04:38.986658Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "6b5975d40a9cc69f98e05efc5023a5f565f24eb30ac1dd147ae07573a1b38af1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "axios_hegseth_election_cyber_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "5dc10a4ae0b7d33aa607105b44e8ec2b954bd052b05fb78b4c9053c327720cba",
+              "origin_group": "Axios",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_hegseth_election_cyber_sep29",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "32c300f49c89cd2ab6c6f6556e985bd4a84e9a99215971b1311630a29ed681b3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "3f5e3b15ffc6c991e6cce4a7039173019c937283189af2334a24a4171f6614cd",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "axios_hegseth_election_cyber_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "5dc10a4ae0b7d33aa607105b44e8ec2b954bd052b05fb78b4c9053c327720cba",
+              "origin_group": "Axios",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "fb42ae8c5e393a1406d4cdeb7674a4537ca34ff3e9abaacb83e1995cf3760d08",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "axios_hegseth_election_cyber_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "5dc10a4ae0b7d33aa607105b44e8ec2b954bd052b05fb78b4c9053c327720cba",
+              "origin_group": "Axios",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_hegseth_election_cyber_sep29",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "32c300f49c89cd2ab6c6f6556e985bd4a84e9a99215971b1311630a29ed681b3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "c2cc06a3ff49488bf8e80bbb0bfa2b489565e761fe48698d95fb7fb47af60cf3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "axios_hegseth_election_cyber_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "5dc10a4ae0b7d33aa607105b44e8ec2b954bd052b05fb78b4c9053c327720cba",
+              "origin_group": "Axios",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_hegseth_election_cyber_sep29",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "32c300f49c89cd2ab6c6f6556e985bd4a84e9a99215971b1311630a29ed681b3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "6a4bfdc75411ecd204672b199e9dbeb0e72d09cbe95821c90784286ed2128c5c",
+          "review_note": "Reviewed as the bounded institutional consequence of the sourced lifecycle development; no unmeasured outcome inferred."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "6e6f7d83b6d2faee86d0bf99af736db07d4917c25ad3eb5f3740e4fc22841003",
+          "review_note": "Preserved the strongest relevant administration explanation or response and identified concrete tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "9802ffd6bb1020aa4bac833e489556c311b485dae2dc5cd5da2d4e0161c43edd",
+          "review_note": "Separately reviewed the strongest competing frame, material uncertainty and evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Later official confirmation, implementation, litigation, oversight and independently measured outcomes remain unresolved where identified in the entry."
+      ]
+    },
+    {
+      "review_id": "10.103.0:NAT-2026-09-10-007:29b6c99cc966",
+      "entry_id": "NAT-2026-09-10-007",
+      "content_sha256": "29b6c99cc96636542abf1804c701e484dc29a04c6d2e95ccaee572ead8640dd8",
+      "reviewed_at": "2026-09-29T10:04:38.986658Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "27c1ceb316a9c46fb9fe0e98caae96bcd4625debf4fe72b60ed1fc9a7737750b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_digenova_resignation_sep10",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "50b5a9f4bbb27a49dce3141d97d06c9759a23541dac92e92c52304e69aa3ac3c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_digenova_resignation_sep10",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "9039162e8bf410dfb1231f4ec908a8eb9e6214e9956015de26a26c9948bc869e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "18463baaf22f5eaefca8d7cb5044d6e574717f648774d0ee4201018ed4e8fa0a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_digenova_resignation_sep10",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "50b5a9f4bbb27a49dce3141d97d06c9759a23541dac92e92c52304e69aa3ac3c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_digenova_resignation_sep10",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "9039162e8bf410dfb1231f4ec908a8eb9e6214e9956015de26a26c9948bc869e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "adaaa2e97d664e1991593b1888add659cf7eed3575448f425b9d4710c141c910",
+          "relies_on_unnamed_sources": true,
+          "supports": [
+            {
+              "source_id": "ap_olsen_resignation_sep29",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "93c2a21d82693aabfc53a27b3cee29650b39f02573accb3392fc1d862a06302c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_olsen_resignation_sep29",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "bebb4ebe274e41a3b109e5cdf71b4692bd7d814635c83b2fe9e55a23d6adfc5e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "washpost_olsen_resignation_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "b9b5a4bf2dfd81772085c84383e5b72275f45bebf1d42f2a3820147c99b48f46",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "f03a7d9c54daef6e2a1535c40741e65974c36d2239a5e3b249e2898dbd12aef4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "washpost_olsen_resignation_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "b9b5a4bf2dfd81772085c84383e5b72275f45bebf1d42f2a3820147c99b48f46",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "ae06f5070943feb83ceac2a936bae318db7807ee9022d65d2bc5dbbde37441c6",
+          "relies_on_unnamed_sources": true,
+          "supports": [
+            {
+              "source_id": "ap_olsen_resignation_sep29",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "93c2a21d82693aabfc53a27b3cee29650b39f02573accb3392fc1d862a06302c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_olsen_resignation_sep29",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "bebb4ebe274e41a3b109e5cdf71b4692bd7d814635c83b2fe9e55a23d6adfc5e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "washpost_olsen_resignation_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "b9b5a4bf2dfd81772085c84383e5b72275f45bebf1d42f2a3820147c99b48f46",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "af542882b604910ff48333833619e6bf2b6918b760b4d274e9ee03eb0d7549dc",
+          "review_note": "Reviewed as the bounded institutional consequence of the sourced lifecycle development; no unmeasured outcome inferred."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "cfdf12ea462e7554354bb5400ae5e41cf595991455c602348364889813ad22d4",
+          "review_note": "Preserved the strongest relevant administration explanation or response and identified concrete tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "6db6c8ec8539320fcc88e9f2649d888ca45508335ec783e1139cca001c751e5a",
+          "review_note": "Separately reviewed the strongest competing frame, material uncertainty and evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Later official confirmation, implementation, litigation, oversight and independently measured outcomes remain unresolved where identified in the entry."
       ]
     }
   ],
