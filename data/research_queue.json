@@ -5393,14 +5393,32 @@
     "title": "Reported departure from DOJ investigation of Trump opponents",
     "first_seen_at": "2026-09-29T03:59:18Z",
     "timestamp_precision": "second",
-    "status": "withheld",
-    "reason": "The consequential personnel claim rested on two unnamed sources, a third source said the lawyer remained at DOJ, and no second independent outlet or operative record resolved the conflict.",
-    "recheck_trigger": "Named-source confirmation, public filing, second independent report or official personnel record.",
+    "status": "published",
+    "reason": "Associated Press and The Washington Post independently corroborated the previously single-outlet resignation report. The departure remains anonymously sourced and Reuters retained a conflicting employment-status account, so the canonical refresh states the evidence status precisely.",
+    "recheck_trigger": "Direct personnel confirmation, official record, named-source explanation, successor announcement, charges, closure or oversight finding.",
     "next_check_at": null,
     "provenance": [
-      "https://www.reuters.com/world/us/ex-white-house-election-official-leaves-doj-probe-trump-foes-sources-say-2026-09-29/"
+      "https://www.reuters.com/world/us/ex-white-house-election-official-leaves-doj-probe-trump-foes-sources-say-2026-09-29/",
+      "https://apnews.com/article/ddc68873796154266b3f09d2b685b0a5",
+      "https://www.washingtonpost.com/national-security/2026/09/28/doj-probe-into-trump-foes-sees-another-prominent-departure/"
     ],
-    "canonical_id": null
+    "canonical_id": "NAT-2026-09-10-007",
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20260928-2359-05",
+        "title": "Reported departure from DOJ investigation of Trump opponents",
+        "first_seen_at": "2026-09-29T03:59:18Z",
+        "timestamp_precision": "second",
+        "status": "withheld",
+        "reason": "The consequential personnel claim rested on two unnamed sources, a third source said the lawyer remained at DOJ, and no second independent outlet or operative record resolved the conflict.",
+        "recheck_trigger": "Named-source confirmation, public filing, second independent report or official personnel record.",
+        "next_check_at": null,
+        "provenance": [
+          "https://www.reuters.com/world/us/ex-white-house-election-official-leaves-doj-probe-trump-foes-sources-say-2026-09-29/"
+        ],
+        "canonical_id": null
+      }
+    ]
   },
   {
     "candidate_id": "QUEUE-20260928-2359-06",
@@ -5415,5 +5433,34 @@
       "https://truthsocial.com/@realDonaldTrump/117352093333913680"
     ],
     "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20260929-0558-01",
+    "title": "State Department launches Western Hemisphere visa-restriction policy and acts against 27 people",
+    "first_seen_at": "2026-09-29T09:58:04Z",
+    "timestamp_precision": "second",
+    "status": "published",
+    "reason": "A durable regional visa policy and immediate target-level restrictions met the threshold; allegations and outcomes remain expressly bounded.",
+    "recheck_trigger": "Official person-level designations, litigation, removals, additions or measured diplomatic and governance effects.",
+    "next_check_at": null,
+    "provenance": [
+      "https://apnews.com/article/7815734706d2e758d14e11ccd8dbd8f3"
+    ],
+    "canonical_id": "NAT-2026-09-28-011"
+  },
+  {
+    "candidate_id": "QUEUE-20260929-0558-02",
+    "title": "Hegseth directs military cyber and intelligence forces to counter foreign election interference",
+    "first_seen_at": "2026-09-29T09:58:04Z",
+    "timestamp_precision": "second",
+    "status": "published",
+    "reason": "The reported memorandum is a formal department-wide foreign-threat directive with independent confirmation and bounded claims.",
+    "recheck_trigger": "Public memorandum, legal guidance, named threat attribution, completed operation, oversight or measured security outcome.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.axios.com/2026/09/28/hegseth-elections-security-order",
+      "https://apnews.com/article/2bfc1417d397db5fda4ad672c0b35ee2"
+    ],
+    "canonical_id": "NAT-2026-09-28-012"
   }
 ]
