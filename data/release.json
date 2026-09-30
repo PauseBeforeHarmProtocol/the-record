@@ -1,37 +1,27 @@
 {
-  "version": "10.107.0",
-  "artifact_mode": "full",
+  "version": "10.107.1",
+  "artifact_mode": "feed-only",
   "research_window": {
-    "from_utc": "2026-09-30T03:57:42Z",
-    "through_utc": "2026-09-30T10:00:48Z",
+    "from_utc": "2026-09-30T10:00:48Z",
+    "through_utc": "2026-09-30T16:06:47Z",
     "precision": "second",
-    "timezone": "America/Indiana/Indianapolis"
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous research coverage begins at the prior exact cutoff. No independently verified national development cleared the publication threshold. One textless video post appeared in the newer source snapshot; this release updates the validated Truth Social fallback and inspection metadata while byte-preserving the 10.107.0 editorial snapshot. Feed and Trump TV inspection times are separate from the research cutoff."
   },
   "release_iso": "2026-09-30",
   "release_human": "September 30, 2026",
-  "checked_at": "2026-09-30 6:00 AM EDT",
-  "previous_version": "10.106.0",
-  "previous_checked_at": "2026-09-29 11:57 PM EDT",
-  "window_started_at": "2026-09-29 11:57 PM EDT",
-  "window_ended_at": "2026-09-30 6:00 AM EDT",
+  "checked_at": "2026-09-30 12:06 PM EDT",
+  "previous_version": "10.107.0",
+  "previous_checked_at": "2026-09-30 6:00 AM EDT",
+  "window_started_at": "2026-09-30 6:00 AM EDT",
+  "window_ended_at": "2026-09-30 12:06 PM EDT",
   "week_start": "2026-09-24",
   "week_end": "2026-09-30",
   "week_label": "September 24–30, 2026",
   "cutoff_start": "2026-07-17",
-  "new_entry_ids": [
-    "NAT-2026-09-29-009",
-    "NAT-2026-09-29-010",
-    "NAT-2026-09-30-001",
-    "NAT-2026-08-31-001"
-  ],
-  "added_entry_ids": [
-    "NAT-2026-09-29-009",
-    "NAT-2026-09-29-010",
-    "NAT-2026-09-30-001"
-  ],
-  "refreshed_entry_ids": [
-    "NAT-2026-08-31-001"
-  ],
+  "new_entry_ids": [],
+  "added_entry_ids": [],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -396,32 +386,32 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Truth Social fallback",
-      "reason": "The validated fallback remained at 36,570 posts. No post newer than September 29 at 8:11:21 PM EDT was located, and the newest image-only post remained inaccessible because its three referenced assets returned HTTP 403; it stays feed-only."
+      "title": "Newly acquired Truth Social video-only post",
+      "reason": "The validated fallback advanced from 36,570 to 36,571 posts. The newest post was published September 30 at 10:55:37 AM EDT and retained no text. Its referenced MP4 returned HTTP 403 with text/html rather than video content, so no footage was watched and no media claim was used; it remains feed-only with an unavailable-media state."
     },
     {
       "title": "Trump TV review",
-      "reason": "The official stream ID and September 29 video-library listings were unchanged. Only page metadata was accessible; direct YouTube retrieval remained blocked, no complete footage, captions or transcript boundary was reviewed, and no qualifying new item was located in the material reviewed."
+      "reason": "The official Trump TV page, live hub, dated video library, remarks and releases pages were rechecked. Stream ID A4gNgHfZ-v4 and the newest September 29 library metadata were unchanged. No complete footage, captions or transcript was retrieved, no broadcast boundary was advanced, and no qualifying new item was located in the material reviewed."
     },
     {
-      "title": "Boasberg contempt-probe appellate argument",
-      "reason": "The material reviewed described oral argument rather than an appellate decision, stay, remand or changed operative order."
+      "title": "Salah Sarsour immigration-court removability ruling",
+      "reason": "Associated Press reported a consequential immigration-judge ruling on foreign-policy grounds, but the nonpublic decision was not available for original-source inspection, an appeal was announced and the destination and protection claims remain unresolved. The lead remains queued."
     },
     {
-      "title": "TSA checkpoint seating directive",
-      "reason": "Reporting described a nationwide instruction barring officers from sitting during routine identification checks. No primary directive or material security finding was located, and the workforce rule did not clear the archive's national-impact threshold in this run."
+      "title": "Reported provider response to Housing First funding shift",
+      "reason": "Associated Press documented scrapped, constrained or contemplated local provider changes. The inspected evidence did not establish a nationwide implementation ledger, completed displacement count or measured causal outcome; the underlying appellate stay remains recorded in NAT-2026-09-16-006."
     },
     {
-      "title": "White House press-access extension request",
-      "reason": "The filing sought continuation of an injunction but no new court ruling had issued by cutoff."
+      "title": "Big Bend National Park project adjustments under consideration",
+      "reason": "Government court filings said CBP was actively considering adjustments and expected a final decision in early October. No selected plan, changed contract, resumed ground-disturbing work or operative court ruling existed by cutoff."
     },
     {
-      "title": "Diesel-export and Korea investment deliberations",
-      "reason": "The reviewed reports described prospective decisions, internal deliberations or unnamed-source expectations. No signed instrument, final announcement or implemented action existed by cutoff."
+      "title": "Other national leads",
+      "reason": "Trade-court oral argument, diesel and Iran deliberations, a later-scheduled South Korea investment announcement and routine enforcement cases did not establish a new completed ruling, signed instrument, implemented action or measured outcome by the exact cutoff."
     },
     {
       "title": "External archive measurements",
-      "reason": "Trump Archive remained at its prior verified 14,384 items, including 11,906 Truth Social posts and 1,836 speeches/transcripts, and UndoTrump remained at 1,264 actions. Immigration Policy Tracking exposed inconsistent 1,796 and 1,799 counts across its own pages, and Record47 remained unavailable or inconsistent; prior measurements were preserved. Unlike units remain separate."
+      "reason": "The four registered primary project pages were checked as discovery inputs. Trump Archive displayed 14,409 total items, including 11,913 Truth Social posts and 1,851 speeches/transcripts; UndoTrump displayed 1,264 actions; Immigration Policy Tracking displayed 1,796 policy actions. Record47's rendered page exposed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts but did not expose a stable entry total in the inspected text. Unlike units remain separate, no external item was promoted automatically, and the feed-only no-op rule preserves the 10.107.0 registry snapshot for a later full release."
     },
     {
       "title": "Legacy-quality queue",
@@ -429,14 +419,33 @@
     }
   ],
   "corrections": [],
+  "editorial_snapshot": {
+    "version": "10.107.0",
+    "complete_pack": {
+      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-09-30_v10.107.0.zip",
+      "sha256": "a45f6454266812517b3337cb814b868789e31694ef3310f2e195786b63305683"
+    },
+    "national_pack": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-09-30_v10.107.0.zip",
+      "sha256": "0c3820779f7b49e10caf5420a233dd19b5c00268ee8374fda6078e0f9ad5f919"
+    },
+    "national_brief": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-09-30_v10.107.0.md",
+      "sha256": "b8caf7cdd26ab621610684784bc11f74812d443506010dee360b88d1e3e1444a"
+    },
+    "in6_brief": {
+      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-09-30_v10.107.0.md",
+      "sha256": "7e4d8f9405e161b401ee309e19c019aea8db56ae063b91c435c46f57fdec0015"
+    }
+  },
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-09-30T10:06:30Z",
-    "checked_at_eastern": "2026-09-30 6:06:30 AM EDT",
+    "checked_at": "2026-09-30T16:10:00Z",
+    "checked_at_eastern": "2026-09-30 12:10:00 PM EDT",
     "inspection_status": "partial_metadata_followup",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-09-30T10:06:30Z",
+    "last_successful_page_inspection_at": "2026-09-30T16:10:00Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -445,16 +454,17 @@
       "https://www.whitehouse.gov/live/",
       "https://www.whitehouse.gov/videos/",
       "https://www.whitehouse.gov/remarks/",
+      "https://www.whitehouse.gov/releases/",
       "https://www.youtube.com/watch?v=qyJL5gKhajE"
     ],
-    "summary": "Rechecked the official Trump TV page, live hub, dated video library and remarks index. Stream ID A4gNgHfZ-v4 remained discoverable, while the library still ended with the same September 29 America.gov replay, Vance fireside chat, Trump remarks, Super Intelligence clip, America.gov short and Presidents Cup clip. No September 30 video or newer remarks transcript appeared. Direct YouTube retrieval remained blocked; only titles, durations, dates and IDs were inspected, no complete footage, captions or transcript was retrieved, and no broadcast boundary was advanced. No qualifying new item was located in the material reviewed.",
+    "summary": "Rechecked the official Trump TV page, live hub, dated video library, remarks index and releases index. Stream ID A4gNgHfZ-v4 remained discoverable, while the library still ended with the same September 29 America.gov replay, Vance fireside chat, Trump remarks, Super Intelligence clip, America.gov short and Presidents Cup clip. No September 30 video, newer remarks transcript or qualifying release appeared. Only page metadata was inspected; no complete footage, captions or transcript was retrieved, no broadcast boundary was advanced, and no qualifying new item was located in the material reviewed.",
     "items": [
       {
         "url": "https://www.whitehouse.gov/trumptv/",
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-09-30T10:06:30Z",
+        "observed_at": "2026-09-30T16:10:00Z",
         "format": "official stream page; live/replay state not independently verified",
         "inspection": "Page metadata exposed YouTube video ID A4gNgHfZ-v4. Footage was not retrieved and interface text was not treated as proof of continuous status."
       },
@@ -463,7 +473,7 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-09-30T10:06:30Z",
+        "observed_at": "2026-09-30T16:10:00Z",
         "format": "official live-hub page; live/replay state not independently verified",
         "inspection": "The hub linked the same Trump TV stream ID A4gNgHfZ-v4 and displayed fallback status text. The text was not treated as proof that the stream was offline, and direct footage was not retrieved."
       },
@@ -472,7 +482,7 @@
         "posted_date": "2026-09-29",
         "original_event_date": "2026-09-29",
         "broadcast_time": null,
-        "observed_at": "2026-09-30T10:06:30Z",
+        "observed_at": "2026-09-30T16:10:00Z",
         "format": "dated video-library index",
         "inspection": "The newest metadata remained the same September 29 America.gov replay, Vance fireside chat, Trump remarks, Super Intelligence clip, America.gov short and Presidents Cup clip. No September 30 listing appeared; complete footage and captions were not retrieved."
       },
@@ -481,9 +491,18 @@
         "posted_date": "2026-09-28",
         "original_event_date": "2026-09-28",
         "broadcast_time": null,
-        "observed_at": "2026-09-30T10:06:30Z",
+        "observed_at": "2026-09-30T16:10:00Z",
         "format": "supplementary remarks index",
         "inspection": "The newest accessible remarks listing remained September 28; no September 29 or September 30 complete transcript was retrieved."
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "posted_date": "2026-09-29",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-09-30T16:10:00Z",
+        "format": "supplementary official releases index",
+        "inspection": "The accessible index showed no qualifying September 30 release by cutoff; it was used as a lead source and not assumed to be a complete transcript feed."
       }
     ],
     "gaps": [
@@ -493,26 +512,26 @@
       "Remarks and presidential-action listings are supplementary sources, not assumed complete transcript feeds.",
       "No verified channel budget, contract, staffing allocation or shared funding with the separate government-paid advertising contract was located."
     ],
-    "previous_page_inspection_at": "2026-09-30T04:01:41Z"
+    "previous_page_inspection_at": "2026-09-30T10:06:30Z"
   },
   "truth_social_inspection": {
     "scope": "1000 retained fallback posts; current content hashes only",
     "counts": {
       "text_status": {
         "not_recorded": 137,
-        "pending": 968,
-        "reviewed": 288
+        "pending": 969,
+        "reviewed": 289
       },
       "media_status": {
         "not_applicable": 692,
         "not_recorded": 19,
-        "pending": 438,
+        "pending": 439,
         "reviewed": 30,
-        "unavailable": 214
+        "unavailable": 215
       }
     },
-    "new_posts": 0,
+    "new_posts": 1,
     "new_media_reviewed": 0,
-    "new_media_unavailable": 0
+    "new_media_unavailable": 1
   }
 }
