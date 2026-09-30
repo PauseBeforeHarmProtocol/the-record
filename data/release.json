@@ -1,40 +1,40 @@
 {
-  "version": "10.105.0",
+  "version": "10.106.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-29T15:56:26Z",
-    "through_utc": "2026-09-29T21:56:50Z",
+    "from_utc": "2026-09-29T21:56:50Z",
+    "through_utc": "2026-09-30T03:57:42Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis"
   },
   "release_iso": "2026-09-29",
   "release_human": "September 29, 2026",
-  "checked_at": "2026-09-29 5:56 PM EDT",
-  "previous_version": "10.104.0",
-  "previous_checked_at": "2026-09-29 11:56 AM EDT",
-  "window_started_at": "2026-09-29 11:56 AM EDT",
-  "window_ended_at": "2026-09-29 5:56 PM EDT",
+  "checked_at": "2026-09-29 11:57 PM EDT",
+  "previous_version": "10.105.0",
+  "previous_checked_at": "2026-09-29 5:56 PM EDT",
+  "window_started_at": "2026-09-29 5:56 PM EDT",
+  "window_ended_at": "2026-09-29 11:57 PM EDT",
   "week_start": "2026-09-23",
   "week_end": "2026-09-29",
   "week_label": "September 23–29, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-29-002",
-    "NAT-2026-09-29-003",
-    "NAT-2026-09-29-004",
-    "NAT-2026-09-23-004",
-    "NAT-2026-09-24-002",
-    "NAT-2026-09-25-009"
-  ],
-  "added_entry_ids": [
-    "NAT-2026-09-29-002",
-    "NAT-2026-09-29-003",
+    "NAT-2026-09-29-005",
+    "NAT-2026-09-29-006",
+    "NAT-2026-09-29-007",
+    "NAT-2026-09-29-008",
+    "NAT-2026-09-03-003",
     "NAT-2026-09-29-004"
   ],
+  "added_entry_ids": [
+    "NAT-2026-09-29-005",
+    "NAT-2026-09-29-006",
+    "NAT-2026-09-29-007",
+    "NAT-2026-09-29-008"
+  ],
   "refreshed_entry_ids": [
-    "NAT-2026-09-23-004",
-    "NAT-2026-09-24-002",
-    "NAT-2026-09-25-009"
+    "NAT-2026-09-03-003",
+    "NAT-2026-09-29-004"
   ],
   "dedupe_resolutions": [
     {
@@ -377,23 +377,23 @@
   "rejected_candidates": [
     {
       "title": "Truth Social fallback",
-      "reason": "Three posts were added. Two were image-only and all three image assets returned HTTP 403; the text post linked an unverified Strait of Hormuz assertion. No inaccessible-media claim or independently unverified assertion was used, and all three remain feed-only."
+      "reason": "One image-only post was added. All three referenced image assets returned HTTP 403 with text/html rather than image content. No inaccessible-media claim was used, and the post remains feed-only."
     },
     {
       "title": "Trump TV review",
-      "reason": "The official Trump TV and live-hub video IDs were unchanged, while the dated video library and remarks index still ended with September 28 material. Only accessible page metadata was inspected; no complete footage, captions or transcript boundary was reviewed. No qualifying new item was located in the broadcast material reviewed."
+      "reason": "The dated video library exposed new September 29 listings, including a long America.gov replay, routine remarks and short clips. Only page metadata was accessible; direct YouTube retrieval was blocked, no complete footage, captions or transcript boundary was reviewed, and no qualifying new item was located in the material reviewed."
     },
     {
-      "title": "European diesel drawdown request",
-      "reason": "The reported White House request and voluntary export alternatives rested on unnamed sources; no public directive, final agreement or second independent confirmation was obtained."
+      "title": "Boasberg contempt-probe appellate argument",
+      "reason": "The material reviewed described oral argument rather than an appellate decision, stay, remand or changed operative order."
     },
     {
-      "title": "DOJ investigation staffing report",
-      "reason": "The reported departure remained source-dependent and did not establish a completed investigative disposition; a confirmed evolution belongs in the existing canonical investigation record."
+      "title": "Iran statements and campaign appearances",
+      "reason": "The reviewed rhetoric and travel did not establish a new signed, ordered, implemented or adjudicated national action."
     },
     {
-      "title": "Campaign travel, Jack Smith testimony and Cuba rhetoric",
-      "reason": "The reviewed material did not establish a new operative administration action, adjudicated finding or implemented policy change."
+      "title": "White House press-access extension request",
+      "reason": "The filing sought continuation of an injunction but no new court ruling had issued by cutoff."
     },
     {
       "title": "External archive measurements",
@@ -408,11 +408,11 @@
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance). AI output is not treated as evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-09-29T22:03:00Z",
-    "checked_at_eastern": "2026-09-29 6:03:00 PM EDT",
+    "checked_at": "2026-09-30T04:01:41Z",
+    "checked_at_eastern": "2026-09-30 12:01:41 AM EDT",
     "inspection_status": "partial_metadata_followup",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-09-29T22:03:00Z",
+    "last_successful_page_inspection_at": "2026-09-30T04:01:41Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -424,14 +424,14 @@
       "https://www.whitehouse.gov/presidential-actions/",
       "https://www.youtube.com/watch?v=qyJL5gKhajE"
     ],
-    "summary": "Rechecked the official Trump TV page, live hub, dated video library, remarks and presidential-actions index. Trump TV stream ID A4gNgHfZ-v4 and live-hub embed qyJL5gKhajE remained discoverable. The dated video library and remarks index still ended with September 28 material. Only page titles, dates and video IDs were inspected; no complete footage, captions or transcript was retrieved, and no broadcast boundary was advanced. The two signed orders were reviewed from their official texts, not inferred from a broadcast. No qualifying new item was located in the accessible broadcast material reviewed.",
+    "summary": "Rechecked the official Trump TV page, live hub, dated video library and remarks index. Stream ID A4gNgHfZ-v4 and live-hub/replay ID qyJL5gKhajE remained discoverable. The library added September 29 metadata for the America.gov replay, a Vance fireside chat, Trump remarks, a Super Intelligence clip, an America.gov short and a Presidents Cup clip. Direct YouTube access was blocked by an automated-traffic page; only titles, durations, dates and IDs were inspected, no complete footage, captions or transcript was retrieved, and no broadcast boundary was advanced. The America.gov and Super Intelligence material duplicated already catalogued events. No qualifying new item was located in the material reviewed.",
     "items": [
       {
         "url": "https://www.whitehouse.gov/trumptv/",
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-09-29T22:03:00Z",
+        "observed_at": "2026-09-30T04:01:41Z",
         "format": "official stream page; live/replay state not independently verified",
         "inspection": "Page metadata exposed YouTube video ID A4gNgHfZ-v4. Footage was not retrieved and interface text was not treated as proof of continuous status."
       },
@@ -440,65 +440,65 @@
         "posted_date": "2026-09-29",
         "original_event_date": "2026-09-29",
         "broadcast_time": null,
-        "observed_at": "2026-09-29T22:03:00Z",
-        "format": "official live-hub listing; footage and captions unreviewed",
-        "inspection": "The hub continued to expose embedded video ID qyJL5gKhajE. The observed listing is metadata, not a claim of continuous monitoring."
+        "observed_at": "2026-09-30T04:01:41Z",
+        "format": "official live-hub listing and replay metadata; footage and captions unreviewed",
+        "inspection": "The hub and library exposed video ID qyJL5gKhajE as an 8:38:21 America.gov replay. Direct retrieval was blocked, and the listing was deduplicated from the already catalogued America.gov action."
       },
       {
         "url": "https://www.whitehouse.gov/videos/",
-        "posted_date": "2026-09-28",
-        "original_event_date": "2026-09-28",
+        "posted_date": "2026-09-29",
+        "original_event_date": "2026-09-29",
         "broadcast_time": null,
-        "observed_at": "2026-09-29T22:03:00Z",
+        "observed_at": "2026-09-30T04:01:41Z",
         "format": "dated video-library index",
-        "inspection": "The newest accessible library listings remained September 28 items; no September 29 archive page was located."
+        "inspection": "Metadata listed the America.gov replay, a Vance fireside chat, Trump remarks, a Super Intelligence clip, an America.gov short and a Presidents Cup clip. Complete footage and captions were not retrieved."
       },
       {
         "url": "https://www.whitehouse.gov/remarks/",
         "posted_date": "2026-09-28",
         "original_event_date": "2026-09-28",
         "broadcast_time": null,
-        "observed_at": "2026-09-29T22:03:00Z",
+        "observed_at": "2026-09-30T04:01:41Z",
         "format": "supplementary remarks index",
-        "inspection": "The newest accessible listing remained September 28; no complete transcript was retrieved."
+        "inspection": "The newest accessible transcript listing remained September 28; no September 29 complete transcript was retrieved."
       },
       {
         "url": "https://www.whitehouse.gov/presidential-actions/",
         "posted_date": "2026-09-29",
         "original_event_date": "2026-09-29",
         "broadcast_time": null,
-        "observed_at": "2026-09-29T22:03:00Z",
+        "observed_at": "2026-09-30T04:01:41Z",
         "format": "supplementary official instruments index",
         "inspection": "The signed pest-control and Super Intelligence orders were inspected as primary written instruments rather than as broadcast transcripts."
       }
     ],
     "gaps": [
-      "No complete Trump TV recording, captions or transcript was retrieved; no minute-by-minute or continuous broadcast coverage is claimed.",
+      "No complete Trump TV recording, captions or transcript was retrieved; direct YouTube access returned an automated-traffic block and no minute-by-minute or continuous coverage is claimed.",
       "Broadcast coverage boundary remains unknown; later checks must revisit inaccessible material and rediscover current official stream and clip IDs.",
       "Exact broadcast and upload times were not verified.",
       "Remarks and presidential-action listings are supplementary sources, not assumed complete transcript feeds.",
       "No verified channel budget, contract, staffing allocation or shared funding with the separate government-paid advertising contract was located."
     ],
-    "previous_page_inspection_at": "2026-09-29T16:00:00Z"
+    "previous_page_inspection_at": "2026-09-29T22:03:00Z"
   },
   "truth_social_inspection": {
     "scope": "1000 retained fallback posts; current content hashes only",
     "counts": {
       "text_status": {
         "not_recorded": 137,
-        "pending": 969,
-        "reviewed": 287
+        "pending": 968,
+        "reviewed": 288
       },
       "media_status": {
         "not_applicable": 692,
         "not_recorded": 19,
-        "pending": 439,
+        "pending": 438,
         "reviewed": 30,
-        "unavailable": 213
+        "unavailable": 214
       }
     },
-    "new_posts": 3,
+    "new_posts": 1,
     "new_media_reviewed": 0,
-    "new_media_unavailable": 2
+    "new_media_unavailable": 1
   }
 }
