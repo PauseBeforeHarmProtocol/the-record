@@ -1,11 +1,11 @@
 {
   "schema_version": 3,
-  "editorial_checked_at": "2026-09-30 12:06 PM EDT",
-  "quality_inputs_updated_at": "2026-09-29T10:04:38.986658Z",
-  "external_registry_checked_at": "2026-09-29T10:04:38.986658Z",
+  "editorial_checked_at": "2026-09-30 6:04 PM EDT",
+  "quality_inputs_updated_at": "2026-09-30T22:18:00Z",
+  "external_registry_checked_at": "2026-09-30T22:18:00Z",
   "federation_last_modified_at": "2026-08-25T14:40:23Z",
   "legacy_revisions_through": "2026-09-28",
-  "release_version": "10.107.1",
+  "release_version": "10.108.0",
   "canonical_files": {
     "legacy": "data/legacy_entries.json",
     "current": "data/current_entries.json",
@@ -18,26 +18,26 @@
   },
   "canonical_sha256": {
     "legacy": "1fc95448b4e01846c5208034c3b112bd6c636fa1f4b5f02ac4c56361013bbd5b",
-    "current": "c839d35b783d4986b443b5c78d3d6eb2c363f24d375c6f8b1647c46f31024c6a",
-    "source_ledger": "1e9e3dad349cb8bb81f252048e8645593c9433a2bfc8927116dfda30872bbb4a",
+    "current": "bc98faf410b6414803aeccf3c7b9558fd19a34854ef3e26d73172e6aaf72954c",
+    "source_ledger": "867ddb35878f75158abb128a9b43a6a1818588ba481a598ac8c611be22da35a4",
     "federated": "4c2b2804949098a9b0a314b3f0ed44e74fc8ccb688ab84741922dd30fa1083f3",
     "legacy_revisions": "ad462416756f0f2d29691947334e41a6714b78dc7011c2db2284365a03547c87",
-    "archive_registry": "7ad3e2bdcce91b6a8430da1c3f81a3031248c724f8cddece057f4941b4d1d4d4",
-    "editorial_state": "21aa774ae1523c9976cc589efa583422f51fb1e73128b3e233202e77927d27d8",
-    "truth_social_reviews": "70dd985230b2abb7c857ee983b3a84349bf86259ee70209275de55310bd079eb"
+    "archive_registry": "cda185377282811711227956610815edebdc24c6e32f541c45983103171ebf9b",
+    "editorial_state": "ff459e0885d75245a6339552407c8d161b96571616d4ffee965db3b77a2b8004",
+    "truth_social_reviews": "dfac989fbb584ae41c045058b88a24e77c14da1629514a50c4d6d1920f120beb"
   },
   "totals": {
     "canonical_legacy_rows": 4742,
     "canonical_legacy_entries": 4731,
     "active_legacy_entries": 4731,
     "superseded_legacy_tombstones": 11,
-    "bridged_national_entries": 314,
-    "full_archive_runtime_entries": 5045,
-    "current_layer_entries": 318,
+    "bridged_national_entries": 318,
+    "full_archive_runtime_entries": 5049,
+    "current_layer_entries": 322,
     "legacy_source_references": 6714,
-    "current_source_references": 907,
-    "full_archive_runtime_source_references": 7613,
-    "full_archive_runtime_unique_urls": 6219
+    "current_source_references": 919,
+    "full_archive_runtime_source_references": 7625,
+    "full_archive_runtime_unique_urls": 6231
   },
   "coverage": {
     "legacy_last_date": "2026-08-01",
@@ -420,34 +420,34 @@
     }
   },
   "current": {
-    "entries": 318,
-    "national_entries": 314,
+    "entries": 322,
+    "national_entries": 318,
     "in6_entries": 4,
-    "source_references": 907,
-    "national_source_references": 899,
-    "source_ledger_rows": 916,
-    "used_source_ledger_rows": 900,
+    "source_references": 919,
+    "national_source_references": 911,
+    "source_ledger_rows": 928,
+    "used_source_ledger_rows": 912,
     "unused_source_ledger_rows": 16,
     "entries_with_one_source": 93,
-    "entries_with_one_source_percent": 29.2,
+    "entries_with_one_source_percent": 28.9,
     "national_entries_with_one_source": 91,
-    "national_entries_with_one_source_percent": 29.0,
-    "maybe_therefore_present": 318,
+    "national_entries_with_one_source_percent": 28.6,
+    "maybe_therefore_present": 322,
     "maybe_therefore_missing": 0,
     "review_states": {
       "corrected": 1,
-      "current-standard-reviewed": 317
+      "current-standard-reviewed": 321
     },
-    "current_standard_reviewed": 318,
+    "current_standard_reviewed": 322,
     "current_standard_pending": 0,
     "most_used_publishers": [
       {
         "publisher": "Reuters",
-        "references": 283
+        "references": 287
       },
       {
         "publisher": "Associated Press",
-        "references": 147
+        "references": 150
       },
       {
         "publisher": "The White House",
@@ -455,7 +455,7 @@
       },
       {
         "publisher": "U.S. Department of Justice",
-        "references": 22
+        "references": 23
       },
       {
         "publisher": "Federal Register",
@@ -484,19 +484,19 @@
     ]
   },
   "review_traceability": {
-    "current_entries_with_content_bound_review": 194,
+    "current_entries_with_content_bound_review": 198,
     "current_entries_with_prior_status_only": 124,
-    "material_development_records": 392,
+    "material_development_records": 396,
     "retained_posts": 1000,
     "retained_post_text_states": {
       "not_recorded": 136,
-      "pending": 575,
-      "reviewed": 289
+      "pending": 571,
+      "reviewed": 293
     },
     "retained_post_media_states": {
-      "not_applicable": 459,
+      "not_applicable": 463,
       "not_recorded": 19,
-      "pending": 278,
+      "pending": 274,
       "reviewed": 30,
       "unavailable": 214
     },
