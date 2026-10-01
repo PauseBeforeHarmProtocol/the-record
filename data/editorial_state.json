@@ -5053,6 +5053,54 @@
       "provenance_path": "data/editorial_change_notes/10.110.0.json",
       "provenance_sha256": "07c3f40d11c279e4cfc167b14cd4313f1f26afd13034d54461e1f78220d09d82",
       "note": "Evidence status, strongest response, uncertainty and duplicate disposition were reviewed as a single bounded change."
+    },
+    {
+      "change_id": "10.111.0:NAT-2026-08-19-003",
+      "entry_id": "NAT-2026-08-19-003",
+      "as_of_utc": "2026-10-01T16:04:13Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.111.0",
+      "summary": "IRS proposed refundable-credit eligibility limits and published draft filer-status questions, with neither instrument final.",
+      "provenance_path": "data/editorial_change_notes/10.111.0.json",
+      "provenance_sha256": "cf631cb93154a55581785e2d1a772f1495caeff86dec010a7677e26d6ef1a277",
+      "note": "Evidence status, strongest response, uncertainty and duplicate disposition were reviewed as a single bounded change."
+    },
+    {
+      "change_id": "10.111.0:NAT-2026-10-01-001",
+      "entry_id": "NAT-2026-10-01-001",
+      "as_of_utc": "2026-10-01T16:04:13Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.111.0",
+      "summary": "A D.C. judge dismissed the Reflecting Pool prosecution with prejudice after contrary repair evidence emerged.",
+      "provenance_path": "data/editorial_change_notes/10.111.0.json",
+      "provenance_sha256": "cf631cb93154a55581785e2d1a772f1495caeff86dec010a7677e26d6ef1a277",
+      "note": "Evidence status, strongest response, uncertainty and duplicate disposition were reviewed as a single bounded change."
+    },
+    {
+      "change_id": "10.111.0:NAT-2026-09-10-005",
+      "entry_id": "NAT-2026-09-10-005",
+      "as_of_utc": "2026-10-01T16:04:13Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.111.0",
+      "summary": "The Supreme Court granted certiorari to review the Fourth Circuit immigration bond-hearing ruling.",
+      "provenance_path": "data/editorial_change_notes/10.111.0.json",
+      "provenance_sha256": "cf631cb93154a55581785e2d1a772f1495caeff86dec010a7677e26d6ef1a277",
+      "note": "Evidence status, strongest response, uncertainty and duplicate disposition were reviewed as a single bounded change."
+    },
+    {
+      "change_id": "10.111.0:NAT-2026-09-15-003",
+      "entry_id": "NAT-2026-09-15-003",
+      "as_of_utc": "2026-10-01T16:04:13Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.111.0",
+      "summary": "New records-based reporting bounded federal noncitizen-voting investigations and charges against state examples and measured outcomes.",
+      "provenance_path": "data/editorial_change_notes/10.111.0.json",
+      "provenance_sha256": "cf631cb93154a55581785e2d1a772f1495caeff86dec010a7677e26d6ef1a277",
+      "note": "Evidence status, strongest response, uncertainty and duplicate disposition were reviewed as a single bounded change."
     }
   ],
   "reviews": [
@@ -56205,6 +56253,641 @@
         {
           "field": "maybe_therefore",
           "text_sha256": "4ad08e82dbe7ac3bc2ff84408727f6106d2a47b077c37d19f2c3fe16154e9598",
+          "review_note": "Separately reviewed the strongest competing frame, material uncertainty and evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation, enforcement, final accounting and independently measured outcomes remain unresolved where identified in the entry."
+      ]
+    },
+    {
+      "review_id": "10.111.0:NAT-2026-08-19-003:af94ff2f3250",
+      "entry_id": "NAT-2026-08-19-003",
+      "content_sha256": "af94ff2f32504309d32a6dc176960f4766551c371c6181a7df88742a8cc20596",
+      "reviewed_at": "2026-10-01T16:14:39Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "cf4d3426044f4cf678927d45450a6e8afe7d2285f352e2d788b3105b028d4c0b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "irs_reg119882_25_sep14",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "d23c56b6718b8742c35883a57c5b8a6f885f33571fd28b02d792f17365e51c3a",
+              "origin_group": "Internal Revenue Service",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "treasury_refundable_credits_aug19",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "7eb8829cd8a117dd9f9afed8e2e724c4d23efc80128954ab4d67149a051cec6b",
+              "origin_group": "Department of the Treasury",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "74501d38f2119eb558a398bd4c4107bf9aad960a7453507227aba79cfb263f2c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "irs_form1040_draft_sep17",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "e044e765ace334c76bda7910bd3193fc813c7789d06340124359b885c98d58d0",
+              "origin_group": "Internal Revenue Service",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "1109a5a09e502af58c68f130f62c38a765b4d0cfc549d6cee0e80481e56e7854",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "irs_schedule3a_draft_jun24",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "787e1ae1eaa3e23a184074d0f437f6b2a8fe3f01290f366201f14eeecc82b8db",
+              "origin_group": "Internal Revenue Service",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "889457ae05431e82e6cccd4d9f8cb88ada15eacc30b1202017abd1b49e9e41c3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "irs_form1040_draft_sep17",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "e044e765ace334c76bda7910bd3193fc813c7789d06340124359b885c98d58d0",
+              "origin_group": "Internal Revenue Service",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "irs_schedule3a_draft_jun24",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "787e1ae1eaa3e23a184074d0f437f6b2a8fe3f01290f366201f14eeecc82b8db",
+              "origin_group": "Internal Revenue Service",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "4b1484020e9fe441b1f1f1d2b6348091e57b76a9d0d393e83dbeef3840810e78",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_refundable_credits_aug19",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "7eb8829cd8a117dd9f9afed8e2e724c4d23efc80128954ab4d67149a051cec6b",
+              "origin_group": "Department of the Treasury",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_irs_citizenship_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "f71c486a364c732d11a92b48d44ce9573d0e691ecbaab682fc0a30953672e7bd",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "200d459e8adb8012cdd1c319443d4abfb4363358307cae4d630131990c34e8ee",
+          "review_note": "Reviewed as a bounded institutional or measured consequence; no unmeasured outcome inferred."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "be4711b2979a0b7bc55559e45cc3c9a5eef8214f50a2e6a88865bc40796ed902",
+          "review_note": "Preserved the strongest relevant administration explanation or response and identified concrete tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "8779aaf35662c7d6951a6c091aaa3d8693544aca50a798f3332d4773dd2dfb9f",
+          "review_note": "Separately reviewed the strongest competing frame, material uncertainty and evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation, enforcement, final accounting and independently measured outcomes remain unresolved where identified in the entry."
+      ]
+    },
+    {
+      "review_id": "10.111.0:NAT-2026-10-01-001:033c4c179d16",
+      "entry_id": "NAT-2026-10-01-001",
+      "content_sha256": "033c4c179d16985f17eb5835989bca456fce03254e5a8299da3538dbe5561dce",
+      "reviewed_at": "2026-10-01T16:14:39Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "ab295a1d9ea14b152879ccd6ffb4b26a07154fabde8bfffc2d88f38bc0aa5142",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_hearn_dismissal_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "7c42e88dea4002da73c1f6b797f40afeded088428a7440a57c158c846bda6c66",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "wapo_hearn_order_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "4f8ae5da4f747cb46f273d5918be2d0dfbd79d9589364d52b34f0a65ca521853",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "f5a6e2c19792c524dd6d4590fedd15a3f596ba4189c682314c607b427310e2c8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_hearn_dismissal_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "7c42e88dea4002da73c1f6b797f40afeded088428a7440a57c158c846bda6c66",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "wapo_hearn_order_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "4f8ae5da4f747cb46f273d5918be2d0dfbd79d9589364d52b34f0a65ca521853",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "a2ce1fa8d92c50f78c7a9d622084a17150d386e5601d9d3afb05fca637708083",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_hearn_dismissal_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "7c42e88dea4002da73c1f6b797f40afeded088428a7440a57c158c846bda6c66",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "wapo_hearn_order_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "4f8ae5da4f747cb46f273d5918be2d0dfbd79d9589364d52b34f0a65ca521853",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "bb25462a52953b93c3369989564a97ff0c83f570677af5c7161c17ca04a46d08",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_hearn_dismissal_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "7c42e88dea4002da73c1f6b797f40afeded088428a7440a57c158c846bda6c66",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "wapo_hearn_order_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "4f8ae5da4f747cb46f273d5918be2d0dfbd79d9589364d52b34f0a65ca521853",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "6d83cfc5a7469594e342fb75459712f41b9e0bfd751e5be0828e725925003018",
+          "review_note": "Reviewed as a bounded institutional or measured consequence; no unmeasured outcome inferred."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "78eecc7cdd6120f18f485e20d1c07154119e613a8f08dbc01f2ceaf2a2294eca",
+          "review_note": "Preserved the strongest relevant administration explanation or response and identified concrete tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "54735f53eb1e96ee198c3f65e63d91c34ccad7b27fa782113ef5038789bab538",
+          "review_note": "Separately reviewed the strongest competing frame, material uncertainty and evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation, enforcement, final accounting and independently measured outcomes remain unresolved where identified in the entry."
+      ]
+    },
+    {
+      "review_id": "10.111.0:NAT-2026-09-10-005:9cf4307c4488",
+      "entry_id": "NAT-2026-09-10-005",
+      "content_sha256": "9cf4307c4488ba4bef80c4106bff23c443f51830c6a32cebd6b0a85d44fbf29f",
+      "reviewed_at": "2026-10-01T16:14:39Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "a6f98c85f4e51dd9bb918f225703724c2e6ff392433d809afe87f8acdca2a86f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca4_bond_lopez_rivera_sep10",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "455c2d97078cb47980b32629c53cf4466a0b05d294259c9ec18de183715e3393",
+              "origin_group": "U.S. Court of Appeals for the Fourth Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "423c8a9221c8bff1449414014fa2772179571f9423707ab79046e0b9fe550de9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca4_bond_lopez_rivera_sep10",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "455c2d97078cb47980b32629c53cf4466a0b05d294259c9ec18de183715e3393",
+              "origin_group": "U.S. Court of Appeals for the Fourth Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "859d27aa307c080ccd020ca3a72ed1d33a661b8b9ab48f577848ad83d1cda290",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca4_bond_lopez_rivera_sep10",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "455c2d97078cb47980b32629c53cf4466a0b05d294259c9ec18de183715e3393",
+              "origin_group": "U.S. Court of Appeals for the Fourth Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "4e04693eb2e3b500d57619c6ec4c6ae9b1fc8b22b3cb19439f7669a65a44403d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca4_bond_lopez_rivera_sep10",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "455c2d97078cb47980b32629c53cf4466a0b05d294259c9ec18de183715e3393",
+              "origin_group": "U.S. Court of Appeals for the Fourth Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "2510131f57312f42d33061ef5edcbca893243027be9afc867a6690ee2de9a7c0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_rhoney_cert_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "3ad9e1dddfeb247013f3ce74aee80471b2d1e28039e5803f5f565cb8d59fa214",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_scotus_bond_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "1453b756c345983e0e2c89e84d91118d9da84688ec5238a0ac05a470472f0c42",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "54f71b4715e6540a92bbb64123e89bbf0ba9cab41f63806401ff8a61fd88d328",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_rhoney_cert_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "3ad9e1dddfeb247013f3ce74aee80471b2d1e28039e5803f5f565cb8d59fa214",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_scotus_bond_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "1453b756c345983e0e2c89e84d91118d9da84688ec5238a0ac05a470472f0c42",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "06352ef2bd6633eb156a233bff0e7aa87db2f21f51d69909c89b6fbe63d34922",
+          "review_note": "Reviewed as a bounded institutional or measured consequence; no unmeasured outcome inferred."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "8f722fe2113d48250f3f07bf75b2bcb47ca35582b0db3437cdf982692a2e9dba",
+          "review_note": "Preserved the strongest relevant administration explanation or response and identified concrete tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "faa4557ea1b9f1ffbb5e224ff9a582022c04afbc7e53c26f88681af56562b51c",
+          "review_note": "Separately reviewed the strongest competing frame, material uncertainty and evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, litigation, enforcement, final accounting and independently measured outcomes remain unresolved where identified in the entry."
+      ]
+    },
+    {
+      "review_id": "10.111.0:NAT-2026-09-15-003:5c7f8c2c4bd0",
+      "entry_id": "NAT-2026-09-15-003",
+      "content_sha256": "5c7f8c2c4bd0ab51848855a5c8b09dd9352cbe094d1004f5bd4a6b8d3cd58fb5",
+      "reviewed_at": "2026-10-01T16:14:39Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "fdc6d9d3965c1cc37b99262c04383d8dcef7c6c7f0e8a10138f3ac0ff0093308",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "140ae3f19a842a9e665c31e7b8e0e622486c949ff4dce3d3b6093291e34f17d4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "51ad3ea6bddddd50579ddf1acd0404c4980668a75363999d4f271e773ae46c07",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "64fb09c949575bf258f413500c13b5e4d3a564fc34dfa6fc909fa13f70b8a06e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "94a7b85f51eac85fb3370c49ed0611898fd59e94ab9cb2bb3cb202e692910d66",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "7aa10f9e36fbd390a438d71667232f2f6f65211ff708b7b5138221dff0dba6b8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_state_registration_errors_sep23",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "dbfc45687ac84a6a6c91119f76697cee90fcce93c72dafc82135c9eeb100c963",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "ca98b9e248de595569607cc85854183473af71281a86959ad78005db75dad7d1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_state_registration_errors_sep23",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "dbfc45687ac84a6a6c91119f76697cee90fcce93c72dafc82135c9eeb100c963",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "8cab4d7474706fb40b4dc4390392adae5c8adf6ba58b73d2f35c8c17baf3370d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_state_registration_errors_sep23",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "dbfc45687ac84a6a6c91119f76697cee90fcce93c72dafc82135c9eeb100c963",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "e3ebd062fa6e5262a93c03968492c7715db76c56c3c744c34062f91fd65f74e5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_prosecutions_sep23",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "3fb5d79eb11b499bed314a3290b9c74420d3102f819697e0a1b3b774b7f1dbda",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "a2fed40e49a3a321159f45223035f0dd39f6db53501ee9076618d16c4aae3c43",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_prosecutions_sep23",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "3fb5d79eb11b499bed314a3290b9c74420d3102f819697e0a1b3b774b7f1dbda",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 10,
+          "fact_sha256": "12f080a2ef2741d95ec8db721ec7cc73f71d7965a00ee9ffcc8e201f4fbb1ada",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_noncitizen_voting_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "c6774c161f2eadacfd321a185ce063eac9f3255f87938afc4bf4930c686669b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 11,
+          "fact_sha256": "3c744f7fa5158a279888f43c4fb1dee8f436fef89372fe8d3e9707a25e913c3a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_noncitizen_voting_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "c6774c161f2eadacfd321a185ce063eac9f3255f87938afc4bf4930c686669b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 12,
+          "fact_sha256": "ce36e117ee605b69880e845185e33f3e6c3e34b6ba7b40393cb0628311f4309d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_noncitizen_voting_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "c6774c161f2eadacfd321a185ce063eac9f3255f87938afc4bf4930c686669b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 13,
+          "fact_sha256": "72d255b495bbbf73fe97ef3203e0a7d9293f20c90168584fc781bb0b987770ed",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_noncitizen_voting_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "c6774c161f2eadacfd321a185ce063eac9f3255f87938afc4bf4930c686669b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "2e903097b8a84b1fec92197ab1f4754f1d76988801947d65e8f06d435da327b6",
+          "review_note": "Reviewed as a bounded institutional or measured consequence; no unmeasured outcome inferred."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "b5a97e9d2f99eb56e80036d6a487a9d6c6b4133949f3a641d60fa58f22b01e6e",
+          "review_note": "Preserved the strongest relevant administration explanation or response and identified concrete tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "b4b9188c55d5de65000d1061fe8a4fdfeb491eef855419353f3d02c4e6350df1",
           "review_note": "Separately reviewed the strongest competing frame, material uncertainty and evidence-bounded conclusion."
         }
       ],
