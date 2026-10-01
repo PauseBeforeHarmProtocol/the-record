@@ -1,42 +1,38 @@
 {
-  "version": "10.109.0",
+  "version": "10.110.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-09-30T22:04:46Z",
-    "through_utc": "2026-10-01T04:04:49Z",
+    "from_utc": "2026-10-01T04:04:49Z",
+    "through_utc": "2026-10-01T09:57:17Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis"
   },
   "release_iso": "2026-10-01",
   "release_human": "October 1, 2026",
-  "checked_at": "2026-10-01 12:04 AM EDT",
-  "previous_version": "10.108.0",
-  "previous_checked_at": "2026-09-30 6:04 PM EDT",
-  "window_started_at": "2026-09-30 6:04 PM EDT",
-  "window_ended_at": "2026-10-01 12:04 AM EDT",
+  "checked_at": "2026-10-01 5:57 AM EDT",
+  "previous_version": "10.109.0",
+  "previous_checked_at": "2026-10-01 12:04 AM EDT",
+  "window_started_at": "2026-10-01 12:04 AM EDT",
+  "window_ended_at": "2026-10-01 5:57 AM EDT",
   "week_start": "2026-09-25",
   "week_end": "2026-10-01",
   "week_label": "September 25–October 1, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-29-011",
-    "NAT-2026-09-29-012",
-    "NAT-2026-09-29-013",
-    "NAT-2026-09-30-006",
-    "NAT-2026-08-17-001",
+    "NAT-2026-09-30-007",
+    "NAT-2026-08-24-001",
     "NAT-2026-09-24-002",
-    "NAT-2026-09-25-009"
+    "NAT-2026-09-25-009",
+    "NAT-2026-09-10-003"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-29-011",
-    "NAT-2026-09-29-012",
-    "NAT-2026-09-29-013",
-    "NAT-2026-09-30-006"
+    "NAT-2026-09-30-007"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-08-17-001",
+    "NAT-2026-08-24-001",
     "NAT-2026-09-24-002",
-    "NAT-2026-09-25-009"
+    "NAT-2026-09-25-009",
+    "NAT-2026-09-10-003"
   ],
   "dedupe_resolutions": [
     {
@@ -340,12 +336,6 @@
       "notes": "The effective-time development belongs to the same proclamations and bilateral trade dispute; it updates the stable record."
     },
     {
-      "entry_id": "NAT-2026-09-24-002",
-      "target_id": "NAT-2026-09-24-002",
-      "decision": "same_event_update",
-      "notes": "The Collins request, identified DHS contract and funding path concern the same advertisement series and were consolidated into the stable canonical record; no Trump TV linkage was inferred."
-    },
-    {
       "entry_id": "NAT-2026-08-17-001",
       "target_id": "NAT-2026-08-17-001",
       "decision": "same_event_update",
@@ -356,12 +346,6 @@
       "target_id": "NAT-2026-09-23-004",
       "decision": "same_event_update",
       "notes": "The Supreme Court stay and granted review are later stages of the same third-country-removal litigation and were consolidated into the stable canonical record."
-    },
-    {
-      "entry_id": "NAT-2026-09-25-009",
-      "target_id": "NAT-2026-09-25-009",
-      "decision": "same_event_update",
-      "notes": "GAO decision B-338788 resolves the watchdog stage of the same eleven-account pocket-rescission dispute and was consolidated into the stable canonical record."
     },
     {
       "entry_id": "NAT-2026-09-29-003",
@@ -446,12 +430,42 @@
       "target_id": "NAT-2026-09-29-002",
       "decision": "false_positive",
       "notes": "The enacted national tick-disease reauthorization is a statute with separate funding authorizations; the earlier Washington campaign is an executive order concerning a different geographic campaign, scope and outcome tests."
+    },
+    {
+      "entry_id": "NAT-2026-08-24-001",
+      "target_id": "NAT-2026-08-24-001",
+      "decision": "same_event_update",
+      "notes": "The September 30 order is a later judicial stage of the existing six-figure H-1B charge and was consolidated into the stable record."
+    },
+    {
+      "entry_id": "NAT-2026-09-24-002",
+      "target_id": "NAT-2026-09-24-002",
+      "decision": "same_event_update",
+      "notes": "The FCC chair response and oversight requests concern the same government-paid advertisement series; no new event count or Trump TV linkage was inferred."
+    },
+    {
+      "entry_id": "NAT-2026-09-25-009",
+      "target_id": "NAT-2026-09-25-009",
+      "decision": "same_event_update",
+      "notes": "The seven-state complaint is a later litigation stage of the same pocket-rescission dispute."
+    },
+    {
+      "entry_id": "NAT-2026-09-10-003",
+      "target_id": "NAT-2026-09-10-003",
+      "decision": "same_event_update",
+      "notes": "Initial check mailing implements the already catalogued ACA refund announcement and was consolidated into the stable record."
+    },
+    {
+      "entry_id": "NAT-2026-09-30-007",
+      "target_id": "NAT-2026-09-29-004",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The FTC inquiry is a formal consumer-protection investigation; the voluntary AI accord is a separate nonbinding executive-industry commitment."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Autonomous Warfare Command and related Pentagon initiatives",
-      "reason": "Withheld pending retrievable official implementing documents establishing authority, funding, activation and scope; AP and Reuters announcement reporting remains queued."
+      "title": "Additional Pentagon initiatives",
+      "reason": "Still withheld pending retrievable implementing directives, authority, funding and activation records."
     },
     {
       "title": "Diesel-export restrictions",
@@ -462,27 +476,31 @@
       "reason": "Primary court order and sufficient independent case reporting were not retrieved."
     },
     {
-      "title": "DHS OIG asylum quality-assurance report",
-      "reason": "Full report inaccessible and current-period implementation or measured effects not established."
+      "title": "Big Bend project adjustments",
+      "reason": "The administration was considering changes; no final plan, changed contract or resumed work was identified."
     },
     {
-      "title": "Trump TV September 30 uploads",
-      "reason": "Metadata only; energy material duplicated a canonical record and ceremonial material did not qualify. Full footage and captions were inaccessible."
+      "title": "Labor secretary confirmation",
+      "reason": "Routine personnel confirmation did not independently change a national policy or measured outcome."
     },
     {
-      "title": "Additional Truth Social links and rhetoric",
-      "reason": "Routine rhetoric, duplicates, linked commentary or media that could not be independently verified; retained in the separate feed."
+      "title": "Trump TV October 1 follow-up",
+      "reason": "No new library upload was located; accessible metadata repeated previously reviewed items, and complete footage or captions remained unavailable."
+    },
+    {
+      "title": "Boeing Truth Social post",
+      "reason": "Routine corporate praise with unverified performance claims; no qualifying federal action was announced."
     }
   ],
   "corrections": [],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance); GPT-6 Astra (independent deep editorial gate review). AI output is not treated as evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-01T04:20:00Z",
-    "checked_at_eastern": "2026-10-01 12:20:00 AM EDT",
+    "checked_at": "2026-10-01T09:59:32Z",
+    "checked_at_eastern": "2026-10-01 5:59:32 AM EDT",
     "inspection_status": "partial_metadata_followup",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-01T04:20:00Z",
+    "last_successful_page_inspection_at": "2026-10-01T09:59:32Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -496,14 +514,14 @@
       "https://www.youtube.com/watch?v=gHDOsisOf1c",
       "https://www.youtube.com/watch?v=VMWEHk4qH6I"
     ],
-    "summary": "The official stream ID remained A4gNgHfZ-v4. September 30 video-library metadata added a 56:41 commerce announcement (64w2lEYtw8E), a 00:44 energy clip (gHDOsisOf1c) and Hispanic Heritage programming (VMWEHk4qH6I). Only page metadata was inspected; the commerce and energy items duplicate the existing South Korea energy record, ceremonial footage did not qualify, complete footage and captions were not retrieved, no broadcast boundary was advanced, and no qualifying new item was located in the material reviewed.",
+    "summary": "The official stream ID remained A4gNgHfZ-v4 and the dated library still showed the same September 30 commerce, energy and Hispanic Heritage items. No October 1 upload appeared. Only page titles, dates, durations and IDs were inspected; complete recordings, captions and transcripts were not retrieved. Repeated material remained deduplicated, ceremonial material did not qualify, no broadcast boundary was advanced, and no qualifying new item was located in the material reviewed.",
     "items": [
       {
         "url": "https://www.whitehouse.gov/trumptv/",
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-01T04:20:00Z",
+        "observed_at": "2026-10-01T09:59:32Z",
         "format": "official stream page; live/replay state not independently verified",
         "inspection": "Page metadata exposed stream ID A4gNgHfZ-v4; footage was not retrieved."
       },
@@ -512,27 +530,27 @@
         "posted_date": "2026-09-30",
         "original_event_date": "2026-09-30",
         "broadcast_time": null,
-        "observed_at": "2026-10-01T04:20:00Z",
+        "observed_at": "2026-10-01T09:59:32Z",
         "format": "dated library metadata for replay or edited uploads",
-        "inspection": "Titles, dates, durations and video IDs 64w2lEYtw8E, gHDOsisOf1c and VMWEHk4qH6I were inspected; full recordings and captions were not."
+        "inspection": "Titles, dates, durations and IDs 64w2lEYtw8E, gHDOsisOf1c and VMWEHk4qH6I were unchanged; full recordings and captions were not retrieved."
       },
       {
         "url": "https://www.whitehouse.gov/live/",
         "posted_date": "2026-09-30",
         "original_event_date": "2026-09-30",
         "broadcast_time": null,
-        "observed_at": "2026-10-01T04:20:00Z",
+        "observed_at": "2026-10-01T09:59:32Z",
         "format": "official live-hub metadata; current live/replay state not independently verified",
-        "inspection": "Hub identified the commerce announcement; fallback text was not used as proof of stream status."
+        "inspection": "Hub metadata remained on the commerce announcement; fallback text was not used as proof of stream status."
       },
       {
         "url": "https://www.whitehouse.gov/remarks/",
         "posted_date": "2026-09-28",
         "original_event_date": "2026-09-28",
         "broadcast_time": null,
-        "observed_at": "2026-10-01T04:20:00Z",
+        "observed_at": "2026-10-01T09:59:32Z",
         "format": "supplementary remarks index",
-        "inspection": "Newest complete remarks listing remained September 28; no September 30 complete transcript was retrieved."
+        "inspection": "No newer complete transcript corresponding to a qualifying broadcast was retrieved."
       }
     ],
     "gaps": [
@@ -541,33 +559,33 @@
       "Exact broadcast and upload times were not verified.",
       "No verified channel budget, contract, staffing allocation or shared funding with the separate government-paid advertising contract was located."
     ],
-    "previous_page_inspection_at": "2026-09-30T22:10:00Z"
+    "previous_page_inspection_at": "2026-10-01T04:20:00Z"
   },
   "truth_social_inspection": {
     "scope": "1000 retained fallback posts; current content hashes only",
     "counts": {
       "text_status": {
-        "reviewed": 320,
-        "not_recorded": 136,
-        "pending": 544
+        "reviewed": 321,
+        "not_recorded": 137,
+        "pending": 543
       },
       "media_status": {
-        "not_applicable": 476,
-        "unavailable": 222,
+        "not_applicable": 477,
+        "unavailable": 223,
         "reviewed": 31,
-        "pending": 252,
+        "pending": 251,
         "not_recorded": 19
       }
     },
-    "new_posts": 27,
-    "source_rows_added": 31,
-    "new_media_reviewed": 1,
-    "new_media_unavailable": 8,
-    "checked_at_utc": "2026-10-01T04:06:55.787429Z",
-    "checked_at_eastern": "2026-10-01 12:06:55 AM EDT",
-    "latest_post_at_utc": "2026-10-01T03:29:22.215000Z",
-    "latest_post_at_eastern": "2026-09-30 11:29:22 PM EDT",
-    "latest_post_id": "117363530938149737",
-    "note": "The mirror added 31 source rows; 27 were newly present in the retained 1000-post fallback. All 27 retained posts were text-reviewed as leads. One attached image was inspected; eight attached video assets returned access blocks and remain explicitly unavailable. Claims inside posts were not treated as independently verified."
+    "new_posts": 1,
+    "source_rows_added": 1,
+    "new_media_reviewed": 0,
+    "new_media_unavailable": 0,
+    "checked_at_utc": "2026-10-01T09:57:54.645102Z",
+    "checked_at_eastern": "2026-10-01 5:57:54 AM EDT",
+    "latest_post_at_utc": "2026-10-01T04:40:35.537000Z",
+    "latest_post_at_eastern": "2026-10-01 12:40:35 AM EDT",
+    "latest_post_id": "117363810994521058",
+    "note": "The mirror added one source row and one newly retained post. The text was reviewed as routine Boeing praise and kept feed-only; it announced no qualifying federal action and its performance claims were not independently verified. No media was attached."
   }
 }
