@@ -5101,6 +5101,66 @@
       "provenance_path": "data/editorial_change_notes/10.111.0.json",
       "provenance_sha256": "cf631cb93154a55581785e2d1a772f1495caeff86dec010a7677e26d6ef1a277",
       "note": "Evidence status, strongest response, uncertainty and duplicate disposition were reviewed as a single bounded change."
+    },
+    {
+      "change_id": "10.112.0:NAT-2026-10-01-002",
+      "entry_id": "NAT-2026-10-01-002",
+      "as_of_utc": "2026-10-01T22:00:00Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.112.0",
+      "summary": "A preliminary injunction reinstated judicially appointed Seattle U.S. attorney Roger Rogoff while appeal and final merits remain unresolved.",
+      "provenance_path": "data/editorial_change_notes/10.112.0.json",
+      "provenance_sha256": "d978ecf705a8d69ac783168d32be705a0174599a196b062989cc0fa4d383e607",
+      "note": "Evidence status, strongest response, uncertainty and duplicate disposition were reviewed as a single bounded change."
+    },
+    {
+      "change_id": "10.112.0:NAT-2026-10-01-003",
+      "entry_id": "NAT-2026-10-01-003",
+      "as_of_utc": "2026-10-01T22:00:00Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.112.0",
+      "summary": "Treasury issued Iran rail and automotive sectoral determinations and designated industrial networks and foreign suppliers.",
+      "provenance_path": "data/editorial_change_notes/10.112.0.json",
+      "provenance_sha256": "d978ecf705a8d69ac783168d32be705a0174599a196b062989cc0fa4d383e607",
+      "note": "Evidence status, strongest response, uncertainty and duplicate disposition were reviewed as a single bounded change."
+    },
+    {
+      "change_id": "10.112.0:NAT-2026-10-01-004",
+      "entry_id": "NAT-2026-10-01-004",
+      "as_of_utc": "2026-10-01T22:00:00Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.112.0",
+      "summary": "Treasury and IRS issued temporary and proposed rules for the 2027 federal scholarship tax credit.",
+      "provenance_path": "data/editorial_change_notes/10.112.0.json",
+      "provenance_sha256": "d978ecf705a8d69ac783168d32be705a0174599a196b062989cc0fa4d383e607",
+      "note": "Evidence status, strongest response, uncertainty and duplicate disposition were reviewed as a single bounded change."
+    },
+    {
+      "change_id": "10.112.0:NAT-2026-10-01-005",
+      "entry_id": "NAT-2026-10-01-005",
+      "as_of_utc": "2026-10-01T22:00:00Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.112.0",
+      "summary": "Military-wide hostile-fire and imminent-danger pay increases took effect October 1.",
+      "provenance_path": "data/editorial_change_notes/10.112.0.json",
+      "provenance_sha256": "d978ecf705a8d69ac783168d32be705a0174599a196b062989cc0fa4d383e607",
+      "note": "Evidence status, strongest response, uncertainty and duplicate disposition were reviewed as a single bounded change."
+    },
+    {
+      "change_id": "10.112.0:NAT-2026-09-15-003",
+      "entry_id": "NAT-2026-09-15-003",
+      "as_of_utc": "2026-10-01T22:00:00Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.112.0",
+      "summary": "The Cox charge was dismissed after a district judge found the federal noncitizen-voting law unconstitutional in that case.",
+      "provenance_path": "data/editorial_change_notes/10.112.0.json",
+      "provenance_sha256": "d978ecf705a8d69ac783168d32be705a0174599a196b062989cc0fa4d383e607",
+      "note": "Evidence status, strongest response, uncertainty and duplicate disposition were reviewed as a single bounded change."
     }
   ],
   "reviews": [
@@ -56893,6 +56953,711 @@
       ],
       "unresolved_questions": [
         "Later implementation, litigation, enforcement, final accounting and independently measured outcomes remain unresolved where identified in the entry."
+      ]
+    },
+    {
+      "review_id": "10.112.0:NAT-2026-10-01-002:80d0a783",
+      "entry_id": "NAT-2026-10-01-002",
+      "content_sha256": "80d0a783fd59901bb3e79c9d41432887186ec6a77057167f16d2a8800a6564e8",
+      "reviewed_at": "2026-10-01T22:14:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "5eac44bf3762bc1effcaf3e9e815acad866e4cddaaf18834f5d09c3fdd9989e7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_rogoff_reinstatement_oct1",
+              "locator": "article body describing injunction, reinstatement and access",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "30bd1228549a554db05e4bd72e88cfdc2b8e94cb24e7d60b37f92a1ac28f3388",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_rogoff_reinstatement_oct1",
+              "locator": "article body and quoted bench ruling",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "3e61828e94d6021c38ed4e76a5fe5796963d6e2ff68690e598560a2164aca534",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "7226bf4b9f0e5e552fa0fbbe77ebceb060613735ba711847e2de09cb9e90c5c5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_rogoff_reinstatement_oct1",
+              "locator": "appointment and removal chronology",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "30bd1228549a554db05e4bd72e88cfdc2b8e94cb24e7d60b37f92a1ac28f3388",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "59d1c990d9b2ffb1fb4158193d9473bad769ffaaf76a2654da37831a02560b2b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_rogoff_reinstatement_oct1",
+              "locator": "statutory explanation and quoted ruling",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "30bd1228549a554db05e4bd72e88cfdc2b8e94cb24e7d60b37f92a1ac28f3388",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_rogoff_reinstatement_oct1",
+              "locator": "bench ruling and legal posture",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "3e61828e94d6021c38ed4e76a5fe5796963d6e2ff68690e598560a2164aca534",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "39e5f1becc6c2de48f57bbbe0375b09de8f723241df0d8a2d43ec82f95cc00f0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_rogoff_reinstatement_oct1",
+              "locator": "Justice Department response and successor-nomination status",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "30bd1228549a554db05e4bd72e88cfdc2b8e94cb24e7d60b37f92a1ac28f3388",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "2086f8b7144c217746a4c6faee4b5013ebad7ba271a05d7736583f9f8918951f",
+          "review_note": "Reviewed to separate sourced fact, institutional significance, strongest response, uncertainty and the bounded conclusion."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "96c73d8076b40e4f2d1f8e48ba0105ef26cf9690205ef86dd44aecfa3a052b7a",
+          "review_note": "Reviewed to separate sourced fact, institutional significance, strongest response, uncertainty and the bounded conclusion."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "92e44dd7a32fd139f03f32f7285b34050339a44b59c32e1a11ed851d23773824",
+          "review_note": "Reviewed to separate sourced fact, institutional significance, strongest response, uncertainty and the bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Final implementation, litigation or measured outcomes remain subject to later source review."
+      ]
+    },
+    {
+      "review_id": "10.112.0:NAT-2026-10-01-003:86506943",
+      "entry_id": "NAT-2026-10-01-003",
+      "content_sha256": "8650694340cf2fc2c5b23db4bb13417e1e9f17fc3c71b44823c7c164aa2c56e5",
+      "reviewed_at": "2026-10-01T22:14:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "c2979b4418dac65cfa441237eaed613a051a60a01f97222b81f2c978be805e00",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_iran_industrial_sanctions_oct1",
+              "locator": "sectoral determinations section",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "53fc9bd6d85396639ea56050aae49fe56834447c3f630001aa064baf4ddd3945",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "4f6944873991f11070cf544f2e3e456d4a886ed81c3907a6a3f24b4086c6ab68",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_iran_industrial_sanctions_oct1",
+              "locator": "automotive, rail, manufacturing and metals designation sections",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "53fc9bd6d85396639ea56050aae49fe56834447c3f630001aa064baf4ddd3945",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_iran_rail_auto_sanctions_oct1",
+              "locator": "target summary",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "3cb826d0773104de0a674b1ab5aacddc0be742e2e1fd1f26925e30ba6db148b8",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "f15b44fcf503996844702df10a7e4e4fa499461bff182a687c09febc6294c50b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_iran_industrial_sanctions_oct1",
+              "locator": "sanctions implications and authorities",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "53fc9bd6d85396639ea56050aae49fe56834447c3f630001aa064baf4ddd3945",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "a726fcc477024a576abe3b47d4564406ad4224b1b438829ca1e108243d0139a9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_iran_industrial_sanctions_oct1",
+              "locator": "agency rationale and target descriptions",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "53fc9bd6d85396639ea56050aae49fe56834447c3f630001aa064baf4ddd3945",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "announced"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "501e025eb93fdc7b547534eab17204102fcde7f48dffdad03f44596a72d5012e",
+          "review_note": "Reviewed to separate sourced fact, institutional significance, strongest response, uncertainty and the bounded conclusion."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "e01d17ac94eb5f8770754203206973ff385cc3a25fbd64ad4bf13cfd9e186f58",
+          "review_note": "Reviewed to separate sourced fact, institutional significance, strongest response, uncertainty and the bounded conclusion."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "93d83bb1e839513a558ad85bccbc1cbd9d80d6fc4b9069ba43ec826124c00af7",
+          "review_note": "Reviewed to separate sourced fact, institutional significance, strongest response, uncertainty and the bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Final implementation, litigation or measured outcomes remain subject to later source review."
+      ]
+    },
+    {
+      "review_id": "10.112.0:NAT-2026-10-01-004:82134d4c",
+      "entry_id": "NAT-2026-10-01-004",
+      "content_sha256": "82134d4c70697890f2739c4e23c67e3c6eb9de27d285b342c8a5b501d7dd75d8",
+      "reviewed_at": "2026-10-01T22:14:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "b242c5fb9c5b60490e3171416957cc93dd8589a6e57b46f23678e5c4ff49e7e0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_scholarship_proposed_oct2",
+              "locator": "pages 1-2 and economic analysis describing section 25F and $1,700 maximum",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "fe52647221bb7678f933452114e3d0408c9709d34ea530cd2f9e5181bcf64642",
+              "origin_group": "Internal Revenue Service / Federal Register",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "fr_scholarship_temporary_oct2",
+              "locator": "pages 1-2 authority and applicability",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "a2fdcc3bd88b08613b6a9dd42b3fd5b08250e1dbc65f4350f84351c9a1ea132d",
+              "origin_group": "Internal Revenue Service / Federal Register",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "0c6505f4c2c557cf306b9bce8971ba09e07e128dd82db86525a50a4f3efd7091",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_scholarship_temporary_oct2",
+              "locator": "summary, effective date and state/SGO procedures",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "a2fdcc3bd88b08613b6a9dd42b3fd5b08250e1dbc65f4350f84351c9a1ea132d",
+              "origin_group": "Internal Revenue Service / Federal Register",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "8d851b0f6d3900b367052da29c97d5df5d7eb0394f1fe6b2acb4b24043316e03",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_scholarship_proposed_oct2",
+              "locator": "proposal provisions and eligibility estimate",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "fe52647221bb7678f933452114e3d0408c9709d34ea530cd2f9e5181bcf64642",
+              "origin_group": "Internal Revenue Service / Federal Register",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "irs_scholarship_credit_oct1",
+              "locator": "proposed-regulations summary and agency estimate",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "b99c39208acfb02be536ec0d30a0c2d72a15d3a4021d9ff389a184907459c6d0",
+              "origin_group": "Internal Revenue Service",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "86e70bb2ed974d7d9a40abb83997cbf411d10df04030d18a99cbf82497bbfc59",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_scholarship_credit_oct1",
+              "locator": "program launch, qualified uses and state-program context",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "0c23167d3dfdfbb9dda3b172fa1da3bf27eb2b026332880e0d7d773db845f250",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "31857438d87c312fdbf256811af71557d950f445ac45d68293167c73e287208a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_scholarship_temporary_oct2",
+              "locator": "future effective date",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "a2fdcc3bd88b08613b6a9dd42b3fd5b08250e1dbc65f4350f84351c9a1ea132d",
+              "origin_group": "Internal Revenue Service / Federal Register",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "fr_scholarship_proposed_oct2",
+              "locator": "notice of proposed rulemaking and economic analysis",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "fe52647221bb7678f933452114e3d0408c9709d34ea530cd2f9e5181bcf64642",
+              "origin_group": "Internal Revenue Service / Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "1c6c94febe143cf9f955872e4674b2b3d756fa26ece3d9d719153fe1055d19d5",
+          "review_note": "Reviewed to separate sourced fact, institutional significance, strongest response, uncertainty and the bounded conclusion."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "0f5a46a152b5cb89582d09ed8336f1daf326ac5e72a6b7b66bb6a8ada7518792",
+          "review_note": "Reviewed to separate sourced fact, institutional significance, strongest response, uncertainty and the bounded conclusion."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "f9d1bdf45a2c924addf62c22b33bf8e010312bf69bc475bab4dc0264b703a46a",
+          "review_note": "Reviewed to separate sourced fact, institutional significance, strongest response, uncertainty and the bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Final implementation, litigation or measured outcomes remain subject to later source review."
+      ]
+    },
+    {
+      "review_id": "10.112.0:NAT-2026-10-01-005:e16382ae",
+      "entry_id": "NAT-2026-10-01-005",
+      "content_sha256": "e16382ae2bd03052de6179df12d691a9e1f2859db70d92643baee82ce1ba6058",
+      "reviewed_at": "2026-10-01T22:14:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "8daa2f4699dc049dc86757a443f14a6216ef2556e1c3099a5b479dc99ebf4271",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "war_hazard_pay_oct1",
+              "locator": "agency announcement of effective rates",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "5143a8f52cd340c814be1efbb459d7daae305004f9c65569d277b5266f091307",
+              "origin_group": "U.S. Department of War",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "militarytimes_hazard_pay_oct1",
+              "locator": "rate and effective-date reporting",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "b4fbabb4c61cadc50d60d9f9f5ae8af629667040a3b7535d802750395ced192e",
+              "origin_group": "Military Times",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5ec3f6babd493bf4e0353357d31812918e3e9a479ac72a1cfaa0d31446c5add6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "militarytimes_hazard_pay_oct1",
+              "locator": "eligibility definitions and mutual-exclusion explanation",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "b4fbabb4c61cadc50d60d9f9f5ae8af629667040a3b7535d802750395ced192e",
+              "origin_group": "Military Times",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "40b7b6f1164066f8efeba4e79bdb534dfd890f5015c639897a057b22c20afa92",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "war_hazard_pay_oct1",
+              "locator": "agency rationale and first adjustment since 2002",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "5143a8f52cd340c814be1efbb459d7daae305004f9c65569d277b5266f091307",
+              "origin_group": "U.S. Department of War",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "militarytimes_hazard_pay_oct1",
+              "locator": "implementing memorandum and hardship-duty offset",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "b4fbabb4c61cadc50d60d9f9f5ae8af629667040a3b7535d802750395ced192e",
+              "origin_group": "Military Times",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "7798394162b16785b05d374d921bb4516480d675f5d70066a1dcdb75326d0307",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "militarytimes_hazard_pay_oct1",
+              "locator": "scope and missing outcome measures",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "b4fbabb4c61cadc50d60d9f9f5ae8af629667040a3b7535d802750395ced192e",
+              "origin_group": "Military Times",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "740da7e0b0fc6023d57ec98dd2b5a360a2bfb0b048dde3fa3f1cf12b5e5c7234",
+          "review_note": "Reviewed to separate sourced fact, institutional significance, strongest response, uncertainty and the bounded conclusion."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "a95782ad1ec2a79822a7f453eee3096c7da37f1ab40f6885d4da5ad688269f89",
+          "review_note": "Reviewed to separate sourced fact, institutional significance, strongest response, uncertainty and the bounded conclusion."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "ffa64e12dd164e0157afa1914eed89d1b1ad6e675b0c9faeb88d23d5389052ce",
+          "review_note": "Reviewed to separate sourced fact, institutional significance, strongest response, uncertainty and the bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Final implementation, litigation or measured outcomes remain subject to later source review."
+      ]
+    },
+    {
+      "review_id": "10.112.0:NAT-2026-09-15-003:f013c374",
+      "entry_id": "NAT-2026-09-15-003",
+      "content_sha256": "f013c3743272d9d30f40f221deaf825c9eff51ca439f8ec04aeee7160a964a46",
+      "reviewed_at": "2026-10-01T22:14:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "fdc6d9d3965c1cc37b99262c04383d8dcef7c6c7f0e8a10138f3ac0ff0093308",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "140ae3f19a842a9e665c31e7b8e0e622486c949ff4dce3d3b6093291e34f17d4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "51ad3ea6bddddd50579ddf1acd0404c4980668a75363999d4f271e773ae46c07",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "64fb09c949575bf258f413500c13b5e4d3a564fc34dfa6fc909fa13f70b8a06e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "94a7b85f51eac85fb3370c49ed0611898fd59e94ab9cb2bb3cb202e692910d66",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "7aa10f9e36fbd390a438d71667232f2f6f65211ff708b7b5138221dff0dba6b8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_state_registration_errors_sep23",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "dbfc45687ac84a6a6c91119f76697cee90fcce93c72dafc82135c9eeb100c963",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "ca98b9e248de595569607cc85854183473af71281a86959ad78005db75dad7d1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_state_registration_errors_sep23",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "dbfc45687ac84a6a6c91119f76697cee90fcce93c72dafc82135c9eeb100c963",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "8cab4d7474706fb40b4dc4390392adae5c8adf6ba58b73d2f35c8c17baf3370d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_state_registration_errors_sep23",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "dbfc45687ac84a6a6c91119f76697cee90fcce93c72dafc82135c9eeb100c963",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "e3ebd062fa6e5262a93c03968492c7715db76c56c3c744c34062f91fd65f74e5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_prosecutions_sep23",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "3fb5d79eb11b499bed314a3290b9c74420d3102f819697e0a1b3b774b7f1dbda",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "a2fed40e49a3a321159f45223035f0dd39f6db53501ee9076618d16c4aae3c43",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_prosecutions_sep23",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "3fb5d79eb11b499bed314a3290b9c74420d3102f819697e0a1b3b774b7f1dbda",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 10,
+          "fact_sha256": "12f080a2ef2741d95ec8db721ec7cc73f71d7965a00ee9ffcc8e201f4fbb1ada",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_noncitizen_voting_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "c6774c161f2eadacfd321a185ce063eac9f3255f87938afc4bf4930c686669b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 11,
+          "fact_sha256": "3c744f7fa5158a279888f43c4fb1dee8f436fef89372fe8d3e9707a25e913c3a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_noncitizen_voting_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "c6774c161f2eadacfd321a185ce063eac9f3255f87938afc4bf4930c686669b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 12,
+          "fact_sha256": "ce36e117ee605b69880e845185e33f3e6c3e34b6ba7b40393cb0628311f4309d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_noncitizen_voting_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "c6774c161f2eadacfd321a185ce063eac9f3255f87938afc4bf4930c686669b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 13,
+          "fact_sha256": "72d255b495bbbf73fe97ef3203e0a7d9293f20c90168584fc781bb0b987770ed",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_noncitizen_voting_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "c6774c161f2eadacfd321a185ce063eac9f3255f87938afc4bf4930c686669b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 14,
+          "fact_sha256": "91767cbf1a5ac1abc69ef756b091ad58999da73ef43c1449721a4d87618d51e8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_law_unconstitutional_oct1",
+              "locator": "article body quoting ruling, scope and government argument",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "01d63aa7ff7a0d2e08475e6ba2e0533d421b827f952c75c327fd251dce773980",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "1eaf8f41e396c4b795689a06147ef9f4349e2f380f242ad7ed114b0f5bf62165",
+          "review_note": "Reviewed to distinguish the defendant-specific dismissal from a nationwide or final appellate rule and from broader incidence claims."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "d15e4643870f3f2b77fde89d6f5acabbcd618c77301012038979044f3ac213b2",
+          "review_note": "Reviewed to distinguish the defendant-specific dismissal from a nationwide or final appellate rule and from broader incidence claims."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "e48f915d09bdd3eabc269fa1f04f34d64876d55346c54f9b3c0c5f11a49eb35c",
+          "review_note": "Reviewed to distinguish the defendant-specific dismissal from a nationwide or final appellate rule and from broader incidence claims."
+        }
+      ],
+      "unresolved_questions": [
+        "Whether the Justice Department appeals and how other trial or appellate courts treat the constitutional ruling.",
+        "Disposition and measured outcomes of the remaining noncitizen-voting cases."
       ]
     }
   ],
