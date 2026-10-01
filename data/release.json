@@ -1,38 +1,36 @@
 {
-  "version": "10.110.0",
+  "version": "10.111.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-01T04:04:49Z",
-    "through_utc": "2026-10-01T09:57:17Z",
+    "from_utc": "2026-10-01T09:57:17Z",
+    "through_utc": "2026-10-01T16:04:13Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis"
   },
   "release_iso": "2026-10-01",
   "release_human": "October 1, 2026",
-  "checked_at": "2026-10-01 5:57 AM EDT",
-  "previous_version": "10.109.0",
-  "previous_checked_at": "2026-10-01 12:04 AM EDT",
-  "window_started_at": "2026-10-01 12:04 AM EDT",
-  "window_ended_at": "2026-10-01 5:57 AM EDT",
+  "checked_at": "2026-10-01 12:04 PM EDT",
+  "previous_version": "10.110.0",
+  "previous_checked_at": "2026-10-01 5:57 AM EDT",
+  "window_started_at": "2026-10-01 5:57 AM EDT",
+  "window_ended_at": "2026-10-01 12:04 PM EDT",
   "week_start": "2026-09-25",
   "week_end": "2026-10-01",
   "week_label": "September 25–October 1, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-30-007",
-    "NAT-2026-08-24-001",
-    "NAT-2026-09-24-002",
-    "NAT-2026-09-25-009",
-    "NAT-2026-09-10-003"
+    "NAT-2026-08-19-003",
+    "NAT-2026-10-01-001",
+    "NAT-2026-09-10-005",
+    "NAT-2026-09-15-003"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-30-007"
+    "NAT-2026-08-19-003",
+    "NAT-2026-10-01-001"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-08-24-001",
-    "NAT-2026-09-24-002",
-    "NAT-2026-09-25-009",
-    "NAT-2026-09-10-003"
+    "NAT-2026-09-10-005",
+    "NAT-2026-09-15-003"
   ],
   "dedupe_resolutions": [
     {
@@ -460,47 +458,67 @@
       "target_id": "NAT-2026-09-29-004",
       "decision": "distinct_lifecycle_stage",
       "notes": "The FTC inquiry is a formal consumer-protection investigation; the voluntary AI accord is a separate nonbinding executive-industry commitment."
+    },
+    {
+      "entry_id": "NAT-2026-08-19-003",
+      "target_id": "NAT-2026-08-19-003",
+      "decision": "false_positive",
+      "notes": "No existing record covered the proposed refundable-credit eligibility rule and related draft forms; general tax and immigration records concern different instruments."
+    },
+    {
+      "entry_id": "NAT-2026-10-01-001",
+      "target_id": "NAT-2026-10-01-001",
+      "decision": "false_positive",
+      "notes": "The stable queue lead was promoted into one canonical criminal-disposition record; earlier rhetoric and contractor reports were not counted separately."
+    },
+    {
+      "entry_id": "NAT-2026-09-10-005",
+      "target_id": "NAT-2026-09-10-005",
+      "decision": "same_event_update",
+      "notes": "The Supreme Court certiorari grant is a later stage of the same statutory detention case and was consolidated into the Fourth Circuit record."
+    },
+    {
+      "entry_id": "NAT-2026-09-15-003",
+      "target_id": "NAT-2026-09-15-003",
+      "decision": "same_event_update",
+      "notes": "New charge and investigation totals and state examples materially update the existing noncitizen-voting evidence record without a second event count."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Additional Pentagon initiatives",
-      "reason": "Still withheld pending retrievable implementing directives, authority, funding and activation records."
+      "title": "Salah Sarsour removability ruling",
+      "reason": "A second independent outlet confirmed the result, but the nonpublic decision remained unavailable and appeal, destination and protection outcomes were unresolved."
     },
     {
-      "title": "Diesel-export restrictions",
-      "reason": "Still under consideration; no decision or implementing instrument."
+      "title": "ICC insurer contract termination",
+      "reason": "The termination was confirmed, but claimed causation by U.S. sanctions risk rested on an unnamed source and the ICC supplied no reason."
     },
     {
-      "title": "Gulf oil ESA lawsuit dismissal",
-      "reason": "Primary court order and sufficient independent case reporting were not retrieved."
+      "title": "Keith Sonderling labor-secretary confirmation",
+      "reason": "Routine personnel confirmation did not independently change policy or a measured outcome."
     },
     {
-      "title": "Big Bend project adjustments",
-      "reason": "The administration was considering changes; no final plan, changed contract or resumed work was identified."
-    },
-    {
-      "title": "Labor secretary confirmation",
-      "reason": "Routine personnel confirmation did not independently change a national policy or measured outcome."
+      "title": "Todd Butler judicial nomination announcement",
+      "reason": "A social-media announcement did not establish formal Senate submission or confirmation and remained routine personnel news."
     },
     {
       "title": "Trump TV October 1 follow-up",
-      "reason": "No new library upload was located; accessible metadata repeated previously reviewed items, and complete footage or captions remained unavailable."
+      "reason": "Accessible metadata repeated previously reviewed September 30 items; full footage and captions remained unavailable."
     },
     {
-      "title": "Boeing Truth Social post",
-      "reason": "Routine corporate praise with unverified performance claims; no qualifying federal action was announced."
+      "title": "Boeing and image-only Truth Social posts",
+      "reason": "The Boeing item duplicated routine corporate praise; the image-only assets returned HTTP 403 and no visual claim was inferred."
     }
   ],
   "corrections": [],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance); GPT-6 Astra (independent deep editorial gate review). AI output is not treated as evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-01T09:59:32Z",
-    "checked_at_eastern": "2026-10-01 5:59:32 AM EDT",
+    "checked_at": "2026-10-01T16:14:39Z",
+    "checked_at_eastern": "2026-10-01 12:14:39 PM EDT",
     "inspection_status": "partial_metadata_followup",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-01T09:59:32Z",
+    "last_successful_page_inspection_at": "2026-10-01T16:14:39Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -514,14 +532,14 @@
       "https://www.youtube.com/watch?v=gHDOsisOf1c",
       "https://www.youtube.com/watch?v=VMWEHk4qH6I"
     ],
-    "summary": "The official stream ID remained A4gNgHfZ-v4 and the dated library still showed the same September 30 commerce, energy and Hispanic Heritage items. No October 1 upload appeared. Only page titles, dates, durations and IDs were inspected; complete recordings, captions and transcripts were not retrieved. Repeated material remained deduplicated, ceremonial material did not qualify, no broadcast boundary was advanced, and no qualifying new item was located in the material reviewed.",
+    "summary": "The official stream ID remained A4gNgHfZ-v4. The dated library still showed the same three September 30 items and no October 1 upload. Only page titles, dates, durations and video IDs were inspected; complete recordings, captions and transcripts were not retrieved. Repeated footage remained deduplicated, no broadcast boundary was advanced, and no qualifying new item was located in the material reviewed.",
     "items": [
       {
         "url": "https://www.whitehouse.gov/trumptv/",
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-01T09:59:32Z",
+        "observed_at": "2026-10-01T16:14:39Z",
         "format": "official stream page; live/replay state not independently verified",
         "inspection": "Page metadata exposed stream ID A4gNgHfZ-v4; footage was not retrieved."
       },
@@ -530,7 +548,7 @@
         "posted_date": "2026-09-30",
         "original_event_date": "2026-09-30",
         "broadcast_time": null,
-        "observed_at": "2026-10-01T09:59:32Z",
+        "observed_at": "2026-10-01T16:14:39Z",
         "format": "dated library metadata for replay or edited uploads",
         "inspection": "Titles, dates, durations and IDs 64w2lEYtw8E, gHDOsisOf1c and VMWEHk4qH6I were unchanged; full recordings and captions were not retrieved."
       },
@@ -539,7 +557,7 @@
         "posted_date": "2026-09-30",
         "original_event_date": "2026-09-30",
         "broadcast_time": null,
-        "observed_at": "2026-10-01T09:59:32Z",
+        "observed_at": "2026-10-01T16:14:39Z",
         "format": "official live-hub metadata; current live/replay state not independently verified",
         "inspection": "Hub metadata remained on the commerce announcement; fallback text was not used as proof of stream status."
       },
@@ -548,7 +566,7 @@
         "posted_date": "2026-09-28",
         "original_event_date": "2026-09-28",
         "broadcast_time": null,
-        "observed_at": "2026-10-01T09:59:32Z",
+        "observed_at": "2026-10-01T16:14:39Z",
         "format": "supplementary remarks index",
         "inspection": "No newer complete transcript corresponding to a qualifying broadcast was retrieved."
       }
@@ -559,33 +577,33 @@
       "Exact broadcast and upload times were not verified.",
       "No verified channel budget, contract, staffing allocation or shared funding with the separate government-paid advertising contract was located."
     ],
-    "previous_page_inspection_at": "2026-10-01T04:20:00Z"
+    "previous_page_inspection_at": "2026-10-01T09:59:32Z"
   },
   "truth_social_inspection": {
     "scope": "1000 retained fallback posts; current content hashes only",
     "counts": {
       "text_status": {
-        "reviewed": 321,
-        "not_recorded": 137,
-        "pending": 543
+        "not_recorded": 136,
+        "reviewed": 324,
+        "pending": 540
       },
       "media_status": {
-        "not_applicable": 477,
+        "not_applicable": 478,
+        "not_recorded": 19,
         "unavailable": 223,
-        "reviewed": 31,
-        "pending": 251,
-        "not_recorded": 19
+        "pending": 249,
+        "reviewed": 31
       }
     },
-    "new_posts": 1,
-    "source_rows_added": 1,
+    "new_posts": 3,
+    "source_rows_added": 3,
     "new_media_reviewed": 0,
-    "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-01T09:57:54.645102Z",
-    "checked_at_eastern": "2026-10-01 5:57:54 AM EDT",
-    "latest_post_at_utc": "2026-10-01T04:40:35.537000Z",
-    "latest_post_at_eastern": "2026-10-01 12:40:35 AM EDT",
-    "latest_post_id": "117363810994521058",
-    "note": "The mirror added one source row and one newly retained post. The text was reviewed as routine Boeing praise and kept feed-only; it announced no qualifying federal action and its performance claims were not independently verified. No media was attached."
+    "new_media_unavailable": 1,
+    "checked_at_utc": "2026-10-01T16:05:18.901700Z",
+    "checked_at_eastern": "2026-10-01 12:05:18 PM EDT",
+    "latest_post_at_utc": "2026-10-01T15:38:09.803000Z",
+    "latest_post_at_eastern": "2026-10-01 11:38:09 AM EDT",
+    "latest_post_id": "117366396669364721",
+    "note": "The mirror added three posts. A judicial-nomination announcement, duplicate Boeing praise and an image-only post were reviewed as leads and kept feed-only. The two image assets returned HTTP 403, so no visual claim was made; no independently qualifying action was established by the posts."
   }
 }

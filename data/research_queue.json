@@ -809,16 +809,34 @@
   {
     "candidate_id": "QUEUE-20260911-REFLECTING-POOL-CONTRACTOR",
     "title": "Contractor reportedly attributes Reflecting Pool damage to federal repair work",
-    "status": "pending",
+    "status": "published",
     "first_seen_at": "2026-09-11T20:00:00Z",
     "timestamp_precision": "minute",
-    "reason": "Underlying contractor records cited in derivative reporting were unavailable for direct inspection.",
-    "recheck_trigger": "Contractor correspondence, National Park Service record, court filing or independent document-level confirmation.",
+    "reason": "A court disposition and two independent reports established that the government sought dismissal after contrary repair evidence; the stable record covers the final criminal disposition without inferring broader contractor liability.",
+    "recheck_trigger": "Appellate action, public investigative findings or separate adjudication of repair responsibility.",
     "next_check_at": null,
     "provenance": [
-      "https://www.reuters.com/world/us/contractor-said-reflecting-pool-damage-stemmed-repairs-nyt-reports-2026-09-11/"
+      "https://www.reuters.com/world/us/contractor-said-reflecting-pool-damage-stemmed-repairs-nyt-reports-2026-09-11/",
+      "https://apnews.com/article/trump-reflecting-pool-olympian-david-hearn-8404849d27c85e210cc5a895c150645a",
+      "https://www.washingtonpost.com/dc-md-va/2026/10/01/judge-says-us-cant-prosecute-ex-olympian-again-reflecting-pool-case/"
     ],
-    "canonical_id": null
+    "canonical_id": "NAT-2026-10-01-001",
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20260911-REFLECTING-POOL-CONTRACTOR",
+        "title": "Contractor reportedly attributes Reflecting Pool damage to federal repair work",
+        "status": "pending",
+        "first_seen_at": "2026-09-11T20:00:00Z",
+        "timestamp_precision": "minute",
+        "reason": "Underlying contractor records cited in derivative reporting were unavailable for direct inspection.",
+        "recheck_trigger": "Contractor correspondence, National Park Service record, court filing or independent document-level confirmation.",
+        "next_check_at": null,
+        "provenance": [
+          "https://www.reuters.com/world/us/contractor-said-reflecting-pool-damage-stemmed-repairs-nyt-reports-2026-09-11/"
+        ],
+        "canonical_id": null
+      }
+    ]
   },
   {
     "candidate_id": "QUEUE-20260911-REFINERY-DPA",
@@ -3325,13 +3343,14 @@
     "first_seen_at": "2026-09-20T18:45:00Z",
     "timestamp_precision": "minute",
     "status": "withheld",
-    "reason": "Reuters published a consequence analysis, but organization-wide sanctions remained based on unnamed-source reporting. No OFAC instrument, State Department announcement, effective date or implementation existed by cutoff.",
+    "reason": "AXA XL and the ICC confirmed that their insurance contract ended, but the ICC gave no reason and the claim that U.S. sanctions risk caused the termination relied on an unnamed source. No organization-wide sanctions instrument was issued.",
     "recheck_trigger": "An OFAC or State Department instrument, official announcement, effective date, implementation evidence or named-source confirmation.",
     "next_check_at": null,
     "provenance": [
       "https://www.reuters.com/world/trump-administration-prepares-sanction-international-criminal-court-wsj-reports-2026-09-20/",
       "https://www.wsj.com/world/trump-administration-preparing-sanctions-on-international-criminal-court-ae763c60",
-      "https://www.reuters.com/legal/government/how-us-sanctions-would-undermine-global-war-crimes-court-2026-09-21/"
+      "https://www.reuters.com/legal/government/how-us-sanctions-would-undermine-global-war-crimes-court-2026-09-21/",
+      "https://www.reuters.com/legal/government/icc-insurer-axa-ends-contract-amid-us-sanctions-threat-ft-reports-2026-10-01/"
     ],
     "canonical_id": null,
     "revisions": [
@@ -3349,6 +3368,39 @@
           "https://www.wsj.com/world/trump-administration-preparing-sanctions-on-international-criminal-court-ae763c60"
         ],
         "canonical_id": null
+      },
+      {
+        "candidate_id": "QUEUE-20260920-1757-03",
+        "title": "Reported organization-wide International Criminal Court sanctions",
+        "first_seen_at": "2026-09-20T18:45:00Z",
+        "timestamp_precision": "minute",
+        "status": "withheld",
+        "reason": "Reuters published a consequence analysis, but organization-wide sanctions remained based on unnamed-source reporting. No OFAC instrument, State Department announcement, effective date or implementation existed by cutoff.",
+        "recheck_trigger": "An OFAC or State Department instrument, official announcement, effective date, implementation evidence or named-source confirmation.",
+        "next_check_at": null,
+        "provenance": [
+          "https://www.reuters.com/world/trump-administration-prepares-sanction-international-criminal-court-wsj-reports-2026-09-20/",
+          "https://www.wsj.com/world/trump-administration-preparing-sanctions-on-international-criminal-court-ae763c60",
+          "https://www.reuters.com/legal/government/how-us-sanctions-would-undermine-global-war-crimes-court-2026-09-21/"
+        ],
+        "canonical_id": null,
+        "revisions": [
+          {
+            "candidate_id": "QUEUE-20260920-1757-03",
+            "title": "Reported organization-wide International Criminal Court sanctions",
+            "first_seen_at": "2026-09-20T18:45:00Z",
+            "timestamp_precision": "minute",
+            "status": "withheld",
+            "reason": "Reuters independently corroborated a Wall Street Journal report that organization-wide sanctions had been prepared, but both accounts relied on unnamed sources. No OFAC instrument, State Department announcement, effective date or implementation existed by cutoff, and timing remained unclear.",
+            "recheck_trigger": "An OFAC or State Department instrument, official announcement, effective date, implementation evidence or named-source confirmation.",
+            "next_check_at": null,
+            "provenance": [
+              "https://www.reuters.com/world/trump-administration-prepares-sanction-international-criminal-court-wsj-reports-2026-09-20/",
+              "https://www.wsj.com/world/trump-administration-preparing-sanctions-on-international-criminal-court-ae763c60"
+            ],
+            "canonical_id": null
+          }
+        ]
       }
     ]
   },
@@ -5720,13 +5772,30 @@
     "first_seen_at": "2026-09-30T16:06:47Z",
     "timestamp_precision": "second",
     "status": "withheld",
-    "reason": "Associated Press reported a consequential immigration-judge ruling on foreign-policy grounds, but the nonpublic decision was not available for original-source inspection, the respondent announced an appeal and the destination and protection claims remain unresolved.",
+    "reason": "Reuters independently confirmed the reported immigration-judge ruling, but the nonpublic decision remained unavailable for original-source inspection, an appeal was pending and destination and protection outcomes were unresolved.",
     "recheck_trigger": "Public decision text, Board of Immigration Appeals disposition, federal-court ruling, removal order implementation or independently verified destination and protection outcome.",
     "next_check_at": null,
     "provenance": [
-      "https://apnews.com/article/immigration-mosque-president-sarsour-deportation-ef9a50be073b571b4d8abbf49696f349"
+      "https://apnews.com/article/immigration-mosque-president-sarsour-deportation-ef9a50be073b571b4d8abbf49696f349",
+      "https://www.reuters.com/legal/government/immigration-judge-rules-us-can-deport-president-wisconsins-largest-mosque-2026-10-01/"
     ],
-    "canonical_id": null
+    "canonical_id": null,
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20260930-1206-02",
+        "title": "Salah Sarsour immigration-court removability ruling",
+        "first_seen_at": "2026-09-30T16:06:47Z",
+        "timestamp_precision": "second",
+        "status": "withheld",
+        "reason": "Associated Press reported a consequential immigration-judge ruling on foreign-policy grounds, but the nonpublic decision was not available for original-source inspection, the respondent announced an appeal and the destination and protection claims remain unresolved.",
+        "recheck_trigger": "Public decision text, Board of Immigration Appeals disposition, federal-court ruling, removal order implementation or independently verified destination and protection outcome.",
+        "next_check_at": null,
+        "provenance": [
+          "https://apnews.com/article/immigration-mosque-president-sarsour-deportation-ef9a50be073b571b4d8abbf49696f349"
+        ],
+        "canonical_id": null
+      }
+    ]
   },
   {
     "candidate_id": "QUEUE-20260930-1206-03",
@@ -6028,6 +6097,34 @@
     "next_check_at": null,
     "provenance": [
       "https://www.oig.dhs.gov/"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20261001-1204-01",
+    "title": "Keith Sonderling confirmed as labor secretary",
+    "first_seen_at": "2026-10-01T16:04:13Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "reason": "Routine personnel confirmation did not independently change a national policy, expenditure, adjudication or measured outcome.",
+    "recheck_trigger": "A material implementing directive, enforcement change, appropriation or measurable departmental action attributable to the new secretary.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.reuters.com/world/us/us-senate-confirms-keith-sonderling-labor-secretary-2026-10-01/"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20261001-1204-02",
+    "title": "Todd Butler Fifth Circuit nomination announcement",
+    "first_seen_at": "2026-10-01T15:38:09Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "reason": "A Truth Social post announced an intended judicial nomination; no Senate submission, hearing or confirmation was established, and routine personnel announcements do not independently meet the publication threshold.",
+    "recheck_trigger": "Formal nomination submission plus a material confirmation, withdrawal or independently consequential process development.",
+    "next_check_at": null,
+    "provenance": [
+      "https://truthsocial.com/@realDonaldTrump/117366396669364721"
     ],
     "canonical_id": null
   }
