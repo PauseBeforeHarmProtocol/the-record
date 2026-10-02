@@ -1,37 +1,37 @@
 {
-  "version": "10.113.0",
+  "version": "10.114.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-02T09:57:28Z",
-    "through_utc": "2026-10-02T15:56:30Z",
+    "from_utc": "2026-10-02T15:56:30Z",
+    "through_utc": "2026-10-02T21:57:44Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous research coverage begins at the prior exact cutoff. Two new records and two same-event refreshes cleared the threshold. The Truth Social feed check completed 33 seconds after the research cutoff and is reported separately; no coverage claim extends beyond reviewed material."
+    "note": "Continuous research coverage begins at the prior exact cutoff. Two same-event refreshes cleared the threshold. The Treasury sanctions announcement and October 1 university-donor temporary restraining order were explicit prior-window recoveries identified during this review and are not represented as newly occurring inside the window. The Truth Social and Trump TV checks completed after the research cutoff and are reported separately; no coverage claim extends beyond reviewed material."
   },
   "release_iso": "2026-10-02",
   "release_human": "October 2, 2026",
-  "checked_at": "2026-10-02 11:56 AM EDT",
-  "previous_version": "10.112.2",
-  "previous_checked_at": "2026-10-02 5:57 AM EDT",
-  "window_started_at": "2026-10-02 5:57 AM EDT",
-  "window_ended_at": "2026-10-02 11:56 AM EDT",
+  "checked_at": "2026-10-02 5:57 PM EDT",
+  "previous_version": "10.113.0",
+  "previous_checked_at": "2026-10-02 11:56 AM EDT",
+  "window_started_at": "2026-10-02 11:56 AM EDT",
+  "window_ended_at": "2026-10-02 5:57 PM EDT",
   "week_start": "2026-09-26",
   "week_end": "2026-10-02",
   "week_label": "September 26–October 2, 2026",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-10-02-001",
-    "NAT-2026-10-02-002",
-    "NAT-2026-09-22-006",
-    "NAT-2026-09-03-003"
+    "NAT-2026-10-01-006",
+    "NAT-2026-10-02-003",
+    "NAT-2026-09-14-009",
+    "NAT-2026-09-22-006"
   ],
   "added_entry_ids": [
-    "NAT-2026-10-02-001",
-    "NAT-2026-10-02-002"
+    "NAT-2026-10-01-006",
+    "NAT-2026-10-02-003"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-09-22-006",
-    "NAT-2026-09-03-003"
+    "NAT-2026-09-14-009",
+    "NAT-2026-09-22-006"
   ],
   "dedupe_resolutions": [
     {
@@ -543,24 +543,58 @@
       "target_id": "NAT-2026-09-03-003",
       "decision": "same_event_update",
       "notes": "The Coast Guard fuel-vessel interdiction is a ship-level enforcement development within the existing Cuba sanctions and fuel-restriction record."
+    },
+    {
+      "entry_id": "NAT-2026-09-14-009",
+      "target_id": "QUEUE-20260930-1206-04",
+      "decision": "same_event_update",
+      "notes": "The Western District of Texas preliminary injunction concerns the same Big Bend barrier program and is preserved as a separate-case lifecycle development in the stable canonical Big Bend record."
+    },
+    {
+      "entry_id": "NAT-2026-09-22-006",
+      "target_id": "NAT-2026-09-22-006",
+      "decision": "same_event_update",
+      "notes": "Trump's direct rejection of a diesel export ban resolves the immediate policy choice within the existing diesel and reserve-release episode; it does not warrant a parallel record."
+    },
+    {
+      "entry_id": "NAT-2026-10-02-003",
+      "target_id": "NAT-2026-09-14-005",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The October 2 Hamas-financing designations target a different organization, authority predicate and alleged network than the September Iran-related bank sanctions."
+    },
+    {
+      "entry_id": "NAT-2026-10-02-003",
+      "target_id": "NAT-2026-08-26-003",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "Both invoke Executive Order 13224, but the October Hamas-financing network designations have different targets, alleged conduct and operative designation action from the August foreign-organization sanctions."
+    },
+    {
+      "entry_id": "NAT-2026-10-02-003",
+      "target_id": "NAT-2026-09-11-015",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The annual continuation preserves the underlying national emergency; the October 2 record is a separate target-specific designation action under that authority."
     }
   ],
   "rejected_candidates": [
     {
       "title": "South Korea $8.4 billion enhanced oil-recovery announcement",
-      "reason": "Trump's post establishes that he announced the figure. Reuters repeated the statement but located no independent Seoul, project-company, contract or financing confirmation of this component by cutoff, so the existing South Korea investment record was not refreshed."
+      "reason": "Trump's post establishes that he announced the figure. Reuters later reported that he defended the announcement, but no independent Seoul, project-company, contract or financing confirmation was located by cutoff; the existing record was not refreshed."
     },
     {
-      "title": "Third carrier and roughly 9,000 personnel reportedly heading to Middle East",
-      "reason": "The Associated Press report preceded the exact boundary and relied on an unnamed U.S. official for the consequential force total and destination. No public Pentagon order or second independent confirmation was located by cutoff; the lead remains queued."
+      "title": "Expected Senate vote on Saudi nuclear agreement",
+      "reason": "Reuters reported senators expected a post-election vote on a previously submitted agreement. That procedural expectation is not a new administration action, enacted resolution, court finding or implementation milestone."
+    },
+    {
+      "title": "Truth Social Cornell question and inaccessible campaign media",
+      "reason": "The Cornell post announced no federal action and its implied premise was not independently verified. Three attached media assets could not be retrieved; no footage was watched or visual claim inferred, and independent transcript discovery described two as routine campaign advocacy."
     },
     {
       "title": "Trump TV October 2 metadata follow-up",
-      "reason": "The official stream ID remained unchanged. The dated library added a 1:34 America.Gov Launch item identified as an October 1 clip, but only title, date, duration and page metadata were retrieved. Complete footage, captions and transcript were unavailable; repeated or edited footage was not treated as a new action and no broadcast boundary was advanced."
+      "reason": "Official pages and the linked stream were rechecked; stream ID A4gNgHfZ-v4 remained linked and no later library listing than the America.Gov Launch clip appeared. Complete footage, captions and transcript were unavailable, no broadcast boundary was advanced and no qualifying new item was located in the material reviewed."
     },
     {
       "title": "External archive discovery inputs",
-      "reason": "Trump Archive displayed 14,472 total items, 11,965 Truth Social posts and 1,862 speeches or transcripts. UndoTrump remained at 1,264 actions, 995 active, 44 in courts and 42 restored. Immigration Policy Tracking displayed 1,799 actions, 649 fully in effect, 56 partially in effect and 291 not in effect. Record47's rendered page remained inconsistent with its prior API snapshot and the API endpoints were inaccessible. Unlike units remain separate and no upstream item was promoted automatically."
+      "reason": "Trump Archive displayed 14,477 total items, 11,969 Truth Social posts and 1,862 speeches or transcripts. UndoTrump remained at 1,264 actions, 995 active, 44 in courts and 42 restored. Immigration Policy Tracking remained at 1,799 actions, including 649 fully in effect, 56 partially in effect and 291 not in effect. Record47's rendered page remained inconsistent with preserved API measurements. Unlike units remain separate and no upstream item was promoted automatically."
     },
     {
       "title": "Legacy-quality queue",
@@ -571,11 +605,11 @@
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance); GPT-6 Astra (independent deep editorial gate review). AI output is not treated as evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-02T16:03:30Z",
-    "checked_at_eastern": "2026-10-02 12:03:30 PM EDT",
+    "checked_at": "2026-10-02T22:02:20Z",
+    "checked_at_eastern": "2026-10-02 6:02:20 PM EDT",
     "inspection_status": "partial_metadata_followup",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-02T16:03:30Z",
+    "last_successful_page_inspection_at": "2026-10-02T22:02:20Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -592,41 +626,41 @@
       "https://www.youtube.com/watch?v=FsZFFQocGsI",
       "https://www.whitehouse.gov/videos/america-gov-launch/"
     ],
-    "summary": "The official Trump TV stream ID remained A4gNgHfZ-v4. The dated library displayed a 1:34 America.Gov Launch item on October 2 whose page identifies the original event date as October 1; the other October 1 site-visit, gaggle and Alaska LNG items were unchanged. Only official page metadata, titles, dates, durations and stable IDs were inspected. Direct video, captions and complete transcripts were not retrieved; fallback error text was not used as proof that a stream was offline. The new listing was treated as an edited clip or replay rather than a new government action, no broadcast boundary was advanced and no qualifying new item was located in the material reviewed.",
+    "summary": "The official Trump TV page, live hub, dated video library, remarks and releases pages were rechecked. Direct browser inspection verified that the linked stream ID remained A4gNgHfZ-v4. The newest library item remained the 1:34 America.Gov Launch clip tied to an October 1 event; no later listing appeared. Only page metadata, titles, dates, durations and stable IDs were inspected. Direct video, captions and complete transcripts were not retrieved; fallback error text was not used as proof that a stream was offline. The item remained an edited clip or replay rather than a new government action, no broadcast boundary was advanced and no qualifying new item was located in the material reviewed.",
     "items": [
       {
         "url": "https://www.whitehouse.gov/trumptv/",
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-02T16:03:30Z",
+        "observed_at": "2026-10-02T22:02:20Z",
         "format": "official 24/7 stream page; live/replay state not independently verified",
-        "inspection": "Page metadata exposed the unchanged Trump TV stream ID A4gNgHfZ-v4; footage and captions were not retrieved."
+        "inspection": "Direct browser inspection verified the unchanged linked Trump TV stream ID A4gNgHfZ-v4; footage and captions were not retrieved."
       },
       {
         "url": "https://www.whitehouse.gov/live/",
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-02T16:03:30Z",
+        "observed_at": "2026-10-02T22:02:20Z",
         "format": "official live-hub metadata; current live/replay state not independently verified",
-        "inspection": "Page source exposed event-stream ID 5fRpXOyalfc and Trump TV ID A4gNgHfZ-v4; footage was not retrieved and fallback text was not treated as a status finding."
+        "inspection": "The live hub still exposed Trump TV alongside the event stream. Footage was not retrieved and fallback text was not treated as a status finding."
       },
       {
         "url": "https://www.whitehouse.gov/videos/",
         "posted_date": "2026-10-01",
         "original_event_date": "2026-10-01",
         "broadcast_time": null,
-        "observed_at": "2026-10-02T16:03:30Z",
+        "observed_at": "2026-10-02T22:02:20Z",
         "format": "dated library metadata for replay or edited uploads",
-        "inspection": "The library displayed a 1:34 America.Gov Launch item on October 2 whose page identifies October 1 as the event date; the prior October 1 items remained visible. Titles, dates and durations were inspected; complete footage and captions were not retrieved."
+        "inspection": "The library still displayed the 1:34 America.Gov Launch item tied to an October 1 event; no later listing appeared. Titles, dates and durations were inspected; complete footage and captions were not retrieved."
       },
       {
         "url": "https://www.whitehouse.gov/videos/america-gov-launch/",
         "posted_date": "2026-10-02",
         "original_event_date": "2026-10-01",
         "broadcast_time": null,
-        "observed_at": "2026-10-02T16:03:30Z",
+        "observed_at": "2026-10-02T22:02:20Z",
         "format": "official 01:34 edited clip or replay; stable White House page, linked YouTube ID not retrieved",
         "inspection": "Official title, duration and page date were inspected. Direct footage, captions and transcript were not retrieved, so no claim is made about everything shown or said."
       },
@@ -691,33 +725,33 @@
       "Broadcast times are page-level datePublished metadata and were not verified against complete footage.",
       "No verified channel budget, contract, staffing allocation or shared funding with the separate government-paid advertising contract was located."
     ],
-    "previous_page_inspection_at": "2026-10-02T09:59:45Z"
+    "previous_page_inspection_at": "2026-10-02T16:03:30Z"
   },
   "truth_social_inspection": {
     "scope": "1000 retained fallback posts; current content hashes only",
     "counts": {
       "text_status": {
         "not_recorded": 136,
-        "pending": 521,
-        "reviewed": 343
+        "pending": 517,
+        "reviewed": 347
       },
       "media_status": {
-        "not_applicable": 479,
+        "not_applicable": 482,
         "not_recorded": 19,
-        "pending": 239,
+        "pending": 233,
         "reviewed": 32,
-        "unavailable": 231
+        "unavailable": 234
       }
     },
-    "new_posts": 2,
-    "source_rows_added": 2,
+    "new_posts": 4,
+    "source_rows_added": 4,
     "new_media_reviewed": 0,
-    "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-02T15:57:03.577973Z",
-    "checked_at_eastern": "2026-10-02 11:57:03 AM EDT",
-    "latest_post_at_utc": "2026-10-02T14:01:01.407000Z",
-    "latest_post_at_eastern": "2026-10-02 10:01:01 AM EDT",
-    "latest_post_id": "117371677010048663",
-    "note": "The validated mirror advanced by two posts. Trump's diesel-release statement became a research lead and was independently substantiated in broader form by a G7 leaders' statement, which supports the canonical diesel refresh. His $8.4 billion South Korea enhanced oil-recovery announcement lacked independent Seoul or project-level confirmation and remains queued. Both posts had no attached media and were not treated as proof of claims beyond their publication."
+    "new_media_unavailable": 3,
+    "checked_at_utc": "2026-10-02T21:58:48.670803Z",
+    "checked_at_eastern": "2026-10-02 5:58:48 PM EDT",
+    "latest_post_at_utc": "2026-10-02T21:16:16.110000Z",
+    "latest_post_at_eastern": "2026-10-02 5:16:16 PM EDT",
+    "latest_post_id": "117373388463106981",
+    "note": "The validated mirror advanced by four posts. The newest post questioned a New York appointment but announced no federal action. The other three carried image or video assets that could not be retrieved; no footage was watched and no visual claim was inferred. Independent transcript discovery described two as routine campaign advocacy. None independently cleared the canonical publication threshold, so all remain in the separate feed."
   }
 }
