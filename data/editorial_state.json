@@ -5161,6 +5161,54 @@
       "provenance_path": "data/editorial_change_notes/10.112.0.json",
       "provenance_sha256": "d978ecf705a8d69ac783168d32be705a0174599a196b062989cc0fa4d383e607",
       "note": "Evidence status, strongest response, uncertainty and duplicate disposition were reviewed as a single bounded change."
+    },
+    {
+      "change_id": "10.113.0:NAT-2026-10-02-001",
+      "entry_id": "NAT-2026-10-02-001",
+      "as_of_utc": "2026-10-02T15:56:30Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.113.0",
+      "summary": "BLS reported 29,000 September payroll growth, 4.2% unemployment and 60,000 in downward revisions.",
+      "provenance_path": "data/editorial_change_notes/10.113.0.json",
+      "provenance_sha256": "a9ea86d2cf4eb04c1e3fd05b598fb675aad31eca4b7e7209b45670c3e0f3a86a",
+      "note": "Evidence status, strongest response, uncertainty and duplicate disposition were reviewed as a single bounded change."
+    },
+    {
+      "change_id": "10.113.0:NAT-2026-10-02-002",
+      "entry_id": "NAT-2026-10-02-002",
+      "as_of_utc": "2026-10-02T15:56:30Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.113.0",
+      "summary": "ICE issued trained-only vehicle-stop guidance and barred high-speed pursuits.",
+      "provenance_path": "data/editorial_change_notes/10.113.0.json",
+      "provenance_sha256": "a9ea86d2cf4eb04c1e3fd05b598fb675aad31eca4b7e7209b45670c3e0f3a86a",
+      "note": "Evidence status, strongest response, uncertainty and duplicate disposition were reviewed as a single bounded change."
+    },
+    {
+      "change_id": "10.113.0:NAT-2026-09-22-006",
+      "entry_id": "NAT-2026-09-22-006",
+      "as_of_utc": "2026-10-02T15:56:30Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.113.0",
+      "summary": "The G7 formally committed to a coordinated 100 million-barrel release with front-loaded diesel.",
+      "provenance_path": "data/editorial_change_notes/10.113.0.json",
+      "provenance_sha256": "a9ea86d2cf4eb04c1e3fd05b598fb675aad31eca4b7e7209b45670c3e0f3a86a",
+      "note": "Evidence status, strongest response, uncertainty and duplicate disposition were reviewed as a single bounded change."
+    },
+    {
+      "change_id": "10.113.0:NAT-2026-09-03-003",
+      "entry_id": "NAT-2026-09-03-003",
+      "as_of_utc": "2026-10-02T15:56:30Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.113.0",
+      "summary": "The Coast Guard disclosed its September 5 interception of a fuel vessel bound for Cuba.",
+      "provenance_path": "data/editorial_change_notes/10.113.0.json",
+      "provenance_sha256": "a9ea86d2cf4eb04c1e3fd05b598fb675aad31eca4b7e7209b45670c3e0f3a86a",
+      "note": "Evidence status, strongest response, uncertainty and duplicate disposition were reviewed as a single bounded change."
     }
   ],
   "reviews": [
@@ -57658,6 +57706,795 @@
       "unresolved_questions": [
         "Whether the Justice Department appeals and how other trial or appellate courts treat the constitutional ruling.",
         "Disposition and measured outcomes of the remaining noncitizen-voting cases."
+      ]
+    },
+    {
+      "review_id": "10.113.0:NAT-2026-09-03-003:7745789e",
+      "entry_id": "NAT-2026-09-03-003",
+      "content_sha256": "7745789eba337aec7f5fa0978fbb109bbd31991574736d691921556a6518b702",
+      "reviewed_at": "2026-10-02T15:56:30Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "4a30e743fd83380b0f071ce66fbc8eed2686daea8ff5fc0cca26109e2c4db01a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_cuba_designations_sep3",
+              "locator": "designation authority and listed targets",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "23b89b301430e314b4274cf562d76a56679df638ff50212664594e765ed5c950",
+              "origin_group": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "state_cuba_designations_sep3",
+              "locator": "designation authority and listed targets",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "483caffea73eb8ebf75b05b3aec544725dcd47ef6ef0aaaa56aabee30697996e",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "559898effcb062d4ea7a918faa028ed07661e6ad0616da6f2bc5c8f46a850620",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_cuba_designations_sep3",
+              "locator": "listed entities and sanctions implications",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "23b89b301430e314b4274cf562d76a56679df638ff50212664594e765ed5c950",
+              "origin_group": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "dafb1931a91ef674ff0ce4b4d1697d4fc85b9574247b1a925c3b3535cbce96d1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_cuba_designations_sep3",
+              "locator": "general-license amendment",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "23b89b301430e314b4274cf562d76a56679df638ff50212664594e765ed5c950",
+              "origin_group": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "f3b95f89aed309ffcc43889ac88fdbc488aeba4dd5a00dacbe9894383d86621d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "state_cuba_designations_sep3",
+              "locator": "agency rationale and Cuban response",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "483caffea73eb8ebf75b05b3aec544725dcd47ef6ef0aaaa56aabee30697996e",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_cuba_designations_sep3",
+              "locator": "agency rationale and Cuban response",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "11a19a2e2ffb77adc7d898681b1124949f2551fabd5aa71348ee6ba584b0609b",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "f3cafaa8ee02295460486e6fa86a276df9e3716af9af40625a6ef733326df4db",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "us_embassy_havana_health_alert_sep4",
+              "locator": "health-alert observations and precautions",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "b67f971ab0d83e00f5687c561e0d9d56fd66f286ed7bc01822f8c96592d6bdb9",
+              "origin_group": "U.S. Embassy in Cuba / Department of State",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "0067c8f44602628fc022a132c60e49785e1d6bf5865f13495385f33f202b55a4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_cuba_health_alert_sep5",
+              "locator": "infrastructure, fuel and disease-risk reporting",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "a55340facecb18509bebb02ea7545f1575fccedaaed8cf79c983ffccfb6d07a1",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "bfa52bac9df7ad94b40899c5d7aa39bf30ce209bfeb96896a6426856412e2762",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cuba_sanctions_regs_sep29",
+              "locator": "regulatory text, effective date and future supplementation",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "bbd2998a00080038569c42f0a3a8f100abbc124eb00a8dc8513bfca752865b28",
+              "origin_group": "Office of Foreign Assets Control / Department of the Treasury",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "ed48ced7c53d25cf48568b6efa92c2cd642a823930ba2f6c9ad3a15684b992ec",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_coast_guard_cuba_fuel_oct2",
+              "locator": "Coast Guard account of stop, boarding, cargo and escort",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "eb5438ef63e041c0ad8e404118b7e8f63c685047c663da095070a94de3122486",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "636165573ffcd0cc45dd42eb0f91824420334793c4c0dba78f7e8bbf5a5ec9be",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_coast_guard_cuba_fuel_oct2",
+              "locator": "reported disclosure limits and agency characterizations",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "eb5438ef63e041c0ad8e404118b7e8f63c685047c663da095070a94de3122486",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "ad2d03a0cabf71c0935c2c4117474f22ce1403b3e5717c522549b233d2140eb2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_coast_guard_cuba_fuel_oct2",
+              "locator": "reported absence of measured outcomes and unresolved disposition",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "eb5438ef63e041c0ad8e404118b7e8f63c685047c663da095070a94de3122486",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "d3cbcb0a948a5882347a08e28f5cc40cf34f782ce4275f5d7cc265f08995909a",
+          "review_note": "Reviewed to distinguish a disclosed interdiction from judicial proof, completed forfeiture, quantified supply effects or policy success."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "2d6cd2fd708e0e7ba478d17a943e10622570d293705eab53801d9bd4daf7a300",
+          "review_note": "Reviewed to distinguish a disclosed interdiction from judicial proof, completed forfeiture, quantified supply effects or policy success."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "fecd27dcb3d3000b6602510f2fbc5587584fc5b5d931165beee3e9d21d96ca22",
+          "review_note": "Reviewed to distinguish a disclosed interdiction from judicial proof, completed forfeiture, quantified supply effects or policy success."
+        }
+      ],
+      "unresolved_questions": [
+        "Legal authority, cargo quantity, ownership, charges, forfeiture and final disposition of the intercepted vessel and fuel.",
+        "Measured supply, humanitarian and Cuban-government effects."
+      ]
+    },
+    {
+      "review_id": "10.113.0:NAT-2026-09-22-006:abc71033",
+      "entry_id": "NAT-2026-09-22-006",
+      "content_sha256": "abc71033d1ad524044203e198f94d89aab5fdb97fc3a24bf28dece5d110585a5",
+      "reviewed_at": "2026-10-02T15:56:30Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "9d494bcd400f0b13780cd8a5cadaa7a14fc53227a8b5e8ee18e843071c989057",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_diesel_export_ban_proposal_sep22",
+              "locator": "presidential statement and proposal status",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "188dc1f826919a6d247818b962df68b5537b6370f2e1f6216e03fa9e5ba628f7",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "c555e93410c452fe802ba2edf21144d1f9ad89d378fa9dda3bb2cfe51db9a648",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_diesel_export_ban_proposal_sep22",
+              "locator": "feasibility discussion and lack of operative measure",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "188dc1f826919a6d247818b962df68b5537b6370f2e1f6216e03fa9e5ba628f7",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "d81b83415bfbcfadbbb4ada41f992500ee413d17340c611ed6f7faebebc9eedb",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_diesel_export_ban_proposal_sep22",
+              "locator": "named cabinet objections",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "188dc1f826919a6d247818b962df68b5537b6370f2e1f6216e03fa9e5ba628f7",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "061aafaf3d2cb625cb12b91d1ca8f6b3295d654f40fe40e9ba4cb28857e1b256",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_diesel_export_ban_proposal_sep22",
+              "locator": "reporting on context and non-implementation",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "188dc1f826919a6d247818b962df68b5537b6370f2e1f6216e03fa9e5ba628f7",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "6e8b444c6cb80c58246c7a4f4dfd611a5141f348c42e913e817ddf208db6ba7f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_diesel_export_denial_sep23",
+              "locator": "White House denial and secretary statement",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "d565626d1f6cdd4c0a3414af31b3f7da6ea30ce0f1f949800a36433cf4268559",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "2f13f4bca54d3ac60bc3c13f997c4384646c4e1026e51dcc21556ee32ea7d5b1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_diesel_export_denial_sep23",
+              "locator": "remaining voluntary-measure discussion",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "d565626d1f6cdd4c0a3414af31b3f7da6ea30ce0f1f949800a36433cf4268559",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "3682cade2a1f38ef5ffb6ce01b7f06b2cb2c9eb117db38ecd0c8e09bb77162a4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_diesel_export_denial_sep23",
+              "locator": "clarification and unnamed-source limit",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "d565626d1f6cdd4c0a3414af31b3f7da6ea30ce0f1f949800a36433cf4268559",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "551bdf3bd92da51573e7aa18e3dc4b36879789abfb590df6b782a4e0f1cb7276",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "elysee_g7_energy_statement_oct2",
+              "locator": "formal release volume, timing and diesel front-loading",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "58563345da173e5abff5f3cd04b56052da30d5e03d98b688abcb28175aa3d663",
+              "origin_group": "Presidency of the French Republic",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_g7_reserve_release_oct2",
+              "locator": "formal release volume, timing and diesel front-loading",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "2d1dbac1e21cf7a5568cd1451c556269a6d39f4c57e80a4a1343ee4a3f3d5668",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_g7_reserve_release_oct2",
+              "locator": "formal release volume, timing and diesel front-loading",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "a2f179218324c6c4f1f276a60c77bd153b55dc7a382328176593c9a1e5934cf8",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "43fe9285b2a445049097eedc31a87cd5cc0ba2e99975931f171f76e718eb0612",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "elysee_g7_energy_statement_oct2",
+              "locator": "open-trade pledge and implementation status",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "58563345da173e5abff5f3cd04b56052da30d5e03d98b688abcb28175aa3d663",
+              "origin_group": "Presidency of the French Republic",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_g7_reserve_release_oct2",
+              "locator": "open-trade pledge and implementation status",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "2d1dbac1e21cf7a5568cd1451c556269a6d39f4c57e80a4a1343ee4a3f3d5668",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "3d4189eb8508c6e467e54bd596bb4887105a88f6565ac1a2ec7e3de539b9d8b9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "elysee_g7_energy_statement_oct2",
+              "locator": "formal statement compared with presidential post and unmeasured effects",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "58563345da173e5abff5f3cd04b56052da30d5e03d98b688abcb28175aa3d663",
+              "origin_group": "Presidency of the French Republic",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_g7_reserve_release_oct2",
+              "locator": "formal statement compared with presidential post and unmeasured effects",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "a2f179218324c6c4f1f276a60c77bd153b55dc7a382328176593c9a1e5934cf8",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "d5d221d053fe1cb67d60be364c6426d1615952723c2805a3706c3ae4f80cbda5",
+          "review_note": "Reviewed to distinguish a formal reserve-release commitment from completed drawdowns, measured price relief or a proven causal role."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "9b42bd431c3df0adc65808eaa38d5b15ef7e6c59fa2851d4602c4833bd4a1d23",
+          "review_note": "Reviewed to distinguish a formal reserve-release commitment from completed drawdowns, measured price relief or a proven causal role."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "4da641a65ecad847f97b9cf7f9989c22e6860c14b5fe671d2f138a89272f6534",
+          "review_note": "Reviewed to distinguish a formal reserve-release commitment from completed drawdowns, measured price relief or a proven causal role."
+        }
+      ],
+      "unresolved_questions": [
+        "Country allocations, completed withdrawals and deliveries under the G7 commitment.",
+        "Measured effects on diesel availability and prices and any later U.S. export measure."
+      ]
+    },
+    {
+      "review_id": "10.113.0:NAT-2026-10-02-001:ed7396d1",
+      "entry_id": "NAT-2026-10-02-001",
+      "content_sha256": "ed7396d109c1ae00b08fd6e6f38dfc678d16fef257328dadd21c6f071d1cba3f",
+      "reviewed_at": "2026-10-02T15:56:30Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "d3d2466f90245b931e4d3f8958b6f2a9bf4ecc51501b2a7c5813faee322affcc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_sep2026_oct2",
+              "locator": "headline payroll and household-survey measures",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "de315a31c9cd0dd71b1aa3c5609b750481d4f9f7e803194d174a0db4d726d954",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5643b27a46cca7dd6d926e7164fa322c36ea41336b5273f84820c1abfceadd59",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_sep2026_oct2",
+              "locator": "participation, employment ratio and demographic measures",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "de315a31c9cd0dd71b1aa3c5609b750481d4f9f7e803194d174a0db4d726d954",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "5440dd93cfa434a93f46a03c16b3dfaf0ae4737d95da8c3d859d4aea6776ab22",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_sep2026_oct2",
+              "locator": "industry and earnings tables",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "de315a31c9cd0dd71b1aa3c5609b750481d4f9f7e803194d174a0db4d726d954",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "3614805c655c280f01672d7fbbb49266818dca27a776066c2b1a6e71d2d9f852",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_sep2026_oct2",
+              "locator": "revision table and preliminary status",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "de315a31c9cd0dd71b1aa3c5609b750481d4f9f7e803194d174a0db4d726d954",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "33a13a2c984108d5e7993e650ff01d5ed74a253eecf063bf7ab64fa24ca05626",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_employment_sep2026_oct2",
+              "locator": "expectations, calendar effect and independent labor-market context",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "b3ace6f99b212f92fac6d09bb21a6ffee7ff768fa8766484f8926e4385b5cc15",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_employment_sep2026_oct2",
+              "locator": "expectations, calendar effect and independent labor-market context",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "6857ff9c25599a7e8f0c13edb9ab70cf3bcaa9945b8962fd6f508dfe23f7b5b2",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "0b0fd154df24dd7d3133140a068f435b587ea413507b04189263c62a52f971c8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_sep2026_oct2",
+              "locator": "official measurement and independent causation limits",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "de315a31c9cd0dd71b1aa3c5609b750481d4f9f7e803194d174a0db4d726d954",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_employment_sep2026_oct2",
+              "locator": "official measurement and independent causation limits",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "b3ace6f99b212f92fac6d09bb21a6ffee7ff768fa8766484f8926e4385b5cc15",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "44e690fc775a7e72b9facbc531ec9ab90d1d9478d67dfedf891a92fdfbcfade8",
+          "review_note": "Reviewed to separate preliminary statistical measurements from recession claims, mass-layoff claims and unproven policy causation."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "a66a91e5c77d215a00f4fa20bd2e7470bef6aa12cdc437ad9f5d4f6c3f5dfe13",
+          "review_note": "Reviewed to separate preliminary statistical measurements from recession claims, mass-layoff claims and unproven policy causation."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "1c2a30e9b47e5b9ca7b9c706e364a86101127def861f5eb8f1ba9012131efce1",
+          "review_note": "Reviewed to separate preliminary statistical measurements from recession claims, mass-layoff claims and unproven policy causation."
+        }
+      ],
+      "unresolved_questions": [
+        "Subsequent revisions, hiring and separation data, claims, participation, real wages and later monthly reports."
+      ]
+    },
+    {
+      "review_id": "10.113.0:NAT-2026-10-02-002:22f62977",
+      "entry_id": "NAT-2026-10-02-002",
+      "content_sha256": "22f6297737951caa63bc925e8de338e4f3592e80772486c121ffc507959e913e",
+      "reviewed_at": "2026-10-02T15:56:30Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "bf11773d8def6f1ed6d37117245eb3773b77b6c7a77b51453df424f8d494bffd",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_ice_vehicle_guidance_oct2",
+              "locator": "direct review of September 30 memorandum and pursuit rule",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "ec100d9766f35f8b6f9c50c73051ccb06508bdc8f3a7ee0809941e48e5dbbef8",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "a99d4ebb37f4a6b4bd2125484fff325dfa85fb45e20adc75e5d69b1e16e6b22a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_ice_vehicle_guidance_oct2",
+              "locator": "training requirements and support-role restriction",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "ec100d9766f35f8b6f9c50c73051ccb06508bdc8f3a7ee0809941e48e5dbbef8",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "132e97b696375359aa00ffb845b412a1e5056a68f92030c456b5da9f49485efd",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_ice_vehicle_guidance_oct2",
+              "locator": "equipment, camera, pinning and tire-deflation provisions",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "ec100d9766f35f8b6f9c50c73051ccb06508bdc8f3a7ee0809941e48e5dbbef8",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "fbfd77bf0f3851c959c92e6d134322762faec6e5d77b1cbc097c1e12a2b6ad35",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_ice_vehicle_guidance_oct2",
+              "locator": "on-record ICE response and document status",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "ec100d9766f35f8b6f9c50c73051ccb06508bdc8f3a7ee0809941e48e5dbbef8",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "2aeb0426389a32b6b415d76681ef281c44f2125c9c304d1ce232d4324d1780b0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_ice_vehicle_guidance_oct2",
+              "locator": "shooting context and limits",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "ec100d9766f35f8b6f9c50c73051ccb06508bdc8f3a7ee0809941e48e5dbbef8",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "cb32a553fc8567e1faa6290138a4434698ed41fef4d4bce838008c2be15b7630",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_ice_vehicle_guidance_oct2",
+              "locator": "direct review, response and unresolved implementation measures",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "ec100d9766f35f8b6f9c50c73051ccb06508bdc8f3a7ee0809941e48e5dbbef8",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "84ffd9d4340d137fd3e5e093ed85009ba359da22a5739d93d549af810106a054",
+          "review_note": "Reviewed to distinguish issued internal guidance from publication of the full memo, universal compliance and measured safety outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "e644fcbd1972590d68adcd1db2304c963931c00c99b5596c548fe70b5ec58e38",
+          "review_note": "Reviewed to distinguish issued internal guidance from publication of the full memo, universal compliance and measured safety outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "74686106f192cbdd2206408f54f27c988f2d2e82a1403f3d720a46c1e2e50b3d",
+          "review_note": "Reviewed to distinguish issued internal guidance from publication of the full memo, universal compliance and measured safety outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Public release of the complete memorandum, field compliance, discipline, stop volume, pursuits and safety outcomes."
+      ]
+    },
+    {
+      "review_id": "10.113.0:NAT-2026-09-04-004:e2bf8c1d",
+      "entry_id": "NAT-2026-09-04-004",
+      "content_sha256": "e2bf8c1de2de6b2e5b623f217709a67b445d0e352a498142d8804cfa4a8d0f0c",
+      "reviewed_at": "2026-10-02T15:56:30Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "1359d5ad0a81706ac872139169741cf528aa1abe6124a0bfe8b51302e7029db4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_aug2026_sep4",
+              "locator": "headline payroll and unemployment estimates",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "3567549a5dd2bd3f8e131bd8cdf13778baca194bbb12b68d962741cbaf0e5b85",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "06d72319b39d92fb3729b66d55e0ffad8d4036d3ce94ffa930f0a44a97634c38",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_aug2026_sep4",
+              "locator": "industry and earnings estimates",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "3567549a5dd2bd3f8e131bd8cdf13778baca194bbb12b68d962741cbaf0e5b85",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "4cd8ddcadc83d50df009afbcd525c88d079fd5f31975d9457067f6f9566e0916",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_aug2026_sep4",
+              "locator": "participation and involuntary-part-time estimates",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "3567549a5dd2bd3f8e131bd8cdf13778baca194bbb12b68d962741cbaf0e5b85",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "123881d423374a9d41287b993858107401dd925113e4c4f9d3300a043239b4d2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_aug2026_sep4",
+              "locator": "revision table and preliminary status",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "3567549a5dd2bd3f8e131bd8cdf13778baca194bbb12b68d962741cbaf0e5b85",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "9c9674bc08914a9d5c330d8a12f869e703fc0f6a821c717831c63db6721d036c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_aug2026_sep4",
+              "locator": "official measures, expectations, market reaction and causation limits",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "3567549a5dd2bd3f8e131bd8cdf13778baca194bbb12b68d962741cbaf0e5b85",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_employment_aug2026_sep4",
+              "locator": "official measures, expectations, market reaction and causation limits",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "43aab565af23ca90b1dfd4f8a699dbda55dc55f88af8431f178b4b758ff0951f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "22299177c3b6122f5b7654bcb6b6951dee6a0c2963a4bb3ecdebbdd3d36e9a98",
+          "review_note": "Reviewed after replacing a moving BLS latest-release URL with the date-stable archived August release; factual claims and bounded reasoning are unchanged."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "6df9b412df2726014dfbc536bd5c63d4ef4d2f87b3590844eaae087ad9abe962",
+          "review_note": "Reviewed after replacing a moving BLS latest-release URL with the date-stable archived August release; factual claims and bounded reasoning are unchanged."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "ceb80b7b6b6d17128eeaa4ed159610405eecb2a68c14c207b2bb03caf0e05852",
+          "review_note": "Reviewed after replacing a moving BLS latest-release URL with the date-stable archived August release; factual claims and bounded reasoning are unchanged."
+        }
+      ],
+      "unresolved_questions": [
+        "Later revisions, benchmark updates and durable labor-market outcomes remain subject to future review."
       ]
     }
   ],
