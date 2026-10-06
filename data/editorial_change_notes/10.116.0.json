@@ -1,0 +1,87 @@
+{
+  "version": "10.116.0",
+  "base_release_version": "10.115.1",
+  "base_commit": "e2c9b5cd5319eef3cc782dac0097ad8c8a95723f",
+  "research_window": {
+    "from_utc": "2026-10-06T03:57:12Z",
+    "through_utc": "2026-10-06T09:57:30Z"
+  },
+  "publication_authorization": "Phillip Linstrum requested publication and another scan while the recurring maintenance continues. Evidence, local acceptance, CI and final publication gates remain required.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-11-014",
+      "kind": "material_refresh",
+      "summary": "Added named-source staffing and deployment-cost measurements, reported U.S. response resources and the HHS response to the existing Ebola-control record without inferring epidemic causation.",
+      "before_content_sha256": "279dda8c5c3692f41e506f08f0641d84c828691fc214ee25aa3e5276cb111e95",
+      "after_content_sha256": "afc57c6ce8756ce60aa39a45d70123db699e7c729f534fb10d81e36a5377b471",
+      "changed_fields": [
+        "display_date",
+        "title",
+        "dek",
+        "facts[5]",
+        "facts[6]",
+        "facts[7]",
+        "facts[8]",
+        "facts[9]",
+        "significance",
+        "goalpost",
+        "maybe_therefore",
+        "evidence",
+        "sources",
+        "checked_at"
+      ],
+      "new_source_ids": [
+        "reuters_ebola_response_oct6"
+      ],
+      "duplicate_review": "Same outbreak-response and entry-control lifecycle as NAT-2026-09-11-014; refreshed the stable record rather than creating a parallel effectiveness item."
+    },
+    {
+      "entry_id": "NAT-2026-09-30-011",
+      "kind": "added",
+      "summary": "Recovered the signed September 30 Maria L. opinion and recorded the preliminary APA stay with exact scope and lifecycle caveats.",
+      "before_content_sha256": null,
+      "after_content_sha256": "21439962a8ce0242ad1a3015e4379e1df058e579a85b4a859b03bee8a156c666",
+      "changed_fields": [
+        "new canonical record"
+      ],
+      "new_source_ids": [
+        "d_mass_maria_l_order_sep30",
+        "reuters_migrant_fines_oct6"
+      ],
+      "duplicate_review": "No current entry covered this fine-policy stay. It is a distinct judicial lifecycle event from the 2025 rule and individual penalty assessments."
+    },
+    {
+      "entry_id": "NAT-2026-10-05-004",
+      "kind": "added",
+      "summary": "Recorded the Supreme Court's grant, vacatur and remand in docket 26-48 without converting the procedural order into a merits or status ruling.",
+      "before_content_sha256": null,
+      "after_content_sha256": "57a1e421a15927ab3272265a2f3d08a7d95924e0d6663c74f20d7897f12716f7",
+      "changed_fields": [
+        "new canonical record"
+      ],
+      "new_source_ids": [
+        "scotus_tps_docket_oct5",
+        "scotus_tps_petition_jul9",
+        "scotus_tps_response_aug20",
+        "mealeys_tps_gvr_oct5"
+      ],
+      "duplicate_review": "Distinct Venezuela-and-Haiti Supreme Court litigation stage; not merged with the Salvador-specific continuation in NAT-2026-09-09-004."
+    },
+    {
+      "entry_id": "NAT-2026-10-05-005",
+      "kind": "added",
+      "summary": "Recorded presidential approval of the execution method while preserving the existing conviction, unscheduled status and uncompleted execution.",
+      "before_content_sha256": null,
+      "after_content_sha256": "c2c06040df95201d7b7f42d2af40b0401454ad7119d7f869587d348e94b34ff0",
+      "changed_fields": [
+        "new canonical record"
+      ],
+      "new_source_ids": [
+        "reuters_hasan_firing_oct6",
+        "ap_hasan_firing_oct6",
+        "army_hasan_sentence_aug2013"
+      ],
+      "duplicate_review": "No canonical current event covered the presidential approval; the 2013 conviction is background rather than a second 2026 count."
+    }
+  ]
+}
