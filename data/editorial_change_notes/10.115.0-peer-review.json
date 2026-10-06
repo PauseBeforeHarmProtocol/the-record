@@ -1,0 +1,381 @@
+{
+  "national": {
+    "reviewed_at": "2026-10-06T02:21:08.411362Z",
+    "research_cutoff": "2026-10-06T02:11:22Z",
+    "candidate_file": "/tmp/national-candidates-reviewed.json",
+    "result": "pass",
+    "source_inspection": "Reviewed actual retained primary and independent source text/PDF snapshots; verified claimed file hashes and locators. No footage watched.",
+    "entries": [
+      {
+        "id": "NAT-2026-10-05-001",
+        "status": "pass",
+        "note": "Signed October 5 order; official web posting 01:13:53Z October 6 precedes cutoff. Tax deferral conditional on 7508A determinations, penalty/guidance directions retained. Distinct action versus export proposal, contextual crosslink only."
+      },
+      {
+        "id": "NAT-2026-10-01-002",
+        "status": "pass",
+        "note": "Primary one-page October 4 administrative stay explicitly does not determine merits; original facts/supports unchanged. DOJ executive accountability argument identified as argument."
+      },
+      {
+        "id": "NAT-2026-08-25-005",
+        "status": "pass",
+        "note": "October 4 attack and four deaths attributed to named military announcement via AP; AP235/70 count attributed. Official release/footage gaps remain explicit; no vessel guilt or effectiveness conclusion."
+      },
+      {
+        "id": "NAT-2026-09-30-010",
+        "status": "pass",
+        "note": "Document113 September30 ruling, dismissing sole claim without prejudice as to moving defendants with 30-day amendment opportunity; explicitly prior-window recovery. DOI complaint allegations distinguished from findings. Root completed legacy/current collision search."
+      },
+      {
+        "id": "NAT-2026-09-24-002",
+        "status": "pass",
+        "note": "Primary retained Trump statement publication verified; independently reported AP+Reuters future-funding announcement. No claim of payments, reimbursement, termination or connection to TrumpTV. Source-specific response snapshots split without rewriting."
+      }
+    ],
+    "reasoning_review": "Facts, significance, strongest relevant administration response and Maybe/Therefore separately reviewed for all five; no unresolved evidence problem precluding bounded publication. Implementation, merits and verification gaps remain tracked as unresolved outcomes.",
+    "source_snapshot_derivations": "/tmp/national-source-specific-snapshot-manifest.json"
+  },
+  "press": {
+    "reviewed_at": "2026-10-06T02:23:09.729078Z",
+    "research_cutoff": "2026-10-06T02:11:22Z",
+    "candidate_file": "/tmp/press-threat-candidate.json",
+    "entry_id": "NAT-2026-10-05-003",
+    "result": "PASS",
+    "blockers": [],
+    "source_inspection": "Independently read actual retained post JSON plus complete Hill/AOL and TheWrap HTML article bodies; no attached video content used. All document_sha256 and fact_sha256 values checked against the actual stored bytes.",
+    "date_review": {
+      "post_created_at_utc": "2026-10-05T17:57:25.281Z",
+      "post_created_at_indianapolis": "2026-10-05 1:57:25 PM EDT",
+      "hill_original_published_at_utc": "2026-10-05T20:49:00Z",
+      "hill_updated_at_utc": "2026-10-05T20:59:18Z",
+      "wrap_schema_published_at_utc": "2026-10-05T22:29:56Z",
+      "note": "All publication times precede cutoff; inspection times after cutoff are correctly recorded as actual observations."
+    },
+    "claim_support": "The supplied complete post explicitly advocates arrests, gives alleged dishonesty/disservice and empty-seats rationale, and identifies no statute or enforcement instruction. Named public statement needs no anonymous-source corroboration; distinct Max Rego/Hill-Nexstar and Jacob Bryant/TheWrap bylines independently verified. Reporting corroborates publication rather than proving attendance claims or consequences.",
+    "dedupe_review": "Current and canonical historical JSON searched for exact post URL/ID and arrest-demand/rally phrases; no same event found. Related NBC FCC threat and White House press-access litigation are different dated actions and targets. Root also reviewed recent PRs as part of run.",
+    "reasoning_review": "Significance explicitly bounded press-freedom risk, strongest stated presidential rationale preserved, Maybe/Therefore distinguishes rhetorical retaliation versus pressure to act without asserting implemented coercion or crowd truth.",
+    "evidence_state": "Published presidential call for arrests; no signed directive, actual arrest, criminal charge or tested legal basis established in reviewed material. Video remains pending."
+  },
+  "legacy_batch": {
+    "observed_at_utc": "2026-10-06T02:13:52.160953+00:00",
+    "scope": "Small objective review of generated same-date-heading duplicate candidates; no canonical edits or revised review-state claims.",
+    "canonical_changes": [],
+    "pairs": [
+      {
+        "ids": [
+          "LEG-004656",
+          "LEG-004657"
+        ],
+        "recommendation": "Do not merge. Preserve queue pending formal full review.",
+        "finding": "The stored rows concern different proceedings: Anti-Weaponization Fund injunction versus Kennedy Center naming and closure. Shared opening U.S. District Judge wording is not event identity.",
+        "source_inspection": [
+          {
+            "url": "https://www.cbsnews.com/news/judge-temporarily-blocks-justice-department-work-1-7-billion-anti-weaponization-fund/",
+            "scope": "Title/date and account inspected; administration explanation located.",
+            "retrieval_ref": "turn603view0"
+          },
+          {
+            "url": "https://storage.courtlistener.com/recap/gov.uscourts.vaed.596617/gov.uscourts.vaed.596617.31.0.pdf",
+            "scope": "Two-page order text inspected: case1:26-cv-01399-LMB-IDD,Document31 filedMay29; bars creation/operation while briefing pending.",
+            "retrieval_ref": "turn605view0"
+          },
+          {
+            "url": "https://www.pbs.org/newshour/politics/judge-says-kennedy-center-board-violated-law-putting-trumps-name-on-building-blocks-closure",
+            "scope": "403 access failure; underlying Kennedy Center order not obtained.",
+            "retrieval_ref": "turn603view1"
+          }
+        ],
+        "reason_no_change": "Full Kennedy Center claim and reasoning review incomplete; LEG-004656 combines two separate proceedings and its second claim has not been independently inspected. CBS calls Brinkema order Thursday, but primary filing stamp saysMay29; original entry date should not be changed solely from that article wording."
+      },
+      {
+        "ids": [
+          "LEG-004685",
+          "LEG-004687"
+        ],
+        "recommendation": "Do not merge. Preserve queue.",
+        "finding": "Stored facts concern distinct cases and federal acts: Brinkema Anti-Weaponization Fund injunction and Mehta UFC White House event emergency request. Shared generic judge opening is not event identity.",
+        "source_inspection": [],
+        "reason_no_change": "Canonical comparison suffices to reject automatic merge, but no source-level claims or complete reasoning-layer review undertaken for this pair."
+      },
+      {
+        "ids": [
+          "LEG-004713",
+          "LEG-004714"
+        ],
+        "recommendation": "Do not merge. Preserve queue; primary inspection verifies distinct dockets and subject matter.",
+        "finding": "Al Otro Lado,No25-5 is asylum-arrival/metering statutory interpretation; Doe,Nos25-1083and25-1084 addresses TPS termination interim relief for Syria/Haiti. Same court/day and petitioner do not make them the same event.",
+        "source_inspection": [
+          {
+            "url": "https://www.supremecourt.gov/opinions/25pdf/25-5_86qd.pdf",
+            "scope": "Syllabus and opening majority,pp1-5 inspected; docket/date/holding/votes verified.",
+            "retrieval_ref": "turn601view0"
+          },
+          {
+            "url": "https://www.supremecourt.gov/opinions/25pdf/25-1083_f204.pdf",
+            "scope": "Syllabus and majority opening,pp1-4 inspected; docket/date/judicial-review bar and interim likelihood disposition verified.",
+            "retrieval_ref": "turn602view0"
+          }
+        ],
+        "reason_no_change": "Full legacy source/corroboration and complete Facts/Significance/Response/Maybe/Therefore review not finished. Possible wording correction flagged: Doe did not finally reject constitutional discrimination merits; it found claim unlikely to succeed at interim-relief stage. No canonical field changed."
+      }
+    ],
+    "new_current_research_lead": {
+      "title": "Supreme Court vacates Ninth Circuit TPS judgment and remands in light of Mullin v.Doe",
+      "event_date": "2026-10-05",
+      "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/26-48.html",
+      "docket": "26-48",
+      "source_inspection": "Official docket entries inspected,including Oct5grant/vacate/remand.",
+      "retrieval_ref": "turn602view2",
+      "status": "Research lead sent to root; no canonical publication proposed by this report."
+    },
+    "queue_disposition": "All disclosed candidates remain visible. No tombstones, canonical counts, guarded revisions or review states modified."
+  },
+  "truth_inspection": {
+    "prior_snapshot_latest_utc": "2026-10-02T21:16:16.110Z",
+    "prior_snapshot_latest_id": "117373388463106981",
+    "new_post_count": 86,
+    "nonempty_text_fields_reviewed": 53,
+    "empty_text_fields_inspected": 33,
+    "new_text_reviewed": 86,
+    "image_asset_count_reviewed": 48,
+    "image_post_count_reviewed": 42,
+    "video_asset_count_pending": 23,
+    "video_post_ids_pending": [
+      "117374600935041605",
+      "117374605903305220",
+      "117374748527788857",
+      "117376697000958924",
+      "117376705404850468",
+      "117376707058642062",
+      "117376710253781330",
+      "117376854745686677",
+      "117377066566644744",
+      "117377072350009409",
+      "117377074810245973",
+      "117377086414457258",
+      "117377141739477104",
+      "117377149042494390",
+      "117377149961987120",
+      "117377150257313408",
+      "117377342230461037",
+      "117382603525777209",
+      "117382611962645893",
+      "117384609805773432",
+      "117389593495407380",
+      "117389597190725188",
+      "117390550758872714"
+    ],
+    "inaccessible_media": [],
+    "retained_post_count": 1000,
+    "current_retained_status_counts": {
+      "text": {
+        "reviewed": 433,
+        "not_recorded": 136,
+        "pending": 431
+      },
+      "media": {
+        "not_applicable": 457,
+        "pending": 216,
+        "reviewed": 74,
+        "unavailable": 234,
+        "not_recorded": 19
+      }
+    },
+    "reviewed_at_utc": "2026-10-06T02:16:42.237486Z",
+    "reviewed_at_indianapolis": "2026-10-05T22:16:42.237486-04:00",
+    "latest_post_at_utc": "2026-10-05T22:25:58.717000Z",
+    "latest_post_at_indianapolis": "2026-10-05 6:25:58 PM EDT",
+    "feed_checked_at_utc": "2026-10-06T02:10:44.011887Z",
+    "feed_checked_at_indianapolis": "2026-10-05 10:10:44 PM EDT",
+    "no_new_post_finding": false,
+    "source_post_count": 36715,
+    "candidate_leads": [
+      {
+        "post_id": "117374727722154598",
+        "published_at_utc": "2026-10-03T02:56:51.580Z",
+        "url": "https://truthsocial.com/@realDonaldTrump/117374727722154598",
+        "lead_note": "Medicare-payment announcement text inspected and referred to independent CMS/reporting research. The post establishes a statement, not actual disbursement. Recovered candidate is separate from the already-canonical $5,000 election-conditioned pledge."
+      },
+      {
+        "post_id": "117374748527788857",
+        "published_at_utc": "2026-10-03T03:02:09.050Z",
+        "url": "https://truthsocial.com/@realDonaldTrump/117374748527788857",
+        "lead_note": "Text describes White House ballroom and military complex; attached video access verified only. No unseen construction detail, authority or expenditure is inferred; investigate material changes through original documents."
+      },
+      {
+        "post_id": "117374767217423174",
+        "published_at_utc": "2026-10-03T03:06:54.232Z",
+        "url": "https://truthsocial.com/@realDonaldTrump/117374767217423174",
+        "lead_note": "Two attached pages of White House October 2 CEA-report release visually read. They describe modeled DSA-policy costs and administration benefits; the $49 trillion and household/inflation figures are government projections/claims, not independently measured outcomes. Official report and independent assessment require source-level research."
+      },
+      {
+        "post_id": "117374886219696225",
+        "published_at_utc": "2026-10-03T03:37:10.062Z",
+        "url": "https://truthsocial.com/@realDonaldTrump/117374886219696225",
+        "lead_note": "Powell/Fed-audit and prospective DOJ-investigation statement inspected; referred to same-event research for NAT-2026-09-30-002. A statement of intended investigation is not proof of a reopened criminal probe."
+      },
+      {
+        "post_id": "117379305275420977",
+        "published_at_utc": "2026-10-03T22:20:59.500Z",
+        "url": "https://truthsocial.com/@realDonaldTrump/117379305275420977",
+        "lead_note": "Bayer Ohio-campus and tariff-causation announcement/promoted coverage inspected. Corporate announced investment is distinct from completed facilities/jobs and the tariff-causation claim requires independent evidence."
+      },
+      {
+        "post_id": "117383899651030960",
+        "published_at_utc": "2026-10-04T17:49:24.109Z",
+        "url": "https://truthsocial.com/@realDonaldTrump/117383899651030960",
+        "lead_note": "Bayer Ohio-campus and tariff-causation announcement/promoted coverage inspected. Corporate announced investment is distinct from completed facilities/jobs and the tariff-causation claim requires independent evidence."
+      },
+      {
+        "post_id": "117382615512488588",
+        "published_at_utc": "2026-10-04T12:22:49.711Z",
+        "url": "https://truthsocial.com/@realDonaldTrump/117382615512488588",
+        "lead_note": "John Coale hostage-envoy nomination announcement inspected. Nomination is not confirmation; routine personnel change without corroborated material policy consequences remains a lead."
+      },
+      {
+        "post_id": "117382616783706638",
+        "published_at_utc": "2026-10-04T12:23:09.107Z",
+        "url": "https://truthsocial.com/@realDonaldTrump/117382616783706638",
+        "lead_note": "Super Intelligence Force formation announcement inspected and referred to same-event research for NAT-2026-09-19-001. It establishes the announced coordinating body and described leadership, not independently verified new legal powers, budget or implementation."
+      },
+      {
+        "post_id": "117383734948790684",
+        "published_at_utc": "2026-10-04T17:07:30.953Z",
+        "url": "https://truthsocial.com/@realDonaldTrump/117383734948790684",
+        "lead_note": "Kennedy Center-disrepair photograph/composite visually inspected. Images depict claimed damage, but original capture dates, locations and engineering conclusions were not independently verified. Same-event lead for NAT-2026-09-15-006; no new court order or demolition authorization established."
+      },
+      {
+        "post_id": "117383736804723494",
+        "published_at_utc": "2026-10-04T17:07:59.272Z",
+        "url": "https://truthsocial.com/@realDonaldTrump/117383736804723494",
+        "lead_note": "Kennedy Center-disrepair photograph/composite visually inspected. Images depict claimed damage, but original capture dates, locations and engineering conclusions were not independently verified. Same-event lead for NAT-2026-09-15-006; no new court order or demolition authorization established."
+      },
+      {
+        "post_id": "117383737641173276",
+        "published_at_utc": "2026-10-04T17:08:12.035Z",
+        "url": "https://truthsocial.com/@realDonaldTrump/117383737641173276",
+        "lead_note": "Kennedy Center-disrepair photograph/composite visually inspected. Images depict claimed damage, but original capture dates, locations and engineering conclusions were not independently verified. Same-event lead for NAT-2026-09-15-006; no new court order or demolition authorization established."
+      },
+      {
+        "post_id": "117383739007489519",
+        "published_at_utc": "2026-10-04T17:08:32.883Z",
+        "url": "https://truthsocial.com/@realDonaldTrump/117383739007489519",
+        "lead_note": "Kennedy Center-disrepair photograph/composite visually inspected. Images depict claimed damage, but original capture dates, locations and engineering conclusions were not independently verified. Same-event lead for NAT-2026-09-15-006; no new court order or demolition authorization established."
+      },
+      {
+        "post_id": "117383740615004316",
+        "published_at_utc": "2026-10-04T17:08:57.413Z",
+        "url": "https://truthsocial.com/@realDonaldTrump/117383740615004316",
+        "lead_note": "Kennedy Center-disrepair photograph/composite visually inspected. Images depict claimed damage, but original capture dates, locations and engineering conclusions were not independently verified. Same-event lead for NAT-2026-09-15-006; no new court order or demolition authorization established."
+      },
+      {
+        "post_id": "117383742409715196",
+        "published_at_utc": "2026-10-04T17:09:24.797Z",
+        "url": "https://truthsocial.com/@realDonaldTrump/117383742409715196",
+        "lead_note": "Kennedy Center-disrepair photograph/composite visually inspected. Images depict claimed damage, but original capture dates, locations and engineering conclusions were not independently verified. Same-event lead for NAT-2026-09-15-006; no new court order or demolition authorization established."
+      },
+      {
+        "post_id": "117389593495407380",
+        "published_at_utc": "2026-10-05T17:57:25.281Z",
+        "url": "https://truthsocial.com/@realDonaldTrump/117389593495407380",
+        "lead_note": "Text explicitly says New York Times and other media should be arrested over rally coverage. This is primary evidence of a presidential statement/threat, not an arrest order, prosecution or verified attendance claim; referred for independent reporting and press-freedom risk review."
+      },
+      {
+        "post_id": "117390649505706640",
+        "published_at_utc": "2026-10-05T22:25:58.717Z",
+        "url": "https://truthsocial.com/@realDonaldTrump/117390649505706640",
+        "lead_note": "Text announces intended shift of Patriotic Ads from public funding to personal/MAGA Inc funding. It establishes announced intent; no contract cancellation, expenditure amount or completed reimbursement is inferred. Do not assume the advertisements use Trump TV funding or staff."
+      }
+    ],
+    "changed_review_post_ids": [
+      "117373586079029403",
+      "117374600935041605",
+      "117374601736336522",
+      "117374605903305220",
+      "117374608656541990",
+      "117374668986690985",
+      "117374710858193847",
+      "117374723143795331",
+      "117374724750816439",
+      "117374725939253690",
+      "117374727722154598",
+      "117374748527788857",
+      "117374767217423174",
+      "117374770773184530",
+      "117374885656415148",
+      "117374886219696225",
+      "117376675283821396",
+      "117376697000958924",
+      "117376700640782000",
+      "117376705404850468",
+      "117376706134428638",
+      "117376707058642062",
+      "117376709448414660",
+      "117376710253781330",
+      "117376711131261545",
+      "117376854745686677",
+      "117376855501150171",
+      "117377066566644744",
+      "117377072350009409",
+      "117377074810245973",
+      "117377086414457258",
+      "117377141739477104",
+      "117377149042494390",
+      "117377149961987120",
+      "117377150257313408",
+      "117377342230461037",
+      "117377462448761419",
+      "117378226674711107",
+      "117378383081064996",
+      "117379305275420977",
+      "117382603525777209",
+      "117382611360859686",
+      "117382611962645893",
+      "117382613951699157",
+      "117382615512488588",
+      "117382616783706638",
+      "117382805901356540",
+      "117383038391721832",
+      "117383040827830000",
+      "117383043797111826",
+      "117383719532678103",
+      "117383720639661747",
+      "117383721995142736",
+      "117383723154946782",
+      "117383724226313929",
+      "117383725569653665",
+      "117383726338052034",
+      "117383727197989562",
+      "117383728000348150",
+      "117383732362183894",
+      "117383733622630931",
+      "117383734948790684",
+      "117383736804723494",
+      "117383737641173276",
+      "117383739007489519",
+      "117383740615004316",
+      "117383742409715196",
+      "117383743484621823",
+      "117383744306306629",
+      "117383854962700677",
+      "117383899651030960",
+      "117383902145126256",
+      "117383902865685162",
+      "117383979597248683",
+      "117384609805773432",
+      "117384612085223868",
+      "117386191183722432",
+      "117386635456194100",
+      "117389259991976695",
+      "117389589417251241",
+      "117389593495407380",
+      "117389597190725188",
+      "117390214220913462",
+      "117390404347091382",
+      "117390550758872714",
+      "117390649505706640"
+    ],
+    "boundary_note": "86 posts are newer than the last published fallback snapshot. This includes recovery of previously inspected but unpublished October 3-4 material; it does not assert all video/audio was reviewed."
+  },
+  "transport_tests": "Seven focused transport tests verify binary chunks, deletion/rename/modes, integrity binding, output truncation and lease failure; complete acceptance suite records actual run results separately."
+}

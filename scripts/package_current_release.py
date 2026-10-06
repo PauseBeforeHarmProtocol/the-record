@@ -268,6 +268,14 @@ def run_receipt(entries: list[dict], ledger: dict) -> bytes:
             if maintenance
             else "- None recorded in this run."
         )
+    feed_inspection = RELEASE.get("truth_social_inspection")
+    if feed_inspection:
+        lines.extend([
+            "", "## Truth Social inspection", "",
+            f"- New retained posts: {feed_inspection.get('new_posts', 'not recorded')}",
+            f"- Current retained inspection states: {json.dumps(feed_inspection.get('counts', {}), sort_keys=True)}",
+            "", feed_inspection.get("note", "Inspection scope not recorded."),
+        ])
     tv = RELEASE.get("trump_tv_monitoring")
     if tv:
         lines.extend([

@@ -74,6 +74,42 @@ For a candidate branch, `current-standard-reviewed` or `corrected` is a proposed
 
 Ordinary six-hour currentizations should leave the large historical application body unchanged except for deterministic legacy synchronization when canonical legacy data actually changed. Current national entries and release metadata reach the published archive through the generated bridge.
 
+## Authenticated publication transport
+
+A shell `git push` failure caused by missing HTTPS credentials does not establish that the connected GitHub app is unable to publish. Inspect the available authenticated connector before declaring the entire run blocked. Do not request, print, or store a personal access token to bridge the two environments.
+
+`scripts/prepare_gitdata_publish.py` and `scripts/publish_gitdata_runtime.js` provide a GitData transport for a clean, committed, locally accepted tree. They do not authorize publication or bypass evidence review, final acceptance, PR review, CI, branch protection, or merge gates. Create a unique `maintenance/` branch through the connector at the current verified main commit, then prepare a scratch manifest outside the checkout:
+
+```sh
+python scripts/accept_release.py --base-ref BASE_COMMIT --receipt /tmp/record-acceptance.json
+python scripts/prepare_gitdata_publish.py plan --base-ref BASE_COMMIT --receipt /tmp/record-acceptance.json --output /tmp/record-gitdata-plan.json
+```
+
+Run the transport from `functions.exec`, where authenticated GitHub tools are available. Substitute the actual absolute checkout path and already-created branch. The script and plan are read into the execution runtime; do not print their payloads or base64 content into a conversation:
+
+```javascript
+const root = "/absolute/path/to/checkout";
+const source = await tools.exec_command({
+  cmd: "cat scripts/publish_gitdata_runtime.js", workdir: root, max_output_tokens: 20000
+});
+if (source.exit_code !== 0) throw new Error("Cannot load transport");
+const publish = eval(source.output + "\npublishGitDataRuntime");
+const result = await publish({
+  tools, root, planPath: "/tmp/record-gitdata-plan.json",
+  repository: "PauseBeforeHarmProtocol/the-record",
+  branch: "maintenance/UNIQUE_RELEASE_BRANCH",
+  message: "Maintain The Record: accepted release VERSION",
+  report: value => notify(value)
+});
+text(result);
+```
+
+The plan reuses unchanged Git subtree and blob hashes, uploads each new blob once, and creates only changed trees in child-before-parent order. Where a directory exists at the base path, its request supplies `base_tree_sha` and only added/changed children plus explicit `sha: null` deletions. This avoids resending a large historical artifact directory to add a few new artifacts. The manifest retains complete target entries and their expected full tree SHA; directories with no base counterpart use complete entries. Small payloads are grouped; large binary artifacts use bounded 192 KiB raw chunks assembled inside the runtime. This avoids shell-output truncation and preserves binary bytes, executable/symlink modes, Unicode names, renames, and deletions. Every returned blob and subtree SHA must equal the planned local Git hash; the final remote tree SHA must equal the accepted local commit's tree SHA.
+
+The transport verifies the acceptance receipt against the complete tested inventory before upload and again before creating the remote commit. It requires remote main to remain at the accepted base and the maintenance branch to remain at its explicitly expected head, and updates the maintenance ref with `expected_sha` and `force: false`. Initially the expected branch head defaults to the accepted main commit. To add a validated fix to the same PR, prepare with `--transport-base-ref LOCAL_PREVIOUSLY_PUBLISHED_COMMIT` and pass `expectedBranchSha: "REMOTE_PREVIOUSLY_PUBLISHED_COMMIT"` to the runtime. It verifies the remote parent's tree equals that local transport-base tree before reusing objects, then parents and leases the new remote commit against that head. The acceptance base remains current main; transport reuse never changes the accepted research boundary. A race, failed request, incomplete response, hash mismatch, or input drift stops publication. Unreferenced uploaded objects are harmless and may be reused on retry; never retry a rejected lease without inspecting the new head and rebuilding the plan as needed. The remote commit hash may differ from the local commit because GitHub supplies commit metadata; exact tree equality is the parity requirement.
+
+After transport, open the PR and run the existing acceptance and merge process. Report actual branch/PR/CI/merge state separately; an uploaded blob, constructed commit, or successful branch update is not a merged release. Keep receipt and manifest scratch files outside the repository so they cannot create self-referential package hashes. On every future run, start from fresh main and retain the exact research boundary; a transport failure does not advance coverage.
+
 ## Correction rule
 
 Never silently overwrite a material error. Add a timestamped correction note to the affected entry, retain the original claim in version history, regenerate its evidence pack, and summarize the correction in the run receipt.
