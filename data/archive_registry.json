@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "status": "active_registry",
-  "checked_at": "2026-10-06T02:15:30Z",
+  "checked_at": "2026-10-06T04:02:33.757523Z",
   "registry_purpose": "Describe independent Trump-related archives as a federated research network without pretending that unlike record units are interchangeable or additive.",
   "invariants": [
     "An upstream archive is a discovery and corroboration source, not an automatic authority for The Record.",
@@ -189,12 +189,12 @@
         "content_import_permission_state": "license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-10-06T02:14:22Z",
-        "state": "success",
+        "checked_at": "2026-10-06T04:02:33.757523Z",
+        "state": "verified",
         "verification_pages": [
           "https://trump-archive.com/archive"
         ],
-        "note": "Primary archive index directly displayed 14,579 total items, 12,057 Truth Social posts and 1,876 speeches and transcripts. Preserve the distinct upstream units; no upstream item was promoted by these measurements."
+        "note": "Primary monthly index still displayed 14,579 total public statement/document items, 12,057 Truth Social posts and 1,876 speeches/transcripts. No changed value or automatic canonical import."
       },
       "check_history": [
         {
@@ -204,6 +204,14 @@
             "https://trump-archive.com/archive"
           ],
           "note": "Primary archive index directly displayed 14,477 total items, 11,969 Truth Social posts and 1,862 speeches and transcripts. Units remain separate and no upstream item was promoted by this measurement."
+        },
+        {
+          "checked_at": "2026-10-06T02:14:22Z",
+          "state": "success",
+          "verification_pages": [
+            "https://trump-archive.com/archive"
+          ],
+          "note": "Primary archive index directly displayed 14,579 total items, 12,057 Truth Social posts and 1,876 speeches and transcripts. Preserve the distinct upstream units; no upstream item was promoted by these measurements."
         }
       ],
       "measurement_history": [
@@ -428,12 +436,12 @@
         "content_import_permission_state": "bulk_permission_or_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-10-06T02:14:24Z",
-        "state": "success",
+        "checked_at": "2026-10-06T04:02:33.757523Z",
+        "state": "verified",
         "verification_pages": [
           "https://www.undotrump.com/"
         ],
-        "note": "Primary project page displayed 1,264 Actions Tracked, unchanged, with 995 active, 44 in courts and 42 restored as separate status measures. Its page banner was dated October 5, 2026; no unlike units were combined."
+        "note": "Primary project page still displayed 1,264 actions, 995 active, 44 in courts and 42 restored. Units were kept separate; no changed measurement or automatic import."
       },
       "check_history": [
         {
@@ -443,6 +451,14 @@
             "https://www.undotrump.com/"
           ],
           "note": "Primary project page displayed 1,264 actions, with 995 active, 44 in courts and 42 restored as separate status measures; no unlike units were combined."
+        },
+        {
+          "checked_at": "2026-10-06T02:14:24Z",
+          "state": "success",
+          "verification_pages": [
+            "https://www.undotrump.com/"
+          ],
+          "note": "Primary project page displayed 1,264 Actions Tracked, unchanged, with 995 active, 44 in courts and 42 restored as separate status measures. Its page banner was dated October 5, 2026; no unlike units were combined."
         }
       ],
       "measurement_history": [
@@ -605,12 +621,12 @@
         "content_import_permission_state": "permission_or_documented_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-10-06T02:14:24Z",
-        "state": "success",
+        "checked_at": "2026-10-06T04:02:33.757523Z",
+        "state": "verified",
         "verification_pages": [
-          "https://immpolicytracking.org/policies/"
+          "https://immpolicytracking.org/"
         ],
-        "note": "Primary policies browse page displayed 1,804 Policy Actions; 649 fully in effect, 56 partially in effect and 291 not in effect remain separate status measures. Individual rows with October 3/5 update labels are discovery leads, not proof of new government actions."
+        "note": "Primary project page still displayed 1,804 Trump Actions (2017-2021), with that original scope retained. No changed measurement or automatic import."
       },
       "check_history": [
         {
@@ -620,6 +636,14 @@
             "https://immpolicytracking.org/policies/"
           ],
           "note": "Primary policies page displayed 1,799 actions, including 649 fully in effect, 56 partially in effect and 291 not in effect; no upstream item was promoted."
+        },
+        {
+          "checked_at": "2026-10-06T02:14:24Z",
+          "state": "success",
+          "verification_pages": [
+            "https://immpolicytracking.org/policies/"
+          ],
+          "note": "Primary policies browse page displayed 1,804 Policy Actions; 649 fully in effect, 56 partially in effect and 291 not in effect remain separate status measures. Individual rows with October 3/5 update labels are discovery leads, not proof of new government actions."
         }
       ],
       "measurement_history": [
@@ -671,13 +695,13 @@
         {
           "metric_id": "record47.approved_entries",
           "as_reported_label": "Entries",
-          "value": 6300,
+          "value": 6312,
           "unit": "executive_conduct_entry",
           "scope": "approved archive entries",
           "comparability_group": "structured_executive_conduct",
-          "observed_at": "2026-10-01T22:14:00Z",
+          "observed_at": "2026-10-06T04:00:40.620382Z",
           "source_url": "https://api.record47.org/entries?limit=1",
-          "note": "Verified against the original public project API; units remain separate and no external record is promoted by this measurement."
+          "note": "Verified against original public API response; count/entries totals agree. Homepage display is older and remains an unresolved source inconsistency. No external record was promoted."
         },
         {
           "metric_id": "record47.contradictions",
@@ -686,9 +710,9 @@
           "unit": "contradiction_record",
           "scope": "documented conflicts and course changes",
           "comparability_group": "archive_feature_metric",
-          "observed_at": "2026-10-01T22:14:00Z",
+          "observed_at": "2026-10-06T04:00:40.580875Z",
           "source_url": "https://api.record47.org/counts",
-          "note": "Verified against the original public project API; units remain separate and no external record is promoted by this measurement."
+          "note": "Verified against original public API response; count/entries totals agree. Homepage display is older and remains an unresolved source inconsistency. No external record was promoted."
         },
         {
           "metric_id": "record47.primary_sources",
@@ -697,9 +721,9 @@
           "unit": "distinct_primary_source_document",
           "scope": "distinct primary-source documents in the archive",
           "comparability_group": "archive_feature_metric",
-          "observed_at": "2026-10-01T22:14:00Z",
+          "observed_at": "2026-10-06T04:00:40.580875Z",
           "source_url": "https://api.record47.org/counts",
-          "note": "Verified against the original public project API; units remain separate and no external record is promoted by this measurement."
+          "note": "Verified against original public API response; count/entries totals agree. Homepage display is older and remains an unresolved source inconsistency. No external record was promoted."
         },
         {
           "metric_id": "record47.sequences",
@@ -708,20 +732,20 @@
           "unit": "documented_sequence",
           "scope": "linked multi-event sequences",
           "comparability_group": "archive_feature_metric",
-          "observed_at": "2026-10-01T22:14:00Z",
+          "observed_at": "2026-10-06T04:00:40.580875Z",
           "source_url": "https://api.record47.org/counts",
-          "note": "Verified against the original public project API; units remain separate and no external record is promoted by this measurement."
+          "note": "Verified against original public API response; count/entries totals agree. Homepage display is older and remains an unresolved source inconsistency. No external record was promoted."
         },
         {
           "metric_id": "record47.social_posts",
           "as_reported_label": "social posts",
-          "value": 6560,
+          "value": 6593,
           "unit": "truth_social_or_twitter_post",
           "scope": "Truth Social and Twitter posts available for statement-to-record comparison",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-10-01T22:14:00Z",
+          "observed_at": "2026-10-06T04:00:40.580875Z",
           "source_url": "https://api.record47.org/counts",
-          "note": "Verified against the original public project API; units remain separate and no external record is promoted by this measurement."
+          "note": "Verified against original public API response; count/entries totals agree. Homepage display is older and remains an unresolved source inconsistency. No external record was promoted."
         }
       ],
       "provenance": {
@@ -835,14 +859,14 @@
         "content_import_permission_state": "metadata_and_citation_allowed_full_content_license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-10-06T02:15:30Z",
+        "checked_at": "2026-10-06T04:02:33.757523Z",
         "state": "source_inconsistency",
         "verification_pages": [
           "https://record47.org/",
           "https://api.record47.org/counts",
           "https://api.record47.org/entries?limit=1"
         ],
-        "note": "The primary page text retrieved via the web tool still displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts. Direct HTTP retrieval of the page and both public API endpoints returned HTTP 403. Earlier API measurements remain preserved, and the disagreement is unresolved; no count is inferred from unloaded page widgets."
+        "note": "Both original public API endpoints were accessible with HTTP 200 in this check. Counts returned 6,312 entries and 6,593 social posts; entries?limit=1 independently returned total=6312. Primary sources=3,641, contradictions=332 and sequences=38. The homepage still displayed older 3,539 primary sources and 6,348 social posts. Verified API measurements were updated separately; the homepage/API inconsistency remains disclosed and no external event was promoted."
       },
       "check_history": [
         {
@@ -854,6 +878,78 @@
             "https://api.record47.org/entries?limit=1"
           ],
           "note": "Primary rendered page displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts. The public API count and entries endpoints could not be retrieved during this check, so earlier API measurements remain preserved and the source inconsistency stays open."
+        },
+        {
+          "checked_at": "2026-10-06T02:15:30Z",
+          "state": "source_inconsistency",
+          "verification_pages": [
+            "https://record47.org/",
+            "https://api.record47.org/counts",
+            "https://api.record47.org/entries?limit=1"
+          ],
+          "note": "The primary page text retrieved via the web tool still displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts. Direct HTTP retrieval of the page and both public API endpoints returned HTTP 403. Earlier API measurements remain preserved, and the disagreement is unresolved; no count is inferred from unloaded page widgets."
+        }
+      ],
+      "measurement_history": [
+        {
+          "observed_at": "2026-10-06T04:02:33.757523Z",
+          "prior_measurements": [
+            {
+              "metric_id": "record47.approved_entries",
+              "as_reported_label": "Entries",
+              "value": 6300,
+              "unit": "executive_conduct_entry",
+              "scope": "approved archive entries",
+              "comparability_group": "structured_executive_conduct",
+              "observed_at": "2026-10-01T22:14:00Z",
+              "source_url": "https://api.record47.org/entries?limit=1",
+              "note": "Verified against the original public project API; units remain separate and no external record is promoted by this measurement."
+            },
+            {
+              "metric_id": "record47.contradictions",
+              "as_reported_label": "contradictions",
+              "value": 332,
+              "unit": "contradiction_record",
+              "scope": "documented conflicts and course changes",
+              "comparability_group": "archive_feature_metric",
+              "observed_at": "2026-10-01T22:14:00Z",
+              "source_url": "https://api.record47.org/counts",
+              "note": "Verified against the original public project API; units remain separate and no external record is promoted by this measurement."
+            },
+            {
+              "metric_id": "record47.primary_sources",
+              "as_reported_label": "Primary Sources",
+              "value": 3641,
+              "unit": "distinct_primary_source_document",
+              "scope": "distinct primary-source documents in the archive",
+              "comparability_group": "archive_feature_metric",
+              "observed_at": "2026-10-01T22:14:00Z",
+              "source_url": "https://api.record47.org/counts",
+              "note": "Verified against the original public project API; units remain separate and no external record is promoted by this measurement."
+            },
+            {
+              "metric_id": "record47.sequences",
+              "as_reported_label": "sequences",
+              "value": 38,
+              "unit": "documented_sequence",
+              "scope": "linked multi-event sequences",
+              "comparability_group": "archive_feature_metric",
+              "observed_at": "2026-10-01T22:14:00Z",
+              "source_url": "https://api.record47.org/counts",
+              "note": "Verified against the original public project API; units remain separate and no external record is promoted by this measurement."
+            },
+            {
+              "metric_id": "record47.social_posts",
+              "as_reported_label": "social posts",
+              "value": 6560,
+              "unit": "truth_social_or_twitter_post",
+              "scope": "Truth Social and Twitter posts available for statement-to-record comparison",
+              "comparability_group": "raw_public_expression",
+              "observed_at": "2026-10-01T22:14:00Z",
+              "source_url": "https://api.record47.org/counts",
+              "note": "Verified against the original public project API; units remain separate and no external record is promoted by this measurement."
+            }
+          ]
         }
       ]
     }

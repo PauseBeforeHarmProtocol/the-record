@@ -6829,7 +6829,7 @@
     "first_seen_at": "2026-10-06T02:24:39.873602Z",
     "timestamp_precision": "second",
     "status": "withheld",
-    "reason": "Reuters publication at October 6 00:59 UTC is within the cutoff, but a primary court order was not retrieved and reporting on the apparently same parties also identifies September 30 as the injunction date. Withheld until the order and event/lifecycle date are inspected; do not convert the October 5 dateline into a newly issued ruling.",
+    "reason": "Recheck: the Docket Nexus document 459452097 is the November 20, 2025 complaint, not the reported injunction. CourtListener and Clearinghouse retrieval failed in this check. The dated original order, remedy scope and canonical/lifecycle review remain unresolved; the report publication date must not substitute for the order date.",
     "recheck_trigger": "Retrieve the signed D. Mass. injunction and docket, establish ruling date and compare existing canonical/federated records before any addition.",
     "next_check_at": null,
     "provenance": [
@@ -6839,7 +6839,28 @@
       "https://www.courtlistener.com/docket/71938107/maria-l-v-mullin/",
       "https://clearinghouse.net/case/47332/"
     ],
-    "canonical_id": null
+    "canonical_id": null,
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20261005-CATCHUP-W02",
+        "title": "Migrant-fine policy injunction reported by Reuters",
+        "first_seen_at": "2026-10-06T02:24:39.873602Z",
+        "timestamp_precision": "second",
+        "status": "withheld",
+        "reason": "Reuters publication at October 6 00:59 UTC is within the cutoff, but a primary court order was not retrieved and reporting on the apparently same parties also identifies September 30 as the injunction date. Withheld until the order and event/lifecycle date are inspected; do not convert the October 5 dateline into a newly issued ruling.",
+        "recheck_trigger": "Retrieve the signed D. Mass. injunction and docket, establish ruling date and compare existing canonical/federated records before any addition.",
+        "next_check_at": null,
+        "provenance": [
+          "https://www.reuters.com/legal/government/us-judge-blocks-trump-policy-fining-migrants-up-18-million-2026-10-06/",
+          "https://bluewaterhealthyliving.com/news/national-news/us-judge-blocks-trump-policy-of-fining-migrants-up-to-1-8-million/",
+          "https://docketnexus.com/document/459452097/",
+          "https://www.courtlistener.com/docket/71938107/maria-l-v-mullin/",
+          "https://clearinghouse.net/case/47332/"
+        ],
+        "canonical_id": null
+      }
+    ],
+    "last_checked_at": "2026-10-06T04:02:33.757523Z"
   },
   {
     "candidate_id": "QUEUE-20261005-CATCHUP-W03",
@@ -6847,13 +6868,30 @@
     "first_seen_at": "2026-10-06T02:24:39.873602Z",
     "timestamp_precision": "second",
     "status": "withheld",
-    "reason": "Official docket was identified by the legacy review as a possible October 5 GVR in light of Mullin v. Doe. This task did not complete original-order inspection, independent reporting, and canonical collision review. No new record was created from the lead alone.",
+    "reason": "Recheck: the official Supreme Court docket confirms an October 5 grant, vacatur and remand in light of Mullin v. Doe. The complete original order and relevant prior decision, independent account and canonical/lifecycle collision review were not completed; no merits result is inferred from the GVR.",
     "recheck_trigger": "Inspect official October 5 order and relevant prior decision, obtain an independent account, and reconcile existing TPS lifecycle/canonical IDs.",
     "next_check_at": null,
     "provenance": [
       "https://www.supremecourt.gov/docket/docketfiles/html/public/26-48.html"
     ],
-    "canonical_id": null
+    "canonical_id": null,
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20261005-CATCHUP-W03",
+        "title": "Supreme Court GVR in Mullin v. National TPS Alliance, docket 26-48",
+        "first_seen_at": "2026-10-06T02:24:39.873602Z",
+        "timestamp_precision": "second",
+        "status": "withheld",
+        "reason": "Official docket was identified by the legacy review as a possible October 5 GVR in light of Mullin v. Doe. This task did not complete original-order inspection, independent reporting, and canonical collision review. No new record was created from the lead alone.",
+        "recheck_trigger": "Inspect official October 5 order and relevant prior decision, obtain an independent account, and reconcile existing TPS lifecycle/canonical IDs.",
+        "next_check_at": null,
+        "provenance": [
+          "https://www.supremecourt.gov/docket/docketfiles/html/public/26-48.html"
+        ],
+        "canonical_id": null
+      }
+    ],
+    "last_checked_at": "2026-10-06T04:02:33.757523Z"
   },
   {
     "candidate_id": "QUEUE-20261005-CATCHUP-W04",
@@ -6979,6 +7017,64 @@
     "next_check_at": null,
     "provenance": [
       "https://truthsocial.com/@realDonaldTrump/117383742409715196"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20261005-LATE-BD",
+    "title": "BD investment and year-end medical-device tariff claims",
+    "first_seen_at": "2026-10-06T04:02:33.757523Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "reason": "Read the investment and year-end medical-device tariff claims. Reuters attributes the $3 billion claim to Trump and says BD had not replied; the inspected company newsroom displayed no matching announcement. No completed investment, independently established tariff causality, tariff rate or implementing instrument was verified. Withheld pending original company and government documentation.",
+    "recheck_trigger": "Inspect the original company announcement, SEC filing or agreement and any Commerce, White House or Federal Register tariff instrument; distinguish announced investment from spent funds and verify causality separately.",
+    "next_check_at": null,
+    "provenance": [
+      "https://truthsocial.com/@realDonaldTrump/117391801119298224",
+      "https://www.reuters.com/world/trump-says-becton-dickinson-invest-3-billion-expand-us-medical-product-2026-10-06/",
+      "https://news.bd.com/home"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20261005-LATE-DORAL",
+    "title": "Doral photograph manipulation allegation",
+    "first_seen_at": "2026-10-06T04:02:33.757523Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "reason": "Read the Doral image-manipulation allegation and visually inspected both attached exterior photographs. They show different views, framing and lighting of a building and gardens; the supplied images do not establish original capture dates, editing history or the allegation. Routine media criticism without a new enforcement threat or independently verified finding.",
+    "recheck_trigger": "Recheck only if original-image provenance, independent verification or a material government enforcement action emerges.",
+    "next_check_at": null,
+    "provenance": [
+      "https://truthsocial.com/@realDonaldTrump/117391697161966116"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20261005-LATE-MAIL",
+    "title": "Newly published reporting on encouragement to vote by mail",
+    "first_seen_at": "2026-10-06T04:02:33.757523Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "reason": "Reuters published at 02:40 UTC on October 6, within this source window, about October 3 and October 5 campaign statements. Those are earlier statements, not a new voting rule, implementation or court ruling. The previously reviewed October 5 gaggle is not a newly occurring government action.",
+    "recheck_trigger": "A material implemented election rule, official instruction or court development with original documentation.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.reuters.com/world/us/trump-urges-supporters-vote-by-mail-despite-fraud-claims-2026-10-06/"
+    ],
+    "canonical_id": null
+  },
+  {
+    "candidate_id": "QUEUE-20261005-LATE-WELLS",
+    "title": "Nolan Wells family requests federal investigation",
+    "first_seen_at": "2026-10-06T04:02:33.757523Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "reason": "Reuters reporting published at 02:29 UTC on October 6 says the family requested federal investigation after a state grand jury declined to indict. The account does not establish that the FBI opened an investigation or took a new investigative step. No new federal action was verified.",
+    "recheck_trigger": "An official federal investigative action, court finding or credible documented investigative development.",
+    "next_check_at": null,
+    "provenance": [
+      "https://www.reuters.com/legal/government/nolan-wells-family-seeks-federal-probe-after-grand-jury-declined-indict-anyone-2026-10-06/"
     ],
     "canonical_id": null
   }
