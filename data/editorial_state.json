@@ -5437,6 +5437,66 @@
       "provenance_path": "data/editorial_change_notes/10.116.0.json",
       "provenance_sha256": "511c5c8bd80df859b98694730abc0efb5a26c654691a8f05f1701dad450b6bbf",
       "note": "Original event date and canonical lifecycle are preserved; evidence status, strongest response and separate Maybe/Therefore were reviewed through the stated cutoff."
+    },
+    {
+      "change_id": "10.117.0:NAT-2026-10-06-001",
+      "entry_id": "NAT-2026-10-06-001",
+      "as_of_utc": "2026-10-06T16:04:40Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.117.0",
+      "summary": "Published the October6 August trade measurement with monthly/year-to-date and causal limits.",
+      "provenance_path": "data/editorial_change_notes/10.117.0.json",
+      "provenance_sha256": "2e6255e428da824f3f1bd1aa5c1f5ca40a24dd57eec7291ce466c6024d561f86",
+      "note": "Material evidence-as-of time; original event date and stable lifecycle retained. Field history and separate reasoning reviews recorded; earlier support receipts retain their original inspection times."
+    },
+    {
+      "change_id": "10.117.0:NAT-2026-09-24-002",
+      "entry_id": "NAT-2026-09-24-002",
+      "as_of_utc": "2026-10-06T16:04:40Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.117.0",
+      "summary": "Updated the existing advertising record with AP’s reported AdImpact estimate above $11 million; no audited-payment claim.",
+      "provenance_path": "data/editorial_change_notes/10.117.0.json",
+      "provenance_sha256": "2e6255e428da824f3f1bd1aa5c1f5ca40a24dd57eec7291ce466c6024d561f86",
+      "note": "Material evidence-as-of time; original event date and stable lifecycle retained. Field history and separate reasoning reviews recorded; earlier support receipts retain their original inspection times."
+    },
+    {
+      "change_id": "10.117.0:NAT-2026-09-15-010",
+      "entry_id": "NAT-2026-09-15-010",
+      "as_of_utc": "2026-10-06T16:04:40Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.117.0",
+      "summary": "Recorded the completed October6 transaction on the existing Paramount/Warner antitrust record; preserved the earlier bond lifecycle.",
+      "provenance_path": "data/editorial_change_notes/10.117.0.json",
+      "provenance_sha256": "2e6255e428da824f3f1bd1aa5c1f5ca40a24dd57eec7291ce466c6024d561f86",
+      "note": "Material evidence-as-of time; original event date and stable lifecycle retained. Field history and separate reasoning reviews recorded; earlier support receipts retain their original inspection times."
+    },
+    {
+      "change_id": "10.117.0:NAT-2026-10-05-006",
+      "entry_id": "NAT-2026-10-05-006",
+      "as_of_utc": "2026-10-06T16:04:40Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.117.0",
+      "summary": "Recovered the October5 EEOC FOIA filing from October6 reporting and inspected the original docket memorandum.",
+      "provenance_path": "data/editorial_change_notes/10.117.0.json",
+      "provenance_sha256": "2e6255e428da824f3f1bd1aa5c1f5ca40a24dd57eec7291ce466c6024d561f86",
+      "note": "Material evidence-as-of time; original event date and stable lifecycle retained. Field history and separate reasoning reviews recorded; earlier support receipts retain their original inspection times."
+    },
+    {
+      "change_id": "10.117.0:NAT-2026-10-05-007",
+      "entry_id": "NAT-2026-10-05-007",
+      "as_of_utc": "2026-10-06T16:04:40Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.117.0",
+      "summary": "Recovered DOJ’s October5 forty-case announcement while preserving allegations, unresolved outcomes and its inconsistent filing-date range.",
+      "provenance_path": "data/editorial_change_notes/10.117.0.json",
+      "provenance_sha256": "2e6255e428da824f3f1bd1aa5c1f5ca40a24dd57eec7291ce466c6024d561f86",
+      "note": "Material evidence-as-of time; original event date and stable lifecycle retained. Field history and separate reasoning reviews recorded; earlier support receipts retain their original inspection times."
     }
   ],
   "reviews": [
@@ -62857,6 +62917,783 @@
       ],
       "unresolved_questions": [
         "Army scheduling, notice, clemency, judicial review, protocol compliance and whether an execution occurs remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.117.0:NAT-2026-10-06-001:099fc0635ca4",
+      "entry_id": "NAT-2026-10-06-001",
+      "content_sha256": "099fc0635ca4b5f48321ec016b3ec053754aaad9ee4ce7c5e8ebc7b9b88d22da",
+      "reviewed_at": "2026-10-06T16:04:40Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "48e5f7c50f0cfaf3ded30ec5468ba3f841e29b9650c956799db314abf9e85c09",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bea_trade_august_oct6",
+              "locator": "Release header, deficit summary, exhibit 1, year-to-date paragraph and methodological note: seasonally adjusted, not price adjusted.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "b1d63f76cd3d02fedc21dc7fbc74bde294d8e702d83483139d42618a66efdce3",
+              "origin_group": "U.S. Bureau of Economic Analysis",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "census_trade_august_oct6",
+              "locator": "Release summary and exhibit 1; same joint BEA/Census statistical origin.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "77f2632c996c1545827eac6be06fc0f0f730876f8711afb4a1f001f9c1ea2826",
+              "origin_group": "U.S. BEA/Census",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "71c1d2022e6499aa87467a90d5d5f62d3212c704893efbeeffdd2b94e1ac9252",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bea_trade_august_oct6",
+              "locator": "Release header, deficit summary, exhibit 1, year-to-date paragraph and methodological note: seasonally adjusted, not price adjusted.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "b1d63f76cd3d02fedc21dc7fbc74bde294d8e702d83483139d42618a66efdce3",
+              "origin_group": "U.S. Bureau of Economic Analysis",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "census_trade_august_oct6",
+              "locator": "Release summary and exhibit 1; same joint BEA/Census statistical origin.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "77f2632c996c1545827eac6be06fc0f0f730876f8711afb4a1f001f9c1ea2826",
+              "origin_group": "U.S. BEA/Census",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "c371a5e8183306616f439a1e81c2aaf4d277aa862a8c4ec90c4ebea94f8f274c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bea_trade_august_oct6",
+              "locator": "Release header, deficit summary, exhibit 1, year-to-date paragraph and methodological note: seasonally adjusted, not price adjusted.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "b1d63f76cd3d02fedc21dc7fbc74bde294d8e702d83483139d42618a66efdce3",
+              "origin_group": "U.S. Bureau of Economic Analysis",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "census_trade_august_oct6",
+              "locator": "Release summary and exhibit 1; same joint BEA/Census statistical origin.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "77f2632c996c1545827eac6be06fc0f0f730876f8711afb4a1f001f9c1ea2826",
+              "origin_group": "U.S. BEA/Census",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "f2e70c6bb1dc30b67a4174f528f86d048c14484cba64edaf73c130c27a3e182b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_trade_august_oct6",
+              "locator": "Search-service rendered Reuters article, lines 160–193; deficit/export/import figures and demand context. HTTP direct access failed; rendered body was inspected.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "06c2a4653c8a7f21e76dcdbba8d4df8d3d3ddd20cc64022a73d6aa9741ad638c",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "bea_trade_august_oct6",
+              "locator": "Release header, deficit summary, exhibit 1, year-to-date paragraph and methodological note: seasonally adjusted, not price adjusted.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "b1d63f76cd3d02fedc21dc7fbc74bde294d8e702d83483139d42618a66efdce3",
+              "origin_group": "U.S. Bureau of Economic Analysis",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "482210ad9daa2d99d57f3dda8ac43aa0206514aceaf5f735777b7f9a272a2613",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_tariff_trade_goal_jan20",
+              "locator": "Economic achievements section credits tariff enforcement and reciprocal trade pressure for a prior trade-deficit decline. This is a dated administration claim, not a response to the October release.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "42061ca48023c7797958aa230a3de0d9979301bf51701dd6b17b81e32d09f26a",
+              "origin_group": "The White House",
+              "evidence_status": "announced"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "0f0ae3d285c6ab36dcf81f157a062efc33f2e56b9868099aaf97071fcb300348",
+          "review_note": "Separately reviewed as bounded analysis of the documented action/measurement, with causal and outcome limits retained."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "2e4bb8deb9122abedf1318f8af5492ce10ea3d4ed1a1fa8c3fd32a06b7b7b268",
+          "review_note": "Separately reviewed the strongest relevant official explanation, including its original date and the evidence required to test it."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "0dd3ff166d51fcd33529a3b81f1223c97e1222f4c1b056d4dce7eb76c8476b2d",
+          "review_note": "Separately reviewed competing interpretations and an explicit evidence-bound Therefore; no alleged, predictive or pending outcome is presented as completed."
+        }
+      ],
+      "unresolved_questions": [
+        "A release-specific administration response and a causal estimate of tariff effects were not located."
+      ]
+    },
+    {
+      "review_id": "10.117.0:NAT-2026-09-24-002:0b31df7ced2b",
+      "entry_id": "NAT-2026-09-24-002",
+      "content_sha256": "0b31df7ced2b6d3abd6a828694f538b9c28206cf06299c7351fe1225776d1bd9",
+      "reviewed_at": "2026-10-06T16:04:40Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "d79516c09c3c3c74caf288d84069adf24b5df8f1634013d928e68a1c2a1ebc6c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "jec_hassan_ad_records_sep24",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "318ce9b2252b788b608fdf21a5f217ac4c9e1a5d023b1e6bb16932a4d13a8376",
+              "origin_group": "U.S. Congress Joint Economic Committee Democrats",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_collins_ads_oversight_sep29",
+              "locator": "Inspected source text or filing; hash preserves the reviewed source record.",
+              "inspected_at": "2026-09-29T16:12:00Z",
+              "document_sha256": "166a919d6e494cc230152c5e70264a343221642432d01bc0f745801564ecbe3e",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "8c73cc5c8429291aca7a57451bc269372d339da712d26118ec7248e77bacabc0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_campaign_ad_sep27",
+              "locator": "Article paragraphs beginning WASHINGTON through White House response; published September 27 at 5:19 PM EDT.",
+              "inspected_at": "2026-09-28T04:05:16.156650Z",
+              "document_sha256": "366e1fecc03538905e4fa137f5b7b6be36aa7bfd0a5789833c54dd0f288341e8",
+              "origin_group": "Associated Press via News4JAX",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_government_ads_scrutiny_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "84c9a0624b7857304cea3d7ca129379aeb231eafc20b4734f7c262e527a4e0d9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "05e782e20e1d63d3d13989c877b672354be52cbc4527d0129f77c6469c790f7f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_dhs_ads_contract_sep29",
+              "locator": "Complete source text, official instrument or award record inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-09-29T22:03:00Z",
+              "document_sha256": "2b43bd6c595f2401646ba2856a37ebd4d5776d80b11aa10dc8faa86c2fc61842",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "govtribe_lmd_campaign_award_sep20",
+              "locator": "Complete source text, official instrument or award record inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-09-29T22:03:00Z",
+              "document_sha256": "8abbc122c21e36ed55092b3b59f3f742bc0cae7f0a4c7828b456999597072c11",
+              "origin_group": "GovTribe",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "1b19b4c26e868dfdbb83af1a229ce4a1bec8aa0c08b1111c44c52ba640a0c425",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_government_ads_spending_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "50f36fb5502b716babc4003b5937288c5a3e679a97fe4f637501dea0847cb4a3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "c91ad51b9d10f96ce078440b03f866b1f45d47f0e19cd43e3548411869e7ab12",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_ad_response_sep25",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "6e99a863340c1e0d45aee0e58fd0df1dbf942c813de8145bc3f77f8fba127ccb",
+              "origin_group": "The White House",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_dhs_ads_contract_sep29",
+              "locator": "Complete source text, official instrument or award record inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-09-29T22:03:00Z",
+              "document_sha256": "2b43bd6c595f2401646ba2856a37ebd4d5776d80b11aa10dc8faa86c2fc61842",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "31cb497a80758d83b4d8077692f8117b706918f2183c98392ba463fdfc6b4b42",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_dhs_ads_contract_sep29",
+              "locator": "Complete source text, official instrument or award record inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-09-29T22:03:00Z",
+              "document_sha256": "2b43bd6c595f2401646ba2856a37ebd4d5776d80b11aa10dc8faa86c2fc61842",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "d8d0e81852b856d00c7932acd910c560493919c14c32fd81ee44bad92adf73ad",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wapo_government_ads_sep30",
+              "locator": "Placement counts, markets, modeled aggregate airtime estimate and White House response.",
+              "inspected_at": "2026-10-01T04:38:00Z",
+              "document_sha256": "0f61d9dc9837c99b96276b942c9cd3a6e069b30b2104fa685f632907fec04deb",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "39fbf2b88dc1bcc82e7fc027ac2dac4280a983fcfcb476b0801b894b7dd4468e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_fcc_government_ads_sep30",
+              "locator": "Inspected source passage or filing summarized in the release evidence review.",
+              "inspected_at": "2026-10-01T10:12:00Z",
+              "document_sha256": "25d7049f279397f216b59b7a6b26caab885296735305f3506dbde43e74c4c8e8",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "93219a7eb7a3e3b4d95ca81b64f0edca1f18c7491acf80f040ebd7b97622533d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_government_ads_probe_oct1",
+              "locator": "Inspected source passage or filing summarized in the release evidence review.",
+              "inspected_at": "2026-10-01T10:12:00Z",
+              "document_sha256": "df7c91deb0916da131b90d9b7831f0e99bfd85dd978aa8a6a19f5efd3e375e87",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "08e12e1315deeeb6fb62d6317c968a71f6080d3b56972d139a50e220d9d14c0b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_government_ad_funding_shift_oct5",
+              "locator": "Reuters lines160–167: presidential statement and attributed White House confirmation",
+              "inspected_at": "2026-10-06T02:17:16Z",
+              "document_sha256": "02d5cddd452174b54a12e3c496f1b9ed8074ffcf284f8b56ce2e386804eede49",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_government_ad_funding_shift_oct5",
+              "locator": "AP lines1806–1814: Trump post and White House future-funding confirmation",
+              "inspected_at": "2026-10-06T02:17:16Z",
+              "document_sha256": "e3aac56f89058ff74b1b8c7c630178c49b583bffec0553e87f89b1defc7edb31",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "truth_government_ad_funding_shift_oct5",
+              "locator": "Retained post 117390649505706640, full supplied text: Trump acknowledges U.S.A. money for Ads and states decision to pay for Patriotic Ads personally and with money raised for MAGA Inc. Text inspected from validated local fallback snapshot; original post URL identifies publication, not a separately retrieved live webpage.",
+              "inspected_at": "2026-10-06T02:16:42.237486Z",
+              "document_sha256": "9c6d1ad0025060eebbc26ce0bbbbd0abe17edf576747f1040130ac58aa89469c",
+              "origin_group": "Donald Trump / Truth Social",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 10,
+          "fact_sha256": "b7ffab164a43685d4d0889da1d1b0a157fabd44e0e229c6121526593a2f8312e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_government_ad_funding_shift_oct5",
+              "locator": "AP lines1812–1814: missing reimbursement and verification detail",
+              "inspected_at": "2026-10-06T02:17:16Z",
+              "document_sha256": "e3aac56f89058ff74b1b8c7c630178c49b583bffec0553e87f89b1defc7edb31",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 11,
+          "fact_sha256": "acec4719705b1b34cffe4debc320dc39effcd951f5b22a40a29513f49001773b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_adimpact_airtime_oct6",
+              "locator": "Ali Swenson section: More than $11 million in taxpayer-funded pro-Trump ads have run so far; AdImpact estimate, $20 million contract, missing repayment/private-payment detail.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "7c5022758138ebd35f22e7fd48e4adfb1e0ada5e1744b50f1c5dce77770a9eea",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "e3a41348ab033cee1021c37a4cf7951f2207e0f71e2763991e10ac6311d9b1e6",
+          "review_note": "Separately reviewed as bounded analysis of the documented action/measurement, with causal and outcome limits retained."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "0edb1a5e9f52b071e06bf16f9898ccc921cbcd829610add82756da1138850102",
+          "review_note": "Separately reviewed the strongest relevant official explanation, including its original date and the evidence required to test it."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "27b366e06fd2d2a18ee9cf24e56a603b34510493b22355300a1a3877458e8ed5",
+          "review_note": "Separately reviewed competing interpretations and an explicit evidence-bound Therefore; no alleged, predictive or pending outcome is presented as completed."
+        }
+      ],
+      "unresolved_questions": [
+        "Original AdImpact placement data, federal invoices, reimbursement, contract changes and private payments remain unverified."
+      ]
+    },
+    {
+      "review_id": "10.117.0:NAT-2026-09-15-010:acd8921f1201",
+      "entry_id": "NAT-2026-09-15-010",
+      "content_sha256": "acd8921f1201e9892b06e52ffe5ca70779414eb332b36f03f4b96a16812db0d5",
+      "reviewed_at": "2026-10-06T16:04:40Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "761bcf39af8b95860179f252166d2baa88b86daf8b77bcce2344cf3a411a589a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_paramount_bond_sep15",
+              "locator": "Reuters reports DOJ’s filed bond position and transaction value.",
+              "inspected_at": "2026-09-16T04:45:00Z",
+              "document_sha256": "db3ee97cfcf69927258b818a3bda8f6aa337f52a32ec85e0d52cd39561ccc9aa",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "e41b600d938ddb22696069ef6d47174e5eaa95bfd95146924cbfebc8b60546cc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_paramount_bond_sep15",
+              "locator": "Reuters reports Paramount’s requested bond and ticking-fee figures as party assertions.",
+              "inspected_at": "2026-09-16T04:45:00Z",
+              "document_sha256": "db3ee97cfcf69927258b818a3bda8f6aa337f52a32ec85e0d52cd39561ccc9aa",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "79f6db03f752ff17a78ebe9023017481643ca204d8c6ce7c81844528709eb4e5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_paramount_bond_sep15",
+              "locator": "Reuters describes DOJ’s litigation rationale without converting it into a court ruling.",
+              "inspected_at": "2026-09-16T04:45:00Z",
+              "document_sha256": "db3ee97cfcf69927258b818a3bda8f6aa337f52a32ec85e0d52cd39561ccc9aa",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "159bea61285111bf5806577382dc51c9f25b379229ddf129820fafd93bdd5043",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_paramount_bond_sep15",
+              "locator": "Reuters reports the challengers’ antitrust case and requested preliminary relief.",
+              "inspected_at": "2026-09-16T04:45:00Z",
+              "document_sha256": "db3ee97cfcf69927258b818a3bda8f6aa337f52a32ec85e0d52cd39561ccc9aa",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "cfa8626ae549d934ee877dfca2f2907034827323c6c5c239ad47e9cbc5a7b3b9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_paramount_bond_sep15",
+              "locator": "The report states that bond, injunction and merits outcomes remained pending.",
+              "inspected_at": "2026-09-16T04:45:00Z",
+              "document_sha256": "db3ee97cfcf69927258b818a3bda8f6aa337f52a32ec85e0d52cd39561ccc9aa",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "529d7945a4ee1360e4180a70ac269b37b2e3c8a12d0877879769e25fb8b9e030",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "paramount_merger_close_oct6",
+              "locator": "Opening completion and closing-conditions paragraphs; portfolio and forward-looking output/synergy commitments.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "69a0b999a33870f28b65ff53a722743422c738a3f161426179a85dba3085a588",
+              "origin_group": "Paramount Skydance Corporation",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_merger_close_oct6",
+              "locator": "Article opening: completed takeover, combined studio/network assets and leadership; AP is one independent origin.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "6cc254d4deb792b1ff068b6d1e53dec573b7034b17ba90677fa0a3681a94c482",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "92121a9a23769648ce9b6726b704e11a1e341a02646bf72f2e01bd50e432c43c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_paramount_nonchallenge_jun12",
+              "locator": "June 12 opening and competition analysis: concluded transaction unlikely to harm competition and expected consumer/worker benefits; this is agency predictive analysis, not a new October decision.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "a82be022eeb891cfaa5b21c04897ee414bcd8e4ba9e607633c107f2300cc6ce3",
+              "origin_group": "Department of Justice",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "4d8c9d1333c304b38b6b8f9943411df2e7157ee5d513a7295811526c39a3206f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "paramount_merger_close_oct6",
+              "locator": "Opening completion and closing-conditions paragraphs; portfolio and forward-looking output/synergy commitments.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "69a0b999a33870f28b65ff53a722743422c738a3f161426179a85dba3085a588",
+              "origin_group": "Paramount Skydance Corporation",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_merger_close_oct6",
+              "locator": "Article opening: completed takeover, combined studio/network assets and leadership; AP is one independent origin.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "6cc254d4deb792b1ff068b6d1e53dec573b7034b17ba90677fa0a3681a94c482",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "4ad408a8df09f11d1c926a6c79121025e27c8d4c04cd44be2c527391b74d7c1a",
+          "review_note": "Separately reviewed as bounded analysis of the documented action/measurement, with causal and outcome limits retained."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "8c7e3329699beb94d79455bfeb1691bf1ed3da27b50db04f1e729b8fb15a03bc",
+          "review_note": "Separately reviewed the strongest relevant official explanation, including its original date and the evidence required to test it."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "636adebfa96a175364e87d7a20500f25a30d0bf2d49529b3150ddbb938a06265",
+          "review_note": "Separately reviewed competing interpretations and an explicit evidence-bound Therefore; no alleged, predictive or pending outcome is presented as completed."
+        }
+      ],
+      "unresolved_questions": [
+        "The earlier requested bond, every separate lawsuit’s disposition and post-merger competitive/editorial effects are not established by closing evidence."
+      ]
+    },
+    {
+      "review_id": "10.117.0:NAT-2026-10-05-006:1e330f98d2e1",
+      "entry_id": "NAT-2026-10-05-006",
+      "content_sha256": "1e330f98d2e18be8ca3d436bbad05dee0b4f258a63191fb0fe2f5dd98dc20987",
+      "reviewed_at": "2026-10-06T16:04:40Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "cc232e0b450e8697dde728326b50719514a922715f56734181427d0a1835f788",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "eeoc_foia_summary_judgment_oct5",
+              "locator": "Document 20, filed October 5, 2026, Civil Action 25-4457 (BAH) and related Maizel action: memorandum pp.1–3 and 7–15 (PDF pages9–11 and15–23), searches, asserted Exemption 3/Title VII confidentiality and neither-confirm-nor-deny reasoning.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "cb79a7819b22bf4d2a2e476bbacd2f7b8b71340f70c17eb81c9fff66e28f43dc",
+              "origin_group": "Department of Justice / Equal Employment Opportunity Commission",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "reuters_eeoc_foia_oct6",
+              "locator": "Search-service rendered Reuters article, lines160–179: October5 filing, parties, two case numbers, request and confidentiality position. Direct HTML access failed; rendered body and original linked filing inspected.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "06c2a4653c8a7f21e76dcdbba8d4df8d3d3ddd20cc64022a73d6aa9741ad638c",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "e01592d2be1e5a1c1d7111dc5a29783ea705cd0ec55ec15dfa182558ffe3c614",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "eeoc_foia_summary_judgment_oct5",
+              "locator": "Document 20, filed October 5, 2026, Civil Action 25-4457 (BAH) and related Maizel action: memorandum pp.1–3 and 7–15 (PDF pages9–11 and15–23), searches, asserted Exemption 3/Title VII confidentiality and neither-confirm-nor-deny reasoning.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "cb79a7819b22bf4d2a2e476bbacd2f7b8b71340f70c17eb81c9fff66e28f43dc",
+              "origin_group": "Department of Justice / Equal Employment Opportunity Commission",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "d55a09a3207ab4d09c0142657a379e74aebcc1284bd8c2198a6ed6e754d5a18a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "eeoc_foia_summary_judgment_oct5",
+              "locator": "Document 20, filed October 5, 2026, Civil Action 25-4457 (BAH) and related Maizel action: memorandum pp.1–3 and 7–15 (PDF pages9–11 and15–23), searches, asserted Exemption 3/Title VII confidentiality and neither-confirm-nor-deny reasoning.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "cb79a7819b22bf4d2a2e476bbacd2f7b8b71340f70c17eb81c9fff66e28f43dc",
+              "origin_group": "Department of Justice / Equal Employment Opportunity Commission",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "9b792bf527d65c14d9fdffe1cd27a4d4bdfa4cbe6fe8791c2300141ed02c65f0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "eeoc_foia_summary_judgment_oct5",
+              "locator": "Document 20, filed October 5, 2026, Civil Action 25-4457 (BAH) and related Maizel action: memorandum pp.1–3 and 7–15 (PDF pages9–11 and15–23), searches, asserted Exemption 3/Title VII confidentiality and neither-confirm-nor-deny reasoning.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "cb79a7819b22bf4d2a2e476bbacd2f7b8b71340f70c17eb81c9fff66e28f43dc",
+              "origin_group": "Department of Justice / Equal Employment Opportunity Commission",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "reuters_eeoc_foia_oct6",
+              "locator": "Search-service rendered Reuters article, lines160–179: October5 filing, parties, two case numbers, request and confidentiality position. Direct HTML access failed; rendered body and original linked filing inspected.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "06c2a4653c8a7f21e76dcdbba8d4df8d3d3ddd20cc64022a73d6aa9741ad638c",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "6054addfabe73efb326891574c86ef6be1e33b2d125897541235b6f6646017a7",
+          "review_note": "Separately reviewed as bounded analysis of the documented action/measurement, with causal and outcome limits retained."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "fc83bd5058507ee1f39b761585d1d1dac80ce5f3dd8c77200b684d169b44bfe2",
+          "review_note": "Separately reviewed the strongest relevant official explanation, including its original date and the evidence required to test it."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "bda23c18b234e084a92daab5ea2adc7dd44404c2242e1962444a4768a9d9f1ec",
+          "review_note": "Separately reviewed competing interpretations and an explicit evidence-bound Therefore; no alleged, predictive or pending outcome is presented as completed."
+        }
+      ],
+      "unresolved_questions": [
+        "The ruling and subsequent productions are not established; formal charges against any particular firm are not inferred."
+      ]
+    },
+    {
+      "review_id": "10.117.0:NAT-2026-10-05-007:d39ebef699cb",
+      "entry_id": "NAT-2026-10-05-007",
+      "content_sha256": "d39ebef699cb43406c8a58e150383df7fdff81ff3af6ff4f5368e44467f60351",
+      "reviewed_at": "2026-10-06T16:04:40Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "5278c7902518916ccfbee655db4eea292803d8f3242e6941b6672deda6ae4f6f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_denaturalization_40_oct5",
+              "locator": "October5 header and opening reported count, INA grounds and Blanche/Shumate explanations; numbered inventory and item12 August10 date, which conflicts with the opening August21–October2 range.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "bd855ddf367452a0650ad6d8b6a092a2359ddec31822406b905ecc842a7f8876",
+              "origin_group": "Department of Justice",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "guardian_denaturalization_40_oct6",
+              "locator": "Article opening independently reports the forty-case announcement. Detailed allegations, filing dates and historic comparison are not adopted from this article.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "17c7c6bdada860d2082540a83467c5dedbbfd4a0624eb6329c0ef2202b4cd57d",
+              "origin_group": "The Guardian",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "de06d364ca1a6f9829ce3d23fab707e57fab9dbe3a75b8a62c3924134586ac4e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_denaturalization_40_oct5",
+              "locator": "October5 header and opening reported count, INA grounds and Blanche/Shumate explanations; numbered inventory and item12 August10 date, which conflicts with the opening August21–October2 range.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "bd855ddf367452a0650ad6d8b6a092a2359ddec31822406b905ecc842a7f8876",
+              "origin_group": "Department of Justice",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "368ee36fe44473fd7531086923ac877a4b73aa54d641a300270159ccb343caa5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_denaturalization_40_oct5",
+              "locator": "October5 header and opening reported count, INA grounds and Blanche/Shumate explanations; numbered inventory and item12 August10 date, which conflicts with the opening August21–October2 range.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "bd855ddf367452a0650ad6d8b6a092a2359ddec31822406b905ecc842a7f8876",
+              "origin_group": "Department of Justice",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "33fc8b3ecd3768994519e1863d44f7806523d55570fdfd5cd5f41f023baf84cf",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_denaturalization_40_oct5",
+              "locator": "October5 header and opening reported count, INA grounds and Blanche/Shumate explanations; numbered inventory and item12 August10 date, which conflicts with the opening August21–October2 range.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "bd855ddf367452a0650ad6d8b6a092a2359ddec31822406b905ecc842a7f8876",
+              "origin_group": "Department of Justice",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "4c5a0fb3a7c827d413ed09ed63382b04061e13f3989b99baf7c10e0fe9b8d45b",
+          "review_note": "Separately reviewed as bounded analysis of the documented action/measurement, with causal and outcome limits retained."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "a2d8526af79166c53f81e8750a0d1a298190e52e0062eca7340e643cb4413125",
+          "review_note": "Separately reviewed the strongest relevant official explanation, including its original date and the evidence required to test it."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "992fac47213e86410dc04e774321313e71555a03b484e4b3a281d68f0d8dc094",
+          "review_note": "Separately reviewed competing interpretations and an explicit evidence-bound Therefore; no alleged, predictive or pending outcome is presented as completed."
+        }
+      ],
+      "unresolved_questions": [
+        "Individual complaints and defenses were not all inspected; no final judgment count is established.",
+        "DOJ should clarify item12 August10 versus its stated aggregate August21–October2 range.",
+        "The department’s historic-ranking claim was not independently verified."
       ]
     }
   ],
