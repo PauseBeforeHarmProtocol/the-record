@@ -5389,6 +5389,54 @@
       "provenance_path": "data/editorial_change_notes/10.115.0.json",
       "provenance_sha256": "4a25d25306eeb3ad1ff9616791d100685aa332de1e41e110554e01b91bb92d59",
       "note": "Original event date and canonical ID preserved; evidence status, response and separate Maybe/Therefore reviewed. Evidence cutoff differs from actual later source inspection and publication times."
+    },
+    {
+      "change_id": "10.116.0:NAT-2026-09-11-014",
+      "entry_id": "NAT-2026-09-11-014",
+      "as_of_utc": "2026-10-06T09:57:30Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.116.0",
+      "summary": "Added named-source staffing, cost, deployment and funding evidence plus the HHS response to the existing CDC Ebola-controls record.",
+      "provenance_path": "data/editorial_change_notes/10.116.0.json",
+      "provenance_sha256": "511c5c8bd80df859b98694730abc0efb5a26c654691a8f05f1701dad450b6bbf",
+      "note": "Original event date and canonical lifecycle are preserved; evidence status, strongest response and separate Maybe/Therefore were reviewed through the stated cutoff."
+    },
+    {
+      "change_id": "10.116.0:NAT-2026-09-30-011",
+      "entry_id": "NAT-2026-09-30-011",
+      "as_of_utc": "2026-10-06T09:57:30Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.116.0",
+      "summary": "Recovered and published the September 30 preliminary APA stay of the challenged mass immigration-fine rule and blanket assessment policy.",
+      "provenance_path": "data/editorial_change_notes/10.116.0.json",
+      "provenance_sha256": "511c5c8bd80df859b98694730abc0efb5a26c654691a8f05f1701dad450b6bbf",
+      "note": "Original event date and canonical lifecycle are preserved; evidence status, strongest response and separate Maybe/Therefore were reviewed through the stated cutoff."
+    },
+    {
+      "change_id": "10.116.0:NAT-2026-10-05-004",
+      "entry_id": "NAT-2026-10-05-004",
+      "as_of_utc": "2026-10-06T09:57:30Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.116.0",
+      "summary": "Published the Supreme Court grant-vacate-remand order in the TPS litigation as a procedural stage, not a new merits judgment.",
+      "provenance_path": "data/editorial_change_notes/10.116.0.json",
+      "provenance_sha256": "511c5c8bd80df859b98694730abc0efb5a26c654691a8f05f1701dad450b6bbf",
+      "note": "Original event date and canonical lifecycle are preserved; evidence status, strongest response and separate Maybe/Therefore were reviewed through the stated cutoff."
+    },
+    {
+      "change_id": "10.116.0:NAT-2026-10-05-005",
+      "entry_id": "NAT-2026-10-05-005",
+      "as_of_utc": "2026-10-06T09:57:30Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.116.0",
+      "summary": "Published presidential approval of firing squad as the Army execution method for Nidal Hasan; scheduling and execution remain pending.",
+      "provenance_path": "data/editorial_change_notes/10.116.0.json",
+      "provenance_sha256": "511c5c8bd80df859b98694730abc0efb5a26c654691a8f05f1701dad450b6bbf",
+      "note": "Original event date and canonical lifecycle are preserved; evidence status, strongest response and separate Maybe/Therefore were reviewed through the stated cutoff."
     }
   ],
   "reviews": [
@@ -62138,6 +62186,677 @@
         "Attached video has only access verification; full audiovisual content remains pending and contributes no fact here.",
         "No inspected statute, formal instruction, enforcement filing or resulting arrest/charge establishes implementation of this specific call. Recheck if concrete action or official withdrawal appears.",
         "Attendance figures and alleged reporting dishonesty are disputed and not independently adjudicated in this entry."
+      ]
+    },
+    {
+      "review_id": "10.116.0:NAT-2026-09-11-014:afc57c6ce875",
+      "entry_id": "NAT-2026-09-11-014",
+      "content_sha256": "afc57c6ce8756ce60aa39a45d70123db699e7c729f534fb10d81e36a5377b471",
+      "reviewed_at": "2026-10-06T09:57:30Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "c32516dccbff0b026a57c6487f5b809703271f180283eca0adbcb18a14fd8c03",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cdc_ebola_order_sep16",
+              "locator": "The Federal Register notice supplies scope, dates, findings, exceptions and comment history.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "77c97c5a14cc99eaaa0198e868452ab70035bdde2caa5e3f8a9f4e88b2e7156e",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_order_sep11",
+              "locator": "The signed CDC order establishes the operative legal text.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9d5dd2cd859c44bfb651d046146dca4a05db6153059a0767475403705aefc49c",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_traveler_page_sep16",
+              "locator": "CDC operational guidance distinguishes boarding and airport-routing requirements.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "2599bd09f4b8b486cdb6dc8ea86fa901cd49f8bb228c0474752daf86cb163a35",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "82c6b4d0ec68ef5013dd521917d06f42c11f4d94d6d49b43ff6a39659bab90eb",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cdc_ebola_order_sep16",
+              "locator": "The Federal Register notice supplies scope, dates, findings, exceptions and comment history.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "77c97c5a14cc99eaaa0198e868452ab70035bdde2caa5e3f8a9f4e88b2e7156e",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_order_sep11",
+              "locator": "The signed CDC order establishes the operative legal text.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9d5dd2cd859c44bfb651d046146dca4a05db6153059a0767475403705aefc49c",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_traveler_page_sep16",
+              "locator": "CDC operational guidance distinguishes boarding and airport-routing requirements.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "2599bd09f4b8b486cdb6dc8ea86fa901cd49f8bb228c0474752daf86cb163a35",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "4673676b426cd7bc452a403cec3aa4a904c43a1d21be39c9a11d5b0f1bd5fbf8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cdc_ebola_order_sep16",
+              "locator": "The Federal Register notice supplies scope, dates, findings, exceptions and comment history.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "77c97c5a14cc99eaaa0198e868452ab70035bdde2caa5e3f8a9f4e88b2e7156e",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_order_sep11",
+              "locator": "The signed CDC order establishes the operative legal text.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9d5dd2cd859c44bfb651d046146dca4a05db6153059a0767475403705aefc49c",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_traveler_page_sep16",
+              "locator": "CDC operational guidance distinguishes boarding and airport-routing requirements.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "2599bd09f4b8b486cdb6dc8ea86fa901cd49f8bb228c0474752daf86cb163a35",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "15e52c84489d8f92bd04fb28dde8f25213dac288fdc84f6cd663475296f6edb9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cdc_ebola_order_sep16",
+              "locator": "The Federal Register notice supplies scope, dates, findings, exceptions and comment history.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "77c97c5a14cc99eaaa0198e868452ab70035bdde2caa5e3f8a9f4e88b2e7156e",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_order_sep11",
+              "locator": "The signed CDC order establishes the operative legal text.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9d5dd2cd859c44bfb651d046146dca4a05db6153059a0767475403705aefc49c",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_traveler_page_sep16",
+              "locator": "CDC operational guidance distinguishes boarding and airport-routing requirements.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "2599bd09f4b8b486cdb6dc8ea86fa901cd49f8bb228c0474752daf86cb163a35",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "ff84dd65aae7d8a867b6824a7718d587ad4c40ebb7366d4cd434b921ce1e40c5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_cdc_ebola_order_sep16",
+              "locator": "The Federal Register notice supplies scope, dates, findings, exceptions and comment history.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "77c97c5a14cc99eaaa0198e868452ab70035bdde2caa5e3f8a9f4e88b2e7156e",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_order_sep11",
+              "locator": "The signed CDC order establishes the operative legal text.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "9d5dd2cd859c44bfb651d046146dca4a05db6153059a0767475403705aefc49c",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "cdc_ebola_traveler_page_sep16",
+              "locator": "CDC operational guidance distinguishes boarding and airport-routing requirements.",
+              "inspected_at": "2026-09-16T09:59:18Z",
+              "document_sha256": "2599bd09f4b8b486cdb6dc8ea86fa901cd49f8bb228c0474752daf86cb163a35",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "93e3248ebc9874dedb2dd80027d3fa53bca6e3ed1e56951fa1cab228f69bf95f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ebola_response_oct6",
+              "locator": "Reuters investigation article body inspected through the search service; named doctors, Samaritan's Purse president and HHS spokeswoman, staffing percentages, deployment costs, response staffing and funding figures were read.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f2adc5e03a60876ad1d9af300a441472e023032d5b4de2082d1b15272412f58f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "1a0ccfa791f8a58521031313ee3b9e58bc58b180dfc780b0b3571377e3170048",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ebola_response_oct6",
+              "locator": "Reuters investigation article body inspected through the search service; named doctors, Samaritan's Purse president and HHS spokeswoman, staffing percentages, deployment costs, response staffing and funding figures were read.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f2adc5e03a60876ad1d9af300a441472e023032d5b4de2082d1b15272412f58f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "92924db3bba9309a309ab833fd556baf5c5e4e3e5866d97803a49a98c77cff1f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ebola_response_oct6",
+              "locator": "Reuters investigation article body inspected through the search service; named doctors, Samaritan's Purse president and HHS spokeswoman, staffing percentages, deployment costs, response staffing and funding figures were read.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f2adc5e03a60876ad1d9af300a441472e023032d5b4de2082d1b15272412f58f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "24c83b98105dbe82b3d0c00b417e75825f015df27272c9c63fa308b57d9150a4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ebola_response_oct6",
+              "locator": "Reuters investigation article body inspected through the search service; named doctors, Samaritan's Purse president and HHS spokeswoman, staffing percentages, deployment costs, response staffing and funding figures were read.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f2adc5e03a60876ad1d9af300a441472e023032d5b4de2082d1b15272412f58f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "fb592ef1b3ca6a099c28a140c3c3216f9ce794a572ef98677bbe8b3da3b4c98b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ebola_response_oct6",
+              "locator": "Reuters investigation article body inspected through the search service; named doctors, Samaritan's Purse president and HHS spokeswoman, staffing percentages, deployment costs, response staffing and funding figures were read.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f2adc5e03a60876ad1d9af300a441472e023032d5b4de2082d1b15272412f58f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "df91ea91321fe4a53c204ec665100106de6d30c3a2b90bd156408a5beda21664",
+          "review_note": "Separately reviewed for source-bounded inference, competing explanation and precise lifecycle status."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "e1856501339ffbf1bb8a02c200546d3b54a10342bd23f6b7fcdf3eeb8eb999a3",
+          "review_note": "Separately reviewed for source-bounded inference, competing explanation and precise lifecycle status."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "043445949716be6b50e29296f5a5eff12147086806767eb671425169874b073d",
+          "review_note": "Separately reviewed for source-bounded inference, competing explanation and precise lifecycle status."
+        }
+      ],
+      "unresolved_questions": [
+        "Comparative effectiveness, audited expenditures, exception use and the post-October 11 status remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.116.0:NAT-2026-09-30-011:21439962a8ce",
+      "entry_id": "NAT-2026-09-30-011",
+      "content_sha256": "21439962a8ce0242ad1a3015e4379e1df058e579a85b4a859b03bee8a156c666",
+      "reviewed_at": "2026-10-06T09:57:30Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "0f2753e612388333f2206bb48ec1d0427c4e7f026aaaaac98f3424e8d87a6061",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "d_mass_maria_l_order_sep30",
+              "locator": "Signed 20-page opinion and order, especially APA Section 705 analysis, procedural changes, assessment figures, hardship findings and preliminary-relief limits.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "386c8200f395738e058d1157856dfe7993f55674ebae3c04f464389998f6602a",
+              "origin_group": "U.S. District Court for the District of Massachusetts",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "1812e4d2f01611ddcbab58686f4e86d5fc774a8b1e0b6c94f48cf335c48bf12a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "d_mass_maria_l_order_sep30",
+              "locator": "Signed 20-page opinion and order, especially APA Section 705 analysis, procedural changes, assessment figures, hardship findings and preliminary-relief limits.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "386c8200f395738e058d1157856dfe7993f55674ebae3c04f464389998f6602a",
+              "origin_group": "U.S. District Court for the District of Massachusetts",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "f7995101df969427b65bead438707b1781619a0bb59d02820ebb6e1a0d3a123b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "d_mass_maria_l_order_sep30",
+              "locator": "Signed 20-page opinion and order, especially APA Section 705 analysis, procedural changes, assessment figures, hardship findings and preliminary-relief limits.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "386c8200f395738e058d1157856dfe7993f55674ebae3c04f464389998f6602a",
+              "origin_group": "U.S. District Court for the District of Massachusetts",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_migrant_fines_oct6",
+              "locator": "Reuters article body inspected through the search service; reported DHS July aggregate, named plaintiffs, preliminary posture and lack of immediate DHS comment.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "30f2d418b640aafc87bc8cd64f6e1a9eb7887006afa35cc654031cc5a7cca1f7",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "61792d5779c0a05e2ed6b9d9447238affb297e70aad35865314ae93a2d0754c3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "d_mass_maria_l_order_sep30",
+              "locator": "Signed 20-page opinion and order, especially APA Section 705 analysis, procedural changes, assessment figures, hardship findings and preliminary-relief limits.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "386c8200f395738e058d1157856dfe7993f55674ebae3c04f464389998f6602a",
+              "origin_group": "U.S. District Court for the District of Massachusetts",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "b8607710c4ad58776d2fc21a132e3933cc08d303ef83ddb41b3adb78b72d6156",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "d_mass_maria_l_order_sep30",
+              "locator": "Signed 20-page opinion and order, especially APA Section 705 analysis, procedural changes, assessment figures, hardship findings and preliminary-relief limits.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "386c8200f395738e058d1157856dfe7993f55674ebae3c04f464389998f6602a",
+              "origin_group": "U.S. District Court for the District of Massachusetts",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_migrant_fines_oct6",
+              "locator": "Reuters article body inspected through the search service; reported DHS July aggregate, named plaintiffs, preliminary posture and lack of immediate DHS comment.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "30f2d418b640aafc87bc8cd64f6e1a9eb7887006afa35cc654031cc5a7cca1f7",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "1ea6f9596333395d0fb0259dab61e6548a1604efad5a33c56cec9ea16dd315a2",
+          "review_note": "Separately reviewed for source-bounded inference, competing explanation and precise lifecycle status."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "cf9eec46e8433169a6283689955e14203a06926ef88688d8fc226b1ab9b1345b",
+          "review_note": "Separately reviewed for source-bounded inference, competing explanation and precise lifecycle status."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "83b9ea1096d2b110f5449dca843160d5f224a9bd17922a83ddde246abe135f8e",
+          "review_note": "Separately reviewed for source-bounded inference, competing explanation and precise lifecycle status."
+        }
+      ],
+      "unresolved_questions": [
+        "Final merits, appeal or stay, revised procedures and actual collection consequences remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.116.0:NAT-2026-10-05-004:57a1e421a159",
+      "entry_id": "NAT-2026-10-05-004",
+      "content_sha256": "57a1e421a15927ab3272265a2f3d08a7d95924e0d6663c74f20d7897f12716f7",
+      "reviewed_at": "2026-10-06T09:57:30Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "fd0d848e781def4c585390ee96ab88ff197c6b2580f586ca9e3bd665456daab3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_tps_docket_oct5",
+              "locator": "Official docket entry and October 5 order text inspected; certiorari granted, judgment vacated and remanded in light of Mullin v. Doe.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f72e58bdabc1e3e15f788da33a4f4520c5287dfe817a4d1dfd6de8d2e16f7a29",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "mealeys_tps_gvr_oct5",
+              "locator": "Independent legal report inspected through search-service extract; confirms October 5 GVR and procedural posture.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f81e6951438bb255135906d9ec57db253569b9c79240577740c4a4ce95f800ab",
+              "origin_group": "LexisNexis Mealey’s",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "1efbe4c23dfbda825290cd2bd93f4135d4a0fb2ae5c65b06d20c186d7c1bf02c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_tps_petition_jul9",
+              "locator": "Government certiorari petition inspected for the judgment below, TPS actions and asserted effect of Mullin v. Doe.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "9f01371d34a15382f3b89a4e8a78713353c64d3f2ce8ca1941589db4b768f871",
+              "origin_group": "U.S. Department of Justice / Supreme Court filing",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "79d15ea0228952ac7c6b6a6bd92b213593c367c42de7ec2f12bf20c55ddd2530",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_tps_response_aug20",
+              "locator": "Respondents' filed response inspected; it did not oppose grant, vacatur and remand and preserved the distinction from conceding every claim.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "772a6f3f70ff7ed2e25564f335f755bae2ea6b22ab5dc644e987384d6230bb46",
+              "origin_group": "National TPS Alliance respondents / Supreme Court filing",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "d477e9d77d5a4f87a30d3ee2fc278e4ead1899522c64bfa7f8fe48bfae35c07b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_tps_docket_oct5",
+              "locator": "Official docket entry and October 5 order text inspected; certiorari granted, judgment vacated and remanded in light of Mullin v. Doe.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f72e58bdabc1e3e15f788da33a4f4520c5287dfe817a4d1dfd6de8d2e16f7a29",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "scotus_tps_petition_jul9",
+              "locator": "Government certiorari petition inspected for the judgment below, TPS actions and asserted effect of Mullin v. Doe.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "9f01371d34a15382f3b89a4e8a78713353c64d3f2ce8ca1941589db4b768f871",
+              "origin_group": "U.S. Department of Justice / Supreme Court filing",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "scotus_tps_response_aug20",
+              "locator": "Respondents' filed response inspected; it did not oppose grant, vacatur and remand and preserved the distinction from conceding every claim.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "772a6f3f70ff7ed2e25564f335f755bae2ea6b22ab5dc644e987384d6230bb46",
+              "origin_group": "National TPS Alliance respondents / Supreme Court filing",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "4dcbcd257b288e8dfb8c6813e4718fd5d3d5566ef1b10f05a04e5903e3d6a08c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_tps_docket_oct5",
+              "locator": "Official docket entry and October 5 order text inspected; certiorari granted, judgment vacated and remanded in light of Mullin v. Doe.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f72e58bdabc1e3e15f788da33a4f4520c5287dfe817a4d1dfd6de8d2e16f7a29",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "scotus_tps_petition_jul9",
+              "locator": "Government certiorari petition inspected for the judgment below, TPS actions and asserted effect of Mullin v. Doe.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "9f01371d34a15382f3b89a4e8a78713353c64d3f2ce8ca1941589db4b768f871",
+              "origin_group": "U.S. Department of Justice / Supreme Court filing",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "1d25eb920a1cf7117d4b8dfec0b1c904e6f5daa4762515bbab8ee031c899b9a5",
+          "review_note": "Separately reviewed for source-bounded inference, competing explanation and precise lifecycle status."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "cf33fa93a4acab72c9b269b5c48f88305c9e90cefdb0ff050f5d977d80072f97",
+          "review_note": "Separately reviewed for source-bounded inference, competing explanation and precise lifecycle status."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "24f927a2c4871a0633d63a6801c585b43e9bd97648807836a8f87d6e4bb3b58b",
+          "review_note": "Separately reviewed for source-bounded inference, competing explanation and precise lifecycle status."
+        }
+      ],
+      "unresolved_questions": [
+        "Ninth Circuit remand proceedings, constitutional claims and concrete status or work-authorization guidance remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.116.0:NAT-2026-10-05-005:c2c06040df95",
+      "entry_id": "NAT-2026-10-05-005",
+      "content_sha256": "c2c06040df95201d7b7f42d2af40b0401454ad7119d7f869587d348e94b34ff0",
+      "reviewed_at": "2026-10-06T09:57:30Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "24110d5945966cfe02a37c3ceac2afa69c97c63605e94214fea9f9551a06e4ad",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_hasan_firing_oct6",
+              "locator": "Reuters article body inspected through the search service; named Pentagon spokesperson, approval, method, scheduling status and execution-method context read.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "9a042182b6540e27364910954c3057423f9d961dc7636091f0a0f7414cb23f99",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_hasan_firing_oct6",
+              "locator": "AP article inspected; independently reports the named Pentagon announcement, conviction, pending Army scheduling and last military execution context.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f7d30e763a379ad6b8dce5ec935c832b0cc2b5a7cac30dff00ccaa9acbba7179",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "09df162f81c32edde060cab67a3dc1d0aa4d4ea69b5e3c7f56648d348d3f9e9d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "army_hasan_sentence_aug2013",
+              "locator": "Official Army article inspected for the 2013 court-martial convictions and death sentence.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "79d2c897c6e2658c800b4163da618a43911b024a5b974ce3a4fe361b3932f50a",
+              "origin_group": "U.S. Army",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "ap_hasan_firing_oct6",
+              "locator": "AP article inspected; independently reports the named Pentagon announcement, conviction, pending Army scheduling and last military execution context.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f7d30e763a379ad6b8dce5ec935c832b0cc2b5a7cac30dff00ccaa9acbba7179",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "09d0ec7538fb167b75acbe47f44d18abb17140f0f5a82351e9c543619beda312",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_hasan_firing_oct6",
+              "locator": "Reuters article body inspected through the search service; named Pentagon spokesperson, approval, method, scheduling status and execution-method context read.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "9a042182b6540e27364910954c3057423f9d961dc7636091f0a0f7414cb23f99",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_hasan_firing_oct6",
+              "locator": "AP article inspected; independently reports the named Pentagon announcement, conviction, pending Army scheduling and last military execution context.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f7d30e763a379ad6b8dce5ec935c832b0cc2b5a7cac30dff00ccaa9acbba7179",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "ee1822f790db75cf503a5d64df81f80c553d913c3146c13d157ebfcaea45d350",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_hasan_firing_oct6",
+              "locator": "Reuters article body inspected through the search service; named Pentagon spokesperson, approval, method, scheduling status and execution-method context read.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "9a042182b6540e27364910954c3057423f9d961dc7636091f0a0f7414cb23f99",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_hasan_firing_oct6",
+              "locator": "AP article inspected; independently reports the named Pentagon announcement, conviction, pending Army scheduling and last military execution context.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f7d30e763a379ad6b8dce5ec935c832b0cc2b5a7cac30dff00ccaa9acbba7179",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "017204668834eb35db4b51468e9b625ac6bec8405a3a0c219c46fe0187225769",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_hasan_firing_oct6",
+              "locator": "Reuters article body inspected through the search service; named Pentagon spokesperson, approval, method, scheduling status and execution-method context read.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "9a042182b6540e27364910954c3057423f9d961dc7636091f0a0f7414cb23f99",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_hasan_firing_oct6",
+              "locator": "AP article inspected; independently reports the named Pentagon announcement, conviction, pending Army scheduling and last military execution context.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f7d30e763a379ad6b8dce5ec935c832b0cc2b5a7cac30dff00ccaa9acbba7179",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "ce03f4925fa187027cc3806475fa0f0d918bd5ca35cefa83112b370cc5b8c55a",
+          "review_note": "Separately reviewed for source-bounded inference, competing explanation and precise lifecycle status."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "7237626be1df4b363c4652aafbf68fbb0eeb41d034a86a084d7da421a3d3cdfd",
+          "review_note": "Separately reviewed for source-bounded inference, competing explanation and precise lifecycle status."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "f7b4024d5ba758be5f4dc684e6b9c589821ac019d57beb9462a2a3e487c41ee6",
+          "review_note": "Separately reviewed for source-bounded inference, competing explanation and precise lifecycle status."
+        }
+      ],
+      "unresolved_questions": [
+        "Army scheduling, notice, clemency, judicial review, protocol compliance and whether an execution occurs remain unresolved."
       ]
     }
   ],
