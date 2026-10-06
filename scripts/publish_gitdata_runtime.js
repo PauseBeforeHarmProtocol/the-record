@@ -34,7 +34,7 @@ function gitDataShellQuote(value) {
 }
 
 async function publishGitDataRuntime({ tools, root, planPath, repository, branch,
-                                     message, report = () => {} }) {
+                                     message, expectedBranchSha, report = () => {} }) {
   if (!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repository)) {
     throw new Error("Invalid repository name");
   }
@@ -54,6 +54,8 @@ async function publishGitDataRuntime({ tools, root, planPath, repository, branch
     catch (_) { throw new Error("Transport output is invalid or truncated; branch was not advanced"); }
   }
   const plan = await shell("cat " + quote(planPath));
+  const parentSha = expectedBranchSha ?? plan.base_commit;
+  if (!/^[0-9a-f]{40}$/.test(parentSha)) throw new Error("Invalid expected maintenance head SHA");
   const args = " --plan " + quote(planPath);
   const local = await shell(script + " check" + args);
   if (local.status !== "passed" || local.target_tree !== plan.target_tree) {
@@ -63,8 +65,12 @@ async function publishGitDataRuntime({ tools, root, planPath, repository, branch
   const read = async path => gitDataResponse(await tools.mcp__codex_apps__github_fetch({url: api + path}));
   const refPath = "/git/ref/heads/" + branch.split("/").map(encodeURIComponent).join("/");
   const [main, ref] = await Promise.all([read("/git/ref/heads/main"), read(refPath)]);
-  if (main.object?.sha !== plan.base_commit || ref.object?.sha !== plan.base_commit) {
+  if (main.object?.sha !== plan.base_commit || ref.object?.sha !== parentSha) {
     throw new Error("Remote main or maintenance branch changed; inspect and rebuild against its head");
+  }
+  const parent = await read("/git/commits/" + parentSha);
+  if (parent.tree?.sha !== (plan.transport_base_tree ?? plan.base_tree)) {
+    throw new Error("Remote maintenance parent tree differs from the planned transport base");
   }
   let cursor = 0, uploaded = 0;
   const chunkBytes = plan.chunk_bytes;
@@ -117,8 +123,10 @@ async function publishGitDataRuntime({ tools, root, planPath, repository, branch
     report({stage: "blobs", uploaded, total: plan.blobs.length});
   }
   for (const row of plan.trees) {
-    const tree = gitDataResponse(await tools.mcp__codex_apps__github_create_tree({
-      repository_full_name: repository, tree_elements: row.entries }));
+    const request = {repository_full_name: repository,
+      tree_elements: row.transport_entries ?? row.entries};
+    if (row.base_tree_sha) request.base_tree_sha = row.base_tree_sha;
+    const tree = gitDataResponse(await tools.mcp__codex_apps__github_create_tree(request));
     if (tree.sha !== row.sha) throw new Error("Remote subtree SHA differs from accepted local tree");
   }
   const finalCheck = await shell(script + " check" + args);
@@ -127,18 +135,18 @@ async function publishGitDataRuntime({ tools, root, planPath, repository, branch
   }
   // Hash equality proves exact names, modes and bytes, including deletions.
   const commit = gitDataResponse(await tools.mcp__codex_apps__github_create_commit({
-    repository_full_name: repository, message, parent_sha: plan.base_commit,
+    repository_full_name: repository, message, parent_sha: parentSha,
     tree_sha: plan.target_tree }));
   const verified = await read("/git/commits/" + commit.sha);
   if (verified.tree?.sha !== plan.target_tree || verified.parents?.length !== 1 ||
-      verified.parents[0].sha !== plan.base_commit) {
+      verified.parents[0].sha !== parentSha) {
     throw new Error("Remote commit tree or parent differs from the publication plan");
   }
   if ((await read("/git/ref/heads/main")).object?.sha !== plan.base_commit) {
     throw new Error("Remote main advanced during transport; leave objects unreferenced and rebuild");
   }
   const updated = await tools.mcp__codex_apps__github_update_ref({ repository_full_name: repository,
-    branch_name: branch, sha: commit.sha, expected_sha: plan.base_commit, force: false });
+    branch_name: branch, sha: commit.sha, expected_sha: parentSha, force: false });
   if (updated?.isError) throw new Error("GitHub connector rejected the branch update");
   const published = await read(refPath);
   if (published.object?.sha !== commit.sha) throw new Error("Remote branch verification failed");

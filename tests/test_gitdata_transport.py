@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from prepare_gitdata_publish import (CHUNK_BYTES, accepted_inventory, blob_bytes,
                                      build_plan, check_checkout, check_plan_tree, digest, git,
-                                     load_plan)
+                                     load_plan, tree_entries)
 
 
 class GitDataPlanTests(unittest.TestCase):
@@ -65,8 +65,18 @@ class GitDataPlanTests(unittest.TestCase):
             for row in tree["entries"]:
                 if row["type"] == "tree" and row["sha"] != stable:
                     self.assertIn(row["sha"], available)
+            if tree.get("base_tree_sha"):
+                patched = {row["path"]: row for row in tree_entries(self.root, tree["base_tree_sha"])}
+            else:
+                patched = {}
+            for row in tree["transport_entries"]:
+                if row["sha"] is None:
+                    del patched[row["path"]]
+                else:
+                    patched[row["path"]] = row
+            self.assertEqual(patched, {row["path"]: row for row in tree["entries"]})
             payload = b"".join(f"{row['mode']} {row['type']} {row['sha']}\t{row['path']}".encode() + b"\0"
-                               for row in tree["entries"])
+                               for row in patched.values())
             rebuilt = subprocess.check_output(["git", "mktree", "-z"], cwd=self.root, input=payload).decode().strip()
             self.assertEqual(rebuilt, tree["sha"])
             available.add(rebuilt)
@@ -75,6 +85,32 @@ class GitDataPlanTests(unittest.TestCase):
         self.assertNotIn("remove.txt", {row["path"] for row in rows})
         self.assertEqual(next(row for row in rows if row["path"] == "run.sh")["mode"], "100755")
         self.assertEqual(next(row for row in rows if row["path"] == "link")["mode"], "120000")
+        patch = plan["trees"][-1]["transport_entries"]
+        self.assertNotIn("stable", {row["path"] for row in patch})
+        self.assertEqual(next(row for row in patch if row["path"] == "remove.txt")["sha"], None)
+        self.assertEqual(next(row for row in patch if row["path"] == "rename.txt")["sha"], None)
+        self.assertIn("moved name.txt", {row["path"] for row in patch})
+
+    def test_large_existing_directory_sends_only_changed_children(self):
+        (self.root / "large").mkdir()
+        for index in range(1100):
+            (self.root / "large" / f"file-{index:04d}.txt").write_text(f"baseline {index}\n")
+        git(self.root, "add", ".")
+        git(self.root, "commit", "-qm", "large baseline")
+        base = git(self.root, "rev-parse", "HEAD").decode().strip()
+        (self.root / "large/file-0010.txt").unlink()
+        (self.root / "large/file-0009.txt").write_text("changed\n")
+        (self.root / "large/new name café.txt").write_text("added\n")
+        git(self.root, "add", "-A")
+        git(self.root, "commit", "-qm", "large target")
+        plan = build_plan(self.root, base)
+        large = next(row for row in plan["trees"] if row["path"] == "large")
+        self.assertEqual(len(large["entries"]), 1100)
+        self.assertEqual(len(large["transport_entries"]), 3)
+        self.assertEqual(large["base_tree_sha"], git(self.root, "rev-parse", f"{base}:large").decode().strip())
+        root = plan["trees"][-1]
+        self.assertEqual(len(root["transport_entries"]), 1)
+        self.assertEqual(root["transport_entries"][0]["sha"], large["sha"])
 
     def test_chunk_concatenation_round_trips_binary(self):
         self.modify()
@@ -90,6 +126,20 @@ class GitDataPlanTests(unittest.TestCase):
         plan = build_plan(self.root, self.base)
         self.assertEqual(plan["blobs"], [])
         self.assertEqual(plan["trees"], [])
+
+    def test_incremental_transport_reuses_prior_published_tree(self):
+        self.modify()
+        published = git(self.root, "rev-parse", "HEAD").decode().strip()
+        (self.root / "transport-fix.py").write_text("print('fixed')\n")
+        git(self.root, "add", ".")
+        git(self.root, "commit", "-qm", "transport fix")
+        plan = build_plan(self.root, self.base, transport_base_ref=published)
+        self.assertEqual(plan["base_commit"], self.base)
+        self.assertEqual(plan["transport_base_commit"], published)
+        self.assertEqual([row["paths"] for row in plan["blobs"]], [["transport-fix.py"]])
+        self.assertEqual(len(plan["trees"]), 1)
+        self.assertEqual(len(plan["trees"][0]["transport_entries"]), 1)
+        check_plan_tree(self.root, plan)
 
     def test_dirty_checkout_and_nonancestor_base_are_rejected(self):
         (self.root / "remove.txt").write_text("changed\n")

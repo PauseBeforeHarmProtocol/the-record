@@ -48,17 +48,44 @@ def object_inventory(root: Path, tree_sha: str) -> set[str]:
                          for row in output.split(b"\0") if row}
 
 
-def build_plan(root: Path, base_ref: str, target_ref: str = "HEAD") -> dict:
-    if any(ref.startswith("-") for ref in (base_ref, target_ref)):
+def base_tree_paths(root: Path, tree_sha: str) -> dict[str, str]:
+    paths = {"": tree_sha}
+    for item in git(root, "ls-tree", "-r", "-t", "-z", tree_sha).split(b"\0"):
+        if not item:
+            continue
+        header, name = item.split(b"\t", 1)
+        _mode, kind, sha = header.decode("ascii").split()
+        if kind == "tree":
+            paths[name.decode("utf-8")] = sha
+    return paths
+
+
+def tree_delta(base: list[dict], target: list[dict]) -> list[dict]:
+    """Patch one tree level, retaining modes and explicit null deletions."""
+    previous = {row["path"]: row for row in base}
+    current = {row["path"]: row for row in target}
+    changes = [row for row in target if previous.get(row["path"]) != row]
+    changes.extend({**row, "sha": None} for row in base if row["path"] not in current)
+    return changes
+
+
+def build_plan(root: Path, base_ref: str, target_ref: str = "HEAD",
+               transport_base_ref: str | None = None) -> dict:
+    if any(ref.startswith("-") for ref in (base_ref, target_ref, transport_base_ref or base_ref)):
         raise ValueError("refs cannot begin with an option prefix")
     if git(root, "rev-parse", "--show-object-format").strip() != b"sha1":
         raise ValueError("GitHub transport requires SHA-1 Git objects")
     base = git(root, "rev-parse", "--verify", f"{base_ref}^{{commit}}").decode().strip()
     target = git(root, "rev-parse", "--verify", f"{target_ref}^{{commit}}").decode().strip()
     subprocess.run(["git", "merge-base", "--is-ancestor", base, target], cwd=root, check=True)
+    transport_base = git(root, "rev-parse", "--verify", f"{transport_base_ref or base_ref}^{{commit}}").decode().strip()
+    subprocess.run(["git", "merge-base", "--is-ancestor", base, transport_base], cwd=root, check=True)
+    subprocess.run(["git", "merge-base", "--is-ancestor", transport_base, target], cwd=root, check=True)
     base_tree = git(root, "rev-parse", f"{base}^{{tree}}").decode().strip()
+    transport_base_tree = git(root, "rev-parse", f"{transport_base}^{{tree}}").decode().strip()
     target_tree = git(root, "rev-parse", f"{target}^{{tree}}").decode().strip()
-    known = object_inventory(root, base_tree)
+    known = object_inventory(root, transport_base_tree)
+    counterparts = base_tree_paths(root, transport_base_tree)
     blobs: dict[str, dict] = {}
     trees: list[dict] = []
     visited = set()
@@ -80,12 +107,19 @@ def build_plan(root: Path, base_ref: str, target_ref: str = "HEAD") -> dict:
             elif row["type"] not in ("blob", "commit"):
                 raise ValueError(f"unsupported Git object type at {path}")
         # Child trees always precede the parent. Unchanged subtrees are reused.
-        trees.append({"sha": sha, "path": prefix, "entries": entries})
+        node = {"sha": sha, "path": prefix, "entries": entries}
+        if prefix in counterparts:
+            node["base_tree_sha"] = counterparts[prefix]
+            node["transport_entries"] = tree_delta(tree_entries(root, counterparts[prefix]), entries)
+        else:
+            node["transport_entries"] = entries
+        trees.append(node)
 
     visit(target_tree)
     items = sorted(blobs.values(), key=lambda row: (row["paths"][0], row["sha"]))
-    return {"schema_version": "1.0.0", "chunk_bytes": CHUNK_BYTES,
+    return {"schema_version": "1.2.0", "chunk_bytes": CHUNK_BYTES,
             "base_commit": base, "base_tree": base_tree,
+            "transport_base_commit": transport_base, "transport_base_tree": transport_base_tree,
             "target_commit": target, "target_tree": target_tree, "blobs": items,
             "trees": trees, "upload_bytes": sum(row["bytes"] for row in items),
             "reused_object_count": len(known)}
@@ -138,7 +172,10 @@ def load_plan(path: Path) -> dict:
 
 
 def check_plan_tree(root: Path, plan: dict) -> None:
-    for ref_key, tree_key in (("target_commit", "target_tree"), ("base_commit", "base_tree")):
+    pairs = [("target_commit", "target_tree"), ("base_commit", "base_tree")]
+    if "transport_base_commit" in plan:
+        pairs.append(("transport_base_commit", "transport_base_tree"))
+    for ref_key, tree_key in pairs:
         ref = plan.get(ref_key, "")
         if not SHA.fullmatch(ref):
             raise ValueError("invalid commit SHA in publication plan")
@@ -164,6 +201,7 @@ def main() -> int:
     prepare = commands.add_parser("plan")
     prepare.add_argument("--base-ref", required=True)
     prepare.add_argument("--commit", default="HEAD")
+    prepare.add_argument("--transport-base-ref", help="previous local commit already published to the maintenance branch")
     prepare.add_argument("--receipt", type=Path, required=True)
     prepare.add_argument("--output", type=Path, required=True)
     check = commands.add_parser("check")
@@ -183,7 +221,7 @@ def main() -> int:
         if args.command == "plan":
             if args.output.resolve().is_relative_to(root):
                 raise ValueError("publication plan must be outside the checkout")
-            plan = build_plan(root, args.base_ref, args.commit)
+            plan = build_plan(root, args.base_ref, args.commit, args.transport_base_ref)
             check_checkout(root, plan["target_commit"])
             plan["acceptance"] = accepted_inventory(root, args.receipt, plan["base_commit"])
             plan["plan_sha256"] = digest(plan)

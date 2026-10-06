@@ -2,11 +2,19 @@ const assert = require("node:assert/strict");
 const {publishGitDataRuntime, gitDataResponse, gitDataShellQuote} =
   require("../../scripts/publish_gitdata_runtime.js");
 
-async function scenario(failure = null) {
+async function scenario(failure = null, incremental = false) {
   const base = "a".repeat(40), blob = "b".repeat(40), tree = "c".repeat(40), commit = "d".repeat(40);
-  const plan = {base_commit: base, target_commit: "e".repeat(40), target_tree: tree,
+  const baseTree = "f".repeat(40);
+  const parentSha = incremental ? "9".repeat(40) : base;
+  const oldEntries = [{path: "file", mode: "100644", type: "blob", sha: "0".repeat(40)},
+    {path: "removed", mode: "100644", type: "blob", sha: "1".repeat(40)}];
+  const expected = [{path: "file", mode: "100644", type: "blob", sha: blob}];
+  const plan = {base_commit: base, base_tree: baseTree,
+    transport_base_commit: incremental ? "8".repeat(40) : base, transport_base_tree: baseTree,
+    target_commit: "e".repeat(40), target_tree: tree,
     chunk_bytes: 3, blobs: [{sha: blob, bytes: 5}],
-    trees: [{sha: tree, entries: [{path: "file", mode: "100644", type: "blob", sha: blob}]}],
+    trees: [{sha: tree, base_tree_sha: baseTree, entries: expected,
+      transport_entries: [...expected, {...oldEntries[1], sha: null}]}],
     acceptance: {sha256: "receipt"}, plan_sha256: "plan"};
   let checks = 0, updated = false, created = false, mainReads = 0;
   const wrap = value => ({structuredContent: {content: JSON.stringify(value)}});
@@ -30,10 +38,12 @@ async function scenario(failure = null) {
         return wrap({object: {sha: failure === "main-race" && mainReads > 1 ? "changed" : base}});
       }
       if (url.includes("/git/ref/heads/maintenance/")) {
-        return wrap({object: {sha: failure === "branch-race" ? "changed" : updated ? commit : base}});
+        return wrap({object: {sha: failure === "branch-race" ? "changed" : updated ? commit : parentSha}});
       }
+      if (url.endsWith("/git/commits/" + parentSha)) return wrap({sha: parentSha,
+        tree: {sha: failure === "parent-tree" ? "wrong" : baseTree}});
       if (url.endsWith("/git/commits/" + commit)) return wrap({sha: commit,
-        tree: {sha: failure === "commit-tree" ? "wrong" : tree}, parents: [{sha: base}]});
+        tree: {sha: failure === "commit-tree" ? "wrong" : tree}, parents: [{sha: parentSha}]});
       throw new Error("unexpected API URL");
     },
     async mcp__codex_apps__github_create_blob({content, encoding}) {
@@ -41,17 +51,24 @@ async function scenario(failure = null) {
       assert.equal(content, "aGVsbG8=");
       return wrap({sha: failure === "blob-hash" ? "wrong" : blob});
     },
-    async mcp__codex_apps__github_create_tree({tree_elements}) {
-      assert.deepEqual(tree_elements, plan.trees[0].entries);
+    async mcp__codex_apps__github_create_tree({tree_elements, base_tree_sha}) {
+      assert.equal(base_tree_sha, baseTree);
+      assert.deepEqual(tree_elements, plan.trees[0].transport_entries);
+      const patched = new Map(oldEntries.map(row => [row.path, row]));
+      for (const row of tree_elements) {
+        if (row.sha === null) patched.delete(row.path);
+        else patched.set(row.path, row);
+      }
+      assert.deepEqual([...patched.values()], expected);
       return wrap({sha: failure === "tree-hash" ? "wrong" : tree});
     },
     async mcp__codex_apps__github_create_commit({parent_sha, tree_sha}) {
       created = true;
-      assert.equal(parent_sha, base); assert.equal(tree_sha, tree);
+      assert.equal(parent_sha, parentSha); assert.equal(tree_sha, tree);
       return wrap({sha: commit});
     },
     async mcp__codex_apps__github_update_ref({expected_sha, force, sha}) {
-      assert.equal(expected_sha, base); assert.equal(force, false); assert.equal(sha, commit);
+      assert.equal(expected_sha, parentSha); assert.equal(force, false); assert.equal(sha, commit);
       updated = true;
       return wrap({object: {sha: commit}});
     }
@@ -59,7 +76,7 @@ async function scenario(failure = null) {
   try {
     const receipt = await publishGitDataRuntime({tools, root: "/fixture", planPath: "/tmp/fixture",
       repository: "owner/repo", branch: failure === "unsafe-branch" ? "main" : "maintenance/fixture",
-      message: "accepted fixture"});
+      expectedBranchSha: incremental ? parentSha : undefined, message: "accepted fixture"});
     assert.equal(failure, null);
     assert.equal(updated, true);
     assert.equal(receipt.tree, tree);
@@ -76,7 +93,8 @@ async function scenario(failure = null) {
   assert.throws(() => gitDataResponse({isError: true}), /failed/);
   assert.equal(gitDataShellQuote("x'$(bad)"), "'x'\\''$(bad)'");
   await scenario();
-  for (const failure of ["unsafe-branch", "branch-race", "truncated", "blob-hash", "tree-hash",
+  await scenario(null, true);
+  for (const failure of ["unsafe-branch", "branch-race", "parent-tree", "truncated", "blob-hash", "tree-hash",
                          "input-drift", "commit-tree", "main-race"]) await scenario(failure);
   console.log("PASS: connector transport guard cases");
 })().catch(error => {console.error(error); process.exitCode = 1;});
