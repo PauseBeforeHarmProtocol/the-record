@@ -1,37 +1,39 @@
 {
-  "version": "10.116.0",
+  "version": "10.117.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-06T03:57:12Z",
-    "through_utc": "2026-10-06T09:57:30Z",
+    "from_utc": "2026-10-06T09:57:30Z",
+    "through_utc": "2026-10-06T16:04:40Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact scan from the prior successful boundary through this cutoff. Two earlier-dated court actions were recovered from unresolved leads and are labeled by original action date; no later report date was substituted for the event date."
+    "note": "Exact scan from the previous successful boundary. October5 EEOC filing and DOJ inventory announcement were recovered via October6 reporting and original records; original dates retained. Page/feed observations do not establish complete broadcast or every-source coverage."
   },
   "release_iso": "2026-10-06",
   "release_human": "October 6, 2026",
-  "checked_at": "2026-10-06 5:57 AM EDT",
-  "previous_version": "10.115.1",
-  "previous_checked_at": "2026-10-05 11:57 PM EDT",
-  "window_started_at": "2026-10-05 11:57 PM EDT",
-  "window_ended_at": "2026-10-06 5:57 AM EDT",
+  "checked_at": "2026-10-06 12:04 PM EDT",
+  "previous_version": "10.116.0",
+  "previous_checked_at": "2026-10-06 5:57 AM EDT",
+  "window_started_at": "2026-10-06 5:57 AM EDT",
+  "window_ended_at": "2026-10-06 12:04 PM EDT",
   "week_start": "2026-09-30",
   "week_end": "2026-10-06",
   "week_label": "2026-09-30 through 2026-10-06",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-11-014",
-    "NAT-2026-09-30-011",
-    "NAT-2026-10-05-004",
-    "NAT-2026-10-05-005"
+    "NAT-2026-10-06-001",
+    "NAT-2026-09-24-002",
+    "NAT-2026-09-15-010",
+    "NAT-2026-10-05-006",
+    "NAT-2026-10-05-007"
   ],
   "added_entry_ids": [
-    "NAT-2026-09-30-011",
-    "NAT-2026-10-05-004",
-    "NAT-2026-10-05-005"
+    "NAT-2026-10-06-001",
+    "NAT-2026-10-05-006",
+    "NAT-2026-10-05-007"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-09-11-014"
+    "NAT-2026-09-24-002",
+    "NAT-2026-09-15-010"
   ],
   "dedupe_resolutions": [
     {
@@ -603,35 +605,41 @@
       "target_id": "NAT-2026-10-05-005",
       "decision": "distinct_lifecycle_stage",
       "notes": "The 2026 presidential method approval is distinct from the 2013 conviction, which appears only as background."
+    },
+    {
+      "entry_id": "NAT-2026-10-05-006",
+      "target_id": "NAT-2026-07-18-001",
+      "decision": "false_positive",
+      "notes": "The new EEOC FOIA cases concern record disclosure and an October5 summary-judgment filing. The July18 DOJ subpoenas concern a different agency investigation and14 firms; similar law-firm/DEI subject matter does not establish the same event."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "California takeover remark",
-      "reason": "Withheld as rhetoric: no signed, proposed or implemented government action was verified."
+      "title": "Truth Social visa-overstay audit lead",
+      "reason": "New presidential post linked a report about a prior administration. The original OIG-26-38 PDF returned HTTP403 and report dating/scope were not fully verified. The post establishes publication only; no underlying audit finding is adopted."
     },
     {
-      "title": "Kenya first imported Ebola case",
-      "reason": "Material foreign public-health context, but no new Trump-administration national action was established in the reviewed material."
+      "title": "Seven newer text-only Truth Social posts",
+      "reason": "All seven texts inspected. Campaign and media criticism, foreign migration rhetoric, rally claims, a vague Midterm Surprise and a conditional Chicago-help statement supplied no verified new national action or operational order. The audit link remains a separate unresolved lead."
     },
     {
-      "title": "Treasury sanctions-removal and DOJ denaturalization leads",
-      "reason": "Not promoted without completing original-document, lifecycle and collision review; retained for recheck rather than padding this release."
+      "title": "Trump TV stream and previously listed recordings",
+      "reason": "Official pages and stable linked IDs rechecked. Newest listed library item remains the October5 gaggle; stream and newest-recording platform requests returned HTTP429. No footage, audio or captions reviewed; no qualifying new item located in the material reviewed."
     },
     {
-      "title": "Legacy quality batch deferred",
-      "reason": "No objective historical candidate was changed without complete record-specific evidence and guarded revision review; the visible remediation queue remains intact."
+      "title": "Legacy same-date-heading pair LEG-004656 / LEG-004657",
+      "reason": "Canonical texts inspected: different judges, institutions and legal instruments despite the generated same-date-heading flag. Original rulings and disputed source dates were not inspected; no merge or historical review-state upgrade performed."
     }
   ],
   "corrections": [],
-  "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance); GPT-6 Astra (independent deep editorial gate review). AI output is not treated as evidence.",
+  "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-06T09:57:30Z",
-    "checked_at_eastern": "2026-10-06 5:57 AM EDT",
+    "checked_at": "2026-10-06T16:04:40Z",
+    "checked_at_eastern": "2026-10-06 12:04 PM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-06T09:57:30Z",
+    "last_successful_page_inspection_at": "2026-10-06T16:04:40Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -642,17 +650,17 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "The official Trump TV, live, dated video library, remarks and releases pages were rechecked. The official link remained A4gNgHfZ-v4. No footage, audio or captions were reviewed, and fallback error text was not treated as an outage. The library still showed the October 5 departure gaggle as newest. No qualifying new item located in the material reviewed; no verified new channel cost, contract, staffing, editorial-control, distribution, advertising, press-access, investigation or court/congressional finding was located.",
+    "summary": "Official Trump TV, live, videos, remarks and releases HTML and dated metadata inspected. Stream ID remains A4gNgHfZ-v4; newest library listing remains October5 departure gaggle kuYkk0TxYuM. These are repeated listings, not newly established actions. Both stream and newest-recording YouTube requests returned HTTP429. No footage, audio or captions reviewed and no live/replay state inferred from fallback error text. No qualifying new item located in the material reviewed; no new verified channel cost, contract, staffing/control, distribution, press-access or investigative finding located.",
     "items": [
       {
         "url": "https://www.whitehouse.gov/trumptv/",
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-06T09:57:30Z",
-        "observed_at_eastern": "2026-10-06 5:57 AM EDT",
+        "observed_at": "2026-10-06T16:04:40Z",
+        "observed_at_eastern": "2026-10-06 12:04 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
-        "inspection": "Raw official page HTML again linked A4gNgHfZ-v4. A new YouTube player-metadata request returned HTTP 429; current live/replay state is unverified in this check. No footage, audio or captions were reviewed. Fallback error text does not establish an outage.",
+        "inspection": "Official HTML linked the unchanged A4gNgHfZ-v4 stream. Current YouTube request returned HTTP429; live/replay state and audiovisual content unverified. Fallback text does not prove an outage.",
         "video_ids": [
           "A4gNgHfZ-v4"
         ]
@@ -662,8 +670,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-06T09:57:30Z",
-        "observed_at_eastern": "2026-10-06 5:57 AM EDT",
+        "observed_at": "2026-10-06T16:04:40Z",
+        "observed_at_eastern": "2026-10-06 12:04 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official live hub HTML and links inspected; it linked the same A4gNgHfZ-v4 ID. Platform state and audiovisual content were not reviewed.",
         "video_ids": [
@@ -675,10 +683,10 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-06T09:57:30Z",
-        "observed_at_eastern": "2026-10-06 5:57 AM EDT",
+        "observed_at": "2026-10-06T16:04:40Z",
+        "observed_at_eastern": "2026-10-06 12:04 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
-        "inspection": "Dated library metadata inspected. The newest listed item remains the October 5 departure gaggle; October 2-5 stable IDs match the prior inspection. This recheck did not retrieve or watch recordings. Medicare clip repeats the previously published announcement; older footage is not a new action.",
+        "inspection": "Official dated listing still ends with October5 departure gaggle kuYkk0TxYuM; all12 listed video IDs match the prior inspection. Newest recording request returned HTTP429. Titles/durations/dates were read; footage, audio and captions were not retrieved or reviewed. Older uploads are repeat leads.",
         "video_ids": [
           "kuYkk0TxYuM",
           "ixWToijvWxE",
@@ -699,8 +707,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-06T09:57:30Z",
-        "observed_at_eastern": "2026-10-06 5:57 AM EDT",
+        "observed_at": "2026-10-06T16:04:40Z",
+        "observed_at_eastern": "2026-10-06 12:04 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Supplementary remarks index inspected; September 28 remains its newest listed event. It is not assumed to be a complete Trump TV transcript feed.",
         "video_ids": []
@@ -710,8 +718,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-06T09:57:30Z",
-        "observed_at_eastern": "2026-10-06 5:57 AM EDT",
+        "observed_at": "2026-10-06T16:04:40Z",
+        "observed_at_eastern": "2026-10-06 12:04 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official release index inspected. October 5 diesel action is already canonical; Nebraska promotion is not independent investment or policy-effectiveness verification. A release listing does not prove that a statement aired on Trump TV.",
         "video_ids": []
@@ -725,9 +733,10 @@
       "No verified channel budget, contract, staffing allocation, editorial-control arrangement or common funding with the separate government-paid advertisement was located.",
       "Prior inaccessible media and the unresolved original Trump TV trademark filing remain open for recheck.",
       "Current YouTube player metadata request returned HTTP 429; recheck platform state, recordings and accessible captions without advancing a broadcast coverage claim.",
-      "No complete recording or new transcript was retrieved in this check. The last successful complete broadcast review boundary remains unknown; page metadata review does not close footage gaps."
+      "No complete recording or new transcript was retrieved in this check. The last successful complete broadcast review boundary remains unknown; page metadata review does not close footage gaps.",
+      "This check retried both the linked stream and newest library recording; each platform request returned HTTP429. Complete broadcast boundary remains unknown and is not advanced."
     ],
-    "previous_page_inspection_at": "2026-10-06T04:02:33.757523Z",
+    "previous_page_inspection_at": "2026-10-06T09:57:30Z",
     "historical_inspections": [
       {
         "url": "https://www.whitehouse.gov/videos/america-gov-launch/",
@@ -942,6 +951,78 @@
         "observed_at": "2026-10-06T02:15:30Z",
         "format": "official channel stream; YouTube player metadata reports live",
         "inspection": "Official YouTube player metadata from the White House-linked video showed author The White House, channel ID UCYxRlFDqcWM4y7FfpiAN3KQ, isLiveNow=true, playabilityStatus=OK and liveBroadcastDetails startTimestamp. This is metadata inspection only; no footage, audio or captions were reviewed and the original event dates of rebroadcast segments are unknown."
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-06T09:57:30Z",
+        "observed_at_eastern": "2026-10-06 5:57 AM EDT",
+        "format": "official page metadata; audiovisual content unreviewed",
+        "inspection": "Raw official page HTML again linked A4gNgHfZ-v4. A new YouTube player-metadata request returned HTTP 429; current live/replay state is unverified in this check. No footage, audio or captions were reviewed. Fallback error text does not establish an outage.",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ]
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-06T09:57:30Z",
+        "observed_at_eastern": "2026-10-06 5:57 AM EDT",
+        "format": "official page metadata; audiovisual content unreviewed",
+        "inspection": "Official live hub HTML and links inspected; it linked the same A4gNgHfZ-v4 ID. Platform state and audiovisual content were not reviewed.",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ]
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-06T09:57:30Z",
+        "observed_at_eastern": "2026-10-06 5:57 AM EDT",
+        "format": "official page metadata; audiovisual content unreviewed",
+        "inspection": "Dated library metadata inspected. The newest listed item remains the October 5 departure gaggle; October 2-5 stable IDs match the prior inspection. This recheck did not retrieve or watch recordings. Medicare clip repeats the previously published announcement; older footage is not a new action.",
+        "video_ids": [
+          "kuYkk0TxYuM",
+          "ixWToijvWxE",
+          "tlYbzF9hSBE",
+          "AVw2HnrbY44",
+          "y6Bgx7YTMFg",
+          "m-6J-ruWVEA",
+          "7noLOskq5E0",
+          "zCZZkBsIhso",
+          "Fe7HUHtMrBE",
+          "5fRpXOyalfc",
+          "ykv4al8IpGk",
+          "M6mj9b9Qf2k"
+        ]
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-06T09:57:30Z",
+        "observed_at_eastern": "2026-10-06 5:57 AM EDT",
+        "format": "official page metadata; audiovisual content unreviewed",
+        "inspection": "Supplementary remarks index inspected; September 28 remains its newest listed event. It is not assumed to be a complete Trump TV transcript feed.",
+        "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-06T09:57:30Z",
+        "observed_at_eastern": "2026-10-06 5:57 AM EDT",
+        "format": "official page metadata; audiovisual content unreviewed",
+        "inspection": "Official release index inspected. October 5 diesel action is already canonical; Nebraska promotion is not independent investment or policy-effectiveness verification. A release listing does not prove that a statement aired on Trump TV.",
+        "video_ids": []
       }
     ]
   },
@@ -949,9 +1030,9 @@
     "scope": "1000 retained fallback posts; current content hashes only",
     "counts": {
       "text_status": {
-        "reviewed": 438,
+        "reviewed": 445,
         "not_recorded": 136,
-        "pending": 426
+        "pending": 419
       },
       "media_status": {
         "not_applicable": 456,
@@ -961,26 +1042,26 @@
         "not_recorded": 19
       }
     },
-    "new_posts": 0,
-    "source_rows_added": 0,
-    "new_text_reviewed": 0,
-    "new_nonempty_text_reviewed": 0,
+    "new_posts": 7,
+    "source_rows_added": 7,
+    "new_text_reviewed": 7,
+    "new_nonempty_text_reviewed": 7,
     "new_empty_text_inspected": 0,
     "new_image_assets_reviewed": 0,
     "new_image_posts_reviewed": 0,
     "new_video_assets_pending": 0,
     "new_media_reviewed": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-06T09:57:55.856899Z",
-    "checked_at_eastern": "2026-10-06 5:57:55 AM EDT",
-    "latest_post_at_utc": "2026-10-06T03:18:50.947000Z",
-    "latest_post_at_eastern": "2026-10-05 11:18:50 PM EDT",
-    "latest_post_id": "117391801119298224",
-    "no_new_post_finding": true,
-    "note": "No posts newer than the prior validated snapshot were present. The newest retained post remains October 5 at 11:18:50 PM EDT in Indianapolis; its UTC date is October 6. Raw posts remain publication evidence only."
+    "checked_at_utc": "2026-10-06T15:57:52.243101Z",
+    "checked_at_eastern": "2026-10-06 11:57:52 AM EDT",
+    "latest_post_at_utc": "2026-10-06T15:25:01.262000Z",
+    "latest_post_at_eastern": "2026-10-06 11:25:01 AM EDT",
+    "latest_post_id": "117394656543560911",
+    "no_new_post_finding": false,
+    "note": "Seven posts newer than the prior validated snapshot were acquired and their complete retained text inspected. All seven are text-only, with no attached media. Newest post: October6 11:25:01AM EDT; feed checked October6 11:57:52AM EDT. Routine claims were not promoted; the inaccessible original visa-overstay audit remains queued. Current retained pending/unavailable states are separately counted; this is not a claim that every historic post was reviewed."
   },
   "archive_network_inspection": {
-    "checked_at": "2026-10-06T09:57:30Z",
-    "note": "All four registered primary project pages were rechecked. Trump Archive values increased to 14,589 total items, 12,062 Truth Social posts and 1,880 speeches/transcripts; units and scope remain separate. UndoTrump and the immigration tracker values were unchanged. Record47 homepage/API differences remain disclosed. Zero external canonical entries were imported."
+    "checked_at": "2026-10-06T16:04:40Z",
+    "note": "All four registered primary projects rechecked. Trump Archive total and post measurements increased by one; other verified measurements unchanged. Record47 API accessible with prior values while homepage differences remain disclosed. Separate units preserved and zero external canonical entries imported. Legacy generated duplicate flag pair inspected but original court sources not yet reviewed; stable IDs and unreviewed states retained."
   }
 }
