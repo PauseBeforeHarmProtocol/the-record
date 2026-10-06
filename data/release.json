@@ -1,37 +1,51 @@
 {
-  "version": "10.114.0",
+  "version": "10.115.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-02T15:56:30Z",
-    "through_utc": "2026-10-02T21:57:44Z",
+    "from_utc": "2026-10-02T21:57:44Z",
+    "through_utc": "2026-10-06T02:11:22Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous research coverage begins at the prior exact cutoff. Two same-event refreshes cleared the threshold. The Treasury sanctions announcement and October 1 university-donor temporary restraining order were explicit prior-window recoveries identified during this review and are not represented as newly occurring inside the window. The Truth Social and Trump TV checks completed after the research cutoff and are reported separately; no coverage claim extends beyond reviewed material."
+    "note": "Catch-up research begins at the last published exact cutoff; unpublished October 3–4 draft changes were reconstructed and verified. Prior-window recoveries retain original action dates. Publication and source inspection times remain separate from this coverage cutoff; inaccessible broadcast minutes are not covered."
   },
-  "release_iso": "2026-10-02",
-  "release_human": "October 2, 2026",
-  "checked_at": "2026-10-02 5:57 PM EDT",
-  "previous_version": "10.113.0",
-  "previous_checked_at": "2026-10-02 11:56 AM EDT",
-  "window_started_at": "2026-10-02 11:56 AM EDT",
-  "window_ended_at": "2026-10-02 5:57 PM EDT",
-  "week_start": "2026-09-26",
-  "week_end": "2026-10-02",
-  "week_label": "September 26–October 2, 2026",
+  "release_iso": "2026-10-05",
+  "release_human": "October 5, 2026",
+  "checked_at": "2026-10-05 10:11 PM EDT",
+  "previous_version": "10.114.0",
+  "previous_checked_at": "2026-10-02 5:57 PM EDT",
+  "window_started_at": "2026-10-02 5:57 PM EDT",
+  "window_ended_at": "2026-10-05 10:11 PM EDT",
+  "week_start": "2026-09-29",
+  "week_end": "2026-10-05",
+  "week_label": "2026-09-29 through 2026-10-05",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-10-01-006",
-    "NAT-2026-10-02-003",
-    "NAT-2026-09-14-009",
-    "NAT-2026-09-22-006"
+    "NAT-2026-10-02-004",
+    "NAT-2026-09-30-002",
+    "NAT-2026-09-25-009",
+    "NAT-2026-09-19-001",
+    "NAT-2026-10-05-001",
+    "NAT-2026-10-01-002",
+    "NAT-2026-08-25-005",
+    "NAT-2026-09-30-010",
+    "NAT-2026-09-24-002",
+    "NAT-2026-08-17-001",
+    "NAT-2026-10-05-003"
   ],
   "added_entry_ids": [
-    "NAT-2026-10-01-006",
-    "NAT-2026-10-02-003"
+    "NAT-2026-10-02-004",
+    "NAT-2026-10-05-001",
+    "NAT-2026-09-30-010",
+    "NAT-2026-10-05-003"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-09-14-009",
-    "NAT-2026-09-22-006"
+    "NAT-2026-09-30-002",
+    "NAT-2026-09-25-009",
+    "NAT-2026-09-19-001",
+    "NAT-2026-10-01-002",
+    "NAT-2026-08-25-005",
+    "NAT-2026-09-24-002",
+    "NAT-2026-08-17-001"
   ],
   "dedupe_resolutions": [
     {
@@ -573,43 +587,67 @@
       "target_id": "NAT-2026-09-11-015",
       "decision": "distinct_lifecycle_stage",
       "notes": "The annual continuation preserves the underlying national emergency; the October 2 record is a separate target-specific designation action under that authority."
+    },
+    {
+      "entry_id": "NAT-2026-10-05-001",
+      "target_id": "NAT-2026-09-22-006",
+      "decision": "false_positive",
+      "notes": "The signed domestic diesel tax-and-penalty instrument is a distinct government action from NAT-2026-09-22-006’s export-ban proposal and G7 reserve commitment. Retain a contextual crosslink in release dedupe resolutions; do not imply the export proposal was implemented or classify these as duplicate lifecycle stages."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "South Korea $8.4 billion enhanced oil-recovery announcement",
-      "reason": "Trump's post establishes that he announced the figure. Reuters later reported that he defended the announcement, but no independent Seoul, project-company, contract or financing confirmation was located by cutoff; the existing record was not refreshed."
+      "title": "Big Bend preliminary injunction",
+      "reason": "The October 2 preliminary-injunction evolution is already refreshed in current main through PR 163 as NAT-2026-09-14-009. No later substantive evolution was established in this task."
     },
     {
-      "title": "Expected Senate vote on Saudi nuclear agreement",
-      "reason": "Reuters reported senators expected a post-election vote on a previously submitted agreement. That procedural expectation is not a new administration action, enacted resolution, court finding or implementation milestone."
+      "title": "Migrant-fine policy injunction reported by Reuters",
+      "reason": "Reuters publication at October 6 00:59 UTC is within the cutoff, but a primary court order was not retrieved and reporting on the apparently same parties also identifies September 30 as the injunction date. Withheld until the order and event/lifecycle date are inspected; do not convert the October 5 dateline into a newly issued ruling."
     },
     {
-      "title": "Truth Social Cornell question and inaccessible campaign media",
-      "reason": "The Cornell post announced no federal action and its implied premise was not independently verified. Three attached media assets could not be retrieved; no footage was watched or visual claim inferred, and independent transcript discovery described two as routine campaign advocacy."
+      "title": "Supreme Court GVR in Mullin v. National TPS Alliance, docket 26-48",
+      "reason": "Official docket was identified by the legacy review as a possible October 5 GVR in light of Mullin v. Doe. This task did not complete original-order inspection, independent reporting, and canonical collision review. No new record was created from the lead alone."
     },
     {
-      "title": "Trump TV October 2 metadata follow-up",
-      "reason": "Official pages and the linked stream were rechecked; stream ID A4gNgHfZ-v4 remained linked and no later library listing than the America.Gov Launch clip appeared. Complete footage, captions and transcript were unavailable, no broadcast boundary was advanced and no qualifying new item was located in the material reviewed."
+      "title": "Conditional $5,000 payment if Republicans win both chambers",
+      "reason": "Trump repeated a campaign-conditional payment statement, including an October 5 post at 6:00:51 PM EDT. No inspected appropriation, executable legal authority, enacted payment program, or formal proposal supported a completed payment. Retain the raw statement in the separate feed. The existing conditional pledge is already NAT-2026-09-09-005; no new implementing instrument was established."
     },
     {
-      "title": "External archive discovery inputs",
-      "reason": "Trump Archive displayed 14,477 total items, 11,969 Truth Social posts and 1,862 speeches or transcripts. UndoTrump remained at 1,264 actions, 995 active, 44 in courts and 42 restored. Immigration Policy Tracking remained at 1,799 actions, including 649 fully in effect, 56 partially in effect and 291 not in effect. Record47's rendered page remained inconsistent with preserved API measurements. Unlike units remain separate and no upstream item was promoted automatically."
+      "title": "Claim that pharmaceutical tariffs caused Bayer Ohio campus investment",
+      "reason": "Trump posted a claimed $2.2 billion investment and credited tariffs. The post establishes the statement only. Original company announcement, financing/timing and an independent causal evaluation were not inspected, so the asserted tariff-caused investment or measured effectiveness was not published."
     },
     {
-      "title": "Legacy-quality queue",
-      "reason": "No newly inspected record-specific evidence resolved the outstanding source-health or duplicate-candidate warnings. No historical correction was made; existing warnings remain visible."
+      "title": "Trump TV fraud sentencing demand and incomplete broadcast coverage",
+      "reason": "The October 3 verbatim transcript supplies an announced legislative demand, not bill text or enacted sentencing law. Independent/action-level review remains incomplete. Stream footage and captions were not reviewed; no qualifying new item about channel costs or operations was located in the material reviewed."
+    },
+    {
+      "title": "CEA fiscal forecast and Kennedy Center images",
+      "reason": "The fiscal figures are a forecast rather than a measured outcome and were not independently evaluated. Kennedy Center photos have unverified capture dates, locations and engineering implications; no new order or demolition authorization established."
+    },
+    {
+      "title": "Small legacy quality batch",
+      "reason": "Three generated duplicate-candidate pairs were compared; distinct court actions were identified. Full claim, response and reasoning review remains incomplete, so canonical legacy rows and their review states remain unchanged and the queue stays visible."
+    },
+    {
+      "title": "External archive discovery measurements",
+      "reason": "Verified project-page measurements are retained separately by scope and unit: Trump Archive 14,579 public items (12,057 Truth posts; 1,876 speeches), IPTP 1,804 policy actions and UndoTrump 1,264 actions. Record47 access/staleness gaps prevent measurement replacement. No external item became a canonical event automatically."
     }
   ],
-  "corrections": [],
+  "corrections": [
+    {
+      "entry_id": "NAT-2026-09-25-009",
+      "checked_at": "2026-10-05 10:11 PM EDT",
+      "summary": "Corrected misidentified state plaintiffs in September 30 pocket-rescission complaint; no second entry or new event count."
+    }
+  ],
   "ai_credit": "ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork); OpenAI Codex (research, source review, deduplication and maintenance); GPT-6 Astra (independent deep editorial gate review). AI output is not treated as evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-02T22:02:20Z",
-    "checked_at_eastern": "2026-10-02 6:02:20 PM EDT",
-    "inspection_status": "partial_metadata_followup",
+    "checked_at": "2026-10-06T02:15:30Z",
+    "checked_at_eastern": "2026-10-05 10:15:30 PM EDT",
+    "inspection_status": "partial_metadata_and_transcript_followup",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-02T22:02:20Z",
+    "last_successful_page_inspection_at": "2026-10-06T02:15:30Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -619,42 +657,201 @@
       "https://www.whitehouse.gov/videos/",
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/",
+      "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-the-white-house-oct-5-2026/",
+      "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-the-white-house-oct-3-2026/",
+      "https://www.whitehouse.gov/videos/minimum-sentences-on-fraudsters/",
+      "https://www.whitehouse.gov/videos/president-donald-j-trump-announces-medicare-improvement-fund-payments-for-seniors/",
+      "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-the-white-house-oct-2-2026/",
+      "https://www.whitehouse.gov/videos/americans-across-the-country-are-thanking-president-trump-for-delivering-on-no-tax-on-tips/",
+      "https://www.whitehouse.gov/videos/behind-the-scenes-of-president-trumps-time-magazine-cover/",
+      "https://www.whitehouse.gov/videos/fake-news-cnn/",
       "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
-      "https://www.youtube.com/watch?v=5fRpXOyalfc",
-      "https://www.youtube.com/watch?v=ykv4al8IpGk",
-      "https://www.youtube.com/watch?v=M6mj9b9Qf2k",
-      "https://www.youtube.com/watch?v=FsZFFQocGsI",
-      "https://www.whitehouse.gov/videos/america-gov-launch/"
+      "https://rollcall.com/factbase/trump/transcript/donald-trump-vlog-fraud-minimum-sentences-october-3-2026/",
+      "https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-before-marine-one-departure-october-3-2026/",
+      "https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-before-marine-one-departure-october-5-2026/"
     ],
-    "summary": "The official Trump TV page, live hub, dated video library, remarks and releases pages were rechecked. Direct browser inspection verified that the linked stream ID remained A4gNgHfZ-v4. The newest library item remained the 1:34 America.Gov Launch clip tied to an October 1 event; no later listing appeared. Only page metadata, titles, dates, durations and stable IDs were inspected. Direct video, captions and complete transcripts were not retrieved; fallback error text was not used as proof that a stream was offline. The item remained an edited clip or replay rather than a new government action, no broadcast boundary was advanced and no qualifying new item was located in the material reviewed.",
+    "summary": "Rechecked the official White House Trump TV, live hub, dated library, remarks and release pages. Raw official HTML linked the unchanged A4gNgHfZ-v4 stream. The official White House YouTube player metadata reported that stream live and playable, but its footage and captions were not reviewed. The library exposed new October 2–5 recordings and clips. Complete third-party RollCall/Factba.se verbatim transcripts were inspected for the October 3 fraud proposal and October 3/5 departure gaggles; AI topic and sentiment fields were excluded. This was transcript inspection, not footage viewing. The fraud sentencing demand remains a lead pending formal proposal text and independent review. The October 5 bomber-movement statement was independently investigated and incorporated into NAT-2026-08-17-001; Medicare footage repeats the payment announcement and promotional clips do not add an action. No qualifying new item about Trump TV costs, contracts, staffing, editorial control or appropriations was located in the material reviewed. Broadcast coverage remains unknown and inaccessible media remain queued. Prior inspection objects retain their original observation times separately; they are not represented as newly reviewed footage in this run.",
     "items": [
       {
         "url": "https://www.whitehouse.gov/trumptv/",
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-02T22:02:20Z",
-        "format": "official 24/7 stream page; live/replay state not independently verified",
-        "inspection": "Direct browser inspection verified the unchanged linked Trump TV stream ID A4gNgHfZ-v4; footage and captions were not retrieved."
+        "observed_at": "2026-10-06T02:15:30Z",
+        "format": "official 24/7 stream page; platform metadata reports live; audiovisual content unreviewed",
+        "inspection": "Raw official page HTML verified linked ID A4gNgHfZ-v4. YouTube player metadata separately reported isLiveNow=true and playabilityStatus=OK; no current stream footage, captions or audio was inspected. Official-page fallback error text was not treated as an outage finding."
       },
       {
         "url": "https://www.whitehouse.gov/live/",
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-02T22:02:20Z",
+        "observed_at": "2026-10-06T02:15:30Z",
         "format": "official live-hub metadata; current live/replay state not independently verified",
-        "inspection": "The live hub still exposed Trump TV alongside the event stream. Footage was not retrieved and fallback text was not treated as a status finding."
+        "inspection": "Official live-hub text and links inspected; Trump TV remained distinct from the event livestream. Stream footage was not reviewed; fallback error text did not establish off-air status."
       },
       {
         "url": "https://www.whitehouse.gov/videos/",
-        "posted_date": "2026-10-01",
-        "original_event_date": "2026-10-01",
+        "posted_date": null,
+        "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-02T22:02:20Z",
+        "observed_at": "2026-10-06T02:15:30Z",
         "format": "dated library metadata for replay or edited uploads",
-        "inspection": "The library still displayed the 1:34 America.Gov Launch item tied to an October 1 event; no later listing appeared. Titles, dates and durations were inspected; complete footage and captions were not retrieved."
+        "inspection": "Library titles, displayed upload dates and durations inspected through October 5, 2026. New 13:53 October 5 and 04:59 October 3 departure gaggles, 01:58 fraud proposal, 01:38 Medicare clip, 00:43 tips promotion, 00:23 TIME cover clip and 06:53 October 2 gaggle identified; metadata does not establish all content."
       },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "posted_date": "2026-09-28",
+        "original_event_date": "2026-09-28",
+        "broadcast_time": null,
+        "observed_at": "2026-10-06T02:15:30Z",
+        "format": "supplementary remarks index",
+        "inspection": "Supplementary remarks index still listed September 28 as its newest event; no comprehensive current Trump TV transcript feed was established."
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "posted_date": "2026-10-05",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-06T02:15:30Z",
+        "format": "supplementary release index",
+        "inspection": "Official release index inspected. October 5 diesel-cost action and October 4 Kyoto Vision release are independent government-action research leads, not proof that they aired on Trump TV."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-the-white-house-oct-5-2026/",
+        "title": "President Trump Gaggles with Press Upon Departure from the White House, Oct. 5, 2026",
+        "posted_date": "2026-10-05",
+        "posted_at": "2026-10-05T22:20:38+00:00",
+        "posted_time_basis": "official White House JSON-LD uploadDate; page upload time, not verified broadcast time",
+        "original_event_date": "2026-10-05",
+        "broadcast_time": null,
+        "observed_at": "2026-10-06T02:12:13Z",
+        "video_id": "kuYkk0TxYuM",
+        "duration": "PT13M53S",
+        "format": "official press-gaggle recording or replay",
+        "inspection": "Official page title, JSON-LD upload timestamp, duration and stable YouTube ID inspected; footage and complete captions not retrieved. Complete third-party RollCall verbatim transcript inspected; the bomber-movement acknowledgment is a material research lead, while prospective foreign aid and base consideration do not establish implementation."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-the-white-house-oct-3-2026/",
+        "title": "President Trump Gaggles with Press Upon Departure from the White House, Oct. 3, 2026",
+        "posted_date": "2026-10-03",
+        "posted_at": "2026-10-03T22:30:40+00:00",
+        "posted_time_basis": "official White House JSON-LD uploadDate; page upload time, not verified broadcast time",
+        "original_event_date": "2026-10-03",
+        "broadcast_time": null,
+        "observed_at": "2026-10-06T02:12:13Z",
+        "video_id": "tlYbzF9hSBE",
+        "duration": "PT4M59S",
+        "format": "official press-gaggle recording or replay",
+        "inspection": "Official page title, JSON-LD upload timestamp, duration and stable YouTube ID inspected; footage and complete captions not retrieved. Complete third-party RollCall verbatim transcript inspected; it contains campaign remarks, conditional Iran language and renewed daylight-saving legislation advocacy. No assertion of changed law or new military action follows from that transcript."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/minimum-sentences-on-fraudsters/",
+        "title": "Minimum Sentences on Fraudsters",
+        "posted_date": "2026-10-03",
+        "posted_at": "2026-10-03T16:29:16+00:00",
+        "posted_time_basis": "official White House JSON-LD uploadDate; page upload time, not verified broadcast time",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-06T02:12:13Z",
+        "video_id": "AVw2HnrbY44",
+        "duration": "PT1M58S",
+        "format": "official edited clip; original recording date unknown",
+        "inspection": "Official page title, JSON-LD upload timestamp, duration and stable YouTube ID inspected; footage and complete captions not retrieved. Complete third-party RollCall verbatim transcript inspected: announced legislative demand for benefit-fraud mandatory minima, no probation, doubled repeat-offender sentences and personal loss liability for state/local officials who knowingly fail to prevent fraud. No bill text or enacted law was established."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-donald-j-trump-announces-medicare-improvement-fund-payments-for-seniors/",
+        "title": "President Donald J. Trump Announces Medicare Improvement Fund Payments for Seniors",
+        "posted_date": "2026-10-03",
+        "posted_at": "2026-10-03T16:22:50+00:00",
+        "posted_time_basis": "official White House JSON-LD uploadDate; page upload time, not verified broadcast time",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-06T02:12:13Z",
+        "video_id": "y6Bgx7YTMFg",
+        "duration": "PT1M38S",
+        "format": "official edited clip; original recording date unknown",
+        "inspection": "Official page title, JSON-LD upload timestamp, duration and stable YouTube ID inspected; footage and complete captions not retrieved. Dedupe lead: the clip title repeats the October 2 Medicare payment announcement; a later upload is not a second payment action."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-the-white-house-oct-2-2026/",
+        "title": "President Trump Gaggles with Press Upon Departure from the White House, Oct. 2, 2026",
+        "posted_date": "2026-10-02",
+        "posted_at": "2026-10-02T22:46:11+00:00",
+        "posted_time_basis": "official White House JSON-LD uploadDate; page upload time, not verified broadcast time",
+        "original_event_date": "2026-10-02",
+        "broadcast_time": null,
+        "observed_at": "2026-10-06T02:12:13Z",
+        "video_id": "7noLOskq5E0",
+        "duration": "PT6M53S",
+        "format": "official press-gaggle recording or replay",
+        "inspection": "Official page title, JSON-LD upload timestamp, duration and stable YouTube ID inspected; footage and complete captions not retrieved."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/americans-across-the-country-are-thanking-president-trump-for-delivering-on-no-tax-on-tips/",
+        "title": "Americans across the country are thanking President Trump for delivering on No Tax on Tips",
+        "posted_date": "2026-10-04",
+        "posted_at": "2026-10-04T20:42:48+00:00",
+        "posted_time_basis": "official White House JSON-LD uploadDate; page upload time, not verified broadcast time",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-06T02:12:13Z",
+        "video_id": "ixWToijvWxE",
+        "duration": "PT43S",
+        "format": "official edited clip; original recording date unknown",
+        "inspection": "Official page title, JSON-LD upload timestamp, duration and stable YouTube ID inspected; footage and complete captions not retrieved. Metadata indicates promotion or rhetoric; no independently qualifying new government action is established by the title."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/behind-the-scenes-of-president-trumps-time-magazine-cover/",
+        "title": "Behind the scenes of President Trump’s TIME Magazine Cover",
+        "posted_date": "2026-10-03",
+        "posted_at": "2026-10-03T13:16:40+00:00",
+        "posted_time_basis": "official White House JSON-LD uploadDate; page upload time, not verified broadcast time",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-06T02:12:13Z",
+        "video_id": "m-6J-ruWVEA",
+        "duration": "PT23S",
+        "format": "official edited clip; original recording date unknown",
+        "inspection": "Official page title, JSON-LD upload timestamp, duration and stable YouTube ID inspected; footage and complete captions not retrieved. Metadata indicates promotion or rhetoric; no independently qualifying new government action is established by the title."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/fake-news-cnn/",
+        "title": "Fake News CNN",
+        "posted_date": "2026-10-02",
+        "posted_at": "2026-10-02T21:19:49+00:00",
+        "posted_time_basis": "official White House JSON-LD uploadDate; page upload time, not verified broadcast time",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-06T02:12:13Z",
+        "video_id": "zCZZkBsIhso",
+        "duration": "PT44S",
+        "format": "official edited clip; original recording date unknown",
+        "inspection": "Official page title, JSON-LD upload timestamp, duration and stable YouTube ID inspected; footage and complete captions not retrieved. Metadata indicates promotion or rhetoric; no independently qualifying new government action is established by the title."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
+        "video_id": "A4gNgHfZ-v4",
+        "posted_date": "2026-09-21",
+        "posted_at": "2026-09-21T20:18:16Z",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "platform_reported_stream_start_at": "2026-09-21T23:00:21Z",
+        "observed_at": "2026-10-06T02:15:30Z",
+        "format": "official channel stream; YouTube player metadata reports live",
+        "inspection": "Official YouTube player metadata from the White House-linked video showed author The White House, channel ID UCYxRlFDqcWM4y7FfpiAN3KQ, isLiveNow=true, playabilityStatus=OK and liveBroadcastDetails startTimestamp. This is metadata inspection only; no footage, audio or captions were reviewed and the original event dates of rebroadcast segments are unknown."
+      }
+    ],
+    "gaps": [
+      "No complete Trump TV stream recording, stream captions, audio or footage was reviewed; no continuous or minute-by-minute coverage is claimed.",
+      "Individual third-party verbatim transcripts were inspected for three dated clips, but they do not establish coverage of the stream or unreviewed library recordings.",
+      "English auto-caption track metadata was available for AVw2HnrbY44, but the timed-text retrieval returned an empty response; no caption review is claimed.",
+      "White House JSON-LD uploadDate is a publication timestamp, not verified original event or broadcast time. Edited-clip original event dates remain unknown unless independently established.",
+      "No verified channel budget, contract, staffing allocation, editorial-control arrangement or common funding with the separate government-paid advertisement was located.",
+      "Prior inaccessible media and the unresolved original Trump TV trademark filing remain open for recheck."
+    ],
+    "previous_page_inspection_at": "2026-10-02T22:02:20Z",
+    "historical_inspections": [
       {
         "url": "https://www.whitehouse.gov/videos/america-gov-launch/",
         "posted_date": "2026-10-02",
@@ -699,59 +896,49 @@
         "observed_at": "2026-10-02T09:59:45Z",
         "format": "official departure press-gaggle recording or replay; video ID FsZFFQocGsI",
         "inspection": "Official metadata and title were inspected. The upload timestamp preceded the research boundary; direct footage and captions were not retrieved."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "posted_date": "2026-09-28",
-        "original_event_date": "2026-09-28",
-        "broadcast_time": null,
-        "observed_at": "2026-10-02T09:59:45Z",
-        "format": "supplementary remarks index",
-        "inspection": "The newest listed presidential remarks remained September 28; no newer complete transcript corresponding to a qualifying broadcast was retrieved."
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "posted_date": "2026-10-01",
-        "original_event_date": "2026-10-01",
-        "broadcast_time": null,
-        "observed_at": "2026-10-02T09:59:45Z",
-        "format": "supplementary release index",
-        "inspection": "The October 1 achievements release did not supply a complete Trump TV transcript or independently qualifying new action."
       }
-    ],
-    "gaps": [
-      "No complete Trump TV or live-hub recording, captions or transcript was retrieved; no minute-by-minute or continuous coverage is claimed.",
-      "Broadcast coverage boundary remains unknown and later checks must revisit inaccessible media.",
-      "Broadcast times are page-level datePublished metadata and were not verified against complete footage.",
-      "No verified channel budget, contract, staffing allocation or shared funding with the separate government-paid advertising contract was located."
-    ],
-    "previous_page_inspection_at": "2026-10-02T16:03:30Z"
+    ]
   },
   "truth_social_inspection": {
     "scope": "1000 retained fallback posts; current content hashes only",
     "counts": {
       "text_status": {
+        "reviewed": 433,
         "not_recorded": 136,
-        "pending": 517,
-        "reviewed": 347
+        "pending": 431
       },
       "media_status": {
-        "not_applicable": 482,
-        "not_recorded": 19,
-        "pending": 233,
-        "reviewed": 32,
-        "unavailable": 234
+        "not_applicable": 457,
+        "pending": 216,
+        "reviewed": 74,
+        "unavailable": 234,
+        "not_recorded": 19
       }
     },
-    "new_posts": 4,
-    "source_rows_added": 4,
-    "new_media_reviewed": 0,
-    "new_media_unavailable": 3,
-    "checked_at_utc": "2026-10-02T21:58:48.670803Z",
-    "checked_at_eastern": "2026-10-02 5:58:48 PM EDT",
-    "latest_post_at_utc": "2026-10-02T21:16:16.110000Z",
-    "latest_post_at_eastern": "2026-10-02 5:16:16 PM EDT",
-    "latest_post_id": "117373388463106981",
-    "note": "The validated mirror advanced by four posts. The newest post questioned a New York appointment but announced no federal action. The other three carried image or video assets that could not be retrieved; no footage was watched and no visual claim was inferred. Independent transcript discovery described two as routine campaign advocacy. None independently cleared the canonical publication threshold, so all remain in the separate feed."
+    "new_posts": 86,
+    "source_rows_added": 86,
+    "new_text_reviewed": 86,
+    "new_nonempty_text_reviewed": 53,
+    "new_empty_text_inspected": 33,
+    "new_image_assets_reviewed": 48,
+    "new_image_posts_reviewed": 42,
+    "new_video_assets_pending": 23,
+    "new_media_reviewed": 42,
+    "new_media_unavailable": 0,
+    "checked_at_utc": "2026-10-06T02:10:44.011887Z",
+    "checked_at_eastern": "2026-10-05 10:10:44 PM EDT",
+    "latest_post_at_utc": "2026-10-05T22:25:58.717000Z",
+    "latest_post_at_eastern": "2026-10-05 6:25:58 PM EDT",
+    "latest_post_id": "117390649505706640",
+    "no_new_post_finding": false,
+    "note": "The validated fallback added 86 posts. All 86 new text fields were inspected (53 nonempty, 33 empty), and 48 image assets across 42 posts were visually reviewed. Twenty-three video assets remain pending full audiovisual review; successful URL access is not footage inspection. Older retained pending/unavailable/unrecorded states remain visible. The newest post announces a future advertising funding shift; its statement and independent reporting support a bounded refresh, not completed contract cancellation or reimbursement. Public arrest language also cleared the consequential-threat threshold after independent review; unverified crowd allegations did not. Raw posts remain in the separate feed. Newest publication date is October 5 in Indianapolis, despite differing UTC dates elsewhere."
+  },
+  "recovery": {
+    "base_commit": "acf06fb3e47b6430bc132f0ee1c136da9cebec2e",
+    "note": "The lost unpublished draft was reconstructed from verified sources. This release starts from published main; original action dates remain distinct from article/upload dates. Authenticated connector Git Data transport is hash-bound to the complete local acceptance receipt and uses branch/main leases.",
+    "legacy_canonical_changes": 0,
+    "peer_review_receipts": [
+      "data/editorial_change_notes/10.115.0-peer-review.json"
+    ]
   }
 }
