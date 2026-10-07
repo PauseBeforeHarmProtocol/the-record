@@ -5629,6 +5629,54 @@
       "provenance_path": "data/editorial_change_notes/10.121.0.json",
       "provenance_sha256": "85bdde0c037e46a22a104bbebda74f8dfb21a41ac80ba89c131d611ee8eb21d1",
       "note": "Evidence-as-of time recorded; formal filing date and future publication or effective date remain separate. Claim-level support and separate reasoning-layer review preserved."
+    },
+    {
+      "change_id": "10.122.0:NAT-2026-10-07-006",
+      "entry_id": "NAT-2026-10-07-006",
+      "as_of_utc": "2026-10-07T22:04:16Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.122.0",
+      "summary": "Published Trump signs identity-theft case-contact requirement for Social Security with legal status, implementation and outcome limits preserved.",
+      "provenance_path": "data/editorial_change_notes/10.122.0.json",
+      "provenance_sha256": "281b10c7944b117f8c2280133779a9ea60d824e04f40fe15a976938fe15cb266",
+      "note": "Evidence-as-of time recorded; action, disclosure and litigation dates remain distinct. Claim-level support and separate reasoning-layer review preserved."
+    },
+    {
+      "change_id": "10.122.0:NAT-2026-10-07-007",
+      "entry_id": "NAT-2026-10-07-007",
+      "as_of_utc": "2026-10-07T22:04:16Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.122.0",
+      "summary": "Published Trump signs annual disclosure law for major delayed or over-budget projects with legal status, implementation and outcome limits preserved.",
+      "provenance_path": "data/editorial_change_notes/10.122.0.json",
+      "provenance_sha256": "281b10c7944b117f8c2280133779a9ea60d824e04f40fe15a976938fe15cb266",
+      "note": "Evidence-as-of time recorded; action, disclosure and litigation dates remain distinct. Claim-level support and separate reasoning-layer review preserved."
+    },
+    {
+      "change_id": "10.122.0:NAT-2026-10-07-008",
+      "entry_id": "NAT-2026-10-07-008",
+      "as_of_utc": "2026-10-07T22:04:16Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.122.0",
+      "summary": "Published Treasury discloses first civil penalty under outbound-investment rules with legal status, implementation and outcome limits preserved.",
+      "provenance_path": "data/editorial_change_notes/10.122.0.json",
+      "provenance_sha256": "281b10c7944b117f8c2280133779a9ea60d824e04f40fe15a976938fe15cb266",
+      "note": "Evidence-as-of time recorded; action, disclosure and litigation dates remain distinct. Claim-level support and separate reasoning-layer review preserved."
+    },
+    {
+      "change_id": "10.122.0:NAT-2026-09-24-002",
+      "entry_id": "NAT-2026-09-24-002",
+      "as_of_utc": "2026-10-07T22:04:16Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.122.0",
+      "summary": "Refreshed the government-paid advertising record with the DNC complaint as a complaint-only litigation stage.",
+      "provenance_path": "data/editorial_change_notes/10.122.0.json",
+      "provenance_sha256": "281b10c7944b117f8c2280133779a9ea60d824e04f40fe15a976938fe15cb266",
+      "note": "Evidence-as-of time recorded; action, disclosure and litigation dates remain distinct. Claim-level support and separate reasoning-layer review preserved."
     }
   ],
   "reviews": [
@@ -65156,6 +65204,653 @@
       ],
       "unresolved_questions": [
         "Finalization, implementation, litigation, compliance and measured effects remain unresolved unless the entry expressly states otherwise."
+      ]
+    },
+    {
+      "review_id": "10.122.0:NAT-2026-10-07-006:4ea06f05aa8a",
+      "entry_id": "NAT-2026-10-07-006",
+      "content_sha256": "4ea06f05aa8ac929481b3f369afafa18dd9050beffad8a7848cf64525aaf9e46",
+      "reviewed_at": "2026-10-07T22:04:16Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "5940df4fcd285aadf31e01d9785219b675ce82bd0cea82fbdb11e0bc99c7d78e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_bills_signed_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "4bdcbf0580a42043a12b9ff17d604a3a0764ef88d84817a142a68f5415a6487f",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "govinfo_hr5345_enrolled_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "2d7d868a10caa29a54c8db685741e7679e39dafc8c7ea7d4d0e1c0cec377b84c",
+              "origin_group": "U.S. Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "e718766d7cf7cd0a38060deea005f04685bb7c85c3015645b5ce70c2afddf36e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_bills_signed_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "4bdcbf0580a42043a12b9ff17d604a3a0764ef88d84817a142a68f5415a6487f",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "govinfo_hr5345_enrolled_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "2d7d868a10caa29a54c8db685741e7679e39dafc8c7ea7d4d0e1c0cec377b84c",
+              "origin_group": "U.S. Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "2737e607b424cca246afa24806182e60fe7761ab6b37f9596a7886f39cf02c97",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_bills_signed_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "4bdcbf0580a42043a12b9ff17d604a3a0764ef88d84817a142a68f5415a6487f",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "govinfo_hr5345_enrolled_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "2d7d868a10caa29a54c8db685741e7679e39dafc8c7ea7d4d0e1c0cec377b84c",
+              "origin_group": "U.S. Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "691cd2c2417994648988c9526f84a116c28b77c5a00670721eb9f3c8c978fb79",
+          "review_note": "Separately reviewed as bounded significance analysis tied to the documented action and its explicit implementation or litigation limits."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "4ee960e74ff0773e7e148dd55ec0052f77513ba313a8f373da31e56fceb0fde6",
+          "review_note": "Separately reviewed the strongest relevant administration explanation or enacted objective and the evidence required to test it."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "7a6aae62abcc6fbe32901f88539f4d2c5feb208592579ff6beb0e3a39349bcbc",
+          "review_note": "Separately reviewed competing interpretations and an explicit evidence-bound Therefore; allegations, implementation duties and single-case enforcement are not presented as proven outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, compliance, litigation and measured effects remain unresolved except where the entry expressly states completed action."
+      ]
+    },
+    {
+      "review_id": "10.122.0:NAT-2026-10-07-007:7014e22a7859",
+      "entry_id": "NAT-2026-10-07-007",
+      "content_sha256": "7014e22a7859177aff17a85abe589fe659c7778ffc4546360222cbb031c8efd5",
+      "reviewed_at": "2026-10-07T22:04:16Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "5069e0ccfe2896a8a6a4cdbd6bd6398ea99305b3083a33bd543c7b9a3318f4b5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_bills_signed_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "4bdcbf0580a42043a12b9ff17d604a3a0764ef88d84817a142a68f5415a6487f",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "govinfo_s766_enrolled_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "1b676d0eac28fe4545be4ef8a7d0833b64732a83b9fc6959d17aa24ee91f6cf3",
+              "origin_group": "U.S. Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "d765b60dfb9d440a7a4c7278dea9cfdce294d831ab2f1f323527d428b744bb55",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_bills_signed_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "4bdcbf0580a42043a12b9ff17d604a3a0764ef88d84817a142a68f5415a6487f",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "govinfo_s766_enrolled_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "1b676d0eac28fe4545be4ef8a7d0833b64732a83b9fc6959d17aa24ee91f6cf3",
+              "origin_group": "U.S. Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "04900095ed897d4e7582d775cf93b36f76a78c34899ae5b9e8318300491521bd",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_bills_signed_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "4bdcbf0580a42043a12b9ff17d604a3a0764ef88d84817a142a68f5415a6487f",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "govinfo_s766_enrolled_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "1b676d0eac28fe4545be4ef8a7d0833b64732a83b9fc6959d17aa24ee91f6cf3",
+              "origin_group": "U.S. Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "6469a6e746c9c279d3a25c19d91732f989adda6e213dbb97981bd655c973a652",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_bills_signed_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "4bdcbf0580a42043a12b9ff17d604a3a0764ef88d84817a142a68f5415a6487f",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "govinfo_s766_enrolled_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "1b676d0eac28fe4545be4ef8a7d0833b64732a83b9fc6959d17aa24ee91f6cf3",
+              "origin_group": "U.S. Government Publishing Office",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "4938c733f6df7c8cdfd35336b20a5a7a8a868e537371f0ec64d6fde359ea2f60",
+          "review_note": "Separately reviewed as bounded significance analysis tied to the documented action and its explicit implementation or litigation limits."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "cd59c01e04e95b080b0fd99caa7ad6798a3e8cee5540e96732f8225468990056",
+          "review_note": "Separately reviewed the strongest relevant administration explanation or enacted objective and the evidence required to test it."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "f12010570668652d7538911c4f274bbfbac6909630626117305865b710bcd37e",
+          "review_note": "Separately reviewed competing interpretations and an explicit evidence-bound Therefore; allegations, implementation duties and single-case enforcement are not presented as proven outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, compliance, litigation and measured effects remain unresolved except where the entry expressly states completed action."
+      ]
+    },
+    {
+      "review_id": "10.122.0:NAT-2026-10-07-008:87be38db3539",
+      "entry_id": "NAT-2026-10-07-008",
+      "content_sha256": "87be38db3539dfd2e3bc72ba604cbdc9fdd8efec575ed9d0036fc283f7555d17",
+      "reviewed_at": "2026-10-07T22:04:16Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "455c3f52000f56779dd92380197e676ecb16b73e14db4cbd6637c0f6b4381a62",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_oisp_first_penalty_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "cd277f5c248dabe542868b4fee1517d7b74758b00ec3a5ea57a7a9b0fa198d40",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "scmp_oisp_first_penalty_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "3fde520da31d70c45b48b0c31b3e2786e4e215890a7dbea63cb9b96dec42abfa",
+              "origin_group": "South China Morning Post",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "86138bce1771e1d68ea97cf1f4b7463ea516d5e87af79ef3362f9eee44f62d6f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_oisp_first_penalty_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "cd277f5c248dabe542868b4fee1517d7b74758b00ec3a5ea57a7a9b0fa198d40",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "scmp_oisp_first_penalty_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "3fde520da31d70c45b48b0c31b3e2786e4e215890a7dbea63cb9b96dec42abfa",
+              "origin_group": "South China Morning Post",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "c47846c1ea20235d24a3619c31239657491cfcbde75b3f36220ec4dbc2d39dc5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_oisp_first_penalty_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "cd277f5c248dabe542868b4fee1517d7b74758b00ec3a5ea57a7a9b0fa198d40",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "scmp_oisp_first_penalty_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "3fde520da31d70c45b48b0c31b3e2786e4e215890a7dbea63cb9b96dec42abfa",
+              "origin_group": "South China Morning Post",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "f825e498f2794905bdf33b4e969fd30107ab580d318c083b5f9d49750887cf63",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_oisp_first_penalty_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "cd277f5c248dabe542868b4fee1517d7b74758b00ec3a5ea57a7a9b0fa198d40",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "scmp_oisp_first_penalty_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "3fde520da31d70c45b48b0c31b3e2786e4e215890a7dbea63cb9b96dec42abfa",
+              "origin_group": "South China Morning Post",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "1e37a826ebdd136628a596121c49fda34a98d58c8897fb3fb857c57d2c81ee97",
+          "review_note": "Separately reviewed as bounded significance analysis tied to the documented action and its explicit implementation or litigation limits."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "2e8aa42182566f4606456bc65a323608decb416c99a2792e7629484d374a1fab",
+          "review_note": "Separately reviewed the strongest relevant administration explanation or enacted objective and the evidence required to test it."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "87d9391f06c9e4e167565a46fc26ca0921fa9906a42bbc5a8a63193045461370",
+          "review_note": "Separately reviewed competing interpretations and an explicit evidence-bound Therefore; allegations, implementation duties and single-case enforcement are not presented as proven outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, compliance, litigation and measured effects remain unresolved except where the entry expressly states completed action."
+      ]
+    },
+    {
+      "review_id": "10.122.0:NAT-2026-09-24-002:680ecff32def",
+      "entry_id": "NAT-2026-09-24-002",
+      "content_sha256": "680ecff32defa1f257abf3f3328de065846ecfe5641dfa5f51ffba6d9d5363d6",
+      "reviewed_at": "2026-10-07T22:04:16Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "d79516c09c3c3c74caf288d84069adf24b5df8f1634013d928e68a1c2a1ebc6c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "jec_hassan_ad_records_sep24",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "318ce9b2252b788b608fdf21a5f217ac4c9e1a5d023b1e6bb16932a4d13a8376",
+              "origin_group": "U.S. Congress Joint Economic Committee Democrats",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_collins_ads_oversight_sep29",
+              "locator": "Inspected source text or filing; hash preserves the reviewed source record.",
+              "inspected_at": "2026-09-29T16:12:00Z",
+              "document_sha256": "166a919d6e494cc230152c5e70264a343221642432d01bc0f745801564ecbe3e",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "8c73cc5c8429291aca7a57451bc269372d339da712d26118ec7248e77bacabc0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_campaign_ad_sep27",
+              "locator": "Article paragraphs beginning WASHINGTON through White House response; published September 27 at 5:19 PM EDT.",
+              "inspected_at": "2026-09-28T04:05:16.156650Z",
+              "document_sha256": "366e1fecc03538905e4fa137f5b7b6be36aa7bfd0a5789833c54dd0f288341e8",
+              "origin_group": "Associated Press via News4JAX",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_government_ads_scrutiny_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "84c9a0624b7857304cea3d7ca129379aeb231eafc20b4734f7c262e527a4e0d9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "05e782e20e1d63d3d13989c877b672354be52cbc4527d0129f77c6469c790f7f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_dhs_ads_contract_sep29",
+              "locator": "Complete source text, official instrument or award record inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-09-29T22:03:00Z",
+              "document_sha256": "2b43bd6c595f2401646ba2856a37ebd4d5776d80b11aa10dc8faa86c2fc61842",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "govtribe_lmd_campaign_award_sep20",
+              "locator": "Complete source text, official instrument or award record inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-09-29T22:03:00Z",
+              "document_sha256": "8abbc122c21e36ed55092b3b59f3f742bc0cae7f0a4c7828b456999597072c11",
+              "origin_group": "GovTribe",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "1b19b4c26e868dfdbb83af1a229ce4a1bec8aa0c08b1111c44c52ba640a0c425",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_government_ads_spending_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "50f36fb5502b716babc4003b5937288c5a3e679a97fe4f637501dea0847cb4a3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "c91ad51b9d10f96ce078440b03f866b1f45d47f0e19cd43e3548411869e7ab12",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_ad_response_sep25",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "6e99a863340c1e0d45aee0e58fd0df1dbf942c813de8145bc3f77f8fba127ccb",
+              "origin_group": "The White House",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_dhs_ads_contract_sep29",
+              "locator": "Complete source text, official instrument or award record inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-09-29T22:03:00Z",
+              "document_sha256": "2b43bd6c595f2401646ba2856a37ebd4d5776d80b11aa10dc8faa86c2fc61842",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "31cb497a80758d83b4d8077692f8117b706918f2183c98392ba463fdfc6b4b42",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_dhs_ads_contract_sep29",
+              "locator": "Complete source text, official instrument or award record inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-09-29T22:03:00Z",
+              "document_sha256": "2b43bd6c595f2401646ba2856a37ebd4d5776d80b11aa10dc8faa86c2fc61842",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "d8d0e81852b856d00c7932acd910c560493919c14c32fd81ee44bad92adf73ad",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wapo_government_ads_sep30",
+              "locator": "Placement counts, markets, modeled aggregate airtime estimate and White House response.",
+              "inspected_at": "2026-10-01T04:38:00Z",
+              "document_sha256": "0f61d9dc9837c99b96276b942c9cd3a6e069b30b2104fa685f632907fec04deb",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "39fbf2b88dc1bcc82e7fc027ac2dac4280a983fcfcb476b0801b894b7dd4468e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_fcc_government_ads_sep30",
+              "locator": "Inspected source passage or filing summarized in the release evidence review.",
+              "inspected_at": "2026-10-01T10:12:00Z",
+              "document_sha256": "25d7049f279397f216b59b7a6b26caab885296735305f3506dbde43e74c4c8e8",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "93219a7eb7a3e3b4d95ca81b64f0edca1f18c7491acf80f040ebd7b97622533d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_government_ads_probe_oct1",
+              "locator": "Inspected source passage or filing summarized in the release evidence review.",
+              "inspected_at": "2026-10-01T10:12:00Z",
+              "document_sha256": "df7c91deb0916da131b90d9b7831f0e99bfd85dd978aa8a6a19f5efd3e375e87",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "08e12e1315deeeb6fb62d6317c968a71f6080d3b56972d139a50e220d9d14c0b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_government_ad_funding_shift_oct5",
+              "locator": "Reuters lines160–167: presidential statement and attributed White House confirmation",
+              "inspected_at": "2026-10-06T02:17:16Z",
+              "document_sha256": "02d5cddd452174b54a12e3c496f1b9ed8074ffcf284f8b56ce2e386804eede49",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_government_ad_funding_shift_oct5",
+              "locator": "AP lines1806–1814: Trump post and White House future-funding confirmation",
+              "inspected_at": "2026-10-06T02:17:16Z",
+              "document_sha256": "e3aac56f89058ff74b1b8c7c630178c49b583bffec0553e87f89b1defc7edb31",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "truth_government_ad_funding_shift_oct5",
+              "locator": "Retained post 117390649505706640, full supplied text: Trump acknowledges U.S.A. money for Ads and states decision to pay for Patriotic Ads personally and with money raised for MAGA Inc. Text inspected from validated local fallback snapshot; original post URL identifies publication, not a separately retrieved live webpage.",
+              "inspected_at": "2026-10-06T02:16:42.237486Z",
+              "document_sha256": "9c6d1ad0025060eebbc26ce0bbbbd0abe17edf576747f1040130ac58aa89469c",
+              "origin_group": "Donald Trump / Truth Social",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 10,
+          "fact_sha256": "b7ffab164a43685d4d0889da1d1b0a157fabd44e0e229c6121526593a2f8312e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_government_ad_funding_shift_oct5",
+              "locator": "AP lines1812–1814: missing reimbursement and verification detail",
+              "inspected_at": "2026-10-06T02:17:16Z",
+              "document_sha256": "e3aac56f89058ff74b1b8c7c630178c49b583bffec0553e87f89b1defc7edb31",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 11,
+          "fact_sha256": "acec4719705b1b34cffe4debc320dc39effcd951f5b22a40a29513f49001773b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_adimpact_airtime_oct6",
+              "locator": "Ali Swenson section: More than $11 million in taxpayer-funded pro-Trump ads have run so far; AdImpact estimate, $20 million contract, missing repayment/private-payment detail.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "7c5022758138ebd35f22e7fd48e4adfb1e0ada5e1744b50f1c5dce77770a9eea",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 12,
+          "fact_sha256": "469e2178adc70a4ab02bc5b76a1d1e338ecdba20547b04b23dc0ebf5bdac81e8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "axios_ad_reimbursement_clarification_oct6",
+              "locator": "Article body and publication metadata: White House spokesperson's clarification and continued PSA defense.",
+              "inspected_at": "2026-10-06T22:08:11Z",
+              "document_sha256": "195c77723ea58e7fa26eb4195fa30d2c8e3adb0b97ca0dde5ecd99b0bf9025fc",
+              "origin_group": "Axios",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 13,
+          "fact_sha256": "f9f8e3789f7bf45c0bcee042d1dca56ccdc89fd1dbf8ce8e936bf87dcb536a31",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dnc_ads_complaint_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "c91b68efcddc0f108281edc87436b7942d5b721eb188204e98512de22ec837f6",
+              "origin_group": "U.S. District Court for the District of Columbia via CourtListener RECAP",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_dnc_ads_suit_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "7779172b3859e8bfff8a113c385ff116148595737296d298cbc6031351eb0020",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "908253a8e6356399efd93aac3645cf17c4e185087807e55109623e6476303ff6",
+          "review_note": "Separately reviewed as bounded significance analysis tied to the documented action and its explicit implementation or litigation limits."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "222e693bb1d7f5e3d495aeda9409e240d4516ceda5c27c60976b706c061e5f11",
+          "review_note": "Separately reviewed the strongest relevant administration explanation or enacted objective and the evidence required to test it."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "c0728b4f8e7f9850053d7b54ed6ce2ec5e0c3c035b0c10973db202816714f854",
+          "review_note": "Separately reviewed competing interpretations and an explicit evidence-bound Therefore; allegations, implementation duties and single-case enforcement are not presented as proven outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, compliance, litigation and measured effects remain unresolved except where the entry expressly states completed action."
       ]
     }
   ],
