@@ -5569,6 +5569,18 @@
       "provenance_path": "data/editorial_change_notes/10.118.0.json",
       "provenance_sha256": "c0cdc20fa36f426e202f9729fe19663fc5c3344e3faf5614f696d0dd9aceaa27",
       "note": "Evidence-as-of time recorded; original event dates and stable lifecycle IDs retained. Field history and separate reasoning review preserved."
+    },
+    {
+      "change_id": "10.120.0:NAT-2026-10-07-001",
+      "entry_id": "NAT-2026-10-07-001",
+      "as_of_utc": "2026-10-07T10:02:35Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.120.0",
+      "summary": "Published USTR’s formal continuation of two China Section 301 tariff actions while preserving prior effective dates and the pending-review boundary.",
+      "provenance_path": "data/editorial_change_notes/10.120.0.json",
+      "provenance_sha256": "fc7958dbc1f2304a2fb091fd612c65b43d6a1a3fa91dae941f6af486f2a2cd15",
+      "note": "Evidence-as-of time recorded; original action and effective dates retained. Claim-level support and separate reasoning-layer review preserved."
     }
   ],
   "reviews": [
@@ -64612,6 +64624,122 @@
       ],
       "unresolved_questions": [
         "Federal invoices, final airtime costs, contract changes, future private payments and oversight outcomes remain unverified."
+      ]
+    },
+    {
+      "review_id": "10.120.0:NAT-2026-10-07-001:f19cbd81abee",
+      "entry_id": "NAT-2026-10-07-001",
+      "content_sha256": "f19cbd81abeefa27984bae2bca3b4ece9122acb1bc79f8406f0c718549c4c8b9",
+      "reviewed_at": "2026-10-07T10:02:35Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "2d6959d91a2cb4c3786c63b7ee3d91121e537107b7527614a9c0cc607711a2b9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ustr_section301_continuation_oct7",
+              "locator": "both actions did not terminate; request counts; continuation mechanism; future review including effectiveness, alternatives, U.S. economy and consumers.",
+              "inspected_at": "2026-10-07T10:02:35Z",
+              "document_sha256": "3acadd0c345eda85e969ac6ea34f669005b16a9cccefd8672ed29a931edd174c",
+              "origin_group": "Office of the United States Trade Representative",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "kpmg_section301_continuation_oct6",
+              "locator": "continuation, anniversary dates, pending second statutory review and scope-preserving exclusion amendment.",
+              "inspected_at": "2026-10-07T10:02:35Z",
+              "document_sha256": "e6abe431ffd4657ab6c5337b81c2ad16efef1b9f7190f5be9e9ab4bd610eec55",
+              "origin_group": "KPMG",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "e419b6648fd8c2642417663775ca92cd956a8ede1ec383d8b44899d5af5038c0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ustr_section301_continuation_oct7",
+              "locator": "both actions did not terminate; request counts; continuation mechanism; future review including effectiveness, alternatives, U.S. economy and consumers.",
+              "inspected_at": "2026-10-07T10:02:35Z",
+              "document_sha256": "3acadd0c345eda85e969ac6ea34f669005b16a9cccefd8672ed29a931edd174c",
+              "origin_group": "Office of the United States Trade Representative",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "9bbfb724fbaf00fb22884a3e688077fea240a4c3279e69d723fe9a22a92b91dc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ustr_section301_continuation_oct7",
+              "locator": "both actions did not terminate; request counts; continuation mechanism; future review including effectiveness, alternatives, U.S. economy and consumers.",
+              "inspected_at": "2026-10-07T10:02:35Z",
+              "document_sha256": "3acadd0c345eda85e969ac6ea34f669005b16a9cccefd8672ed29a931edd174c",
+              "origin_group": "Office of the United States Trade Representative",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "kpmg_section301_continuation_oct6",
+              "locator": "continuation, anniversary dates, pending second statutory review and scope-preserving exclusion amendment.",
+              "inspected_at": "2026-10-07T10:02:35Z",
+              "document_sha256": "e6abe431ffd4657ab6c5337b81c2ad16efef1b9f7190f5be9e9ab4bd610eec55",
+              "origin_group": "KPMG",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "3cd68fe34300de836693fe543580ddc566fbc551800e6747e1df4e254ceab56f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ustr_section301_exclusion_amendment_oct7",
+              "locator": "July 1 HTSUS category change, conforming amendment, CBP implementation and preservation of pre-existing product coverage.",
+              "inspected_at": "2026-10-07T10:02:35Z",
+              "document_sha256": "4c9fcbb32f597a07eb81568a944ebcef969c418dec0f107c062863df6649d1c4",
+              "origin_group": "Office of the United States Trade Representative",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "kpmg_section301_continuation_oct6",
+              "locator": "continuation, anniversary dates, pending second statutory review and scope-preserving exclusion amendment.",
+              "inspected_at": "2026-10-07T10:02:35Z",
+              "document_sha256": "e6abe431ffd4657ab6c5337b81c2ad16efef1b9f7190f5be9e9ab4bd610eec55",
+              "origin_group": "KPMG",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "8e072ece3e085789ece8204fd117a048febf70cd614c68776caa6fcacd965508",
+          "review_note": "Separately reviewed as bounded analysis of the documented continuation and pending statutory review."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "a301696cfce73b03805e15903de97431714188fd7b0fdcb6881c6d4b92499aad",
+          "review_note": "Separately reviewed the strongest relevant USTR and industry explanation and the evidence required to test it."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "27cc9da80d8dd3672c5a960d1ea514e41ee76cac98de3fa4bc97d445b4849950",
+          "review_note": "Separately reviewed competing interpretations and an explicit evidence-bound Therefore; continuation is not treated as proof of effectiveness."
+        }
+      ],
+      "unresolved_questions": [
+        "The statutory review, public-comment record, consumer effects, alternative actions and any later tariff modifications remain pending."
       ]
     }
   ],
