@@ -26,7 +26,7 @@ The Record pairs a concise, source-bound editorial front page with a full search
 <!-- GENERATED_ARCHIVE_METRICS_START -->
 ## Generated Scope and Quality Snapshot
 
-Generated deterministically from canonical JSON for maintenance release **10.118.0**. Editorial news currentness was checked **2026-10-06 6:08 PM EDT**; QA inputs were updated **2026-10-06T22:08:11Z**.
+Generated deterministically from canonical JSON for maintenance release **10.119.0**. Editorial news currentness was checked **2026-10-07 12:06 AM EDT**; QA inputs were updated **2026-10-07T04:06:59Z**.
 
 | Measure | Exact count |
 |---|---:|
