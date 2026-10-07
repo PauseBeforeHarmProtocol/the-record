@@ -1,29 +1,35 @@
 {
-  "version": "10.120.0",
+  "version": "10.121.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-07T04:06:59Z",
-    "through_utc": "2026-10-07T10:02:35Z",
+    "from_utc": "2026-10-07T10:02:35Z",
+    "through_utc": "2026-10-07T16:18:22Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact scan from the previous successful boundary. One formal USTR continuation action cleared the publication threshold; hearings, requests and routine notices remained withheld. A public-inspection filing predates the boundary, while the formal Federal Register publication date is October 7; the record preserves both timing facts."
+    "note": "Exact scan from the previous successful boundary. Four formal federal filings cleared the threshold. A final official and independent-news recheck through the cutoff located no later qualifying action; pending litigation, campaign activity, rhetoric and technical notices remained withheld."
   },
   "release_iso": "2026-10-07",
   "release_human": "October 7, 2026",
-  "checked_at": "2026-10-07 6:02 AM EDT",
-  "previous_version": "10.119.0",
-  "previous_checked_at": "2026-10-07 12:06 AM EDT",
-  "window_started_at": "2026-10-07 12:06 AM EDT",
-  "window_ended_at": "2026-10-07 6:02 AM EDT",
+  "checked_at": "2026-10-07 12:18 PM EDT",
+  "previous_version": "10.120.0",
+  "previous_checked_at": "2026-10-07 6:02 AM EDT",
+  "window_started_at": "2026-10-07 6:02 AM EDT",
+  "window_ended_at": "2026-10-07 12:18 PM EDT",
   "week_start": "2026-10-01",
   "week_end": "2026-10-07",
   "week_label": "2026-10-01 through 2026-10-07",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-10-07-001"
+    "NAT-2026-10-07-002",
+    "NAT-2026-10-07-003",
+    "NAT-2026-10-07-004",
+    "NAT-2026-10-07-005"
   ],
   "added_entry_ids": [
-    "NAT-2026-10-07-001"
+    "NAT-2026-10-07-002",
+    "NAT-2026-10-07-003",
+    "NAT-2026-10-07-004",
+    "NAT-2026-10-07-005"
   ],
   "refreshed_entry_ids": [],
   "dedupe_resolutions": [
@@ -602,39 +608,73 @@
       "target_id": "NAT-2026-07-18-001",
       "decision": "false_positive",
       "notes": "The new EEOC FOIA cases concern record disclosure and an October5 summary-judgment filing. The July18 DOJ subpoenas concern a different agency investigation and14 firms; similar law-firm/DEI subject matter does not establish the same event."
+    },
+    {
+      "entry_id": "NAT-2026-10-07-002",
+      "target_id": "NAT-2026-10-07-002",
+      "decision": "false_positive",
+      "notes": "No existing current or legacy event, normalized title, source URL or recent maintenance pull request matched the proposed OPT fee rule."
+    },
+    {
+      "entry_id": "NAT-2026-10-07-003",
+      "target_id": "NAT-2026-10-07-003",
+      "decision": "false_positive",
+      "notes": "No existing current or legacy event, normalized title, source URL or recent maintenance pull request matched the low-value shipment filing; all provisions in the filing are consolidated here."
+    },
+    {
+      "entry_id": "NAT-2026-10-07-004",
+      "target_id": "NAT-2026-10-07-004",
+      "decision": "false_positive",
+      "notes": "No existing current or legacy event, normalized title, source URL or recent maintenance pull request matched the CLIA modernization filing; its connected provisions are consolidated here."
+    },
+    {
+      "entry_id": "NAT-2026-10-07-005",
+      "target_id": "NAT-2026-10-07-005",
+      "decision": "false_positive",
+      "notes": "No existing current or legacy event, normalized title, source URL or recent maintenance pull request matched the 2027 legacy-contract rate notice."
+    },
+    {
+      "entry_id": "NAT-2026-10-06-004",
+      "target_id": "NAT-2026-10-06-004",
+      "decision": "same_event_update",
+      "notes": "October 6 Anduril full-event and edited Trump TV uploads repeat the already canonical facility announcement and were not counted again."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Appeals-court hearing on ACIP replacement challenge",
-      "reason": "Argument produced no ruling, injunction or implemented policy change; withheld pending a decision."
+      "title": "Wisconsin storm-aid Truth Social statement",
+      "reason": "Prospective statement only; no FEMA implementation record located."
     },
     {
-      "title": "Requests for inspector-general investigations of Reflecting Pool incident response",
-      "reason": "The material established requests, not an opened investigation, official finding or court ruling."
+      "title": "Impact Aid technical amendments",
+      "reason": "Technical cleanup with de minimis effects; below materiality threshold."
     },
     {
-      "title": "Trump TV overnight stream and dated-library recheck",
-      "reason": "Official page metadata was unchanged; no footage, audio or captions were retrieved. No qualifying new item located in the material reviewed."
+      "title": "PhRMA challenge to Medicare pricing rule",
+      "reason": "Complaint filed; no ruling, injunction or implementation change."
     },
     {
-      "title": "Routine October 7 Federal Register rules and technical notices",
-      "reason": "The reviewed safety zones, test procedures, technical credit rule and proposed-rule withdrawal did not meet the national materiality threshold."
+      "title": "Migration-assistance eligibility determinations",
+      "reason": "Retrospective determinations; no new award or expenditure documented."
     },
     {
-      "title": "Legacy duplicate-candidate review",
-      "reason": "No record-specific original-source package sufficient for a responsible guarded revision was completed; the disclosed queue remains visible."
+      "title": "OFAC October 5 modernization removals",
+      "reason": "Prior-window recovery lead retained for dedicated dedupe and evidence review."
+    },
+    {
+      "title": "Trump TV midday material",
+      "reason": "No qualifying new item located in the material reviewed; audiovisual coverage gap preserved."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-07T10:02:35Z",
-    "checked_at_eastern": "2026-10-07 6:02 AM EDT",
+    "checked_at": "2026-10-07T16:12:57Z",
+    "checked_at_eastern": "2026-10-07 12:12 PM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-07T10:02:35Z",
+    "last_successful_page_inspection_at": "2026-10-07T16:12:57Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -645,7 +685,7 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, videos, remarks and releases metadata were inspected. The linked stream remained A4gNgHfZ-v4 and the dated library still ended with four October 6 uploads already reviewed as metadata in the prior release. No footage, audio or captions were retrieved; fallback text was not treated as proof of outage. No qualifying new item located in the material reviewed, and no verified new channel cost, contract, staffing/control, distribution, press-access consequence, investigation or finding was located.",
+    "summary": "Official Trump TV, live, videos, remarks and releases metadata were inspected. The linked stream remained A4gNgHfZ-v4 and the dated library still ended with October 6 uploads. No footage, audio or captions were retrieved; fallback text was not treated as proof of outage. No qualifying new item located in the material reviewed, and no verified new channel cost, contract, staffing/control, distribution, press-access consequence, investigation or finding was located.",
     "items": [
       {
         "url": "https://www.whitehouse.gov/videos/president-trump-delivers-remarks-oct-6-2026/",
@@ -712,8 +752,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-07T10:02:35Z",
-        "observed_at_eastern": "2026-10-07 6:02 AM EDT",
+        "observed_at": "2026-10-07T16:12:57Z",
+        "observed_at_eastern": "2026-10-07 12:12 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official HTML retained the same linked stream ID A4gNgHfZ-v4. Page metadata only was inspected; live/replay state and audiovisual content remain unverified. Fallback text does not prove an outage.",
         "video_ids": [
@@ -725,8 +765,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-07T10:02:35Z",
-        "observed_at_eastern": "2026-10-07 6:02 AM EDT",
+        "observed_at": "2026-10-07T16:12:57Z",
+        "observed_at_eastern": "2026-10-07 12:12 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official live hub HTML and links inspected; it linked the same A4gNgHfZ-v4 ID. Platform state and audiovisual content were not reviewed.",
         "video_ids": [
@@ -738,8 +778,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-07T10:02:35Z",
-        "observed_at_eastern": "2026-10-07 6:02 AM EDT",
+        "observed_at": "2026-10-07T16:12:57Z",
+        "observed_at_eastern": "2026-10-07 12:12 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official dated listing exposed four October 6 uploads. Titles, JSON-LD publication times, dates, durations and stable IDs were inspected; footage, audio and captions were not retrieved. The two Anduril uploads repeat an already canonical event, and the gaggles did not establish a qualifying new action in corroborating review.",
         "video_ids": [
@@ -766,8 +806,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-07T10:02:35Z",
-        "observed_at_eastern": "2026-10-07 6:02 AM EDT",
+        "observed_at": "2026-10-07T16:12:57Z",
+        "observed_at_eastern": "2026-10-07 12:12 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Supplementary remarks index inspected; September 28 remains its newest listed event. It is not assumed to be a complete Trump TV transcript feed.",
         "video_ids": []
@@ -777,8 +817,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-07T10:02:35Z",
-        "observed_at_eastern": "2026-10-07 6:02 AM EDT",
+        "observed_at": "2026-10-07T16:12:57Z",
+        "observed_at_eastern": "2026-10-07 12:12 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official release index inspected. October 5 diesel action is already canonical; Nebraska promotion is not independent investment or policy-effectiveness verification. A release listing does not prove that a statement aired on Trump TV.",
         "video_ids": []
@@ -797,9 +837,10 @@
       "This check inspected official page metadata but did not retrieve stream or recording audiovisual content or captions. Complete broadcast coverage remains unknown and is not advanced.",
       "Timed-text requests for oW-PQlgw1wo, JThkq_BtykY, 4byP8HRzDc0 and IkYYt1yHxcQ returned empty responses, and direct platform-page retrieval was throttled. No caption or footage review is claimed.",
       "The October 6 JSON-LD uploadDate values are publication timestamps. They do not independently establish original broadcast times; the two gaggle titles supply event dates, while edited-clip chronology is limited to what the official metadata supports.",
-      "This overnight check found unchanged official page metadata and did not retrieve stream or recording audiovisual content or captions. The complete broadcast-review boundary remains unknown and is not advanced."
+      "This overnight check found unchanged official page metadata and did not retrieve stream or recording audiovisual content or captions. The complete broadcast-review boundary remains unknown and is not advanced.",
+      "This midday check inspected official page metadata but did not retrieve stream or recording audiovisual content or captions. The complete broadcast-review boundary remains unknown and is not advanced."
     ],
-    "previous_page_inspection_at": "2026-10-07T04:06:59Z",
+    "previous_page_inspection_at": "2026-10-07T10:02:35Z",
     "historical_inspections": [
       {
         "url": "https://www.whitehouse.gov/videos/america-gov-launch/",
@@ -1165,38 +1206,38 @@
     "scope": "1000 retained fallback posts; current content hashes only",
     "counts": {
       "text_status": {
-        "reviewed": 446,
+        "reviewed": 453,
         "not_recorded": 136,
-        "pending": 418
+        "pending": 411
       },
       "media_status": {
-        "not_applicable": 456,
-        "reviewed": 75,
+        "not_applicable": 451,
+        "reviewed": 80,
         "pending": 216,
         "unavailable": 234,
         "not_recorded": 19
       }
     },
-    "new_posts": 0,
+    "new_posts": 7,
     "source_rows_added": 0,
-    "new_text_reviewed": 0,
-    "new_nonempty_text_reviewed": 0,
-    "new_empty_text_inspected": 0,
-    "new_image_assets_reviewed": 0,
-    "new_image_posts_reviewed": 0,
+    "new_text_reviewed": 7,
+    "new_nonempty_text_reviewed": 5,
+    "new_empty_text_inspected": 2,
+    "new_image_assets_reviewed": 5,
+    "new_image_posts_reviewed": 5,
     "new_video_assets_pending": 0,
-    "new_media_reviewed": 0,
+    "new_media_reviewed": 5,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-07T09:58:54.643614Z",
-    "checked_at_eastern": "2026-10-07 5:58:54 AM EDT",
-    "latest_post_at_utc": "2026-10-07T02:12:02.968000Z",
-    "latest_post_at_eastern": "2026-10-06 10:12:02 PM EDT",
-    "latest_post_id": "117397200762855537",
-    "no_new_post_finding": true,
-    "note": "No post newer than the prior validated snapshot was present. The newest retained post remains October 6 at 10:12:02 PM EDT in Indianapolis, although its UTC date is October 7; the fallback was checked October 7 at 5:58:54 AM EDT. No post claim was treated as independently verified."
+    "checked_at_utc": "2026-10-07T16:16:03.550573Z",
+    "checked_at_eastern": "2026-10-07 12:16:03 PM EDT",
+    "latest_post_at_utc": "2026-10-07T15:15:08.859000Z",
+    "latest_post_at_eastern": "2026-10-07 11:15:08 AM EDT",
+    "latest_post_id": "117400280030146024",
+    "no_new_post_finding": false,
+    "note": "Seven posts were newer than the prior validated snapshot. Text and available visual frames were inspected; supplied audio was not independently transcribed. The newest post was published October 7 at 11:15:08 AM EDT in Indianapolis. The Wisconsin aid statement remained prospective without an implementing FEMA record, and no post claim was treated as independently verified."
   },
   "archive_network_inspection": {
-    "checked_at": "2026-10-07T10:02:35Z",
-    "note": "All four registered primary projects were rechecked. Trump Archive displayed 14,603 total items, 12,070 Truth Social posts and 1,886 speeches/transcripts. UndoTrump remained at 1,264 actions and the Immigration Policy Tracking Project browse page remained at 1,804 policy actions. Record47's homepage displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts, differing from the preserved prior API measurement; the inconsistency remains disclosed. Units remain separate and zero external canonical entries were imported."
+    "checked_at": "2026-10-07T16:12:57Z",
+    "note": "All four registered primary projects were rechecked. Trump Archive displayed 14,608 total items, 12,075 Truth Social posts and 1,886 speeches/transcripts. UndoTrump remained at 1,264 actions and the Immigration Policy Tracking Project browse page remained at 1,804 policy actions. Record47's homepage displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts, differing from preserved prior API measurements; the inconsistency remains disclosed. Units remain separate and zero external canonical entries were imported."
   }
 }
