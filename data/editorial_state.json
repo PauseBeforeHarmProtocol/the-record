@@ -5701,6 +5701,54 @@
       "provenance_path": "data/editorial_change_notes/10.123.0.json",
       "provenance_sha256": "f21d4d9f3e6c1e3ee0b1d3dd4fb6d78459b54908fdf161bb3b2a9024d3da629f",
       "note": "Evidence-as-of time recorded; allegations, reported spending and court outcomes remain distinct."
+    },
+    {
+      "change_id": "10.124.0:NAT-2026-10-08-001",
+      "entry_id": "NAT-2026-10-08-001",
+      "as_of_utc": "2026-10-08T16:00:50Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.124.0",
+      "summary": "Officials said new and pending PERM applications involving Microsoft, Adobe and six large IT services firms would not be processed; the fraud allegations are not adjudicated findings.",
+      "provenance_path": "data/editorial_change_notes/10.124.0.json",
+      "provenance_sha256": "09d3cd7cef2b15f68bf7d9bac44baba148a31f16c5110846d7661db1d9029955",
+      "note": "Evidence-as-of time recorded; announcement, investigation, disclosure and implementation states remain distinct."
+    },
+    {
+      "change_id": "10.124.0:NAT-2026-10-08-002",
+      "entry_id": "NAT-2026-10-08-002",
+      "as_of_utc": "2026-10-08T16:00:50Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.124.0",
+      "summary": "The investigation covers Harvard, Yale, Stanford and six other institutions; subpoenas establish a formal inquiry, not findings of visa abuse or unlawful foreign influence.",
+      "provenance_path": "data/editorial_change_notes/10.124.0.json",
+      "provenance_sha256": "09d3cd7cef2b15f68bf7d9bac44baba148a31f16c5110846d7661db1d9029955",
+      "note": "Evidence-as-of time recorded; announcement, investigation, disclosure and implementation states remain distinct."
+    },
+    {
+      "change_id": "10.124.0:NAT-2026-10-08-003",
+      "entry_id": "NAT-2026-10-08-003",
+      "as_of_utc": "2026-10-08T16:00:50Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.124.0",
+      "summary": "The summit bundled new compute credits, research infrastructure, fellowships, competitions and partnerships; the headline includes federal, industry, university and philanthropic commitments and is not a new federal appropriation total.",
+      "provenance_path": "data/editorial_change_notes/10.124.0.json",
+      "provenance_sha256": "09d3cd7cef2b15f68bf7d9bac44baba148a31f16c5110846d7661db1d9029955",
+      "note": "Evidence-as-of time recorded; announcement, investigation, disclosure and implementation states remain distinct."
+    },
+    {
+      "change_id": "10.124.0:NAT-2026-10-08-004",
+      "entry_id": "NAT-2026-10-08-004",
+      "as_of_utc": "2026-10-08T16:00:50Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.124.0",
+      "summary": "The official report lists four August Nvidia purchases and one sale; the disclosure establishes financial exposure and a potential conflict question, not that any policy was altered for the holding.",
+      "provenance_path": "data/editorial_change_notes/10.124.0.json",
+      "provenance_sha256": "09d3cd7cef2b15f68bf7d9bac44baba148a31f16c5110846d7661db1d9029955",
+      "note": "Evidence-as-of time recorded; announcement, investigation, disclosure and implementation states remain distinct."
     }
   ],
   "reviews": [
@@ -66333,6 +66381,517 @@
       ],
       "unresolved_questions": [
         "The second complaint’s primary filing, court rulings, audited disbursements, reimbursement and completed private payments remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.124.0:NAT-2026-10-08-001:6175f8c34f07",
+      "entry_id": "NAT-2026-10-08-001",
+      "content_sha256": "6175f8c34f07f35f4dd7aeaeca6ead6c816d33ef42413c291c79ef1eadfbf01e",
+      "reviewed_at": "2026-10-08T16:00:50Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "366cb8d150c30cf2d20463c36a8afbd4a516eba4816cc11f5d74e0aeb94d9092",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_perm_suspensions_oct8",
+              "locator": "Reuters lines 177-189: eight firms named; no new or pending PERM applications accepted or processed; nine universities investigated; subpoenas served; alleged fraud and research-security rationale.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "8f1577be6a10d247b3d3194e842a775c917935e534977353e65d7cb64113398a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_perm_suspensions_oct8",
+              "locator": "AP lines 1832 onward: Microsoft suspension, PERM process, J-1 and outsourcing allegations, nine named universities, administration rationale and lack of immediate institutional responses.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "acda06bea1aae5677879d579e8118d1462ddf53665fc79466dacd0d598668ba5",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "wh_live_visa_fraud_oct8",
+              "locator": "White House Live headline: Vice President JD Vance Holds Press Conference on Fighting Visa Fraud; page inspected as event metadata, not a transcript or complete recording.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "03f69f4e4d27e8d801e3d17d519c04261d7e9d230cbe58239c376927ddbc118f",
+              "origin_group": "The White House",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "52dc62daac4152b28f642a5b95dadc94e14005a1e66dc9fa084d39506d5f796e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_perm_suspensions_oct8",
+              "locator": "Reuters lines 177-189: eight firms named; no new or pending PERM applications accepted or processed; nine universities investigated; subpoenas served; alleged fraud and research-security rationale.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "8f1577be6a10d247b3d3194e842a775c917935e534977353e65d7cb64113398a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_perm_suspensions_oct8",
+              "locator": "AP lines 1832 onward: Microsoft suspension, PERM process, J-1 and outsourcing allegations, nine named universities, administration rationale and lack of immediate institutional responses.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "acda06bea1aae5677879d579e8118d1462ddf53665fc79466dacd0d598668ba5",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "bea872390ecb566601d90459e4520cda8bd8a4000c58da1434da1d8fd459d492",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_perm_suspensions_oct8",
+              "locator": "Reuters lines 177-189: eight firms named; no new or pending PERM applications accepted or processed; nine universities investigated; subpoenas served; alleged fraud and research-security rationale.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "8f1577be6a10d247b3d3194e842a775c917935e534977353e65d7cb64113398a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_perm_suspensions_oct8",
+              "locator": "AP lines 1832 onward: Microsoft suspension, PERM process, J-1 and outsourcing allegations, nine named universities, administration rationale and lack of immediate institutional responses.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "acda06bea1aae5677879d579e8118d1462ddf53665fc79466dacd0d598668ba5",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "d18f91da8be33698ee7ce08368eb0d9a80068462bfe6c829bd2ac8fa0559dacd",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_perm_suspensions_oct8",
+              "locator": "Reuters lines 177-189: eight firms named; no new or pending PERM applications accepted or processed; nine universities investigated; subpoenas served; alleged fraud and research-security rationale.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "8f1577be6a10d247b3d3194e842a775c917935e534977353e65d7cb64113398a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_perm_suspensions_oct8",
+              "locator": "AP lines 1832 onward: Microsoft suspension, PERM process, J-1 and outsourcing allegations, nine named universities, administration rationale and lack of immediate institutional responses.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "acda06bea1aae5677879d579e8118d1462ddf53665fc79466dacd0d598668ba5",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "fd09e99d190dea26e9d32dbb9404dc27135adbdcf940f34ee6b9ceff3a25ec70",
+          "review_note": "Separately reviewed as bounded significance analysis tied to the documented action and explicit implementation limits."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "0391a3004ad223ab262bf6fc0a85c6e98f341312394e61571fe6966206870e6e",
+          "review_note": "Preserves the strongest relevant administration rationale or response and concrete evidence tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "797cc76491ce9c27512054755e6f3e602e2fac949b089edefdd0d905e4ddc461",
+          "review_note": "Separately reviewed alternative explanations and an evidence-bound Therefore without converting allegations or announcements into outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "The administration says the action protects American workers from fraudulent or abusive sponsorship. Company-specific notices, affected-case counts, factual findings, appeals, court review, employer responses and later hiring and wage evidence are the tests."
+      ]
+    },
+    {
+      "review_id": "10.124.0:NAT-2026-10-08-002:d225db34566b",
+      "entry_id": "NAT-2026-10-08-002",
+      "content_sha256": "d225db34566bd28d5d3b1e6a58f2f341415d94c8748ad88151bc5dc3335a1eee",
+      "reviewed_at": "2026-10-08T16:00:50Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "ac90cc93ed2efcadbba1b9b5be68e6f58b1a995b9929ae1e6fc4a88ca5a14515",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_perm_suspensions_oct8",
+              "locator": "Reuters lines 177-189: eight firms named; no new or pending PERM applications accepted or processed; nine universities investigated; subpoenas served; alleged fraud and research-security rationale.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "8f1577be6a10d247b3d3194e842a775c917935e534977353e65d7cb64113398a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_perm_suspensions_oct8",
+              "locator": "AP lines 1832 onward: Microsoft suspension, PERM process, J-1 and outsourcing allegations, nine named universities, administration rationale and lack of immediate institutional responses.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "acda06bea1aae5677879d579e8118d1462ddf53665fc79466dacd0d598668ba5",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "wh_live_visa_fraud_oct8",
+              "locator": "White House Live headline: Vice President JD Vance Holds Press Conference on Fighting Visa Fraud; page inspected as event metadata, not a transcript or complete recording.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "03f69f4e4d27e8d801e3d17d519c04261d7e9d230cbe58239c376927ddbc118f",
+              "origin_group": "The White House",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "b4301d8d891f6e75e185b7c30b30cc204b703ec97b4b1a38aaa9024430351611",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_perm_suspensions_oct8",
+              "locator": "AP lines 1832 onward: Microsoft suspension, PERM process, J-1 and outsourcing allegations, nine named universities, administration rationale and lack of immediate institutional responses.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "acda06bea1aae5677879d579e8118d1462ddf53665fc79466dacd0d598668ba5",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "a94a1246507eeccc96e544850215bcdfc9a2dd6db28c736e4e2844b09ce36d9d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_perm_suspensions_oct8",
+              "locator": "Reuters lines 177-189: eight firms named; no new or pending PERM applications accepted or processed; nine universities investigated; subpoenas served; alleged fraud and research-security rationale.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "8f1577be6a10d247b3d3194e842a775c917935e534977353e65d7cb64113398a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_perm_suspensions_oct8",
+              "locator": "AP lines 1832 onward: Microsoft suspension, PERM process, J-1 and outsourcing allegations, nine named universities, administration rationale and lack of immediate institutional responses.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "acda06bea1aae5677879d579e8118d1462ddf53665fc79466dacd0d598668ba5",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "860547b8ad8bf01440d95c299ba5337b414b245a842f66ec764ae2ec8a444043",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_perm_suspensions_oct8",
+              "locator": "Reuters lines 177-189: eight firms named; no new or pending PERM applications accepted or processed; nine universities investigated; subpoenas served; alleged fraud and research-security rationale.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "8f1577be6a10d247b3d3194e842a775c917935e534977353e65d7cb64113398a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_perm_suspensions_oct8",
+              "locator": "AP lines 1832 onward: Microsoft suspension, PERM process, J-1 and outsourcing allegations, nine named universities, administration rationale and lack of immediate institutional responses.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "acda06bea1aae5677879d579e8118d1462ddf53665fc79466dacd0d598668ba5",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "3ef854a45370f7c82a38ab217b8be40123f93f5528a0d95e8e88c839fa2f9879",
+          "review_note": "Separately reviewed as bounded significance analysis tied to the documented action and explicit implementation limits."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "df48a557e55c65e2a759386eaf813f47cca48df0a2cc99ec8139a26071020849",
+          "review_note": "Preserves the strongest relevant administration rationale or response and concrete evidence tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "5fd405b28a5f60a5e5304e4f50b706f39172a7160d5c4e7fbcbb430df228c3fc",
+          "review_note": "Separately reviewed alternative explanations and an evidence-bound Therefore without converting allegations or announcements into outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "The administration says the investigation will protect U.S. workers and federally funded research from visa abuse and improper foreign influence. The subpoena scopes, responses, inspector-general findings, referrals, enforcement decisions and any judicial review are the tests."
+      ]
+    },
+    {
+      "review_id": "10.124.0:NAT-2026-10-08-003:1b01c28dd3d7",
+      "entry_id": "NAT-2026-10-08-003",
+      "content_sha256": "1b01c28dd3d750e7dd7f42b97b927cfd477ac2f18c0dd94914bd902bf40c63e1",
+      "reviewed_at": "2026-10-08T16:00:50Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "0fb5044f1a6d46fcbfd8016c5984a31948afd9b03cab043b00ca0751b2e02322",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_science_package_oct8",
+              "locator": "White House fact-sheet lines 149-182: mixed $6B headline, $2.4B industry credits, regional compute, instruments, fellowships, NASA-DOE MOU, quantum and research-organization programs.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "822c1392bc5141e99f5ca37d5cc87e10cc804b0da41dcab9f9a5d58669e5361c",
+              "origin_group": "The White House",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "wapo_science_package_oct8",
+              "locator": "Washington Post lines 24-61: compute, consortium and fellowship announcements; prior research cuts and withholding; administration merit and high-impact-science responses.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "0a73221901d30a8cbee8e84749fbeb3576778e8c93f014dce2f4f2e1abcfd6ac",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "c1c5f788951a8b166ec91cd83f1cfc78e774be444ea98be187ca3b27bdc94638",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_science_package_oct8",
+              "locator": "White House fact-sheet lines 149-182: mixed $6B headline, $2.4B industry credits, regional compute, instruments, fellowships, NASA-DOE MOU, quantum and research-organization programs.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "822c1392bc5141e99f5ca37d5cc87e10cc804b0da41dcab9f9a5d58669e5361c",
+              "origin_group": "The White House",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "wapo_science_package_oct8",
+              "locator": "Washington Post lines 24-61: compute, consortium and fellowship announcements; prior research cuts and withholding; administration merit and high-impact-science responses.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "0a73221901d30a8cbee8e84749fbeb3576778e8c93f014dce2f4f2e1abcfd6ac",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "axios_science_summit_oct7",
+              "locator": "Axios lines 45-58: more than $1B industry commitments, Southeast compute hub, Georgia investment, $100M instruments, Genesis context.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "59895abee748c23c67fa262fe0d41e8984ee311a5fa8c6913514b328278e44f7",
+              "origin_group": "Axios",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "6033f78d73e4a0c5b53e28bd18cc5a55e94ac788b9eff0f2ef7b74c90935d7fe",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_science_package_oct8",
+              "locator": "White House fact-sheet lines 149-182: mixed $6B headline, $2.4B industry credits, regional compute, instruments, fellowships, NASA-DOE MOU, quantum and research-organization programs.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "822c1392bc5141e99f5ca37d5cc87e10cc804b0da41dcab9f9a5d58669e5361c",
+              "origin_group": "The White House",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "wapo_science_package_oct8",
+              "locator": "Washington Post lines 24-61: compute, consortium and fellowship announcements; prior research cuts and withholding; administration merit and high-impact-science responses.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "0a73221901d30a8cbee8e84749fbeb3576778e8c93f014dce2f4f2e1abcfd6ac",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "c01d777360db7ad6f77f0334cc733afa80c801777cc6d0a93e000c4308ec72da",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_science_package_oct8",
+              "locator": "White House fact-sheet lines 149-182: mixed $6B headline, $2.4B industry credits, regional compute, instruments, fellowships, NASA-DOE MOU, quantum and research-organization programs.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "822c1392bc5141e99f5ca37d5cc87e10cc804b0da41dcab9f9a5d58669e5361c",
+              "origin_group": "The White House",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "3224d12efebf349f8e18303ed10732a80e0e196ee20f7fb1ba7fd816ad88059c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wapo_science_package_oct8",
+              "locator": "Washington Post lines 24-61: compute, consortium and fellowship announcements; prior research cuts and withholding; administration merit and high-impact-science responses.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "0a73221901d30a8cbee8e84749fbeb3576778e8c93f014dce2f4f2e1abcfd6ac",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "axios_science_summit_oct7",
+              "locator": "Axios lines 45-58: more than $1B industry commitments, Southeast compute hub, Georgia investment, $100M instruments, Genesis context.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "59895abee748c23c67fa262fe0d41e8984ee311a5fa8c6913514b328278e44f7",
+              "origin_group": "Axios",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "ebad44bfa2484d861d0c829392c5168f857c4a452e477e7a9a2c2b5a243974ca",
+          "review_note": "Separately reviewed as bounded significance analysis tied to the documented action and explicit implementation limits."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "e8a5e17536a3fdd5ebc7664896d98ed72b76b09c78fe6ea297fc05f9cb2ef740",
+          "review_note": "Preserves the strongest relevant administration rationale or response and concrete evidence tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "39f284bbe331a2f6390a3f5e755395c189fb00d6abe2278519e26f42529ec280",
+          "review_note": "Separately reviewed alternative explanations and an evidence-bound Therefore without converting allegations or announcements into outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "The administration says the initiatives will accelerate discovery, strengthen American scientific leadership and reward merit while reducing waste. Binding award documents, appropriations and outlays, partner-delivered credits, enrollment, research output, launch milestones, peer review and workforce retention are the tests."
+      ]
+    },
+    {
+      "review_id": "10.124.0:NAT-2026-10-08-004:91e142d3a552",
+      "entry_id": "NAT-2026-10-08-004",
+      "content_sha256": "91e142d3a5525b0f0d8ac765acc4a8dfd5870a4bf6f50c52a58ad0cd68c7f118",
+      "reviewed_at": "2026-10-08T16:00:50Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "b73308de1f98d5511ef530500e13889703735960f2b0a1bc6e15fc8354b36510",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "oge_trump_278t_sep17",
+              "locator": "OGE 278-T pages 2, 10, 12, 15 and 16: four Nvidia purchases and one sale with dates and value ranges; signed September 17 and received September 25.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "0167e9f0621ba6d88722b466130209b9419f3b50bd58e5fb16bd31cc2a6fcb84",
+              "origin_group": "U.S. Office of Government Ethics",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_trump_nvidia_trades_oct8",
+              "locator": "Reuters lines 151-175: Nvidia trade totals, chip-policy context, science medal timing and White House independent-manager/index-replication response.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "c1290775d74a13e1aee443b3184b97a55b63bb79601d6ca985a9461aafe10c43",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "060f2590a5caedc5bcacaed52ad9532b5913553d60e586038bd10923901e869b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "oge_trump_278t_sep17",
+              "locator": "OGE 278-T pages 2, 10, 12, 15 and 16: four Nvidia purchases and one sale with dates and value ranges; signed September 17 and received September 25.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "0167e9f0621ba6d88722b466130209b9419f3b50bd58e5fb16bd31cc2a6fcb84",
+              "origin_group": "U.S. Office of Government Ethics",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_trump_nvidia_trades_oct8",
+              "locator": "Reuters lines 151-175: Nvidia trade totals, chip-policy context, science medal timing and White House independent-manager/index-replication response.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "c1290775d74a13e1aee443b3184b97a55b63bb79601d6ca985a9461aafe10c43",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "962be8d9556313c182fe4c9f74821e6d9ea09bb72a47ccb52ad28773a1574175",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_trump_nvidia_trades_oct8",
+              "locator": "Reuters lines 151-175: Nvidia trade totals, chip-policy context, science medal timing and White House independent-manager/index-replication response.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "c1290775d74a13e1aee443b3184b97a55b63bb79601d6ca985a9461aafe10c43",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "5b30199600e37f067fe6e16e7f8cde115ab42adf0704005c989f2893028ccfd5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_trump_nvidia_trades_oct8",
+              "locator": "Reuters lines 151-175: Nvidia trade totals, chip-policy context, science medal timing and White House independent-manager/index-replication response.",
+              "inspected_at": "2026-10-08T16:00:50Z",
+              "document_sha256": "c1290775d74a13e1aee443b3184b97a55b63bb79601d6ca985a9461aafe10c43",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "03fce3e445dc15149d3f582d9282609e8343288c278e03ab3541fdd738e38306",
+          "review_note": "Separately reviewed as bounded significance analysis tied to the documented action and explicit implementation limits."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "5757f94634d3bc41c685a60014846624900a84ee69b5266455df808d10c20aeb",
+          "review_note": "Preserves the strongest relevant administration rationale or response and concrete evidence tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "e4af48ecdb9ca95019f83e22d5f81c8283f3eb262b19931e1a3d8538b27710ed",
+          "review_note": "Separately reviewed alternative explanations and an evidence-bound Therefore without converting allegations or announcements into outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "The White House says independent managers, not Trump, made the trades through index-replicating strategies. Management agreements, index methodology, recusal or ethics records, later transaction reports and documented policy decision-making are the tests."
       ]
     }
   ],
