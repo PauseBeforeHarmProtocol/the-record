@@ -5761,6 +5761,42 @@
       "provenance_path": "data/editorial_change_notes/10.125.0.json",
       "provenance_sha256": "24e1d20e44c9189fbe652ad5764e28fb41047c8f1d3c80c5c2513d00d9693d27",
       "note": "Same continuing Iran/Hormuz event; stable canonical ID retained."
+    },
+    {
+      "change_id": "10.126.0:NAT-2026-10-08-005",
+      "entry_id": "NAT-2026-10-08-005",
+      "as_of_utc": "2026-10-08T21:59:03Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.126.0",
+      "summary": "Roberts temporarily paused the lower-court deadline for FCC action; the administrative stay is not a merits ruling.",
+      "provenance_path": "data/editorial_change_notes/10.126.0.json",
+      "provenance_sha256": "f5e8c3930ea1e4fe2dd2036b99c46bb0c9ee0148a43cce4d0fc6b0c42ff24b3e",
+      "note": "Stable event and lifecycle boundaries preserved; announcement, temporary relief, implementation and final outcomes remain distinct."
+    },
+    {
+      "change_id": "10.126.0:NAT-2026-09-28-005",
+      "entry_id": "NAT-2026-09-28-005",
+      "as_of_utc": "2026-10-08T21:59:03Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.126.0",
+      "summary": "FEMA rescinded the challenged election-related grant conditions after the district-court ruling.",
+      "provenance_path": "data/editorial_change_notes/10.126.0.json",
+      "provenance_sha256": "f5e8c3930ea1e4fe2dd2036b99c46bb0c9ee0148a43cce4d0fc6b0c42ff24b3e",
+      "note": "Stable event and lifecycle boundaries preserved; announcement, temporary relief, implementation and final outcomes remain distinct."
+    },
+    {
+      "change_id": "10.126.0:NAT-2026-10-05-005",
+      "entry_id": "NAT-2026-10-05-005",
+      "as_of_utc": "2026-10-08T21:59:03Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.126.0",
+      "summary": "The Army set December 3 at Fort Hood and the Pentagon announced a livestream plan; execution remains pending.",
+      "provenance_path": "data/editorial_change_notes/10.126.0.json",
+      "provenance_sha256": "f5e8c3930ea1e4fe2dd2036b99c46bb0c9ee0148a43cce4d0fc6b0c42ff24b3e",
+      "note": "Stable event and lifecycle boundaries preserved; announcement, temporary relief, implementation and final outcomes remain distinct."
     }
   ],
   "reviews": [
@@ -68238,6 +68274,378 @@
         "No Iranian confirmation, reciprocal commitment or negotiating terms were located.",
         "The claimed 22-million-barrel flow lacked an identified dataset or independent validation in the inspected material.",
         "U.S. attack policy after November 3 remains open."
+      ]
+    },
+    {
+      "review_id": "10.126.0:NAT-2026-10-08-005:5077e93bdcf6",
+      "entry_id": "NAT-2026-10-08-005",
+      "content_sha256": "5077e93bdcf6bc9794db960e3eb962cb020564d9607021becb0f63ba21e3a38e",
+      "reviewed_at": "2026-10-08T21:59:03Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "c9df5364b43666bc1d5f440e59cf96643549597482b172323f457693e05a0fe4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_fcc_ad_admin_stay_oct8",
+              "locator": "Complete located Reuters report inspected for the October 8 administrative stay, response deadline, lower-court deadline and procedural limits.",
+              "inspected_at": "2026-10-08T21:59:03Z",
+              "document_sha256": "df84157f7b84078bdc60def3339cabdc62f4b652a3a2580e0956b0c23c6a95f6",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "scotus_brown_fcc_docket_26a274",
+              "locator": "Official docket and application metadata inspected for case identity, lower-court proceeding and application history; October 8 order text was not retrieved.",
+              "inspected_at": "2026-10-08T21:59:03Z",
+              "document_sha256": "6b6f5744068ecdc0708abc740e27c4a97db2ba2705870054251deeec8fd6f87e",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "41d252276a0a11d8c6282340305a66fe5b5992e0304d8448c58a54b11933a199",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_fcc_ad_admin_stay_oct8",
+              "locator": "Complete located Reuters report inspected for the October 8 administrative stay, response deadline, lower-court deadline and procedural limits.",
+              "inspected_at": "2026-10-08T21:59:03Z",
+              "document_sha256": "df84157f7b84078bdc60def3339cabdc62f4b652a3a2580e0956b0c23c6a95f6",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "scotus_brown_fcc_docket_26a274",
+              "locator": "Official docket and application metadata inspected for case identity, lower-court proceeding and application history; October 8 order text was not retrieved.",
+              "inspected_at": "2026-10-08T21:59:03Z",
+              "document_sha256": "6b6f5744068ecdc0708abc740e27c4a97db2ba2705870054251deeec8fd6f87e",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "2827ed143ecac2b5bfb0dd491b2a2de8b9d638c75bf9ad154f9b5c517c6cf044",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_fcc_ad_admin_stay_oct8",
+              "locator": "Complete located Reuters report inspected for the October 8 administrative stay, response deadline, lower-court deadline and procedural limits.",
+              "inspected_at": "2026-10-08T21:59:03Z",
+              "document_sha256": "df84157f7b84078bdc60def3339cabdc62f4b652a3a2580e0956b0c23c6a95f6",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "86fdc40ee4fe69626b3a6b94558e146b44bc368cb1c30bb14a53c40bf79cf0cc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_fcc_ad_admin_stay_oct8",
+              "locator": "Complete located Reuters report inspected for the October 8 administrative stay, response deadline, lower-court deadline and procedural limits.",
+              "inspected_at": "2026-10-08T21:59:03Z",
+              "document_sha256": "df84157f7b84078bdc60def3339cabdc62f4b652a3a2580e0956b0c23c6a95f6",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "c0cac6190621d19b7a761ab2c91413a5ac831978f582d5cafec69b5aab367250",
+          "review_note": "Separately reviewed as bounded significance analysis tied to the documented procedural or implementation development."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "8bee5e589fe1f9e4505650534fa344ac725644bd9b53940e647dbc2681c0e60e",
+          "review_note": "Preserves the strongest relevant administration or litigant explanation and concrete next evidence tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "463f97427233b2f7fcbb2d8697cd727504d6c1816c0f52df4aeb6f419bb03db0",
+          "review_note": "Separately reviewed alternative explanations and an evidence-bound Therefore without converting a temporary order or announced plan into a final outcome."
+        }
+      ],
+      "unresolved_questions": [
+        "The full October 8 administrative-stay order text was not retrieved by cutoff.",
+        "The Court has not ruled on the merits of the FCC policy or the lower court's authority."
+      ]
+    },
+    {
+      "review_id": "10.126.0:NAT-2026-09-28-005:59e9ca4bc4ba",
+      "entry_id": "NAT-2026-09-28-005",
+      "content_sha256": "59e9ca4bc4baf6b5f1918a72c911d28258ed1afc20edb165f03fc7d28d9f0b32",
+      "reviewed_at": "2026-10-08T21:59:03Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "3af35a6aa8b33603f7524a3e129c38ecdce626efaea4a8df07a5b9a2505c309d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_fema_election_grants_ruling_sep28",
+              "locator": "Reuters article body retrieved through the search service; hash is of the exact inspected text extract",
+              "inspected_at": "2026-09-28T22:04:45.467349Z",
+              "document_sha256": "af4c5566f0f690d69c8cd607194d7d444ef1841a1b0ab631ef10d910d4bfacb4",
+              "origin_group": "Reuters",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "00bf32a0d2b60bb695ccd1e89dd5106447d94d60f8b73bfb72c4af3e36d76a1e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_fema_election_grants_ruling_sep28",
+              "locator": "Reuters article body retrieved through the search service; hash is of the exact inspected text extract",
+              "inspected_at": "2026-09-28T22:04:45.467349Z",
+              "document_sha256": "af4c5566f0f690d69c8cd607194d7d444ef1841a1b0ab631ef10d910d4bfacb4",
+              "origin_group": "Reuters",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "601751e8b0a8f95bef0d8f1ec63b289c36941e5ce002b55763b2123b586150d1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_fema_election_grants_ruling_sep28",
+              "locator": "Reuters article body retrieved through the search service; hash is of the exact inspected text extract",
+              "inspected_at": "2026-09-28T22:04:45.467349Z",
+              "document_sha256": "af4c5566f0f690d69c8cd607194d7d444ef1841a1b0ab631ef10d910d4bfacb4",
+              "origin_group": "Reuters",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "cd21fe059bc4a498e485e11218b1175259b99b48acd956848ce33b1699668a49",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_fema_election_grants_ruling_sep28",
+              "locator": "Reuters article body retrieved through the search service; hash is of the exact inspected text extract",
+              "inspected_at": "2026-09-28T22:04:45.467349Z",
+              "document_sha256": "af4c5566f0f690d69c8cd607194d7d444ef1841a1b0ab631ef10d910d4bfacb4",
+              "origin_group": "Reuters",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "d0b5a930023b0d454f65abac882b56153f4abe6732957ba82df102e0cdb8d54a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_fema_rescinds_election_conditions_oct8",
+              "locator": "AP live report inspected for FEMA's October 8 state notice rescinding the requirements, program scale and link to the district-court ruling.",
+              "inspected_at": "2026-10-08T21:59:03Z",
+              "document_sha256": "4fa77caf384a97552d046b180736d2d3cabd83b8a972d297469142241bee7390",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "1ae6969c436cb566a34b98036039f5f07689767e5364347da48f5fc658e2a1a0",
+          "review_note": "Separately reviewed as bounded significance analysis tied to the documented procedural or implementation development."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "dc35afa82b2613e35c37f9c4665d7c40e193734b2a8ff14d6ff7b3840c7e2824",
+          "review_note": "Preserves the strongest relevant administration or litigant explanation and concrete next evidence tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "f4a0e4f17008e9e261de7297e413afb0451c9dd425e27fdd644517e2f1f0db96",
+          "review_note": "Separately reviewed alternative explanations and an evidence-bound Therefore without converting a temporary order or announced plan into a final outcome."
+        }
+      ],
+      "unresolved_questions": [
+        "Appeal and separate state-case outcomes remain unresolved.",
+        "Final grant-payment consequences were not measured by cutoff."
+      ]
+    },
+    {
+      "review_id": "10.126.0:NAT-2026-10-05-005:0d9811256bf5",
+      "entry_id": "NAT-2026-10-05-005",
+      "content_sha256": "0d9811256bf52f1598cb1848b6ced43b047b691577d9325f5793d14ffc5e9519",
+      "reviewed_at": "2026-10-08T21:59:03Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "24110d5945966cfe02a37c3ceac2afa69c97c63605e94214fea9f9551a06e4ad",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_hasan_firing_oct6",
+              "locator": "Reuters article body inspected through the search service; named Pentagon spokesperson, approval, method, scheduling status and execution-method context read.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "9a042182b6540e27364910954c3057423f9d961dc7636091f0a0f7414cb23f99",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_hasan_firing_oct6",
+              "locator": "AP article inspected; independently reports the named Pentagon announcement, conviction, pending Army scheduling and last military execution context.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f7d30e763a379ad6b8dce5ec935c832b0cc2b5a7cac30dff00ccaa9acbba7179",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "09df162f81c32edde060cab67a3dc1d0aa4d4ea69b5e3c7f56648d348d3f9e9d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "army_hasan_sentence_aug2013",
+              "locator": "Official Army article inspected for the 2013 court-martial convictions and death sentence.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "79d2c897c6e2658c800b4163da618a43911b024a5b974ce3a4fe361b3932f50a",
+              "origin_group": "U.S. Army",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "ap_hasan_firing_oct6",
+              "locator": "AP article inspected; independently reports the named Pentagon announcement, conviction, pending Army scheduling and last military execution context.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f7d30e763a379ad6b8dce5ec935c832b0cc2b5a7cac30dff00ccaa9acbba7179",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "e43a86536535ca364c3c45d8ad6c79aa2c1f77a83c3cd91225f016d4a49d669d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_hasan_livestream_oct8",
+              "locator": "Complete AP report inspected for the December 3 date, Fort Hood location, livestream announcement and unresolved habeas possibility.",
+              "inspected_at": "2026-10-08T21:59:03Z",
+              "document_sha256": "75a0537110ae2ee92b6dbbc2f3de21c16b846a5c6cb2873763205277843d482e",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "ee1822f790db75cf503a5d64df81f80c553d913c3146c13d157ebfcaea45d350",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_hasan_firing_oct6",
+              "locator": "Reuters article body inspected through the search service; named Pentagon spokesperson, approval, method, scheduling status and execution-method context read.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "9a042182b6540e27364910954c3057423f9d961dc7636091f0a0f7414cb23f99",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_hasan_firing_oct6",
+              "locator": "AP article inspected; independently reports the named Pentagon announcement, conviction, pending Army scheduling and last military execution context.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f7d30e763a379ad6b8dce5ec935c832b0cc2b5a7cac30dff00ccaa9acbba7179",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "017204668834eb35db4b51468e9b625ac6bec8405a3a0c219c46fe0187225769",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_hasan_firing_oct6",
+              "locator": "Reuters article body inspected through the search service; named Pentagon spokesperson, approval, method, scheduling status and execution-method context read.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "9a042182b6540e27364910954c3057423f9d961dc7636091f0a0f7414cb23f99",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_hasan_firing_oct6",
+              "locator": "AP article inspected; independently reports the named Pentagon announcement, conviction, pending Army scheduling and last military execution context.",
+              "inspected_at": "2026-10-06T09:57:30Z",
+              "document_sha256": "f7d30e763a379ad6b8dce5ec935c832b0cc2b5a7cac30dff00ccaa9acbba7179",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "5ea96be3a18e2bb407367300dd780c12755dc86bfe56678afa122d8cb9186481",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_hasan_livestream_oct8",
+              "locator": "Complete AP report inspected for the December 3 date, Fort Hood location, livestream announcement and unresolved habeas possibility.",
+              "inspected_at": "2026-10-08T21:59:03Z",
+              "document_sha256": "75a0537110ae2ee92b6dbbc2f3de21c16b846a5c6cb2873763205277843d482e",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "a7da5c97659b3e7e4fcf50cd825027ecb5956ca40c652378cfacc8385af0a807",
+          "review_note": "Separately reviewed as bounded significance analysis tied to the documented procedural or implementation development."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "130cee4a262b4281822b687bcb332990a24cc8ee0b979d82f6e6ccb21b23c42b",
+          "review_note": "Preserves the strongest relevant administration or litigant explanation and concrete next evidence tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "ad0eed2e8f3bc67ffd65798ffbd32fe450a3894f0729116aa72c4cefc8699752",
+          "review_note": "Separately reviewed alternative explanations and an evidence-bound Therefore without converting a temporary order or announced plan into a final outcome."
+        }
+      ],
+      "unresolved_questions": [
+        "Habeas, clemency and protocol challenges may affect the December 3 date.",
+        "Livestream access details had not yet been published by cutoff."
       ]
     }
   ],
