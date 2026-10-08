@@ -1,0 +1,78 @@
+{
+  "version": "10.126.0",
+  "base_release_version": "10.125.0",
+  "base_commit": "f39e724cdd0ceb9608bef69d5ee64dbedc03d8bf",
+  "research_window": {
+    "from_utc": "2026-10-08T16:33:38Z",
+    "through_utc": "2026-10-08T21:59:03Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Exact scan from the prior successful boundary. One Supreme Court procedural action was added; FEMA's grant-condition rescission and the Hasan execution schedule/livestream announcement materially refreshed existing records. Three new Truth Social posts were reviewed."
+  },
+  "publication_authorization": "The user authorizes maintenance branches, pull requests and merging after evidence, local acceptance and successful CI.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-08-005",
+      "kind": "added",
+      "summary": "Chief Justice Roberts temporarily paused the lower-court deadline for an FCC political-advertising decision; the action is an administrative stay, not a merits ruling.",
+      "duplicate_review": "No existing current or legacy event, normalized title, stored source URL or recent maintenance pull request matched this October 8 Supreme Court procedural action."
+    },
+    {
+      "entry_id": "NAT-2026-09-28-005",
+      "kind": "material_refresh",
+      "summary": "FEMA told states it was rescinding the election-related counterterrorism-grant conditions after the district-court ruling.",
+      "duplicate_review": "Same grant-condition litigation and implementation lifecycle as the September 28 injunction; stable ID retained."
+    },
+    {
+      "entry_id": "NAT-2026-10-05-005",
+      "kind": "material_refresh",
+      "summary": "The Army set a December 3 execution date at Fort Hood and the Pentagon announced a livestream plan; litigation may delay it.",
+      "duplicate_review": "Same military execution lifecycle as the presidential method approval; stable ID retained."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "reuters_fcc_ad_admin_stay_oct8",
+      "document_sha256": "df84157f7b84078bdc60def3339cabdc62f4b652a3a2580e0956b0c23c6a95f6",
+      "inspected_at": "2026-10-08T21:59:03Z",
+      "note": "Reuters, October 8, 2026: Chief Justice John Roberts issued an administrative stay pausing the Fourth Circuit deadline that required the FCC to act on a challenge to its political-advertising rate policy by Friday. The response is due Saturday; the temporary stay is not a merits ruling."
+    },
+    {
+      "source_id": "scotus_brown_fcc_docket_26a274",
+      "document_sha256": "6b6f5744068ecdc0708abc740e27c4a97db2ba2705870054251deeec8fd6f87e",
+      "inspected_at": "2026-10-08T21:59:03Z",
+      "note": "Supreme Court docket 26A274 and emergency application metadata identify the FCC political-advertising dispute, parties, lower-court proceeding and application history. The October 8 administrative-stay action was confirmed in the independently inspected Reuters report, not inferred from an inaccessible order text."
+    },
+    {
+      "source_id": "ap_fema_rescinds_election_conditions_oct8",
+      "document_sha256": "4fa77caf384a97552d046b180736d2d3cabd83b8a972d297469142241bee7390",
+      "inspected_at": "2026-10-08T21:59:03Z",
+      "note": "Associated Press, October 8, 2026: FEMA informed states that it was rescinding election-related requirements from the Homeland Security Grant Program after a federal district court ruled the conditions unlawful. The program distributes about $1 billion; the rescission implements the immediate policy retreat while litigation can continue."
+    },
+    {
+      "source_id": "ap_hasan_livestream_oct8",
+      "document_sha256": "75a0537110ae2ee92b6dbbc2f3de21c16b846a5c6cb2873763205277843d482e",
+      "inspected_at": "2026-10-08T21:59:03Z",
+      "note": "Associated Press, October 8, 2026: Acting Army Secretary Michael Obadal set Nidal Hasan's execution for December 3 at Fort Hood, and the Pentagon said Thursday that the execution would be livestreamed. The report notes Hasan can pursue habeas relief and the date may change."
+    }
+  ],
+  "withheld": [
+    {
+      "title": "Three new Truth Social statements",
+      "reason": "Campaign rhetoric, rhetorical clarification and inflammatory conditional rhetoric did not independently establish a new government action."
+    },
+    {
+      "title": "DHS attack on congressional candidate",
+      "reason": "A Hatch Act complaint was filed, but no OSC investigation or finding was located by cutoff."
+    },
+    {
+      "title": "Mifepristone recovery-plan filing",
+      "reason": "The reported filing preceded this exact source window, and the primary filing remained unretrieved; existing recovery lead preserved."
+    },
+    {
+      "title": "Trump TV page recheck",
+      "reason": "No post-boundary recording or transcript was available; no qualifying new item located in the material reviewed."
+    }
+  ],
+  "corrections": []
+}

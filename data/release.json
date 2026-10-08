@@ -1,30 +1,35 @@
 {
-  "version": "10.125.0",
+  "version": "10.126.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-08T16:00:50Z",
-    "through_utc": "2026-10-08T16:33:38Z",
+    "from_utc": "2026-10-08T16:33:38Z",
+    "through_utc": "2026-10-08T21:59:03Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact scan from the prior successful boundary. One qualifying time-limited Iran war-powers announcement materially refreshed the existing event; two new Truth Social posts were reviewed."
+    "note": "Exact scan from the prior successful boundary. One Supreme Court procedural action was added; FEMA's grant-condition rescission and the Hasan execution schedule/livestream announcement materially refreshed existing records. Three new Truth Social posts were reviewed."
   },
   "release_iso": "2026-10-08",
   "release_human": "October 8, 2026",
-  "checked_at": "2026-10-08 12:33 PM EDT",
-  "previous_version": "10.124.0",
-  "previous_checked_at": "2026-10-08 12:00 PM EDT",
-  "window_started_at": "2026-10-08 12:00 PM EDT",
-  "window_ended_at": "2026-10-08 12:33 PM EDT",
+  "checked_at": "2026-10-08 5:59 PM EDT",
+  "previous_version": "10.125.0",
+  "previous_checked_at": "2026-10-08 12:33 PM EDT",
+  "window_started_at": "2026-10-08 12:33 PM EDT",
+  "window_ended_at": "2026-10-08 5:59 PM EDT",
   "week_start": "2026-10-02",
   "week_end": "2026-10-08",
   "week_label": "2026-10-02 through 2026-10-08",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-08-17-001"
+    "NAT-2026-10-08-005",
+    "NAT-2026-09-28-005",
+    "NAT-2026-10-05-005"
   ],
-  "added_entry_ids": [],
+  "added_entry_ids": [
+    "NAT-2026-10-08-005"
+  ],
   "refreshed_entry_ids": [
-    "NAT-2026-08-17-001"
+    "NAT-2026-09-28-005",
+    "NAT-2026-10-05-005"
   ],
   "dedupe_resolutions": [
     {
@@ -686,15 +691,35 @@
       "target_id": "NAT-2026-10-08-002",
       "decision": "distinct_lifecycle_stage",
       "notes": "The shared official press-conference page reported two distinct exercises of power: a company-specific PERM processing suspension and a subpoena-backed inspector-general investigation of universities. Separate targets, authorities and outcome tests justify separate records."
+    },
+    {
+      "entry_id": "NAT-2026-10-08-005",
+      "target_id": "NAT-2026-10-08-005",
+      "decision": "false_positive",
+      "notes": "No existing current or legacy event, normalized title, source URL or recent maintenance pull request matched the October 8 Supreme Court administrative stay."
+    },
+    {
+      "entry_id": "NAT-2026-09-28-005",
+      "target_id": "NAT-2026-09-28-005",
+      "decision": "same_event_update",
+      "notes": "The rescission implements the same grant-condition litigation development; stable canonical ID retained."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Truth Social ‘Super Intelligence’ terminology statement",
-      "reason": "Rhetoric duplicating an existing terminology record; no new instrument or implementation located."
+      "title": "Three new Truth Social statements",
+      "reason": "Campaign rhetoric, rhetorical clarification and inflammatory conditional rhetoric did not independently establish a new government action."
     },
     {
-      "title": "Trump TV short-window page recheck",
+      "title": "DHS release attacking Janelle Stelson",
+      "reason": "A Hatch Act complaint was filed, but no OSC investigation or finding was located by cutoff."
+    },
+    {
+      "title": "Mifepristone recovery-plan filing",
+      "reason": "The reported filing preceded this exact window, and the primary filing remained unretrieved; existing recovery lead preserved."
+    },
+    {
+      "title": "Trump TV page recheck",
       "reason": "No post-boundary recording or transcript was available; no qualifying new item located in the material reviewed."
     }
   ],
@@ -702,11 +727,11 @@
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-08T16:33:38Z",
-    "checked_at_eastern": "2026-10-08 12:33 PM EDT",
+    "checked_at": "2026-10-08T21:59:03Z",
+    "checked_at_eastern": "2026-10-08 5:59 PM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-08T16:33:38Z",
+    "last_successful_page_inspection_at": "2026-10-08T21:59:03Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -717,7 +742,7 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, videos, remarks and releases pages were inspected. The linked stream remained A4gNgHfZ-v4 and the dated video library still ended with the two October 7 uploads already reviewed as metadata. No post-boundary recording or transcript was available. No qualifying new Trump TV item located in the material reviewed, and no verified new channel cost, contract, staffing/control, distribution, press-access consequence, investigation or finding was located.",
+    "summary": "Official Trump TV, live, videos, remarks and releases pages were inspected. The linked stream remained A4gNgHfZ-v4; fallback text was not treated as proof of an outage. The dated video library still ended with two October 7 uploads already reviewed as metadata. The releases index added October 8 science-package and medals material; the science package was already canonical and the medals were ceremonial. No post-boundary recording or transcript was available. No qualifying new Trump TV item located in the material reviewed, and no verified new channel cost, contract, staffing/control, distribution, press-access consequence, investigation or finding was located.",
     "items": [
       {
         "url": "https://www.whitehouse.gov/videos/president-trump-delivers-remarks-oct-6-2026/",
@@ -1123,6 +1148,65 @@
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official releases index inspected as supplementary leads; listings do not prove that statements aired on Trump TV.",
         "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-08T21:59:03Z",
+        "observed_at_eastern": "2026-10-08 5:59 PM EDT",
+        "format": "official page metadata; audiovisual content unreviewed",
+        "inspection": "Official page metadata retained stream ID A4gNgHfZ-v4. Fallback text was visible but was not treated as proof that the stream was offline; audiovisual content was not reviewed.",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ]
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-08T21:59:03Z",
+        "observed_at_eastern": "2026-10-08 5:59 PM EDT",
+        "format": "official page metadata; audiovisual content unreviewed",
+        "inspection": "Official live hub metadata linked the same stream. Platform state and audiovisual content were not reviewed.",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ]
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-08T21:59:03Z",
+        "observed_at_eastern": "2026-10-08 5:59 PM EDT",
+        "format": "official page metadata; audiovisual content unreviewed",
+        "inspection": "Official dated listing still ended with two October 7 uploads already reviewed as metadata. No October 8 recording was available; footage, audio and captions were not retrieved.",
+        "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-08T21:59:03Z",
+        "observed_at_eastern": "2026-10-08 5:59 PM EDT",
+        "format": "official page metadata; audiovisual content unreviewed",
+        "inspection": "Supplementary remarks index exposed no new October 8 transcript and is not assumed to be a complete transcript feed.",
+        "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-08T21:59:03Z",
+        "observed_at_eastern": "2026-10-08 5:59 PM EDT",
+        "format": "official page metadata; audiovisual content unreviewed",
+        "inspection": "October 8 science-package and medals releases were inspected as page text; the science package was already canonical and the medals were ceremonial. A release listing does not prove Trump TV broadcast.",
+        "video_ids": []
       }
     ],
     "gaps": [
@@ -1512,21 +1596,21 @@
     "counts": {
       "text_status": {
         "not_recorded": 137,
-        "reviewed": 464,
+        "reviewed": 467,
         "pending": 969
       },
       "media_status": {
-        "not_applicable": 771,
+        "not_applicable": 774,
         "not_recorded": 19,
         "unavailable": 235,
         "pending": 462,
         "reviewed": 83
       }
     },
-    "new_posts": 2,
-    "source_rows_added": 2,
-    "new_text_reviewed": 2,
-    "new_nonempty_text_reviewed": 2,
+    "new_posts": 3,
+    "source_rows_added": 3,
+    "new_text_reviewed": 3,
+    "new_nonempty_text_reviewed": 3,
     "new_empty_text_inspected": 0,
     "new_image_assets_reviewed": 0,
     "new_image_posts_reviewed": 0,
@@ -1534,16 +1618,16 @@
     "new_video_assets_reviewed": 0,
     "new_media_reviewed": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-08T16:34:39.683279Z",
-    "checked_at_eastern": "2026-10-08 12:34:39 PM EDT",
-    "latest_post_at_utc": "2026-10-08T16:17:11.021000Z",
-    "latest_post_at_eastern": "2026-10-08 12:17:11 PM EDT",
-    "latest_post_id": "117406186276133332",
+    "checked_at_utc": "2026-10-08T21:59:39.989510Z",
+    "checked_at_eastern": "2026-10-08 5:59:39 PM EDT",
+    "latest_post_at_utc": "2026-10-08T20:30:13.223000Z",
+    "latest_post_at_eastern": "2026-10-08 4:30:13 PM EDT",
+    "latest_post_id": "117407181257047860",
     "no_new_post_finding": false,
-    "note": "Two posts entered after the prior snapshot. The newest, at 12:17:11 PM EDT, announced no U.S. attack on Iran before November 3 while saying the blockade remains and materially refreshed the existing Iran record. The earlier terminology post was withheld as rhetoric without a new instrument."
+    "note": "Three posts entered after the prior snapshot. The newest, at 4:30:13 PM EDT, conditionally suggested federal help after a state or city request but no request or deployment action was located. All three were reviewed and withheld as campaign rhetoric, rhetorical clarification or inflammatory conditional rhetoric without an independently verified qualifying government action."
   },
   "archive_network_inspection": {
-    "checked_at": "2026-10-08T16:33:38Z",
-    "note": "All four registered primary projects were rechecked. Trump Archive displayed 14,624 total items, 12,086 Truth Social posts and 1,889 speeches/transcripts. UndoTrump remained at 1,264 actions and the Immigration Policy Tracking Project remained at 1,809 policy actions. Record47's homepage remained at 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts while current API values were not reverified; preserved API measurements and the discrepancy remain disclosed. Units remain separate and zero external canonical entries were imported."
+    "checked_at": "2026-10-08T21:59:03Z",
+    "note": "All four registered primary projects were rechecked. Trump Archive displayed 14,629 total items, 12,090 Truth Social posts and 1,890 speeches/transcripts. UndoTrump remained at 1,264 actions and the Immigration Policy Tracking Project remained at 1,809 policy actions. Record47's homepage displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts while current API endpoints were inaccessible; preserved API measurements and the discrepancy remain disclosed. Units remain separate and zero external canonical entries were imported."
   }
 }
