@@ -1,0 +1,112 @@
+{
+  "version": "10.124.0",
+  "base_release_version": "10.123.0",
+  "base_commit": "8757bf0fdb04af33e55500df5948d3a895071d8b",
+  "research_window": {
+    "from_utc": "2026-10-08T03:58:50Z",
+    "through_utc": "2026-10-08T16:00:50Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Exact scan from the prior successful boundary. Four qualifying records were consolidated by event; a new Truth Social video was reviewed as a duplicate commentary lead."
+  },
+  "publication_authorization": "The user authorizes maintenance branches, pull requests and merging after evidence, local acceptance and successful CI.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-08-001",
+      "kind": "added",
+      "summary": "Officials said new and pending PERM applications involving Microsoft, Adobe and six large IT services firms would not be processed; the fraud allegations are not adjudicated findings.",
+      "duplicate_review": "Compared by stable ID, normalized title, date, source URLs, active current and legacy records and recent maintenance pull requests; no same-event active record was located, and the science summit was consolidated into one package record."
+    },
+    {
+      "entry_id": "NAT-2026-10-08-002",
+      "kind": "added",
+      "summary": "The investigation covers Harvard, Yale, Stanford and six other institutions; subpoenas establish a formal inquiry, not findings of visa abuse or unlawful foreign influence.",
+      "duplicate_review": "Compared by stable ID, normalized title, date, source URLs, active current and legacy records and recent maintenance pull requests; no same-event active record was located, and the science summit was consolidated into one package record."
+    },
+    {
+      "entry_id": "NAT-2026-10-08-003",
+      "kind": "added",
+      "summary": "The summit bundled new compute credits, research infrastructure, fellowships, competitions and partnerships; the headline includes federal, industry, university and philanthropic commitments and is not a new federal appropriation total.",
+      "duplicate_review": "Compared by stable ID, normalized title, date, source URLs, active current and legacy records and recent maintenance pull requests; no same-event active record was located, and the science summit was consolidated into one package record."
+    },
+    {
+      "entry_id": "NAT-2026-10-08-004",
+      "kind": "added",
+      "summary": "The official report lists four August Nvidia purchases and one sale; the disclosure establishes financial exposure and a potential conflict question, not that any policy was altered for the holding.",
+      "duplicate_review": "Compared by stable ID, normalized title, date, source URLs, active current and legacy records and recent maintenance pull requests; no same-event active record was located, and the science summit was consolidated into one package record."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "wh_live_visa_fraud_oct8",
+      "document_sha256": "03f69f4e4d27e8d801e3d17d519c04261d7e9d230cbe58239c376927ddbc118f",
+      "inspected_at": "2026-10-08T16:00:50Z",
+      "note": "White House Live headline: Vice President JD Vance Holds Press Conference on Fighting Visa Fraud; page inspected as event metadata, not a transcript or complete recording."
+    },
+    {
+      "source_id": "reuters_perm_suspensions_oct8",
+      "document_sha256": "8f1577be6a10d247b3d3194e842a775c917935e534977353e65d7cb64113398a",
+      "inspected_at": "2026-10-08T16:00:50Z",
+      "note": "Reuters lines 177-189: eight firms named; no new or pending PERM applications accepted or processed; nine universities investigated; subpoenas served; alleged fraud and research-security rationale."
+    },
+    {
+      "source_id": "ap_perm_suspensions_oct8",
+      "document_sha256": "acda06bea1aae5677879d579e8118d1462ddf53665fc79466dacd0d598668ba5",
+      "inspected_at": "2026-10-08T16:00:50Z",
+      "note": "AP lines 1832 onward: Microsoft suspension, PERM process, J-1 and outsourcing allegations, nine named universities, administration rationale and lack of immediate institutional responses."
+    },
+    {
+      "source_id": "wh_science_package_oct8",
+      "document_sha256": "822c1392bc5141e99f5ca37d5cc87e10cc804b0da41dcab9f9a5d58669e5361c",
+      "inspected_at": "2026-10-08T16:00:50Z",
+      "note": "White House fact-sheet lines 149-182: mixed $6B headline, $2.4B industry credits, regional compute, instruments, fellowships, NASA-DOE MOU, quantum and research-organization programs."
+    },
+    {
+      "source_id": "wapo_science_package_oct8",
+      "document_sha256": "0a73221901d30a8cbee8e84749fbeb3576778e8c93f014dce2f4f2e1abcfd6ac",
+      "inspected_at": "2026-10-08T16:00:50Z",
+      "note": "Washington Post lines 24-61: compute, consortium and fellowship announcements; prior research cuts and withholding; administration merit and high-impact-science responses."
+    },
+    {
+      "source_id": "axios_science_summit_oct7",
+      "document_sha256": "59895abee748c23c67fa262fe0d41e8984ee311a5fa8c6913514b328278e44f7",
+      "inspected_at": "2026-10-08T16:00:50Z",
+      "note": "Axios lines 45-58: more than $1B industry commitments, Southeast compute hub, Georgia investment, $100M instruments, Genesis context."
+    },
+    {
+      "source_id": "oge_trump_278t_sep17",
+      "document_sha256": "0167e9f0621ba6d88722b466130209b9419f3b50bd58e5fb16bd31cc2a6fcb84",
+      "inspected_at": "2026-10-08T16:00:50Z",
+      "note": "OGE 278-T pages 2, 10, 12, 15 and 16: four Nvidia purchases and one sale with dates and value ranges; signed September 17 and received September 25."
+    },
+    {
+      "source_id": "reuters_trump_nvidia_trades_oct8",
+      "document_sha256": "c1290775d74a13e1aee443b3184b97a55b63bb79601d6ca985a9461aafe10c43",
+      "inspected_at": "2026-10-08T16:00:50Z",
+      "note": "Reuters lines 151-175: Nvidia trade totals, chip-policy context, science medal timing and White House independent-manager/index-replication response."
+    }
+  ],
+  "withheld": [
+    {
+      "title": "New Truth Social Fox News video",
+      "reason": "The 12-minute attached clip was downloaded and sampled visually every 10 seconds. It repeated Smithsonian/DEI commentary already reviewed in the prior snapshot; audio was not independently transcribed and no new government action qualified."
+    },
+    {
+      "title": "Trump TV midday pages",
+      "reason": "Official page metadata, the live hub, dated video library, remarks and releases were inspected. No post-boundary recording or transcript was accessible; no qualifying new item located in the material reviewed."
+    },
+    {
+      "title": "Reported U.S.-Myanmar direct talks",
+      "reason": "The consequential account rested principally on unnamed sources and lacked the required second independent confirmation or official record by cutoff."
+    },
+    {
+      "title": "FDA mifepristone review litigation",
+      "reason": "The relevant filing and first reporting preceded the exact source window; retained as a prior-window recovery lead pending complete primary-filing review rather than misdated as an October 8 action."
+    },
+    {
+      "title": "Science medals and summit ceremony",
+      "reason": "Ceremonial awards were not counted separately from the substantive science package."
+    }
+  ],
+  "corrections": []
+}

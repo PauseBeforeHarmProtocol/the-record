@@ -1,33 +1,37 @@
 {
-  "version": "10.123.0",
+  "version": "10.124.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-07T22:04:16Z",
-    "through_utc": "2026-10-08T03:58:50Z",
+    "from_utc": "2026-10-08T03:58:50Z",
+    "through_utc": "2026-10-08T16:00:50Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact scan from the previous successful boundary. Two existing records received material complaint-stage refreshes; no additional item was added merely to reach a target count."
+    "note": "Exact scan from the prior successful boundary. Four qualifying records were consolidated by event; a new Truth Social video was reviewed as a duplicate commentary lead."
   },
-  "release_iso": "2026-10-07",
-  "release_human": "October 7, 2026",
-  "checked_at": "2026-10-07 11:58 PM EDT",
-  "previous_version": "10.122.0",
-  "previous_checked_at": "2026-10-07 6:04 PM EDT",
-  "window_started_at": "2026-10-07 6:04 PM EDT",
-  "window_ended_at": "2026-10-07 11:58 PM EDT",
-  "week_start": "2026-10-01",
-  "week_end": "2026-10-07",
-  "week_label": "2026-10-01 through 2026-10-07",
+  "release_iso": "2026-10-08",
+  "release_human": "October 8, 2026",
+  "checked_at": "2026-10-08 12:00 PM EDT",
+  "previous_version": "10.123.0",
+  "previous_checked_at": "2026-10-07 11:58 PM EDT",
+  "window_started_at": "2026-10-07 11:58 PM EDT",
+  "window_ended_at": "2026-10-08 12:00 PM EDT",
+  "week_start": "2026-10-02",
+  "week_end": "2026-10-08",
+  "week_label": "2026-10-02 through 2026-10-08",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-09-15-001",
-    "NAT-2026-09-24-002"
+    "NAT-2026-10-08-001",
+    "NAT-2026-10-08-002",
+    "NAT-2026-10-08-003",
+    "NAT-2026-10-08-004"
   ],
-  "added_entry_ids": [],
-  "refreshed_entry_ids": [
-    "NAT-2026-09-15-001",
-    "NAT-2026-09-24-002"
+  "added_entry_ids": [
+    "NAT-2026-10-08-001",
+    "NAT-2026-10-08-002",
+    "NAT-2026-10-08-003",
+    "NAT-2026-10-08-004"
   ],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -658,47 +662,69 @@
       "target_id": "NAT-2026-10-07-007",
       "decision": "false_positive",
       "notes": "The White House announced both bill signings on one page, but H.R. 5345 and S. 766 are separate enacted statutes with different legal duties, implementing institutions and outcome tests."
+    },
+    {
+      "entry_id": "NAT-2026-10-08-001",
+      "target_id": "NAT-2026-09-18-012",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The September order established interagency H-1B screening; the October 8 action imposes company-specific PERM processing suspensions on eight firms."
+    },
+    {
+      "entry_id": "NAT-2026-10-08-002",
+      "target_id": "NAT-2026-10-01-006",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The October 1 court order concerns publication of foreign-donor identities; the October 8 subpoenas open a different inspector-general visa and foreign-influence investigation."
+    },
+    {
+      "entry_id": "NAT-2026-10-08-003",
+      "target_id": "NAT-2026-09-29-003",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The September naming directive changed executive terminology; the October 8 package launches specific funding, infrastructure, fellowship, competition and partnership mechanisms. Connected summit components are consolidated into one record."
+    },
+    {
+      "entry_id": "NAT-2026-10-08-004",
+      "target_id": "NAT-2026-10-08-004",
+      "decision": "false_positive",
+      "notes": "No existing current or legacy event, normalized title, source URL or recent maintenance pull request matched the newly public Nvidia transaction disclosure and policy-overlap issue."
+    },
+    {
+      "entry_id": "NAT-2026-10-08-001",
+      "target_id": "NAT-2026-10-08-002",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The shared official press-conference page reported two distinct exercises of power: a company-specific PERM processing suspension and a subpoena-backed inspector-general investigation of universities. Separate targets, authorities and outcome tests justify separate records."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Five new Truth Social posts",
-      "reason": "Three campaign endorsements, one Fox News Smithsonian/DEI commentary clip and one unsourced oil-price chart did not independently establish a qualifying government action."
+      "title": "New Truth Social Fox News video",
+      "reason": "The 12-minute attached clip was downloaded and sampled visually every 10 seconds. It repeated Smithsonian/DEI commentary already reviewed in the prior snapshot; audio was not independently transcribed and no new government action qualified."
     },
     {
-      "title": "Two new October 7 Trump TV library uploads",
-      "reason": "Official metadata only was available. The Trump Accounts announcement duplicates an existing Treasury-rule record; the press gaggle yielded no independently verified qualifying action."
+      "title": "Trump TV midday pages",
+      "reason": "Official page metadata, the live hub, dated video library, remarks and releases were inspected. No post-boundary recording or transcript was accessible; no qualifying new item located in the material reviewed."
     },
     {
-      "title": "Western Union third restitution phase",
-      "reason": "Prior-window recovery and routine continuation of an existing enforcement distribution; retained as a lead without pretending it occurred in this source window."
+      "title": "Reported U.S.-Myanmar direct talks",
+      "reason": "The consequential account rested principally on unnamed sources and lacked the required second independent confirmation or official record by cutoff."
     },
     {
-      "title": "Heal360 False Claims Act settlement",
-      "reason": "Prior-window recovery and routine case settlement below this run’s national materiality threshold."
+      "title": "FDA mifepristone review litigation",
+      "reason": "The relevant filing and first reporting preceded the exact source window; retained as a prior-window recovery lead pending complete primary-filing review rather than misdated as an October 8 action."
     },
     {
-      "title": "Reported Kurt Olsen clearance",
-      "reason": "Consequential account rested on unnamed sources without the required second independent confirmation."
-    },
-    {
-      "title": "PhRMA MFN lawsuit",
-      "reason": "Already queued complaint-stage lead with no new post-boundary development located."
-    },
-    {
-      "title": "Ceremonial proclamations, Texas promotion and DOJ outreach tour",
-      "reason": "No material signed policy, expenditure, implementation, ruling or measured outcome."
+      "title": "Science medals and summit ceremony",
+      "reason": "Ceremonial awards were not counted separately from the substantive science package."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-08T03:58:50Z",
-    "checked_at_eastern": "2026-10-07 11:58 PM EDT",
+    "checked_at": "2026-10-08T16:00:50Z",
+    "checked_at_eastern": "2026-10-08 12:00 PM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-08T03:58:50Z",
+    "last_successful_page_inspection_at": "2026-10-08T16:00:50Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -709,7 +735,7 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, videos, remarks and releases pages were inspected. The linked stream remained A4gNgHfZ-v4. Two October 7 uploads were new to the dated library: a departure gaggle and a Trump Accounts announcement. Metadata only was retrieved; the latter repeats an existing canonical Treasury-rule event. No qualifying new item located in the material reviewed, and no verified new channel cost, contract, staffing/control, distribution, press-access consequence, investigation or finding was located.",
+    "summary": "Official Trump TV, live, videos, remarks and releases pages were inspected. The linked stream remained A4gNgHfZ-v4. The dated video library still ended with two October 7 uploads already reviewed as metadata; no post-boundary recording or transcript was available. The live hub surfaced a visa-fraud press-conference headline that was independently researched and published as two distinct actions. No qualifying new Trump TV item located in the material reviewed, and no verified new channel cost, contract, staffing/control, distribution, press-access consequence, investigation or finding was located.",
     "items": [
       {
         "url": "https://www.whitehouse.gov/videos/president-trump-delivers-remarks-oct-6-2026/",
@@ -997,6 +1023,65 @@
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official releases index inspected as supplementary leads; listings do not prove that statements aired on Trump TV.",
         "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-08T16:00:50Z",
+        "observed_at_eastern": "2026-10-08 12:00 PM EDT",
+        "format": "official page metadata; audiovisual content unreviewed",
+        "inspection": "Official HTML retained stream ID A4gNgHfZ-v4. Page metadata only inspected; fallback text was not treated as an outage.",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ]
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-08T16:00:50Z",
+        "observed_at_eastern": "2026-10-08 12:00 PM EDT",
+        "format": "official page metadata; audiovisual content unreviewed",
+        "inspection": "Official live hub metadata was inspected. It surfaced a visa-fraud press-conference headline, used only as an official event lead; no stream footage, audio or captions were retrieved.",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ]
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-08T16:00:50Z",
+        "observed_at_eastern": "2026-10-08 12:00 PM EDT",
+        "format": "official page metadata; audiovisual content unreviewed",
+        "inspection": "Official dated listing still ended with two October 7 uploads already reviewed as metadata. No post-boundary recording was listed; footage and captions were not retrieved.",
+        "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-08T16:00:50Z",
+        "observed_at_eastern": "2026-10-08 12:00 PM EDT",
+        "format": "official page metadata; audiovisual content unreviewed",
+        "inspection": "Supplementary remarks index was inspected; it had no October 8 transcript and is not assumed to be a complete Trump TV transcript feed.",
+        "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-08T16:00:50Z",
+        "observed_at_eastern": "2026-10-08 12:00 PM EDT",
+        "format": "official page metadata; audiovisual content unreviewed",
+        "inspection": "Official releases index was inspected as a supplementary lead source. The separate October 8 science fact sheet was researched directly; the listing does not establish broadcast coverage.",
+        "video_ids": []
       }
     ],
     "gaps": [
@@ -1015,9 +1100,10 @@
       "This overnight check found unchanged official page metadata and did not retrieve stream or recording audiovisual content or captions. The complete broadcast-review boundary remains unknown and is not advanced.",
       "This midday check inspected official page metadata but did not retrieve stream or recording audiovisual content or captions. The complete broadcast-review boundary remains unknown and is not advanced.",
       "This evening check inspected official page metadata but did not retrieve stream or recording audiovisual content or captions. The complete broadcast-review boundary remains unknown and is not advanced.",
-      "This late-evening check inspected official page metadata but did not retrieve the two new recordings, stream audiovisual content or captions. The complete broadcast-review boundary remains unknown and is not advanced."
+      "This late-evening check inspected official page metadata but did not retrieve the two new recordings, stream audiovisual content or captions. The complete broadcast-review boundary remains unknown and is not advanced.",
+      "This midday check inspected official page metadata but retrieved no post-boundary recording, complete stream recording, audio or captions. The complete broadcast-review boundary remains unknown and is not advanced."
     ],
-    "previous_page_inspection_at": "2026-10-07T22:04:16Z",
+    "previous_page_inspection_at": "2026-10-08T03:58:50Z",
     "historical_inspections": [
       {
         "url": "https://www.whitehouse.gov/videos/america-gov-launch/",
@@ -1384,38 +1470,38 @@
     "counts": {
       "text_status": {
         "not_recorded": 137,
-        "reviewed": 461,
-        "pending": 969
+        "reviewed": 462,
+        "pending": 968
       },
       "media_status": {
         "not_applicable": 769,
         "not_recorded": 19,
         "unavailable": 235,
-        "pending": 462,
-        "reviewed": 82
+        "pending": 461,
+        "reviewed": 83
       }
     },
-    "new_posts": 5,
-    "source_rows_added": 5,
-    "new_text_reviewed": 5,
-    "new_nonempty_text_reviewed": 3,
-    "new_empty_text_inspected": 2,
-    "new_image_assets_reviewed": 1,
-    "new_image_posts_reviewed": 1,
+    "new_posts": 1,
+    "source_rows_added": 1,
+    "new_text_reviewed": 1,
+    "new_nonempty_text_reviewed": 0,
+    "new_empty_text_inspected": 1,
+    "new_image_assets_reviewed": 0,
+    "new_image_posts_reviewed": 0,
     "new_video_assets_pending": 0,
     "new_video_assets_reviewed": 1,
-    "new_media_reviewed": 2,
+    "new_media_reviewed": 1,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-08T04:01:20.919441Z",
-    "checked_at_eastern": "2026-10-08 12:01:20 AM EDT",
-    "latest_post_at_utc": "2026-10-08T03:54:44.509000Z",
-    "latest_post_at_eastern": "2026-10-07 11:54:44 PM EDT",
-    "latest_post_id": "117403266875935747",
+    "checked_at_utc": "2026-10-08T16:02:43.460866Z",
+    "checked_at_eastern": "2026-10-08 12:02:43 PM EDT",
+    "latest_post_at_utc": "2026-10-08T12:29:08.148000Z",
+    "latest_post_at_eastern": "2026-10-08 8:29:08 AM EDT",
+    "latest_post_id": "117405289555366837",
     "no_new_post_finding": false,
-    "note": "Five posts entered after the prior snapshot. Three endorsement posts, one commentary video and one unsourced oil chart were reviewed; none independently established a qualifying government action. The newest post was published October 7 at 11:54:44 PM EDT in Indianapolis."
+    "note": "One post entered after the prior snapshot. Its attached Fox News commentary video was downloaded and sampled visually every 10 seconds; it duplicated a previously reviewed Smithsonian/DEI commentary lead, its audio was not independently transcribed and it established no qualifying new government action. The newest post was published October 8 at 8:29:08 AM EDT in Indianapolis."
   },
   "archive_network_inspection": {
-    "checked_at": "2026-10-08T03:58:50Z",
-    "note": "All four registered primary projects were rechecked. Trump Archive displayed 14,622 total items, 12,084 Truth Social posts and 1,889 speeches/transcripts. UndoTrump remained at 1,264 actions. The Immigration Policy Tracking Project browse page advanced to 1,809 policy actions. Record47’s homepage remained at 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts while its API remained inaccessible; preserved API measurements and the discrepancy remain disclosed. Units remain separate and zero external canonical entries were imported."
+    "checked_at": "2026-10-08T16:00:50Z",
+    "note": "All four registered primary projects were rechecked. Trump Archive displayed 14,623 total items, 12,085 Truth Social posts and 1,889 speeches/transcripts. UndoTrump remained at 1,264 actions and the Immigration Policy Tracking Project remained at 1,809 policy actions. Record47's homepage remained at 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts while its API was inaccessible; preserved API measurements and the discrepancy remain disclosed. Units remain separate and zero external canonical entries were imported."
   }
 }
