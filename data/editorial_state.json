@@ -5677,6 +5677,30 @@
       "provenance_path": "data/editorial_change_notes/10.122.0.json",
       "provenance_sha256": "281b10c7944b117f8c2280133779a9ea60d824e04f40fe15a976938fe15cb266",
       "note": "Evidence-as-of time recorded; action, disclosure and litigation dates remain distinct. Claim-level support and separate reasoning-layer review preserved."
+    },
+    {
+      "change_id": "10.123.0:NAT-2026-09-15-001",
+      "entry_id": "NAT-2026-09-15-001",
+      "as_of_utc": "2026-10-08T03:58:50Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.123.0",
+      "summary": "Refreshed the election-contingency record with the first amended LULAC complaint, additional defendants and a Voting Rights Act claim while preserving complaint-only status.",
+      "provenance_path": "data/editorial_change_notes/10.123.0.json",
+      "provenance_sha256": "f21d4d9f3e6c1e3ee0b1d3dd4fb6d78459b54908fdf161bb3b2a9024d3da629f",
+      "note": "Evidence-as-of time recorded; allegations, reported spending and court outcomes remain distinct."
+    },
+    {
+      "change_id": "10.123.0:NAT-2026-09-24-002",
+      "entry_id": "NAT-2026-09-24-002",
+      "as_of_utc": "2026-10-08T03:58:50Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.123.0",
+      "summary": "Refreshed the government-paid advertising record with AP’s report of a second complaint and updated named-media spending estimate, with no ruling or audited disbursement inferred.",
+      "provenance_path": "data/editorial_change_notes/10.123.0.json",
+      "provenance_sha256": "f21d4d9f3e6c1e3ee0b1d3dd4fb6d78459b54908fdf161bb3b2a9024d3da629f",
+      "note": "Evidence-as-of time recorded; allegations, reported spending and court outcomes remain distinct."
     }
   ],
   "reviews": [
@@ -65851,6 +65875,464 @@
       ],
       "unresolved_questions": [
         "Implementation, compliance, litigation and measured effects remain unresolved except where the entry expressly states completed action."
+      ]
+    },
+    {
+      "review_id": "10.123.0:NAT-2026-09-15-001:24f03e20d0a8",
+      "entry_id": "NAT-2026-09-15-001",
+      "content_sha256": "24f03e20d0a81bc49b7702aeaec8e5f6c79d796c39ddbbdaaa48cf74a66799ad",
+      "reviewed_at": "2026-10-08T03:58:50Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "13e16c5732692b6013ee0503609d5ab7e496baf99e4ff4b442aff0b41822c801",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5c1fd948c44f4fc397f74ec70766456f35fd55524f9d2ad6b92a7e1c6236096d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "dfa486cba537cd35b767fecb69d2a4e395cd93df18c6cfc04ac346138f340181",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "b116c5b45a437276769649e93bbc9c178dce43faffdff88b124f164dc93bdaa5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "a854a85cf55de1fe381280487ae4482253f846fd3e489cfbc74a3d7eab78e4dc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "2269c3d0b22849a6ab540889cd453e102a3c05b873ad0e747f2ea28d700b4924",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "90f7dc0acc75549f11792e644a53f7b8675e51ef33a42cff26447faae5d6dd4b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "lulac_polling_places_amended_complaint_oct7",
+              "locator": "First amended complaint caption, paragraphs describing the challenged DHS/ICE and DOJ/FBI policies, added Voting Rights Act claim and prayer for relief.",
+              "inspected_at": "2026-10-08T03:58:50Z",
+              "document_sha256": "1396c52437f9e39e595fe9331a670d52c55e046566a5b24ea76a4d50c07b5856",
+              "origin_group": "U.S. District Court for the District of Columbia via Democracy Forward",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "democracy_forward_lulac_amended_oct7",
+              "locator": "Litigant release identifying added plaintiffs, defendants and claims; treated as party characterization, not an independent merits finding.",
+              "inspected_at": "2026-10-08T03:58:50Z",
+              "document_sha256": "59649634a1d7eabb4c868afa239e1f1bc24500290fec087899a5271e8f5a7470",
+              "origin_group": "Democracy Forward",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "4c1b7ed0bec24fa95daf3e2a319a65fd40bd7ec9b7d2fa2979e9d0c4f1659407",
+          "review_note": "Separately reviewed as bounded significance analysis tied to the documented action and litigation limits."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "d3aa7150990e1984fadb4c6686de6e1e97af0f716438c065ce2c79f06f0453cf",
+          "review_note": "Preserved the strongest relevant administration response and concrete evidentiary tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "7ca2ee16d8d0b1165b8824133853b742adcb23973afa20bc57228e44d4cc0a3e",
+          "review_note": "Separately reviewed alternatives and an evidence-bound Therefore; allegations are not presented as findings."
+        }
+      ],
+      "unresolved_questions": [
+        "The defendants’ response, any court order, discovery, actual polling-place deployment and measured election effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.123.0:NAT-2026-09-24-002:d0ddbd4eb160",
+      "entry_id": "NAT-2026-09-24-002",
+      "content_sha256": "d0ddbd4eb160b48d6999fbd4c1d9bca8bee839f0b35182fa715ca47416014d6a",
+      "reviewed_at": "2026-10-08T03:58:50Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "d79516c09c3c3c74caf288d84069adf24b5df8f1634013d928e68a1c2a1ebc6c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "jec_hassan_ad_records_sep24",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "318ce9b2252b788b608fdf21a5f217ac4c9e1a5d023b1e6bb16932a4d13a8376",
+              "origin_group": "U.S. Congress Joint Economic Committee Democrats",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_collins_ads_oversight_sep29",
+              "locator": "Inspected source text or filing; hash preserves the reviewed source record.",
+              "inspected_at": "2026-09-29T16:12:00Z",
+              "document_sha256": "166a919d6e494cc230152c5e70264a343221642432d01bc0f745801564ecbe3e",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "8c73cc5c8429291aca7a57451bc269372d339da712d26118ec7248e77bacabc0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_campaign_ad_sep27",
+              "locator": "Article paragraphs beginning WASHINGTON through White House response; published September 27 at 5:19 PM EDT.",
+              "inspected_at": "2026-09-28T04:05:16.156650Z",
+              "document_sha256": "366e1fecc03538905e4fa137f5b7b6be36aa7bfd0a5789833c54dd0f288341e8",
+              "origin_group": "Associated Press via News4JAX",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_government_ads_scrutiny_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "84c9a0624b7857304cea3d7ca129379aeb231eafc20b4734f7c262e527a4e0d9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "05e782e20e1d63d3d13989c877b672354be52cbc4527d0129f77c6469c790f7f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_dhs_ads_contract_sep29",
+              "locator": "Complete source text, official instrument or award record inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-09-29T22:03:00Z",
+              "document_sha256": "2b43bd6c595f2401646ba2856a37ebd4d5776d80b11aa10dc8faa86c2fc61842",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "govtribe_lmd_campaign_award_sep20",
+              "locator": "Complete source text, official instrument or award record inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-09-29T22:03:00Z",
+              "document_sha256": "8abbc122c21e36ed55092b3b59f3f742bc0cae7f0a4c7828b456999597072c11",
+              "origin_group": "GovTribe",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "1b19b4c26e868dfdbb83af1a229ce4a1bec8aa0c08b1111c44c52ba640a0c425",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_government_ads_spending_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "50f36fb5502b716babc4003b5937288c5a3e679a97fe4f637501dea0847cb4a3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "c91ad51b9d10f96ce078440b03f866b1f45d47f0e19cd43e3548411869e7ab12",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_ad_response_sep25",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "6e99a863340c1e0d45aee0e58fd0df1dbf942c813de8145bc3f77f8fba127ccb",
+              "origin_group": "The White House",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_dhs_ads_contract_sep29",
+              "locator": "Complete source text, official instrument or award record inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-09-29T22:03:00Z",
+              "document_sha256": "2b43bd6c595f2401646ba2856a37ebd4d5776d80b11aa10dc8faa86c2fc61842",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "31cb497a80758d83b4d8077692f8117b706918f2183c98392ba463fdfc6b4b42",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_dhs_ads_contract_sep29",
+              "locator": "Complete source text, official instrument or award record inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-09-29T22:03:00Z",
+              "document_sha256": "2b43bd6c595f2401646ba2856a37ebd4d5776d80b11aa10dc8faa86c2fc61842",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "d8d0e81852b856d00c7932acd910c560493919c14c32fd81ee44bad92adf73ad",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wapo_government_ads_sep30",
+              "locator": "Placement counts, markets, modeled aggregate airtime estimate and White House response.",
+              "inspected_at": "2026-10-01T04:38:00Z",
+              "document_sha256": "0f61d9dc9837c99b96276b942c9cd3a6e069b30b2104fa685f632907fec04deb",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "39fbf2b88dc1bcc82e7fc027ac2dac4280a983fcfcb476b0801b894b7dd4468e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_fcc_government_ads_sep30",
+              "locator": "Inspected source passage or filing summarized in the release evidence review.",
+              "inspected_at": "2026-10-01T10:12:00Z",
+              "document_sha256": "25d7049f279397f216b59b7a6b26caab885296735305f3506dbde43e74c4c8e8",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "93219a7eb7a3e3b4d95ca81b64f0edca1f18c7491acf80f040ebd7b97622533d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_government_ads_probe_oct1",
+              "locator": "Inspected source passage or filing summarized in the release evidence review.",
+              "inspected_at": "2026-10-01T10:12:00Z",
+              "document_sha256": "df7c91deb0916da131b90d9b7831f0e99bfd85dd978aa8a6a19f5efd3e375e87",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "08e12e1315deeeb6fb62d6317c968a71f6080d3b56972d139a50e220d9d14c0b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_government_ad_funding_shift_oct5",
+              "locator": "Reuters lines160–167: presidential statement and attributed White House confirmation",
+              "inspected_at": "2026-10-06T02:17:16Z",
+              "document_sha256": "02d5cddd452174b54a12e3c496f1b9ed8074ffcf284f8b56ce2e386804eede49",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_government_ad_funding_shift_oct5",
+              "locator": "AP lines1806–1814: Trump post and White House future-funding confirmation",
+              "inspected_at": "2026-10-06T02:17:16Z",
+              "document_sha256": "e3aac56f89058ff74b1b8c7c630178c49b583bffec0553e87f89b1defc7edb31",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "truth_government_ad_funding_shift_oct5",
+              "locator": "Retained post 117390649505706640, full supplied text: Trump acknowledges U.S.A. money for Ads and states decision to pay for Patriotic Ads personally and with money raised for MAGA Inc. Text inspected from validated local fallback snapshot; original post URL identifies publication, not a separately retrieved live webpage.",
+              "inspected_at": "2026-10-06T02:16:42.237486Z",
+              "document_sha256": "9c6d1ad0025060eebbc26ce0bbbbd0abe17edf576747f1040130ac58aa89469c",
+              "origin_group": "Donald Trump / Truth Social",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 10,
+          "fact_sha256": "b7ffab164a43685d4d0889da1d1b0a157fabd44e0e229c6121526593a2f8312e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_government_ad_funding_shift_oct5",
+              "locator": "AP lines1812–1814: missing reimbursement and verification detail",
+              "inspected_at": "2026-10-06T02:17:16Z",
+              "document_sha256": "e3aac56f89058ff74b1b8c7c630178c49b583bffec0553e87f89b1defc7edb31",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 11,
+          "fact_sha256": "acec4719705b1b34cffe4debc320dc39effcd951f5b22a40a29513f49001773b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_adimpact_airtime_oct6",
+              "locator": "Ali Swenson section: More than $11 million in taxpayer-funded pro-Trump ads have run so far; AdImpact estimate, $20 million contract, missing repayment/private-payment detail.",
+              "inspected_at": "2026-10-06T16:04:40Z",
+              "document_sha256": "7c5022758138ebd35f22e7fd48e4adfb1e0ada5e1744b50f1c5dce77770a9eea",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 12,
+          "fact_sha256": "469e2178adc70a4ab02bc5b76a1d1e338ecdba20547b04b23dc0ebf5bdac81e8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "axios_ad_reimbursement_clarification_oct6",
+              "locator": "Article body and publication metadata: White House spokesperson's clarification and continued PSA defense.",
+              "inspected_at": "2026-10-06T22:08:11Z",
+              "document_sha256": "195c77723ea58e7fa26eb4195fa30d2c8e3adb0b97ca0dde5ecd99b0bf9025fc",
+              "origin_group": "Axios",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 13,
+          "fact_sha256": "f9f8e3789f7bf45c0bcee042d1dca56ccdc89fd1dbf8ce8e936bf87dcb536a31",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dnc_ads_complaint_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "c91b68efcddc0f108281edc87436b7942d5b721eb188204e98512de22ec837f6",
+              "origin_group": "U.S. District Court for the District of Columbia via CourtListener RECAP",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_dnc_ads_suit_oct7",
+              "locator": "Complete source text, enacted instrument, enforcement disclosure or filed complaint inspected for the bounded claim and stated evidence status.",
+              "inspected_at": "2026-10-07T22:04:16Z",
+              "document_sha256": "7779172b3859e8bfff8a113c385ff116148595737296d298cbc6031351eb0020",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 14,
+          "fact_sha256": "993ab5b036375d244c496da6ff979362a9e273cb5fe8e906c7dbdbbd5f017453",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_dnc_ads_suit_oct7",
+              "locator": "Updated AP report: second lawsuit, parties and requested funding halt; updated AdImpact estimate, fifth ad and White House response.",
+              "inspected_at": "2026-10-08T03:58:50Z",
+              "document_sha256": "9778496a142eb58fc4a0fb8d072679ee7abafabf191c9138440a335f4642f6d0",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "f8110012a382f9b95bf778b9ed5f27c286e0ee28d60bd6e8ae1b3e3ef6b0a768",
+          "review_note": "Separately reviewed as bounded significance analysis tied to the documented action and litigation limits."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "5a6242d45ae5013b03ad17d008b053f79a231e24f80d0be688f60a7582351a84",
+          "review_note": "Preserved the strongest relevant administration response and concrete evidentiary tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "509904ac0e22e52b69214edd82160dd2c9fa6ec11e1457fbc6c1b1d636a4c312",
+          "review_note": "Separately reviewed alternatives and an evidence-bound Therefore; allegations are not presented as findings."
+        }
+      ],
+      "unresolved_questions": [
+        "The second complaint’s primary filing, court rulings, audited disbursements, reimbursement and completed private payments remain unresolved."
       ]
     }
   ],

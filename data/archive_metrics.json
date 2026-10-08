@@ -1,11 +1,11 @@
 {
   "schema_version": 3,
-  "editorial_checked_at": "2026-10-07 6:04 PM EDT",
-  "quality_inputs_updated_at": "2026-10-07T22:04:16Z",
-  "external_registry_checked_at": "2026-10-07T22:04:16Z",
+  "editorial_checked_at": "2026-10-07 11:58 PM EDT",
+  "quality_inputs_updated_at": "2026-10-08T03:58:50Z",
+  "external_registry_checked_at": "2026-10-08T03:58:50Z",
   "federation_last_modified_at": "2026-08-25T14:40:23Z",
   "legacy_revisions_through": "2026-09-28",
-  "release_version": "10.122.0",
+  "release_version": "10.123.0",
   "canonical_files": {
     "legacy": "data/legacy_entries.json",
     "current": "data/current_entries.json",
@@ -18,13 +18,13 @@
   },
   "canonical_sha256": {
     "legacy": "1fc95448b4e01846c5208034c3b112bd6c636fa1f4b5f02ac4c56361013bbd5b",
-    "current": "fd68a9dc18bda1b24b04747bca098d5beca811131e75f5160824284c94a2708b",
-    "source_ledger": "348858a2f67b7a3fb1a7f9a00948fd9466f96c34fc006023e4da20e2bf98a27d",
+    "current": "6b9536726d3516b997f461313a50ba89bbc2e28d3517b1c15155a13e1b8edffc",
+    "source_ledger": "56d81bd8819832e1b4885a2b4c1a36bc0081ee4dc9948830cd233c4c6d8f6104",
     "federated": "4c2b2804949098a9b0a314b3f0ed44e74fc8ccb688ab84741922dd30fa1083f3",
     "legacy_revisions": "ad462416756f0f2d29691947334e41a6714b78dc7011c2db2284365a03547c87",
-    "archive_registry": "691825325d19b90a6c1ee0f3cbf149a47152109b37b34307d3f979690d9ff9ae",
-    "editorial_state": "0c903393545544fdfe3a5c56ad5c056c9bbbcb596f729b4bf8cea594ae943841",
-    "truth_social_reviews": "4d8579cd599f84b33df34f61cdf2f5a2eb08ddb1a907ed117c66e08510a6888f"
+    "archive_registry": "5bc04d1d09410b965c6903ac13104910df9ddd16f7985db77e4f2252d056ae38",
+    "editorial_state": "b867285a6debf4f89dace113bcc2379d5408667a2b3dc2a998c82cb0aaee7ab5",
+    "truth_social_reviews": "b0b54adb138cb6d539eb06f83b03b310e98cdd311185ffe432903e48b4308f59"
   },
   "totals": {
     "canonical_legacy_rows": 4742,
@@ -35,9 +35,9 @@
     "full_archive_runtime_entries": 5086,
     "current_layer_entries": 359,
     "legacy_source_references": 6714,
-    "current_source_references": 1068,
-    "full_archive_runtime_source_references": 7774,
-    "full_archive_runtime_unique_urls": 6379
+    "current_source_references": 1070,
+    "full_archive_runtime_source_references": 7776,
+    "full_archive_runtime_unique_urls": 6381
   },
   "coverage": {
     "legacy_last_date": "2026-08-01",
@@ -423,15 +423,15 @@
     "entries": 359,
     "national_entries": 355,
     "in6_entries": 4,
-    "source_references": 1068,
-    "national_source_references": 1060,
-    "source_ledger_rows": 1076,
-    "used_source_ledger_rows": 1060,
+    "source_references": 1070,
+    "national_source_references": 1062,
+    "source_ledger_rows": 1078,
+    "used_source_ledger_rows": 1062,
     "unused_source_ledger_rows": 16,
-    "entries_with_one_source": 94,
-    "entries_with_one_source_percent": 26.2,
-    "national_entries_with_one_source": 92,
-    "national_entries_with_one_source_percent": 25.9,
+    "entries_with_one_source": 93,
+    "entries_with_one_source_percent": 25.9,
+    "national_entries_with_one_source": 91,
+    "national_entries_with_one_source_percent": 25.6,
     "maybe_therefore_present": 359,
     "maybe_therefore_missing": 0,
     "review_states": {
@@ -486,18 +486,18 @@
   "review_traceability": {
     "current_entries_with_content_bound_review": 236,
     "current_entries_with_prior_status_only": 123,
-    "material_development_records": 460,
+    "material_development_records": 462,
     "retained_posts": 1000,
     "retained_post_text_states": {
       "not_recorded": 136,
-      "pending": 408,
-      "reviewed": 456
+      "pending": 403,
+      "reviewed": 461
     },
     "retained_post_media_states": {
-      "not_applicable": 453,
+      "not_applicable": 451,
       "not_recorded": 19,
       "pending": 214,
-      "reviewed": 80,
+      "reviewed": 82,
       "unavailable": 234
     },
     "definition": "Review-receipt coverage is separate from prior canonical review-state labels. Missing inspection records do not establish that content is false or that it was reviewed. Post-state counts refer only to the retained fallback, not the upstream archive total."
