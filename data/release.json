@@ -1,35 +1,39 @@
 {
-  "version": "10.126.0",
+  "version": "10.127.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-08T16:33:38Z",
-    "through_utc": "2026-10-08T21:59:03Z",
+    "from_utc": "2026-10-08T21:59:03Z",
+    "through_utc": "2026-10-09T04:03:54Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact scan from the prior successful boundary. One Supreme Court procedural action was added; FEMA's grant-condition rescission and the Hasan execution schedule/livestream announcement materially refreshed existing records. Three new Truth Social posts were reviewed."
+    "note": "Exact scan from the prior successful boundary. Three records were added and two existing litigation records materially refreshed. The HHS and Iran items are explicitly labeled prior-window source-completion recoveries; the Gate Canyon report, Arlington filing and new reporting on the Soliman order were evaluated in this window. Five new Truth Social posts were reviewed."
   },
-  "release_iso": "2026-10-08",
-  "release_human": "October 8, 2026",
-  "checked_at": "2026-10-08 5:59 PM EDT",
-  "previous_version": "10.125.0",
-  "previous_checked_at": "2026-10-08 12:33 PM EDT",
-  "window_started_at": "2026-10-08 12:33 PM EDT",
-  "window_ended_at": "2026-10-08 5:59 PM EDT",
-  "week_start": "2026-10-02",
-  "week_end": "2026-10-08",
-  "week_label": "2026-10-02 through 2026-10-08",
+  "release_iso": "2026-10-09",
+  "release_human": "October 9, 2026",
+  "checked_at": "2026-10-09 12:03 AM EDT",
+  "previous_version": "10.126.0",
+  "previous_checked_at": "2026-10-08 5:59 PM EDT",
+  "window_started_at": "2026-10-08 5:59 PM EDT",
+  "window_ended_at": "2026-10-09 12:03 AM EDT",
+  "week_start": "2026-10-03",
+  "week_end": "2026-10-09",
+  "week_label": "2026-10-03 through 2026-10-09",
   "cutoff_start": "2026-07-17",
   "new_entry_ids": [
-    "NAT-2026-10-08-005",
-    "NAT-2026-09-28-005",
-    "NAT-2026-10-05-005"
+    "NAT-2026-10-08-006",
+    "NAT-2026-10-08-007",
+    "NAT-2026-10-06-005",
+    "NAT-2026-08-28-012",
+    "NAT-2026-09-23-004"
   ],
   "added_entry_ids": [
-    "NAT-2026-10-08-005"
+    "NAT-2026-10-08-006",
+    "NAT-2026-10-08-007",
+    "NAT-2026-10-06-005"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-09-28-005",
-    "NAT-2026-10-05-005"
+    "NAT-2026-08-28-012",
+    "NAT-2026-09-23-004"
   ],
   "dedupe_resolutions": [
     {
@@ -342,7 +346,7 @@
       "entry_id": "NAT-2026-09-23-004",
       "target_id": "NAT-2026-09-23-004",
       "decision": "same_event_update",
-      "notes": "The Supreme Court stay and granted review are later stages of the same third-country-removal litigation and were consolidated into the stable canonical record."
+      "notes": "The Supreme Court stay, granted review and Soliman case-specific return order are later consequences within the same third-country-removal policy and litigation lifecycle; they were consolidated into the stable canonical record."
     },
     {
       "entry_id": "NAT-2026-09-29-003",
@@ -703,35 +707,83 @@
       "target_id": "NAT-2026-09-28-005",
       "decision": "same_event_update",
       "notes": "The rescission implements the same grant-condition litigation development; stable canonical ID retained."
+    },
+    {
+      "entry_id": "NAT-2026-10-08-006",
+      "target_id": "NAT-2026-10-08-006",
+      "decision": "false_positive",
+      "notes": "No existing current or legacy event, normalized title, source URL or recent maintenance pull request matched the HHS agency-wide vaccine-injury package."
+    },
+    {
+      "entry_id": "NAT-2026-10-08-007",
+      "target_id": "NAT-2026-10-08-007",
+      "decision": "false_positive",
+      "notes": "The October 8 target-level shadow-fleet designations and delistings are distinct from earlier Iran sanctions actions with different targets and list changes."
+    },
+    {
+      "entry_id": "NAT-2026-10-06-005",
+      "target_id": "NAT-2026-10-06-005",
+      "decision": "false_positive",
+      "notes": "No existing current or legacy event or recent pull request matched the Gate Canyon road approval litigation; other public-lands cases concern different sites and instruments."
+    },
+    {
+      "entry_id": "NAT-2026-08-28-012",
+      "target_id": "NAT-2026-08-28-012",
+      "decision": "same_event_update",
+      "notes": "Arlington County's lawsuit concerns the same proposed arch and approval lifecycle; the stable canonical ID was materially refreshed."
+    },
+    {
+      "entry_id": "NAT-2026-10-08-007",
+      "target_id": "NAT-2026-09-04-007",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "Both actions use Executive Order 13902, but the October 8 shadow-fleet designations and two vessel delistings concern different targets and list changes from the September 4 banking, aviation and proxy-network action."
+    },
+    {
+      "entry_id": "NAT-2026-10-08-007",
+      "target_id": "NAT-2026-09-14-005",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "Both actions use Executive Order 13902, but the October 8 vessel and shipping-company action is distinct from the September 14 designation of Russia's VTB Bank under Iran authority."
+    },
+    {
+      "entry_id": "NAT-2026-10-08-007",
+      "target_id": "NAT-2026-09-17-001",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "Both actions use Executive Order 13902, but the October 8 shadow-fleet designations and delistings involve different targets and legal list changes from the September 17 BitBank digital-asset network designations."
+    },
+    {
+      "entry_id": "NAT-2026-10-08-007",
+      "target_id": "NAT-2026-10-01-003",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "Both actions use Executive Order 13902, but the October 8 vessel and shipping-network list changes are distinct from the October 1 rail and automotive sectoral determinations and industrial-network designations."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Three new Truth Social statements",
-      "reason": "Campaign rhetoric, rhetorical clarification and inflammatory conditional rhetoric did not independently establish a new government action."
+      "title": "Five new Truth Social posts",
+      "reason": "Campaign advocacy, opinion links, retrospective promotion and an unverified oil-price graphic did not independently establish a qualifying government action."
     },
     {
-      "title": "DHS release attacking Janelle Stelson",
-      "reason": "A Hatch Act complaint was filed, but no OSC investigation or finding was located by cutoff."
+      "title": "Reported first direct U.S.-Myanmar military talks",
+      "reason": "The consequential claim remained based mainly on unnamed sources without a second independent confirmation or primary record."
     },
     {
-      "title": "Mifepristone recovery-plan filing",
-      "reason": "The reported filing preceded this exact window, and the primary filing remained unretrieved; existing recovery lead preserved."
+      "title": "White House press-access injunction hearing",
+      "reason": "The hearing produced arguments but no new ruling by cutoff; the existing temporary relief remains the operative status."
     },
     {
-      "title": "Trump TV page recheck",
-      "reason": "No post-boundary recording or transcript was available; no qualifying new item located in the material reviewed."
+      "title": "Trump TV October 8 uploads",
+      "reason": "Three official video-library uploads were inspected as metadata-only and deduplicated to existing science and visa-fraud records; no qualifying new item located in the material reviewed."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-08T21:59:03Z",
-    "checked_at_eastern": "2026-10-08 5:59 PM EDT",
+    "checked_at": "2026-10-09T04:03:54Z",
+    "checked_at_eastern": "2026-10-09 12:03 AM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-08T21:59:03Z",
+    "last_successful_page_inspection_at": "2026-10-09T04:03:54Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -742,8 +794,53 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, videos, remarks and releases pages were inspected. The linked stream remained A4gNgHfZ-v4; fallback text was not treated as proof of an outage. The dated video library still ended with two October 7 uploads already reviewed as metadata. The releases index added October 8 science-package and medals material; the science package was already canonical and the medals were ceremonial. No post-boundary recording or transcript was available. No qualifying new Trump TV item located in the material reviewed, and no verified new channel cost, contract, staffing/control, distribution, press-access consequence, investigation or finding was located.",
+    "summary": "Official Trump TV, live, videos, remarks and releases pages were inspected. The linked stream remained A4gNgHfZ-v4; fallback text was not treated as proof of an outage. The dated video library added three October 8 uploads: a science clip and summit replay deduplicated to NAT-2026-10-08-003, and a Vance visa-fraud press conference deduplicated to NAT-2026-10-08-001 and NAT-2026-10-08-002. Only page titles, dates, durations and stable YouTube IDs were inspected; footage, audio and captions were not retrieved. No qualifying new Trump TV item located in the material reviewed, and no verified new channel cost, contract, staffing/control, distribution, press-access consequence, investigation or finding was located.",
     "items": [
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-will-always-ensure-america-is-at-the-forefront-of-science-and-technology-%F0%9F%87%BA%F0%9F%87%B8/",
+        "title": "President Trump will always ensure America is at the forefront of science and technology",
+        "posted_date": "2026-10-08",
+        "posted_at": null,
+        "posted_at_eastern": null,
+        "posted_time_basis": "official White House displayed date; exact publication and original event times not verified",
+        "original_event_date": "2026-10-08",
+        "broadcast_time": null,
+        "observed_at": "2026-10-09T04:03:54Z",
+        "video_id": "ROR6ZaDgHno",
+        "duration": "PT2M14S",
+        "format": "official edited clip; audiovisual content unreviewed",
+        "inspection": "Official title, displayed date, duration and stable YouTube ID inspected. Metadata indicates a science-policy clip tied to the already canonical October 8 science package; footage, audio and captions were not retrieved."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-participates-in-a-new-golden-age-summit/",
+        "title": "President Trump Participates in A New Golden Age Summit",
+        "posted_date": "2026-10-08",
+        "posted_at": null,
+        "posted_at_eastern": null,
+        "posted_time_basis": "official White House displayed date; exact publication and original event times not verified",
+        "original_event_date": "2026-10-08",
+        "broadcast_time": null,
+        "observed_at": "2026-10-09T04:03:54Z",
+        "video_id": "so7jBMmGgdI",
+        "duration": "PT34M2S",
+        "format": "official event recording or replay; audiovisual content unreviewed",
+        "inspection": "Official title, displayed date, duration and stable YouTube ID inspected. It repeats the already canonical Golden Age science summit; footage, audio and captions were not retrieved and the upload is not counted as a new action."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/vice-president-jd-vance-holds-press-conference-on-fighting-visa-fraud/",
+        "title": "Vice President JD Vance Holds Press Conference on Fighting Visa Fraud",
+        "posted_date": "2026-10-08",
+        "posted_at": null,
+        "posted_at_eastern": null,
+        "posted_time_basis": "official White House displayed date; exact publication and original event times not verified",
+        "original_event_date": "2026-10-08",
+        "broadcast_time": null,
+        "observed_at": "2026-10-09T04:03:54Z",
+        "video_id": "7QAu9FOEOv8",
+        "duration": "PT44M20S",
+        "format": "official press-conference recording or replay; audiovisual content unreviewed",
+        "inspection": "Official title, displayed date, duration and stable YouTube ID inspected. The event is deduplicated to the already canonical visa-fraud enforcement records; footage, audio and captions were not retrieved."
+      },
       {
         "url": "https://www.whitehouse.gov/videos/president-trump-delivers-remarks-oct-6-2026/",
         "title": "President Trump Delivers Remarks, Oct. 6, 2026",
@@ -1596,38 +1693,38 @@
     "counts": {
       "text_status": {
         "not_recorded": 137,
-        "reviewed": 467,
+        "reviewed": 472,
         "pending": 969
       },
       "media_status": {
-        "not_applicable": 774,
+        "not_applicable": 778,
         "not_recorded": 19,
         "unavailable": 235,
         "pending": 462,
-        "reviewed": 83
+        "reviewed": 84
       }
     },
-    "new_posts": 3,
-    "source_rows_added": 3,
-    "new_text_reviewed": 3,
-    "new_nonempty_text_reviewed": 3,
+    "new_posts": 5,
+    "source_rows_added": 5,
+    "new_text_reviewed": 5,
+    "new_nonempty_text_reviewed": 5,
     "new_empty_text_inspected": 0,
-    "new_image_assets_reviewed": 0,
-    "new_image_posts_reviewed": 0,
+    "new_image_assets_reviewed": 1,
+    "new_image_posts_reviewed": 1,
     "new_video_assets_pending": 0,
     "new_video_assets_reviewed": 0,
-    "new_media_reviewed": 0,
+    "new_media_reviewed": 1,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-08T21:59:39.989510Z",
-    "checked_at_eastern": "2026-10-08 5:59:39 PM EDT",
-    "latest_post_at_utc": "2026-10-08T20:30:13.223000Z",
-    "latest_post_at_eastern": "2026-10-08 4:30:13 PM EDT",
-    "latest_post_id": "117407181257047860",
+    "checked_at_utc": "2026-10-09T04:05:11.237626Z",
+    "checked_at_eastern": "2026-10-09 12:05:11 AM EDT",
+    "latest_post_at_utc": "2026-10-09T01:09:56.709000Z",
+    "latest_post_at_eastern": "2026-10-08 9:09:56 PM EDT",
+    "latest_post_id": "117408281179466427",
     "no_new_post_finding": false,
-    "note": "Three posts entered after the prior snapshot. The newest, at 4:30:13 PM EDT, conditionally suggested federal help after a state or city request but no request or deployment action was located. All three were reviewed and withheld as campaign rhetoric, rhetorical clarification or inflammatory conditional rhetoric without an independently verified qualifying government action."
+    "note": "Five posts entered after the prior snapshot. The newest was posted at 9:09:56 PM EDT on October 8 and attached an oil-price graphic; the image was reviewed, but its calculations and implied causal comparison were not independently verified. All five were reviewed and withheld as campaign advocacy, opinion links, retrospective promotion or unverified claims without an independently qualifying government action."
   },
   "archive_network_inspection": {
-    "checked_at": "2026-10-08T21:59:03Z",
-    "note": "All four registered primary projects were rechecked. Trump Archive displayed 14,629 total items, 12,090 Truth Social posts and 1,890 speeches/transcripts. UndoTrump remained at 1,264 actions and the Immigration Policy Tracking Project remained at 1,809 policy actions. Record47's homepage displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts while current API endpoints were inaccessible; preserved API measurements and the discrepancy remain disclosed. Units remain separate and zero external canonical entries were imported."
+    "checked_at": "2026-10-09T04:03:54Z",
+    "note": "All four registered primary projects were rechecked. Trump Archive displayed 14,634 total items, 12,092 Truth Social posts and 1,893 speeches/transcripts, and those measurements were updated. UndoTrump remained at 1,264 actions and the Immigration Policy Tracking Project remained at 1,809 policy actions. Record47's homepage displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts; preserved API measurements and the disclosed homepage/API discrepancy remain separate. Units remain separate and zero external canonical entries were imported."
   }
 }
