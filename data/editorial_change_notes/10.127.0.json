@@ -1,0 +1,67 @@
+{
+  "version": "10.127.0",
+  "base_release_version": "10.126.0",
+  "base_commit": "cbaa4ccb7ee27ea50942ac851e00ee736c00e817",
+  "research_window": {
+    "from_utc": "2026-10-08T21:59:03Z",
+    "through_utc": "2026-10-09T04:03:54Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Exact boundary scan with two explicitly labeled prior-window source-completion recoveries."
+  },
+  "publication_authorization": "The user authorizes maintenance branches, pull requests and merging after evidence, local acceptance and successful CI.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-08-006",
+      "kind": "added",
+      "summary": "HHS opened an NIH clinic, proposed Medicare reimbursement for physician VAERS reports and announced linked health-record and VAERS changes.",
+      "duplicate_review": "No existing current or legacy record, normalized title, stored source URL or recent maintenance pull request matched the agency-wide package. Earlier vaccine records concern different orders, recommendations or outcomes."
+    },
+    {
+      "entry_id": "NAT-2026-10-08-007",
+      "kind": "added",
+      "summary": "Treasury and OFAC implemented a new Iran shadow-fleet sanctions package covering 17 Treasury-identified vessels and removed two other ships after changed circumstances.",
+      "duplicate_review": "Target-level October 8 designations are a distinct sanctions action from earlier Iran records; no target or source URL duplication was found."
+    },
+    {
+      "entry_id": "NAT-2026-10-06-005",
+      "kind": "added",
+      "summary": "Three conservation groups filed a federal complaint challenging BLM's April approval of the Gate Canyon oil-truck road.",
+      "duplicate_review": "No current or legacy record or recent pull request matched the Gate Canyon approval litigation; separate public-lands and oil records concern different sites and instruments."
+    },
+    {
+      "entry_id": "NAT-2026-08-28-012",
+      "kind": "material_refresh",
+      "summary": "Arlington County filed a new federal NEPA challenge to the proposed Triumphal Arch.",
+      "duplicate_review": "Same monument, approval and litigation lifecycle as the existing arch record; stable canonical ID retained."
+    },
+    {
+      "entry_id": "NAT-2026-09-23-004",
+      "kind": "material_refresh",
+      "summary": "A district judge entered a case-specific final order directing DHS to facilitate Ahmed Soliman's release and return.",
+      "duplicate_review": "Same third-country-removal policy and litigation lifecycle; stable canonical ID retained while the individual remedy is bounded to the named case."
+    }
+  ],
+  "source_inspections": [
+    {"source_id":"hhs_vaccine_injury_actions_oct8","document_sha256":"4b0462e0e3da20f83553e027ed824cb23ff513963a39664585d3c2a87859d46c","inspected_at":"2026-10-09T04:03:54Z","note":"HHS October 8 release inspected in full for the October 5 NIH clinic opening, proposed CMS reimbursement, announced health-record requirement and VAERS modernization chronology."},
+    {"source_id":"reuters_vaccine_injury_actions_oct8","document_sha256":"9f9d1891ec7e4ee1d862b5bdeff2cbfb0574646d563f9c7ffd48f7590917234a","inspected_at":"2026-10-09T04:03:54Z","note":"Reuters October 8 report inspected for independent description, program context and the distinction between patient reports and established causation."},
+    {"source_id":"treasury_iran_shadow_fleet_oct8","document_sha256":"20069ee49a707a594dd0b6ccd2334c4bab8ce3c397decd14276e85cb75ccc51f","inspected_at":"2026-10-09T04:03:54Z","note":"Treasury October 8 release inspected for the 17-vessel EO 13902 action, company designations, two vessel removals and administration effectiveness claims."},
+    {"source_id":"ofac_iran_designations_oct8","document_sha256":"27308ee879a912962ec1db5d464f47a54242d94df6052948a2d91bc2f3823370","inspected_at":"2026-10-09T04:03:54Z","note":"OFAC October 8 recent-actions notice inspected for six individual additions, entity and vessel list changes, two vessel deletions and General License EE."},
+    {"source_id":"reuters_iran_shadow_fleet_oct8","document_sha256":"2a8ffca374c5e043c70a85a7b4546d80185df4f47d539ccc77b3677e0ae03593","inspected_at":"2026-10-09T04:03:54Z","note":"Reuters October 8 report inspected for independent confirmation of the sanctions action and administration purpose."},
+    {"source_id":"gate_canyon_complaint_oct6","document_sha256":"9e1b063ea19cee724cdfbdb48d8574aa407ec81419b04f01f89450f85453ee89","inspected_at":"2026-10-09T04:03:54Z","note":"Fifty-page October 6 complaint inspected for parties, case, April approval, project description, alleged cultural and environmental harms, causes of action and requested relief."},
+    {"source_id":"blm_nine_mile_canyon","document_sha256":"b9021f4b3409b418734ff2a7d60320c3a0acd87dd9f889ec224afbdd3178d2e1","inspected_at":"2026-10-09T04:03:54Z","note":"BLM Nine Mile Canyon page inspected for the agency description of the 46-mile cultural landscape, more than 1,000 rock-art sites and over 10,000 images."},
+    {"source_id":"reuters_gate_canyon_lawsuit_oct9","document_sha256":"afc61a7bccb1161c8b7669b9c7d37fb79a3416e9e7cdf7de621184bb87035f60","inspected_at":"2026-10-09T04:03:54Z","note":"Reuters October 9 report inspected for the filed lawsuit, project and cultural-resource context, allegations and Interior pending-litigation response."},
+    {"source_id":"arlington_arch_lawsuit_oct8","document_sha256":"48d9821c34c37c9622352968437cf9e8ff35fe20843a3e6c3cffb4e3faca117f","inspected_at":"2026-10-09T04:03:54Z","note":"Democracy Forward plaintiff-counsel release inspected for filing date, parties, requested NEPA relief and alleged local harms."},
+    {"source_id":"reuters_arch_lawsuit_oct9","document_sha256":"742259d005d32099ff8ebd62d9040c22816037140506a68d320efed3a97ddec9","inspected_at":"2026-10-09T04:03:54Z","note":"Reuters October 9 report inspected for the Arlington filing, project posture and county allegations."},
+    {"source_id":"ap_arch_lawsuit_oct9","document_sha256":"dbcf8bd7c9e9419b8af145074814daeaa2e0fae7529d54de3a1f1e6db7f81dac","inspected_at":"2026-10-09T04:03:54Z","note":"AP October 9 report inspected for the Eastern District of Virginia filing, requested halt, independent context and lack of immediate White House or Interior response."},
+    {"source_id":"soliman_return_order_oct6","document_sha256":"6d3d8f038dd3423ba25e01a1fa1ff9b58fd46de01f542c75c7a43d13b27a0ea6","inspected_at":"2026-10-09T04:03:54Z","note":"Twenty-two-page October 6 final order inspected through the hosted court copy for the due-process finding, return directive, reporting duties and future-removal safeguards."},
+    {"source_id":"reuters_soliman_return_oct8","document_sha256":"f09a96ac478a202b24f4e04d3d16e436653681da64e8d8482d0caf81f49c26a0","inspected_at":"2026-10-09T04:03:54Z","note":"Reuters October 8 report inspected for independent confirmation of the order, detention and return directive, broader policy context and lack of immediate DHS comment."}
+  ],
+  "withheld": [
+    {"title":"Five new Truth Social posts","reason":"Campaign advocacy, opinion links, retrospective promotion and an unverified oil-price graphic did not independently establish a qualifying government action."},
+    {"title":"Reported first direct U.S.-Myanmar military talks","reason":"Consequential claim remained based mainly on unnamed sources without a second independent confirmation or primary record."},
+    {"title":"White House press-access injunction hearing","reason":"Arguments were heard but no new ruling issued by cutoff."},
+    {"title":"Trump TV October 8 uploads","reason":"Metadata-only inspection found three uploads that duplicate existing science and visa-fraud records; no qualifying new item located in the material reviewed."}
+  ],
+  "corrections": []
+}
