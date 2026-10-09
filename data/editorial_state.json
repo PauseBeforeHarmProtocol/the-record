@@ -5857,6 +5857,42 @@
         "provenance_path": "data/editorial_change_notes/10.127.0.json",
         "provenance_sha256": "d30ed49db48e7c6830943cf5d07bdc503bd05039532bbcd015ca0dca54ae379b",
         "note": "Stable event and lifecycle boundaries preserved; allegations, announcements, implementation, interim relief and final outcomes remain distinct."
+    },
+    {
+        "change_id": "10.129.0:NAT-2026-10-09-001",
+        "entry_id": "NAT-2026-10-09-001",
+        "as_of_utc": "2026-10-09T15:56:02Z",
+        "timestamp_precision": "second",
+        "kind": "added",
+        "release_version": "10.129.0",
+        "summary": "The United States implemented institution-wide sanctions against the International Criminal Court.",
+        "provenance_path": "data/editorial_change_notes/10.129.0.json",
+        "provenance_sha256": "30c3ca36bd09cbd641c394bd95f770c6f622b310cb304e988a09c21362d91dda",
+        "note": "Institution-level blocking action is distinct from earlier sanctions on named ICC officials."
+    },
+    {
+        "change_id": "10.129.0:NAT-2026-10-09-002",
+        "entry_id": "NAT-2026-10-09-002",
+        "as_of_utc": "2026-10-09T15:56:02Z",
+        "timestamp_precision": "second",
+        "kind": "added",
+        "release_version": "10.129.0",
+        "summary": "A presidential memorandum established a formal inquiry and hearing into whether cause exists to remove Lisa Cook.",
+        "provenance_path": "data/editorial_change_notes/10.129.0.json",
+        "provenance_sha256": "30c3ca36bd09cbd641c394bd95f770c6f622b310cb304e988a09c21362d91dda",
+        "note": "Formal inquiry is preserved as a new lifecycle stage without converting allegations into findings."
+    },
+    {
+        "change_id": "10.129.0:NAT-2026-10-05-001",
+        "entry_id": "NAT-2026-10-05-001",
+        "as_of_utc": "2026-10-09T15:56:02Z",
+        "timestamp_precision": "second",
+        "kind": "material_refresh",
+        "release_version": "10.129.0",
+        "summary": "Early independent evidence found no diesel-price decline and limited retailer uptake after the October 5 relief order.",
+        "provenance_path": "data/editorial_change_notes/10.129.0.json",
+        "provenance_sha256": "30c3ca36bd09cbd641c394bd95f770c6f622b310cb304e988a09c21362d91dda",
+        "note": "Same diesel-relief event and effectiveness lifecycle; stable canonical ID retained."
     }
   ],
   "reviews": [
@@ -69635,6 +69671,65 @@
             "Soliman had not been documented as released or returned by cutoff.",
             "Any stay or appeal and the Supreme Court merits outcome remain unresolved."
         ]
+    },
+    {
+      "review_id": "10.129.0:NAT-2026-10-09-001:8e949e001275",
+      "entry_id": "NAT-2026-10-09-001",
+      "content_sha256": "8e949e00127513b39ec88048994e143d5193bf721841a86a72adc9f4279ea8f6",
+      "reviewed_at": "2026-10-09T15:56:02Z",
+      "reviewer": {"name": "OpenAI Codex editorial maintenance", "kind": "ai_assisted"},
+      "claims": [
+        {"fact_index":0,"fact_sha256":"a2495010167e635662336ec67d40edc9a97d880ba714a42cc24c56f3de6eecb5","relies_on_unnamed_sources":false,"supports":[{"source_id":"state_icc_sanctions_oct9","locator":"State Department October 9 institution-wide sanctions release and sovereignty rationale.","inspected_at":"2026-10-09T15:56:02Z","document_sha256":"198790f682862fc0644f82199ebba10345cebbddbf4f1ea9a4a7725b66b029bd","origin_group":"U.S. Department of State","evidence_status":"implemented"},{"source_id":"ap_icc_sanctions_oct9","locator":"AP report confirming blocking effect and six-month wind-down.","inspected_at":"2026-10-09T15:56:02Z","document_sha256":"057e1836818da0b3a1bd9af0a18b0a511c0794b2d0ed921aa63486d37a54056c","origin_group":"Associated Press","evidence_status":"reported"}]},
+        {"fact_index":1,"fact_sha256":"af97e854b29ec437b8a7151fda2d5deb2f42df0aed75e892e82010d8301a3aec","relies_on_unnamed_sources":false,"supports":[{"source_id":"reuters_icc_sanctions_oct9","locator":"Reuters report describing the four contemporaneous general licenses.","inspected_at":"2026-10-09T15:56:02Z","document_sha256":"912515c42c53edf4e8ea584f04ef3487c24aac57dcc25e1dea3af7c192a87cde","origin_group":"Reuters","evidence_status":"reported"}]},
+        {"fact_index":2,"fact_sha256":"cf9623ff01a615386084fd44ae08775f085b846087bb6ce7a5a22bc450a7b363","relies_on_unnamed_sources":false,"supports":[{"source_id":"reuters_icc_sanctions_oct9","locator":"Reuters report on prior person-specific sanctions, service-provider effects and court preparations.","inspected_at":"2026-10-09T15:56:02Z","document_sha256":"912515c42c53edf4e8ea584f04ef3487c24aac57dcc25e1dea3af7c192a87cde","origin_group":"Reuters","evidence_status":"reported"}]},
+        {"fact_index":3,"fact_sha256":"3d6cde0edbf5e272cb3701de111664ed3bdc4810a8a0b7b777902941a0c46e7d","relies_on_unnamed_sources":false,"supports":[{"source_id":"state_icc_sanctions_oct9","locator":"State Department rationale and negotiation framing.","inspected_at":"2026-10-09T15:56:02Z","document_sha256":"198790f682862fc0644f82199ebba10345cebbddbf4f1ea9a4a7725b66b029bd","origin_group":"U.S. Department of State","evidence_status":"announced"},{"source_id":"ap_icc_sanctions_oct9","locator":"AP report quoting the ICC response and continued-operation statement.","inspected_at":"2026-10-09T15:56:02Z","document_sha256":"057e1836818da0b3a1bd9af0a18b0a511c0794b2d0ed921aa63486d37a54056c","origin_group":"Associated Press","evidence_status":"reported"}]}
+      ],
+      "reasoning_review": [
+        {"field":"significance","text_sha256":"77026f8fc617f78601e9ec80762fda311e26dd4621f738a78358fbfbd9a50bba","review_note":"Separately reviewed as bounded analysis of institution-level blocking effects and allied friction."},
+        {"field":"goalpost","text_sha256":"ed9e4dcf953290665ddb075959eecbe985974a35a2213ebdbe611dcc911df9d7","review_note":"Separately reviewed against the administration explanation and measurable operational tests."},
+        {"field":"maybe_therefore","text_sha256":"ff4338c733f1a8e0fb9ae5a0dac340908c76035836174a0a015a861a68128492","review_note":"Separately reviewed to preserve negotiating uncertainty and avoid claiming the court stopped operating."}
+      ],
+      "unresolved_questions": ["Operational effects after the wind-down and licenses remain unmeasured.", "Allied countermeasures and any negotiated jurisdictional accommodation remain unresolved."]
+    },
+    {
+      "review_id": "10.129.0:NAT-2026-10-09-002:378240cfbd5f",
+      "entry_id": "NAT-2026-10-09-002",
+      "content_sha256": "378240cfbd5f00f57cb9b1a038c55f5438804c726894fbebdd13756218aaf7fe",
+      "reviewed_at": "2026-10-09T15:56:02Z",
+      "reviewer": {"name": "OpenAI Codex editorial maintenance", "kind": "ai_assisted"},
+      "claims": [
+        {"fact_index":0,"fact_sha256":"9424ccc7073bfa9984404fc216917b13fa54157828a325c10c7d5356f27caa76","relies_on_unnamed_sources":false,"supports":[{"source_id":"whitehouse_cook_inquiry_oct7","locator":"Presidential memorandum opening and committee-membership provisions.","inspected_at":"2026-10-09T15:56:02Z","document_sha256":"b1fe238a200a61280da0ccbb8e20ee41723480423d67f26d2a51c814c64b4ce0","origin_group":"The White House","evidence_status":"ordered"}]},
+        {"fact_index":1,"fact_sha256":"8dc3f1d2093d3df101ba5b5dfa544efe57774ba2225e94008114c187bd4f732d","relies_on_unnamed_sources":false,"supports":[{"source_id":"whitehouse_cook_inquiry_oct7","locator":"Memorandum hearing, evidence, transcript, findings and recommendation provisions.","inspected_at":"2026-10-09T15:56:02Z","document_sha256":"b1fe238a200a61280da0ccbb8e20ee41723480423d67f26d2a51c814c64b4ce0","origin_group":"The White House","evidence_status":"ordered"}]},
+        {"fact_index":2,"fact_sha256":"3147b23f7080c573959915dad8699b7f034b8daec2c14750252d83340b64ce4f","relies_on_unnamed_sources":false,"supports":[{"source_id":"reuters_cook_inquiry_oct9","locator":"Reuters report distinguishing allegations from findings and quoting Cook counsel.","inspected_at":"2026-10-09T15:56:02Z","document_sha256":"cb082d53130751f6195ec6b8f1c251999df0093b92efb5f177036d1fa5f570e7","origin_group":"Reuters","evidence_status":"reported"},{"source_id":"ap_cook_inquiry_oct9","locator":"AP report confirming no criminal charge and current procedural posture.","inspected_at":"2026-10-09T15:56:02Z","document_sha256":"53364e26fc18ab6c12249689abbe1947319691ae40d3a7bcac432077e1e127ee","origin_group":"Associated Press","evidence_status":"reported"}]},
+        {"fact_index":3,"fact_sha256":"3abbd728b04d6fcb1cbf3ac3fb5953309baed271d0c29b2517bcd437e176b10c","relies_on_unnamed_sources":false,"supports":[{"source_id":"reuters_cook_inquiry_oct9","locator":"Reuters procedural history and current officeholding.","inspected_at":"2026-10-09T15:56:02Z","document_sha256":"cb082d53130751f6195ec6b8f1c251999df0093b92efb5f177036d1fa5f570e7","origin_group":"Reuters","evidence_status":"reported"},{"source_id":"ap_cook_inquiry_oct9","locator":"AP description of Supreme Court posture and unprecedented removal effort.","inspected_at":"2026-10-09T15:56:02Z","document_sha256":"53364e26fc18ab6c12249689abbe1947319691ae40d3a7bcac432077e1e127ee","origin_group":"Associated Press","evidence_status":"reported"}]}
+      ],
+      "reasoning_review": [
+        {"field":"significance","text_sha256":"90315af74e2079a2251f0d5741cf3adf4a4fbffc1c5e5fc4ed040a3588739b0e","review_note":"Separately reviewed as analysis of for-cause protection and Federal Reserve independence."},
+        {"field":"goalpost","text_sha256":"2c284ea0cc2206bac318fe98c4702323c6333897ac19976b9c0af76b6c02f7f9","review_note":"Separately reviewed against both sides' explanations and the future evidence and court tests."},
+        {"field":"maybe_therefore","text_sha256":"3a5e19068ad9eadfcad9f3121f3c0b4d6e7cb7562183c56a22bc18b1a817ce1d","review_note":"Separately reviewed to preserve competing procedural explanations and avoid treating allegations as findings."}
+      ],
+      "unresolved_questions": ["The November 5 hearing, disclosed evidence and committee recommendation remain pending.", "Any presidential removal decision and judicial review remain unresolved."]
+    },
+    {
+      "review_id": "10.129.0:NAT-2026-10-05-001:232e1d369db7",
+      "entry_id": "NAT-2026-10-05-001",
+      "content_sha256": "232e1d369db7778945aa04904af632477fac989552ff5ac870d93843d9e84acf",
+      "reviewed_at": "2026-10-09T15:56:02Z",
+      "reviewer": {"name": "OpenAI Codex editorial maintenance", "kind": "ai_assisted"},
+      "claims": [
+        {"fact_index":0,"fact_sha256":"cb416729d7f5186a7ecd95c09963dc0ec6f0cf375da00a8d4e7733420f5a606f","relies_on_unnamed_sources":false,"supports":[{"source_id":"wh_diesel_tax_order_oct5","locator":"Sections 1–2(a)–(b), signed date and conditional statutory determination.","inspected_at":"2026-10-06T02:17:16Z","document_sha256":"0e345f0387a0136891a995661aa47ad18c81e118d11e489954dad2aa1716566a","origin_group":"The White House","evidence_status":"ordered"}]},
+        {"fact_index":1,"fact_sha256":"26405e3920416c3bbf0487efd8e65560d23748abe52f332d1570b0d48cb44106","relies_on_unnamed_sources":false,"supports":[{"source_id":"wh_diesel_tax_order_oct5","locator":"Sections 2(c) and 3.","inspected_at":"2026-10-06T02:17:16Z","document_sha256":"0e345f0387a0136891a995661aa47ad18c81e118d11e489954dad2aa1716566a","origin_group":"The White House","evidence_status":"ordered"}]},
+        {"fact_index":2,"fact_sha256":"4f531f958b0f34fd7017aef7febfc42751ec0d44a2ba5a9b21a40a9397aed779","relies_on_unnamed_sources":false,"supports":[{"source_id":"wh_diesel_tax_order_oct5","locator":"Sections 4 and 6–8.","inspected_at":"2026-10-06T02:17:16Z","document_sha256":"0e345f0387a0136891a995661aa47ad18c81e118d11e489954dad2aa1716566a","origin_group":"The White House","evidence_status":"ordered"}]},
+        {"fact_index":3,"fact_sha256":"d77ee78d676d168399edf0a04f216c34295c96ab9b86235e9fb55096b85c0896","relies_on_unnamed_sources":false,"supports":[{"source_id":"ap_diesel_tax_order_oct5","locator":"AP opening and affordability paragraphs confirming the signing.","inspected_at":"2026-10-06T02:13:06Z","document_sha256":"0e2fc5e11c6a338921ef50b4578277e477acc7a4862588945bccbdcf3efd5cbc","origin_group":"Associated Press","evidence_status":"reported"},{"source_id":"wh_diesel_tax_fact_sheet_oct5","locator":"Diesel affordability rationale.","inspected_at":"2026-10-06T02:13:05Z","document_sha256":"d9312b1a23f8b48919ad3559bdb30b33884986e990ea59d4027268301750597e","origin_group":"The White House","evidence_status":"announced"}]},
+        {"fact_index":4,"fact_sha256":"e484b2dbd32718be270d36833021089b498d4317149aae7081b20ee35f1b3b97","relies_on_unnamed_sources":false,"supports":[{"source_id":"reuters_diesel_effectiveness_oct9","locator":"Reuters October 9 price measurement and timing context.","inspected_at":"2026-10-09T15:56:02Z","document_sha256":"3b97194c16da487e5932fe5ba7912d31edd12cdcddc054941438f20e9c4828cb","origin_group":"Reuters","evidence_status":"measured"}]},
+        {"fact_index":5,"fact_sha256":"3d9dc8eaa9412804f41535da52fdc7d056502ace2485020860f270adc2595523","relies_on_unnamed_sources":false,"supports":[{"source_id":"reuters_diesel_effectiveness_oct9","locator":"Reuters October 9 retailer interviews, implementation barriers and White House response.","inspected_at":"2026-10-09T15:56:02Z","document_sha256":"3b97194c16da487e5932fe5ba7912d31edd12cdcddc054941438f20e9c4828cb","origin_group":"Reuters","evidence_status":"reported"}]}
+      ],
+      "reasoning_review": [
+        {"field":"significance","text_sha256":"a422bcf2ece6fd5536b8ae10000709ef2f365fc46b2122dff63698d61308ffe3","review_note":"Separately reviewed as bounded analysis of ordered relief and early implementation evidence."},
+        {"field":"goalpost","text_sha256":"2084df49bf334d3699681b766782cd2d010c43dcfef8317ba638d55e8fdbdf95","review_note":"Separately reviewed against the White House explanation and measurable guidance, uptake and price tests."},
+        {"field":"maybe_therefore","text_sha256":"f82867c7fde6f815a897c223e08400cc13a71648428c5df3a2ef758840cf7923","review_note":"Separately reviewed to distinguish early limited uptake from a final verdict on the full program period."}
+      ],
+      "unresolved_questions": ["Treasury guidance and broad retailer participation were not located by cutoff.", "Price effects over the full authorized period and any permanent forgiveness remain unresolved."]
     }
   ],
   "deferred_candidates": []

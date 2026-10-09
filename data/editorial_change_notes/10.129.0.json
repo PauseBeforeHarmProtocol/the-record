@@ -1,0 +1,51 @@
+{
+  "version": "10.129.0",
+  "base_release_version": "10.128.0",
+  "base_commit": "7431e76927fe29a8a62237bfc72417c867290c56",
+  "research_window": {
+    "from_utc": "2026-10-09T10:02:38Z",
+    "through_utc": "2026-10-09T15:56:02Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Exact boundary scan plus one clearly labeled late-arriving effectiveness report published 98 seconds before the prior boundary."
+  },
+  "publication_authorization": "The user authorizes maintenance branches, pull requests and merging after evidence, local acceptance and successful CI.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-09-001",
+      "kind": "added",
+      "summary": "The United States implemented institution-wide sanctions against the International Criminal Court, with a six-month wind-down and four targeted general licenses.",
+      "duplicate_review": "Earlier ICC records concern sanctions on named judges, prosecutors or staff. This action blocks the institution itself and is a distinct legal and operational stage."
+    },
+    {
+      "entry_id": "NAT-2026-10-09-002",
+      "kind": "added",
+      "summary": "A presidential memorandum established a three-member inquiry and November 5 hearing into whether cause exists to remove Federal Reserve Governor Lisa Cook.",
+      "duplicate_review": "Existing Cook coverage concerns the attempted removal and Supreme Court proceedings. The formally constituted inquiry, hearing process and recommendation mandate are a distinct new executive action."
+    },
+    {
+      "entry_id": "NAT-2026-10-05-001",
+      "kind": "material_refresh",
+      "summary": "Early independent evidence found diesel prices had not declined and retailer uptake of the temporary tax relief remained limited pending implementation guidance.",
+      "duplicate_review": "Same October 5 diesel-relief order and effectiveness lifecycle; stable canonical ID retained rather than creating an outcome duplicate."
+    }
+  ],
+  "source_inspections": [
+    {"source_id":"state_icc_sanctions_oct9","document_sha256":"198790f682862fc0644f82199ebba10345cebbddbf4f1ea9a4a7725b66b029bd","inspected_at":"2026-10-09T15:56:02Z","note":"State Department October 9 release inspected for the institution-wide sanctions announcement, sovereignty rationale and negotiation framing."},
+    {"source_id":"reuters_icc_sanctions_oct9","document_sha256":"912515c42c53edf4e8ea584f04ef3487c24aac57dcc25e1dea3af7c192a87cde","inspected_at":"2026-10-09T15:56:02Z","note":"Reuters October 9 report inspected for blocking effects, six-month wind-down, four licenses, service-provider implications and the ICC response."},
+    {"source_id":"ap_icc_sanctions_oct9","document_sha256":"057e1836818da0b3a1bd9af0a18b0a511c0794b2d0ed921aa63486d37a54056c","inspected_at":"2026-10-09T15:56:02Z","note":"AP October 9 report inspected for independent confirmation of the institution-wide sanctions, wind-down period and ICC response."},
+    {"source_id":"whitehouse_cook_inquiry_oct7","document_sha256":"b1fe238a200a61280da0ccbb8e20ee41723480423d67f26d2a51c814c64b4ce0","inspected_at":"2026-10-09T15:56:02Z","note":"Presidential memorandum inspected in full for committee membership, November 5 hearing, procedures, findings and recommendation under 12 U.S.C. 242."},
+    {"source_id":"reuters_cook_inquiry_oct9","document_sha256":"cb082d53130751f6195ec6b8f1c251999df0093b92efb5f177036d1fa5f570e7","inspected_at":"2026-10-09T15:56:02Z","note":"Reuters October 9 report inspected for independent confirmation, Cook's current officeholding, procedural context and counsel response."},
+    {"source_id":"ap_cook_inquiry_oct9","document_sha256":"53364e26fc18ab6c12249689abbe1947319691ae40d3a7bcac432077e1e127ee","inspected_at":"2026-10-09T15:56:02Z","note":"AP October 9 report inspected for the formal inquiry, unprecedented removal context, prior court posture and absence of a criminal charge."},
+    {"source_id":"reuters_diesel_effectiveness_oct9","document_sha256":"3b97194c16da487e5932fe5ba7912d31edd12cdcddc054941438f20e9c4828cb","inspected_at":"2026-10-09T15:56:02Z","note":"Reuters October 9 effectiveness report inspected for the October 8 diesel-price measure, limited retailer uptake, identified implementation barriers and White House response."}
+  ],
+  "withheld": [
+    {"title":"Two new Truth Social posts and one corrected mirror text version","reason":"A linked allegation, Nobel-committee advocacy and campaign endorsement did not independently establish a qualifying government action."},
+    {"title":"Reuters/Ipsos responsibility poll","reason":"Public opinion about the Iran conflict is context, not a new government action or independently measured policy outcome."},
+    {"title":"White House press-access injunction hearing","reason":"No new ruling issued by cutoff; argument is not a judicial disposition."},
+    {"title":"Trump TV recheck","reason":"Official page and dated-library metadata showed no upload newer than the three October 8 items already reviewed. Footage, audio and captions were not retrieved; no qualifying new item located in the material reviewed."},
+    {"title":"Columbus Day live-hub listing","reason":"The official live hub listed a ceremonial event; metadata alone did not establish a material policy action."
+    }
+  ],
+  "corrections": []
+}

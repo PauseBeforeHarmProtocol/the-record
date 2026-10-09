@@ -1,46 +1,36 @@
 {
-  "version": "10.128.0",
-  "artifact_mode": "feed-only",
-  "editorial_snapshot": {
-    "version": "10.127.0",
-    "complete_pack": {
-      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-10-09_v10.127.0.zip",
-      "sha256": "5597eb57b7ac766c6328c485b6b36e436cba2766b2dae40a1a36aee2e8201868"
-    },
-    "national_pack": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-10-09_v10.127.0.zip",
-      "sha256": "dbd4423aa6d157c4c7587c375cf6db5c3654bf83be126fa494c85df2e29ab4ce"
-    },
-    "national_brief": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-10-09_v10.127.0.md",
-      "sha256": "639012ae5357cadbcf601872269996780445c790171d82b6609a76a7ad180137"
-    },
-    "in6_brief": {
-      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-10-09_v10.127.0.md",
-      "sha256": "74afe5efbefd24a71c097676c7152131b33010aa0bb458ee99eca7c658d83cc4"
-    }
-  },
+  "version": "10.129.0",
+  "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-09T04:03:54Z",
-    "through_utc": "2026-10-09T10:02:38Z",
+    "from_utc": "2026-10-09T10:02:38Z",
+    "through_utc": "2026-10-09T15:56:02Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact scan from the prior successful boundary. No new or materially refreshed canonical national record cleared the publication threshold. This feed-only release preserves one materially newer validated Truth Social fallback post that arrived after the prior snapshot, while reusing the immutable 10.127.0 full editorial snapshot."
+    "note": "Exact scan from the prior successful boundary. Two new government actions cleared the threshold. One late-arriving Reuters effectiveness report published 98 seconds before the prior boundary materially refreshed the existing diesel-relief record and is explicitly disclosed as source-completion recovery."
   },
   "release_iso": "2026-10-09",
   "release_human": "October 9, 2026",
-  "checked_at": "2026-10-09 6:02 AM EDT",
-  "previous_version": "10.127.0",
-  "previous_checked_at": "2026-10-09 12:03 AM EDT",
-  "window_started_at": "2026-10-09 12:03 AM EDT",
-  "window_ended_at": "2026-10-09 6:02 AM EDT",
+  "checked_at": "2026-10-09 11:56 AM EDT",
+  "previous_version": "10.128.0",
+  "previous_checked_at": "2026-10-09 6:02 AM EDT",
+  "window_started_at": "2026-10-09 6:02 AM EDT",
+  "window_ended_at": "2026-10-09 11:56 AM EDT",
   "week_start": "2026-10-03",
   "week_end": "2026-10-09",
   "week_label": "2026-10-03 through 2026-10-09",
   "cutoff_start": "2026-07-17",
-  "new_entry_ids": [],
-  "added_entry_ids": [],
-  "refreshed_entry_ids": [],
+  "new_entry_ids": [
+    "NAT-2026-10-09-001",
+    "NAT-2026-10-09-002",
+    "NAT-2026-10-05-001"
+  ],
+  "added_entry_ids": [
+    "NAT-2026-10-09-001",
+    "NAT-2026-10-09-002"
+  ],
+  "refreshed_entry_ids": [
+    "NAT-2026-10-05-001"
+  ],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -761,16 +751,34 @@
       "target_id": "NAT-2026-10-01-003",
       "decision": "distinct_lifecycle_stage",
       "notes": "Both actions use Executive Order 13902, but the October 8 vessel and shipping-network list changes are distinct from the October 1 rail and automotive sectoral determinations and industrial-network designations."
+    },
+    {
+      "entry_id": "NAT-2026-10-09-001",
+      "target_id": "NAT-2026-10-08-007",
+      "decision": "false_positive",
+      "notes": "The October 9 action blocks the International Criminal Court as an institution. Earlier sanctions records concern different named officials, Iranian targets or other programs; shared sanctions vocabulary is not a shared event."
+    },
+    {
+      "entry_id": "NAT-2026-10-09-002",
+      "target_id": "NAT-2026-10-09-002",
+      "decision": "false_positive",
+      "notes": "No active current or legacy record, normalized title, stored source URL or recent maintenance pull request matched the formally constituted Lisa Cook inquiry and November 5 hearing process."
+    },
+    {
+      "entry_id": "NAT-2026-10-05-001",
+      "target_id": "NAT-2026-10-05-001",
+      "decision": "same_event_update",
+      "notes": "The October 9 price and retailer-uptake findings are an effectiveness stage of the existing October 5 diesel-relief order. The stable canonical record was refreshed and no parallel row was created."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Late-arriving Truth Social Michigan Senate campaign post",
-      "reason": "The post establishes that Trump endorsed Mike Rogers and attacked Mohammed El-Sayed. It is campaign advocacy and did not independently establish a qualifying government action."
+      "title": "Two new Truth Social posts and one corrected mirror text version",
+      "reason": "A linked allegation, Nobel-committee advocacy and campaign endorsement did not independently establish a qualifying government action."
     },
     {
-      "title": "Iran and oil-market commentary",
-      "reason": "New coverage concerned market reaction and renewed presidential rhetoric; no new signed instrument, implemented military action, war-powers decision or independently measured government outcome was located after the prior cutoff."
+      "title": "Reuters/Ipsos responsibility poll",
+      "reason": "Public opinion about the Iran conflict is context, not a new government action or independently measured policy outcome."
     },
     {
       "title": "White House press-access injunction hearing",
@@ -779,17 +787,21 @@
     {
       "title": "Trump TV recheck",
       "reason": "The official pages and dated video-library metadata showed no upload newer than the three October 8 items already reviewed. No footage, audio or captions were retrieved; no qualifying new item located in the material reviewed."
+    },
+    {
+      "title": "Columbus Day live-hub listing",
+      "reason": "The official live hub listed a ceremonial event; metadata alone did not establish a material policy action."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-09T10:02:38Z",
-    "checked_at_eastern": "2026-10-09 6:02 AM EDT",
+    "checked_at": "2026-10-09T15:56:02Z",
+    "checked_at_eastern": "2026-10-09 11:56 AM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-09T10:02:38Z",
+    "last_successful_page_inspection_at": "2026-10-09T15:56:02Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -800,15 +812,15 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, videos, remarks and releases pages were rechecked. The linked stream remained A4gNgHfZ-v4; fallback text was not treated as proof of an outage. The dated video library still showed the same three October 8 uploads previously reviewed and no newer item. Only page titles, dates, durations and stable YouTube IDs were inspected; footage, audio and captions were not retrieved. No qualifying new item located in the material reviewed, and no verified new channel cost, contract, staffing/control, distribution, press-access consequence, investigation or court/congressional finding was located.",
+    "summary": "Official Trump TV, live, videos, remarks and releases pages were rechecked. The linked stream remained A4gNgHfZ-v4; fallback text was not treated as proof of an outage. The dated video library still showed the same three October 8 uploads previously reviewed and no newer item. The live hub listed a Columbus Day celebration, treated as ceremonial metadata only. Page titles, dates, durations and stable IDs were inspected; footage, audio and captions were not retrieved. No qualifying new item located in the material reviewed, and no verified new channel cost, contract, staffing/control, distribution, press-access consequence, investigation or court/congressional finding was located.",
     "items": [
       {
         "url": "https://www.whitehouse.gov/trumptv/",
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-09T10:02:38Z",
-        "observed_at_eastern": "2026-10-09 6:02 AM EDT",
+        "observed_at": "2026-10-09T15:56:02Z",
+        "observed_at_eastern": "2026-10-09 11:56 AM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official page inspected. It linked the unchanged A4gNgHfZ-v4 stream. No footage, audio or captions were retrieved, and fallback error text was not treated as proof of an outage.",
         "video_ids": [
@@ -820,8 +832,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-09T10:02:38Z",
-        "observed_at_eastern": "2026-10-09 6:02 AM EDT",
+        "observed_at": "2026-10-09T15:56:02Z",
+        "observed_at_eastern": "2026-10-09 11:56 AM EDT",
         "format": "official live-hub metadata; audiovisual content unreviewed",
         "inspection": "Official live hub inspected. It linked the same Trump TV stream; current live/replay state and audiovisual content were not independently reviewed.",
         "video_ids": [
@@ -833,8 +845,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-09T10:02:38Z",
-        "observed_at_eastern": "2026-10-09 6:02 AM EDT",
+        "observed_at": "2026-10-09T15:56:02Z",
+        "observed_at_eastern": "2026-10-09 11:56 AM EDT",
         "format": "official dated-library metadata; audiovisual content unreviewed",
         "inspection": "The dated library still ended with the same three October 8 uploads previously reviewed: the science clip, Golden Age Summit replay and Vance visa-fraud press conference. No newer upload was listed. Titles, displayed dates, durations and stable IDs were inspected; footage, audio and captions were not retrieved.",
         "video_ids": [
@@ -848,8 +860,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-09T10:02:38Z",
-        "observed_at_eastern": "2026-10-09 6:02 AM EDT",
+        "observed_at": "2026-10-09T15:56:02Z",
+        "observed_at_eastern": "2026-10-09 11:56 AM EDT",
         "format": "supplementary official index",
         "inspection": "Supplementary remarks index inspected. It was not assumed to be a complete Trump TV transcript feed and supplied no new accessible transcript for the reviewed uploads.",
         "video_ids": []
@@ -859,8 +871,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-09T10:02:38Z",
-        "observed_at_eastern": "2026-10-09 6:02 AM EDT",
+        "observed_at": "2026-10-09T15:56:02Z",
+        "observed_at_eastern": "2026-10-09 11:56 AM EDT",
         "format": "supplementary official index",
         "inspection": "Official release index inspected. No October 9 release was listed by cutoff, and a release listing would not by itself establish that material aired on Trump TV.",
         "video_ids": []
@@ -1762,21 +1774,21 @@
     "counts": {
       "text_status": {
         "not_recorded": 137,
-        "reviewed": 473,
+        "reviewed": 476,
         "pending": 969
       },
       "media_status": {
-        "not_applicable": 779,
+        "not_applicable": 782,
         "not_recorded": 19,
         "unavailable": 235,
         "pending": 462,
         "reviewed": 84
       }
     },
-    "new_posts": 1,
-    "source_rows_added": 1,
-    "new_text_reviewed": 1,
-    "new_nonempty_text_reviewed": 1,
+    "new_posts": 2,
+    "source_rows_added": 2,
+    "new_text_reviewed": 3,
+    "new_nonempty_text_reviewed": 3,
     "new_empty_text_inspected": 0,
     "new_image_assets_reviewed": 0,
     "new_image_posts_reviewed": 0,
@@ -1784,16 +1796,16 @@
     "new_video_assets_reviewed": 0,
     "new_media_reviewed": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-09T10:03:06.471097Z",
-    "checked_at_eastern": "2026-10-09 6:03:06 AM EDT",
-    "latest_post_at_utc": "2026-10-09T04:02:21.034000Z",
-    "latest_post_at_eastern": "2026-10-09 12:02:21 AM EDT",
-    "latest_post_id": "117408959105269388",
+    "checked_at_utc": "2026-10-09T15:57:16.248311Z",
+    "checked_at_eastern": "2026-10-09 11:57:16 AM EDT",
+    "latest_post_at_utc": "2026-10-09T13:42:43.890000Z",
+    "latest_post_at_eastern": "2026-10-09 9:42:43 AM EDT",
+    "latest_post_id": "117411241255928585",
     "no_new_post_finding": false,
-    "note": "One materially newer text-only post was acquired after the prior validated fallback and read in full. It was published at 12:02:21 AM EDT on October 9, about 93 seconds before the prior national-research cutoff, but was absent from that run's validated source snapshot and therefore is disclosed as a late-arriving source item rather than a post-window event. It endorses Mike Rogers and attacks Mohammed El-Sayed; it is campaign advocacy and does not independently establish a qualifying government action."
+    "note": "Two source rows newer than the prior snapshot were acquired and their text was read in full. The newest post was published at 9:42:43 AM EDT on October 9. One linked an allegation about Letitia James and one reposted Nobel-committee advocacy; neither independently established a qualifying government action. A corrected mirror-text version of the earlier Michigan Senate campaign post also received a new content-bound review."
   },
   "archive_network_inspection": {
-    "checked_at": "2026-10-09T10:02:38Z",
-    "note": "All four registered primary projects were rechecked as discovery inputs. Trump Archive displayed 14,639 total items, 12,097 Truth Social posts and 1,893 speeches/transcripts; because this is a strictly feed-only release, those newer observations are disclosed here without changing the prior full snapshot's federation files. UndoTrump remained at 1,264 actions and the Immigration Policy Tracking Project remained at 1,809 policy actions. Record47's homepage displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts; its disclosed homepage/API discrepancy remains separate. Units remain separate and zero external canonical entries were imported."
+    "checked_at": "2026-10-09T15:56:02Z",
+    "note": "All four registered primary projects were rechecked as discovery inputs. Trump Archive showed an October 9 update date but its dynamic numeric widgets were not reliably resolved, so last verified measurements were preserved. UndoTrump remained at 1,264 actions. Immigration Policy Tracking Project increased from 1,809 to 1,810 policy actions. Record47's homepage remained at 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts while API values were not reverified. Units remain separate and zero external canonical entries were imported."
   }
 }

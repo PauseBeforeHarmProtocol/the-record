@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "status": "active_registry",
-  "checked_at": "2026-10-08T21:59:03Z",
+  "checked_at": "2026-10-09T15:56:02Z",
   "registry_purpose": "Describe independent Trump-related archives as a federated research network without pretending that unlike record units are interchangeable or additive.",
   "invariants": [
     "An upstream archive is a discovery and corroboration source, not an automatic authority for The Record.",
@@ -192,14 +192,15 @@
         "content_import_permission_state": "license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-10-08T21:59:03Z",
-        "state": "verified",
+        "checked_at": "2026-10-09T15:56:02Z",
+        "state": "partial_metric_access",
         "verification_pages": [
           "https://trump-archive.com/archive"
         ],
-        "note": "Primary index displayed 14,629 total items, 12,090 Truth Social posts and 1,890 speeches/transcripts. Distinct upstream units preserved; zero automatic canonical imports."
+        "note": "Primary index displayed an October 9 update date, but this check could not resolve trustworthy numeric widgets from the dynamic page. Last verified measurements remain preserved; latest cards were reviewed only as discovery leads and no item was automatically imported."
       },
       "check_history": [
+        {"checked_at":"2026-10-09T15:56:02Z","state":"partial_metric_access","verification_pages":["https://trump-archive.com/archive"],"note":"October 9 update date was visible, but dynamic numeric widgets were not reliably retrievable. Prior verified measurements remain preserved and no item was imported."},
         {
           "checked_at": "2026-10-02T22:02:20Z",
           "state": "success",
@@ -782,7 +783,7 @@
         "content_import_permission_state": "bulk_permission_or_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-10-08T21:59:03Z",
+        "checked_at": "2026-10-09T15:56:02Z",
         "state": "verified_unchanged",
         "verification_pages": [
           "https://www.undotrump.com/"
@@ -790,6 +791,7 @@
         "note": "Primary project page remained at 1,264 actions tracked. No measurement changed and no external item was promoted."
       },
       "check_history": [
+        {"checked_at":"2026-10-09T15:56:02Z","state":"verified_unchanged","verification_pages":["https://www.undotrump.com/"],"note":"Primary project page remained at 1,264 actions tracked. Distinct unit preserved and no item was promoted."},
         {
           "checked_at": "2026-10-02T22:02:20Z",
           "state": "success",
@@ -950,14 +952,14 @@
         {
           "metric_id": "iptp.policy_actions_browse",
           "as_reported_label": "Policy Actions",
-          "value": 1809,
+          "value": 1810,
           "unit": "immigration_policy_action",
           "scope": "all policies shown on the policies browse page",
           "comparability_group": "domain_policy_action",
-          "observed_at": "2026-10-08T03:58:50Z",
+          "observed_at": "2026-10-09T15:56:02Z",
           "source_url": "https://immpolicytracking.org/policies/",
           "upstream_display_date": null,
-          "note": "Primary policies browse page directly displayed 1,809 Policy Actions. Domain-policy actions remain a separate unit, and no upstream item is promoted by this observation."
+          "note": "Primary policies browse page directly displayed 1,810 Policy Actions. Domain-policy actions remain a separate unit, and no upstream item is promoted by this observation."
         }
       ],
       "trump_1_current_status_breakdown": [
@@ -1050,14 +1052,15 @@
         "content_import_permission_state": "permission_or_documented_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-10-08T21:59:03Z",
-        "state": "verified_unchanged",
+        "checked_at": "2026-10-09T15:56:02Z",
+        "state": "verified",
         "verification_pages": [
           "https://immpolicytracking.org/policies/"
         ],
-        "note": "Primary browse page remained at 1,809 policy actions. Units remain distinct and no external item was promoted."
+        "note": "Primary browse page displayed 1,810 policy actions, up from the last verified 1,809. Units remain distinct and no external item was promoted."
       },
       "check_history": [
+        {"checked_at":"2026-10-09T15:56:02Z","state":"verified","verification_pages":["https://immpolicytracking.org/policies/"],"note":"Primary browse page displayed 1,810 Policy Actions. Domain-policy unit preserved and no item was promoted."},
         {
           "checked_at": "2026-10-02T22:02:20Z",
           "state": "success",
@@ -1407,7 +1410,7 @@
         "content_import_permission_state": "metadata_and_citation_allowed_full_content_license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-10-08T21:59:03Z",
+        "checked_at": "2026-10-09T15:56:02Z",
         "state": "source_inconsistency_and_api_access_gap",
         "verification_pages": [
           "https://record47.org/",
@@ -1417,6 +1420,7 @@
         "note": "Homepage displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts. Current API endpoints were inaccessible, so preserved API measurements and the discrepancy remain disclosed; unlike units are not summed."
       },
       "check_history": [
+        {"checked_at":"2026-10-09T15:56:02Z","state":"source_inconsistency_and_api_access_gap","verification_pages":["https://record47.org/","https://api.record47.org/counts","https://api.record47.org/entries?limit=1"],"note":"Homepage remained at 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts. API values were not reverified; prior API measurements and the discrepancy remain preserved."},
         {
           "checked_at": "2026-10-02T22:02:20Z",
           "state": "source_inconsistency",
