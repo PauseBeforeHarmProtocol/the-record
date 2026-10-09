@@ -5894,6 +5894,31 @@
         "provenance_sha256": "30c3ca36bd09cbd641c394bd95f770c6f622b310cb304e988a09c21362d91dda",
         "note": "Same diesel-relief event and effectiveness lifecycle; stable canonical ID retained."
     }
+  ,
+      {
+        "change_id": "10.130.0:NAT-2026-10-09-003",
+        "entry_id": "NAT-2026-10-09-003",
+        "as_of_utc": "2026-10-09T21:57:55Z",
+        "timestamp_precision": "second",
+        "kind": "added",
+        "release_version": "10.130.0",
+        "summary": "OFAC implemented a six-month license for Russian-origin diesel after Trump announced supply volumes from Putin.",
+        "provenance_path": "data/editorial_change_notes/10.130.0.json",
+        "provenance_sha256": "d700afb4f55457cabd32253ec686e000977eb962bca234b14b1900f5241d8ab6",
+        "note": "Distinct foreign-policy and sanctions lifecycle from the October 5 domestic dyed-diesel tax relief and September energy-strike records; related context is cross-referenced without a duplicate count."
+      },
+      {
+        "change_id": "10.130.0:NAT-2026-10-09-004",
+        "entry_id": "NAT-2026-10-09-004",
+        "as_of_utc": "2026-10-09T21:57:55Z",
+        "timestamp_precision": "second",
+        "kind": "added",
+        "release_version": "10.130.0",
+        "summary": "A federal court vacated DOJ's nationwide voter-list maintenance policy on statutory, administrative and privacy grounds.",
+        "provenance_path": "data/editorial_change_notes/10.130.0.json",
+        "provenance_sha256": "d700afb4f55457cabd32253ec686e000977eb962bca234b14b1900f5241d8ab6",
+        "note": "Distinct October 9 judicial lifecycle stage of the national voter-list program described in legacy records LEG-004635 and LEG-004675; the ruling is not collapsed into the earlier proposal or implementation records."
+      }
   ],
   "reviews": [
     {
@@ -69731,6 +69756,265 @@
       ],
       "unresolved_questions": ["Treasury guidance and broad retailer participation were not located by cutoff.", "Price effects over the full authorized period and any permanent forgiveness remain unresolved."]
     }
+  ,
+      {
+        "review_id": "10.130.0:NAT-2026-10-09-003:e83fcdf30855",
+        "entry_id": "NAT-2026-10-09-003",
+        "content_sha256": "e83fcdf308551ef619a6a30494657d538625e67639bc1d58b357076b6f3771d8",
+        "reviewed_at": "2026-10-09T21:57:55Z",
+        "reviewer": {
+          "name": "OpenAI Codex editorial maintenance",
+          "kind": "ai_assisted"
+        },
+        "claims": [
+          {
+            "fact_index": 0,
+            "fact_sha256": "f700ca76389e32cf51476b9c7625bef324b9f404e76819f3da5ae531d102fe38",
+            "relies_on_unnamed_sources": false,
+            "supports": [
+              {
+                "source_id": "truth_russia_diesel_oct9",
+                "locator": "Complete retained post establishes Trump's publication, announced quantities and rationale only.",
+                "inspected_at": "2026-10-09T21:57:55Z",
+                "document_sha256": "74a3282393b57f1741f16da625f5f8a2c3cb6d02bd73dd43d3afa651ff244156",
+                "origin_group": "Truth Social / Donald J. Trump",
+                "evidence_status": "publication_only"
+              },
+              {
+                "source_id": "reuters_russia_diesel_oct9",
+                "locator": "Independent report of the announcement and quantities.",
+                "inspected_at": "2026-10-09T21:57:55Z",
+                "document_sha256": "5ecb44ff28e1d6230fbd60974777314a02aa52619f760b9dab365d8efa33705f",
+                "origin_group": "Reuters",
+                "evidence_status": "announced"
+              },
+              {
+                "source_id": "ap_russia_diesel_oct9",
+                "locator": "Independent report of the announcement and quantities.",
+                "inspected_at": "2026-10-09T21:57:55Z",
+                "document_sha256": "addd8de245ff1c2174a91bb87e62fc051db93446a9cd912b77c53bf1c9e1cc3b",
+                "origin_group": "Associated Press",
+                "evidence_status": "announced"
+              }
+            ]
+          },
+          {
+            "fact_index": 1,
+            "fact_sha256": "8a5da6b53c2c7d37003826eaf45ffa7515a49246cdc1ee8f44a687ba56277258",
+            "relies_on_unnamed_sources": false,
+            "supports": [
+              {
+                "source_id": "ofac_russia_gl135_oct9",
+                "locator": "Complete one-page license establishes scope, duration and exclusions.",
+                "inspected_at": "2026-10-09T21:57:55Z",
+                "document_sha256": "b42bed871cff3162540bc645eba298e4c0cf73d0a5b1712879a3f4fec060d65b",
+                "origin_group": "U.S. Treasury / OFAC",
+                "evidence_status": "implemented"
+              },
+              {
+                "source_id": "ofac_russia_program_oct9",
+                "locator": "Official program page lists General License 135 and publication date.",
+                "inspected_at": "2026-10-09T21:57:55Z",
+                "document_sha256": "5c96716592f455a32fcda471dcda2231a6e2848dbaf7ce4dfbfaba0d6c9eb2b4",
+                "origin_group": "U.S. Treasury / OFAC",
+                "evidence_status": "implemented"
+              }
+            ]
+          },
+          {
+            "fact_index": 2,
+            "fact_sha256": "a1e8610e36a2d2bbf4744c994267dcf788273347368ab3d571964838509bd890",
+            "relies_on_unnamed_sources": false,
+            "supports": [
+              {
+                "source_id": "ap_russia_diesel_oct9",
+                "locator": "Independent report on unanswered contract and timing terms and price uncertainty.",
+                "inspected_at": "2026-10-09T21:57:55Z",
+                "document_sha256": "addd8de245ff1c2174a91bb87e62fc051db93446a9cd912b77c53bf1c9e1cc3b",
+                "origin_group": "Associated Press",
+                "evidence_status": "reported"
+              },
+              {
+                "source_id": "reuters_russia_diesel_oct9",
+                "locator": "Independent scale comparison, futures move and analyst assessments.",
+                "inspected_at": "2026-10-09T21:57:55Z",
+                "document_sha256": "5ecb44ff28e1d6230fbd60974777314a02aa52619f760b9dab365d8efa33705f",
+                "origin_group": "Reuters",
+                "evidence_status": "measured"
+              }
+            ]
+          },
+          {
+            "fact_index": 3,
+            "fact_sha256": "69c397f494ff7357767e3b58ee2f46913748f28fa128df65d581dda48c8c2eb3",
+            "relies_on_unnamed_sources": false,
+            "supports": [
+              {
+                "source_id": "truth_russia_diesel_oct9",
+                "locator": "Presidential rationale as published, not independent verification.",
+                "inspected_at": "2026-10-09T21:57:55Z",
+                "document_sha256": "74a3282393b57f1741f16da625f5f8a2c3cb6d02bd73dd43d3afa651ff244156",
+                "origin_group": "Truth Social / Donald J. Trump",
+                "evidence_status": "publication_only"
+              },
+              {
+                "source_id": "reuters_russia_diesel_oct9",
+                "locator": "Named Ukrainian response and market context.",
+                "inspected_at": "2026-10-09T21:57:55Z",
+                "document_sha256": "5ecb44ff28e1d6230fbd60974777314a02aa52619f760b9dab365d8efa33705f",
+                "origin_group": "Reuters",
+                "evidence_status": "reported"
+              },
+              {
+                "source_id": "ap_russia_diesel_oct9",
+                "locator": "Named Russian and Ukrainian responses.",
+                "inspected_at": "2026-10-09T21:57:55Z",
+                "document_sha256": "addd8de245ff1c2174a91bb87e62fc051db93446a9cd912b77c53bf1c9e1cc3b",
+                "origin_group": "Associated Press",
+                "evidence_status": "reported"
+              }
+            ]
+          }
+        ],
+        "reasoning_review": [
+          {
+            "field": "significance",
+            "text_sha256": "2e9bbcc02814e907ec9d9f208018e05671861b5861edb43ba1852adbad90fc86",
+            "review_note": "Separately reviewed as bounded institutional and policy significance."
+          },
+          {
+            "field": "goalpost",
+            "text_sha256": "22918f2270ee4206f0490c465be69c3c57f857b368fdcab91ba05c6c655dbead",
+            "review_note": "Separately reviewed against administration explanations and observable future tests."
+          },
+          {
+            "field": "maybe_therefore",
+            "text_sha256": "5e06dd9bffe3b32d9a86efe92ce51026ed83117f5195d0bcf3529e344e4b0af6",
+            "review_note": "Separately reviewed to preserve competing explanations and distinguish implemented, announced and unresolved states."
+          }
+        ],
+        "unresolved_questions": [
+          "Contracts, payment terms, cargo loadings, deliveries and sustained price effects remain unresolved.",
+          "OFAC amendments and sanctions-enforcement consequences remain open."
+        ]
+      },
+      {
+        "review_id": "10.130.0:NAT-2026-10-09-004:dc1d5d0eb8bf",
+        "entry_id": "NAT-2026-10-09-004",
+        "content_sha256": "dc1d5d0eb8bff1fdc460b0a778124c0472d8a55cee5f67c1b72475632984597e",
+        "reviewed_at": "2026-10-09T21:57:55Z",
+        "reviewer": {
+          "name": "OpenAI Codex editorial maintenance",
+          "kind": "ai_assisted"
+        },
+        "claims": [
+          {
+            "fact_index": 0,
+            "fact_sha256": "5e95e6038fd6638172eae42f4c491142209bd3a1011e0e932b292d31198a365a",
+            "relies_on_unnamed_sources": false,
+            "supports": [
+              {
+                "source_id": "common_cause_doj_voter_roll_opinion_oct9",
+                "locator": "Pages 8–11 describe the nationwide policy, data flow and participating states.",
+                "inspected_at": "2026-10-09T21:57:55Z",
+                "document_sha256": "120f128a3626fa6660d2f1e21fc540114c3db3253c9e3d874390affcce69117c",
+                "origin_group": "U.S. District Court for the District of Columbia",
+                "evidence_status": "reported"
+              }
+            ]
+          },
+          {
+            "fact_index": 1,
+            "fact_sha256": "d04ad7719a119bafd094646942a74ef7c7a5128f428172c0d73c0bd72bd516a4",
+            "relies_on_unnamed_sources": false,
+            "supports": [
+              {
+                "source_id": "common_cause_doj_voter_roll_opinion_oct9",
+                "locator": "Pages 2 and 77–78 state the statutory holdings and vacatur.",
+                "inspected_at": "2026-10-09T21:57:55Z",
+                "document_sha256": "120f128a3626fa6660d2f1e21fc540114c3db3253c9e3d874390affcce69117c",
+                "origin_group": "U.S. District Court for the District of Columbia",
+                "evidence_status": "enjoined"
+              }
+            ]
+          },
+          {
+            "fact_index": 2,
+            "fact_sha256": "307f21e60a44a4f4c445625bdee576cc330f07121173cc31e54f6bd9baf6e2d2",
+            "relies_on_unnamed_sources": false,
+            "supports": [
+              {
+                "source_id": "common_cause_doj_voter_roll_opinion_oct9",
+                "locator": "Pages 2 and 77–78 state the remedy and its limits.",
+                "inspected_at": "2026-10-09T21:57:55Z",
+                "document_sha256": "120f128a3626fa6660d2f1e21fc540114c3db3253c9e3d874390affcce69117c",
+                "origin_group": "U.S. District Court for the District of Columbia",
+                "evidence_status": "enjoined"
+              },
+              {
+                "source_id": "reuters_doj_voter_roll_ruling_oct9",
+                "locator": "Independent report provides DOJ's reviewing response and cutoff posture.",
+                "inspected_at": "2026-10-09T21:57:55Z",
+                "document_sha256": "be174b3f2c9734c59021d1992ed29811a7341794d26387fed6f68e7dee26200a",
+                "origin_group": "Reuters",
+                "evidence_status": "reported"
+              }
+            ]
+          },
+          {
+            "fact_index": 3,
+            "fact_sha256": "8f13daa68ce3d14866108a51f6153883cf6c77c6fe1c1ca737218b77cbe73f5a",
+            "relies_on_unnamed_sources": false,
+            "supports": [
+              {
+                "source_id": "common_cause_doj_voter_roll_opinion_oct9",
+                "locator": "Footnote 3 inventories the related enforcement cases and distinguishes separate SAVE litigation.",
+                "inspected_at": "2026-10-09T21:57:55Z",
+                "document_sha256": "120f128a3626fa6660d2f1e21fc540114c3db3253c9e3d874390affcce69117c",
+                "origin_group": "U.S. District Court for the District of Columbia",
+                "evidence_status": "reported"
+              },
+              {
+                "source_id": "reuters_doj_voter_roll_ruling_oct9",
+                "locator": "Independent report confirms the case counts and separate litigation posture.",
+                "inspected_at": "2026-10-09T21:57:55Z",
+                "document_sha256": "be174b3f2c9734c59021d1992ed29811a7341794d26387fed6f68e7dee26200a",
+                "origin_group": "Reuters",
+                "evidence_status": "reported"
+              },
+              {
+                "source_id": "guardian_doj_voter_roll_ruling_oct9",
+                "locator": "Independent report links the opinion and confirms the policy vacatur.",
+                "inspected_at": "2026-10-09T21:57:55Z",
+                "document_sha256": "39a47b499c2b7182b17dfbaf797a3cec2d4116f8141428f463a52b691911e7e5",
+                "origin_group": "The Guardian",
+                "evidence_status": "reported"
+              }
+            ]
+          }
+        ],
+        "reasoning_review": [
+          {
+            "field": "significance",
+            "text_sha256": "9cbfbfdef5ed9f6a1b6e3bba3200b5a8fecd30db5e61a4e6cd6f7bff4ca0591f",
+            "review_note": "Separately reviewed as bounded institutional and policy significance."
+          },
+          {
+            "field": "goalpost",
+            "text_sha256": "4ce02493898cc5e087280595ba2cda3febce9acc691e7d8da946f31e46e9968c",
+            "review_note": "Separately reviewed against administration explanations and observable future tests."
+          },
+          {
+            "field": "maybe_therefore",
+            "text_sha256": "8fc4f2b7c95f7b1347ab4e6e5e29dedc0063a6214b4bbdb379938cea35feb088",
+            "review_note": "Separately reviewed to preserve competing explanations and distinguish implemented, announced and unresolved states."
+          }
+        ],
+        "unresolved_questions": [
+          "A separate order, appeal, stay or revised DOJ policy may change the operative posture.",
+          "Retention, deletion and state use of voter data already transferred remain unresolved."
+        ]
+      }
   ],
   "deferred_candidates": []
 }
