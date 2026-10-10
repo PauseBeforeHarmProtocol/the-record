@@ -1,30 +1,45 @@
 {
-  "version": "10.131.0",
-  "artifact_mode": "full",
+  "version": "10.132.0",
+  "artifact_mode": "feed-only",
+  "editorial_snapshot": {
+    "version": "10.131.0",
+    "complete_pack": {
+      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-10-09_v10.131.0.zip",
+      "sha256": "c22a49c094c1ece18b2aa0c841f242564191df4b6eff2e9c2942114f52798712"
+    },
+    "national_pack": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-10-09_v10.131.0.zip",
+      "sha256": "276a3c41b1bc5dc93259332cf3a4d800e0a19be59f994425eac43acdd9dcb7bb"
+    },
+    "national_brief": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-10-09_v10.131.0.md",
+      "sha256": "ad20877975106cbcd75278223aa51a6f274dea06d510df512ae43fa3cc7ca9f1"
+    },
+    "in6_brief": {
+      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-10-09_v10.131.0.md",
+      "sha256": "40ba35512c9c65bf89f0c11fdc0139f2d8bd81285c98be7a8bc76bdb39b43b24"
+    }
+  },
   "research_window": {
-    "from_utc": "2026-10-09T21:57:55Z",
-    "through_utc": "2026-10-10T03:59:24Z",
+    "from_utc": "2026-10-10T03:59:24Z",
+    "through_utc": "2026-10-10T09:58:54Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact scan from the prior successful boundary. One independently verified, late-discovered prior-window action cleared the threshold; no item was added to meet a quota."
+    "note": "Exact scan from the prior accepted open-branch boundary. No new or materially refreshed canonical national record cleared the publication threshold. This feed-only release preserves a materially newer validated Truth Social fallback with 12 new retained posts while reusing the immutable 10.131.0 full editorial snapshot."
   },
-  "release_iso": "2026-10-09",
-  "release_human": "October 9, 2026",
-  "checked_at": "2026-10-09 11:59 PM EDT",
-  "previous_version": "10.130.0",
-  "previous_checked_at": "2026-10-09 5:57 PM EDT",
-  "window_started_at": "2026-10-09 5:57 PM EDT",
-  "window_ended_at": "2026-10-09 11:59 PM EDT",
-  "week_start": "2026-10-03",
-  "week_end": "2026-10-09",
-  "week_label": "2026-10-03 through 2026-10-09",
-  "cutoff_start": "2026-07-17",
-  "new_entry_ids": [
-    "NAT-2026-10-09-005"
-  ],
-  "added_entry_ids": [
-    "NAT-2026-10-09-005"
-  ],
+  "release_iso": "2026-10-10",
+  "release_human": "October 10, 2026",
+  "checked_at": "2026-10-10 5:58 AM EDT",
+  "previous_version": "10.131.0",
+  "previous_checked_at": "2026-10-09 11:59 PM EDT",
+  "window_started_at": "2026-10-09 11:59 PM EDT",
+  "window_ended_at": "2026-10-10 5:58 AM EDT",
+  "week_start": "2026-10-10",
+  "week_end": "2026-10-16",
+  "week_label": "2026-10-10 through 2026-10-16",
+  "cutoff_start": "2026-07-18",
+  "new_entry_ids": [],
+  "added_entry_ids": [],
   "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
@@ -798,31 +813,35 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Truth Social Nobel Prize grievance",
-      "reason": "The post and its Bloomberg-branded image were reviewed; the post contains rhetoric and numerous unverified claims but no independently qualifying government action."
+      "title": "Truth Social Mike Tyson media burst",
+      "reason": "Eleven new posts or reposts consisted of airport, Air Force One, archival boxing and social-commentary media involving Mike Tyson. Retrieved images and video visuals were inspected; the material was ceremonial or promotional and established no qualifying government action. One video's audio track was not transcribed, so no audio claim was used."
     },
     {
-      "title": "Late-arriving press-secretary repost",
-      "reason": "The mirror row arrived after the prior snapshot but was published just before its boundary and duplicates the already reviewed routine personnel announcement."
+      "title": "Truth Social Russian-diesel screenshot repost",
+      "reason": "The attached screenshot repeats Trump's already reviewed Russian-diesel announcement. The operative OFAC license and announcement are already canonical in NAT-2026-10-09-003; the repost adds no contract, delivery or measured price-effect evidence."
     },
     {
-      "title": "Prospective DPA diesel directive",
-      "reason": "Unnamed sources continued to describe an intended directive; no signed implementing instrument was located by cutoff."
+      "title": "American Music Tourism Act signing",
+      "reason": "The White House reported that Trump signed S. 195 on October 9. The narrow direction for Commerce to promote U.S. music tourism was reviewed as routine, low-consequence legislation and did not meet the archive's materiality threshold."
     },
     {
       "title": "Trump TV recheck",
-      "reason": "Two October 9 uploads were accessible only as official metadata. The gaggle repeated already canonical developments and the Columbus Day event was ceremonial; no qualifying new item was located in the material reviewed."
+      "reason": "The official stream ID and the two October 9 library uploads were unchanged. Only official page metadata was accessible; no new recording or transcript appeared and no qualifying new item was located in the material reviewed."
+    },
+    {
+      "title": "Overnight Ukraine talks and campaign travel coverage",
+      "reason": "Reporting described ongoing Miami negotiations, Russian attacks and weather-driven campaign scheduling, but no new signed U.S. agreement, military order, war-powers decision, appropriation or other independently verified administration implementation was located by cutoff."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-10T03:59:24Z",
-    "checked_at_eastern": "2026-10-09 11:59 PM EDT",
+    "checked_at": "2026-10-10T09:58:54Z",
+    "checked_at_eastern": "2026-10-10 5:58 AM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-10T03:59:24Z",
+    "last_successful_page_inspection_at": "2026-10-10T09:58:54Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -833,8 +852,63 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, videos, remarks and releases pages were rechecked. The linked stream remained A4gNgHfZ-v4 and fallback text was not treated as proof of an outage. The dated library exposed two October 9 uploads: a departure gaggle (X3kk9Oj5o2E) and a Columbus Day celebration (noI4BbQ2wZQ). Only official metadata was inspected; footage, audio and captions were not retrieved. The gaggle repeated already canonical developments and the celebration was ceremonial. No qualifying new item located in the material reviewed, and no verified new channel cost, contract, staffing/control, distribution, press-access consequence, investigation or court/congressional finding was located.",
+    "summary": "Official Trump TV, live, videos, remarks and briefings pages were rechecked. The linked stream remained A4gNgHfZ-v4 and fallback text was not treated as proof of an outage. The dated library still ended with the same two October 9 uploads: a departure gaggle (X3kk9Oj5o2E) and a Columbus Day celebration (noI4BbQ2wZQ). Only official metadata was inspected; footage, audio and captions were not retrieved. No qualifying new item located in the material reviewed, and no verified new channel cost, contract, staffing/control, distribution, press-access consequence, investigation or court/congressional finding was located.",
     "items": [
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-10T09:58:54Z",
+        "observed_at_eastern": "2026-10-10 5:58 AM EDT",
+        "format": "official page metadata; audiovisual content unreviewed",
+        "inspection": "Official page inspected. It linked the unchanged A4gNgHfZ-v4 stream. No footage, audio or captions were retrieved, and fallback error text was not treated as proof of an outage.",
+        "video_ids": ["A4gNgHfZ-v4"]
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-10T09:58:54Z",
+        "observed_at_eastern": "2026-10-10 5:58 AM EDT",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "Official live hub inspected. It linked the same Trump TV stream; current live/replay state and audiovisual content were not independently reviewed.",
+        "video_ids": ["A4gNgHfZ-v4"]
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-10T09:58:54Z",
+        "observed_at_eastern": "2026-10-10 5:58 AM EDT",
+        "format": "official dated-library metadata; audiovisual content unreviewed",
+        "inspection": "The library still ended with the October 9 departure gaggle and Columbus Day celebration. Titles, displayed dates, durations and stable IDs were inspected; footage, audio and captions were not retrieved, and a repeated upload was not counted as a new action.",
+        "video_ids": ["X3kk9Oj5o2E", "noI4BbQ2wZQ"]
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-10T09:58:54Z",
+        "observed_at_eastern": "2026-10-10 5:58 AM EDT",
+        "format": "supplementary remarks index",
+        "inspection": "The remarks index was inspected but not assumed to be a complete Trump TV transcript feed. It supplied no new accessible transcript for the reviewed uploads.",
+        "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/briefings-statements/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-10T09:58:54Z",
+        "observed_at_eastern": "2026-10-10 5:58 AM EDT",
+        "format": "supplementary briefings and statements index",
+        "inspection": "The official briefings and statements index was inspected as a lead source. It supplied no new Trump TV transcript or independently qualifying broadcast finding in the window.",
+        "video_ids": []
+      },
       {
         "url": "https://www.whitehouse.gov/trumptv/",
         "posted_date": null,
@@ -1950,39 +2024,39 @@
     "scope": "1000 retained fallback posts; current content hashes only",
     "counts": {
       "text_status": {
-        "not_recorded": 137,
-        "reviewed": 481,
+        "not_recorded": 147,
+        "reviewed": 483,
         "pending": 969
       },
       "media_status": {
         "not_applicable": 786,
         "not_recorded": 19,
         "unavailable": 235,
-        "pending": 462,
-        "reviewed": 85
+        "pending": 464,
+        "reviewed": 95
       }
     },
-    "new_posts": 2,
-    "source_rows_added": 2,
+    "new_posts": 12,
+    "source_rows_added": 12,
     "new_text_reviewed": 2,
     "new_nonempty_text_reviewed": 2,
-    "new_empty_text_inspected": 0,
-    "new_image_assets_reviewed": 1,
-    "new_image_posts_reviewed": 1,
-    "new_video_assets_pending": 0,
+    "new_empty_text_inspected": 10,
+    "new_image_assets_reviewed": 10,
+    "new_image_posts_reviewed": 10,
+    "new_video_assets_pending": 2,
     "new_video_assets_reviewed": 0,
-    "new_media_reviewed": 1,
+    "new_media_reviewed": 10,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-10T04:00:19.847975Z",
-    "checked_at_eastern": "2026-10-10 12:00:19 AM EDT",
-    "latest_post_at_utc": "2026-10-10T03:39:58.181000Z",
-    "latest_post_at_eastern": "2026-10-09 11:39:58 PM EDT",
-    "latest_post_id": "117414533410378018",
+    "checked_at_utc": "2026-10-10T10:00:21.941319Z",
+    "checked_at_eastern": "2026-10-10 6:00:21 AM EDT",
+    "latest_post_at_utc": "2026-10-10T06:06:28.856000Z",
+    "latest_post_at_eastern": "2026-10-10 2:06:28 AM EDT",
+    "latest_post_id": "117415109515983885",
     "no_new_post_finding": false,
-    "note": "Two mirror rows newer than the prior snapshot were reviewed in full. The newest post and its Bloomberg-branded Nobel graphic were rhetoric and unverified claims, not a qualifying government action. The other row was a late-arriving repost published just before the prior research boundary and duplicated the already reviewed routine press-secretary announcement."
+    "note": "Twelve mirror rows newer than the prior snapshot were inspected. Ten image attachments were retrieved and reviewed. Two video visual tracks were retrieved and inspected; the longer file's audio was not transcribed, so both retain pending media status and no audio claim is used. Eleven posts were ceremonial or promotional Mike Tyson material. The newest screenshot repeated the already canonical Russian-diesel announcement and added no implementation or outcome evidence."
   },
   "archive_network_inspection": {
-    "checked_at": "2026-10-10T03:59:24Z",
-    "note": "All four registered primary projects were rechecked as discovery inputs. Trump Archive displayed 14,647 total items, 12,103 Truth Social posts and 1,894 speeches/transcripts; UndoTrump remained at 1,264 actions; Immigration Policy Tracking Project remained at 1,810 policy actions; Record47's homepage remained at 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts while API values were not reverified. Units remain separate and zero external canonical entries were imported."
+    "checked_at": "2026-10-10T09:58:54Z",
+    "note": "All four registered primary projects were rechecked as discovery inputs. Trump Archive displayed 14,652 total items, 12,104 Truth Social posts and 1,898 speeches/transcripts; UndoTrump remained at 1,264 actions; Immigration Policy Tracking Project remained at 1,810 policy actions; Record47's homepage remained at 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts while API values were not reverified. The feed-only contract leaves the 10.131.0 editorial snapshot and registry measurements byte-stable; the new observation is preserved in this receipt without importing an external canonical record. Units remain separate."
   }
 }
