@@ -5918,7 +5918,19 @@
         "provenance_path": "data/editorial_change_notes/10.130.0.json",
         "provenance_sha256": "d700afb4f55457cabd32253ec686e000977eb962bca234b14b1900f5241d8ab6",
         "note": "Distinct October 9 judicial lifecycle stage of the national voter-list program described in legacy records LEG-004635 and LEG-004675; the ruling is not collapsed into the earlier proposal or implementation records."
-      }
+      },
+    {
+      "change_id": "10.131.0:NAT-2026-10-09-005",
+      "entry_id": "NAT-2026-10-09-005",
+      "as_of_utc": "2026-10-10T03:59:24Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.131.0",
+      "summary": "ATF implemented nationwide nonenforcement of major NFA approval and registration controls for silencers and several short-barreled firearm categories.",
+      "provenance_path": "data/editorial_change_notes/10.131.0.json",
+      "provenance_sha256": "6a0008f4df30ead7976c75ba4d8ffb24ca978548e93e594abd28a4521fc8b387",
+      "note": "Late-discovered prior-window action; distinct from LEG-004555 and preserved with the August district-court ruling as predicate context rather than a duplicate count."
+    }
   ],
   "reviews": [
     {
@@ -70014,7 +70026,140 @@
           "A separate order, appeal, stay or revised DOJ policy may change the operative posture.",
           "Retention, deletion and state use of voter data already transferred remain unresolved."
         ]
-      }
+      },
+    {
+      "review_id": "10.131.0:NAT-2026-10-09-005:f4ee205ce7e3",
+      "entry_id": "NAT-2026-10-09-005",
+      "content_sha256": "f4ee205ce7e31a86d2c294e78bbe75b0031403c5c2ef6dec7a70efcc352608f1",
+      "reviewed_at": "2026-10-10T03:59:24Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "badc6383ca13253fcea2225547d5b2be000e73184efb88169e766ea93f85c410",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "atf_nfa_open_letter_oct9",
+              "locator": "Pages 2–3 announce nationwide nonenforcement, voluntary registration and the covered categories.",
+              "inspected_at": "2026-10-10T03:59:24Z",
+              "document_sha256": "97f32318074d9c90a07345e0165fd2eeae7ebab8d9ec77049c8599c27d923609",
+              "origin_group": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "atf_nfa_guidance_oct9",
+              "locator": "Official FAQ lists the affected approval, registration, transfer, possession, marking and documentation provisions effective October 9.",
+              "inspected_at": "2026-10-10T03:59:24Z",
+              "document_sha256": "fc1a352f163b9a93ba5714f06deab16aab7b412b1dd5b78f7d88996ed5e3526e",
+              "origin_group": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "e5ae9670dc7959582cd070b01da5563f2008dea51e86dc382a97e70228e577fb",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "atf_nfa_open_letter_oct9",
+              "locator": "Pages 1–2 summarize the August district-court holding, plaintiff-limited injunction and DOJ's nationwide discretion decision.",
+              "inspected_at": "2026-10-10T03:59:24Z",
+              "document_sha256": "97f32318074d9c90a07345e0165fd2eeae7ebab8d9ec77049c8599c27d923609",
+              "origin_group": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_nfa_non_enforcement_oct9",
+              "locator": "Independent report confirms DOJ declined appeal and applied the result nationwide beyond the named plaintiffs.",
+              "inspected_at": "2026-10-10T03:59:24Z",
+              "document_sha256": "e269385b27deac29dbfeb2879525a22a4fbb663681989493c3e89927204d9d94",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "76baeb7f4df90b381efbc540b4028ced7d0b6834078ff117da681bccccf71026",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "atf_nfa_open_letter_oct9",
+              "locator": "Pages 2–3 state the machinegun, destructive-device, GCA, occupational-tax, interstate-transport and state-law limits.",
+              "inspected_at": "2026-10-10T03:59:24Z",
+              "document_sha256": "97f32318074d9c90a07345e0165fd2eeae7ebab8d9ec77049c8599c27d923609",
+              "origin_group": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "atf_nfa_guidance_oct9",
+              "locator": "Official FAQ lists retained federal controls and interim section 922(b)(4) nonenforcement pending regulations.",
+              "inspected_at": "2026-10-10T03:59:24Z",
+              "document_sha256": "fc1a352f163b9a93ba5714f06deab16aab7b412b1dd5b78f7d88996ed5e3526e",
+              "origin_group": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "8171ecd3fbb7078bb8b18b4c82942219bb9c8dac5f823bc050cc270f88f2c98c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "atf_nfa_press_release_oct9",
+              "locator": "Official release gives Director Cekada's explanation and retained-safeguards rationale.",
+              "inspected_at": "2026-10-10T03:59:24Z",
+              "document_sha256": "bbf10080d695091fe3d3505c15ef86994ac954b33d5c886749ab042588146316",
+              "origin_group": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_nfa_non_enforcement_oct9",
+              "locator": "Independent report records gun-rights and gun-safety responses.",
+              "inspected_at": "2026-10-10T03:59:24Z",
+              "document_sha256": "e269385b27deac29dbfeb2879525a22a4fbb663681989493c3e89927204d9d94",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "atf_nfa_open_letter_oct9",
+              "locator": "Page 3 warns that state-law registration links and interstate transport remain uncertain.",
+              "inspected_at": "2026-10-10T03:59:24Z",
+              "document_sha256": "97f32318074d9c90a07345e0165fd2eeae7ebab8d9ec77049c8599c27d923609",
+              "origin_group": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "cf5915458ee6695c3948fe86fc2837f763a495efb78a294e2fd04305d3a1932b",
+          "review_note": "Separately reviewed as bounded institutional and policy significance."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "5a4ab7d36bb93616a108100d479ef022f666a1451deff85a01135650cfdd2f73",
+          "review_note": "Separately reviewed against the administration explanation and observable implementation tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "b690742bc705c6bda74a87b73ff60d17bfdf4b36963331bde34dd3c455c12e54",
+          "review_note": "Separately reviewed to preserve competing legal explanations and distinguish enforcement policy from repeal or measured effects."
+        }
+      ],
+      "unresolved_questions": [
+        "The nationwide policy rests on enforcement discretion and may change through litigation, rulemaking or a later administration.",
+        "State-law treatment of unregistered items, interstate transport and measurable safety, tracing and compliance effects remain unresolved."
+      ]
+    }
   ],
   "deferred_candidates": []
 }
