@@ -6013,6 +6013,18 @@
       "provenance_path": "data/editorial_change_notes/10.136.0.json",
       "provenance_sha256": "83c8509ddf98c4c21ad6a4fa9e69b3f057f22c74bfe23ca481f27668d5c8f726",
       "note": "Stable record updated; precise evidence status, strongest response, separate Maybe/Therefore review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.137.0:NAT-2026-10-09-003",
+      "entry_id": "NAT-2026-10-09-003",
+      "as_of_utc": "2026-10-11T22:02:39Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.137.0",
+      "summary": "Seven senators formally challenged the legality of the Russian-diesel license; the administration asserted existing authority and a senior Republican defended the policy.",
+      "provenance_path": "data/editorial_change_notes/10.137.0.json",
+      "provenance_sha256": "e7f4ec6e999dbeccb922cafdce2a3074a06d322e6a49d5ad373d7edbc9de4d61",
+      "note": "Stable record updated; the congressional allegation, administration response, unresolved judicial status and separate Maybe/Therefore review are preserved."
     }
   ],
   "reviews": [
@@ -73635,6 +73647,178 @@
       "unresolved_questions": [
         "Named company accounts do not provide a national causal estimate of tariff effects.",
         "Future plant openings, output, employment and revisions remain unmeasured."
+      ]
+    },
+    {
+      "review_id": "10.137.0:NAT-2026-10-09-003:bbb35e8df1f2",
+      "entry_id": "NAT-2026-10-09-003",
+      "content_sha256": "bbb35e8df1f2a3febf77ffd88d61ef0d5e2055a7e3ba3c0869c16447aef9224a",
+      "reviewed_at": "2026-10-11T22:04:04Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "f700ca76389e32cf51476b9c7625bef324b9f404e76819f3da5ae531d102fe38",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_russia_diesel_oct9",
+              "locator": "Complete retained post establishes Trump's publication, announced quantities and rationale only.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "74a3282393b57f1741f16da625f5f8a2c3cb6d02bd73dd43d3afa651ff244156",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "reuters_russia_diesel_oct9",
+              "locator": "Independent report of the announcement and quantities.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "5ecb44ff28e1d6230fbd60974777314a02aa52619f760b9dab365d8efa33705f",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_russia_diesel_oct9",
+              "locator": "Independent report of the announcement and quantities.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "addd8de245ff1c2174a91bb87e62fc051db93446a9cd912b77c53bf1c9e1cc3b",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "8a5da6b53c2c7d37003826eaf45ffa7515a49246cdc1ee8f44a687ba56277258",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_russia_gl135_oct9",
+              "locator": "Complete one-page license establishes scope, duration and exclusions.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "b42bed871cff3162540bc645eba298e4c0cf73d0a5b1712879a3f4fec060d65b",
+              "origin_group": "U.S. Treasury / OFAC",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ofac_russia_program_oct9",
+              "locator": "Official program page lists General License 135 and publication date.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "5c96716592f455a32fcda471dcda2231a6e2848dbaf7ce4dfbfaba0d6c9eb2b4",
+              "origin_group": "U.S. Treasury / OFAC",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "a1e8610e36a2d2bbf4744c994267dcf788273347368ab3d571964838509bd890",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_russia_diesel_oct9",
+              "locator": "Independent report on unanswered contract and timing terms and price uncertainty.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "addd8de245ff1c2174a91bb87e62fc051db93446a9cd912b77c53bf1c9e1cc3b",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_russia_diesel_oct9",
+              "locator": "Independent scale comparison, futures move and analyst assessments.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "5ecb44ff28e1d6230fbd60974777314a02aa52619f760b9dab365d8efa33705f",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "69c397f494ff7357767e3b58ee2f46913748f28fa128df65d581dda48c8c2eb3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_russia_diesel_oct9",
+              "locator": "Presidential rationale as published, not independent verification.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "74a3282393b57f1741f16da625f5f8a2c3cb6d02bd73dd43d3afa651ff244156",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "reuters_russia_diesel_oct9",
+              "locator": "Named Ukrainian response and market context.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "5ecb44ff28e1d6230fbd60974777314a02aa52619f760b9dab365d8efa33705f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_russia_diesel_oct9",
+              "locator": "Named Russian and Ukrainian responses.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "addd8de245ff1c2174a91bb87e62fc051db93446a9cd912b77c53bf1c9e1cc3b",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "94194dd70aa852cd51ff7d986efc52667eb2285df64e6e1954887467cf0bc16f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "senate_foreign_russia_diesel_oct11",
+              "locator": "Official statement lines 36–41 inspected for all seven signatories, the statutory claim, alleged consultation/explanation omissions and requested reversal.",
+              "inspected_at": "2026-10-11T22:04:04Z",
+              "document_sha256": "7890645a1ab2211b6cc0d825bec45ea1ab65b0cb5291f0c76b5b43b3ed9e6d91",
+              "origin_group": "United States Senate Committee on Foreign Relations",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_russia_diesel_opposition_oct11",
+              "locator": "Lines 151–197 inspected for the bipartisan challenge and attributed Bessent and Barrasso responses.",
+              "inspected_at": "2026-10-11T22:04:04Z",
+              "document_sha256": "09529908662541b2ba2c33ac1a3f3e643a874395a553646c3c7383f0c99f23a9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_russia_diesel_opposition_oct11",
+              "locator": "Lines 1789–1831 inspected for the Senate challenge, Tillis legal claim and Barrasso response.",
+              "inspected_at": "2026-10-11T22:04:04Z",
+              "document_sha256": "479fb23d28e1e4aa7d26227a3fa0b5be9b2c3961c5bd8156f5695b861f9fd540",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "c0c766bb3f9a459dc730e66a12811df9b6ce87df3f4eefcf7997b65fdb4dd606",
+          "review_note": "Separately reviewed to distinguish an implemented license, a documented bipartisan legality challenge and an unresolved judicial question."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "02b83660d7dee346bd52f7fd6ce3a047533e8008066a9954c8eb67b3fcdacd66",
+          "review_note": "Separately reviewed against the administration authority claim and observable oversight, litigation, delivery and price tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "ad245a778788ffbe9aae4fcb1a8eca3a96f0f4214109473fea8c5c5d66da6df9",
+          "review_note": "Separately reviewed to preserve competing legal explanations and avoid converting a congressional allegation into a court finding."
+        }
+      ],
+      "unresolved_questions": [
+        "A formal administration legal explanation and consultation record have not been published in the inspected material.",
+        "Congressional or judicial resolution, contracts, cargo deliveries, payment paths and sustained price effects remain unresolved."
       ]
     }
   ],
