@@ -26,6 +26,10 @@ class GitDataPlanTests(unittest.TestCase):
         git(self.root, "init", "-q")
         git(self.root, "config", "user.name", "Fixture")
         git(self.root, "config", "user.email", "fixture@example.invalid")
+        # CI can schedule background repository maintenance after the large-tree
+        # fixture commits, racing TemporaryDirectory cleanup in tearDown.
+        git(self.root, "config", "gc.auto", "0")
+        git(self.root, "config", "maintenance.auto", "false")
         (self.root / "stable").mkdir()
         (self.root / "stable/keep.txt").write_text("unchanged\n")
         (self.root / "remove.txt").write_text("delete me\n")
