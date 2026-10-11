@@ -1,0 +1,74 @@
+{
+  "version": "10.136.0",
+  "base_release_version": "10.135.0",
+  "base_commit": "69ffe38d7bedfbf5d6c455fa23fcf4b88d057109",
+  "research_window": {
+    "from_utc": "2026-10-11T03:58:05Z",
+    "through_utc": "2026-10-11T16:03:13Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Exact scan from the prior accepted open-branch boundary. Source publication/action times remain distinct from inspection and release times."
+  },
+  "publication_authorization": "The user authorizes maintenance branches, pull requests and merging after evidence, local acceptance and successful CI; repository policy still requires Phillip Linstrum’s final publication acceptance before merge.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-13-001",
+      "kind": "material_refresh",
+      "summary": "Trump again announced an immediate Russia–Ukraine energy ceasefire; Ukraine expressed conditional support while awaiting details and no Russian confirmation or terms were established by cutoff.",
+      "duplicate_review": "Updated the stable September energy-restraint record because the October announcement is a new claim in the same event and implementation timeline."
+    },
+    {
+      "entry_id": "NAT-2026-10-02-001",
+      "kind": "material_refresh",
+      "summary": "Official manufacturing employment levels and named employer reports added a longer-horizon effectiveness test to the September jobs record.",
+      "duplicate_review": "Updated the existing September Employment Situation record because the new evidence interprets the same measured labor-market outcome rather than establishing a separate policy action."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "truth_energy_ceasefire_oct11",
+      "document_sha256": "89932dcd2e73abcb3a49bb8cb5855b93b2e028f99fcd53b2a00d097fac095812",
+      "inspected_at": "2026-10-11T16:09:08Z",
+      "note": "Retrieved source text and metadata inspected for the bounded claims used in this release."
+    },
+    {
+      "source_id": "reuters_energy_ceasefire_oct11",
+      "document_sha256": "da0ec3d18f85ad3222ebec2442536576989e6a26e89fd104e08ffb6365fbf761",
+      "inspected_at": "2026-10-11T16:09:08Z",
+      "note": "Retrieved source text and metadata inspected for the bounded claims used in this release."
+    },
+    {
+      "source_id": "ap_energy_ceasefire_oct11",
+      "document_sha256": "c835ee55aded978351eaf24dc9cab3ec188f00a66caa20eb729bbebb06978df9",
+      "inspected_at": "2026-10-11T16:09:08Z",
+      "note": "Retrieved source text and metadata inspected for the bounded claims used in this release."
+    },
+    {
+      "source_id": "bls_manufacturing_series_oct11",
+      "document_sha256": "c72205a9410505f084a62ec330570d11086ab5331eda2c42f66b48da4798f397",
+      "inspected_at": "2026-10-11T16:09:08Z",
+      "note": "Retrieved source text and metadata inspected for the bounded claims used in this release."
+    },
+    {
+      "source_id": "ap_manufacturing_tariffs_oct11",
+      "document_sha256": "54d28d8fb2c991cad061a39045ccc74c070f546b890c242a3cf8884b6a42f475",
+      "inspected_at": "2026-10-11T16:09:08Z",
+      "note": "Retrieved source text and metadata inspected for the bounded claims used in this release."
+    }
+  ],
+  "withheld": [
+    {
+      "title": "Six nonqualifying Truth Social leads",
+      "reason": "Columbus Day and congressional-commentary text, three promotional images and rally-media reposts were reviewed as political or promotional material rather than new government actions. The rally video’s representative frames were inspected but its audio and captions remain pending."
+    },
+    {
+      "title": "Trump TV Joint Base Andrews gaggle replay",
+      "reason": "The official library added an October 11 upload for an October 10 event. Only title, date and video-link metadata were reviewed; a replay is not a new government action and audiovisual content was not retrieved."
+    },
+    {
+      "title": "First Step Act profile and routine political developments",
+      "reason": "Human consequences and campaign positioning did not document a new federal action, ruling, expenditure or measured policy outcome in this window."
+    }
+  ],
+  "corrections": []
+}
