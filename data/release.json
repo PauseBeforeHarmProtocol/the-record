@@ -1,35 +1,33 @@
 {
-  "version": "10.134.0",
+  "version": "10.135.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-10T15:58:20Z",
-    "through_utc": "2026-10-10T22:02:01Z",
+    "from_utc": "2026-10-10T22:02:01Z",
+    "through_utc": "2026-10-11T03:58:05Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact scan from the prior accepted open-branch boundary. One implemented public-land action was added and two existing national records were materially refreshed. Two refresh sources were published in the preceding window and are explicitly preserved as late discoveries rather than silently backdated."
+    "note": "Exact scan from the prior accepted open-branch boundary. One active Justice Department investigation materially refreshed the existing White House access record. One implemented Medicaid eligibility restriction was added as a late discovery from an October 10 report published before this window; its October 1 effective date is preserved rather than silently recast as a new action."
   },
   "release_iso": "2026-10-10",
   "release_human": "October 10, 2026",
-  "checked_at": "2026-10-10 6:02 PM EDT",
-  "previous_version": "10.133.0",
-  "previous_checked_at": "2026-10-10 11:58 AM EDT",
-  "window_started_at": "2026-10-10 11:58 AM EDT",
-  "window_ended_at": "2026-10-10 6:02 PM EDT",
+  "checked_at": "2026-10-10 11:58 PM EDT",
+  "previous_version": "10.134.0",
+  "previous_checked_at": "2026-10-10 6:02 PM EDT",
+  "window_started_at": "2026-10-10 6:02 PM EDT",
+  "window_ended_at": "2026-10-10 11:58 PM EDT",
   "week_start": "2026-10-10",
   "week_end": "2026-10-16",
   "week_label": "2026-10-10 through 2026-10-16",
   "cutoff_start": "2026-07-18",
   "new_entry_ids": [
-    "NAT-2026-10-10-001",
-    "NAT-2026-08-17-001",
-    "NAT-2026-09-24-002"
+    "NAT-2026-10-01-007",
+    "NAT-2026-09-18-007"
   ],
   "added_entry_ids": [
-    "NAT-2026-10-10-001"
+    "NAT-2026-10-01-007"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-08-17-001",
-    "NAT-2026-09-24-002"
+    "NAT-2026-09-18-007"
   ],
   "dedupe_resolutions": [
     {
@@ -805,35 +803,51 @@
       "target_id": "LEG-004543",
       "decision": "distinct_lifecycle_stage",
       "notes": "The May legacy record concerns toxic debris discovered at East Potomac; the October record concerns implemented tree removal under a separate maintenance/redesign dispute."
+    },
+    {
+      "entry_id": "NAT-2026-09-18-007",
+      "target_id": "NAT-2026-09-18-007",
+      "decision": "same_event_update",
+      "notes": "The October 10 Justice Department antitrust inquiry arose directly from the television pool's September response to the White House credential ban. The stable press-access record was materially refreshed rather than creating a parallel investigation row."
+    },
+    {
+      "entry_id": "NAT-2026-10-01-007",
+      "target_id": "NAT-2026-09-14-002",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The October 1 restriction implements a separate 2025 statutory limit on federal Medicaid and CHIP matching funds. NAT-2026-09-14-002 concerns litigation over DHS's broader public-charge rule; the instruments, agencies and legal consequences differ."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Three new Truth Social posts",
-      "reason": "The text-only posts concerned a Tennessee crowd, rally travel, Trump's popularity and a media-personality attack. They establish only that Trump published routine political rhetoric and contain no qualifying federal action."
+      "title": "Five new Truth Social posts",
+      "reason": "The appointment post was routine personnel news and the approval-rating repost was political rhetoric. Three media-only posts could not be retrieved through the available review path; their empty text and access limitation were recorded, and no claim was inferred from unavailable media."
     },
     {
-      "title": "Trump urges Ukraine to elect a new president",
-      "reason": "The statement was consequential rhetoric but did not itself create a U.S. order, formal proposal, appropriation, diplomatic agreement or implemented action."
+      "title": "Katie Bailey appointment",
+      "reason": "Trump's appointment of a White House legislative-affairs director was verified but remains routine personnel news without a material policy or institutional consequence at cutoff."
     },
     {
       "title": "Trump TV metadata recheck",
-      "reason": "No October 10 upload was listed. The unchanged stream and October 9 library items were inspected only as metadata; no qualifying new item was located in the material reviewed."
+      "reason": "The official library added a 5:37 departure-gaggle clip dated October 10 with video ID kPscOnPqVM4. Only title, date, duration and link metadata were accessible; footage, audio and captions were not retrieved, and a replay or clip is not itself a new government action."
     },
     {
-      "title": "Riyadh airport casualty and attribution claims",
-      "reason": "The archive used the independently reported presidential statement but did not promote an unofficial casualty toll or unresolved responsibility claim as established fact."
+      "title": "Trump calls for a new Ukrainian president",
+      "reason": "The statement materially sharpened rhetoric toward Volodymyr Zelenskyy but did not itself create a U.S. order, formal proposal, appropriation, diplomatic agreement or implemented action; the related diesel and Houthi developments are already preserved in existing canonical records."
+    },
+    {
+      "title": "The State of American Manufacturing",
+      "reason": "The October 10 White House research post summarized and advocated for existing policy; no new signed, ordered or implemented action was identified in it."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-10T22:02:01Z",
-    "checked_at_eastern": "2026-10-10 6:02 PM EDT",
+    "checked_at": "2026-10-11T03:58:05Z",
+    "checked_at_eastern": "2026-10-10 11:58 PM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-10T22:02:01Z",
+    "last_successful_page_inspection_at": "2026-10-11T03:58:05Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -845,7 +859,7 @@
       "https://www.whitehouse.gov/briefings-statements/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, video-library, remarks, briefings and release pages were rechecked. The stream link remained A4gNgHfZ-v4; fallback error text was not treated as proof of an outage. No October 10 upload was listed, and the library still ended with the three October 9 items already inspected. Only page metadata was reviewed; footage, audio and captions were not retrieved. No qualifying new item located in the material reviewed, and no verified new channel cost, contract, staffing/control, distribution, press-access consequence, investigation or court/congressional finding was located.",
+    "summary": "Official Trump TV, live, video-library, remarks, briefings and release pages were rechecked. The stream link remained A4gNgHfZ-v4; fallback error text was not treated as proof of an outage. The library added a 5:37 departure-gaggle clip dated October 10 and linked YouTube video ID kPscOnPqVM4. Only page metadata was reviewed; footage, audio and captions could not be retrieved. No qualifying new item located in the material reviewed, and no verified new channel cost, contract, staffing/control, distribution, press-access consequence, investigation or court/congressional finding was located.",
     "gaps": [
       "Footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; page fallback text alone does not establish an outage.",
@@ -857,8 +871,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-10T22:02:01Z",
-        "observed_at_eastern": "2026-10-10 6:02 PM EDT",
+        "observed_at": "2026-10-11T03:58:05Z",
+        "observed_at_eastern": "2026-10-10 11:58 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official page linked the unchanged A4gNgHfZ-v4 stream. No footage, audio or captions were retrieved; fallback text was not treated as proof of an outage.",
         "video_ids": [
@@ -870,8 +884,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-10T22:02:01Z",
-        "observed_at_eastern": "2026-10-10 6:02 PM EDT",
+        "observed_at": "2026-10-11T03:58:05Z",
+        "observed_at_eastern": "2026-10-10 11:58 PM EDT",
         "format": "official live-hub metadata; audiovisual content unreviewed",
         "inspection": "The hub linked the same Trump TV stream. Current live/replay state and audiovisual content were not independently reviewed.",
         "video_ids": [
@@ -880,17 +894,15 @@
       },
       {
         "url": "https://www.whitehouse.gov/videos/",
-        "posted_date": null,
-        "original_event_date": null,
+        "posted_date": "2026-10-10",
+        "original_event_date": "2026-10-10",
         "broadcast_time": null,
-        "observed_at": "2026-10-10T22:02:01Z",
-        "observed_at_eastern": "2026-10-10 6:02 PM EDT",
+        "observed_at": "2026-10-11T03:58:05Z",
+        "observed_at_eastern": "2026-10-10 11:58 PM EDT",
         "format": "official dated-library metadata; audiovisual content unreviewed",
-        "inspection": "No October 10 upload was listed. The library still ended with the October 9 departure gaggle, Columbus Day celebration and Trump Accounts clip; titles, dates and durations were inspected, but footage, audio and captions were not retrieved.",
+        "inspection": "The library listed a new 5:37 departure-gaggle clip dated October 10 and linked YouTube ID kPscOnPqVM4. Title, date, duration and link metadata were inspected; footage, audio and captions could not be retrieved, so no claim is made about the clip's contents.",
         "video_ids": [
-          "X3kk9Oj5o2E",
-          "noI4BbQ2wZQ",
-          "7YPNA4ZHa1o"
+          "kPscOnPqVM4"
         ]
       },
       {
@@ -898,8 +910,8 @@
         "posted_date": "2026-10-09",
         "original_event_date": "2026-10-09",
         "broadcast_time": null,
-        "observed_at": "2026-10-10T22:02:01Z",
-        "observed_at_eastern": "2026-10-10 6:02 PM EDT",
+        "observed_at": "2026-10-11T03:58:05Z",
+        "observed_at_eastern": "2026-10-10 11:58 PM EDT",
         "format": "supplementary remarks index",
         "inspection": "The index still listed Michael Kratsios's October 9 science-summit remarks as newest and was not treated as a complete Trump TV transcript feed.",
         "video_ids": []
@@ -909,8 +921,8 @@
         "posted_date": "2026-10-09",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-10T22:02:01Z",
-        "observed_at_eastern": "2026-10-10 6:02 PM EDT",
+        "observed_at": "2026-10-11T03:58:05Z",
+        "observed_at_eastern": "2026-10-10 11:58 PM EDT",
         "format": "supplementary official index",
         "inspection": "The index still ended with October 9 messages and a routine signed-bill notice; it supplied no new Trump TV transcript or qualifying broadcast finding.",
         "video_ids": []
@@ -920,8 +932,8 @@
         "posted_date": "2026-10-08",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-10T22:02:01Z",
-        "observed_at_eastern": "2026-10-10 6:02 PM EDT",
+        "observed_at": "2026-10-11T03:58:05Z",
+        "observed_at_eastern": "2026-10-10 11:58 PM EDT",
         "format": "supplementary official index",
         "inspection": "The index still ended with October 8 releases. A listing was not treated as proof that material aired on Trump TV.",
         "video_ids": []
@@ -934,37 +946,37 @@
       "text_status": {
         "not_recorded": 147,
         "pending": 969,
-        "reviewed": 491
+        "reviewed": 496
       },
       "media_status": {
-        "not_applicable": 794,
+        "not_applicable": 795,
         "not_recorded": 19,
         "pending": 464,
         "reviewed": 95,
-        "unavailable": 235
+        "unavailable": 239
       }
     },
-    "new_posts": 3,
-    "source_rows_added": 3,
-    "new_text_reviewed": 3,
-    "new_nonempty_text_reviewed": 3,
-    "new_empty_text_inspected": 0,
+    "new_posts": 5,
+    "source_rows_added": 5,
+    "new_text_reviewed": 5,
+    "new_nonempty_text_reviewed": 2,
+    "new_empty_text_inspected": 3,
     "new_image_assets_reviewed": 0,
     "new_image_posts_reviewed": 0,
     "new_video_assets_pending": 0,
     "new_video_assets_reviewed": 0,
     "new_media_reviewed": 0,
-    "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-10T22:03:58.920217Z",
-    "checked_at_eastern": "2026-10-10 6:03:58 PM EDT",
-    "latest_post_at_utc": "2026-10-10T18:59:16.056000Z",
-    "latest_post_at_eastern": "2026-10-10 2:59:16 PM EDT",
-    "latest_post_id": "117418148236895862",
+    "new_media_unavailable": 4,
+    "checked_at_utc": "2026-10-11T04:00:13.524470Z",
+    "checked_at_eastern": "2026-10-11 12:00:13 AM EDT",
+    "latest_post_at_utc": "2026-10-11T02:02:46.560000Z",
+    "latest_post_at_eastern": "2026-10-10 10:02:46 PM EDT",
+    "latest_post_id": "117419813539563711",
     "no_new_post_finding": false,
-    "note": "Three text-only posts newer than the prior snapshot were inspected in full. They concerned Tennessee rally travel/crowd claims, Trump's popularity and a media-personality attack. None independently established a qualifying federal action."
+    "note": "Five posts newer than the prior snapshot were inspected as research leads. The two nonempty texts were an approval-rating repost and a routine legislative-affairs appointment. Three media-only posts had empty text; their videos, plus the repost image, could not be retrieved through the available review path. No unavailable media claim was inferred or promoted."
   },
   "archive_network_inspection": {
-    "checked_at": "2026-10-10T22:02:01Z",
-    "note": "All four registered primary projects were rechecked as discovery inputs. Trump Archive displayed 14,672 total items, 12,124 Truth Social posts and 1,898 speeches/transcripts; UndoTrump remained at 1,264 actions; the Immigration Policy Tracking Project displayed 1,812 policy actions; Record47's homepage remained at 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts while current API endpoints were inaccessible. Preserved API measurements and the discrepancy remain disclosed. Units remain separate and no external item was automatically promoted."
+    "checked_at": "2026-10-11T03:58:05Z",
+    "note": "All four registered primary projects were rechecked as discovery inputs. Trump Archive displayed 14,673 total items, 12,125 Truth Social posts and 1,898 speeches/transcripts; UndoTrump remained at 1,264 actions; the Immigration Policy Tracking Project remained at 1,812 policy actions. Record47's current API endpoints were inaccessible, so preserved API measurements and the disclosed homepage discrepancy were not advanced. Units remain separate and no external item was automatically promoted."
   }
 }
