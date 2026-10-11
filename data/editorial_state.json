@@ -5989,6 +5989,30 @@
       "provenance_path": "data/editorial_change_notes/10.135.0.json",
       "provenance_sha256": "ae8d9cc308fcff66af51604b49f43e7209b32e43a34c85b84604841af3bc858f",
       "note": "Late-discovered implemented action preserved at its October 1 effective date with statutory exceptions, attributed counts and unresolved outcomes."
+    },
+    {
+      "change_id": "10.136.0:NAT-2026-09-13-001",
+      "entry_id": "NAT-2026-09-13-001",
+      "as_of_utc": "2026-10-11T16:03:13Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.136.0",
+      "summary": "Trump again announced an immediate energy ceasefire; Ukraine offered conditional support while public terms and Russian confirmation remained absent.",
+      "provenance_path": "data/editorial_change_notes/10.136.0.json",
+      "provenance_sha256": "83c8509ddf98c4c21ad6a4fa9e69b3f057f22c74bfe23ca481f27668d5c8f726",
+      "note": "Stable record updated; precise evidence status, strongest response, separate Maybe/Therefore review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.136.0:NAT-2026-10-02-001",
+      "entry_id": "NAT-2026-10-02-001",
+      "as_of_utc": "2026-10-11T16:03:13Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.136.0",
+      "summary": "BLS levels and named employer evidence added a longer-horizon manufacturing and tariff-effectiveness test to the September jobs report.",
+      "provenance_path": "data/editorial_change_notes/10.136.0.json",
+      "provenance_sha256": "83c8509ddf98c4c21ad6a4fa9e69b3f057f22c74bfe23ca481f27668d5c8f726",
+      "note": "Stable record updated; precise evidence status, strongest response, separate Maybe/Therefore review and duplicate disposition preserved."
     }
   ],
   "reviews": [
@@ -72821,6 +72845,796 @@
       "unresolved_questions": [
         "A complete audited national disenrollment count and state-by-state replacement-coverage total were not available by cutoff.",
         "Appeals, erroneous terminations, care continuity, emergency utilization and fiscal effects remain to be measured."
+      ]
+    },
+    {
+      "review_id": "10.136.0:NAT-2026-09-13-001:ba0c617edf8c",
+      "entry_id": "NAT-2026-09-13-001",
+      "content_sha256": "ba0c617edf8cd2142c644d2409679c571326c7ebca9e00c1729032795d6a42c0",
+      "reviewed_at": "2026-10-11T16:09:08Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "b697765816ab02c19ab2987563e0d14facd1666b2002018e97af5f84984a62ef",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_diesel_request_sep13",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "6eb45e1639545e97c3b944aecdd734f78cd8dae69c48731b3dbe591d1edd2ded",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_diesel_request_sep13",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "161126b1f71f5ff9f2ffaab54be7a747323ebaa26abae37963994eb72d7e6dcc",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "truth_energy_targets_agreement_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "4a7e8cea829896dceb8584071aa4b620c65d30b70c7c78bb224fb559d2b3ff29",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_kremlin_energy_strikes_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "eddfac25be525715979e9ccad05ec9ea2f8a76010da858863e84b6d8ce902f2f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_ukraine_conditional_energy_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "ba3bc77fc740bb2174c729b1dec3a97a884c51eae75d564dad71e31394e7a914",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_conditional_energy_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "71f1a4f4a8b535cb370cd3b3a0f66b3d53169dc81ff47916ff74c7cbf2656bf3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_energy_strikes_continue_sep15",
+              "locator": "Reuters lines 151–203: continued Russian and Ukrainian energy strikes, attributed damage and both governments' stated positions.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "47cb4fc0cc22a7e303d86437074b52f03e452c9ef2973f068b08dc5ea21914c5",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "0d368047b92063384e9865e2565c87ad98ae056e4748d9e33aa245e1e6699dc5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_diesel_request_sep13",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "6eb45e1639545e97c3b944aecdd734f78cd8dae69c48731b3dbe591d1edd2ded",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_diesel_request_sep13",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "161126b1f71f5ff9f2ffaab54be7a747323ebaa26abae37963994eb72d7e6dcc",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "truth_energy_targets_agreement_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "4a7e8cea829896dceb8584071aa4b620c65d30b70c7c78bb224fb559d2b3ff29",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_kremlin_energy_strikes_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "eddfac25be525715979e9ccad05ec9ea2f8a76010da858863e84b6d8ce902f2f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_ukraine_conditional_energy_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "ba3bc77fc740bb2174c729b1dec3a97a884c51eae75d564dad71e31394e7a914",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_conditional_energy_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "71f1a4f4a8b535cb370cd3b3a0f66b3d53169dc81ff47916ff74c7cbf2656bf3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_energy_strikes_continue_sep15",
+              "locator": "Reuters lines 151–203: continued Russian and Ukrainian energy strikes, attributed damage and both governments' stated positions.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "47cb4fc0cc22a7e303d86437074b52f03e452c9ef2973f068b08dc5ea21914c5",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "36d4f2033ea69c00c16d960c69a9e9a18324565b2ea2621ce4be2ad8851eba16",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_diesel_request_sep13",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "6eb45e1639545e97c3b944aecdd734f78cd8dae69c48731b3dbe591d1edd2ded",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_diesel_request_sep13",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "161126b1f71f5ff9f2ffaab54be7a747323ebaa26abae37963994eb72d7e6dcc",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "truth_energy_targets_agreement_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "4a7e8cea829896dceb8584071aa4b620c65d30b70c7c78bb224fb559d2b3ff29",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_kremlin_energy_strikes_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "eddfac25be525715979e9ccad05ec9ea2f8a76010da858863e84b6d8ce902f2f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_ukraine_conditional_energy_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "ba3bc77fc740bb2174c729b1dec3a97a884c51eae75d564dad71e31394e7a914",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_conditional_energy_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "71f1a4f4a8b535cb370cd3b3a0f66b3d53169dc81ff47916ff74c7cbf2656bf3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_energy_strikes_continue_sep15",
+              "locator": "Reuters lines 151–203: continued Russian and Ukrainian energy strikes, attributed damage and both governments' stated positions.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "47cb4fc0cc22a7e303d86437074b52f03e452c9ef2973f068b08dc5ea21914c5",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "b65a79023e11cc731c95e58cca680038aed0c0bf06877f511c500ad2b2976cc1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_diesel_request_sep13",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "6eb45e1639545e97c3b944aecdd734f78cd8dae69c48731b3dbe591d1edd2ded",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_diesel_request_sep13",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "161126b1f71f5ff9f2ffaab54be7a747323ebaa26abae37963994eb72d7e6dcc",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "truth_energy_targets_agreement_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "4a7e8cea829896dceb8584071aa4b620c65d30b70c7c78bb224fb559d2b3ff29",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_kremlin_energy_strikes_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "eddfac25be525715979e9ccad05ec9ea2f8a76010da858863e84b6d8ce902f2f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_ukraine_conditional_energy_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "ba3bc77fc740bb2174c729b1dec3a97a884c51eae75d564dad71e31394e7a914",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_conditional_energy_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "71f1a4f4a8b535cb370cd3b3a0f66b3d53169dc81ff47916ff74c7cbf2656bf3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_energy_strikes_continue_sep15",
+              "locator": "Reuters lines 151–203: continued Russian and Ukrainian energy strikes, attributed damage and both governments' stated positions.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "47cb4fc0cc22a7e303d86437074b52f03e452c9ef2973f068b08dc5ea21914c5",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "2820c614934f4595e9721c2715394c94a3f4845b03e81b3c0a9f9a0fb274220f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_diesel_request_sep13",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "6eb45e1639545e97c3b944aecdd734f78cd8dae69c48731b3dbe591d1edd2ded",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_diesel_request_sep13",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "161126b1f71f5ff9f2ffaab54be7a747323ebaa26abae37963994eb72d7e6dcc",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "truth_energy_targets_agreement_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "4a7e8cea829896dceb8584071aa4b620c65d30b70c7c78bb224fb559d2b3ff29",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_kremlin_energy_strikes_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "eddfac25be525715979e9ccad05ec9ea2f8a76010da858863e84b6d8ce902f2f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_ukraine_conditional_energy_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "ba3bc77fc740bb2174c729b1dec3a97a884c51eae75d564dad71e31394e7a914",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_conditional_energy_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "71f1a4f4a8b535cb370cd3b3a0f66b3d53169dc81ff47916ff74c7cbf2656bf3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_energy_strikes_continue_sep15",
+              "locator": "Reuters lines 151–203: continued Russian and Ukrainian energy strikes, attributed damage and both governments' stated positions.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "47cb4fc0cc22a7e303d86437074b52f03e452c9ef2973f068b08dc5ea21914c5",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "589e831fb4fb17240cd8bd57629a10099b213be04d16f7bacab06be09c0cc7d5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_diesel_request_sep13",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "6eb45e1639545e97c3b944aecdd734f78cd8dae69c48731b3dbe591d1edd2ded",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_diesel_request_sep13",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "161126b1f71f5ff9f2ffaab54be7a747323ebaa26abae37963994eb72d7e6dcc",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "truth_energy_targets_agreement_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "4a7e8cea829896dceb8584071aa4b620c65d30b70c7c78bb224fb559d2b3ff29",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_kremlin_energy_strikes_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "eddfac25be525715979e9ccad05ec9ea2f8a76010da858863e84b6d8ce902f2f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_ukraine_conditional_energy_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "ba3bc77fc740bb2174c729b1dec3a97a884c51eae75d564dad71e31394e7a914",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_conditional_energy_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "71f1a4f4a8b535cb370cd3b3a0f66b3d53169dc81ff47916ff74c7cbf2656bf3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_energy_strikes_continue_sep15",
+              "locator": "Reuters lines 151–203: continued Russian and Ukrainian energy strikes, attributed damage and both governments' stated positions.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "47cb4fc0cc22a7e303d86437074b52f03e452c9ef2973f068b08dc5ea21914c5",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "cfcb6e1d18ce30d70a0d281810a3b6a95987fe9c5e6eb077f711a6cc7d9b293a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_diesel_request_sep13",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "6eb45e1639545e97c3b944aecdd734f78cd8dae69c48731b3dbe591d1edd2ded",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_diesel_request_sep13",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "161126b1f71f5ff9f2ffaab54be7a747323ebaa26abae37963994eb72d7e6dcc",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "truth_energy_targets_agreement_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "4a7e8cea829896dceb8584071aa4b620c65d30b70c7c78bb224fb559d2b3ff29",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_kremlin_energy_strikes_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "eddfac25be525715979e9ccad05ec9ea2f8a76010da858863e84b6d8ce902f2f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_ukraine_conditional_energy_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "ba3bc77fc740bb2174c729b1dec3a97a884c51eae75d564dad71e31394e7a914",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_conditional_energy_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "71f1a4f4a8b535cb370cd3b3a0f66b3d53169dc81ff47916ff74c7cbf2656bf3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_energy_strikes_continue_sep15",
+              "locator": "Reuters lines 151–203: continued Russian and Ukrainian energy strikes, attributed damage and both governments' stated positions.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "47cb4fc0cc22a7e303d86437074b52f03e452c9ef2973f068b08dc5ea21914c5",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "d455ae90086c6d7149abb1db887dbfef0f6db16db6d98ad399be00943ab16aae",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_diesel_request_sep13",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "6eb45e1639545e97c3b944aecdd734f78cd8dae69c48731b3dbe591d1edd2ded",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_diesel_request_sep13",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "161126b1f71f5ff9f2ffaab54be7a747323ebaa26abae37963994eb72d7e6dcc",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "truth_energy_targets_agreement_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "4a7e8cea829896dceb8584071aa4b620c65d30b70c7c78bb224fb559d2b3ff29",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_kremlin_energy_strikes_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "eddfac25be525715979e9ccad05ec9ea2f8a76010da858863e84b6d8ce902f2f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_ukraine_conditional_energy_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "ba3bc77fc740bb2174c729b1dec3a97a884c51eae75d564dad71e31394e7a914",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_conditional_energy_sep14",
+              "locator": "Previously inspected source retained from the existing reviewed record.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "71f1a4f4a8b535cb370cd3b3a0f66b3d53169dc81ff47916ff74c7cbf2656bf3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_energy_strikes_continue_sep15",
+              "locator": "Reuters lines 151–203: continued Russian and Ukrainian energy strikes, attributed damage and both governments' stated positions.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "47cb4fc0cc22a7e303d86437074b52f03e452c9ef2973f068b08dc5ea21914c5",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "3ff5cd884db3eb8739ffaf44ad81ad0888930d3f8658261c3270fbe31fce79e4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_energy_ceasefire_oct11",
+              "locator": "Exact post text and timestamp inspected; evidence only that Trump made the claim.",
+              "inspected_at": "2026-10-11T16:09:08Z",
+              "document_sha256": "89932dcd2e73abcb3a49bb8cb5855b93b2e028f99fcd53b2a00d097fac095812",
+              "origin_group": "Donald J. Trump / Truth Social",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "5beb980f37e5871eea99bf5346e430640ccd96ba55676537a10cc4e88a6aa78d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_energy_ceasefire_oct11",
+              "locator": "Lines 151–204 inspected for announcement, Ukrainian response and confirmation status.",
+              "inspected_at": "2026-10-11T16:09:08Z",
+              "document_sha256": "da0ec3d18f85ad3222ebec2442536576989e6a26e89fd104e08ffb6365fbf761",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_energy_ceasefire_oct11",
+              "locator": "Full report inspected for Zelensky statement, White House clarification status and Moscow response status.",
+              "inspected_at": "2026-10-11T16:09:08Z",
+              "document_sha256": "c835ee55aded978351eaf24dc9cab3ec188f00a66caa20eb729bbebb06978df9",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 10,
+          "fact_sha256": "ff0b77361da8ec0822822445f7949457d83fe9d455096c3cbaea93e876338702",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_energy_ceasefire_oct11",
+              "locator": "Report inspected for lack of immediate confirmation and Ukraine’s reciprocal condition.",
+              "inspected_at": "2026-10-11T16:09:08Z",
+              "document_sha256": "da0ec3d18f85ad3222ebec2442536576989e6a26e89fd104e08ffb6365fbf761",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_energy_ceasefire_oct11",
+              "locator": "Report inspected for the absence of clarified terms and Russian response.",
+              "inspected_at": "2026-10-11T16:09:08Z",
+              "document_sha256": "c835ee55aded978351eaf24dc9cab3ec188f00a66caa20eb729bbebb06978df9",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "d640572d6077abd761864c4892e8f3c76bbb24ea1a90305dcc6e90214fe3b4f3",
+          "review_note": "Separately reviewed to preserve material effect and implementation status without converting the announcement or company accounts into proven national outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "1b33f898da2b204258c3f0615484f9aee6aa69797f5065f17d0b927ab8c61104",
+          "review_note": "Separately reviewed against the strongest administration response and explicit measurable tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "2989475770c875caa9bdb2bb798fce797fbac2253d69eb230a51d8980e6b0b38",
+          "review_note": "Separately reviewed to preserve the strongest competing explanation and evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "No written terms, duration, monitoring or enforcement mechanism were public by cutoff.",
+        "Russia had not publicly confirmed acceptance by cutoff; post-announcement compliance remained unmeasured."
+      ]
+    },
+    {
+      "review_id": "10.136.0:NAT-2026-10-02-001:a45c02ec9cdd",
+      "entry_id": "NAT-2026-10-02-001",
+      "content_sha256": "a45c02ec9cdd6589ee369a353f3cfa7ad12c6dce47072317631d94adb014adf0",
+      "reviewed_at": "2026-10-11T16:09:08Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "d3d2466f90245b931e4d3f8958b6f2a9bf4ecc51501b2a7c5813faee322affcc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_sep2026_oct2",
+              "locator": "headline payroll and household-survey measures",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "de315a31c9cd0dd71b1aa3c5609b750481d4f9f7e803194d174a0db4d726d954",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5643b27a46cca7dd6d926e7164fa322c36ea41336b5273f84820c1abfceadd59",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_sep2026_oct2",
+              "locator": "participation, employment ratio and demographic measures",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "de315a31c9cd0dd71b1aa3c5609b750481d4f9f7e803194d174a0db4d726d954",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "5440dd93cfa434a93f46a03c16b3dfaf0ae4737d95da8c3d859d4aea6776ab22",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_sep2026_oct2",
+              "locator": "industry and earnings tables",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "de315a31c9cd0dd71b1aa3c5609b750481d4f9f7e803194d174a0db4d726d954",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "3614805c655c280f01672d7fbbb49266818dca27a776066c2b1a6e71d2d9f852",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_sep2026_oct2",
+              "locator": "revision table and preliminary status",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "de315a31c9cd0dd71b1aa3c5609b750481d4f9f7e803194d174a0db4d726d954",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "33a13a2c984108d5e7993e650ff01d5ed74a253eecf063bf7ab64fa24ca05626",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_employment_sep2026_oct2",
+              "locator": "expectations, calendar effect and independent labor-market context",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "b3ace6f99b212f92fac6d09bb21a6ffee7ff768fa8766484f8926e4385b5cc15",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_employment_sep2026_oct2",
+              "locator": "expectations, calendar effect and independent labor-market context",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "6857ff9c25599a7e8f0c13edb9ab70cf3bcaa9945b8962fd6f508dfe23f7b5b2",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "0b0fd154df24dd7d3133140a068f435b587ea413507b04189263c62a52f971c8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_sep2026_oct2",
+              "locator": "official measurement and independent causation limits",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "de315a31c9cd0dd71b1aa3c5609b750481d4f9f7e803194d174a0db4d726d954",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_employment_sep2026_oct2",
+              "locator": "official measurement and independent causation limits",
+              "inspected_at": "2026-10-02T15:56:30Z",
+              "document_sha256": "b3ace6f99b212f92fac6d09bb21a6ffee7ff768fa8766484f8926e4385b5cc15",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "e926900958784b04139810b36177708dc6ead381a952e6813c61ad66b870f62f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_manufacturing_series_oct11",
+              "locator": "Official table rows for 2025 and 2026 monthly manufacturing employment inspected.",
+              "inspected_at": "2026-10-11T16:09:08Z",
+              "document_sha256": "c72205a9410505f084a62ec330570d11086ab5331eda2c42f66b48da4798f397",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "bls_employment_sep2026_oct2",
+              "locator": "September release inspected for the 9,000 monthly gain and 72,000 increase since December 2025.",
+              "inspected_at": "2026-10-11T16:09:08Z",
+              "document_sha256": "de315a31c9cd0dd71b1aa3c5609b750481d4f9f7e803194d174a0db4d726d954",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "b55cb4bc5ae4040698efd5f8413f0d9e1d9639ae7161a8fcf0964f354d1ebb87",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_manufacturing_tariffs_oct11",
+              "locator": "Lines 1806–1871 inspected for named employers, counts, company explanations and causal limits.",
+              "inspected_at": "2026-10-11T16:09:08Z",
+              "document_sha256": "54d28d8fb2c991cad061a39045ccc74c070f546b890c242a3cf8884b6a42f475",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "0724593723cfd47c3165c04eeca3e89cc3a4afd7ba1d964f0fd8331dbc1d3344",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_manufacturing_tariffs_oct11",
+              "locator": "Lines 1810–1813 inspected for the attributed White House response.",
+              "inspected_at": "2026-10-11T16:09:08Z",
+              "document_sha256": "54d28d8fb2c991cad061a39045ccc74c070f546b890c242a3cf8884b6a42f475",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "9dada170a0ceb11b3e9ca429bd1c461e00347ecebbcffac5e3304d4cd657b597",
+          "review_note": "Separately reviewed to preserve material effect and implementation status without converting the announcement or company accounts into proven national outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "5c90713f1ed80c79630c7fbb5c5dafdef41c743a27f940833a84500d366f923c",
+          "review_note": "Separately reviewed against the strongest administration response and explicit measurable tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "f333e0727323d1e689c0b07a49cad2945b05f922f55b676485e68e087f85ac9c",
+          "review_note": "Separately reviewed to preserve the strongest competing explanation and evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Named company accounts do not provide a national causal estimate of tariff effects.",
+        "Future plant openings, output, employment and revisions remain unmeasured."
       ]
     }
   ],
