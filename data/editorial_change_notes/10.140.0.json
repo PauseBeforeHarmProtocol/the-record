@@ -1,0 +1,68 @@
+{
+  "version": "10.140.0",
+  "base_release_version": "10.139.0",
+  "base_commit": "3986ec268ebc974f0d51bc6542b08027a776e42e",
+  "research_window": {
+    "from_utc": "2026-10-12T16:19:19Z",
+    "through_utc": "2026-10-12T22:07:25Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Exact scan from the prior accepted open-branch boundary. One material court-stage refresh and one timestamped response correction were reconciled into stable records; weaker leads were withheld."
+  },
+  "publication_authorization": "The user authorizes maintenance branches, pull requests and merging after evidence, local acceptance and successful CI; repository policy still requires Phillip Linstrum's final publication acceptance before merge.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-10-001",
+      "kind": "material_refresh",
+      "summary": "A federal judge temporarily halted further East Potomac tree cutting and ordered testimony about notice, urgency and the decision chain after roughly 500 removals were reported.",
+      "duplicate_review": "Same implemented-removal event and later litigation stage; the stable October 10 record was refreshed rather than counted again."
+    },
+    {
+      "entry_id": "NAT-2026-10-12-001",
+      "kind": "correction",
+      "summary": "The record now includes Omar's political-intimidation response and removes the stale statement that no response had issued by cutoff.",
+      "duplicate_review": "Same executed-search event; response correction and version history preserved without a parallel count."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "ap_east_potomac_court_halt_oct12",
+      "document_sha256": "c58d41978ceb91e59e61a0303427647efb033cd6cda21f657777700ebc6b1cc0",
+      "inspected_at": "2026-10-12T22:07:25Z",
+      "note": "Article body and hearing details inspected for the 24-hour order, possible extension, next hearing, named testimony and administration maintenance rationale."
+    },
+    {
+      "source_id": "reuters_east_potomac_court_halt_oct12",
+      "document_sha256": "a948bafac6b51ce4f91bd64388df4bd285fffc161b29d87c0f01cf4728d741b8",
+      "inspected_at": "2026-10-12T22:07:25Z",
+      "note": "Article body inspected for the temporary order, reported scale, notice dispute, contempt posture, conceptual-project filing and NPS response."
+    },
+    {
+      "source_id": "reuters_omar_home_search_oct12",
+      "document_sha256": "7167382c1dfb73c725ac284c0ff6f937388522952fc82d05a1c13f9de1cd5263",
+      "inspected_at": "2026-10-12T22:07:25Z",
+      "note": "Updated article body inspected for Omar's response and the timing needed to classify the change as a correction rather than a post-boundary development."
+    }
+  ],
+  "withheld": [
+    {
+      "title": "Three new Truth Social campaign posts",
+      "reason": "Rally promotion, a Senate endorsement and attack, crowd rhetoric and a polling image did not independently establish a material administration action."
+    },
+    {
+      "title": "Trump TV and official video-library recheck",
+      "reason": "No October 12 upload was listed; only metadata was accessible and no qualifying new item was located in the material reviewed."
+    },
+    {
+      "title": "Reported AI-testing-official moves to the White House",
+      "reason": "Unnamed-source reporting identified no transferees and lacked on-record or second independent confirmation of an implemented reassignment."
+    }
+  ],
+  "corrections": [
+    {
+      "entry_id": "NAT-2026-10-12-001",
+      "timestamp": "2026-10-12T22:07:25Z",
+      "note": "Corrected the earlier cutoff-qualified response status; Reuters had already published Omar's response before the prior boundary."
+    }
+  ]
+}
