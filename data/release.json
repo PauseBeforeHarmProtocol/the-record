@@ -1,31 +1,31 @@
 {
-  "version": "10.138.0",
+  "version": "10.139.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-11T22:02:39Z",
-    "through_utc": "2026-10-12T03:58:43Z",
+    "from_utc": "2026-10-12T03:58:43Z",
+    "through_utc": "2026-10-12T16:19:19Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact scan from the prior accepted open-branch boundary. One existing record was materially refreshed; no new canonical event count was added."
+    "note": "Exact scan from the prior accepted open-branch boundary. One new qualifying national record was added; continuations were withheld rather than padded."
   },
-  "release_iso": "2026-10-11",
-  "release_human": "October 11, 2026",
-  "checked_at": "2026-10-11 11:58 PM EDT",
-  "previous_version": "10.137.0",
-  "previous_checked_at": "2026-10-11 6:02 PM EDT",
-  "window_started_at": "2026-10-11 6:02 PM EDT",
-  "window_ended_at": "2026-10-11 11:58 PM EDT",
-  "week_start": "2026-10-10",
-  "week_end": "2026-10-16",
-  "week_label": "2026-10-10 through 2026-10-16",
+  "release_iso": "2026-10-12",
+  "release_human": "October 12, 2026",
+  "checked_at": "2026-10-12 12:19 PM EDT",
+  "previous_version": "10.138.0",
+  "previous_checked_at": "2026-10-11 11:58 PM EDT",
+  "window_started_at": "2026-10-11 11:58 PM EDT",
+  "window_ended_at": "2026-10-12 12:19 PM EDT",
+  "week_start": "2026-10-06",
+  "week_end": "2026-10-12",
+  "week_label": "2026-10-06 through 2026-10-12",
   "cutoff_start": "2026-07-18",
   "new_entry_ids": [
-    "NAT-2026-09-24-002"
+    "NAT-2026-10-12-001"
   ],
-  "added_entry_ids": [],
-  "refreshed_entry_ids": [
-    "NAT-2026-09-24-002"
+  "added_entry_ids": [
+    "NAT-2026-10-12-001"
   ],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -818,31 +818,41 @@
       "target_id": "NAT-2026-10-09-003",
       "decision": "same_event_update",
       "notes": "The October 11 bipartisan Senate legality challenge and administration response concern the same October 9 Russian-diesel license and import plan. The stable canonical record was materially refreshed rather than creating a parallel count."
+    },
+    {
+      "entry_id": "NAT-2026-10-12-001",
+      "target_id": "LEG-004083",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "LEG-004083 records the July 2025 presidential denaturalization statement and DOJ policy memorandum. The October 2026 record documents a later court-authorized search in an unresolved criminal investigation; the statement/policy stage and executed-search stage remain separately counted and reciprocally discoverable through the shared subject and source trail."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Seven nonqualifying Truth Social posts",
-      "reason": "A campaign attack and endorsement, commentary linking an older partisan article, four media-only or repost rows whose assets could not be retrieved, and a short image-accompanying thank-you did not independently establish a material administration action. No claim was inferred from inaccessible media."
+      "title": "October 12 DOJ election-charge batch",
+      "reason": "A continuation of the charging series already synthesized in NAT-2026-09-15-003; accusations did not materially change the existing evidence-bounded aggregate finding."
+    },
+    {
+      "title": "Thirty-two new Truth Social posts",
+      "reason": "Text and images were campaign-oriented, promotional, reposts, media criticism or repeated policy defense. Eleven video media states remain pending because complete audiovisual review was unavailable; no action was inferred."
     },
     {
       "title": "Trump TV and official video-library recheck",
-      "reason": "The channel and live-page stream ID remained unchanged. The dated library added a 34-second edited 'No Tax on Overtime' promotional clip, YouTube ID M3XvW1sSs-E; page metadata was inspected but footage, audio and captions were not retrieved. The clip repeated an enacted policy claim and did not establish a new action, expenditure or channel-accountability finding."
+      "reason": "The official pages exposed no newer dated library item than the October 11 edited clip already reviewed. Metadata only was inspected; no qualifying new item was located in the material reviewed."
     },
     {
-      "title": "Russia–Ukraine energy-ceasefire follow-up",
-      "reason": "Later Reuters reporting documented a post-announcement strike on Kharkiv energy infrastructure, which confirms the prior release's bounded finding that implementation and compliance were not established. It did not require a second same-window refresh or parallel record."
+      "title": "Russia-diesel defense and scale follow-up",
+      "reason": "The presidential defense and further scale reporting continued NAT-2026-10-09-003 without a new instrument, delivery, ruling, reversal or measured sustained outcome."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-12T03:58:43Z",
-    "checked_at_eastern": "2026-10-11 11:58 PM EDT",
+    "checked_at": "2026-10-12T16:09:01Z",
+    "checked_at_eastern": "2026-10-12 12:09 PM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-12T03:58:43Z",
+    "last_successful_page_inspection_at": "2026-10-12T16:09:01Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -851,13 +861,12 @@
       "https://www.whitehouse.gov/live/",
       "https://www.whitehouse.gov/videos/",
       "https://www.whitehouse.gov/remarks/",
-      "https://www.whitehouse.gov/briefings-statements/",
-      "https://www.whitehouse.gov/releases/"
+      "https://www.whitehouse.gov/news/"
     ],
-    "summary": "Official Trump TV, live, video-library, remarks, briefings and release pages were rechecked. The stream link remained A4gNgHfZ-v4; fallback error text was not treated as proof of an outage. The library added a 34-second October 11 edited clip titled 'No Tax on Overtime: Promises Made, Promises Kept,' linked to YouTube ID M3XvW1sSs-E. Only page metadata was reviewed; footage, audio and captions were not retrieved. The clip repeated an existing tax-policy claim and did not establish a new action. No qualifying new item located in the material reviewed, and no verified new channel cost, contract, staffing/control, distribution, press-access consequence, investigation or court/congressional finding was located.",
+    "summary": "Official Trump TV, live, video-library, remarks and news pages were rechecked. The linked stream remained A4gNgHfZ-v4, and fallback error text was not treated as proof of an outage. The dated library still led with the 34-second October 11 edited 'No Tax on Overtime' clip reviewed in the prior release; no October 12 upload was listed. Only page metadata was reviewed, not broadcast footage, audio or captions. No qualifying new item located in the material reviewed, and no verified new channel cost, contract, staffing/control, distribution, advertising expenditure, press-access consequence, investigation or court/congressional finding was located.",
     "gaps": [
-      "Footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
-      "Current live/replay state was not independently verified; page fallback text alone does not establish an outage.",
+      "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
+      "Current live/replay state was not independently verified; fallback text alone does not establish an outage.",
       "No complete transcript feed, channel budget, contract, staffing record or editorial-control record was available in the inspected official pages."
     ],
     "items": [
@@ -866,8 +875,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-12T03:58:43Z",
-        "observed_at_eastern": "2026-10-11 11:58 PM EDT",
+        "observed_at": "2026-10-12T16:09:01Z",
+        "observed_at_eastern": "2026-10-12 12:09 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official page linked the unchanged A4gNgHfZ-v4 stream. No footage, audio or captions were retrieved; fallback text was not treated as proof of an outage.",
         "video_ids": [
@@ -879,8 +888,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-12T03:58:43Z",
-        "observed_at_eastern": "2026-10-11 11:58 PM EDT",
+        "observed_at": "2026-10-12T16:09:01Z",
+        "observed_at_eastern": "2026-10-12 12:09 PM EDT",
         "format": "official live-hub metadata; audiovisual content unreviewed",
         "inspection": "The hub linked the same Trump TV stream. Current live/replay state and audiovisual content were not independently reviewed.",
         "video_ids": [
@@ -892,10 +901,10 @@
         "posted_date": "2026-10-11",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-12T03:58:43Z",
-        "observed_at_eastern": "2026-10-11 11:58 PM EDT",
+        "observed_at": "2026-10-12T16:09:01Z",
+        "observed_at_eastern": "2026-10-12 12:09 PM EDT",
         "format": "official dated-library metadata; audiovisual content unreviewed",
-        "inspection": "The library added the 34-second edited clip 'No Tax on Overtime: Promises Made, Promises Kept,' dated October 11 and linked to YouTube ID M3XvW1sSs-E. Title, date, duration and link metadata were inspected; footage, audio, captions and an exact upload time were not retrieved. The clip was treated as a replayed policy promotion rather than a new action.",
+        "inspection": "The library still led with the October 11 34-second edited clip 'No Tax on Overtime: Promises Made, Promises Kept.' No October 12 upload was listed; footage, audio, captions and exact upload time were not retrieved.",
         "video_ids": [
           "M3XvW1sSs-E"
         ]
@@ -905,32 +914,21 @@
         "posted_date": "2026-10-09",
         "original_event_date": "2026-10-09",
         "broadcast_time": null,
-        "observed_at": "2026-10-12T03:58:43Z",
-        "observed_at_eastern": "2026-10-11 11:58 PM EDT",
+        "observed_at": "2026-10-12T16:09:01Z",
+        "observed_at_eastern": "2026-10-12 12:09 PM EDT",
         "format": "supplementary remarks index",
-        "inspection": "The index still listed Michael Kratsios’s October 9 science-summit remarks as newest and was not treated as a complete Trump TV transcript feed.",
+        "inspection": "The index still listed October 9 science-summit remarks as newest and was not treated as a complete Trump TV transcript feed.",
         "video_ids": []
       },
       {
-        "url": "https://www.whitehouse.gov/briefings-statements/",
-        "posted_date": "2026-10-09",
+        "url": "https://www.whitehouse.gov/news/",
+        "posted_date": "2026-10-10",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-12T03:58:43Z",
-        "observed_at_eastern": "2026-10-11 11:58 PM EDT",
+        "observed_at": "2026-10-12T16:09:01Z",
+        "observed_at_eastern": "2026-10-12 12:09 PM EDT",
         "format": "supplementary official index",
-        "inspection": "The index supplied no new Trump TV transcript or qualifying broadcast finding.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "posted_date": "2026-10-08",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-10-12T03:58:43Z",
-        "observed_at_eastern": "2026-10-11 11:58 PM EDT",
-        "format": "supplementary official index",
-        "inspection": "The index still ended with October 8 releases. A listing was not treated as proof that material aired on Trump TV.",
+        "inspection": "The news index led with an October 10 manufacturing research post and supplied no new Trump TV transcript or broadcast finding.",
         "video_ids": []
       }
     ]
@@ -939,39 +937,39 @@
     "scope": "1000 retained fallback posts; current content hashes only",
     "counts": {
       "text_status": {
-        "not_recorded": 146,
-        "pending": 342,
-        "reviewed": 512
+        "not_recorded": 147,
+        "pending": 969,
+        "reviewed": 545
       },
       "media_status": {
-        "not_applicable": 450,
+        "not_applicable": 805,
         "not_recorded": 19,
-        "pending": 190,
-        "reviewed": 98,
-        "unavailable": 243
+        "pending": 476,
+        "reviewed": 117,
+        "unavailable": 244
       }
     },
-    "new_posts": 7,
-    "source_rows_added": 7,
-    "new_text_reviewed": 7,
-    "new_nonempty_text_reviewed": 5,
-    "new_empty_text_inspected": 2,
-    "new_image_assets_reviewed": 0,
-    "new_image_posts_reviewed": 0,
-    "new_video_assets_pending": 0,
+    "new_posts": 32,
+    "source_rows_added": 32,
+    "new_text_reviewed": 32,
+    "new_nonempty_text_reviewed": 13,
+    "new_empty_text_inspected": 19,
+    "new_image_assets_reviewed": 19,
+    "new_image_posts_reviewed": 19,
+    "new_video_assets_pending": 11,
     "new_video_assets_reviewed": 0,
-    "new_media_reviewed": 0,
-    "new_media_unavailable": 5,
-    "checked_at_utc": "2026-10-12T04:00:24.983826Z",
-    "checked_at_eastern": "2026-10-12 12:00:24 AM EDT",
-    "latest_post_at_utc": "2026-10-12T02:49:50.554000Z",
-    "latest_post_at_eastern": "2026-10-11 10:49:50 PM EDT",
-    "latest_post_id": "117425660923293729",
+    "new_media_reviewed": 19,
+    "new_media_unavailable": 0,
+    "checked_at_utc": "2026-10-12T16:15:26.605474Z",
+    "checked_at_eastern": "2026-10-12 12:15:26 PM EDT",
+    "latest_post_at_utc": "2026-10-12T15:18:24.373000Z",
+    "latest_post_at_eastern": "2026-10-12 11:18:24 AM EDT",
+    "latest_post_id": "117428604395341775",
     "no_new_post_finding": false,
-    "note": "Seven posts newer than the prior snapshot were inspected as research leads. A campaign attack and endorsement, commentary linking an older partisan article, four media-only or repost rows, and a brief image-accompanying thank-you did not independently establish a material government action. Five attached media states were marked unavailable after the asset host could not be retrieved; no content was inferred from inaccessible media. The newest post was published October 11 at 10:49:50 PM EDT, not October 12 local time."
+    "note": "Thirty-two posts newer than the prior snapshot were reviewed as research leads. All text and 19 image attachments were inspected; 11 video attachments remain media-pending because only representative frames—not complete motion, audio or captions—were reviewed. Campaign material, reposts, a Doral image dispute and repeated Russian-diesel defense did not independently establish a new qualifying action. The newest post was published October 12 at 11:18:24 AM EDT."
   },
   "archive_network_inspection": {
-    "checked_at": "2026-10-12T03:58:43Z",
-    "note": "All four registered primary projects were rechecked as discovery inputs. Trump Archive displayed 14,687 total items, 12,139 Truth Social posts and 1,898 speeches/transcripts; UndoTrump remained at 1,264 actions; the Immigration Policy Tracking Project remained at 1,812 tracked actions. Record47's public static page still displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts, while the previously disclosed API/static discrepancy remained unresolved. Units remain separate and no external item was automatically promoted."
+    "checked_at": "2026-10-12T16:09:01Z",
+    "note": "All four registered primary projects were rechecked as discovery inputs. Trump Archive displayed 14,731 total items, 12,178 Truth Social posts and 1,903 speeches/transcripts; UndoTrump remained at 1,264 actions; the Immigration Policy Tracking Project remained at 1,812 tracked actions. Record47's static page remained at 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts while its previously disclosed API/static discrepancy remained unresolved. Units remain separate and no external item was automatically promoted."
   }
 }

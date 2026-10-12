@@ -6037,6 +6037,18 @@
       "provenance_path": "data/editorial_change_notes/10.138.0.json",
       "provenance_sha256": "add7843a7bb72dc366de410ddd18a9ac25404c9c77cefddde934e9ac5eb21473",
       "note": "Stable record updated; operative interim relief, preliminary merits status, administration response, separate Maybe/Therefore review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.139.0:NAT-2026-10-12-001",
+      "entry_id": "NAT-2026-10-12-001",
+      "as_of_utc": "2026-10-12T16:09:01Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.139.0",
+      "summary": "Federal agents executed a judicially authorized search warrant at Rep. Ilhan Omar's home as part of an ongoing criminal investigation.",
+      "provenance_path": "data/editorial_change_notes/10.139.0.json",
+      "provenance_sha256": "6b8829233e7c513f0e358f628764d4375005b19775d37e4a63ca6a23e4a3e404",
+      "note": "New stable record; executed search, reported scope, administration explanation, response, separate Maybe/Therefore review and duplicate disposition preserved."
     }
   ],
   "reviews": [
@@ -74213,6 +74225,123 @@
       "unresolved_questions": [
         "The 24-hour compliance report and promised full opinion were not available by cutoff.",
         "Extension, appeal, merits judgment, audited savings, reimbursement and completed private funding remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.139.0:NAT-2026-10-12-001:a3fd6e449cc7",
+      "entry_id": "NAT-2026-10-12-001",
+      "content_sha256": "a3fd6e449cc78d9cdc08472526d8deb7660f70811cbf92445ca88ff77a70d31f",
+      "reviewed_at": "2026-10-12T16:09:01Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "df21c591ad0d8620302b709842c6d30b1ddd48dff61d98ad92416b6aa42032ff",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_omar_home_search_oct12",
+              "locator": "Event and DOJ confirmation.",
+              "inspected_at": "2026-10-12T16:09:01Z",
+              "document_sha256": "57ff173c644b621a5046c5e0334bf40fcdc53be4c7da115c0dbc76f01f80a9e0",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_omar_home_search_oct12",
+              "locator": "Event and DOJ confirmation.",
+              "inspected_at": "2026-10-12T16:09:01Z",
+              "document_sha256": "56a1558818ce8df6d83f4ba060e406d003596b43f8a7f136a5494a63715d11e2",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "e59a0a7705f434dfacf4b29a0a243f69b1f3ea96e7611012bea146fbad84539e",
+          "relies_on_unnamed_sources": true,
+          "supports": [
+            {
+              "source_id": "reuters_omar_home_search_oct12",
+              "locator": "Unnamed-source investigation focus.",
+              "inspected_at": "2026-10-12T16:09:01Z",
+              "document_sha256": "57ff173c644b621a5046c5e0334bf40fcdc53be4c7da115c0dbc76f01f80a9e0",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "abc_omar_home_search_oct12",
+              "locator": "Independent second-source investigation focus.",
+              "inspected_at": "2026-10-12T16:09:01Z",
+              "document_sha256": "90d64e344e7f83907322ba67a637c2a252451122774245a4790e096518cfb95a",
+              "origin_group": "ABC News",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "4ee7e2e67974242b9e8bd53f087787e0a6ba3e41af0425377cef96f23256305a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_omar_home_search_oct12",
+              "locator": "Public statements, election timing and DOJ-guidance context.",
+              "inspected_at": "2026-10-12T16:09:01Z",
+              "document_sha256": "56a1558818ce8df6d83f4ba060e406d003596b43f8a7f136a5494a63715d11e2",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "edf6d8c08fc6e11b0b949c4c4669e5e8420ae10ec8705c7c90c2aa23f2f90f72",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_omar_home_search_oct12",
+              "locator": "DOJ explanation, Omar denial and no-response status.",
+              "inspected_at": "2026-10-12T16:09:01Z",
+              "document_sha256": "56a1558818ce8df6d83f4ba060e406d003596b43f8a7f136a5494a63715d11e2",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_omar_home_search_oct12",
+              "locator": "Judicial authorization and no-charge status.",
+              "inspected_at": "2026-10-12T16:09:01Z",
+              "document_sha256": "57ff173c644b621a5046c5e0334bf40fcdc53be4c7da115c0dbc76f01f80a9e0",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "77966ae93837aebf3336138b900739f234f8953841a43c7929b82e6e961f642a",
+          "review_note": "Separately reviewed to distinguish a consequential executed search from an unproven offense and to identify election-period and institutional stakes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "6b96b7c4691460bb8ce89a831a2e4f70882af248da235fd1fb5ecd1a4c592cb7",
+          "review_note": "Separately reviewed against the administration's judicial-authorization explanation and observable warrant, charging, policy-compliance and oversight tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "b7c46b42611e6e9977a0028c473cc792f6d951f09a43462b6a5298d59645ce9c",
+          "review_note": "Separately reviewed to preserve both the sealed-evidence possibility and political-influence concern without converting either into a fact finding."
+        }
+      ],
+      "unresolved_questions": [
+        "The warrant application and affidavit were not public by cutoff.",
+        "The alleged offense, charging decision, election-sensitivity approval and any independent oversight remain unresolved."
       ]
     }
   ],
