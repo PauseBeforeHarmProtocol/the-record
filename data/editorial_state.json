@@ -6049,6 +6049,30 @@
       "provenance_path": "data/editorial_change_notes/10.139.0.json",
       "provenance_sha256": "6b8829233e7c513f0e358f628764d4375005b19775d37e4a63ca6a23e4a3e404",
       "note": "New stable record; executed search, reported scope, administration explanation, response, separate Maybe/Therefore review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.140.0:NAT-2026-10-10-001",
+      "entry_id": "NAT-2026-10-10-001",
+      "as_of_utc": "2026-10-12T22:07:25Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.140.0",
+      "summary": "A federal judge temporarily halted further East Potomac tree removal and ordered testimony about notice, urgency and the decision chain.",
+      "provenance_path": "data/editorial_change_notes/10.140.0.json",
+      "provenance_sha256": "4684199ba4620e367fac51ac47f66ab1c147c92283ea7d0b59b4fd89f825a3d4",
+      "note": "Stable record updated; implemented removals, interim relief, strongest response, separate Maybe/Therefore review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.140.0:NAT-2026-10-12-001",
+      "entry_id": "NAT-2026-10-12-001",
+      "as_of_utc": "2026-10-12T22:07:25Z",
+      "timestamp_precision": "second",
+      "kind": "correction",
+      "release_version": "10.140.0",
+      "summary": "Omar’s response was added and the stale no-response statement corrected with version history preserved.",
+      "provenance_path": "data/editorial_change_notes/10.140.0.json",
+      "provenance_sha256": "4684199ba4620e367fac51ac47f66ab1c147c92283ea7d0b59b4fd89f825a3d4",
+      "note": "Timestamped correction; the response is attributed as an allegation and not treated as a factual finding."
     }
   ],
   "reviews": [
@@ -74316,6 +74340,247 @@
               "locator": "Judicial authorization and no-charge status.",
               "inspected_at": "2026-10-12T16:09:01Z",
               "document_sha256": "57ff173c644b621a5046c5e0334bf40fcdc53be4c7da115c0dbc76f01f80a9e0",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "77966ae93837aebf3336138b900739f234f8953841a43c7929b82e6e961f642a",
+          "review_note": "Separately reviewed to distinguish a consequential executed search from an unproven offense and to identify election-period and institutional stakes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "6b96b7c4691460bb8ce89a831a2e4f70882af248da235fd1fb5ecd1a4c592cb7",
+          "review_note": "Separately reviewed against the administration's judicial-authorization explanation and observable warrant, charging, policy-compliance and oversight tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "b7c46b42611e6e9977a0028c473cc792f6d951f09a43462b6a5298d59645ce9c",
+          "review_note": "Separately reviewed to preserve both the sealed-evidence possibility and political-influence concern without converting either into a fact finding."
+        }
+      ],
+      "unresolved_questions": [
+        "The warrant application and affidavit were not public by cutoff.",
+        "The alleged offense, charging decision, election-sensitivity approval and any independent oversight remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.140.0:NAT-2026-10-10-001:9e3ac42d3a91",
+      "entry_id": "NAT-2026-10-10-001",
+      "content_sha256": "9e3ac42d3a919835127163838f873c6973f81d74196f923de09d1daeb774a93c",
+      "reviewed_at": "2026-10-12T22:07:25Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "caa541979177d593d6b97e6f43eba9366ecf9673914dd7470c00e395aedb35b4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_east_potomac_tree_removal_oct10",
+              "locator": "Eyewitness photographs/reporting and agency counts establish that the initial removal began.",
+              "inspected_at": "2026-10-10T22:08:00Z",
+              "document_sha256": "6f76e06ee37518e1c54a1ee7ce4b060df488060d5d6ab8fc44febb61feb9196e",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "wapo_east_potomac_tree_removal_oct9",
+              "locator": "Independent report on the filing confirms the phased counts and possible maximum.",
+              "inspected_at": "2026-10-10T22:08:00Z",
+              "document_sha256": "0822d1797fa9f6ba328df33b5aaf203b85ce5c7685881eb994dbfba90f06053d",
+              "origin_group": "The Washington Post",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "3fefd4678e7eb6e63cb21e725fdb0dd9c499aac88e9928f8e5e75af080bc8c51",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_east_potomac_tree_removal_oct10",
+              "locator": "Named Interior/NPS response states the maintenance rationale, historic-tree limit and continued public opening.",
+              "inspected_at": "2026-10-10T22:08:00Z",
+              "document_sha256": "6f76e06ee37518e1c54a1ee7ce4b060df488060d5d6ab8fc44febb61feb9196e",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "87e62bc1a512f77c1418dab1b35b8a724357cf9f7d418ce86231d52c50e4d35e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wapo_east_potomac_tree_removal_oct9",
+              "locator": "Report describes the potential-project posture, missing final plan and undisclosed additional resources.",
+              "inspected_at": "2026-10-10T22:08:00Z",
+              "document_sha256": "0822d1797fa9f6ba328df33b5aaf203b85ce5c7685881eb994dbfba90f06053d",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "7a854896e8be8b869f143d383e742cf132de822b41b58c9ac18189dba7830a77",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_east_potomac_tree_removal_oct10",
+              "locator": "Report preserves the agency response, pending suit and public-access concerns.",
+              "inspected_at": "2026-10-12T22:07:25Z",
+              "document_sha256": "6f76e06ee37518e1c54a1ee7ce4b060df488060d5d6ab8fc44febb61feb9196e",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "wapo_east_potomac_tree_removal_oct9",
+              "locator": "Independent report distinguishes maintenance from the disputed potential redesign and describes the court posture.",
+              "inspected_at": "2026-10-12T22:07:25Z",
+              "document_sha256": "0822d1797fa9f6ba328df33b5aaf203b85ce5c7685881eb994dbfba90f06053d",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "a5c5dc88ef40623891d999a313a3106e82e2d0503c6d2e5dfb6c1e2cac353173",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_east_potomac_court_halt_oct12",
+              "locator": "AP lines 1841–1883: 24-hour halt, possible 14-day extension, next hearing, named testimony and government landscape rationale.",
+              "inspected_at": "2026-10-12T22:07:25Z",
+              "document_sha256": "c58d41978ceb91e59e61a0303427647efb033cd6cda21f657777700ebc6b1cc0",
+              "origin_group": "Associated Press",
+              "evidence_status": "enjoined"
+            },
+            {
+              "source_id": "reuters_east_potomac_court_halt_oct12",
+              "locator": "Reuters lines 167–195: temporary order, reported removal scale, notice dispute, contempt posture and NPS response.",
+              "inspected_at": "2026-10-12T22:07:25Z",
+              "document_sha256": "a948bafac6b51ce4f91bd64388df4bd285fffc161b29d87c0f01cf4728d741b8",
+              "origin_group": "Reuters",
+              "evidence_status": "enjoined"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "8cb71c20085de9053ded084703cb56cad0b645b179e6bdea6928d717b947c8c2",
+          "review_note": "Separately reviewed to distinguish irreversible removals and emergency oversight from a final merits judgment."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "bfef2d0863851d952225c8089a8db448f2e6517067ec3a09212411c782d4c4c4",
+          "review_note": "Separately reviewed against the government maintenance rationale and observable compliance, testimony, funding and merits tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "64178bda7dece47cb79e14dc6884bbd7ae8bbc71139ccbe4d04518145eea078c",
+          "review_note": "Separately reviewed to preserve legitimate-maintenance and bypassed-scrutiny possibilities without converting interim relief into a merits finding."
+        }
+      ],
+      "unresolved_questions": [
+        "The duration of the pause, Wischer testimony, contempt posture and merits outcome remain unresolved.",
+        "The final tree count, assessments, workforce, funding, preservation consultation, public-access effects and redesign remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.140.0:NAT-2026-10-12-001:1f8d982cb77c",
+      "entry_id": "NAT-2026-10-12-001",
+      "content_sha256": "1f8d982cb77c8860a29db0c5cb68f5d9b0489e4031f8f7a0fe889e261017ee58",
+      "reviewed_at": "2026-10-12T22:07:25Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "df21c591ad0d8620302b709842c6d30b1ddd48dff61d98ad92416b6aa42032ff",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_omar_home_search_oct12",
+              "locator": "Event and DOJ confirmation.",
+              "inspected_at": "2026-10-12T16:09:01Z",
+              "document_sha256": "57ff173c644b621a5046c5e0334bf40fcdc53be4c7da115c0dbc76f01f80a9e0",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_omar_home_search_oct12",
+              "locator": "Event and DOJ confirmation.",
+              "inspected_at": "2026-10-12T16:09:01Z",
+              "document_sha256": "56a1558818ce8df6d83f4ba060e406d003596b43f8a7f136a5494a63715d11e2",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "e59a0a7705f434dfacf4b29a0a243f69b1f3ea96e7611012bea146fbad84539e",
+          "relies_on_unnamed_sources": true,
+          "supports": [
+            {
+              "source_id": "reuters_omar_home_search_oct12",
+              "locator": "Unnamed-source investigation focus.",
+              "inspected_at": "2026-10-12T16:09:01Z",
+              "document_sha256": "57ff173c644b621a5046c5e0334bf40fcdc53be4c7da115c0dbc76f01f80a9e0",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "abc_omar_home_search_oct12",
+              "locator": "Independent second-source investigation focus.",
+              "inspected_at": "2026-10-12T16:09:01Z",
+              "document_sha256": "90d64e344e7f83907322ba67a637c2a252451122774245a4790e096518cfb95a",
+              "origin_group": "ABC News",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "4ee7e2e67974242b9e8bd53f087787e0a6ba3e41af0425377cef96f23256305a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_omar_home_search_oct12",
+              "locator": "Public statements, election timing and DOJ-guidance context.",
+              "inspected_at": "2026-10-12T16:09:01Z",
+              "document_sha256": "56a1558818ce8df6d83f4ba060e406d003596b43f8a7f136a5494a63715d11e2",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "86656719eeac7eebaf1242c23b320660ffb82457c73c64ba6c5fa1fa25fb4735",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_omar_home_search_oct12",
+              "locator": "Reuters lines 171–180: DOJ confirmation, Omar response and unresolved-investigation status.",
+              "inspected_at": "2026-10-12T22:07:25Z",
+              "document_sha256": "7167382c1dfb73c725ac284c0ff6f937388522952fc82d05a1c13f9de1cd5263",
               "origin_group": "Reuters",
               "evidence_status": "reported"
             }
