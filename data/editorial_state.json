@@ -6097,6 +6097,42 @@
       "provenance_path": "data/editorial_change_notes/10.142.0.json",
       "provenance_sha256": "74b0237723023b9a6798237b37a43aea8e5df09ce713a7b4fd87fe719d100952",
       "note": "Stable record updated; attributed battlefield claims, independent corroboration, Trump and Russian responses, separate Maybe/Therefore review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.143.0:NAT-2026-10-13-001",
+      "entry_id": "NAT-2026-10-13-001",
+      "as_of_utc": "2026-10-13T16:05:50Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.143.0",
+      "summary": "CBP proposed mandatory advance traveler data and possible no-board advice for covered international rail service.",
+      "provenance_path": "data/editorial_change_notes/10.143.0.json",
+      "provenance_sha256": "ca7aed55ea7c38f24da0296aefe1db8014aa1767521494c8327709d62b657220",
+      "note": "New stable record; proposed status, data scope, response, separate Maybe/Therefore review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.143.0:NAT-2026-10-13-002",
+      "entry_id": "NAT-2026-10-13-002",
+      "as_of_utc": "2026-10-13T16:05:50Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.143.0",
+      "summary": "FDA finalized voluntary permission for safe and suitable salt substitutes in standardized foods.",
+      "provenance_path": "data/editorial_change_notes/10.143.0.json",
+      "provenance_sha256": "ca7aed55ea7c38f24da0296aefe1db8014aa1767521494c8327709d62b657220",
+      "note": "New stable record; final-rule status, voluntary scope, response, separate Maybe/Therefore review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.143.0:NAT-2026-10-13-003",
+      "entry_id": "NAT-2026-10-13-003",
+      "as_of_utc": "2026-10-13T16:05:50Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.143.0",
+      "summary": "The CFTC opened comment on a possible national retail crypto transaction and market framework.",
+      "provenance_path": "data/editorial_change_notes/10.143.0.json",
+      "provenance_sha256": "ca7aed55ea7c38f24da0296aefe1db8014aa1767521494c8327709d62b657220",
+      "note": "New stable record; advance-rulemaking status, policy options, response, separate Maybe/Therefore review and duplicate disposition preserved."
     }
   ],
   "reviews": [
@@ -75134,6 +75170,63 @@
         "No public written terms, duration, monitoring or enforcement mechanism were located by cutoff.",
         "Russia had not publicly confirmed acceptance; sustained reciprocal compliance remains unestablished."
       ]
+    },
+    {
+      "review_id": "10.143.0:NAT-2026-10-13-001:175525f38493",
+      "entry_id": "NAT-2026-10-13-001",
+      "content_sha256": "175525f384934227bfa2050efe693a9cec324091e3bfaea960064eb4c50b35c8",
+      "reviewed_at": "2026-10-13T16:05:50Z",
+      "reviewer": {"name":"OpenAI Codex editorial maintenance","kind":"ai_assisted"},
+      "claims": [
+        {"fact_index":0,"fact_sha256":"8605db9ed615d237813e249fde61ad108403d1d88692c01e823f4d94bb571ca2","relies_on_unnamed_sources":false,"supports":[{"source_id":"fr_cbp_rail_nprm_oct13","locator":"Primary filing inspected for covered movements, notice timing, electronic submissions and proposed status.","inspected_at":"2026-10-13T16:05:50Z","document_sha256":"3f11b8d86bfc381d7a71c1c237a5e4423151a785bec6f3764a4af2cf8f88d3fe","origin_group":"U.S. Customs and Border Protection","evidence_status":"proposed"}]},
+        {"fact_index":1,"fact_sha256":"eb40fd16a8c914c83b2ac8d33ba004352ba23a11e04982f9e6004fea8b8564a1","relies_on_unnamed_sources":false,"supports":[{"source_id":"fr_cbp_rail_nprm_oct13","locator":"Primary filing inspected for enumerated traveler, itinerary, contact, seat and baggage fields.","inspected_at":"2026-10-13T16:05:50Z","document_sha256":"3f11b8d86bfc381d7a71c1c237a5e4423151a785bec6f3764a4af2cf8f88d3fe","origin_group":"U.S. Customs and Border Protection","evidence_status":"proposed"}]},
+        {"fact_index":2,"fact_sha256":"b7c780b5258db146c505795c8b6d3b2bd2313e6a65e6a2ecbf072566e2c03ca1","relies_on_unnamed_sources":false,"supports":[{"source_id":"fr_cbp_rail_nprm_oct13","locator":"Primary filing inspected for vetting, carrier advice and current voluntary-program scope.","inspected_at":"2026-10-13T16:05:50Z","document_sha256":"3f11b8d86bfc381d7a71c1c237a5e4423151a785bec6f3764a4af2cf8f88d3fe","origin_group":"U.S. Customs and Border Protection","evidence_status":"proposed"}]},
+        {"fact_index":3,"fact_sha256":"e6179fb5651697a454556c7e588e17e77462016db551edd6bdaf02708f8bc911","relies_on_unnamed_sources":false,"supports":[{"source_id":"fr_cbp_rail_nprm_oct13","locator":"Primary filing inspected for agency rationale, privacy updates and December 14 comment deadline.","inspected_at":"2026-10-13T16:05:50Z","document_sha256":"3f11b8d86bfc381d7a71c1c237a5e4423151a785bec6f3764a4af2cf8f88d3fe","origin_group":"U.S. Customs and Border Protection","evidence_status":"proposed"}]}
+      ],
+      "reasoning_review": [
+        {"field":"significance","text_sha256":"20ec5422a6408317e8d6cdaaa7aa1259b065cb13b4b9f3e5aa5f2513e1b92b82","review_note":"Separately reviewed to distinguish consequential pre-boarding authority from an implemented or measured system."},
+        {"field":"goalpost","text_sha256":"64945801a3159847288a6f70d6383f1a5427033306f2ecb071f7655dc8b40ed0","review_note":"Separately reviewed against final terms, accuracy, redress, privacy, carrier burden and processing outcomes."},
+        {"field":"maybe_therefore","text_sha256":"f3db714a105ca94a2ce9c0792aff5aee1cca2d58782b745a5998d10940e64925","review_note":"Separately reviewed to preserve both plausible security gains and match-error risks while retaining proposed status."}
+      ],
+      "unresolved_questions": ["Final-rule terms, implementation date and carrier coverage remain unresolved.","No measured match accuracy, no-board error, redress or processing outcome exists for the proposed mandate."]
+    },
+    {
+      "review_id": "10.143.0:NAT-2026-10-13-002:f1d1fa675e2f",
+      "entry_id": "NAT-2026-10-13-002",
+      "content_sha256": "f1d1fa675e2fb1c6fdd0ac0f15a0279ebb6e2437a847496c00bfc14a578f9d7d",
+      "reviewed_at": "2026-10-13T16:05:50Z",
+      "reviewer": {"name":"OpenAI Codex editorial maintenance","kind":"ai_assisted"},
+      "claims": [
+        {"fact_index":0,"fact_sha256":"ca0bdda6a0104df2e263096504f03d108d11d57535567e5a3f1144cdd7dfa1fe","relies_on_unnamed_sources":false,"supports":[{"source_id":"fr_fda_salt_substitutes_final_oct13","locator":"Final rule inspected for legal permission, safe-and-suitable standard and voluntary scope.","inspected_at":"2026-10-13T16:05:50Z","document_sha256":"49f2452b6e4f25f3476ab9c213f1d36da164b786c10c1f4dbf2647d819d3f9a6","origin_group":"Food and Drug Administration","evidence_status":"ordered"},{"source_id":"fda_salt_substitutes_announcement_oct9","locator":"Official announcement inspected for announcement date and plain-language scope.","inspected_at":"2026-10-13T16:05:50Z","document_sha256":"bed1357eaf7229209869fc1bb3e6f897a29dd0da8e3f301ca0987ed3cb3e4f8c","origin_group":"Food and Drug Administration","evidence_status":"announced"}]},
+        {"fact_index":1,"fact_sha256":"5f75b792351d8a7e71986e25b2334ed29e55d298fe936d950680f1f160a9be7f","relies_on_unnamed_sources":false,"supports":[{"source_id":"fr_fda_salt_substitutes_final_oct13","locator":"Final rule inspected for codified amendments, effective date and dairy-objection procedure.","inspected_at":"2026-10-13T16:05:50Z","document_sha256":"49f2452b6e4f25f3476ab9c213f1d36da164b786c10c1f4dbf2647d819d3f9a6","origin_group":"Food and Drug Administration","evidence_status":"ordered"},{"source_id":"fda_salt_substitutes_announcement_oct9","locator":"Official announcement inspected for the 139 standards-of-identity scope statement.","inspected_at":"2026-10-13T16:05:50Z","document_sha256":"bed1357eaf7229209869fc1bb3e6f897a29dd0da8e3f301ca0987ed3cb3e4f8c","origin_group":"Food and Drug Administration","evidence_status":"announced"}]},
+        {"fact_index":2,"fact_sha256":"8d2300368c2800bbba015733fdb5057820624e4dab93ecf2f90e86aff7f2a8ce","relies_on_unnamed_sources":false,"supports":[{"source_id":"fr_fda_salt_substitutes_final_oct13","locator":"Final regulatory analysis inspected for voluntary character and unquantified benefits and uptake.","inspected_at":"2026-10-13T16:05:50Z","document_sha256":"49f2452b6e4f25f3476ab9c213f1d36da164b786c10c1f4dbf2647d819d3f9a6","origin_group":"Food and Drug Administration","evidence_status":"ordered"}]},
+        {"fact_index":3,"fact_sha256":"eb1307f3227d1c8db1e1002995517a645ece2b303028b185703890fccf54fd7e","relies_on_unnamed_sources":false,"supports":[{"source_id":"fr_fda_salt_substitutes_final_oct13","locator":"Final rule inspected for potassium-risk comments, labeling response and possible reformulation costs.","inspected_at":"2026-10-13T16:05:50Z","document_sha256":"49f2452b6e4f25f3476ab9c213f1d36da164b786c10c1f4dbf2647d819d3f9a6","origin_group":"Food and Drug Administration","evidence_status":"ordered"}]}
+      ],
+      "reasoning_review": [
+        {"field":"significance","text_sha256":"fcb6c14885be3ba4ab10ff08ca60bc1b32dd446873ca1637ec3a4f6418d652c8","review_note":"Separately reviewed to distinguish finalized regulatory flexibility from manufacturer uptake or health effects."},
+        {"field":"goalpost","text_sha256":"430fd5e683cd0b28156bb195455ff21e1fe1af626e21ccc6e0aa78af695d3a40","review_note":"Separately reviewed against formulation, exposure, labeling, acceptance and measured health outcomes."},
+        {"field":"maybe_therefore","text_sha256":"0507277befb8a27712097d7ea3b282db7f7462fa04769cf825631c7a7a2ba02d","review_note":"Separately reviewed to preserve both sodium-reduction potential and susceptible-consumer risk without overstating either."}
+      ],
+      "unresolved_questions": ["Manufacturer uptake and the sodium reduction achieved under the voluntary rule are unknown.","The dairy objection process, consumer acceptance and potassium-related safety outcomes remain unresolved."]
+    },
+    {
+      "review_id": "10.143.0:NAT-2026-10-13-003:72633f402b34",
+      "entry_id": "NAT-2026-10-13-003",
+      "content_sha256": "72633f402b34ec43a4bf42c96440e4d40af13e1425331fabc26139271daa43ba",
+      "reviewed_at": "2026-10-13T16:05:50Z",
+      "reviewer": {"name":"OpenAI Codex editorial maintenance","kind":"ai_assisted"},
+      "claims": [
+        {"fact_index":0,"fact_sha256":"51f6640741844b21d75e060279a3f148e4f34e0644b895feea5bd0409dfe097c","relies_on_unnamed_sources":false,"supports":[{"source_id":"fr_cftc_crypto_anprm_oct13","locator":"ANPRM inspected for statutory basis, covered retail transactions, publication stage and comment deadline.","inspected_at":"2026-10-13T16:05:50Z","document_sha256":"fe1baedb068d6cc2acfd19acdfc8a3ed7f0180a1f68352e70ee3acc7a299aa84","origin_group":"Commodity Futures Trading Commission","evidence_status":"proposed"},{"source_id":"cftc_crypto_anprm_release_oct5","locator":"Agency release inspected for announcement date and framework description.","inspected_at":"2026-10-13T16:05:50Z","document_sha256":"361d15c23abba061a3dab19a3a3a86b875825f8211a4becf85bcf5b642943f7d","origin_group":"Commodity Futures Trading Commission","evidence_status":"announced"}]},
+        {"fact_index":1,"fact_sha256":"13fbc408cbdb5dd60795378ec22b789624c9f9ebd2e1305161ddf061270211ee","relies_on_unnamed_sources":false,"supports":[{"source_id":"fr_cftc_crypto_anprm_oct13","locator":"ANPRM inspected for contemplated CAM registration and trading, custody, margin, reporting and reserves questions.","inspected_at":"2026-10-13T16:05:50Z","document_sha256":"fe1baedb068d6cc2acfd19acdfc8a3ed7f0180a1f68352e70ee3acc7a299aa84","origin_group":"Commodity Futures Trading Commission","evidence_status":"proposed"}]},
+        {"fact_index":2,"fact_sha256":"a48f289839c36e6a889002af377c6038afabdc1e9a00937915f53083d09fcf82","relies_on_unnamed_sources":false,"supports":[{"source_id":"fr_cftc_crypto_anprm_oct13","locator":"ANPRM inspected for dual-registration, exemption, collateral and liquidation options and preliminary legal effect.","inspected_at":"2026-10-13T16:05:50Z","document_sha256":"fe1baedb068d6cc2acfd19acdfc8a3ed7f0180a1f68352e70ee3acc7a299aa84","origin_group":"Commodity Futures Trading Commission","evidence_status":"proposed"}]},
+        {"fact_index":3,"fact_sha256":"6abb8932e481ef469e7269d6861f5476d8a1e7b907b04ff2e48f8bac3802a6b2","relies_on_unnamed_sources":false,"supports":[{"source_id":"cftc_crypto_anprm_release_oct5","locator":"Agency release inspected for chairman's clarity, consumer-protection and innovation rationale.","inspected_at":"2026-10-13T16:05:50Z","document_sha256":"361d15c23abba061a3dab19a3a3a86b875825f8211a4becf85bcf5b642943f7d","origin_group":"Commodity Futures Trading Commission","evidence_status":"announced"},{"source_id":"fr_cftc_crypto_anprm_oct13","locator":"ANPRM inspected for stated market-failure, fragmentation and legal-design issues.","inspected_at":"2026-10-13T16:05:50Z","document_sha256":"fe1baedb068d6cc2acfd19acdfc8a3ed7f0180a1f68352e70ee3acc7a299aa84","origin_group":"Commodity Futures Trading Commission","evidence_status":"proposed"}]}
+      ],
+      "reasoning_review": [
+        {"field":"significance","text_sha256":"4d3f922a9e9d0973b263d3258bb31b25cf06598c129bda2baeb055eca2a526e2","review_note":"Separately reviewed to describe the broad framework while preserving the ANPRM's preliminary legal effect."},
+        {"field":"goalpost","text_sha256":"0827d5731a59409871f6c1af0be686bf34233d73209b03c0988aa6e86f06d50b","review_note":"Separately reviewed against final text, authority, uptake, losses, concentration, compliance costs and judicial review."},
+        {"field":"maybe_therefore","text_sha256":"c854d13fbfc7477405220f40b6a23e6321090f57175c3336da0d3e2c5ee4b457","review_note":"Separately reviewed to preserve both gap-reduction potential and authority or competition risks without implying adoption."}
+      ],
+      "unresolved_questions": ["The CFTC has not selected proposed or final CAM and CTX requirements.","Statutory authority, overlap with other regulators, costs and market outcomes remain unresolved."]
     }
   ],
   "deferred_candidates": []
