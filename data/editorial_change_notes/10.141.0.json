@@ -1,0 +1,40 @@
+{
+  "version": "10.141.0",
+  "base_release_version": "10.140.0",
+  "base_commit": "431060540c8640c7a64841b8f635204f8d13daea",
+  "research_window": {
+    "from_utc": "2026-10-12T22:07:25Z",
+    "through_utc": "2026-10-13T04:00:50Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Exact scan from the prior accepted open-branch boundary. One existing advertising record was materially refreshed with measured post-pledge and post-order airtime; weaker leads were withheld rather than padded."
+  },
+  "publication_authorization": "The user authorizes maintenance branches, pull requests and merging after evidence, local acceptance and successful CI; repository policy still requires Phillip Linstrum's final publication acceptance before merge.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-24-002",
+      "kind": "material_refresh",
+      "summary": "NPR's named AdImpact analysis measured nearly $22 million in government-funded airtime, including nearly $10 million after the private-funding pledge, and documented additional broadcasts after the court's cancellation order.",
+      "duplicate_review": "Same government advertising campaign and later funding/compliance stage; the stable September record was refreshed rather than counted again."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "npr_ads_post_order_airings_oct12",
+      "document_sha256": "5431bb4cda48862b19ec275609641f7b5f08b94b3c6187061d7f1aa584c1872f",
+      "inspected_at": "2026-10-13T04:00:50Z",
+      "note": "Article body inspected for the named AdImpact estimates, post-order airtime, timing, White House notice explanation and future outside-funding statement. The estimates remain distinguished from audited federal disbursements."
+    }
+  ],
+  "withheld": [
+    {
+      "title": "Trump statement on alleged China and Russia support for Iran",
+      "reason": "The post announced no new military, diplomatic or sanctions action and did not independently verify the underlying intelligence claim."
+    },
+    {
+      "title": "Trump TV and official video-library recheck",
+      "reason": "Seven October 12 items were listed, but only metadata and three linked video IDs were accessible; no qualifying new item was located in the material reviewed."
+    }
+  ],
+  "corrections": []
+}
