@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "status": "active_registry",
-  "checked_at": "2026-10-13T10:03:20Z",
+  "checked_at": "2026-10-13T21:56:54Z",
   "registry_purpose": "Describe independent Trump-related archives as a federated research network without pretending that unlike record units are interchangeable or additive.",
   "invariants": [
     "An upstream archive is a discovery and corroboration source, not an automatic authority for The Record.",
@@ -115,11 +115,11 @@
         {
           "metric_id": "trump_archive.total_items",
           "as_reported_label": "total items",
-          "value": 14741,
+          "value": 14748,
           "unit": "public_statement_or_document_item",
           "scope": "all items displayed in the archive monthly index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-10-13T16:05:50Z",
+          "observed_at": "2026-10-13T21:56:54Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null,
           "note": "Verified against the primary archive index; upstream units remain distinct and no record is auto-imported."
@@ -127,11 +127,11 @@
         {
           "metric_id": "trump_archive.truth_social_posts",
           "as_reported_label": "Truth Social posts",
-          "value": 12186,
+          "value": 12189,
           "unit": "truth_social_post",
           "scope": "Truth Social posts within the archive index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-10-13T16:05:50Z",
+          "observed_at": "2026-10-13T21:56:54Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null,
           "note": "Verified against the primary archive index; upstream units remain distinct and no record is auto-imported."
@@ -139,11 +139,11 @@
         {
           "metric_id": "trump_archive.speeches_transcripts",
           "as_reported_label": "speeches & transcripts",
-          "value": 1905,
+          "value": 1909,
           "unit": "speech_or_transcript",
           "scope": "speeches and transcripts within the archive index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-10-13T16:05:50Z",
+          "observed_at": "2026-10-13T21:56:54Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null,
           "note": "Verified against the primary archive index; upstream units remain distinct and no record is auto-imported."
@@ -192,18 +192,20 @@
         "content_import_permission_state": "license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-10-13T16:05:50Z",
+        "checked_at": "2026-10-13T21:56:54Z",
         "state": "verified",
         "verification_pages": [
           "https://trump-archive.com/archive"
         ],
-        "note": "Primary monthly index displayed 14,741 total items, 12,186 Truth Social posts and 1,905 speeches/transcripts. Distinct upstream units were preserved and no item was automatically imported."
+        "note": "Primary monthly index displayed 14,748 total items, 12,189 Truth Social posts and 1,909 speeches/transcripts. Distinct upstream units were preserved and no item was automatically imported."
       },
       "check_history": [
         {
           "checked_at": "2026-10-13T16:05:50Z",
           "state": "verified",
-          "verification_pages": ["https://trump-archive.com/archive"],
+          "verification_pages": [
+            "https://trump-archive.com/archive"
+          ],
           "note": "Primary monthly index displayed 14,741 total items, 12,186 Truth Social posts and 1,905 speeches/transcripts. Distinct upstream units were preserved and no item was automatically imported."
         },
         {
@@ -381,6 +383,14 @@
             "https://trump-archive.com/archive"
           ],
           "note": "Primary index displayed 14,629 total items, 12,090 Truth Social posts and 1,890 speeches/transcripts. Distinct upstream units preserved; zero automatic canonical imports."
+        },
+        {
+          "checked_at": "2026-10-13T16:05:50Z",
+          "state": "verified",
+          "verification_pages": [
+            "https://trump-archive.com/archive"
+          ],
+          "note": "Primary monthly index displayed 14,741 total items, 12,186 Truth Social posts and 1,905 speeches/transcripts. Distinct upstream units were preserved and no item was automatically imported."
         }
       ],
       "measurement_history": [
@@ -883,6 +893,42 @@
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null,
           "note": "Verified against the primary archive index; upstream units remain distinct and no record is auto-imported."
+        },
+        {
+          "metric_id": "trump_archive.total_items",
+          "as_reported_label": "total items",
+          "value": 14741,
+          "unit": "public_statement_or_document_item",
+          "scope": "all items displayed in the archive monthly index",
+          "comparability_group": "raw_public_expression",
+          "observed_at": "2026-10-13T16:05:50Z",
+          "source_url": "https://trump-archive.com/archive",
+          "upstream_display_date": null,
+          "note": "Verified against the primary archive index; upstream units remain distinct and no record is auto-imported."
+        },
+        {
+          "metric_id": "trump_archive.truth_social_posts",
+          "as_reported_label": "Truth Social posts",
+          "value": 12186,
+          "unit": "truth_social_post",
+          "scope": "Truth Social posts within the archive index",
+          "comparability_group": "raw_public_expression",
+          "observed_at": "2026-10-13T16:05:50Z",
+          "source_url": "https://trump-archive.com/archive",
+          "upstream_display_date": null,
+          "note": "Verified against the primary archive index; upstream units remain distinct and no record is auto-imported."
+        },
+        {
+          "metric_id": "trump_archive.speeches_transcripts",
+          "as_reported_label": "speeches & transcripts",
+          "value": 1905,
+          "unit": "speech_or_transcript",
+          "scope": "speeches and transcripts within the archive index",
+          "comparability_group": "raw_public_expression",
+          "observed_at": "2026-10-13T16:05:50Z",
+          "source_url": "https://trump-archive.com/archive",
+          "upstream_display_date": null,
+          "note": "Verified against the primary archive index; upstream units remain distinct and no record is auto-imported."
         }
       ]
     },
@@ -918,7 +964,7 @@
           "unit": "confirmed_policy_action",
           "scope": "Trump first and second presidential terms",
           "comparability_group": "general_policy_action",
-          "observed_at": "2026-10-07T10:02:35Z",
+          "observed_at": "2026-10-13T21:56:54Z",
           "source_url": "https://www.undotrump.com/",
           "upstream_display_date": "2026-10-05"
         },
@@ -1072,18 +1118,20 @@
         "content_import_permission_state": "bulk_permission_or_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-10-13T16:05:50Z",
-        "state": "access_gap",
+        "checked_at": "2026-10-13T21:56:54Z",
+        "state": "verified_unchanged",
         "verification_pages": [
           "https://www.undotrump.com/"
         ],
-        "note": "The primary project page was not retrievable in this check. The prior verified 1,264-action measurement was preserved and no upstream item was automatically imported."
+        "note": "Primary project page displayed 1,264 actions tracked. The Medicaid and CHIP funding rule was treated only as a discovery lead and independently sourced before publication; no upstream item was automatically imported."
       },
       "check_history": [
         {
           "checked_at": "2026-10-13T16:05:50Z",
           "state": "access_gap",
-          "verification_pages": ["https://www.undotrump.com/"],
+          "verification_pages": [
+            "https://www.undotrump.com/"
+          ],
           "note": "The primary project page was not retrievable in this check. Prior verified measurements were preserved and no item was automatically imported."
         },
         {
@@ -1253,6 +1301,14 @@
             "https://www.undotrump.com/"
           ],
           "note": "Primary project page remained at 1,264 actions tracked. No measurement changed and no external item was promoted."
+        },
+        {
+          "checked_at": "2026-10-13T16:05:50Z",
+          "state": "access_gap",
+          "verification_pages": [
+            "https://www.undotrump.com/"
+          ],
+          "note": "The primary project page was not retrievable in this check. The prior verified 1,264-action measurement was preserved and no upstream item was automatically imported."
         }
       ],
       "measurement_history": [
@@ -1330,7 +1386,7 @@
           "unit": "immigration_policy_action",
           "scope": "all policies shown on the policies browse page",
           "comparability_group": "domain_policy_action",
-          "observed_at": "2026-10-13T16:05:50Z",
+          "observed_at": "2026-10-13T21:56:54Z",
           "source_url": "https://immpolicytracking.org/policies/",
           "upstream_display_date": null,
           "note": "Primary policies browse page directly displayed 1,816 Policy Actions. Domain-policy actions remain a separate unit, and no upstream item is promoted by this observation."
@@ -1339,7 +1395,7 @@
       "trump_1_current_status_breakdown": [
         {
           "status": "fully_in_effect",
-          "value": 657,
+          "value": 648,
           "unit": "immigration_policy",
           "source_url": "https://immpolicytracking.org/"
         },
@@ -1351,7 +1407,7 @@
         },
         {
           "status": "not_in_effect",
-          "value": 294,
+          "value": 291,
           "unit": "immigration_policy",
           "source_url": "https://immpolicytracking.org/"
         }
@@ -1359,7 +1415,7 @@
       "trump_1_subsequent_action_metrics": [
         {
           "as_reported_label": "Acted on by the Biden Administration",
-          "value": 381,
+          "value": 383,
           "unit": "immigration_policy",
           "source_url": "https://immpolicytracking.org/"
         },
@@ -1426,18 +1482,20 @@
         "content_import_permission_state": "permission_or_documented_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-10-13T16:05:50Z",
-        "state": "verified",
+        "checked_at": "2026-10-13T21:56:54Z",
+        "state": "verified_with_changed_breakdown",
         "verification_pages": [
           "https://immpolicytracking.org/policies/"
         ],
-        "note": "Primary project page displayed 1,816 Trump actions, including separately scoped current-status counts of 657 fully in effect, 56 partially in effect and 294 not in effect, plus 381 Biden-administration actions, 191 court actions and 21 expirations. Units remain separate and no item was automatically promoted."
+        "note": "Primary project page displayed 1,816 policy actions. Separately scoped current-status counts changed to 648 fully in effect, 56 partially in effect and 291 not in effect; subsequent-action counts displayed 383 Biden-administration actions, 191 court actions and 21 expirations. The changed components are preserved as separate upstream units and are not summed into a Record total."
       },
       "check_history": [
         {
           "checked_at": "2026-10-13T16:05:50Z",
           "state": "verified",
-          "verification_pages": ["https://immpolicytracking.org/"],
+          "verification_pages": [
+            "https://immpolicytracking.org/"
+          ],
           "note": "Primary project page displayed 1,816 Trump actions and updated separately scoped status and subsequent-action counts. Units remain distinct and no upstream item was automatically promoted."
         },
         {
@@ -1613,6 +1671,14 @@
             "https://immpolicytracking.org/policies/"
           ],
           "note": "Primary browse page remained at 1,809 policy actions. Units remain distinct and no external item was promoted."
+        },
+        {
+          "checked_at": "2026-10-13T16:05:50Z",
+          "state": "verified",
+          "verification_pages": [
+            "https://immpolicytracking.org/policies/"
+          ],
+          "note": "Primary project page displayed 1,816 Trump actions, including separately scoped current-status counts of 657 fully in effect, 56 partially in effect and 294 not in effect, plus 381 Biden-administration actions, 191 court actions and 21 expirations. Units remain separate and no item was automatically promoted."
         }
       ],
       "measurement_history": [
@@ -1692,6 +1758,18 @@
           "source_url": "https://immpolicytracking.org/policies/",
           "upstream_display_date": null,
           "note": "Primary policies browse page directly displayed 1,815 Policy Actions. Domain-policy actions remain a separate unit, and no upstream item is promoted by this observation."
+        },
+        {
+          "metric_id": "iptp.policy_actions_browse",
+          "as_reported_label": "Policy Actions",
+          "value": 1816,
+          "unit": "immigration_policy_action",
+          "scope": "all policies shown on the policies browse page",
+          "comparability_group": "domain_policy_action",
+          "observed_at": "2026-10-13T16:05:50Z",
+          "source_url": "https://immpolicytracking.org/policies/",
+          "upstream_display_date": null,
+          "note": "Primary policies browse page directly displayed 1,816 Policy Actions. Domain-policy actions remain a separate unit, and no upstream item is promoted by this observation."
         }
       ]
     },
@@ -1893,18 +1971,24 @@
         "content_import_permission_state": "metadata_and_citation_allowed_full_content_license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-10-13T16:05:50Z",
+        "checked_at": "2026-10-13T21:56:54Z",
         "state": "source_inconsistency_and_api_access_gap",
         "verification_pages": [
-          "https://record47.org/"
+          "https://record47.org/",
+          "https://api.record47.org/counts",
+          "https://api.record47.org/entries?limit=1"
         ],
-        "note": "The homepage displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts, differing from the preserved October 6 API measurements. Current API values were not verified, so the discrepancy remains disclosed and no measurement was replaced."
+        "note": "The homepage remained available while the current API endpoints were not retrievable. Preserved API measurements were not replaced by potentially older homepage counters; the source inconsistency remains disclosed and no upstream item was promoted."
       },
       "check_history": [
         {
           "checked_at": "2026-10-13T16:05:50Z",
           "state": "source_inconsistency_and_api_access_gap",
-          "verification_pages": ["https://record47.org/", "https://api.record47.org/counts", "https://api.record47.org/entries?limit=1"],
+          "verification_pages": [
+            "https://record47.org/",
+            "https://api.record47.org/counts",
+            "https://api.record47.org/entries?limit=1"
+          ],
           "note": "The homepage displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts, differing from preserved API measurements. Current API values were not verified, so no measurement was replaced and unlike units remain separate."
         },
         {
@@ -2112,6 +2196,14 @@
             "https://api.record47.org/entries?limit=1"
           ],
           "note": "Homepage displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts. Current API endpoints were inaccessible, so preserved API measurements and the discrepancy remain disclosed; unlike units are not summed."
+        },
+        {
+          "checked_at": "2026-10-13T16:05:50Z",
+          "state": "source_inconsistency_and_api_access_gap",
+          "verification_pages": [
+            "https://record47.org/"
+          ],
+          "note": "The homepage displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts, differing from the preserved October 6 API measurements. Current API values were not verified, so the discrepancy remains disclosed and no measurement was replaced."
         }
       ],
       "measurement_history": [
