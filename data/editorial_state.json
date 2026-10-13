@@ -6085,6 +6085,18 @@
       "provenance_path": "data/editorial_change_notes/10.141.0.json",
       "provenance_sha256": "60785d98fee2f65cf28802c8437a2f61f1a7c9c585366376355845985e6ba0ca",
       "note": "Stable record updated; measured airtime, post-order compliance evidence, administration explanation, separate Maybe/Therefore review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.142.0:NAT-2026-09-13-001",
+      "entry_id": "NAT-2026-09-13-001",
+      "as_of_utc": "2026-10-13T10:03:20Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.142.0",
+      "summary": "Post-announcement energy strikes were reported and the Kremlin described contacts as ongoing without confirming an accepted ceasefire.",
+      "provenance_path": "data/editorial_change_notes/10.142.0.json",
+      "provenance_sha256": "74b0237723023b9a6798237b37a43aea8e5df09ce713a7b4fd87fe719d100952",
+      "note": "Stable record updated; attributed battlefield claims, independent corroboration, Trump and Russian responses, separate Maybe/Therefore review and duplicate disposition preserved."
     }
   ],
   "reviews": [
@@ -75016,6 +75028,111 @@
       "unresolved_questions": [
         "The court compliance report, full opinion, precise notice and cancellation timestamps, extension or appeal were not available by cutoff.",
         "Audited disbursements, contract disposition, repayment and completed private funding remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.142.0:NAT-2026-09-13-001:cf74be692fb9",
+      "entry_id": "NAT-2026-09-13-001",
+      "content_sha256": "cf74be692fb9d6d21ac57a4e9ec76795c11ebdc96d1c180faa2463eb4e02a2ef",
+      "reviewed_at": "2026-10-13T10:03:20Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "b697765816ab02c19ab2987563e0d14facd1666b2002018e97af5f84984a62ef",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"reuters_ukraine_diesel_request_sep13","locator":"Previously inspected on-record remarks and request retained from the reviewed record.","inspected_at":"2026-09-15T16:18:00Z","document_sha256":"6eb45e1639545e97c3b944aecdd734f78cd8dae69c48731b3dbe591d1edd2ded","origin_group":"Reuters","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "0d368047b92063384e9865e2565c87ad98ae056e4748d9e33aa245e1e6699dc5",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"ap_ukraine_diesel_request_sep13","locator":"Previously inspected causation context and competing energy-market pressures retained from the reviewed record.","inspected_at":"2026-09-15T16:18:00Z","document_sha256":"161126b1f71f5ff9f2ffaab54be7a747323ebaa26abae37963994eb72d7e6dcc","origin_group":"Associated Press","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "36d4f2033ea69c00c16d960c69a9e9a18324565b2ea2621ce4be2ad8851eba16",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"reuters_ukraine_diesel_request_sep13","locator":"Previously inspected parties' stated military rationales retained from the reviewed record.","inspected_at":"2026-09-15T16:18:00Z","document_sha256":"6eb45e1639545e97c3b944aecdd734f78cd8dae69c48731b3dbe591d1edd2ded","origin_group":"Reuters","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "b65a79023e11cc731c95e58cca680038aed0c0bf06877f511c500ad2b2976cc1",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"truth_energy_targets_agreement_sep14","locator":"Exact post retained as evidence only that Trump published the claimed agreement.","inspected_at":"2026-09-15T16:18:00Z","document_sha256":"4a7e8cea829896dceb8584071aa4b620c65d30b70c7c78bb224fb559d2b3ff29","origin_group":"Truth Social / Donald J. Trump","evidence_status":"announced"}]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "2820c614934f4595e9721c2715394c94a3f4845b03e81b3c0a9f9a0fb274220f",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"reuters_ukraine_conditional_energy_sep14","locator":"Previously inspected Ukrainian denial of a formal agreement and reciprocal condition retained from the reviewed record.","inspected_at":"2026-09-15T16:18:00Z","document_sha256":"ba3bc77fc740bb2174c729b1dec3a97a884c51eae75d564dad71e31394e7a914","origin_group":"Reuters","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "589e831fb4fb17240cd8bd57629a10099b213be04d16f7bacab06be09c0cc7d5",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"ap_ukraine_conditional_energy_sep14","locator":"Previously inspected implementation limits retained from the reviewed record.","inspected_at":"2026-09-15T16:18:00Z","document_sha256":"71f1a4f4a8b535cb370cd3b3a0f66b3d53169dc81ff47916ff74c7cbf2656bf3","origin_group":"Associated Press","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "cfcb6e1d18ce30d70a0d281810a3b6a95987fe9c5e6eb077f711a6cc7d9b293a",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"reuters_energy_strikes_continue_sep15","locator":"Previously inspected continued Russian and Ukrainian energy strikes and attributed damage retained from the reviewed record.","inspected_at":"2026-09-15T16:18:00Z","document_sha256":"47cb4fc0cc22a7e303d86437074b52f03e452c9ef2973f068b08dc5ea21914c5","origin_group":"Reuters","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "d455ae90086c6d7149abb1db887dbfef0f6db16db6d98ad399be00943ab16aae",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"reuters_energy_strikes_continue_sep15","locator":"Previously inspected continued-strike effectiveness finding and named responses retained from the reviewed record.","inspected_at":"2026-09-15T16:18:00Z","document_sha256":"47cb4fc0cc22a7e303d86437074b52f03e452c9ef2973f068b08dc5ea21914c5","origin_group":"Reuters","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "3ff5cd884db3eb8739ffaf44ad81ad0888930d3f8658261c3270fbe31fce79e4",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"truth_energy_ceasefire_oct11","locator":"Exact post text and timestamp inspected; evidence only that Trump made the renewed immediate-ceasefire claim.","inspected_at":"2026-10-11T16:09:08Z","document_sha256":"89932dcd2e73abcb3a49bb8cb5855b93b2e028f99fcd53b2a00d097fac095812","origin_group":"Donald J. Trump / Truth Social","evidence_status":"announced"}]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "5beb980f37e5871eea99bf5346e430640ccd96ba55676537a10cc4e88a6aa78d",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"reuters_energy_ceasefire_oct11","locator":"Previously inspected announcement, Ukrainian response and immediate confirmation status retained from the reviewed record.","inspected_at":"2026-10-11T16:09:08Z","document_sha256":"da0ec3d18f85ad3222ebec2442536576989e6a26e89fd104e08ffb6365fbf761","origin_group":"Reuters","evidence_status":"reported"},{"source_id":"ap_energy_ceasefire_oct11","locator":"Previously inspected Ukrainian conditional support and missing clarified terms retained from the reviewed record.","inspected_at":"2026-10-11T16:09:08Z","document_sha256":"c835ee55aded978351eaf24dc9cab3ec188f00a66caa20eb729bbebb06978df9","origin_group":"Associated Press","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 10,
+          "fact_sha256": "60dcb0bb3e64f3b20c56ee2f71034897d08cda2bb97d1c3267043b981a39eec0",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"reuters_energy_ceasefire_oct11","locator":"Report inspected for missing terms and Ukraine's reciprocal condition at the October 11 cutoff.","inspected_at":"2026-10-11T16:09:08Z","document_sha256":"da0ec3d18f85ad3222ebec2442536576989e6a26e89fd104e08ffb6365fbf761","origin_group":"Reuters","evidence_status":"reported"},{"source_id":"ap_energy_ceasefire_oct11","locator":"Report inspected for missing terms and Russian confirmation at the October 11 cutoff.","inspected_at":"2026-10-11T16:09:08Z","document_sha256":"c835ee55aded978351eaf24dc9cab3ec188f00a66caa20eb729bbebb06978df9","origin_group":"Associated Press","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 11,
+          "fact_sha256": "0d5b505777f81907ba217e80a2580aaa11738f4a94391770d6690776a32572e6",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"reuters_energy_strikes_oct12","locator":"Article lines 155–201: six reported energy targets, named facilities, Ukraine's restraint claim and Kremlin response.","inspected_at":"2026-10-13T10:03:20Z","document_sha256":"69e7e4b3614c288ac4028eaf327fa4fcfd085ce49eec94131debcbb448c00894","origin_group":"Reuters","evidence_status":"reported"},{"source_id":"ap_energy_strikes_oct12","locator":"Article lines 1850–1921: named energy targets, Ukrainian restraint claim, Trump response and on-scene broader-attack documentation.","inspected_at":"2026-10-13T10:03:20Z","document_sha256":"d8aee00cc4bfc74601888911293602070983e94154a6a1885f2f97f511590f58","origin_group":"Associated Press","evidence_status":"reported"},{"source_id":"ukraine_energy_strikes_oct12","locator":"Official statement inspected for attributed target and unilateral-restraint claims.","inspected_at":"2026-10-13T10:03:20Z","document_sha256":"1520d9da8f57c99be02afba0f7b3184d603bd28f408ed35b1f836dc71abfed83","origin_group":"Office of the President of Ukraine","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 12,
+          "fact_sha256": "ebea2f9048994825d236b41c7be8eedf350bf6a4fd370e44420b76bc90db7f39",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"ap_energy_strikes_oct12","locator":"Article lines 1857–1883: Trump's on-record response, bilateral-text gap and Kremlin nonconfirmation.","inspected_at":"2026-10-13T10:03:20Z","document_sha256":"d8aee00cc4bfc74601888911293602070983e94154a6a1885f2f97f511590f58","origin_group":"Associated Press","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 13,
+          "fact_sha256": "02d3f73d96bcb6eac1dbf6edb1dfd807ef9e39e8a712a35839f8c81d318be496",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"reuters_kremlin_contacts_oct13","locator":"Article lines 151–169: ongoing contacts, unidentified participants, no acceptance confirmation and narrower overnight-target denial.","inspected_at":"2026-10-13T10:03:20Z","document_sha256":"6278f3521bf56463a6f70d903436b679626784c7a55af09c59b332bf0f7e4690","origin_group":"Reuters","evidence_status":"reported"}]
+        }
+      ],
+      "reasoning_review": [
+        {"field":"significance","text_sha256":"a86ed333b73e40e4766294f2131c7b8eb78476625555294c73485f30f1154f7c","review_note":"Separately reviewed to describe post-announcement strikes as an implementation finding without claiming every battlefield detail is independently verified."},
+        {"field":"goalpost","text_sha256":"efb7dbaf560e6c35ec6a72e9eac2d115ae4c13e192d5104ae468656f582ec2b3","review_note":"Separately reviewed against Trump, Ukrainian and Russian positions and explicit written-terms, confirmation, monitoring and sustained-strike tests."},
+        {"field":"maybe_therefore","text_sha256":"7ff64b537b220657c5b87b98c40b67f563d2fdf88f3b31dbb80735059c6e3468","review_note":"Separately reviewed to preserve the possibility of a later agreement and the narrower Russian denial while bounding the conclusion to reported noncompliance and ongoing contacts."}
+      ],
+      "unresolved_questions": [
+        "No public written terms, duration, monitoring or enforcement mechanism were located by cutoff.",
+        "Russia had not publicly confirmed acceptance; sustained reciprocal compliance remains unestablished."
       ]
     }
   ],
