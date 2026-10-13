@@ -14359,5 +14359,77 @@
         ]
       }
     ]
+  },
+  {
+    "revision_id": "LR-2026-10-13-125",
+    "recorded_at": "2026-10-13",
+    "legacy_id": "LEG-004414",
+    "kind": "fact-source-lifecycle-and-reasoning-correction",
+    "summary": "Replace an unrelated source and advocacy wording with the DOGE FOIA case docket and wire reporting, then add the Supreme Court's October 13 certiorari grant without treating it as a merits ruling.",
+    "provenance": [
+      {
+        "type": "primary-court-docket",
+        "supports": "The Supreme Court docket records that the petition in No. 25-1103 was granted on October 13, 2026.",
+        "url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/25-1103.html"
+      },
+      {
+        "type": "independent-court-reporting",
+        "supports": "Reuters reported the lower-court discovery order, the administration's advisory-body and separation-of-powers arguments, CREW's operational-authority position and the expected decision timetable.",
+        "url": "https://www.reuters.com/world/supreme-court-hear-trumps-fight-with-watchdog-group-over-doge-2026-10-13/"
+      },
+      {
+        "type": "independent-court-reporting",
+        "supports": "Associated Press independently reported the certiorari grant and procedural history of the DOGE records dispute.",
+        "url": "https://apnews.com/article/supreme-court-elon-musk-doge-e04914af1491ed395e54efc783e0f19d"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "corrected"
+      },
+      {
+        "field": "date",
+        "expected": "March 18, 2026",
+        "replacement": "March 18–October 13, 2026"
+      },
+      {
+        "field": "text",
+        "expected": "Trump Administration Appeals Supreme Court — Justice Department requests Supreme Court block watchdog group (Citizens for Responsibility and Ethics in Washington) from questioning senior officials about DOGE; seeks to hide internal records.",
+        "replacement": "The administration petitioned the Supreme Court in March to review lower-court discovery in Citizens for Responsibility and Ethics in Washington's Freedom of Information Act case concerning the U.S. DOGE Service. On October 13, the Court granted certiorari in No. 25-1103. The grant means the justices will review whether DOGE is subject to FOIA and related discovery; it is not a ruling that DOGE is exempt, covered or required to disclose records."
+      },
+      {
+        "field": "sig",
+        "expected": "Trump administration attempts to prevent discovery of DOGE decision-making; Signals sensitive internal dynamics.",
+        "replacement": "The Supreme Court will address the transparency boundary for an entity the administration used in government-restructuring work. The lower courts' discovery dispute remains unresolved on the merits, and the certiorari grant by itself neither compels disclosure nor validates the administration's confidentiality claim."
+      },
+      {
+        "field": "goal",
+        "expected": "Protects DOGE decision-making from public scrutiny.",
+        "replacement": "The administration says DOGE is a presidential advisory body outside FOIA and that compelled discovery intrudes on executive confidentiality and separation of powers. CREW argues DOGE exercised agency-like operational authority and must be transparent. Briefing, argument, the final judgment and the status of records and depositions are the tests."
+      },
+      {
+        "field": "mt",
+        "expected": {"$missing": true},
+        "replacement": "Maybe DOGE's advisory relationship supports confidentiality and exemption from FOIA, or its operational role may make ordinary agency-transparency duties applicable. Therefore the October 13 action establishes Supreme Court review of the dispute—not a merits decision, a completed disclosure or proof that either side's institutional characterization is correct."
+      },
+      {
+        "field": "gp",
+        "expected": 0,
+        "replacement": 1
+      },
+      {
+        "field": "src",
+        "expected": [
+          {"t": "Washington Post", "url": "https://www.washingtonpost.com/national-security/2025/09/22/trump-justice-department-prosecutions/"}
+        ],
+        "replacement": [
+          {"t": "Supreme Court docket 25-1103", "url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/25-1103.html"},
+          {"t": "Reuters", "url": "https://www.reuters.com/world/supreme-court-hear-trumps-fight-with-watchdog-group-over-doge-2026-10-13/"},
+          {"t": "Associated Press", "url": "https://apnews.com/article/supreme-court-elon-musk-doge-e04914af1491ed395e54efc783e0f19d"}
+        ]
+      }
+    ]
   }
 ]

@@ -1,31 +1,35 @@
 {
-  "version": "10.142.0",
+  "version": "10.143.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-13T04:00:50Z",
-    "through_utc": "2026-10-13T10:03:20Z",
+    "from_utc": "2026-10-13T10:03:20Z",
+    "through_utc": "2026-10-13T16:05:50Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact scan from the prior accepted open-branch boundary. One existing energy-ceasefire record was materially refreshed with reported post-announcement strikes and the Kremlin's later statement that contacts remained ongoing; weaker leads were withheld rather than padded."
+    "note": "Exact scan from the prior accepted open-branch boundary. Three formally published regulatory actions were added and the stable DOGE transparency litigation legacy record was corrected and advanced through the Supreme Court's certiorari grant; weaker leads were withheld rather than padded."
   },
   "release_iso": "2026-10-13",
   "release_human": "October 13, 2026",
-  "checked_at": "2026-10-13 6:03 AM EDT",
-  "previous_version": "10.141.0",
-  "previous_checked_at": "2026-10-13 12:00 AM EDT",
-  "window_started_at": "2026-10-13 12:00 AM EDT",
-  "window_ended_at": "2026-10-13 6:03 AM EDT",
+  "checked_at": "2026-10-13 12:05 PM EDT",
+  "previous_version": "10.142.0",
+  "previous_checked_at": "2026-10-13 6:03 AM EDT",
+  "window_started_at": "2026-10-13 6:03 AM EDT",
+  "window_ended_at": "2026-10-13 12:05 PM EDT",
   "week_start": "2026-10-13",
   "week_end": "2026-10-19",
   "week_label": "2026-10-13 through 2026-10-19",
   "cutoff_start": "2026-07-18",
   "new_entry_ids": [
-    "NAT-2026-09-13-001"
+    "NAT-2026-10-13-001",
+    "NAT-2026-10-13-002",
+    "NAT-2026-10-13-003"
   ],
-  "added_entry_ids": [],
-  "refreshed_entry_ids": [
-    "NAT-2026-09-13-001"
+  "added_entry_ids": [
+    "NAT-2026-10-13-001",
+    "NAT-2026-10-13-002",
+    "NAT-2026-10-13-003"
   ],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -842,31 +846,69 @@
       "target_id": "NAT-2026-09-13-001",
       "decision": "same_event_update",
       "notes": "The October 12 strikes and October 13 Kremlin statement are implementation and compliance developments in the same energy-ceasefire claim. The stable September record was refreshed rather than counted again."
+    },
+    {
+      "entry_id": "LEG-004414",
+      "target_id": "LEG-004414",
+      "decision": "same_event_update",
+      "notes": "The October 13 certiorari grant advances the same DOGE FOIA litigation already represented by LEG-004414. The stable legacy ID was corrected and refreshed rather than creating a parallel current record."
+    },
+    {
+      "entry_id": "NAT-2026-10-13-001",
+      "target_id": "NAT-2026-10-13-001",
+      "decision": "false_positive",
+      "notes": "No current or legacy record, normalized title, source URL or recent maintenance pull request matched the proposed international-rail advance-information framework."
+    },
+    {
+      "entry_id": "NAT-2026-10-13-002",
+      "target_id": "NAT-2026-10-13-002",
+      "decision": "same_event_update",
+      "notes": "The October 9 FDA announcement and October 13 formal publication are one final-rule lifecycle and are consolidated in one record."
+    },
+    {
+      "entry_id": "NAT-2026-10-13-003",
+      "target_id": "NAT-2026-10-13-003",
+      "decision": "same_event_update",
+      "notes": "The October 5 CFTC announcement and October 13 formal publication are one advance-rulemaking lifecycle and are consolidated in one record."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "CBP ends routine admission stamps at primary processing",
-      "reason": "The October 1 carrier notice implements electronic I-94 reliance with stated exceptions, but the reviewed evidence showed an administrative processing change rather than a material national consequence meeting the archive threshold."
+      "title": "Trump says Houthis are behaving badly and may seek Turkish help",
+      "reason": "The statement described concern and a possible future request, not an ordered or implemented action; the existing Hormuz record already preserves the underlying policy and risk."
     },
     {
-      "title": "State Department criticism of Chinese sanctions on Belize and Paraguay officials",
-      "reason": "The statement announced no new U.S. sanction, diplomatic restriction or other implemented action."
+      "title": "Kimberly Guilfoyle resignation and conduct allegations",
+      "reason": "The resignation is a personnel change and the underlying allegations remain unresolved; the existing research-queue lead remains pending a formal inspector-general or other evidentiary finding."
+    },
+    {
+      "title": "Reuters pardon and public-corruption enforcement analysis",
+      "reason": "The cross-record effectiveness analysis is material but requires person-level verification and deduplication against numerous stable pardon records before responsible publication."
     },
     {
       "title": "Trump TV and official video-library recheck",
-      "reason": "The same seven October 12 library items remained visible. Only titles, dates, durations and three linked video IDs were accessible; no qualifying new item was located in the material reviewed."
+      "reason": "The linked stream and same seven October 12 library items remained visible. Footage, audio and captions were not retrieved; no qualifying new item was located in the material reviewed."
+    },
+    {
+      "title": "Five new Truth Social posts",
+      "reason": "Two images and representative frames from two videos were inspected. The posts were ceremonial, celebrity or campaign advocacy and repeated an existing Hormuz claim; no independently verified new action met the threshold."
     }
   ],
-  "corrections": [],
+  "corrections": [
+    {
+      "entry_id": "LEG-004414",
+      "timestamp": "2026-10-13T16:05:50Z",
+      "note": "Removed an unrelated Washington Post source and unsupported advocacy wording; added the correct docket and wire coverage, full reasoning layers and precise certiorari status."
+    }
+  ],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-13T10:03:20Z",
-    "checked_at_eastern": "2026-10-13 6:03 AM EDT",
+    "checked_at": "2026-10-13T16:05:50Z",
+    "checked_at_eastern": "2026-10-13 12:05 PM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-13T10:03:20Z",
+    "last_successful_page_inspection_at": "2026-10-13T16:05:50Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -889,8 +931,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-13T10:03:20Z",
-        "observed_at_eastern": "2026-10-13 6:03 AM EDT",
+        "observed_at": "2026-10-13T16:05:50Z",
+        "observed_at_eastern": "2026-10-13 12:05 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official page linked the unchanged A4gNgHfZ-v4 stream. No footage, audio or captions were retrieved; fallback text was not treated as proof of an outage.",
         "video_ids": [
@@ -902,8 +944,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-13T10:03:20Z",
-        "observed_at_eastern": "2026-10-13 6:03 AM EDT",
+        "observed_at": "2026-10-13T16:05:50Z",
+        "observed_at_eastern": "2026-10-13 12:05 PM EDT",
         "format": "official live-hub metadata; audiovisual content unreviewed",
         "inspection": "The hub linked the same Trump TV stream. Current live/replay state and audiovisual content were not independently reviewed.",
         "video_ids": [
@@ -915,8 +957,8 @@
         "posted_date": "2026-10-12",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-13T10:03:20Z",
-        "observed_at_eastern": "2026-10-13 6:03 AM EDT",
+        "observed_at": "2026-10-13T16:05:50Z",
+        "observed_at_eastern": "2026-10-13 12:05 PM EDT",
         "format": "official dated-library metadata; audiovisual content unreviewed",
         "inspection": "The library listed seven October 12 postings: a 6:58 departure gaggle plus 'America’s farmers,' 'Man in the Arena,' 'President Trump’s Second Term: Stephen Miller,' '$5000 to Americans,' 'Every Democrat Voted Against No Tax on Tips' and 'If You Steal From The American People, You Will Go To Prison.' Metadata and three linked video IDs were inspected; footage, audio, captions and exact upload times were not retrieved.",
         "video_ids": [
@@ -930,8 +972,8 @@
         "posted_date": "2026-10-09",
         "original_event_date": "2026-10-09",
         "broadcast_time": null,
-        "observed_at": "2026-10-13T10:03:20Z",
-        "observed_at_eastern": "2026-10-13 6:03 AM EDT",
+        "observed_at": "2026-10-13T16:05:50Z",
+        "observed_at_eastern": "2026-10-13 12:05 PM EDT",
         "format": "supplementary remarks index",
         "inspection": "The index still listed October 9 science-summit remarks as newest and was not treated as a complete Trump TV transcript feed.",
         "video_ids": []
@@ -941,8 +983,8 @@
         "posted_date": "2026-10-10",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-13T10:03:20Z",
-        "observed_at_eastern": "2026-10-13 6:03 AM EDT",
+        "observed_at": "2026-10-13T16:05:50Z",
+        "observed_at_eastern": "2026-10-13 12:05 PM EDT",
         "format": "supplementary official index",
         "inspection": "The news index led with an October 10 manufacturing research post and supplied no new Trump TV transcript or broadcast finding.",
         "video_ids": []
@@ -955,37 +997,37 @@
       "text_status": {
         "not_recorded": 147,
         "pending": 969,
-        "reviewed": 549
+        "reviewed": 554
       },
       "media_status": {
-        "not_applicable": 808,
+        "not_applicable": 809,
         "not_recorded": 19,
-        "pending": 476,
-        "reviewed": 118,
+        "pending": 478,
+        "reviewed": 120,
         "unavailable": 244
       }
     },
-    "new_posts": 0,
+    "new_posts": 5,
     "source_rows_added": 0,
-    "new_text_reviewed": 0,
-    "new_nonempty_text_reviewed": 0,
-    "new_empty_text_inspected": 0,
-    "new_image_assets_reviewed": 0,
-    "new_image_posts_reviewed": 0,
-    "new_video_assets_pending": 0,
+    "new_text_reviewed": 5,
+    "new_nonempty_text_reviewed": 3,
+    "new_empty_text_inspected": 2,
+    "new_image_assets_reviewed": 2,
+    "new_image_posts_reviewed": 2,
+    "new_video_assets_pending": 2,
     "new_video_assets_reviewed": 0,
-    "new_media_reviewed": 0,
+    "new_media_reviewed": 2,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-13T09:59:26.316422Z",
-    "checked_at_eastern": "2026-10-13 5:59:26 AM EDT",
-    "latest_post_at_utc": "2026-10-13T02:45:46.833000Z",
-    "latest_post_at_eastern": "2026-10-12 10:45:46 PM EDT",
-    "latest_post_id": "117431307261297275",
-    "no_new_post_finding": true,
-    "note": "No post newer than the prior validated snapshot was found. The newest retained post remained the October 12 statement published at 10:45:46 PM EDT; it had already been reviewed as a nonqualifying research lead in the prior release."
+    "checked_at_utc": "2026-10-13T16:01:31.206152Z",
+    "checked_at_eastern": "2026-10-13 12:01:31 PM EDT",
+    "latest_post_at_utc": "2026-10-13T15:56:25.056000Z",
+    "latest_post_at_eastern": "2026-10-13 11:56:25 AM EDT",
+    "latest_post_id": "117434416172660722",
+    "no_new_post_finding": false,
+    "note": "Five posts were newer than the prior validated snapshot. Text, both image posts and representative frames from two videos were reviewed; full video motion, audio and captions remain pending. The newest post was the October 13 Navy birthday message at 11:56:25 AM EDT. No independently verified new action met the publication threshold."
   },
   "archive_network_inspection": {
-    "checked_at": "2026-10-13T10:03:20Z",
-    "note": "All four registered primary projects were rechecked as discovery inputs. Trump Archive displayed 14,737 total items, 12,182 Truth Social posts and 1,905 speeches/transcripts; UndoTrump remained at 1,264 actions; the Immigration Policy Tracking Project displayed 1,816 policy actions. IPTP's ICE vehicle-directive lead was already represented by NAT-2026-10-02-002, while its CBP admission-stamp lead was withheld below threshold. Record47's primary page was accessible but exposed no newly verified stable numeric measurement, so prior values were preserved. Units remain separate and no external item was automatically promoted."
+    "checked_at": "2026-10-13T16:05:50Z",
+    "note": "All four registered primary projects were rechecked as discovery inputs. Trump Archive displayed 14,741 total items, 12,186 Truth Social posts and 1,905 speeches/transcripts. UndoTrump was inaccessible, so its prior 1,264-action measurement was preserved. IPTP remained at 1,816 actions while separately scoped status and subsequent-action counts changed and were updated. Record47's homepage displayed older counts that conflict with preserved API measurements, and current API values were not verified, so the discrepancy remains explicit. Units remain separate and no external item was automatically promoted."
   }
 }
