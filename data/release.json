@@ -1,40 +1,37 @@
 {
-  "version": "10.147.0",
+  "version": "10.148.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-14T10:03:50Z",
-    "through_utc": "2026-10-14T15:55:19Z",
+    "from_utc": "2026-10-14T15:55:19Z",
+    "through_utc": "2026-10-14T22:03:03Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact scan from the prior accepted open-branch boundary. Three new federal records and two material same-event refreshes met the threshold; weaker, pending and duplicate leads were withheld rather than padded."
+    "note": "Exact scan from the prior accepted open-branch boundary. Four new national records met the threshold; weaker, pending and duplicate leads were withheld rather than padded."
   },
   "release_iso": "2026-10-14",
   "release_human": "October 14, 2026",
-  "checked_at": "2026-10-14 11:55 AM EDT",
-  "previous_version": "10.146.0",
-  "previous_checked_at": "2026-10-14 6:03 AM EDT",
-  "window_started_at": "2026-10-14 6:03 AM EDT",
-  "window_ended_at": "2026-10-14 11:55 AM EDT",
+  "checked_at": "2026-10-14 6:03 PM EDT",
+  "previous_version": "10.147.0",
+  "previous_checked_at": "2026-10-14 11:55 AM EDT",
+  "window_started_at": "2026-10-14 11:55 AM EDT",
+  "window_ended_at": "2026-10-14 6:03 PM EDT",
   "week_start": "2026-10-13",
   "week_end": "2026-10-19",
   "week_label": "2026-10-13 through 2026-10-19",
   "cutoff_start": "2026-07-18",
   "new_entry_ids": [
-    "NAT-2026-10-14-001",
-    "NAT-2026-10-14-002",
-    "NAT-2026-10-14-003",
-    "NAT-2026-09-11-006",
-    "NAT-2026-10-13-008"
+    "NAT-2026-10-14-004",
+    "NAT-2026-10-14-005",
+    "NAT-2026-10-14-006",
+    "NAT-2026-10-14-007"
   ],
   "added_entry_ids": [
-    "NAT-2026-10-14-001",
-    "NAT-2026-10-14-002",
-    "NAT-2026-10-14-003"
+    "NAT-2026-10-14-004",
+    "NAT-2026-10-14-005",
+    "NAT-2026-10-14-006",
+    "NAT-2026-10-14-007"
   ],
-  "refreshed_entry_ids": [
-    "NAT-2026-09-11-006",
-    "NAT-2026-10-13-008"
-  ],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -941,39 +938,63 @@
       "target_id": "NAT-2026-10-13-008",
       "decision": "same_event_update",
       "notes": "Bank of America's reported 1,000-person staffing shift and investment claims implement the same consent-order remediation and were consolidated into the enforcement record."
+    },
+    {
+      "entry_id": "NAT-2026-10-14-004",
+      "target_id": "NAT-2026-10-14-004",
+      "decision": "false_positive",
+      "notes": "No current or legacy record, normalized title, source URL or recent maintenance pull request matched the announced New York fab structure."
+    },
+    {
+      "entry_id": "NAT-2026-10-14-005",
+      "target_id": "NAT-2026-10-14-005",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The Jorge Rodriguez delisting is a distinct target-level Venezuela sanctions change, not another oil-access or prior designation record."
+    },
+    {
+      "entry_id": "NAT-2026-10-14-006",
+      "target_id": "NAT-2026-10-14-006",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The filed preliminary-injunction ruling is a distinct judicial stage in the March contractor-order litigation."
+    },
+    {
+      "entry_id": "NAT-2026-10-14-007",
+      "target_id": "NAT-2026-10-14-007",
+      "decision": "false_positive",
+      "notes": "The coordinated national tax surge consolidates its listed constituent cases and does not duplicate earlier unrelated fraud or tax-policy records."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Five newer Truth Social link posts",
-      "reason": "All text payloads were reviewed. Four were commentary, polling or unverified accusation links; the Ohio submarine-facility link repeated NAT-2026-10-06-004 and supplied no new implementing instrument or measured outcome."
+      "title": "Taiwan Alaska LNG offtake and equity statement",
+      "reason": "Taiwan's ministry described 6 million metric tons per year and up to $4.4 billion participation as the current plan but said investment, shareholding and contract terms remain subject to negotiation; Trump's 20-year and 30% claims were not shown in a binding agreement."
     },
     {
-      "title": "D.C. National Guard appeal oral argument",
-      "reason": "The appellate hearing did not itself change the governing order or establish a new implemented action; the existing record remains awaiting a ruling."
-    },
-    {
-      "title": "Press-access injunction follow-up",
-      "reason": "The same preliminary injunction was already incorporated into NAT-2026-09-18-007 in release 10.145.0; later wire coverage supplied no new order or compliance outcome."
-    },
-    {
-      "title": "Election-interference scenario analysis",
-      "reason": "The analysis described prospective risks and possible tactics rather than a newly documented administration action, order, investigation or measured outcome."
+      "title": "Four newer Truth Social posts",
+      "reason": "All four text payloads were reviewed. The GlobalFoundries post led to independently sourced NAT-2026-10-14-004; the Alaska LNG post remained nonbinding; the YouTube link and rally commentary supplied no distinct qualifying action."
     },
     {
       "title": "Trump TV and official video-library recheck",
-      "reason": "The official pages still led with October 13 metadata and the same stream ID; audiovisual content and complete transcripts were not retrieved, and no qualifying new item was located in the material reviewed."
+      "reason": "The official pages retained the same stream ID and October 13-led video metadata. Footage, audio, captions and complete transcripts were not retrieved; no qualifying new item was located in the material reviewed."
+    },
+    {
+      "title": "Pennsauken firearm-permit investigation",
+      "reason": "DOJ announced a local investigation, but the inspected material did not yet establish a national policy change, finding or adjudicated violation."
+    },
+    {
+      "title": "D.C. National Guard appeal oral argument",
+      "reason": "The hearing did not itself alter the governing order; the existing record remains awaiting an appellate ruling."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-14T16:07:00Z",
-    "checked_at_eastern": "2026-10-14 12:07 PM EDT",
+    "checked_at": "2026-10-14T22:08:00Z",
+    "checked_at_eastern": "2026-10-14 6:08 PM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-14T16:07:00Z",
+    "last_successful_page_inspection_at": "2026-10-14T22:08:00Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -984,7 +1005,7 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/news/"
     ],
-    "summary": "Official Trump TV, live, video-library, remarks and news pages were rechecked. The linked stream remained A4gNgHfZ-v4; fallback error text was not treated as proof of an outage. The dated library still led with the October 13 departure gaggle and press-secretary clip. Only page and stable-item metadata were inspected; footage, audio, captions and complete transcripts were not retrieved. No qualifying new item located in the material reviewed.",
+    "summary": "Official Trump TV, live, video-library, remarks and news pages were rechecked. The linked stream remained A4gNgHfZ-v4; fallback error text was not treated as proof of an outage. The dated library still led with October 13 items. Only page and stable-item metadata were inspected; footage, audio, captions and complete transcripts were not retrieved. No qualifying new item located in the material reviewed.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback text alone does not establish an outage.",
@@ -996,8 +1017,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-14T16:07:00Z",
-        "observed_at_eastern": "2026-10-14 12:07 PM EDT",
+        "observed_at": "2026-10-14T22:08:00Z",
+        "observed_at_eastern": "2026-10-14 6:08 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official page linked the unchanged A4gNgHfZ-v4 stream. No footage, audio or captions were retrieved; fallback text was not treated as proof of an outage.",
         "video_ids": [
@@ -1009,10 +1030,10 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-14T16:07:00Z",
-        "observed_at_eastern": "2026-10-14 12:07 PM EDT",
+        "observed_at": "2026-10-14T22:08:00Z",
+        "observed_at_eastern": "2026-10-14 6:08 PM EDT",
         "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "The hub linked the same Trump TV stream. Current live/replay state and audiovisual content were not independently reviewed; page fallback text was not treated as proof of an outage.",
+        "inspection": "The hub linked the same Trump TV stream. Current live/replay state and audiovisual content were not independently reviewed.",
         "video_ids": [
           "A4gNgHfZ-v4"
         ]
@@ -1022,10 +1043,10 @@
         "posted_date": "2026-10-13",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-14T16:07:00Z",
-        "observed_at_eastern": "2026-10-14 12:07 PM EDT",
+        "observed_at": "2026-10-14T22:08:00Z",
+        "observed_at_eastern": "2026-10-14 6:08 PM EDT",
         "format": "official dated-library metadata; audiovisual content unreviewed",
-        "inspection": "The library still led with the October 13 departure gaggle and 15-second press-secretary clip. Metadata and the stable departure-gaggle item page were inspected; footage, audio, captions and exact upload times were not retrieved.",
+        "inspection": "The library still led with October 13 items. Metadata were inspected; footage, audio, captions and exact upload times were not retrieved.",
         "video_ids": []
       },
       {
@@ -1033,10 +1054,10 @@
         "posted_date": "2026-10-09",
         "original_event_date": "2026-10-09",
         "broadcast_time": null,
-        "observed_at": "2026-10-14T16:07:00Z",
-        "observed_at_eastern": "2026-10-14 12:07 PM EDT",
+        "observed_at": "2026-10-14T22:08:00Z",
+        "observed_at_eastern": "2026-10-14 6:08 PM EDT",
         "format": "supplementary remarks index",
-        "inspection": "The index still listed October 9 science-summit remarks as newest and was not treated as a complete Trump TV transcript feed.",
+        "inspection": "The index was checked and was not treated as a complete Trump TV transcript feed.",
         "video_ids": []
       },
       {
@@ -1044,10 +1065,10 @@
         "posted_date": "2026-10-10",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-14T16:07:00Z",
-        "observed_at_eastern": "2026-10-14 12:07 PM EDT",
+        "observed_at": "2026-10-14T22:08:00Z",
+        "observed_at_eastern": "2026-10-14 6:08 PM EDT",
         "format": "supplementary official index",
-        "inspection": "The news index led with an October 10 manufacturing research post and supplied no new Trump TV transcript or broadcast finding.",
+        "inspection": "The news index supplied no new Trump TV transcript or broadcast finding.",
         "video_ids": []
       }
     ]
@@ -1058,20 +1079,20 @@
       "text_status": {
         "not_recorded": 147,
         "pending": 969,
-        "reviewed": 602
+        "reviewed": 606
       },
       "media_status": {
-        "not_applicable": 824,
+        "not_applicable": 828,
         "not_recorded": 19,
         "pending": 506,
         "reviewed": 125,
         "unavailable": 244
       }
     },
-    "new_posts": 5,
-    "source_rows_added": 0,
-    "new_text_reviewed": 5,
-    "new_nonempty_text_reviewed": 5,
+    "new_posts": 4,
+    "source_rows_added": 4,
+    "new_text_reviewed": 4,
+    "new_nonempty_text_reviewed": 4,
     "new_empty_text_inspected": 0,
     "new_image_assets_reviewed": 0,
     "new_image_posts_reviewed": 0,
@@ -1079,16 +1100,16 @@
     "new_video_assets_reviewed": 0,
     "new_media_reviewed": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-14T15:57:12.759819Z",
-    "checked_at_eastern": "2026-10-14 11:57:12 AM EDT",
-    "latest_post_at_utc": "2026-10-14T11:53:09.701000Z",
-    "latest_post_at_eastern": "2026-10-14 7:53:09 AM EDT",
-    "latest_post_id": "117439121961898835",
+    "checked_at_utc": "2026-10-14T22:05:07.831349Z",
+    "checked_at_eastern": "2026-10-14 6:05:07 PM EDT",
+    "latest_post_at_utc": "2026-10-14T19:52:02.742000Z",
+    "latest_post_at_eastern": "2026-10-14 3:52:02 PM EDT",
+    "latest_post_id": "117441005010525427",
     "no_new_post_finding": false,
-    "note": "Five posts were newer than the prior snapshot. All five text payloads and linked headlines were reviewed; none had a media attachment. The newest retained item was a Just the News link at 7:53:09 AM EDT. The Ohio submarine link duplicated an existing record, and no additional independently verified action met the publication threshold."
+    "note": "Four posts were newer than the prior snapshot. All four text payloads were reviewed and none had a media attachment in the fallback. The GlobalFoundries statement led to an independently sourced record; the Alaska LNG plan remained nonbinding; the live-link and campaign commentary yielded no separate qualifying action."
   },
   "archive_network_inspection": {
-    "checked_at": "2026-10-14T16:10:00Z",
-    "note": "All four registered primary projects were rechecked as discovery inputs. Trump Archive increased to 14,795 total items and 12,234 Truth Social posts while speeches/transcripts remained 1,911. UndoTrump remained at 1,264 actions, 995 active, 44 in courts and 42 restored. IPTP remained at 1,816 policy actions with 648 fully in effect, 56 partially in effect and 291 not in effect. Record47's homepage remained at 6,348 social posts, 3,539 primary sources, 332 contradictions and 38 sequences; top-line values did not render and preserved API measurements were not overwritten. No unlike units were summed and no external item was automatically promoted."
+    "checked_at": "2026-10-14T22:08:00Z",
+    "note": "All four registered primary projects were rechecked as discovery inputs. Trump Archive increased to 14,802 total items, 12,239 Truth Social posts and 1,913 speeches/transcripts. UndoTrump remained at 1,264 actions, IPTP remained at 1,816 policy actions, and Record47's homepage counters remained inconsistent with preserved October 6 API values. No unlike units were summed and no external item was automatically promoted."
   }
 }
