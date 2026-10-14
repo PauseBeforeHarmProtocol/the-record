@@ -6337,6 +6337,54 @@
       "provenance_path": "data/editorial_change_notes/10.147.0.json",
       "provenance_sha256": "483929d6241eac57903c431edfdff8b10c5121ef5231e97c2eae3b825a0cb099",
       "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.148.0:NAT-2026-10-14-004",
+      "entry_id": "NAT-2026-10-14-004",
+      "as_of_utc": "2026-10-14T22:03:03Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.148.0",
+      "summary": "Japan and GlobalFoundries announced up to $21 billion for as many as two New York fabs, with the second fab conditional.",
+      "provenance_path": "data/editorial_change_notes/10.148.0.json",
+      "provenance_sha256": "faf96956eeb1baab5365c52e97669511e10bda8bef96101f10651180f9be2123",
+      "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.148.0:NAT-2026-10-14-005",
+      "entry_id": "NAT-2026-10-14-005",
+      "as_of_utc": "2026-10-14T22:03:03Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.148.0",
+      "summary": "OFAC removed Venezuela National Assembly president Jorge Rodriguez from the SDN list.",
+      "provenance_path": "data/editorial_change_notes/10.148.0.json",
+      "provenance_sha256": "faf96956eeb1baab5365c52e97669511e10bda8bef96101f10651180f9be2123",
+      "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.148.0:NAT-2026-10-14-006",
+      "entry_id": "NAT-2026-10-14-006",
+      "as_of_utc": "2026-10-14T22:03:03Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.148.0",
+      "summary": "A federal court denied preliminary relief against the March contractor DEI order and FAR implementation memo.",
+      "provenance_path": "data/editorial_change_notes/10.148.0.json",
+      "provenance_sha256": "faf96956eeb1baab5365c52e97669511e10bda8bef96101f10651180f9be2123",
+      "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.148.0:NAT-2026-10-14-007",
+      "entry_id": "NAT-2026-10-14-007",
+      "as_of_utc": "2026-10-14T22:03:03Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.148.0",
+      "summary": "DOJ reported its first national tax-enforcement surge, spanning new charges and resolved cases involving 76 defendants.",
+      "provenance_path": "data/editorial_change_notes/10.148.0.json",
+      "provenance_sha256": "faf96956eeb1baab5365c52e97669511e10bda8bef96101f10651180f9be2123",
+      "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
     }
   ],
   "reviews": [
@@ -78499,6 +78547,552 @@
       ],
       "unresolved_questions": [
         "Implementation, revisions, litigation and measured consequences after the cutoff remain unresolved.",
+        "No inference is made beyond the attached source status and explicitly stated qualifications."
+      ]
+    },
+    {
+      "review_id": "10.148.0:NAT-2026-10-14-004:c534af74b1f4",
+      "entry_id": "NAT-2026-10-14-004",
+      "content_sha256": "c534af74b1f48c425a56ccb124084569089a5fa94e5994acd70314ee37683815",
+      "reviewed_at": "2026-10-14T22:08:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "8e79e3b149bb8728d4aeb37bd0a1a59c3188510a5d46ba607ad3dc3f65e0bed7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "gf_japan_fabs_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "d77486f87ff923c1053d86499fc8ec81c8460c8336eba944ef202a7c99d439bc",
+              "origin_group": "GlobalFoundries",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_gf_japan_fabs_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "79caf0c6c54b995c3a70d76fe5ef95e23278360273d7ed46595716de53611f2a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_gf_japan_fabs_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "1e05a02eb45fc4a3b723092169d312138c5852e616f268ab6e3aa4c30cd2ddbd",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "4117eda0874cf3824d03f001d99d1a20483fa6762e7960406b12aa61291a45c2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "gf_japan_fabs_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "d77486f87ff923c1053d86499fc8ec81c8460c8336eba944ef202a7c99d439bc",
+              "origin_group": "GlobalFoundries",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_gf_japan_fabs_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "79caf0c6c54b995c3a70d76fe5ef95e23278360273d7ed46595716de53611f2a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_gf_japan_fabs_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "1e05a02eb45fc4a3b723092169d312138c5852e616f268ab6e3aa4c30cd2ddbd",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "d11f705fe6e3ee611ba56590826d183285cb37aeca58c3f8438365bdb7e7b301",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "gf_japan_fabs_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "d77486f87ff923c1053d86499fc8ec81c8460c8336eba944ef202a7c99d439bc",
+              "origin_group": "GlobalFoundries",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_gf_japan_fabs_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "79caf0c6c54b995c3a70d76fe5ef95e23278360273d7ed46595716de53611f2a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_gf_japan_fabs_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "1e05a02eb45fc4a3b723092169d312138c5852e616f268ab6e3aa4c30cd2ddbd",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "6bc82b5f46c37be742aa1be4a1fa24b53657833135c86814cf9ec9d7a9a993c8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "gf_japan_fabs_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "d77486f87ff923c1053d86499fc8ec81c8460c8336eba944ef202a7c99d439bc",
+              "origin_group": "GlobalFoundries",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_gf_japan_fabs_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "79caf0c6c54b995c3a70d76fe5ef95e23278360273d7ed46595716de53611f2a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_gf_japan_fabs_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "1e05a02eb45fc4a3b723092169d312138c5852e616f268ab6e3aa4c30cd2ddbd",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "79ad55c0e0ab41b97ee71c0ea11914628145c59a94fbbcf2e6f291f8f9919293",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "gf_japan_fabs_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "d77486f87ff923c1053d86499fc8ec81c8460c8336eba944ef202a7c99d439bc",
+              "origin_group": "GlobalFoundries",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_gf_japan_fabs_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "79caf0c6c54b995c3a70d76fe5ef95e23278360273d7ed46595716de53611f2a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_gf_japan_fabs_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "1e05a02eb45fc4a3b723092169d312138c5852e616f268ab6e3aa4c30cd2ddbd",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "d9671ea8e4039f43c13bf1da4f78c18fad2d3aead42ab8172fddb5f37121ba11",
+          "review_note": "Separately reviewed to state institutional or measured consequence without converting projections, preliminary rulings or allegations into completed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "e652bad2bd348ac0de2e21b1d53758ee371e4cc64f66557de0e853e194ddb949",
+          "review_note": "Separately reviewed against observable implementation, legal and outcome tests and the strongest relevant administration or subject response."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "b681a4095cb0287ee07edad1aa412cb480bb54fb0b21565c2c1999b817de7cc5",
+          "review_note": "Separately reviewed to preserve the strongest competing frame and the evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, litigation, case outcomes and measured consequences after the cutoff remain unresolved.",
+        "No inference is made beyond the attached source status and explicitly stated qualifications."
+      ]
+    },
+    {
+      "review_id": "10.148.0:NAT-2026-10-14-005:ceeb492655a5",
+      "entry_id": "NAT-2026-10-14-005",
+      "content_sha256": "ceeb492655a5c5d67ed72d980e0c12b6cc60ff86a5e1ab75711a7f9ba8b4c993",
+      "reviewed_at": "2026-10-14T22:08:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "f5e750f209afb39a92bfd8f9ce1185ce4aeee79bac0a00d7fa2c3650a3a1785c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_rodriguez_delisting_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "20bd24d6e3862562862534c1ecadcb12dccd66843538637d14ba9eae4d57f35e",
+              "origin_group": "Office of Foreign Assets Control",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_rodriguez_delisting_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "d46fafd07bb84cdf55438657090af2d9732cf34943f3ebbe5d0f94c7bd9362da",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "cc0a463a7ff6f9318e1c9496bd2f84dfd33131a60c36f22e91c6c181ea095583",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_rodriguez_delisting_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "20bd24d6e3862562862534c1ecadcb12dccd66843538637d14ba9eae4d57f35e",
+              "origin_group": "Office of Foreign Assets Control",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_rodriguez_delisting_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "d46fafd07bb84cdf55438657090af2d9732cf34943f3ebbe5d0f94c7bd9362da",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "ab609290c120c291b5b17b8aa661c0060978c7456aad5438fde9d304011c8280",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_rodriguez_delisting_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "20bd24d6e3862562862534c1ecadcb12dccd66843538637d14ba9eae4d57f35e",
+              "origin_group": "Office of Foreign Assets Control",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_rodriguez_delisting_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "d46fafd07bb84cdf55438657090af2d9732cf34943f3ebbe5d0f94c7bd9362da",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "355657cf55410a5b1ea06b188503c8c8a5d4affda46827fdbfc37adffcfd7fef",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_rodriguez_delisting_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "20bd24d6e3862562862534c1ecadcb12dccd66843538637d14ba9eae4d57f35e",
+              "origin_group": "Office of Foreign Assets Control",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_rodriguez_delisting_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "d46fafd07bb84cdf55438657090af2d9732cf34943f3ebbe5d0f94c7bd9362da",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "b58c00839b67be9d7dcf1babb461c123d65a4cd3d0602aa65fb1e36821d09b85",
+          "review_note": "Separately reviewed to state institutional or measured consequence without converting projections, preliminary rulings or allegations into completed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "b74e2ff33dd228f78cc5eee36a8cff7fb13223c90f099a7b010f508563259ba9",
+          "review_note": "Separately reviewed against observable implementation, legal and outcome tests and the strongest relevant administration or subject response."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "89c3912a1213b9a70ccbb5cdb8a60d0aebb8bef0f441ad83e521bf0a63c3274d",
+          "review_note": "Separately reviewed to preserve the strongest competing frame and the evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, litigation, case outcomes and measured consequences after the cutoff remain unresolved.",
+        "No inference is made beyond the attached source status and explicitly stated qualifications."
+      ]
+    },
+    {
+      "review_id": "10.148.0:NAT-2026-10-14-006:7efcf64641cd",
+      "entry_id": "NAT-2026-10-14-006",
+      "content_sha256": "7efcf64641cde216e17724f2d699d3956bb851efac02223432fc4caef8faa664",
+      "reviewed_at": "2026-10-14T22:08:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "99202467aaebba351a3c98a3881a902ea795d7df5c59263ff639d2f9e4334705",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dmd_dei_contractors_opinion_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "abd3b2b0dddd375feba73c84b91adc03b45fbc6ffb59c6848cd0b753b4ccb5fa",
+              "origin_group": "U.S. District Court for the District of Maryland",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_dei_contractors_ruling_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "e81b5f755b35df522be83b8baf3915a8c404c9e854901c78d363d1ca59eb9ad2",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "d924517a36a64b32d6d9164528c233fae2e8bbc84c19533e79a43c44e8f82bc3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dmd_dei_contractors_opinion_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "abd3b2b0dddd375feba73c84b91adc03b45fbc6ffb59c6848cd0b753b4ccb5fa",
+              "origin_group": "U.S. District Court for the District of Maryland",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_dei_contractors_ruling_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "e81b5f755b35df522be83b8baf3915a8c404c9e854901c78d363d1ca59eb9ad2",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "4707c654e0251a387f9636d7aaada0fa645ccc55ec6070ad6ae6b80570478910",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dmd_dei_contractors_opinion_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "abd3b2b0dddd375feba73c84b91adc03b45fbc6ffb59c6848cd0b753b4ccb5fa",
+              "origin_group": "U.S. District Court for the District of Maryland",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_dei_contractors_ruling_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "e81b5f755b35df522be83b8baf3915a8c404c9e854901c78d363d1ca59eb9ad2",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "ef524ee865ae2120625434d03995601706234395d5f6cfeff1af77487a9ee675",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dmd_dei_contractors_opinion_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "abd3b2b0dddd375feba73c84b91adc03b45fbc6ffb59c6848cd0b753b4ccb5fa",
+              "origin_group": "U.S. District Court for the District of Maryland",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_dei_contractors_ruling_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "e81b5f755b35df522be83b8baf3915a8c404c9e854901c78d363d1ca59eb9ad2",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "eb28251f2a7ba120c7c2f63c166ca9c3d62e5447a6fcd8705989dad33bf81317",
+          "review_note": "Separately reviewed to state institutional or measured consequence without converting projections, preliminary rulings or allegations into completed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "fd2f8568c340e7cc593226c5fb692c60a3d58b28b2e53011f77612da7529165d",
+          "review_note": "Separately reviewed against observable implementation, legal and outcome tests and the strongest relevant administration or subject response."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "2207c04322c46969fa8f59c415002cc2e3fe0be51f3fff1c626e10ef9753dc12",
+          "review_note": "Separately reviewed to preserve the strongest competing frame and the evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, litigation, case outcomes and measured consequences after the cutoff remain unresolved.",
+        "No inference is made beyond the attached source status and explicitly stated qualifications."
+      ]
+    },
+    {
+      "review_id": "10.148.0:NAT-2026-10-14-007:e6032f2c0173",
+      "entry_id": "NAT-2026-10-14-007",
+      "content_sha256": "e6032f2c0173dd479a7215f73f12c1c4fa4444abd72e695f712228c922c7dc61",
+      "reviewed_at": "2026-10-14T22:08:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "cacaf7d0bdb71eff1e7005405ccda900e0948d9827e83e6bc7fa4374785ad8fe",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_tax_enforcement_surge_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "4c0a44c4e28535baa7beb6ade5260572de217d0affa97516db7bfd69c37001b1",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "4d065d444b82cf46b69188edce810ea17ee24bb826c3b70a8b6e68750ab44871",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_tax_enforcement_surge_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "4c0a44c4e28535baa7beb6ade5260572de217d0affa97516db7bfd69c37001b1",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "989b761fe703b04b53110723c32922a535c549a41c56bf32eaf210463b741f78",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_tax_enforcement_surge_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "4c0a44c4e28535baa7beb6ade5260572de217d0affa97516db7bfd69c37001b1",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "a48ed3cd1cf0e91e8cc8fbb982c671dda2f613b1b7a82f2e4154f92c84db9acc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_tax_enforcement_surge_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "4c0a44c4e28535baa7beb6ade5260572de217d0affa97516db7bfd69c37001b1",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "d97c1f64fbeed2d29b7f90e2d1f29980c0aba2cab6e05c682fc59a9950366ade",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_tax_enforcement_surge_oct14",
+              "locator": "Reviewed source text, operative figures, procedural status and qualifications for this fact.",
+              "inspected_at": "2026-10-14T22:08:00Z",
+              "document_sha256": "4c0a44c4e28535baa7beb6ade5260572de217d0affa97516db7bfd69c37001b1",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "d7a00c034816eeb33d0ef90e56d4a37c9c30d1dbedcd226eafe5ec0f0f4b50e4",
+          "review_note": "Separately reviewed to state institutional or measured consequence without converting projections, preliminary rulings or allegations into completed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "6532e2c34554c23b141dcd871d006b0a58064b516f1953dce89c3af07204045e",
+          "review_note": "Separately reviewed against observable implementation, legal and outcome tests and the strongest relevant administration or subject response."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "5c57066ccab31b7c63cdd1d773372142817d476fb8b9f9ec3d5981f6bd5c524d",
+          "review_note": "Separately reviewed to preserve the strongest competing frame and the evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, litigation, case outcomes and measured consequences after the cutoff remain unresolved.",
         "No inference is made beyond the attached source status and explicitly stated qualifications."
       ]
     }
