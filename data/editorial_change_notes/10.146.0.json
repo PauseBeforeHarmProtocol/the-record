@@ -1,0 +1,68 @@
+{
+  "version": "10.146.0",
+  "base_release_version": "10.145.0",
+  "base_commit": "ee073f599a2dc798eb55e0a3fdbb98b975273812",
+  "research_window": {
+    "from_utc": "2026-10-14T04:01:59Z",
+    "through_utc": "2026-10-14T10:03:50Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Exact scan from the prior accepted open-branch boundary. One in-window independent-source refresh and two explicitly late-indexed developments were accepted."
+  },
+  "publication_authorization": "The user authorizes maintenance branches, pull requests and merging after evidence, local acceptance and successful CI; repository policy still requires Phillip Linstrum's final publication acceptance before merge.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-13-011",
+      "kind": "added",
+      "summary": "Reuters' records-based review measured political affiliation and avoided penalties among at least 85 public-official clemency recipients.",
+      "duplicate_review": "Individual clemency records document grants; this distinct record captures the later cross-case measurement and does not count another pardon act."
+    },
+    {
+      "entry_id": "NAT-2026-09-15-003",
+      "kind": "refreshed",
+      "summary": "DOJ gave California 48 hours to review an alleged-noncitizen-voter list and threatened emergency litigation.",
+      "duplicate_review": "The letter advances the existing federal noncitizen-voting enforcement record and was consolidated there."
+    },
+    {
+      "entry_id": "NAT-2026-10-13-010",
+      "kind": "refreshed",
+      "summary": "The filed Sue Mi Terry agreement includes travel and South Korean-government contact restrictions and additional acknowledged benefits.",
+      "duplicate_review": "The filing details clarify the same deferred-prosecution agreement rather than a new disposition."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "reuters_clemency_public_officials_oct13",
+      "document_sha256": "bb05502a308c359b6e87a1d8ca456cee4656f25273dbc5ccf15a9b85d689b67a",
+      "inspected_at": "2026-10-14T10:09:28Z",
+      "note": "Records-based investigation inspected for its sample definition, political-affiliation categories, avoided penalties, exclusions and administration responses."
+    },
+    {
+      "source_id": "reuters_california_noncitizen_ballot_letter_oct14",
+      "document_sha256": "17381d4b7d288beeb06461183d6da3f68bc8fc12eeeb8faf909ed6b604ef2ffb",
+      "inspected_at": "2026-10-14T10:09:28Z",
+      "note": "Report and quoted letter terms inspected for the 48-hour demand, ballot-handling instructions, threatened relief and DOJ confirmation."
+    },
+    {
+      "source_id": "reuters_terry_deferred_prosecution_oct14",
+      "document_sha256": "9a75d56c5eb2d62817370d0a8909a996137b298d1a37f5ac47b73fe0c295ac1b",
+      "inspected_at": "2026-10-14T10:09:28Z",
+      "note": "Filed-notice reporting inspected for the conditions, acknowledged assistance and benefits, no-wrongdoing posture and one-year disposition."
+    }
+  ],
+  "withheld": [
+    {
+      "title": "Twenty-six newer Truth Social posts",
+      "reason": "All text payloads were reviewed; full motion, audio and captions for 23 videos remain pending. The reviewable content was campaign commentary, unverified claims or a vague prospective Greenland announcement and did not independently establish another qualifying action."
+    },
+    {
+      "title": "Greenland exploration announcement",
+      "reason": "Trump announced that exploration was getting ready to begin, but neither the post nor the Reuters report identified a project, operator, permit, funding, instrument, timetable or independently verified implementation."
+    },
+    {
+      "title": "Trump TV and official video-library recheck",
+      "reason": "Official page and dated-library metadata were rechecked; footage, audio and captions were not retrieved, and no qualifying new item was located in the material reviewed."
+    }
+  ],
+  "corrections": []
+}
