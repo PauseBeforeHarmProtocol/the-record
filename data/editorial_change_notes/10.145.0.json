@@ -1,0 +1,124 @@
+{
+  "version": "10.145.0",
+  "base_release_version": "10.144.0",
+  "base_commit": "ade42453a5efc31401a7da0d7b7f1293534e73b0",
+  "research_window": {
+    "from_utc": "2026-10-13T21:56:54Z",
+    "through_utc": "2026-10-14T04:01:59Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Exact scan from the prior accepted open-branch boundary. Three qualifying national developments were added, one press-access record was materially refreshed and one late-indexed October 13 enforcement package was explicitly identified as retrospective."
+  },
+  "publication_authorization": "The user authorizes maintenance branches, pull requests and merging after evidence, local acceptance and successful CI; repository policy still requires Phillip Linstrum's final publication acceptance before merge.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-18-007",
+      "kind": "refreshed",
+      "summary": "A preliminary injunction extended protection for CNN, MS NOW and Politico while the separate antitrust inquiry continues.",
+      "duplicate_review": "The October 13 preliminary injunction advances the same press-access litigation already represented by the stable September 18 record."
+    },
+    {
+      "entry_id": "NAT-2026-10-13-008",
+      "kind": "added",
+      "summary": "Treasury agencies imposed and settled more than $1.21 billion in Bank of America anti-money-laundering and sanctions penalties.",
+      "duplicate_review": "No existing current or legacy entry covered this Bank of America enforcement package; the overlapping OCC credit is preserved without double-counting."
+    },
+    {
+      "entry_id": "NAT-2026-10-13-009",
+      "kind": "added",
+      "summary": "Trump signed unconditional pardons for two Alaska diesel mechanics convicted in a Clean Air Act conspiracy.",
+      "duplicate_review": "No current record covered the two October 13 clemency instruments; an earlier pardon for a third mechanic is context, not a duplicate."
+    },
+    {
+      "entry_id": "NAT-2026-10-13-010",
+      "kind": "added",
+      "summary": "DOJ entered a one-year deferred-prosecution agreement with Sue Mi Terry, with dismissal conditional on compliance.",
+      "duplicate_review": "No existing entry covered this disposition; the 2024 indictment is the earlier lifecycle stage of the same case and is not counted again."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "treasury_bofa_enforcement_oct13",
+      "document_sha256": "a5b00107b62c8f9c43c226f788591e963421b1aa7a95d9d64dec23a2ca60587a",
+      "inspected_at": "2026-10-14T04:01:59Z",
+      "note": "Treasury release inspected for the coordinated total, component penalties and stated enforcement rationale."
+    },
+    {
+      "source_id": "fincen_bofa_penalty_oct13",
+      "document_sha256": "589b6266ed8799d94d852032033458fcecbededf2347b877ab4ed75543c942ab",
+      "inspected_at": "2026-10-14T04:01:59Z",
+      "note": "FinCEN release inspected for the $1.2 billion order, reporting failures, OCC credit and remedial requirements."
+    },
+    {
+      "source_id": "ofac_bofa_settlement_oct13",
+      "document_sha256": "f3ec981d32cd9684035c9c299d76bdf28b63b207d5e27b7ca599c8800cca2fb6",
+      "inspected_at": "2026-10-14T04:01:59Z",
+      "note": "OFAC action inspected for the $11,662,930 settlement, 475 apparent violations and covered sanctions programs."
+    },
+    {
+      "source_id": "ap_bofa_penalties_oct13",
+      "document_sha256": "5c0c1b218806b93a00325a7a9697d1b7c539a001cf86e20282ff83db77eac6c7",
+      "inspected_at": "2026-10-14T04:01:59Z",
+      "note": "Independent report inspected for penalty context and Bank of America's response."
+    },
+    {
+      "source_id": "ap_alaska_pardons_oct13",
+      "document_sha256": "51844e4c5ce1a94fbb7f24b208579ebdf0d2b857196e43ab54b36e37304bcd3e",
+      "inspected_at": "2026-10-14T04:01:59Z",
+      "note": "Independent live report inspected for the onstage signing, convictions and missing DOJ posting at cutoff."
+    },
+    {
+      "source_id": "fox_alaska_pardons_video_oct13",
+      "document_sha256": "a01d1a08e2519e8e8cee8dd8a61e8daa43cacae6cb9cf1314c2dd77063c0be8b",
+      "inspected_at": "2026-10-14T04:01:59Z",
+      "note": "Independent report and embedded event video inspected for the signing and unconditional-pardon statement."
+    },
+    {
+      "source_id": "ap_terry_deferred_prosecution_oct13",
+      "document_sha256": "a1fad204aade1ec702c322a6b99e6e5e9bac0babdc8d4fa261966e46bfee58e2",
+      "inspected_at": "2026-10-14T04:01:59Z",
+      "note": "Independent report inspected for filed agreement terms, acknowledged facts and defense response."
+    },
+    {
+      "source_id": "sdny_terry_docket",
+      "document_sha256": "67b8d67c7f26e0da6b5a74f5be464f3287a96f24cffe5a6975de66330ec13432",
+      "inspected_at": "2026-10-14T04:01:59Z",
+      "note": "Public docket mirror inspected for case identity and procedural history; agreement terms rely on AP's filed-document review."
+    },
+    {
+      "source_id": "courtlistener_press_access_docket",
+      "document_sha256": "8bf8f752b22175daefb829ecf251bf7330cbf8bbd4301204ae6d0879d8e2421c",
+      "inspected_at": "2026-10-14T04:01:59Z",
+      "note": "Public RECAP docket inspected for the press-access case and October 13 procedural stage."
+    },
+    {
+      "source_id": "ap_press_preliminary_injunction_oct13",
+      "document_sha256": "3ce890cd967db6c8e8e8df011fd535c75380df26ee3149664e92452b7e65d5c0",
+      "inspected_at": "2026-10-14T04:01:59Z",
+      "note": "Independent report inspected for the preliminary injunction, court's preliminary findings and qualifications."
+    }
+  ],
+  "withheld": [
+    {
+      "title": "Eleven newer Truth Social posts",
+      "reason": "Text and four still images were reviewed; representative frames from three videos were inspected while full motion, audio and captions remain pending. Campaign promotion, unsupported claims, rally media and rhetoric did not independently establish another qualifying federal action."
+    },
+    {
+      "title": "Trump TV and official video-library recheck",
+      "reason": "The stream ID remained unchanged and the library added an October 13 departure-gaggle item. Only page metadata was retrieved; footage, audio and captions were not reviewed, and no qualifying new item was located in the material reviewed."
+    },
+    {
+      "title": "Nicaragua charge d'affaires recall",
+      "reason": "The diplomatic protest was announced, but no broader legal, financial or operational consequence meeting the archive threshold was established by cutoff."
+    },
+    {
+      "title": "Kimberly Guilfoyle resignation",
+      "reason": "Personnel departure and reported allegations did not include confirmed investigative findings or a material administration action."
+    },
+    {
+      "title": "Taiwan Alaska LNG purchase claim",
+      "reason": "The claimed 30 percent purchase lacked independently verified binding terms and could not be distinguished from the existing 2025 letter of intent."
+    }
+  ],
+  "corrections": []
+}
