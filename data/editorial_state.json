@@ -6277,6 +6277,66 @@
       "provenance_path": "data/editorial_change_notes/10.146.0.json",
       "provenance_sha256": "479bbcd91ec6b9c2ea88e7612aee6dacf01197b8205c5d28f6bfe93f625f99f0",
       "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.147.0:NAT-2026-10-14-001",
+      "entry_id": "NAT-2026-10-14-001",
+      "as_of_utc": "2026-10-14T15:55:19Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.147.0",
+      "summary": "CMS removed Marketplace subsidies associated with about 189,000 duplicate or deceased records under a dispute and appeal process.",
+      "provenance_path": "data/editorial_change_notes/10.147.0.json",
+      "provenance_sha256": "483929d6241eac57903c431edfdff8b10c5121ef5231e97c2eae3b825a0cb099",
+      "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.147.0:NAT-2026-10-14-002",
+      "entry_id": "NAT-2026-10-14-002",
+      "as_of_utc": "2026-10-14T15:55:19Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.147.0",
+      "summary": "OCC published final supervisory findings that all nine reviewed banks had policies capable of influencing debanking on subjective grounds.",
+      "provenance_path": "data/editorial_change_notes/10.147.0.json",
+      "provenance_sha256": "483929d6241eac57903c431edfdff8b10c5121ef5231e97c2eae3b825a0cb099",
+      "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.147.0:NAT-2026-10-14-003",
+      "entry_id": "NAT-2026-10-14-003",
+      "as_of_utc": "2026-10-14T15:55:19Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.147.0",
+      "summary": "SSA set the automatic 2027 COLA at 3.6% and published related tax and earnings thresholds.",
+      "provenance_path": "data/editorial_change_notes/10.147.0.json",
+      "provenance_sha256": "483929d6241eac57903c431edfdff8b10c5121ef5231e97c2eae3b825a0cb099",
+      "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.147.0:NAT-2026-09-11-006",
+      "entry_id": "NAT-2026-09-11-006",
+      "as_of_utc": "2026-10-14T15:55:19Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.147.0",
+      "summary": "September CPI rose 0.6% monthly and 3.7% annually, with gasoline accounting for more than half of the monthly rise.",
+      "provenance_path": "data/editorial_change_notes/10.147.0.json",
+      "provenance_sha256": "483929d6241eac57903c431edfdff8b10c5121ef5231e97c2eae3b825a0cb099",
+      "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.147.0:NAT-2026-10-13-008",
+      "entry_id": "NAT-2026-10-13-008",
+      "as_of_utc": "2026-10-14T15:55:19Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.147.0",
+      "summary": "Bank of America reported repositioning about 1,000 employees and investing in consent-order remediation.",
+      "provenance_path": "data/editorial_change_notes/10.147.0.json",
+      "provenance_sha256": "483929d6241eac57903c431edfdff8b10c5121ef5231e97c2eae3b825a0cb099",
+      "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
     }
   ],
   "reviews": [
@@ -77621,6 +77681,825 @@
       "unresolved_questions": [
         "Recipient-level review records, a government audit and motive in individual grants remain unresolved.",
         "The Reuters sample has defined exclusions and should not be treated as the denominator for every Trump clemency recipient."
+      ]
+    },
+    {
+      "review_id": "10.147.0:NAT-2026-10-14-001:bface89c40be",
+      "entry_id": "NAT-2026-10-14-001",
+      "content_sha256": "bface89c40be58487ecbe66f646725eeea1a1829e38d33622d4d038a6f1e75be",
+      "reviewed_at": "2026-10-14T16:10:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "1b768523b7d4e34418b1e90558030091c89915916697024b6e0824a270a35475",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_duplicate_coverage_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "cc121e66bd9b02310d1cee446dfe2ebb1f33374b5fcd4ccb945536e71bb5ce60",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_aca_duplicate_subsidies_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "8883ec1ff909fbfe814b05320ada6e8e8e28e13f4a79e6437cb93d2956907824",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "773903273bdfeb9ad455e3184993d67a09949d0e594520ba29951a412374d4a8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_duplicate_coverage_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "cc121e66bd9b02310d1cee446dfe2ebb1f33374b5fcd4ccb945536e71bb5ce60",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_aca_duplicate_subsidies_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "8883ec1ff909fbfe814b05320ada6e8e8e28e13f4a79e6437cb93d2956907824",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "ba890f593826677a9d31213648e0ff1b23c66ade4812dd051c4074cc78b332c9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_duplicate_coverage_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "cc121e66bd9b02310d1cee446dfe2ebb1f33374b5fcd4ccb945536e71bb5ce60",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_aca_duplicate_subsidies_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "8883ec1ff909fbfe814b05320ada6e8e8e28e13f4a79e6437cb93d2956907824",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "3935cd05400bd0b4c559a5565ff01d17e6ec604a476b80158a3e3816c9a173b6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_duplicate_coverage_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "cc121e66bd9b02310d1cee446dfe2ebb1f33374b5fcd4ccb945536e71bb5ce60",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_aca_duplicate_subsidies_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "8883ec1ff909fbfe814b05320ada6e8e8e28e13f4a79e6437cb93d2956907824",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "25f715441aa3e16c17785cd699f0498d87a1d0e48a52b8b158fc56b8de9c0bff",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_duplicate_coverage_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "cc121e66bd9b02310d1cee446dfe2ebb1f33374b5fcd4ccb945536e71bb5ce60",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_aca_duplicate_subsidies_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "8883ec1ff909fbfe814b05320ada6e8e8e28e13f4a79e6437cb93d2956907824",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "880646b9b32beef1688b42ab75243c32823bc170a89ba43bc434ab244cb36550",
+          "review_note": "Separately reviewed to state institutional or measured consequence without converting projections or allegations into completed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "0f2aea5ab00560ec7990210e8244b4de0d8f01db6009672c16052e574d5d86c0",
+          "review_note": "Separately reviewed against observable implementation, legal and outcome tests and the strongest relevant administration or subject response."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "ae345ab41bdcd9a3c4e74081eafc56a2da8b79c8676b4691e76394a56900d091",
+          "review_note": "Separately reviewed to preserve the strongest competing frame and the evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, revisions, litigation and measured consequences after the cutoff remain unresolved.",
+        "No inference is made beyond the attached source status and explicitly stated qualifications."
+      ]
+    },
+    {
+      "review_id": "10.147.0:NAT-2026-10-14-002:118f834f403c",
+      "entry_id": "NAT-2026-10-14-002",
+      "content_sha256": "118f834f403c337b0a2b1e610eaf6c9807ecaccdd9f483d6b4bee38e4ac2c9fa",
+      "reviewed_at": "2026-10-14T16:10:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "4ab4396fe2b0057ca1b8298cbb282772e283e76f95bff01e9787c455fca09b93",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "occ_large_bank_debanking_report_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "34a380a448b01ed71c7137ac7820ae6d44b6508a6848f6432c46bba88b08a1bd",
+              "origin_group": "Office of the Comptroller of the Currency",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_occ_debanking_report_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "cc2543e72e4e69da2f7629153fc8667f46c24dfd375d62ada2e269679abc8dc9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "a3cb4447107d017ed2dbedd1081dda2207cb04f43ce1cc234d13af24382ad5b1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "occ_large_bank_debanking_report_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "34a380a448b01ed71c7137ac7820ae6d44b6508a6848f6432c46bba88b08a1bd",
+              "origin_group": "Office of the Comptroller of the Currency",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_occ_debanking_report_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "cc2543e72e4e69da2f7629153fc8667f46c24dfd375d62ada2e269679abc8dc9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "14763514894d327bf0174f743517c45eb4cf554cb352c6c4db9b942411fbf916",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "occ_large_bank_debanking_report_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "34a380a448b01ed71c7137ac7820ae6d44b6508a6848f6432c46bba88b08a1bd",
+              "origin_group": "Office of the Comptroller of the Currency",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_occ_debanking_report_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "cc2543e72e4e69da2f7629153fc8667f46c24dfd375d62ada2e269679abc8dc9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "3c0470135eebe12a79343fef167f8b381b33c9ddecf7affc823325291491d010",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "occ_large_bank_debanking_report_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "34a380a448b01ed71c7137ac7820ae6d44b6508a6848f6432c46bba88b08a1bd",
+              "origin_group": "Office of the Comptroller of the Currency",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_occ_debanking_report_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "cc2543e72e4e69da2f7629153fc8667f46c24dfd375d62ada2e269679abc8dc9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "8e7146fc4c34bbe4f0e1263d46a1c57c1ec5f71c1eb5335f0e0423d93935744e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "occ_large_bank_debanking_report_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "34a380a448b01ed71c7137ac7820ae6d44b6508a6848f6432c46bba88b08a1bd",
+              "origin_group": "Office of the Comptroller of the Currency",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_occ_debanking_report_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "cc2543e72e4e69da2f7629153fc8667f46c24dfd375d62ada2e269679abc8dc9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "a8a5f970b3e56da1d88a9e440d9ab50b064e6ce8cdd1e455b1ba90dab4c13f9b",
+          "review_note": "Separately reviewed to state institutional or measured consequence without converting projections or allegations into completed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "abd67fc08db45c2205490e7b1c1090a569de6f6fff383efd23b85acbef887978",
+          "review_note": "Separately reviewed against observable implementation, legal and outcome tests and the strongest relevant administration or subject response."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "d963225c59cf3f64331266fb6fb168fe5403866e131e1ccb4c965db8b094ee49",
+          "review_note": "Separately reviewed to preserve the strongest competing frame and the evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, revisions, litigation and measured consequences after the cutoff remain unresolved.",
+        "No inference is made beyond the attached source status and explicitly stated qualifications."
+      ]
+    },
+    {
+      "review_id": "10.147.0:NAT-2026-10-14-003:f0bafc0dfa5b",
+      "entry_id": "NAT-2026-10-14-003",
+      "content_sha256": "f0bafc0dfa5b85a83dae2cf839c075ccdc0dd1d0b6374bffa6b353c0a7817aab",
+      "reviewed_at": "2026-10-14T16:10:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "0cce26ab70b58cb9cad5bfd0334d0ac907bca0182884667245d2fc7b4c4d2d8e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ssa_cola_2027_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "6cd29d106158119d7abea44c62779149dacd9174f27347b248b223cb5dfe5fc3",
+              "origin_group": "Social Security Administration",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_ssa_cola_2027_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "93a7b8dbd05a391d0774953c3c09e124f3571343d24a1eae5a4c569e3a114118",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "7686c98ee2b1ee14afef969c14b9c7006653c82cd28e72b3ff0b75f11313b5c4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ssa_cola_2027_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "6cd29d106158119d7abea44c62779149dacd9174f27347b248b223cb5dfe5fc3",
+              "origin_group": "Social Security Administration",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_ssa_cola_2027_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "93a7b8dbd05a391d0774953c3c09e124f3571343d24a1eae5a4c569e3a114118",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "a9577d0236a443d9f0a3014e515e0c4a679b04e80ce3bde1f829046f01844d4d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ssa_cola_2027_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "6cd29d106158119d7abea44c62779149dacd9174f27347b248b223cb5dfe5fc3",
+              "origin_group": "Social Security Administration",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_ssa_cola_2027_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "93a7b8dbd05a391d0774953c3c09e124f3571343d24a1eae5a4c569e3a114118",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "f5130438d108fa41a32d698820f9f17a8bc2194f08b389ebd80e47412c795db1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ssa_cola_2027_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "6cd29d106158119d7abea44c62779149dacd9174f27347b248b223cb5dfe5fc3",
+              "origin_group": "Social Security Administration",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_ssa_cola_2027_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "93a7b8dbd05a391d0774953c3c09e124f3571343d24a1eae5a4c569e3a114118",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "b38c7aeaab4d9ec06c5fa2cc3a77bb5d99e5489dc429cf62eff256fb119ce2dc",
+          "review_note": "Separately reviewed to state institutional or measured consequence without converting projections or allegations into completed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "0e5d238acd5b658b2937f92265b248bafc52617c7f4ba92c12413d3b9036358a",
+          "review_note": "Separately reviewed against observable implementation, legal and outcome tests and the strongest relevant administration or subject response."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "e6bb5313fd9991f3c036125e1a9aad1894fbc303292d78030abc74f7ecb898e2",
+          "review_note": "Separately reviewed to preserve the strongest competing frame and the evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, revisions, litigation and measured consequences after the cutoff remain unresolved.",
+        "No inference is made beyond the attached source status and explicitly stated qualifications."
+      ]
+    },
+    {
+      "review_id": "10.147.0:NAT-2026-09-11-006:c56304471b31",
+      "entry_id": "NAT-2026-09-11-006",
+      "content_sha256": "c56304471b3186e26095085a48016a31ae433a76c6a2a60746e784fc471bf2a0",
+      "reviewed_at": "2026-10-14T16:10:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "a02e8e0766c6fdd5a5a5fa32d22cc9edf3952ddc88b049df56924c9d6d48cbb8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_cpi_aug2026",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "8b4d352b4f1ffc6604d953d304c151993c722f8a096a4030765183105ade9484",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_cpi_aug2026",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "07e48b0b5d0568c5c260a3a3196fa2e2de83e23fd1d6bc37358e3ffc97712681",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "558171cb2d164bdfde331aa498c0521f2a0a0c603017ff504d7e0ff817ca6030",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_cpi_aug2026",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "8b4d352b4f1ffc6604d953d304c151993c722f8a096a4030765183105ade9484",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_cpi_aug2026",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "07e48b0b5d0568c5c260a3a3196fa2e2de83e23fd1d6bc37358e3ffc97712681",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "b64d6b6ab6c83654479eef8aa0c037dd1643c2a976ef719762c93c71e9fd3e76",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_cpi_aug2026",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "8b4d352b4f1ffc6604d953d304c151993c722f8a096a4030765183105ade9484",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_cpi_aug2026",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "07e48b0b5d0568c5c260a3a3196fa2e2de83e23fd1d6bc37358e3ffc97712681",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "81c0ca34bba2f52a8133d9e6ff82d75932e362d06f19c5030b7473ca368d498d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_cpi_aug2026",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "8b4d352b4f1ffc6604d953d304c151993c722f8a096a4030765183105ade9484",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_cpi_aug2026",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-09-11T16:13:54.166597Z",
+              "document_sha256": "07e48b0b5d0568c5c260a3a3196fa2e2de83e23fd1d6bc37358e3ffc97712681",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "486a6efb8c2b83f41813017de1ce6b95a5e7bcb9e1b85b463fc747c2a2cf702e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_cpi_sep2026",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "c57befacb09049e6c5b9e728a2fb2c175778c68ab3e001b17cada7d37c991efd",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_cpi_sep2026",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "13742a026ada5bcb6a7cbf8c505074b7100c60555b56de77ca8ac032c486bc36",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "5f340e96762bb1afb036490d5bbfb3657453d69a1b903f91b9dea06fbb4af2cc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_cpi_sep2026",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "c57befacb09049e6c5b9e728a2fb2c175778c68ab3e001b17cada7d37c991efd",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_cpi_sep2026",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "13742a026ada5bcb6a7cbf8c505074b7100c60555b56de77ca8ac032c486bc36",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "4b6aa865decd4184c47f0cd3a775794b462a2b4a4930ecf026b4a6dfd4869907",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_cpi_sep2026",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "c57befacb09049e6c5b9e728a2fb2c175778c68ab3e001b17cada7d37c991efd",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_cpi_sep2026",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "13742a026ada5bcb6a7cbf8c505074b7100c60555b56de77ca8ac032c486bc36",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "8f533d4242615badf60e1f4531889f8258a440daad6b2a166eb1889c09732b02",
+          "review_note": "Separately reviewed to state institutional or measured consequence without converting projections or allegations into completed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "0710c667d01b4d5462bf48e11dffebc80291a4fa8b8daaaafcee8903a490eed4",
+          "review_note": "Separately reviewed against observable implementation, legal and outcome tests and the strongest relevant administration or subject response."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "9d49beb57f73bb9ab5721267d421159530643e537c87cbb14555ab3852af2f98",
+          "review_note": "Separately reviewed to preserve the strongest competing frame and the evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, revisions, litigation and measured consequences after the cutoff remain unresolved.",
+        "No inference is made beyond the attached source status and explicitly stated qualifications."
+      ]
+    },
+    {
+      "review_id": "10.147.0:NAT-2026-10-13-008:f901d0fe80d4",
+      "entry_id": "NAT-2026-10-13-008",
+      "content_sha256": "f901d0fe80d47f3b9daf8aa2c0370bfd9889f15c6b88a05b586ee78a2e101b7b",
+      "reviewed_at": "2026-10-14T16:10:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "5303305673f78c79a7ea4e76906df670461803fd6a0d4100873a990f1afa09f9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_bofa_enforcement_oct13",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "a5b00107b62c8f9c43c226f788591e963421b1aa7a95d9d64dec23a2ca60587a",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "fincen_bofa_penalty_oct13",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "589b6266ed8799d94d852032033458fcecbededf2347b877ab4ed75543c942ab",
+              "origin_group": "Financial Crimes Enforcement Network",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ofac_bofa_settlement_oct13",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "f3ec981d32cd9684035c9c299d76bdf28b63b207d5e27b7ca599c8800cca2fb6",
+              "origin_group": "Office of Foreign Assets Control",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_bofa_penalties_oct13",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "5c0c1b218806b93a00325a7a9697d1b7c539a001cf86e20282ff83db77eac6c7",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "18c6b23b0b1da802207a639ded5d63986aae2836ba46530a852c94a6f48d8677",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_bofa_enforcement_oct13",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "a5b00107b62c8f9c43c226f788591e963421b1aa7a95d9d64dec23a2ca60587a",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "fincen_bofa_penalty_oct13",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "589b6266ed8799d94d852032033458fcecbededf2347b877ab4ed75543c942ab",
+              "origin_group": "Financial Crimes Enforcement Network",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ofac_bofa_settlement_oct13",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "f3ec981d32cd9684035c9c299d76bdf28b63b207d5e27b7ca599c8800cca2fb6",
+              "origin_group": "Office of Foreign Assets Control",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_bofa_penalties_oct13",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "5c0c1b218806b93a00325a7a9697d1b7c539a001cf86e20282ff83db77eac6c7",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "8905c6a8f6dfa6a2af252d4769e6b15a87175638cd80c94d02e094ea440ba49c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_bofa_enforcement_oct13",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "a5b00107b62c8f9c43c226f788591e963421b1aa7a95d9d64dec23a2ca60587a",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "fincen_bofa_penalty_oct13",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "589b6266ed8799d94d852032033458fcecbededf2347b877ab4ed75543c942ab",
+              "origin_group": "Financial Crimes Enforcement Network",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ofac_bofa_settlement_oct13",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "f3ec981d32cd9684035c9c299d76bdf28b63b207d5e27b7ca599c8800cca2fb6",
+              "origin_group": "Office of Foreign Assets Control",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_bofa_penalties_oct13",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "5c0c1b218806b93a00325a7a9697d1b7c539a001cf86e20282ff83db77eac6c7",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "dcc5749f247d97b3fb213b69f9099d06dbcf0b1ff9608bd712aa4974d2f2a28f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_bofa_enforcement_oct13",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "a5b00107b62c8f9c43c226f788591e963421b1aa7a95d9d64dec23a2ca60587a",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "fincen_bofa_penalty_oct13",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "589b6266ed8799d94d852032033458fcecbededf2347b877ab4ed75543c942ab",
+              "origin_group": "Financial Crimes Enforcement Network",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ofac_bofa_settlement_oct13",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "f3ec981d32cd9684035c9c299d76bdf28b63b207d5e27b7ca599c8800cca2fb6",
+              "origin_group": "Office of Foreign Assets Control",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_bofa_penalties_oct13",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "5c0c1b218806b93a00325a7a9697d1b7c539a001cf86e20282ff83db77eac6c7",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "bf2e5777d542f99719aadc8664c1fcdd2e4612c5dbf0765160351671fd6ef62d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_bofa_remediation_oct14",
+              "locator": "Reviewed source text, operative figures and qualifications for this fact.",
+              "inspected_at": "2026-10-14T16:10:00Z",
+              "document_sha256": "732bdc7f70d095ac8262be4c46e141febe741f08132acf2b2be26646600decbe",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "3cf9506b276c7d7a0e8e1dd4971bb4f5dc59d99eae4fe013df4016dd4ac16335",
+          "review_note": "Separately reviewed to state institutional or measured consequence without converting projections or allegations into completed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "decc9edb913403e6ca1422026dba0ad5b46ef2dae3bd3684863fe9c978dfd4d1",
+          "review_note": "Separately reviewed against observable implementation, legal and outcome tests and the strongest relevant administration or subject response."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "918da639f90a78f3f2ab3a81ec8b36b243bfea8b297c4649086aff021f1456c9",
+          "review_note": "Separately reviewed to preserve the strongest competing frame and the evidence-bounded conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, revisions, litigation and measured consequences after the cutoff remain unresolved.",
+        "No inference is made beyond the attached source status and explicitly stated qualifications."
       ]
     }
   ],
