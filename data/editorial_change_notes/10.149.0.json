@@ -1,0 +1,124 @@
+{
+  "version": "10.149.0",
+  "base_release_version": "10.148.0",
+  "base_commit": "aa5e582365678828b722f98cc9e5b1219c2546c6",
+  "research_window": {
+    "from_utc": "2026-10-14T22:03:03Z",
+    "through_utc": "2026-10-15T03:56:52Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Exact scan from the prior accepted open-branch boundary. Two new national records and three material refreshes met the threshold; weaker, pending and duplicate leads were withheld rather than padded."
+  },
+  "publication_authorization": "The user authorizes maintenance branches, pull requests and merging after evidence, local acceptance and successful CI; repository policy still requires Phillip Linstrum's final publication acceptance before merge.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-14-008",
+      "kind": "added",
+      "summary": "GAO found stale plans, weak outcome measures and operational-guidance gaps in CBP and ICE body-camera programs; DHS accepted six recommendations and rejected automatic activation.",
+      "duplicate_review": "Distinct evidence-based program audit; no current or legacy record or recent maintenance PR covers these cross-component management findings."
+    },
+    {
+      "entry_id": "NAT-2026-10-14-009",
+      "kind": "added",
+      "summary": "Trump announced that the Pentagon will establish an advanced-weapons testing range in Montana; no implementation instrument was located.",
+      "duplicate_review": "No current or legacy record, normalized title, source URL or recent maintenance PR covers this announced range."
+    },
+    {
+      "entry_id": "NAT-2026-09-24-002",
+      "kind": "materially_refreshed",
+      "summary": "The taxpayer-funded-advertising restraint was extended through November 8, with discovery and a November 4 preliminary-injunction hearing scheduled.",
+      "duplicate_review": "Later litigation and compliance stage in the same advertising case; the stable record was refreshed rather than duplicated."
+    },
+    {
+      "entry_id": "NAT-2026-10-09-001",
+      "kind": "materially_refreshed",
+      "summary": "A federal court preliminarily barred ICC-sanctions enforcement against named rights-group plaintiffs for specified protected services while denying facial and universal relief.",
+      "duplicate_review": "Plaintiff-specific judicial limit on the same institution-wide sanctions action; consolidated into the stable record."
+    },
+    {
+      "entry_id": "NAT-2026-10-12-001",
+      "kind": "materially_refreshed",
+      "summary": "Independent reporting corroborated Omar's phone seizure, family subpoenas and a Minnesota grand-jury process, with no charge or public evidentiary filing.",
+      "duplicate_review": "Later investigative steps and reported objective in the same Omar investigation; consolidated into the stable record."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "gao_cbp_ice_body_cameras_oct14",
+      "document_sha256": "96826bb34e5e27a65ee41db35843a56d6d335d7a8765f1c5a454d930bbc2fc45",
+      "inspected_at": "2026-10-15T04:02:13Z",
+      "note": "Official audit text, recommendations, deployment counts and DHS response were inspected."
+    },
+    {
+      "source_id": "reuters_ice_body_cameras_oct14",
+      "document_sha256": "79f5e01a8d64f6faf0991903815b86f68e7cd358f2243c3ea97f1ed21036b0bd",
+      "inspected_at": "2026-10-15T04:02:13Z",
+      "note": "Rendered report text was inspected for independent context and the administration's deployment response; the direct site rejected the separate hash fetch."
+    },
+    {
+      "source_id": "ap_trump_rallies_live_oct14",
+      "document_sha256": "102a280616451591d161761c1d087369eeccfe0a4fab85a0e3a0787b3d44c561",
+      "inspected_at": "2026-10-15T04:02:13Z",
+      "note": "Contemporaneous event coverage was inspected for the range announcement and advertising-order extension."
+    },
+    {
+      "source_id": "ap_trump_rallies_report_oct14",
+      "document_sha256": "f6c5e32413edff8dcb822fba3fb6bb5ca7c52681efc7ff4787a607cc88edd9cd",
+      "inspected_at": "2026-10-15T04:02:13Z",
+      "note": "Separate event report was inspected to corroborate the Montana announcement without upgrading it to implementation."
+    },
+    {
+      "source_id": "ap_omar_phone_subpoenas_oct14",
+      "document_sha256": "08cc2da7c72922bd8dd6e87e30436b2f09bfed1de6a2429ee9d8fb32d7e52064",
+      "inspected_at": "2026-10-15T04:02:13Z",
+      "note": "Full report was inspected for attributed investigative steps and the prosecutor's on-record statement."
+    },
+    {
+      "source_id": "cbs_omar_subpoenas_oct14",
+      "document_sha256": "e994dfadaf9ce38a6266822a8e31347b2eda64a5ff57f9beb141eea4377c7d54",
+      "inspected_at": "2026-10-15T04:02:13Z",
+      "note": "Independent report was inspected as separate corroboration of subpoenas and investigation scope."
+    },
+    {
+      "source_id": "wsj_omar_investigation_oct14",
+      "document_sha256": "adf928f025f3d8c3bfa60511d217cb04e55c75ef97f43bd7a2f31caeade7435f",
+      "inspected_at": "2026-10-15T04:02:13Z",
+      "note": "Rendered report text was inspected for independent corroboration and the reported denaturalization objective; the direct site rejected the separate hash fetch."
+    },
+    {
+      "source_id": "sdny_dawn_icc_order_oct13",
+      "document_sha256": "7edeefa3a8e9100c8164404bd6635df84372ac23f4959e46068b70b0433e8236",
+      "inspected_at": "2026-10-15T04:02:13Z",
+      "note": "Filed opinion was inspected for merits reasoning, parties, relief and express denial of facial and universal relief."
+    },
+    {
+      "source_id": "guardian_dawn_icc_order_oct14",
+      "document_sha256": "4e26e38086c77806a159936594696ed633da0b8e6c80a50cac98ac3544b7b610",
+      "inspected_at": "2026-10-15T04:02:13Z",
+      "note": "Rendered report text was inspected for independent context and the administration response."
+    }
+  ],
+  "withheld": [
+    {
+      "title": "Possible easing of Russian shadow-fleet sanctions",
+      "reason": "Reported as under consideration by one unnamed official; no implementing record or second independent confirmation."
+    },
+    {
+      "title": "Three newer Truth Social posts",
+      "reason": "Campaign travel and a sports image were nonqualifying; the attached rally video's full motion, audio and captions remain pending."
+    },
+    {
+      "title": "Trump TV and official video-library recheck",
+      "reason": "Three October 14 items were inspected at metadata level only; no qualifying new item was located in the material reviewed."
+    },
+    {
+      "title": "D.C. National Guard appeal oral argument",
+      "reason": "No operative order changed."
+    },
+    {
+      "title": "DHS final rule ending automatic EAD extensions",
+      "reason": "Late-indexed retrospective lead outside the exact source window; preserved for dedicated review rather than padded into this release."
+    }
+  ],
+  "corrections": []
+}
