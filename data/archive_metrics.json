@@ -1,11 +1,11 @@
 {
   "schema_version": 3,
-  "editorial_checked_at": "2026-10-15 5:57 AM EDT",
-  "quality_inputs_updated_at": "2026-10-15T04:02:13Z",
-  "external_registry_checked_at": "2026-10-15T04:02:13Z",
+  "editorial_checked_at": "2026-10-15 11:59 AM EDT",
+  "quality_inputs_updated_at": "2026-10-15T16:18:00Z",
+  "external_registry_checked_at": "2026-10-15T16:18:00Z",
   "federation_last_modified_at": "2026-08-25T14:40:23Z",
   "legacy_revisions_through": "2026-10-13",
-  "release_version": "10.149.1",
+  "release_version": "10.150.0",
   "canonical_files": {
     "legacy": "data/legacy_entries.json",
     "current": "data/current_entries.json",
@@ -18,13 +18,13 @@
   },
   "canonical_sha256": {
     "legacy": "1ce7d5d6735f662bb6e17fc0ae7bbcf42ac7fab9953499ac42e3dd878890e010",
-    "current": "9875ff9dbe310a779ea49186a17ed41fd841d96b656aae23ab8b35f29368ec4a",
-    "source_ledger": "b55b066b4fd6b39da16956ba1828deb811f8a30d869a246af1c622128052a539",
+    "current": "a1abf1c33a3f5e40a8681c29185804e3ac8cdaa403946960f2ccfcac10b8685a",
+    "source_ledger": "f329c0187c40ad7daa4d10e689c6da2ed7e4b73eb1274ba869826fd8bd11b818",
     "federated": "4c2b2804949098a9b0a314b3f0ed44e74fc8ccb688ab84741922dd30fa1083f3",
     "legacy_revisions": "c773aacc26f76bd2e3d85bad9758d5085c7bb837726779be557921f84809de2d",
-    "archive_registry": "8eb7d2198cd61178b0598cd3e6ff16cddcb712dab7590d91880284d98c2c7ae9",
-    "editorial_state": "962336f12f09f613d6e654ce632777b49c087926e4c02f7b193813292061cc30",
-    "truth_social_reviews": "cfe0e62e3a76283249c4f5fb7e15cf678186f95a4dd58a7482db00009f21bb91"
+    "archive_registry": "2a0094c58e0fa88bd56f629b6bd05d4e65054bf0a3be43e9ed28cb0ab72e3e32",
+    "editorial_state": "6c52ee15dc44bbfe618ae7ded2be3297fac62b4c96f28c8e6bd4c17c7271bd1b",
+    "truth_social_reviews": "a7eb49674f703f40d2e858d0f781dba17f9cf70d1abe1bd2734a9a3dd0990bd8"
   },
   "totals": {
     "canonical_legacy_rows": 4742,
@@ -35,9 +35,9 @@
     "full_archive_runtime_entries": 5122,
     "current_layer_entries": 395,
     "legacy_source_references": 6716,
-    "current_source_references": 1206,
-    "full_archive_runtime_source_references": 7914,
-    "full_archive_runtime_unique_urls": 6516
+    "current_source_references": 1212,
+    "full_archive_runtime_source_references": 7920,
+    "full_archive_runtime_unique_urls": 6522
   },
   "coverage": {
     "legacy_last_date": "2026-08-01",
@@ -423,15 +423,15 @@
     "entries": 395,
     "national_entries": 391,
     "in6_entries": 4,
-    "source_references": 1206,
-    "national_source_references": 1198,
-    "source_ledger_rows": 1213,
-    "used_source_ledger_rows": 1194,
+    "source_references": 1212,
+    "national_source_references": 1204,
+    "source_ledger_rows": 1219,
+    "used_source_ledger_rows": 1200,
     "unused_source_ledger_rows": 19,
-    "entries_with_one_source": 96,
-    "entries_with_one_source_percent": 24.3,
-    "national_entries_with_one_source": 94,
-    "national_entries_with_one_source_percent": 24.0,
+    "entries_with_one_source": 95,
+    "entries_with_one_source_percent": 24.1,
+    "national_entries_with_one_source": 93,
+    "national_entries_with_one_source_percent": 23.8,
     "maybe_therefore_present": 395,
     "maybe_therefore_missing": 0,
     "review_states": {
@@ -443,11 +443,11 @@
     "most_used_publishers": [
       {
         "publisher": "Reuters",
-        "references": 353
+        "references": 356
       },
       {
         "publisher": "Associated Press",
-        "references": 207
+        "references": 208
       },
       {
         "publisher": "The White House",
@@ -459,7 +459,7 @@
       },
       {
         "publisher": "Truth Social / Donald J. Trump",
-        "references": 16
+        "references": 17
       },
       {
         "publisher": "U.S. Department of the Treasury",
@@ -474,11 +474,11 @@
         "references": 13
       },
       {
-        "publisher": "The Washington Post",
-        "references": 10
+        "publisher": "Supreme Court of the United States",
+        "references": 11
       },
       {
-        "publisher": "Supreme Court of the United States",
+        "publisher": "The Washington Post",
         "references": 10
       }
     ]
@@ -486,19 +486,19 @@
   "review_traceability": {
     "current_entries_with_content_bound_review": 272,
     "current_entries_with_prior_status_only": 123,
-    "material_development_records": 524,
+    "material_development_records": 528,
     "retained_posts": 1000,
     "retained_post_text_states": {
       "not_recorded": 146,
-      "pending": 239,
-      "reviewed": 615
+      "pending": 232,
+      "reviewed": 622
     },
     "retained_post_media_states": {
-      "not_applicable": 433,
+      "not_applicable": 429,
       "not_recorded": 19,
-      "pending": 172,
+      "pending": 170,
       "reviewed": 133,
-      "unavailable": 243
+      "unavailable": 249
     },
     "definition": "Review-receipt coverage is separate from prior canonical review-state labels. Missing inspection records do not establish that content is false or that it was reviewed. Post-state counts refer only to the retained fallback, not the upstream archive total."
   },
