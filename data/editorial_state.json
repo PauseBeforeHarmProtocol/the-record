@@ -6697,6 +6697,42 @@
       "provenance_path": "data/editorial_change_notes/10.154.0.json",
       "provenance_sha256": "0deb39f6853303f33960a1c96996d239675f9fd078c17b467c873a2fb18f492c",
       "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.155.0:NAT-2026-10-16-001",
+      "entry_id": "NAT-2026-10-16-001",
+      "as_of_utc": "2026-10-16T22:01:31Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.155.0",
+      "summary": "A divided appellate panel denied the Pawnee Nation’s challenge and affirmed EPA’s May 2025 approval. The ruling sustains Oklahoma’s administration of 26 federal environmental programs in covered Indian country, while EPA retains federal oversight.",
+      "provenance_path": "data/editorial_change_notes/10.155.0.json",
+      "provenance_sha256": "ece9c173a89bb98bf7167fa947294495a97f4fdaacbae3591416cc94aef2892f",
+      "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.155.0:NAT-2026-10-16-002",
+      "entry_id": "NAT-2026-10-16-002",
+      "as_of_utc": "2026-10-16T22:01:31Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.155.0",
+      "summary": "Reuters reviewed a summary of an internal ICAO assistance report identifying expired airport certification, emergency-planning and regulatory gaps. The presidential directive permits a review process; no direct service has resumed and U.S. safety approvals remain pending.",
+      "provenance_path": "data/editorial_change_notes/10.155.0.json",
+      "provenance_sha256": "ece9c173a89bb98bf7167fa947294495a97f4fdaacbae3591416cc94aef2892f",
+      "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.155.0:NAT-2026-10-16-003",
+      "entry_id": "NAT-2026-10-16-003",
+      "as_of_utc": "2026-10-16T22:01:31Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.155.0",
+      "summary": "The Transportation Department removed restrictions that had blocked Mexican airlines from opening new U.S. service from AIFA and AICM. The action reopens the application pathway but does not itself approve, schedule or operate a new route.",
+      "provenance_path": "data/editorial_change_notes/10.155.0.json",
+      "provenance_sha256": "ece9c173a89bb98bf7167fa947294495a97f4fdaacbae3591416cc94aef2892f",
+      "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
     }
   ],
   "reviews": [
@@ -83783,6 +83819,445 @@
         {
           "field": "maybe_therefore",
           "text_sha256": "03abd1dfd5b0383c5d05f0b0fcac48a8a3cf7f49c117a228fc358d798520ed5b",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, review, revisions and measured consequences after the cutoff remain unresolved.",
+        "No inference is made beyond the attached source status and explicitly stated qualifications."
+      ]
+    },
+    {
+      "review_id": "10.155.0:NAT-2026-10-16-001:5a80c687fda5",
+      "entry_id": "NAT-2026-10-16-001",
+      "content_sha256": "5a80c687fda5ce65bf72c98aaf5efd2a259a5bec6e83be0c187c74cc0631fd38",
+      "reviewed_at": "2026-10-16T22:05:53Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "fba00a976532b46464d9caac7efc4394b2239856f26a225fe1450300ccd150a3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca10_pawnee_zeldin_opinion_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "22250a7dcd8f3a45d8c07fbd090ef4a0f9f9e3e7ec482a4e7fcb5e410af22cfc",
+              "origin_group": "U.S. Court of Appeals for the Tenth Circuit",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_pawnee_zeldin_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "bef1c1ba89b51cc8397ed5cf172edf405942215d7cb86633e3b2f66c5de4a65f",
+              "origin_group": "Reuters",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "a9c98814f2716467a9eefeafbb589309b592ade25743b46b48d0ca414d86db77",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca10_pawnee_zeldin_opinion_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "22250a7dcd8f3a45d8c07fbd090ef4a0f9f9e3e7ec482a4e7fcb5e410af22cfc",
+              "origin_group": "U.S. Court of Appeals for the Tenth Circuit",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_pawnee_zeldin_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "bef1c1ba89b51cc8397ed5cf172edf405942215d7cb86633e3b2f66c5de4a65f",
+              "origin_group": "Reuters",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "e175f0437d0d253f798396a2c3b929c868eae87c61e5ae660c25e51466268a8f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca10_pawnee_zeldin_opinion_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "22250a7dcd8f3a45d8c07fbd090ef4a0f9f9e3e7ec482a4e7fcb5e410af22cfc",
+              "origin_group": "U.S. Court of Appeals for the Tenth Circuit",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_pawnee_zeldin_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "bef1c1ba89b51cc8397ed5cf172edf405942215d7cb86633e3b2f66c5de4a65f",
+              "origin_group": "Reuters",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "d22d3158ce2d20f34b120112b262f9236c535b4c8d7670d4f0cb33a193e41f73",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca10_pawnee_zeldin_opinion_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "22250a7dcd8f3a45d8c07fbd090ef4a0f9f9e3e7ec482a4e7fcb5e410af22cfc",
+              "origin_group": "U.S. Court of Appeals for the Tenth Circuit",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_pawnee_zeldin_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "bef1c1ba89b51cc8397ed5cf172edf405942215d7cb86633e3b2f66c5de4a65f",
+              "origin_group": "Reuters",
+              "evidence_status": "ordered"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "69deffece679f0e4c3b58fd3ae668e9ee01b80344d4fd65faa6cc53b8040582f",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "19fd0c714c9b87cee0f528b709da615758b42a0e25255f18d1fc6d28d0d36d96",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "34cead3e3ddf06f617fc08d0b2fd83f58f46256312fca30097811858cf3ccf3e",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, review, revisions and measured consequences after the cutoff remain unresolved.",
+        "No inference is made beyond the attached source status and explicitly stated qualifications."
+      ]
+    },
+    {
+      "review_id": "10.155.0:NAT-2026-10-16-002:22e469fba4c4",
+      "entry_id": "NAT-2026-10-16-002",
+      "content_sha256": "22e469fba4c4205f6007a25491efb8d80523fac70a840e6ffd952b2821f3c215",
+      "reviewed_at": "2026-10-16T22:05:53Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "ddfd14793250e8f742727f6893883ff8c8e4dc5f90cd21f638b26ac7d70539c2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_lebanon_flights_safety_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "e805b57ed4c2abd90622bd14725edfa6f5a303b420bbb24869121694ab73b462",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_lebanon_flights_directive_jul21",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "e963ef3a778079acf972f77ff8661fcd2a1e86b72c96967af63fb1345e481c51",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5f67729ac0a66ac4ad690db03070d677cc83ef16bf70664bec4d913e851d9d76",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_lebanon_flights_safety_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "e805b57ed4c2abd90622bd14725edfa6f5a303b420bbb24869121694ab73b462",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_lebanon_flights_directive_jul21",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "e963ef3a778079acf972f77ff8661fcd2a1e86b72c96967af63fb1345e481c51",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "25dccf4f38cb60c7f7be54ba82cfb98b2b7b37f731aa6ca42e9b2acae6944c17",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_lebanon_flights_safety_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "e805b57ed4c2abd90622bd14725edfa6f5a303b420bbb24869121694ab73b462",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_lebanon_flights_directive_jul21",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "e963ef3a778079acf972f77ff8661fcd2a1e86b72c96967af63fb1345e481c51",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "41395cc5a2c2858aecd93380ee3fc9e3df96228232f1c420473de33ac3e8847d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_lebanon_flights_safety_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "e805b57ed4c2abd90622bd14725edfa6f5a303b420bbb24869121694ab73b462",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_lebanon_flights_directive_jul21",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "e963ef3a778079acf972f77ff8661fcd2a1e86b72c96967af63fb1345e481c51",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "0a73524349c2baa8652a7cc599e0fd26453891c6c4c360a12c7fec68e5d6816f",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "946088aa8da7c147483c77d709f1675edebae40ca07cdb80a68ba17c6f62fc48",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "51fdb83cd07d88e22599e93141067392bd6031cfee694abaf047c6d9efa5b1a3",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, review, revisions and measured consequences after the cutoff remain unresolved.",
+        "No inference is made beyond the attached source status and explicitly stated qualifications."
+      ]
+    },
+    {
+      "review_id": "10.155.0:NAT-2026-10-16-003:4de57b461ed5",
+      "entry_id": "NAT-2026-10-16-003",
+      "content_sha256": "4de57b461ed5c0a3bb3cf1bb6ea6c0545033028bdfe3b36cb14d404c5d7d62b8",
+      "reviewed_at": "2026-10-16T22:05:53Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "2fa8c5e473815486848bcb32131faf5930320d6cd7e3805e34c125ab62899fe7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_mexico_flight_restrictions_lifted_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "14791fce3a916e766336d1ef8eb346c045eb0d83fbcaca5fb1dee0077c76bf69",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "dot_mexico_routes_restricted_oct2025",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "11d50f43ee5d60d796fea36d10d905b294d83ddf331ebac3b384252382293d6b",
+              "origin_group": "U.S. Department of Transportation",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "dot_mexico_aviation_understanding_may2026",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "6c55cdb0c414515fb964989be41144ffeb9ec5f7933a71f28f0f907440ec101d",
+              "origin_group": "U.S. Department of Transportation",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "mexico_sict_aviation_understanding_may2026",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "9e691efdf779d3b0503bbed1e6c0ded2148f45e5ec857865938a697f5d3b44cd",
+              "origin_group": "Mexico Secretariat of Infrastructure, Communications and Transport",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "7acf5117a8f0f762b453f61ac6822b77b43e7936573b557dec7dda4981ceef2a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_mexico_flight_restrictions_lifted_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "14791fce3a916e766336d1ef8eb346c045eb0d83fbcaca5fb1dee0077c76bf69",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "dot_mexico_routes_restricted_oct2025",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "11d50f43ee5d60d796fea36d10d905b294d83ddf331ebac3b384252382293d6b",
+              "origin_group": "U.S. Department of Transportation",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "dot_mexico_aviation_understanding_may2026",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "6c55cdb0c414515fb964989be41144ffeb9ec5f7933a71f28f0f907440ec101d",
+              "origin_group": "U.S. Department of Transportation",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "mexico_sict_aviation_understanding_may2026",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "9e691efdf779d3b0503bbed1e6c0ded2148f45e5ec857865938a697f5d3b44cd",
+              "origin_group": "Mexico Secretariat of Infrastructure, Communications and Transport",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "c4ad388832bedca218b8aa5514a618b7b3438d5e7c64b2f7462ca971c5f6f162",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_mexico_flight_restrictions_lifted_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "14791fce3a916e766336d1ef8eb346c045eb0d83fbcaca5fb1dee0077c76bf69",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "dot_mexico_routes_restricted_oct2025",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "11d50f43ee5d60d796fea36d10d905b294d83ddf331ebac3b384252382293d6b",
+              "origin_group": "U.S. Department of Transportation",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "dot_mexico_aviation_understanding_may2026",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "6c55cdb0c414515fb964989be41144ffeb9ec5f7933a71f28f0f907440ec101d",
+              "origin_group": "U.S. Department of Transportation",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "mexico_sict_aviation_understanding_may2026",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "9e691efdf779d3b0503bbed1e6c0ded2148f45e5ec857865938a697f5d3b44cd",
+              "origin_group": "Mexico Secretariat of Infrastructure, Communications and Transport",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "66a1f2f2d7bcbb1dbce1c451d38f7f14fe172a47a4db182a0edfbe0b3c4650e1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_mexico_flight_restrictions_lifted_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "14791fce3a916e766336d1ef8eb346c045eb0d83fbcaca5fb1dee0077c76bf69",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "dot_mexico_routes_restricted_oct2025",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "11d50f43ee5d60d796fea36d10d905b294d83ddf331ebac3b384252382293d6b",
+              "origin_group": "U.S. Department of Transportation",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "dot_mexico_aviation_understanding_may2026",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "6c55cdb0c414515fb964989be41144ffeb9ec5f7933a71f28f0f907440ec101d",
+              "origin_group": "U.S. Department of Transportation",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "mexico_sict_aviation_understanding_may2026",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.155.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T22:05:53Z",
+              "document_sha256": "9e691efdf779d3b0503bbed1e6c0ded2148f45e5ec857865938a697f5d3b44cd",
+              "origin_group": "Mexico Secretariat of Infrastructure, Communications and Transport",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "8cf105fb1e67496d76c97f2a30810352b0e0cbc07694eaafac3a8daff0f63e5a",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "5897770ebe6748773179df77c923b51bc7017326e78cc96a46e1ec40b66c01e8",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "3e6c8adc3c50259205e0f482368677757468f2e83968d50545fae3868c337765",
           "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
         }
       ],
