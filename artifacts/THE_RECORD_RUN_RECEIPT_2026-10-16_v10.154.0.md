@@ -65,7 +65,7 @@ Access gaps and recheck requirements:
 
 ## Corrections
 
-- **date not recorded** — Correction summary not recorded.
+- **2026-10-16 11:57 AM EDT** — BLS revised the preliminary August monthly PPI increase from 0.4% to 0.5%; the earlier value remains in version history.
 
 ## Verification
 
