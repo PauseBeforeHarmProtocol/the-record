@@ -6649,6 +6649,54 @@
       "provenance_path": "data/editorial_change_notes/10.153.0.json",
       "provenance_sha256": "df16138b8afb8291b60e86c44358b2991d3a3b31a103603ca6ae709b298296db",
       "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.154.0:NAT-2026-09-15-001",
+      "entry_id": "NAT-2026-09-15-001",
+      "as_of_utc": "2026-10-16T15:57:45Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.154.0",
+      "summary": "Added the October 16 FBI/CISA election-cyber alert to the stable contingency record.",
+      "provenance_path": "data/editorial_change_notes/10.154.0.json",
+      "provenance_sha256": "0deb39f6853303f33960a1c96996d239675f9fd078c17b467c873a2fb18f492c",
+      "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.154.0:NAT-2026-09-04-014",
+      "entry_id": "NAT-2026-09-04-014",
+      "as_of_utc": "2026-10-16T15:57:45Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.154.0",
+      "summary": "Updated national measles totals and recorded CDC’s announced Pennsylvania Epi-Aid deployment.",
+      "provenance_path": "data/editorial_change_notes/10.154.0.json",
+      "provenance_sha256": "0deb39f6853303f33960a1c96996d239675f9fd078c17b467c873a2fb18f492c",
+      "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.154.0:NAT-2026-09-10-006",
+      "entry_id": "NAT-2026-09-10-006",
+      "as_of_utc": "2026-10-16T15:57:45Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.154.0",
+      "summary": "Added September PPI measurements and preserved BLS’s revision of the August estimate.",
+      "provenance_path": "data/editorial_change_notes/10.154.0.json",
+      "provenance_sha256": "0deb39f6853303f33960a1c96996d239675f9fd078c17b467c873a2fb18f492c",
+      "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.154.0:NAT-2026-10-14-010",
+      "entry_id": "NAT-2026-10-14-010",
+      "as_of_utc": "2026-10-16T15:57:45Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.154.0",
+      "summary": "Recorded USDA’s announced record $3.3 billion rural-utility loan with conditional-commitment and disbursement limits.",
+      "provenance_path": "data/editorial_change_notes/10.154.0.json",
+      "provenance_sha256": "0deb39f6853303f33960a1c96996d239675f9fd078c17b467c873a2fb18f492c",
+      "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
     }
   ],
   "reviews": [
@@ -83131,7 +83179,7 @@
               "inspected_at": "2026-10-16T10:01:41Z",
               "document_sha256": "0c2cc92cba91f0fee7f1d0bb7f4e9f7f76a454c6363395ce8f585ddf5ae7f610",
               "origin_group": "U.S. Court of Appeals for the Fifth Circuit via Justia",
-          "evidence_status": "reversed"
+              "evidence_status": "reversed"
             },
             {
               "source_id": "reuters_fcc_usac_ruling_oct16",
@@ -83154,7 +83202,7 @@
               "inspected_at": "2026-10-16T10:01:41Z",
               "document_sha256": "0c2cc92cba91f0fee7f1d0bb7f4e9f7f76a454c6363395ce8f585ddf5ae7f610",
               "origin_group": "U.S. Court of Appeals for the Fifth Circuit via Justia",
-          "evidence_status": "reversed"
+              "evidence_status": "reversed"
             }
           ]
         },
@@ -83208,6 +83256,538 @@
       ],
       "unresolved_questions": [
         "Later implementation, review, appeals and measured consequences after the cutoff remain unresolved.",
+        "No inference is made beyond the attached source status and explicitly stated qualifications."
+      ]
+    },
+    {
+      "review_id": "10.154.0:NAT-2026-09-15-001:c8835bc702aa",
+      "entry_id": "NAT-2026-09-15-001",
+      "content_sha256": "c8835bc702aab1fb6acd20548c06025c8c22fdf959b48e5f012f9699eb07c953",
+      "reviewed_at": "2026-10-16T16:05:17Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "13e16c5732692b6013ee0503609d5ab7e496baf99e4ff4b442aff0b41822c801",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5c1fd948c44f4fc397f74ec70766456f35fd55524f9d2ad6b92a7e1c6236096d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "dfa486cba537cd35b767fecb69d2a4e395cd93df18c6cfc04ac346138f340181",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "b116c5b45a437276769649e93bbc9c178dce43faffdff88b124f164dc93bdaa5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "a854a85cf55de1fe381280487ae4482253f846fd3e489cfbc74a3d7eab78e4dc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "2269c3d0b22849a6ab540889cd453e102a3c05b873ad0e747f2ea28d700b4924",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_election_official_preparations_sep15",
+              "locator": "Special report lines 157–303; direct interviews, concrete local preparations, federal-action context and White House, DHS and CISA responses.",
+              "inspected_at": "2026-09-15T10:14:00Z",
+              "document_sha256": "2b2d13590f3241ca6f725b60e6470f36cb0ae95e5f19c4d3497d9abf29cd8a08",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "90f7dc0acc75549f11792e644a53f7b8675e51ef33a42cff26447faae5d6dd4b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "lulac_polling_places_amended_complaint_oct7",
+              "locator": "First amended complaint caption, paragraphs describing the challenged DHS/ICE and DOJ/FBI policies, added Voting Rights Act claim and prayer for relief.",
+              "inspected_at": "2026-10-08T03:58:50Z",
+              "document_sha256": "1396c52437f9e39e595fe9331a670d52c55e046566a5b24ea76a4d50c07b5856",
+              "origin_group": "U.S. District Court for the District of Columbia via Democracy Forward",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "democracy_forward_lulac_amended_oct7",
+              "locator": "Litigant release identifying added plaintiffs, defendants and claims; treated as party characterization, not an independent merits finding.",
+              "inspected_at": "2026-10-08T03:58:50Z",
+              "document_sha256": "59649634a1d7eabb4c868afa239e1f1bc24500290fec087899a5271e8f5a7470",
+              "origin_group": "Democracy Forward",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "f641c546318404a5a47c04fcb90c4828a41622ac336f1c5a0cd2799198aa0693",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fbi_cisa_election_cyber_alert_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "24b9f19d86cab69eb785c4cd66c24f22dc741577e271f80ff4b9b4234cee48a0",
+              "origin_group": "Federal Bureau of Investigation and Cybersecurity and Infrastructure Security Agency",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_election_cyber_alert_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "97a996d059de4bb395d26c9d1d1e727822ec1a9e00f35d12192991d225a7efcc",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "a5937b8008efe6e0a9f8cff35d455aa2be753f96cece20eebe8120707be30f69",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fbi_cisa_election_cyber_alert_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "24b9f19d86cab69eb785c4cd66c24f22dc741577e271f80ff4b9b4234cee48a0",
+              "origin_group": "Federal Bureau of Investigation and Cybersecurity and Infrastructure Security Agency",
+              "evidence_status": "announced"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "68647f6bfdc9270de8c13f0fc4635415e0db9231d6e610e553fb225d335a8e15",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "73868a9f412976298de27801e3c9972f09d6acdf0471ba4bf35d4a292540b092",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "57354a906658386f41fb3ce965597ec9db89037ada48a8fe153b192a2f42d8ee",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, review, revisions and measured consequences after the cutoff remain unresolved.",
+        "No inference is made beyond the attached source status and explicitly stated qualifications."
+      ]
+    },
+    {
+      "review_id": "10.154.0:NAT-2026-09-04-014:6b911d101710",
+      "entry_id": "NAT-2026-09-04-014",
+      "content_sha256": "6b911d101710f6a7a30fd1845d4942a25936ef1b9012c472d9e81fc21e5ed89c",
+      "reviewed_at": "2026-10-16T16:05:17Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "d74f608e89180e58335565832d887dcfa763e84528505888ddc30d24e51d699a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_measles_cases_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "5d3b663600c2e961f07fbbf0199ef6a8e490bcdb1a7545d57f8c7119df82f120",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "72f5e2e74beb478f191b8093fcadf888ae72218739184421f94ccc620e0b4eb5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cdc_measles_cases_sep4",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "f97f45e73bea2273dbd692170ca69cc5bc6382890f8e29d1fe578765ead7dcab",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_measles_cases_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "5d3b663600c2e961f07fbbf0199ef6a8e490bcdb1a7545d57f8c7119df82f120",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "1512a2d405344296fb549677b3b6c958c0e1112e23e963b9005b8952100a3c32",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_cdc_measles_support_oct13",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "c2f7975b5c235033016624e269821521f42b16640c6c3c3e52c8eeda9e4e0f1b",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "40e7d671b35ee1d6a81ae33f3fab757838207909f7df73b133a1ad28c3b6ee8c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_measles_cases_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "5d3b663600c2e961f07fbbf0199ef6a8e490bcdb1a7545d57f8c7119df82f120",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "e77776361398caa75ecbff991d5d0df983e4a2730278da5a6f5470a1452f3866",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cdc_measles_cases_sep4",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "f97f45e73bea2273dbd692170ca69cc5bc6382890f8e29d1fe578765ead7dcab",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "fb27ad283471546029b094183d1cadd395b2032e652373201b0d0d597e63a06c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_cdc_measles_support_oct13",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "c2f7975b5c235033016624e269821521f42b16640c6c3c3e52c8eeda9e4e0f1b",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "cdc_measles_cases_sep4",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "f97f45e73bea2273dbd692170ca69cc5bc6382890f8e29d1fe578765ead7dcab",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "measured"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "915f5a9cbe80c627750d08fd0197e27f44087f98b230726c44852812b372a5fa",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "4dbfe735e38de6b672708fabbcffa10d63f1e9d1f6a46dda024eb4fec95e7c7c",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "08129ab24fca70877de68e2fe00ef5fecf702d8a6476e8eedab28333ea08ec5b",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, review, revisions and measured consequences after the cutoff remain unresolved.",
+        "No inference is made beyond the attached source status and explicitly stated qualifications."
+      ]
+    },
+    {
+      "review_id": "10.154.0:NAT-2026-09-10-006:a5e551c15fcb",
+      "entry_id": "NAT-2026-09-10-006",
+      "content_sha256": "a5e551c15fcb161e504868c25a939f1fe08fa33af83597c55f3c00e7262aa1bb",
+      "reviewed_at": "2026-10-16T16:05:17Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "22f62b1b7c06bc6c6502d5b49bb6a0183097699585c1cf79e7bcf05dd7a347d9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_ppi_aug2026",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "e60074a04e924d3fae1faecc32587f9399b0ee8addbfbd83d3aa410bf944c596",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_ppi_sep2026_oct15",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "e51ef84e4766e772ea92619ab1afe6999dc61e5526dfeee958813a0ca11eb847",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "b6068f649cfaeffa5dedd474963c0d7fa4dc93a7887fe098e5099d2566110522",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_ppi_aug2026",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "e60074a04e924d3fae1faecc32587f9399b0ee8addbfbd83d3aa410bf944c596",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "38b4617fee51e578f77df1ed634ba7a749e524470da2157482512b77c3c33616",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_ppi_aug2026",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "e60074a04e924d3fae1faecc32587f9399b0ee8addbfbd83d3aa410bf944c596",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "3d8320ec0a6777ea28df26ee4e2e2750b14f3744acaae6c85a4e6b14ebc8feb2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_ppi_aug2026",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "e60074a04e924d3fae1faecc32587f9399b0ee8addbfbd83d3aa410bf944c596",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "2ae592174d0e1663076c5e522086de79d25c857e5466ee5b9dac00430dd6beaa",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ppi_sep2026_oct15",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "e51ef84e4766e772ea92619ab1afe6999dc61e5526dfeee958813a0ca11eb847",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "08d896b498af49c9da5204c71ac7748806fd3f1c4cf6027d476b0d123a9af445",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "f22c045d51eec6812687b760d8e65319a7fff5277607998952cc1eee34353b27",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "616e395fdfda24c01daefe07d382ef0c7a4b75978c785b6ef8216ff10fe01dc2",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, review, revisions and measured consequences after the cutoff remain unresolved.",
+        "No inference is made beyond the attached source status and explicitly stated qualifications."
+      ]
+    },
+    {
+      "review_id": "10.154.0:NAT-2026-10-14-010:404126bc994a",
+      "entry_id": "NAT-2026-10-14-010",
+      "content_sha256": "404126bc994a663557490000896bc4346d2a45ca2d3492ee231ddf2b4b52c90c",
+      "reviewed_at": "2026-10-16T16:05:17Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "3e7ed043e432fbf1ed9a1c571e2f2244a7ecb805077d1a6650be453e59099ebc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "usda_oglethorpe_loan_oct14",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "8775607e9647b5bf79169272b83da453a50833622434cf5089cc8731878efbfa",
+              "origin_group": "U.S. Department of Agriculture",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "b16690503f95f43cd3844de74598c4d38621ad96be8a3fd22007d42b412e0e8f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "usda_oglethorpe_loan_oct14",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "8775607e9647b5bf79169272b83da453a50833622434cf5089cc8731878efbfa",
+              "origin_group": "U.S. Department of Agriculture",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "42edb9a6c19ad4bee4703f2e86b7460f01ee5e891e80b6340b8e76557fc29929",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "oglethorpe_sec_investor_briefing_q2_2026",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "89e17a933cd760c2902bcfe1a96c8bab62f52bd4eedeafe0b4a7f48fe99878c9",
+              "origin_group": "Oglethorpe Power Corporation / U.S. Securities and Exchange Commission",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "cc651b2d9e8303afb4c83aeb1dba6fc253e1b4f0ba5a4e7fab74d7b815a67a2d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_oglethorpe_loan_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.154.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T16:05:17Z",
+              "document_sha256": "fd249bf0481475373a4c8c55fedefdfbda27c943d5e33b23e95577c302966196",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "325a46ff1fca079882bda2e0191c00367d4a21aa6ca0d6421bfda49b3132144f",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "87fbf503a4296675e1eeeec34538394629a947da88a9794505aec8602980a4ca",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "03abd1dfd5b0383c5d05f0b0fcac48a8a3cf7f49c117a228fc358d798520ed5b",
+          "review_note": "Separately reviewed to preserve the strongest administration or institutional response, precise procedural status and evidence-bounded outcome test without converting announcements, reports or measurements into completed outcomes."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, review, revisions and measured consequences after the cutoff remain unresolved.",
         "No inference is made beyond the attached source status and explicitly stated qualifications."
       ]
     }
