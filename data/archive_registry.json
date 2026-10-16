@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "status": "active_registry",
-  "checked_at": "2026-10-16T16:05:17Z",
+  "checked_at": "2026-10-16T22:05:53Z",
   "registry_purpose": "Describe independent Trump-related archives as a federated research network without pretending that unlike record units are interchangeable or additive.",
   "invariants": [
     "An upstream archive is a discovery and corroboration source, not an automatic authority for The Record.",
@@ -115,11 +115,11 @@
         {
           "metric_id": "trump_archive.total_items",
           "as_reported_label": "total items",
-          "value": 14839,
+          "value": 14845,
           "unit": "public_statement_or_document_item",
           "scope": "all items displayed in the archive monthly index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-10-16T16:05:17Z",
+          "observed_at": "2026-10-16T22:05:53Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null,
           "note": "Verified against the primary archive index; upstream units remain distinct and no record is auto-imported."
@@ -127,11 +127,11 @@
         {
           "metric_id": "trump_archive.truth_social_posts",
           "as_reported_label": "Truth Social posts",
-          "value": 12265,
+          "value": 12271,
           "unit": "truth_social_post",
           "scope": "Truth Social posts within the archive index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-10-16T16:05:17Z",
+          "observed_at": "2026-10-16T22:05:53Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null,
           "note": "Verified against the primary archive index; upstream units remain distinct and no record is auto-imported."
@@ -143,7 +143,7 @@
           "unit": "speech_or_transcript",
           "scope": "speeches and transcripts within the archive index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-10-16T16:05:17Z",
+          "observed_at": "2026-10-16T22:05:53Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null,
           "note": "Verified against the primary archive index; upstream units remain distinct and no record is auto-imported."
@@ -192,12 +192,12 @@
         "content_import_permission_state": "license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-10-16T16:05:17Z",
+        "checked_at": "2026-10-16T22:05:53Z",
         "state": "verified",
         "verification_pages": [
           "https://trump-archive.com/archive"
         ],
-        "note": "Primary monthly index displayed 14,839 total items, 12,265 Truth Social posts and 1,924 speeches/transcripts. Distinct upstream units were preserved and no item was automatically imported."
+        "note": "Primary index displayed 14,845 total items, 12,271 Truth Social posts and 1,924 speeches/transcripts. Distinct units were preserved; no item was imported."
       },
       "check_history": [
         {
@@ -455,6 +455,14 @@
             "https://trump-archive.com/archive"
           ],
           "note": "Primary monthly index displayed 14,839 total items, 12,265 Truth Social posts and 1,924 speeches/transcripts. Distinct upstream units were preserved and no item was automatically imported."
+        },
+        {
+          "checked_at": "2026-10-16T22:05:53Z",
+          "state": "verified",
+          "verification_pages": [
+            "https://trump-archive.com/archive"
+          ],
+          "note": "Primary index displayed 14,845 total items, 12,271 Truth Social posts and 1,924 speeches/transcripts. Distinct units were preserved; no item was imported."
         }
       ],
       "measurement_history": [
@@ -1137,6 +1145,42 @@
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null,
           "note": "Verified against the primary archive index; upstream units remain distinct and no record is auto-imported."
+        },
+        {
+          "metric_id": "trump_archive.total_items",
+          "as_reported_label": "total items",
+          "value": 14845,
+          "unit": "public_statement_or_document_item",
+          "scope": "all items displayed in the archive monthly index",
+          "comparability_group": "raw_public_expression",
+          "observed_at": "2026-10-16T22:05:53Z",
+          "source_url": "https://trump-archive.com/archive",
+          "upstream_display_date": null,
+          "note": "Verified against the primary archive index; upstream units remain distinct and no record is auto-imported."
+        },
+        {
+          "metric_id": "trump_archive.truth_social_posts",
+          "as_reported_label": "Truth Social posts",
+          "value": 12271,
+          "unit": "truth_social_post",
+          "scope": "Truth Social posts within the archive index",
+          "comparability_group": "raw_public_expression",
+          "observed_at": "2026-10-16T22:05:53Z",
+          "source_url": "https://trump-archive.com/archive",
+          "upstream_display_date": null,
+          "note": "Verified against the primary archive index; upstream units remain distinct and no record is auto-imported."
+        },
+        {
+          "metric_id": "trump_archive.speeches_transcripts",
+          "as_reported_label": "speeches & transcripts",
+          "value": 1924,
+          "unit": "speech_or_transcript",
+          "scope": "speeches and transcripts within the archive index",
+          "comparability_group": "raw_public_expression",
+          "observed_at": "2026-10-16T22:05:53Z",
+          "source_url": "https://trump-archive.com/archive",
+          "upstream_display_date": null,
+          "note": "Verified against the primary archive index; upstream units remain distinct and no record is auto-imported."
         }
       ]
     },
@@ -1326,12 +1370,12 @@
         "content_import_permission_state": "bulk_permission_or_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-10-16T16:05:17Z",
-        "state": "verified_unchanged",
+        "checked_at": "2026-10-16T22:05:53Z",
+        "state": "verified",
         "verification_pages": [
           "https://www.undotrump.com/"
         ],
-        "note": "Primary homepage was accessible and displayed 1,264 actions tracked, 995 still active, 44 in the courts and 42 restored. Existing unit-specific measurements were unchanged and no item was imported."
+        "note": "Primary page remained at 1,264 actions tracked, 995 active, 44 in court and 42 restored; no item was imported."
       },
       "check_history": [
         {
@@ -1581,6 +1625,14 @@
             "https://www.undotrump.com/"
           ],
           "note": "Primary homepage was accessible and displayed 1,264 actions tracked, 995 still active, 44 in the courts and 42 restored. Existing unit-specific measurements were unchanged and no item was imported."
+        },
+        {
+          "checked_at": "2026-10-16T22:05:53Z",
+          "state": "verified",
+          "verification_pages": [
+            "https://www.undotrump.com/"
+          ],
+          "note": "Primary page remained at 1,264 actions tracked, 995 active, 44 in court and 42 restored; no item was imported."
         }
       ],
       "measurement_history": [
@@ -1754,12 +1806,12 @@
         "content_import_permission_state": "permission_or_documented_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-10-16T16:05:17Z",
-        "state": "verified_unchanged",
+        "checked_at": "2026-10-16T22:05:53Z",
+        "state": "verified",
         "verification_pages": [
           "https://immpolicytracking.org/policies/"
         ],
-        "note": "Primary policies page remained at 1,817 policy actions. Distinct domain units were preserved and no item was automatically imported."
+        "note": "Primary policy browser remained at 1,817 policy actions; domain-specific units remain separate and no item was imported."
       },
       "check_history": [
         {
@@ -2015,6 +2067,14 @@
             "https://immpolicytracking.org/policies/"
           ],
           "note": "Primary policies page remained at 1,817 policy actions. Distinct domain units were preserved and no item was automatically imported."
+        },
+        {
+          "checked_at": "2026-10-16T22:05:53Z",
+          "state": "verified",
+          "verification_pages": [
+            "https://immpolicytracking.org/policies/"
+          ],
+          "note": "Primary policy browser remained at 1,817 policy actions; domain-specific units remain separate and no item was imported."
         }
       ],
       "measurement_history": [
@@ -2319,12 +2379,12 @@
         "content_import_permission_state": "metadata_and_citation_allowed_full_content_license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-10-16T16:05:17Z",
-        "state": "source_inconsistency_and_api_access_gap",
+        "checked_at": "2026-10-16T22:05:53Z",
+        "state": "verified",
         "verification_pages": [
           "https://record47.org/"
         ],
-        "note": "Homepage remained at 6,348 social posts, 3,539 primary sources, 332 contradictions and 38 sequences. Top-line entry and total-record values did not render, so preserved October 6 API measurements were not overwritten."
+        "note": "Homepage remained at 6,348 social posts, 3,539 primary sources, 332 contradictions and 38 sequences; the older homepage/API inconsistency remains unresolved and no item was imported."
       },
       "check_history": [
         {
@@ -2614,6 +2674,14 @@
             "https://record47.org/"
           ],
           "note": "Homepage remained at 6,348 social posts, 3,539 primary sources, 332 contradictions and 38 sequences. Top-line entry and total-record values did not render, so preserved October 6 API measurements were not overwritten."
+        },
+        {
+          "checked_at": "2026-10-16T22:05:53Z",
+          "state": "verified",
+          "verification_pages": [
+            "https://record47.org/"
+          ],
+          "note": "Homepage remained at 6,348 social posts, 3,539 primary sources, 332 contradictions and 38 sequences; the older homepage/API inconsistency remains unresolved and no item was imported."
         }
       ],
       "measurement_history": [
