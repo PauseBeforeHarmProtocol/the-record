@@ -1,0 +1,81 @@
+{
+  "version": "10.159.0",
+  "base_release_version": "10.158.0",
+  "base_commit": "37bdd8ece44e810b150848ad2356918038897042",
+  "research_window": {
+    "from_utc": "2026-10-18T16:02:56Z",
+    "through_utc": "2026-10-18T21:58:41Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary. One existing sanctions record was materially refreshed with the president's new explanation; no parallel Russia record was created."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository's final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-16-004",
+      "kind": "refreshed",
+      "summary": "Adds Trump's negotiation, Iran and diesel-market explanation for delaying further Russia sanctions action while preserving the active waiver and unresolved outcomes.",
+      "duplicate_review": "Consolidated into the stable Graham Act enactment, waiver and review lifecycle rather than counted as a parallel Russia event."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "truthsocial_trump_russia_waiver_rationale_oct18",
+      "origin_group": "Truth Social / Donald J. Trump",
+      "evidence_extract": "Trump said he was withholding further Russia action to avoid driving Moscow from negotiations; cited unspecified current hostage negotiations and Russia's limited assistance to Iran; blamed Ukrainian refinery attacks for pressure on global diesel supplies; and referred ambiguously to signing 'that document.'",
+      "document_sha256": "114e98e632a14d312f3f085660d3fd0e6b6f4d7511a386a54663ef60e2c2fc2b",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-18T22:03:00Z"
+    },
+    {
+      "source_id": "ap_russia_ukraine_drones_sanctions_oct18",
+      "origin_group": "Associated Press",
+      "evidence_extract": "Associated Press reported Trump's October 18 statement that he was delaying further Russia sanctions action while documenting Ukrainian drone attacks on Russian oil infrastructure and Russian attacks on Ukrainian energy infrastructure; the report did not independently establish the post's diplomatic or causal claims.",
+      "document_sha256": "bc8fb1fcbd81fdb76809c3f510abf065f26716b54262ca999c2cbc172780d8cf",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-18T22:03:00Z"
+    }
+  ],
+  "truth_social_media_inspection": {
+    "post_ids": [
+      "117464066672004379",
+      "117464065930232379",
+      "117463828588421761",
+      "117463320034402295",
+      "117463319181671522",
+      "117463131182046538"
+    ],
+    "scope": "All six new post texts and two attached still images were inspected. Representative frames from three videos were inspected, but complete motion, audio and captions were not reviewed; those media remain unavailable for completed audiovisual review.",
+    "provenance": "data/truth_social_feed_meta.json, data/truth_social_seed.json and data/truth_social_reviews.json"
+  },
+  "trump_tv_inspection": {
+    "sources": [
+      "https://www.whitehouse.gov/trumptv/",
+      "https://www.whitehouse.gov/live/",
+      "https://www.whitehouse.gov/videos/",
+      "https://www.whitehouse.gov/remarks/",
+      "https://www.whitehouse.gov/releases/"
+    ],
+    "scope": "Official page metadata and stable links only; audiovisual content, captions and complete transcripts were not retrieved.",
+    "finding": "Stream ID remained A4gNgHfZ-v4. No October 18 library item was listed; the October 17 clips and replay remained the newest metadata. No qualifying new item was located in the material reviewed."
+  },
+  "withheld": [
+    {
+      "title": "Palm Beach motorcade posts",
+      "reason": "Routine travel and campaign-style imagery did not establish a qualifying federal action; complete audiovisual review remained unavailable."
+    },
+    {
+      "title": "Netanyahu thank-you image and endorsement video",
+      "reason": "The material repeated thanks, an endorsement and an Iran warning but established no new U.S. implementing action; complete audiovisual review remained unavailable."
+    },
+    {
+      "title": "CNN/SRS polling clip",
+      "reason": "Polling and promotional content did not establish a government action; complete audiovisual review remained unavailable."
+    },
+    {
+      "title": "Unverified claims inside the Russia sanctions explanation",
+      "reason": "The post establishes Trump's explanation only; claimed diplomatic progress, hostage negotiations, Russian restraint toward Iran and diesel-market causation were not independently established."
+    }
+  ],
+  "corrections": []
+}
