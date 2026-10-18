@@ -6841,6 +6841,18 @@
       "provenance_path": "data/editorial_change_notes/10.158.0.json",
       "provenance_sha256": "0a7cd61f0e96a5b086d73e58160133e7f29418f6bf7b24401618517a6022637f",
       "note": "New operational record with attributed evidence status, separate reasoning-layer review and unresolved U.S. confirmation."
+    },
+    {
+      "change_id": "10.159.0:NAT-2026-09-16-004",
+      "entry_id": "NAT-2026-09-16-004",
+      "as_of_utc": "2026-10-18T21:58:41Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.159.0",
+      "summary": "Adds Trump's negotiation, Iran and diesel-market explanation for delaying further Russia sanctions action while preserving the active waiver and unresolved outcomes.",
+      "provenance_path": "data/editorial_change_notes/10.159.0.json",
+      "provenance_sha256": "4cf791abacb381141ac5fd696bcaf97ff5e88b7f45256754d60341158fc82b3f",
+      "note": "Stable Graham Act record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
     }
   ],
   "reviews": [
@@ -87406,6 +87418,114 @@
         "Whether a U.S. official ordered or confirmed a change",
         "Whether Starshield restrictions were part of the same episode",
         "Whether warning performance was fully restored"
+      ]
+    },
+    {
+      "review_id": "10.159.0:NAT-2026-09-16-004:97492a582beb",
+      "entry_id": "NAT-2026-09-16-004",
+      "content_sha256": "97492a582bebc1232b0d831c5bf637a59670690f9216e71f9fe77d475e056dbd",
+      "reviewed_at": "2026-10-18T22:03:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "d197665f30278d1c64c543968bd8582243c5553606000ff7255cbdff13a56dec",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id": "reuters_russia_house_final_sep16", "locator": "Previously inspected complete report for the House vote and stated limitations.", "inspected_at": "2026-09-18T22:36:00Z", "document_sha256": "1b685a95b082687427d39b242996e56b4916e4707e16018fb96e9c3f40a652a3", "origin_group": "Reuters", "evidence_status": "implemented"}]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "0620e170d4815e87b3d61ee15bf4ffce02bf0d0ec4069763e40a28b8783c42e6",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id": "house_rules_hr5334_sep16", "locator": "Previously inspected House Rules record for the measure and floor procedure.", "inspected_at": "2026-09-18T22:36:00Z", "document_sha256": "d94a75a78d42cf2bbff4122fda88e3747a9f5bed1a8d087be16735ac1c5de9af", "origin_group": "U.S. House Committee on Rules", "evidence_status": "implemented"}]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "619af5dd04496b8f2a7587f95d013ed1789f817e41d56108c43bd66fa5a2d498",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id": "ap_russia_sanctions_signed_sep18", "locator": "Previously inspected report for the House and Senate votes.", "inspected_at": "2026-09-18T22:36:00Z", "document_sha256": "cc3f2b5e512e669dd900b33d1a3da78420c02d6538abe3827c268370cf508989", "origin_group": "Associated Press", "evidence_status": "implemented"}, {"source_id": "house_rules_hr5334_sep16", "locator": "Previously inspected House Rules record for the final House action.", "inspected_at": "2026-09-18T22:36:00Z", "document_sha256": "d94a75a78d42cf2bbff4122fda88e3747a9f5bed1a8d087be16735ac1c5de9af", "origin_group": "U.S. House Committee on Rules", "evidence_status": "implemented"}]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "243859a6bbe9b8b7dfb6748e9a1176bead602928e8eade0f00e63a07bf8a3547",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id": "ap_russia_sanctions_signed_sep18", "locator": "Previously inspected report for signature and statutory scope.", "inspected_at": "2026-09-18T22:36:00Z", "document_sha256": "cc3f2b5e512e669dd900b33d1a3da78420c02d6538abe3827c268370cf508989", "origin_group": "Associated Press", "evidence_status": "implemented"}]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "d051cfb5153e16e9df197e7c500efb179a099968a1160272a7daede0a3b4907f",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id": "ap_russia_sanctions_signed_sep18", "locator": "Previously inspected report for enacted status and limits on inferred implementation.", "inspected_at": "2026-09-18T22:36:00Z", "document_sha256": "cc3f2b5e512e669dd900b33d1a3da78420c02d6538abe3827c268370cf508989", "origin_group": "Associated Press", "evidence_status": "implemented"}]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "67ef8babf5fb3f22c8cd7a28ebcc7ec31553d493a4cc777dfc0cbab8000d88c8",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id": "whitehouse_graham_act_implementation_oct16", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.", "inspected_at": "2026-10-17T04:02:36Z", "document_sha256": "6dab186a5bf90ab64acd81661a60bb57ec039c736e3c0428677666cf4431fbc5", "origin_group": "The White House", "evidence_status": "ordered"}, {"source_id": "reuters_graham_act_waivers_oct17", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.", "inspected_at": "2026-10-17T04:02:36Z", "document_sha256": "96e7b9e3900d94317ca1d553b8a5f97343dfe42120a4637b983e319344f7e0a4", "origin_group": "Reuters", "evidence_status": "reported"}]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "d6191c052179f7dd9c61e9d4bd9d519e46fa71b97b543ebda9dea48952591968",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id": "whitehouse_graham_act_implementation_oct16", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.", "inspected_at": "2026-10-17T04:02:36Z", "document_sha256": "6dab186a5bf90ab64acd81661a60bb57ec039c736e3c0428677666cf4431fbc5", "origin_group": "The White House", "evidence_status": "ordered"}, {"source_id": "reuters_graham_act_waivers_oct17", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.", "inspected_at": "2026-10-17T04:02:36Z", "document_sha256": "96e7b9e3900d94317ca1d553b8a5f97343dfe42120a4637b983e319344f7e0a4", "origin_group": "Reuters", "evidence_status": "reported"}]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "9b18f789cc86a322688c06242908a0e1d29622e24bf9ed0d1b52a716bbb8e5a3",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id": "whitehouse_graham_act_implementation_oct16", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.", "inspected_at": "2026-10-17T04:02:36Z", "document_sha256": "6dab186a5bf90ab64acd81661a60bb57ec039c736e3c0428677666cf4431fbc5", "origin_group": "The White House", "evidence_status": "ordered"}, {"source_id": "reuters_graham_act_waivers_oct17", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.", "inspected_at": "2026-10-17T04:02:36Z", "document_sha256": "96e7b9e3900d94317ca1d553b8a5f97343dfe42120a4637b983e319344f7e0a4", "origin_group": "Reuters", "evidence_status": "reported"}]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "b2a532434d75c3d18659f6e77b6654f972e04f68118fe8e32c1a55428c1d1ebe",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id": "whitehouse_graham_act_implementation_oct16", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.", "inspected_at": "2026-10-17T04:02:36Z", "document_sha256": "6dab186a5bf90ab64acd81661a60bb57ec039c736e3c0428677666cf4431fbc5", "origin_group": "The White House", "evidence_status": "ordered"}, {"source_id": "reuters_graham_act_waivers_oct17", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.", "inspected_at": "2026-10-17T04:02:36Z", "document_sha256": "96e7b9e3900d94317ca1d553b8a5f97343dfe42120a4637b983e319344f7e0a4", "origin_group": "Reuters", "evidence_status": "reported"}]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "8e139acc7cd0cadb2d669439d42486042c14083524fb7229797adaaca73cfeaf",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id": "reuters_graham_review_60_days_oct18", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.157.0.json.", "inspected_at": "2026-10-18T04:01:39Z", "document_sha256": "b96f501b482e3fa2f84ea99aed8f7b6bc4531dfa6ab20afa1f0dfa2d38391b5a", "origin_group": "Reuters", "evidence_status": "announced"}]
+        },
+        {
+          "fact_index": 10,
+          "fact_sha256": "32750d5b151efb9a07c6cb81315e39e4edd67fcc05f029558a95b2cb283a54e8",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id": "reuters_graham_review_60_days_oct18", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.157.0.json.", "inspected_at": "2026-10-18T04:01:39Z", "document_sha256": "b96f501b482e3fa2f84ea99aed8f7b6bc4531dfa6ab20afa1f0dfa2d38391b5a", "origin_group": "Reuters", "evidence_status": "reported"}]
+        },
+        {
+          "fact_index": 11,
+          "fact_sha256": "b4106831d9704c122a94a31bf0b24e881eabb40c03d0098b381c698430312280",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id": "truthsocial_trump_russia_waiver_rationale_oct18", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.159.0.json; publication and claim limits preserved.", "inspected_at": "2026-10-18T22:03:00Z", "document_sha256": "114e98e632a14d312f3f085660d3fd0e6b6f4d7511a386a54663ef60e2c2fc2b", "origin_group": "Truth Social / Donald J. Trump", "evidence_status": "publication_only"}, {"source_id": "ap_russia_ukraine_drones_sanctions_oct18", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.159.0.json; independent reporting does not verify the post's embedded claims.", "inspected_at": "2026-10-18T22:03:00Z", "document_sha256": "bc8fb1fcbd81fdb76809c3f510abf065f26716b54262ca999c2cbc172780d8cf", "origin_group": "Associated Press", "evidence_status": "reported"}]
+        },
+        {
+          "fact_index": 12,
+          "fact_sha256": "b981c08d9a7c6d1bb13719103b7fbdb31a9b6fc473a0cc347a0235f0ff4963b7",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id": "truthsocial_trump_russia_waiver_rationale_oct18", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.159.0.json; ambiguous document reference preserved rather than inferred.", "inspected_at": "2026-10-18T22:03:00Z", "document_sha256": "114e98e632a14d312f3f085660d3fd0e6b6f4d7511a386a54663ef60e2c2fc2b", "origin_group": "Truth Social / Donald J. Trump", "evidence_status": "publication_only"}]
+        },
+        {
+          "fact_index": 13,
+          "fact_sha256": "1153950a828678bbce8b9b1c6e96410be7e40af4909e661fa8c38035342adc04",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id": "ap_russia_ukraine_drones_sanctions_oct18", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.159.0.json; battlefield context separated from causal claims.", "inspected_at": "2026-10-18T22:03:00Z", "document_sha256": "bc8fb1fcbd81fdb76809c3f510abf065f26716b54262ca999c2cbc172780d8cf", "origin_group": "Associated Press", "evidence_status": "reported"}]
+        }
+      ],
+      "reasoning_review": [
+        {"field": "significance", "text_sha256": "b032c58c83960e937a9e4918a2cfba9e41822b6e343650621c6534cf8829bbdb", "review_note": "Separates the newly stated presidential rationales from any new legal step or verified diplomatic outcome."},
+        {"field": "goalpost", "text_sha256": "f055f46daa8f7224118dae22dd27c56aa498860d0044d82a4b01c120d146dc1c", "review_note": "Preserves the administration's strongest explanation and identifies observable legal, diplomatic, market and conduct tests."},
+        {"field": "maybe_therefore", "text_sha256": "ec26e9ab767dc5b1c32f93513678f7c80f2a5ed6c953a23f7f9845de1f87f9c4", "review_note": "States both leverage and concession interpretations while limiting the conclusion to the implemented waiver and announced explanation."}
+      ],
+      "unresolved_questions": [
+        "What document Trump meant by 'that document'",
+        "Whether an identifiable hostage negotiation or broader peace process produces verifiable terms",
+        "Whether Russia's assistance to Iran changes",
+        "Whether the administration discloses its review and alters the waiver",
+        "Whether claimed diesel-market effects can be measured and attributed"
       ]
     }
   ],
