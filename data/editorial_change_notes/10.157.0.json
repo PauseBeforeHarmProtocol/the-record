@@ -1,0 +1,88 @@
+{
+  "version": "10.157.0",
+  "base_release_version": "10.156.2",
+  "base_commit": "79a7d4f9768061a2d356a4917975af41533cfbc6",
+  "research_window": {
+    "from_utc": "2026-10-17T21:55:32Z",
+    "through_utc": "2026-10-18T03:56:23Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary. Two within-window developments materially refreshed existing sanctions and Iran-war records; no parallel record was created."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository's final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-16-004",
+      "kind": "refreshed",
+      "summary": "Adds the announced up-to-60-day economic-impact review and unresolved final decision following the Graham Act waiver.",
+      "duplicate_review": "Consolidated into the stable enactment, waiver and review lifecycle."
+    },
+    {
+      "entry_id": "NAT-2026-08-17-001",
+      "kind": "refreshed",
+      "summary": "Adds Vance's acknowledgment of a major troop-location mistake after the Kuwait drone deaths and his claim that protective locations and tactics changed.",
+      "duplicate_review": "Consolidated into the stable Iran/Hormuz campaign record rather than split into a parallel casualty or accountability record."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "reuters_graham_review_60_days_oct18",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported that Rubio said Trump would use up to 60 days to assess the global and U.S. economic effects of waived Russia-related sanctions and tariffs, while Trump said a final decision had not been announced.",
+      "document_sha256": "b96f501b482e3fa2f84ea99aed8f7b6bc4531dfa6ab20afa1f0dfa2d38391b5a",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-18T04:01:39Z"
+    },
+    {
+      "source_id": "ap_vance_town_hall_iran_oct18",
+      "origin_group": "Associated Press",
+      "evidence_extract": "AP reported the Amor town-hall question, Vance's statement that he had not previously heard the specific account, his acknowledgment of troop-location mistakes, and his claim that locations and tactics were changed.",
+      "document_sha256": "ad604d427fe8583d6cb4e1539dc4126f0fa1df700cd245a7cb4e304b460c8def",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-18T04:01:39Z"
+    },
+    {
+      "source_id": "cbs_vance_kuwait_failures_oct17",
+      "origin_group": "CBS News",
+      "evidence_extract": "CBS recorded that Joey Amor pressed Vance about the Kuwait drone strike that killed six soldiers, and that Vance acknowledged a huge mistake in troop locations and asserted changes intended to improve drone suppression and protection.",
+      "document_sha256": "160a02c03177f3ee6a8cde5847653251d53c381e8baf41d042979cc163880793",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-18T04:01:39Z"
+    }
+  ],
+  "truth_social_media_inspection": {
+    "post_ids": [],
+    "scope": "No post was newer than the prior validated snapshot; engagement-only changes were retained without treating claims inside posts as independently verified.",
+    "provenance": "data/truth_social_feed_meta.json and data/truth_social_seed.json"
+  },
+  "trump_tv_inspection": {
+    "sources": [
+      "https://www.whitehouse.gov/trumptv/",
+      "https://www.whitehouse.gov/live/",
+      "https://www.whitehouse.gov/videos/",
+      "https://www.whitehouse.gov/remarks/",
+      "https://www.whitehouse.gov/releases/"
+    ],
+    "scope": "Official page metadata and stable links only; audiovisual content, captions and complete transcripts were not retrieved.",
+    "finding": "Stream ID remained A4gNgHfZ-v4. Two short October 17 clips were newly listed; one was an edited/reposted October 15 event and neither supplied a qualifying new item in the material reviewed."
+  },
+  "withheld": [
+    {
+      "title": "Rubio request for an Israeli crackdown on West Bank settler violence",
+      "reason": "The statement and State Department inquiry were material diplomatic responses but no formal directive, sanction, aid condition, investigation result or implemented U.S. policy change was identified by cutoff."
+    },
+    {
+      "title": "Vance statements about ICE investigation, training and discipline",
+      "reason": "The town-hall answer did not identify cases, findings, personnel actions or documents sufficient to verify a concrete investigation or disciplinary outcome."
+    },
+    {
+      "title": "Campaign and White House staff-friction reporting",
+      "reason": "The reporting concerned campaign operations and internal personnel complaints, relied materially on unnamed sources and did not establish a qualifying national government action."
+    },
+    {
+      "title": "Trump TV October 17 short clips",
+      "reason": "Only titles, dates, durations and stable links were accessible. One clip repackaged the October 15 first-responder event; footage, audio, captions and complete transcripts were unavailable, and a newly uploaded replay is not a new government action."
+    }
+  ],
+  "corrections": []
+}
