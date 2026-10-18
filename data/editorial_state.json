@@ -6817,6 +6817,30 @@
       "provenance_path": "data/editorial_change_notes/10.157.0.json",
       "provenance_sha256": "639f1ac06c92fa3a69318b48112176f4786ff3874cceb438fb1cb7fb3abe9223",
       "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.158.0:NAT-2026-10-10-001",
+      "entry_id": "NAT-2026-10-10-001",
+      "as_of_utc": "2026-10-18T16:02:56Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.158.0",
+      "summary": "Adds the formal East Potomac plan, November 15 closure target, approximately 15-month schedule and unresolved funding and court constraints.",
+      "provenance_path": "data/editorial_change_notes/10.158.0.json",
+      "provenance_sha256": "0a7cd61f0e96a5b086d73e58160133e7f29418f6bf7b24401618517a6022637f",
+      "note": "Stable record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.158.0:NAT-2026-10-18-001",
+      "entry_id": "NAT-2026-10-18-001",
+      "as_of_utc": "2026-10-18T16:02:56Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.158.0",
+      "summary": "Records Zelenskyy's reported restoration of U.S. missile-warning intelligence after an interruption, with Trump's conflicting description and scope limits preserved.",
+      "provenance_path": "data/editorial_change_notes/10.158.0.json",
+      "provenance_sha256": "0a7cd61f0e96a5b086d73e58160133e7f29418f6bf7b24401618517a6022637f",
+      "note": "New operational record with attributed evidence status, separate reasoning-layer review and unresolved U.S. confirmation."
     }
   ],
   "reviews": [
@@ -87099,6 +87123,289 @@
       "unresolved_questions": [
         "Later implementation, review, revisions and measured consequences after the cutoff remain unresolved.",
         "No inference is made beyond the attached source status and explicitly stated qualifications."
+      ]
+    },
+    {
+      "review_id": "10.158.0:NAT-2026-10-10-001:2a82488bdae8",
+      "entry_id": "NAT-2026-10-10-001",
+      "content_sha256": "2a82488bdae8f7487c9e74a8daf89ce937a35fbce15cde74c31e117f8053a62c",
+      "reviewed_at": "2026-10-18T16:08:22Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "caa541979177d593d6b97e6f43eba9366ecf9673914dd7470c00e395aedb35b4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_east_potomac_tree_removal_oct10",
+              "locator": "Source inspected for fact 1, including its stated legal or evidentiary status and material qualifications.",
+              "inspected_at": "2026-10-13T21:56:54Z",
+              "document_sha256": "6f76e06ee37518e1c54a1ee7ce4b060df488060d5d6ab8fc44febb61feb9196e",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "3fefd4678e7eb6e63cb21e725fdb0dd9c499aac88e9928f8e5e75af080bc8c51",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_east_potomac_tree_removal_oct10",
+              "locator": "Source inspected for fact 2, including its stated legal or evidentiary status and material qualifications.",
+              "inspected_at": "2026-10-13T21:56:54Z",
+              "document_sha256": "6f76e06ee37518e1c54a1ee7ce4b060df488060d5d6ab8fc44febb61feb9196e",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "87e62bc1a512f77c1418dab1b35b8a724357cf9f7d418ce86231d52c50e4d35e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wapo_east_potomac_tree_removal_oct9",
+              "locator": "Source inspected for fact 3, including its stated legal or evidentiary status and material qualifications.",
+              "inspected_at": "2026-10-13T21:56:54Z",
+              "document_sha256": "0822d1797fa9f6ba328df33b5aaf203b85ce5c7685881eb994dbfba90f06053d",
+              "origin_group": "The Washington Post",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "7a854896e8be8b869f143d383e742cf132de822b41b58c9ac18189dba7830a77",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_east_potomac_court_halt_oct12",
+              "locator": "Source inspected for fact 4, including its stated legal or evidentiary status and material qualifications.",
+              "inspected_at": "2026-10-13T21:56:54Z",
+              "document_sha256": "c58d41978ceb91e59e61a0303427647efb033cd6cda21f657777700ebc6b1cc0",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "a5c5dc88ef40623891d999a313a3106e82e2d0503c6d2e5dfb6c1e2cac353173",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_east_potomac_court_halt_oct12",
+              "locator": "Source inspected for fact 5, including its stated legal or evidentiary status and material qualifications.",
+              "inspected_at": "2026-10-13T21:56:54Z",
+              "document_sha256": "c58d41978ceb91e59e61a0303427647efb033cd6cda21f657777700ebc6b1cc0",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_east_potomac_court_halt_oct12",
+              "locator": "Source inspected for fact 5, including its stated legal or evidentiary status and material qualifications.",
+              "inspected_at": "2026-10-13T21:56:54Z",
+              "document_sha256": "a948bafac6b51ce4f91bd64388df4bd285fffc161b29d87c0f01cf4728d741b8",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "44866139580d3118c6b8fef5bc0958f02387b6e03b467f79d72d02f7709127d9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_east_potomac_halt_oct13",
+              "locator": "Source inspected for fact 6, including its stated legal or evidentiary status and material qualifications.",
+              "inspected_at": "2026-10-13T21:56:54Z",
+              "document_sha256": "bc4bd4aa527556e3715cd3c8aad87b70ded78ee7aadf34abe5d48f0a9e57dc75",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "2826fa7a8f6d03a0e7fe30f9a89e0bb02713799d3579343bec0a049441d765c9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_east_potomac_plan_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.158.0.json; announcement and unresolved implementation status bounded in the entry.",
+              "inspected_at": "2026-10-18T16:08:22Z",
+              "document_sha256": "a238dfc49f8fcf3ed4b6f0df822a465ce22e16d817d2706c321f45cee2d01019",
+              "origin_group": "Donald Trump / Truth Social",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "ap_east_potomac_plan_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.158.0.json; announcement and unresolved implementation status bounded in the entry.",
+              "inspected_at": "2026-10-18T16:08:22Z",
+              "document_sha256": "b418e87d8d1a5ecf45b829c9820bd0779ffed5884cfa9709bc49fe397ec5d4d5",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "wapo_east_potomac_plan_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.158.0.json; announcement and unresolved implementation status bounded in the entry.",
+              "inspected_at": "2026-10-18T16:08:22Z",
+              "document_sha256": "a7ee0e8142f4e2af0c924c84b8b0bf8b2c0183cb239651e4d4387176bc255a6c",
+              "origin_group": "The Washington Post",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "ab8d79bed153aaa6342abb1856fec20e21039e36f311c007a28768f02322710a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_east_potomac_plan_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.158.0.json; announcement and unresolved implementation status bounded in the entry.",
+              "inspected_at": "2026-10-18T16:08:22Z",
+              "document_sha256": "b418e87d8d1a5ecf45b829c9820bd0779ffed5884cfa9709bc49fe397ec5d4d5",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "wapo_east_potomac_plan_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.158.0.json; announcement and unresolved implementation status bounded in the entry.",
+              "inspected_at": "2026-10-18T16:08:22Z",
+              "document_sha256": "a7ee0e8142f4e2af0c924c84b8b0bf8b2c0183cb239651e4d4387176bc255a6c",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "d2ca250c8950b5634ea0f6f0740d823e0b63c26e21e33bd3433c288657e41274",
+          "review_note": "Separates the material increase in project concreteness from any claim that the announced work is funded, lawful or underway."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "682ea58f4c15155aa605ef2fc3fcb0b8418b46dee9f88970b6e6ab8235ab64f4",
+          "review_note": "Retains measurable court, funding, access, construction and tournament tests rather than treating presidential aspiration as delivery."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "22349caf754fc6541345dfc7fa3e209b4ae134f024ebc07db23d3c76fc0682bf",
+          "review_note": "Preserves plausible lawful-restoration and delay/redesign interpretations and states exactly what has and has not occurred."
+        }
+      ],
+      "unresolved_questions": [
+        "Funding source and total cost",
+        "Effect of the October 26 court process on the November 15 target",
+        "Final preservation approvals and public fee/access terms",
+        "Whether any tournament body awards an event"
+      ]
+    },
+    {
+      "review_id": "10.158.0:NAT-2026-10-18-001:e46d88a44400",
+      "entry_id": "NAT-2026-10-18-001",
+      "content_sha256": "e46d88a44400d31b510faa7a4480cab0d2ea7de0044f39ef382cea570ef48b1b",
+      "reviewed_at": "2026-10-18T16:08:22Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "e1d42bd01ff52b2cfabe0de6a8e77cd206c0a260f855208da7c7c38bf9be064c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_intel_restored_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.158.0.json; the operational claim remains attributed to Zelenskyy.",
+              "inspected_at": "2026-10-18T16:08:22Z",
+              "document_sha256": "ed22ad22d2d11afa398a47e2800e6ded19ad5f74865e8a885221e8210f9c305f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_intel_restored_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.158.0.json; the operational claim remains attributed to Zelenskyy.",
+              "inspected_at": "2026-10-18T16:08:22Z",
+              "document_sha256": "3ea2ff3d61c3c39b9c9f4db339650bb6c6910a92a13504caffb62199c93e4a10",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "82464b2aef0a6e5e8e7a0774e8c5c424a0924fb5a980d68e592161f7cd94b484",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_intel_restored_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.158.0.json; the operational claim remains attributed to Zelenskyy.",
+              "inspected_at": "2026-10-18T16:08:22Z",
+              "document_sha256": "ed22ad22d2d11afa398a47e2800e6ded19ad5f74865e8a885221e8210f9c305f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "9701567287a1b0700f71912b3ec487e62b6139fac8f7ef4058265871b6c1e24c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_intel_restored_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.158.0.json; the operational claim remains attributed to Zelenskyy.",
+              "inspected_at": "2026-10-18T16:08:22Z",
+              "document_sha256": "ed22ad22d2d11afa398a47e2800e6ded19ad5f74865e8a885221e8210f9c305f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_intel_restored_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.158.0.json; the operational claim remains attributed to Zelenskyy.",
+              "inspected_at": "2026-10-18T16:08:22Z",
+              "document_sha256": "3ea2ff3d61c3c39b9c9f4db339650bb6c6910a92a13504caffb62199c93e4a10",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "ea60e4e28e9f5147b31ac5e2abaaa00ada2da61de16fba41161ea97f943f836a",
+          "review_note": "Ties materiality to missile-warning consequences while avoiding an inference about the full intelligence relationship."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "ec2d875d05af73b7228604c3eaf0cad9379c35871e431bfb047c14ad3ebabf6a",
+          "review_note": "Preserves the conflicting administration account and identifies specific records and outcomes that could resolve it."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "6570688face28944932e9cf1051256fbc6e9eefe976204e38f93ea905e1ae28f",
+          "review_note": "Explicitly allows a narrow or differently categorized interruption and limits the conclusion to the attributed restoration report."
+        }
+      ],
+      "unresolved_questions": [
+        "Exact duration and technical scope",
+        "Whether a U.S. official ordered or confirmed a change",
+        "Whether Starshield restrictions were part of the same episode",
+        "Whether warning performance was fully restored"
       ]
     }
   ],
