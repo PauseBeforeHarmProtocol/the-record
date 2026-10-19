@@ -6889,6 +6889,54 @@
       "provenance_path": "data/editorial_change_notes/10.161.0.json",
       "provenance_sha256": "5b1959af2816039b27572bf827e24a83c1680d28d12e4772475da89a8bcca267",
       "note": "Stable Graham Act record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.162.0:NAT-2026-10-19-002",
+      "entry_id": "NAT-2026-10-19-002",
+      "as_of_utc": "2026-10-19T16:02:06Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.162.0",
+      "summary": "Records the signed women's-health executive order and bounded 90-day organizational duties.",
+      "provenance_path": "data/editorial_change_notes/10.162.0.json",
+      "provenance_sha256": "713e686cd5459646de73d69a3465ab758c3ded08fd522260332e3c2c27d0b43a",
+      "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.162.0:NAT-2026-10-19-003",
+      "entry_id": "NAT-2026-10-19-003",
+      "as_of_utc": "2026-10-19T16:02:06Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.162.0",
+      "summary": "Records the DHS DeepSeek exclusion order and phased implementation deadlines.",
+      "provenance_path": "data/editorial_change_notes/10.162.0.json",
+      "provenance_sha256": "713e686cd5459646de73d69a3465ab758c3ded08fd522260332e3c2c27d0b43a",
+      "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.162.0:NAT-2026-10-19-004",
+      "entry_id": "NAT-2026-10-19-004",
+      "as_of_utc": "2026-10-19T16:02:06Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.162.0",
+      "summary": "Records DHS's announced continuation of Ukraine and Sudan TPS while formal notices remain pending.",
+      "provenance_path": "data/editorial_change_notes/10.162.0.json",
+      "provenance_sha256": "713e686cd5459646de73d69a3465ab758c3ded08fd522260332e3c2c27d0b43a",
+      "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.162.0:NAT-2026-09-15-003",
+      "entry_id": "NAT-2026-09-15-003",
+      "as_of_utc": "2026-10-19T16:02:06Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.162.0",
+      "summary": "Adds the California arrest sweep, allegation limits and rarity evidence.",
+      "provenance_path": "data/editorial_change_notes/10.162.0.json",
+      "provenance_sha256": "713e686cd5459646de73d69a3465ab758c3ded08fd522260332e3c2c27d0b43a",
+      "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
     }
   ],
   "reviews": [
@@ -87470,91 +87518,277 @@
           "fact_index": 0,
           "fact_sha256": "d197665f30278d1c64c543968bd8582243c5553606000ff7255cbdff13a56dec",
           "relies_on_unnamed_sources": false,
-          "supports": [{"source_id": "reuters_russia_house_final_sep16", "locator": "Previously inspected complete report for the House vote and stated limitations.", "inspected_at": "2026-09-18T22:36:00Z", "document_sha256": "1b685a95b082687427d39b242996e56b4916e4707e16018fb96e9c3f40a652a3", "origin_group": "Reuters", "evidence_status": "implemented"}]
+          "supports": [
+            {
+              "source_id": "reuters_russia_house_final_sep16",
+              "locator": "Previously inspected complete report for the House vote and stated limitations.",
+              "inspected_at": "2026-09-18T22:36:00Z",
+              "document_sha256": "1b685a95b082687427d39b242996e56b4916e4707e16018fb96e9c3f40a652a3",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            }
+          ]
         },
         {
           "fact_index": 1,
           "fact_sha256": "0620e170d4815e87b3d61ee15bf4ffce02bf0d0ec4069763e40a28b8783c42e6",
           "relies_on_unnamed_sources": false,
-          "supports": [{"source_id": "house_rules_hr5334_sep16", "locator": "Previously inspected House Rules record for the measure and floor procedure.", "inspected_at": "2026-09-18T22:36:00Z", "document_sha256": "d94a75a78d42cf2bbff4122fda88e3747a9f5bed1a8d087be16735ac1c5de9af", "origin_group": "U.S. House Committee on Rules", "evidence_status": "implemented"}]
+          "supports": [
+            {
+              "source_id": "house_rules_hr5334_sep16",
+              "locator": "Previously inspected House Rules record for the measure and floor procedure.",
+              "inspected_at": "2026-09-18T22:36:00Z",
+              "document_sha256": "d94a75a78d42cf2bbff4122fda88e3747a9f5bed1a8d087be16735ac1c5de9af",
+              "origin_group": "U.S. House Committee on Rules",
+              "evidence_status": "implemented"
+            }
+          ]
         },
         {
           "fact_index": 2,
           "fact_sha256": "619af5dd04496b8f2a7587f95d013ed1789f817e41d56108c43bd66fa5a2d498",
           "relies_on_unnamed_sources": false,
-          "supports": [{"source_id": "ap_russia_sanctions_signed_sep18", "locator": "Previously inspected report for the House and Senate votes.", "inspected_at": "2026-09-18T22:36:00Z", "document_sha256": "cc3f2b5e512e669dd900b33d1a3da78420c02d6538abe3827c268370cf508989", "origin_group": "Associated Press", "evidence_status": "implemented"}, {"source_id": "house_rules_hr5334_sep16", "locator": "Previously inspected House Rules record for the final House action.", "inspected_at": "2026-09-18T22:36:00Z", "document_sha256": "d94a75a78d42cf2bbff4122fda88e3747a9f5bed1a8d087be16735ac1c5de9af", "origin_group": "U.S. House Committee on Rules", "evidence_status": "implemented"}]
+          "supports": [
+            {
+              "source_id": "ap_russia_sanctions_signed_sep18",
+              "locator": "Previously inspected report for the House and Senate votes.",
+              "inspected_at": "2026-09-18T22:36:00Z",
+              "document_sha256": "cc3f2b5e512e669dd900b33d1a3da78420c02d6538abe3827c268370cf508989",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "house_rules_hr5334_sep16",
+              "locator": "Previously inspected House Rules record for the final House action.",
+              "inspected_at": "2026-09-18T22:36:00Z",
+              "document_sha256": "d94a75a78d42cf2bbff4122fda88e3747a9f5bed1a8d087be16735ac1c5de9af",
+              "origin_group": "U.S. House Committee on Rules",
+              "evidence_status": "implemented"
+            }
+          ]
         },
         {
           "fact_index": 3,
           "fact_sha256": "243859a6bbe9b8b7dfb6748e9a1176bead602928e8eade0f00e63a07bf8a3547",
           "relies_on_unnamed_sources": false,
-          "supports": [{"source_id": "ap_russia_sanctions_signed_sep18", "locator": "Previously inspected report for signature and statutory scope.", "inspected_at": "2026-09-18T22:36:00Z", "document_sha256": "cc3f2b5e512e669dd900b33d1a3da78420c02d6538abe3827c268370cf508989", "origin_group": "Associated Press", "evidence_status": "implemented"}]
+          "supports": [
+            {
+              "source_id": "ap_russia_sanctions_signed_sep18",
+              "locator": "Previously inspected report for signature and statutory scope.",
+              "inspected_at": "2026-09-18T22:36:00Z",
+              "document_sha256": "cc3f2b5e512e669dd900b33d1a3da78420c02d6538abe3827c268370cf508989",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            }
+          ]
         },
         {
           "fact_index": 4,
           "fact_sha256": "d051cfb5153e16e9df197e7c500efb179a099968a1160272a7daede0a3b4907f",
           "relies_on_unnamed_sources": false,
-          "supports": [{"source_id": "ap_russia_sanctions_signed_sep18", "locator": "Previously inspected report for enacted status and limits on inferred implementation.", "inspected_at": "2026-09-18T22:36:00Z", "document_sha256": "cc3f2b5e512e669dd900b33d1a3da78420c02d6538abe3827c268370cf508989", "origin_group": "Associated Press", "evidence_status": "implemented"}]
+          "supports": [
+            {
+              "source_id": "ap_russia_sanctions_signed_sep18",
+              "locator": "Previously inspected report for enacted status and limits on inferred implementation.",
+              "inspected_at": "2026-09-18T22:36:00Z",
+              "document_sha256": "cc3f2b5e512e669dd900b33d1a3da78420c02d6538abe3827c268370cf508989",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            }
+          ]
         },
         {
           "fact_index": 5,
           "fact_sha256": "67ef8babf5fb3f22c8cd7a28ebcc7ec31553d493a4cc777dfc0cbab8000d88c8",
           "relies_on_unnamed_sources": false,
-          "supports": [{"source_id": "whitehouse_graham_act_implementation_oct16", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.", "inspected_at": "2026-10-17T04:02:36Z", "document_sha256": "6dab186a5bf90ab64acd81661a60bb57ec039c736e3c0428677666cf4431fbc5", "origin_group": "The White House", "evidence_status": "ordered"}, {"source_id": "reuters_graham_act_waivers_oct17", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.", "inspected_at": "2026-10-17T04:02:36Z", "document_sha256": "96e7b9e3900d94317ca1d553b8a5f97343dfe42120a4637b983e319344f7e0a4", "origin_group": "Reuters", "evidence_status": "reported"}]
+          "supports": [
+            {
+              "source_id": "whitehouse_graham_act_implementation_oct16",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "6dab186a5bf90ab64acd81661a60bb57ec039c736e3c0428677666cf4431fbc5",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_graham_act_waivers_oct17",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "96e7b9e3900d94317ca1d553b8a5f97343dfe42120a4637b983e319344f7e0a4",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
         },
         {
           "fact_index": 6,
           "fact_sha256": "d6191c052179f7dd9c61e9d4bd9d519e46fa71b97b543ebda9dea48952591968",
           "relies_on_unnamed_sources": false,
-          "supports": [{"source_id": "whitehouse_graham_act_implementation_oct16", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.", "inspected_at": "2026-10-17T04:02:36Z", "document_sha256": "6dab186a5bf90ab64acd81661a60bb57ec039c736e3c0428677666cf4431fbc5", "origin_group": "The White House", "evidence_status": "ordered"}, {"source_id": "reuters_graham_act_waivers_oct17", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.", "inspected_at": "2026-10-17T04:02:36Z", "document_sha256": "96e7b9e3900d94317ca1d553b8a5f97343dfe42120a4637b983e319344f7e0a4", "origin_group": "Reuters", "evidence_status": "reported"}]
+          "supports": [
+            {
+              "source_id": "whitehouse_graham_act_implementation_oct16",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "6dab186a5bf90ab64acd81661a60bb57ec039c736e3c0428677666cf4431fbc5",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_graham_act_waivers_oct17",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "96e7b9e3900d94317ca1d553b8a5f97343dfe42120a4637b983e319344f7e0a4",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
         },
         {
           "fact_index": 7,
           "fact_sha256": "9b18f789cc86a322688c06242908a0e1d29622e24bf9ed0d1b52a716bbb8e5a3",
           "relies_on_unnamed_sources": false,
-          "supports": [{"source_id": "whitehouse_graham_act_implementation_oct16", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.", "inspected_at": "2026-10-17T04:02:36Z", "document_sha256": "6dab186a5bf90ab64acd81661a60bb57ec039c736e3c0428677666cf4431fbc5", "origin_group": "The White House", "evidence_status": "ordered"}, {"source_id": "reuters_graham_act_waivers_oct17", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.", "inspected_at": "2026-10-17T04:02:36Z", "document_sha256": "96e7b9e3900d94317ca1d553b8a5f97343dfe42120a4637b983e319344f7e0a4", "origin_group": "Reuters", "evidence_status": "reported"}]
+          "supports": [
+            {
+              "source_id": "whitehouse_graham_act_implementation_oct16",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "6dab186a5bf90ab64acd81661a60bb57ec039c736e3c0428677666cf4431fbc5",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_graham_act_waivers_oct17",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "96e7b9e3900d94317ca1d553b8a5f97343dfe42120a4637b983e319344f7e0a4",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
         },
         {
           "fact_index": 8,
           "fact_sha256": "b2a532434d75c3d18659f6e77b6654f972e04f68118fe8e32c1a55428c1d1ebe",
           "relies_on_unnamed_sources": false,
-          "supports": [{"source_id": "whitehouse_graham_act_implementation_oct16", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.", "inspected_at": "2026-10-17T04:02:36Z", "document_sha256": "6dab186a5bf90ab64acd81661a60bb57ec039c736e3c0428677666cf4431fbc5", "origin_group": "The White House", "evidence_status": "ordered"}, {"source_id": "reuters_graham_act_waivers_oct17", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.", "inspected_at": "2026-10-17T04:02:36Z", "document_sha256": "96e7b9e3900d94317ca1d553b8a5f97343dfe42120a4637b983e319344f7e0a4", "origin_group": "Reuters", "evidence_status": "reported"}]
+          "supports": [
+            {
+              "source_id": "whitehouse_graham_act_implementation_oct16",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "6dab186a5bf90ab64acd81661a60bb57ec039c736e3c0428677666cf4431fbc5",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_graham_act_waivers_oct17",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "96e7b9e3900d94317ca1d553b8a5f97343dfe42120a4637b983e319344f7e0a4",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
         },
         {
           "fact_index": 9,
           "fact_sha256": "8e139acc7cd0cadb2d669439d42486042c14083524fb7229797adaaca73cfeaf",
           "relies_on_unnamed_sources": false,
-          "supports": [{"source_id": "reuters_graham_review_60_days_oct18", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.157.0.json.", "inspected_at": "2026-10-18T04:01:39Z", "document_sha256": "b96f501b482e3fa2f84ea99aed8f7b6bc4531dfa6ab20afa1f0dfa2d38391b5a", "origin_group": "Reuters", "evidence_status": "announced"}]
+          "supports": [
+            {
+              "source_id": "reuters_graham_review_60_days_oct18",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.157.0.json.",
+              "inspected_at": "2026-10-18T04:01:39Z",
+              "document_sha256": "b96f501b482e3fa2f84ea99aed8f7b6bc4531dfa6ab20afa1f0dfa2d38391b5a",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
         },
         {
           "fact_index": 10,
           "fact_sha256": "32750d5b151efb9a07c6cb81315e39e4edd67fcc05f029558a95b2cb283a54e8",
           "relies_on_unnamed_sources": false,
-          "supports": [{"source_id": "reuters_graham_review_60_days_oct18", "locator": "Exact normalized extract retained in data/editorial_change_notes/10.157.0.json.", "inspected_at": "2026-10-18T04:01:39Z", "document_sha256": "b96f501b482e3fa2f84ea99aed8f7b6bc4531dfa6ab20afa1f0dfa2d38391b5a", "origin_group": "Reuters", "evidence_status": "reported"}]
+          "supports": [
+            {
+              "source_id": "reuters_graham_review_60_days_oct18",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.157.0.json.",
+              "inspected_at": "2026-10-18T04:01:39Z",
+              "document_sha256": "b96f501b482e3fa2f84ea99aed8f7b6bc4531dfa6ab20afa1f0dfa2d38391b5a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
         },
         {
           "fact_index": 11,
           "fact_sha256": "b4106831d9704c122a94a31bf0b24e881eabb40c03d0098b381c698430312280",
           "relies_on_unnamed_sources": false,
-          "supports": [{"source_id": "truthsocial_trump_russia_waiver_rationale_oct18", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.159.0.json; publication and claim limits preserved.", "inspected_at": "2026-10-18T22:03:00Z", "document_sha256": "114e98e632a14d312f3f085660d3fd0e6b6f4d7511a386a54663ef60e2c2fc2b", "origin_group": "Truth Social / Donald J. Trump", "evidence_status": "publication_only"}, {"source_id": "ap_russia_ukraine_drones_sanctions_oct18", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.159.0.json; independent reporting does not verify the post's embedded claims.", "inspected_at": "2026-10-18T22:03:00Z", "document_sha256": "bc8fb1fcbd81fdb76809c3f510abf065f26716b54262ca999c2cbc172780d8cf", "origin_group": "Associated Press", "evidence_status": "reported"}]
+          "supports": [
+            {
+              "source_id": "truthsocial_trump_russia_waiver_rationale_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.159.0.json; publication and claim limits preserved.",
+              "inspected_at": "2026-10-18T22:03:00Z",
+              "document_sha256": "114e98e632a14d312f3f085660d3fd0e6b6f4d7511a386a54663ef60e2c2fc2b",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "ap_russia_ukraine_drones_sanctions_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.159.0.json; independent reporting does not verify the post's embedded claims.",
+              "inspected_at": "2026-10-18T22:03:00Z",
+              "document_sha256": "bc8fb1fcbd81fdb76809c3f510abf065f26716b54262ca999c2cbc172780d8cf",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
         },
         {
           "fact_index": 12,
           "fact_sha256": "b981c08d9a7c6d1bb13719103b7fbdb31a9b6fc473a0cc347a0235f0ff4963b7",
           "relies_on_unnamed_sources": false,
-          "supports": [{"source_id": "truthsocial_trump_russia_waiver_rationale_oct18", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.159.0.json; ambiguous document reference preserved rather than inferred.", "inspected_at": "2026-10-18T22:03:00Z", "document_sha256": "114e98e632a14d312f3f085660d3fd0e6b6f4d7511a386a54663ef60e2c2fc2b", "origin_group": "Truth Social / Donald J. Trump", "evidence_status": "publication_only"}]
+          "supports": [
+            {
+              "source_id": "truthsocial_trump_russia_waiver_rationale_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.159.0.json; ambiguous document reference preserved rather than inferred.",
+              "inspected_at": "2026-10-18T22:03:00Z",
+              "document_sha256": "114e98e632a14d312f3f085660d3fd0e6b6f4d7511a386a54663ef60e2c2fc2b",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            }
+          ]
         },
         {
           "fact_index": 13,
           "fact_sha256": "1153950a828678bbce8b9b1c6e96410be7e40af4909e661fa8c38035342adc04",
           "relies_on_unnamed_sources": false,
-          "supports": [{"source_id": "ap_russia_ukraine_drones_sanctions_oct18", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.159.0.json; battlefield context separated from causal claims.", "inspected_at": "2026-10-18T22:03:00Z", "document_sha256": "bc8fb1fcbd81fdb76809c3f510abf065f26716b54262ca999c2cbc172780d8cf", "origin_group": "Associated Press", "evidence_status": "reported"}]
+          "supports": [
+            {
+              "source_id": "ap_russia_ukraine_drones_sanctions_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.159.0.json; battlefield context separated from causal claims.",
+              "inspected_at": "2026-10-18T22:03:00Z",
+              "document_sha256": "bc8fb1fcbd81fdb76809c3f510abf065f26716b54262ca999c2cbc172780d8cf",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
         }
       ],
       "reasoning_review": [
-        {"field": "significance", "text_sha256": "b032c58c83960e937a9e4918a2cfba9e41822b6e343650621c6534cf8829bbdb", "review_note": "Separates the newly stated presidential rationales from any new legal step or verified diplomatic outcome."},
-        {"field": "goalpost", "text_sha256": "f055f46daa8f7224118dae22dd27c56aa498860d0044d82a4b01c120d146dc1c", "review_note": "Preserves the administration's strongest explanation and identifies observable legal, diplomatic, market and conduct tests."},
-        {"field": "maybe_therefore", "text_sha256": "ec26e9ab767dc5b1c32f93513678f7c80f2a5ed6c953a23f7f9845de1f87f9c4", "review_note": "States both leverage and concession interpretations while limiting the conclusion to the implemented waiver and announced explanation."}
+        {
+          "field": "significance",
+          "text_sha256": "b032c58c83960e937a9e4918a2cfba9e41822b6e343650621c6534cf8829bbdb",
+          "review_note": "Separates the newly stated presidential rationales from any new legal step or verified diplomatic outcome."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "f055f46daa8f7224118dae22dd27c56aa498860d0044d82a4b01c120d146dc1c",
+          "review_note": "Preserves the administration's strongest explanation and identifies observable legal, diplomatic, market and conduct tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "ec26e9ab767dc5b1c32f93513678f7c80f2a5ed6c953a23f7f9845de1f87f9c4",
+          "review_note": "States both leverage and concession interpretations while limiting the conclusion to the implemented waiver and announced explanation."
+        }
       ],
       "unresolved_questions": [
         "What document Trump meant by 'that document'",
@@ -88322,6 +88556,902 @@
         "How affected workers and collective-bargaining arrangements will be handled",
         "Whether costs, service access, job placement, complaints or farmworker protections change",
         "Whether litigation or federal oversight alters implementation"
+      ]
+    },
+    {
+      "review_id": "10.162.0:NAT-2026-10-19-002:979f0cde86de",
+      "entry_id": "NAT-2026-10-19-002",
+      "content_sha256": "979f0cde86de69e4c4a07c85288cb6985345d8e657b2d4b6291867f3bf75a7b9",
+      "reviewed_at": "2026-10-19T16:14:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "de9f475407d6a031057f3ee2b4c51e198536721d54f54cd0eaffdd58429eb200",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "whitehouse_womens_health_eo_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; implementation status and unresolved limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "0861515cf197f13605cbec4a5a4a84a00be744889ea14f4daae8210e7d2ae3fc",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "dc6afcb4f1e8b1ba064a29584a385bfc0a0a659f81c529c52b1f36460b9e0624",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "whitehouse_womens_health_eo_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; implementation status and unresolved limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "0861515cf197f13605cbec4a5a4a84a00be744889ea14f4daae8210e7d2ae3fc",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "5a6a7a28b5cfc7b25981e4d04216b73b4ac652af062c485ea46a9e95d1090e32",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "whitehouse_womens_health_eo_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; implementation status and unresolved limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "0861515cf197f13605cbec4a5a4a84a00be744889ea14f4daae8210e7d2ae3fc",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "whitehouse_womens_health_fact_sheet_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; implementation status and unresolved limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "0fd8f02a28fb29c83156cc5f4a94f6f36d686ddf50e16f8c87c10224eed042f2",
+              "origin_group": "The White House",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "77c2e9f5ae49314c6a24bab09bbdd453a4c6400ae38a00592aefa577d4bddf73",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_womens_health_eo_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; implementation status and unresolved limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "de953676464f65a3ebba30beba997ea6d71a7e6d8e08f52de9fbc0de7ef48e03",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "951171aefd77d4b5227cb9c2a1f52f80d64f09f26d624a97dc988ea2ae1bd1bf",
+          "review_note": "Separates the verified action or announcement from later implementation, measurement and unresolved consequences."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "7b6d702d98da8bb01bfa0cb9b8f52e3035c364a00235f4896100d38d31aa22ba",
+          "review_note": "Preserves the administration explanation and identifies observable legal, operational and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "afeca57f8181f20c16645eb9556560c62ebd2233d2427f9a0d8f1413156e419d",
+          "review_note": "States competing plausible interpretations and limits the conclusion to the evidence status actually established."
+        }
+      ],
+      "unresolved_questions": [
+        "Whether the division is established within 90 days",
+        "What funding, staffing, grants and measurable outcomes follow"
+      ]
+    },
+    {
+      "review_id": "10.162.0:NAT-2026-10-19-003:630843eacd43",
+      "entry_id": "NAT-2026-10-19-003",
+      "content_sha256": "630843eacd43be5762cec84b6d0fe0da622f33582d12b69a6817c2698255f228",
+      "reviewed_at": "2026-10-19T16:14:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "1a8c2fe483d226f997bb5adeb1a171aad3289f16523798e19503140999b715be",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_deepseek_order_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; implementation status and unresolved limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "3f57db4159e6bae6ce61d0dc2fd4a0f7f94cc1c71e60b0656aea1b69b3278748",
+              "origin_group": "Department of Homeland Security / Federal Register",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "556ebfac4f8f95bf2e8f3ef692caf426bd28c7e6a8069c8ca1b14d8021b01783",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_deepseek_order_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; implementation status and unresolved limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "3f57db4159e6bae6ce61d0dc2fd4a0f7f94cc1c71e60b0656aea1b69b3278748",
+              "origin_group": "Department of Homeland Security / Federal Register",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "2e9a86f9474dc85af56f87da378466e31ece8cb550d10933de43d7b6153d9c90",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_deepseek_order_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; implementation status and unresolved limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "3f57db4159e6bae6ce61d0dc2fd4a0f7f94cc1c71e60b0656aea1b69b3278748",
+              "origin_group": "Department of Homeland Security / Federal Register",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_deepseek_order_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; implementation status and unresolved limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "efb18a95963298439522fd2437f82eececdbb2c519cde233881560e0257509f0",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "50f8641ba07a7961ce67ed6dfec3b73492480fc14c304529c2deba287d827a5e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_deepseek_order_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; implementation status and unresolved limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "3f57db4159e6bae6ce61d0dc2fd4a0f7f94cc1c71e60b0656aea1b69b3278748",
+              "origin_group": "Department of Homeland Security / Federal Register",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_deepseek_order_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; implementation status and unresolved limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "efb18a95963298439522fd2437f82eececdbb2c519cde233881560e0257509f0",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "f3d28803fa043307a285986c3af3d1e4e33e28d6ce2b2dd324d9cf2cdffb2ce7",
+          "review_note": "Separates the verified action or announcement from later implementation, measurement and unresolved consequences."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "3674f52972fa216ac0d411716bddb3dcc02575c40f934bf805fabda3fc676a55",
+          "review_note": "Preserves the administration explanation and identifies observable legal, operational and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "17b6bec19592368d1d94719d75fda7ff2a2c6b06dc7db07d2d4b5708605181c8",
+          "review_note": "States competing plausible interpretations and limits the conclusion to the evidence status actually established."
+        }
+      ],
+      "unresolved_questions": [
+        "Which products and embedded implementations agencies identify",
+        "Whether removals meet the deadlines and reduce verified risk"
+      ]
+    },
+    {
+      "review_id": "10.162.0:NAT-2026-10-19-004:32503cef8ac8",
+      "entry_id": "NAT-2026-10-19-004",
+      "content_sha256": "32503cef8ac83db992e7451d82207aa599269b7a13c6feb18df0e5d47f2573b2",
+      "reviewed_at": "2026-10-19T16:14:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "532a2489a796cef8feb3759d3ed78eea8286e976811c041b259c460f682dfd24",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_sudan_tps_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; implementation status and unresolved limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "25f69c13ee295a6843b911251688d89df715f55b976a4136a9fcb3f762bc8f1a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "d82fca5b55188eae5902682d589bba988c2bf2ad10e59ce47ca9ae04507a1c80",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_sudan_tps_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; implementation status and unresolved limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "25f69c13ee295a6843b911251688d89df715f55b976a4136a9fcb3f762bc8f1a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "9a862d1ebe0cafc63e7d49374ac8897dbf7935aecf258843d74eff4ed2ca6601",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_ukraine_tps_jan17",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; implementation status and unresolved limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "bd4be1bd742248844ed95cd9c31d5c360c1f7fbd33f5d5c803cfd104d839e664",
+              "origin_group": "Department of Homeland Security / Federal Register",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "federal_register_sudan_tps_jan17",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; implementation status and unresolved limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "58dd8f377c0422e65933e4588274434ef5aec9809f9151cd380b2588a7d2079e",
+              "origin_group": "Department of Homeland Security / Federal Register",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_ukraine_sudan_tps_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; implementation status and unresolved limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "25f69c13ee295a6843b911251688d89df715f55b976a4136a9fcb3f762bc8f1a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "03d6f8fff395169eae40eb9ffd2c973e4680480c50ab28c175d0d5fe06167a6e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_sudan_tps_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; implementation status and unresolved limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "25f69c13ee295a6843b911251688d89df715f55b976a4136a9fcb3f762bc8f1a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "98f467ed5f92318bd2a9e3f62cea0f0840add3d0ff576196705b58809871aa41",
+          "review_note": "Separates the verified action or announcement from later implementation, measurement and unresolved consequences."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "f6cc8fd8b70352c2db100059458dfde878ab9e591c1e8d550e5ab03bda930422",
+          "review_note": "Preserves the administration explanation and identifies observable legal, operational and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "a00098abd9f36879f95099269ed8416aff4e54a0e0f2fd3accf6e2e564ee995f",
+          "review_note": "States competing plausible interpretations and limits the conclusion to the evidence status actually established."
+        }
+      ],
+      "unresolved_questions": [
+        "What formal duration and registration terms DHS publishes",
+        "Whether litigation or later decisions alter protection"
+      ]
+    },
+    {
+      "review_id": "10.162.0:NAT-2026-09-15-003:0ef45cff3d91",
+      "entry_id": "NAT-2026-09-15-003",
+      "content_sha256": "0ef45cff3d9113f8aef24d6005514202eb0527285870455ac8dd5ae9bed8fd6c",
+      "reviewed_at": "2026-10-19T16:14:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "fdc6d9d3965c1cc37b99262c04383d8dcef7c6c7f0e8a10138f3ac0ff0093308",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Reuters lines 161–193: five pending motions, statutory arguments, DOJ response, 129-case analysis, deportation consequences and separate denial.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "140ae3f19a842a9e665c31e7b8e0e622486c949ff4dce3d3b6093291e34f17d4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Reuters lines 161–193: five pending motions, statutory arguments, DOJ response, 129-case analysis, deportation consequences and separate denial.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "51ad3ea6bddddd50579ddf1acd0404c4980668a75363999d4f271e773ae46c07",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Reuters lines 161–193: five pending motions, statutory arguments, DOJ response, 129-case analysis, deportation consequences and separate denial.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "64fb09c949575bf258f413500c13b5e4d3a564fc34dfa6fc909fa13f70b8a06e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Reuters lines 161–193: five pending motions, statutory arguments, DOJ response, 129-case analysis, deportation consequences and separate denial.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "94a7b85f51eac85fb3370c49ed0611898fd59e94ab9cb2bb3cb202e692910d66",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_voting_challenges_sep15",
+              "locator": "Reuters lines 161–193: five pending motions, statutory arguments, DOJ response, 129-case analysis, deportation consequences and separate denial.",
+              "inspected_at": "2026-09-15T16:18:00Z",
+              "document_sha256": "8b36cc74b64a5683da7d1274bfeca36e5c58526cf619dd35ba62723860308a90",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "7aa10f9e36fbd390a438d71667232f2f6f65211ff708b7b5138221dff0dba6b8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_state_registration_errors_sep23",
+              "locator": "Inspected Reuters article text: nationwide records review, state examples, ballot limits, administrative-error analysis, expert context and White House response.",
+              "inspected_at": "2026-09-23T16:13:45Z",
+              "document_sha256": "dbfc45687ac84a6a6c91119f76697cee90fcce93c72dafc82135c9eeb100c963",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "ca98b9e248de595569607cc85854183473af71281a86959ad78005db75dad7d1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_state_registration_errors_sep23",
+              "locator": "Inspected Reuters article text: nationwide records review, state examples, ballot limits, administrative-error analysis, expert context and White House response.",
+              "inspected_at": "2026-09-23T16:13:45Z",
+              "document_sha256": "dbfc45687ac84a6a6c91119f76697cee90fcce93c72dafc82135c9eeb100c963",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "8cab4d7474706fb40b4dc4390392adae5c8adf6ba58b73d2f35c8c17baf3370d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_state_registration_errors_sep23",
+              "locator": "Inspected Reuters article text: nationwide records review, state examples, ballot limits, administrative-error analysis, expert context and White House response.",
+              "inspected_at": "2026-09-23T16:13:45Z",
+              "document_sha256": "dbfc45687ac84a6a6c91119f76697cee90fcce93c72dafc82135c9eeb100c963",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "e3ebd062fa6e5262a93c03968492c7715db76c56c3c744c34062f91fd65f74e5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_prosecutions_sep23",
+              "locator": "Complete indexed report inspected for September charging counts, historical comparison and the named Justice Department response.",
+              "inspected_at": "2026-09-23T21:50:00Z",
+              "document_sha256": "3fb5d79eb11b499bed314a3290b9c74420d3102f819697e0a1b3b774b7f1dbda",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "a2fed40e49a3a321159f45223035f0dd39f6db53501ee9076618d16c4aae3c43",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_prosecutions_sep23",
+              "locator": "Complete indexed report inspected for September charging counts, historical comparison and the named Justice Department response.",
+              "inspected_at": "2026-09-23T21:50:00Z",
+              "document_sha256": "3fb5d79eb11b499bed314a3290b9c74420d3102f819697e0a1b3b774b7f1dbda",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 10,
+          "fact_sha256": "12f080a2ef2741d95ec8db721ec7cc73f71d7965a00ee9ffcc8e201f4fbb1ada",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_noncitizen_voting_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "c6774c161f2eadacfd321a185ce063eac9f3255f87938afc4bf4930c686669b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 11,
+          "fact_sha256": "3c744f7fa5158a279888f43c4fb1dee8f436fef89372fe8d3e9707a25e913c3a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_noncitizen_voting_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "c6774c161f2eadacfd321a185ce063eac9f3255f87938afc4bf4930c686669b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 12,
+          "fact_sha256": "ce36e117ee605b69880e845185e33f3e6c3e34b6ba7b40393cb0628311f4309d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_noncitizen_voting_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "c6774c161f2eadacfd321a185ce063eac9f3255f87938afc4bf4930c686669b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 13,
+          "fact_sha256": "72d255b495bbbf73fe97ef3203e0a7d9293f20c90168584fc781bb0b987770ed",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_noncitizen_voting_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "c6774c161f2eadacfd321a185ce063eac9f3255f87938afc4bf4930c686669b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 14,
+          "fact_sha256": "91767cbf1a5ac1abc69ef756b091ad58999da73ef43c1449721a4d87618d51e8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_noncitizen_law_unconstitutional_oct1",
+              "locator": "article body quoting ruling, scope and government argument",
+              "inspected_at": "2026-10-01T22:14:00Z",
+              "document_sha256": "01d63aa7ff7a0d2e08475e6ba2e0533d421b827f952c75c327fd251dce773980",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 15,
+          "fact_sha256": "4a2a45b72376347e15ab96283dd105cd81ba37256f243e54a05318c32958e102",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_california_noncitizen_ballot_letter_oct14",
+              "locator": "Source inspected for the newly appended fact, including evidentiary status, scope and material qualifications.",
+              "inspected_at": "2026-10-14T10:09:28Z",
+              "document_sha256": "17381d4b7d288beeb06461183d6da3f68bc8fc12eeeb8faf909ed6b604ef2ffb",
+              "origin_group": "Reuters",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 16,
+          "fact_sha256": "ad2d98e984711de41a739fd90e20e25cc7b471bccf89f03f2d8c42d34c1f651e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_california_noncitizen_ballot_letter_oct14",
+              "locator": "Source inspected for the newly appended fact, including evidentiary status, scope and material qualifications.",
+              "inspected_at": "2026-10-14T10:09:28Z",
+              "document_sha256": "17381d4b7d288beeb06461183d6da3f68bc8fc12eeeb8faf909ed6b604ef2ffb",
+              "origin_group": "Reuters",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 17,
+          "fact_sha256": "e5dc4fa88e550b8c5b5836abd7dea51d1dea81c34983659575e3457bd38e8a38",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_nevada_voter_subpoenas_oct15",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.150.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-15T15:59:59Z",
+              "document_sha256": "6c391ac5355de33362e0400c644b719465f1cb95f6b831b5332fdfb762ea8328",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 18,
+          "fact_sha256": "df38dd8831e5c1dcf6b7fa6c76096d39dca0831e0b3c7d8d2c9492b5b1130545",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_nevada_voter_subpoenas_oct15",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.150.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-15T15:59:59Z",
+              "document_sha256": "6c391ac5355de33362e0400c644b719465f1cb95f6b831b5332fdfb762ea8328",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 19,
+          "fact_sha256": "3a8d3875d1ab6320428e1fe1455063ff96e75caf820168b94a6c590a5da7ff24",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_nevada_voter_subpoenas_oct15",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.150.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-15T15:59:59Z",
+              "document_sha256": "6c391ac5355de33362e0400c644b719465f1cb95f6b831b5332fdfb762ea8328",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 20,
+          "fact_sha256": "d60e6f07e8cc0d72d515a7055e7fb390fe4ce69e041e2f7d33ba81db76c51a17",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_california_voter_lawsuit_oct15",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.151.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-15T21:58:41Z",
+              "document_sha256": "642d5c67dead459937f5b5accf0ba5a6c6df3bc37330756e2dfcec901d136c62",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_california_voter_lawsuit_oct15",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.151.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-15T21:58:41Z",
+              "document_sha256": "d825971e8ed49e19b5aaa726324d91d7b83b3ba9e4d656ad73b802247bfcb692",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_california_voter_lawsuit_oct15",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.151.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-15T21:58:41Z",
+              "document_sha256": "0f63805b408d5d5c739ffce88667b73aa37c4cef1fd87c467cdd2e6b2921f410",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 21,
+          "fact_sha256": "13a577e467508299a446c2c321066e248012c264a479174f19f921f863da440a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_california_voter_lawsuit_oct15",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.151.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-15T21:58:41Z",
+              "document_sha256": "642d5c67dead459937f5b5accf0ba5a6c6df3bc37330756e2dfcec901d136c62",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 22,
+          "fact_sha256": "bd8587fec7f8dd48e6bca087fb651b9c1fa7906023a8179c15c427110e5fd098",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_california_voter_lawsuit_oct15",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.151.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-15T21:58:41Z",
+              "document_sha256": "0f63805b408d5d5c739ffce88667b73aa37c4cef1fd87c467cdd2e6b2921f410",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 23,
+          "fact_sha256": "35cb8327c533537b699d60553bb917303d36cb3d79feca7d95e332d9fd6d44de",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_california_voter_lawsuit_oct15",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.151.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-15T21:58:41Z",
+              "document_sha256": "d825971e8ed49e19b5aaa726324d91d7b83b3ba9e4d656ad73b802247bfcb692",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_california_voter_lawsuit_oct15",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.151.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-15T21:58:41Z",
+              "document_sha256": "0f63805b408d5d5c739ffce88667b73aa37c4cef1fd87c467cdd2e6b2921f410",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 24,
+          "fact_sha256": "09b4f5fe4573e988d9013c4856e86f5de3bb351202cd58444f69f72ce58ff188",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_noncitizen_charges_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.156.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "ac2998233606d1bb7413b8861c5cc92e7c2a460b11419db4eec2117b5e45e9bc",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_california_election_officials_warning_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.156.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "edc6be8e83dcf580287c99d3072e8bed5143bb6b5d9440a65892209ae6c64fe0",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 25,
+          "fact_sha256": "d8e05a758d7cb60937649ba626fa7a292e155b0d7c0ac900184dccff52af13b2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_noncitizen_charges_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.156.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "ac2998233606d1bb7413b8861c5cc92e7c2a460b11419db4eec2117b5e45e9bc",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_california_election_officials_warning_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.156.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "edc6be8e83dcf580287c99d3072e8bed5143bb6b5d9440a65892209ae6c64fe0",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 26,
+          "fact_sha256": "fe1e9099d0ce3687669c50e1b832877db698843a8019f08e60ab10d23018babc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_noncitizen_charges_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.156.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "ac2998233606d1bb7413b8861c5cc92e7c2a460b11419db4eec2117b5e45e9bc",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_california_election_officials_warning_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.156.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "edc6be8e83dcf580287c99d3072e8bed5143bb6b5d9440a65892209ae6c64fe0",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 27,
+          "fact_sha256": "bba8c806b2778e9bc5c109e05f1e3435d57b45f7c2d609e033bf3b4da75fa7b0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_noncitizen_charges_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.156.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "ac2998233606d1bb7413b8861c5cc92e7c2a460b11419db4eec2117b5e45e9bc",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_california_election_officials_warning_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.156.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "edc6be8e83dcf580287c99d3072e8bed5143bb6b5d9440a65892209ae6c64fe0",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 28,
+          "fact_sha256": "97fb53142b322a5017b23c333191c1a38e8df63e8f90a60bb7c59c7f67e65c9c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_noncitizen_charges_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.156.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "ac2998233606d1bb7413b8861c5cc92e7c2a460b11419db4eec2117b5e45e9bc",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_california_election_officials_warning_oct16",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.156.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "edc6be8e83dcf580287c99d3072e8bed5143bb6b5d9440a65892209ae6c64fe0",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 29,
+          "fact_sha256": "883f1a55041a239eec6f1fd99db37e547b9cc41aa5f05eac51ced8ec9e2de1c7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_california_voter_arrests_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; allegation, rarity and coordination limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "860c801ec0f6c9f87cef9c05d510fe4f7784b889c8f65e368732eab34db581e4",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 30,
+          "fact_sha256": "a4f2ce71ad61b053e6548ec1777e5daf8c33e7977b564189d0c6b3c918ff5fd0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_california_voter_arrests_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; allegation, rarity and coordination limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "860c801ec0f6c9f87cef9c05d510fe4f7784b889c8f65e368732eab34db581e4",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 31,
+          "fact_sha256": "3fa158ae6b7e2583199dc949d7f824ba55172457570a6ec9dfbb6c1ca57b48b0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_california_voter_arrests_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.162.0.json; allegation, rarity and coordination limits preserved.",
+              "inspected_at": "2026-10-19T16:14:00Z",
+              "document_sha256": "860c801ec0f6c9f87cef9c05d510fe4f7784b889c8f65e368732eab34db581e4",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "3ad02764192bf24efc0d3f5e1f73e9a21b1bec99d1b3b463a4bee609b4374177",
+          "review_note": "Separates the verified action or announcement from later implementation, measurement and unresolved consequences."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "4aea399681072b5fe1f60978dc938686dc557b14cce4bb5e0d5537072e90ed24",
+          "review_note": "Preserves the administration explanation and identifies observable legal, operational and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "b0a5ed9cc838fe2a4df8dd922e9fb2a1d89b0cb7a76dfaf2a213c52dcca6311b",
+          "review_note": "States competing plausible interpretations and limits the conclusion to the evidence status actually established."
+        }
+      ],
+      "unresolved_questions": [
+        "Individual case dispositions and validated ballots",
+        "Whether any evidence establishes coordination or election effects"
       ]
     }
   ],
