@@ -1,0 +1,95 @@
+{
+  "version": "10.161.0",
+  "base_release_version": "10.160.0",
+  "base_commit": "a04b2d01f2fdacbe4a1c30a35ac9c348a01f07cf",
+  "research_window": {
+    "from_utc": "2026-10-19T04:03:11Z",
+    "through_utc": "2026-10-19T10:03:41Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary. One Department of Labor rule became effective and one existing sanctions record was materially refreshed with a later same-session market measurement."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository's final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-19-001",
+      "kind": "added",
+      "summary": "Records the effective date and bounded legal effect of the Labor Department rule removing the federal merit-staffing mandate for state Employment Service programs.",
+      "duplicate_review": "No existing current or legacy record matched the rule, effective date, source URLs, title or normalized event; the 2026 compliance-delay notice was treated as an earlier lifecycle stage rather than the implemented rescission."
+    },
+    {
+      "entry_id": "NAT-2026-09-16-004",
+      "kind": "refreshed",
+      "summary": "Adds Reuters's later same-session benchmark prices and analyst evidence limiting claims of durable physical supply relief.",
+      "duplicate_review": "Consolidated into the stable Graham Act enactment, waiver and review lifecycle rather than counted as a parallel Russia or energy-market event."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "federal_register_wagner_peyser_staffing_aug20",
+      "origin_group": "Department of Labor / Federal Register",
+      "evidence_extract": "The Department of Labor final rule removes 20 CFR 652.215 and the requirement that states use state merit staff to provide Wagner-Peyser Employment Service services, effective October 19, 2026. It permits rather than requires alternative staffing; preserves federal performance, civil-rights, unemployment-eligibility and migrant and seasonal farmworker safeguards; acknowledges insufficient data for comprehensive cost-benefit analysis; and removes a mandatory staffing-model evaluation.",
+      "document_sha256": "54185ad821b933441f9c0773a786b7a9ec2b6370b4d48e35116f20a8222e0744",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-19T10:12:00Z"
+    },
+    {
+      "source_id": "dol_ten_02_26_wagner_peyser",
+      "origin_group": "Department of Labor",
+      "evidence_extract": "Department of Labor Training and Employment Notice 02-26 says the final rule allows states to choose an efficient staffing model and directs states choosing a different model to submit a WIOA state-plan modification, consult required parties and complete public-comment procedures before implementation.",
+      "document_sha256": "9788fe10f058d4469d726a4e10dc28102e9d0f770945ff4e1fa10fb9a229a9fa",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-19T10:12:00Z"
+    },
+    {
+      "source_id": "reuters_oil_russia_waiver_market_oct19",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters updated its October 19 market report to show Brent down $2.29, or 2.08%, to $107.57 and West Texas Intermediate down $1.95, or 1.92%, to $99.46 by 0619 GMT. The report said investors were taking profits after the waiver, quoted analysts who said the waiver did little to resolve physical Strait of Hormuz supply disruptions and described it as a short-term measure with barely any structural supply impact.",
+      "document_sha256": "bdcea88580d284bd12c156a04f5c6b161687f1b21db7296b7bf3d5b3942864eb",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-19T10:12:00Z"
+    }
+  ],
+  "truth_social_media_inspection": {
+    "post_ids": [
+      "117466809182909023",
+      "117466841292482027"
+    ],
+    "scope": "Both new post texts were inspected. They linked older New York Post coverage and contained no attached media.",
+    "provenance": "data/truth_social_feed_meta.json, data/truth_social_seed.json and data/truth_social_reviews.json"
+  },
+  "trump_tv_inspection": {
+    "sources": [
+      "https://www.whitehouse.gov/trumptv/",
+      "https://www.whitehouse.gov/live/",
+      "https://www.whitehouse.gov/videos/",
+      "https://www.whitehouse.gov/remarks/",
+      "https://www.whitehouse.gov/releases/"
+    ],
+    "scope": "Official page metadata and stable links only; audiovisual content, captions and complete transcripts were not retrieved.",
+    "finding": "Stream ID remained A4gNgHfZ-v4. No October 19 library item was listed; the October 17 clips and replay remained the newest metadata. No qualifying new item was located in the material reviewed."
+  },
+  "withheld": [
+    {
+      "title": "Two retrospective Truth Social links",
+      "reason": "The posts linked older opinion and news coverage and did not independently establish a qualifying federal action."
+    },
+    {
+      "title": "Rubio comments on possible Trump-Putin-Xi talks",
+      "reason": "The meeting was not finalized and no formal proposal, agreement, order or implemented action was located."
+    },
+    {
+      "title": "East Potomac golf-course announcement",
+      "reason": "The event was already covered in NAT-2026-10-10-001 and was not counted again."
+    },
+    {
+      "title": "Trump TV metadata recheck",
+      "reason": "No October 19 item was listed, and metadata for the October 17 clips and replay did not establish a new qualifying action."
+    },
+    {
+      "title": "External archive discovery inputs",
+      "reason": "Measurements were retained by their separate units and no upstream item was promoted automatically."
+    }
+  ],
+  "corrections": []
+}

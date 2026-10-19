@@ -6865,6 +6865,30 @@
       "provenance_path": "data/editorial_change_notes/10.160.0.json",
       "provenance_sha256": "350c23d6686bb81219a33f748736967031c0fc315974f4a18d1a54c8abf9dd38",
       "note": "Stable Graham Act record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
+    },
+    {
+      "change_id": "10.161.0:NAT-2026-10-19-001",
+      "entry_id": "NAT-2026-10-19-001",
+      "as_of_utc": "2026-10-19T10:03:41Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.161.0",
+      "summary": "Records the effective date and bounded legal effect of the Labor Department rule removing the federal merit-staffing mandate for state Employment Service programs.",
+      "provenance_path": "data/editorial_change_notes/10.161.0.json",
+      "provenance_sha256": "5b1959af2816039b27572bf827e24a83c1680d28d12e4772475da89a8bcca267",
+      "note": "New regulatory record with source-level review, separate reasoning-layer review and explicit state-adoption and outcome limits."
+    },
+    {
+      "change_id": "10.161.0:NAT-2026-09-16-004",
+      "entry_id": "NAT-2026-09-16-004",
+      "as_of_utc": "2026-10-19T10:03:41Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.161.0",
+      "summary": "Adds later same-session benchmark prices and analyst evidence limiting claims of durable physical supply relief.",
+      "provenance_path": "data/editorial_change_notes/10.161.0.json",
+      "provenance_sha256": "5b1959af2816039b27572bf827e24a83c1680d28d12e4772475da89a8bcca267",
+      "note": "Stable Graham Act record and exact-field change preserved with source-level review, separate reasoning-layer review and explicit duplicate disposition."
     }
   ],
   "reviews": [
@@ -87848,6 +87872,456 @@
         "Whether the administration discloses its review and alters the waiver",
         "Whether the early oil-price movement persists across later sessions",
         "Whether Russian supply or U.S. retail diesel prices change and can be attributed to the waiver"
+      ]
+    },
+    {
+      "review_id": "10.161.0:NAT-2026-09-16-004:1d513f361c8c",
+      "entry_id": "NAT-2026-09-16-004",
+      "content_sha256": "1d513f361c8cead05fb54c7332ca816145a1a8fc0aae2291040d6ded3ead46f1",
+      "reviewed_at": "2026-10-19T10:13:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "d197665f30278d1c64c543968bd8582243c5553606000ff7255cbdff13a56dec",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_russia_house_final_sep16",
+              "locator": "Previously inspected complete report for the House vote and stated limitations.",
+              "inspected_at": "2026-09-18T22:36:00Z",
+              "document_sha256": "1b685a95b082687427d39b242996e56b4916e4707e16018fb96e9c3f40a652a3",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "0620e170d4815e87b3d61ee15bf4ffce02bf0d0ec4069763e40a28b8783c42e6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "house_rules_hr5334_sep16",
+              "locator": "Previously inspected House Rules record for the measure and floor procedure.",
+              "inspected_at": "2026-09-18T22:36:00Z",
+              "document_sha256": "d94a75a78d42cf2bbff4122fda88e3747a9f5bed1a8d087be16735ac1c5de9af",
+              "origin_group": "U.S. House Committee on Rules",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "619af5dd04496b8f2a7587f95d013ed1789f817e41d56108c43bd66fa5a2d498",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_russia_sanctions_signed_sep18",
+              "locator": "Previously inspected report for the House and Senate votes.",
+              "inspected_at": "2026-09-18T22:36:00Z",
+              "document_sha256": "cc3f2b5e512e669dd900b33d1a3da78420c02d6538abe3827c268370cf508989",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "house_rules_hr5334_sep16",
+              "locator": "Previously inspected House Rules record for the final House action.",
+              "inspected_at": "2026-09-18T22:36:00Z",
+              "document_sha256": "d94a75a78d42cf2bbff4122fda88e3747a9f5bed1a8d087be16735ac1c5de9af",
+              "origin_group": "U.S. House Committee on Rules",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "243859a6bbe9b8b7dfb6748e9a1176bead602928e8eade0f00e63a07bf8a3547",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_russia_sanctions_signed_sep18",
+              "locator": "Previously inspected report for signature and statutory scope.",
+              "inspected_at": "2026-09-18T22:36:00Z",
+              "document_sha256": "cc3f2b5e512e669dd900b33d1a3da78420c02d6538abe3827c268370cf508989",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "d051cfb5153e16e9df197e7c500efb179a099968a1160272a7daede0a3b4907f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_russia_sanctions_signed_sep18",
+              "locator": "Previously inspected report for enacted status and limits on inferred implementation.",
+              "inspected_at": "2026-09-18T22:36:00Z",
+              "document_sha256": "cc3f2b5e512e669dd900b33d1a3da78420c02d6538abe3827c268370cf508989",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "67ef8babf5fb3f22c8cd7a28ebcc7ec31553d493a4cc777dfc0cbab8000d88c8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "whitehouse_graham_act_implementation_oct16",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "6dab186a5bf90ab64acd81661a60bb57ec039c736e3c0428677666cf4431fbc5",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_graham_act_waivers_oct17",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "96e7b9e3900d94317ca1d553b8a5f97343dfe42120a4637b983e319344f7e0a4",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "d6191c052179f7dd9c61e9d4bd9d519e46fa71b97b543ebda9dea48952591968",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "whitehouse_graham_act_implementation_oct16",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "6dab186a5bf90ab64acd81661a60bb57ec039c736e3c0428677666cf4431fbc5",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_graham_act_waivers_oct17",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "96e7b9e3900d94317ca1d553b8a5f97343dfe42120a4637b983e319344f7e0a4",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "9b18f789cc86a322688c06242908a0e1d29622e24bf9ed0d1b52a716bbb8e5a3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "whitehouse_graham_act_implementation_oct16",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "6dab186a5bf90ab64acd81661a60bb57ec039c736e3c0428677666cf4431fbc5",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_graham_act_waivers_oct17",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "96e7b9e3900d94317ca1d553b8a5f97343dfe42120a4637b983e319344f7e0a4",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "b2a532434d75c3d18659f6e77b6654f972e04f68118fe8e32c1a55428c1d1ebe",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "whitehouse_graham_act_implementation_oct16",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "6dab186a5bf90ab64acd81661a60bb57ec039c736e3c0428677666cf4431fbc5",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_graham_act_waivers_oct17",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.156.0.json.",
+              "inspected_at": "2026-10-17T04:02:36Z",
+              "document_sha256": "96e7b9e3900d94317ca1d553b8a5f97343dfe42120a4637b983e319344f7e0a4",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "8e139acc7cd0cadb2d669439d42486042c14083524fb7229797adaaca73cfeaf",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_graham_review_60_days_oct18",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.157.0.json.",
+              "inspected_at": "2026-10-18T04:01:39Z",
+              "document_sha256": "b96f501b482e3fa2f84ea99aed8f7b6bc4531dfa6ab20afa1f0dfa2d38391b5a",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 10,
+          "fact_sha256": "32750d5b151efb9a07c6cb81315e39e4edd67fcc05f029558a95b2cb283a54e8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_graham_review_60_days_oct18",
+              "locator": "Exact normalized extract retained in data/editorial_change_notes/10.157.0.json.",
+              "inspected_at": "2026-10-18T04:01:39Z",
+              "document_sha256": "b96f501b482e3fa2f84ea99aed8f7b6bc4531dfa6ab20afa1f0dfa2d38391b5a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 11,
+          "fact_sha256": "b4106831d9704c122a94a31bf0b24e881eabb40c03d0098b381c698430312280",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truthsocial_trump_russia_waiver_rationale_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.159.0.json; publication and claim limits preserved.",
+              "inspected_at": "2026-10-18T22:03:00Z",
+              "document_sha256": "114e98e632a14d312f3f085660d3fd0e6b6f4d7511a386a54663ef60e2c2fc2b",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "ap_russia_ukraine_drones_sanctions_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.159.0.json; independent reporting does not verify the post's embedded claims.",
+              "inspected_at": "2026-10-18T22:03:00Z",
+              "document_sha256": "bc8fb1fcbd81fdb76809c3f510abf065f26716b54262ca999c2cbc172780d8cf",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 12,
+          "fact_sha256": "b981c08d9a7c6d1bb13719103b7fbdb31a9b6fc473a0cc347a0235f0ff4963b7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truthsocial_trump_russia_waiver_rationale_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.159.0.json; ambiguous document reference preserved rather than inferred.",
+              "inspected_at": "2026-10-18T22:03:00Z",
+              "document_sha256": "114e98e632a14d312f3f085660d3fd0e6b6f4d7511a386a54663ef60e2c2fc2b",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            }
+          ]
+        },
+        {
+          "fact_index": 13,
+          "fact_sha256": "1153950a828678bbce8b9b1c6e96410be7e40af4909e661fa8c38035342adc04",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_russia_ukraine_drones_sanctions_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.159.0.json; battlefield context separated from causal claims.",
+              "inspected_at": "2026-10-18T22:03:00Z",
+              "document_sha256": "bc8fb1fcbd81fdb76809c3f510abf065f26716b54262ca999c2cbc172780d8cf",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 14,
+          "fact_sha256": "58a68bcba2a9c33534b667a6ea0637c04ca870386b6dcfe231dcf2dc8c3ddf1b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_oil_russia_waiver_market_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.160.0.json; early-trading scope, profit-taking and policy-uncertainty limits preserved.",
+              "inspected_at": "2026-10-19T04:07:21Z",
+              "document_sha256": "5ed7991896f3971900954ce481fd9a5296381c7265b4761d1e46be9187a959ac",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 15,
+          "fact_sha256": "28dcd46b7b487fc2bf77fd6cf2ed4197969223175323a1a33b1e6b12520528e1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_oil_russia_waiver_market_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.161.0.json; later prices, profit-taking and physical-supply limits preserved.",
+              "inspected_at": "2026-10-19T10:12:00Z",
+              "document_sha256": "bdcea88580d284bd12c156a04f5c6b161687f1b21db7296b7bf3d5b3942864eb",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "725a1137d04ba4d694a8abeef1813f59b0dbf180e3b64ab3ccc26d45a56b7ce9",
+          "review_note": "Separates the larger same-session price movement from profit-taking, physical supply disruption, durable effectiveness and diplomatic outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "3231c430de9ab7e30564fed43d002c7790eb9e3165d4744af6360fd1358eb747",
+          "review_note": "Preserves the administration explanation while identifying observable legal, diplomatic, physical-supply and sustained-price tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "f933e8abe3bacf99c1d611957e16197f2d8c85d24e8beafbeb6e2f1e2736f77c",
+          "review_note": "Allows both a waiver-driven signal and confounded profit-taking explanation; limits the conclusion to a same-session measured association."
+        }
+      ],
+      "unresolved_questions": [
+        "What document Trump meant by 'that document'",
+        "Whether an identifiable hostage negotiation or broader peace process produces verifiable terms",
+        "Whether Russia's assistance to Iran changes",
+        "Whether the administration discloses its review and alters the waiver",
+        "Whether the same-session oil-price movement persists across later sessions",
+        "Whether physical Russian supply or U.S. retail diesel prices change and can be attributed to the waiver"
+      ]
+    },
+    {
+      "review_id": "10.161.0:NAT-2026-10-19-001:3d6f8992dfd8",
+      "entry_id": "NAT-2026-10-19-001",
+      "content_sha256": "3d6f8992dfd8558c0249b91df573bf4a086e3a0b8ac0217672dc0679b2bfb6a0",
+      "reviewed_at": "2026-10-19T10:13:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "1a10a54b67a67eeb577be828089f3d4b0ea7f545455c9a864005a2fd66b28647",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_wagner_peyser_staffing_aug20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.161.0.json; implemented legal change, retained safeguards and analysis limits preserved.",
+              "inspected_at": "2026-10-19T10:12:00Z",
+              "document_sha256": "54185ad821b933441f9c0773a786b7a9ec2b6370b4d48e35116f20a8222e0744",
+              "origin_group": "Department of Labor / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "81b514a401c58cfc8d9693eef003499555a76a574f4d6f91b1e5d5eee3ddcf30",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_wagner_peyser_staffing_aug20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.161.0.json; implemented legal change, retained safeguards and analysis limits preserved.",
+              "inspected_at": "2026-10-19T10:12:00Z",
+              "document_sha256": "54185ad821b933441f9c0773a786b7a9ec2b6370b4d48e35116f20a8222e0744",
+              "origin_group": "Department of Labor / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "31b84e8c4adc2cde2320b99ed2cffffd67d691db057da11a95614e7f4f77f399",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_wagner_peyser_staffing_aug20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.161.0.json; implemented legal change, retained safeguards and analysis limits preserved.",
+              "inspected_at": "2026-10-19T10:12:00Z",
+              "document_sha256": "54185ad821b933441f9c0773a786b7a9ec2b6370b4d48e35116f20a8222e0744",
+              "origin_group": "Department of Labor / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "d8e71661dfd881157add644e69c02442b9ea17c209b7eec6f3a64867cce291c8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_wagner_peyser_staffing_aug20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.161.0.json; implemented legal change, retained safeguards and analysis limits preserved.",
+              "inspected_at": "2026-10-19T10:12:00Z",
+              "document_sha256": "54185ad821b933441f9c0773a786b7a9ec2b6370b4d48e35116f20a8222e0744",
+              "origin_group": "Department of Labor / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "1ce6325130d7b8224e04f1bf815838b91994751405026528b1c4ffe4c2689750",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_wagner_peyser_staffing_aug20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.161.0.json; implemented legal change, retained safeguards and analysis limits preserved.",
+              "inspected_at": "2026-10-19T10:12:00Z",
+              "document_sha256": "54185ad821b933441f9c0773a786b7a9ec2b6370b4d48e35116f20a8222e0744",
+              "origin_group": "Department of Labor / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "03f079c58eec9d3e395fd011d560f72677f855c8a8728185c9fd65b12aa86c53",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dol_ten_02_26_wagner_peyser",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.161.0.json; state-plan implementation conditions preserved.",
+              "inspected_at": "2026-10-19T10:12:00Z",
+              "document_sha256": "9788fe10f058d4469d726a4e10dc28102e9d0f770945ff4e1fa10fb9a229a9fa",
+              "origin_group": "Department of Labor",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "85b7b64c411f650dad21e5c9b304c7c5b83c7101c152383acad5f9bb5be35748",
+          "review_note": "Distinguishes the implemented federal option from later state adoption and measured service outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "032a394f9126dbd6c8da843c77da476c7b7e94b4cfe960060f9f00f7e5bba249",
+          "review_note": "Preserves Labor’s efficiency and accountability explanation and identifies state, workforce, service and oversight tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "95b7785b5b62b93c07b19c05c764e50492c0e22902fd4c33b4f4c4535bb29246",
+          "review_note": "States both flexibility and accountability risks without treating optional staffing changes or outcomes as completed."
+        }
+      ],
+      "unresolved_questions": [
+        "Which states will submit plan modifications or change staffing models",
+        "How affected workers and collective-bargaining arrangements will be handled",
+        "Whether costs, service access, job placement, complaints or farmworker protections change",
+        "Whether litigation or federal oversight alters implementation"
       ]
     }
   ],
