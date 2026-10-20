@@ -6985,6 +6985,18 @@
       "provenance_path": "data/editorial_change_notes/10.163.0.json",
       "provenance_sha256": "926f808ec3ed7ad8e2ba854978cafe140afcb85fb0f105a54a62cc7988b63fc7",
       "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.164.0:NAT-2026-10-19-008",
+      "entry_id": "NAT-2026-10-19-008",
+      "as_of_utc": "2026-10-20T03:59:26Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.164.0",
+      "summary": "Records the announced $8 billion Harvest Fuel Relief Program and unresolved implementation details.",
+      "provenance_path": "data/editorial_change_notes/10.164.0.json",
+      "provenance_sha256": "b5605348a8f208ed013b55e5559c11c969291877f2e76d422fd01d8360ad7fc4",
+      "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
     }
   ],
   "reviews": [
@@ -89935,6 +89947,107 @@
       "unresolved_questions": [
         "The final number of affected accounts and total compensation",
         "Whether credit corrections, training and compliance duties are completed"
+      ]
+    },
+    {
+      "review_id": "10.164.0:NAT-2026-10-19-008:03d99e8b52c9",
+      "entry_id": "NAT-2026-10-19-008",
+      "content_sha256": "03d99e8b52c966c0cacd5bc24dda52e5d2a3ed354d0059166cfd7982aba6015e",
+      "reviewed_at": "2026-10-20T04:18:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "d450debb7d3a0f96078767a3b67d577ac481ab570386f91b30ed08f92e8c8725",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "usda_harvest_fuel_relief_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.164.0.json; program status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T04:18:00Z",
+              "document_sha256": "d07d38ab09642aa43ff95bc269cc9d788ddfae6515c3e1b5427058614836711f",
+              "origin_group": "U.S. Department of Agriculture",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_harvest_fuel_relief_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.164.0.json; program status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T04:18:00Z",
+              "document_sha256": "453615d7b87e48d3ba01b8c07ed40fdca457e5312772635c8603830d01fbc300",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "79e4f22b2a85e7722257ca1e98dd480948103864d418ef80ce1b197bf49eaeec",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "usda_harvest_fuel_relief_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.164.0.json; program status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T04:18:00Z",
+              "document_sha256": "d07d38ab09642aa43ff95bc269cc9d788ddfae6515c3e1b5427058614836711f",
+              "origin_group": "U.S. Department of Agriculture",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "67a02fff732bd3d3de5d9a8b3102f4f254bcd629725f42a321947c9cf5239cff",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "usda_harvest_fuel_relief_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.164.0.json; program status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T04:18:00Z",
+              "document_sha256": "d07d38ab09642aa43ff95bc269cc9d788ddfae6515c3e1b5427058614836711f",
+              "origin_group": "U.S. Department of Agriculture",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "25bcde7baaed71d30741bb334a4ea87dcf99e5781f23cb3b44e608638c00bda2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_harvest_fuel_relief_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.164.0.json; program status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T04:18:00Z",
+              "document_sha256": "453615d7b87e48d3ba01b8c07ed40fdca457e5312772635c8603830d01fbc300",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "2c4c4a2bb026f77fdd35822d358e64769ee26d51691ec000ef80a9894c016a91",
+          "review_note": "Separates the announced funding program from later payment, distribution and outcome evidence."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "151ec52f8d8393367d2283e1a282fbe8f7312cc15065ddefbc28ae90c0ccf7df",
+          "review_note": "Preserves the administration rationale and identifies observable implementation and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "ee9414948779686e6380968c61e78563bf60598304d8646ee0b6ab9ce954038d",
+          "review_note": "States competing plausible results and limits the conclusion to an announced, authorized program."
+        }
+      ],
+      "unresolved_questions": [
+        "Final commodity rates and eligibility rules",
+        "Application timing, obligations, disbursements, recipient distribution and measured effects"
       ]
     }
   ],
