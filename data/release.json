@@ -1,33 +1,38 @@
 {
-  "version": "10.165.0",
+  "version": "10.166.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-20T09:58:25Z",
-    "through_utc": "2026-10-20T15:57:11Z",
+    "from_utc": "2026-10-20T15:57:11Z",
+    "through_utc": "2026-10-20T21:59:34Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous scan from the exact prior accepted-branch boundary. Two qualifying national records were added; fewer than four passed the publication threshold, and no legacy row was changed because the Wilcox custody-aware remediation remains unresolved."
+    "note": "Continuous scan from the exact prior accepted-branch boundary. Three qualifying national records were added and one existing event was materially refreshed; the California voter-enforcement development was deduplicated to its already consolidated event, and no legacy row was changed because the Wilcox custody-aware remediation remains unresolved."
   },
   "release_iso": "2026-10-20",
   "release_human": "October 20, 2026",
-  "checked_at": "2026-10-20 11:57 AM EDT",
-  "previous_version": "10.164.1",
-  "previous_checked_at": "2026-10-20 5:58 AM EDT",
-  "window_started_at": "2026-10-20 5:58 AM EDT",
-  "window_ended_at": "2026-10-20 11:57 AM EDT",
+  "checked_at": "2026-10-20 5:59 PM EDT",
+  "previous_version": "10.165.0",
+  "previous_checked_at": "2026-10-20 11:57 AM EDT",
+  "window_started_at": "2026-10-20 11:57 AM EDT",
+  "window_ended_at": "2026-10-20 5:59 PM EDT",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
   "week_label": "2026-10-19 through 2026-10-25",
   "cutoff_start": "2026-07-20",
   "new_entry_ids": [
-    "NAT-2026-10-19-009",
-    "NAT-2026-10-20-001"
+    "NAT-2026-10-20-002",
+    "NAT-2026-10-20-003",
+    "NAT-2026-10-20-004",
+    "NAT-2026-09-18-007"
   ],
   "added_entry_ids": [
-    "NAT-2026-10-19-009",
-    "NAT-2026-10-20-001"
+    "NAT-2026-10-20-002",
+    "NAT-2026-10-20-003",
+    "NAT-2026-10-20-004"
   ],
-  "refreshed_entry_ids": [],
+  "refreshed_entry_ids": [
+    "NAT-2026-09-18-007"
+  ],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -807,7 +812,7 @@
       "entry_id": "NAT-2026-09-18-007",
       "target_id": "NAT-2026-09-18-007",
       "decision": "same_event_update",
-      "notes": "The October 10 Justice Department antitrust inquiry and October 13 preliminary injunction are later developments in the television pool's response to the White House credential ban and the same access litigation. Both were consolidated into the stable press-access record rather than counted as parallel events."
+      "notes": "The October 10 Justice Department antitrust inquiry, October 13 preliminary injunction and CNN counsel's reported October 20 Air Force One exclusions are later developments in the television pool's response to the White House credential ban and the same access litigation. They were consolidated into the stable press-access record rather than counted as parallel events."
     },
     {
       "entry_id": "NAT-2026-10-01-007",
@@ -1108,28 +1113,46 @@
       "target_id": "NAT-2026-09-09-004",
       "decision": "false_positive",
       "notes": "The existing El Salvador TPS record covers a different designation and affected population; Ukraine and Sudan require separate program findings."
+    },
+    {
+      "entry_id": "NAT-2026-10-20-002",
+      "target_id": "NAT-2026-10-20-002",
+      "decision": "false_positive",
+      "notes": "No current record or recent maintenance item covered the launched and funded Fraud Whistleblower Incentive Program. A prospective lead withheld in the prior window matured only after DOJ published the terms and Treasury commitment."
+    },
+    {
+      "entry_id": "NAT-2026-10-20-003",
+      "target_id": "NAT-2026-10-20-003",
+      "decision": "false_positive",
+      "notes": "No canonical record, normalized-title match, shared source URL or recent pull request covered SSA's newly reported record-integrity measurements."
+    },
+    {
+      "entry_id": "NAT-2026-10-20-004",
+      "target_id": "NAT-2026-10-20-004",
+      "decision": "false_positive",
+      "notes": "No canonical record, normalized-title match, shared source URL or recent pull request covered the newly reported Operation Not Forgotten 2026 results."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Two new Truth Social posts",
-      "reason": "A linked border-enforcement advocacy article and stock-market performance graphic remained feed-only because no independently verified, separate government action was established."
+      "title": "Eleven new Truth Social posts",
+      "reason": "Women's-health links duplicated NAT-2026-10-19-002; campaign turnout and rally posts were private political advocacy; the claimed campaign spending was not a government expenditure; and the California fraud allegation lacked independent evidence of a distinct qualifying action. All remained in the separate feed."
     },
     {
-      "title": "Prospective Fraud Whistleblower Incentive Program",
-      "reason": "A later announcement was reported as prospective; no reviewed final instrument, terms or implemented launch was located by the cutoff."
+      "title": "California voter-enforcement report",
+      "reason": "The development was already consolidated into NAT-2026-09-15-003 and was not counted or refreshed twice."
     },
     {
-      "title": "Nevada geothermal lease auction",
-      "reason": "The auction was underway, but final bids, awards and lease results were unavailable by the cutoff."
+      "title": "New Jersey food importer tariff lawsuit",
+      "reason": "The filing presents allegations challenging Canada tariffs, but no ruling or independently established new implementation consequence existed by cutoff."
     },
     {
-      "title": "White House border-results advocacy",
-      "reason": "The October 20 release compiled administration outcome claims but did not establish a distinct new signed, implemented or adjudicated action."
+      "title": "CPSC lobbyist lawsuit",
+      "reason": "The newly filed complaint contains unadjudicated allegations; no agency response, ruling or independently verified implementation consequence was available by cutoff."
     },
     {
       "title": "Trump TV metadata recheck",
-      "reason": "Six October 19 items remained visible, but direct audiovisual content and captions were inaccessible and no distinct qualifying action was established."
+      "reason": "No new dated item appeared in the official library after the six October 19 listings; direct audiovisual content and captions remained inaccessible, and no distinct qualifying action was established in the metadata, remarks or releases reviewed."
     },
     {
       "title": "Legacy Wilcox remediation",
@@ -1144,11 +1167,11 @@
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-20T15:57:11Z",
-    "checked_at_eastern": "2026-10-20 11:57 AM EDT",
+    "checked_at": "2026-10-20T21:59:34Z",
+    "checked_at_eastern": "2026-10-20 5:59 PM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-20T15:57:11Z",
+    "last_successful_page_inspection_at": "2026-10-20T21:59:34Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1159,7 +1182,7 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, dated video-library, remarks and releases pages were rechecked. The linked stream remained A4gNgHfZ-v4. Six October 19 items remained listed: three general clips or event recordings and three women’s-health clips or replays. Titles, dates, durations and stable IDs were inspected; direct footage, audio and captions were not retrieved because YouTube access was throttled. No qualifying new item located in the material reviewed.",
+    "summary": "Official Trump TV, live, dated video-library, remarks and releases pages were rechecked. The linked stream remained A4gNgHfZ-v4, and the dated library still showed the same six October 19 items with no new October 20 listing. Titles, dates, durations and stable IDs were inspected; direct footage, audio and captions were not retrieved because YouTube access was throttled. No qualifying new item located in the material reviewed.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1171,8 +1194,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-20T15:57:11Z",
-        "observed_at_eastern": "2026-10-20 11:57 AM EDT",
+      "observed_at": "2026-10-20T21:59:34Z",
+      "observed_at_eastern": "2026-10-20 5:59 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official page linked the unchanged A4gNgHfZ-v4 stream. Fallback text was not treated as proof of an outage.",
         "video_ids": [
@@ -1184,8 +1207,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-20T15:57:11Z",
-        "observed_at_eastern": "2026-10-20 11:57 AM EDT",
+      "observed_at": "2026-10-20T21:59:34Z",
+      "observed_at_eastern": "2026-10-20 5:59 PM EDT",
         "format": "official live-hub metadata; audiovisual content unreviewed",
         "inspection": "The hub linked the same stream; current live/replay state was not independently reviewed.",
         "video_ids": [
@@ -1197,10 +1220,10 @@
         "posted_date": "2026-10-19",
         "original_event_date": "2026-10-19",
         "broadcast_time": null,
-        "observed_at": "2026-10-20T15:57:11Z",
-        "observed_at_eastern": "2026-10-20 11:57 AM EDT",
+      "observed_at": "2026-10-20T21:59:34Z",
+      "observed_at_eastern": "2026-10-20 5:59 PM EDT",
         "format": "official dated-library metadata; audiovisual content unreviewed",
-        "inspection": "Six October 19 items remained listed. Titles, dates, durations and stable IDs were inspected; direct footage and captions were throttled, and the metadata did not establish a new action.",
+      "inspection": "The same six October 19 items remained listed and no new October 20 item appeared. Titles, dates, durations and stable IDs were inspected; direct footage and captions were throttled, and the metadata did not establish a new action.",
         "video_ids": [
           "E_Vs4waJ6GM",
           "5YerQHGsX04",
@@ -1215,8 +1238,8 @@
         "posted_date": "2026-10-09",
         "original_event_date": "2026-10-09",
         "broadcast_time": null,
-        "observed_at": "2026-10-20T15:57:11Z",
-        "observed_at_eastern": "2026-10-20 11:57 AM EDT",
+      "observed_at": "2026-10-20T21:59:34Z",
+      "observed_at_eastern": "2026-10-20 5:59 PM EDT",
         "format": "supplementary remarks index",
         "inspection": "The index supplied no new complete Trump TV transcript and was not treated as a complete transcript feed.",
         "video_ids": []
@@ -1226,8 +1249,8 @@
         "posted_date": "2026-10-20",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-20T15:57:11Z",
-        "observed_at_eastern": "2026-10-20 11:57 AM EDT",
+      "observed_at": "2026-10-20T21:59:34Z",
+      "observed_at_eastern": "2026-10-20 5:59 PM EDT",
         "format": "supplementary official releases index",
         "inspection": "The October 20 border-results release compiled administration claims but did not establish a distinct new government action.",
         "video_ids": []
@@ -1236,41 +1259,41 @@
   },
   "truth_social_inspection": {
     "coverage": {
-      "total_review_rows": 1877,
+      "total_review_rows": 1888,
       "text_status": {
         "not_recorded": 147,
-        "reviewed": 761,
+        "reviewed": 772,
         "pending": 969
       },
       "media_status": {
-        "not_applicable": 890,
+        "not_applicable": 901,
         "not_recorded": 19,
         "unavailable": 270,
         "pending": 507,
         "reviewed": 191
       }
     },
-    "new_posts": 2,
-    "source_rows_added": 2,
-    "new_text_reviewed": 2,
-    "new_nonempty_text_reviewed": 1,
-    "new_empty_text_inspected": 1,
-    "new_image_assets_reviewed": 1,
-    "new_image_posts_reviewed": 1,
+    "new_posts": 11,
+    "source_rows_added": 11,
+    "new_text_reviewed": 11,
+    "new_nonempty_text_reviewed": 11,
+    "new_empty_text_inspected": 0,
+    "new_image_assets_reviewed": 0,
+    "new_image_posts_reviewed": 0,
     "new_video_assets_pending": 0,
     "new_video_assets_reviewed": 0,
-    "new_media_reviewed": 1,
+    "new_media_reviewed": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-20T15:57:11Z",
-    "checked_at_eastern": "2026-10-20 11:57:11 AM EDT",
-    "latest_post_at_utc": "2026-10-20T12:51:54.876000Z",
-    "latest_post_at_eastern": "2026-10-20 8:51:54 AM EDT",
-    "latest_post_id": "117473326850171330",
+    "checked_at_utc": "2026-10-20T21:59:34Z",
+    "checked_at_eastern": "2026-10-20 5:59:34 PM EDT",
+    "latest_post_at_utc": "2026-10-20T21:12:08.604000Z",
+    "latest_post_at_eastern": "2026-10-20 5:12:08 PM EDT",
+    "latest_post_id": "117475293829837494",
     "no_new_post_finding": false,
-    "note": "Two posts were newer than the prior validated snapshot. Both text fields and the single attached image were directly reviewed. The linked border-enforcement article and stock-market performance graphic remained feed-only because no independently verified, separate qualifying action was established."
+    "note": "Eleven posts were newer than the prior validated snapshot, and all eleven nonempty text fields were directly reviewed. Women's-health links duplicated an existing record; rally and state turnout posts were campaign advocacy; the California fraud statement remained an unsupported allegation; and the claimed campaign spending was not a government expenditure. All remained in the separate feed."
   },
   "archive_network_inspection": {
-    "checked_at": "2026-10-20T15:57:11Z",
-    "note": "All four registered primary projects were rechecked as discovery inputs. Trump Archive displayed 14,987 total items, 12,392 Truth Social posts and 1,943 speeches/transcripts; UndoTrump remained at 1,264 actions, 995 active, 44 in court and 42 restored; IPTP remained at 1,818 policy actions; and Record47 remained at 6,348 social posts, 3,539 primary sources, 332 contradictions and 38 sequences. No unlike units were summed and no external item was automatically promoted."
+    "checked_at": "2026-10-20T21:59:34Z",
+    "note": "All four registered primary projects were rechecked as discovery inputs. Trump Archive advanced to 14,994 total items, 12,399 Truth Social posts and 1,943 speeches/transcripts; UndoTrump remained at 1,264 actions, 995 active, 44 in court and 42 restored; IPTP remained at 1,818 policy actions; and Record47 remained at 6,348 social posts, 3,539 primary sources, 332 contradictions and 38 sequences. No unlike units were summed and no external item was automatically promoted."
   }
 }
