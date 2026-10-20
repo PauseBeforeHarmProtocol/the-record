@@ -6997,6 +6997,30 @@
       "provenance_path": "data/editorial_change_notes/10.164.0.json",
       "provenance_sha256": "b5605348a8f208ed013b55e5559c11c969291877f2e76d422fd01d8360ad7fc4",
       "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.165.0:NAT-2026-10-19-009",
+      "entry_id": "NAT-2026-10-19-009",
+      "as_of_utc": "2026-10-20T15:57:11Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.165.0",
+      "summary": "Records the district-court intervention and dismissal ruling while preserving unresolved Clean Air Act merits.",
+      "provenance_path": "data/editorial_change_notes/10.165.0.json",
+      "provenance_sha256": "58671697ceca3e074eb7dc71b64b20e477ef7f95a44729c1ac6c282ec3e0fba8",
+      "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.165.0:NAT-2026-10-20-001",
+      "entry_id": "NAT-2026-10-20-001",
+      "as_of_utc": "2026-10-20T15:57:11Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.165.0",
+      "summary": "Records the $5 million Instacart settlement, required remedies and unresolved claimant and compliance outcomes.",
+      "provenance_path": "data/editorial_change_notes/10.165.0.json",
+      "provenance_sha256": "58671697ceca3e074eb7dc71b64b20e477ef7f95a44729c1ac6c282ec3e0fba8",
+      "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
     }
   ],
   "reviews": [
@@ -90048,6 +90072,224 @@
       "unresolved_questions": [
         "Final commodity rates and eligibility rules",
         "Application timing, obligations, disbursements, recipient distribution and measured effects"
+      ]
+    },
+    {
+      "review_id": "10.165.0:NAT-2026-10-19-009:54691f068adc",
+      "entry_id": "NAT-2026-10-19-009",
+      "content_sha256": "54691f068adce5807ee7598c3e35d16b4eb27a23ac97d233633cf3473ee47583",
+      "reviewed_at": "2026-10-20T15:57:11Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "9b69795c9b0659f196aea15ef475c999f98bf2422d48de2bcd1bfd23dd364505",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ndmiss_xai_intervention_order_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.165.0.json; legal status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T15:57:11Z",
+              "document_sha256": "558a8f325276616470403517786ce1fa2285d0cb46cf0cc135a1327eee89d9c5",
+              "origin_group": "U.S. District Court for the Northern District of Mississippi",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "41ecd3760a673c1e3e5a1f13c0f98722dddb84cee5172efa6a67a03d3b54465d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ndmiss_xai_intervention_order_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.165.0.json; legal status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T15:57:11Z",
+              "document_sha256": "558a8f325276616470403517786ce1fa2285d0cb46cf0cc135a1327eee89d9c5",
+              "origin_group": "U.S. District Court for the Northern District of Mississippi",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "2072630f68092a1f2517753498514856cac9c35cd19223efb6cc25e417f227b1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ndmiss_xai_intervention_order_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.165.0.json; legal status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T15:57:11Z",
+              "document_sha256": "558a8f325276616470403517786ce1fa2285d0cb46cf0cc135a1327eee89d9c5",
+              "origin_group": "U.S. District Court for the Northern District of Mississippi",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "4bbf40f77016ab5aa887fa80c1a332392ff4a6569748a60b9c45b45b31647fb3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ndmiss_xai_intervention_order_oct19",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.165.0.json; legal status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T15:57:11Z",
+              "document_sha256": "558a8f325276616470403517786ce1fa2285d0cb46cf0cc135a1327eee89d9c5",
+              "origin_group": "U.S. District Court for the Northern District of Mississippi",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_xai_intervention_order_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.165.0.json; legal status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T15:57:11Z",
+              "document_sha256": "8fbe59beeedcfe05028b0df293f3681f88946f144efede356dfb6121d084a396",
+              "origin_group": "Reuters",
+              "evidence_status": "ordered"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "d264d2a97c5abfb21dfc6668664937fc2d94562e4a85abb7e47e79076ee7355c",
+          "review_note": "Separates the verified action or ruling from later implementation, merits and outcome evidence."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "7b96af82cd35f024f849390d4805c769ba73edadf21f05d6c6115533f1f6c87b",
+          "review_note": "Preserves the strongest relevant administration rationale and identifies observable legal, operational and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "4d743749cd26c71145cc91e540a539eb1c6b2286d3fb942ce2b84406fce88f57",
+          "review_note": "States competing plausible interpretations and limits the conclusion to the evidence status actually established."
+        }
+      ],
+      "unresolved_questions": [
+        "Any Rule 24(c) pleading or appeal",
+        "Rulings on dismissal, preliminary injunction, permitting, liability and remedies"
+      ]
+    },
+    {
+      "review_id": "10.165.0:NAT-2026-10-20-001:ace9a8e06aa1",
+      "entry_id": "NAT-2026-10-20-001",
+      "content_sha256": "ace9a8e06aa1ab0ead1e2cc1332ab8aa6a4dbfac5ed129269dd60c4edfcfc216",
+      "reviewed_at": "2026-10-20T15:57:11Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "2466c4fa78aa2c5bbb041f0687bcaf72d3bb08d33e1fae4a1395de90dfcd54c6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_instacart_settlement_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.165.0.json; legal status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T15:57:11Z",
+              "document_sha256": "726ab5f09401487bde95fd197397d6343a2ce538073c367788bd3622279525b0",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "doj_instacart_summary_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.165.0.json; legal status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T15:57:11Z",
+              "document_sha256": "bf1e02cb022c032822249b730e0dfb137b2ef85e0382f9f595042220148073c4",
+              "origin_group": "U.S. Department of Justice and Equal Employment Opportunity Commission",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "acdf277d1a832727c92cd0629dca01c54437870228564d25b9dca61feaae5161",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_instacart_settlement_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.165.0.json; legal status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T15:57:11Z",
+              "document_sha256": "726ab5f09401487bde95fd197397d6343a2ce538073c367788bd3622279525b0",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "0b9ec1c3672aba131c939dbc8ce63ec22a8bb57bc356cf0b3babfadc868d831d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_instacart_settlement_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.165.0.json; legal status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T15:57:11Z",
+              "document_sha256": "726ab5f09401487bde95fd197397d6343a2ce538073c367788bd3622279525b0",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "doj_instacart_summary_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.165.0.json; legal status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T15:57:11Z",
+              "document_sha256": "bf1e02cb022c032822249b730e0dfb137b2ef85e0382f9f595042220148073c4",
+              "origin_group": "U.S. Department of Justice and Equal Employment Opportunity Commission",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "fbd404d8910a012acc144b5d7df167daf892496b38897fe7f3f89d38c18c066b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_instacart_settlement_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.165.0.json; legal status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T15:57:11Z",
+              "document_sha256": "726ab5f09401487bde95fd197397d6343a2ce538073c367788bd3622279525b0",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "doj_instacart_summary_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.165.0.json; legal status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T15:57:11Z",
+              "document_sha256": "bf1e02cb022c032822249b730e0dfb137b2ef85e0382f9f595042220148073c4",
+              "origin_group": "U.S. Department of Justice and Equal Employment Opportunity Commission",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "51045b25d98b2b629254141557b5493ef4d937bee3de01e78d488f9eecc83874",
+          "review_note": "Separates the verified action or ruling from later implementation, merits and outcome evidence."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "db55b284d2a4eaef1580a9e1e2d27deeee0480b9335aad8f2062253837e9c9b0",
+          "review_note": "Preserves the strongest relevant administration rationale and identifies observable legal, operational and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "e1c57d17a4ec7419edf05a3b6461c96f1a25da37b9671087f1f2c02cee2a2fbe",
+          "review_note": "States competing plausible interpretations and limits the conclusion to the evidence status actually established."
+        }
+      ],
+      "unresolved_questions": [
+        "Claimant outreach, eligibility determinations and payments",
+        "Civil-penalty payment, process changes, monitoring reports and later compliance"
       ]
     }
   ],
