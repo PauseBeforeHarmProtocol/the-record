@@ -1,0 +1,108 @@
+{
+  "version": "10.164.0",
+  "base_release_version": "10.163.0",
+  "base_commit": "79743581765131f209a6004e91ddf37bbfb812ac",
+  "research_window": {
+    "from_utc": "2026-10-19T22:00:22Z",
+    "through_utc": "2026-10-20T03:59:26Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary through the run cutoff."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository's final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-19-008",
+      "kind": "added",
+      "summary": "Records USDA's announced $8 billion Harvest Fuel Relief Program while preserving unresolved payment rates, applications and disbursement.",
+      "duplicate_review": "The program is distinct from the earlier off-road dyed-diesel tax order and from campaign proposals; no current record covered this CCC/FSA payment program."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "usda_harvest_fuel_relief_oct19",
+      "origin_group": "U.S. Department of Agriculture",
+      "evidence_extract": "USDA announced $8 billion in one-time Harvest Fuel Relief support under the Commodity Credit Corporation Charter Act, administered by FSA. The formula uses planted-acre, production-cost, yield and price data; crop insurance is not required. Title I rates are expected in November and other eligibility and methodology will follow.",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-20T04:18:00Z",
+      "document_sha256": "d07d38ab09642aa43ff95bc269cc9d788ddfae6515c3e1b5427058614836711f"
+    },
+    {
+      "source_id": "reuters_harvest_fuel_relief_oct20",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters independently reported the $8 billion one-time farmer-support announcement after Trump's Kansas campaign rally, said FSA would administer it and described the stated purpose as offsetting diesel and other 2026 farm-input costs; no distributed-payment outcome was reported.",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-20T04:18:00Z",
+      "document_sha256": "453615d7b87e48d3ba01b8c07ed40fdca457e5312772635c8603830d01fbc300"
+    }
+  ],
+  "truth_social_media_inspection": {
+    "post_ids": [
+      "117471169697500011",
+      "117471040549784543",
+      "117471024745207734",
+      "117470919606451999",
+      "117470630578550684",
+      "117470610998962876",
+      "117470606096661361",
+      "117470605435315443",
+      "117470600629608396",
+      "117470599886832710",
+      "117470598444052539",
+      "117470597708924695",
+      "117470595904971292",
+      "117470594815032154",
+      "117470593220109602",
+      "117470592459221432",
+      "117470591632121393",
+      "117470533012557706",
+      "117470443395506989",
+      "117470441097872597",
+      "117470395373605336",
+      "117470380723173497",
+      "117470376164503349",
+      "117470368203080253",
+      "117469853201214681"
+    ],
+    "scope": "All 25 new post text fields were directly reviewed. One image and representative frames across two videos were directly inspected; video audio and captions were not transcribed.",
+    "provenance": "data/truth_social_feed_meta.json, data/truth_social_seed.json and data/truth_social_reviews.json"
+  },
+  "trump_tv_inspection": {
+    "sources": [
+      "https://www.whitehouse.gov/trumptv/",
+      "https://www.whitehouse.gov/live/",
+      "https://www.whitehouse.gov/videos/",
+      "https://www.whitehouse.gov/remarks/",
+      "https://www.whitehouse.gov/releases/"
+    ],
+    "scope": "Official page metadata and stable video IDs were inspected. Direct YouTube footage and captions were not retrieved because access was rate-limited.",
+    "finding": "The stream remained A4gNgHfZ-v4. Three October 19 uploads were newly listed: E_Vs4waJ6GM, 5YerQHGsX04 and ZQzkFIVCdK0. They were treated as an edited clip or event replays, not new actions. No qualifying new item was located in the material reviewed."
+  },
+  "withheld": [
+    {
+      "title": "Twenty-five new Truth Social posts",
+      "reason": "Campaign advocacy, rhetoric, repeated or unverified claims and duplicates remained feed-only; the independently verified USDA program was published separately."
+    },
+    {
+      "title": "East Potomac golf-course hearing and statement",
+      "reason": "No final court order or separate new government action was established; the matter remains covered by NAT-2026-10-10-001."
+    },
+    {
+      "title": "Prospective Mexico trade deal",
+      "reason": "No signed instrument, formal terms or implementation was located by the cutoff."
+    },
+    {
+      "title": "Trump TV metadata recheck",
+      "reason": "Three October 19 items were identified by official metadata, but footage and captions were inaccessible and no distinct qualifying action was established."
+    },
+    {
+      "title": "Legacy Wilcox remediation",
+      "reason": "The restored historical row still requires the custody-aware remediation path identified in the prior run, so no material legacy edit was attempted."
+    },
+    {
+      "title": "External archive discovery inputs",
+      "reason": "Trump Archive measurements advanced; the other three registered projects remained stable. Units were preserved separately and no upstream item was promoted automatically."
+    }
+  ],
+  "corrections": []
+}
