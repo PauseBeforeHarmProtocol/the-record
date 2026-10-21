@@ -7105,6 +7105,18 @@
       "provenance_path": "data/editorial_change_notes/10.167.0.json",
       "provenance_sha256": "94ed8cfcfd87650b35737c956542877a56deb17c825381d6c2abbbf17e7915b8",
       "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.168.0:NAT-2026-10-21-001",
+      "entry_id": "NAT-2026-10-21-001",
+      "as_of_utc": "2026-10-21T09:55:28Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.168.0",
+      "summary": "Records Russia's completed release of wrongfully detained American Stephen Hubbard while preserving undisclosed terms and the lack of a broader Ukraine breakthrough.",
+      "provenance_path": "data/editorial_change_notes/10.168.0.json",
+      "provenance_sha256": "b61e932e16dd46749891ed005d5556936cbe7c5bf8ff4499860a9536cd66a325",
+      "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
     }
   ],
   "reviews": [
@@ -91395,6 +91407,93 @@
         "Published operational guidance and award decisions",
         "Reconciliation of the presidential commission statement with DOJ terms",
         "Verified payments, recoveries, safeguards and audited cost-effectiveness"
+      ]
+    },
+    {
+      "review_id": "10.168.0:NAT-2026-10-21-001:b485e94bc16c",
+      "entry_id": "NAT-2026-10-21-001",
+      "content_sha256": "b485e94bc16cb5b9623a50bccc4ce630bf8d3bb9f0a2210bed8cafb0e2a706cd",
+      "reviewed_at": "2026-10-21T09:55:28Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "6dfc4a17c335c74fe98e5a51748d14461ac83a6c686be640f302c7bb063afd0d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_hubbard_release_oct21",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.168.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T09:55:28Z",
+              "document_sha256": "2e2cba5af79eac9ebaca7a50a1f0e7ed9575f5180c571aceb469d89e9f4566db",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_hubbard_release_oct21",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.168.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T09:55:28Z",
+              "document_sha256": "71c1fa030fc7b4c00b92764ec2b4bcd5d411cc3f4afed32d6c63a10911373d0e",
+              "origin_group": "Associated Press",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "fc521783b3dd0d5542d5483c90c6aecdecf05ed32492fc5114ad0184ceca0a7b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_hubbard_release_oct21",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.168.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T09:55:28Z",
+              "document_sha256": "2e2cba5af79eac9ebaca7a50a1f0e7ed9575f5180c571aceb469d89e9f4566db",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "38618a34c6a1b9dd78c312698aeb8ffea8d75933f50e1a02b6a391e479ede131",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_hubbard_release_oct21",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.168.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T09:55:28Z",
+              "document_sha256": "71c1fa030fc7b4c00b92764ec2b4bcd5d411cc3f4afed32d6c63a10911373d0e",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "d871cd069efe4e83cb6f0f033f401d5cba847003d51bd949c24fdd339d37433c",
+          "review_note": "Separates the completed humanitarian action from undisclosed terms and unproven broader diplomatic effects."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "1ca232a074db5ff6dcc8c84bb9fac4a7e2bdef169ab5e08d6ac1ac0078f4d233",
+          "review_note": "Preserves the strongest administration case and identifies observable return, disclosure and future-diplomacy tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "7db41a8412f3f7e828a4706c2d314ed2bc521dab8b187db277d775976e4aad89",
+          "review_note": "States competing diplomatic interpretations while limiting the conclusion to the verified completed release."
+        }
+      ],
+      "unresolved_questions": [
+        "Hubbard's safe return to the United States",
+        "Any exchange, concession or other undisclosed release terms",
+        "Whether the same channel produces verifiable progress on the Ukraine war or other detainee cases"
       ]
     }
   ],
