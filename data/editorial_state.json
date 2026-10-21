@@ -7069,6 +7069,42 @@
       "provenance_path": "data/editorial_change_notes/10.166.0.json",
       "provenance_sha256": "57e0d97cdc10138634a46b18d136ed0b088b01b8f618b73314a25d48c5b58245",
       "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.167.0:NAT-2026-10-20-005",
+      "entry_id": "NAT-2026-10-20-005",
+      "as_of_utc": "2026-10-21T04:03:55Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.167.0",
+      "summary": "Records the State Department’s reported visa-revocation total while preserving aggregate, review and outcome limits.",
+      "provenance_path": "data/editorial_change_notes/10.167.0.json",
+      "provenance_sha256": "94ed8cfcfd87650b35737c956542877a56deb17c825381d6c2abbbf17e7915b8",
+      "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.167.0:NAT-2026-10-20-006",
+      "entry_id": "NAT-2026-10-20-006",
+      "as_of_utc": "2026-10-21T04:03:55Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.167.0",
+      "summary": "Records ten enacted bills and their distinct implementation tests.",
+      "provenance_path": "data/editorial_change_notes/10.167.0.json",
+      "provenance_sha256": "94ed8cfcfd87650b35737c956542877a56deb17c825381d6c2abbbf17e7915b8",
+      "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.167.0:NAT-2026-10-20-002",
+      "entry_id": "NAT-2026-10-20-002",
+      "as_of_utc": "2026-10-21T04:03:55Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.167.0",
+      "summary": "Adds the post-boundary Reuters comparison of presidential and DOJ reward descriptions and the first announced award.",
+      "provenance_path": "data/editorial_change_notes/10.167.0.json",
+      "provenance_sha256": "94ed8cfcfd87650b35737c956542877a56deb17c825381d6c2abbbf17e7915b8",
+      "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
     }
   ],
   "reviews": [
@@ -91055,6 +91091,310 @@
         "Whether the preliminary injunction governs Air Force One television-pool assignments",
         "White House or Justice Department response and any further court enforcement ruling",
         "Disposition of the separate television-pool antitrust inquiry"
+      ]
+    },
+    {
+      "review_id": "10.167.0:NAT-2026-10-20-005:a326e5abd996",
+      "entry_id": "NAT-2026-10-20-005",
+      "content_sha256": "a326e5abd9963867f8d31de31bcca4fdca44c6f5043510cb422d63755ca5a558",
+      "reviewed_at": "2026-10-21T04:03:55Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "7437d53fc871ebf3303a7d90d9de9294d3c4d521e595835bfa2010208ffc1ebb",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "state_visa_revocations_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.167.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T04:03:55Z",
+              "document_sha256": "30ebd8246972fe9c1e7ca6b66065dc3101d3a1e94b750c6f9e976d25260bbb94",
+              "origin_group": "U.S. Department of State",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_visa_revocations_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.167.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T04:03:55Z",
+              "document_sha256": "8c3fd4cd45a04b9df0a7bd56b74bf4877ae6c2d148c58293a339bbacd26e7232",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5abe8157bc7392828714374e2e750854d38b432b93d0f264fa221cd5149b93ed",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_visa_revocations_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.167.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T04:03:55Z",
+              "document_sha256": "8c3fd4cd45a04b9df0a7bd56b74bf4877ae6c2d148c58293a339bbacd26e7232",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "b7a89a6a2b2872f5076aff1046ce473383034b87995ac16bd309e96c25784eb9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_visa_revocations_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.167.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T04:03:55Z",
+              "document_sha256": "8c3fd4cd45a04b9df0a7bd56b74bf4877ae6c2d148c58293a339bbacd26e7232",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "8949c4f04e0dfdf7f6b12263b782d1979d02cf37767978f6fccc9c6881094a0d",
+          "review_note": "Separates the verified action or measurement from later implementation, merits and outcome evidence."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "3820b27e2a41273effd88020c2b8f628e893903b761c919b5d7dca5a961b3502",
+          "review_note": "Preserves the strongest relevant administration rationale and identifies observable legal, operational and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "38beb7158ace1a32643693cdaa1ef30ffa49657aae5d96d5fa77078136fb49b9",
+          "review_note": "States competing plausible interpretations and limits the conclusion to the evidence status actually established."
+        }
+      ],
+      "unresolved_questions": [
+        "Case-level grounds, notice and review outcomes",
+        "Independent audit, reinstatements and adjudicated error rate"
+      ]
+    },
+    {
+      "review_id": "10.167.0:NAT-2026-10-20-006:c790fc6516ef",
+      "entry_id": "NAT-2026-10-20-006",
+      "content_sha256": "c790fc6516ef7b4c18ee9fc0235bb05d0a70641ce6f14888ee00926de76480eb",
+      "reviewed_at": "2026-10-21T04:03:55Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "620316fae178dc32b5ade901d0531ca7008bde66d4ad655d2c48b4bab8559ac5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "whitehouse_bills_signed_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.167.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T04:03:55Z",
+              "document_sha256": "783b885bab9c96624f952138249172ec16f6334786ac7f562efc0352157e5232",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "f8b2782e36ed4eb3eec1c05834d3916de01cfef4a324810312b3e3fb9bc2ec79",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "whitehouse_bills_signed_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.167.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T04:03:55Z",
+              "document_sha256": "783b885bab9c96624f952138249172ec16f6334786ac7f562efc0352157e5232",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "7423c711e01cbf1d978d2b73b0231e138409da894c2928f6e2bd2a53ab7f18f0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "whitehouse_bills_signed_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.167.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T04:03:55Z",
+              "document_sha256": "783b885bab9c96624f952138249172ec16f6334786ac7f562efc0352157e5232",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "3d443a8764db0cc268cbdfd04b6bd7412fed1f11e1ef3f1411e278946a225d06",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "whitehouse_bills_signed_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.167.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T04:03:55Z",
+              "document_sha256": "783b885bab9c96624f952138249172ec16f6334786ac7f562efc0352157e5232",
+              "origin_group": "The White House",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "6a15f83a95434b32059da508573e46b02a962d82ad3621746592bc48d3ab58d4",
+          "review_note": "Separates the verified action or measurement from later implementation, merits and outcome evidence."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "e1c4e1a8ff8a3cc0b1228ae8e941264d35f3df9f39ff5e7b1a2bbf3e239c5a75",
+          "review_note": "Preserves the strongest relevant administration rationale and identifies observable legal, operational and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "1f1961939c20967e1b8f057c99995f9bb1bdce429d1f0550cc2292956171497c",
+          "review_note": "States competing plausible interpretations and limits the conclusion to the evidence status actually established."
+        }
+      ],
+      "unresolved_questions": [
+        "Agency implementation schedules and appropriations",
+        "Completion and measured effects of studies, transfers, training, notices and fees"
+      ]
+    },
+    {
+      "review_id": "10.167.0:NAT-2026-10-20-002:65dd7552cab3",
+      "entry_id": "NAT-2026-10-20-002",
+      "content_sha256": "65dd7552cab3f2d9c63201ddc614a8d842fbdf3801d4d135568a553ae4cbc98a",
+      "reviewed_at": "2026-10-21T04:03:55Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "aa5c3ad35208129660b4c5ab8eec58f4ef25a2fcfb1fd1a014e8187ce391cf49",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_whip_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.167.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T04:03:55Z",
+              "document_sha256": "e1ddd968d359a783a95c9f8dc48d5b78c7f18d4aaae4ce53e6b3764ba6110821",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_whip_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.167.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T04:03:55Z",
+              "document_sha256": "597eae615c052373bfc648b3292b43dc3f6eda1721cd3f3d6fc33778a180987c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "f8c232362a569606ba95a6cfb58e1a9fd66fdd68bdabc3cb150423d8ccc2c075",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_whip_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.167.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T04:03:55Z",
+              "document_sha256": "e1ddd968d359a783a95c9f8dc48d5b78c7f18d4aaae4ce53e6b3764ba6110821",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_whip_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.167.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T04:03:55Z",
+              "document_sha256": "597eae615c052373bfc648b3292b43dc3f6eda1721cd3f3d6fc33778a180987c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "33f0eec67af0f8e0adaee82e7180fab3b30031f8ee09ed778e4ff68ca060a583",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_whip_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.167.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T04:03:55Z",
+              "document_sha256": "597eae615c052373bfc648b3292b43dc3f6eda1721cd3f3d6fc33778a180987c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "e479eee59dce2002d1fb56be9c2758477cbeb70ba61ef2da21253de244e795ab",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_whip_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.167.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T04:03:55Z",
+              "document_sha256": "597eae615c052373bfc648b3292b43dc3f6eda1721cd3f3d6fc33778a180987c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "ffc09d511a6c6c1253181137dc680252474035b37baaedc4487f103744766bad",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_whip_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.167.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T04:03:55Z",
+              "document_sha256": "2d4148cc549485af3de6b57cb9e8f52b98eddeca3518b2a046654d16b9c7e7bf",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "01d263fdf99ed7254eb51246ac199cf34c3a137c387c438b1ed4b415a2522432",
+          "review_note": "Separates the verified action or measurement from later implementation, merits and outcome evidence."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "fa13261f176881e39b04bdfb67f335a9eaa1f689811c8e1ac7d37bf01705003e",
+          "review_note": "Preserves the strongest relevant administration rationale and identifies observable legal, operational and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "f027295a49644649297cdca740dd3a6de7012b82a8cf4d753914383325079930",
+          "review_note": "States competing plausible interpretations and limits the conclusion to the evidence status actually established."
+        }
+      ],
+      "unresolved_questions": [
+        "Published operational guidance and award decisions",
+        "Reconciliation of the presidential commission statement with DOJ terms",
+        "Verified payments, recoveries, safeguards and audited cost-effectiveness"
       ]
     }
   ],
