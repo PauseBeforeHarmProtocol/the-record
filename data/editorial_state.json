@@ -7118,6 +7118,67 @@
       "provenance_sha256": "b61e932e16dd46749891ed005d5556936cbe7c5bf8ff4499860a9536cd66a325",
       "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
     }
+    ,
+    {
+        "change_id": "10.169.0:NAT-2026-09-05-001",
+        "entry_id": "NAT-2026-09-05-001",
+        "as_of_utc": "2026-10-21T15:57:03Z",
+        "timestamp_precision": "second",
+        "kind": "material_refresh",
+        "release_version": "10.169.0",
+        "summary": "Adds Putin's agreement to resume U.S.-mediated technical talks while preserving the lack of a ceasefire or accepted framework.",
+        "provenance_path": "data/editorial_change_notes/10.169.0.json",
+        "provenance_sha256": "66f92cfb98d50c1200b5294f32ae08bd01ec5e820e501311c17ce8b3f4401b04",
+        "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
+    },
+    {
+        "change_id": "10.169.0:NAT-2026-09-28-006",
+        "entry_id": "NAT-2026-09-28-006",
+        "as_of_utc": "2026-10-21T15:57:03Z",
+        "timestamp_precision": "second",
+        "kind": "material_refresh",
+        "release_version": "10.169.0",
+        "summary": "Records the Supreme Court's denial of the administration's emergency application and the continuing lower-court protections.",
+        "provenance_path": "data/editorial_change_notes/10.169.0.json",
+        "provenance_sha256": "66f92cfb98d50c1200b5294f32ae08bd01ec5e820e501311c17ce8b3f4401b04",
+        "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
+    },
+    {
+        "change_id": "10.169.0:NAT-2026-10-01-001",
+        "entry_id": "NAT-2026-10-01-001",
+        "as_of_utc": "2026-10-21T15:57:03Z",
+        "timestamp_precision": "second",
+        "kind": "material_refresh",
+        "release_version": "10.169.0",
+        "summary": "Adds the Justice Department inspector general's jurisdictional refusal to investigate the Hearn prosecution and the pending reconsideration request.",
+        "provenance_path": "data/editorial_change_notes/10.169.0.json",
+        "provenance_sha256": "66f92cfb98d50c1200b5294f32ae08bd01ec5e820e501311c17ce8b3f4401b04",
+        "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
+    },
+    {
+        "change_id": "10.169.0:NAT-2026-10-21-001",
+        "entry_id": "NAT-2026-10-21-001",
+        "as_of_utc": "2026-10-21T15:57:03Z",
+        "timestamp_precision": "second",
+        "kind": "material_refresh",
+        "release_version": "10.169.0",
+        "summary": "Preserves Trump's no-swap assertion as an attributed statement while retaining the lack of independent documentation of Hubbard's release terms.",
+        "provenance_path": "data/editorial_change_notes/10.169.0.json",
+        "provenance_sha256": "66f92cfb98d50c1200b5294f32ae08bd01ec5e820e501311c17ce8b3f4401b04",
+        "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
+    },
+    {
+        "change_id": "10.169.0:NAT-2026-10-21-002",
+        "entry_id": "NAT-2026-10-21-002",
+        "as_of_utc": "2026-10-21T15:57:03Z",
+        "timestamp_precision": "second",
+        "kind": "added",
+        "release_version": "10.169.0",
+        "summary": "Records DOE's competitive solicitation for a temporary exchange of up to 315,000 barrels from the Northeast Home Heating Oil Reserve while preserving pending bids, deliveries and price effects.",
+        "provenance_path": "data/editorial_change_notes/10.169.0.json",
+        "provenance_sha256": "66f92cfb98d50c1200b5294f32ae08bd01ec5e820e501311c17ce8b3f4401b04",
+        "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
+    }
   ],
   "reviews": [
     {
@@ -91495,6 +91556,710 @@
         "Any exchange, concession or other undisclosed release terms",
         "Whether the same channel produces verifiable progress on the Ukraine war or other detainee cases"
       ]
+    }
+    ,
+    {
+        "review_id": "10.169.0:NAT-2026-09-05-001:1f01be3c9ca3",
+        "entry_id": "NAT-2026-09-05-001",
+        "content_sha256": "1f01be3c9ca39a3da5fd081fcc2e2a091cdfd74ca11d0058e375651d79516fb5",
+        "reviewed_at": "2026-10-21T15:57:03Z",
+        "reviewer": {
+            "name": "OpenAI Codex editorial maintenance",
+            "kind": "ai_assisted"
+        },
+        "claims": [
+            {
+                "fact_index": 0,
+                "fact_sha256": "10c055fece60d88e7c200fe1067a4de8ed214d2333a2cfc77d1cac26f67aca07",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_ukraine_envoys_sep5",
+                        "locator": "attached source portions supporting the retained fact",
+                        "inspected_at": "2026-09-08T15:57:30Z",
+                        "document_sha256": "3299668fef893e74f116d0c5ec1e1df00509cc1888577af10735971492a1ec89",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    },
+                    {
+                        "source_id": "ap_ukraine_capitals_pause_sep5",
+                        "locator": "attached source portions supporting the retained fact",
+                        "inspected_at": "2026-09-08T15:57:30Z",
+                        "document_sha256": "e81af7f355673764a18e9942c45fe4b920de701747b979dfe74a1f249652c5b9",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 1,
+                "fact_sha256": "1e9b597a6895ea506724aa2c4b7885aec7b498f2d2b9a3661474188a6dcf0acc",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_ukraine_envoys_sep5",
+                        "locator": "attached source portions supporting the retained fact",
+                        "inspected_at": "2026-09-08T15:57:30Z",
+                        "document_sha256": "3299668fef893e74f116d0c5ec1e1df00509cc1888577af10735971492a1ec89",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 2,
+                "fact_sha256": "1077ef51c7d724a4a88bd928bac53b853e8ead6627b46c24b13c7bc18c455f42",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "ap_ukraine_capitals_pause_sep5",
+                        "locator": "attached source portions supporting the retained fact",
+                        "inspected_at": "2026-09-08T15:57:30Z",
+                        "document_sha256": "e81af7f355673764a18e9942c45fe4b920de701747b979dfe74a1f249652c5b9",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 3,
+                "fact_sha256": "67c3d4ad35dd6da5e7fdf74224ab5ec010ea58aa80f9f36e19eb66efec7a0246",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "ap_ukraine_capitals_pause_sep5",
+                        "locator": "attached source portions supporting the retained fact",
+                        "inspected_at": "2026-09-08T15:57:30Z",
+                        "document_sha256": "e81af7f355673764a18e9942c45fe4b920de701747b979dfe74a1f249652c5b9",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 4,
+                "fact_sha256": "6496ce4ac176503a7ad610d4ff51f23f758e48818a2e6e07dd3a4b2bd76e8797",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_ukraine_envoys_sep5",
+                        "locator": "attached source portions supporting the retained fact",
+                        "inspected_at": "2026-09-08T15:57:30Z",
+                        "document_sha256": "3299668fef893e74f116d0c5ec1e1df00509cc1888577af10735971492a1ec89",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 5,
+                "fact_sha256": "08676b76ed456cbc9df3599d8ab3551cd52689ce88ed8a6d275f852f7df83100",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_ukraine_kyiv_talks_sep6",
+                        "locator": "attached source portions supporting the retained fact",
+                        "inspected_at": "2026-09-08T15:57:30Z",
+                        "document_sha256": "a178aa3dafc958225c44d8f22bdbb4d16735b2a436d6ddfddf7e0ded54bd0e6e",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 6,
+                "fact_sha256": "c2681b1d4e8449994f78e53729b1b15a74d6deb0f490b30bbed7e7a144d8ce3a",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_ukraine_kyiv_talks_sep6",
+                        "locator": "attached source portions supporting the retained fact",
+                        "inspected_at": "2026-09-08T15:57:30Z",
+                        "document_sha256": "a178aa3dafc958225c44d8f22bdbb4d16735b2a436d6ddfddf7e0ded54bd0e6e",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    },
+                    {
+                        "source_id": "ap_ukraine_kyiv_talks_sep6",
+                        "locator": "attached source portions supporting the retained fact",
+                        "inspected_at": "2026-09-08T15:57:30Z",
+                        "document_sha256": "a6eccb75fcf70a3affec760d8ebb96b0598fea728b5ef8f92de14113b0c06c72",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 7,
+                "fact_sha256": "21e5bb5168ea5be545cf0300209d60dc5cd5ee7198713d9bde480acc3cb7d925",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_ukraine_kyiv_talks_sep6",
+                        "locator": "attached source portions supporting the retained fact",
+                        "inspected_at": "2026-09-08T15:57:30Z",
+                        "document_sha256": "a178aa3dafc958225c44d8f22bdbb4d16735b2a436d6ddfddf7e0ded54bd0e6e",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    },
+                    {
+                        "source_id": "ap_ukraine_kyiv_talks_sep6",
+                        "locator": "attached source portions supporting the retained fact",
+                        "inspected_at": "2026-09-08T15:57:30Z",
+                        "document_sha256": "a6eccb75fcf70a3affec760d8ebb96b0598fea728b5ef8f92de14113b0c06c72",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 8,
+                "fact_sha256": "727b415e37f5441c51639790d2c449f1c6151e07dbf72eb5e66f9f115d1b8de7",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_ukraine_kyiv_strikes_sep8",
+                        "locator": "article body on pause expiration, attacks, casualties and damage",
+                        "inspected_at": "2026-09-08T15:57:30Z",
+                        "document_sha256": "df1ef7cfbfe7c4c793d38cf32f81f8feb20254eff62c4541171a4220f27a6291",
+                        "origin_group": "Reuters",
+                        "evidence_status": "measured"
+                    },
+                    {
+                        "source_id": "ap_ukraine_kyiv_strikes_sep8",
+                        "locator": "article body on renewed strikes, casualties, diplomacy assessment and unresolved agreement",
+                        "inspected_at": "2026-09-08T15:57:30Z",
+                        "document_sha256": "29ed40b7b0e55a9e6fa5dc69ba25a598ec7323cab74207347306ef05403697b7",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "measured"
+                    }
+                ]
+            },
+            {
+                "fact_index": 9,
+                "fact_sha256": "5b81d6efc199b2d556a7aa7f35122c7ed006ef515d561c7bdab16a707896a200",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "ap_ukraine_kyiv_strikes_sep8",
+                        "locator": "article body on renewed strikes, casualties, diplomacy assessment and unresolved agreement",
+                        "inspected_at": "2026-09-08T15:57:30Z",
+                        "document_sha256": "29ed40b7b0e55a9e6fa5dc69ba25a598ec7323cab74207347306ef05403697b7",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "measured"
+                    }
+                ]
+            },
+            {
+                "fact_index": 10,
+                "fact_sha256": "2184b2fa2298d4be827abfa0293367565600e9d0e891fea3c4f6aa099a222f72",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_ukraine_talks_oct21",
+                        "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.169.0.json; evidence status and unresolved limits preserved.",
+                        "inspected_at": "2026-10-21T15:57:03Z",
+                        "document_sha256": "8019d458e61dd5ccdb98e48ccdfe800375541d6eb6e4d38f90f35de8094cfabe",
+                        "origin_group": "Reuters",
+                        "evidence_status": "announced"
+                    }
+                ]
+            }
+        ],
+        "reasoning_review": [
+            {
+                "field": "significance",
+                "text_sha256": "080c4b861224b9354d2391c74e0ba873e36eeab6410225044540b3496baad4b9",
+                "review_note": "Separates the verified action or disposition from pending implementation, merits and outcome evidence."
+            },
+            {
+                "field": "goalpost",
+                "text_sha256": "c10c7c8c6bd736c2589a7c5d4fdf08d4c21baf9692ff35746e42cd4d62738bc8",
+                "review_note": "Preserves the strongest relevant administration rationale and identifies observable legal, operational and outcome tests."
+            },
+            {
+                "field": "maybe_therefore",
+                "text_sha256": "2471f4c504796cc3dbf512441732b98379c5d68bd27793813ef12072759e5c93",
+                "review_note": "States competing plausible interpretations and limits the conclusion to the evidence status actually established."
+            }
+        ],
+        "unresolved_questions": [
+            "Whether the announced technical talks occur",
+            "Any published framework, ceasefire or security guarantee",
+            "Measured change in attacks"
+        ]
+    },
+    {
+        "review_id": "10.169.0:NAT-2026-09-28-006:56d0a782f8a3",
+        "entry_id": "NAT-2026-09-28-006",
+        "content_sha256": "56d0a782f8a31055b8cbdbdc5d9cb0c3fe71a84ba6233f540256b5c7e40a73d3",
+        "reviewed_at": "2026-10-21T15:57:03Z",
+        "reviewer": {
+            "name": "OpenAI Codex editorial maintenance",
+            "kind": "ai_assisted"
+        },
+        "claims": [
+            {
+                "fact_index": 0,
+                "fact_sha256": "fd0d19953362fb3e3c89aae4edfdec43a4c7dadd37733831d61ca6dceb17171f",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_trans_inmates_scotus_sep28",
+                        "locator": "Reuters article body retrieved through the search service; hash is of the exact inspected text extract",
+                        "inspected_at": "2026-09-28T22:04:45.467349Z",
+                        "document_sha256": "c21f94bd36e0cbc4abd5fa4d5a7bc5bea215e46cd2ddd46d15011715d8c1295d",
+                        "origin_group": "Reuters",
+                        "evidence_status": "proposed"
+                    },
+                    {
+                        "source_id": "cbs_trans_inmates_scotus_sep28",
+                        "locator": "CBS article body and metadata downloaded and inspected",
+                        "inspected_at": "2026-09-28T22:04:45.467349Z",
+                        "document_sha256": "c02060b1c76d6c1cce9af6b9d121cbc2a1e804b8a23db16e81e8edbbb4dd4926",
+                        "origin_group": "CBS News",
+                        "evidence_status": "proposed"
+                    }
+                ]
+            },
+            {
+                "fact_index": 1,
+                "fact_sha256": "e08365fd75a3f4b09715edf4a8d162cf7800e8dce0e5332c0b2d20825a6d37d3",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_trans_inmates_scotus_sep28",
+                        "locator": "Reuters article body retrieved through the search service; hash is of the exact inspected text extract",
+                        "inspected_at": "2026-09-28T22:04:45.467349Z",
+                        "document_sha256": "c21f94bd36e0cbc4abd5fa4d5a7bc5bea215e46cd2ddd46d15011715d8c1295d",
+                        "origin_group": "Reuters",
+                        "evidence_status": "proposed"
+                    },
+                    {
+                        "source_id": "cbs_trans_inmates_scotus_sep28",
+                        "locator": "CBS article body and metadata downloaded and inspected",
+                        "inspected_at": "2026-09-28T22:04:45.467349Z",
+                        "document_sha256": "c02060b1c76d6c1cce9af6b9d121cbc2a1e804b8a23db16e81e8edbbb4dd4926",
+                        "origin_group": "CBS News",
+                        "evidence_status": "proposed"
+                    }
+                ]
+            },
+            {
+                "fact_index": 2,
+                "fact_sha256": "fac6ff4bffa957747ad36b9999348933fad730786e434b1f933e471ee8f83716",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_trans_inmates_scotus_oct21",
+                        "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.169.0.json; evidence status and unresolved limits preserved.",
+                        "inspected_at": "2026-10-21T15:57:03Z",
+                        "document_sha256": "5ba703ecafecdd9ef3fe2846e2a92263bb46debd58abe658a444b109cc87c218",
+                        "origin_group": "Reuters",
+                        "evidence_status": "ordered"
+                    },
+                    {
+                        "source_id": "ap_trans_inmates_scotus_oct21",
+                        "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.169.0.json; evidence status and unresolved limits preserved.",
+                        "inspected_at": "2026-10-21T15:57:03Z",
+                        "document_sha256": "994f243de35a438fe370063fb716972a3cb046df3a7ee7ebb38ebcaacecfef7e",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "ordered"
+                    }
+                ]
+            },
+            {
+                "fact_index": 3,
+                "fact_sha256": "90eed8b89884b5817709209c79e63a918ff77c759313d7bae0d40ba6aaedaa33",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_trans_inmates_scotus_oct21",
+                        "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.169.0.json; evidence status and unresolved limits preserved.",
+                        "inspected_at": "2026-10-21T15:57:03Z",
+                        "document_sha256": "5ba703ecafecdd9ef3fe2846e2a92263bb46debd58abe658a444b109cc87c218",
+                        "origin_group": "Reuters",
+                        "evidence_status": "ordered"
+                    },
+                    {
+                        "source_id": "ap_trans_inmates_scotus_oct21",
+                        "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.169.0.json; evidence status and unresolved limits preserved.",
+                        "inspected_at": "2026-10-21T15:57:03Z",
+                        "document_sha256": "994f243de35a438fe370063fb716972a3cb046df3a7ee7ebb38ebcaacecfef7e",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "ordered"
+                    }
+                ]
+            }
+        ],
+        "reasoning_review": [
+            {
+                "field": "significance",
+                "text_sha256": "9898e5ffee2149c6f2092c510bab38339a985aafe61549152a1b5cd7e833f9bf",
+                "review_note": "Separates the verified action or disposition from pending implementation, merits and outcome evidence."
+            },
+            {
+                "field": "goalpost",
+                "text_sha256": "d45c35561bf4261c1a3c852444132213678f2b962ce34a9b0f8488f04ef25a4b",
+                "review_note": "Preserves the strongest relevant administration rationale and identifies observable legal, operational and outcome tests."
+            },
+            {
+                "field": "maybe_therefore",
+                "text_sha256": "0b372e82c86b191b24baa3df37367d76af6c936008fccc61a3b59a669f92255c",
+                "review_note": "States competing plausible interpretations and limits the conclusion to the evidence status actually established."
+            }
+        ],
+        "unresolved_questions": [
+            "Merits disposition",
+            "Individual treatment decisions",
+            "Documented health and security outcomes"
+        ]
+    },
+    {
+        "review_id": "10.169.0:NAT-2026-10-01-001:f95175767430",
+        "entry_id": "NAT-2026-10-01-001",
+        "content_sha256": "f9517576743094434c01dc4901ee0015456dede298d73c41e7bc0e50877402e3",
+        "reviewed_at": "2026-10-21T15:57:03Z",
+        "reviewer": {
+            "name": "OpenAI Codex editorial maintenance",
+            "kind": "ai_assisted"
+        },
+        "claims": [
+            {
+                "fact_index": 0,
+                "fact_sha256": "ab295a1d9ea14b152879ccd6ffb4b26a07154fabde8bfffc2d88f38bc0aa5142",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "ap_hearn_dismissal_oct1",
+                        "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+                        "inspected_at": "2026-10-01T16:14:39Z",
+                        "document_sha256": "7c42e88dea4002da73c1f6b797f40afeded088428a7440a57c158c846bda6c66",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    },
+                    {
+                        "source_id": "wapo_hearn_order_oct1",
+                        "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+                        "inspected_at": "2026-10-01T16:14:39Z",
+                        "document_sha256": "4f8ae5da4f747cb46f273d5918be2d0dfbd79d9589364d52b34f0a65ca521853",
+                        "origin_group": "The Washington Post",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 1,
+                "fact_sha256": "f5a6e2c19792c524dd6d4590fedd15a3f596ba4189c682314c607b427310e2c8",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "ap_hearn_dismissal_oct1",
+                        "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+                        "inspected_at": "2026-10-01T16:14:39Z",
+                        "document_sha256": "7c42e88dea4002da73c1f6b797f40afeded088428a7440a57c158c846bda6c66",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    },
+                    {
+                        "source_id": "wapo_hearn_order_oct1",
+                        "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+                        "inspected_at": "2026-10-01T16:14:39Z",
+                        "document_sha256": "4f8ae5da4f747cb46f273d5918be2d0dfbd79d9589364d52b34f0a65ca521853",
+                        "origin_group": "The Washington Post",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 2,
+                "fact_sha256": "a2ce1fa8d92c50f78c7a9d622084a17150d386e5601d9d3afb05fca637708083",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "ap_hearn_dismissal_oct1",
+                        "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+                        "inspected_at": "2026-10-01T16:14:39Z",
+                        "document_sha256": "7c42e88dea4002da73c1f6b797f40afeded088428a7440a57c158c846bda6c66",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    },
+                    {
+                        "source_id": "wapo_hearn_order_oct1",
+                        "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+                        "inspected_at": "2026-10-01T16:14:39Z",
+                        "document_sha256": "4f8ae5da4f747cb46f273d5918be2d0dfbd79d9589364d52b34f0a65ca521853",
+                        "origin_group": "The Washington Post",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 3,
+                "fact_sha256": "bb25462a52953b93c3369989564a97ff0c83f570677af5c7161c17ca04a46d08",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "ap_hearn_dismissal_oct1",
+                        "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+                        "inspected_at": "2026-10-01T16:14:39Z",
+                        "document_sha256": "7c42e88dea4002da73c1f6b797f40afeded088428a7440a57c158c846bda6c66",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    },
+                    {
+                        "source_id": "wapo_hearn_order_oct1",
+                        "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+                        "inspected_at": "2026-10-01T16:14:39Z",
+                        "document_sha256": "4f8ae5da4f747cb46f273d5918be2d0dfbd79d9589364d52b34f0a65ca521853",
+                        "origin_group": "The Washington Post",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 4,
+                "fact_sha256": "93a614c237bdfdb37808971c002ebd322f728a472bb625ab847f5da0eb03b7a4",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "ap_hearn_oig_decline_oct21",
+                        "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.169.0.json; evidence status and unresolved limits preserved.",
+                        "inspected_at": "2026-10-21T15:57:03Z",
+                        "document_sha256": "1dc6d0c98bae40fc3ee164ea719612f00869e77edf17caf3f6789fc6d83854c8",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "reported"
+                    }
+                ]
+            }
+        ],
+        "reasoning_review": [
+            {
+                "field": "significance",
+                "text_sha256": "3f552ac2a142e3f5eeef6bf476dca47852ff4d4427442bca1a6cfb0078c38d52",
+                "review_note": "Separates the verified action or disposition from pending implementation, merits and outcome evidence."
+            },
+            {
+                "field": "goalpost",
+                "text_sha256": "663efe57a6d61ab70f0428064ef26a7e9f289336eb176df5959efae30c165420",
+                "review_note": "Preserves the strongest relevant administration rationale and identifies observable legal, operational and outcome tests."
+            },
+            {
+                "field": "maybe_therefore",
+                "text_sha256": "5034b08d67d717ee17e78228665e4c804abc3a5cdaf803f383ff06bde2b1212c",
+                "review_note": "States competing plausible interpretations and limits the conclusion to the evidence status actually established."
+            }
+        ],
+        "unresolved_questions": [
+            "Any Office of Professional Responsibility review",
+            "Any appeal or separate repair-accountability proceeding",
+            "Resolution of the reconsideration request"
+        ]
+    },
+    {
+        "review_id": "10.169.0:NAT-2026-10-21-001:c32b75a5346a",
+        "entry_id": "NAT-2026-10-21-001",
+        "content_sha256": "c32b75a5346a209fa797c9fa72a61494bf396b94e3860c51eae99086f135178e",
+        "reviewed_at": "2026-10-21T15:57:03Z",
+        "reviewer": {
+            "name": "OpenAI Codex editorial maintenance",
+            "kind": "ai_assisted"
+        },
+        "claims": [
+            {
+                "fact_index": 0,
+                "fact_sha256": "6dfc4a17c335c74fe98e5a51748d14461ac83a6c686be640f302c7bb063afd0d",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_hubbard_release_oct21",
+                        "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.168.0.json; evidence status and unresolved limits preserved.",
+                        "inspected_at": "2026-10-21T09:55:28Z",
+                        "document_sha256": "2e2cba5af79eac9ebaca7a50a1f0e7ed9575f5180c571aceb469d89e9f4566db",
+                        "origin_group": "Reuters",
+                        "evidence_status": "implemented"
+                    },
+                    {
+                        "source_id": "ap_hubbard_release_oct21",
+                        "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.168.0.json; evidence status and unresolved limits preserved.",
+                        "inspected_at": "2026-10-21T09:55:28Z",
+                        "document_sha256": "71c1fa030fc7b4c00b92764ec2b4bcd5d411cc3f4afed32d6c63a10911373d0e",
+                        "origin_group": "Associated Press",
+                        "evidence_status": "implemented"
+                    }
+                ]
+            },
+            {
+                "fact_index": 1,
+                "fact_sha256": "fc521783b3dd0d5542d5483c90c6aecdecf05ed32492fc5114ad0184ceca0a7b",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_hubbard_release_oct21",
+                        "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.168.0.json; evidence status and unresolved limits preserved.",
+                        "inspected_at": "2026-10-21T09:55:28Z",
+                        "document_sha256": "2e2cba5af79eac9ebaca7a50a1f0e7ed9575f5180c571aceb469d89e9f4566db",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 2,
+                "fact_sha256": "1b008cb7c0f1a2ff87ff8e022cb6f0e863b4f678d3a638fe7d4b4ec526ec823e",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "truth_hubbard_release_oct21",
+                        "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.169.0.json; evidence status and unresolved limits preserved.",
+                        "inspected_at": "2026-10-21T15:57:03Z",
+                        "document_sha256": "8f0aaa8d64d85aa09da3480a6d71caee2cf0287ccc2e77e0a6f23aff7a785d6e",
+                        "origin_group": "Truth Social account @realDonaldTrump",
+                        "evidence_status": "announced"
+                    },
+                    {
+                        "source_id": "reuters_trump_hubbard_claim_oct21",
+                        "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.169.0.json; evidence status and unresolved limits preserved.",
+                        "inspected_at": "2026-10-21T15:57:03Z",
+                        "document_sha256": "017a4a6e494d396648fa20298ddc31485987fa7134cce184581edff58dd3e8a2",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    }
+                ]
+            }
+        ],
+        "reasoning_review": [
+            {
+                "field": "significance",
+                "text_sha256": "a64db457ba9e55315c94b999f2ff2a107a736a2a27bede178d6b980cffb87c5f",
+                "review_note": "Separates the verified action or disposition from pending implementation, merits and outcome evidence."
+            },
+            {
+                "field": "goalpost",
+                "text_sha256": "6b63da9b3936e5153b0b1013ba2445af461cea4f15a17c39686ec1d80b9db55c",
+                "review_note": "Preserves the strongest relevant administration rationale and identifies observable legal, operational and outcome tests."
+            },
+            {
+                "field": "maybe_therefore",
+                "text_sha256": "669b8ff2874d3994487e5bdb0c1789823b3a5f942f600fa7518f7b5519657e07",
+                "review_note": "States competing plausible interpretations and limits the conclusion to the evidence status actually established."
+            }
+        ],
+        "unresolved_questions": [
+            "Hubbard's safe return to the United States",
+            "Independent documentation of release terms",
+            "Effect on other detainee cases and Ukraine diplomacy"
+        ]
+    },
+    {
+        "review_id": "10.169.0:NAT-2026-10-21-002:44786056cd90",
+        "entry_id": "NAT-2026-10-21-002",
+        "content_sha256": "44786056cd9010ea77426c80b8a30f6136ce489bd1a6df49b7710457191e8ebe",
+        "reviewed_at": "2026-10-21T15:57:03Z",
+        "reviewer": {
+            "name": "OpenAI Codex editorial maintenance",
+            "kind": "ai_assisted"
+        },
+        "claims": [
+            {
+                "fact_index": 0,
+                "fact_sha256": "62c04a75a7d175c130b401aa49a87f99dcfea70d7977d28c34229c93a2e3cf8c",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "doe_heating_oil_exchange_oct21",
+                        "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.169.0.json; evidence status and unresolved limits preserved.",
+                        "inspected_at": "2026-10-21T15:57:03Z",
+                        "document_sha256": "ec5797bce0d40ea69362a6e5a00fe3c13a6c889d882d61f5aa638e7119d3313e",
+                        "origin_group": "U.S. Department of Energy",
+                        "evidence_status": "announced"
+                    },
+                    {
+                        "source_id": "reuters_heating_oil_exchange_oct21",
+                        "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.169.0.json; evidence status and unresolved limits preserved.",
+                        "inspected_at": "2026-10-21T15:57:03Z",
+              "document_sha256": "ca86ebad7fe3bfdf270e4bb1f207ccd451e82e9f9a001dfa8aeb81fc9b51ff29",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 1,
+                "fact_sha256": "d8aef2bcb97eab1f70f3af43ad124f23f51582096c42f1c4596d9ce77de6e580",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "doe_heating_oil_exchange_oct21",
+                        "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.169.0.json; evidence status and unresolved limits preserved.",
+                        "inspected_at": "2026-10-21T15:57:03Z",
+                        "document_sha256": "ec5797bce0d40ea69362a6e5a00fe3c13a6c889d882d61f5aa638e7119d3313e",
+                        "origin_group": "U.S. Department of Energy",
+                        "evidence_status": "announced"
+                    }
+                ]
+            },
+            {
+                "fact_index": 2,
+                "fact_sha256": "292c4357df8578f9e7e90aa30b991fd9edf09cb4a569ccca6d89be3e52900087",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "reuters_heating_oil_exchange_oct21",
+                        "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.169.0.json; evidence status and unresolved limits preserved.",
+                        "inspected_at": "2026-10-21T15:57:03Z",
+              "document_sha256": "ca86ebad7fe3bfdf270e4bb1f207ccd451e82e9f9a001dfa8aeb81fc9b51ff29",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    }
+                ]
+            },
+            {
+                "fact_index": 3,
+                "fact_sha256": "f9ece0fc27d83d1ba6968d100e0dd5d3d2bbb36aeec8956d6531cc340d3aa777",
+                "relies_on_unnamed_sources": false,
+                "supports": [
+                    {
+                        "source_id": "doe_heating_oil_exchange_oct21",
+                        "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.169.0.json; evidence status and unresolved limits preserved.",
+                        "inspected_at": "2026-10-21T15:57:03Z",
+                        "document_sha256": "ec5797bce0d40ea69362a6e5a00fe3c13a6c889d882d61f5aa638e7119d3313e",
+                        "origin_group": "U.S. Department of Energy",
+                        "evidence_status": "announced"
+                    },
+                    {
+                        "source_id": "reuters_heating_oil_exchange_oct21",
+                        "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.169.0.json; evidence status and unresolved limits preserved.",
+                        "inspected_at": "2026-10-21T15:57:03Z",
+              "document_sha256": "ca86ebad7fe3bfdf270e4bb1f207ccd451e82e9f9a001dfa8aeb81fc9b51ff29",
+                        "origin_group": "Reuters",
+                        "evidence_status": "reported"
+                    }
+                ]
+            }
+        ],
+        "reasoning_review": [
+            {
+                "field": "significance",
+                "text_sha256": "9457449b88c88dfa1cd9910c81df9b57bb7b1a8fda1403ee3c3406eb52eedca4",
+                "review_note": "Separates the verified action or disposition from pending implementation, merits and outcome evidence."
+            },
+            {
+                "field": "goalpost",
+                "text_sha256": "f3d37bd8afe1376dcf5ffe98e13c03605b3ac450707a02d1b54478a95259e3d6",
+                "review_note": "Preserves the strongest relevant administration rationale and identifies observable legal, operational and outcome tests."
+            },
+            {
+                "field": "maybe_therefore",
+                "text_sha256": "f5a67a9df3a6324f2bbc8d93d4c04e2fb584b68f05603fd963ef9eb86829a5db",
+                "review_note": "States competing plausible interpretations and limits the conclusion to the evidence status actually established."
+            }
+        ],
+        "unresolved_questions": [
+            "Bids and contract awards",
+            "Delivered and returned volumes plus premiums",
+            "Measured heating-oil price effects"
+        ]
     }
   ],
   "deferred_candidates": []
