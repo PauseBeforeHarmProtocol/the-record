@@ -7178,6 +7178,30 @@
         "provenance_path": "data/editorial_change_notes/10.169.0.json",
         "provenance_sha256": "66f92cfb98d50c1200b5294f32ae08bd01ec5e820e501311c17ce8b3f4401b04",
         "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
+    },
+    {
+        "change_id": "10.170.0:NAT-2026-09-14-009",
+        "entry_id": "NAT-2026-09-14-009",
+        "as_of_utc": "2026-10-21T21:56:26Z",
+        "timestamp_precision": "second",
+        "kind": "material_refresh",
+        "release_version": "10.170.0",
+        "summary": "Adds the reported emergency Supreme Court application seeking to lift the Big Bend preliminary injunction while preserving the filing-access gap and absence of a disposition by cutoff.",
+        "provenance_path": "data/editorial_change_notes/10.170.0.json",
+        "provenance_sha256": "723c2a3e5cde5b24add8029d1753c6684065e62d8864c79a7c29c11c29eca25d",
+        "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
+    },
+    {
+        "change_id": "10.170.0:NAT-2026-10-21-003",
+        "entry_id": "NAT-2026-10-21-003",
+        "as_of_utc": "2026-10-21T21:56:26Z",
+        "timestamp_precision": "second",
+        "kind": "added",
+        "release_version": "10.170.0",
+        "summary": "Records the first announced nationwide USDA benefits and program fraud enforcement surge while separating allegations, pleas, sentencings and intended-loss figures.",
+        "provenance_path": "data/editorial_change_notes/10.170.0.json",
+        "provenance_sha256": "723c2a3e5cde5b24add8029d1753c6684065e62d8864c79a7c29c11c29eca25d",
+        "note": "Source-level claim review, separate reasoning-layer review and duplicate disposition preserved."
     }
   ],
   "reviews": [
@@ -92260,6 +92284,106 @@
             "Delivered and returned volumes plus premiums",
             "Measured heating-oil price effects"
         ]
+    },
+    {
+      "review_id": "10.170.0:NAT-2026-09-14-009:c503ea5197e5",
+      "entry_id": "NAT-2026-09-14-009",
+      "content_sha256": "c503ea5197e58117d95048eae97e7ee48ccd8729c3d0745b59303959b93e5041",
+      "reviewed_at": "2026-10-21T21:56:26Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "7b079eba23293e93175c5f84b8059ed4686dd50324aa0bdc47bf8d98b2fff138",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"bigbend_complaint_sep14","locator":"Complaint and docket materials identifying the parties, project and filing.","inspected_at":"2026-10-02T21:57:44Z","document_sha256":"e2a076296e1dc177b2e21d049aebe1b267c2dfb4e47b71fbcb479cb7a8696452","origin_group":"U.S. District Court for the District of Columbia","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "b1ec6c4444253b791a1d174ba7bd2bc3274e51fc4928c92c6f46ed37f0965966",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"bigbend_complaint_sep14","locator":"Complaint allegations and cited sector statistics; allegation status preserved.","inspected_at":"2026-10-02T21:57:44Z","document_sha256":"44fe8dd117edf799b131865425542bdedd48e55fef3db2cb806c0855742c4c9d","origin_group":"U.S. District Court for the District of Columbia","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "963f686a1f8d88bf7b4d79c1b994836b3850a4c45fabde9cd0844e33ba2a47df",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"bigbend_complaint_sep14","locator":"Prayer for relief and unresolved procedural posture.","inspected_at":"2026-10-02T21:57:44Z","document_sha256":"251b836882e3b72507ce2280fb08c5c24a596746d6021b1ec9a43368ce68273d","origin_group":"U.S. District Court for the District of Columbia","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "1cb324f7fb9783944d2f6b9f8976bace9c713bb1a0531ea325a48735181f000d",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"ap_bigbend_lawsuit_sep14","locator":"Agency posture, project distinctions and temporary pause as reported.","inspected_at":"2026-10-02T21:57:44Z","document_sha256":"ba9684493ca60e3f700d43086690d1e567b6f6ab93dc2112060dbdee41be7083","origin_group":"Associated Press","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "3106b152da871fbbee1cfa85ea51af657107403f8de77ab7c622d1b14eebc110",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"texastribune_bigbend_sep14","locator":"Separate cases, plaintiffs and requested remedies were reviewed.","inspected_at":"2026-10-02T21:57:44Z","document_sha256":"739b0c765a26f0d2877ac09ed17476ab2bb090beba1bb76fd5bf8f7f902cb77a","origin_group":"The Texas Tribune","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "1b8638df0777c7dc327488e8224d44b7e641bae1a297a59796dcd5d643e0551b",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"ap_bigbend_construction_sep18","locator":"On-site reporting and named CBP statement on panel installation.","inspected_at":"2026-10-02T21:57:44Z","document_sha256":"9bf2f1d2ef1b87e6d734cb402c55e4b98e7bcf82026b6b1ca656efb5bc20af22","origin_group":"Associated Press","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "995c2fbe5c1677481c9480b47b01c77ccc0ffbfbe045ab1d8d773a35556a1519",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"ap_bigbend_injunction_oct2","locator":"Preliminary injunction, covered construction and procedural status.","inspected_at":"2026-10-02T21:57:44Z","document_sha256":"142222270d3283618a841bbc509823b1fee11bb44831d2b004977b799fc3e099","origin_group":"Associated Press","evidence_status":"enjoined"}]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "66615cd2b81e0499f51baaee4ca9a2ca4774a4d54a51a0b7c954c8d9fd26657e",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"ap_bigbend_injunction_oct2","locator":"Preliminary findings and limits of the injunction were inspected.","inspected_at":"2026-10-02T21:57:44Z","document_sha256":"914cf5d2c50938ad1315ea2a1a4642c3212609212f3287bf9807bbd73213eaea","origin_group":"Associated Press","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "c827f44f06b45cfa0f9571d70a2299ed843c6e2d78b4034461f91af9289e5331",
+          "relies_on_unnamed_sources": false,
+          "supports": [{"source_id":"ap_bigbend_injunction_oct2","locator":"Agency response status and previously documented border-security rationale.","inspected_at":"2026-10-02T21:57:44Z","document_sha256":"1411fbb3532c34894cb02f55ff5fff858ec01ea2f236aed741b4f6249a570e75","origin_group":"Associated Press","evidence_status":"reported"}]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "41f5a3b85ade0aef213452c9a03c593f89a32e0fb17818831522a6eeb9649a54",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {"source_id":"ap_bigbend_scotus_oct21","locator":"Exact normalized evidence extract retained in data/editorial_change_notes/10.170.0.json; filing-access and disposition limits preserved.","inspected_at":"2026-10-21T21:56:26Z","document_sha256":"88cf0118c7c0625f774be89909d965c0a93cba385b107e7d8d00b3d338e06bd4","origin_group":"Associated Press","evidence_status":"reported"},
+            {"source_id":"washingtonsun_bigbend_scotus_oct21","locator":"Second report on the emergency application; filing itself not retrieved.","inspected_at":"2026-10-21T21:56:26Z","document_sha256":"0c2c7f05024be90691ac55d3103432984b67d0bcf771216db839ad8e353e0ea3","origin_group":"The Washington Sun","evidence_status":"reported"}
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {"field":"significance","text_sha256":"9bbb76ce81c80d492f5390b592fd8c9f598d57e4d3f0aeddcd8dd8816e90a114","review_note":"Separates the reported filing from disposition and final merits."},
+        {"field":"goalpost","text_sha256":"bedddd18a8d1cf617521ef1b02e9ea8415b4f0bac3b03ae9cd0d48b26c5570da","review_note":"Preserves the administration rationale and identifies observable docket, construction and merits tests."},
+        {"field":"maybe_therefore","text_sha256":"f189ff8d364386d0211e71ceea363754a2c24415e6298920960f9ee10b15af9a","review_note":"States competing outcomes and limits the conclusion to the reported procedural status."}
+      ],
+      "unresolved_questions": ["Supreme Court docket and application text", "Emergency disposition", "Injunction compliance and final merits"]
+    },
+    {
+      "review_id": "10.170.0:NAT-2026-10-21-003:237e031b0e3d",
+      "entry_id": "NAT-2026-10-21-003",
+      "content_sha256": "237e031b0e3d0bbb619dc3847e5e71c8a0aa3c26dc5ea47ddf8bd55a3af7fba6",
+      "reviewed_at": "2026-10-21T21:56:26Z",
+      "reviewer": {"name":"OpenAI Codex editorial maintenance","kind":"ai_assisted"},
+      "claims": [
+        {"fact_index":0,"fact_sha256":"1c71edbc4b33875aaa90f4fd18a3b85d99afc18f03489f8a517946704fd66335","relies_on_unnamed_sources":false,"supports":[{"source_id":"doj_snap_fraud_surge_oct21","locator":"Exact normalized evidence extract retained in data/editorial_change_notes/10.170.0.json; participating offices and date range reviewed.","inspected_at":"2026-10-21T21:56:26Z","document_sha256":"cfb9984ee8de56e73b01650004b8dcd3fd4b8739fe23ca8b424e02ea719bf897","origin_group":"U.S. Department of Justice","evidence_status":"announced"}]},
+        {"fact_index":1,"fact_sha256":"3fb7fdea6bc497ac0421c24396ace5dc5f2691edd3623e47bde686752d8a8b5c","relies_on_unnamed_sources":false,"supports":[{"source_id":"doj_snap_fraud_surge_oct21","locator":"Aggregate intended-loss figures inspected; absence of independent audit and recovery evidence preserved.","inspected_at":"2026-10-21T21:56:26Z","document_sha256":"cfb9984ee8de56e73b01650004b8dcd3fd4b8739fe23ca8b424e02ea719bf897","origin_group":"U.S. Department of Justice","evidence_status":"announced"}]},
+        {"fact_index":2,"fact_sha256":"b8ce6745cefc97e230decb802682119d07e00f0174de7b37eec665e2b337eaf4","relies_on_unnamed_sources":false,"supports":[{"source_id":"doj_snap_fraud_surge_oct21","locator":"Listed case stages and allegation disclaimer inspected; procedural differences preserved.","inspected_at":"2026-10-21T21:56:26Z","document_sha256":"cfb9984ee8de56e73b01650004b8dcd3fd4b8739fe23ca8b424e02ea719bf897","origin_group":"U.S. Department of Justice","evidence_status":"reported"}]},
+        {"fact_index":3,"fact_sha256":"2a18b26a2d2f58330cbacb0085338faeaa1cc5c428478d6cd43208e0ea1bec82","relies_on_unnamed_sources":false,"supports":[{"source_id":"doj_snap_fraud_surge_oct21","locator":"Named administration rationale inspected; unmeasured deterrence and recovery limits preserved.","inspected_at":"2026-10-21T21:56:26Z","document_sha256":"cfb9984ee8de56e73b01650004b8dcd3fd4b8739fe23ca8b424e02ea719bf897","origin_group":"U.S. Department of Justice","evidence_status":"announced"}]}
+      ],
+      "reasoning_review": [
+        {"field":"significance","text_sha256":"69705111a86ba38b0691c06c4e420e38bdeb5012ff026cbc74d8be218a62087b","review_note":"Separates implemented coordination from case outcomes and measured effectiveness."},
+        {"field":"goalpost","text_sha256":"f12841201ee304126a5daecac73c821da59333155ff1652a9d14e9d0aa5db66d","review_note":"Preserves the administration rationale and identifies docket, recovery, victim and trend tests."},
+        {"field":"maybe_therefore","text_sha256":"0ec7a5e9300521dd6bd5207a8ff9218cf40b431bd69a5da07c08ef867406f7fa","review_note":"States competing interpretations and limits the conclusion to the announced enforcement surge."}
+      ],
+      "unresolved_questions": ["Case dispositions", "Restitution and recoveries", "Victim reimbursement", "Independent program-wide fraud measurements"]
     }
   ],
   "deferred_candidates": []

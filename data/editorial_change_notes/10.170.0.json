@@ -1,0 +1,84 @@
+{
+  "version": "10.170.0",
+  "base_release_version": "10.169.0",
+  "base_commit": "4f34205e597442ec122b37eb93f04e25ea66e40e",
+  "research_window": {
+    "from_utc": "2026-10-21T15:57:03Z",
+    "through_utc": "2026-10-21T21:56:26Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary through the run cutoff."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository’s final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-14-009",
+      "kind": "material_refresh",
+      "summary": "Adds the reported emergency Supreme Court application seeking to lift the Big Bend preliminary injunction while preserving the unretrieved filing and absence of a disposition by cutoff.",
+      "duplicate_review": "The application concerns the injunction already tracked in the stable Big Bend litigation record and was consolidated as the same event."
+    },
+    {
+      "entry_id": "NAT-2026-10-21-003",
+      "kind": "added",
+      "summary": "Records the first announced nationwide USDA benefits and program fraud enforcement surge while separating allegations, pleas, sentencings and intended-loss figures.",
+      "duplicate_review": "No canonical entry, normalized-title match, shared source URL or recent maintenance item covered the coordinated national surge; constituent cases were not counted separately."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "ap_bigbend_scotus_oct21",
+      "origin_group": "Associated Press",
+      "evidence_extract": "Associated Press reported that the Trump administration filed an emergency Supreme Court application asking to lift the October 2 preliminary injunction covering Big Bend border infrastructure while litigation continues; no Supreme Court disposition had issued by cutoff.",
+      "document_sha256": "88cf0118c7c0625f774be89909d965c0a93cba385b107e7d8d00b3d338e06bd4",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete document or webpage.",
+      "inspected_at": "2026-10-21T21:56:26Z"
+    },
+    {
+      "source_id": "washingtonsun_bigbend_scotus_oct21",
+      "origin_group": "The Washington Sun",
+      "evidence_extract": "The Washington Sun independently reported that the administration filed an emergency application asking the Supreme Court to permit Big Bend border-wall construction while the lower-court case proceeds.",
+      "document_sha256": "0c2c7f05024be90691ac55d3103432984b67d0bcf771216db839ad8e353e0ea3",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete document or webpage.",
+      "inspected_at": "2026-10-21T21:56:26Z"
+    },
+    {
+      "source_id": "doj_snap_fraud_surge_oct21",
+      "origin_group": "U.S. Department of Justice",
+      "evidence_extract": "DOJ announced the first National USDA Benefits and Program Fraud Enforcement Surge, involving more than 40 defendants and nearly $45 million in reported intended federal losses, including nearly $42 million involving SNAP, while expressly distinguishing allegations from pleas and sentencings.",
+      "document_sha256": "cfb9984ee8de56e73b01650004b8dcd3fd4b8739fe23ca8b424e02ea719bf897",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete document or webpage.",
+      "inspected_at": "2026-10-21T21:56:26Z"
+    }
+  ],
+  "truth_social_media_inspection": {
+    "new_posts": 4,
+    "latest_post_id": "117480841773137630",
+    "latest_post_at_utc": "2026-10-21T20:43:03.502000Z",
+    "latest_post_at_eastern": "2026-10-21 4:43:03 PM EDT",
+    "finding": "Three text posts repeated partisan claims about the already catalogued Hubbard release. One media-only post and one Hubbard image were unavailable; no claim inside the media was used."
+  },
+  "trump_tv_inspection": {
+    "checked_at": "2026-10-21T21:56:26Z",
+    "stream_video_id": "A4gNgHfZ-v4",
+    "finding": "No October 21 dated-library upload was displayed and no qualifying new item was located in the material reviewed. Footage, audio and captions were not retrieved."
+  },
+  "withheld": [
+    {
+      "title": "Overseas crypto-scam crackdown effectiveness claims",
+      "reason": "Aggregate prevented-loss and disruption figures were not independently audited or documented case by case."
+    },
+    {
+      "title": "Massachusetts marriage-fraud prosecution",
+      "reason": "A routine alleged criminal scheme did not establish a material national policy change or administration-wide outcome."
+    },
+    {
+      "title": "Truth Social and Trump TV-only leads",
+      "reason": "Duplicate rhetoric, inaccessible media and unreviewed audiovisual content established no separate qualifying action."
+    },
+    {
+      "title": "Legacy Wilcox remediation",
+      "reason": "The restored row still requires the custody-aware remediation path identified previously."
+    }
+  ],
+  "corrections": []
+}
