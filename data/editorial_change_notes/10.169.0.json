@@ -1,0 +1,170 @@
+{
+  "version": "10.169.0",
+  "base_release_version": "10.168.0",
+  "base_commit": "f328a204f94a7c7ac47b48b9ecf707e0debcd8e9",
+  "research_window": {
+    "from_utc": "2026-10-21T09:55:28Z",
+    "through_utc": "2026-10-21T15:57:03Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary through the run cutoff."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository’s final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-21-002",
+      "kind": "added",
+      "summary": "Records DOE's competitive solicitation for a temporary exchange of up to 315,000 barrels from the Northeast Home Heating Oil Reserve while preserving pending bids, deliveries and price effects.",
+      "duplicate_review": "No canonical entry, normalized-title match, shared source URL or recent maintenance item covered this reserve exchange."
+    },
+    {
+      "entry_id": "NAT-2026-09-05-001",
+      "kind": "material_refresh",
+      "summary": "Adds Putin's agreement to resume U.S.-mediated technical talks while preserving the lack of a ceasefire or accepted framework.",
+      "duplicate_review": "This is a later stage of the same U.S.-mediated Ukraine negotiation channel and was consolidated into the stable record."
+    },
+    {
+      "entry_id": "NAT-2026-09-28-006",
+      "kind": "material_refresh",
+      "summary": "Records the Supreme Court's denial of the administration's emergency application and the continuing lower-court protections.",
+      "duplicate_review": "The disposition resolves the emergency application already tracked by the stable record and is not a second event."
+    },
+    {
+      "entry_id": "NAT-2026-10-01-001",
+      "kind": "material_refresh",
+      "summary": "Adds the Justice Department inspector general's jurisdictional refusal to investigate the Hearn prosecution and the pending reconsideration request.",
+      "duplicate_review": "The watchdog disposition concerns oversight of the same prosecution and was consolidated into the existing case record."
+    },
+    {
+      "entry_id": "NAT-2026-10-21-001",
+      "kind": "material_refresh",
+      "summary": "Preserves Trump's no-swap assertion as an attributed statement while retaining the lack of independent documentation of Hubbard's release terms.",
+      "duplicate_review": "The statement concerns terms of the already catalogued release and was not counted as a parallel event."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "doe_heating_oil_exchange_oct21",
+      "origin_group": "U.S. Department of Energy",
+      "evidence_extract": "DOE announced a request for proposals for an exchange of up to 315,000 barrels from the Northeast Home Heating Oil Reserve, required return of the same volume plus a premium before the 2027–28 heating season, and scheduled transfers or deliveries by November 13.",
+      "document_sha256": "ec5797bce0d40ea69362a6e5a00fe3c13a6c889d882d61f5aa638e7119d3313e",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete document or webpage.",
+      "inspected_at": "2026-10-21T15:57:03Z"
+    },
+    {
+      "source_id": "reuters_heating_oil_exchange_oct21",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported that DOE offered up to 315,000 barrels, roughly one third of the reserve, described it as the first use since 2012 and included an analyst's skepticism that the volume would materially affect prices.",
+      "document_sha256": "ca86ebad7fe3bfdf270e4bb1f207ccd451e82e9f9a001dfa8aeb81fc9b51ff29",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete document or webpage.",
+      "inspected_at": "2026-10-21T15:57:03Z"
+    },
+    {
+      "source_id": "reuters_trans_inmates_scotus_oct21",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported that the Supreme Court denied the Justice Department's emergency request, leaving the lower-court protections for transgender prisoners in place while litigation continues, with Justices Thomas and Alito dissenting.",
+      "document_sha256": "5ba703ecafecdd9ef3fe2846e2a92263bb46debd58abe658a444b109cc87c218",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete document or webpage.",
+      "inspected_at": "2026-10-21T15:57:03Z"
+    },
+    {
+      "source_id": "ap_trans_inmates_scotus_oct21",
+      "origin_group": "Associated Press",
+      "evidence_extract": "Associated Press independently reported the Supreme Court's denial of emergency relief, the two noted dissents and the continuing lower-court order while the underlying case proceeds.",
+      "document_sha256": "994f243de35a438fe370063fb716972a3cb046df3a7ee7ebb38ebcaacecfef7e",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete document or webpage.",
+      "inspected_at": "2026-10-21T15:57:03Z"
+    },
+    {
+      "source_id": "reuters_ukraine_talks_oct21",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported that Putin agreed to resume U.S.-mediated technical talks with Ukraine, potentially in Abu Dhabi on or after November 10, focused on postwar security guarantees while the parties' war aims remained far apart.",
+      "document_sha256": "8019d458e61dd5ccdb98e48ccdfe800375541d6eb6e4d38f90f35de8094cfabe",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete document or webpage.",
+      "inspected_at": "2026-10-21T15:57:03Z"
+    },
+    {
+      "source_id": "truth_hubbard_release_oct21",
+      "origin_group": "Truth Social account @realDonaldTrump",
+      "evidence_extract": "Trump said Hubbard was released at his direct request and asserted that there was no swap and nothing given in return. The post establishes only that Trump made those claims.",
+      "document_sha256": "8f0aaa8d64d85aa09da3480a6d71caee2cf0287ccc2e77e0a6f23aff7a785d6e",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete document or webpage.",
+      "inspected_at": "2026-10-21T15:57:03Z"
+    },
+    {
+      "source_id": "reuters_trump_hubbard_claim_oct21",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported Trump's attributed statement that Hubbard was freed at his request without a swap or concession; the inspected report did not independently document the release terms.",
+      "document_sha256": "017a4a6e494d396648fa20298ddc31485987fa7134cce184581edff58dd3e8a2",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete document or webpage.",
+      "inspected_at": "2026-10-21T15:57:03Z"
+    },
+    {
+      "source_id": "ap_hearn_oig_decline_oct21",
+      "origin_group": "Associated Press",
+      "evidence_extract": "Associated Press reported that the Justice Department inspector general declined the requested Hearn-prosecution review on jurisdictional grounds, that the Office of Professional Responsibility has the relevant remit and that Hearn's lawyers sought reconsideration.",
+      "document_sha256": "1dc6d0c98bae40fc3ee164ea719612f00869e77edf17caf3f6789fc6d83854c8",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete document or webpage.",
+      "inspected_at": "2026-10-21T15:57:03Z"
+    }
+  ],
+  "truth_social_media_inspection": {
+    "post_ids": [
+      "117479429782667061",
+      "117479428956407249",
+      "117479427326984993",
+      "117479422656960213",
+      "117479404058364292",
+      "117479403384414491",
+      "117479402753999437",
+      "117479401880051412",
+      "117479085659195617",
+      "117479083730049250",
+      "117479081625461199",
+      "117479079767228837",
+      "117479077625297841",
+      "117478842004893362",
+      "117478593489864840",
+      "117478575893014344",
+      "117478544626833616",
+      "117478508731391744",
+      "117478460769539937"
+    ],
+    "scope": "Twelve nonempty text rows were reviewed; the Hubbard claim was preserved only as attributed speech. Seven media-only posts and the repost media asset were unavailable and supplied no editorial evidence.",
+    "provenance": "data/truth_social_feed_meta.json, data/truth_social_seed.json and data/truth_social_reviews.json"
+  },
+  "trump_tv_inspection": {
+    "sources": [
+      "https://www.whitehouse.gov/trumptv/",
+      "https://www.whitehouse.gov/live/",
+      "https://www.whitehouse.gov/videos/",
+      "https://www.whitehouse.gov/remarks/",
+      "https://www.whitehouse.gov/releases/"
+    ],
+    "scope": "Official page metadata and stable video IDs were inspected. The live hub identified y3du2GiOoJg, but direct audiovisual content and captions were not retrieved.",
+    "finding": "The stream remained A4gNgHfZ-v4, the dated library had no October 21 upload by cutoff and no qualifying new item was located in the material reviewed."
+  },
+  "withheld": [
+    {
+      "title": "Data-center self-generation mandate and community dividend statement",
+      "reason": "No signed order, rule, agency directive or implementing instrument was located."
+    },
+    {
+      "title": "Truth Social campaign, rhetoric and unretrieved media batch",
+      "reason": "No additional distinct government action was established, and claims inside unavailable media were not used."
+    },
+    {
+      "title": "Trump TV October 21 live-hub recheck",
+      "reason": "Official metadata identified a live event, but footage and captions were unavailable and no distinct qualifying action was established."
+    },
+    {
+      "title": "Legacy Wilcox remediation",
+      "reason": "The restored historical row still requires the custody-aware remediation path identified previously."
+    },
+    {
+      "title": "External archive discovery inputs",
+      "reason": "Measurements remained separate discovery inputs and no upstream item was automatically promoted."
+    }
+  ],
+  "corrections": []
+}
