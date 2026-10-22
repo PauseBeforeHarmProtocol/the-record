@@ -1,33 +1,35 @@
 {
-  "version": "10.170.0",
+  "version": "10.171.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-21T15:57:03Z",
-    "through_utc": "2026-10-21T21:56:26Z",
+    "from_utc": "2026-10-21T21:56:26Z",
+    "through_utc": "2026-10-22T04:02:45Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous scan from the exact prior accepted-branch boundary. One qualifying national enforcement record was added and the stable Big Bend litigation record was materially refreshed. Four new Truth Social posts were reviewed as leads; no legacy row changed because the Wilcox custody-aware remediation remains unresolved."
+    "note": "Continuous scan from the exact prior accepted-branch boundary. One qualifying PSLF litigation record was added. Follow-up review also recovered a missed October 20 offshore-wind filing and a related election-administration complaint from the prior coverage interval; the election record was materially refreshed rather than duplicated. Thirteen new Truth Social posts were reviewed as leads; no legacy row changed because the Wilcox custody-aware remediation remains unresolved."
   },
-  "release_iso": "2026-10-21",
-  "release_human": "October 21, 2026",
-  "checked_at": "2026-10-21 5:56 PM EDT",
-  "previous_version": "10.169.0",
-  "previous_checked_at": "2026-10-21 11:57 AM EDT",
-  "window_started_at": "2026-10-21 11:57 AM EDT",
-  "window_ended_at": "2026-10-21 5:56 PM EDT",
+  "release_iso": "2026-10-22",
+  "release_human": "October 22, 2026",
+  "checked_at": "2026-10-22 12:02 AM EDT",
+  "previous_version": "10.170.0",
+  "previous_checked_at": "2026-10-21 5:56 PM EDT",
+  "window_started_at": "2026-10-21 5:56 PM EDT",
+  "window_ended_at": "2026-10-22 12:02 AM EDT",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
   "week_label": "2026-10-19 through 2026-10-25",
   "cutoff_start": "2026-07-20",
   "new_entry_ids": [
-    "NAT-2026-09-14-009",
-    "NAT-2026-10-21-003"
+    "NAT-2026-09-15-003",
+    "NAT-2026-10-20-007",
+    "NAT-2026-10-21-004"
   ],
   "added_entry_ids": [
-    "NAT-2026-10-21-003"
+    "NAT-2026-10-20-007",
+    "NAT-2026-10-21-004"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-09-14-009"
+    "NAT-2026-09-15-003"
   ],
   "dedupe_resolutions": [
     {
@@ -478,7 +480,7 @@
       "entry_id": "NAT-2026-09-15-003",
       "target_id": "NAT-2026-09-15-003",
       "decision": "same_event_update",
-      "notes": "New enforcement totals, state examples, the Cox constitutional dismissal, California letters, Nevada subpoenas, the filed California complaint, the October 16 charging batch, the election-official prosecution warning and the related presidential statement are developments in the same noncitizen-voting record. They were consolidated into the stable canonical entry rather than counted as parallel events."
+      "notes": "New enforcement totals, state examples, the Cox constitutional dismissal, California letters, Nevada subpoenas, the filed California complaint, the October 16 charging batch, the election-official prosecution warning, the related presidential statement and the October 20 DSCC complaint are developments in the same noncitizen-voting record. They were consolidated into the stable canonical entry rather than counted as parallel events."
     },
     {
       "entry_id": "NAT-2026-10-01-002",
@@ -1175,24 +1177,32 @@
       "target_id": "NAT-2026-10-21-003",
       "decision": "false_positive",
       "notes": "No canonical record, normalized-title match, shared source URL or recent maintenance item covered the first nationwide USDA benefits and program fraud enforcement surge. Its constituent cases remain consolidated into the national initiative rather than counted separately."
+    },
+    {
+      "entry_id": "NAT-2026-10-20-007",
+      "target_id": "NAT-2026-10-20-007",
+      "decision": "false_positive",
+      "notes": "No canonical entry, source URL, normalized title or recent maintenance item covered the formal New England Wind remand request. Other offshore-wind records concern different projects, permits and proceedings."
+    },
+    {
+      "entry_id": "NAT-2026-10-21-004",
+      "target_id": "NAT-2026-10-21-004",
+      "decision": "false_positive",
+      "notes": "No canonical entry, source URL, normalized title or recent maintenance item covered the two PSLF employer-rule appeal dismissals. The still-pending companion appeal is preserved as part of the same litigation lifecycle, not counted separately."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Overseas crypto-scam crackdown effectiveness claims",
-      "reason": "Officials reported compounds taken down, warning contacts and claimed prevented losses, but the aggregate effectiveness figures were not independently audited or documented case by case by cutoff. The roundtable claims remain research leads rather than measured outcomes."
+      "title": "Thirteen new Truth Social posts",
+      "reason": "Eight endorsement reposts, a prospective Alaska ballot legal threat, a private Apple procurement promotion and four Hubbard-related posts or images did not independently establish a distinct qualifying federal action. All text and accessible images were inspected."
     },
     {
-      "title": "Massachusetts marriage-fraud prosecution",
-      "reason": "The newly announced charges concern an alleged long-running criminal scheme but did not establish a material national policy change, formal proposal, ruling or measured administration-wide outcome. Allegations remain unproven."
+      "title": "Trump TV October 21 library additions",
+      "reason": "Official titles, dates, durations and stable IDs were inspected, but direct footage, audio and captions were unavailable. The items were routine, rhetorical or duplicative of already reviewed events; no qualifying new item was located in the material reviewed."
     },
     {
-      "title": "Four new Truth Social posts",
-      "reason": "Three posts repeated partisan claims about Stephen Hubbard's already catalogued release. One media-only post and the Hubbard image were unavailable, so no claim inside either image was used. No separate qualifying government action was established."
-    },
-    {
-      "title": "Trump TV October 21 evening recheck",
-      "reason": "The official stream ID was unchanged and the dated library still showed no October 21 upload by cutoff. Footage, audio and captions were not retrieved; no qualifying new item was located in the material reviewed."
+      "title": "NCPC alternate-member changes",
+      "reason": "Reported political-appointee substitutions preceded a future vote on the proposed arch, but no vote, implementing order, conflict finding or approval had occurred by cutoff."
     },
     {
       "title": "Legacy Wilcox remediation",
@@ -1200,18 +1210,18 @@
     },
     {
       "title": "External archive discovery inputs",
-      "reason": "Trump Archive displayed updated measurements; UndoTrump and IPTP were stable, while Record47 exposed only static feature counts and not current top-line or API totals. Units remained separate and no upstream item was promoted automatically."
+      "reason": "Trump Archive displayed updated measurements and IPTP was stable. UndoTrump timed out, while Record47 exposed only static feature counts and not current top-line or API totals. Prior values were preserved, units remained separate and no upstream item was promoted automatically."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-21T21:56:26Z",
-    "checked_at_eastern": "2026-10-21 5:56 PM EDT",
+    "checked_at": "2026-10-22T04:02:45Z",
+    "checked_at_eastern": "2026-10-22 12:02 AM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-21T21:56:26Z",
+    "last_successful_page_inspection_at": "2026-10-22T04:02:45Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1222,7 +1232,7 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, dated video-library, remarks and releases pages were rechecked. The linked stream remained A4gNgHfZ-v4, while the dated library still displayed no October 21 upload by cutoff. Direct footage, audio and captions were not retrieved. No qualifying new item located in the material reviewed.",
+    "summary": "Official Trump TV, live, dated video-library, remarks and releases pages were rechecked. The linked stream remained A4gNgHfZ-v4. Four October 21 library entries were inspected by official title, date, duration and stable video ID. Direct footage, audio and captions were not retrieved. No qualifying new item located in the material reviewed.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1234,60 +1244,52 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-21T21:56:26Z",
-        "observed_at_eastern": "2026-10-21 5:56 PM EDT",
+        "observed_at": "2026-10-22T04:02:45Z",
+        "observed_at_eastern": "2026-10-22 12:02 AM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official page linked the unchanged A4gNgHfZ-v4 stream. Fallback text was not treated as proof of an outage.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
+        "video_ids": ["A4gNgHfZ-v4"]
       },
       {
         "url": "https://www.whitehouse.gov/live/",
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-21T21:56:26Z",
-        "observed_at_eastern": "2026-10-21 5:56 PM EDT",
+        "observed_at": "2026-10-22T04:02:45Z",
+        "observed_at_eastern": "2026-10-22 12:02 AM EDT",
         "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "The hub presented the official 24/7 Trump TV channel and fallback text. Footage and captions were not retrieved, and fallback error text was not treated as proof of an outage.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
+        "inspection": "The hub presented the official 24/7 Trump TV channel and fallback text. Footage and captions were not retrieved.",
+        "video_ids": ["A4gNgHfZ-v4"]
       },
       {
         "url": "https://www.whitehouse.gov/videos/",
-        "posted_date": "2026-10-20",
-        "original_event_date": "2026-10-20",
+        "posted_date": "2026-10-21",
+        "original_event_date": "2026-10-21",
         "broadcast_time": null,
-        "observed_at": "2026-10-21T21:56:26Z",
-        "observed_at_eastern": "2026-10-21 5:56 PM EDT",
+        "observed_at": "2026-10-22T04:02:45Z",
+        "observed_at_eastern": "2026-10-22 12:02 AM EDT",
         "format": "official dated-library metadata; audiovisual content unreviewed",
-        "inspection": "No October 21 upload was displayed. The latest three entries remained the October 20 items previously identified by title, date, duration and stable ID; they were not counted again.",
-        "video_ids": [
-          "M_lGBxyrnio",
-          "IQKChHxD9e8",
-          "rAg8C8mP-rU"
-        ]
+        "inspection": "Four October 21 entries were inspected by title, date, duration and stable ID: a gaggle, a short rhetorical clip, a roundtable and a replay of Vice President Vance's Fraud Task Force press conference. The replay was not counted as a new government action.",
+        "video_ids": ["MaISfxEQmLM", "pVEzBm2qYdc", "TLH3gXrPCTU", "y3du2GiOoJg"]
       },
       {
         "url": "https://www.whitehouse.gov/remarks/",
         "posted_date": "2026-09-28",
         "original_event_date": "2026-09-28",
         "broadcast_time": null,
-        "observed_at": "2026-10-21T21:56:26Z",
-        "observed_at_eastern": "2026-10-21 5:56 PM EDT",
+        "observed_at": "2026-10-22T04:02:45Z",
+        "observed_at_eastern": "2026-10-22 12:02 AM EDT",
         "format": "supplementary remarks index",
         "inspection": "The index supplied no new complete Trump TV transcript and was not treated as a complete transcript feed.",
         "video_ids": []
       },
       {
         "url": "https://www.whitehouse.gov/releases/",
-        "posted_date": "2026-10-20",
+        "posted_date": "2026-10-21",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-21T21:56:26Z",
-        "observed_at_eastern": "2026-10-21 5:56 PM EDT",
+        "observed_at": "2026-10-22T04:02:45Z",
+        "observed_at_eastern": "2026-10-22 12:02 AM EDT",
         "format": "supplementary official releases index",
         "inspection": "The index supplied no separate qualifying action beyond the records accepted or refreshed in this release.",
         "video_ids": []
@@ -1296,41 +1298,31 @@
   },
   "truth_social_inspection": {
     "coverage": {
-      "total_review_rows": 1920,
-      "text_status": {
-        "not_recorded": 154,
-        "reviewed": 797,
-        "pending": 969
-      },
-      "media_status": {
-        "not_applicable": 917,
-        "not_recorded": 19,
-        "unavailable": 280,
-        "pending": 507,
-        "reviewed": 197
-      }
+      "total_review_rows": 1933,
+      "text_status": {"not_recorded": 154, "reviewed": 810, "pending": 969},
+      "media_status": {"not_applicable": 926, "not_recorded": 19, "unavailable": 280, "pending": 507, "reviewed": 201}
     },
-    "new_posts": 4,
-    "source_rows_added": 4,
-    "new_text_reviewed": 3,
-    "new_nonempty_text_reviewed": 3,
-    "new_empty_text_inspected": 1,
-    "new_image_assets_reviewed": 0,
-    "new_image_posts_reviewed": 0,
+    "new_posts": 13,
+    "source_rows_added": 13,
+    "new_text_reviewed": 13,
+    "new_nonempty_text_reviewed": 13,
+    "new_empty_text_inspected": 0,
+    "new_image_assets_reviewed": 7,
+    "new_image_posts_reviewed": 4,
     "new_video_assets_pending": 0,
     "new_video_assets_reviewed": 0,
-    "new_media_reviewed": 0,
-    "new_media_unavailable": 2,
-    "checked_at_utc": "2026-10-21T21:56:26Z",
-    "checked_at_eastern": "2026-10-21 5:56:26 PM EDT",
-    "latest_post_at_utc": "2026-10-21T20:43:03.502000Z",
-    "latest_post_at_eastern": "2026-10-21 4:43:03 PM EDT",
-    "latest_post_id": "117480841773137630",
+    "new_media_reviewed": 4,
+    "new_media_unavailable": 0,
+    "checked_at_utc": "2026-10-22T04:02:45Z",
+    "checked_at_eastern": "2026-10-22 12:02:45 AM EDT",
+    "latest_post_at_utc": "2026-10-22T03:47:50.383000Z",
+    "latest_post_at_eastern": "2026-10-21 11:47:50 PM EDT",
+    "latest_post_id": "117482512081231252",
     "no_new_post_finding": false,
-    "note": "Four posts were newer than the prior validated snapshot. Three text posts repeated partisan claims about Stephen Hubbard's already catalogued release. One media-only post and the Hubbard image were unavailable, so no claim inside either image was used; no separate qualifying government action was established."
+    "note": "Thirteen posts were newer than the prior validated snapshot. Eight were endorsement reposts; one threatened possible federal legal action over Alaska's ballot; one promoted Apple's private Pennsylvania titanium procurement; and four repeated or illustrated the already catalogued Stephen Hubbard release. All text and seven accessible image assets were inspected. No claim inside a post was treated as independently verified, and no separate qualifying federal action was established."
   },
   "archive_network_inspection": {
-    "checked_at": "2026-10-21T21:56:26Z",
-    "note": "All four registered primary projects were rechecked as discovery inputs. Trump Archive advanced to 15,034 total items, 12,435 Truth Social posts and 1,947 speeches/transcripts; UndoTrump remained at 1,264 actions, 995 active, 44 in court and 42 restored; IPTP’s policy browser remained at 1,818 actions; and Record47 exposed static feature counts while current top-line and API totals were not retrieved, so prior structured measurements were preserved. No unlike units were summed and no external item was automatically promoted."
+    "checked_at": "2026-10-22T04:02:45Z",
+    "note": "All four registered primary projects were rechecked as discovery inputs. Trump Archive displayed 15,049 total items, 12,449 Truth Social posts and 1,948 speeches/transcripts; IPTP remained at 1,818 policy actions. UndoTrump timed out, and Record47 exposed only static feature counts rather than a current top-line measurement, so prior verified values were preserved. No unlike units were summed and no external item was automatically promoted."
   }
 }
