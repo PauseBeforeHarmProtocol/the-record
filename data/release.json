@@ -1,36 +1,39 @@
 {
-  "version": "10.172.0",
+  "version": "10.173.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-22T10:03:58Z",
-    "through_utc": "2026-10-22T15:58:07Z",
+    "from_utc": "2026-10-22T15:58:07Z",
+    "through_utc": "2026-10-22T22:03:43Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous scan from the exact prior accepted-branch boundary. One appellate ruling was added and two existing records materially refreshed; 40 new Truth Social posts were reviewed as leads without padding the canonical archive."
+    "note": "Continuous scan from the exact prior accepted-branch boundary. Five material actions were added and eight new Truth Social posts were reviewed without promoting rhetoric or campaign content."
   },
   "release_iso": "2026-10-22",
   "release_human": "October 22, 2026",
-  "checked_at": "2026-10-22 11:58 AM EDT",
-  "previous_version": "10.171.1",
-  "previous_checked_at": "2026-10-22 6:03 AM EDT",
-  "window_started_at": "2026-10-22 6:03 AM EDT",
-  "window_ended_at": "2026-10-22 11:58 AM EDT",
+  "checked_at": "2026-10-22 6:03 PM EDT",
+  "previous_version": "10.172.0",
+  "previous_checked_at": "2026-10-22 11:58 AM EDT",
+  "window_started_at": "2026-10-22 11:58 AM EDT",
+  "window_ended_at": "2026-10-22 6:03 PM EDT",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
   "week_label": "2026-10-19 through 2026-10-25",
   "cutoff_start": "2026-07-20",
   "new_entry_ids": [
-    "NAT-2026-09-15-003",
-    "NAT-2026-09-16-004",
-    "NAT-2026-10-21-005"
+    "NAT-2026-10-22-001",
+    "NAT-2026-10-22-002",
+    "NAT-2026-10-22-003",
+    "NAT-2026-10-22-004",
+    "NAT-2026-10-22-005"
   ],
   "added_entry_ids": [
-    "NAT-2026-10-21-005"
+    "NAT-2026-10-22-001",
+    "NAT-2026-10-22-002",
+    "NAT-2026-10-22-003",
+    "NAT-2026-10-22-004",
+    "NAT-2026-10-22-005"
   ],
-  "refreshed_entry_ids": [
-    "NAT-2026-09-15-003",
-    "NAT-2026-09-16-004"
-  ],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -1189,28 +1192,42 @@
       "target_id": "NAT-2026-10-21-004",
       "decision": "false_positive",
       "notes": "No canonical entry, source URL, normalized title or recent maintenance item covered the two PSLF employer-rule appeal dismissals. The still-pending companion appeal is preserved as part of the same litigation lifecycle, not counted separately."
+    },
+    {
+      "entry_id": "NAT-2026-10-22-003",
+      "target_id": "NAT-2026-10-07-008",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The October 7 record covers a completed civil penalty under the prior outbound-investment rules. The October 22 record covers a new COINS Act proposed-rule stage; neither is counted as the other."
+    },
+    {
+      "entry_id": "NAT-2026-10-22-004",
+      "target_id": "NAT-2026-09-08-009",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The September 8 order delegates general DPA priority and allocation authority. The October 22 instrument is a separate Section 303 petroleum determination directed to the Secretary of War and does not repeat a project award."
+    },
+    {
+      "entry_id": "NAT-2026-10-22-005",
+      "target_id": "NAT-2026-10-20-006",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "Both are grouped presidential signing notices, but they enact different bills on different dates with different statutory duties and consequences."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Forty new Truth Social posts",
-      "reason": "Direct review found campaign endorsements, turnout appeals, rally and media material, praise, commentary and unsupported Iran claims. The posts establish publication only; none independently established a separate qualifying federal action."
+      "title": "Eight new Truth Social posts",
+      "reason": "Direct review found campaign endorsements and turnout appeals, state and local commentary, and sports criticism. Posts establish publication only; no separate qualifying federal action was established."
     },
     {
-      "title": "Trump TV late-morning metadata recheck",
-      "reason": "The official stream and four October 21 listings were unchanged, with no October 22 upload by cutoff. Footage, audio and captions were unavailable; no qualifying new item was located in the material reviewed."
+      "title": "Trump TV evening metadata recheck",
+      "reason": "The official stream and four October 21 listings were unchanged, with no October 22 upload. Footage, audio and captions were unavailable; no qualifying new item was located in the material reviewed."
     },
     {
-      "title": "Peptide compounding proposal report",
-      "reason": "The underlying OIRA review and Associated Press reporting are already fully represented by NAT-2026-10-15-001; no material lifecycle change was identified."
+      "title": "Institutional-investor housing NPRM",
+      "reason": "The Treasury release appeared before the exact source boundary and remains queued for source-timing and lifecycle review rather than backfilled as a within-window action."
     },
     {
-      "title": "Reflecting Pool investigation decline",
-      "reason": "The report predated the exact source boundary and no new primary decision or independently corroborated within-window development was retrieved."
-    },
-    {
-      "title": "Minnesota judicial-recusal motions",
-      "reason": "The motions remain pending litigation positions, not rulings or implemented policy, and did not clear the threshold for a separate record."
+      "title": "Trump BBC deposition order",
+      "reason": "The order concerns personal defamation litigation and did not establish a material administration action."
     },
     {
       "title": "Legacy Wilcox remediation",
@@ -1225,11 +1242,11 @@
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-22T15:58:07Z",
-    "checked_at_eastern": "2026-10-22 11:58 AM EDT",
+    "checked_at": "2026-10-22T22:03:43Z",
+    "checked_at_eastern": "2026-10-22 6:03 PM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-22T15:58:07Z",
+    "last_successful_page_inspection_at": "2026-10-22T22:03:43Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1240,7 +1257,7 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, dated video-library, remarks and releases pages were rechecked. Stream A4gNgHfZ-v4 and the four October 21 listings were unchanged, and no October 22 upload appeared by cutoff. Titles, dates, durations and stable IDs were inspected; footage, audio and captions were unavailable. No qualifying new item located in the material reviewed.",
+    "summary": "Official Trump TV, live, dated video-library, remarks and releases pages were rechecked. Stream A4gNgHfZ-v4 and the four October 21 listings were unchanged, with no October 22 upload by cutoff. Titles, dates, durations and stable IDs were inspected; footage, audio and captions were unavailable. No qualifying new item located in the material reviewed.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1252,8 +1269,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-22T15:58:07Z",
-        "observed_at_eastern": "2026-10-22 11:58 AM EDT",
+        "observed_at": "2026-10-22T22:03:43Z",
+        "observed_at_eastern": "2026-10-22 6:03 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official page linked unchanged stream A4gNgHfZ-v4. Fallback text was not treated as proof of an outage.",
         "video_ids": [
@@ -1265,8 +1282,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-22T15:58:07Z",
-        "observed_at_eastern": "2026-10-22 11:58 AM EDT",
+        "observed_at": "2026-10-22T22:03:43Z",
+        "observed_at_eastern": "2026-10-22 6:03 PM EDT",
         "format": "official live-hub metadata; audiovisual content unreviewed",
         "inspection": "The hub presented the official channel and fallback text; footage and captions were not retrieved.",
         "video_ids": [
@@ -1278,10 +1295,10 @@
         "posted_date": "2026-10-21",
         "original_event_date": "2026-10-21",
         "broadcast_time": null,
-        "observed_at": "2026-10-22T15:58:07Z",
-        "observed_at_eastern": "2026-10-22 11:58 AM EDT",
+        "observed_at": "2026-10-22T22:03:43Z",
+        "observed_at_eastern": "2026-10-22 6:03 PM EDT",
         "format": "official dated-library metadata; audiovisual content unreviewed",
-        "inspection": "No October 22 upload was listed. The four October 21 items remained a gaggle, short rhetoric clip, immigration roundtable and Fraud Task Force replay; the replay was not counted as a new action.",
+        "inspection": "No October 22 upload was listed. Four October 21 items remained; the Fraud Task Force replay was not counted as a new action.",
         "video_ids": [
           "MaISfxEQmLM",
           "pVEzBm2qYdc",
@@ -1294,62 +1311,62 @@
         "posted_date": "2026-09-28",
         "original_event_date": "2026-09-28",
         "broadcast_time": null,
-        "observed_at": "2026-10-22T15:58:07Z",
-        "observed_at_eastern": "2026-10-22 11:58 AM EDT",
+        "observed_at": "2026-10-22T22:03:43Z",
+        "observed_at_eastern": "2026-10-22 6:03 PM EDT",
         "format": "supplementary remarks index",
         "inspection": "No new complete Trump TV transcript was supplied; the index was not treated as a complete transcript feed.",
         "video_ids": []
       },
       {
         "url": "https://www.whitehouse.gov/releases/",
-        "posted_date": "2026-10-21",
+        "posted_date": "2026-10-22",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-22T15:58:07Z",
-        "observed_at_eastern": "2026-10-22 11:58 AM EDT",
+        "observed_at": "2026-10-22T22:03:43Z",
+        "observed_at_eastern": "2026-10-22 6:03 PM EDT",
         "format": "supplementary official releases index",
-        "inspection": "No October 22 release was indexed by cutoff and no separate qualifying action was established.",
+        "inspection": "October 22 policy releases were used only as research leads and independently sourced where promoted; no broadcast footage was inferred.",
         "video_ids": []
       }
     ]
   },
   "truth_social_inspection": {
     "coverage": {
-      "total_review_rows": 1974,
+      "total_review_rows": 1982,
       "text_status": {
         "not_recorded": 154,
-        "reviewed": 851,
+        "reviewed": 859,
         "pending": 969
       },
       "media_status": {
-        "not_applicable": 939,
+        "not_applicable": 946,
         "not_recorded": 19,
         "unavailable": 280,
         "pending": 507,
-        "reviewed": 229
+        "reviewed": 230
       }
     },
-    "new_posts": 40,
-    "source_rows_added": 40,
-    "new_text_reviewed": 40,
-    "new_nonempty_text_reviewed": 24,
-    "new_empty_text_inspected": 16,
-    "new_image_assets_reviewed": 17,
-    "new_image_posts_reviewed": 17,
+    "new_posts": 8,
+    "source_rows_added": 8,
+    "new_text_reviewed": 8,
+    "new_nonempty_text_reviewed": 8,
+    "new_empty_text_inspected": 0,
+    "new_image_assets_reviewed": 0,
+    "new_image_posts_reviewed": 0,
     "new_video_assets_pending": 0,
-    "new_video_assets_reviewed": 11,
-    "new_media_reviewed": 28,
+    "new_video_assets_reviewed": 1,
+    "new_media_reviewed": 1,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-22T15:58:07Z",
-    "checked_at_eastern": "2026-10-22 11:58:07 AM EDT",
-    "latest_post_at_utc": "2026-10-22T15:41:13.210Z",
-    "latest_post_at_eastern": "2026-10-22 11:41:13 AM EDT",
-    "latest_post_id": "117485317207546802",
+    "checked_at_utc": "2026-10-22T22:03:43Z",
+    "checked_at_eastern": "2026-10-22 6:03:43 PM EDT",
+    "latest_post_at_utc": "2026-10-22T21:31:52.168Z",
+    "latest_post_at_eastern": "2026-10-22 5:31:52 PM EDT",
+    "latest_post_id": "117486696016576666",
     "no_new_post_finding": false,
-    "note": "Forty posts were newer than the prior validated snapshot. Text and accessible visual material were directly reviewed; representative video frames were inspected but audio and captions were not transcribed. Posts establish publication only, embedded claims were not treated as independently verified, and no separate qualifying federal action was established."
+    "note": "Eight posts were newer than the prior validated snapshot. All retained text was reviewed; four representative frames from the single video were inspected, while audio and captions were not transcribed. Posts establish publication only and no separate qualifying federal action was established."
   },
   "archive_network_inspection": {
-    "checked_at": "2026-10-22T15:58:07Z",
-    "note": "All four registered primary projects were rechecked. Trump Archive displayed 15,056 total items, 12,453 Truth Social posts and 1,951 speeches/transcripts; UndoTrump displayed 1,264 actions; IPTP displayed 1,819 policy actions; and Record47 retained 6,348 social posts, 3,539 primary sources, 332 contradictions and 38 sequences. Unlike units were not summed and no upstream item was automatically promoted."
+    "checked_at": "2026-10-22T22:03:43Z",
+    "note": "All four registered primary projects were rechecked. Trump Archive displayed 15,098 total items, 12,494 Truth Social posts and 1,951 speeches/transcripts; UndoTrump displayed 1,264 actions; IPTP displayed 1,819 policy actions; and Record47 displayed 6,348 social posts, 3,539 primary sources, 332 contradictions and 38 sequences. Unlike units were not summed and no upstream item was automatically promoted."
   }
 }
