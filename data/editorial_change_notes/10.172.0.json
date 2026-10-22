@@ -1,0 +1,110 @@
+{
+  "version": "10.172.0",
+  "base_release_version": "10.171.1",
+  "base_commit": "0985069384fdc1a49311b8cf56fe4576bc37df0f",
+  "research_window": {
+    "from_utc": "2026-10-22T10:03:58Z",
+    "through_utc": "2026-10-22T15:58:07Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary, with primary-order recovery for the previously withheld October 21 election injunction."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository's final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-15-003",
+      "kind": "material_refresh",
+      "summary": "Adds the October 21 nine-state preliminary injunction, its exact operational limits, short administrative stay, bond and expiration while preserving nonfinal status.",
+      "duplicate_review": "The order directly advances the existing noncitizen-voting and election-administration record and is consolidated into its stable ID."
+    },
+    {
+      "entry_id": "NAT-2026-09-16-004",
+      "kind": "material_refresh",
+      "summary": "Adds the 22-member House enforcement letter, announced oversight possibilities and the White House response without treating threatened investigations or sanctions as implemented.",
+      "duplicate_review": "The congressional response concerns the same Graham Act waiver lifecycle already tracked and is not counted as a separate sanctions event."
+    },
+    {
+      "entry_id": "NAT-2026-10-21-005",
+      "kind": "added",
+      "summary": "Records the Fifth Circuit's partial Second Amendment ruling on the federal interstate switchblade restriction, its surviving Section 1243 dismissal and remand posture.",
+      "duplicate_review": "No canonical entry, normalized title, source URL or recent maintenance item covered this distinct appellate ruling."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "ndcal_cna_mullin_pi_oct21",
+      "origin_group": "U.S. District Court for the Northern District of California",
+      "evidence_extract": "The October 21 preliminary-injunction order in California Nurses Association v. Mullin finds plaintiffs likely to succeed on a Voting Rights Act Section 11(b) claim; restricts specified election-related interviews and operations in nine states, including operations based wholly on challenged TECS matching records; stays relief until October 23 at 5 p.m.; requires a $100 bond; and expires with November 3 voting.",
+      "document_sha256": "866ebd3eb6f13f870861a191c76cbb763ef8ec8fe439b768d7332e0f9c58eab5",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-22T15:58:07Z"
+    },
+    {
+      "source_id": "ap_cna_mullin_injunction_oct22",
+      "origin_group": "Associated Press",
+      "evidence_extract": "Associated Press independently reported the nine-state preliminary injunction, the plaintiffs' voter-intimidation theory and the administration's position that it intended to exclude citizens and was conducting lawful election-crime investigations.",
+      "document_sha256": "32d7739db677a69d52fcd3e1f00fe7acd42aed05aef01f1bf06000844f1255d9",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-22T15:58:07Z"
+    },
+    {
+      "source_id": "fifth_circuit_switchblade_oct21",
+      "origin_group": "U.S. Court of Appeals for the Fifth Circuit",
+      "evidence_extract": "The published Fifth Circuit opinion in Knife Rights v. Blanche holds the interstate restrictions in 15 U.S.C. § 1242 unconstitutional, reverses that dismissal and remands, while affirming dismissal of the separate facial challenge to 15 U.S.C. § 1243.",
+      "document_sha256": "acddaed56cd5c2fad8cb6ebbbc2b8360d73a7807c46b666357069870045c2c89",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-22T15:58:07Z"
+    },
+    {
+      "source_id": "reuters_switchblade_ruling_oct22",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported the Fifth Circuit's switchblade ruling, the Justice Department's dangerous-and-unusual-weapons argument and lack of an immediate post-ruling department comment, while preserving the partial disposition.",
+      "document_sha256": "e1e670fc016593a38c4f0e7bb7457ba1aff6e8bcbc5a634bfb56320debda53ed",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-22T15:58:07Z"
+    },
+    {
+      "source_id": "reuters_russia_congress_backlash_oct22",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported that 22 House members sent an October 15 letter urging full Graham Act enforcement; Representative Brian Fitzpatrick threatened possible investigations and budget cuts; Speaker Mike Johnson expressed concern; and the White House said Trump retained sanctions authority and sought an end to the war.",
+      "document_sha256": "8d39fcbc3f664b271bafdefb8e7027dabd36cbc782023659341b90f5729527cf",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-22T15:58:07Z"
+    }
+  ],
+  "truth_social_media_inspection": {
+    "new_posts": 40,
+    "latest_post_id": "117485317207546802",
+    "latest_post_at_utc": "2026-10-22T15:41:13.210Z",
+    "latest_post_at_eastern": "2026-10-22 11:41:13 AM EDT",
+    "finding": "All 40 new posts were reviewed as leads. Accessible images and representative video frames were inspected; audio and captions were not transcribed. The set consisted mainly of endorsements, turnout appeals, campaign footage, praise, media screenshots and unsupported Iran claims, with no separate qualifying action established."
+  },
+  "trump_tv_inspection": {
+    "checked_at": "2026-10-22T15:58:07Z",
+    "stream_video_id": "A4gNgHfZ-v4",
+    "finding": "The stream ID and four October 21 library entries were unchanged, and no October 22 upload appeared by cutoff. Titles, dates, durations and stable IDs were inspected; direct footage, audio and captions were unavailable. No qualifying new item was located in the material reviewed."
+  },
+  "withheld": [
+    {
+      "title": "Truth Social Iran, impeachment and campaign posts",
+      "reason": "The posts establish publication only; embedded claims lacked independent verification or described rhetoric, campaign activity and commentary rather than a new implemented federal action."
+    },
+    {
+      "title": "Peptide compounding proposal report",
+      "reason": "The underlying OIRA review and AP reporting are already fully represented by NAT-2026-10-15-001; no material lifecycle change was identified."
+    },
+    {
+      "title": "Reflecting Pool investigation decline",
+      "reason": "The report predated the exact source boundary and relied chiefly on lawyers' account; no new primary decision or independently corroborated within-window development was retrieved."
+    },
+    {
+      "title": "Minnesota judicial-recusal motions",
+      "reason": "The motions are pending litigation positions rather than rulings or implemented policy and did not clear the materiality threshold for a separate record."
+    },
+    {
+      "title": "Legacy Wilcox remediation",
+      "reason": "The restored row still requires the custody-aware remediation path identified previously; no guarded historical edit was available in this run."
+    }
+  ],
+  "corrections": []
+}
