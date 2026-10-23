@@ -7453,6 +7453,54 @@
       "provenance_path": "data/editorial_change_notes/10.176.0.json",
       "provenance_sha256": "2dab1671b5d60c9f266ba904c0bce427614feb22c64fbe032224a73039e73047",
       "note": "Stable ID, source-level claim mapping, separate reasoning review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.177.0:NAT-2026-09-05-001",
+      "entry_id": "NAT-2026-09-05-001",
+      "as_of_utc": "2026-10-23T22:01:02Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.177.0",
+      "summary": "Russia and Ukraine specified an October 27 Oleshky pause start and humanitarian tasks.",
+      "provenance_path": "data/editorial_change_notes/10.177.0.json",
+      "provenance_sha256": "fd127a584fe420e2fa040adad837bdb07faa66a82bbef73ac03d9b87f3ccc8b0",
+      "note": "Stable ID, source-level claim mapping, separate reasoning review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.177.0:NAT-2026-09-10-005",
+      "entry_id": "NAT-2026-09-10-005",
+      "as_of_utc": "2026-10-23T22:01:02Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.177.0",
+      "summary": "The en banc Fifth Circuit rejected the constitutional bond-hearing claim.",
+      "provenance_path": "data/editorial_change_notes/10.177.0.json",
+      "provenance_sha256": "fd127a584fe420e2fa040adad837bdb07faa66a82bbef73ac03d9b87f3ccc8b0",
+      "note": "Stable ID, source-level claim mapping, separate reasoning review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.177.0:NAT-2026-10-09-003",
+      "entry_id": "NAT-2026-10-09-003",
+      "as_of_utc": "2026-10-23T22:01:02Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.177.0",
+      "summary": "A first 40,000-ton Russian diesel cargo loaded and departed for New York.",
+      "provenance_path": "data/editorial_change_notes/10.177.0.json",
+      "provenance_sha256": "fd127a584fe420e2fa040adad837bdb07faa66a82bbef73ac03d9b87f3ccc8b0",
+      "note": "Stable ID, source-level claim mapping, separate reasoning review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.177.0:NAT-2026-08-22-001",
+      "entry_id": "NAT-2026-08-22-001",
+      "as_of_utc": "2026-10-23T22:01:02Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.177.0",
+      "summary": "A signed proclamation schedules Canadian tariff-line removals and additions for October 30.",
+      "provenance_path": "data/editorial_change_notes/10.177.0.json",
+      "provenance_sha256": "fd127a584fe420e2fa040adad837bdb07faa66a82bbef73ac03d9b87f3ccc8b0",
+      "note": "Stable ID, source-level claim mapping, separate reasoning review and duplicate disposition preserved."
     }
   ],
   "reviews": [
@@ -96377,16 +96425,40 @@
       "entry_id": "NAT-2026-10-22-007",
       "content_sha256": "8805298fa19f78a1a6c089d3e190a23535f9f23fbdec8ff34221abadc31462b5",
       "reviewed_at": "2026-10-23T10:03:47Z",
-      "reviewer": {"name": "OpenAI Codex editorial maintenance", "kind": "ai_assisted"},
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
       "claims": [
         {
           "fact_index": 0,
           "fact_sha256": "811dffd39d2f748d7232039f57659120d174b5726a1b25c6839c416eba75ad77",
           "relies_on_unnamed_sources": true,
           "supports": [
-            {"source_id": "reuters_lewandowski_probe_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "d1c9142438ed6fcfdcfe03ec67c960ad7b683c5588179374bca2d02799229d63", "origin_group": "Reuters", "evidence_status": "reported"},
-            {"source_id": "washpost_lewandowski_probe_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "fbbec9975caefb9d65b60086ce18540e30ca3a547ffd9e601faf947aaf05dce4", "origin_group": "The Washington Post", "evidence_status": "reported"},
-            {"source_id": "cbs_lewandowski_probe_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "1180be4cb2f601927488b3cae60792290f58037175bbce1d58e7ca6d71aafab0", "origin_group": "CBS News", "evidence_status": "reported"}
+            {
+              "source_id": "reuters_lewandowski_probe_oct22",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.",
+              "inspected_at": "2026-10-23T10:03:47Z",
+              "document_sha256": "d1c9142438ed6fcfdcfe03ec67c960ad7b683c5588179374bca2d02799229d63",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "washpost_lewandowski_probe_oct22",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.",
+              "inspected_at": "2026-10-23T10:03:47Z",
+              "document_sha256": "fbbec9975caefb9d65b60086ce18540e30ca3a547ffd9e601faf947aaf05dce4",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "cbs_lewandowski_probe_oct22",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.",
+              "inspected_at": "2026-10-23T10:03:47Z",
+              "document_sha256": "1180be4cb2f601927488b3cae60792290f58037175bbce1d58e7ca6d71aafab0",
+              "origin_group": "CBS News",
+              "evidence_status": "reported"
+            }
           ]
         },
         {
@@ -96394,8 +96466,22 @@
           "fact_sha256": "9ff9ab611263c7f5ab519f41d3ef35b88fc82a29dec6c6d0d9350b9390636cce",
           "relies_on_unnamed_sources": true,
           "supports": [
-            {"source_id": "reuters_lewandowski_probe_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "d1c9142438ed6fcfdcfe03ec67c960ad7b683c5588179374bca2d02799229d63", "origin_group": "Reuters", "evidence_status": "reported"},
-            {"source_id": "cbs_lewandowski_probe_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "1180be4cb2f601927488b3cae60792290f58037175bbce1d58e7ca6d71aafab0", "origin_group": "CBS News", "evidence_status": "reported"}
+            {
+              "source_id": "reuters_lewandowski_probe_oct22",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.",
+              "inspected_at": "2026-10-23T10:03:47Z",
+              "document_sha256": "d1c9142438ed6fcfdcfe03ec67c960ad7b683c5588179374bca2d02799229d63",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "cbs_lewandowski_probe_oct22",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.",
+              "inspected_at": "2026-10-23T10:03:47Z",
+              "document_sha256": "1180be4cb2f601927488b3cae60792290f58037175bbce1d58e7ca6d71aafab0",
+              "origin_group": "CBS News",
+              "evidence_status": "reported"
+            }
           ]
         },
         {
@@ -96403,8 +96489,22 @@
           "fact_sha256": "c70feeed5678eb6ce9bcac0c90d3b5840b070f46711d9d8d4c1f8b48f1624458",
           "relies_on_unnamed_sources": false,
           "supports": [
-            {"source_id": "washpost_lewandowski_probe_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "fbbec9975caefb9d65b60086ce18540e30ca3a547ffd9e601faf947aaf05dce4", "origin_group": "The Washington Post", "evidence_status": "reported"},
-            {"source_id": "cbs_lewandowski_probe_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "1180be4cb2f601927488b3cae60792290f58037175bbce1d58e7ca6d71aafab0", "origin_group": "CBS News", "evidence_status": "reported"}
+            {
+              "source_id": "washpost_lewandowski_probe_oct22",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.",
+              "inspected_at": "2026-10-23T10:03:47Z",
+              "document_sha256": "fbbec9975caefb9d65b60086ce18540e30ca3a547ffd9e601faf947aaf05dce4",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "cbs_lewandowski_probe_oct22",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.",
+              "inspected_at": "2026-10-23T10:03:47Z",
+              "document_sha256": "1180be4cb2f601927488b3cae60792290f58037175bbce1d58e7ca6d71aafab0",
+              "origin_group": "CBS News",
+              "evidence_status": "reported"
+            }
           ]
         },
         {
@@ -96412,31 +96512,71 @@
           "fact_sha256": "9b23366b4eee2a5e5b4aa0bc0470c7efca14a933a73ec9b5697b3e58d92ce17e",
           "relies_on_unnamed_sources": false,
           "supports": [
-            {"source_id": "ap_lewandowski_response_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "cb7d7bba2730b1c1a6fe0483e15e85f15d496c00d6dc1abaa33a348bb90101f3", "origin_group": "Associated Press", "evidence_status": "reported"}
+            {
+              "source_id": "ap_lewandowski_response_oct22",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.",
+              "inspected_at": "2026-10-23T10:03:47Z",
+              "document_sha256": "cb7d7bba2730b1c1a6fe0483e15e85f15d496c00d6dc1abaa33a348bb90101f3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
           ]
         }
       ],
       "reasoning_review": [
-        {"field": "significance", "text_sha256": "f6a81b18662393b7ee3f8d986c4a4330fa132b05cbfe31a2343ad147529e1567", "review_note": "Separately reviews the oversight significance while preserving the absence of charges or findings."},
-        {"field": "goalpost", "text_sha256": "1ecc56013be468974d59fa65745e0ca39a89ad9d2e8e6218f5ba977708f034d8", "review_note": "Preserves counsel's denial and the president's response while naming observable process outcomes."},
-        {"field": "maybe_therefore", "text_sha256": "7dcebbf692757cc92cbd113d3231ba860a41932d1cce3e9bd0a2d43e67e95c08", "review_note": "Separates a reported investigation from guilt, charge or adjudicated fact."}
+        {
+          "field": "significance",
+          "text_sha256": "f6a81b18662393b7ee3f8d986c4a4330fa132b05cbfe31a2343ad147529e1567",
+          "review_note": "Separately reviews the oversight significance while preserving the absence of charges or findings."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "1ecc56013be468974d59fa65745e0ca39a89ad9d2e8e6218f5ba977708f034d8",
+          "review_note": "Preserves counsel's denial and the president's response while naming observable process outcomes."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "7dcebbf692757cc92cbd113d3231ba860a41932d1cce3e9bd0a2d43e67e95c08",
+          "review_note": "Separates a reported investigation from guilt, charge or adjudicated fact."
+        }
       ],
-      "unresolved_questions": ["Public referral or court process", "Charges, declination or inspector-general finding", "Contract-specific evidence and response"]
+      "unresolved_questions": [
+        "Public referral or court process",
+        "Charges, declination or inspector-general finding",
+        "Contract-specific evidence and response"
+      ]
     },
     {
       "review_id": "10.175.0:NAT-2026-10-22-008:f91724d3787e",
       "entry_id": "NAT-2026-10-22-008",
       "content_sha256": "f91724d3787e91d6c00877ccd71ec99377993861fb4d471fd794b1e6754d8f11",
       "reviewed_at": "2026-10-23T10:03:47Z",
-      "reviewer": {"name": "OpenAI Codex editorial maintenance", "kind": "ai_assisted"},
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
       "claims": [
         {
           "fact_index": 0,
           "fact_sha256": "c7398c87b34122de0eeef3be4cd40f2cfa837522f9851a8e5e63758f538e6981",
           "relies_on_unnamed_sources": false,
           "supports": [
-            {"source_id": "fcc_blocks_surveillance_chips_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "a5f71e0a72d40a0c5d855740a3c1e266fc707fd1e4e08b3d106ee13332250a8e", "origin_group": "Federal Communications Commission", "evidence_status": "implemented"},
-            {"source_id": "reuters_fcc_surveillance_chips_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "3945a2c9fb2c34d11733bb245fa86bc88388c51ef13217302e96996c5c7feddf", "origin_group": "Reuters", "evidence_status": "implemented"}
+            {
+              "source_id": "fcc_blocks_surveillance_chips_oct22",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.",
+              "inspected_at": "2026-10-23T10:03:47Z",
+              "document_sha256": "a5f71e0a72d40a0c5d855740a3c1e266fc707fd1e4e08b3d106ee13332250a8e",
+              "origin_group": "Federal Communications Commission",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_fcc_surveillance_chips_oct22",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.",
+              "inspected_at": "2026-10-23T10:03:47Z",
+              "document_sha256": "3945a2c9fb2c34d11733bb245fa86bc88388c51ef13217302e96996c5c7feddf",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            }
           ]
         },
         {
@@ -96444,8 +96584,22 @@
           "fact_sha256": "8b90922967af1fbd369adac91af1dc7f08726ca05c595fcbd55f0ed6514d4a54",
           "relies_on_unnamed_sources": false,
           "supports": [
-            {"source_id": "fcc_blocks_surveillance_chips_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "a5f71e0a72d40a0c5d855740a3c1e266fc707fd1e4e08b3d106ee13332250a8e", "origin_group": "Federal Communications Commission", "evidence_status": "implemented"},
-            {"source_id": "reuters_fcc_surveillance_chips_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "3945a2c9fb2c34d11733bb245fa86bc88388c51ef13217302e96996c5c7feddf", "origin_group": "Reuters", "evidence_status": "implemented"}
+            {
+              "source_id": "fcc_blocks_surveillance_chips_oct22",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.",
+              "inspected_at": "2026-10-23T10:03:47Z",
+              "document_sha256": "a5f71e0a72d40a0c5d855740a3c1e266fc707fd1e4e08b3d106ee13332250a8e",
+              "origin_group": "Federal Communications Commission",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_fcc_surveillance_chips_oct22",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.",
+              "inspected_at": "2026-10-23T10:03:47Z",
+              "document_sha256": "3945a2c9fb2c34d11733bb245fa86bc88388c51ef13217302e96996c5c7feddf",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            }
           ]
         },
         {
@@ -96453,8 +96607,22 @@
           "fact_sha256": "fbb40605385ef513fdcf44710279ec7143228faca539fe1db2cf9fbf3fb1b840",
           "relies_on_unnamed_sources": false,
           "supports": [
-            {"source_id": "fcc_blocks_surveillance_chips_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "a5f71e0a72d40a0c5d855740a3c1e266fc707fd1e4e08b3d106ee13332250a8e", "origin_group": "Federal Communications Commission", "evidence_status": "implemented"},
-            {"source_id": "reuters_fcc_surveillance_chips_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "3945a2c9fb2c34d11733bb245fa86bc88388c51ef13217302e96996c5c7feddf", "origin_group": "Reuters", "evidence_status": "implemented"}
+            {
+              "source_id": "fcc_blocks_surveillance_chips_oct22",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.",
+              "inspected_at": "2026-10-23T10:03:47Z",
+              "document_sha256": "a5f71e0a72d40a0c5d855740a3c1e266fc707fd1e4e08b3d106ee13332250a8e",
+              "origin_group": "Federal Communications Commission",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_fcc_surveillance_chips_oct22",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.",
+              "inspected_at": "2026-10-23T10:03:47Z",
+              "document_sha256": "3945a2c9fb2c34d11733bb245fa86bc88388c51ef13217302e96996c5c7feddf",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            }
           ]
         },
         {
@@ -96462,17 +96630,47 @@
           "fact_sha256": "e5f61eede7f8de0d728d387d475ec3036b939ff335da306423f2ac40f71aae86",
           "relies_on_unnamed_sources": false,
           "supports": [
-            {"source_id": "fcc_blocks_surveillance_chips_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "a5f71e0a72d40a0c5d855740a3c1e266fc707fd1e4e08b3d106ee13332250a8e", "origin_group": "Federal Communications Commission", "evidence_status": "implemented"},
-            {"source_id": "reuters_fcc_surveillance_chips_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "3945a2c9fb2c34d11733bb245fa86bc88388c51ef13217302e96996c5c7feddf", "origin_group": "Reuters", "evidence_status": "implemented"}
+            {
+              "source_id": "fcc_blocks_surveillance_chips_oct22",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.",
+              "inspected_at": "2026-10-23T10:03:47Z",
+              "document_sha256": "a5f71e0a72d40a0c5d855740a3c1e266fc707fd1e4e08b3d106ee13332250a8e",
+              "origin_group": "Federal Communications Commission",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_fcc_surveillance_chips_oct22",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.",
+              "inspected_at": "2026-10-23T10:03:47Z",
+              "document_sha256": "3945a2c9fb2c34d11733bb245fa86bc88388c51ef13217302e96996c5c7feddf",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            }
           ]
         }
       ],
       "reasoning_review": [
-        {"field": "significance", "text_sha256": "73b8ca25a8e96e9c49758dcda3b733976ecb51cf7f5072280e12b7f309b7f32e", "review_note": "Separately reviews the shift from rule adoption to enforcement without overstating scope."},
-        {"field": "goalpost", "text_sha256": "d151ca1fbd75adfe1adfdfe5c147f121d92c4d5dbee2cdb72f80995acba99cbd", "review_note": "Preserves the agency's surveillance-risk rationale and names observable tests."},
-        {"field": "maybe_therefore", "text_sha256": "5d6b37851b4ff2a842275e2703a8957b0a5fca3955e051862e77cc16675fcdad", "review_note": "Separates implemented authorization blocks from a broad ban or measured outcome."}
+        {
+          "field": "significance",
+          "text_sha256": "73b8ca25a8e96e9c49758dcda3b733976ecb51cf7f5072280e12b7f309b7f32e",
+          "review_note": "Separately reviews the shift from rule adoption to enforcement without overstating scope."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "d151ca1fbd75adfe1adfdfe5c147f121d92c4d5dbee2cdb72f80995acba99cbd",
+          "review_note": "Preserves the agency's surveillance-risk rationale and names observable tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "5d6b37851b4ff2a842275e2703a8957b0a5fca3955e051862e77cc16675fcdad",
+          "review_note": "Separates implemented authorization blocks from a broad ban or measured outcome."
+        }
       ],
-      "unresolved_questions": ["Device identities and appeal posture", "Device-specific vulnerability evidence", "Measured supply-chain and security effects"]
+      "unresolved_questions": [
+        "Device identities and appeal posture",
+        "Device-specific vulnerability evidence",
+        "Measured supply-chain and security effects"
+      ]
     },
     {
       "review_id": "10.176.0:NAT-2026-09-05-001:f2e67f4ee31c",
@@ -97944,6 +98142,913 @@
         "Implementation details and timing",
         "Measured costs, benefits and distribution",
         "Litigation, legislative or regulatory follow-up"
+      ]
+    },
+    {
+      "review_id": "10.177.0:NAT-2026-09-05-001:b0483f301d7f",
+      "entry_id": "NAT-2026-09-05-001",
+      "content_sha256": "b0483f301d7fea23408f0826865f66ea815d85757d9cd97da4ab272f08355215",
+      "reviewed_at": "2026-10-23T22:01:02Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "10c055fece60d88e7c200fe1067a4de8ed214d2333a2cfc77d1cac26f67aca07",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_envoys_sep5",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "3299668fef893e74f116d0c5ec1e1df00509cc1888577af10735971492a1ec89",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_capitals_pause_sep5",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "e81af7f355673764a18e9942c45fe4b920de701747b979dfe74a1f249652c5b9",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "1e9b597a6895ea506724aa2c4b7885aec7b498f2d2b9a3661474188a6dcf0acc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_envoys_sep5",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "3299668fef893e74f116d0c5ec1e1df00509cc1888577af10735971492a1ec89",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "1077ef51c7d724a4a88bd928bac53b853e8ead6627b46c24b13c7bc18c455f42",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_ukraine_capitals_pause_sep5",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "e81af7f355673764a18e9942c45fe4b920de701747b979dfe74a1f249652c5b9",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "67c3d4ad35dd6da5e7fdf74224ab5ec010ea58aa80f9f36e19eb66efec7a0246",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_ukraine_capitals_pause_sep5",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "e81af7f355673764a18e9942c45fe4b920de701747b979dfe74a1f249652c5b9",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "6496ce4ac176503a7ad610d4ff51f23f758e48818a2e6e07dd3a4b2bd76e8797",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_envoys_sep5",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "3299668fef893e74f116d0c5ec1e1df00509cc1888577af10735971492a1ec89",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "08676b76ed456cbc9df3599d8ab3551cd52689ce88ed8a6d275f852f7df83100",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_kyiv_talks_sep6",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "a178aa3dafc958225c44d8f22bdbb4d16735b2a436d6ddfddf7e0ded54bd0e6e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "c2681b1d4e8449994f78e53729b1b15a74d6deb0f490b30bbed7e7a144d8ce3a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_kyiv_talks_sep6",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "a178aa3dafc958225c44d8f22bdbb4d16735b2a436d6ddfddf7e0ded54bd0e6e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_kyiv_talks_sep6",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "a6eccb75fcf70a3affec760d8ebb96b0598fea728b5ef8f92de14113b0c06c72",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "21e5bb5168ea5be545cf0300209d60dc5cd5ee7198713d9bde480acc3cb7d925",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_kyiv_talks_sep6",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "a178aa3dafc958225c44d8f22bdbb4d16735b2a436d6ddfddf7e0ded54bd0e6e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_ukraine_kyiv_talks_sep6",
+              "locator": "attached source portions supporting the retained fact",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "a6eccb75fcf70a3affec760d8ebb96b0598fea728b5ef8f92de14113b0c06c72",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "727b415e37f5441c51639790d2c449f1c6151e07dbf72eb5e66f9f115d1b8de7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_kyiv_strikes_sep8",
+              "locator": "article body on pause expiration, attacks, casualties and damage",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "df1ef7cfbfe7c4c793d38cf32f81f8feb20254eff62c4541171a4220f27a6291",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "ap_ukraine_kyiv_strikes_sep8",
+              "locator": "article body on renewed strikes, casualties, diplomacy assessment and unresolved agreement",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "29ed40b7b0e55a9e6fa5dc69ba25a598ec7323cab74207347306ef05403697b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "5b81d6efc199b2d556a7aa7f35122c7ed006ef515d561c7bdab16a707896a200",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_ukraine_kyiv_strikes_sep8",
+              "locator": "article body on renewed strikes, casualties, diplomacy assessment and unresolved agreement",
+              "inspected_at": "2026-09-08T15:57:30Z",
+              "document_sha256": "29ed40b7b0e55a9e6fa5dc69ba25a598ec7323cab74207347306ef05403697b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 10,
+          "fact_sha256": "2184b2fa2298d4be827abfa0293367565600e9d0e891fea3c4f6aa099a222f72",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ukraine_talks_oct21",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.169.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-21T15:57:03Z",
+              "document_sha256": "8019d458e61dd5ccdb98e48ccdfe800375541d6eb6e4d38f90f35de8094cfabe",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 11,
+          "fact_sha256": "3db25eb703c2adee5f79838608564171a1e630d69e652585783b24d57ff18394",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_oleshky_ceasefire_oct23",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.176.0.json.",
+              "inspected_at": "2026-10-23T15:59:50Z",
+              "document_sha256": "784d6840a6043ecb5f41c2d6206f448f96e2c98dce626a3cae3d7ddeb85cdacb",
+              "origin_group": "The White House",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_oleshky_ceasefire_oct23",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.176.0.json.",
+              "inspected_at": "2026-10-23T15:59:50Z",
+              "document_sha256": "eace28e449e280c24cc3ddace80a7cf975357d30f75d0dc465e275e55f4da5ac",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 12,
+          "fact_sha256": "49a35781f148c4e90b05f906f7a9cb5b81518f40058e6e4b91b98ab4189236c8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_kremlin_oleshky_oct23",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.176.0.json.",
+              "inspected_at": "2026-10-23T15:59:50Z",
+              "document_sha256": "c04fcbee4e0396ad9af18ab4dd862b5188cbe7a954faf10d98fffb6e598a713a",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "wh_oleshky_ceasefire_oct23",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.176.0.json.",
+              "inspected_at": "2026-10-23T15:59:50Z",
+              "document_sha256": "784d6840a6043ecb5f41c2d6206f448f96e2c98dce626a3cae3d7ddeb85cdacb",
+              "origin_group": "The White House",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 13,
+          "fact_sha256": "8c3cd314e3d9fa57ea7713487ac775b0fbef1581c1d304103f0b13e1676fcdfd",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_oleshky_start_oct23",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.177.0.json.",
+              "inspected_at": "2026-10-23T22:01:02Z",
+              "document_sha256": "b24733b054d1517c18d2154296600a29e251e2884be6eef505da79b0e63debfc",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "565e1bb2503a4ea33acb8c7c13da7e2e3a3c4ec3ac56f37354cfb256d557d57c",
+          "review_note": "Separately reviewed against the evidenced lifecycle stage and strongest relevant response."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "4a4461212bc15b0ca38409d78c51f12b316a43c6ee385f9a70e2a45cc31b12b5",
+          "review_note": "Separately reviewed against the evidenced lifecycle stage and strongest relevant response."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "ce41e57cb343a7d8bdd4c9a9dbb684a67c36ed6ebbe9efcb6d282b27e66f9a59",
+          "review_note": "Separately reviewed against the evidenced lifecycle stage and strongest relevant response."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation or appellate follow-up",
+        "Measured costs, benefits and distribution",
+        "Later legal or operational outcomes"
+      ]
+    },
+    {
+      "review_id": "10.177.0:NAT-2026-09-10-005:bbae33a75284",
+      "entry_id": "NAT-2026-09-10-005",
+      "content_sha256": "bbae33a7528468d580fcbcc3a0f1703cd26966c2b672b8417779c96deb64409c",
+      "reviewed_at": "2026-10-23T22:01:02Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "a6f98c85f4e51dd9bb918f225703724c2e6ff392433d809afe87f8acdca2a86f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca4_bond_lopez_rivera_sep10",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "455c2d97078cb47980b32629c53cf4466a0b05d294259c9ec18de183715e3393",
+              "origin_group": "U.S. Court of Appeals for the Fourth Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "423c8a9221c8bff1449414014fa2772179571f9423707ab79046e0b9fe550de9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca4_bond_lopez_rivera_sep10",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "455c2d97078cb47980b32629c53cf4466a0b05d294259c9ec18de183715e3393",
+              "origin_group": "U.S. Court of Appeals for the Fourth Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "859d27aa307c080ccd020ca3a72ed1d33a661b8b9ab48f577848ad83d1cda290",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca4_bond_lopez_rivera_sep10",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "455c2d97078cb47980b32629c53cf4466a0b05d294259c9ec18de183715e3393",
+              "origin_group": "U.S. Court of Appeals for the Fourth Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "4e04693eb2e3b500d57619c6ec4c6ae9b1fc8b22b3cb19439f7669a65a44403d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca4_bond_lopez_rivera_sep10",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "455c2d97078cb47980b32629c53cf4466a0b05d294259c9ec18de183715e3393",
+              "origin_group": "U.S. Court of Appeals for the Fourth Circuit",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "2510131f57312f42d33061ef5edcbca893243027be9afc867a6690ee2de9a7c0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_rhoney_cert_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "3ad9e1dddfeb247013f3ce74aee80471b2d1e28039e5803f5f565cb8d59fa214",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_scotus_bond_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "1453b756c345983e0e2c89e84d91118d9da84688ec5238a0ac05a470472f0c42",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "54f71b4715e6540a92bbb64123e89bbf0ba9cab41f63806401ff8a61fd88d328",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_rhoney_cert_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "3ad9e1dddfeb247013f3ce74aee80471b2d1e28039e5803f5f565cb8d59fa214",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_scotus_bond_oct1",
+              "locator": "Full source text, operative language and bounded procedural or evidentiary status inspected.",
+              "inspected_at": "2026-10-01T16:14:39Z",
+              "document_sha256": "1453b756c345983e0e2c89e84d91118d9da84688ec5238a0ac05a470472f0c42",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "f584555e597c06c1f58b4abf73a27c7ef3d6c4452a3d25e2186cbaed73b3d5a3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ca5_sosnava_en_banc_oct23",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.177.0.json.",
+              "inspected_at": "2026-10-23T22:01:02Z",
+              "document_sha256": "239d5407ccb35201148ee4603fb7de1846f700872c38cf981b6f7a9be4b3d9a1",
+              "origin_group": "U.S. Court of Appeals for the Fifth Circuit",
+              "evidence_status": "reversed"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "e7afc8bbc80a2ddbb9062abade4f2c033fdb738ef17bcf2337468dc1f8cedca5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_sosnava_en_banc_oct23",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.177.0.json.",
+              "inspected_at": "2026-10-23T22:01:02Z",
+              "document_sha256": "7619ffb547c0c9f243f2df397ef4e1928d6c70d3fb523b8fb7fb1b54ce16da6b",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "c841f5ac1596bd4aaee185dc85a7900290ee8e67e65307601af4cdd3c1f4d050",
+          "review_note": "Separately reviewed against the evidenced lifecycle stage and strongest relevant response."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "7d6ef3ca1f6e23b064e885f782c95ce37631897019b57510dc790210c517a0f4",
+          "review_note": "Separately reviewed against the evidenced lifecycle stage and strongest relevant response."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "69a41f5434fcdf18776b87fe7605ab70da932e2eabf3c74bf605767b80ef3937",
+          "review_note": "Separately reviewed against the evidenced lifecycle stage and strongest relevant response."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation or appellate follow-up",
+        "Measured costs, benefits and distribution",
+        "Later legal or operational outcomes"
+      ]
+    },
+    {
+      "review_id": "10.177.0:NAT-2026-10-09-003:2789a026653d",
+      "entry_id": "NAT-2026-10-09-003",
+      "content_sha256": "2789a026653da274af3aa5f36a40f40f3a9b78186231aab756f60f1f2849ea39",
+      "reviewed_at": "2026-10-23T22:01:02Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "f700ca76389e32cf51476b9c7625bef324b9f404e76819f3da5ae531d102fe38",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_russia_diesel_oct9",
+              "locator": "Complete retained post establishes Trump's publication, announced quantities and rationale only.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "74a3282393b57f1741f16da625f5f8a2c3cb6d02bd73dd43d3afa651ff244156",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "reuters_russia_diesel_oct9",
+              "locator": "Independent report of the announcement and quantities.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "5ecb44ff28e1d6230fbd60974777314a02aa52619f760b9dab365d8efa33705f",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_russia_diesel_oct9",
+              "locator": "Independent report of the announcement and quantities.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "addd8de245ff1c2174a91bb87e62fc051db93446a9cd912b77c53bf1c9e1cc3b",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "8a5da6b53c2c7d37003826eaf45ffa7515a49246cdc1ee8f44a687ba56277258",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_russia_gl135_oct9",
+              "locator": "Complete one-page license establishes scope, duration and exclusions.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "b42bed871cff3162540bc645eba298e4c0cf73d0a5b1712879a3f4fec060d65b",
+              "origin_group": "U.S. Treasury / OFAC",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ofac_russia_program_oct9",
+              "locator": "Official program page lists General License 135 and publication date.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "5c96716592f455a32fcda471dcda2231a6e2848dbaf7ce4dfbfaba0d6c9eb2b4",
+              "origin_group": "U.S. Treasury / OFAC",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "a1e8610e36a2d2bbf4744c994267dcf788273347368ab3d571964838509bd890",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_russia_diesel_oct9",
+              "locator": "Independent report on unanswered contract and timing terms and price uncertainty.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "addd8de245ff1c2174a91bb87e62fc051db93446a9cd912b77c53bf1c9e1cc3b",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_russia_diesel_oct9",
+              "locator": "Independent scale comparison, futures move and analyst assessments.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "5ecb44ff28e1d6230fbd60974777314a02aa52619f760b9dab365d8efa33705f",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "69c397f494ff7357767e3b58ee2f46913748f28fa128df65d581dda48c8c2eb3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_russia_diesel_oct9",
+              "locator": "Presidential rationale as published, not independent verification.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "74a3282393b57f1741f16da625f5f8a2c3cb6d02bd73dd43d3afa651ff244156",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "reuters_russia_diesel_oct9",
+              "locator": "Named Ukrainian response and market context.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "5ecb44ff28e1d6230fbd60974777314a02aa52619f760b9dab365d8efa33705f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_russia_diesel_oct9",
+              "locator": "Named Russian and Ukrainian responses.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "addd8de245ff1c2174a91bb87e62fc051db93446a9cd912b77c53bf1c9e1cc3b",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "94194dd70aa852cd51ff7d986efc52667eb2285df64e6e1954887467cf0bc16f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "senate_foreign_russia_diesel_oct11",
+              "locator": "Official statement lines 36–41 inspected for all seven signatories, the statutory claim, alleged consultation/explanation omissions and requested reversal.",
+              "inspected_at": "2026-10-11T22:04:04Z",
+              "document_sha256": "7890645a1ab2211b6cc0d825bec45ea1ab65b0cb5291f0c76b5b43b3ed9e6d91",
+              "origin_group": "United States Senate Committee on Foreign Relations",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_russia_diesel_opposition_oct11",
+              "locator": "Lines 151–197 inspected for the bipartisan challenge and attributed Bessent and Barrasso responses.",
+              "inspected_at": "2026-10-11T22:04:04Z",
+              "document_sha256": "09529908662541b2ba2c33ac1a3f3e643a874395a553646c3c7383f0c99f23a9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_russia_diesel_opposition_oct11",
+              "locator": "Lines 1789–1831 inspected for the Senate challenge, Tillis legal claim and Barrasso response.",
+              "inspected_at": "2026-10-11T22:04:04Z",
+              "document_sha256": "479fb23d28e1e4aa7d26227a3fa0b5be9b2c3961c5bd8156f5695b861f9fd540",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "340a90de95028939fee2fc9ebb4c1587212ea9db35d339d3944a93406bb91f68",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_russia_diesel_shipment_oct23",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.177.0.json.",
+              "inspected_at": "2026-10-23T22:01:02Z",
+              "document_sha256": "92fcf1c58f4e2de07dc80094b3024062a5d06efd309597d8d135792ad9a7c79e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "63111285f607fd80b7945b609aff7b53c2405ade0019a8cc94b7ffb0433ed19b",
+          "review_note": "Separately reviewed against the evidenced lifecycle stage and strongest relevant response."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "9b5e1d646aed89ab1bd93db616d9efe2fde78c380634697ee0b0921bb647f77b",
+          "review_note": "Separately reviewed against the evidenced lifecycle stage and strongest relevant response."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "d3a8ec4115b8e7576f32cacb110272789cd25b2d40ad1795390e98649d01440e",
+          "review_note": "Separately reviewed against the evidenced lifecycle stage and strongest relevant response."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation or appellate follow-up",
+        "Measured costs, benefits and distribution",
+        "Later legal or operational outcomes"
+      ]
+    },
+    {
+      "review_id": "10.177.0:NAT-2026-08-22-001:ba16b125110a",
+      "entry_id": "NAT-2026-08-22-001",
+      "content_sha256": "ba16b125110a451e05065c4970bf4fcbba22a2dff25ed9adf560a4e087223302",
+      "reviewed_at": "2026-10-23T22:01:02Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "dcf83b14c04a3f59b350a462ed1833d7676ed8af465b6dbb99ea518e520d3c6f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_canada_tariffs",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "0fe67557cacc0967fe40c6492bec48e43311c3ca11bd8c5fe560c450241eef33",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "1391f5166d0be60095cb64f9a825a44f1a30c5d9a6024852ad7ddbec3932f382",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "canada_countertariff_list_effective_sep8",
+              "locator": "backgrounder paragraphs 1–10 and tariff schedule",
+              "inspected_at": "2026-09-08T05:15:00Z",
+              "document_sha256": "a0052b7675fe3d79ae54e847460d5dc6836dd8d5ed62a3abd08d7d3160a5f4ae",
+              "origin_group": "Government of Canada",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_canada_countertariffs_effective_sep8",
+              "locator": "article body on implementation, covered trade, exemptions and talks",
+              "inspected_at": "2026-09-08T05:15:00Z",
+              "document_sha256": "4530513a359f0b3fdbb8679728ad20392a8f9194edc0646ee4b1359df683a8b9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_canada_countertariffs_effective_sep8",
+              "locator": "article body on order-in-council implementation, product rates and future threats",
+              "inspected_at": "2026-09-08T05:15:00Z",
+              "document_sha256": "8e2a4585ee871ef712dff398bd783a3cc576f6d82633e9209a40e1f25ebe67bb",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "b5038d90fe05987118a0422763ebf65ed25df1366e0d1c426569b12d18ba5bfa",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_canada_countertariffs_effective_sep8",
+              "locator": "article body on implementation, covered trade, exemptions and talks",
+              "inspected_at": "2026-09-08T05:15:00Z",
+              "document_sha256": "4530513a359f0b3fdbb8679728ad20392a8f9194edc0646ee4b1359df683a8b9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "46b1c9e9af5d3da65ac59051ebde2c5d3d8f7f9cba0da4d99464be4f6fb89b25",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_canada_motor_tariff_scope_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "c2521597360788ee8b7e8936be4823f47e48974af73564af508351ac5bc9bf66",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "wh_canada_alcohol_tariff_scope_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "228ac0a828cb7bf689b070491fa0d88b8c3e6f1d9dd3fd0cefb439b34009c6f4",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "wh_canada_alcohol_ban_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "af3f2b9ea88ea7b9026b49a14e5bbf2286d4b3da0501f130218aad5411ab7f1c",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "wh_canada_dairy_ban_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "daee6a859d2ef58ceadd9e3da08712c42ff5ebf142d0e6fb84ce3c47e18459e7",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "wh_canada_motor_ban_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "1109c99b0e9f02dd974b7de04a1dd9f11d62e9906c26aa9a7848c115cfd63c31",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "ap_canada_import_bans_sep8",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "541e4201461453fa452068d8bbbcbcbe95a4d067717930734ce91779567cf4b3",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "2c52ce45befd698d760416bd2c4804375038eedd77713ad577b3798c1880243c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_canada_alcohol_ban_sep8",
+              "locator": "Inspected source text or filing; hash preserves the reviewed source record.",
+              "inspected_at": "2026-09-29T16:12:00Z",
+              "document_sha256": "572bd9c23d14130cf16728234290da12d857ecfa9be4ee854ca9c603c736cf04",
+              "origin_group": "The White House",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "wh_canada_dairy_ban_sep8",
+              "locator": "Inspected source text or filing; hash preserves the reviewed source record.",
+              "inspected_at": "2026-09-29T16:12:00Z",
+              "document_sha256": "c4b28d863ccbb7477e047fa4f7895a12debb1544d260fb2037faf05cbc53a598",
+              "origin_group": "The White House",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "wh_canada_motor_ban_sep8",
+              "locator": "Inspected source text or filing; hash preserves the reviewed source record.",
+              "inspected_at": "2026-09-29T16:12:00Z",
+              "document_sha256": "3af5fb8a08721c054d8a095815e64cdf49dffaeba7a9cc07fbecd850625facb5",
+              "origin_group": "The White House",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_canada_import_bans_effective_sep29",
+              "locator": "Inspected source text or filing; hash preserves the reviewed source record.",
+              "inspected_at": "2026-09-29T16:12:00Z",
+              "document_sha256": "eee4634a0dbd406288bb7f641f7f7ad3b21b9c76b7d46c200f429d5db200ed82",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "d8b6ebf712bee5ceeca35364dcc0129093c8fb5283fd6af0897568698e21147f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_canada_tariffs",
+              "locator": "Inspected source passage supporting this indexed fact; digest identifies the fact-level extracted-text representation",
+              "inspected_at": "2026-09-09T04:25:43.543975Z",
+              "document_sha256": "3747aedaad30d79b235d3724970ac11f1a5c76344b9fe9c61706a7daa0eea602",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "7e359035b7fadb43a9a463d917a8d391e1ba3bb403ca6e1d61db92651058c133",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_canada_boycott_supply_sep12",
+              "locator": "Reuters grocery observations, Canadian government import-share data, origin-labeling examples and greenhouse-investment plan; extracted-text representation",
+              "inspected_at": "2026-09-13T16:15:00Z",
+              "document_sha256": "69e7b970433be905a8e5ee8e5a01e23a54b26186e2d79f3aedd3fdda974049f0",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "dc5be0eb0b2581a54a581dfaf893f1c62bf25c5bf9b56d05ac9cfc99e18d2bdc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_canada_import_bans_effective_sep29",
+              "locator": "Inspected source text or filing; hash preserves the reviewed source record.",
+              "inspected_at": "2026-09-29T16:12:00Z",
+              "document_sha256": "eee4634a0dbd406288bb7f641f7f7ad3b21b9c76b7d46c200f429d5db200ed82",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "d0bcc9e6fdcd12737456681a213eaa39fbb5ca45c82440a621890f7702b359f3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_canada_tariff_scope_oct23",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.177.0.json.",
+              "inspected_at": "2026-10-23T22:01:02Z",
+              "document_sha256": "c0387cbae3dd150c0f7741dcdae159206277988c2902d4215414084e70cb7205",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "ap_canada_tariff_scope_oct23",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.177.0.json.",
+              "inspected_at": "2026-10-23T22:01:02Z",
+              "document_sha256": "c46e37eb959a3eacfba5d3fed2426addf51a889a6f3503e5e503c38631ce09c0",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "b690cfae7f89fae825c69a0c5236fe973356058677874132a8b3521728c502d9",
+          "review_note": "Separately reviewed against the evidenced lifecycle stage and strongest relevant response."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "de348b7d876e6a34e9cf85ceae157fb4d16bd4599badae1d95f83a5f51843b26",
+          "review_note": "Separately reviewed against the evidenced lifecycle stage and strongest relevant response."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "f2142601147131274f9cfa46210a2d5a5e6c712af4a63681a78b33ef1fc9c8de",
+          "review_note": "Separately reviewed against the evidenced lifecycle stage and strongest relevant response."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation or appellate follow-up",
+        "Measured costs, benefits and distribution",
+        "Later legal or operational outcomes"
       ]
     }
   ],
