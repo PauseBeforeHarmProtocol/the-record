@@ -1,0 +1,124 @@
+{
+  "version": "10.177.0",
+  "base_release_version": "10.176.0",
+  "base_commit": "bbaecf67",
+  "research_window": {
+    "from_utc": "2026-10-23T15:59:50Z",
+    "through_utc": "2026-10-23T22:01:02Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository's final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-05-001",
+      "kind": "refreshed",
+      "summary": "Russia and Ukraine specified an October 27 Oleshky pause start and humanitarian tasks.",
+      "duplicate_review": "Same diplomacy lifecycle; updated rather than counted again."
+    },
+    {
+      "entry_id": "NAT-2026-09-10-005",
+      "kind": "refreshed",
+      "summary": "The en banc Fifth Circuit rejected the constitutional bond-hearing claim.",
+      "duplicate_review": "Same immigration detention and bond-hearing dispute; updated rather than counted again."
+    },
+    {
+      "entry_id": "NAT-2026-10-09-003",
+      "kind": "refreshed",
+      "summary": "A first 40,000-ton Russian diesel cargo loaded and departed for New York.",
+      "duplicate_review": "Implementation stage of the existing licensed diesel channel; updated rather than counted again."
+    },
+    {
+      "entry_id": "NAT-2026-08-22-001",
+      "kind": "refreshed",
+      "summary": "A signed proclamation schedules Canadian tariff-line removals and additions for October 30.",
+      "duplicate_review": "Same Canada tariff regime; updated rather than counted again."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "reuters_oleshky_start_oct23",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported named Russian and Ukrainian officials specifying an October 27 start, 4 a.m. local commencement, demining, food delivery and evacuation tasks, plus November technical talks.",
+      "document_sha256": "b24733b054d1517c18d2154296600a29e251e2884be6eef505da79b0e63debfc",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-23T22:01:02Z"
+    },
+    {
+      "source_id": "ca5_sosnava_en_banc_oct23",
+      "origin_group": "U.S. Court of Appeals for the Fifth Circuit",
+      "evidence_extract": "The en banc Fifth Circuit's published opinion reversed the district-court judgments and vacated habeas relief, holding the petitioners were not entitled to individual dangerousness or flight-risk hearings before detention under section 1225(b)(2)(A).",
+      "document_sha256": "239d5407ccb35201148ee4603fb7de1846f700872c38cf981b6f7a9be4b3d9a1",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-23T22:01:02Z"
+    },
+    {
+      "source_id": "reuters_sosnava_en_banc_oct23",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported the 10-7 constitutional ruling, its Fifth Circuit scope and that the Supreme Court's separate pending review concerns statutory rather than constitutional grounds.",
+      "document_sha256": "7619ffb547c0c9f243f2df397ef4e1928d6c70d3fb523b8fb7fb1b54ce16da6b",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-23T22:01:02Z"
+    },
+    {
+      "source_id": "reuters_russia_diesel_shipment_oct23",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported vessel data showing about 40,000 metric tons of Russian ultra-low-sulfur diesel loaded at Primorsk and in transit toward New York, with buyer and seller unidentified and no delivery yet.",
+      "document_sha256": "92fcf1c58f4e2de07dc80094b3024062a5d06efd309597d8d135792ad9a7c79e",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-23T22:01:02Z"
+    },
+    {
+      "source_id": "wh_canada_tariff_scope_oct23",
+      "origin_group": "The White House",
+      "evidence_extract": "The signed proclamation removes products in Annex I Part A from additional duties and adds products in Part B, effective October 30, 2026 at 12:01 a.m. EDT.",
+      "document_sha256": "c0387cbae3dd150c0f7741dcdae159206277988c2902d4215414084e70cb7205",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-23T22:01:02Z"
+    },
+    {
+      "source_id": "ap_canada_tariff_scope_oct23",
+      "origin_group": "Associated Press",
+      "evidence_extract": "Associated Press independently reported the signed tariff-scope revision, examples of exempted products and the October 30 effective date.",
+      "document_sha256": "c46e37eb959a3eacfba5d3fed2426addf51a889a6f3503e5e503c38631ce09c0",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-23T22:01:02Z"
+    }
+  ],
+  "truth_social_media_inspection": {
+    "new_posts": 6,
+    "latest_post_id": "117492425848354703",
+    "latest_post_at_utc": "2026-10-23T21:49:02.463Z",
+    "latest_post_at_eastern": "2026-10-23 5:49:02 PM EDT",
+    "finding": "Six posts were newer than the prior snapshot; text, linked-page metadata and the latest post's image were reviewed. None independently met the publication threshold."
+  },
+  "trump_tv_inspection": {
+    "checked_at": "2026-10-23T22:01:02Z",
+    "stream_video_id": "A4gNgHfZ-v4",
+    "finding": "Official Trump TV, live, video-library, remarks and releases pages were rechecked. The stream ID and October 22 library listings were unchanged; footage and captions were unavailable. No qualifying new item was located in the material reviewed."
+  },
+  "withheld": [
+    {
+      "title": "Pentagon Confucius Institutes designation report",
+      "reason": "A late wire report lacked a located primary directive and enough operational detail for source-level claim mapping."
+    },
+    {
+      "title": "Minnesota immigration evidence-withholding allegation",
+      "reason": "The report concerned a prior-window September pause and primary court filings were not retrieved in this run."
+    },
+    {
+      "title": "Truth Social posts and Florida rally stream",
+      "reason": "Routine rhetoric, campaign material, commentary and an image-only National Mall post did not independently establish a qualifying action."
+    },
+    {
+      "title": "Trump TV material",
+      "reason": "No qualifying new item was located in the accessible official metadata; footage and captions were unavailable."
+    },
+    {
+      "title": "Legacy California National Guard remediation",
+      "reason": "The evidence-supported revision remains queued because ordinary national maintenance preserves the generated 14 MB historical application body; the connector cannot transport those regenerated blobs within its 16 MiB request ceiling."
+    }
+  ],
+  "corrections": []
+}
