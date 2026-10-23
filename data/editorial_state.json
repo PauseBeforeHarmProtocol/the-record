@@ -7369,6 +7369,30 @@
       "provenance_path": "data/editorial_change_notes/10.174.0.json",
       "provenance_sha256": "ddaf574e5df0c7248ab7a8c94389f008fda8be421f46daa359d3bf093f2e8536",
       "note": "Stable ID, exact-field change, source-level claim mapping, separate reasoning review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.175.0:NAT-2026-10-22-007",
+      "entry_id": "NAT-2026-10-22-007",
+      "as_of_utc": "2026-10-23T10:03:47Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.175.0",
+      "summary": "Multiple independent outlets reported a DOJ criminal investigation after a DHS watchdog referral involving Corey Lewandowski; no charge or finding was reported.",
+      "provenance_path": "data/editorial_change_notes/10.175.0.json",
+      "provenance_sha256": "8d16e9d9909eff47f1c15fc40e38056a75b22433a19425fb2ab7fdde9f482241",
+      "note": "Recovered prior-window omission; stable ID, source-level claim mapping, independent corroboration, separate reasoning review and duplicate disposition preserved."
+    },
+    {
+      "change_id": "10.175.0:NAT-2026-10-22-008",
+      "entry_id": "NAT-2026-10-22-008",
+      "as_of_utc": "2026-10-23T10:03:47Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.175.0",
+      "summary": "FCC said it blocked two equipment authorizations in its first enforcement under new covered-component rules.",
+      "provenance_path": "data/editorial_change_notes/10.175.0.json",
+      "provenance_sha256": "8d16e9d9909eff47f1c15fc40e38056a75b22433a19425fb2ab7fdde9f482241",
+      "note": "Recovered prior-window omission; stable ID, source-level claim mapping, separate reasoning review and duplicate disposition preserved."
     }
   ],
   "reviews": [
@@ -96287,6 +96311,108 @@
         "Measured costs, benefits and distribution",
         "Litigation, legislative or regulatory follow-up"
       ]
+    },
+    {
+      "review_id": "10.175.0:NAT-2026-10-22-007:8805298fa19f",
+      "entry_id": "NAT-2026-10-22-007",
+      "content_sha256": "8805298fa19f78a1a6c089d3e190a23535f9f23fbdec8ff34221abadc31462b5",
+      "reviewed_at": "2026-10-23T10:03:47Z",
+      "reviewer": {"name": "OpenAI Codex editorial maintenance", "kind": "ai_assisted"},
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "811dffd39d2f748d7232039f57659120d174b5726a1b25c6839c416eba75ad77",
+          "relies_on_unnamed_sources": true,
+          "supports": [
+            {"source_id": "reuters_lewandowski_probe_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "d1c9142438ed6fcfdcfe03ec67c960ad7b683c5588179374bca2d02799229d63", "origin_group": "Reuters", "evidence_status": "reported"},
+            {"source_id": "washpost_lewandowski_probe_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "fbbec9975caefb9d65b60086ce18540e30ca3a547ffd9e601faf947aaf05dce4", "origin_group": "The Washington Post", "evidence_status": "reported"},
+            {"source_id": "cbs_lewandowski_probe_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "1180be4cb2f601927488b3cae60792290f58037175bbce1d58e7ca6d71aafab0", "origin_group": "CBS News", "evidence_status": "reported"}
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "9ff9ab611263c7f5ab519f41d3ef35b88fc82a29dec6c6d0d9350b9390636cce",
+          "relies_on_unnamed_sources": true,
+          "supports": [
+            {"source_id": "reuters_lewandowski_probe_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "d1c9142438ed6fcfdcfe03ec67c960ad7b683c5588179374bca2d02799229d63", "origin_group": "Reuters", "evidence_status": "reported"},
+            {"source_id": "cbs_lewandowski_probe_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "1180be4cb2f601927488b3cae60792290f58037175bbce1d58e7ca6d71aafab0", "origin_group": "CBS News", "evidence_status": "reported"}
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "c70feeed5678eb6ce9bcac0c90d3b5840b070f46711d9d8d4c1f8b48f1624458",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {"source_id": "washpost_lewandowski_probe_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "fbbec9975caefb9d65b60086ce18540e30ca3a547ffd9e601faf947aaf05dce4", "origin_group": "The Washington Post", "evidence_status": "reported"},
+            {"source_id": "cbs_lewandowski_probe_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "1180be4cb2f601927488b3cae60792290f58037175bbce1d58e7ca6d71aafab0", "origin_group": "CBS News", "evidence_status": "reported"}
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "9b23366b4eee2a5e5b4aa0bc0470c7efca14a933a73ec9b5697b3e58d92ce17e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {"source_id": "ap_lewandowski_response_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "cb7d7bba2730b1c1a6fe0483e15e85f15d496c00d6dc1abaa33a348bb90101f3", "origin_group": "Associated Press", "evidence_status": "reported"}
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {"field": "significance", "text_sha256": "f6a81b18662393b7ee3f8d986c4a4330fa132b05cbfe31a2343ad147529e1567", "review_note": "Separately reviews the oversight significance while preserving the absence of charges or findings."},
+        {"field": "goalpost", "text_sha256": "1ecc56013be468974d59fa65745e0ca39a89ad9d2e8e6218f5ba977708f034d8", "review_note": "Preserves counsel's denial and the president's response while naming observable process outcomes."},
+        {"field": "maybe_therefore", "text_sha256": "7dcebbf692757cc92cbd113d3231ba860a41932d1cce3e9bd0a2d43e67e95c08", "review_note": "Separates a reported investigation from guilt, charge or adjudicated fact."}
+      ],
+      "unresolved_questions": ["Public referral or court process", "Charges, declination or inspector-general finding", "Contract-specific evidence and response"]
+    },
+    {
+      "review_id": "10.175.0:NAT-2026-10-22-008:f91724d3787e",
+      "entry_id": "NAT-2026-10-22-008",
+      "content_sha256": "f91724d3787e91d6c00877ccd71ec99377993861fb4d471fd794b1e6754d8f11",
+      "reviewed_at": "2026-10-23T10:03:47Z",
+      "reviewer": {"name": "OpenAI Codex editorial maintenance", "kind": "ai_assisted"},
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "c7398c87b34122de0eeef3be4cd40f2cfa837522f9851a8e5e63758f538e6981",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {"source_id": "fcc_blocks_surveillance_chips_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "a5f71e0a72d40a0c5d855740a3c1e266fc707fd1e4e08b3d106ee13332250a8e", "origin_group": "Federal Communications Commission", "evidence_status": "implemented"},
+            {"source_id": "reuters_fcc_surveillance_chips_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "3945a2c9fb2c34d11733bb245fa86bc88388c51ef13217302e96996c5c7feddf", "origin_group": "Reuters", "evidence_status": "implemented"}
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "8b90922967af1fbd369adac91af1dc7f08726ca05c595fcbd55f0ed6514d4a54",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {"source_id": "fcc_blocks_surveillance_chips_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "a5f71e0a72d40a0c5d855740a3c1e266fc707fd1e4e08b3d106ee13332250a8e", "origin_group": "Federal Communications Commission", "evidence_status": "implemented"},
+            {"source_id": "reuters_fcc_surveillance_chips_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "3945a2c9fb2c34d11733bb245fa86bc88388c51ef13217302e96996c5c7feddf", "origin_group": "Reuters", "evidence_status": "implemented"}
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "fbb40605385ef513fdcf44710279ec7143228faca539fe1db2cf9fbf3fb1b840",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {"source_id": "fcc_blocks_surveillance_chips_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "a5f71e0a72d40a0c5d855740a3c1e266fc707fd1e4e08b3d106ee13332250a8e", "origin_group": "Federal Communications Commission", "evidence_status": "implemented"},
+            {"source_id": "reuters_fcc_surveillance_chips_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "3945a2c9fb2c34d11733bb245fa86bc88388c51ef13217302e96996c5c7feddf", "origin_group": "Reuters", "evidence_status": "implemented"}
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "e5f61eede7f8de0d728d387d475ec3036b939ff335da306423f2ac40f71aae86",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {"source_id": "fcc_blocks_surveillance_chips_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "a5f71e0a72d40a0c5d855740a3c1e266fc707fd1e4e08b3d106ee13332250a8e", "origin_group": "Federal Communications Commission", "evidence_status": "implemented"},
+            {"source_id": "reuters_fcc_surveillance_chips_oct22", "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.175.0.json.", "inspected_at": "2026-10-23T10:03:47Z", "document_sha256": "3945a2c9fb2c34d11733bb245fa86bc88388c51ef13217302e96996c5c7feddf", "origin_group": "Reuters", "evidence_status": "implemented"}
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {"field": "significance", "text_sha256": "73b8ca25a8e96e9c49758dcda3b733976ecb51cf7f5072280e12b7f309b7f32e", "review_note": "Separately reviews the shift from rule adoption to enforcement without overstating scope."},
+        {"field": "goalpost", "text_sha256": "d151ca1fbd75adfe1adfdfe5c147f121d92c4d5dbee2cdb72f80995acba99cbd", "review_note": "Preserves the agency's surveillance-risk rationale and names observable tests."},
+        {"field": "maybe_therefore", "text_sha256": "5d6b37851b4ff2a842275e2703a8957b0a5fca3955e051862e77cc16675fcdad", "review_note": "Separates implemented authorization blocks from a broad ban or measured outcome."}
+      ],
+      "unresolved_questions": ["Device identities and appeal posture", "Device-specific vulnerability evidence", "Measured supply-chain and security effects"]
     }
   ],
   "deferred_candidates": []
