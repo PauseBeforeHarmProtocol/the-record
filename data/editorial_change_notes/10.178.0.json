@@ -1,0 +1,94 @@
+{
+  "version": "10.178.0",
+  "base_release_version": "10.177.0",
+  "base_commit": "0d56ea9b",
+  "research_window": {
+    "from_utc": "2026-10-23T22:01:02Z",
+    "through_utc": "2026-10-23T22:34:02Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary found no new qualifying event in the 33-minute interval. One independently corroborated prior-window omission was recovered and labeled as such."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository's final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-23-001",
+      "kind": "added",
+      "summary": "DOJ charged former FBI officials Nikki Floris and Bradley Benavides by criminal complaint over alleged false statements to Congress about Hunter Biden investigations; neither complaint is an indictment or guilt finding.",
+      "duplicate_review": "No canonical entry, normalized title, source URL or recent maintenance pull request records these two criminal complaints. The event was reported before the new interval and is explicitly recovered as a prior-window omission."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "doj_floris_benavides_release_oct23",
+      "origin_group": "U.S. Department of Justice",
+      "evidence_extract": "The U.S. Attorney's Office for the District of Columbia announced that Nikki Floris and Bradley Benavides were each charged under 18 U.S.C. § 1001(a)(2) with making false statements to Congress; DOJ and FBI leaders framed the complaints as accountability for alleged lies and government weaponization.",
+      "document_sha256": "64f6db09719f205ebf77e4e1443ced01847845d261640f5846debc826fa1788f",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-23T22:34:02Z"
+    },
+    {
+      "source_id": "doj_floris_benavides_complaint_oct20",
+      "origin_group": "U.S. District Court for the District of Columbia filing",
+      "evidence_extract": "The 27-page statement of facts in Case 1:26-mj-00185-MJS alleges that Floris and Benavides knew about and participated in Foreign Influence Task Force interactions with Hunter Biden investigative teams and later made materially false statements to the House Judiciary Committee.",
+      "document_sha256": "44beddfa7295dcfb6b2d4dd86e9130eea7744b775901e40e08619d1b001c1f26",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-23T22:34:02Z"
+    },
+    {
+      "source_id": "reuters_floris_benavides_oct23",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported that Floris and Benavides were charged by criminal complaint, appeared in court, denied wrongdoing through counsel and would require a federal grand-jury indictment for the case to proceed.",
+      "document_sha256": "5174d9f49fbfbc27534dd7d434c97e7f78e4c1bf611d95a0073ae43720691857",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-23T22:34:02Z"
+    },
+    {
+      "source_id": "ap_floris_benavides_oct23",
+      "origin_group": "Associated Press",
+      "evidence_extract": "Associated Press reported that the two former FBI officials appeared in court, that defense lawyers called the charges false, baseless and politically motivated, and that Magistrate Judge Zia Faruqui set an October 27 preliminary hearing while noting the unusual age and complaint posture of the allegations.",
+      "document_sha256": "b900b97c5e15e4f3451bca60ff26efbf1a3d5a8f69bfc8252d5c9e46db8eab00",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-23T22:34:02Z"
+    },
+    {
+      "source_id": "washpost_floris_benavides_oct23",
+      "origin_group": "The Washington Post",
+      "evidence_extract": "The Washington Post reported that both defendants were released after self-surrender and initial appearances, that the magistrate questioned timing and materiality, and that counsel denied wrongdoing while DOJ defended the prosecutions.",
+      "document_sha256": "8d697efea275289f3da8790ec8f96d922931adb75ea005888f0eeefa705404a3",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-23T22:34:02Z"
+    }
+  ],
+  "truth_social_media_inspection": {
+    "new_posts": 0,
+    "latest_post_id": "117492425848354703",
+    "latest_post_at_utc": "2026-10-23T21:49:02.463Z",
+    "latest_post_at_eastern": "2026-10-23 5:49:02 PM EDT",
+    "finding": "No post newer than the prior validated snapshot was present. Engagement-only counter changes were not treated as new content or a new review requirement."
+  },
+  "trump_tv_inspection": {
+    "checked_at": "2026-10-23T22:34:02Z",
+    "stream_video_id": "A4gNgHfZ-v4",
+    "finding": "Official Trump TV, live, video-library, remarks and releases pages were rechecked. The stream ID and three October 22 library listings were unchanged; no October 23 library listing appeared. Footage and captions remained unavailable. No qualifying new item was located in the material reviewed."
+  },
+  "withheld": [
+    {
+      "title": "New-interval national developments",
+      "reason": "No qualifying new federal action, court ruling, expenditure, formal proposal, investigation or measured outcome was located between 22:01:02Z and 22:34:02Z."
+    },
+    {
+      "title": "Florida rally statements about Cuba",
+      "reason": "The rhetoric and conditional military suggestion were already reviewed and withheld in the prior release; no implementing order, deployment or independently verified policy change was located in this interval."
+    },
+    {
+      "title": "Trump TV material",
+      "reason": "Official metadata was unchanged and audiovisual content remained unavailable; no qualifying new item was located in the material reviewed."
+    },
+    {
+      "title": "Legacy California National Guard remediation",
+      "reason": "The queued historical revision remains deferred to a dedicated legacy-quality release because ordinary national maintenance keeps the 14 MB application stable and the authenticated connector rejects regenerated blobs above its request ceiling."
+    }
+  ],
+  "corrections": []
+}
