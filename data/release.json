@@ -1,38 +1,31 @@
 {
-  "version": "10.179.0",
+  "version": "10.180.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-23T22:34:02Z",
-    "through_utc": "2026-10-24T04:02:13Z",
+    "from_utc": "2026-10-24T04:02:13Z",
+    "through_utc": "2026-10-24T15:57:11Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous scan from the exact prior accepted-branch boundary identified two material new-interval election and diplomatic developments. Two independently corroborated prior-window omissions were recovered and explicitly labeled."
+    "note": "Continuous scan from the exact prior accepted-branch boundary identified no qualifying new-interval action. One material October 23 national-security prosecution omitted from the prior release was recovered from a filed affidavit and current-window Reuters report; twelve newer Truth Social posts were preserved and reviewed as leads."
   },
   "release_iso": "2026-10-24",
   "release_human": "October 24, 2026",
-  "checked_at": "2026-10-24 12:02 AM EDT",
-  "previous_version": "10.178.0",
-  "previous_checked_at": "2026-10-23 6:34 PM EDT",
-  "window_started_at": "2026-10-23 6:34 PM EDT",
-  "window_ended_at": "2026-10-24 12:02 AM EDT",
+  "checked_at": "2026-10-24 11:57 AM EDT",
+  "previous_version": "10.179.0",
+  "previous_checked_at": "2026-10-24 12:02 AM EDT",
+  "window_started_at": "2026-10-24 12:02 AM EDT",
+  "window_ended_at": "2026-10-24 11:57 AM EDT",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
   "week_label": "2026-10-19 through 2026-10-25",
   "cutoff_start": "2026-07-20",
   "new_entry_ids": [
-    "NAT-2026-10-23-002",
-    "NAT-2026-10-23-003",
-    "NAT-2026-10-23-004",
-    "NAT-2026-09-15-003"
+    "NAT-2026-10-23-005"
   ],
   "added_entry_ids": [
-    "NAT-2026-10-23-002",
-    "NAT-2026-10-23-003",
-    "NAT-2026-10-23-004"
+    "NAT-2026-10-23-005"
   ],
-  "refreshed_entry_ids": [
-    "NAT-2026-09-15-003"
-  ],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -1215,20 +1208,30 @@
       "target_id": "NAT-2026-10-23-001",
       "decision": "false_positive",
       "notes": "No canonical entry, normalized-title match, shared source URL or recent maintenance pull request covered the two criminal complaints; the event is a recovered prior-window omission."
+    },
+    {
+      "entry_id": "NAT-2026-10-23-005",
+      "target_id": "NAT-2026-10-23-001",
+      "decision": "false_positive",
+      "notes": "Both are October 23 criminal complaints, but Brinksman's alleged national-defense disclosures, court, statute, defendant and evidence differ from the Floris/Benavides congressional-testimony cases. No event, title, source URL or recent pull request otherwise matched."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Trump TV replays and edited France clip",
-      "reason": "Only official titles, dates, durations and video IDs were retrievable. The Alaska statement was independently corroborated and folded into the existing election record; no other standalone action met the threshold."
+      "title": "Twelve newer Truth Social posts",
+      "reason": "Eleven directly reviewed texts were campaign endorsements, turnout appeals, rally promotion or a press-room denial without implemented action. The remaining post was an empty-text video; sampled frames showed a Newsmax segment about already-recorded criminal complaints, while audio, captions and continuous footage remain unreviewed."
     },
     {
-      "title": "Florida rally Cuba and Iran rhetoric",
-      "reason": "Conditional military rhetoric had no implementing order, deployment or independently verified policy change by cutoff."
+      "title": "Pentagon prediction-market directive",
+      "reason": "Multiple outlets reviewed the October 20 memo, but the underlying directive remained unavailable for primary inspection and was already retained as a prior-window queue lead. No enforcement case or implementation result emerged in this window."
     },
     {
-      "title": "Social Security self-reported digital-service effectiveness claims",
-      "reason": "Agency promotional claims lacked independent measurement sufficient for a new effectiveness record."
+      "title": "OMB M-27-01 shutdown-RIF rescission confirmation",
+      "reason": "The October 23 memorandum formally confirms documents already rescinded under the September 25 settlement. It supplied no new layoffs, firings, restoration or separate policy outcome and was withheld as an implementation confirmation of an earlier event."
+    },
+    {
+      "title": "Trump TV unchanged October 23 listings",
+      "reason": "Official pages and listing metadata were rechecked; the same October 23 clips and gaggle listings remained newest. Footage, audio and captions were not retrieved, and no qualifying new item was located in the material reviewed."
     },
     {
       "title": "Legacy California National Guard remediation",
@@ -1243,11 +1246,11 @@
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-24T04:02:13Z",
-    "checked_at_eastern": "2026-10-24 12:02 AM EDT",
+    "checked_at": "2026-10-24T15:57:11Z",
+    "checked_at_eastern": "2026-10-24 11:57 AM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-24T04:02:13Z",
+    "last_successful_page_inspection_at": "2026-10-24T15:57:11Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1258,7 +1261,7 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV and live pages still linked stream A4gNgHfZ-v4. The dated library added October 23 metadata for a 22:17 departure gaggle (lnOiG5dI4hg), a 2:31 Fort Myers arrival gaggle (a4ESC9LmHB0) and a 1:01 Palm Beach arrival gaggle (Gyt3oxK9G3Y), plus a 0:44 edited France clip. Footage, audio and captions were not retrieved. Trump's Alaska statement was independently reported and integrated into the existing election record; no separate qualifying item was located in the remaining metadata reviewed.",
+    "summary": "Official Trump TV, live, dated video-library, remarks and releases pages were rechecked. The channel still linked stream A4gNgHfZ-v4, and the October 23 departure and arrival gaggles plus edited France clip remained the newest dated listings. Titles, dates, durations and stable IDs were inspected; footage, audio and captions were not retrieved. No qualifying new item was located in the material reviewed.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1270,8 +1273,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-24T04:02:13Z",
-        "observed_at_eastern": "2026-10-24 12:02 AM EDT",
+        "observed_at": "2026-10-24T15:57:11Z",
+        "observed_at_eastern": "2026-10-24 11:57 AM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official page linked unchanged stream A4gNgHfZ-v4. Fallback text was not treated as proof of an outage.",
         "video_ids": [
@@ -1283,8 +1286,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-24T04:02:13Z",
-        "observed_at_eastern": "2026-10-24 12:02 AM EDT",
+        "observed_at": "2026-10-24T15:57:11Z",
+        "observed_at_eastern": "2026-10-24 11:57 AM EDT",
         "format": "official live-hub metadata; audiovisual content unreviewed",
         "inspection": "The hub presented the official channel and fallback text; footage and captions were not retrieved.",
         "video_ids": [
@@ -1296,10 +1299,10 @@
         "posted_date": "2026-10-23",
         "original_event_date": "2026-10-23",
         "broadcast_time": null,
-        "observed_at": "2026-10-24T04:02:13Z",
-        "observed_at_eastern": "2026-10-24 12:02 AM EDT",
+        "observed_at": "2026-10-24T15:57:11Z",
+        "observed_at_eastern": "2026-10-24 11:57 AM EDT",
         "format": "official dated-library metadata; audiovisual content unreviewed",
-        "inspection": "Library listed a 22:17 White House departure gaggle, 2:31 Fort Myers arrival gaggle, 1:01 Palm Beach arrival gaggle and 0:44 edited France clip. The Alaska direction statement was independently corroborated and integrated; no other qualifying standalone action was located in the metadata reviewed.",
+        "inspection": "The October 23 departure gaggle, Fort Myers and Palm Beach arrival gaggles and edited France clip remained the newest listings. No October 24 upload appeared by cutoff; audiovisual content was not retrieved and no replay was counted as a new action.",
         "video_ids": [
           "lnOiG5dI4hg",
           "a4ESC9LmHB0",
@@ -1311,8 +1314,8 @@
         "posted_date": "2026-09-28",
         "original_event_date": "2026-09-28",
         "broadcast_time": null,
-        "observed_at": "2026-10-24T04:02:13Z",
-        "observed_at_eastern": "2026-10-24 12:02 AM EDT",
+        "observed_at": "2026-10-24T15:57:11Z",
+        "observed_at_eastern": "2026-10-24 11:57 AM EDT",
         "format": "supplementary remarks index",
         "inspection": "No new complete Trump TV transcript was supplied; the index was not treated as a complete transcript feed.",
         "video_ids": []
@@ -1322,8 +1325,8 @@
         "posted_date": "2026-10-23",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-24T04:02:13Z",
-        "observed_at_eastern": "2026-10-24 12:02 AM EDT",
+        "observed_at": "2026-10-24T15:57:11Z",
+        "observed_at_eastern": "2026-10-24 11:57 AM EDT",
         "format": "supplementary official releases index",
         "inspection": "Official releases were used as research leads only; no broadcast content was inferred.",
         "video_ids": []
@@ -1332,41 +1335,41 @@
   },
   "truth_social_inspection": {
     "coverage": {
-      "total_review_rows": 2054,
+      "total_review_rows": 2066,
       "text_status": {
         "not_recorded": 154,
-        "reviewed": 930,
+        "reviewed": 942,
         "pending": 970
       },
       "media_status": {
-        "not_applicable": 1015,
+        "not_applicable": 1026,
         "not_recorded": 19,
         "unavailable": 280,
-        "pending": 507,
+        "pending": 508,
         "reviewed": 233
       }
     },
-    "new_posts": 0,
-    "source_rows_added": 0,
-    "new_text_reviewed": 0,
-    "new_nonempty_text_reviewed": 0,
-    "new_empty_text_inspected": 0,
+    "new_posts": 12,
+    "source_rows_added": 12,
+    "new_text_reviewed": 12,
+    "new_nonempty_text_reviewed": 11,
+    "new_empty_text_inspected": 1,
     "new_image_assets_reviewed": 0,
     "new_image_posts_reviewed": 0,
-    "new_video_assets_pending": 0,
+    "new_video_assets_pending": 1,
     "new_video_assets_reviewed": 0,
     "new_media_reviewed": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-24T04:02:13Z",
-    "checked_at_eastern": "2026-10-24 12:02:13 AM EDT",
-    "latest_post_id": "117492425848354703",
-    "latest_post_at_utc": "2026-10-23T21:49:02.463Z",
-    "latest_post_at_eastern": "2026-10-23 5:49:02 PM EDT",
-    "no_new_post_finding": true,
-    "note": "No post was newer than the prior validated snapshot. Engagement-only counter changes were preserved in the fallback and were not treated as new content."
+    "checked_at_utc": "2026-10-24T15:57:11Z",
+    "checked_at_eastern": "2026-10-24 11:57:11 AM EDT",
+    "latest_post_id": "117496430405406772",
+    "latest_post_at_utc": "2026-10-24T14:47:27.153Z",
+    "latest_post_at_eastern": "2026-10-24 10:47:27 AM EDT",
+    "no_new_post_finding": false,
+    "note": "Twelve posts were newer than the prior validated snapshot. Eleven directly reviewed texts were campaign or facilities rhetoric without a qualifying federal action. One empty-text video remained media-pending after sampled-frame review identified duplicate coverage; audio, captions and continuous footage were not reviewed. No claim inside any post was treated as independently verified."
   },
   "archive_network_inspection": {
-    "checked_at": "2026-10-24T04:02:13Z",
-    "note": "All four registered primary projects were rechecked. Trump Archive increased to 15,188 total items, 12,569 Truth Social posts and 1,962 speeches/transcripts; UndoTrump remained at 1,264 actions and IPTP at 1,820 policy actions. Record47's page loaded but current client-rendered counters and API response were not retrievable, so prior verified measurements were preserved. Unlike units were not summed and no upstream item was automatically promoted."
+    "checked_at": "2026-10-24T15:57:11Z",
+    "note": "All four registered primary projects were rechecked. Trump Archive increased to 15,189 total items, 12,570 Truth Social posts and 1,962 speeches/transcripts; UndoTrump remained at 1,264 actions and IPTP at 1,820 policy actions. Record47's page loaded but current client-rendered counters and API response were not retrievable, so prior verified measurements were preserved. Unlike units were not summed and no upstream item was automatically promoted."
   }
 }

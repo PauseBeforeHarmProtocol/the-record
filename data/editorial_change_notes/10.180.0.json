@@ -1,0 +1,78 @@
+{
+  "version": "10.180.0",
+  "base_release_version": "10.179.0",
+  "base_commit": "437d1dcaf46bc565a4586b8f0fb25cdcffb54dc7",
+  "research_window": {
+    "from_utc": "2026-10-24T04:02:13Z",
+    "through_utc": "2026-10-24T15:57:11Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary. One material October 23 national-security complaint omitted from the prior release was recovered from a filed affidavit and current-window independent reporting."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository's final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-23-005",
+      "kind": "added",
+      "summary": "DOJ arrested a government contractor and filed a criminal complaint alleging unlawful transmission of national-defense information to a journalist.",
+      "duplicate_review": "No canonical event, normalized title, primary URL or recent pull request matched. The same-day Floris/Benavides complaints concern different defendants, statutes, evidence and alleged conduct."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "doj_brinksman_release_oct23",
+      "origin_group": "U.S. Department of Justice",
+      "evidence_extract": "DOJ announced that the FBI arrested Ian A. Brinksman after searching his Washington residence and charged him by criminal complaint under 18 U.S.C. § 793(d). The release says he held TS/SCI access and repeats officials' national-security rationale while expressly stating that complaint charges are allegations and the defendant is presumed innocent.",
+      "document_sha256": "f6e396f33b490df6385d84a22b9412bbaae620190e08155d5b511eb7651ef2a8",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here; the downloaded release HTML separately hashed to d1720ebf76a91c2c5c37d68aa58c64dd4a385c1299f487a4db7428d5db015ede.",
+      "inspected_at": "2026-10-24T15:57:11Z"
+    },
+    {
+      "source_id": "edva_brinksman_affidavit_oct23",
+      "origin_group": "U.S. District Court for the Eastern District of Virginia",
+      "evidence_extract": "The 13-page affidavit in EDVA case 1:26-mj-423 states that it is offered only to establish probable cause. It alleges five access-and-publication sequences using classified database logs, badge records, calls, emails and classification review, and says the reports were outside Brinksman's work scope.",
+      "document_sha256": "013e4a9b81e79fe85c2ebefe19b4b16c0a9a92dd905059480de6e2350c931e11",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here; the downloaded filed PDF separately hashed to d2067f2ee6a7b80d591ccde2ebd5b8561b9a500f942413e6a0b668e6849054e1.",
+      "inspected_at": "2026-10-24T15:57:11Z"
+    },
+    {
+      "source_id": "reuters_brinksman_oct24",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported the October 23 arrest and search, identified the journalist as Aída Chávez, summarized the affidavit's five alleged disclosure sequences and reported that Brinksman's federal public defender declined comment while Chávez, Deloitte and the State Department had not immediately responded.",
+      "document_sha256": "b642f158a516174d1644d89aacdb991a76a457ea33ad6e42effe69db7111ab4b",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-24T15:57:11Z"
+    }
+  ],
+  "truth_social_media_inspection": {
+    "new_posts": 12,
+    "latest_post_id": "117496430405406772",
+    "latest_post_at_utc": "2026-10-24T14:47:27.153Z",
+    "latest_post_at_eastern": "2026-10-24 10:47:27 AM EDT",
+    "finding": "Eleven texts were directly reviewed as campaign or facilities rhetoric with no separate qualifying action. One empty-text video remained media-pending after sampled-frame review identified duplicate coverage; audio, captions and continuous footage were not reviewed."
+  },
+  "trump_tv_inspection": {
+    "checked_at": "2026-10-24T15:57:11Z",
+    "stream_video_id": "A4gNgHfZ-v4",
+    "finding": "Official channel, live hub, dated video library, remarks and release indexes were rechecked. The October 23 listings remained newest; footage, audio and captions were not retrieved. No qualifying new item was located in the material reviewed."
+  },
+  "withheld": [
+    {
+      "title": "Pentagon prediction-market directive",
+      "reason": "Multiple outlets reviewed the October 20 memo, but the underlying directive remained unavailable for primary inspection and the prior-window queue lead remains unresolved."
+    },
+    {
+      "title": "OMB M-27-01 shutdown-RIF rescission confirmation",
+      "reason": "The October 23 memorandum confirms documents already rescinded under the September 25 settlement and supplied no separate personnel or implementation outcome."
+    },
+    {
+      "title": "Legacy California National Guard remediation",
+      "reason": "The queued Ninth Circuit lifecycle revision remains deferred to a dedicated legacy-quality release with a viable transport path for regenerated historical representations."
+    },
+    {
+      "title": "Record47 current counters",
+      "reason": "The project page loaded, but client-rendered counters and the public API response were not retrievable; prior verified measurements were preserved."
+    }
+  ],
+  "corrections": []
+}
