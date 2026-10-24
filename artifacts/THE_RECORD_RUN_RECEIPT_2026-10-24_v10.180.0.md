@@ -28,7 +28,7 @@
 ## Truth Social inspection
 
 - New retained posts: 12
-- Current retained inspection states: {}
+- Current retained inspection states: {"media_not_applicable": 1026, "media_not_recorded": 19, "media_pending": 508, "media_reviewed": 233, "media_unavailable": 280, "text_not_recorded": 154, "text_pending": 970, "text_reviewed": 942}
 
 Twelve posts were newer than the prior validated snapshot. Eleven directly reviewed texts were campaign or facilities rhetoric without a qualifying federal action. One empty-text video remained media-pending after sampled-frame review identified duplicate coverage; audio, captions and continuous footage were not reviewed. No claim inside any post was treated as independently verified.
 
