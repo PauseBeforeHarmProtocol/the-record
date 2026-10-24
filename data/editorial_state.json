@@ -7561,6 +7561,18 @@
       "provenance_path": "data/editorial_change_notes/10.179.0.json",
       "provenance_sha256": "1519e8ca047386c09ae8b1ec51eacc30fe6b3f5adb87f2fff820a66c9fec1670",
       "note": "Recovered prior-window omission; draft, implemented and unmeasured lifecycle states kept distinct."
+    },
+    {
+      "change_id": "10.180.0:NAT-2026-10-23-005",
+      "entry_id": "NAT-2026-10-23-005",
+      "as_of_utc": "2026-10-24T15:57:11Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.180.0",
+      "summary": "DOJ arrested a government contractor and filed an Espionage Act complaint alleging national-defense disclosures to a journalist.",
+      "provenance_path": "data/editorial_change_notes/10.180.0.json",
+      "provenance_sha256": "14ea957ec4709ef25776a3d6cf5dc98797d3aee37481008ccc31f27e0135dc2e",
+      "note": "Recovered prior-window omission; arrest and complaint distinguished from unadjudicated allegations, indictment and guilt."
     }
   ],
   "reviews": [
@@ -100490,6 +100502,116 @@
         "Loan application, award, obligation and default data",
         "Final FDA origin-label guidance",
         "Independent measurement of production, price, labor, safety and sustainability outcomes"
+      ]
+    },
+    {
+      "review_id": "10.180.0:NAT-2026-10-23-005:c8f3ddee67ae",
+      "entry_id": "NAT-2026-10-23-005",
+      "content_sha256": "c8f3ddee67aeb98ee58a150bf56671c243a1ad38029bec635d9ca95e682d2588",
+      "reviewed_at": "2026-10-24T15:57:11Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "c5aa7fa92e372904fed582fcf7774ff06a4c236d30b3e8591750b5b1d9300342",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_brinksman_release_oct23",
+              "locator": "Charging announcement and allegation disclaimer; exact normalized extract retained in data/editorial_change_notes/10.180.0.json.",
+              "inspected_at": "2026-10-24T15:57:11Z",
+              "document_sha256": "f6e396f33b490df6385d84a22b9412bbaae620190e08155d5b511eb7651ef2a8",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "edva_brinksman_affidavit_oct23",
+              "locator": "Caption, offense, probable-cause purpose and warrant request; exact normalized extract retained in data/editorial_change_notes/10.180.0.json.",
+              "inspected_at": "2026-10-24T15:57:11Z",
+              "document_sha256": "013e4a9b81e79fe85c2ebefe19b4b16c0a9a92dd905059480de6e2350c931e11",
+              "origin_group": "U.S. District Court for the Eastern District of Virginia",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "daad17853e374aed221d678542f650250e478899b54dcd827acf009f35bd3cf9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "edva_brinksman_affidavit_oct23",
+              "locator": "Affidavit paragraphs 10–37 describing access, communications, publication comparisons and probable-cause limits.",
+              "inspected_at": "2026-10-24T15:57:11Z",
+              "document_sha256": "013e4a9b81e79fe85c2ebefe19b4b16c0a9a92dd905059480de6e2350c931e11",
+              "origin_group": "U.S. District Court for the Eastern District of Virginia",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "a7223d7df64ce7b47a5f891ec2883a76b4e10e8aacbf29d67315ce27ac6f809e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_brinksman_oct24",
+              "locator": "Independent report identifying the journalist and recording response status; exact normalized extract retained in data/editorial_change_notes/10.180.0.json.",
+              "inspected_at": "2026-10-24T15:57:11Z",
+              "document_sha256": "b642f158a516174d1644d89aacdb991a76a457ea33ad6e42effe69db7111ab4b",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "c78bba53d8d393952345d2da254db511c00022c8a395208343306bb2215ee97d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_brinksman_release_oct23",
+              "locator": "Named DOJ, FBI and CIA statements plus express complaint-stage disclaimer.",
+              "inspected_at": "2026-10-24T15:57:11Z",
+              "document_sha256": "f6e396f33b490df6385d84a22b9412bbaae620190e08155d5b511eb7651ef2a8",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_brinksman_oct24",
+              "locator": "Independent report of complaint posture and response status.",
+              "inspected_at": "2026-10-24T15:57:11Z",
+              "document_sha256": "b642f158a516174d1644d89aacdb991a76a457ea33ad6e42effe69db7111ab4b",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "a131595bac515a942659e85de165464b014b18bcf230410dbbfbb4e01e6b4e5e",
+          "review_note": "Explains national-security and press-source significance while preserving the untested complaint posture."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "fa99f90def0eb1a7da2c28b6dfe81bb5c822dd1b9e843f56ca3e34730283bad4",
+          "review_note": "States the administration's protection rationale and names judicial, evidentiary and outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "eebe2b71a2b23d1d2de62ac2cc7fe5ffbb5bb371cc6ac5bebb12794e08075628",
+          "review_note": "Separates a supported arrest and complaint from disputed disclosures, recipient culpability, indictment and guilt."
+        }
+      ],
+      "unresolved_questions": [
+        "Whether a grand jury returns an indictment",
+        "Defense response and any challenge to classification, intent or the alleged disclosure chain",
+        "Disposition, appellate review and independently documented harm"
       ]
     }
   ],
