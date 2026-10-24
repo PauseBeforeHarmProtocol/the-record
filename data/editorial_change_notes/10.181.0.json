@@ -1,0 +1,74 @@
+{
+  "version": "10.181.0",
+  "base_release_version": "10.180.0",
+  "base_commit": "bd463ba4b5712ea96af7da0645de9bcbb988dc36",
+  "research_window": {
+    "from_utc": "2026-10-24T15:57:11Z",
+    "through_utc": "2026-10-24T22:00:14Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary. One material Reuters update was reconciled into an existing election-enforcement record; no parallel event was created."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository's final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-15-003",
+      "kind": "material_refresh",
+      "summary": "DOJ-provided texts document six California county ballot demands with specific match counts, while statewide distribution remains separately attributed reporting.",
+      "duplicate_review": "Updated the existing election-enforcement lifecycle. The event, county-letter subject and October 23 AP source already mapped to NAT-2026-09-15-003; no new canonical count was created."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "reuters_california_county_ballot_letters_oct24",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reviewed Justice Department-provided texts of six California county letters signed by First Assistant U.S. Attorney Bilal Essayli. The letters listed federal match counts of 1,754 in Orange, 1,355 in Riverside, 1,133 in San Bernardino, 334 in Ventura, 180 in Santa Barbara and 63 in San Luis Obispo, and warned of significant federal scrutiny and legal exposure. Reuters also reported a 407-person Contra Costa demand and attributed to The New York Times that versions were sent to all 58 counties; the directly reviewed six-letter scope and separately attributed statewide scope are preserved distinctly.",
+      "document_sha256": "b3bba8be20e83863c11bc916d4b0378fe0bddf5709bcf62115ae703f35bcfebd",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-24T22:00:14Z"
+    }
+  ],
+  "corrections": [],
+  "withheld": [
+    {
+      "title": "Five newer Truth Social posts",
+      "reason": "Three posts linked the same RSBN Georgia campaign-rally stream, one image was a racist meme attacking Representative Ilhan Omar, and one image repeated Reflecting Pool facilities rhetoric. All were reviewed as evidence of publication only and none established a qualifying federal action."
+    },
+    {
+      "title": "Legacy California National Guard appellate lifecycle",
+      "reason": "The October 23 Ninth Circuit opinion is material but belongs to existing LEG-004052. A direct-source revision remains queued for a dedicated legacy-quality release with a viable transport path for regenerated historical representations; no duplicate current record was created."
+    },
+    {
+      "title": "Reported U.S. campaign involving Brazil's Bolsonaro prosecution",
+      "reason": "The consequential Reuters account rests mainly on unnamed sources, and no second independent confirmation or primary directive was located before cutoff."
+    },
+    {
+      "title": "Possible White House press-corps relocation",
+      "reason": "The move was described as under consideration; no order, implementation, expenditure or access-policy change was documented."
+    },
+    {
+      "title": "Iran threat memorandum and embassy staffing coverage",
+      "reason": "The reporting duplicated the already published NAT-2026-10-23-003 lifecycle and supplied no new implemented stage by cutoff."
+    },
+    {
+      "title": "Trump TV unchanged October 23 listings",
+      "reason": "Official pages and listing metadata were rechecked; the same October 23 clips and gaggle listings remained newest. Footage, audio and captions were not retrieved, and no qualifying new item was located in the material reviewed."
+    },
+    {
+      "title": "Record47 current dynamic counters",
+      "reason": "The project page's static feature counts were visible, but current client-rendered entry totals and the public API response were not retrievable; prior verified dynamic measurements were preserved."
+    }
+  ],
+  "truth_social_media_inspection": {
+    "new_posts": 5,
+    "latest_post_id": "117497314773980906",
+    "latest_post_at_utc": "2026-10-24T18:32:21.547Z",
+    "latest_post_at_eastern": "2026-10-24 2:32:21 PM EDT",
+    "finding": "Three retained links led to the same RSBN Georgia campaign rally; two attached images were directly reviewed as a racist political meme and already-covered facilities rhetoric. No audiovisual stream was reviewed and no separate qualifying federal action was found."
+  },
+  "trump_tv_inspection": {
+    "checked_at": "2026-10-24T22:00:14Z",
+    "stream_video_id": "A4gNgHfZ-v4",
+    "finding": "Official channel, live hub, dated video library, remarks and release indexes were rechecked. The October 23 listings remained newest; footage, audio and captions were not retrieved. No qualifying new item was located in the material reviewed."
+  }
+}
