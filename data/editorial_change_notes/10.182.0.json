@@ -1,0 +1,70 @@
+{
+  "version": "10.182.0",
+  "base_release_version": "10.181.0",
+  "base_commit": "f1dbbb46d7c52102afd65795b3bda811c810f655",
+  "research_window": {
+    "from_utc": "2026-10-24T22:00:14Z",
+    "through_utc": "2026-10-25T03:55:13Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary. One material same-event evidence update was reconciled into the existing election-enforcement record; no parallel event was created."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository's final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-15-003",
+      "kind": "material_refresh",
+      "summary": "A preliminary Los Angeles County review reported substantial registration-status, voting-history and citizenship mismatches in a 200-name sample from the federal list.",
+      "duplicate_review": "Updated the existing election-enforcement lifecycle. The federal California list, county demands and litigation already map to NAT-2026-09-15-003; no new canonical count was created."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "ap_california_list_accuracy_oct24",
+      "origin_group": "Associated Press",
+      "evidence_extract": "Associated Press reported from a Los Angeles County court filing that a preliminary review of 200 names from the federal 20,000-person California list found more than 40% had canceled registrations, more than 70% had no voting history and nearly 40% were born in the United States. AP also reported that Mendocino County received names of people who were not county residents. DOJ spokeswoman Kiersten Pels said the department was not requesting a purge, registration cancellation or programmatic action and instead sought cooperation; a Ninth Circuit panel was scheduled to hear the compliance dispute on October 25.",
+      "document_sha256": "1814bbf37540d42dd76907f10e44bd845b1c8f0c10d3e01a38f9919ef28f920e",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-25T03:55:13Z"
+    }
+  ],
+  "corrections": [],
+  "withheld": [
+    {
+      "title": "Five newer Truth Social posts",
+      "reason": "Two posts attacked Alaska ranked-choice voting, one endorsed Senator Jon Husted and two attached campaign media without text. Three images were directly inspected; only sampled frames of one campaign video were reviewed, so its audiovisual review remains pending. No post independently established a new federal action."
+    },
+    {
+      "title": "Possible White House press-corps relocation",
+      "reason": "Trump publicly confirmed that he may move the press corps, but no order, implementation, expenditure or access-policy change was documented."
+    },
+    {
+      "title": "Fifth Circuit immigration-detention ruling",
+      "reason": "The October 23 en banc decision was already incorporated into NAT-2026-09-10-005 in the prior accepted release; no duplicate record or refresh was warranted."
+    },
+    {
+      "title": "Reported U.S. campaign involving Brazil's Bolsonaro prosecution",
+      "reason": "The consequential Reuters account remained based mainly on unnamed sources without a second independent confirmation or primary directive by cutoff."
+    },
+    {
+      "title": "Trump TV unchanged October 23 listings",
+      "reason": "Official pages and listing metadata were rechecked; October 23 clips remained newest. Footage, audio and captions were not retrieved, and no qualifying new item was located in the material reviewed."
+    },
+    {
+      "title": "Record47 current dynamic counters",
+      "reason": "Static feature counts remained visible, but current client-rendered entry totals and the public API response were not retrievable; prior verified dynamic measurements were preserved."
+    }
+  ],
+  "truth_social_media_inspection": {
+    "new_posts": 5,
+    "latest_post_id": "117499446707365145",
+    "latest_post_at_utc": "2026-10-25T03:34:32.269Z",
+    "latest_post_at_eastern": "2026-10-24 11:34:32 PM EDT",
+    "finding": "Five posts were newer than the prior snapshot. Three campaign images were directly inspected; only sampled frames of one 30-second campaign video were reviewed and its media status remains pending. No underlying claim was independently verified and no separate qualifying federal action was found."
+  },
+  "trump_tv_inspection": {
+    "checked_at": "2026-10-25T03:55:13Z",
+    "stream_video_id": "A4gNgHfZ-v4",
+    "finding": "Official channel, live hub, dated video library, remarks and release indexes were rechecked. October 23 listings remained newest; footage, audio and captions were not retrieved. No qualifying new item was located in the material reviewed."
+  }
+}
