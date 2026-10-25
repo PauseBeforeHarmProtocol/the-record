@@ -1,11 +1,11 @@
 {
   "schema_version": 3,
-  "editorial_checked_at": "2026-10-25 6:03 AM EDT",
-  "quality_inputs_updated_at": "2026-10-25T03:55:13Z",
-  "external_registry_checked_at": "2026-10-25T03:55:13Z",
+  "editorial_checked_at": "2026-10-25 12:01 PM EDT",
+  "quality_inputs_updated_at": "2026-10-25T16:01:47Z",
+  "external_registry_checked_at": "2026-10-25T16:01:47Z",
   "federation_last_modified_at": "2026-08-25T14:40:23Z",
   "legacy_revisions_through": "2026-10-13",
-  "release_version": "10.182.1",
+  "release_version": "10.183.0",
   "canonical_files": {
     "legacy": "data/legacy_entries.json",
     "current": "data/current_entries.json",
@@ -18,13 +18,13 @@
   },
   "canonical_sha256": {
     "legacy": "1ce7d5d6735f662bb6e17fc0ae7bbcf42ac7fab9953499ac42e3dd878890e010",
-    "current": "80841ceb7c1321a069cb8a759a76b6aa98eca2c959bf8f2e8933f723928a2c46",
-    "source_ledger": "2c2ce7c5d7edd9de30f549921200d537f9eb74698372d2d62bca19720d2eaffa",
+    "current": "3c40e7a67630164a1fcf52846f235c0ffd4b37f83d016b252a41ac632427cc20",
+    "source_ledger": "bacde34cea4c808377e49163a7a25113f3ce487e5e2c3c1327e17e2e183a8861",
     "federated": "4c2b2804949098a9b0a314b3f0ed44e74fc8ccb688ab84741922dd30fa1083f3",
     "legacy_revisions": "c773aacc26f76bd2e3d85bad9758d5085c7bb837726779be557921f84809de2d",
-    "archive_registry": "2562e5a6d8d7e5c710fb9bfd46692b5238520b38dac41274e275ae27c5b30e44",
-    "editorial_state": "7aeb6a62d8c38c23e6e884b34514fe35fc329b74294dbbb967182e0f2bed450a",
-    "truth_social_reviews": "a30fc3bc84e406bfa947462095e5f2048d3cf123acee6eb97eee5cb7b8ebe3e2"
+    "archive_registry": "500415a7051c080f4be95d4f3a2f0eaf4be5209f46da4baebc00030e0d2d31ac",
+    "editorial_state": "42d3fa99daa10283f17a04ca7441589b80cf4813016b1d00d46ceca1699ad5e9",
+    "truth_social_reviews": "b8f54e7ac89bc04a14519c9c8060f645f3b69adf28a7d23cf3f9f5d1d0146388"
   },
   "totals": {
     "canonical_legacy_rows": 4742,
@@ -35,9 +35,9 @@
     "full_archive_runtime_entries": 5173,
     "current_layer_entries": 446,
     "legacy_source_references": 6716,
-    "current_source_references": 1393,
-    "full_archive_runtime_source_references": 8101,
-    "full_archive_runtime_unique_urls": 6700
+    "current_source_references": 1395,
+    "full_archive_runtime_source_references": 8103,
+    "full_archive_runtime_unique_urls": 6702
   },
   "coverage": {
     "legacy_last_date": "2026-08-01",
@@ -423,15 +423,15 @@
     "entries": 446,
     "national_entries": 442,
     "in6_entries": 4,
-    "source_references": 1393,
-    "national_source_references": 1385,
-    "source_ledger_rows": 1402,
-    "used_source_ledger_rows": 1378,
+    "source_references": 1395,
+    "national_source_references": 1387,
+    "source_ledger_rows": 1404,
+    "used_source_ledger_rows": 1380,
     "unused_source_ledger_rows": 24,
-    "entries_with_one_source": 102,
-    "entries_with_one_source_percent": 22.9,
-    "national_entries_with_one_source": 100,
-    "national_entries_with_one_source_percent": 22.6,
+    "entries_with_one_source": 101,
+    "entries_with_one_source_percent": 22.6,
+    "national_entries_with_one_source": 99,
+    "national_entries_with_one_source_percent": 22.4,
     "maybe_therefore_present": 446,
     "maybe_therefore_missing": 0,
     "review_states": {
@@ -486,7 +486,7 @@
   "review_traceability": {
     "current_entries_with_content_bound_review": 324,
     "current_entries_with_prior_status_only": 122,
-    "material_development_records": 620,
+    "material_development_records": 621,
     "retained_posts": 1000,
     "retained_post_text_states": {
       "not_recorded": 112,
@@ -494,10 +494,10 @@
       "reviewed": 887
     },
     "retained_post_media_states": {
-      "not_applicable": 469,
+      "not_applicable": 470,
       "pending": 70,
       "reviewed": 229,
-      "unavailable": 232
+      "unavailable": 231
     },
     "definition": "Review-receipt coverage is separate from prior canonical review-state labels. Missing inspection records do not establish that content is false or that it was reviewed. Post-state counts refer only to the retained fallback, not the upstream archive total."
   },

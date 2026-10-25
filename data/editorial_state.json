@@ -7597,9 +7597,153 @@
       "provenance_path": "data/editorial_change_notes/10.182.0.json",
       "provenance_sha256": "bb5019c72b0fe9b37d315999f7826479b6fbb6240dd3bf49e7f268b75e5ac014",
       "note": "Existing event updated; sample limits, DOJ response, pending judicial review and unresolved statewide accuracy remain explicit."
+    },
+    {
+      "change_id": "10.183.0:NAT-2026-09-10-008",
+      "entry_id": "NAT-2026-09-10-008",
+      "as_of_utc": "2026-10-25T16:01:47Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.183.0",
+      "summary": "District court dismissed DOJ's Utah voter-file suit with prejudice after rejecting its Title III theory.",
+      "provenance_path": "data/editorial_change_notes/10.183.0.json",
+      "provenance_sha256": "b80b6f1d69f2d3a454b19aea5868f04f69b9881e7849b1b56f0c756968ea8041",
+      "note": "Late-indexed October 23 ruling reconciled into the existing litigation lifecycle; district-court disposition, unaddressed alternative arguments and unresolved appeal status remain distinct."
     }
   ],
   "reviews": [
+    {
+      "review_id": "10.183.0:NAT-2026-09-10-008:e120e2b52f49",
+      "entry_id": "NAT-2026-09-10-008",
+      "content_sha256": "e120e2b52f49ca568976d9be7ec2a118465ab0bfc8e415f52d3ec6dc1e7d93bc",
+      "reviewed_at": "2026-10-25T16:01:47Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "a7a0356f5531cca1c299877df4a119a0636174a9c0d8c2cfc0285e2560a8184a",
+          "relies_on_unnamed_sources": false,
+          "supports": [{
+            "source_id": "ap_doj_election_preservation_sep10",
+            "locator": "Publication time, recipient count and litigation context.",
+            "inspected_at": "2026-09-11T04:10:37.183260Z",
+            "document_sha256": "84b131d8eaa8ac3558d8a4e6230fe88bbd841e116716971ba9714ecefa61e497",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "9145117f5f471d2d25e4e069549a51b1ab799a61885020507c2b6e4317609980",
+          "relies_on_unnamed_sources": false,
+          "supports": [{
+            "source_id": "ap_doj_election_preservation_sep10",
+            "locator": "Letter preservation instruction, warning and Utah wording.",
+            "inspected_at": "2026-09-11T04:10:37.183260Z",
+            "document_sha256": "84b131d8eaa8ac3558d8a4e6230fe88bbd841e116716971ba9714ecefa61e497",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "05d88adc0e45cc17bb152660024e2725fa036465e71965087636914704f37ec2",
+          "relies_on_unnamed_sources": false,
+          "supports": [{
+            "source_id": "ap_doj_election_preservation_sep10",
+            "locator": "Named state responses and categories of requested data.",
+            "inspected_at": "2026-09-11T04:10:37.183260Z",
+            "document_sha256": "84b131d8eaa8ac3558d8a4e6230fe88bbd841e116716971ba9714ecefa61e497",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "b66b84ee70058ec2707ad5c4db74d1df50d86ad32e3b688094713445221fa2a3",
+          "relies_on_unnamed_sources": false,
+          "supports": [{
+            "source_id": "ap_doj_election_preservation_sep10",
+            "locator": "DOJ response and absence of a reported charge.",
+            "inspected_at": "2026-09-11T04:10:37.183260Z",
+            "document_sha256": "84b131d8eaa8ac3558d8a4e6230fe88bbd841e116716971ba9714ecefa61e497",
+            "origin_group": "Associated Press",
+            "evidence_status": "reported"
+          }]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "eb0c580227b36d35a92cc20ca920ab29af668fc8fe3db8ed13ae2212b35c6bb7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "d_utah_henderson_order_oct23",
+              "locator": "Order pages 11–20, especially statutory analysis at pages 12–19 and disposition at page 19; normalized extract retained in data/editorial_change_notes/10.183.0.json.",
+              "inspected_at": "2026-10-25T16:01:47Z",
+              "document_sha256": "4c77887af8520ee972d66856ffd8408bcc43a7bee2686d084b4e753e39cd6e7a",
+              "origin_group": "U.S. District Court for the District of Utah",
+              "evidence_status": "reversed"
+            },
+            {
+              "source_id": "ksl_henderson_dismissal_oct23",
+              "locator": "KSL lines 45–59; normalized extract retained in data/editorial_change_notes/10.183.0.json.",
+              "inspected_at": "2026-10-25T16:01:47Z",
+              "document_sha256": "e8ce915f0f61d58cb3fb29dc1789b91bc6cfdc4015961389da06736e22c2d7a8",
+              "origin_group": "KSL",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "a601b7e3e1e0f110e67154010e8361ba7928a588a44b07ea9eeff83bb42f51c8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "d_utah_henderson_order_oct23",
+              "locator": "Order page 19 identifies the unaddressed alternative arguments and dismisses with prejudice; normalized extract retained in data/editorial_change_notes/10.183.0.json.",
+              "inspected_at": "2026-10-25T16:01:47Z",
+              "document_sha256": "4c77887af8520ee972d66856ffd8408bcc43a7bee2686d084b4e753e39cd6e7a",
+              "origin_group": "U.S. District Court for the District of Utah",
+              "evidence_status": "reversed"
+            },
+            {
+              "source_id": "ksl_henderson_dismissal_oct23",
+              "locator": "KSL lines 48–59; no immediate DOJ comment and dismissal with prejudice.",
+              "inspected_at": "2026-10-25T16:01:47Z",
+              "document_sha256": "e8ce915f0f61d58cb3fb29dc1789b91bc6cfdc4015961389da06736e22c2d7a8",
+              "origin_group": "KSL",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "babf8307f843b4c5dc4e065f70871bc52828ff8d251780f7edb703b69bda1c62",
+          "review_note": "Assesses the concrete judicial limit without extrapolating one district-court ruling to every voter-data dispute."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "f8933926c87ad399a9f55b2c9bf11e474a656820c10c84e5e0df5d3d5ce75902",
+          "review_note": "Preserves DOJ's enforcement rationale and identifies appeal, alternative authority, narrower demands and other case rulings as tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "b85fd8e5ff16a48463433809f52d40756f47dbe12e43061638805a768b667729",
+          "review_note": "States narrow-defect and broader-limit alternatives, then confines the conclusion to this district-court dismissal with prejudice."
+        }
+      ],
+      "unresolved_questions": [
+        "Whether DOJ appeals and the appellate disposition",
+        "Whether DOJ invokes a different statute or issues a narrower demand",
+        "Rulings and data-handling outcomes in the remaining state cases"
+      ]
+    },
     {
       "review_id": "10.33.0:NAT-2026-09-07-001:42b1c6e1",
       "entry_id": "NAT-2026-09-07-001",
