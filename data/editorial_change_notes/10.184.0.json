@@ -1,0 +1,112 @@
+{
+  "version": "10.184.0",
+  "base_release_version": "10.183.2",
+  "base_commit": "b9b4668af26f5af2a036dde987300c759a4d5e20",
+  "research_window": {
+    "from_utc": "2026-10-26T04:03:46Z",
+    "through_utc": "2026-10-26T15:58:00Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact committed editorial boundary. One district-court judgment qualified as a new record and one same-event press-access complaint materially refreshed the existing litigation lifecycle."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository's final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-26-001",
+      "kind": "new_record",
+      "summary": "A federal judge ruled Maurene Comey's firing unlawful and ordered retroactive reinstatement and backpay while reserving the First Amendment claim and monetary amount.",
+      "duplicate_review": "No current or legacy entry covered Maurene Comey's removal challenge, the October 26 summary-judgment order or its remedy. The record is distinct from litigation involving James Comey and other Justice Department personnel."
+    },
+    {
+      "entry_id": "NAT-2026-09-18-007",
+      "kind": "material_refresh",
+      "summary": "Six citizens filed a separate federal complaint seeking broader relief from viewpoint-based White House press exclusions.",
+      "duplicate_review": "The complaint challenges the same White House access policy and requested exclusion practices already tracked in NAT-2026-09-18-007. It therefore advances that litigation lifecycle rather than creating a parallel canonical count."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "sdny_comey_order_oct26",
+      "origin_group": "U.S. District Court for the Southern District of New York",
+      "evidence_extract": "In Comey v. U.S. Department of Justice, No. 1:25-cv-07625-JMF, ECF 96, filed October 26, 2026, Judge Jesse M. Furman granted Maurene Comey judgment on Counts 1, 2, 5 and 6, denied judgment on Count 3, and reserved Count 4. The court held that her removal violated the Civil Service Reform Act and separation of powers, declared APA and Fifth Amendment violations, and ordered retroactive reinstatement and backpay through December 20, 2025. The amount of backpay, fees and costs and the First Amendment claim remain unresolved.",
+      "document_sha256": "e57ca0ea4e54600f9c17ed8c913c33f073dcb0349542beb8d8097f0d1588ed1f",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the complete PDF.",
+      "inspected_at": "2026-10-26T15:58:00Z"
+    },
+    {
+      "source_id": "reuters_comey_firing_ruling_oct26",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported that Judge Furman ruled Maurene Comey's firing unlawful, ordered retroactive reinstatement and backpay, and rejected the administration's claimed authority to dismiss assistant U.S. attorneys without cause. Reuters also reported that the Justice Department did not immediately respond and that Comey's political-retaliation allegation remains part of the unresolved First Amendment claim.",
+      "document_sha256": "240a0d3253da2ca086581125e4069fcb947ff10ea5fe722face15ba3787d28bf",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-26T15:58:00Z"
+    },
+    {
+      "source_id": "ap_comey_firing_ruling_oct26",
+      "origin_group": "Associated Press",
+      "evidence_extract": "Associated Press independently reported that a federal judge ruled Maurene Comey's firing unlawful and ordered reinstatement and backpay, while the Justice Department had no immediate comment. AP's report supplied independent procedural context without converting the unresolved retaliation allegation or remedy amount into a completed finding.",
+      "document_sha256": "5857e197dbc41bfc4b2ea489b66178f76b1862764460337355c2b4e9774b0b55",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-26T15:58:00Z"
+    },
+    {
+      "source_id": "sdny_roth_press_complaint_oct26",
+      "origin_group": "U.S. District Court for the Southern District of New York",
+      "evidence_extract": "The October 26 complaint in Roth v. Trump, No. 1:26-cv-09327, names six citizen plaintiffs and alleges that expelling or punishing disfavored reporters violates the public's First Amendment right to receive information. It seeks declaratory and injunctive relief against viewpoint-based exclusions. The filing is a complaint, not a ruling, and no interim relief existed by cutoff.",
+      "document_sha256": "075a98b8adf1bb1ac069be9ef92b84c6076b0bc7e1c2defa8511e98c42d5c7a3",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the complete PDF.",
+      "inspected_at": "2026-10-26T15:58:00Z"
+    },
+    {
+      "source_id": "ap_roth_press_lawsuit_oct26",
+      "origin_group": "Associated Press",
+      "evidence_extract": "Associated Press reported that Kenneth Roth, Daniel Froomkin, Beverly Gage, Peter Schmidt-Nowara, Benjamin Wittes and Ethan Young filed suit seeking broader protection from White House media exclusions. AP described the public-right-to-receive-information theory and reported that the administration did not immediately respond.",
+      "document_sha256": "716c510d3737b75076bd676876968263d70810ab20bb37e69ef670402adc4f5c",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-26T15:58:00Z"
+    },
+    {
+      "source_id": "washpost_roth_press_lawsuit_oct26",
+      "origin_group": "The Washington Post",
+      "evidence_extract": "The Washington Post independently reported the October 26 citizen complaint, its request for wider injunctive relief and its relationship to the existing outlet-specific access litigation. The report said the White House and Justice Department did not immediately respond.",
+      "document_sha256": "bef63ecc85e88b5c62fd7e4098039cbb5b987fc08d879644d89c344d59ccaf2f",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-26T15:58:00Z"
+    }
+  ],
+  "corrections": [],
+  "withheld": [
+    {
+      "title": "Alaska election-certification dismissal motion",
+      "reason": "The filed defense motion disputes DOJ's authority but no court ruling, injunction or change to certification procedures existed by cutoff. It remains a same-event lead for NAT-2026-09-15-003."
+    },
+    {
+      "title": "Ninth Circuit California ballot oral argument",
+      "reason": "The October 25 hearing produced no ruling, injunction or merits disposition by cutoff."
+    },
+    {
+      "title": "Kennedy Center disclosure motion",
+      "reason": "The filing requests relief in existing litigation but no disclosure order or merits ruling issued by cutoff."
+    },
+    {
+      "title": "Possible Canada tariff agreement and White House press relocation",
+      "reason": "Officials and the president described prospective actions, but no signed agreement, operative order, implemented relocation, contract or expenditure was documented."
+    },
+    {
+      "title": "Trump TV unchanged October 25 listings",
+      "reason": "Official pages and listing metadata were rechecked; no October 26 listing appeared, footage and captions were not retrieved, and no qualifying new item was located in the material reviewed."
+    }
+  ],
+  "truth_social_media_inspection": {
+    "new_posts": 0,
+    "latest_post_id": "117504860004217059",
+    "latest_post_at_utc": "2026-10-26T02:31:12.622000Z",
+    "latest_post_at_eastern": "2026-10-25 10:31:12 PM EDT",
+    "finding": "No post newer than the prior validated snapshot was present. The fallback was refreshed and validated; engagement-only changes were preserved without treating claims inside posts as independently verified evidence."
+  },
+  "trump_tv_inspection": {
+    "checked_at": "2026-10-26T15:58:00Z",
+    "stream_video_id": "A4gNgHfZ-v4",
+    "finding": "Official Trump TV, live, video-library, remarks and releases pages were rechecked. The channel still linked stream A4gNgHfZ-v4 and the October 25 edited clips remained the newest dated listings. Footage, audio and captions were not retrieved. No qualifying new item was located in the material reviewed."
+  }
+}

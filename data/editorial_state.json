@@ -7610,6 +7610,31 @@
       "provenance_sha256": "b80b6f1d69f2d3a454b19aea5868f04f69b9881e7849b1b56f0c756968ea8041",
       "note": "Late-indexed October 23 ruling reconciled into the existing litigation lifecycle; district-court disposition, unaddressed alternative arguments and unresolved appeal status remain distinct."
     }
+    ,
+    {
+      "change_id": "10.184.0:NAT-2026-10-26-001",
+      "entry_id": "NAT-2026-10-26-001",
+      "as_of_utc": "2026-10-26T15:58:00Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.184.0",
+      "summary": "District court ruled Maurene Comey's firing unlawful and ordered retroactive reinstatement and backpay.",
+      "provenance_path": "data/editorial_change_notes/10.184.0.json",
+      "provenance_sha256": "75bc3959b6350a4887a7d14787ea80abb29b9c9df4fe9421a0c926694f2bd07f",
+      "note": "New record; First Amendment claim, remedy amount and appellate review remain unresolved."
+    },
+    {
+      "change_id": "10.184.0:NAT-2026-09-18-007",
+      "entry_id": "NAT-2026-09-18-007",
+      "as_of_utc": "2026-10-26T15:58:00Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.184.0",
+      "summary": "Six citizens filed a separate federal complaint seeking broader relief from viewpoint-based White House press exclusions.",
+      "provenance_path": "data/editorial_change_notes/10.184.0.json",
+      "provenance_sha256": "75bc3959b6350a4887a7d14787ea80abb29b9c9df4fe9421a0c926694f2bd07f",
+      "note": "Same access-policy lifecycle; complaint allegations and requested relief remain unadjudicated."
+    }
   ],
   "reviews": [
     {
@@ -102483,6 +102508,672 @@
         "The federal matching methodology and person-level evidence",
         "The Ninth Circuit and district-court dispositions",
         "Certified election results and any verified unlawful ballots"
+      ]
+    }
+    ,
+    {
+      "review_id": "10.184.0:NAT-2026-10-26-001:32f7e63d12a1",
+      "entry_id": "NAT-2026-10-26-001",
+      "content_sha256": "32f7e63d12a1f80befd15062e6d622d88d4ab97d41943437bca96324044e8eea",
+      "reviewed_at": "2026-10-26T15:58:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "75a6425e566c616002e48707ace2b4b3a19e757558f8cbe0ca014453949f1b2e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "sdny_comey_order_oct26",
+              "locator": "Filed 55-page order; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "e57ca0ea4e54600f9c17ed8c913c33f073dcb0349542beb8d8097f0d1588ed1f",
+              "origin_group": "U.S. District Court for the Southern District of New York",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_comey_firing_ruling_oct26",
+              "locator": "Independent report and response status; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "240a0d3253da2ca086581125e4069fcb947ff10ea5fe722face15ba3787d28bf",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_comey_firing_ruling_oct26",
+              "locator": "Independent report and procedural context; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "5857e197dbc41bfc4b2ea489b66178f76b1862764460337355c2b4e9774b0b55",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "e9d49e3160592be1354af26c95ed2666c6c9ea2f7bba77087d7f47a1ef029959",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "sdny_comey_order_oct26",
+              "locator": "Filed 55-page order; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "e57ca0ea4e54600f9c17ed8c913c33f073dcb0349542beb8d8097f0d1588ed1f",
+              "origin_group": "U.S. District Court for the Southern District of New York",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_comey_firing_ruling_oct26",
+              "locator": "Independent report and response status; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "240a0d3253da2ca086581125e4069fcb947ff10ea5fe722face15ba3787d28bf",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_comey_firing_ruling_oct26",
+              "locator": "Independent report and procedural context; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "5857e197dbc41bfc4b2ea489b66178f76b1862764460337355c2b4e9774b0b55",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "162c1e7cb54b348277d3ce69a6527c9e9a2e78db17f210574cecb4300aaac2c0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "sdny_comey_order_oct26",
+              "locator": "Filed 55-page order; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "e57ca0ea4e54600f9c17ed8c913c33f073dcb0349542beb8d8097f0d1588ed1f",
+              "origin_group": "U.S. District Court for the Southern District of New York",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "56fed0e5d1e1182581af8d6f06391b5fda21bc7eebaf26ecb6e01163ebb16ec4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "sdny_comey_order_oct26",
+              "locator": "Filed 55-page order; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "e57ca0ea4e54600f9c17ed8c913c33f073dcb0349542beb8d8097f0d1588ed1f",
+              "origin_group": "U.S. District Court for the Southern District of New York",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_comey_firing_ruling_oct26",
+              "locator": "Independent report and response status; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "240a0d3253da2ca086581125e4069fcb947ff10ea5fe722face15ba3787d28bf",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_comey_firing_ruling_oct26",
+              "locator": "Independent report and procedural context; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "5857e197dbc41bfc4b2ea489b66178f76b1862764460337355c2b4e9774b0b55",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "10dfdeecfc15ade2be87f8aea1cb9f674c67aacc2eb8dea3e6ec3ffa1063ed63",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_comey_firing_ruling_oct26",
+              "locator": "Independent report and response status; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "240a0d3253da2ca086581125e4069fcb947ff10ea5fe722face15ba3787d28bf",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_comey_firing_ruling_oct26",
+              "locator": "Independent report and procedural context; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "5857e197dbc41bfc4b2ea489b66178f76b1862764460337355c2b4e9774b0b55",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "64a63c7336ebd541eb79de47c99cccd03425a4fd4c4cd0ef0b241b857a894896",
+          "review_note": "Separately assesses the institutional effect of the unlawful-removal judgment while preserving unresolved retaliation, remedy and appeal issues."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "0c953a44676e2a78b54448f2814dfc5e47848cc45b4c4d23872a2791e2c90aea",
+          "review_note": "Preserves the administration legal theory and identifies concrete briefing, remedy and appellate tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "610ea51c3d8c7e1c120ffb255be2ba5d4c8a4500bfce9bc6aa90d88b6b25c2c6",
+          "review_note": "States plausible downstream paths and limits the conclusion to the district-court judgment and ordered retroactive relief."
+        }
+      ],
+      "unresolved_questions": [
+        "First Amendment retaliation disposition",
+        "Backpay, fees and costs calculation",
+        "Stay, appeal and appellate disposition",
+        "Any implemented change to federal removal procedures"
+      ]
+    },
+    {
+      "review_id": "10.184.0:NAT-2026-09-18-007:05c93c6e72f4",
+      "entry_id": "NAT-2026-09-18-007",
+      "content_sha256": "05c93c6e72f4c3c64685b3c8cb65158db3d3938d5e72bcc977060ef46d92538f",
+      "reviewed_at": "2026-10-26T15:58:00Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "5c945c344213dc046c6caf819aea1cd55e29f207cfea45fe6a112600b037f9c7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_press_ban_sep18",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "3253333a96a4ae155d24a6c5b84f6728e2dedefdedec9e4e29a90507d9d2de55",
+              "origin_group": "Donald J. Trump / Truth Social",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5bf466084b306fd107b133b8d9a439aff90184b5bbcbac8506ef36b11cbbc146",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_press_ban_sep18",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "3253333a96a4ae155d24a6c5b84f6728e2dedefdedec9e4e29a90507d9d2de55",
+              "origin_group": "Donald J. Trump / Truth Social",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "debb411800b063544ac689d29ff696c376b0d6eab69a2d1de0fdde09bd69fa59",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_press_ban_sep18",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "c18ed9a79053442fca4706763a03c55bbf35c261c84ed76c0cb7ded8ca61b42a",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_press_ban_sep18",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "351e956a1d97171bdae4334d710b19b0dba94de5ef06b95bf904853c63e83174",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "848e9d75d82cef39939c189fd5aa74283cc4d2003602c25bc34d3d5d2405f3af",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_press_ban_enforced_sep19",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "4a480d55bd614801b233d1a3e45e3bba74fc02f4411834e426fb280fdf89fa26",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "7887eb66d5522869ce9361bae361a8f2bcefcf3df131a4ade284e8784bbacb0a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_press_lawsuit_sep21",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "7d9e08a4391a87023921dcc62ee3b67679337539f5a331888a3f08b89bb3ee10",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_press_lawsuit_sep21",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "503f5829c6d6747a2e423e7cb3e78e3d28b2876ea65feed919cfc16f99235399",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "337660f4fbb15f78216b89305201089a881ee4f9b25d46b37d6d1f539c6690a2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_press_lawsuit_sep21",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "7d9e08a4391a87023921dcc62ee3b67679337539f5a331888a3f08b89bb3ee10",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "4316945999d075ae3c350dc6972eccd4ab233aaa63ea0256c53c15aa9eb4d183",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_press_response_sep21",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "e0873ad8204f9d74f7743559faf83ad35e31f472181e09c21bbbf3c076e6d542",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "5cad001867575a1707cd8612acb37a5a8dc2fd89df7bc423280bc69c9e15bbd0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_press_tro_sep24",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "77e4ac8937e431429212ddc152ed54f843e6906ae17cb6845d06875f3af28f58",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_press_tro_sep24",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "714cf77740fcfa086eea156b71e26cb2140745ff198a160cfd38d5e69223f0b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "19b1521c00fcf093eda1beeeef2e836b8448eddfc9661abfb0ee6f4ee7740ec8",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_press_tro_sep24",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "77e4ac8937e431429212ddc152ed54f843e6906ae17cb6845d06875f3af28f58",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_press_tro_sep24",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "714cf77740fcfa086eea156b71e26cb2140745ff198a160cfd38d5e69223f0b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "d012680ac8f4fec34f551a5485d95325dc93df314cb2b8a0ece6b5a3e13cde11",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_press_tro_sep24",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "77e4ac8937e431429212ddc152ed54f843e6906ae17cb6845d06875f3af28f58",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_press_tro_sep24",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "714cf77740fcfa086eea156b71e26cb2140745ff198a160cfd38d5e69223f0b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 10,
+          "fact_sha256": "e6ec37b2b887daabc91395085f72240d569bfc343cc1f785b7d55c403c6b60dc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_press_tro_sep24",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "77e4ac8937e431429212ddc152ed54f843e6906ae17cb6845d06875f3af28f58",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_press_tro_sep24",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "714cf77740fcfa086eea156b71e26cb2140745ff198a160cfd38d5e69223f0b7",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 11,
+          "fact_sha256": "e7f92d1dc036426ece3f0c2f773040bf6f1af67af36a3c2f6b985da7299413a9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_press_noncompliance_sep24",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "2e62d70fc4c49d7471f971316346a908ee51210e30620157bce20756b59e68f2",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 12,
+          "fact_sha256": "e6e8510d521fc45c8ad43eb14744881b239b7f481ba96187be7baf2e05454bea",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_press_noncompliance_sep24",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "2e62d70fc4c49d7471f971316346a908ee51210e30620157bce20756b59e68f2",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 13,
+          "fact_sha256": "8570e3d7c7dfc6ba7127aab1ade7af6e2a30f9d4e6e42bee16f1eb772e9f8708",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_press_restoration_sep24",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "3b598ba0bbfcdf007616cd3845fb868f81134d22c46c05e35581bb5072cccf21",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 14,
+          "fact_sha256": "0bd16f93d422fcf542c4e9991e7635f1e3d222ab69aaa903f81e23c3f8756695",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_press_pool_resume_sep25",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "8ac39095346eb8f6116890a879ed970fe5e7a74e14676c4c497a30d7f6e9343c",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 15,
+          "fact_sha256": "425aa67ca7ecfbe15c00452d7caaec5834cba98eaccf2b77efb8267ae27ecc26",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_press_air_force_one_sep26",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "3d4b4eb1451cae39488047df11c00b1232e168839f66adb9fff22788f3e9f846",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 16,
+          "fact_sha256": "5fde68ac7c0286a41955b8ba625da9586040bcc807009fb5a2e1d56dcbe753f5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_press_preliminary_injunction_sep29",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract for new sources and the prior inspected extract for retained sources.",
+              "inspected_at": "2026-09-29T04:04:47.089834Z",
+              "document_sha256": "e60849ee39032c09aa75617724dab94d4b6a494282de69b44b54cf63be36d07a",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 17,
+          "fact_sha256": "8e1b9a05037ea608dbd4485ce23b929ebee9b1ae3eefea4b05955aee01c88b24",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_doj_tv_pool_probe_oct10",
+              "locator": "Named DOJ spokesperson confirms the Antitrust Division inquiry and states its group-boycott theory.",
+              "inspected_at": "2026-10-11T04:10:00Z",
+              "document_sha256": "f6e5f4f1cf2db3531ec77a9360aed3dd82c6e7b72cf292571a49659b8618e5f1",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_doj_tv_pool_probe_oct10",
+              "locator": "Independent report confirms the named DOJ statement, the five television networks and the stated inquiry scope.",
+              "inspected_at": "2026-10-11T04:10:00Z",
+              "document_sha256": "bb90ee113fcc48e978f357e49bef43014c7c179b13c9f9741613d9eecdd2d1b9",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 18,
+          "fact_sha256": "7bcbab0d7d1eb84ccece977a320a8e234df0aaae44eee8391fb7f7e719e9794d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_doj_tv_pool_probe_oct10",
+              "locator": "Report distinguishes the opened investigation from any filed enforcement action and records the lack of immediate network response.",
+              "inspected_at": "2026-10-11T04:10:00Z",
+              "document_sha256": "f6e5f4f1cf2db3531ec77a9360aed3dd82c6e7b72cf292571a49659b8618e5f1",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_doj_tv_pool_probe_oct10",
+              "locator": "Report records the press-advocacy response and does not identify a public charge, complaint or finding.",
+              "inspected_at": "2026-10-11T04:10:00Z",
+              "document_sha256": "bb90ee113fcc48e978f357e49bef43014c7c179b13c9f9741613d9eecdd2d1b9",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 19,
+          "fact_sha256": "ff285b882cd547be846f5d256d8b33d66214fbb712e7042cdadeed3775ff69b6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "courtlistener_press_access_docket",
+              "locator": "Source inspected for fact 20, including stated legal status and material qualifications.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "8bf8f752b22175daefb829ecf251bf7330cbf8bbd4301204ae6d0879d8e2421c",
+              "origin_group": "U.S. District Court for the District of Columbia",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_press_preliminary_injunction_oct13",
+              "locator": "Source inspected for fact 20, including stated legal status and material qualifications.",
+              "inspected_at": "2026-10-14T04:01:59Z",
+              "document_sha256": "3ce890cd967db6c8e8e8df011fd535c75380df26ee3149664e92452b7e65d5c0",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 20,
+          "fact_sha256": "4823a723f0b6a49516c5fb0186ea8b4759ee74d4414fee5d21045be86e29ed1b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_press_air_force_one_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.166.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T21:59:34Z",
+              "document_sha256": "a9a5fa06c76fda2ca46e8ea0397e3a4121f57917699ffd0c91d7110e07bc792f",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 21,
+          "fact_sha256": "23acff8384a6519740be1e9bf966da6438ee8d872f0cb98d2ab3fc6bf3b58b79",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_press_air_force_one_oct20",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.166.0.json; evidence status and unresolved limits preserved.",
+              "inspected_at": "2026-10-20T21:59:34Z",
+              "document_sha256": "a9a5fa06c76fda2ca46e8ea0397e3a4121f57917699ffd0c91d7110e07bc792f",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 22,
+          "fact_sha256": "70aa02b1f8793dd74e396dfa597d19e90eebc9ab7d4180ad08de810e93681a93",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "sdny_roth_press_complaint_oct26",
+              "locator": "Filed complaint; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "075a98b8adf1bb1ac069be9ef92b84c6076b0bc7e1c2defa8511e98c42d5c7a3",
+              "origin_group": "U.S. District Court for the Southern District of New York",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_roth_press_lawsuit_oct26",
+              "locator": "Independent report; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "716c510d3737b75076bd676876968263d70810ab20bb37e69ef670402adc4f5c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "washpost_roth_press_lawsuit_oct26",
+              "locator": "Independent report; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "bef63ecc85e88b5c62fd7e4098039cbb5b987fc08d879644d89c344d59ccaf2f",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 23,
+          "fact_sha256": "9eff6556aa2b41dd5f35f6b49a0b1d4863e3ac3241de90af427a68ab3f98242a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "sdny_roth_press_complaint_oct26",
+              "locator": "Filed complaint; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "075a98b8adf1bb1ac069be9ef92b84c6076b0bc7e1c2defa8511e98c42d5c7a3",
+              "origin_group": "U.S. District Court for the Southern District of New York",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_roth_press_lawsuit_oct26",
+              "locator": "Independent report; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "716c510d3737b75076bd676876968263d70810ab20bb37e69ef670402adc4f5c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "washpost_roth_press_lawsuit_oct26",
+              "locator": "Independent report; exact normalized extract retained in data/editorial_change_notes/10.184.0.json.",
+              "inspected_at": "2026-10-26T15:58:00Z",
+              "document_sha256": "bef63ecc85e88b5c62fd7e4098039cbb5b987fc08d879644d89c344d59ccaf2f",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "205c295609d452d0fd404c194cdd27a3400817747da1ae9d163d762c4e7fc44c",
+          "review_note": "Separately assesses the broader citizen-rights theory without treating a complaint as expanded relief."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "84618364ecdce71976d5c896b8cb60a88d8f24cd61e82e82d236b261b11d1943",
+          "review_note": "Preserves the administration rationale and specifies standing, interim-relief, compliance, antitrust and access-practice tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "f5710c98aa1ae039cfa4669c9f31f6582a307b844b9d7b01ad3704a449462773",
+          "review_note": "States competing standing and merits possibilities and limits the conclusion to a filed challenge alongside existing preliminary relief."
+        }
+      ],
+      "unresolved_questions": [
+        "Standing and any interim relief in Roth v. Trump",
+        "Air Force One pool-access enforcement",
+        "Final merits disposition in the outlet litigation",
+        "Disposition of the television-pool antitrust inquiry"
       ]
     }
   ],

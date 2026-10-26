@@ -1,27 +1,34 @@
 {
-  "version": "10.183.2",
-  "artifact_mode": "feed-only",
+  "version": "10.184.0",
+  "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-25T22:00:53Z",
-    "through_utc": "2026-10-26T04:03:46Z",
+    "from_utc": "2026-10-26T04:03:46Z",
+    "through_utc": "2026-10-26T15:58:00Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Continuous scan from the exact prior accepted-branch boundary found no qualifying new or materially changed national record. Thirteen materially newer validated Truth Social posts were preserved and their retained text directly reviewed; five attached images were reviewed and three video attachments remain pending full audiovisual review. This is a strictly feed-only release and the v10.183.0 editorial snapshot remains byte-identical."
+    "note": "Continuous scan from the exact prior committed editorial boundary found one qualifying district-court judgment and one material same-event press-access complaint. The validated Truth Social fallback contained no newer post."
   },
   "release_iso": "2026-10-26",
   "release_human": "October 26, 2026",
-  "checked_at": "2026-10-26 12:03 AM EDT",
-  "previous_version": "10.183.1",
-  "previous_checked_at": "2026-10-25 6:00 PM EDT",
-  "window_started_at": "2026-10-25 6:00 PM EDT",
-  "window_ended_at": "2026-10-26 12:03 AM EDT",
+  "checked_at": "2026-10-26 11:58 AM EDT",
+  "previous_version": "10.183.2",
+  "previous_checked_at": "2026-10-26 12:03 AM EDT",
+  "window_started_at": "2026-10-26 12:03 AM EDT",
+  "window_ended_at": "2026-10-26 11:58 AM EDT",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
   "week_label": "2026-10-26 through 2026-11-01",
   "cutoff_start": "2026-07-20",
-  "new_entry_ids": [],
-  "added_entry_ids": [],
-  "refreshed_entry_ids": [],
+  "new_entry_ids": [
+    "NAT-2026-10-26-001",
+    "NAT-2026-09-18-007"
+  ],
+  "added_entry_ids": [
+    "NAT-2026-10-26-001"
+  ],
+  "refreshed_entry_ids": [
+    "NAT-2026-09-18-007"
+  ],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -801,7 +808,7 @@
       "entry_id": "NAT-2026-09-18-007",
       "target_id": "NAT-2026-09-18-007",
       "decision": "same_event_update",
-      "notes": "The October 10 Justice Department antitrust inquiry, October 13 preliminary injunction and CNN counsel's reported October 20 Air Force One exclusions are later developments in the television pool's response to the White House credential ban and the same access litigation. They were consolidated into the stable press-access record rather than counted as parallel events."
+      "notes": "The October 10 Justice Department antitrust inquiry, October 13 preliminary injunction, CNN counsel's reported October 20 Air Force One exclusions and October 26 Roth complaint are later developments concerning the White House credential ban and access policy. They were consolidated into the stable press-access record rather than counted as parallel events."
     },
     {
       "entry_id": "NAT-2026-10-01-007",
@@ -1216,39 +1223,45 @@
       "target_id": "NAT-2026-09-10-008",
       "decision": "same_event_update",
       "notes": "The October 23 Utah dismissal resolves the voter-file lawsuit already described in this stable record. The same parties, demand, statutory theory and litigation lifecycle were updated rather than counted as a new event."
+    },
+    {
+      "entry_id": "NAT-2026-10-26-001",
+      "target_id": "NAT-2026-10-26-001",
+      "decision": "false_positive",
+      "notes": "No current or legacy canonical entry, normalized title, source URL or recent maintenance pull request covered Maurene Comey's civil-service judgment. Litigation involving James Comey concerns a different person, employment event and legal proceeding."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Thirteen newer Truth Social posts",
-      "reason": "All retained text was directly reviewed. The posts comprised state-school-policy and old Iran-resignation links, a meme-group link, three cable-news polling/commentary videos, a lengthy personal attack and unimplemented press-relocation thought, an already catalogued Chiricahua National Park promotion, three White House aerial photographs, a Libya policy statement without a new instrument, and a repeated Netanyahu endorsement and military-claims post. Five images were directly reviewed; the three videos were opened and sampled but remain pending full audiovisual review. None independently established a new qualifying federal action or measured outcome."
-    },
-    {
-      "title": "Chiricahua National Park promotion",
-      "reason": "Trump's October 25 post promoted Chiricahua National Park, but the redesignation was signed October 20 as Public Law 119-133 and is already covered within NAT-2026-10-20-006. The post and photographs add no later implementing action and were deduplicated to that stable record."
+      "title": "Alaska election-certification dismissal motion",
+      "reason": "The defense motion disputes DOJ's authority but no court ruling, injunction or change to certification procedures existed by cutoff. The pending pleading remains a same-event lead for NAT-2026-09-15-003."
     },
     {
       "title": "Ninth Circuit California ballot oral argument",
-      "reason": "Reuters and Associated Press reported skeptical questioning during the October 25 hearing, but oral argument is not a ruling. No injunction, merits disposition or validated statewide eligibility count had issued by cutoff, so the same-event lead remains queued for the existing NAT-2026-09-15-003 lifecycle."
+      "reason": "The October 25 hearing produced no ruling, injunction or merits disposition by cutoff."
     },
     {
-      "title": "Two new October 25 White House video listings",
-      "reason": "The dated library newly listed a 1-minute-35-second cyber-crime-roundtable clip (AZhWfl-cW-Q) and a 36-second 'Cost of Socialism' clip (QmERsPeqy1g). Stable URLs, titles, dates, durations and IDs were inspected, but footage and captions were not retrievable; listing an edited clip or replay is not itself a new government action."
+      "title": "Kennedy Center disclosure motion",
+      "reason": "The filing requests relief in existing litigation but no disclosure order or merits ruling issued by cutoff."
     },
     {
-      "title": "White House energy-and-gas-price roundup",
-      "reason": "The October 25 release repackaged previously documented refinery, Venezuela-oil, diesel-tax, Alaska-pipeline and fuel-waiver actions and made promotional outcome claims without a new instrument or independent measurement."
+      "title": "Possible Canada tariff agreement and White House press relocation",
+      "reason": "Officials and the president described prospective actions, but no signed agreement, operative order, implemented relocation, contract or expenditure was documented."
+    },
+    {
+      "title": "Trump TV unchanged October 25 listings",
+      "reason": "Official pages and listing metadata were rechecked; no October 26 listing appeared, footage and captions were not retrieved, and no qualifying new item was located in the material reviewed."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-26T04:07:14Z",
-    "checked_at_eastern": "2026-10-26 12:07 AM EDT",
+    "checked_at": "2026-10-26T16:06:49Z",
+    "checked_at_eastern": "2026-10-26 12:06 PM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-26T04:07:14Z",
+    "last_successful_page_inspection_at": "2026-10-26T16:06:49Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1259,7 +1272,7 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, dated video-library, remarks and releases pages were rechecked. The channel still linked stream A4gNgHfZ-v4. The dated library added two October 25 edited clips, a 1-minute-35-second cyber-crime-roundtable listing and a 36-second 'Cost of Socialism' listing; stable URLs, dates, durations and IDs were inspected, but footage, audio and captions were not retrieved. The remarks index supplied no new complete transcript, and the releases index still led with the October 25 retrospective energy roundup. No qualifying new item was located in the material reviewed.",
+    "summary": "Official Trump TV, live, dated video-library, remarks and releases pages were rechecked. The channel still linked stream A4gNgHfZ-v4, and the October 25 cyber-crime-roundtable and 'Cost of Socialism' edited clips remained the newest dated listings. Stable URLs, dates, durations and IDs were inspected, but footage, audio and captions were not retrieved. The remarks index supplied no new complete transcript, and the releases index still led with the October 25 retrospective energy roundup. No qualifying new item was located in the material reviewed.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1271,8 +1284,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-26T04:07:14Z",
-        "observed_at_eastern": "2026-10-26 12:07 AM EDT",
+        "observed_at": "2026-10-26T16:06:49Z",
+        "observed_at_eastern": "2026-10-26 12:06 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official page linked unchanged stream A4gNgHfZ-v4. Fallback text was not treated as proof of an outage.",
         "video_ids": [
@@ -1284,8 +1297,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-26T04:07:14Z",
-        "observed_at_eastern": "2026-10-26 12:07 AM EDT",
+        "observed_at": "2026-10-26T16:06:49Z",
+        "observed_at_eastern": "2026-10-26 12:06 PM EDT",
         "format": "official live-hub metadata; audiovisual content unreviewed",
         "inspection": "The hub presented the official channel and fallback text; footage and captions were not retrieved.",
         "video_ids": [
@@ -1297,10 +1310,10 @@
         "posted_date": "2026-10-25",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-26T04:07:14Z",
-        "observed_at_eastern": "2026-10-26 12:07 AM EDT",
+        "observed_at": "2026-10-26T16:06:49Z",
+        "observed_at_eastern": "2026-10-26 12:06 PM EDT",
         "format": "official dated-library metadata; audiovisual content unreviewed",
-        "inspection": "The library newly listed 'President Trump Hosts Cyber Crime Roundtable' (1:35) and 'The Cost of Socialism' (0:36), both dated October 25. Stable URLs, titles, durations and YouTube IDs were inspected; audiovisual content and captions were not retrieved, and neither listing was counted as a new action.",
+        "inspection": "The library still listed 'President Trump Hosts Cyber Crime Roundtable' (1:35) and 'The Cost of Socialism' (0:36), both dated October 25, as its newest items. Stable URLs, titles, durations and YouTube IDs were inspected; audiovisual content and captions were not retrieved, and neither listing was counted as a new action.",
         "video_ids": [
           "AZhWfl-cW-Q",
           "QmERsPeqy1g"
@@ -1311,8 +1324,8 @@
         "posted_date": "2026-09-28",
         "original_event_date": "2026-09-28",
         "broadcast_time": null,
-        "observed_at": "2026-10-26T04:07:14Z",
-        "observed_at_eastern": "2026-10-26 12:07 AM EDT",
+        "observed_at": "2026-10-26T16:06:49Z",
+        "observed_at_eastern": "2026-10-26 12:06 PM EDT",
         "format": "supplementary remarks index",
         "inspection": "No new complete Trump TV transcript was supplied; the index was not treated as a complete transcript feed.",
         "video_ids": []
@@ -1322,8 +1335,8 @@
         "posted_date": "2026-10-25",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-26T04:07:14Z",
-        "observed_at_eastern": "2026-10-26 12:07 AM EDT",
+        "observed_at": "2026-10-26T16:06:49Z",
+        "observed_at_eastern": "2026-10-26 12:06 PM EDT",
         "format": "supplementary official releases index",
         "inspection": "The index added an October 25 energy-and-gas-price roundup. It was inspected as a retrospective research lead, not treated as a broadcast transcript or new implementing instrument.",
         "video_ids": []
@@ -1356,46 +1369,27 @@
         "reviewed": 242
       }
     },
-    "new_posts": 13,
-    "source_rows_added": 13,
-    "new_text_reviewed": 13,
-    "new_nonempty_text_reviewed": 7,
-    "new_empty_text_inspected": 6,
-    "new_image_assets_reviewed": 5,
-    "new_image_posts_reviewed": 4,
-    "new_video_assets_pending": 3,
+    "new_posts": 0,
+    "source_rows_added": 0,
+    "new_text_reviewed": 0,
+    "new_nonempty_text_reviewed": 0,
+    "new_empty_text_inspected": 0,
+    "new_image_assets_reviewed": 0,
+    "new_image_posts_reviewed": 0,
+    "new_video_assets_pending": 0,
     "new_video_assets_reviewed": 0,
-    "new_media_reviewed": 5,
+    "new_media_reviewed": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-26T04:04:30.039670Z",
-    "checked_at_eastern": "2026-10-26 12:04:30 AM EDT",
+    "checked_at_utc": "2026-10-26T16:00:08.207155Z",
+    "checked_at_eastern": "2026-10-26 12:00:08 PM EDT",
     "latest_post_id": "117504860004217059",
     "latest_post_at_utc": "2026-10-26T02:31:12.622000Z",
     "latest_post_at_eastern": "2026-10-25 10:31:12 PM EDT",
-    "no_new_post_finding": false,
-    "note": "Thirteen posts were newer than the prior validated snapshot. All retained text was directly reviewed. Five attached images across four posts were directly inspected; three cable-news video attachments were opened and sampled but remain pending full audiovisual review. The Chiricahua promotion duplicates the October 20 law already catalogued in NAT-2026-10-20-006, and the other posts were links, political commentary, photographs or policy rhetoric without a new qualifying instrument or independently verified outcome. Claims inside posts were treated only as publication leads."
+    "no_new_post_finding": true,
+    "note": "No post newer than the prior validated snapshot was present. The fallback was refreshed and validated; engagement-only changes were preserved, and no claim inside a post was treated as independently verified evidence."
   },
   "archive_network_inspection": {
-    "checked_at": "2026-10-26T04:07:14Z",
-    "note": "All four registered primary projects were rechecked. Trump Archive reported an October 26 update and showed current daily items, but its headline counters rendered as zero and therefore did not support a verified replacement measurement. UndoTrump remained at 1,264 actions and IPTP at 1,820 first-term policy actions. Record47 exposed unlike-unit measures of 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts while its headline entry and total-record counters remained dynamically unavailable. Because this is a strictly feed-only release, the immutable v10.183.0 archive registry was reused; unlike units were not summed and no upstream item was automatically promoted."
-  },
-  "editorial_snapshot": {
-    "version": "10.183.0",
-    "complete_pack": {
-      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-10-25_v10.183.0.zip",
-      "sha256": "d49a8aafea3bb614ab8c50d972731db880c16a8a6c77b3b1da197d04297962f0"
-    },
-    "national_pack": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-10-25_v10.183.0.zip",
-      "sha256": "fd5e3ffa63ca4bb8b263e6a253f0f8b59566b00f621883df45cf3f4f46fc4228"
-    },
-    "national_brief": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-10-25_v10.183.0.md",
-      "sha256": "86714d272942a05723f0a0c7351b393a61215e85a59eafffa79984387fad88ae"
-    },
-    "in6_brief": {
-      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-10-25_v10.183.0.md",
-      "sha256": "245aea0d2eee08a0989dbb13de3f9260ffc093628ffb0129bbd87ece03453078"
-    }
+    "checked_at": "2026-10-26T16:06:49Z",
+    "note": "All four registered primary projects were rechecked. Trump Archive displayed 15,239 total items, 12,610 Truth Social posts and 1,972 speeches/transcripts; UndoTrump remained at 1,264 actions and IPTP at 1,820 first-term policy actions. Record47 exposed unlike-unit measures of 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts while its current dynamic entry total remained unavailable. Verified measurements were refreshed without summing unlike units, and no upstream item was automatically promoted."
   }
 }
