@@ -1,27 +1,36 @@
 {
-  "version": "10.188.1",
-  "artifact_mode": "feed-only",
+  "version": "10.189.0",
+  "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-27T10:00:12Z",
-    "through_utc": "2026-10-27T16:02:17.189990Z",
+    "from_utc": "2026-10-27T16:02:17.189990Z",
+    "through_utc": "2026-10-27T22:11:16.801898Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Bounded source review; no qualifying new canonical item located. Eight newer Truth Social posts retained; survey claim checked against primary release. Broadcast footage remains unreviewed."
+    "note": "Bounded periodic review; two court developments plus explicitly date-only same-day MOVES6 recovery. No continuous broadcast coverage claimed."
   },
   "release_iso": "2026-10-27",
   "release_human": "October 27, 2026",
-  "checked_at": "2026-10-27 12:02 PM EDT",
-  "previous_version": "10.188.0",
-  "previous_checked_at": "2026-10-27 6:00 AM EDT",
-  "window_started_at": "2026-10-27 6:00 AM EDT",
-  "window_ended_at": "2026-10-27 12:02 PM EDT",
+  "checked_at": "2026-10-27 6:11 PM EDT",
+  "previous_version": "10.188.1",
+  "previous_checked_at": "2026-10-27 12:02 PM EDT",
+  "window_started_at": "2026-10-27 12:02 PM EDT",
+  "window_ended_at": "2026-10-27 6:11 PM EDT",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
   "week_label": "2026-10-26 through 2026-11-01",
   "cutoff_start": "2026-07-20",
-  "new_entry_ids": [],
-  "added_entry_ids": [],
-  "refreshed_entry_ids": [],
+  "new_entry_ids": [
+    "NAT-2026-10-27-002",
+    "NAT-2026-10-27-003",
+    "NAT-2026-10-13-005"
+  ],
+  "added_entry_ids": [
+    "NAT-2026-10-27-002",
+    "NAT-2026-10-27-003"
+  ],
+  "refreshed_entry_ids": [
+    "NAT-2026-10-13-005"
+  ],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -1244,35 +1253,39 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Eight newer Truth Social posts",
-      "reason": "Six text-only posts, one image/repost and one empty-text video were inspected as leads. Campaign activity, endorsements, advertisement praise and legal-opinion speculation did not establish a new federal action. Video remained unavailable."
-    },
-    {
-      "title": "Consumer-confidence claim",
-      "reason": "Conference Board primary release shows a 7.5-point rise from 84.2 to 91.7, not the post's stated 7.5 percent. Reuters corroborates the index levels; neither source identifies a new federal action or isolates a causal administration effectiveness result. Do not manufacture an accountability event from routine survey/rhetoric.",
+      "title": "Venezuelan oil cargo and gift claim",
+      "reason": "Trump statement and Reuters text inspected. Quantity, ownership, payment/gift terms, government receipt and reserve delivery not independently established. Existing NAT-2026-08-28-010 remains target for implementing evidence; raw statement retained separately.",
       "sources": [
-        "https://www.prnewswire.com/news-releases/us-consumer-confidence-increased-in-october-302920731.html",
-        "https://www.investing.com/news/economic-indicators/us-consumer-confidence-improves-in-october-4976114"
+        "https://truthsocial.com/@realDonaldTrump/117513954929880389",
+        "https://wtaq.com/2026/10/27/trump-says-he-will-visit-tanker-in-texas-with-first-oil-from-venezuela-deal/"
       ]
     },
     {
-      "title": "HHS breast-screening coordination announcement",
-      "reason": "Full HHS release retrieved and inspected after web-reader failure. It announces an OWH–AHRQ screening initiative, a collaborative of more than 40 health systems and a DBI educational MOU supporting the October 19 women’s-health order. MOU text, implementation and independent corroboration remain unreviewed; retain for same-event review, not a completed outcome or separate counted action."
+      "title": "AI terminology ban post",
+      "reason": "Repeats subject of existing NAT-2026-09-29-003; no new implementing instrument inspected."
     },
     {
-      "title": "Earlier court and prosecution reporting",
-      "reason": "Comey, East Potomac and California appellate developments already covered by canonical records; Alibaba, Kennedy Center and Oleshky recovery leads require direct original records, not a second event count."
+      "title": "Campaign and media posts",
+      "reason": "Campaign endorsements, rally invitations and screenshot headlines are not new federal actions. Eight images visually inspected; attached videos and one linked YouTube stream remain unreviewed and are not treated as evidence of what aired."
+    },
+    {
+      "title": "HHS screening MOU and earlier recovery leads",
+      "reason": "No newly inspected MOU, implementation record or independent corroboration; prior queue retained. USDA hearing announcement is not a new ruling. White House Wire headlines were not treated as dated implementing instruments."
+    },
+    {
+      "title": "Legacy quality batch",
+      "reason": "Reviewed generated source-health and same-date heading queue. LEG-004656/4657 and LEG-004713/4714 concern different proceedings despite generic headings. No responsible historical correction completed; queue remains visible."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-27T16:02:17.189990Z",
-    "checked_at_eastern": "2026-10-27 12:02 PM EDT",
+    "checked_at": "2026-10-27T22:11:16.801898Z",
+    "checked_at_eastern": "2026-10-27 6:11 PM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-27T16:02:17.189990Z",
+    "last_successful_page_inspection_at": "2026-10-27T22:11:16.801898Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1283,7 +1296,7 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Rechecked official Trump TV/live/video/remarks/releases metadata. Same stream A4gNgHfZ-v4 and four October 26 library listings. Opened the stream embed and October 26 gaggle page; no footage, audio or captions retrieved. No qualifying new item located in the material reviewed. Live/replay status unknown; fallback error text is not outage evidence.",
+    "summary": "Official TV/live/video/remarks/releases pages and linked stream embed rechecked. Stream A4gNgHfZ-v4 and four October 26 library listings unchanged. Footage/audio/captions unavailable; live/replay status unknown. No qualifying new item located in the material reviewed. Wire headlines are leads, not verified actions or evidence of broadcast content.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1295,8 +1308,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-27T16:02:17.189990Z",
-        "observed_at_eastern": "2026-10-27 12:02 PM EDT",
+        "observed_at": "2026-10-27T22:11:16.801898Z",
+        "observed_at_eastern": "2026-10-27 6:11 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official page linked unchanged stream A4gNgHfZ-v4. Fallback text was not treated as proof of an outage.",
         "video_ids": [
@@ -1308,8 +1321,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-27T16:02:17.189990Z",
-        "observed_at_eastern": "2026-10-27 12:02 PM EDT",
+        "observed_at": "2026-10-27T22:11:16.801898Z",
+        "observed_at_eastern": "2026-10-27 6:11 PM EDT",
         "format": "official live-hub metadata; audiovisual content unreviewed",
         "inspection": "The hub presented the official channel and fallback text; footage and captions were not retrieved.",
         "video_ids": [
@@ -1321,8 +1334,8 @@
         "posted_date": "2026-10-26",
         "original_event_date": "2026-10-26",
         "broadcast_time": null,
-        "observed_at": "2026-10-27T16:02:17.189990Z",
-        "observed_at_eastern": "2026-10-27 12:02 PM EDT",
+        "observed_at": "2026-10-27T22:11:16.801898Z",
+        "observed_at_eastern": "2026-10-27 6:11 PM EDT",
         "format": "official dated-library metadata; audiovisual content unreviewed",
         "inspection": "Metadata was inspected for the October 26 Andrews gaggle (5:46; imSvm2moGog), an October 25 Andrews gaggle posted October 26 (5:57; ar8OwjY8YpU), an October 25 departure gaggle posted October 26 (1:04; 4Ng0uduohFo), and 'Retribution Through Success' (0:30; AkGLdI8BDTc). Footage, audio and captions were not retrieved; replays and edited uploads were not counted as new actions.",
         "video_ids": [
@@ -1337,8 +1350,8 @@
         "posted_date": "2026-09-28",
         "original_event_date": "2026-09-28",
         "broadcast_time": null,
-        "observed_at": "2026-10-27T16:02:17.189990Z",
-        "observed_at_eastern": "2026-10-27 12:02 PM EDT",
+        "observed_at": "2026-10-27T22:11:16.801898Z",
+        "observed_at_eastern": "2026-10-27 6:11 PM EDT",
         "format": "supplementary remarks index",
         "inspection": "No new complete Trump TV transcript was supplied; the index was not treated as a complete transcript feed.",
         "video_ids": []
@@ -1348,8 +1361,8 @@
         "posted_date": "2026-10-26",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-27T16:02:17.189990Z",
-        "observed_at_eastern": "2026-10-27 12:02 PM EDT",
+        "observed_at": "2026-10-27T22:11:16.801898Z",
+        "observed_at_eastern": "2026-10-27 6:11 PM EDT",
         "format": "supplementary official releases index",
         "inspection": "October 26 promotional state and manufacturing releases were checked as leads, not treated as broadcast transcripts or new implementing instruments.",
         "video_ids": []
@@ -1357,41 +1370,45 @@
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 8,
-    "new_text_reviewed": 8,
-    "new_media_reviewed": 1,
-    "new_media_unavailable": 1,
-    "checked_at_utc": "2026-10-27T15:59:59.885918Z",
-    "checked_at_eastern": "2026-10-27 11:59:59 AM EDT",
-    "latest_post_id": "117513691842839994",
-    "latest_post_at_eastern": "2026-10-27 11:57:15 AM EDT",
-    "note": "All eight retained text fields inspected, including empty video text. One RSBN campaign-headline screenshot visually reviewed; one video unavailable. Raw posts remain separate; claims inside them are not verified merely by publication."
+    "new_posts": 25,
+    "new_text_reviewed": 25,
+    "new_media_reviewed": 8,
+    "new_media_unavailable": 9,
+    "checked_at_utc": "2026-10-27T22:06:38.467082Z",
+    "checked_at_eastern": "2026-10-27 6:06:38 PM EDT",
+    "latest_post_id": "117514552184642275",
+    "latest_post_at_eastern": "2026-10-27 3:36:03 PM EDT",
+    "note": "25 newer text fields inspected; eight campaign/screenshot images visually inspected. Nine attached videos and linked YouTube inZ8qeJOpb8 not reviewed. Feed leads span prior snapshot through acquisition, including four posts published before prior research cutoff but absent from that snapshot. Raw posts remain separate.",
+    "counts": {
+      "text": {
+        "not_recorded": 106,
+        "pending": 2,
+        "reviewed": 892
+      },
+      "media": {
+        "not_applicable": 496,
+        "pending": 73,
+        "reviewed": 235,
+        "unavailable": 196
+      }
+    }
   },
   "archive_network_inspection": {
     "checked_at": "2026-10-27T10:13:00Z",
     "note": "All four registered primary projects were rechecked. Trump Archive displayed 15,290 total items, 12,654 Truth Social posts and 1,979 speeches/transcripts; UndoTrump remained at 1,264 actions (731 Term I and 533 Term II); the Immigration Policy Tracking Project browser displayed 1,821 policy actions while its separate homepage measurement was not inferred. Record47's dynamic counters and API remained inaccessible, so prior unlike-unit measurements were preserved. No upstream item was automatically promoted or summed across units."
   },
-  "editorial_snapshot": {
-    "version": "10.188.0",
-    "complete_pack": {
-      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-10-27_v10.188.0.zip",
-      "sha256": "06d88778480193017100a51d7875c69ba9e24791ff0a89342e8e6bb7e32193f1"
-    },
-    "national_pack": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-10-27_v10.188.0.zip",
-      "sha256": "a5908c521bf1b152550f1048f9593aca1fde22036aae3d79d7f455a3a5f5a0aa"
-    },
-    "national_brief": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-10-27_v10.188.0.md",
-      "sha256": "e09c26c8ba6c100500e025d89f08d40cc09acb8fda809947d9904267e125b2b2"
-    },
-    "in6_brief": {
-      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-10-27_v10.188.0.md",
-      "sha256": "74834872cbf5dfeb57e0bb3fa2110d7edd408a87d1afad034ed08878a07766a9"
-    }
-  },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
     "scope": "Standing national-maintenance instruction: merge after evidence, local acceptance and CI gates pass."
+  },
+  "external_archive_inspection": {
+    "checked_at": "2026-10-27T22:11:16.801898Z",
+    "sources": [
+      "https://trump-archive.com/archive",
+      "https://www.undotrump.com/",
+      "https://immpolicytracking.org/policies/",
+      "https://record47.org/"
+    ],
+    "note": "Primary project pages inspected. Trump Archive observed 15,325 total items, 12,687 Truth Social posts and 1,981 speeches/transcripts; prior measurements retained. UndoTrump 1,264 actions and IPTP 1,821 actions unchanged. Record47 dynamic headline counters blank; prior verified measurements and observation times retained. No upstream items imported or unlike units summed."
   }
 }
