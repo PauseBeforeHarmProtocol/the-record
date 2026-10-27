@@ -9013,6 +9013,42 @@
       "provenance_path": "data/editorial_change_notes/10.188.0.json",
       "provenance_sha256": "9d5fe20b6b3007066912fb20d70167b1795c96eac3521c6ea8ef8a3f0bf1c73b",
       "note": "Carried forward from 10.177.0:NAT-2026-10-09-003; no new action, source inspection, factual change, or evidence-as-of advancement is asserted. Publication approval is distinct from the retained original review."
+    },
+    {
+      "change_id": "10.189.0:NAT-2026-10-27-002",
+      "entry_id": "NAT-2026-10-27-002",
+      "as_of_utc": "2026-10-27T22:11:16.801898Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.189.0",
+      "summary": "The Court denied emergency relief from the Texas consent judgment; it gave no reasons and did not decide the merits.",
+      "provenance_path": "data/editorial_change_notes/10.189.0.json",
+      "provenance_sha256": "157cdfed99bc494f99151af52f54c94eb27a6a2b644141986941ae9cca95a33a",
+      "note": "Evidence-as-of inspection time; original event date preserved. MOVES6 is explicitly date-only same-day recovery, not a precise post-noon publication claim."
+    },
+    {
+      "change_id": "10.189.0:NAT-2026-10-13-005",
+      "entry_id": "NAT-2026-10-13-005",
+      "as_of_utc": "2026-10-27T22:11:16.801898Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.189.0",
+      "summary": "An administrative stay through November 6 also protects recipients of earlier shortened-deadline notices; the merits remain pending.",
+      "provenance_path": "data/editorial_change_notes/10.189.0.json",
+      "provenance_sha256": "157cdfed99bc494f99151af52f54c94eb27a6a2b644141986941ae9cca95a33a",
+      "note": "Evidence-as-of inspection time; original event date preserved. MOVES6 is explicitly date-only same-day recovery, not a precise post-noon publication claim."
+    },
+    {
+      "change_id": "10.189.0:NAT-2026-10-27-003",
+      "entry_id": "NAT-2026-10-27-003",
+      "as_of_utc": "2026-10-27T22:11:16.801898Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.189.0",
+      "summary": "MOVES6 is available for air-quality planning, with a two-year conformity transition outside California; modeling changes are not measured pollution outcomes.",
+      "provenance_path": "data/editorial_change_notes/10.189.0.json",
+      "provenance_sha256": "157cdfed99bc494f99151af52f54c94eb27a6a2b644141986941ae9cca95a33a",
+      "note": "Evidence-as-of inspection time; original event date preserved. MOVES6 is explicitly date-only same-day recovery, not a precise post-noon publication claim."
     }
   ],
   "reviews": [
@@ -106463,6 +106499,314 @@
         "The federal habeas ruling and Board of Immigration Appeals decision",
         "Whether DHS substantiates its birth-certificate fraud allegation",
         "Any release, removal action or third-country transfer"
+      ]
+    },
+    {
+      "review_id": "10.189.0:NAT-2026-10-27-002:19a3c08939ef",
+      "entry_id": "NAT-2026-10-27-002",
+      "content_sha256": "19a3c08939ef7d9d02bbd34d0b1418b7ec53e725b5459c23a6a4f1132c35ea1b",
+      "reviewed_at": "2026-10-27T22:11:16.801898Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "231c5d108b112782c188012827b01656d0dc615155fbf7bd1f3edfe5d3ed23fc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "scotus_baltimore_stay_oct27",
+              "locator": "October 27 proceedings: referral and denial; no merits reasoning supplied.",
+              "inspected_at": "2026-10-27T22:11:16.801898Z",
+              "document_sha256": "36d8419de7f0c160da57e2a20b3a18095997c1216bb8d02da0c25dc1698a5656",
+              "origin_group": "Supreme Court of the United States",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "48571f6d8bfe172e54850c32ecd7921c53180e817a71e527e5bfdb3c2aee3aa9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_baltimore_stay_oct27",
+              "locator": "Andrew Chung report: one-sentence emergency denial, June consent judgment, applicants and competing positions; full article directly retrieved.",
+              "inspected_at": "2026-10-27T22:11:16.801898Z",
+              "document_sha256": "b73d97dca7460a9fc358d9547d92123ca1f147cc03cf64e3e65621125cb86379",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "doj_baltimore_stay_response_oct22",
+              "locator": "Opening argument and Statement: standing, claimed lack of statutory authority, consent-judgment history; advocacy not court findings.",
+              "inspected_at": "2026-10-27T22:11:16.801898Z",
+              "document_sha256": "d9e04d2842e7fb966ef793e5b69610d6386b3869a01c31aac6b88083aa2ab1af",
+              "origin_group": "Department of Justice",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "df09642962ffffd09b6f3349df265f8d3ce9366c1717b6957035e6680aea7d8f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_baltimore_stay_oct27",
+              "locator": "Andrew Chung report: one-sentence emergency denial, June consent judgment, applicants and competing positions; full article directly retrieved.",
+              "inspected_at": "2026-10-27T22:11:16.801898Z",
+              "document_sha256": "b73d97dca7460a9fc358d9547d92123ca1f147cc03cf64e3e65621125cb86379",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "352d89387d9010191f1f3d1e548bc969f122b98777b005626d3b653c527e9725",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_baltimore_stay_response_oct22",
+              "locator": "Opening argument and Statement: standing, claimed lack of statutory authority, consent-judgment history; advocacy not court findings.",
+              "inspected_at": "2026-10-27T22:11:16.801898Z",
+              "document_sha256": "d9e04d2842e7fb966ef793e5b69610d6386b3869a01c31aac6b88083aa2ab1af",
+              "origin_group": "Department of Justice",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_baltimore_stay_oct27",
+              "locator": "Andrew Chung report: one-sentence emergency denial, June consent judgment, applicants and competing positions; full article directly retrieved.",
+              "inspected_at": "2026-10-27T22:11:16.801898Z",
+              "document_sha256": "b73d97dca7460a9fc358d9547d92123ca1f147cc03cf64e3e65621125cb86379",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "091950b069965e86a042d98ebb91b490429f2ef5892b32d84a6f9d482f614fd7",
+          "review_note": "Separately reviewed consequence and scope; no observed outcome inferred from a procedural or modeling action."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "a0c27b2a46d66f68fac7f9465ac83f7bd94feefc793001c569217d36f3736532",
+          "review_note": "Separately reviewed strongest agency explanation and explicit evidence-bound tests; party arguments remain attributed."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "e74c71484ed6fafb724734bdabedb660a5d958ad85079b6ec4ccaa1c4137cda2",
+          "review_note": "Separately reviewed competing frame and falsifiable limit; interim action is not a final merits judgment or measured outcome."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, appellate or further court orders and measured effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.189.0:NAT-2026-10-13-005:cae9ed911f6b",
+      "entry_id": "NAT-2026-10-13-005",
+      "content_sha256": "cae9ed911f6b272dd9f30ef600d423f917bb4855a86cb02fa997cf4ee0b3e4f8",
+      "reviewed_at": "2026-10-27T22:11:16.801898Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "4f9f666abf9cf64132729c7aa63d96b5bb2ebe5f5d082cee903b4cb66bbb3684",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "mad_pana_admin_stay_oct27",
+              "locator": "Both pages: ten-day stay, earlier notices requiring less than 30 days, nonresponse protection, November 6 endpoint and modifiable interim posture.",
+              "inspected_at": "2026-10-27T22:11:16.801898Z",
+              "document_sha256": "ca60901d2d3224019f0b4098d8b27f3c0694afb1c9c19cac5e1a217f696d7e45",
+              "origin_group": "U.S. District Court for the District of Massachusetts",
+              "evidence_status": "enjoined"
+            },
+            {
+              "source_id": "reuters_refugee_stay_oct27",
+              "locator": "Nate Raymond report: 30-to-10-day rule, temporary stay, named USCIS response; full article directly retrieved.",
+              "inspected_at": "2026-10-27T22:11:16.801898Z",
+              "document_sha256": "d3267245436ca4c7b9873374445d301cd6c9f874f587ae7ab9424b706667eadf",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "c9520886daf30077c41f57f42a332214a4524b9e14badcd7ca150396b27329d2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "mad_pana_admin_stay_oct27",
+              "locator": "Both pages: ten-day stay, earlier notices requiring less than 30 days, nonresponse protection, November 6 endpoint and modifiable interim posture.",
+              "inspected_at": "2026-10-27T22:11:16.801898Z",
+              "document_sha256": "ca60901d2d3224019f0b4098d8b27f3c0694afb1c9c19cac5e1a217f696d7e45",
+              "origin_group": "U.S. District Court for the District of Massachusetts",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "5adf81dc42cdef3f8529919e658b8f2751fc92dda23beb0ed5778ba62ded7caf",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "mad_pana_admin_stay_oct27",
+              "locator": "Both pages: ten-day stay, earlier notices requiring less than 30 days, nonresponse protection, November 6 endpoint and modifiable interim posture.",
+              "inspected_at": "2026-10-27T22:11:16.801898Z",
+              "document_sha256": "ca60901d2d3224019f0b4098d8b27f3c0694afb1c9c19cac5e1a217f696d7e45",
+              "origin_group": "U.S. District Court for the District of Massachusetts",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "70af2c33a1819de0585a53e4c17e3c53d737c42c16553958128b378ac7e7dd00",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_refugee_stay_oct27",
+              "locator": "Nate Raymond report: 30-to-10-day rule, temporary stay, named USCIS response; full article directly retrieved.",
+              "inspected_at": "2026-10-27T22:11:16.801898Z",
+              "document_sha256": "d3267245436ca4c7b9873374445d301cd6c9f874f587ae7ab9424b706667eadf",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "ecd9dce1f77d638e725db3bc15fe981553eff7f3e44619740778dda32ab9a356",
+          "review_note": "Separately reviewed consequence and scope; no observed outcome inferred from a procedural or modeling action."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "07aa1a10fd5e2782845e3e8e6a1551937751d4b669596cfc1d569cdea8155e73",
+          "review_note": "Separately reviewed strongest agency explanation and explicit evidence-bound tests; party arguments remain attributed."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "21365c325399f95b8f8a74b4876d846007972a7ca6e9df0846ef4232e3c49a02",
+          "review_note": "Separately reviewed competing frame and falsifiable limit; interim action is not a final merits judgment or measured outcome."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, appellate or further court orders and measured effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.189.0:NAT-2026-10-27-003:a60f8c135bff",
+      "entry_id": "NAT-2026-10-27-003",
+      "content_sha256": "a60f8c135bffd90600fb7cee0b8dc909bc5c9eba6b44f87539ba925b559ecbc8",
+      "reviewed_at": "2026-10-27T22:11:16.801898Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "9640395e39a99c76b406ebbf9a70520e1b1944d7202ac30b93195ed66105fbd5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "epa_moves6_notice_oct27",
+              "locator": "EPA notice, sections II-IV and DATES, printed pages 67565-67570: October 27 effective date; 2028 grace endpoint; changed EV defaults and area-specific results.",
+              "inspected_at": "2026-10-27T22:11:16.801898Z",
+              "document_sha256": "21ae359b8323f45a5d78b3cac4349147219d8dcad41075b035f85e814de8c430",
+              "origin_group": "Environmental Protection Agency / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "f4a85703f5ab4c4d34319b665abddd546300088f9a96f5e43437ab6548cbf349",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "epa_moves6_notice_oct27",
+              "locator": "EPA notice, sections II-IV and DATES, printed pages 67565-67570: October 27 effective date; 2028 grace endpoint; changed EV defaults and area-specific results.",
+              "inspected_at": "2026-10-27T22:11:16.801898Z",
+              "document_sha256": "21ae359b8323f45a5d78b3cac4349147219d8dcad41075b035f85e814de8c430",
+              "origin_group": "Environmental Protection Agency / Federal Register",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "epa_moves6_overview_oct27",
+              "locator": "Background and Guidance: reduced EV fractions, updated real-world inputs and corrections; no measured nationwide pollution outcome.",
+              "inspected_at": "2026-10-27T22:11:16.801898Z",
+              "document_sha256": "5ff708627b19bd2716c8c7233edb25c2a260cbaba69f4e3e88cac01fe7f20314",
+              "origin_group": "Environmental Protection Agency",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "d828bd8626c9486cf35d91c27dfcb448d8bb71d5b5634f0276ac17eca4c9e432",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "epa_moves6_notice_oct27",
+              "locator": "EPA notice, sections II-IV and DATES, printed pages 67565-67570: October 27 effective date; 2028 grace endpoint; changed EV defaults and area-specific results.",
+              "inspected_at": "2026-10-27T22:11:16.801898Z",
+              "document_sha256": "21ae359b8323f45a5d78b3cac4349147219d8dcad41075b035f85e814de8c430",
+              "origin_group": "Environmental Protection Agency / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "a8838f244fcf3601d75060d929b421508f60dfc444cccc28c9beb228dd512a31",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "epa_moves6_notice_oct27",
+              "locator": "EPA notice, sections II-IV and DATES, printed pages 67565-67570: October 27 effective date; 2028 grace endpoint; changed EV defaults and area-specific results.",
+              "inspected_at": "2026-10-27T22:11:16.801898Z",
+              "document_sha256": "21ae359b8323f45a5d78b3cac4349147219d8dcad41075b035f85e814de8c430",
+              "origin_group": "Environmental Protection Agency / Federal Register",
+              "evidence_status": "implemented"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "dd606c233970169ac045e28bf550631aa26a4c7b8b76829fe86a12643e26c880",
+          "review_note": "Separately reviewed consequence and scope; no observed outcome inferred from a procedural or modeling action."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "1c043c0b8855aa11253f9d1b23815a0d98c5eb9d161a45bdcbf5c14ac847651a",
+          "review_note": "Separately reviewed strongest agency explanation and explicit evidence-bound tests; party arguments remain attributed."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "07274a2a71449b5856af3e1e03ba7209b9ac8a77b00d04f783ef89ec9540a62a",
+          "review_note": "Separately reviewed competing frame and falsifiable limit; interim action is not a final merits judgment or measured outcome."
+        }
+      ],
+      "unresolved_questions": [
+        "Later implementation, appellate or further court orders and measured effects remain unresolved."
       ]
     }
   ],
