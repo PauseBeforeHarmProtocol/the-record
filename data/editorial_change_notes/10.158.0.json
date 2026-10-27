@@ -1,0 +1,117 @@
+{
+  "version": "10.158.0",
+  "base_release_version": "10.157.0",
+  "base_commit": "bff369b372359d338eee1f7150edc25e0e2f50ee",
+  "research_window": {
+    "from_utc": "2026-10-18T03:56:23Z",
+    "through_utc": "2026-10-18T16:02:56Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary. One reported operational change was added and one existing public-land record was materially refreshed; no parallel East Potomac record was created."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository's final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-10-001",
+      "kind": "refreshed",
+      "summary": "Adds Trump's formal East Potomac plan, November 15 closure target, approximately 15-month schedule and unresolved funding and court constraints.",
+      "duplicate_review": "Consolidated into the stable East Potomac implementation and litigation lifecycle rather than counted as a separate redesign event."
+    },
+    {
+      "entry_id": "NAT-2026-10-18-001",
+      "kind": "added",
+      "summary": "Records Zelenskyy's reported restoration of missile-warning intelligence after an interruption while preserving Trump's conflicting statement and unresolved scope.",
+      "duplicate_review": "A new operational lifecycle record; related earlier rhetoric and the separately queued Starshield restriction did not already canonically represent the reported intelligence restoration."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "truth_east_potomac_plan_oct18",
+      "origin_group": "Donald Trump / Truth Social",
+      "evidence_extract": "Trump published a conceptual East Potomac golf-course plan and said the course would close November 15, restoration work would begin that day, reopening was expected in about 15 months, and the course would remain public.",
+      "document_sha256": "a238dfc49f8fcf3ed4b6f0df822a465ce22e16d817d2706c321f45cee2d01019",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-18T16:08:22Z"
+    },
+    {
+      "source_id": "ap_east_potomac_plan_oct18",
+      "origin_group": "Associated Press",
+      "evidence_extract": "Associated Press reported Trump's October 18 redevelopment announcement, the stated November 15 closure and roughly 15-month schedule, the continuing court halt, and unresolved cost and funding details.",
+      "document_sha256": "b418e87d8d1a5ecf45b829c9820bd0779ffed5884cfa9709bc49fe397ec5d4d5",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-18T16:08:22Z"
+    },
+    {
+      "source_id": "wapo_east_potomac_plan_oct18",
+      "origin_group": "The Washington Post",
+      "evidence_extract": "The Washington Post reported that the published plan moved the proposed redevelopment beyond its earlier conceptual description while cost and funding remained undisclosed and the October 26 court halt remained in place.",
+      "document_sha256": "a7ee0e8142f4e2af0c924c84b8b0bf8b2c0183cb239651e4d4387176bc255a6c",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-18T16:08:22Z"
+    },
+    {
+      "source_id": "reuters_ukraine_intel_restored_oct18",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported Zelenskyy's NBC statement that U.S. intelligence sharing had been interrupted and later de-blocked, that it now works, and that Trump had earlier said sharing continued.",
+      "document_sha256": "ed22ad22d2d11afa398a47e2800e6ded19ad5f74865e8a885221e8210f9c305f",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-18T16:08:22Z"
+    },
+    {
+      "source_id": "ap_ukraine_intel_restored_oct18",
+      "origin_group": "Associated Press",
+      "evidence_extract": "Associated Press reported Zelenskyy's statement that U.S.-Ukraine intelligence sharing had resumed after being blocked for some period, while describing the assertion as his account rather than a separately confirmed U.S. action.",
+      "document_sha256": "3ea2ff3d61c3c39b9c9f4db339650bb6c6910a92a13504caffb62199c93e4a10",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-18T16:08:22Z"
+    }
+  ],
+  "truth_social_media_inspection": {
+    "post_ids": [
+      "117462516183501342",
+      "117462515726539405",
+      "117462449149582042",
+      "117462306089931035",
+      "117462292255470282",
+      "117461843705117717",
+      "117461819331327618",
+      "117461628770166051"
+    ],
+    "scope": "All eight new post texts were inspected. The East Potomac plan image was directly reviewed. Representative frames from the seven-minute France video were inspected, but complete motion, audio and captions were not reviewed; that media remains unavailable for completed audiovisual review.",
+    "provenance": "data/truth_social_feed_meta.json, data/truth_social_seed.json and data/truth_social_reviews.json"
+  },
+  "trump_tv_inspection": {
+    "sources": [
+      "https://www.whitehouse.gov/trumptv/",
+      "https://www.whitehouse.gov/live/",
+      "https://www.whitehouse.gov/videos/",
+      "https://www.whitehouse.gov/remarks/",
+      "https://www.whitehouse.gov/releases/"
+    ],
+    "scope": "Official page metadata and stable links only; audiovisual content, captions and complete transcripts were not retrieved.",
+    "finding": "Stream ID remained A4gNgHfZ-v4. No October 18 library item was listed; the two short October 17 clips and long replay remained the newest metadata. No qualifying new item was located in the material reviewed."
+  },
+  "withheld": [
+    {
+      "title": "Netanyahu election endorsement and renewed Iran threat",
+      "reason": "The posts and independent reports established an endorsement and repeated conditional military threat but no new U.S. order, strike, war-powers notice or other implementation."
+    },
+    {
+      "title": "U.S. diplomats visit Taybeh after settler attacks",
+      "reason": "The visit was implemented diplomacy, but no sanction, aid condition, formal investigation result or other material U.S. policy change was identified."
+    },
+    {
+      "title": "Zelenskyy call with Witkoff and Kushner",
+      "reason": "The call was routine diplomacy and produced no published agreement, formal proposal or implementing instrument by cutoff."
+    },
+    {
+      "title": "France, campaign and patriotic Truth Social posts",
+      "reason": "Rhetoric, a third-party allegation and a patriotic video supplied no independently verified qualifying federal action; complete audiovisual review of the France clip remained unavailable."
+    },
+    {
+      "title": "Trump TV metadata recheck",
+      "reason": "No October 18 item was listed; only metadata for the prior October 17 clips and replay was accessible, and no qualifying new item was located in the material reviewed."
+    }
+  ],
+  "corrections": []
+}

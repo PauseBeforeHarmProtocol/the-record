@@ -26,27 +26,27 @@ The Record pairs a concise, source-bound editorial front page with a full search
 <!-- GENERATED_ARCHIVE_METRICS_START -->
 ## Generated Scope and Quality Snapshot
 
-Generated deterministically from canonical JSON for maintenance release **10.130.0**. Editorial news currentness was checked **2026-10-09 5:57 PM EDT**; QA inputs were updated **2026-10-09T21:57:55Z**.
+Generated deterministically from canonical JSON for maintenance release **10.188.0**. Editorial news currentness was checked **2026-10-27 6:00 AM EDT**; QA inputs were updated **2026-10-27T10:13:00Z**.
 
 | Measure | Exact count |
 |---|---:|
 | Canonical legacy rows stored | 4,742 |
 | Active canonical legacy entries | 4,731 |
 | Superseded duplicate tombstones (excluded from totals/search) | 11 |
-| Current national entries bridged into the archive | 367 |
-| Full archive entries rendered at runtime | 5,098 |
-| Attached source references at runtime | 7,821 |
-| Distinct stored source URLs at runtime | 6,423 |
-| Current entries with Maybe / Therefore | 371 |
+| Current national entries bridged into the archive | 446 |
+| Full archive entries rendered at runtime | 5,177 |
+| Attached source references at runtime | 8,127 |
+| Distinct stored source URLs at runtime | 6,726 |
+| Current entries with Maybe / Therefore | 450 |
 | Current entries awaiting Maybe / Therefore | 0 |
-| Current entries explicitly reviewed or corrected | 371 |
+| Current entries explicitly reviewed or corrected | 450 |
 | Current entries pending current-standard review | 0 |
-| Legacy entries with Maybe / Therefore | 1,538 |
-| Legacy entries awaiting Maybe / Therefore | 3,193 |
-| Logged legacy revision records | 155 |
+| Legacy entries with Maybe / Therefore | 1,539 |
+| Legacy entries awaiting Maybe / Therefore | 3,192 |
+| Logged legacy revision records | 156 |
 | Normalized external crosslinks | 1 |
 
-Active legacy review states: **corrected: 15, in-review: 7, legacy-unreviewed: 4,709**. “Legacy-unreviewed” means not yet revalidated under the current standard; it does not mean false. Superseded rows remain available as stable audit redirects but do not count as active events. The canonical legacy layer and generated current bridge overlap; the generated metric detects **no inter-layer continuity gap**.
+Active legacy review states: **corrected: 16, in-review: 7, legacy-unreviewed: 4,708**. “Legacy-unreviewed” means not yet revalidated under the current standard; it does not mean false. Superseded rows remain available as stable audit redirects but do not count as active events. The canonical legacy layer and generated current bridge overlap; the generated metric detects **no inter-layer continuity gap**.
 
 ### The Six Eras
 

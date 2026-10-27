@@ -83,6 +83,32 @@ class ReviewTests(unittest.TestCase):
         self.assertEqual(pending_reviews([post], records), records)
 
 
+class PublicationConsolidationTests(unittest.TestCase):
+    def test_receipt_distinguishes_carried_forward_publication_from_new_research(self):
+        import package_current_release as packaging
+        entries = json.loads((ROOT / "data/current_entries.json").read_text())
+        ledger = json.loads((ROOT / "data/source_ledger.json").read_text())
+        release = copy.deepcopy(packaging.RELEASE)
+        entry_id = entries[0]["id"]
+        release.update(new_entry_ids=[entry_id], added_entry_ids=[entry_id], refreshed_entry_ids=[])
+        release.pop("maintenance_revision", None)
+        release["publication_consolidation"] = {
+            "base_public_release": "fixture-base",
+            "latest_staged_release": "fixture-staged",
+            "stage_count": 2,
+            "authorization": {"authority": "Fixture publisher", "scope": "Explicit scoped approval."},
+            "scope": "No new source inspection is asserted.",
+            "inspection_scope": "Inspection times remain historical.",
+            "withheld_scope": "Earlier leads remain in preserved receipts.",
+        }
+        with patch.object(packaging, "RELEASE", release):
+            receipt = packaging.run_receipt(entries, ledger).decode()
+        self.assertIn("Authorized publication consolidation — not a new research run", receipt)
+        self.assertIn("Added since public main: 1", receipt)
+        self.assertIn("Inspection times remain historical.", receipt)
+        self.assertNotIn("## Added or materially refreshed records", receipt)
+
+
 class AcceptanceTests(unittest.TestCase):
     def test_missing_jsonschema_cannot_pass(self):
         result = subprocess.run([sys.executable, "-S", "scripts/validate_federated_records.py"], cwd=ROOT, capture_output=True, text=True)

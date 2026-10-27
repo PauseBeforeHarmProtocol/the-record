@@ -1,0 +1,135 @@
+{
+  "version": "10.150.0",
+  "base_release_version": "10.149.1",
+  "base_commit": "3d25f63855625d484d1664a41821897734495579",
+  "research_window": {
+    "from_utc": "2026-10-15T09:57:44Z",
+    "through_utc": "2026-10-15T15:59:59Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Exact scan from the prior accepted open-branch boundary. Four stable national records were materially refreshed; weaker, pending and duplicate leads were withheld rather than padded."
+  },
+  "publication_authorization": "The user authorizes maintenance branches, pull requests and merging after evidence, local acceptance and successful CI; repository policy still requires Phillip Linstrum’s final publication acceptance before merge.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-15-003",
+      "kind": "materially_refreshed",
+      "summary": "Seven DOJ subpoenas to Nevada’s election office and conflicting federal-state evidence were added to the existing noncitizen-voting record.",
+      "duplicate_review": "Later compulsory-process evidence in the same national enforcement campaign; consolidated into the stable record."
+    },
+    {
+      "entry_id": "NAT-2026-10-05-005",
+      "kind": "materially_refreshed",
+      "summary": "Trump canceled the public livestream of Hasan’s scheduled execution while retaining the date, method and immediate-family access.",
+      "duplicate_review": "A reversed access condition in the same scheduled execution; consolidated into the stable record."
+    },
+    {
+      "entry_id": "NAT-2026-10-07-003",
+      "kind": "materially_refreshed",
+      "summary": "CBP delayed mandatory international-mail process compliance for 90 days, to January 20, 2027.",
+      "duplicate_review": "A changed compliance date for the same mail-entry process; consolidated into the stable record."
+    },
+    {
+      "entry_id": "NAT-2026-10-08-005",
+      "kind": "materially_refreshed",
+      "summary": "The Supreme Court vacated the Fourth Circuit writ compelling FCC action without deciding the political-ad rate merits.",
+      "duplicate_review": "Final procedural stage in the same FCC deadline dispute; consolidated into the stable record."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "truth_hasan_no_livestream_oct15",
+      "document_sha256": "14b7146b29a69bf1c26e463cf3d5d00c89749fb0136cf68f9a2230a94361733a",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete webpage.",
+      "inspected_at": "2026-10-15T15:59:59Z",
+      "origin_group": "Truth Social / Donald J. Trump",
+      "evidence_extract": "Trump published that the Nidal Hasan execution would not be streamed, retained the firing-squad schedule, and said immediate victim families could attend. The post is evidence only of Trump’s publication and announced reversal."
+    },
+    {
+      "source_id": "ap_hasan_no_livestream_oct15",
+      "document_sha256": "436b0d02767e5856c85c2d7d5a058422436de20ed559b15e91cf2f641b1b92ec",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete webpage.",
+      "inspected_at": "2026-10-15T15:59:59Z",
+      "origin_group": "Associated Press",
+      "evidence_extract": "AP independently reported Trump’s cancellation of the Pentagon livestream, the unchanged December 3 execution date, family viewing, Pentagon refusal to elaborate beyond the statement, and bipartisan criticism of the earlier broadcast plan."
+    },
+    {
+      "source_id": "scotus_fcc_brown_order_oct14",
+      "document_sha256": "82dab3465b4f396507c271984ca43871c4b215d6647dc2d39a7a466e5b802337",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete webpage.",
+      "inspected_at": "2026-10-15T15:59:59Z",
+      "origin_group": "Supreme Court of the United States",
+      "evidence_extract": "The inspected per curiam opinion vacated the Fourth Circuit writ requiring FCC action and stated that federal law did not require the Commission to decide within a particular time; it did not decide entitlement to the lowest unit charge."
+    },
+    {
+      "source_id": "reuters_fcc_brown_order_oct14",
+      "document_sha256": "1d193014ff1d4739f2c781ace487f0e870de47293abb41b5cd67c8d504a3a9b4",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete webpage.",
+      "inspected_at": "2026-10-15T15:59:59Z",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported the Supreme Court vacatur, procedural scope, continuing FCC process and election-period practical context without describing the rate-policy merits as resolved."
+    },
+    {
+      "source_id": "reuters_nevada_voter_subpoenas_oct15",
+      "document_sha256": "6c391ac5355de33362e0400c644b719465f1cb95f6b831b5332fdfb762ea8328",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete webpage.",
+      "inspected_at": "2026-10-15T15:59:59Z",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reviewed Nevada public records showing seven DOJ subpoenas between June 16 and September 2 and reported the conflicting on-record federal and state claims, including Aguilar’s unproven motive allegation and the unresolved accuracy of federal lists."
+    },
+    {
+      "source_id": "reuters_cbp_mail_delay_oct15",
+      "document_sha256": "7f391e16453f04295722205f0e9d81aba33bd90c52d13cdb08ab03ee1b6fa2b4",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete webpage.",
+      "inspected_at": "2026-10-15T15:59:59Z",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported CBP’s October 14 announcement moving mandatory international-mail process compliance from October 22, 2026, to January 20, 2027, plus the agency rationale and patient and pharmacy concerns."
+    }
+  ],
+  "truth_social_media_inspection": {
+    "post_ids": [
+      "117445092838800174",
+      "117445238705160805",
+      "117445238986898595",
+      "117445465162088586",
+      "117445466418139918",
+      "117445467010481436"
+    ],
+    "scope": "Representative video frames only. Full audio and complete transcripts were unavailable; no claim from the audiovisual content was accepted.",
+    "provenance": "data/truth_social_reviews.json"
+  },
+  "trump_tv_inspection": {
+    "sources": [
+      "https://www.whitehouse.gov/trumptv/",
+      "https://www.whitehouse.gov/live/",
+      "https://www.whitehouse.gov/videos/",
+      "https://www.whitehouse.gov/remarks/",
+      "https://www.whitehouse.gov/news/"
+    ],
+    "scope": "Official page metadata and stable links only; audiovisual content and complete transcripts were not retrieved.",
+    "finding": "No qualifying new item located in the material reviewed."
+  },
+  "withheld": [
+    {
+      "title": "White House AI task force meeting preview",
+      "reason": "Scheduled meeting; no completed outcome, charter, order or formal proposal by cutoff."
+    },
+    {
+      "title": "Six Truth Social video posts",
+      "reason": "Full audio and complete transcripts unavailable; no sampled visual supplied a qualifying action."
+    },
+    {
+      "title": "Possible easing of Russian shadow-fleet sanctions",
+      "reason": "One unnamed source described consideration; no order, second confirmation or implementation."
+    },
+    {
+      "title": "Trump TV recheck",
+      "reason": "Metadata-only recheck disclosed; no qualifying new item located in reviewed material."
+    },
+    {
+      "title": "Lisa Cook scheduling dispute",
+      "reason": "No official rescheduling, finding or other lifecycle change by cutoff."
+    }
+  ],
+  "corrections": []
+}

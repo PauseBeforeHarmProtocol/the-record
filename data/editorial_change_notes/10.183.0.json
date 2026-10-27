@@ -1,0 +1,70 @@
+{
+  "version": "10.183.0",
+  "base_release_version": "10.182.1",
+  "base_commit": "52db8f5723ac7dee008d78241fdb9ad1cfa7fa54",
+  "research_window": {
+    "from_utc": "2026-10-25T10:03:23Z",
+    "through_utc": "2026-10-25T16:01:47Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary. One late-indexed October 23 district-court ruling was reconciled into its existing election-record lifecycle; no parallel event was created."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository's final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-10-008",
+      "kind": "material_refresh",
+      "summary": "A federal judge dismissed DOJ's Utah voter-file suit with prejudice after rejecting the Title III theory as applied to the statewide list.",
+      "duplicate_review": "The ruling resolves the Utah lawsuit already described in NAT-2026-09-10-008. The same parties, voter-file demand, statutory theory and litigation lifecycle require a same-event update rather than a new canonical count."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "d_utah_henderson_order_oct23",
+      "origin_group": "U.S. District Court for the District of Utah",
+      "evidence_extract": "In United States v. Henderson, Case No. 2:26-cv-00166-DBB, Document 68, filed and signed October 23, 2026, Judge David Barlow held that Utah's statewide voter registration list falls outside Title III because the lieutenant governor develops it rather than receiving it as a record that comes into her possession. The court denied the attorney general's motion to compel, granted the defendants' motions to dismiss, dismissed the complaint with prejudice, and did not reach alternative arguments concerning the demand's basis and purpose, state-law redactions, or the Privacy Act.",
+      "document_sha256": "4c77887af8520ee972d66856ffd8408bcc43a7bee2686d084b4e753e39cd6e7a",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the complete PDF.",
+      "inspected_at": "2026-10-25T16:01:47Z"
+    },
+    {
+      "source_id": "ksl_henderson_dismissal_oct23",
+      "origin_group": "KSL",
+      "evidence_extract": "KSL reported on October 23, 2026 that Judge David Barlow dismissed DOJ's suit seeking Utah's voter rolls, quoted the court's statutory holding, recorded Henderson's response, and reported that DOJ did not immediately comment. KSL also reported that the case was dismissed with prejudice and that DOJ had lost more than 25 similar cases.",
+      "document_sha256": "e8ce915f0f61d58cb3fb29dc1789b91bc6cfdc4015961389da06736e22c2d7a8",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-25T16:01:47Z"
+    }
+  ],
+  "corrections": [],
+  "withheld": [
+    {
+      "title": "Two newer Truth Social posts",
+      "reason": "One linked a live campaign broadcast and one relayed foreign provincial-election reporting. Neither independently established a qualifying U.S. federal action."
+    },
+    {
+      "title": "White House energy-and-gas-price roundup",
+      "reason": "The release repackaged prior actions and promotional claims without a new instrument or independent outcome measurement."
+    },
+    {
+      "title": "Immigration judge pressure account",
+      "reason": "The report remained a consequential firsthand allegation without an internal directive, adjudicated finding or second independent confirmation."
+    },
+    {
+      "title": "Trump TV unchanged October 23 listings",
+      "reason": "Official pages and metadata were rechecked; footage, audio and captions were not retrieved, and no qualifying new item was located in the material reviewed."
+    }
+  ],
+  "truth_social_media_inspection": {
+    "new_posts": 2,
+    "latest_post_id": "117502341995120080",
+    "latest_post_at_utc": "2026-10-25T15:50:50.854Z",
+    "latest_post_at_eastern": "2026-10-25 11:50:50 AM EDT",
+    "finding": "Both nonempty texts were directly reviewed; neither had attached media. One linked a live campaign broadcast and one relayed foreign provincial-election reporting. No separate qualifying federal action was found."
+  },
+  "trump_tv_inspection": {
+    "checked_at": "2026-10-25T16:01:47Z",
+    "stream_video_id": "A4gNgHfZ-v4",
+    "finding": "Official channel, live hub, dated video library, remarks and release indexes were rechecked. October 23 listings remained newest; the October 25 energy release was retrospective promotional copy, not a broadcast transcript or new instrument. Footage, audio and captions were not retrieved. No qualifying new item was located in the material reviewed."
+  }
+}

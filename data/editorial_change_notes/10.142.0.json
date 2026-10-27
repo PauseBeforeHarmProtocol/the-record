@@ -1,0 +1,62 @@
+{
+  "version": "10.142.0",
+  "base_release_version": "10.141.0",
+  "base_commit": "3f1fb8be6470b808956955a8e33902c82a4c172c",
+  "research_window": {
+    "from_utc": "2026-10-13T04:00:50Z",
+    "through_utc": "2026-10-13T10:03:20Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Exact scan from the prior accepted open-branch boundary. One existing energy-ceasefire record was materially refreshed with reported post-announcement strikes and the Kremlin's later statement that contacts remained ongoing."
+  },
+  "publication_authorization": "The user authorizes maintenance branches, pull requests and merging after evidence, local acceptance and successful CI; repository policy still requires Phillip Linstrum's final publication acceptance before merge.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-13-001",
+      "kind": "material_refresh",
+      "summary": "Reuters, Associated Press and the Ukrainian presidency reported Russian strikes on Ukrainian energy sites after Trump's immediate-ceasefire announcement; the Kremlin later said contacts were continuing without confirming accepted terms.",
+      "duplicate_review": "This is an implementation and compliance development in the existing September–October energy-ceasefire event. The stable record was refreshed rather than counted again."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "reuters_energy_strikes_oct12",
+      "document_sha256": "69e7e4b3614c288ac4028eaf327fa4fcfd085ce49eec94131debcbb448c00894",
+      "inspected_at": "2026-10-13T10:03:20Z",
+      "note": "Browser-rendered article text inspected for publication time, reported target count, named facilities, Ukraine's stated restraint, Trump response and Kremlin position. Specific target claims remain attributed."
+    },
+    {
+      "source_id": "ap_energy_strikes_oct12",
+      "document_sha256": "d8aee00cc4bfc74601888911293602070983e94154a6a1885f2f97f511590f58",
+      "inspected_at": "2026-10-13T10:03:20Z",
+      "note": "Full retrieved page inspected for reported energy strikes, on-scene attack documentation, Trump's response, Ukrainian restraint claim and the Kremlin's nonconfirmation."
+    },
+    {
+      "source_id": "ukraine_energy_strikes_oct12",
+      "document_sha256": "1520d9da8f57c99be02afba0f7b3184d603bd28f408ed35b1f836dc71abfed83",
+      "inspected_at": "2026-10-13T10:03:20Z",
+      "note": "Official statement inspected as primary evidence of Ukraine's claim about energy targets and unilateral restraint, not as independent proof of every battlefield detail."
+    },
+    {
+      "source_id": "reuters_kremlin_contacts_oct13",
+      "document_sha256": "6278f3521bf56463a6f70d903436b679626784c7a55af09c59b332bf0f7e4690",
+      "inspected_at": "2026-10-13T10:03:20Z",
+      "note": "Browser-rendered article text inspected for the Kremlin's continuing-contacts statement, missing acceptance confirmation and the Russian Defense Ministry's narrower overnight-target denial."
+    }
+  ],
+  "withheld": [
+    {
+      "title": "CBP ends routine admission stamps at primary processing",
+      "reason": "The October 1 carrier notice implements electronic I-94 reliance with stated exceptions, but the reviewed evidence showed an administrative processing change rather than a material national consequence meeting the archive threshold."
+    },
+    {
+      "title": "State Department criticism of Chinese sanctions on Belize and Paraguay officials",
+      "reason": "The statement announced no new U.S. sanction, diplomatic restriction or other implemented action."
+    },
+    {
+      "title": "Trump TV and official video-library recheck",
+      "reason": "The same seven October 12 library items remained visible. Only titles, dates, durations and three linked video IDs were accessible; no qualifying new item was located in the material reviewed."
+    }
+  ],
+  "corrections": []
+}

@@ -1,0 +1,68 @@
+{
+  "version": "10.160.0",
+  "base_release_version": "10.159.0",
+  "base_commit": "6fd943d3e2fddabda4113289031fe8015fb94db8",
+  "research_window": {
+    "from_utc": "2026-10-18T21:58:41Z",
+    "through_utc": "2026-10-19T04:03:11Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary. One existing sanctions record was materially refreshed with a bounded initial market measurement; no parallel Russia record was created."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository's final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-16-004",
+      "kind": "refreshed",
+      "summary": "Adds the first measured oil-price response reported after the Graham Act waiver while preserving the early-trading, profit-taking and policy-uncertainty limits on interpretation.",
+      "duplicate_review": "Consolidated into the stable Graham Act enactment, waiver and review lifecycle rather than counted as a parallel Russia or energy-market event."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "reuters_oil_russia_waiver_market_oct19",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported that in early Asian trading on October 19, Brent fell $1.94, or 1.77%, to $107.92 and West Texas Intermediate fell 83 cents, or 0.82%, to $100.58 after Trump waived Graham Act sanctions and tariffs. A cited analyst attributed the move to a softer sanctions tone and profit-taking, and said uncertainty over the details and duration meant markets were unlikely to price in a sustained supply increase.",
+      "document_sha256": "5ed7991896f3971900954ce481fd9a5296381c7265b4761d1e46be9187a959ac",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-19T04:07:21Z"
+    }
+  ],
+  "truth_social_media_inspection": {
+    "post_ids": [
+      "117465086077034849",
+      "117464943162220490",
+      "117464867147953620",
+      "117464781656394459",
+      "117464705630282037"
+    ],
+    "scope": "All five new post texts and three attached still images were inspected. Representative frames from one video were inspected, but complete motion, audio and captions were not reviewed; that media remains unavailable for completed audiovisual review.",
+    "provenance": "data/truth_social_feed_meta.json, data/truth_social_seed.json and data/truth_social_reviews.json"
+  },
+  "trump_tv_inspection": {
+    "sources": [
+      "https://www.whitehouse.gov/trumptv/",
+      "https://www.whitehouse.gov/live/",
+      "https://www.whitehouse.gov/videos/",
+      "https://www.whitehouse.gov/remarks/",
+      "https://www.whitehouse.gov/releases/"
+    ],
+    "scope": "Official page metadata and stable links only; audiovisual content, captions and complete transcripts were not retrieved.",
+    "finding": "Stream ID remained A4gNgHfZ-v4. No October 19 library item was listed; the October 17 clips and replay remained the newest metadata. No qualifying new item was located in the material reviewed."
+  },
+  "withheld": [
+    {
+      "title": "Five new Truth Social posts",
+      "reason": "The historical montage, book and rally promotions, ceremonial airport-landing post and unverified prison-release claims did not independently establish a qualifying federal action; complete audiovisual review of the montage remained unavailable."
+    },
+    {
+      "title": "Trump TV metadata recheck",
+      "reason": "No October 19 item was listed, and metadata for the October 17 clips and replay did not establish a new qualifying action."
+    },
+    {
+      "title": "External archive discovery inputs",
+      "reason": "Measurements were retained by their separate units and no upstream item was promoted automatically."
+    }
+  ],
+  "corrections": []
+}

@@ -1,0 +1,60 @@
+{
+  "version": "10.139.0",
+  "base_release_version": "10.138.0",
+  "base_commit": "8cbe4a8f87c9a336116c0a102348dc5705f24c47",
+  "research_window": {
+    "from_utc": "2026-10-12T03:58:43Z",
+    "through_utc": "2026-10-12T16:19:19Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Exact scan from the prior accepted open-branch boundary. One new qualifying national record was added; continuations were withheld rather than padded."
+  },
+  "publication_authorization": "The user authorizes maintenance branches, pull requests and merging after evidence, local acceptance and successful CI; repository policy still requires Phillip Linstrum's final publication acceptance before merge.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-12-001",
+      "kind": "new_record",
+      "summary": "Homeland Security Investigations agents executed a Justice Department-secured, judicially authorized search warrant at Rep. Ilhan Omar's home in an ongoing federal criminal investigation.",
+      "duplicate_review": "Distinct lifecycle stage from LEG-004083's 2025 statement and policy memo; the new row records an executed search and preserves the absence of charges or findings."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "reuters_omar_home_search_oct12",
+      "document_sha256": "57ff173c644b621a5046c5e0334bf40fcdc53be4c7da115c0dbc76f01f80a9e0",
+      "inspected_at": "2026-10-12T16:09:01Z",
+      "note": "Retrieved source text was inspected for the bounded event, investigation scope, response and evidentiary limitations; hash identifies the exact retained review extract."
+    },
+    {
+      "source_id": "ap_omar_home_search_oct12",
+      "document_sha256": "56a1558818ce8df6d83f4ba060e406d003596b43f8a7f136a5494a63715d11e2",
+      "inspected_at": "2026-10-12T16:09:01Z",
+      "note": "Retrieved source text was inspected for the bounded event, investigation scope, response and evidentiary limitations; hash identifies the exact retained review extract."
+    },
+    {
+      "source_id": "abc_omar_home_search_oct12",
+      "document_sha256": "90d64e344e7f83907322ba67a637c2a252451122774245a4790e096518cfb95a",
+      "inspected_at": "2026-10-12T16:09:01Z",
+      "note": "Retrieved source text was inspected for the bounded event, investigation scope, response and evidentiary limitations; hash identifies the exact retained review extract."
+    }
+  ],
+  "withheld": [
+    {
+      "title": "October 12 DOJ election-charge batch",
+      "reason": "A continuation of the charging series already synthesized in NAT-2026-09-15-003; accusations did not materially change the existing evidence-bounded aggregate finding."
+    },
+    {
+      "title": "Thirty-two new Truth Social posts",
+      "reason": "Text and images were campaign-oriented, promotional, reposts, media criticism or repeated policy defense. Eleven video media states remain pending because complete audiovisual review was unavailable; no action was inferred."
+    },
+    {
+      "title": "Trump TV and official video-library recheck",
+      "reason": "The official pages exposed no newer dated library item than the October 11 edited clip already reviewed. Metadata only was inspected; no qualifying new item was located in the material reviewed."
+    },
+    {
+      "title": "Russia-diesel defense and scale follow-up",
+      "reason": "The presidential defense and further scale reporting continued NAT-2026-10-09-003 without a new instrument, delivery, ruling, reversal or measured sustained outcome."
+    }
+  ],
+  "corrections": []
+}

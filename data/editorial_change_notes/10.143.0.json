@@ -1,0 +1,58 @@
+{
+  "version": "10.143.0",
+  "base_release_version": "10.142.0",
+  "base_commit": "3ebcacaab2f6556014554f4b4cf5289e0b93c69a",
+  "research_window": {
+    "from_utc": "2026-10-13T10:03:20Z",
+    "through_utc": "2026-10-13T16:05:50Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Exact scan from the prior accepted open-branch boundary. Three formally published regulatory actions were added, and the existing DOGE transparency litigation legacy record was corrected and advanced through the Supreme Court's certiorari grant."
+  },
+  "publication_authorization": "The user authorizes maintenance branches, pull requests and merging after evidence, local acceptance and successful CI; repository policy still requires Phillip Linstrum's final publication acceptance before merge.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-13-001",
+      "kind": "added",
+      "summary": "CBP formally proposed mandatory advance traveler data, vetting and possible no-board advice for covered international rail service.",
+      "duplicate_review": "No current or legacy record, normalized title, source URL or recent maintenance pull request matched the proposed international-rail framework."
+    },
+    {
+      "entry_id": "NAT-2026-10-13-002",
+      "kind": "added",
+      "summary": "FDA finalized voluntary regulatory permission for safe and suitable salt substitutes across standardized foods, effective December 14 subject to dairy objections.",
+      "duplicate_review": "No existing record covered this final food-standard rule. The October 9 announcement and October 13 Federal Register publication are consolidated into one lifecycle record."
+    },
+    {
+      "entry_id": "NAT-2026-10-13-003",
+      "kind": "added",
+      "summary": "The CFTC's October 5 crypto-market advance notice was formally published, opening comment on a possible national retail crypto transaction and market framework.",
+      "duplicate_review": "No current or legacy record matched the contemplated CAM/CTX framework. The announcement and formal-publication stages are consolidated and described as preliminary rather than implemented."
+    },
+    {
+      "entry_id": "LEG-004414",
+      "kind": "legacy_correction_and_lifecycle_refresh",
+      "summary": "The DOGE FOIA case was corrected with record-specific sources and advanced through the October 13 certiorari grant without treating review as a merits ruling.",
+      "duplicate_review": "The Supreme Court grant belongs to the same case already represented by LEG-004414, so the stable legacy ID was preserved rather than creating a parallel current record."
+    }
+  ],
+  "source_inspections": [
+    {"source_id":"fr_cbp_rail_nprm_oct13","document_sha256":"3f11b8d86bfc381d7a71c1c237a5e4423151a785bec6f3764a4af2cf8f88d3fe","inspected_at":"2026-10-13T16:05:50Z","note":"Full primary filing inspected for proposed data fields, timing, vetting, no-board advice, privacy commitments, existing voluntary scope and comment deadline."},
+    {"source_id":"fr_fda_salt_substitutes_final_oct13","document_sha256":"49f2452b6e4f25f3476ab9c213f1d36da164b786c10c1f4dbf2647d819d3f9a6","inspected_at":"2026-10-13T16:05:50Z","note":"Full final rule inspected for legal effect, effective date, voluntary character, regulatory analysis, safety and labeling treatment and objection procedure."},
+    {"source_id":"fda_salt_substitutes_announcement_oct9","document_sha256":"bed1357eaf7229209869fc1bb3e6f897a29dd0da8e3f301ca0987ed3cb3e4f8c","inspected_at":"2026-10-13T16:05:50Z","note":"Official announcement inspected for scope, standards count and the agency's public-health explanation."},
+    {"source_id":"fr_cftc_crypto_anprm_oct13","document_sha256":"fe1baedb068d6cc2acfd19acdfc8a3ed7f0180a1f68352e70ee3acc7a299aa84","inspected_at":"2026-10-13T16:05:50Z","note":"Full ANPRM inspected for statutory basis, contemplated registration structure, custody, margin, operational-risk and proof-of-reserves questions and comment deadline."},
+    {"source_id":"cftc_crypto_anprm_release_oct5","document_sha256":"361d15c23abba061a3dab19a3a3a86b875825f8211a4becf85bcf5b642943f7d","inspected_at":"2026-10-13T16:05:50Z","note":"Agency announcement inspected for the stated clarity, customer-protection and innovation rationale."},
+    {"source_id":"scotus_doge_docket_oct13","document_sha256":"bc0f2bccc263e8ca33985e71432b442c5590f43e55bdaaccfa673a1c7765f855","inspected_at":"2026-10-13T16:05:50Z","note":"Official docket inspected for case identity and the October 13 grant of certiorari."},
+    {"source_id":"ap_scotus_doge_oct13","document_sha256":"0e5d9da23b84d04a37ecb7413e001b9d31058d8c3379ec867ebefb2c7e802b4d","inspected_at":"2026-10-13T16:05:50Z","note":"Article inspected for procedural history and independent confirmation of the grant."}
+  ],
+  "withheld": [
+    {"title":"Trump says Houthis are behaving badly and may seek Turkish help","reason":"The statement described concern and a possible future request, not an ordered or implemented action; the existing Hormuz record already preserves the underlying policy and risk."},
+    {"title":"Kimberly Guilfoyle resignation and conduct allegations","reason":"The resignation is a personnel change and the underlying allegations remain unresolved; the existing research-queue lead remains pending a formal inspector-general or other evidentiary finding."},
+    {"title":"Reuters pardon and public-corruption enforcement analysis","reason":"The cross-record effectiveness analysis is material but requires person-level verification and deduplication against numerous stable pardon records before responsible publication."},
+    {"title":"Trump TV and official video-library recheck","reason":"The linked stream and same seven October 12 library items remained visible. Footage, audio and captions were not retrieved; no qualifying new item was located in the material reviewed."},
+    {"title":"Five new Truth Social posts","reason":"Two images and representative frames from two videos were inspected. The posts were ceremonial, celebrity or campaign advocacy and repeated an existing Hormuz claim; no independently verified new action met the threshold."}
+  ],
+  "corrections": [
+    {"entry_id":"LEG-004414","note":"Removed an unrelated Washington Post source and unsupported advocacy wording; added the correct docket and wire coverage, full reasoning layers and precise certiorari status."}
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "version": "10.168.0",
+  "base_release_version": "10.167.0",
+  "base_commit": "1177587bf3dec1cf5b66a60049f6e9e30b187476",
+  "research_window": {
+    "from_utc": "2026-10-21T04:03:55Z",
+    "through_utc": "2026-10-21T09:55:28Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary through the run cutoff."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository’s final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-21-001",
+      "kind": "added",
+      "summary": "Records Russia's completed release of wrongfully detained American Stephen Hubbard during the Witkoff-Putin meeting while preserving undisclosed terms and the lack of a broader Ukraine breakthrough.",
+      "duplicate_review": "No canonical entry, normalized-title match, shared source URL or recent maintenance item covered Hubbard's completed release. The surrounding diplomatic meeting is context rather than a second event."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "reuters_hubbard_release_oct21",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported that Russia released Stephen Hubbard, that Putin said he was at St. Petersburg's Pulkovo airport and that the announcement came during Putin's meeting with U.S. envoy Steve Witkoff. It also reported Hubbard's closed-trial sentence, his lawyer's denial that he fought and the U.S. wrongful-detention designation.",
+      "document_sha256": "2e2cba5af79eac9ebaca7a50a1f0e7ed9575f5180c571aceb469d89e9f4566db",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete document or webpage.",
+      "inspected_at": "2026-10-21T09:55:28Z"
+    },
+    {
+      "source_id": "ap_hubbard_release_oct21",
+      "origin_group": "Associated Press",
+      "evidence_extract": "Associated Press independently reported that Witkoff said Hubbard had been released during the meeting with Putin and that Trump had asked at length for his freedom. AP reported that Hubbard was at the airport and preserved the unresolved Ukraine-diplomacy context without asserting a wider agreement.",
+      "document_sha256": "71c1fa030fc7b4c00b92764ec2b4bcd5d411cc3f4afed32d6c63a10911373d0e",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete document or webpage.",
+      "inspected_at": "2026-10-21T09:55:28Z"
+    }
+  ],
+  "truth_social_media_inspection": {
+    "post_ids": [
+      "117477279556215047"
+    ],
+    "scope": "The one new text-only post was directly reviewed. It was treated as primary evidence only that Trump made the data-center statement; no implementing mandate was located and the claim was not independently adopted as fact.",
+    "provenance": "data/truth_social_feed_meta.json, data/truth_social_seed.json and data/truth_social_reviews.json"
+  },
+  "trump_tv_inspection": {
+    "sources": [
+      "https://www.whitehouse.gov/trumptv/",
+      "https://www.whitehouse.gov/live/",
+      "https://www.whitehouse.gov/videos/",
+      "https://www.whitehouse.gov/remarks/",
+      "https://www.whitehouse.gov/releases/"
+    ],
+    "scope": "Official page metadata, current stream link, dated video titles, dates, durations and stable IDs were inspected. Direct audiovisual content and captions were not retrieved.",
+    "finding": "The stream remained A4gNgHfZ-v4 and the dated library displayed no October 21 upload by the cutoff. The latest three items remained October 20 entries already reviewed. No qualifying new item was located in the material reviewed."
+  },
+  "withheld": [
+    {
+      "title": "Data-center self-generation mandate and community dividend statement",
+      "reason": "Trump's post and Reuters establish that he made the statement, but no signed order, rule, agency directive or implementing instrument was located."
+    },
+    {
+      "title": "Separate Witkoff-Putin diplomacy event",
+      "reason": "The meeting supplied context for Hubbard's release, but no agreement, ceasefire or other independently qualifying implemented action was established."
+    },
+    {
+      "title": "Trump TV October 21 recheck",
+      "reason": "No October 21 upload appeared by the cutoff; the unchanged stream and prior October 20 metadata produced no qualifying new item in the material reviewed."
+    },
+    {
+      "title": "Legacy Wilcox remediation",
+      "reason": "The restored historical row still requires the custody-aware remediation path identified previously, so no material legacy edit was attempted."
+    },
+    {
+      "title": "External archive discovery inputs",
+      "reason": "Trump Archive measurements advanced, UndoTrump and IPTP were stable, and Record47 numeric widgets remained inaccessible. Units stayed separate and no upstream item was promoted automatically."
+    }
+  ],
+  "corrections": []
+}

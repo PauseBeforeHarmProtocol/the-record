@@ -1,0 +1,152 @@
+{
+  "version": "10.185.0",
+  "base_release_version": "10.184.0",
+  "base_commit": "864e570f42e8b943fe00fb398e4e110ba3927a33",
+  "research_window": {
+    "from_utc": "2026-10-26T15:58:00Z",
+    "through_utc": "2026-10-26T22:02:09Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact committed editorial boundary found two new qualifying records and two material same-event developments."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository's final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-26-002",
+      "kind": "new_record",
+      "summary": "DOJ filed and unsealed a third criminal case against James Comey using a two-count criminal information alleging transmission of national-defense information.",
+      "duplicate_review": "The case is a distinct lifecycle stage from LEG-004176, LEG-004222 and LEG-004516: the alleged act, charging document, statutes and case number differ, while the shared defendant and prosecution history are cross-linked."
+    },
+    {
+      "entry_id": "NAT-2026-10-26-003",
+      "kind": "new_record",
+      "summary": "An independent cross-country study estimated $160 billion in additional U.S. fuel costs since the Iran war began, while separate AAA analysis measured elevated retail prices.",
+      "duplicate_review": "NAT-2026-08-17-001 tracks the war and operational developments. This record isolates a newly published measurable consequence stage and does not recount the war decision."
+    },
+    {
+      "entry_id": "NAT-2026-10-20-002",
+      "kind": "material_refresh",
+      "summary": "Trump announced a $1 million voter-fraud reward proposal whose scope and scale differ from DOJ's funded WHIP terms.",
+      "duplicate_review": "The reward statement materially develops the same incentive-policy question already preserved in NAT-2026-10-20-002, so it was consolidated rather than counted separately."
+    },
+    {
+      "entry_id": "NAT-2026-10-26-001",
+      "kind": "material_refresh",
+      "summary": "DOJ said it disagreed with the Maurene Comey judgment and intended to appeal, although no appeal could yet proceed while one claim remained unresolved.",
+      "duplicate_review": "The response belongs to the same district-court judgment lifecycle and was added to the stable record."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "dcd_comey_criminal_information_oct26",
+      "origin_group": "U.S. District Court for the District of Columbia",
+      "evidence_extract": "In United States v. Comey, No. 1:26-cr-00229-TNM, a criminal information filed under seal October 5 and unsealed October 26 charges conspiracy to transmit and transmitting national-defense information. It alleges that in October 2016 Comey and co-conspirators used a middleman to direct information to an unauthorized reporter. The document contains allegations, not adjudicated findings.",
+      "document_sha256": "36e776e5ec9b695e9f4dd600e573075af3e802e525e4f3b8a8efe5b9cabcf5b8",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the complete PDF.",
+      "inspected_at": "2026-10-26T22:02:09Z"
+    },
+    {
+      "source_id": "reuters_comey_third_case_oct26",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported that the filing is the third criminal case against Comey, identified the two alleged national-defense offenses, recorded Comey's denial and dismissal request, and distinguished the information from a grand-jury indictment.",
+      "document_sha256": "84f774c01fd7ba87a0746c9f17d3f03a4f906fdee79a767e8074e61151198463",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here.",
+      "inspected_at": "2026-10-26T22:02:09Z"
+    },
+    {
+      "source_id": "ap_comey_third_case_oct26",
+      "origin_group": "Associated Press",
+      "evidence_extract": "Associated Press independently reported the unusual criminal-information procedure, the unsealed allegations and the defense position that bypassing a grand jury makes the case legally invalid.",
+      "document_sha256": "cc8496b5d1790500413a8156d726942ab0960f632870173b3a625099af590838",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here.",
+      "inspected_at": "2026-10-26T22:02:09Z"
+    },
+    {
+      "source_id": "truth_trump_voter_fraud_reward_oct26",
+      "origin_group": "Truth Social / Donald Trump",
+      "evidence_extract": "Trump published that anyone reporting voter fraud in past elections or the 2026 midterm election would be paid $1 million upon arrest and conviction. The post proves publication of the proposal, not the fraud claim, funding or implementation.",
+      "document_sha256": "ff52e0a8eee5727e7c7bfbd4067f7027eea3baff8ed1eb2fbd79615d4fa8d497",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here.",
+      "inspected_at": "2026-10-26T22:03:55Z"
+    },
+    {
+      "source_id": "reuters_voter_fraud_reward_oct26",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported Trump's $1 million reward statement and that he supplied no implementing agency, rules or funding source. The report distinguished the announcement from an operating award program.",
+      "document_sha256": "728739d243e9436e4b7b334adbc235b06ef68c005e1d14d78bae247a050e4f48",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here.",
+      "inspected_at": "2026-10-26T22:02:09Z"
+    },
+    {
+      "source_id": "ap_voter_fraud_reward_oct26",
+      "origin_group": "Associated Press",
+      "evidence_extract": "Associated Press independently reported that Trump announced and highlighted a $1 million bounty for evidence leading to arrest and conviction, including claimed prior-election fraud, while noting the rarity of proven fraud at outcome-changing scale.",
+      "document_sha256": "f850c94b418164f5472b5759cedecc3342554cf2bacf7022abead87e182da042",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here.",
+      "inspected_at": "2026-10-26T22:02:09Z"
+    },
+    {
+      "source_id": "crea_hormuz_fuel_costs_oct26",
+      "origin_group": "Centre for Research on Energy and Clean Air",
+      "evidence_extract": "CREA compared January-February road-fuel prices with realized March-to-mid-October prices across 169 countries and estimated $468 billion in additional global costs, $160 billion in the United States and $471 per U.S. consumer. The methodology is a counterfactual estimate.",
+      "document_sha256": "f45c118d5100fbc578521265801f75d5f6fe34a68aeeb4826cbe90871965656c",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here.",
+      "inspected_at": "2026-10-26T22:02:09Z"
+    },
+    {
+      "source_id": "reuters_hormuz_fuel_costs_oct26",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported CREA's global and U.S. estimates, methodology and exposure explanation and recorded the administration response that higher prices were a small cost for preventing an Iranian nuclear weapon and would fall when the war ended.",
+      "document_sha256": "9c25a30646b4f6205983e3ca7527a88ea93b74d03789f1999f4d11143d70847d",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here.",
+      "inspected_at": "2026-10-26T22:02:09Z"
+    },
+    {
+      "source_id": "reuters_trump_biden_fuel_prices_oct26",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters calculated from AAA data that average regular gasoline during Trump's second term was $3.472 per gallon through October 26 versus $3.471 during Biden's term, while diesel averaged $4.343 versus $4.078 and reached $6.523 on September 22.",
+      "document_sha256": "576a01a7158438b28cd2aa456ffd651c191c45dedfe3905e68a0b6c95999aa4d",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here.",
+      "inspected_at": "2026-10-26T22:02:09Z"
+    },
+    {
+      "source_id": "reuters_comey_firing_ruling_oct26",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters updated its report with a Justice Department statement disagreeing with the judgment and promising an appeal in due course, while noting that one unresolved claim meant the department could not yet appeal.",
+      "document_sha256": "6e4c21e0819673dfac4478898bfd3040b303ba67e8a41b7bc250c5274a9d976d",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here.",
+      "inspected_at": "2026-10-26T22:02:09Z"
+    }
+  ],
+  "corrections": [],
+  "withheld": [
+    {
+      "title": "Alaska election-certification dismissal motion and California voter-roll oral argument",
+      "reason": "Pending advocacy and argument produced no court ruling or operative change by cutoff."
+    },
+    {
+      "title": "New York Times retaliation-counterclaim discovery stay",
+      "reason": "The procedural pause is non-dispositive and limited to one counterclaim."
+    },
+    {
+      "title": "Possible Canada tariff agreement",
+      "reason": "Unnamed-source reporting described prospective negotiations without a signed instrument or second independent confirmation."
+    },
+    {
+      "title": "Trump TV October 26 evening recheck",
+      "reason": "October 25 clips remained newest; audiovisual content was not retrieved and no qualifying new item was located in the material reviewed."
+    }
+  ],
+  "truth_social_media_inspection": {
+    "new_posts": 40,
+    "latest_post_id": "117509420824140105",
+    "latest_post_at_utc": "2026-10-26T21:51:05.212000Z",
+    "latest_post_at_eastern": "2026-10-26 5:51:05 PM EDT",
+    "finding": "All new text states were inspected. The $1 million reward statement was independently contextualized; one video and one preview image remained unavailable for visual review."
+  },
+  "trump_tv_inspection": {
+    "checked_at": "2026-10-26T22:08:00Z",
+    "stream_video_id": "A4gNgHfZ-v4",
+    "finding": "Official Trump TV, live, video-library, remarks and releases pages were rechecked. October 25 edited clips remained newest; footage, audio and captions were not retrieved. No qualifying new item was located in the material reviewed."
+  }
+}

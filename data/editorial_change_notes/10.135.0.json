@@ -1,0 +1,94 @@
+{
+  "version": "10.135.0",
+  "base_release_version": "10.134.0",
+  "base_commit": "960d82fa0ad4b4e69a9018a3a459e9d72e121061",
+  "research_window": {
+    "from_utc": "2026-10-10T22:02:01Z",
+    "through_utc": "2026-10-11T03:58:05Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Exact scan from the prior accepted open-branch boundary. The Medicaid implementation report was published before this window and is explicitly preserved as a late discovery with its October 1 effective date."
+  },
+  "publication_authorization": "The user authorizes maintenance branches, pull requests and merging after evidence, local acceptance and successful CI; repository policy still requires Phillip Linstrum's final publication acceptance before merge.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-18-007",
+      "kind": "material_refresh",
+      "summary": "DOJ opened an antitrust investigation into all five network members of the White House television pool over their September coverage halt.",
+      "duplicate_review": "Updated the continuing press-access dispute rather than creating a parallel investigation record because the inquiry directly targets the pool response already preserved in the stable record."
+    },
+    {
+      "entry_id": "NAT-2026-10-01-007",
+      "kind": "added",
+      "summary": "The October 1 statutory restriction on federally matched Medicaid and CHIP coverage for many legally present immigrants took effect, with early state counts now reported.",
+      "duplicate_review": "Distinct from the September public-charge rule litigation and existing Medicare rebate records; no current or legacy event, normalized title, stored source set or recent maintenance pull request matched this implemented eligibility restriction."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "reuters_doj_tv_pool_probe_oct10",
+      "document_sha256": "f6e5f4f1cf2db3531ec77a9360aed3dd82c6e7b72cf292571a49659b8618e5f1",
+      "inspected_at": "2026-10-11T04:10:00Z",
+      "note": "Retrieved report text and source metadata inspected for the bounded investigation claims used in this release."
+    },
+    {
+      "source_id": "ap_doj_tv_pool_probe_oct10",
+      "document_sha256": "bb90ee113fcc48e978f357e49bef43014c7c179b13c9f9741613d9eecdd2d1b9",
+      "inspected_at": "2026-10-11T04:10:00Z",
+      "note": "Retrieved report text and source metadata inspected for the named DOJ statement and reported response."
+    },
+    {
+      "source_id": "uscode_medicaid_noncitizen_1903v5_oct1",
+      "document_sha256": "4aebbdc318e3011c89a692fc47734463b0e0851ac931e8eb69bc3d88cb3e3eae",
+      "inspected_at": "2026-10-11T04:10:00Z",
+      "note": "Codified statutory text and effective-date language inspected."
+    },
+    {
+      "source_id": "cms_noncitizen_medicaid_guidance_apr8",
+      "document_sha256": "32b4c491998b3c5294169ee51a3d16fdf362fe7ddf63d76b094940d3b066e11d",
+      "inspected_at": "2026-10-11T04:10:00Z",
+      "note": "Official 34-page implementation guidance inspected for covered groups, exceptions, state duties and October 1 applicability."
+    },
+    {
+      "source_id": "cms_noncitizen_medicaid_release_apr8",
+      "document_sha256": "67e55768ab8d885407c64de0e84ac58fe49b2e0861b2cd1364d18b84e8e99504",
+      "inspected_at": "2026-10-11T04:10:00Z",
+      "note": "Official CMS release inspected for the administration rationale and statutory exceptions."
+    },
+    {
+      "source_id": "kff_medicaid_immigrant_eligibility_sep25",
+      "document_sha256": "8beb31f8cd74f9c00140c66f1c9350c4e71782445023d63acb040bc40b2009c4",
+      "inspected_at": "2026-10-11T04:10:00Z",
+      "note": "Policy analysis inspected for scope, exceptions and implementation limitations."
+    },
+    {
+      "source_id": "ap_medicaid_legal_immigrants_oct10",
+      "document_sha256": "87f290adb2565f33a86cfd5e64e7c364d9d40771464657528b5b52224f2ae51b",
+      "inspected_at": "2026-10-11T04:10:00Z",
+      "note": "Retrieved report inspected for state counts, KFF estimate, administration response and attributed consequence claims."
+    }
+  ],
+  "withheld": [
+    {
+      "title": "Five new Truth Social posts",
+      "reason": "Routine appointment and approval-rating text did not qualify; three media-only posts and the repost image could not be retrieved, and no claim was inferred from unavailable media."
+    },
+    {
+      "title": "Katie Bailey appointment",
+      "reason": "Routine personnel news without a material policy or institutional consequence at cutoff."
+    },
+    {
+      "title": "Trump TV departure-gaggle clip",
+      "reason": "Only official title, date, duration and link metadata were accessible; audiovisual content was not reviewed and a newly uploaded clip is not itself a new action."
+    },
+    {
+      "title": "Trump calls for a new Ukrainian president",
+      "reason": "Consequential rhetoric but not an order, formal proposal, appropriation, agreement or implemented action."
+    },
+    {
+      "title": "The State of American Manufacturing",
+      "reason": "White House research and advocacy summarized existing policy without a new qualifying action."
+    }
+  ],
+  "corrections": []
+}

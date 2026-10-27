@@ -1,0 +1,116 @@
+{
+  "version": "10.175.0",
+  "base_release_version": "10.174.0",
+  "base_commit": "ecd62bdf",
+  "research_window": {
+    "from_utc": "2026-10-23T04:00:11Z",
+    "through_utc": "2026-10-23T10:03:47Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary; two independently corroborated material prior-window omissions were recovered and labeled as such."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository's final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-22-007",
+      "kind": "added",
+      "summary": "Multiple independent outlets reported a DOJ criminal investigation after a DHS inspector-general referral involving Corey Lewandowski's handling of government contracts; no charge or finding was reported.",
+      "duplicate_review": "No current canonical entry, normalized title, source URL or recent maintenance item already records this reported investigation; recovered as a prior-window omission rather than attributed to the current source window."
+    },
+    {
+      "entry_id": "NAT-2026-10-22-008",
+      "kind": "added",
+      "summary": "FCC said it blocked authorization for two unnamed devices containing HiSilicon chips in its first enforcement under new covered-component rules.",
+      "duplicate_review": "No current canonical entry, normalized title, source URL or recent maintenance item already records these equipment-authorization blocks; recovered as a prior-window omission rather than attributed to the current source window."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "reuters_lewandowski_probe_oct22",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported, citing four sources, that DHS's inspector general made a criminal referral and DOJ was investigating Corey Lewandowski's handling of government contracts; it reported no subpoenas or other legal demands at publication.",
+      "document_sha256": "d1c9142438ed6fcfdcfe03ec67c960ad7b683c5588179374bca2d02799229d63",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-23T10:03:47Z"
+    },
+    {
+      "source_id": "washpost_lewandowski_probe_oct22",
+      "origin_group": "The Washington Post",
+      "evidence_extract": "The Washington Post independently reported, citing four people familiar with the matter, that DOJ was investigating Lewandowski after a DHS inspector-general referral; counsel denied wrongdoing and agency spokespeople declined comment.",
+      "document_sha256": "fbbec9975caefb9d65b60086ce18540e30ca3a547ffd9e601faf947aaf05dce4",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-23T10:03:47Z"
+    },
+    {
+      "source_id": "cbs_lewandowski_probe_oct22",
+      "origin_group": "CBS News",
+      "evidence_extract": "CBS News independently reported, citing two sources, that DOJ was investigating Lewandowski after a DHS watchdog referral and that no charge had been filed; his lawyer denied wrongdoing.",
+      "document_sha256": "1180be4cb2f601927488b3cae60792290f58037175bbce1d58e7ca6d71aafab0",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-23T10:03:47Z"
+    },
+    {
+      "source_id": "ap_lewandowski_response_oct22",
+      "origin_group": "Associated Press",
+      "evidence_extract": "AP documented Trump's statement that he knew little about the reported investigation and would not stop prosecution if Lewandowski had been dishonest, alongside counsel's denial and the lack of agency comment.",
+      "document_sha256": "cb7d7bba2730b1c1a6fe0483e15e85f15d496c00d6dc1abaa33a348bb90101f3",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-23T10:03:47Z"
+    },
+    {
+      "source_id": "fcc_blocks_surveillance_chips_oct22",
+      "origin_group": "Federal Communications Commission",
+      "evidence_extract": "The FCC release said OET prevented a dashboard camera and wireless video transmitter containing HiSilicon components from being authorized for marketing or sale, the first enforcement under rules effective the prior week.",
+      "document_sha256": "a5f71e0a72d40a0c5d855740a3c1e266fc707fd1e4e08b3d106ee13332250a8e",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here; the direct FCC page returned HTTP 403 and the exact agency release text was inspected through a syndicated copy.",
+      "inspected_at": "2026-10-23T10:03:47Z"
+    },
+    {
+      "source_id": "reuters_fcc_surveillance_chips_oct22",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters independently reported that the FCC blocked approval of a dashboard camera and wireless video transmitter containing HiSilicon chips under the agency's new component rules.",
+      "document_sha256": "3945a2c9fb2c34d11733bb245fa86bc88388c51ef13217302e96996c5c7feddf",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the publisher's complete document or webpage.",
+      "inspected_at": "2026-10-23T10:03:47Z"
+    }
+  ],
+  "truth_social_media_inspection": {
+    "new_posts": 1,
+    "latest_post_id": "117488386050958742",
+    "latest_post_at_utc": "2026-10-23T04:41:40.046Z",
+    "latest_post_at_eastern": "2026-10-23 12:41:40 AM EDT",
+    "finding": "The new post text and attached Reflecting Pool photograph were reviewed. They establish publication only; no separate qualifying federal action was established."
+  },
+  "trump_tv_inspection": {
+    "checked_at": "2026-10-23T10:03:47Z",
+    "stream_video_id": "A4gNgHfZ-v4",
+    "finding": "Official Trump TV, live, video-library, remarks and releases pages were rechecked. The stream ID and three October 22 library listings were unchanged; footage and captions remained unavailable. No qualifying new item was located in the material reviewed."
+  },
+  "withheld": [
+    {
+      "title": "Reflecting Pool Truth Social post",
+      "reason": "The text and photograph establish publication and the pool's visible condition, not independent verification of maintenance claims or a separate qualifying federal action."
+    },
+    {
+      "title": "Forest Service reorganization statement",
+      "reason": "Officials described an intent to proceed, but the plan remains enjoined and the inspected material established no new implementation or appellate ruling."
+    },
+    {
+      "title": "Triumphal-arch injunction request and Good/Pretti evidence dispute",
+      "reason": "The former is a pending motion without a ruling; the latter remains an unresolved prior-period investigative dispute without the complete primary filing set."
+    },
+    {
+      "title": "Pentagon prediction-market memo",
+      "reason": "The lead remains queued because the underlying memo was not publicly retrieved; no duplicate candidate was added."
+    },
+    {
+      "title": "Legacy Wilcox remediation",
+      "reason": "The historical row still requires the custody-aware remediation path identified previously; no material legacy edit was attempted."
+    },
+    {
+      "title": "External archive discovery inputs",
+      "reason": "All four primary project pages were checked; only Trump Archive measurements changed, unlike units were kept separate and no external item was automatically promoted."
+    }
+  ],
+  "corrections": []
+}

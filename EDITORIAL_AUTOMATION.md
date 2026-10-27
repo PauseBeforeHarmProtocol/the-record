@@ -38,6 +38,8 @@ Each entry must:
 
 For a candidate branch, `current-standard-reviewed` or `corrected` is a proposed canonical state that must be supported by the review record and exact-field diff. Phillip Linstrum remains the final publication acceptance authority: no candidate state becomes canonical merely because a generator or validator accepts its shape, and no AI system may merge it on that basis alone.
 
+Phillip's standing maintenance instruction expressly authorizes opening a PR, waiting for CI, and merging routine national maintenance when the evidence, local acceptance and CI gates pass. That scoped instruction supplies publication authority; a fresh conversational approval is not required on every run. Phillip retains final human authority and may hold or reject a specific candidate, and no validator, generated review label or AI decision alone grants merge permission. Record the applicable standing authorization in release metadata and the PR, honor any candidate-specific hold, and merge after all gates pass. An explicit instruction to release the current version or push it to the Record sites likewise satisfies the gate for that scope; the October 27, 2026 instruction expressly approves the accumulated backlog. Do not ask for that same approval again or indefinitely stack new maintenance PRs behind an unmerged release: surface the actual release blocker and consolidate retained candidates against current `main` when authorized. A consolidation preserves intermediate source windows, original review and evidence-as-of times, unresolved leads and versioned artifacts; it does not claim a new research scan or bypass failed checks.
+
 ## Six-hour run
 
 ### Required reliability contract (10.32.0 onward)

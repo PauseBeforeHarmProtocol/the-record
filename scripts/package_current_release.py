@@ -196,6 +196,7 @@ def run_receipt(entries: list[dict], ledger: dict) -> bytes:
     rejected = RELEASE.get("rejected_candidates", [])
     release_corrections = RELEASE.get("corrections", [])
     maintenance = RELEASE.get("maintenance_revision")
+    consolidation = RELEASE.get("publication_consolidation")
     remediated_ids = (
         maintenance.get("remediated_entry_ids", [])
         if isinstance(maintenance, dict)
@@ -224,7 +225,30 @@ def run_receipt(entries: list[dict], ledger: dict) -> bytes:
         f"- Newest Truth Social post: {TRUTH_META['latest_post_at_eastern']}",
         f"- Truth Social fallback checked: {TRUTH_META['checked_at_eastern']}",
     ]
-    if maintenance:
+    if consolidation:
+        lines.extend([
+            "",
+            "## Authorized publication consolidation — not a new research run",
+            "",
+            f"- Previously public release: {consolidation['base_public_release']}",
+            f"- Latest staged release carried forward: {consolidation['latest_staged_release']}",
+            f"- Preserved intermediate stage releases: {consolidation['stage_count']}",
+            f"- Added since public main: {len(added)} national records",
+            f"- Materially refreshed since public main: {len(refreshed)} national records",
+            f"- Publication acceptance authority: {consolidation['authorization']['authority']}",
+            f"- Authorization: {consolidation['authorization']['scope']}",
+            "", consolidation["scope"],
+            "", consolidation["inspection_scope"],
+            "", "Original fact and reasoning review receipts, evidence-as-of times, intermediate research windows, historical artifacts and unresolved leads are preserved. The consolidated development entries identify republication, not additional government actions or new source inspections.",
+            "",
+            "## Consolidated records added or refreshed since public main",
+            "",
+            *(f'- `{entry["id"]}` — {entry["title"]}' for entry in changed),
+            "",
+            "## Withheld candidates from the latest staged inspection",
+            "", consolidation["withheld_scope"], "",
+        ])
+    elif maintenance:
         restored_legacy_count = int(maintenance.get("restored_legacy_entry_count", 0))
         excluded_duplicate_count = int(
             maintenance.get("excluded_same_event_duplicate_count", 0)
@@ -329,7 +353,7 @@ def run_receipt(entries: list[dict], ledger: dict) -> bytes:
         "",
         "## Verification",
         "",
-        "Current front-door pages, canonical datasets, archive bridge, individual evidence packs, versioned aggregate packs, source ledgers, and checksums are generated deterministically. Earlier date-only base aggregates remain byte-frozen and separately addressable; every new same-day aggregate is version-keyed. Candidate publication requires the repository validator and GitHub Actions to pass, followed by acceptance from the publication authority named above.",
+        "Current front-door pages, canonical datasets, archive bridge, individual evidence packs, versioned aggregate packs, source ledgers, and checksums are generated deterministically. Earlier date-only base aggregates remain byte-frozen and separately addressable; every new same-day aggregate is version-keyed. Candidate publication requires the repository validator, GitHub Actions and acceptance from the publication authority. An already-recorded explicit release instruction satisfies that acceptance for its stated scope; validation alone does not.",
     ])
     if RELEASE.get("engineering_revision"):
         lines.extend(["", "## Software maintenance", "", RELEASE["engineering_revision"]["scope"],

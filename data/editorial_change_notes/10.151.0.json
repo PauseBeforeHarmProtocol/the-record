@@ -1,0 +1,180 @@
+{
+  "version": "10.151.0",
+  "base_release_version": "10.150.0",
+  "base_commit": "534f6eea9407d10e0221ca8a068509e09fa6dc3c",
+  "research_window": {
+    "from_utc": "2026-10-15T15:59:59Z",
+    "through_utc": "2026-10-15T21:58:41Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Exact scan from the prior accepted open-branch boundary. Three formal national actions were added and one stable national record was materially refreshed; weaker, pending and duplicate leads were withheld rather than padded."
+  },
+  "publication_authorization": "The user authorizes maintenance branches, pull requests and merging after evidence, local acceptance and successful CI; repository policy still requires Phillip Linstrum's final publication acceptance before merge.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-15-003",
+      "kind": "materially_refreshed",
+      "summary": "DOJ's filed California injunction suit was added to the existing noncitizen-voting enforcement record with allegations and state objections kept distinct from findings.",
+      "duplicate_review": "Later litigation stage in the same national enforcement campaign; consolidated into the stable record."
+    },
+    {
+      "entry_id": "NAT-2026-10-15-001",
+      "kind": "added",
+      "summary": "FDA sent a proposed interim peptide-compounding access notice to OIRA; no unpublished scope or implementation detail was treated as established.",
+      "duplicate_review": "No matching current or legacy event, source URL or recent maintenance PR located."
+    },
+    {
+      "entry_id": "NAT-2026-10-15-002",
+      "kind": "added",
+      "summary": "DOJ and HHS implemented a consolidated route for voluntary disclosure of potentially criminal health-care fraud.",
+      "duplicate_review": "Distinct cross-agency protocol rather than another individual fraud case."
+    },
+    {
+      "entry_id": "NAT-2026-10-15-003",
+      "kind": "added",
+      "summary": "DOJ filed coordinated Supremacy Clause suits against St. Paul and Portland mask and officer-identification rules.",
+      "duplicate_review": "One coordinated two-city filing action; distinct jurisdictions and lifecycle from earlier suits."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "doj_california_voter_lawsuit_oct15",
+      "document_sha256": "642d5c67dead459937f5b5accf0ba5a6c6df3bc37330756e2dfcec901d136c62",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-15T21:58:41Z",
+      "origin_group": "U.S. Department of Justice",
+      "evidence_extract": "DOJ said it filed a complaint against California after a preliminary and ongoing federal comparison identified more than 20,000 people it characterized as likely aliens on the voter roll; it seeks ballot-segregation and counting relief, and the allegations remain unadjudicated."
+    },
+    {
+      "source_id": "reuters_california_voter_lawsuit_oct15",
+      "document_sha256": "d825971e8ed49e19b5aaa726324d91d7b83b3ba9e4d656ad73b802247bfcb692",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-15T21:58:41Z",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters independently reported the filed California suit, the requested bar on counting specified mail ballots pending status review, DOJ's allegations and California's contrary position; it did not report a merits ruling."
+    },
+    {
+      "source_id": "ap_california_voter_lawsuit_oct15",
+      "document_sha256": "0f63805b408d5d5c739ffce88667b73aa37c4cef1fd87c467cdd2e6b2921f410",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-15T21:58:41Z",
+      "origin_group": "Associated Press",
+      "evidence_extract": "AP independently reported the filed suit, the 20,000-name federal claim, California's statement that evidence and methodology were not supplied, and the thumb-drive delivery and election-timing context."
+    },
+    {
+      "source_id": "oira_peptide_compounding_policy_oct14",
+      "document_sha256": "f3d25910b35bee050e03c04874e8614d68600da70645b8e2a413c361a1c8fc05",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-15T21:58:41Z",
+      "origin_group": "Office of Information and Regulatory Affairs",
+      "evidence_extract": "OIRA listed HHS-FDA RIN 0910-ZD94, Interim Access Policy for Compounding Using Certain Peptides, as a notice received October 14, 2026 and pending review; the listing supplied no operative policy text."
+    },
+    {
+      "source_id": "ap_peptide_compounding_policy_oct15",
+      "document_sha256": "0f7aa667f4255e122dc078edf95d3f83579352ec93d7dbbb9daf2b969d4c5ef8",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-15T21:58:41Z",
+      "origin_group": "Associated Press",
+      "evidence_extract": "AP independently reported the OIRA submission, HHS's lack of immediate comment, Kennedy's access rationale and FDA staff safety concerns. It attributed unpublished product and enforcement-discretion details to two unnamed people; those details were not accepted as established policy."
+    },
+    {
+      "source_id": "doj_health_fraud_self_disclosure_oct15",
+      "document_sha256": "27d28cfe7fe10cbefd5d9bfad300275a5b2bf1cde466ea7addf85373770f06d4",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-15T21:58:41Z",
+      "origin_group": "U.S. Department of Justice",
+      "evidence_extract": "DOJ and HHS announced that qualifying criminal health-care fraud disclosures should go to DOJ's Health Care Fraud Section and can receive HHS-OIG protocol benefits without a second portal submission; disclosure only to OIG generally does not establish a DOJ voluntary disclosure."
+    },
+    {
+      "source_id": "hhs_oig_self_disclosure_protocol_oct15",
+      "document_sha256": "c50506b69819ec13d1c60e2c3aac5adc55caeaca1c1e4048f34017d9a4608114",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-15T21:58:41Z",
+      "origin_group": "HHS Office of Inspector General",
+      "evidence_extract": "HHS-OIG's protocol page and submission guidance describe the civil and administrative self-disclosure route and link the updated protocol; DOJ's announcement records the coordinated criminal-conduct routing change."
+    },
+    {
+      "source_id": "stat_health_fraud_self_disclosure_oct15",
+      "document_sha256": "a377dd0c31545124d577c57bbbf833ba3e41df304af11fd0716bd72a7f692b32",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-15T21:58:41Z",
+      "origin_group": "STAT",
+      "evidence_extract": "STAT independently reported the one-stop DOJ route and quoted a named National Fraud Enforcement Division official explaining the remediation and disclosure incentive; the report did not establish future uptake or outcomes."
+    },
+    {
+      "source_id": "doj_stpaul_portland_mask_suits_oct15",
+      "document_sha256": "211a3530afdc43ee9270463d9aa33f75a8885d4fbba802fa3ba9da30f34c8194",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-15T21:58:41Z",
+      "origin_group": "U.S. Department of Justice",
+      "evidence_extract": "DOJ announced filed complaints against St. Paul and Portland challenging mask and identification ordinances under the Supremacy Clause, stated officer-safety and operational rationales, and described a broader Civil Division litigation program."
+    },
+    {
+      "source_id": "doj_portland_mask_complaint_oct15",
+      "document_sha256": "db57c962dd3b732e061359cd6abd603c28820068b41deeeb75f65b4423b29b45",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-15T21:58:41Z",
+      "origin_group": "U.S. Department of Justice",
+      "evidence_extract": "The filed Portland complaint identifies the challenged code provisions, alleges unconstitutional direct regulation of federal operations, states the federal safety and operational theory, and requests declaratory and injunctive relief; its allegations are not findings."
+    },
+    {
+      "source_id": "valleynews_stpaul_mask_suit_oct15",
+      "document_sha256": "ab9e62bd3abf27a26e7e9a80a136269ab9ee8608ff2e33daaf75c641f3a58045",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-15T21:58:41Z",
+      "origin_group": "Valley News Live",
+      "evidence_extract": "Independent local reporting described the St. Paul filing, ordinance requirements, exceptions and penalties, DOJ's constitutional theory and requested relief."
+    },
+    {
+      "source_id": "kptv_portland_mask_suit_oct15",
+      "document_sha256": "979e3572057002436cd02055b8abc878e8cb759918da874ad36b6594dd4fb56a",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher's complete webpage.",
+      "inspected_at": "2026-10-15T21:58:41Z",
+      "origin_group": "KPTV",
+      "evidence_extract": "Independent local reporting described the Portland filing, ordinance requirements and enforcement structure, the city's stated accountability purpose and DOJ's safety and preemption claims."
+    }
+  ],
+  "truth_social_media_inspection": {
+    "post_ids": [
+      "117445800565005016",
+      "117445802849453813",
+      "117446805111809348"
+    ],
+    "scope": "All new text and the attached still image were reviewed. Representative frames from the 26-second video were inspected, but complete audio and captions were unavailable; no audiovisual claim was accepted.",
+    "provenance": "data/truth_social_reviews.json"
+  },
+  "trump_tv_inspection": {
+    "sources": [
+      "https://www.whitehouse.gov/trumptv/",
+      "https://www.whitehouse.gov/live/",
+      "https://www.whitehouse.gov/videos/",
+      "https://www.whitehouse.gov/remarks/",
+      "https://www.whitehouse.gov/news/"
+    ],
+    "scope": "Official page metadata and stable links only; audiovisual content and complete transcripts were not retrieved.",
+    "finding": "No qualifying new item located in the material reviewed."
+  },
+  "withheld": [
+    {
+      "title": "Trump death-penalty direction for firefighter murders",
+      "reason": "No written directive, charging policy or case-specific implementation located."
+    },
+    {
+      "title": "White House AI task force meeting preview",
+      "reason": "No completed outcome, charter, order or formal proposal verified by cutoff."
+    },
+    {
+      "title": "Truth Social Montana arrival media",
+      "reason": "Complete video audio and captions unavailable; sampled visuals supplied no distinct qualifying action."
+    },
+    {
+      "title": "Trump TV recheck",
+      "reason": "Metadata-only recheck disclosed; no qualifying new item located in reviewed material."
+    },
+    {
+      "title": "White House CEA estimate and localized DOJ arrest summary",
+      "reason": "Neither supplied a distinct qualifying national action or independently validated effectiveness finding."
+    }
+  ],
+  "corrections": []
+}

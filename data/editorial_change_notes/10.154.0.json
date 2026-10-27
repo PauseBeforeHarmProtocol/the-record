@@ -1,0 +1,172 @@
+{
+  "version": "10.154.0",
+  "base_release_version": "10.153.0",
+  "base_commit": "5c4564eda3bde6eeccc45bca13a68cb772432eee",
+  "research_window": {
+    "from_utc": "2026-10-16T09:57:23Z",
+    "through_utc": "2026-10-16T15:57:45Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the prior accepted open-branch boundary. The election alert, measles update and USDA follow-up were published within the exact window. The producer-price release and USDA announcement surfaced during this scan but predated the boundary and are explicitly treated as late-indexed discoveries. One record was added and three stable records materially refreshed."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository’s final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-09-15-001",
+      "kind": "material_refresh",
+      "summary": "Added the October 16 FBI/CISA election-cyber alert to the stable contingency record.",
+      "duplicate_review": "Same election-security preparation event family; updated the stable September record rather than creating a second warning record."
+    },
+    {
+      "entry_id": "NAT-2026-09-04-014",
+      "kind": "material_refresh",
+      "summary": "Updated national measles totals and recorded CDC’s announced Pennsylvania Epi-Aid deployment.",
+      "duplicate_review": "Same outbreak, death-count and federal-assistance lifecycle; refreshed the stable measles record."
+    },
+    {
+      "entry_id": "NAT-2026-09-10-006",
+      "kind": "material_refresh",
+      "summary": "Added September PPI measurements and preserved BLS’s revision of the August estimate.",
+      "duplicate_review": "Same monthly producer-price series; extended the stable PPI record rather than creating a parallel inflation entry."
+    },
+    {
+      "entry_id": "NAT-2026-10-14-010",
+      "kind": "added",
+      "summary": "Recorded USDA’s announced record $3.3 billion rural-utility loan with conditional-commitment and disbursement limits.",
+      "duplicate_review": "No matching current record or recent maintenance candidate covered the Oglethorpe/Smarr financing action."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "fbi_cisa_election_cyber_alert_oct16",
+      "origin_group": "Federal Bureau of Investigation and Cybersecurity and Infrastructure Security Agency",
+      "evidence_extract": "FBI and CISA issued alert I-101626-PSA on October 16 warning that phishing, smishing and AI-enabled deepfakes may target election officials, candidates and political organizations during the 2026 midterms. The alert explains why those actors are attractive targets and recommends phishing-resistant multifactor authentication, verification through known channels and content credentials; it does not report a completed breach.",
+      "document_sha256": "24b9f19d86cab69eb785c4cd66c24f22dc741577e271f80ff4b9b4234cee48a0",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete webpage.",
+      "inspected_at": "2026-10-16T16:05:17Z"
+    },
+    {
+      "source_id": "reuters_election_cyber_alert_oct16",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported at 15:07 UTC on October 16 that the FBI and CISA urged election officials and the public to guard against bogus emails and text messages aimed at credentials and sensitive data, independently confirming the federal alert and its election-security context.",
+      "document_sha256": "97a996d059de4bb395d26c9d1d1e727822ec1a9e00f35d12192991d225a7efcc",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete webpage.",
+      "inspected_at": "2026-10-16T16:05:17Z"
+    },
+    {
+      "source_id": "cdc_measles_cases_sep4",
+      "origin_group": "Centers for Disease Control and Prevention",
+      "evidence_extract": "CDC’s October 16 surveillance page states that 2026 data are preliminary, displays two deaths subject to change, says CDC and CSTE are developing a standardized death definition, and reports MMR kindergarten coverage fell to 92.4%, leaving about 280,000 children at risk. It explains that confirmed counts update weekly from jurisdictional reports.",
+      "document_sha256": "f97f45e73bea2273dbd692170ca69cc5bc6382890f8e29d1fe578765ead7dcab",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete webpage.",
+      "inspected_at": "2026-10-16T16:05:17Z"
+    },
+    {
+      "source_id": "reuters_cdc_measles_support_oct13",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported that Pennsylvania formally requested Epi-Aid assistance and that CDC said it would deploy additional support to investigate the outbreak, strengthen response and prevent spread. Reuters reported five state-classified deaths and preserved the unresolved state-federal definition dispute.",
+      "document_sha256": "c2f7975b5c235033016624e269821521f42b16640c6c3c3e52c8eeda9e4e0f1b",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete webpage.",
+      "inspected_at": "2026-10-16T16:05:17Z"
+    },
+    {
+      "source_id": "reuters_measles_cases_oct16",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported 4,410 nationwide CDC-confirmed cases as of October 15, up 330 in a week, 451 hospitalizations, two CDC-confirmed deaths, five Pennsylvania-reported deaths, and 1,222 Pennsylvania cases with 225 hospitalizations as of October 14.",
+      "document_sha256": "5d3b663600c2e961f07fbbf0199ef6a8e490bcdb1a7545d57f8c7119df82f120",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete webpage.",
+      "inspected_at": "2026-10-16T16:05:17Z"
+    },
+    {
+      "source_id": "bls_ppi_aug2026",
+      "origin_group": "U.S. Bureau of Labor Statistics",
+      "evidence_extract": "BLS reported September final-demand PPI rose 1.3% for the month and 6.3% over 12 months; goods rose 2.6%, services 0.8%, energy 10.8%, gasoline 20.3% and the index excluding foods, energy and trade services 0.5%. BLS revised August’s monthly rise to 0.5%.",
+      "document_sha256": "e60074a04e924d3fae1faecc32587f9399b0ee8addbfbd83d3aa410bf944c596",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete webpage.",
+      "inspected_at": "2026-10-16T16:05:17Z"
+    },
+    {
+      "source_id": "reuters_ppi_sep2026_oct15",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters independently reported the 1.3% September PPI increase, 6.3% annual increase, broad energy and services contributions and revised 0.5% August rise. It contextualized nominal retail-sales growth as 0.8%, with core retail sales up 0.1%, and did not establish single-policy causation.",
+      "document_sha256": "e51ef84e4766e772ea92619ab1afe6999dc61e5526dfeee958813a0ca11eb847",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete webpage.",
+      "inspected_at": "2026-10-16T16:05:17Z"
+    },
+    {
+      "source_id": "usda_oglethorpe_loan_oct14",
+      "origin_group": "U.S. Department of Agriculture",
+      "evidence_extract": "USDA announced a $3.3 billion Rural Utilities Service loan to Oglethorpe Power for the Smarr Combined-Cycle facility, calling it the largest RUS loan. USDA said Oglethorpe is owned by 38 distribution cooperatives serving nearly five million people and presented lower-cost financing, reliability and affordability as intended benefits.",
+      "document_sha256": "8775607e9647b5bf79169272b83da453a50833622434cf5089cc8731878efbfa",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete webpage.",
+      "inspected_at": "2026-10-16T16:05:17Z"
+    },
+    {
+      "source_id": "oglethorpe_sec_investor_briefing_q2_2026",
+      "origin_group": "Oglethorpe Power Corporation / U.S. Securities and Exchange Commission",
+      "evidence_extract": "Oglethorpe’s SEC-filed investor briefing listed $3.324 billion for Smarr as conditionally committed August 6, requiring documentation, with $0 advanced and initial funding expected by 2028. The filing prevents treating the public announcement as completed disbursement.",
+      "document_sha256": "89e17a933cd760c2902bcfe1a96c8bab62f52bd4eedeafe0b4a7f48fe99878c9",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete webpage.",
+      "inspected_at": "2026-10-16T16:05:17Z"
+    },
+    {
+      "source_id": "reuters_oglethorpe_loan_oct16",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters reported USDA’s record loan and quoted Under Secretary Glen Smith saying it may support growing industry, potentially data centers, and that USDA had almost $8.6 billion in loan requests. Oglethorpe said the plant is not dedicated to a data center and serves broader cooperative demand.",
+      "document_sha256": "fd249bf0481475373a4c8c55fedefdfbda27c943d5e33b23e95577c302966196",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete webpage.",
+      "inspected_at": "2026-10-16T16:05:17Z"
+    }
+  ],
+  "truth_social_media_inspection": {
+    "post_ids": [
+      "117450867013691243"
+    ],
+    "scope": "The empty text field and representative visual frames from the attached 164-second video were inspected. Full audio, motion and captions were not reviewed; no audiovisual claim was accepted.",
+    "provenance": "data/truth_social_reviews.json"
+  },
+  "trump_tv_inspection": {
+    "sources": [
+      "https://www.whitehouse.gov/trumptv/",
+      "https://www.whitehouse.gov/live/",
+      "https://www.whitehouse.gov/videos/",
+      "https://www.whitehouse.gov/remarks/",
+      "https://www.whitehouse.gov/news/"
+    ],
+    "scope": "Official page metadata and stable links only; audiovisual content and complete transcripts were not retrieved.",
+    "finding": "The stream remained A4gNgHfZ-v4 and the video library still led with the same three October 15 IDs. No qualifying new item located in the material reviewed."
+  },
+  "withheld": [
+    {
+      "title": "Reported White House origin of Starshield restrictions",
+      "reason": "AP independently confirmed a short disruption and mission effects but said responsibility remained unclear; Reuters’ White House attribution rested on unnamed sources and lacked the required second independent confirmation or primary record."
+    },
+    {
+      "title": "Renewed threat to strike Iran’s Pickaxe Mountain",
+      "reason": "The statement repeated a previously recorded threat and supplied no order, strike or other implementation change."
+    },
+    {
+      "title": "Reported second round of secret U.S.–Myanmar talks",
+      "reason": "The new report remained based principally on unnamed sources without a primary readout or second independent confirmation."
+    },
+    {
+      "title": "FDA drug-exclusivity board",
+      "reason": "Reuters reported the board’s formation, but a primary FDA charter, memorandum or announcement was not located and inspected before cutoff; retained for recheck rather than publishing from a single secondary account."
+    },
+    {
+      "title": "Truth Social repost of Fox News polling segment",
+      "reason": "Representative frames showed a polling and campaign discussion. Complete audio and captions were unavailable, and no independently verified government action was located."
+    },
+    {
+      "title": "Trump TV and official video-library recheck",
+      "reason": "Official pages and the same three October 15 library items were inspected at metadata level; no qualifying new item was located in the material reviewed."
+    }
+  ],
+  "corrections": [
+    {
+      "entry_id": "NAT-2026-09-10-006",
+      "checked_at": "2026-10-16 11:57 AM EDT",
+      "summary": "BLS revised the preliminary August monthly PPI increase from 0.4% to 0.5%; the earlier value remains in version history."
+    }
+  ]
+}

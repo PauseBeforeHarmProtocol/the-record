@@ -1,0 +1,111 @@
+{
+  "version": "10.165.0",
+  "base_release_version": "10.164.1",
+  "base_commit": "c9acb29641bc4346a362d1ea1ba1d1ad9f6dabd5",
+  "research_window": {
+    "from_utc": "2026-10-20T09:58:25Z",
+    "through_utc": "2026-10-20T15:57:11Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact prior accepted-branch boundary through the run cutoff."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository’s final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-19-009",
+      "kind": "added",
+      "summary": "Records the district court’s refusal to let EPA unilaterally terminate the xAI Clean Air Act citizen suit while preserving unresolved merits.",
+      "duplicate_review": "The ruling is a distinct procedural development first independently reported after the prior cutoff; no current record or recent maintenance pull request covered this order."
+    },
+    {
+      "entry_id": "NAT-2026-10-20-001",
+      "kind": "added",
+      "summary": "Records the executed $5 million Instacart settlement and its monetary, recruitment, training and monitoring remedies.",
+      "duplicate_review": "No current record or recent maintenance pull request covered this employer, PERM recruitment conduct or settlement instrument."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "ndmiss_xai_intervention_order_oct19",
+      "origin_group": "U.S. District Court for the Northern District of Mississippi",
+      "evidence_extract": "The October 19 opinion allowed the United States, acting for EPA, to intervene but held that neither Rule 41 nor the Clean Air Act permits it to unilaterally dismiss the NAACP citizen suit over the plaintiffs’ objection. The United States may file a Rule 24(c) pleading by October 23; the defendants’ dismissal motion and other merits-related motions remain unresolved.",
+      "document_sha256": "558a8f325276616470403517786ce1fa2285d0cb46cf0cc135a1327eee89d9c5",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete document or webpage.",
+      "inspected_at": "2026-10-20T15:57:11Z"
+    },
+    {
+      "source_id": "reuters_xai_intervention_order_oct20",
+      "origin_group": "Reuters",
+      "evidence_extract": "Reuters independently reported the October 19 ruling, the underlying allegations that xAI operated a gas-fired plant without required permits, the administration’s federal-enforcement-primacy argument and the absence of immediate responses from EPA, xAI and the NAACP.",
+      "document_sha256": "8fbe59beeedcfe05028b0df293f3681f88946f144efede356dfb6121d084a396",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete document or webpage.",
+      "inspected_at": "2026-10-20T15:57:11Z"
+    },
+    {
+      "source_id": "doj_instacart_settlement_oct20",
+      "origin_group": "U.S. Department of Justice",
+      "evidence_extract": "DOJ and EEOC announced a $5 million Instacart settlement resolving citizenship-status and national-origin discrimination allegations in PERM recruitment. The agencies described mailed-only applications, a $4 million claimant fund, a $1 million civil penalty, electronic-application access, policy changes, training, monitoring and reporting.",
+      "document_sha256": "726ab5f09401487bde95fd197397d6343a2ce538073c367788bd3622279525b0",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete document or webpage.",
+      "inspected_at": "2026-10-20T15:57:11Z"
+    },
+    {
+      "source_id": "doj_instacart_summary_oct20",
+      "origin_group": "U.S. Department of Justice and Equal Employment Opportunity Commission",
+      "evidence_extract": "The settlement summary specifies a $4 million fund for applicants and deterred applicants affected from December 2023 through February 2026, a claims administrator, a $1 million civil penalty, public PERM postings, electronic applications, revised policies, annual training, an appointed monitor and compliance reports.",
+      "document_sha256": "bf1e02cb022c032822249b730e0dfb137b2ef85e0382f9f595042220148073c4",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained below, not a claim of hashing the publisher’s complete document or webpage.",
+      "inspected_at": "2026-10-20T15:57:11Z"
+    }
+  ],
+  "truth_social_media_inspection": {
+    "post_ids": [
+      "117473326850171330",
+      "117473326095036573"
+    ],
+    "scope": "Both new post text fields were directly reviewed; the single attached image was directly inspected. Claims inside the posts were not treated as independently verified.",
+    "provenance": "data/truth_social_feed_meta.json, data/truth_social_seed.json and data/truth_social_reviews.json"
+  },
+  "trump_tv_inspection": {
+    "sources": [
+      "https://www.whitehouse.gov/trumptv/",
+      "https://www.whitehouse.gov/live/",
+      "https://www.whitehouse.gov/videos/",
+      "https://www.whitehouse.gov/remarks/",
+      "https://www.whitehouse.gov/releases/"
+    ],
+    "scope": "Official page metadata, titles, dates, durations and stable video IDs were inspected. Direct audiovisual content and captions were not retrieved because YouTube access was throttled.",
+    "finding": "The stream remained A4gNgHfZ-v4. Six October 19 items remained listed. No qualifying new item was located in the material reviewed."
+  },
+  "withheld": [
+    {
+      "title": "Two new Truth Social posts",
+      "reason": "A linked border-enforcement advocacy article and stock-market performance graphic remained feed-only because no independently verified, separate government action was established."
+    },
+    {
+      "title": "Prospective Fraud Whistleblower Incentive Program",
+      "reason": "A later announcement was reported as prospective; no reviewed final instrument, terms or implemented launch was located by the cutoff."
+    },
+    {
+      "title": "Nevada geothermal lease auction",
+      "reason": "The auction was underway, but final bids, awards and lease results were unavailable by the cutoff."
+    },
+    {
+      "title": "White House border-results advocacy",
+      "reason": "The October 20 release compiled administration outcome claims but did not establish a distinct new signed, implemented or adjudicated action."
+    },
+    {
+      "title": "Trump TV metadata recheck",
+      "reason": "Six October 19 items remained visible, but direct audiovisual content and captions were inaccessible and no distinct qualifying action was established."
+    },
+    {
+      "title": "Legacy Wilcox remediation",
+      "reason": "The restored historical row still requires the custody-aware remediation path identified in the prior run, so no material legacy edit was attempted."
+    },
+    {
+      "title": "External archive discovery inputs",
+      "reason": "Trump Archive measurements advanced; the other three registered projects remained stable. Units were preserved separately and no upstream item was promoted automatically."
+    }
+  ],
+  "corrections": []
+}
