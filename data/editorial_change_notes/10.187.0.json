@@ -1,0 +1,66 @@
+{
+  "version": "10.187.0",
+  "base_release_version": "10.186.0",
+  "base_commit": "f92e4dfc0ebf3522d3c35d395862d72fe32a837c",
+  "research_window": {
+    "from_utc": "2026-10-27T03:59:43Z",
+    "through_utc": "2026-10-27T10:00:12Z",
+    "precision": "second",
+    "timezone": "America/Indiana/Indianapolis",
+    "note": "Continuous scan from the exact committed editorial boundary found one qualifying evidence-based detention investigation and no additional qualifying record or material same-event refresh."
+  },
+  "publication_authorization": "Authorized scheduled maintenance of the National Trump Record. Publication remains subject to deterministic validation, CI and the repository's final human acceptance gate; no AI output is treated as evidence.",
+  "changes": [
+    {
+      "entry_id": "NAT-2026-10-27-001",
+      "kind": "new_record",
+      "summary": "An Associated Press investigation and federal habeas docket document evidence supporting Phillip James' disputed U.S. citizenship claim while ICE detention and removal proceedings continue.",
+      "duplicate_review": "No canonical current or legacy record covered James, the August habeas petition or AP's October 27 document review. Broader immigration-detention records concern different people, policies or adjudicated stages."
+    }
+  ],
+  "corrections": [],
+  "withheld": [
+    {
+      "title": "Trump TV October 27 early-morning official-page recheck",
+      "reason": "The official channel and live hub retained the same stream link. The dated library still showed four October 26 listings; footage, audio and captions were not retrieved, and no qualifying new item was located in the material reviewed."
+    },
+    {
+      "title": "Routine campaign, personnel and promotional material",
+      "reason": "Reviewed items supplied no new signed or implemented instrument, formal proposal, court ruling, appropriation or independently supported measured consequence."
+    },
+    {
+      "title": "Four-record target",
+      "reason": "Only one candidate cleared the publication threshold in the exact window; the archive was not padded."
+    }
+  ],
+  "source_inspections": [
+    {
+      "source_id": "innd_james_habeas_docket_aug19",
+      "origin_group": "U.S. District Court for the Northern District of Indiana",
+      "evidence_extract": "The public docket for James v. English, No. 3:26-cv-01225, records an August 19 federal habeas petition by Phillip Michael Thomas James, also identified as Felibi Biladi Siagha-Coke. The docket lists sealed supporting exhibits including a birth certificate, State Department passport-revocation letter, Florida court records, communications with Jamaican authorities and medical reports. The filing and exhibit descriptions establish the pending challenge and evidence submitted, not the truth of every disputed assertion.",
+      "document_sha256": "286371d25c974ea8433e317696944d7a79f1c46141ec7432e95beb5708ba331f",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the complete source document.",
+      "inspected_at": "2026-10-27T10:13:00Z"
+    },
+    {
+      "source_id": "ap_james_citizenship_detention_oct27",
+      "origin_group": "Associated Press",
+      "evidence_extract": "Associated Press reported at 7:08 UTC that ICE has detained James since January 5 while seeking removal to Jamaica. AP independently obtained a 1988 Florida paternity record matching the filed birth certificate, reported prior U.S. passports and citizenship entries in criminal records, and described medical reports attributing his Jamaican-birth claims to paranoid schizophrenia. DHS alleged the birth certificate was fraudulent but supplied no evidence to AP, denied detaining U.S. citizens and said removal proceedings provide due process. Citizenship, habeas relief and the immigration appeal remained unresolved.",
+      "document_sha256": "5cf48580e0003443fbc6501d44a753b811ecd3a7ce65293a48ce75c7c15cf265",
+      "hash_scope": "SHA-256 of the exact normalized evidence extract retained here, not a claim of hashing the complete source document.",
+      "inspected_at": "2026-10-27T10:13:00Z"
+    }
+  ],
+  "truth_social_media_inspection": {
+    "new_posts": 0,
+    "latest_post_id": "117510783769373145",
+    "latest_post_at_utc": "2026-10-27T03:37:42.106000Z",
+    "latest_post_at_eastern": "2026-10-26 11:37:42 PM EDT",
+    "finding": "The validated fallback contained no post newer than the prior snapshot. No new Truth Social text or media lead required editorial review."
+  },
+  "trump_tv_inspection": {
+    "checked_at": "2026-10-27T10:13:00Z",
+    "stream_video_id": "A4gNgHfZ-v4",
+    "finding": "Official Trump TV, live, video-library, remarks and releases pages were rechecked. The same stream link and four October 26 dated-library listings remained visible. Audiovisual content and captions were not retrieved. No qualifying new item was located in the material reviewed."
+  }
+}

@@ -28,6 +28,7 @@ NEW_ENTRY_IDS = set(RELEASE["new_entry_ids"])
 RELEASE_CORRECTIONS = RELEASE.get("corrections", [])
 AI_CREDIT = RELEASE["ai_credit"]
 MAINTENANCE = RELEASE.get("maintenance_revision")
+CONSOLIDATION = RELEASE.get("publication_consolidation")
 BASE_EDITORIAL_VERSION = (
     MAINTENANCE.get("base_editorial_version")
     if isinstance(MAINTENANCE, dict)
@@ -208,6 +209,9 @@ def weekly_page(entries: list[dict], ledger: dict) -> str:
         if MAINTENANCE
         else ""
     )
+    if CONSOLIDATION:
+        editorial_context = f"the preserved stages consolidated in release {VERSION}"
+        maintenance_note = " These are accumulated changes since the previously public release, not new research performed during publication consolidation."
     new_record_word = "record" if len(NEW_ENTRY_IDS) == 1 else "records"
     body = f'''<div class="container"><header class="page-head"><div class="eyebrow">What happened this week</div><h1>{WEEK_LABEL}</h1><p>This rolling seven-day view ends at the preserved editorial cutoff, not the browser clock. Original event dates remain unchanged. It includes original events and recorded material updates, counted once each: {len(weekly)} records; {national_count} national and {in6_count} IN-6.</p><div class="scope-filter" aria-label="Filter weekly records"><button class="button button--primary" type="button" data-week-filter="all" aria-pressed="true">All {len(weekly)}</button><button class="button button--ghost" type="button" data-week-filter="national" aria-pressed="false">National {national_count}</button><button class="button button--ghost" type="button" data-week-filter="in6" aria-pressed="false">IN-6 {in6_count}</button></div></header>{search_panel("Search this week")}<div class="integrity-note"><h2>Currentness boundary</h2><p>The national current layer was researched through {CHECKED_AT}. The backfill in {editorial_context} covers qualifying developments beginning {CUTOFF_START} and added or materially refreshed {len(NEW_ENTRY_IDS)} national {new_record_word}.{maintenance_note} Per-entry evidence state and check times remain visible.</p></div><section class="record-list">{cards}</section></div>'''
     return document(title="Weekly record · The Record", description=f"The Record weekly accountability view for {WEEK_LABEL}.", body=body, active="weekly")
@@ -445,6 +449,11 @@ def downloads_page(entries: list[dict]) -> str:
             else f"All {national_count} national entries, including {len(NEW_ENTRY_IDS)} records added or materially refreshed in this pass, with individual packs and the source ledger."
         )
     )
+    if CONSOLIDATION:
+        national_pack_text = (
+            f"All {national_count} national entries, including {len(NEW_ENTRY_IDS)} accumulated additions or material refreshes since public release {CONSOLIDATION['base_public_release']}. "
+            "Original source reviews and evidence times are retained; consolidation is not a new research scan."
+        )
     base_artifact_note = ""
     if isinstance(maintenance, dict):
         labels = {
@@ -545,6 +554,9 @@ def methodology_page(entries: list[dict]) -> str:
             else ""
         )
     )
+    if CONSOLIDATION:
+        editorial_change_clause = f"carried forward from the preserved stages consolidated in release {VERSION}"
+        maintenance_scope = " Publication consolidation does not assert new source inspections or a later evidence cutoff."
     record_word = "record" if len(NEW_ENTRY_IDS) == 1 else "records"
     if coverage["uncovered_days_between_layers"]:
         coverage_statement = (
@@ -601,6 +613,11 @@ def home_page(entries: list[dict], ledger: dict) -> str:
         if not NEW_ENTRY_IDS and RELEASE_CORRECTIONS
         else f"{len(NEW_ENTRY_IDS)} national {new_record_word} {new_record_verb} added or materially refreshed in {editorial_context}.{maintenance_summary}"
     )
+    if CONSOLIDATION:
+        archive_state_summary = (
+            f"{len(RELEASE['added_entry_ids'])} national additions and {len(RELEASE['refreshed_entry_ids'])} material refreshes accumulated since public release {CONSOLIDATION['base_public_release']} are consolidated here. "
+            "Original source reviews and evidence times are retained; this publication is not a new research scan."
+        )
     body = f'''<section class="hero"><div class="hero-inner"><div><div class="kicker">A living Trump accountability archive · updated {RELEASE_DATE}</div><h1>The full searchable archive, not just the latest headline.</h1><p>This page is the editorial front door: a concise view of newly verified developments. The full searchable archive currently renders {totals["full_archive_runtime_entries"]:,} active dated entries with {totals["full_archive_runtime_source_references"]:,} attached source references across years, topics, people, institutions, and the timeline; its coverage status and legacy review backlog remain disclosed.</p><div class="hero-actions"><a class="button button--primary" href="{site_path('the-record.html#home')}">Enter the full archive</a><a class="button button--secondary" href="{site_path('the-record.html#timeline')}">Search the timeline</a><a class="button button--ghost" href="{site_path('weekly/index.html')}">Latest seven days</a></div></div><aside class="hero-stamp"><div class="eyebrow">Archive state</div><strong>Current through {CHECKED_AT}</strong><p>{archive_state_summary}</p></aside></div><figure class="hero-art"><img src="{site_path('assets/brand/the-record-hero.png')}" alt="An illuminated evidence archive connecting sourced records across a living accountability timeline" width="1672" height="941" fetchpriority="high" decoding="async"></figure></section>
 <div class="container"><section class="stats" aria-label="Archive and release statistics"><div class="stat"><strong>{totals["full_archive_runtime_entries"]:,}</strong><span>generated full-archive entries</span></div><div class="stat"><strong>{totals["full_archive_runtime_unique_urls"]:,}</strong><span>distinct full-archive source URLs</span></div><div class="stat"><strong>{national_count}</strong><span>verified current national entries</span></div><div class="stat"><strong>{len(weekly)}</strong><span>records in this seven-day window</span></div></section>
 <section class="archive-feature"><div class="archive-feature__copy"><div class="eyebrow">The research layer</div><h2>The archive is where the whole project lives.</h2><p>The landing page stays readable by showing a curated current layer. The archive brings historical entries, sources, topic folders, people, statistics, methodology, current additions, and Trump's raw Truth Social feed into one searchable application, while the quality dashboard discloses review backlogs and generated coverage status.</p><div class="button-row"><a class="button button--primary" href="{site_path('the-record.html#home')}">Browse the archive</a><a class="button button--ghost" href="{site_path('the-record.html#timeline')}">Open the full timeline</a><a class="button button--ghost" href="{site_path('archive/index.html#archive-network')}">Explore the Archive Network</a></div></div><div class="archive-paths" aria-label="Archive research paths"><a href="{site_path('the-record.html#topics')}"><strong>Topics</strong><span>Courts, democracy, immigration, media, foreign influence, and more</span></a><a href="{site_path('the-record.html#years')}"><strong>Years</strong><span>Move through covered dates from 1927 into the current term; see Quality for coverage status</span></a><a href="{site_path('the-record.html#politicians')}"><strong>People</strong><span>Find officeholders, advisers, opponents, and connected events</span></a><a href="{site_path('the-record.html#timeline')}"><strong>Search</strong><span>Query dates, names, agencies, events, and source-linked entries</span></a><a href="{site_path('the-record.html#feed')}"><strong>Truth Social</strong><span>Search the raw public posting record without turning every post into an archive finding</span></a><a href="{site_path('quality/index.html')}"><strong>Quality</strong><span>Inspect generated counts, source health, review status, and coverage continuity</span></a></div></section>
