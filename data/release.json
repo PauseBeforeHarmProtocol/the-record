@@ -1,27 +1,38 @@
 {
-  "version": "10.192.1",
-  "artifact_mode": "feed-only",
+  "version": "10.193.0",
+  "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-28T05:20:35Z",
-    "through_utc": "2026-10-28T10:05:18Z",
+    "from_utc": "2026-10-28T10:05:18Z",
+    "through_utc": "2026-10-28T16:10:45Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Bounded source review. No qualifying new canonical item located; one text-only polling repost retained. Earlier full editorial snapshot and all canonical findings/entry packs preserved. Broadcast audiovisual coverage remains unadvanced."
+    "note": "Two October 28 sanctions actions, one explicitly dated October 26 statistical recovery and one correction. No broadcast audiovisual coverage inferred from metadata."
   },
   "release_iso": "2026-10-28",
   "release_human": "October 28, 2026",
-  "checked_at": "2026-10-28 6:05 AM EDT",
-  "previous_version": "10.192.0",
-  "previous_checked_at": "2026-10-28 1:20 AM EDT",
-  "window_started_at": "2026-10-28 1:20 AM EDT",
-  "window_ended_at": "2026-10-28 6:05 AM EDT",
+  "checked_at": "2026-10-28 12:10 PM EDT",
+  "previous_version": "10.192.1",
+  "previous_checked_at": "2026-10-28 6:05 AM EDT",
+  "window_started_at": "2026-10-28 6:05 AM EDT",
+  "window_ended_at": "2026-10-28 12:10 PM EDT",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
   "week_label": "2026-10-26 through 2026-11-01",
   "cutoff_start": "2026-07-20",
-  "new_entry_ids": [],
-  "added_entry_ids": [],
-  "refreshed_entry_ids": [],
+  "new_entry_ids": [
+    "NAT-2026-10-28-001",
+    "NAT-2026-10-28-002",
+    "NAT-2026-10-26-005",
+    "NAT-2026-10-10-001"
+  ],
+  "added_entry_ids": [
+    "NAT-2026-10-28-001",
+    "NAT-2026-10-28-002",
+    "NAT-2026-10-26-005"
+  ],
+  "refreshed_entry_ids": [
+    "NAT-2026-10-10-001"
+  ],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -1240,35 +1251,53 @@
       "target_id": "NAT-2026-09-10-005",
       "decision": "false_positive",
       "notes": "The September 10 record concerns a circuit ruling on constitutional and statutory bond-hearing rights for detained noncitizens. The October 27 record concerns documentary evidence supporting one detainee's disputed U.S. citizenship claim, mental-health evidence and a separate habeas petition; the people, legal questions and evidence differ."
+    },
+    {
+      "entry_id": "NAT-2026-10-28-001",
+      "target_id": "NAT-2026-10-28-002",
+      "decision": "false_positive",
+      "notes": "Shared October 28 OFAC notice contains distinct DRCONGO and DPRK target-level actions, authorities and consequences."
+    },
+    {
+      "entry_id": "NAT-2026-10-28-002",
+      "target_id": "NAT-2026-10-13-007",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "October 28 administrative designations are a different instrument and target set from October 13 criminal arrests and laptop-farm seizures."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "New Truth Social polling repost",
-      "reason": "Text inspected; links to a March 12 polling article, not an implementing action or independently measured policy result. Linked article returned 403; claims not verified."
+      "title": "Venezuela first-million-barrel announcement",
+      "reason": "Full October 28 White House release inspected. Cargo, ownership/payment, DOE receipt and independent counterpart evidence still missing; no free delivery, SPR deposit or price effect verified. Existing NAT-2026-08-28-010 remains target."
     },
     {
-      "title": "October 28 Iran and nuclear remarks",
-      "reason": "Roll Call transcript Iran exchange at 05:58–06:08 inspected, with later nuclear-meeting passage as a lead. Nonspecific refusal to rule out action does not establish a new strike order, war-powers decision or confirmed bilateral agreement. Reuters video page returned 429; no footage watched. Retain for existing Iran/nuclear record follow-up."
+      "title": "Blocked-vessel licensing-policy link",
+      "reason": "Official program page dated the policy October 28, but linked original returned 404. Scope and operative authorization not established; no license or completed sale inferred."
     },
     {
-      "title": "East Potomac appeal and judicial-identity discrepancy",
-      "reason": "October 27 reporting describes an appeal; original appellate filing and operative relief not retrieved. Reports name Ana Reyes while the existing October 26 primary-backed entry names Loren AliKhan. Original instruments must resolve this before a correction; no silent rewrite or inference that a stay was granted."
+      "title": "Election hearing and appeal leads",
+      "reason": "California special-master announcement was stated intent, not an inspected issued order; Washington original letter and East Potomac appellate instrument remain unavailable in this review. Existing canonical IDs retained; no automatic new count."
     },
     {
-      "title": "Other repeated court and policy reporting",
-      "reason": "Essayli and SCOTUS closure stories already covered. Housing, women’s health and seafood initiatives matched existing records; no separate new count. Legacy source-repair candidates remain unresolved."
+      "title": "Campaign and legacy-source repair",
+      "reason": "Ohio rally post and image inspected as campaign material, raw feed only. LEG-003894 and LEG-004067 remain legacy-unreviewed; broad rollback assertions and unrelated-link issues need record-specific 2025 instruments, so no unsupported historical rewrite."
     }
   ],
-  "corrections": [],
+  "corrections": [
+    {
+      "entry_id": "NAT-2026-10-10-001",
+      "checked_at": "2026-10-28T16:10:45Z",
+      "summary": "Corrected the October 26 opinion’s author from Loren AliKhan to Ana C. Reyes after inspecting Document 103 cover, opening relief description and page 70 signature in DC Preservation League v. Department of Interior, 1:26-cv-00477-ACR. Corrected source caption; original entry and source metadata retained. No new appeal/stay outcome inferred."
+    }
+  ],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-28T10:05:18Z",
-    "checked_at_eastern": "2026-10-28 6:05 AM EDT",
+    "checked_at": "2026-10-28T16:10:45Z",
+    "checked_at_eastern": "2026-10-28 12:10 PM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-28T10:05:18Z",
+    "last_successful_page_inspection_at": "2026-10-28T16:10:45Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1279,7 +1308,7 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official TV/live/library/remarks/releases pages and unchanged linked A4gNgHfZ-v4 embed rechecked. Same three October 27 library pages inspected as metadata. No footage/audio/captions retrieved or live/replay status verified. No qualifying new item located in the material reviewed. Fallback error text is not outage evidence; no broadcast-review boundary advanced.",
+    "summary": "Official TV/live/library/remarks/releases pages rechecked; stream A4gNgHfZ-v4 unchanged. Library index still showed the three October 27 listings, while separately discovered official October 28 Andrews gaggle and October 27 Lego clip pages were opened. Their YouTube embeds were throttled. Metadata only; no footage/audio/captions watched, no outage inference or broadcast-review boundary advanced. No qualifying new item located in the material reviewed.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1291,8 +1320,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-28T10:05:18Z",
-        "observed_at_eastern": "2026-10-28 6:05 AM EDT",
+        "observed_at": "2026-10-28T16:10:45Z",
+        "observed_at_eastern": "2026-10-28 12:10 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
         "inspection": "Official page linked unchanged stream A4gNgHfZ-v4. Fallback text was not treated as proof of an outage.",
         "video_ids": [
@@ -1304,8 +1333,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-28T10:05:18Z",
-        "observed_at_eastern": "2026-10-28 6:05 AM EDT",
+        "observed_at": "2026-10-28T16:10:45Z",
+        "observed_at_eastern": "2026-10-28 12:10 PM EDT",
         "format": "official live-hub metadata; audiovisual content unreviewed",
         "inspection": "The hub presented the official channel and fallback text; footage and captions were not retrieved.",
         "video_ids": [
@@ -1317,10 +1346,10 @@
         "posted_date": "2026-10-27",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-28T10:05:18Z",
-        "observed_at_eastern": "2026-10-28 6:05 AM EDT",
+        "observed_at": "2026-10-28T16:10:45Z",
+        "observed_at_eastern": "2026-10-28 12:10 PM EDT",
         "format": "official dated-library metadata; audiovisual content unreviewed",
-        "inspection": "Same three October 27 official pages reopened: history clip NK21cSJwa-Y (1:03, event date unknown), Lo-fi EG9PuzfC_AI (0:00, live/replay unknown), Andrews arrival 6XzpHQfawXw (1:32, original event October 26). No footage/captions retrieved; exact posting/broadcast times remain unknown. Replays are not new government actions.",
+        "inspection": "Index retains history clip NK21cSJwa-Y (1:03, event date unknown), Lo-fi EG9PuzfC_AI (0:00, live/replay unknown), Andrews arrival 6XzpHQfawXw (1:32, event October 26). Repeated listings are not new actions. Additional dated pages inspected separately below; recordings/captions unreviewed.",
         "video_ids": [
           "NK21cSJwa-Y",
           "EG9PuzfC_AI",
@@ -1332,8 +1361,8 @@
         "posted_date": "2026-09-28",
         "original_event_date": "2026-09-28",
         "broadcast_time": null,
-        "observed_at": "2026-10-28T10:05:18Z",
-        "observed_at_eastern": "2026-10-28 6:05 AM EDT",
+        "observed_at": "2026-10-28T16:10:45Z",
+        "observed_at_eastern": "2026-10-28 12:10 PM EDT",
         "format": "supplementary remarks index",
         "inspection": "No new complete Trump TV transcript was supplied; the index was not treated as a complete transcript feed.",
         "video_ids": []
@@ -1343,50 +1372,57 @@
         "posted_date": "2026-10-27",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-28T10:05:18Z",
-        "observed_at_eastern": "2026-10-28 6:05 AM EDT",
+        "observed_at": "2026-10-28T16:10:45Z",
+        "observed_at_eastern": "2026-10-28 12:10 PM EDT",
         "format": "supplementary official releases index",
-        "inspection": "Releases index rechecked: the October 27 crime-survey release remains listed. Its previously inspected administration claim remains withheld; the underlying survey tables and causal attribution were not newly reviewed in this check.",
+        "inspection": "October 28 oil-arrival announcement body inspected; unsupported delivery/payment/SPR and causal price claims withheld. Ohio promotional release listed, not treated as a policy instrument or broadcast transcript.",
         "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-arrival-at-joint-base-andrews-oct-28-2026/",
+        "posted_date": "2026-10-28",
+        "original_event_date": "2026-10-28",
+        "broadcast_time": null,
+        "observed_at": "2026-10-28T16:10:45Z",
+        "observed_at_eastern": "2026-10-28 12:10 PM EDT",
+        "format": "official gaggle recording metadata; live/replay state unknown",
+        "inspection": "Official page title/date inspected. YouTube embed fetch throttled; no audiovisual or caption inspection and no verified posting/broadcast time.",
+        "video_ids": [
+          "C7OR400n_mc"
+        ]
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/lego-music-video/",
+        "posted_date": "2026-10-27",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-28T16:10:45Z",
+        "observed_at_eastern": "2026-10-28 12:10 PM EDT",
+        "format": "official edited/music clip metadata; original event unknown",
+        "inspection": "Official page title/date inspected. YouTube embed fetch throttled; no audiovisual or caption inspection and no verified posting/broadcast time.",
+        "video_ids": [
+          "sWRTm0t1ixE"
+        ]
       }
     ]
   },
   "truth_social_inspection": {
     "new_posts": 1,
     "new_text_reviewed": 1,
-    "new_media_reviewed": 0,
+    "new_media_reviewed": 1,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-28T10:03:01.736903Z",
-    "checked_at_eastern": "2026-10-28 6:03:01 AM EDT",
-    "latest_post_id": "117516869410610885",
-    "latest_post_at_eastern": "2026-10-28 1:25:21 AM EDT",
-    "note": "One new retained text-only polling repost. Text inspected, linked article inaccessible, no independent claim verification. No prior pending media/text promoted by acquisition."
+    "checked_at_utc": "2026-10-28T16:03:23.274954Z",
+    "checked_at_eastern": "2026-10-28 12:03:23 PM EDT",
+    "latest_post_id": "117519060732843479",
+    "latest_post_at_eastern": "2026-10-28 10:42:38 AM EDT",
+    "note": "One newer campaign post/link and its poster inspected. Earlier pending/unavailable posts not retrospectively promoted."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
     "scope": "Standing national-maintenance instruction: merge after evidence, local acceptance and CI gates pass."
   },
   "external_archive_inspection": {
-    "checked_at": "2026-10-28T10:05:18Z",
-    "note": "Four registered primary pages checked. Trump Archive displayed 15,330 total items / 12,688 Truth Social posts / 1,985 speeches/transcripts, distinct units. UndoTrump 1,264 actions; IPTP 1,821 policy actions. Record47 dynamic counters blank. Registry measurements remain the historical full-snapshot values in this strictly feed-only release; observations here do not import records or sum unlike units."
-  },
-  "editorial_snapshot": {
-    "version": "10.192.0",
-    "complete_pack": {
-      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-10-28_v10.192.0.zip",
-      "sha256": "31af568cd80bb1334971d828aaca54fc0d63dbf74a192aa76b6e32114d050e1d"
-    },
-    "national_pack": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-10-28_v10.192.0.zip",
-      "sha256": "5dd66df6fff516e0b746dc78fe672e8d0468008352c852a0cef1eb1d050dfb7c"
-    },
-    "national_brief": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-10-28_v10.192.0.md",
-      "sha256": "24023f3d3972f444677c8109a9f32969eee3dd499e2ec5f04f4cf760c7bad5dd"
-    },
-    "in6_brief": {
-      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-10-28_v10.192.0.md",
-      "sha256": "d24a15cc1419d444ca8602cbe2436b86b585d48aaa3b1e3aeb4f6c00f76b5520"
-    }
+    "checked_at": "2026-10-28T16:10:45Z",
+    "note": "Trump Archive primary index verified 15,332 total items, 12,689 Truth posts, 1,986 speeches/transcripts; measurement history retained. UndoTrump 1,264 actions and IPTP 1,821 policy actions unchanged. Record47 dynamic counters blank, earlier values/times preserved. Zero canonical imports, no unlike-unit sum."
   }
 }

@@ -9145,6 +9145,54 @@
       "provenance_path": "data/editorial_change_notes/10.192.0.json",
       "provenance_sha256": "6b1d2f7821d9264cfbe3e825487ea818fa5da3a982b9ad8270c7eb3ca6cdd0cf",
       "note": "Both additions are explicitly earlier-date recoveries. The Maryland complaint was filed October 27 and its Reuters report preceded this window. The Essayli ruling is dated October 27; AP published at 2026-10-28T04:36:45Z, also before the 04:47:46Z opening boundary. Source inspection and publication are not redated as new government actions."
+    },
+    {
+      "change_id": "10.193.0:NAT-2026-10-28-001",
+      "entry_id": "NAT-2026-10-28-001",
+      "as_of_utc": "2026-10-28T16:10:45Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.193.0",
+      "summary": "SDN additions impose U.S. blocking restrictions; allegations and peace outcomes remain distinct from the legal designation.",
+      "provenance_path": "data/editorial_change_notes/10.193.0.json",
+      "provenance_sha256": "6beda35ad3eef18c70027de83a38655b838d972866184ace0fe18e818fb04a86",
+      "note": "Action dates retained. Crime report is an October 26 recovery; correction is not a new October 26 ruling."
+    },
+    {
+      "change_id": "10.193.0:NAT-2026-10-28-002",
+      "entry_id": "NAT-2026-10-28-002",
+      "as_of_utc": "2026-10-28T16:10:45Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.193.0",
+      "summary": "Administrative designations target facilitators and FFTDC; no criminal conviction or measured revenue loss is inferred.",
+      "provenance_path": "data/editorial_change_notes/10.193.0.json",
+      "provenance_sha256": "6beda35ad3eef18c70027de83a38655b838d972866184ace0fe18e818fb04a86",
+      "note": "Action dates retained. Crime report is an October 26 recovery; correction is not a new October 26 ruling."
+    },
+    {
+      "change_id": "10.193.0:NAT-2026-10-26-005",
+      "entry_id": "NAT-2026-10-26-005",
+      "as_of_utc": "2026-10-28T16:10:45Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.193.0",
+      "summary": "BJS reports declines in selected comparable redesigned measures; neither a historical-record comparison nor causal presidential credit follows.",
+      "provenance_path": "data/editorial_change_notes/10.193.0.json",
+      "provenance_sha256": "6beda35ad3eef18c70027de83a38655b838d972866184ace0fe18e818fb04a86",
+      "note": "Action dates retained. Crime report is an October 26 recovery; correction is not a new October 26 ruling."
+    },
+    {
+      "change_id": "10.193.0:NAT-2026-10-10-001",
+      "entry_id": "NAT-2026-10-10-001",
+      "as_of_utc": "2026-10-28T16:10:45Z",
+      "timestamp_precision": "second",
+      "kind": "correction",
+      "release_version": "10.193.0",
+      "summary": "Corrected the October 26 opinion’s author from Loren AliKhan to Ana C. Reyes after inspecting Document 103 cover, opening relief description and page 70 signature in DC Preservation League v. Department of Interior, 1:26-cv-00477-ACR. Corrected source caption; original entry and source metadata retained. No new appeal/stay outcome inferred.",
+      "provenance_path": "data/editorial_change_notes/10.193.0.json",
+      "provenance_sha256": "6beda35ad3eef18c70027de83a38655b838d972866184ace0fe18e818fb04a86",
+      "note": "Action dates retained. Crime report is an October 26 recovery; correction is not a new October 26 ruling."
     }
   ],
   "reviews": [
@@ -108073,6 +108121,561 @@
       ],
       "unresolved_questions": [
         "Original order and precise operative/stay terms, appeal docket and any broader case-specific consequences."
+      ]
+    },
+    {
+      "review_id": "10.193.0:NAT-2026-10-28-001",
+      "entry_id": "NAT-2026-10-28-001",
+      "content_sha256": "1fe73af656893b7b6284934538735d2f1f5193518309226869fe333c2bc0234b",
+      "reviewed_at": "2026-10-28T16:10:45Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "af2750cf8e9e4af38e87c6388451f9672701aa0b4adf695755f0197fa3a413cc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_drc_dprk_oct28",
+              "locator": "Raw HTML: ten named individual additions, FFTDC and the separately tagged Rwandan MoD/Zigama entities; no personal identifiers republished.",
+              "inspected_at": "2026-10-28T16:10:45Z",
+              "document_sha256": "535732338dcc82a556bdce17323c456c87c1240e6be2d500264f0b13ee6e47c3",
+              "origin_group": "Office of Foreign Assets Control",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "treasury_rwanda_oct28",
+              "locator": "Raw HTML main article: opening, EO 13413 designation paragraphs, sanctions implications and Bessent rationale. Allegations attributed, not adjudicated.",
+              "inspected_at": "2026-10-28T16:10:45Z",
+              "document_sha256": "2c1db0f07be0ee124338f17ddaeb75a6990ec9722b0fecd27f857ea2226eecc6",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "8157ef065884e1a021c975fd5bdc4d92335049442435d5c59ae63372bc317020",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_rwanda_oct28",
+              "locator": "Raw HTML main article: opening, EO 13413 designation paragraphs, sanctions implications and Bessent rationale. Allegations attributed, not adjudicated.",
+              "inspected_at": "2026-10-28T16:10:45Z",
+              "document_sha256": "2c1db0f07be0ee124338f17ddaeb75a6990ec9722b0fecd27f857ea2226eecc6",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "9bc0caa848dbc31c263ed99b8338854bfae7fa5187d5d9667ef0bb6ae06340f6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_rwanda_oct28",
+              "locator": "Raw HTML main article: opening, EO 13413 designation paragraphs, sanctions implications and Bessent rationale. Allegations attributed, not adjudicated.",
+              "inspected_at": "2026-10-28T16:10:45Z",
+              "document_sha256": "2c1db0f07be0ee124338f17ddaeb75a6990ec9722b0fecd27f857ea2226eecc6",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_rwanda_oct28",
+              "locator": "Retrieved web text with locator metadata, NOT raw HTML: main article at lines 151–174; sanctions, Rwanda denial and unanswered requests.",
+              "inspected_at": "2026-10-28T16:10:45Z",
+              "document_sha256": "6d493704f789a5aa5eea91512f2ded1e2baff190c7da80ab2c94e5e51c00e37d",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "6d0b39851493606d57844fd87fd0f018549fa9ecd87d58dc452d6def3c32585d",
+          "review_note": "Separately reviewed institutional or measurement consequences without asserting causation or success."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "7697e0f9ea342f77862cc8a7704212732ee5fd52eb943936d857fd2ae336d7c1",
+          "review_note": "Separately reviewed strongest documented agency rationale and relevant response; no invented statement."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "8ea9d8a6b96ab4bf1e6a4645914e6b4d509601b688d9ea7c3231dbd8edfa7e70",
+          "review_note": "Separately reviewed competing frame and explicit evidence-bound Therefore, retaining uncertainty."
+        }
+      ],
+      "unresolved_questions": [
+        "Subsequent implementation, causal effectiveness, responses or original instruments not inspected remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.193.0:NAT-2026-10-28-002",
+      "entry_id": "NAT-2026-10-28-002",
+      "content_sha256": "649e3dfa5415e93f38a366f0f353815f0c1ee117cbf454fe57b12f4513ad796d",
+      "reviewed_at": "2026-10-28T16:10:45Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "bcf63cd66356efba54a99dca2fcfdfedc7de30f62f2f65ff33f591cf7bc34c9a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_drc_dprk_oct28",
+              "locator": "Raw HTML: ten named individual additions, FFTDC and the separately tagged Rwandan MoD/Zigama entities; no personal identifiers republished.",
+              "inspected_at": "2026-10-28T16:10:45Z",
+              "document_sha256": "535732338dcc82a556bdce17323c456c87c1240e6be2d500264f0b13ee6e47c3",
+              "origin_group": "Office of Foreign Assets Control",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "treasury_dprk_it_oct28",
+              "locator": "Raw HTML main article: ten individuals/one entity, FFTDC, EO 13687/13722 designation paragraphs, sanctions implications and stated business-protection rationale.",
+              "inspected_at": "2026-10-28T16:10:45Z",
+              "document_sha256": "95c09fa5e1706bd90e07a94ef655fcff0f5a2a1b1192ee35ecb8732cc70bd1ae",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5e56cc5046d941fa86259d5430af42ace8ebef1cbe028615ff4b54d9721c3910",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_dprk_it_oct28",
+              "locator": "Raw HTML main article: ten individuals/one entity, FFTDC, EO 13687/13722 designation paragraphs, sanctions implications and stated business-protection rationale.",
+              "inspected_at": "2026-10-28T16:10:45Z",
+              "document_sha256": "95c09fa5e1706bd90e07a94ef655fcff0f5a2a1b1192ee35ecb8732cc70bd1ae",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "9518f5920d5570e024710db08045664542980c60bb21e712c4d6590aa3de7e22",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_dprk_it_oct28",
+              "locator": "Raw HTML main article: ten individuals/one entity, FFTDC, EO 13687/13722 designation paragraphs, sanctions implications and stated business-protection rationale.",
+              "inspected_at": "2026-10-28T16:10:45Z",
+              "document_sha256": "95c09fa5e1706bd90e07a94ef655fcff0f5a2a1b1192ee35ecb8732cc70bd1ae",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_dprk_oct28",
+              "locator": "Retrieved web text with locator metadata, NOT raw HTML: main article at lines 151–175; announced sanctions and unanswered DPRK mission request.",
+              "inspected_at": "2026-10-28T16:10:45Z",
+              "document_sha256": "9a7329b673c33d39a3c36453e2db0ba00054beaacbdfefe34e505c558e8d7503",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "889473803cf89bdf6f323683e25c6d163ba535dc3cc01372bac08f6eb0aa0e18",
+          "review_note": "Separately reviewed institutional or measurement consequences without asserting causation or success."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "16ca82e5ec8684e45548ce61dde13f39a51a064065bb79f974df7f3041661d38",
+          "review_note": "Separately reviewed strongest documented agency rationale and relevant response; no invented statement."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "0f7211a71f2e9a3adf920edf169f6f6794eefb59d03d052299e1d80387684585",
+          "review_note": "Separately reviewed competing frame and explicit evidence-bound Therefore, retaining uncertainty."
+        }
+      ],
+      "unresolved_questions": [
+        "Subsequent implementation, causal effectiveness, responses or original instruments not inspected remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.193.0:NAT-2026-10-26-005",
+      "entry_id": "NAT-2026-10-26-005",
+      "content_sha256": "b5ee4cf11cadcab1b424e3d739b928bd2abad74cf8eeb96f0a324025817b977d",
+      "reviewed_at": "2026-10-28T16:10:45Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "5ea26a11a549a368371e255a6e172e3b2077c7b8fba830ee34f8a82d1b0c2307",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bjs_ncvs2025_preliminary",
+              "locator": "Raw four-page PDF: tables 1–2, redesigned 2024 comparator, significance markers and methodology/weighting on page 3; not the legacy NCVS series.",
+              "inspected_at": "2026-10-28T16:10:45Z",
+              "document_sha256": "28857a7521bce387edced353180f352ac7fcdc1f63dd2a4e7376c5781979bab7",
+              "origin_group": "Bureau of Justice Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "f69b8e4444711f77d5e0c7ec9f354e0f476e36bb513ead02466c7899940e5cee",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bjs_ncvs2025_preliminary",
+              "locator": "Raw four-page PDF: tables 1–2, redesigned 2024 comparator, significance markers and methodology/weighting on page 3; not the legacy NCVS series.",
+              "inspected_at": "2026-10-28T16:10:45Z",
+              "document_sha256": "28857a7521bce387edced353180f352ac7fcdc1f63dd2a4e7376c5781979bab7",
+              "origin_group": "Bureau of Justice Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "bjs_ncvs2025_page",
+              "locator": "Raw HTML main publication description/highlights: preliminary status, 2027 final release, redesign comparability and October 26 publication.",
+              "inspected_at": "2026-10-28T16:10:45Z",
+              "document_sha256": "e8d7e1848e4536fceba972afb79cee616c35a0340b5e8f5f43d578d86acd827c",
+              "origin_group": "Bureau of Justice Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "4013ff10700d86d0c90eda52dce9389462ab46dd943c0cc386c12866d06cc743",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bjs_ncvs2025_preliminary",
+              "locator": "Raw four-page PDF: tables 1–2, redesigned 2024 comparator, significance markers and methodology/weighting on page 3; not the legacy NCVS series.",
+              "inspected_at": "2026-10-28T16:10:45Z",
+              "document_sha256": "28857a7521bce387edced353180f352ac7fcdc1f63dd2a4e7376c5781979bab7",
+              "origin_group": "Bureau of Justice Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "doj_ncvs2025_response",
+              "locator": "Raw HTML article: serious violence excluding simple assault and Woodward administration-effectiveness explanation; not a causal evaluation.",
+              "inspected_at": "2026-10-28T16:10:45Z",
+              "document_sha256": "df838e1ff0a02cf969478ab628545183fd7190b0a1bfc5d740a2a98196297408",
+              "origin_group": "Department of Justice",
+              "evidence_status": "announced"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "3ee07587f5d877ef524d379059cd2fa40cbcb4510f0a83d5ffa3762fa8779a56",
+          "review_note": "Separately reviewed institutional or measurement consequences without asserting causation or success."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "22dd7d47f337a34916e64b2fdf3c0d386795f1d38ece8be8628b482acc97dbe3",
+          "review_note": "Separately reviewed strongest documented agency rationale and relevant response; no invented statement."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "975571412afc546a473f687f4a05577fc2370464d6f7b66f6c94d0c2dfc7f176",
+          "review_note": "Separately reviewed competing frame and explicit evidence-bound Therefore, retaining uncertainty."
+        }
+      ],
+      "unresolved_questions": [
+        "Subsequent implementation, causal effectiveness, responses or original instruments not inspected remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.193.0:NAT-2026-10-10-001",
+      "entry_id": "NAT-2026-10-10-001",
+      "content_sha256": "eae4e9c9bdcfbedf77ead79944edd0cec2dbb1c054e2b07427a78f3f9613f2cb",
+      "reviewed_at": "2026-10-28T16:10:45Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "caa541979177d593d6b97e6f43eba9366ecf9673914dd7470c00e395aedb35b4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_east_potomac_tree_removal_oct10",
+              "locator": "Source inspected for fact 1, including its stated legal or evidentiary status and material qualifications.",
+              "inspected_at": "2026-10-13T21:56:54Z",
+              "document_sha256": "6f76e06ee37518e1c54a1ee7ce4b060df488060d5d6ab8fc44febb61feb9196e",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "3fefd4678e7eb6e63cb21e725fdb0dd9c499aac88e9928f8e5e75af080bc8c51",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_east_potomac_tree_removal_oct10",
+              "locator": "Source inspected for fact 2, including its stated legal or evidentiary status and material qualifications.",
+              "inspected_at": "2026-10-13T21:56:54Z",
+              "document_sha256": "6f76e06ee37518e1c54a1ee7ce4b060df488060d5d6ab8fc44febb61feb9196e",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "87e62bc1a512f77c1418dab1b35b8a724357cf9f7d418ce86231d52c50e4d35e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wapo_east_potomac_tree_removal_oct9",
+              "locator": "Source inspected for fact 3, including its stated legal or evidentiary status and material qualifications.",
+              "inspected_at": "2026-10-13T21:56:54Z",
+              "document_sha256": "0822d1797fa9f6ba328df33b5aaf203b85ce5c7685881eb994dbfba90f06053d",
+              "origin_group": "The Washington Post",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "7a854896e8be8b869f143d383e742cf132de822b41b58c9ac18189dba7830a77",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_east_potomac_court_halt_oct12",
+              "locator": "Source inspected for fact 4, including its stated legal or evidentiary status and material qualifications.",
+              "inspected_at": "2026-10-13T21:56:54Z",
+              "document_sha256": "c58d41978ceb91e59e61a0303427647efb033cd6cda21f657777700ebc6b1cc0",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "a5c5dc88ef40623891d999a313a3106e82e2d0503c6d2e5dfb6c1e2cac353173",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_east_potomac_court_halt_oct12",
+              "locator": "Source inspected for fact 5, including its stated legal or evidentiary status and material qualifications.",
+              "inspected_at": "2026-10-13T21:56:54Z",
+              "document_sha256": "c58d41978ceb91e59e61a0303427647efb033cd6cda21f657777700ebc6b1cc0",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_east_potomac_court_halt_oct12",
+              "locator": "Source inspected for fact 5, including its stated legal or evidentiary status and material qualifications.",
+              "inspected_at": "2026-10-13T21:56:54Z",
+              "document_sha256": "a948bafac6b51ce4f91bd64388df4bd285fffc161b29d87c0f01cf4728d741b8",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "44866139580d3118c6b8fef5bc0958f02387b6e03b467f79d72d02f7709127d9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_east_potomac_halt_oct13",
+              "locator": "Source inspected for fact 6, including its stated legal or evidentiary status and material qualifications.",
+              "inspected_at": "2026-10-13T21:56:54Z",
+              "document_sha256": "bc4bd4aa527556e3715cd3c8aad87b70ded78ee7aadf34abe5d48f0a9e57dc75",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "2826fa7a8f6d03a0e7fe30f9a89e0bb02713799d3579343bec0a049441d765c9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_east_potomac_plan_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.158.0.json; announcement and unresolved implementation status bounded in the entry.",
+              "inspected_at": "2026-10-18T16:08:22Z",
+              "document_sha256": "a238dfc49f8fcf3ed4b6f0df822a465ce22e16d817d2706c321f45cee2d01019",
+              "origin_group": "Donald Trump / Truth Social",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "ap_east_potomac_plan_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.158.0.json; announcement and unresolved implementation status bounded in the entry.",
+              "inspected_at": "2026-10-18T16:08:22Z",
+              "document_sha256": "b418e87d8d1a5ecf45b829c9820bd0779ffed5884cfa9709bc49fe397ec5d4d5",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "wapo_east_potomac_plan_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.158.0.json; announcement and unresolved implementation status bounded in the entry.",
+              "inspected_at": "2026-10-18T16:08:22Z",
+              "document_sha256": "a7ee0e8142f4e2af0c924c84b8b0bf8b2c0183cb239651e4d4387176bc255a6c",
+              "origin_group": "The Washington Post",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "ab8d79bed153aaa6342abb1856fec20e21039e36f311c007a28768f02322710a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_east_potomac_plan_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.158.0.json; announcement and unresolved implementation status bounded in the entry.",
+              "inspected_at": "2026-10-18T16:08:22Z",
+              "document_sha256": "b418e87d8d1a5ecf45b829c9820bd0779ffed5884cfa9709bc49fe397ec5d4d5",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "wapo_east_potomac_plan_oct18",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.158.0.json; announcement and unresolved implementation status bounded in the entry.",
+              "inspected_at": "2026-10-18T16:08:22Z",
+              "document_sha256": "a7ee0e8142f4e2af0c924c84b8b0bf8b2c0183cb239651e4d4387176bc255a6c",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "88b23cba519d11efccc9650641461ba9f03b2bb339d20070e373490aa15378de",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dcd_east_potomac_pi_oct26",
+              "locator": "Raw 70-page PDF: caption on page 1, relief and preservation-response description on pages 6–7, Ana C. Reyes signature on page 70. Only these specified sections newly inspected.",
+              "inspected_at": "2026-10-28T16:10:45Z",
+              "document_sha256": "a398945e68ed40514e22820d37d3b010baf6d67fa61ba3dc4179b6eb5c418d35",
+              "origin_group": "U.S. District Court for the District of Columbia",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "07c7dba2773afd816f253f3eba7ae6456a3a5b287d933e25746fbf0f3aa1e1f4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dcd_east_potomac_pi_oct26",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.186.0.json; procedural and merits limits preserved.",
+              "inspected_at": "2026-10-27T04:03:14Z",
+              "document_sha256": "0058fccf5a33974340977e0a68cecd8487df4e39e3c8dc0f442e69350b34ef33",
+              "origin_group": "U.S. District Court for the District of Columbia",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 10,
+          "fact_sha256": "fb241d75a659546c919695e0a13e5dd6f2264cc13d1403eae3b7416b5db1a5dd",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dcd_east_potomac_pi_oct26",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.186.0.json; procedural and merits limits preserved.",
+              "inspected_at": "2026-10-27T04:03:14Z",
+              "document_sha256": "0058fccf5a33974340977e0a68cecd8487df4e39e3c8dc0f442e69350b34ef33",
+              "origin_group": "U.S. District Court for the District of Columbia",
+              "evidence_status": "enjoined"
+            },
+            {
+              "source_id": "ap_east_potomac_pi_oct26",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.186.0.json; procedural and merits limits preserved.",
+              "inspected_at": "2026-10-27T04:03:14Z",
+              "document_sha256": "5f2964d1e54fdbabe9856508cca09c7294bab4ec3d126087624b2007a8e2f0a8",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_east_potomac_pi_oct26",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.186.0.json; procedural and merits limits preserved.",
+              "inspected_at": "2026-10-27T04:03:14Z",
+              "document_sha256": "ea51e35f483381879aba81ff5a085a478995daeea6b135484c1cbfd33579c3d7",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 11,
+          "fact_sha256": "e3f9d943abcda186aba5c28fc0223be0f7a66877069cca81b7fffcc214402882",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_east_potomac_appeal_oct26",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.186.0.json; procedural and merits limits preserved.",
+              "inspected_at": "2026-10-27T04:03:14Z",
+              "document_sha256": "a49a797b659e16c3ffecbc7a6b5bd1eac9c4ef9c6e83accd85bf032f83c327f0",
+              "origin_group": "Donald Trump / Truth Social",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "ap_east_potomac_pi_oct26",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.186.0.json; procedural and merits limits preserved.",
+              "inspected_at": "2026-10-27T04:03:14Z",
+              "document_sha256": "5f2964d1e54fdbabe9856508cca09c7294bab4ec3d126087624b2007a8e2f0a8",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_east_potomac_pi_oct26",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.186.0.json; procedural and merits limits preserved.",
+              "inspected_at": "2026-10-27T04:03:14Z",
+              "document_sha256": "ea51e35f483381879aba81ff5a085a478995daeea6b135484c1cbfd33579c3d7",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "0945559aa25aa99dc19e34e16a9de5e9431becbc73fff1e35df3a99912f0d036",
+          "review_note": "Separately reviewed institutional or measurement consequences without asserting causation or success."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "34891de31087a747f8f7e6fd32d84c39e34618d789fd8ca48b1c1a8339c41686",
+          "review_note": "Separately reviewed strongest documented agency rationale and relevant response; no invented statement."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "07c89bde8821530c31d2cfca5b281c3bfd59cf8a31f0540b03aeb95678f1d9f6",
+          "review_note": "Separately reviewed competing frame and explicit evidence-bound Therefore, retaining uncertainty."
+        }
+      ],
+      "unresolved_questions": [
+        "Subsequent implementation, causal effectiveness, responses or original instruments not inspected remain unresolved."
       ]
     }
   ],
