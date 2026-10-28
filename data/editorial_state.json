@@ -9121,6 +9121,30 @@
       "provenance_path": "data/editorial_change_notes/10.191.0.json",
       "provenance_sha256": "8c4e884f96495bf22e5ddf85a3fd66db09d01342a7d773e66706656362385442",
       "note": "All four editorial changes recover October 26–27 material (CDC order signed October 22 and published October 27); none is asserted to have occurred after the 2026-10-28T04:01:43Z opening boundary. Source searches also covered the new window. Unresolved older leads and broadcast gaps remain open."
+    },
+    {
+      "change_id": "10.192.0:NAT-2026-10-27-007",
+      "entry_id": "NAT-2026-10-27-007",
+      "as_of_utc": "2026-10-28T05:20:35Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.192.0",
+      "summary": "The eight-count federal complaint seeks declarations and injunctions under FERPA and PPRA; the district denies violating either law.",
+      "provenance_path": "data/editorial_change_notes/10.192.0.json",
+      "provenance_sha256": "6b1d2f7821d9264cfbe3e825487ea818fa5da3a982b9ad8270c7eb3ca6cdd0cf",
+      "note": "Both additions are explicitly earlier-date recoveries. The Maryland complaint was filed October 27 and its Reuters report preceded this window. The Essayli ruling is dated October 27; AP published at 2026-10-28T04:36:45Z, also before the 04:47:46Z opening boundary. Source inspection and publication are not redated as new government actions."
+    },
+    {
+      "change_id": "10.192.0:NAT-2026-10-27-008",
+      "entry_id": "NAT-2026-10-27-008",
+      "as_of_utc": "2026-10-28T05:20:35Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.192.0",
+      "summary": "AP and the Daily Journal report a new appointment-authority ruling; it does not establish immediate removal or dismissal of prosecutions.",
+      "provenance_path": "data/editorial_change_notes/10.192.0.json",
+      "provenance_sha256": "6b1d2f7821d9264cfbe3e825487ea818fa5da3a982b9ad8270c7eb3ca6cdd0cf",
+      "note": "Both additions are explicitly earlier-date recoveries. The Maryland complaint was filed October 27 and its Reuters report preceded this window. The Essayli ruling is dated October 27; AP published at 2026-10-28T04:36:45Z, also before the 04:47:46Z opening boundary. Source inspection and publication are not redated as new government actions."
     }
   ],
   "reviews": [
@@ -107840,6 +107864,215 @@
       ],
       "unresolved_questions": [
         "Contested pricing evidence, monetary authority, judicial findings, enforceable relief and delivered consumer recovery."
+      ]
+    },
+    {
+      "review_id": "10.192.0:NAT-2026-10-27-007:c8a6279b92f3",
+      "entry_id": "NAT-2026-10-27-007",
+      "content_sha256": "c8a6279b92f3bfde856da9cd1d939df70e3064c1a201a6cb2e0962259134a487",
+      "reviewed_at": "2026-10-28T05:20:35Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "f6fc60bf11c22f9d0f6b6dd4020387c1828b83b58327f278ace114a78a35de61",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_aacps_complaint_oct27",
+              "locator": "Raw PDF SHA-256. Stamped Document 1, filed October 27; caption/opening pages 1–2, eight count headings and prayer on pages 28–30. Not a claim to have reviewed every individual-family allegation.",
+              "inspected_at": "2026-10-28T05:20:35Z",
+              "document_sha256": "de1f5fa3ad690783a4afed6a282607447fbc3baabde1ebcc457e3144ae7f14b8",
+              "origin_group": "Maryland federal court filing",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "71fe20e393b0d6cb55e0b010424c8904e9de2f461bdda2272588c6fef1250caa",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_aacps_complaint_oct27",
+              "locator": "Raw PDF SHA-256. Stamped Document 1, filed October 27; caption/opening pages 1–2, eight count headings and prayer on pages 28–30. Not a claim to have reviewed every individual-family allegation.",
+              "inspected_at": "2026-10-28T05:20:35Z",
+              "document_sha256": "de1f5fa3ad690783a4afed6a282607447fbc3baabde1ebcc457e3144ae7f14b8",
+              "origin_group": "Maryland federal court filing",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "doj_aacps_release_oct27",
+              "locator": "Raw HTML SHA-256. October 27 release 26-1271: agency allegations and Harmeet Dhillon parental-access/consent rationale; not an independent finding.",
+              "inspected_at": "2026-10-28T05:20:35Z",
+              "document_sha256": "6c0134ffbd3a97a9fada0d3a6c1410bf8cbb35d43144174ef81f8f8bbb2717e2",
+              "origin_group": "Department of Justice",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "e99e7a37d8b7b6f46043fa884d642f119e23f02c4df0001c8e4cec57bebdb731",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_aacps_complaint_oct27",
+              "locator": "Raw PDF SHA-256. Stamped Document 1, filed October 27; caption/opening pages 1–2, eight count headings and prayer on pages 28–30. Not a claim to have reviewed every individual-family allegation.",
+              "inspected_at": "2026-10-28T05:20:35Z",
+              "document_sha256": "de1f5fa3ad690783a4afed6a282607447fbc3baabde1ebcc457e3144ae7f14b8",
+              "origin_group": "Maryland federal court filing",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "78ff72ff69994b51f737f745e90399f34bd5188fef9f73733633ac04586f5796",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_aacps_release_oct27",
+              "locator": "Raw HTML SHA-256. October 27 release 26-1271: agency allegations and Harmeet Dhillon parental-access/consent rationale; not an independent finding.",
+              "inspected_at": "2026-10-28T05:20:35Z",
+              "document_sha256": "6c0134ffbd3a97a9fada0d3a6c1410bf8cbb35d43144174ef81f8f8bbb2717e2",
+              "origin_group": "Department of Justice",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_aacps_suit_oct27",
+              "locator": "Kanishka Singh full report retrieved through search: filing, FERPA/PPRA and district denial/good-faith-discussion response. SHA-256 of UTF-8 retrieved text with locator metadata, not raw HTML.",
+              "inspected_at": "2026-10-28T05:20:35Z",
+              "document_sha256": "6f2caaacc3ae8adcf8d42d262d5561d1b706ec3ffc51fee944dcd35af02d5465",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "b0f43589d41399da6ae0f8f339943d0852d276c835d3992f8e462f07c72ef633",
+          "review_note": "Separately reviewed institutional consequences without inferring medical treatment, proven harm, nationwide effect or automatic case invalidation."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "7a5d8b18717d290f8fdf85c51ef9972471fa964c30e4943a524db90da89850aa",
+          "review_note": "Separately reviewed strongest documented agency/prosecutor explanation and school-district denial. No invented fresh administration response or appellate outcome."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "fe693f87b7e7cd28292c642f3a0f5c4828f3c27ac8a4b6cde8baa788871bebec",
+          "review_note": "Separately reviewed competing explanation and limits: filed complaint versus finding; reported delayed disqualification versus completed removal."
+        }
+      ],
+      "unresolved_questions": [
+        "District answer, underlying policy record, injunction and final judicial disposition; any actual funding consequence."
+      ]
+    },
+    {
+      "review_id": "10.192.0:NAT-2026-10-27-008:0956f91ffef3",
+      "entry_id": "NAT-2026-10-27-008",
+      "content_sha256": "0956f91ffef3577968d1d962676e4e079f679c94086536f0648c483dcc05f85d",
+      "reviewed_at": "2026-10-28T05:20:35Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "d860761f54a1083daefb6c25b40e823c427bda809cc94182680def15b7d80810",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_essayli_ruling_oct27",
+              "locator": "Full AP text retrieved through search: October 27 ruling, non-immediate effect, Essayli response and revised designation. SHA-256 of UTF-8 retrieved text with locator metadata, not raw HTML.",
+              "inspected_at": "2026-10-28T05:20:35Z",
+              "document_sha256": "9c4255e0510aeb6c012c740760f07ecb6093815429dda58f7fab8b4d831dc596",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "dailyjournal_essayli_oct27",
+              "locator": "Craig Anderson original legal report: Seabright ruling, two prosecutions (Ramirez 25-cr-00264, Tran 25-cr-00250) and postponed enforcement for stay application. No exact deadline adopted. SHA-256 of UTF-8 retrieved text with locator metadata.",
+              "inspected_at": "2026-10-28T05:20:35Z",
+              "document_sha256": "2004c67d7f36f671817162eb57ffe004a3aa069b0d3f38bf1b1375121d91c1a8",
+              "origin_group": "Daily Journal",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "1cbb5e5f6332669eddb7c6a2fe12b97be3ac9e759ddb247b0ad04c545005f90b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dailyjournal_essayli_oct27",
+              "locator": "Craig Anderson original legal report: Seabright ruling, two prosecutions (Ramirez 25-cr-00264, Tran 25-cr-00250) and postponed enforcement for stay application. No exact deadline adopted. SHA-256 of UTF-8 retrieved text with locator metadata.",
+              "inspected_at": "2026-10-28T05:20:35Z",
+              "document_sha256": "2004c67d7f36f671817162eb57ffe004a3aa069b0d3f38bf1b1375121d91c1a8",
+              "origin_group": "Daily Journal",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_essayli_ruling_oct27",
+              "locator": "Full AP text retrieved through search: October 27 ruling, non-immediate effect, Essayli response and revised designation. SHA-256 of UTF-8 retrieved text with locator metadata, not raw HTML.",
+              "inspected_at": "2026-10-28T05:20:35Z",
+              "document_sha256": "9c4255e0510aeb6c012c740760f07ecb6093815429dda58f7fab8b4d831dc596",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "92b4740a8b3edadfa02a6ba8351f78aa5d8f559f900d7ee78077ef2a17fe2b3b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "latimes_essayli_oct27",
+              "locator": "Brittny Mejia report, paragraph on refusal to dismiss indictments; used only for that brief confirmation, not a lengthy derivative summary. SHA-256 of UTF-8 retrieved text with locator metadata.",
+              "inspected_at": "2026-10-28T05:20:35Z",
+              "document_sha256": "18537b67a38e1ac673b632161188cd17b1c1cb69dbba8e610f89e28874d0c9f6",
+              "origin_group": "Los Angeles Times",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_essayli_ruling_oct27",
+              "locator": "Full AP text retrieved through search: October 27 ruling, non-immediate effect, Essayli response and revised designation. SHA-256 of UTF-8 retrieved text with locator metadata, not raw HTML.",
+              "inspected_at": "2026-10-28T05:20:35Z",
+              "document_sha256": "9c4255e0510aeb6c012c740760f07ecb6093815429dda58f7fab8b4d831dc596",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "451ffe73ba57687f0cacfefe526893cbba203b3ef4d779d5146a687e45bf5bd9",
+          "review_note": "Separately reviewed institutional consequences without inferring medical treatment, proven harm, nationwide effect or automatic case invalidation."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "e24708b2a71a0efd2b7c904bee294aa485396f5b12aa1b28a13c06c4904b2161",
+          "review_note": "Separately reviewed strongest documented agency/prosecutor explanation and school-district denial. No invented fresh administration response or appellate outcome."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "ca6771e54457762df942dbfd6cd91efb3c08513137dac89d345aa2f2956d52fe",
+          "review_note": "Separately reviewed competing explanation and limits: filed complaint versus finding; reported delayed disqualification versus completed removal."
+        }
+      ],
+      "unresolved_questions": [
+        "Original order and precise operative/stay terms, appeal docket and any broader case-specific consequences."
       ]
     }
   ],
