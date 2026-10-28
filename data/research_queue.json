@@ -11817,7 +11817,7 @@
     "first_seen_at": "2026-10-28T04:01:43Z",
     "timestamp_precision": "second",
     "status": "withheld",
-    "reason": "New official video pages inspected, but audiovisual content/captions not retrieved. No claim of watched footage, stream outage or complete coverage. Rechecked October 28 at 12:47 AM EDT: listings unchanged, two YouTube fetches disabled and one throttled; no audiovisual coverage boundary advanced.",
+    "reason": "New official video pages inspected, but audiovisual content/captions not retrieved. No claim of watched footage, stream outage or complete coverage. Rechecked October 28 at 12:47 AM EDT: listings unchanged, two YouTube fetches disabled and one throttled; no audiovisual coverage boundary advanced. Rechecked October 28 at 1:20 AM EDT: official listings unchanged; recordings still disabled/throttled and no audiovisual coverage boundary advanced.",
     "recheck_trigger": "Retrieve official recordings and captions; retain unknown broadcast boundary and recheck stream IDs.",
     "provenance": [
       "https://www.whitehouse.gov/trumptv/",
@@ -11842,6 +11842,40 @@
           "https://www.youtube.com/watch?v=6XzpHQfawXw"
         ],
         "canonical_id": null
+      },
+      {
+        "candidate_id": "QUEUE-20261028-TRUMPTV-CAPTIONS",
+        "title": "October 27 official video metadata, captions and live/replay gap",
+        "first_seen_at": "2026-10-28T04:01:43Z",
+        "timestamp_precision": "second",
+        "status": "withheld",
+        "reason": "New official video pages inspected, but audiovisual content/captions not retrieved. No claim of watched footage, stream outage or complete coverage. Rechecked October 28 at 12:47 AM EDT: listings unchanged, two YouTube fetches disabled and one throttled; no audiovisual coverage boundary advanced.",
+        "recheck_trigger": "Retrieve official recordings and captions; retain unknown broadcast boundary and recheck stream IDs.",
+        "provenance": [
+          "https://www.whitehouse.gov/trumptv/",
+          "https://www.youtube.com/watch?v=NK21cSJwa-Y",
+          "https://www.youtube.com/watch?v=EG9PuzfC_AI",
+          "https://www.youtube.com/watch?v=6XzpHQfawXw"
+        ],
+        "canonical_id": null,
+        "revisions": [
+          {
+            "candidate_id": "QUEUE-20261028-TRUMPTV-CAPTIONS",
+            "title": "October 27 official video metadata, captions and live/replay gap",
+            "first_seen_at": "2026-10-28T04:01:43Z",
+            "timestamp_precision": "second",
+            "status": "withheld",
+            "reason": "New official video pages inspected, but audiovisual content/captions not retrieved. No claim of watched footage, stream outage or complete coverage.",
+            "recheck_trigger": "Retrieve official recordings and captions; retain unknown broadcast boundary and recheck stream IDs.",
+            "provenance": [
+              "https://www.whitehouse.gov/trumptv/",
+              "https://www.youtube.com/watch?v=NK21cSJwa-Y",
+              "https://www.youtube.com/watch?v=EG9PuzfC_AI",
+              "https://www.youtube.com/watch?v=6XzpHQfawXw"
+            ],
+            "canonical_id": null
+          }
+        ]
       }
     ]
   },
@@ -11909,13 +11943,73 @@
     "title": "Administrative-closure and Maryland school-policy litigation leads",
     "first_seen_at": "2026-10-28T04:47:46Z",
     "timestamp_precision": "second",
-    "status": "withheld",
-    "reason": "Fresh reporting located but original orders/filings not yet inspected and lifecycle duplicate review incomplete. No canonical finding inferred from a headline.",
-    "recheck_trigger": "Retrieve original Supreme Court order and Anne Arundel complaint; deduplicate by docket, date and legal stage.",
+    "status": "published",
+    "reason": "Both components resolved without duplicate counting: SCOTUS administrative closure already exists at NAT-2026-10-27-002; Maryland original complaint now inspected and published at NAT-2026-10-27-007.",
+    "recheck_trigger": "Subsequent legal stages, implementation or corrections only; do not republish either filing/ruling as a new event.",
     "provenance": [
       "https://www.reuters.com/world/us-supreme-court-denies-immigration-judges-power-shelve-deportation-cases-2026-10-27/",
       "https://www.reuters.com/legal/government/us-justice-department-sues-maryland-school-district-over-transgender-policies-2026-10-28/"
     ],
-    "canonical_id": null
+    "canonical_id": "NAT-2026-10-27-007",
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20261028-0049-LEGAL",
+        "title": "Administrative-closure and Maryland school-policy litigation leads",
+        "first_seen_at": "2026-10-28T04:47:46Z",
+        "timestamp_precision": "second",
+        "status": "withheld",
+        "reason": "Fresh reporting located but original orders/filings not yet inspected and lifecycle duplicate review incomplete. No canonical finding inferred from a headline.",
+        "recheck_trigger": "Retrieve original Supreme Court order and Anne Arundel complaint; deduplicate by docket, date and legal stage.",
+        "provenance": [
+          "https://www.reuters.com/world/us-supreme-court-denies-immigration-judges-power-shelve-deportation-cases-2026-10-27/",
+          "https://www.reuters.com/legal/government/us-justice-department-sues-maryland-school-district-over-transgender-policies-2026-10-28/"
+        ],
+        "canonical_id": null
+      }
+    ]
+  },
+  {
+    "candidate_id": "QUEUE-20261028-0120-NAT-2026-10-27-007",
+    "title": "DOJ sues Anne Arundel school board over parental access and student gender policies",
+    "first_seen_at": "2026-10-28T05:20:35Z",
+    "timestamp_precision": "second",
+    "status": "published",
+    "reason": "Original 31-page complaint: caption, opening allegations, count headings and prayer inspected; DOJ release and independent Reuters reporting with district response. Filed/pending; October 27 recovery, not an action first occurring after the current cutoff opened.",
+    "recheck_trigger": "Retrieve subsequent orders, original missing instruments, implementation or correction.",
+    "provenance": [
+      "https://www.justice.gov/crt/media/1468906/dl",
+      "https://www.justice.gov/opa/pr/justice-department-sues-stop-secret-gender-transitions-anne-arundel-county-public-schools",
+      "https://www.investing.com/news/politics-news/us-justice-department-sues-maryland-school-district-over-transgender-policies-4977306"
+    ],
+    "canonical_id": "NAT-2026-10-27-007"
+  },
+  {
+    "candidate_id": "QUEUE-20261028-0120-NAT-2026-10-27-008",
+    "title": "Reported ruling disqualifies Essayli from two prosecutions, with enforcement delayed",
+    "first_seen_at": "2026-10-28T05:20:35Z",
+    "timestamp_precision": "second",
+    "status": "published",
+    "reason": "AP and Daily Journal original reporting, with brief Los Angeles Times confirmation. Named judicial ruling as reported; primary order uninspected. Earlier-date recovery; AP publication was October 28 at 04:36:45 UTC, before the new window.",
+    "recheck_trigger": "Retrieve subsequent orders, original missing instruments, implementation or correction.",
+    "provenance": [
+      "https://apnews.com/article/c3e6aa99c9d90193d649b8565e4f213a",
+      "https://www.dailyjournal.com/articles/395705-federal-judge-disqualifies-essayli-from-overseeing-criminal-prosecutions",
+      "https://www.latimes.com/california/story/2026-10-27/judge-finds-l-a-s-top-federal-prosecutor-is-unlawfully-serving-bars-him-from-two-cases"
+    ],
+    "canonical_id": "NAT-2026-10-27-008"
+  },
+  {
+    "candidate_id": "QUEUE-20261028-0120-ESSAYLI-ORDER",
+    "title": "Original Essayli disqualification order and operative/stay terms",
+    "first_seen_at": "2026-10-28T05:20:35Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "reason": "Reported ruling is published at NAT-2026-10-27-008; original October 27 order and exact operative deadline remain uninspected. Do not infer immediate removal, a blanket order, dismissed indictments or a completed appeal.",
+    "recheck_trigger": "Retrieve original Ramirez/Tran order and subsequent stay/appellate docket; update the existing canonical record.",
+    "provenance": [
+      "https://clearinghouse.net/case/47090/",
+      "https://www.dailyjournal.com/articles/395705-federal-judge-disqualifies-essayli-from-overseeing-criminal-prosecutions"
+    ],
+    "canonical_id": "NAT-2026-10-27-008"
   }
 ]
