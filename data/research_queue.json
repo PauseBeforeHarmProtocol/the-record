@@ -11774,13 +11774,29 @@
     "first_seen_at": "2026-10-28T04:01:43Z",
     "timestamp_precision": "second",
     "status": "withheld",
-    "reason": "Earlier-window recovery lead; no original military announcement inspected. Target identity, cargo and underlying intelligence not independently verified. Recheck existing NAT-2026-08-25-005 rather than create a parallel campaign record.; Reuters reports arguments and a promised October 28 ruling, not a new injunction. Existing NAT-2026-09-15-003 remains target; do not promote judicial skepticism into an order.; Original cargo/payment/DOE receipt documents and MOU implementation evidence remain uninspected. Existing queue retained; allegations or intended deliveries not promoted to completed facts.; Official release inspected, but underlying NCVS tables/methodology and independent causal analysis not reviewed. Government attribution of a crime trend to Trump is not an established causal finding.; Recovery leads require direct letters/orders and lifecycle deduplication; previews and repeated Comey/immigration court reports do not establish new canonical events.",
+    "reason": "Earlier-window recovery lead; no original military announcement inspected. Target identity, cargo and underlying intelligence not independently verified. Recheck existing NAT-2026-08-25-005 rather than create a parallel campaign record.; Reuters reports arguments and a promised October 28 ruling, not a new injunction. Existing NAT-2026-09-15-003 remains target; do not promote judicial skepticism into an order.; Original cargo/payment/DOE receipt documents and MOU implementation evidence remain uninspected. Existing queue retained; allegations or intended deliveries not promoted to completed facts.; Official release inspected, but underlying NCVS tables/methodology and independent causal analysis not reviewed. Government attribution of a crime trend to Trump is not an established causal finding.; Recovery leads require direct letters/orders and lifecycle deduplication; previews and repeated Comey/immigration court reports do not establish new canonical events. Boat-strike component now reviewed using named SOUTHCOM attribution in AP and USNI and materially refreshed at NAT-2026-08-25-005; other components remain unresolved.",
     "recheck_trigger": "Retrieve military statement, court order/ballot-demand letters, underlying NCVS report and independent analysis, cargo/payment instruments and HHS MOU.",
     "provenance": [
       "https://www.reuters.com/legal/government/us-judge-weigh-justice-depts-effort-block-california-counting-alleged-noncitizen-2026-10-27/",
       "https://www.whitehouse.gov/releases/2026/10/new-survey-president-trump-delivers-historic-drop-in-violent-crime/"
     ],
-    "canonical_id": null
+    "canonical_id": null,
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20261028-LEADS",
+        "title": "Earlier lethal strike, ballot hearing, crime-survey causality and policy implementation",
+        "first_seen_at": "2026-10-28T04:01:43Z",
+        "timestamp_precision": "second",
+        "status": "withheld",
+        "reason": "Earlier-window recovery lead; no original military announcement inspected. Target identity, cargo and underlying intelligence not independently verified. Recheck existing NAT-2026-08-25-005 rather than create a parallel campaign record.; Reuters reports arguments and a promised October 28 ruling, not a new injunction. Existing NAT-2026-09-15-003 remains target; do not promote judicial skepticism into an order.; Original cargo/payment/DOE receipt documents and MOU implementation evidence remain uninspected. Existing queue retained; allegations or intended deliveries not promoted to completed facts.; Official release inspected, but underlying NCVS tables/methodology and independent causal analysis not reviewed. Government attribution of a crime trend to Trump is not an established causal finding.; Recovery leads require direct letters/orders and lifecycle deduplication; previews and repeated Comey/immigration court reports do not establish new canonical events.",
+        "recheck_trigger": "Retrieve military statement, court order/ballot-demand letters, underlying NCVS report and independent analysis, cargo/payment instruments and HHS MOU.",
+        "provenance": [
+          "https://www.reuters.com/legal/government/us-judge-weigh-justice-depts-effort-block-california-counting-alleged-noncitizen-2026-10-27/",
+          "https://www.whitehouse.gov/releases/2026/10/new-survey-president-trump-delivers-historic-drop-in-violent-crime/"
+        ],
+        "canonical_id": null
+      }
+    ]
   },
   {
     "candidate_id": "QUEUE-20261028-LEGACY-METHANE",
@@ -11801,13 +11817,104 @@
     "first_seen_at": "2026-10-28T04:01:43Z",
     "timestamp_precision": "second",
     "status": "withheld",
-    "reason": "New official video pages inspected, but audiovisual content/captions not retrieved. No claim of watched footage, stream outage or complete coverage.",
+    "reason": "New official video pages inspected, but audiovisual content/captions not retrieved. No claim of watched footage, stream outage or complete coverage. Rechecked October 28 at 12:47 AM EDT: listings unchanged, two YouTube fetches disabled and one throttled; no audiovisual coverage boundary advanced.",
     "recheck_trigger": "Retrieve official recordings and captions; retain unknown broadcast boundary and recheck stream IDs.",
     "provenance": [
       "https://www.whitehouse.gov/trumptv/",
       "https://www.youtube.com/watch?v=NK21cSJwa-Y",
       "https://www.youtube.com/watch?v=EG9PuzfC_AI",
       "https://www.youtube.com/watch?v=6XzpHQfawXw"
+    ],
+    "canonical_id": null,
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20261028-TRUMPTV-CAPTIONS",
+        "title": "October 27 official video metadata, captions and live/replay gap",
+        "first_seen_at": "2026-10-28T04:01:43Z",
+        "timestamp_precision": "second",
+        "status": "withheld",
+        "reason": "New official video pages inspected, but audiovisual content/captions not retrieved. No claim of watched footage, stream outage or complete coverage.",
+        "recheck_trigger": "Retrieve official recordings and captions; retain unknown broadcast boundary and recheck stream IDs.",
+        "provenance": [
+          "https://www.whitehouse.gov/trumptv/",
+          "https://www.youtube.com/watch?v=NK21cSJwa-Y",
+          "https://www.youtube.com/watch?v=EG9PuzfC_AI",
+          "https://www.youtube.com/watch?v=6XzpHQfawXw"
+        ],
+        "canonical_id": null
+      }
+    ]
+  },
+  {
+    "candidate_id": "QUEUE-20261028-RECOVERY-NAT-2026-08-25-005",
+    "title": "SOUTHCOM reports five killed in another Eastern Pacific boat strike",
+    "first_seen_at": "2026-10-28T04:47:46Z",
+    "timestamp_precision": "second",
+    "status": "published",
+    "reason": "AP and USNI independently report the named SOUTHCOM announcement. Original October 27 X post retrieval returned 403; no footage reviewed. Prior dated campaign claims and their original claim-review inspection times retained.",
+    "recheck_trigger": "Inspect implementation, underlying evidence, litigation disposition or correction.",
+    "provenance": [
+      "https://apnews.com/article/ef5e229630e00f370e0d1772edc34dd9",
+      "https://news.usni.org/2026/10/27/u-s-forces-kill-5-in-strike-on-suspected-narco-boat"
+    ],
+    "canonical_id": "NAT-2026-08-25-005"
+  },
+  {
+    "candidate_id": "QUEUE-20261028-RECOVERY-NAT-2026-09-11-014",
+    "title": "CDC orders DRC-presence attestations for U.S.-bound air passengers starting November 3",
+    "first_seen_at": "2026-10-28T04:47:46Z",
+    "timestamp_precision": "second",
+    "status": "published",
+    "reason": "New Federal Register order and CDC instructions establish scope and future dates; no independent implementation or effectiveness finding located. Original September–October facts, Reuters findings and their prior review times retained with dated scope.",
+    "recheck_trigger": "Inspect implementation, underlying evidence, litigation disposition or correction.",
+    "provenance": [
+      "https://www.govinfo.gov/content/pkg/FR-2026-10-27/pdf/2026-21828.pdf",
+      "https://www.cdc.gov/port-health/legal-authorities/attestation-order.html"
+    ],
+    "canonical_id": "NAT-2026-09-11-014"
+  },
+  {
+    "candidate_id": "QUEUE-20261028-RECOVERY-NAT-2026-10-27-006",
+    "title": "State coalition sues over corporate ownership-reporting exemptions",
+    "first_seen_at": "2026-10-28T04:47:46Z",
+    "timestamp_precision": "second",
+    "status": "published",
+    "reason": "Original stamped complaint and Minnesota litigant announcement, with Reuters reporting and the administration’s earlier rationale. Filed/pending; high confidence in filing and requested relief. Earlier-date recovery, not an action first occurring after the current window opened.",
+    "recheck_trigger": "Inspect implementation, underlying evidence, litigation disposition or correction.",
+    "provenance": [
+      "https://www.ag.state.mn.us/Office/Communications/2026/docs/02359_Corporate-Transparency-Act_Complaint.pdf",
+      "https://www.ag.state.mn.us/Office/Communications/2026/10/27_Corporate-Transparency-Act.asp",
+      "https://www.investing.com/news/stock-market-news/trump-administration-sued-over-rollback-of-corporate-ownership-reporting-rules-4977180"
+    ],
+    "canonical_id": "NAT-2026-10-27-006"
+  },
+  {
+    "candidate_id": "QUEUE-20261028-RECOVERY-NAT-2026-10-26-004",
+    "title": "FTC and states sue Dollar General over alleged shelf-to-register overcharging",
+    "first_seen_at": "2026-10-28T04:47:46Z",
+    "timestamp_precision": "second",
+    "status": "published",
+    "reason": "Original stamped complaint, FTC announcement and defendant’s original statement; brief independent confirmation from The Guardian. Filed/pending, with contested claims. October 26 recovery; no claim of first publication within the new source window.",
+    "recheck_trigger": "Inspect implementation, underlying evidence, litigation disposition or correction.",
+    "provenance": [
+      "https://www.ftc.gov/system/files/ftc_gov/pdf/DollarGeneral-Complaint.pdf",
+      "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-state-partners-sue-dollar-general-charging-consumers-more-advertised-many-products",
+      "https://newscenter.dollargeneral.com/news/statement-regarding-ftc-lawsuit-10262026/1b9f00d7-e1a1-4391-8dce-af2dc5bf1bb9",
+      "https://www.theguardian.com/us-news/2026/oct/26/dollar-general-ftc-lawsuit"
+    ],
+    "canonical_id": "NAT-2026-10-26-004"
+  },
+  {
+    "candidate_id": "QUEUE-20261028-0049-LEGAL",
+    "title": "Administrative-closure and Maryland school-policy litigation leads",
+    "first_seen_at": "2026-10-28T04:47:46Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "reason": "Fresh reporting located but original orders/filings not yet inspected and lifecycle duplicate review incomplete. No canonical finding inferred from a headline.",
+    "recheck_trigger": "Retrieve original Supreme Court order and Anne Arundel complaint; deduplicate by docket, date and legal stage.",
+    "provenance": [
+      "https://www.reuters.com/world/us-supreme-court-denies-immigration-judges-power-shelve-deportation-cases-2026-10-27/",
+      "https://www.reuters.com/legal/government/us-justice-department-sues-maryland-school-district-over-transgender-policies-2026-10-28/"
     ],
     "canonical_id": null
   }
