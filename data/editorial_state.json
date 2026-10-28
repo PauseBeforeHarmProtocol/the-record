@@ -9049,6 +9049,30 @@
       "provenance_path": "data/editorial_change_notes/10.189.0.json",
       "provenance_sha256": "157cdfed99bc494f99151af52f54c94eb27a6a2b644141986941ae9cca95a33a",
       "note": "Evidence-as-of inspection time; original event date preserved. MOVES6 is explicitly date-only same-day recovery, not a precise post-noon publication claim."
+    },
+    {
+      "change_id": "10.190.0:NAT-2026-10-27-004",
+      "entry_id": "NAT-2026-10-27-004",
+      "as_of_utc": "2026-10-28T04:01:43Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.190.0",
+      "summary": "The signed proposal would revise well-site standards, flaring and leak oversight; it is not a final repeal or measured price reduction.",
+      "provenance_path": "data/editorial_change_notes/10.190.0.json",
+      "provenance_sha256": "6b7a436b52f30dd3201963709fdd2eef7000ae7f8c45a4cb0b3faa0f79fec56a",
+      "note": "Methane has an October 27 signature/announcement date but no verified precise posting time; recovered here without claiming first publication after the prior cutoff. Visa plan independently reported by ABC at 6:21 PM EDT, after the prior 6:11:16 PM cutoff."
+    },
+    {
+      "change_id": "10.190.0:NAT-2026-10-27-005",
+      "entry_id": "NAT-2026-10-27-005",
+      "as_of_utc": "2026-10-28T04:01:43Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.190.0",
+      "summary": "ABC News and AP separately attribute the plan to a senior official; visa documents, entry and the decision’s legal rationale were not inspected.",
+      "provenance_path": "data/editorial_change_notes/10.190.0.json",
+      "provenance_sha256": "6b7a436b52f30dd3201963709fdd2eef7000ae7f8c45a4cb0b3faa0f79fec56a",
+      "note": "Methane has an October 27 signature/announcement date but no verified precise posting time; recovered here without claiming first publication after the prior cutoff. Visa plan independently reported by ABC at 6:21 PM EDT, after the prior 6:11:16 PM cutoff."
     }
   ],
   "reviews": [
@@ -106807,6 +106831,215 @@
       ],
       "unresolved_questions": [
         "Later implementation, appellate or further court orders and measured effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.190.0:NAT-2026-10-27-004:67bb75328638",
+      "entry_id": "NAT-2026-10-27-004",
+      "content_sha256": "67bb7532863866f7f58585bebbf1a482971c0fea475b918847e32eb6b9a163ba",
+      "reviewed_at": "2026-10-28T04:01:43Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "cb50fa9df0e779c9dfd7eab546821a4644ea6a06100956c93a029c6ebe0eb95c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "epa_oil_gas_proposal_oct27",
+              "locator": "Pre-publication cover page: signature October 27, RIN 2060-AW73, docket EPA-HQ-OAR-2025-0163; official compliance version forthcoming. Only cover and opening scope inspected, not all 388 pages.",
+              "inspected_at": "2026-10-28T04:01:43Z",
+              "document_sha256": "3e5293aa05fdf057587c7c8d3ffec339fdf0bb653f80d9306e3f94a48ea0066d",
+              "origin_group": "Environmental Protection Agency",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "epa_oil_gas_reconsideration_oct27",
+              "locator": "October 27 release: five proposed changes, agency savings and output projections, stated achievable-standards rationale; not a final rule.",
+              "inspected_at": "2026-10-28T04:01:43Z",
+              "document_sha256": "154a4a32699764c59653bd4e07ade8b2651b023955d32a162110262b9515c19b",
+              "origin_group": "Environmental Protection Agency",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "79f73e364f2be0a9d131f11aff35d2d46716c6edd9da6f0ebc16354686029858",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "epa_oil_gas_factsheet_oct27",
+              "locator": "Both fact-sheet pages: five proposals, small-well rationale and 48-day comment language; differs from process page’s 45 days.",
+              "inspected_at": "2026-10-28T04:01:43Z",
+              "document_sha256": "14560fb4d0e8c4b908c4615e4572c58db1cab90814388d2a43b8808dc368e46a",
+              "origin_group": "Environmental Protection Agency",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "4bdaa2c20d02f856128a774d434ea7599906cb4f6ee0186533310e61253d050b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "epa_oil_gas_reconsideration_oct27",
+              "locator": "October 27 release: five proposed changes, agency savings and output projections, stated achievable-standards rationale; not a final rule.",
+              "inspected_at": "2026-10-28T04:01:43Z",
+              "document_sha256": "154a4a32699764c59653bd4e07ade8b2651b023955d32a162110262b9515c19b",
+              "origin_group": "Environmental Protection Agency",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "reuters_methane_proposal_oct27",
+              "locator": "Steve Holland/Jarrett Renshaw full report: planned proposal, small-well relief, third-party program and flaring; underlying official anonymous, core regulatory claims independently established in EPA records.",
+              "inspected_at": "2026-10-28T04:01:43Z",
+              "document_sha256": "bf3c169071cbdd4aa8b1ae93724184658dd7bbb4270e8633ae08779b499a1d52",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "9f5a7f16ce0ffab57fbea030ba2f60b98459931fdf8bc81110fb88bed9459c74",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "epa_oil_gas_process_oct27",
+              "locator": "October proposed-reconsideration section and public-hearing information: future Federal Register publication, 45-day comment period with exact date not yet set.",
+              "inspected_at": "2026-10-28T04:01:43Z",
+              "document_sha256": "87afa0d95ad52708e837e855dd9ad2ad297ac3d06d6b42e91ecffbcdb20fdd30",
+              "origin_group": "Environmental Protection Agency",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "epa_oil_gas_factsheet_oct27",
+              "locator": "Both fact-sheet pages: five proposals, small-well rationale and 48-day comment language; differs from process page’s 45 days.",
+              "inspected_at": "2026-10-28T04:01:43Z",
+              "document_sha256": "14560fb4d0e8c4b908c4615e4572c58db1cab90814388d2a43b8808dc368e46a",
+              "origin_group": "Environmental Protection Agency",
+              "evidence_status": "proposed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "6bc3ca10da422b8fcbc06fea9b11badb820290e49806d342b03504e7a18d0d18",
+          "review_note": "Separately reviewed material consequences; conditional risk is not asserted as measured harm or proven motive."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "7e8ddfba1279ee190fb229f049e4b8d9885082f81ae5e6ae347d4d305db4592f",
+          "review_note": "Separately reviewed strongest supporting frame. EPA rationale is attributed; ordinary visa discretion is explicitly a possible frame, not a documented official justification."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "01c3f8f796cc4945a0f8cedb9135ad068a5ccf68c70829d8813981cb546ff15f",
+          "review_note": "Separately reviewed competing explanation and evidence limits: proposal versus final rule, reported visa plan versus completed admission."
+        }
+      ],
+      "unresolved_questions": [
+        "Final Federal Register text, exact comment deadline, final disposition, emissions and realized cost/price effects."
+      ]
+    },
+    {
+      "review_id": "10.190.0:NAT-2026-10-27-005:2d06b5d5dd3c",
+      "entry_id": "NAT-2026-10-27-005",
+      "content_sha256": "2d06b5d5dd3c815a4d3f386159991538f5f768a6a9180bd5eb7dd51dc33d65b4",
+      "reviewed_at": "2026-10-28T04:01:43Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "61dd8ba3a4b9f512a155cfc8ef0ba1ba1c965350ae5ed2e0f0c7aa6070f5d2b4",
+          "relies_on_unnamed_sources": true,
+          "supports": [
+            {
+              "source_id": "abc_bolsonaro_visas_oct27",
+              "locator": "ABC original report, October 27 6:21 PM: senior State Department official on future visa issuance and entry. No visa instrument or admission record supplied.",
+              "inspected_at": "2026-10-28T04:01:43Z",
+              "document_sha256": "8072ac5935d861701087ddc39ba2aee0ec15233bcf68d281b8c81ae29bb3d782",
+              "origin_group": "ABC News",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_bolsonaro_visas_oct27",
+              "locator": "AP by Mauricio Savarese via ABC7: updated opening visa announcement attributed to senior official anonymous under visa privacy laws; passport order and investigations, denial of wrongdoing. Not an independent ABC7 reporting origin.",
+              "inspected_at": "2026-10-28T04:01:43Z",
+              "document_sha256": "45ae7a2d16a0d58d6ecc64f663763685a52bbbd4e45322736694c21aa3c1062a",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "2765b94831d564a7ad5340b9efbfef5dc901cb37e09a21072387b3098d381ec5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_bolsonaro_visas_oct27",
+              "locator": "AP by Mauricio Savarese via ABC7: updated opening visa announcement attributed to senior official anonymous under visa privacy laws; passport order and investigations, denial of wrongdoing. Not an independent ABC7 reporting origin.",
+              "inspected_at": "2026-10-28T04:01:43Z",
+              "document_sha256": "45ae7a2d16a0d58d6ecc64f663763685a52bbbd4e45322736694c21aa3c1062a",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "e98c0647d62c5a237281ef32ff6e0db112f32d59ce4d46d7a681e123d10ab35a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "abc_bolsonaro_visas_oct27",
+              "locator": "ABC original report, October 27 6:21 PM: senior State Department official on future visa issuance and entry. No visa instrument or admission record supplied.",
+              "inspected_at": "2026-10-28T04:01:43Z",
+              "document_sha256": "8072ac5935d861701087ddc39ba2aee0ec15233bcf68d281b8c81ae29bb3d782",
+              "origin_group": "ABC News",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_bolsonaro_visas_oct27",
+              "locator": "AP by Mauricio Savarese via ABC7: updated opening visa announcement attributed to senior official anonymous under visa privacy laws; passport order and investigations, denial of wrongdoing. Not an independent ABC7 reporting origin.",
+              "inspected_at": "2026-10-28T04:01:43Z",
+              "document_sha256": "45ae7a2d16a0d58d6ecc64f663763685a52bbbd4e45322736694c21aa3c1062a",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "203f4e421484243c2a9a51557999452cbf6a2e3c0cf32717eb7e328fda72c651",
+          "review_note": "Separately reviewed material consequences; conditional risk is not asserted as measured harm or proven motive."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "f2f533b14965271a0bd305831414d36abbce962542e917de0ae2555db4d8493c",
+          "review_note": "Separately reviewed strongest supporting frame. EPA rationale is attributed; ordinary visa discretion is explicitly a possible frame, not a documented official justification."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "3b8f2b6fec4fc094dff06f84c69c73930ddfbda70d0d00bb363d0dedbd4587ca",
+          "review_note": "Separately reviewed competing explanation and evidence limits: proposal versus final rule, reported visa plan versus completed admission."
+        }
+      ],
+      "unresolved_questions": [
+        "Visa category, instrument, actual issuance/admission, legal basis and substantive official explanation remain unverified."
       ]
     }
   ],
