@@ -9253,6 +9253,42 @@
       "provenance_path": "data/editorial_change_notes/10.195.0.json",
       "provenance_sha256": "81b4ccd6045d4e90319b8a73fbe9968923f24c3a56210ba1821fb8796eeb430a",
       "note": "Same event, stable ID, no new canonical count. Earlier-date recovery where source date precedes prior cutoff; no invented publication time."
+    },
+    {
+      "change_id": "10.196.0:NAT-2026-10-28-003",
+      "entry_id": "NAT-2026-10-28-003",
+      "as_of_utc": "2026-10-29T10:06:59Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.196.0",
+      "summary": "Reuters reports FBI and ICE exclusions and an unarmed, non-enforcement role; original earlier filings document unresolved transparency and intimidation disputes.",
+      "provenance_path": "data/editorial_change_notes/10.196.0.json",
+      "provenance_sha256": "c8c3d81bfd11c3ae28648c3355c7406372478f57d704d73b68944fefc8336a69",
+      "note": "Earlier original dates and inspection times remain distinct. Existing diesel event updated, no parallel count; no October 29 action date invented."
+    },
+    {
+      "change_id": "10.196.0:NAT-2026-10-28-004",
+      "entry_id": "NAT-2026-10-28-004",
+      "as_of_utc": "2026-10-29T10:06:59Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.196.0",
+      "summary": "A signed Section 232 proclamation directs Commerce and USTR talks and a progress update within 180 days; future restrictions and claimed security benefits remain prospective.",
+      "provenance_path": "data/editorial_change_notes/10.196.0.json",
+      "provenance_sha256": "c8c3d81bfd11c3ae28648c3355c7406372478f57d704d73b68944fefc8336a69",
+      "note": "Earlier original dates and inspection times remain distinct. Existing diesel event updated, no parallel count; no October 29 action date invented."
+    },
+    {
+      "change_id": "10.196.0:NAT-2026-10-09-003",
+      "entry_id": "NAT-2026-10-09-003",
+      "as_of_utc": "2026-10-29T10:06:59Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.196.0",
+      "summary": "H.R. 10866 would nullify the license and restrict future waivers; it remains proposed, while cargo delivery, payment and price effects remain unresolved.",
+      "provenance_path": "data/editorial_change_notes/10.196.0.json",
+      "provenance_sha256": "c8c3d81bfd11c3ae28648c3355c7406372478f57d704d73b68944fefc8336a69",
+      "note": "Earlier original dates and inspection times remain distinct. Existing diesel event updated, no parallel count; no October 29 action date invented."
     }
   ],
   "reviews": [
@@ -111625,6 +111661,395 @@
         "Original October 28 notice, lease and appeal/stay instruments",
         "Funding/cost and approved planning documents",
         "Independent safety assessment and photo provenance"
+      ]
+    },
+    {
+      "review_id": "10.196.0:NAT-2026-10-28-003",
+      "entry_id": "NAT-2026-10-28-003",
+      "content_sha256": "ce1dc678264bf1a4750378c52cf8f949402a2e327c14a4c4da8270dc0099cc45",
+      "reviewed_at": "2026-10-29T10:06:59Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "47b84a545292e49819d36d6ad798ca1b3802367a70b36d4886353c96d916a103",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_poll_monitor_limits_oct28",
+              "locator": "Complete Reuters report; paragraphs/bullets identifying excluded and included agencies. Later filing original uninspected.",
+              "inspected_at": "2026-10-29T10:06:59Z",
+              "document_sha256": "157a06e58bb9482a9664c13c34a4819b3c4a53234fdcbcd8bb32f8e0c0ed1ded",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "1a709650af81af1d55068d13b22e3d3f34d1b54e89f13568bdf27d546206f156",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_poll_monitor_limits_oct28",
+              "locator": "Reuters bullets on unarmed observation, training and local-rule assurances; not measured implementation.",
+              "inspected_at": "2026-10-29T10:06:59Z",
+              "document_sha256": "157a06e58bb9482a9664c13c34a4819b3c4a53234fdcbcd8bb32f8e0c0ed1ded",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "3fe85eaba49ee37eb75c9d993f26c45f4998ca9ae6e7de9888013850fb347497",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ddc_monitor_records_notice_oct27",
+              "locator": "All three pages; p.2 search counts and finalization/position-title limitations; signed p.3.",
+              "inspected_at": "2026-10-29T10:06:59Z",
+              "document_sha256": "f2f3608035e506717810d94876d311f86ee9abb18e49ef61b76402b0bfc0c3f1",
+              "origin_group": "U.S. District Court for the District of Columbia",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "17096f981a9fe01bffff58149a59f38302bfe174b9cf3d996af9308295ee688c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ddc_poll_monitors_complaint_oct16",
+              "locator": "Complaint pp.1–5 and 30–35: caption, allegations, legal counts and prayer, not findings.",
+              "inspected_at": "2026-10-29T10:06:59Z",
+              "document_sha256": "7a36294a68e3135f28c72870ecdf245b19cf6f366bb806e4bdf92cac5a5fea44",
+              "origin_group": "U.S. District Court for the District of Columbia",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "a6d1d123687c666ccb6247c040ccd37394e2f54fa37f1cf56ec0c35615591908",
+          "review_note": "Separately reviewed consequences, with planned and measured outcomes kept distinct."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "d470bd55aeba2bd07bfad56d4e073eb2f1e0c5c4e1d50cd9e1a99dcd7c2fa03d",
+          "review_note": "Separately reviewed strongest relevant government explanation and unresolved evidentiary tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "a382c572c2f8375ca8b0d92727e113773c8923a4a3e2bbee9b3f7e070e827038",
+          "review_note": "Separately reviewed competing frame and falsifiable remaining tests; no proposal or assurance promoted to completed effect."
+        }
+      ],
+      "unresolved_questions": [
+        "Original later October 28 filing and any operative ruling",
+        "Actual assignments, consent, training and Election Day conduct"
+      ]
+    },
+    {
+      "review_id": "10.196.0:NAT-2026-10-28-004",
+      "entry_id": "NAT-2026-10-28-004",
+      "content_sha256": "47e9dd1bbf179cdea402a91db50318f2288aae11189366a7974d0b554545208d",
+      "reviewed_at": "2026-10-29T10:06:59Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "8f2f30be44741b92ec2cadad6e251565f65608022a5ef58f5b0082ae63e04c0f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_robotics_proclamation_oct28",
+              "locator": "Recitals 1–9 and dated signature; Commerce findings attributed, underlying report not independently inspected.",
+              "inspected_at": "2026-10-29T10:06:59Z",
+              "document_sha256": "0be5adbb9703c434fe92d4df3a782bae0e0afbd93e6415b2f85fb78328ac043a",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "121dd513ce0ecd348e46abc64db7bee8a12da169b3f2cf25670000941725a7b7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_robotics_proclamation_oct28",
+              "locator": "Operative clauses (1)–(3), complete action text inspected.",
+              "inspected_at": "2026-10-29T10:06:59Z",
+              "document_sha256": "0be5adbb9703c434fe92d4df3a782bae0e0afbd93e6415b2f85fb78328ac043a",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "f531e41974baab7d1431ec01a7c92d57c4dd9ce93783097da09bb95755194edd",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wh_robotics_proclamation_oct28",
+              "locator": "Operative clauses (1)–(4): prospective remedies, no immediate rate schedule.",
+              "inspected_at": "2026-10-29T10:06:59Z",
+              "document_sha256": "0be5adbb9703c434fe92d4df3a782bae0e0afbd93e6415b2f85fb78328ac043a",
+              "origin_group": "The White House",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_robotics_proclamation_oct28",
+              "locator": "Full article: absence of immediate tariffs, negotiation and 180-day update.",
+              "inspected_at": "2026-10-29T10:06:59Z",
+              "document_sha256": "228691932b35315a34d0386a8aa5d74c522db80c16ceaa8eb25544d53c738fcd",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "ec70b79651f6ed2c5634d2a05271a35b25e5785bda7f21b0050cf14ef4769c58",
+          "review_note": "Separately reviewed consequences, with planned and measured outcomes kept distinct."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "571904dd5c65a4bb7cde61572d64a2b60a96cc035ec17cebe84e083683952869",
+          "review_note": "Separately reviewed strongest relevant government explanation and unresolved evidentiary tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "057fa0d4ceb76a0fb80d0211cc8301d8eca7e5f6a320e756c79d6e88577507df",
+          "review_note": "Separately reviewed competing frame and falsifiable remaining tests; no proposal or assurance promoted to completed effect."
+        }
+      ],
+      "unresolved_questions": [
+        "Underlying Commerce report and negotiated instruments",
+        "Measured security, production, availability and downstream cost effects"
+      ]
+    },
+    {
+      "review_id": "10.196.0:NAT-2026-10-09-003",
+      "entry_id": "NAT-2026-10-09-003",
+      "content_sha256": "f355d350c7ea3f7bf034783cbd5516cc58a791ca647a1dadc4974d79b5be07c3",
+      "reviewed_at": "2026-10-29T10:06:59Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "f700ca76389e32cf51476b9c7625bef324b9f404e76819f3da5ae531d102fe38",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_russia_diesel_oct9",
+              "locator": "Complete retained post establishes Trump's publication, announced quantities and rationale only.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "74a3282393b57f1741f16da625f5f8a2c3cb6d02bd73dd43d3afa651ff244156",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "reuters_russia_diesel_oct9",
+              "locator": "Independent report of the announcement and quantities.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "5ecb44ff28e1d6230fbd60974777314a02aa52619f760b9dab365d8efa33705f",
+              "origin_group": "Reuters",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_russia_diesel_oct9",
+              "locator": "Independent report of the announcement and quantities.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "addd8de245ff1c2174a91bb87e62fc051db93446a9cd912b77c53bf1c9e1cc3b",
+              "origin_group": "Associated Press",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "8a5da6b53c2c7d37003826eaf45ffa7515a49246cdc1ee8f44a687ba56277258",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ofac_russia_gl135_oct9",
+              "locator": "Complete one-page license establishes scope, duration and exclusions.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "b42bed871cff3162540bc645eba298e4c0cf73d0a5b1712879a3f4fec060d65b",
+              "origin_group": "U.S. Treasury / OFAC",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ofac_russia_program_oct9",
+              "locator": "Official program page lists General License 135 and publication date.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "5c96716592f455a32fcda471dcda2231a6e2848dbaf7ce4dfbfaba0d6c9eb2b4",
+              "origin_group": "U.S. Treasury / OFAC",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "a1e8610e36a2d2bbf4744c994267dcf788273347368ab3d571964838509bd890",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_russia_diesel_oct9",
+              "locator": "Independent report on unanswered contract and timing terms and price uncertainty.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "addd8de245ff1c2174a91bb87e62fc051db93446a9cd912b77c53bf1c9e1cc3b",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_russia_diesel_oct9",
+              "locator": "Independent scale comparison, futures move and analyst assessments.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "5ecb44ff28e1d6230fbd60974777314a02aa52619f760b9dab365d8efa33705f",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "69c397f494ff7357767e3b58ee2f46913748f28fa128df65d581dda48c8c2eb3",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_russia_diesel_oct9",
+              "locator": "Presidential rationale as published, not independent verification.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "74a3282393b57f1741f16da625f5f8a2c3cb6d02bd73dd43d3afa651ff244156",
+              "origin_group": "Truth Social / Donald J. Trump",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "reuters_russia_diesel_oct9",
+              "locator": "Named Ukrainian response and market context.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "5ecb44ff28e1d6230fbd60974777314a02aa52619f760b9dab365d8efa33705f",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_russia_diesel_oct9",
+              "locator": "Named Russian and Ukrainian responses.",
+              "inspected_at": "2026-10-09T21:57:55Z",
+              "document_sha256": "addd8de245ff1c2174a91bb87e62fc051db93446a9cd912b77c53bf1c9e1cc3b",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "94194dd70aa852cd51ff7d986efc52667eb2285df64e6e1954887467cf0bc16f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "senate_foreign_russia_diesel_oct11",
+              "locator": "Official statement lines 36–41 inspected for all seven signatories, the statutory claim, alleged consultation/explanation omissions and requested reversal.",
+              "inspected_at": "2026-10-11T22:04:04Z",
+              "document_sha256": "7890645a1ab2211b6cc0d825bec45ea1ab65b0cb5291f0c76b5b43b3ed9e6d91",
+              "origin_group": "United States Senate Committee on Foreign Relations",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_russia_diesel_opposition_oct11",
+              "locator": "Lines 151–197 inspected for the bipartisan challenge and attributed Bessent and Barrasso responses.",
+              "inspected_at": "2026-10-11T22:04:04Z",
+              "document_sha256": "09529908662541b2ba2c33ac1a3f3e643a874395a553646c3c7383f0c99f23a9",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_russia_diesel_opposition_oct11",
+              "locator": "Lines 1789–1831 inspected for the Senate challenge, Tillis legal claim and Barrasso response.",
+              "inspected_at": "2026-10-11T22:04:04Z",
+              "document_sha256": "479fb23d28e1e4aa7d26227a3fa0b5be9b2c3961c5bd8156f5695b861f9fd540",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "340a90de95028939fee2fc9ebb4c1587212ea9db35d339d3944a93406bb91f68",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_russia_diesel_shipment_oct23",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.177.0.json.",
+              "inspected_at": "2026-10-23T22:01:02Z",
+              "document_sha256": "92fcf1c58f4e2de07dc80094b3024062a5d06efd309597d8d135792ad9a7c79e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "7506a6fa44ac2641083b72714748d1658b2e3f86638e6d0301ca1c1424e4d049",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "govinfo_russian_diesel_bill_oct22",
+              "locator": "Complete introduced text: heading/referral and sections 2–4; proposed, not law.",
+              "inspected_at": "2026-10-29T10:06:59Z",
+              "document_sha256": "72c6eedbef5fa3ce351e3e025bd3582e58f5c40ce923eaaef451d846d64bc304",
+              "origin_group": "U.S. Government Publishing Office",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "ians_russian_diesel_bill_oct29",
+              "locator": "Complete article body inspected; independent report of sponsors and prospective provisions.",
+              "inspected_at": "2026-10-29T10:06:59Z",
+              "document_sha256": "51a6a2f68df91f3bfd7a424ac58b049b68f3754ffd0eda73c49d249caa46819c",
+              "origin_group": "IANS",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "5a387e6b0d5f024c538f4d7259786f5bc809be461507dac8fe8a5c1f60edc7b4",
+          "review_note": "Separately reviewed consequences, with planned and measured outcomes kept distinct."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "d1d264992a13bd1387f468a6743e55137ed8dee14611994a43f293923ff99243",
+          "review_note": "Separately reviewed strongest relevant government explanation and unresolved evidentiary tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "795f0c8f62cc5536e76ab7bb36a8cfbe35d33a420aab7561de4cfb0037968e38",
+          "review_note": "Separately reviewed competing frame and falsifiable remaining tests; no proposal or assurance promoted to completed effect."
+        }
+      ],
+      "unresolved_questions": [
+        "Subsequent legislative action or license change",
+        "Original cargo, buyer, payment and price-effect evidence"
       ]
     }
   ],
