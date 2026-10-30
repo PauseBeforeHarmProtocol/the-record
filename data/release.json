@@ -1,32 +1,36 @@
 {
-  "version": "10.199.0",
+  "version": "10.200.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-30T04:06:20Z",
-    "through_utc": "2026-10-30T10:06:49Z",
+    "from_utc": "2026-10-30T10:06:49Z",
+    "through_utc": "2026-10-30T16:04:59Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Two qualifying changes, no padding: October28 Japan agreement and earlier California subpoenas recovered with original dates. Periodic partial-source inspection, not complete broadcast coverage."
+    "note": "One addition and three same-event refreshes. Earlier actions recovered with original dates; search service unavailable, direct-source research partial, not complete broadcast/news coverage."
   },
   "release_iso": "2026-10-30",
   "release_human": "October 30, 2026",
-  "checked_at": "2026-10-30 6:06 AM EDT",
-  "previous_version": "10.198.1",
-  "previous_checked_at": "2026-10-30 12:06 AM EDT",
-  "window_started_at": "2026-10-30 12:06 AM EDT",
-  "window_ended_at": "2026-10-30 6:06 AM EDT",
+  "checked_at": "2026-10-30 12:04 PM EDT",
+  "previous_version": "10.199.0",
+  "previous_checked_at": "2026-10-30 6:06 AM EDT",
+  "window_started_at": "2026-10-30 6:06 AM EDT",
+  "window_ended_at": "2026-10-30 12:04 PM EDT",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
   "week_label": "2026-10-26 through 2026-11-01",
   "cutoff_start": "2026-07-20",
   "new_entry_ids": [
-    "NAT-2026-10-28-005",
-    "NAT-2026-09-15-003"
+    "NAT-2026-10-06-001",
+    "NAT-2026-10-08-007",
+    "NAT-2026-09-15-003",
+    "NAT-2026-10-28-006"
   ],
   "added_entry_ids": [
-    "NAT-2026-10-28-005"
+    "NAT-2026-10-28-006"
   ],
   "refreshed_entry_ids": [
+    "NAT-2026-10-06-001",
+    "NAT-2026-10-08-007",
     "NAT-2026-09-15-003"
   ],
   "dedupe_resolutions": [
@@ -478,7 +482,7 @@
       "entry_id": "NAT-2026-09-15-003",
       "target_id": "NAT-2026-09-15-003",
       "decision": "same_event_update",
-      "notes": "New enforcement totals, state examples, the Cox constitutional dismissal, California letters, Nevada subpoenas, the filed California complaint, the October 16 charging batch, the election-official prosecution warning, the related presidential statement, the October 20 DSCC complaint, the preliminary county accuracy findings and the October 26 Ninth Circuit disposition are developments in the same noncitizen-voting record. They were consolidated into the stable canonical entry rather than counted as parallel events. Later 10.199.0 review: California subpoena reporting belongs to existing election-pressure event. Dates October21/24 and appearance November4 retained; no parallel event or guilt finding."
+      "notes": "New enforcement totals, state examples, the Cox constitutional dismissal, California letters, Nevada subpoenas, the filed California complaint, the October 16 charging batch, the election-official prosecution warning, the related presidential statement, the October 20 DSCC complaint, the preliminary county accuracy findings and the October 26 Ninth Circuit disposition are developments in the same noncitizen-voting record. They were consolidated into the stable canonical entry rather than counted as parallel events. Later 10.199.0 review: California subpoena reporting belongs to existing election-pressure event. Dates October21/24 and appearance November4 retained; no parallel event or guilt finding. DOJ announcement adds18 North Carolina defendants; allegations and informations distinguished from convictions."
     },
     {
       "entry_id": "NAT-2026-10-01-002",
@@ -711,8 +715,8 @@
     {
       "entry_id": "NAT-2026-10-08-007",
       "target_id": "NAT-2026-10-08-007",
-      "decision": "false_positive",
-      "notes": "The October 8 target-level shadow-fleet designations and delistings are distinct from earlier Iran sanctions actions with different targets and list changes."
+      "decision": "same_event_update",
+      "notes": "The October 8 target-level shadow-fleet designations and delistings are distinct from earlier Iran sanctions actions with different targets and list changes. Operative FF-1 license extends bank wind-down to December1 with blocking safeguards intact."
     },
     {
       "entry_id": "NAT-2026-10-06-005",
@@ -1265,35 +1269,51 @@
       "target_id": "NAT-2026-09-28-009",
       "decision": "distinct_lifecycle_stage",
       "notes": "October28 bilateral technical-sharing/FACO agreement is a distinct instrument from September28 provisional Raytheon award; neither is completed funding/output and no contract value is assigned to the facility."
+    },
+    {
+      "entry_id": "NAT-2026-10-06-001",
+      "target_id": "NAT-2026-10-06-001",
+      "decision": "same_event_update",
+      "notes": "Original IW study and Reuters add descriptive trade/FDI findings, with series and causal limits. Same continuing canonical event; no additional count."
+    },
+    {
+      "entry_id": "NAT-2026-10-28-006",
+      "target_id": "NAT-2026-10-23-005",
+      "decision": "false_positive",
+      "notes": "Sylvia personnel/investigation event is distinct from Brinksman criminal complaint: different person, alleged acts, process and dates. No Sylvia event, normalized title or source URL in active current/legacy entries or recent PRs; no new count for raw reposts."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Pentagon private Russia-messaging report",
-      "reason": "Consequential private-discussion claim rests on unnamed sources in one Reuters origin; syndications are not independent confirmation."
+      "title": "Search and court-instrument access gaps",
+      "reason": "Search service repeatedly returned isError; direct reporting/index checks substituted but broad search remains incomplete. East Potomac/arch and Comey articles preview hearings, without a newly inspected order or result; no new relief inferred."
     },
     {
-      "title": "IW tariff-effectiveness report and outstanding war-cost methods",
-      "reason": "Reuters summary located, but original IW study/methodology not retrieved; no new causal/effectiveness finding. Earlier Iran war-cost original remains uninspected."
+      "title": "Anonymous Russia messaging and war-cost methods",
+      "reason": "No second independent Russia-messaging origin located in accessible material; original war-cost methods remain uninspected. IW trade/FDI portion now published separately, not evidence for war-cost claims."
     },
     {
-      "title": "Trump TV trademark retrospective lead",
-      "reason": "USPTO status page identifies September24 intent-to-use application50128823 by DTTM Operations; not a granted registration, verified government licensing deal, fee payment or channel budget. Original application/consent and material government financial relationship not inspected."
+      "title": "Raw posts and audiovisual assertions",
+      "reason": "Crossfire/Halper document accusations, rally-removal allegations and economic/campaign promotion are not independently verified. Eight still attachments inspected; two new videos remain pending. No canonical promotion based on their claims."
     },
     {
-      "title": "Original investigation, election and audiovisual gaps",
-      "reason": "Sylvia referral/investigation original remains unavailable; no guilt or admission inferred. Original subpoenas/special-master instrument and videos/captions uninspected. Legacy heading candidates LEG-004656/004657 concern distinct apparent events; originals not revalidated, queue preserved."
+      "title": "Legacy and Trump TV gaps",
+      "reason": "LEG-004685/004687 compare different apparent June12 cases; original rulings not revalidated, visible queue retained. Halloween index saysOct30 but detailOct29, event date unknown; embed JavaScript-only, no footage/captions reviewed. No verified channel cost/licensing/staffing/distribution finding."
+    },
+    {
+      "title": "Other inspected leads and duplicate coverage",
+      "reason": "Ashbacher arrest: DOJ October30 announcement concerns earlier arrest/indictment, but original indictment and independent account not retrieved; retain as a lead, no guilt inference. G20 photo cancellation is procedural/ceremonial and consequential private-decision detail relies on unnamed AP sources without a second independent account. September PCE figures and October27 boat strike already covered in canonical GDP/trade and SOUTHCOM records, not new events. No new Comey, East Potomac or arch ruling inspected."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-30T10:06:49Z",
-    "checked_at_eastern": "2026-10-30 6:06 AM EDT",
+    "checked_at": "2026-10-30T16:04:59Z",
+    "checked_at_eastern": "2026-10-30 12:04 PM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-30T10:06:49Z",
+    "last_successful_page_inspection_at": "2026-10-30T16:04:59Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1304,7 +1324,7 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official TV/live/videos/remarks/releases and repeated October29 arrival/departure detail metadata inspected. Same A4gNgHfZ-v4 stream, OffAir/StandingBy live-hub labels not independent stream-state proof. No new library listing; four repeated embeds unavailable. No footage/audio/captions watched; no qualifying new item located in the material reviewed. Complete broadcast boundary remains null.",
+    "summary": "Official TV/live/videos/remarks/releases directly inspected. Stream A4gNgHfZ-v4 unchanged. Halloween52:59 newly listed with indexOct30/detailOct29 conflict; original event/exact broadcast time unknown. tcTeKoKBR6Q embed JavaScript-only, no footage/audio/captions reviewed. Repeated listings deduplicated; no qualifying new item located in the material reviewed. Complete broadcast boundary remains null.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1314,7 +1334,8 @@
       "October 29 noon France detail retrieval failed; prior successful direct inspection time retained. Four new private campaign videos are separate from Trump TV and remain pending.",
       "October 29 evening: current stream watch fetch throttled, Halloween embed throttled and France direct-detail retrieval failed. Unknown dates/status retained; no channel budget/contract/staffing/distribution record established in targeted search.",
       "October 30 midnight: new four linked embeds throttled; stream remains JavaScript-only. France detail retrieved as metadata; audiovisual gap remains. No channel cost/contract/staffing/distribution finding established.",
-      "October30 morning: four recent embeds unavailable; no complete transcript, verified channel cost/contract/staffing/distribution or trademark licensing record retrieved. September24 trademark application is a retrospective lead, not a new government expenditure."
+      "October30 morning: four recent embeds unavailable; no complete transcript, verified channel cost/contract/staffing/distribution or trademark licensing record retrieved. September24 trademark application is a retrospective lead, not a new government expenditure.",
+      "October30 midday: search service unavailable; direct official pages accessible. Halloween libraryOct30/detailOct29 conflict, no playable footage/captions. No verified channel costs, licensing, staffing or distribution finding; do not infer outage from fallback text."
     ],
     "items": [
       {
@@ -1322,10 +1343,10 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-30T10:06:49Z",
-        "observed_at_eastern": "2026-10-30 6:06 AM EDT",
+        "observed_at": "2026-10-30T16:04:59Z",
+        "observed_at_eastern": "2026-10-30 12:04 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
-        "inspection": "Rechecked official page/detail metadata only; repeated listing, no newly reviewed footage or captions. Original dates and unknown broadcast time retained.",
+        "inspection": "Direct official index/page metadata rechecked; not audiovisual inspection. Earlier direct-detail inspection times retained for repeated clips.",
         "video_ids": [
           "A4gNgHfZ-v4"
         ]
@@ -1335,10 +1356,10 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-30T10:06:49Z",
-        "observed_at_eastern": "2026-10-30 6:06 AM EDT",
+        "observed_at": "2026-10-30T16:04:59Z",
+        "observed_at_eastern": "2026-10-30 12:04 PM EDT",
         "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Rechecked official page/detail metadata only; repeated listing, no newly reviewed footage or captions. Original dates and unknown broadcast time retained.",
+        "inspection": "Direct official index/page metadata rechecked; not audiovisual inspection. Earlier direct-detail inspection times retained for repeated clips.",
         "video_ids": [
           "A4gNgHfZ-v4"
         ]
@@ -1348,10 +1369,10 @@
         "posted_date": "2026-10-29",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-30T10:06:49Z",
-        "observed_at_eastern": "2026-10-30 6:06 AM EDT",
+        "observed_at": "2026-10-30T16:04:59Z",
+        "observed_at_eastern": "2026-10-30 12:04 PM EDT",
         "format": "official dated-library metadata; audiovisual content unreviewed",
-        "inspection": "Rechecked official page/detail metadata only; repeated listing, no newly reviewed footage or captions. Original dates and unknown broadcast time retained.",
+        "inspection": "Direct official index/page metadata rechecked; not audiovisual inspection. Earlier direct-detail inspection times retained for repeated clips.",
         "video_ids": [
           "jikmROaDmLU",
           "KtQ0nbSIi2Y",
@@ -1364,10 +1385,10 @@
         "posted_date": "2026-09-28",
         "original_event_date": "2026-09-28",
         "broadcast_time": null,
-        "observed_at": "2026-10-30T10:06:49Z",
-        "observed_at_eastern": "2026-10-30 6:06 AM EDT",
+        "observed_at": "2026-10-30T16:04:59Z",
+        "observed_at_eastern": "2026-10-30 12:04 PM EDT",
         "format": "supplementary remarks index",
-        "inspection": "Rechecked official page/detail metadata only; repeated listing, no newly reviewed footage or captions. Original dates and unknown broadcast time retained.",
+        "inspection": "Direct official index/page metadata rechecked; not audiovisual inspection. Earlier direct-detail inspection times retained for repeated clips.",
         "video_ids": []
       },
       {
@@ -1375,10 +1396,10 @@
         "posted_date": "2026-10-29",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-30T10:06:49Z",
-        "observed_at_eastern": "2026-10-30 6:06 AM EDT",
+        "observed_at": "2026-10-30T16:04:59Z",
+        "observed_at_eastern": "2026-10-30 12:04 PM EDT",
         "format": "supplementary official releases index",
-        "inspection": "Rechecked official page/detail metadata only; repeated listing, no newly reviewed footage or captions. Original dates and unknown broadcast time retained.",
+        "inspection": "Direct official index/page metadata rechecked; not audiovisual inspection. Earlier direct-detail inspection times retained for repeated clips.",
         "video_ids": []
       },
       {
@@ -1389,7 +1410,7 @@
         "observed_at": "2026-10-28T22:02:29Z",
         "observed_at_eastern": "2026-10-28 6:02 PM EDT",
         "format": "official gaggle recording metadata; live/replay state unknown",
-        "inspection": "Prior direct-detail check (October 28, 6:02 PM EDT): Official page title/date inspected. YouTube embed fetch throttled; no audiovisual or caption inspection and no verified posting/broadcast time. This run rechecked the repeated library listing only; original observation time retained.",
+        "inspection": "Retained earlier inspection (2026-10-28T22:02:29Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Prior direct-detail check (October 28, 6:02 PM EDT): Official page title/date inspected. YouTube embed fetch throttled; no audiovisual or caption inspection and no verified posting/broadcast time. This run rechecked the repeated library listing only; original observation time retained.",
         "video_ids": [
           "C7OR400n_mc"
         ]
@@ -1402,7 +1423,7 @@
         "observed_at": "2026-10-28T22:02:29Z",
         "observed_at_eastern": "2026-10-28 6:02 PM EDT",
         "format": "official edited/music clip metadata; original event unknown",
-        "inspection": "Prior direct-detail check (October 28, 6:02 PM EDT): Official page title/date inspected. YouTube embed fetch throttled; no audiovisual or caption inspection and no verified posting/broadcast time. This run rechecked the repeated library listing only; original observation time retained.",
+        "inspection": "Retained earlier inspection (2026-10-28T22:02:29Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Prior direct-detail check (October 28, 6:02 PM EDT): Official page title/date inspected. YouTube embed fetch throttled; no audiovisual or caption inspection and no verified posting/broadcast time. This run rechecked the repeated library listing only; original observation time retained.",
         "video_ids": [
           "sWRTm0t1ixE"
         ]
@@ -1415,7 +1436,7 @@
         "observed_at": "2026-10-29T10:06:59Z",
         "observed_at_eastern": "2026-10-29 6:06 AM EDT",
         "format": "official short/edited-clip listing; audiovisual content unavailable",
-        "inspection": "Detail metadata rechecked, same October 28 title/date and library duration; embed throttled. Original event and exact posting/broadcast time unknown, no content claim promoted.",
+        "inspection": "Retained earlier inspection (2026-10-29T10:06:59Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Detail metadata rechecked, same October 28 title/date and library duration; embed throttled. Original event and exact posting/broadcast time unknown, no content claim promoted.",
         "video_ids": [
           "0ea83o4KN28"
         ]
@@ -1428,7 +1449,7 @@
         "observed_at": "2026-10-30T10:06:49Z",
         "observed_at_eastern": "2026-10-30 6:06 AM EDT",
         "format": "gaggle recording metadata; live/replay status unknown",
-        "inspection": "Rechecked official page/detail metadata only; repeated listing, no newly reviewed footage or captions. Original dates and unknown broadcast time retained.",
+        "inspection": "Retained earlier inspection (2026-10-30T10:06:49Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Rechecked official page/detail metadata only; repeated listing, no newly reviewed footage or captions. Original dates and unknown broadcast time retained.",
         "video_ids": [
           "jikmROaDmLU"
         ]
@@ -1441,7 +1462,7 @@
         "observed_at": "2026-10-30T10:06:49Z",
         "observed_at_eastern": "2026-10-30 6:06 AM EDT",
         "format": "gaggle recording metadata; live/replay status unknown",
-        "inspection": "Rechecked official page/detail metadata only; repeated listing, no newly reviewed footage or captions. Original dates and unknown broadcast time retained.",
+        "inspection": "Retained earlier inspection (2026-10-30T10:06:49Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Rechecked official page/detail metadata only; repeated listing, no newly reviewed footage or captions. Original dates and unknown broadcast time retained.",
         "video_ids": [
           "KtQ0nbSIi2Y"
         ]
@@ -1454,7 +1475,7 @@
         "observed_at": "2026-10-30T04:06:20Z",
         "observed_at_eastern": "2026-10-30 12:06 AM EDT",
         "format": "edited short metadata; live/replay status unknown",
-        "inspection": "Official detail title/date and linked video ID inspected; YouTube embed throttled. No audio/video or captions reviewed, exact posting/broadcast time unknown.",
+        "inspection": "Retained earlier inspection (2026-10-30T04:06:20Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Official detail title/date and linked video ID inspected; YouTube embed throttled. No audio/video or captions reviewed, exact posting/broadcast time unknown.",
         "video_ids": [
           "FAtglEVDYs8"
         ]
@@ -1467,7 +1488,7 @@
         "observed_at": "2026-10-30T04:06:20Z",
         "observed_at_eastern": "2026-10-30 12:06 AM EDT",
         "format": "retrospective gaggle recording metadata; live/replay status unknown",
-        "inspection": "Official detail title/date and linked video ID inspected; YouTube embed throttled. No audio/video or captions reviewed, exact posting/broadcast time unknown.",
+        "inspection": "Retained earlier inspection (2026-10-30T04:06:20Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Official detail title/date and linked video ID inspected; YouTube embed throttled. No audio/video or captions reviewed, exact posting/broadcast time unknown.",
         "video_ids": [
           "yNMNBcV2UKM"
         ]
@@ -1480,20 +1501,34 @@
         "observed_at": "2026-10-30T10:06:49Z",
         "observed_at_eastern": "2026-10-30 6:06 AM EDT",
         "format": "retrospective official trademark status metadata, not broadcast footage",
-        "inspection": "Intent-to-use application50128823 pending examination; private applicant DTTM Operations. No original application/consent, government license/payment or registration outcome reviewed; queued, not canonically published.",
+        "inspection": "Retained earlier inspection (2026-10-30T10:06:49Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Intent-to-use application50128823 pending examination; private applicant DTTM Operations. No original application/consent, government license/payment or registration outcome reviewed; queued, not canonically published.",
         "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-and-the-first-lady-host-halloween-at-the-white-house/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-10-30T16:04:59Z",
+        "observed_at_eastern": "2026-10-30 12:04 PM EDT",
+        "format": "official recording metadata; live/replay state unknown",
+        "inspection": "Library newly listsOct30 duration52:59; direct detail saysOct29. Date conflict retained, original event/time unknown. Embed returns unable-to-execute-JavaScript text, not proof of offline stream. No footage or captions inspected.",
+        "video_ids": [
+          "tcTeKoKBR6Q"
+        ]
       }
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 5,
-    "new_text_reviewed": 5,
-    "new_media_reviewed": 2,
+    "new_posts": 11,
+    "new_text_reviewed": 11,
+    "new_media_reviewed": 7,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-10-30T10:02:07.342423Z",
-    "checked_at_eastern": "2026-10-30 6:02:07 AM EDT",
-    "latest_post_id": "117529191919987147",
-    "latest_post_at_eastern": "2026-10-30 5:39:08 AM EDT",
+    "new_media_pending": 2,
+    "checked_at_utc": "2026-10-30T15:59:27.706602Z",
+    "checked_at_eastern": "2026-10-30 11:59:27 AM EDT",
+    "latest_post_id": "117529624881658729",
+    "latest_post_at_eastern": "2026-10-30 7:29:14 AM EDT",
     "counts": {
       "text_status": {
         "reviewed": 894,
@@ -1501,26 +1536,27 @@
         "not_recorded": 104
       },
       "media_status": {
-        "not_applicable": 494,
-        "reviewed": 249,
-        "pending": 88,
-        "unavailable": 169
+        "reviewed": 256,
+        "pending": 90,
+        "not_applicable": 487,
+        "unavailable": 167
       }
     },
-    "note": "Five newer text fields and two images inspected; two attached videos pending, not watched. Raw campaign/promotion remains separate. Newest October30 5:39:08 AM EDT; fallback checked6:02:07 AM EDT."
+    "note": "Eleven new text fields and eight still-image attachments across seven posts inspected; two video posts remain pending. Raw campaign/promotion and allegations remain separate, claims not independently verified."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
     "scope": "Standing national-maintenance instruction: merge after evidence, local acceptance and CI gates pass."
   },
   "external_archive_inspection": {
-    "checked_at": "2026-10-30T10:06:49Z",
-    "note": "Four primary pages inspected: UndoTrump1264 unchanged; TrumpArchive zero-render conflicts with populated records, IPTP numeric count unexposed, Record47 blank counters. No verified new measurement, imports or unlike-unit sums. Registry values/times preserved."
+    "checked_at": "2026-10-30T16:04:59Z",
+    "note": "Four primary pages directly inspected. UndoTrump1,264 unchanged; TrumpArchive zero-render conflicts with populated records; IPTP homepage now directly displays1,822 with2017–2021 scope ambiguity preserved; Record47 headline counters blank, quick-access counts unchanged. Only verified IPTP homepage metric updated; no imports or unlike-unit sum."
   },
   "editorial_notes": [
-    "One addition and one existing-event refresh; two earlier dated developments recovered, no fourth-item padding.",
-    "No factual correction. Prior full versions,57 earlier election facts, historical body and IN-6 factual content preserved.",
-    "Legacy duplicate/source-health batch inspected; original-source remediation not completed, visible queue preserved. No federation import.",
-    "Desktop/phone visual QA not performed in this run; pre-existing UI limitations not claimed fixed."
+    "One addition and three existing-event refreshes; October28–29 actions recovered, not redated to midday. No factual Record correction.",
+    "Prior facts and complete prior versions preserved; original source-inspection times retained. Historical canonical/generated body and IN-6 facts unchanged.",
+    "Objective legacy batch LEG-004685/004687 inspected as separate apparent cases; original-source remediation incomplete, queue remains. No federation import.",
+    "Search-service errors and hearing/instrument gaps disclosed. Trump TV check is metadata only, no complete-broadcast boundary advanced.",
+    "Standing national-maintenance authorization applies after evidence, local acceptance and exact-head CI gates; no candidate-specific hold located. Desktop/phone visual QA not yet performed; existing UI limitations not claimed fixed."
   ]
 }
