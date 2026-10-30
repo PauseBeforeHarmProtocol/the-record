@@ -1,36 +1,36 @@
 {
-  "version": "10.200.0",
+  "version": "10.201.0",
   "artifact_mode": "full",
   "research_window": {
-    "from_utc": "2026-10-30T10:06:49Z",
-    "through_utc": "2026-10-30T16:04:59Z",
+    "from_utc": "2026-10-30T16:04:59Z",
+    "through_utc": "2026-10-30T22:11:25Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "One addition and three same-event refreshes. Earlier actions recovered with original dates; search service unavailable, direct-source research partial, not complete broadcast/news coverage."
+    "note": "Periodic source review: one addition and three same-event refreshes, including recovered October29 pleading with original date. Search recovered; originals/access gaps disclosed, no exhaustive news or broadcast coverage claim."
   },
   "release_iso": "2026-10-30",
   "release_human": "October 30, 2026",
-  "checked_at": "2026-10-30 12:04 PM EDT",
-  "previous_version": "10.199.0",
-  "previous_checked_at": "2026-10-30 6:06 AM EDT",
-  "window_started_at": "2026-10-30 6:06 AM EDT",
-  "window_ended_at": "2026-10-30 12:04 PM EDT",
+  "checked_at": "2026-10-30 6:11 PM EDT",
+  "previous_version": "10.200.0",
+  "previous_checked_at": "2026-10-30 12:04 PM EDT",
+  "window_started_at": "2026-10-30 12:04 PM EDT",
+  "window_ended_at": "2026-10-30 6:11 PM EDT",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
   "week_label": "2026-10-26 through 2026-11-01",
   "cutoff_start": "2026-07-20",
   "new_entry_ids": [
-    "NAT-2026-10-06-001",
-    "NAT-2026-10-08-007",
+    "NAT-2026-10-10-001",
+    "NAT-2026-10-26-002",
     "NAT-2026-09-15-003",
-    "NAT-2026-10-28-006"
+    "NAT-2026-10-30-001"
   ],
   "added_entry_ids": [
-    "NAT-2026-10-28-006"
+    "NAT-2026-10-30-001"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-10-06-001",
-    "NAT-2026-10-08-007",
+    "NAT-2026-10-10-001",
+    "NAT-2026-10-26-002",
     "NAT-2026-09-15-003"
   ],
   "dedupe_resolutions": [
@@ -482,7 +482,7 @@
       "entry_id": "NAT-2026-09-15-003",
       "target_id": "NAT-2026-09-15-003",
       "decision": "same_event_update",
-      "notes": "New enforcement totals, state examples, the Cox constitutional dismissal, California letters, Nevada subpoenas, the filed California complaint, the October 16 charging batch, the election-official prosecution warning, the related presidential statement, the October 20 DSCC complaint, the preliminary county accuracy findings and the October 26 Ninth Circuit disposition are developments in the same noncitizen-voting record. They were consolidated into the stable canonical entry rather than counted as parallel events. Later 10.199.0 review: California subpoena reporting belongs to existing election-pressure event. Dates October21/24 and appearance November4 retained; no parallel event or guilt finding. DOJ announcement adds18 North Carolina defendants; allegations and informations distinguished from convictions."
+      "notes": "New enforcement totals, state examples, the Cox constitutional dismissal, California letters, Nevada subpoenas, the filed California complaint, the October 16 charging batch, the election-official prosecution warning, the related presidential statement, the October 20 DSCC complaint, the preliminary county accuracy findings and the October 26 Ninth Circuit disposition are developments in the same noncitizen-voting record. They were consolidated into the stable canonical entry rather than counted as parallel events. Later 10.199.0 review: California subpoena reporting belongs to existing election-pressure event. Dates October21/24 and appearance November4 retained; no parallel event or guilt finding. DOJ announcement adds18 North Carolina defendants; allegations and informations distinguished from convictions. California emergency injunction denied; Alaska amended theory and requested relief remain allegations and requests."
     },
     {
       "entry_id": "NAT-2026-10-01-002",
@@ -836,7 +836,7 @@
       "entry_id": "NAT-2026-10-10-001",
       "target_id": "NAT-2026-10-10-001",
       "decision": "same_event_update",
-      "notes": "The October 12 halt, October 13 extension, October 18 formal plan, October 26 preliminary injunction and appeal announcement are later stages in the same East Potomac removal, redesign and litigation event. The stable record was refreshed rather than counted again."
+      "notes": "The October 12 halt, October 13 extension, October 18 formal plan, October 26 preliminary injunction and appeal announcement are later stages in the same East Potomac removal, redesign and litigation event. The stable record was refreshed rather than counted again. Reported judicial inquiry into executive representations; no misconduct finding or named-master appointment claimed."
     },
     {
       "entry_id": "NAT-2026-10-12-001",
@@ -1281,39 +1281,51 @@
       "target_id": "NAT-2026-10-23-005",
       "decision": "false_positive",
       "notes": "Sylvia personnel/investigation event is distinct from Brinksman criminal complaint: different person, alleged acts, process and dates. No Sylvia event, normalized title or source URL in active current/legacy entries or recent PRs; no new count for raw reposts."
+    },
+    {
+      "entry_id": "NAT-2026-10-26-002",
+      "target_id": "NAT-2026-10-26-002",
+      "decision": "same_event_update",
+      "notes": "Dismissal ruling deferred while prosecutors pursue grand-jury indictment; no new indictment or merits ruling established. Existing continuing event updated; no parallel canonical count."
+    },
+    {
+      "entry_id": "NAT-2026-10-30-001",
+      "target_id": "NAT-2026-10-26-005",
+      "decision": "false_positive",
+      "notes": "Model Cities award selections are a funding decision, not the separately measured national crime survey. No matching award event, normalized heading or source URL in canonical current/legacy entries or recent maintenance PRs. No claim that awards caused earlier crime changes."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Search and court-instrument access gaps",
-      "reason": "Search service repeatedly returned isError; direct reporting/index checks substituted but broad search remains incomplete. East Potomac/arch and Comey articles preview hearings, without a newly inspected order or result; no new relief inferred."
+      "title": "Uninspected instruments and unresolved court stages",
+      "reason": "New East Potomac inquiry instrument/hearing transcript, Comey transcript and underlying evidence, Alaska PI motion and further arch ruling not retrieved. Published narrow reported/issued developments only; no misconduct, indictment, ballot exclusion or new arch relief inferred."
     },
     {
-      "title": "Anonymous Russia messaging and war-cost methods",
-      "reason": "No second independent Russia-messaging origin located in accessible material; original war-cost methods remain uninspected. IW trade/FDI portion now published separately, not evidence for war-cost claims."
+      "title": "Additional October30 regulatory and cannabis leads",
+      "reason": "DOJ NICS final-rule announcement inspected, original final instrument/effective-date verification incomplete. Medical dispensary registration announcement and independent report retrieved; complete new guidance, registration instruments and reciprocal lifecycle review against LEG-004506 remain unfinished. Retain for source-level review, not broad legalization or measured medical benefit."
     },
     {
-      "title": "Raw posts and audiovisual assertions",
-      "reason": "Crossfire/Halper document accusations, rally-removal allegations and economic/campaign promotion are not independently verified. Eight still attachments inspected; two new videos remain pending. No canonical promotion based on their claims."
+      "title": "Anonymous international and spending claims",
+      "reason": "Russia private messaging still lacks a second independent reporting origin in reviewed material. War-cost methods and prior Iran/diesel originals remain unresolved. No newly verified channel cost, staffing, licensing or distribution evidence; separate government-paid ads not attributed to Trump TV."
     },
     {
-      "title": "Legacy and Trump TV gaps",
-      "reason": "LEG-004685/004687 compare different apparent June12 cases; original rulings not revalidated, visible queue retained. Halloween index saysOct30 but detailOct29, event date unknown; embed JavaScript-only, no footage/captions reviewed. No verified channel cost/licensing/staffing/distribution finding."
+      "title": "Raw posts, broadcasts and legacy gaps",
+      "reason": "Ten newer retained text fields and one still image inspected; two videos pending. Routine campaign claims not independently verified. TV repeated Halloween date conflict and JavaScript-only embeds remain; no broadcast footage/captions reviewed. LEG-004685/004687 original rulings not revalidated; objective queue remains visible."
     },
     {
-      "title": "Other inspected leads and duplicate coverage",
-      "reason": "Ashbacher arrest: DOJ October30 announcement concerns earlier arrest/indictment, but original indictment and independent account not retrieved; retain as a lead, no guilt inference. G20 photo cancellation is procedural/ceremonial and consequential private-decision detail relies on unnamed AP sources without a second independent account. September PCE figures and October27 boat strike already covered in canonical GDP/trade and SOUTHCOM records, not new events. No new Comey, East Potomac or arch ruling inspected."
+      "title": "Repeated seafood and economic promotion",
+      "reason": "October30 White House fisherman praise repeats the October23 seafood strategy/loan announcement already NAT-2026-10-23-004; no newly verified disbursement or effectiveness finding. Earlier economic/boat coverage deduplicated."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-10-30T16:04:59Z",
-    "checked_at_eastern": "2026-10-30 12:04 PM EDT",
+    "checked_at": "2026-10-30T22:09:28Z",
+    "checked_at_eastern": "2026-10-30 6:09 PM EDT",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-10-30T16:04:59Z",
+    "last_successful_page_inspection_at": "2026-10-30T22:09:28Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1324,7 +1336,7 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official TV/live/videos/remarks/releases directly inspected. Stream A4gNgHfZ-v4 unchanged. Halloween52:59 newly listed with indexOct30/detailOct29 conflict; original event/exact broadcast time unknown. tcTeKoKBR6Q embed JavaScript-only, no footage/audio/captions reviewed. Repeated listings deduplicated; no qualifying new item located in the material reviewed. Complete broadcast boundary remains null.",
+    "summary": "Official TV/live/videos/remarks/releases directly rechecked as metadata. Stream A4gNgHfZ-v4 unchanged; Halloween tcTeKoKBR6Q repeated with libraryOct30/detailOct29 conflict. Both linked embeds return JavaScript-only errors, not proof of outage. No footage/audio/captions reviewed and no qualifying new item located in the material reviewed. Complete broadcast boundary remains null.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1335,7 +1347,8 @@
       "October 29 evening: current stream watch fetch throttled, Halloween embed throttled and France direct-detail retrieval failed. Unknown dates/status retained; no channel budget/contract/staffing/distribution record established in targeted search.",
       "October 30 midnight: new four linked embeds throttled; stream remains JavaScript-only. France detail retrieved as metadata; audiovisual gap remains. No channel cost/contract/staffing/distribution finding established.",
       "October30 morning: four recent embeds unavailable; no complete transcript, verified channel cost/contract/staffing/distribution or trademark licensing record retrieved. September24 trademark application is a retrospective lead, not a new government expenditure.",
-      "October30 midday: search service unavailable; direct official pages accessible. Halloween libraryOct30/detailOct29 conflict, no playable footage/captions. No verified channel costs, licensing, staffing or distribution finding; do not infer outage from fallback text."
+      "October30 midday: search service unavailable; direct official pages accessible. Halloween libraryOct30/detailOct29 conflict, no playable footage/captions. No verified channel costs, licensing, staffing or distribution finding; do not infer outage from fallback text.",
+      "October30 evening: unchanged official listings, same unresolved Halloween dates; stream/Halloween embeds JavaScript-only, not outage proof. No verified new costs, contracts, staffing, editorial-control, licensing or distribution finding. Remarks is supplementary, not a complete transcript feed."
     ],
     "items": [
       {
@@ -1343,10 +1356,10 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-30T16:04:59Z",
-        "observed_at_eastern": "2026-10-30 12:04 PM EDT",
+        "observed_at": "2026-10-30T22:09:28Z",
+        "observed_at_eastern": "2026-10-30 6:09 PM EDT",
         "format": "official page metadata; audiovisual content unreviewed",
-        "inspection": "Direct official index/page metadata rechecked; not audiovisual inspection. Earlier direct-detail inspection times retained for repeated clips.",
+        "inspection": "Direct official page/index metadata rechecked; repeated listings, no audiovisual review. Retained older detail timestamps below are not new inspections.",
         "video_ids": [
           "A4gNgHfZ-v4"
         ]
@@ -1356,24 +1369,25 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-30T16:04:59Z",
-        "observed_at_eastern": "2026-10-30 12:04 PM EDT",
+        "observed_at": "2026-10-30T22:09:28Z",
+        "observed_at_eastern": "2026-10-30 6:09 PM EDT",
         "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Direct official index/page metadata rechecked; not audiovisual inspection. Earlier direct-detail inspection times retained for repeated clips.",
+        "inspection": "Direct official page/index metadata rechecked; repeated listings, no audiovisual review. Retained older detail timestamps below are not new inspections.",
         "video_ids": [
           "A4gNgHfZ-v4"
         ]
       },
       {
         "url": "https://www.whitehouse.gov/videos/",
-        "posted_date": "2026-10-29",
+        "posted_date": "2026-10-30",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-30T16:04:59Z",
-        "observed_at_eastern": "2026-10-30 12:04 PM EDT",
+        "observed_at": "2026-10-30T22:09:28Z",
+        "observed_at_eastern": "2026-10-30 6:09 PM EDT",
         "format": "official dated-library metadata; audiovisual content unreviewed",
-        "inspection": "Direct official index/page metadata rechecked; not audiovisual inspection. Earlier direct-detail inspection times retained for repeated clips.",
+        "inspection": "Direct official page/index metadata rechecked; repeated listings, no audiovisual review. Retained older detail timestamps below are not new inspections.",
         "video_ids": [
+          "tcTeKoKBR6Q",
           "jikmROaDmLU",
           "KtQ0nbSIi2Y",
           "FAtglEVDYs8",
@@ -1385,21 +1399,21 @@
         "posted_date": "2026-09-28",
         "original_event_date": "2026-09-28",
         "broadcast_time": null,
-        "observed_at": "2026-10-30T16:04:59Z",
-        "observed_at_eastern": "2026-10-30 12:04 PM EDT",
+        "observed_at": "2026-10-30T22:09:28Z",
+        "observed_at_eastern": "2026-10-30 6:09 PM EDT",
         "format": "supplementary remarks index",
-        "inspection": "Direct official index/page metadata rechecked; not audiovisual inspection. Earlier direct-detail inspection times retained for repeated clips.",
+        "inspection": "Direct official page/index metadata rechecked; repeated listings, no audiovisual review. Retained older detail timestamps below are not new inspections.",
         "video_ids": []
       },
       {
         "url": "https://www.whitehouse.gov/releases/",
-        "posted_date": "2026-10-29",
+        "posted_date": "2026-10-30",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-30T16:04:59Z",
-        "observed_at_eastern": "2026-10-30 12:04 PM EDT",
+        "observed_at": "2026-10-30T22:09:28Z",
+        "observed_at_eastern": "2026-10-30 6:09 PM EDT",
         "format": "supplementary official releases index",
-        "inspection": "Direct official index/page metadata rechecked; not audiovisual inspection. Earlier direct-detail inspection times retained for repeated clips.",
+        "inspection": "Direct official page/index metadata rechecked; repeated listings, no audiovisual review. Retained older detail timestamps below are not new inspections.",
         "video_ids": []
       },
       {
@@ -1509,10 +1523,10 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-10-30T16:04:59Z",
-        "observed_at_eastern": "2026-10-30 12:04 PM EDT",
+        "observed_at": "2026-10-30T22:09:28Z",
+        "observed_at_eastern": "2026-10-30 6:09 PM EDT",
         "format": "official recording metadata; live/replay state unknown",
-        "inspection": "Library newly listsOct30 duration52:59; direct detail saysOct29. Date conflict retained, original event/time unknown. Embed returns unable-to-execute-JavaScript text, not proof of offline stream. No footage or captions inspected.",
+        "inspection": "Direct repeated detail and library metadata rechecked: libraryOct30/detailOct29 conflict unchanged. Original event date, exact posting/broadcast time and live/replay state unknown. Linked embed inspected but JavaScript-only, no footage/audio/captions reviewed.",
         "video_ids": [
           "tcTeKoKBR6Q"
         ]
@@ -1520,43 +1534,43 @@
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 11,
-    "new_text_reviewed": 11,
-    "new_media_reviewed": 7,
+    "new_posts": 10,
+    "new_text_reviewed": 10,
+    "new_media_reviewed": 1,
     "new_media_unavailable": 0,
     "new_media_pending": 2,
-    "checked_at_utc": "2026-10-30T15:59:27.706602Z",
-    "checked_at_eastern": "2026-10-30 11:59:27 AM EDT",
-    "latest_post_id": "117529624881658729",
-    "latest_post_at_eastern": "2026-10-30 7:29:14 AM EDT",
+    "checked_at_utc": "2026-10-30T22:06:04.180005Z",
+    "checked_at_eastern": "2026-10-30 6:06:04 PM EDT",
+    "latest_post_id": "117531976852809081",
+    "latest_post_at_eastern": "2026-10-30 5:27:22 PM EDT",
     "counts": {
       "text_status": {
-        "reviewed": 894,
+        "reviewed": 898,
         "pending": 2,
-        "not_recorded": 104
+        "not_recorded": 100
       },
       "media_status": {
-        "reviewed": 256,
-        "pending": 90,
-        "not_applicable": 487,
-        "unavailable": 167
+        "not_applicable": 488,
+        "pending": 92,
+        "reviewed": 257,
+        "unavailable": 163
       }
     },
-    "note": "Eleven new text fields and eight still-image attachments across seven posts inspected; two video posts remain pending. Raw campaign/promotion and allegations remain separate, claims not independently verified."
+    "note": "Ten newer text fields and one attached screenshot inspected; two videos remain pending. Raw campaign claims remain separate and not independently verified."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
     "scope": "Standing national-maintenance instruction: merge after evidence, local acceptance and CI gates pass."
   },
   "external_archive_inspection": {
-    "checked_at": "2026-10-30T16:04:59Z",
-    "note": "Four primary pages directly inspected. UndoTrump1,264 unchanged; TrumpArchive zero-render conflicts with populated records; IPTP homepage now directly displays1,822 with2017–2021 scope ambiguity preserved; Record47 headline counters blank, quick-access counts unchanged. Only verified IPTP homepage metric updated; no imports or unlike-unit sum."
+    "checked_at": "2026-10-30T22:09:28Z",
+    "note": "All four primary project pages directly checked. UndoTrump1264 and IPTP1822 unchanged; TrumpArchive zero-render counters conflict with populated items, Record47 headline counters blank with unchanged quick-access counts. Prior verified measurements/observation times and units preserved; no imports or summed total."
   },
   "editorial_notes": [
-    "One addition and three existing-event refreshes; October28–29 actions recovered, not redated to midday. No factual Record correction.",
-    "Prior facts and complete prior versions preserved; original source-inspection times retained. Historical canonical/generated body and IN-6 facts unchanged.",
-    "Objective legacy batch LEG-004685/004687 inspected as separate apparent cases; original-source remediation incomplete, queue remains. No federation import.",
-    "Search-service errors and hearing/instrument gaps disclosed. Trump TV check is metadata only, no complete-broadcast boundary advanced.",
-    "Standing national-maintenance authorization applies after evidence, local acceptance and exact-head CI gates; no candidate-specific hold located. Desktop/phone visual QA not yet performed; existing UI limitations not claimed fixed."
+    "One addition and three same-event refreshes; original dates, prior facts/source-inspection times and complete versions preserved. No factual Record corrections.",
+    "Historical canonical/generated body, legacy revisions and IN-6 facts/packs unchanged. LEG-004685/004687 objective source-quality batch remains queued without original-ruling revalidation.",
+    "No federated import or external measurement update. Totals regenerated from canonical data.",
+    "Search recovered, but original hearing/award/PI instruments and further regulatory/lifecycle leads remain queued; no claim of comprehensive broadcasting or every story reviewed.",
+    "Standing national-maintenance authorization applies after evidence/local acceptance/exact-head CI. Existing hosted warning, Method scope copy and archive/phone UI gaps not repaired or claimed fixed."
   ]
 }
