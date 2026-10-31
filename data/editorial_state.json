@@ -9529,6 +9529,18 @@
       "provenance_path": "data/editorial_change_notes/10.203.0.json",
       "provenance_sha256": "bd27bc20f5e7ad5f2d023a5134309d4cbf48dac8511db6d8db52f9019b30fafa",
       "note": "Earlier queued discovery and original action date retained; this is publication of the recovered event, not a newly issued order."
+    },
+    {
+      "change_id": "10.204.0:NAT-2026-10-30-003",
+      "entry_id": "NAT-2026-10-30-003",
+      "as_of_utc": "2026-10-31T15:58:13Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.204.0",
+      "summary": "Recovered corroborated proposed Patriot sale approval; no completed delivery or local production asserted.",
+      "provenance_path": "data/editorial_change_notes/10.204.0.json",
+      "provenance_sha256": "595d59b2ece98f6f07d4010513b66c0e0b61e323a03b77679ccaa30df92c9779",
+      "note": "Original event date retained; distinct from earlier missile-warning intelligence restoration and other military procurements."
     }
   ],
   "reviews": [
@@ -120398,6 +120410,114 @@
       ],
       "unresolved_questions": [
         "Compliance report, later extension/appeal and final merits remain unverified; these gaps do not alter the inspected order’s operative temporary scope."
+      ]
+    },
+    {
+      "review_id": "10.204.0:NAT-2026-10-30-003",
+      "entry_id": "NAT-2026-10-30-003",
+      "content_sha256": "64a5c31e998440f9a178e163d875f882538f153ef7458a189cc92cdb0bc00f00",
+      "reviewed_at": "2026-10-31T15:58:13Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "9a0e023ef8adda75e3a3eba1ef240ade2f59f8b0f36da3279e31298d6d7c6604",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_patriot_approval_oct30",
+              "locator": "Inspected article: approval/quantity/estimated value and financing paragraphs.",
+              "inspected_at": "2026-10-31T15:58:13Z",
+              "document_sha256": "ce47a69df095b3ead0c6b5c194c40ae6e57286f1e7d918a3bc60c6919d7ae856",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_patriot_approval_oct30",
+              "locator": "Inspected article: approval/quantity/estimated value and financing paragraphs.",
+              "inspected_at": "2026-10-31T15:58:13Z",
+              "document_sha256": "ce47a69df095b3ead0c6b5c194c40ae6e57286f1e7d918a3bc60c6919d7ae856",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "45619283696394c3b1fc6ac9446ea9cd4c5c728615efddc66e3323e73b9db8d5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_patriot_approval_oct30",
+              "locator": "Inspected article: approval/quantity/estimated value and financing paragraphs.",
+              "inspected_at": "2026-10-31T15:58:13Z",
+              "document_sha256": "ce47a69df095b3ead0c6b5c194c40ae6e57286f1e7d918a3bc60c6919d7ae856",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_patriot_approval_oct30",
+              "locator": "Inspected article: approval/quantity/estimated value and financing paragraphs.",
+              "inspected_at": "2026-10-31T15:58:13Z",
+              "document_sha256": "ce47a69df095b3ead0c6b5c194c40ae6e57286f1e7d918a3bc60c6919d7ae856",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "49fa4c8cae7dbfd2e89d463b8c442d60c0fd09b99c5d75bfbbace37db0c57322",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cnn_patriot_delivery_oct31",
+              "locator": "CNN paragraphs on Zelenskyy’s delivery warning, absent official timetable and offset limits; claims attributed, not independently verified inventories.",
+              "inspected_at": "2026-10-31T15:58:13Z",
+              "document_sha256": "bddd83d65874cbd3fcb72daa341bf4b11da90d4bb18a1f22a81ac73d43cc7037",
+              "origin_group": "CNN",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "76069d0a904ee4f676482b1163f4b18ea55b9a4122eea59a9afa6b7eb6b0f4b9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cnn_patriot_delivery_oct31",
+              "locator": "CNN paragraphs on Zelenskyy’s delivery warning, absent official timetable and offset limits; claims attributed, not independently verified inventories.",
+              "inspected_at": "2026-10-31T15:58:13Z",
+              "document_sha256": "bddd83d65874cbd3fcb72daa341bf4b11da90d4bb18a1f22a81ac73d43cc7037",
+              "origin_group": "CNN",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "d4d4fb3c2276d989dfecf37ee236c08026f01bb420a61df9daace46cf0d30fb3",
+          "review_note": "Separate review: procurement permission versus urgent delivery and measured protection; no causal result asserted."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "1e5e23d3825da05963a09f8c8279e8a90ec61b4fa3627234ea3722adce5c8ced",
+          "review_note": "Separate review: strongest administration security rationale and Ukrainian near-term request, with financing and delivery tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "4d68317e92e921d1e3ee42f94d475c2711b79902bef9210cef3de6975070b15c",
+          "review_note": "Separate review: plausible future benefit acknowledged; explicit Therefore limits approval versus shipments, stock availability and local production."
+        }
+      ],
+      "unresolved_questions": [
+        "Original State/DSCA release and congressional notification, final contract, payment and delivery timetable remain unavailable. Anonymous Reuters early-2030s forecast excluded absent second independent confirmation."
       ]
     }
   ],
