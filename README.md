@@ -26,20 +26,20 @@ The Record pairs a concise, source-bound editorial front page with a full search
 <!-- GENERATED_ARCHIVE_METRICS_START -->
 ## Generated Scope and Quality Snapshot
 
-Generated deterministically from canonical JSON for maintenance release **10.202.0**. Editorial news currentness was checked **2026-10-31 12:00 AM EDT**; QA inputs were updated **2026-10-30T16:04:59Z**.
+Generated deterministically from canonical JSON for maintenance release **10.203.0**. Editorial news currentness was checked **2026-10-31 6:02 AM EDT**; QA inputs were updated **2026-10-30T16:04:59Z**.
 
 | Measure | Exact count |
 |---|---:|
 | Canonical legacy rows stored | 4,742 |
 | Active canonical legacy entries | 4,731 |
 | Superseded duplicate tombstones (excluded from totals/search) | 11 |
-| Current national entries bridged into the archive | 467 |
-| Full archive entries rendered at runtime | 5,198 |
-| Attached source references at runtime | 8,228 |
-| Distinct stored source URLs at runtime | 6,825 |
-| Current entries with Maybe / Therefore | 471 |
+| Current national entries bridged into the archive | 468 |
+| Full archive entries rendered at runtime | 5,199 |
+| Attached source references at runtime | 8,230 |
+| Distinct stored source URLs at runtime | 6,827 |
+| Current entries with Maybe / Therefore | 472 |
 | Current entries awaiting Maybe / Therefore | 0 |
-| Current entries explicitly reviewed or corrected | 471 |
+| Current entries explicitly reviewed or corrected | 472 |
 | Current entries pending current-standard review | 0 |
 | Legacy entries with Maybe / Therefore | 1,539 |
 | Legacy entries awaiting Maybe / Therefore | 3,192 |

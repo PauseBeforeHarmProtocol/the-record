@@ -9517,6 +9517,18 @@
       "provenance_path": "data/editorial_change_notes/10.202.0.json",
       "provenance_sha256": "0ee05e6c34d3b2ae51b37050b8356b69e60f4702c498a4a3224ff27449a6ac95",
       "note": "Original dates, facts and prior review inspections retained. Same event updated, no new canonical count."
+    },
+    {
+      "change_id": "10.203.0:NAT-2026-10-30-002",
+      "entry_id": "NAT-2026-10-30-002",
+      "as_of_utc": "2026-10-31T10:02:13Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.203.0",
+      "summary": "Original October30 asylum-interview stay recovered and published after scope, response and duplicate review.",
+      "provenance_path": "data/editorial_change_notes/10.203.0.json",
+      "provenance_sha256": "bd27bc20f5e7ad5f2d023a5134309d4cbf48dac8511db6d8db52f9019b30fafa",
+      "note": "Earlier queued discovery and original action date retained; this is publication of the recovered event, not a newly issued order."
     }
   ],
   "reviews": [
@@ -120286,6 +120298,106 @@
       ],
       "unresolved_questions": [
         "Original Thompson TRO, new hearing transcripts, compliance and later modification/appeal outcomes remain unverified."
+      ]
+    },
+    {
+      "review_id": "10.203.0:NAT-2026-10-30-002",
+      "entry_id": "NAT-2026-10-30-002",
+      "content_sha256": "0d66ee6309b3b16f7caf414a21f4db37bb7bcdd71ddade768b5cc4156763067b",
+      "reviewed_at": "2026-10-31T10:02:13Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "ff97cb91f74bc7ae1d766694e6d4b85e364737fde0ac3b826e8e9b4c85df9f63",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dmd_door_asylum_tro_oct30",
+              "locator": "pp.20–21, numbered operative provisions 1–7; case caption and signature.",
+              "inspected_at": "2026-10-31T10:02:13Z",
+              "document_sha256": "6e4204766610517fc16066091202648d4761390d2bb09871b337edceffeaa2d2",
+              "origin_group": "U.S. District Court for the District of Maryland",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_child_asylum_tro_oct30",
+              "locator": "Retrieved Reuters report text/search extract: Hurson, temporary restoration and November13 duration. Hash identifies retrieval response, not original article bytes.",
+              "inspected_at": "2026-10-31T10:02:13Z",
+              "document_sha256": "abc7f2e11f244d4f8b57bfc829a5e60df85b18238b267d93d84deacea85cf5cc",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "2c5b6298627981ca71809a26de36484d41650569f92415ec88c98ab87ffd545c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dmd_door_asylum_tro_oct30",
+              "locator": "pp.20–21, operative provisions 3,5–6.",
+              "inspected_at": "2026-10-31T10:02:13Z",
+              "document_sha256": "6e4204766610517fc16066091202648d4761390d2bb09871b337edceffeaa2d2",
+              "origin_group": "U.S. District Court for the District of Maryland",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "03039e9ba6114e012015fb6baca48ce0d8d89acfca14794c9d7e8ac21305da24",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dmd_door_asylum_tro_oct30",
+              "locator": "pp.12–14, preliminary contrary-to-law analysis; p.3 footnote4 excludes detained-docket deadline.",
+              "inspected_at": "2026-10-31T10:02:13Z",
+              "document_sha256": "6e4204766610517fc16066091202648d4761390d2bb09871b337edceffeaa2d2",
+              "origin_group": "U.S. District Court for the District of Maryland",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "81b1b1eda5d22e625091093aad7b06e5e85e90a68e9f54ffbe636932f0e99f71",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dmd_door_asylum_tro_oct30",
+              "locator": "p.21, operative provision7; absence of eligibility/compliance findings in the inspected order.",
+              "inspected_at": "2026-10-31T10:02:13Z",
+              "document_sha256": "6e4204766610517fc16066091202648d4761390d2bb09871b337edceffeaa2d2",
+              "origin_group": "U.S. District Court for the District of Maryland",
+              "evidence_status": "ordered"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "928de6f8d8b3f21d3d84a9f91fa3a105c2a70da012a171cee22489a4c7200c34",
+          "review_note": "Separate review: scheduling consequences are institutional significance, not measured outcomes or universal removal relief."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "e502a720ffd8a7c1394c2285c009962f77c5d81503d92f6edbf0e2df965574ef",
+          "review_note": "Separate review against original opinion pp.11–14 and17: preserve operational judgment, finality, child-sensitive interview and statutory missed-interview defense; distinguish court rejection at preliminary stage."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "8762a95e414a269325da10b98e7badb7e6fc711544a7cd5c23e615503838f16f",
+          "review_note": "Separate review: acknowledge legitimate speed/backlog frame and possible later legal reversal; Therefore remains bounded to interim relief and outstanding compliance/appeal tests."
+        }
+      ],
+      "unresolved_questions": [
+        "Compliance report, later extension/appeal and final merits remain unverified; these gaps do not alter the inspected order’s operative temporary scope."
       ]
     }
   ],
