@@ -163,7 +163,7 @@ def main() -> int:
     ]
     steps = [(name, [py, f"scripts/{script}", *args]) for name, script, args in specs]
     steps += [("regression-tests", [py, "-m", "unittest", "discover", "-s", "tests", "-v"])]
-    steps += [("javascript-" + Path(p).stem, ["node", "--check", p]) for p in ("assets/site.js", "current_layer_bridge.js", "assets/truth-feed.js")]
+    steps += [("javascript-" + Path(p).stem, ["node", "--check", p]) for p in ("assets/site.js", "current_layer_bridge.js", "assets/truth-feed.js", "assets/archive-compat.js")]
     steps += [("python-compilation", [py, "-m", "compileall", "-q", "scripts", "tests"]),
               ("zip-integrity", [py, "scripts/accept_release.py", "--gate", "zip-integrity"]),
               ("credential-scan", [py, "scripts/accept_release.py", "--gate", "credentials"]),

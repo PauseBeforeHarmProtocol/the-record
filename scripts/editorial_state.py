@@ -1,6 +1,7 @@
 """Shared chronology, evidence-version and immutable snapshot contracts."""
 from __future__ import annotations
 
+import copy
 import hashlib
 import json
 import subprocess
@@ -12,6 +13,7 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parents[1]
 LOCAL_ZONE = ZoneInfo("America/Indiana/Indianapolis")
 STATE_PATH = ROOT / "data/editorial_state.json"
+HISTORY_ENCODING = "entry-with-history-prefix-v1"
 SNAPSHOT_FILES = (
     "data/current_entries.json", "data/source_ledger.json", "data/source_ledger.csv",
     "data/legacy_entries.json", "data/legacy_revisions.json",
@@ -50,6 +52,87 @@ def entry_content_hash(entry: dict, ledger: dict) -> str:
     # Check-time and package-location changes do not imply new factual content.
     content = {k: v for k, v in entry.items() if k not in {"checked_at", "pack_path", "pack_filename"}}
     return digest(canonical_bytes({"entry": content, "sources": {s: ledger[s] for s in entry["sources"]}}))
+
+
+def reconstruct_history_entry(history: list[dict], index: int) -> dict:
+    """Recover a complete prior entry without recursively duplicating its history.
+
+    The prior version's history is exactly the unchanged prefix before this row.
+    No prior entry field or historical row is discarded by this encoding.
+    """
+    if not isinstance(history, list) or type(index) is not int or not 0 <= index < len(history):
+        raise ValueError("invalid history snapshot index")
+    row = history[index]
+    if not isinstance(row, dict) or row.get("encoding") != HISTORY_ENCODING:
+        raise ValueError("unknown history snapshot encoding")
+    if type(row.get("version_history_prefix_length")) is not int or row["version_history_prefix_length"] != index:
+        raise ValueError("history snapshot must reference its complete preceding prefix")
+    present = row.get("version_history_was_present")
+    if type(present) is not bool or (not present and index != 0):
+        raise ValueError("invalid prior version_history presence")
+    value = row.get("entry")
+    if not isinstance(value, dict) or "version_history" in value:
+        raise ValueError("encoded history entry must omit only the shared version_history field")
+    result = copy.deepcopy(value)
+    if present:
+        result["version_history"] = copy.deepcopy(history[:index])
+    signature = row.get("entry_sha256")
+    if not isinstance(signature, str) or len(signature) != 64 or digest(canonical_bytes(result)) != signature:
+        raise ValueError("complete prior entry snapshot checksum mismatch")
+    return result
+
+
+def append_entry_history(before: dict, timestamp: str, release_version: str) -> list[dict]:
+    """Return untouched prior history plus a lossless, hash-bound full snapshot.
+
+    Assign the returned list to the refreshed entry's version_history. The
+    caller's complete before object and all of its existing rows stay unchanged.
+    """
+    if not isinstance(before, dict):
+        raise ValueError("prior entry must be an object")
+    parse_utc(timestamp)
+    if not isinstance(release_version, str) or not release_version:
+        raise ValueError("prior release version is required")
+    history = copy.deepcopy(before.get("version_history", []))
+    if not isinstance(history, list):
+        raise ValueError("version_history must be an array")
+    history.append({
+        "timestamp": timestamp,
+        "release_version": release_version,
+        "encoding": HISTORY_ENCODING,
+        "version_history_prefix_length": len(history),
+        "version_history_was_present": "version_history" in before,
+        "entry_sha256": digest(canonical_bytes(before)),
+        "entry": copy.deepcopy({k: v for k, v in before.items() if k != "version_history"}),
+    })
+    if reconstruct_history_entry(history, len(history) - 1) != before:
+        raise ValueError("prior entry snapshot did not round-trip exactly")
+    return history
+
+
+def validate_entry_history(entry: dict, previous: dict | None = None) -> None:
+    """Fail closed on encoded snapshot drift and rewriting an existing prefix."""
+    history = entry.get("version_history", [])
+    if not isinstance(history, list):
+        raise ValueError("version_history must be an array")
+    if previous is not None:
+        prior = previous.get("version_history", [])
+        if not isinstance(prior, list) or history[:len(prior)] != prior:
+            raise ValueError("version_history is append-only; prior prefix changed")
+        if "version_history" in previous and "version_history" not in entry:
+            raise ValueError("existing version_history field was removed")
+    for index, row in enumerate(history):
+        if not isinstance(row, dict):
+            raise ValueError("history snapshot row must be an object")
+        if "encoding" not in row:
+            # Older inline/correction rows retain their original representation.
+            continue
+        restored = reconstruct_history_entry(history, index)
+        if restored.get("id") != entry.get("id"):
+            raise ValueError("history snapshot targets a different canonical entry")
+        parse_utc(row.get("timestamp", ""))
+        if not isinstance(row.get("release_version"), str) or not row["release_version"]:
+            raise ValueError("history snapshot lacks its prior release version")
 
 
 def post_content_hash(post: dict) -> str:

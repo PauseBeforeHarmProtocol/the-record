@@ -1,8 +1,12 @@
 # AI provenance
 
-Checked: 2026-08-26 5:58 AM EDT
+Maintenance disclosure updated: November 1, 2026 (America/Indiana/Indianapolis).
 
 ## Current maintenance systems
+
+The November 1 recovery uses **OpenAI Codex** for source inspection, research organization, drafting assistance, engineering, testing and deployment verification. Record-level review receipts identify AI-assisted work; this does not assert independent human review of every draft or reassign earlier authorship. The publisher's explicit direction to make both sites current and working supplies scoped publication authorization after evidence, local acceptance, CI and functional checks pass.
+
+## Preserved August 26 maintenance attribution
 
 The August 26 repository-recovery maintenance release 8.6.1 uses:
 
