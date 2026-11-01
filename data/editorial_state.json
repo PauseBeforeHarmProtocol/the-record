@@ -9553,6 +9553,30 @@
       "provenance_path": "data/editorial_change_notes/10.205.0.json",
       "provenance_sha256": "dbac34d953c0385f5332955049d825117d970e36565cf5e17ddbda6f3f8e0f73",
       "note": "Same continuing project; original event date retained. No final approval, new injunction or completed construction asserted."
+    },
+    {
+      "change_id": "10.206.0:NAT-2026-10-30-004",
+      "entry_id": "NAT-2026-10-30-004",
+      "as_of_utc": "2026-11-01T04:06:22Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.206.0",
+      "summary": "Added corroborated court-document reporting of planned Afghan removals via Pakistan, not completed flights.",
+      "provenance_path": "data/editorial_change_notes/10.206.0.json",
+      "provenance_sha256": "6b292400bf1ea245dadb23d35ea13c987dcb940c7d8bba3d91297b59faa545de",
+      "note": "Original October30 reporting date retained; independent of earlier completed CAR and Guyana transfers."
+    },
+    {
+      "change_id": "10.206.0:NAT-2026-08-28-012:retained-stage",
+      "entry_id": "NAT-2026-08-28-012",
+      "as_of_utc": "2026-10-31T22:09:22Z",
+      "timestamp_precision": "second",
+      "kind": "published_development",
+      "release_version": "10.206.0",
+      "summary": "Carried forward unchanged arch candidate from10.205.0; not a new review, action or canonical event.",
+      "provenance_path": "data/editorial_change_notes/10.205.0.json",
+      "provenance_sha256": "dbac34d953c0385f5332955049d825117d970e36565cf5e17ddbda6f3f8e0f73",
+      "note": "Original evidence-as-of time and10.205.0 provenance retained. The current release accounts for the full PR diff against public main."
     }
   ],
   "reviews": [
@@ -120976,6 +121000,131 @@
         "The October31 complaint PDF could not be fetched (reader restricted URL; direct HTTP429); detailed allegations are attributed to independent reporting, not asserted as findings.",
         "Retained historical fact mappings preserve prior actual inspection times; they were not newly inspected in this run.",
         "Final approvals, authorization notice, construction, funding, contracts, military implementation and adjudicated merits remain unverified."
+      ]
+    },
+    {
+      "review_id": "10.206.0:NAT-2026-10-30-004",
+      "entry_id": "NAT-2026-10-30-004",
+      "content_sha256": "1f76753bc140f1ea3c557721247241d9864db4f6a707fcc730da31b3caa6d034",
+      "reviewed_at": "2026-11-01T04:06:22Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "66648874920a67053091e379d577b7da81e4bd985673b34d9357c7d85778bbde",
+          "relies_on_unnamed_sources": true,
+          "supports": [
+            {
+              "source_id": "ap_afghan_pakistan_plan_oct31",
+              "locator": "AP paragraphs on sealed Virginia filing and route; ABC original report court-filing paragraph. Reader retrieval snapshot, not original sealed document.",
+              "inspected_at": "2026-11-01T04:06:22Z",
+              "document_sha256": "92173a05991d4bf58a2f482c16ac160ba4622dff8edd5e0cbdf9c70fd685d7f8",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "abc_afghan_pakistan_plan_oct30",
+              "locator": "AP paragraphs on sealed Virginia filing and route; ABC original report court-filing paragraph. Reader retrieval snapshot, not original sealed document.",
+              "inspected_at": "2026-11-01T04:06:22Z",
+              "document_sha256": "0868d63e1ee54b9ab9d5f58555e5125b8cccee884246089802577d1bc45cae6b",
+              "origin_group": "ABC News",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "c7ee7c9fbbd7d82b2a70d586d2b46756e03caa1d23e187c270572563915181c5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_afghan_pakistan_plan_oct31",
+              "locator": "AP schedule/HRF attribution paragraphs; ABC opening and named family account, with timing expressly provisional.",
+              "inspected_at": "2026-11-01T04:06:22Z",
+              "document_sha256": "92173a05991d4bf58a2f482c16ac160ba4622dff8edd5e0cbdf9c70fd685d7f8",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "abc_afghan_pakistan_plan_oct30",
+              "locator": "AP schedule/HRF attribution paragraphs; ABC opening and named family account, with timing expressly provisional.",
+              "inspected_at": "2026-11-01T04:06:22Z",
+              "document_sha256": "0868d63e1ee54b9ab9d5f58555e5125b8cccee884246089802577d1bc45cae6b",
+              "origin_group": "ABC News",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "85688c17f5274677245567c365d8d40ee13617232c7fcb187d41aaea81112ba0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_afghan_pakistan_plan_oct31",
+              "locator": "AP protection-status uncertainty and named advocates; ABC named family/advocate accounts. Risk attributed, not universal passenger characteristics.",
+              "inspected_at": "2026-11-01T04:06:22Z",
+              "document_sha256": "92173a05991d4bf58a2f482c16ac160ba4622dff8edd5e0cbdf9c70fd685d7f8",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "abc_afghan_pakistan_plan_oct30",
+              "locator": "AP protection-status uncertainty and named advocates; ABC named family/advocate accounts. Risk attributed, not universal passenger characteristics.",
+              "inspected_at": "2026-11-01T04:06:22Z",
+              "document_sha256": "0868d63e1ee54b9ab9d5f58555e5125b8cccee884246089802577d1bc45cae6b",
+              "origin_group": "ABC News",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "7a2e616689f4ba4199d3d578dc509e1ef0183d3d4f1bd09a9871afe51f48d303",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_afghan_pakistan_plan_oct31",
+              "locator": "AP DHS emailed response and ABC State spokesman response paragraphs; general rationale, not case-level compliance.",
+              "inspected_at": "2026-11-01T04:06:22Z",
+              "document_sha256": "92173a05991d4bf58a2f482c16ac160ba4622dff8edd5e0cbdf9c70fd685d7f8",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "abc_afghan_pakistan_plan_oct30",
+              "locator": "AP DHS emailed response and ABC State spokesman response paragraphs; general rationale, not case-level compliance.",
+              "inspected_at": "2026-11-01T04:06:22Z",
+              "document_sha256": "0868d63e1ee54b9ab9d5f58555e5125b8cccee884246089802577d1bc45cae6b",
+              "origin_group": "ABC News",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "c2538e9e9c2b39ac88e0f46f4abaf5e8aec320bde557da32f018df043223270a",
+          "review_note": "Separate risk analysis: planned onward removal versus completed return, individualized protections and notice."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "898a8d7427e7940c44ddcb3f05d1be9660ba5b8766e3f751a4f62a1538cdd16e",
+          "review_note": "Strongest reported government security/border rationale retained beside concrete case-level tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "769c70a302103b351de3b1dd0c2371e32c74e5ab6e30b777b7d9a2f61aaa1453",
+          "review_note": "Separate competing lawful-removal frame; explicit Therefore excludes completed flights, universal ally/protected status and adjudicated legality."
+        }
+      ],
+      "unresolved_questions": [
+        "Underlying sealed records and individual removal/protection orders unavailable.",
+        "Actual passenger list, precise departure and onward transfer, individualized safeguards and outcomes not verified."
       ]
     }
   ],
