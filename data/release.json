@@ -1,53 +1,38 @@
 {
-  "version": "10.209.0",
+  "version": "10.210.0",
   "artifact_mode": "full",
   "run_changes": {
     "added_entry_ids": [
-      "NAT-2026-10-29-006"
+      "NAT-2026-11-01-002"
     ],
-    "refreshed_entry_ids": [
-      "NAT-2026-09-15-003"
-    ],
-    "retained_entry_ids": [
-      "NAT-2026-08-28-012",
-      "NAT-2026-10-30-004",
-      "NAT-2026-10-31-001"
-    ]
+    "refreshed_entry_ids": [],
+    "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-10-31T15:58:13Z",
-    "through_utc": "2026-11-01T21:03:19Z",
+    "from_utc": "2026-11-01T21:03:19Z",
+    "through_utc": "2026-11-01T23:03:39Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Rechecked public-main boundary; deduplicated stagedPR267 through17:04:31Z. One recovered procurement record and one existing-election refresh with Alaska/California originals. Periodic source review, not continuous coverage."
+    "note": "Exact public-main boundary through execution cutoff. One recovered procurement/performance record accepted after primary award and closure records plus Reuters/AP corroboration; no quota padding. Periodic source review, not continuous coverage."
   },
   "release_iso": "2026-11-01",
   "release_human": "November 1, 2026",
-  "checked_at": "2026-11-01 4:03 PM EST",
-  "previous_version": "10.204.0",
-  "previous_checked_at": "2026-10-31 11:58 AM EDT",
-  "window_started_at": "2026-10-31 11:58 AM EDT",
-  "window_ended_at": "2026-11-01 4:03 PM EST",
+  "checked_at": "2026-11-01 6:03 PM EST",
+  "previous_version": "10.209.0",
+  "previous_checked_at": "2026-11-01 4:03 PM EST",
+  "window_started_at": "2026-11-01 4:03 PM EST",
+  "window_ended_at": "2026-11-01 6:03 PM EST",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
   "week_label": "2026-10-26 through 2026-11-01",
   "cutoff_start": "2026-07-20",
   "new_entry_ids": [
-    "NAT-2026-10-30-004",
-    "NAT-2026-10-31-001",
-    "NAT-2026-08-28-012",
-    "NAT-2026-09-15-003",
-    "NAT-2026-10-29-006"
+    "NAT-2026-11-01-002"
   ],
   "added_entry_ids": [
-    "NAT-2026-10-30-004",
-    "NAT-2026-10-31-001",
-    "NAT-2026-10-29-006"
+    "NAT-2026-11-01-002"
   ],
-  "refreshed_entry_ids": [
-    "NAT-2026-08-28-012",
-    "NAT-2026-09-15-003"
-  ],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -1326,31 +1311,37 @@
       "target_id": "NAT-2026-08-29-001",
       "decision": "false_positive",
       "notes": "Planned Louisiana–Pakistan–Afghanistan route is distinct from completed CAR and Guyana transfers. Current, active legacy, source URLs, queue and recent maintenance PRs checked; no matching Pakistan-onward plan record."
+    },
+    {
+      "entry_id": "NAT-2026-11-01-002",
+      "target_id": "NAT-2026-10-01-001",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "This entry measures procurement, cost, schedule and repair performance. NAT-2026-10-01-001 records the separate dismissal of a criminal prosecution and expressly does not measure the broader project's cost or outcome."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Campaign allegations and state-level gift-card claim",
-      "reason": "Fortynewrawposts/fourstills reviewed as publication evidence only. Unsupported criminal/disappearance accusations and the Kobach/Bluestem state lead do not establish a new federal action."
+      "title": "Potential Lincoln Memorial campaign closing event",
+      "reason": "The reported campaign-event plan is routine political scheduling and was not treated as a government action. Only the independently documented public-project expenditure and performance outcome was accepted."
     },
     {
-      "title": "Unilateral-governing and Iran plans; combined farmer spending rollup",
-      "reason": "Unnamed-source governing/war plans lack second independent confirmation or implementing instruments. AP15billion story combines older unlike programs; do not create a new appropriation or duplicate the existing8billion record."
+      "title": "Unchanged unnamed-source governing and Iran plans",
+      "reason": "No second independent confirmation or implementing instrument located after the exact boundary; prior withheld status remains."
     },
     {
-      "title": "Alaska appellate instrument, voter-matching replication, TrumpTV and legacy originals",
-      "reason": "Alaska appeal reports differ in notice/intent wording; originalnotice/stay not inspected. Confidential voter data not replicated. Broadcast AV/channel-resource evidence and record-specific legacy repairs remain unavailable or unreviewed."
+      "title": "Trump TV replay metadata and Truth Social engagement changes",
+      "reason": "No new Truth Social post ID and no qualifying new item located in the Trump TV material reviewed. Repeated metadata, inaccessible audiovisual content and engagement-only changes do not establish a new action."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-01T21:03:19Z",
-    "checked_at_eastern": "2026-11-01 4:03 PM EST",
+    "checked_at": "2026-11-01T23:03:39Z",
+    "checked_at_eastern": "2026-11-01 6:03 PM EST",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-01T21:03:19Z",
+    "last_successful_page_inspection_at": "2026-11-01T23:03:39Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1368,7 +1359,7 @@
       "https://www.whitehouse.gov/videos/halloween-at-the-white-house-2026/",
       "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-at-a-halloween-party-at-mar-a-lago-oct-31-2026/"
     ],
-    "summary": "Official TV/live/videos/remarks/releases and repeated gaggle detail metadata inspected. SameA4gNgHfZ-v4 stream and3oucO26En9g gaggle; indexNov1/detailOct31 conflict retained. Exact times/live-replay status unknown. Embeds remainJavaScript-only; no footage/audio/captions inspected. No qualifying new item located in the material reviewed. No new verified channel-resource finding or outage inference; complete broadcast boundary unadvanced.",
+    "summary": "Official Trump TV/live/videos/remarks/releases pages and the repeated October31 gaggle metadata were inspected. The same A4gNgHfZ-v4 stream and 3oucO26En9g gaggle remain; library/detail date conflict is preserved. Embeds were JavaScript-only and no footage, audio or captions were retrieved. No qualifying new item located in the material reviewed. No outage is inferred from fallback text, no new channel-resource finding was verified and the complete broadcast boundary remains unadvanced.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1388,7 +1379,8 @@
       "November1 midnight: new55-second Halloween embed throttled; prior playback/caption/date gaps remain. No newly verified channel-cost/contract/staffing/control/distribution finding; no complete broadcast boundary advanced.",
       "November1 morning: repeated metadata, same inaccessible embeds. Prior audiovisual/date/resource gaps retained. No full coverage or outage claim; private Truth+, campaign broadcasts and separate taxpayer ads not assigned to this White House channel.",
       "November1 noon: new gaggle3oucO26En9g unavailable audiovisually; date conflict and earlier content gaps retained. Stream fallback not outage proof. No verified new channel costs, staffing, editorial-control or distribution evidence. Supplementary remarks not a complete transcript feed.",
-      "November1afternoon: repeatedmetadata/IDs/dateconflict, AV/captions unreviewed; no channel-budget/staffing/distribution finding. Supplementaryremarks not complete transcript feed."
+      "November1afternoon: repeatedmetadata/IDs/dateconflict, AV/captions unreviewed; no channel-budget/staffing/distribution finding. Supplementaryremarks not complete transcript feed.",
+      "November1 evening: same stream and gaggle metadata; footage/audio/captions inaccessible, date conflict unresolved, and no verified channel cost, contract, staffing, editorial-control or distribution record. Complete broadcast coverage remains unadvanced."
     ],
     "items": [
       {
@@ -2006,18 +1998,72 @@
         "library_date": "2026-11-01",
         "detail_date": "2026-10-31",
         "date_conflict": true
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "observed_at_utc": "2026-11-01T23:03:39Z",
+        "observed_at_eastern": "2026-11-01 6:03 PM EST",
+        "inspection": "Official page/index/detail metadata only; same listings and unresolved date conflict. No audiovisual or caption review.",
+        "original_event_date": null,
+        "posted_or_broadcast_at": null,
+        "recording_state": "unknown; metadata-only inspection"
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "observed_at_utc": "2026-11-01T23:03:39Z",
+        "observed_at_eastern": "2026-11-01 6:03 PM EST",
+        "inspection": "Official page/index/detail metadata only; same listings and unresolved date conflict. No audiovisual or caption review.",
+        "original_event_date": null,
+        "posted_or_broadcast_at": null,
+        "recording_state": "unknown; metadata-only inspection"
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "observed_at_utc": "2026-11-01T23:03:39Z",
+        "observed_at_eastern": "2026-11-01 6:03 PM EST",
+        "inspection": "Official page/index/detail metadata only; same listings and unresolved date conflict. No audiovisual or caption review.",
+        "original_event_date": null,
+        "posted_or_broadcast_at": null,
+        "recording_state": "unknown; metadata-only inspection"
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "observed_at_utc": "2026-11-01T23:03:39Z",
+        "observed_at_eastern": "2026-11-01 6:03 PM EST",
+        "inspection": "Official page/index/detail metadata only; same listings and unresolved date conflict. No audiovisual or caption review.",
+        "original_event_date": null,
+        "posted_or_broadcast_at": null,
+        "recording_state": "unknown; metadata-only inspection"
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "observed_at_utc": "2026-11-01T23:03:39Z",
+        "observed_at_eastern": "2026-11-01 6:03 PM EST",
+        "inspection": "Official page/index/detail metadata only; same listings and unresolved date conflict. No audiovisual or caption review.",
+        "original_event_date": null,
+        "posted_or_broadcast_at": null,
+        "recording_state": "unknown; metadata-only inspection"
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-at-a-halloween-party-at-mar-a-lago-oct-31-2026/",
+        "observed_at_utc": "2026-11-01T23:03:39Z",
+        "observed_at_eastern": "2026-11-01 6:03 PM EST",
+        "inspection": "Official page/index/detail metadata only; same listings and unresolved date conflict. No audiovisual or caption review.",
+        "original_event_date": "2026-10-31",
+        "posted_or_broadcast_at": null,
+        "recording_state": "unknown; metadata-only inspection"
       }
     ],
-    "checked_at_utc": "2026-11-01T21:03:19Z"
+    "checked_at_utc": "2026-11-01T23:03:39Z"
   },
   "truth_social_inspection": {
-    "new_posts": 40,
-    "new_text_reviewed": 40,
-    "new_media_reviewed": 4,
+    "new_posts": 0,
+    "new_text_reviewed": 0,
+    "new_media_reviewed": 0,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-01T20:54:40.157418Z",
-    "checked_at_eastern": "2026-11-01 3:54:40 PM EST",
+    "checked_at_utc": "2026-11-01T22:59:54.837449Z",
+    "checked_at_eastern": "2026-11-01 5:59:54 PM EST",
     "latest_post_id": "117542869626398603",
     "latest_post_at_eastern": "2026-11-01 2:37:33 PM EST",
     "counts": {
@@ -2033,7 +2079,7 @@
         "unavailable": 59
       }
     },
-    "note": "Fortynewtextfields andfourstills inspected. Rawcampaignendorsements, AlaskaSCAMgraphic and unsupported criminal allegations remain publication evidence only. No new videos; earlier pending/unavailable states preserved."
+    "note": "No new post IDs after the prior validated snapshot. The newest retained post remains November1 at2:37:33PMEST. Fifty-three engagement counters and check metadata changed; post-content hashes, text/media review states and publication treatment remain unchanged."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -2045,14 +2091,14 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-01T21:03:19Z",
-    "note": "Fourprimaryprojects checked; TrumpArchive/index verified15678items,13008posts,2012speeches/transcripts as separateunits, oldmeasurements retained. UndoTrump1264 andIPTP1826 unchanged; Record47 unavailableheadline counters not overwritten. Zeroimports/federationchanges."
+    "checked_at": "2026-11-01T23:03:39Z",
+    "note": "Four primary projects checked as discovery inputs. Trump Archive remained at 15,678 total items, 13,008 Truth Social posts and 2,012 speeches/transcripts; UndoTrump remained at 1,264 actions tracked, 995 active, 44 courts and 42 restored. The immigration tracker exposed no newly verified overall count, and Record47 headline counters did not render. Prior measurements were preserved, unlike units were not summed and zero external items were imported."
   },
   "editorial_notes": [
-    "This run adds one recovered procurement record and materially refreshes one existing election record; completePRdiff againstmain is three additions and two refreshes. No quota padding or factual corrections.",
-    "Earlier staged windows, full prior versions, exact-field notes and immutable artifacts retained. Shared-prefix history encoding reconstructs complete previous objects with checksum guards without recursive duplicate growth.",
-    "Repairs stable-ID/source-URL search, full date-range labels, honest review-state badges, bounded stable-permalink rendering, front-door ID search, Method scope and current-maintenance attribution. Historical JSON body and IN-6 facts unchanged; historical HTML receives only one generated compatibility script hook.",
-    "User explicitly requests both sites current, accurate and working. Publish only after source review, complete local acceptance, CI and exact-byte responsive functional QA; deployment proof is recorded separately, never inferred from this generated receipt."
+    "This run adds one recovered procurement/performance record. Fewer than four items passed the threshold; no quota padding and no factual corrections.",
+    "The new record is a distinct project-performance lifecycle from the existing Reflecting Pool prosecution entry. It does not infer corruption, final technical cause or an audited lifecycle cost.",
+    "Truth Social content was unchanged and Trump TV remained a metadata-only partial check. No continuous-coverage or outage claim is made.",
+    "Publish to both sites only after the deterministic local acceptance order, CI, exact-tree transport and post-deployment parity checks pass."
   ],
   "retained_stages": [
     {
@@ -2086,13 +2132,5 @@
       "note": "Earlier appeal/response review and full accepted state preserved at remote19fec7a; no old evidence time advanced."
     }
   ],
-  "publication_transport_attempts": [
-    {
-      "accepted_local_tree": "eaf024f6c92aea7f41de61725b64888081fd6a1a",
-      "remote_expected_head": "af71faf693e38a3ebe5ffe8a635697235d0d1837",
-      "result": "blob_request_rejected_branch_not_advanced",
-      "error": "HTTP 400: MCP request body is invalid or exceeds the 16 MiB limit",
-      "resolution": "Lossless canonical JSON formatting and exact-field note with hashed full-snapshot selectors; supported UTF-8 GitData blob encoding when base64 expansion would exceed request limit. Revalidate complete revised tree before transport."
-    }
-  ]
+  "publication_transport_attempts": []
 }

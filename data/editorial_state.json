@@ -9733,6 +9733,18 @@
       "provenance_path": "data/editorial_change_notes/10.207.0.json",
       "provenance_sha256": "bcd9ab376550a09d53690435d7ca4ed524b7d444368bfeea537597a6b79fcc77",
       "note": "No fresh action or review is asserted by republication."
+    },
+    {
+      "change_id": "10.210.0:NAT-2026-11-01-002:added",
+      "entry_id": "NAT-2026-11-01-002",
+      "as_of_utc": "2026-11-01T23:03:39Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.210.0",
+      "summary": "Recovered federal procurement and project-performance record with primary award/closure evidence and independent cost, schedule and repair reporting.",
+      "provenance_path": "data/editorial_change_notes/10.210.0.json",
+      "provenance_sha256": "6216921035fc2d089051e7f05820a2a1dd0bba00a9f4fd925dbcbdbec1b1f253",
+      "note": "Distinct lifecycle from the related criminal-prosecution dismissal; no final technical cause or audited lifecycle cost asserted."
     }
   ],
   "reviews": [
@@ -125295,6 +125307,107 @@
       "unresolved_questions": [
         "Solicitations, awarded contracts, obligations, payments, delivery and measured benefits not inspected.",
         "Recovered October29 announcement; no newNovember1 combined appropriation inferred from AP rollup."
+      ]
+    },
+    {
+      "review_id": "10.210.0:NAT-2026-11-01-002",
+      "entry_id": "NAT-2026-11-01-002",
+      "content_sha256": "b06356328d246c4945a6bef0b36bfd2fc1467b06f46a27ea17aef493959ca875",
+      "reviewed_at": "2026-11-01T23:03:39Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "6faf44056d4e7ca3045f981bb2da97ea5edfcd2fd97ac6525fbfd0b60def6e5e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "sam_reflecting_pool_paint_award_apr3",
+              "locator": "Award date, award/notice identifiers, original-award status and FAR 6.302-2 urgency authority on the SAM.gov notice page.",
+              "document_sha256": "580a89bd4328cccc8aa147ada93758f636be74aff6c05eacaf4b74d6569b12f9",
+              "inspected_at": "2026-11-01T23:03:39Z",
+              "origin_group": "SAM.gov",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "sam_reflecting_pool_nanobubble_award_apr13",
+              "locator": "Award date, award/notice identifiers, original-award status and FAR 6.302-2 urgency authority on the SAM.gov notice page.",
+              "document_sha256": "f63dfd161a5e76a892ee6210c587f729cdf3ebdc860a452c2b62c0e979da0d61",
+              "inspected_at": "2026-11-01T23:03:39Z",
+              "origin_group": "SAM.gov",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "59bcc5e197d5750d88c8c13277ab538d3e3c1956b33d617492ff1786a8ae20e4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_reflecting_pool_performance_jun18",
+              "locator": "$14.7 million no-bid contract, June 6 completion announcement, observed peeling and reported algae treatment.",
+              "document_sha256": "c8845add1d40386e81b17307290728318e361d338835f03d2f79d9d5a55d78ed",
+              "inspected_at": "2026-11-01T23:03:39Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "3cfb75337b9d1d3f7c77d8f1693c2b46c75f3796821d4162dd2f6d22cdc456ee",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "nps_reflecting_pool_closure_oct20",
+              "locator": "Closure through November 20, ongoing repairs, circulation work, testing, long-term treatment plan and stated safety/resource rationale.",
+              "document_sha256": "2ffde663b94526d7e138acad904b2d6702a3e3b2d38c0bc769d5597b821f818f",
+              "inspected_at": "2026-11-01T23:03:39Z",
+              "origin_group": "National Park Service",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "42da628523a4234813193a2cd80b48d4e8452c97d2710666ee2a6f578649e732",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_reflecting_pool_outcome_nov1",
+              "locator": "Nearly three-month delay, more-than-tenfold growth from early $1.5 million estimate, repeat draining/repairs and attributed Trump/Pirro explanations.",
+              "document_sha256": "94a5f5cea1280ab4afd755d871b14e3299f3a75eb25b7137fe8c4e5b58c2b16f",
+              "inspected_at": "2026-11-01T23:03:39Z",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "6c7774c784e44637c95ddd225f85e21a55cf399961250decc35cb9e8e873b20d",
+          "review_note": "Separately reviewed as a documented cost/schedule/performance outcome; future accountability tests named without assuming cause or wrongdoing."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "885c7e0dd91bb15c19ea0aaf36ce85cdbeba7bf5994abd4dfb4a7f0b4b4d7dc7",
+          "review_note": "Strongest NPS safety/work-completion rationale and Trump's vandalism/improvement explanation preserved as attributed responses, not adopted findings."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "04ddd1379eb907651f1536c98da8935611269e1e593d2b6d591e31cfe5a47496",
+          "review_note": "Plausible acceleration, damage, contractor, design and oversight explanations separated from what the records establish; explicit limits retained."
+        }
+      ],
+      "unresolved_questions": [
+        "Complete obligations, contract modifications, warranty or recovery actions and audited lifecycle cost were not retrieved.",
+        "Final engineering cause, responsibility, reopening and long-term water-quality effectiveness remain unresolved."
       ]
     }
   ],
