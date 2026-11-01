@@ -225,6 +225,18 @@ def run_receipt(entries: list[dict], ledger: dict) -> bytes:
         f"- Newest Truth Social post: {TRUTH_META['latest_post_at_eastern']}",
         f"- Truth Social fallback checked: {TRUTH_META['checked_at_eastern']}",
     ]
+    run_changes = RELEASE.get("run_changes")
+    if run_changes:
+        window = RELEASE["research_window"]
+        lines.extend([
+            "", "## This research run versus retained PR candidates", "",
+            f"- Exact source window: {window['from_utc']} through {window['through_utc']} ({window['timezone']})",
+            f"- Added in this run: {', '.join(run_changes['added_entry_ids']) or 'none'}",
+            f"- Materially refreshed in this run: {', '.join(run_changes['refreshed_entry_ids']) or 'none'}",
+            f"- Retained unchanged from earlier PR stages: {', '.join(run_changes['retained_entry_ids']) or 'none'}",
+            "- Added/refreshed totals below enumerate the complete PR diff against public main, not additional government actions or fresh reviews in this run.",
+            "", "\n\n".join(RELEASE.get("editorial_notes", [])), "",
+        ])
     if consolidation:
         lines.extend([
             "",

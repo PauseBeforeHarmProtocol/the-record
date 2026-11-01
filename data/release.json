@@ -1,33 +1,42 @@
 {
-  "version": "10.206.0",
+  "version": "10.207.0",
   "artifact_mode": "full",
+  "run_changes": {
+    "added_entry_ids": ["NAT-2026-10-31-001"],
+    "refreshed_entry_ids": ["NAT-2026-09-15-003"],
+    "retained_entry_ids": ["NAT-2026-08-28-012", "NAT-2026-10-30-004"]
+  },
   "research_window": {
     "from_utc": "2026-10-31T15:58:13Z",
-    "through_utc": "2026-11-01T04:06:22Z",
+    "through_utc": "2026-11-01T11:04:37Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Rechecked from current main boundary, deduplicated against retained PR267 coverage through22:09:22Z. Prior review times/windows and arch change preserved; periodic source review, not continuous broadcast coverage."
+    "note": "Rechecked from exact public-main boundary; deduplicated against PR267 through2026-11-01T04:06:22Z. This run adds one FBI record and refreshes one existing court record. Retained candidates keep original evidence times; periodic source review, not continuous broadcast coverage."
   },
   "release_iso": "2026-11-01",
   "release_human": "November 1, 2026",
-  "checked_at": "2026-11-01 12:06 AM EDT",
+  "checked_at": "2026-11-01 6:04 AM EST",
   "previous_version": "10.204.0",
   "previous_checked_at": "2026-10-31 11:58 AM EDT",
   "window_started_at": "2026-10-31 11:58 AM EDT",
-  "window_ended_at": "2026-11-01 12:06 AM EDT",
+  "window_ended_at": "2026-11-01 6:04 AM EST",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
   "week_label": "2026-10-26 through 2026-11-01",
   "cutoff_start": "2026-07-20",
   "new_entry_ids": [
+    "NAT-2026-10-30-004",
+    "NAT-2026-10-31-001",
     "NAT-2026-08-28-012",
-    "NAT-2026-10-30-004"
+    "NAT-2026-09-15-003"
   ],
   "added_entry_ids": [
-    "NAT-2026-10-30-004"
+    "NAT-2026-10-30-004",
+    "NAT-2026-10-31-001"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-08-28-012"
+    "NAT-2026-08-28-012",
+    "NAT-2026-09-15-003"
   ],
   "dedupe_resolutions": [
     {
@@ -1311,27 +1320,27 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Habba contract and pardon reporting",
-      "reason": "Reuters lead repeats a reported NYT contract; original contract and independently confirming origin not inspected. No payment-for-pardon finding or proven misconduct published."
+      "title": "Habba contract/pardon lead",
+      "reason": "Reuters repeats NYT contract reporting; original contract and independent confirming origin not inspected. Response does not prove pay-for-pardon or misconduct."
     },
     {
-      "title": "Repeated election, arch and international coverage",
-      "reason": "Election restraints and Alaska pleadings already covered; arch candidate retained in PR267. Reported consolidation and briefing not a new injunction or merits ruling. Original procedural instrument, further implementation and consequential outcomes remain unverified."
+      "title": "Iran strike possibilities, Newsom warning and individual visa lead",
+      "reason": "No independently verified new U.S. strike decision, ballot seizure or changed national visa policy. Planned/hypothetical actions, state warning and individual humanitarian case not padded into national records."
     },
     {
-      "title": "Truth Social, Trump TV and legacy access gaps",
-      "reason": "Campaign/personal stills do not qualify; one late-arriving private video pending. New official Halloween55-second listing metadata only, embed throttled. No qualifying new item located in the material reviewed. No new verified channel-resource finding. LEG-001565 source contamination and other legacy queues remain unresolved without record-specific originals."
+      "title": "Trump TV, pending Truth Social media and legacy source gaps",
+      "reason": "Repeated Halloween/Hello America metadata only, embeds throttled; no footage/audio/captions reviewed. No qualifying new item located in the material reviewed. Earlier pending video content/origin remain unverified. LEG-001565 unrelated link and duplicate/source-health queues unresolved without original-source revalidation."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-01T04:06:22Z",
-    "checked_at_eastern": "2026-11-01 12:06 AM EDT",
+    "checked_at": "2026-11-01T11:04:37Z",
+    "checked_at_eastern": "2026-11-01 6:04 AM EST",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-01T04:06:22Z",
+    "last_successful_page_inspection_at": "2026-11-01T11:04:37Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1348,7 +1357,7 @@
       "https://www.whitehouse.gov/videos/hello-america/",
       "https://www.whitehouse.gov/videos/halloween-at-the-white-house-2026/"
     ],
-    "summary": "Official TV/live/videos/remarks/releases metadata checked. Stream A4gNgHfZ-v4 unchanged, JavaScript-only not outage proof. New Halloween55-second clip uW6gG8q9fkg listed October31; original event date/exact publication time/live-replay status unknown. Embed throttled. No footage/audio/captions reviewed. No qualifying new item located in the material reviewed; complete broadcast-review boundary remains null. Prior Hello America/Halloween date conflicts and resource-record gaps retained.",
+    "summary": "Official TV/live/videos/remarks/releases metadata rechecked. Same linked stream A4gNgHfZ-v4; repeated Halloween55s uW6gG8q9fkg and Hello America N464mBP5dmE, with Hello America indexOct31/detailOct30 conflict. Both clip embeds throttled, stream JavaScript-only. Event dates, exact publication/broadcast times and live/replay/editing status remain unknown. No footage/audio/captions reviewed. No qualifying new item located in the material reviewed. No newly verified channel-resource finding; broadcast-review boundary remains null, fallback text is not outage proof.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1365,7 +1374,8 @@
       "October31 morning: new Artemis/St.Cloud/remarks listings inspected only as metadata. Linked streams/clips remain unavailable or JavaScript-only, not proof of outage. Retain all prior unreviewed-content and date-conflict gaps and recheck original statements/transcripts and channel resource records.",
       "October31 noon: Hello America date conflict and throttled embed; prior recordings and captions remain unreviewed. Recheck original statements and channel-resource records without advancing complete broadcast coverage.",
       "October31 evening: stream JavaScript-only and Hello America embed throttled; conflicting displayed dates unresolved. Prior clips/captions, original event times and complete broadcast boundary remain unreviewed. Recheck gaps without claiming outage or full coverage.",
-      "November1 midnight: new55-second Halloween embed throttled; prior playback/caption/date gaps remain. No newly verified channel-cost/contract/staffing/control/distribution finding; no complete broadcast boundary advanced."
+      "November1 midnight: new55-second Halloween embed throttled; prior playback/caption/date gaps remain. No newly verified channel-cost/contract/staffing/control/distribution finding; no complete broadcast boundary advanced.",
+      "November1 morning: repeated metadata, same inaccessible embeds. Prior audiovisual/date/resource gaps retained. No full coverage or outage claim; private Truth+, campaign broadcasts and separate taxpayer ads not assigned to this White House channel."
     ],
     "items": [
       {
@@ -1824,17 +1834,105 @@
         "observed_at_eastern": "2026-11-01 12:06 AM EDT",
         "format": "55-second library clip; editing/live/replay status unverified",
         "inspection": "Official listing/detail/link metadata only; index datedOctober31, original event and exact posting time unknown. Linked embed throttled; no audiovisual inspection."
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-01T11:04:37Z",
+        "observed_at_eastern": "2026-11-01 6:04 AM EST",
+        "format": "repeated official metadata; audiovisual content and live/replay status unreviewed",
+        "inspection": "Morning page/index/detail metadata recheck only. Halloween detailOct31; Hello America detailOct30/indexOct31. Unknown original event and exact posting times retained; no audiovisual review."
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-01T11:04:37Z",
+        "observed_at_eastern": "2026-11-01 6:04 AM EST",
+        "format": "repeated official metadata; audiovisual content and live/replay status unreviewed",
+        "inspection": "Morning page/index/detail metadata recheck only. Halloween detailOct31; Hello America detailOct30/indexOct31. Unknown original event and exact posting times retained; no audiovisual review."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "video_ids": [
+          "uW6gG8q9fkg",
+          "N464mBP5dmE"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-01T11:04:37Z",
+        "observed_at_eastern": "2026-11-01 6:04 AM EST",
+        "format": "repeated official metadata; audiovisual content and live/replay status unreviewed",
+        "inspection": "Morning page/index/detail metadata recheck only. Halloween detailOct31; Hello America detailOct30/indexOct31. Unknown original event and exact posting times retained; no audiovisual review."
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "video_ids": [],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-01T11:04:37Z",
+        "observed_at_eastern": "2026-11-01 6:04 AM EST",
+        "format": "repeated official metadata; audiovisual content and live/replay status unreviewed",
+        "inspection": "Morning page/index/detail metadata recheck only. Halloween detailOct31; Hello America detailOct30/indexOct31. Unknown original event and exact posting times retained; no audiovisual review."
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "video_ids": [],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-01T11:04:37Z",
+        "observed_at_eastern": "2026-11-01 6:04 AM EST",
+        "format": "repeated official metadata; audiovisual content and live/replay status unreviewed",
+        "inspection": "Morning page/index/detail metadata recheck only. Halloween detailOct31; Hello America detailOct30/indexOct31. Unknown original event and exact posting times retained; no audiovisual review."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/halloween-at-the-white-house-2026/",
+        "video_ids": [
+          "uW6gG8q9fkg"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-01T11:04:37Z",
+        "observed_at_eastern": "2026-11-01 6:04 AM EST",
+        "format": "repeated official metadata; audiovisual content and live/replay status unreviewed",
+        "inspection": "Morning page/index/detail metadata recheck only. Halloween detailOct31; Hello America detailOct30/indexOct31. Unknown original event and exact posting times retained; no audiovisual review."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/hello-america/",
+        "video_ids": [
+          "N464mBP5dmE"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-01T11:04:37Z",
+        "observed_at_eastern": "2026-11-01 6:04 AM EST",
+        "format": "repeated official metadata; audiovisual content and live/replay status unreviewed",
+        "inspection": "Morning page/index/detail metadata recheck only. Halloween detailOct31; Hello America detailOct30/indexOct31. Unknown original event and exact posting times retained; no audiovisual review."
       }
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 5,
-    "new_text_reviewed": 5,
-    "new_media_reviewed": 4,
-    "new_media_pending": 1,
+    "new_posts": 0,
+    "new_text_reviewed": 0,
+    "new_media_reviewed": 0,
+    "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-01T04:05:08.635222Z",
-    "checked_at_eastern": "2026-11-01 12:05:08 AM EDT",
+    "checked_at_utc": "2026-11-01T11:02:17.871834Z",
+    "checked_at_eastern": "2026-11-01 6:02:17 AM EST",
     "latest_post_id": "117539072419901096",
     "latest_post_at_eastern": "2026-10-31 11:31:52 PM EDT",
     "counts": {
@@ -1850,28 +1948,39 @@
         "unavailable": 69
       }
     },
-    "note": "Five additional retained posts versus prior PR snapshot; four stills visually inspected, one late-arriving video pending. Newest October31 11:31:52PM EDT, not November1 UTC date; checked November1 12:05:08AM EDT. Earlier105-post review preserved."
+    "note": "No new post IDs or changed text/media versus preserved PR267 snapshot. Newest October31 11:31:52PM EDT; checked November1 6:02:17AM EST after the DST transition. Prior inspections and pending/unavailable states retained; no new media review claimed."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
     "scope": "Standing national-maintenance instruction: merge after evidence, local acceptance and CI gates pass."
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-01T04:06:22Z",
-    "note": "Four primary project pages checked. UndoTrump1264 actions unchanged; TrumpArchive zero-render counters conflict with populated latest records, IPTP extract lacks total, Record47 headline counters absent. Retain prior verified unit/scope/time measurements unchanged; zero imports."
+    "checked_at": "2026-11-01T11:04:37Z",
+    "note": "All four primary pages checked. IPTP home/browse directly display1824; observed measures updated separately with original scope caveat and prior measurements retained. Other values unchanged/unverifiable. Zero imports or unlike-unit sum."
   },
   "editorial_notes": [
-    "One new corroborated reported-plan record; no quota padding or corrections. Prior arch candidate retained without a new review or development timestamp.",
-    "Consolidates on the already preserved maintenance branch/PR267 rather than stacking another PR. Main remains10.204.0. Existing visual-QA hold remains; no bypass or public deployment.",
-    "Legacy and IN-6 facts unchanged; source-health/duplicate queue retained pending originals. Four external primary pages checked, no measurement updates or imports."
+    "This run: one FBI addition and one material existing-election refresh from original ECF26, not four padded records. Complete PR diff: two additions and two refreshes including unchanged arch/Afghan carryforwards.",
+    "Preserve all prior source windows, immutable receipts, reviews and evidence times. Main remains10.204.0; PR267 consolidation, visual-QA hold remains and no public deployment claimed.",
+    "No factual corrections. Canonical historical data/revisions and IN-6 facts unchanged. Objective LEG-001565 source-repair and duplicate/source-health queue remains unresolved; no mass prose transformation."
   ],
-  "retained_stage": {
-    "version": "10.205.0",
-    "research_through_utc": "2026-10-31T22:09:22Z",
-    "refreshed_entry_ids": [
-      "NAT-2026-08-28-012"
-    ],
-    "receipt": "artifacts/THE_RECORD_RUN_RECEIPT_2026-10-31_v10.205.0.md",
-    "note": "Retained earlier candidate, not a fresh arch review or a second canonical event. This run adds only NAT-2026-10-30-004; release IDs account for the complete PR diff against main."
-  }
+  "retained_stages": [
+    {
+      "version": "10.205.0",
+      "research_through_utc": "2026-10-31T22:09:22Z",
+      "refreshed_entry_ids": [
+        "NAT-2026-08-28-012"
+      ],
+      "receipt": "artifacts/THE_RECORD_RUN_RECEIPT_2026-10-31_v10.205.0.md",
+      "note": "Retained earlier candidate, not a fresh arch review or a second canonical event. This run adds only NAT-2026-10-30-004; release IDs account for the complete PR diff against main."
+    },
+    {
+      "version": "10.206.0",
+      "research_through_utc": "2026-11-01T04:06:22Z",
+      "added_entry_ids": [
+        "NAT-2026-10-30-004"
+      ],
+      "receipt": "artifacts/THE_RECORD_RUN_RECEIPT_2026-11-01_v10.206.0.md",
+      "note": "Unchanged reported-plan candidate, not completed transport or a fresh review."
+    }
+  ]
 }
