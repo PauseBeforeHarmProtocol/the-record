@@ -113,7 +113,7 @@ This entry is a dated, source-bound update. It does not by itself revalidate eve
 def entry_pack(entry: dict, ledger: dict) -> bytes:
     source_subset = {source_id: ledger[source_id] for source_id in entry["sources"]}
     review = matching_review(entry, ledger, load_state())
-    return stable_zip({
+    files = {
         "ENTRY.md": entry_markdown(entry, ledger),
         "VERIFY.txt": b"Verify this pack by comparing its SHA-256 digest with the adjacent .sha256 file.\n",
         "entry.json": as_json(entry),
@@ -122,7 +122,10 @@ def entry_pack(entry: dict, ledger: dict) -> bytes:
             "content_sha256": entry_content_hash(entry, ledger), "review": review,
             "scope_note": "A null review means no claim-level receipt has been recorded; prior canonical review status is retained without asserting a new source inspection."
         }),
-    })
+    }
+    if any(row.get("encoding") == "entry-with-history-prefix-v1" for row in entry.get("version_history", [])):
+        files["HISTORY_FORMAT.md"] = (ROOT / "data/CURRENT_HISTORY_FORMAT.md").read_bytes()
+    return stable_zip(files)
 
 
 def scoped_brief(
@@ -513,6 +516,7 @@ def build_outputs() -> dict[Path, bytes]:
         "AI_PROVENANCE.md": (ROOT / "AI_PROVENANCE.md").read_bytes(),
         "current_layer_bridge.js": (ROOT / "current_layer_bridge.js").read_bytes(),
         "data/current_entries.json": (ROOT / "data/current_entries.json").read_bytes(),
+        "data/CURRENT_HISTORY_FORMAT.md": (ROOT / "data/CURRENT_HISTORY_FORMAT.md").read_bytes(),
         "data/archive_metrics.json": (ROOT / "data/archive_metrics.json").read_bytes(),
         "data/archive_registry.json": (ROOT / "data/archive_registry.json").read_bytes(),
         "data/federated_records.json": (ROOT / "data/federated_records.json").read_bytes(),

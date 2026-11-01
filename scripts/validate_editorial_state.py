@@ -10,7 +10,8 @@ from pathlib import Path
 import jsonschema
 
 from editorial_state import (ROOT, digest, entry_content_hash, load_state, matching_review,
-                             parse_utc, post_content_hash, validate_snapshot, legacy_checked_at, validate_frozen_artifacts)
+                             parse_utc, post_content_hash, validate_snapshot, legacy_checked_at, validate_frozen_artifacts,
+                             validate_entry_history)
 
 
 def git_json(ref: str, path: str, root: Path) -> object:
@@ -84,6 +85,7 @@ def validate(root: Path = ROOT, base_ref: str | None = None) -> dict:
                         "unnamed-source claim needs two independent origins, not syndication")
     mapped = 0
     for entry in entries:
+        validate_entry_history(entry, previous_entries.get(entry["id"]))
         review = matching_review(entry, ledger, state)
         if not review:
             require(state["baseline"]["entry_hashes"].get(entry["id"]) == entry_content_hash(entry, ledger),

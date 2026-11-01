@@ -16,6 +16,7 @@ ASSET_MARKER = "<!-- CURRENT_LAYER_BRIDGE_ASSET -->"
 MAIN_SCRIPT = "<script>\n// Step 1: Parse entries (3.4 MB) via JSON.parse — much faster than JS literal on iOS Safari"
 ASSET_BLOCK = f'''{ASSET_MARKER}
 <script src="current_layer_bridge.js"></script>
+<script src="assets/archive-compat.js" defer></script>
 <script>
 /* CURRENT_LAYER_BRIDGE_STATUS_START */
 (function(){{
