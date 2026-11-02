@@ -1,11 +1,11 @@
 {
   "schema_version": 3,
-  "editorial_checked_at": "2026-11-02 6:06 AM EST",
-  "quality_inputs_updated_at": "2026-11-02T05:07:58Z",
-  "external_registry_checked_at": "2026-11-02T05:07:58Z",
+  "editorial_checked_at": "2026-11-02 12:09 PM EST",
+  "quality_inputs_updated_at": "2026-11-02T17:09:07Z",
+  "external_registry_checked_at": "2026-11-02T17:09:07Z",
   "federation_last_modified_at": "2026-08-25T14:40:23Z",
   "legacy_revisions_through": "2026-10-13",
-  "release_version": "10.211.1",
+  "release_version": "10.212.0",
   "canonical_files": {
     "legacy": "data/legacy_entries.json",
     "current": "data/current_entries.json",
@@ -18,13 +18,13 @@
   },
   "canonical_sha256": {
     "legacy": "1ce7d5d6735f662bb6e17fc0ae7bbcf42ac7fab9953499ac42e3dd878890e010",
-    "current": "47ae4640dcd1a7c3a157e02571c9e6c66325a9a88a2cf1a849778db1ac149410",
-    "source_ledger": "4386720309f24e49d0cb6d46eb8e9f7c67486a03b7bb122dc8aaf3c6230bf0e9",
+    "current": "9159c142bea0e74d7c76cea0084f556d76382f901878b056f4d63a6d5e8205c6",
+    "source_ledger": "d22f5cd78125cacc62359c0c4ecfa8f75009e1396427adc8a742135d25180837",
     "federated": "4c2b2804949098a9b0a314b3f0ed44e74fc8ccb688ab84741922dd30fa1083f3",
     "legacy_revisions": "c773aacc26f76bd2e3d85bad9758d5085c7bb837726779be557921f84809de2d",
-    "archive_registry": "d8d8ba80bbdacd55a64e700970a1bb853cf87ad3a41258e912f61532dc1bb6cd",
-    "editorial_state": "d6b0fb52b67d84f82f3748bfca4407f351f750ae050c0fb56c06947c72e98116",
-    "truth_social_reviews": "2854cdafa34efc0304c20326ebb0dd4cb5e7d9c068d7c47189e000dcdfa3c07d"
+    "archive_registry": "2adf880a1277c79fb0ae67efc20d7235cda87d1dde4a116ad4db6e208c39d491",
+    "editorial_state": "a14597f9088c6e5c47a641b2355e9b09581ae4a44f405579e563160acc5822e0",
+    "truth_social_reviews": "78e6a5a54167c57e93c745313e542021ef4111dc46b7c7a679bf9f06f3e52af9"
   },
   "totals": {
     "canonical_legacy_rows": 4742,
@@ -35,9 +35,9 @@
     "full_archive_runtime_entries": 5205,
     "current_layer_entries": 478,
     "legacy_source_references": 6716,
-    "current_source_references": 1555,
-    "full_archive_runtime_source_references": 8263,
-    "full_archive_runtime_unique_urls": 6860
+    "current_source_references": 1557,
+    "full_archive_runtime_source_references": 8265,
+    "full_archive_runtime_unique_urls": 6862
   },
   "coverage": {
     "legacy_last_date": "2026-08-01",
@@ -423,10 +423,10 @@
     "entries": 478,
     "national_entries": 474,
     "in6_entries": 4,
-    "source_references": 1555,
-    "national_source_references": 1547,
-    "source_ledger_rows": 1562,
-    "used_source_ledger_rows": 1538,
+    "source_references": 1557,
+    "national_source_references": 1549,
+    "source_ledger_rows": 1564,
+    "used_source_ledger_rows": 1540,
     "unused_source_ledger_rows": 24,
     "entries_with_one_source": 101,
     "entries_with_one_source_percent": 21.1,
@@ -443,11 +443,11 @@
     "most_used_publishers": [
       {
         "publisher": "Reuters",
-        "references": 433
+        "references": 434
       },
       {
         "publisher": "Associated Press",
-        "references": 267
+        "references": 268
       },
       {
         "publisher": "The White House",
@@ -486,7 +486,7 @@
   "review_traceability": {
     "current_entries_with_content_bound_review": 356,
     "current_entries_with_prior_status_only": 122,
-    "material_development_records": 800,
+    "material_development_records": 801,
     "retained_posts": 1000,
     "retained_post_text_states": {
       "not_recorded": 17,
@@ -494,9 +494,9 @@
       "reviewed": 981
     },
     "retained_post_media_states": {
-      "not_applicable": 608,
-      "pending": 77,
-      "reviewed": 256,
+      "not_applicable": 630,
+      "pending": 75,
+      "reviewed": 236,
       "unavailable": 59
     },
     "definition": "Review-receipt coverage is separate from prior canonical review-state labels. Missing inspection records do not establish that content is false or that it was reviewed. Post-state counts refer only to the retained fallback, not the upstream archive total."
