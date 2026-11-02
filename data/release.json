@@ -1,37 +1,31 @@
 {
-  "version": "10.211.0",
-  "artifact_mode": "full",
+  "version": "10.211.1",
+  "artifact_mode": "feed-only",
   "run_changes": {
-    "added_entry_ids": [
-      "NAT-2026-11-02-001"
-    ],
+    "added_entry_ids": [],
     "refreshed_entry_ids": [],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-01T23:03:39Z",
-    "through_utc": "2026-11-02T05:07:58Z",
+    "from_utc": "2026-11-02T05:07:58Z",
+    "through_utc": "2026-11-02T11:06:17Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact public-main boundary through execution cutoff. One final rule passed the threshold after official publication and independent review; fewer than four qualified and no quota padding. Periodic source review, not continuous coverage."
+    "note": "Exact public-main boundary through execution cutoff. Editorial no-op with a materially newer validated Truth Social fallback; no post-boundary national development completed the publication threshold and no quota padding. Periodic source review, not continuous coverage."
   },
   "release_iso": "2026-11-02",
   "release_human": "November 2, 2026",
-  "checked_at": "2026-11-02 12:07 AM EST",
-  "previous_version": "10.210.0",
-  "previous_checked_at": "2026-11-01 6:03 PM EST",
-  "window_started_at": "2026-11-01 6:03 PM EST",
-  "window_ended_at": "2026-11-02 12:07 AM EST",
+  "checked_at": "2026-11-02 6:06 AM EST",
+  "previous_version": "10.211.0",
+  "previous_checked_at": "2026-11-02 12:07 AM EST",
+  "window_started_at": "2026-11-02 12:07 AM EST",
+  "window_ended_at": "2026-11-02 6:06 AM EST",
   "week_start": "2026-10-27",
   "week_end": "2026-11-02",
   "week_label": "2026-10-27 through 2026-11-02",
   "cutoff_start": "2026-07-20",
-  "new_entry_ids": [
-    "NAT-2026-11-02-001"
-  ],
-  "added_entry_ids": [
-    "NAT-2026-11-02-001"
-  ],
+  "new_entry_ids": [],
+  "added_entry_ids": [],
   "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
@@ -1326,26 +1320,30 @@
     },
     {
       "title": "Two newer Truth Social posts",
-      "reason": "A meme and an older New York state allegation link do not independently establish a qualifying federal action."
+      "reason": "One post linked private RSBN campaign-rally coverage and the other attached an 8.94-second RSBN-branded rally-crowd video. Both were reviewed; neither independently established a qualifying federal action."
     },
     {
-      "title": "Dubuque gaggle and Trump TV metadata",
-      "reason": "Recording and captions were unavailable; no qualifying new item located in the official metadata and supplementary material reviewed."
+      "title": "Trump TV and official White House video metadata",
+      "reason": "The official Trump TV, live, videos, remarks and releases pages exposed no post-boundary policy instrument or independently verifiable channel-resource finding. Recording and captions remained unavailable; no qualifying new item was located in the material reviewed."
     },
     {
       "title": "Vietnam tariff-probe submissions and California contempt report",
       "reason": "The tariff matter remains pending; the reported court request predates the boundary and its later primary filing was not retrieved."
+    },
+    {
+      "title": "November 2 Federal Register retrospective and proposal notices",
+      "reason": "The Western Balkans delegation memorandum was signed October 28, the infant-formula proposal was announced October 29, and the PAIPA sanctions took effect February 24; all predate this run's exact boundary. The FCC ultra-wideband proposal was technical and pending. None was redated or padded into this post-boundary release."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-02T05:07:58Z",
-    "checked_at_eastern": "2026-11-02 12:07 AM EST",
+    "checked_at": "2026-11-02T11:06:17Z",
+    "checked_at_eastern": "2026-11-02 6:06 AM EST",
     "inspection_status": "partial_metadata_recheck",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-02T05:07:58Z",
+    "last_successful_page_inspection_at": "2026-11-02T11:06:17Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/watch?v=A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1364,7 +1362,7 @@
       "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-at-a-halloween-party-at-mar-a-lago-oct-31-2026/",
       "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-arrival-at-dubuque-ia-nov-1-2026/"
     ],
-    "summary": "Official Trump TV, live, videos, remarks and releases pages were inspected. The A4gNgHfZ-v4 channel stream remained linked; the video library exposed a Nov. 1 Dubuque gaggle detail linked to video ID zgHIpU0pAAk. Only titles, dates, durations and link metadata were available; footage, audio and captions were not retrieved. No qualifying new item located in the material reviewed. Fallback error text was not treated as outage proof, no new channel-resource finding was verified and the complete broadcast boundary remains unadvanced.",
+    "summary": "Official Trump TV, live, videos, remarks and releases pages were inspected through 6:06 AM EST. The A4gNgHfZ-v4 channel stream remained linked and the dated library's newest exposed items remained the November 1 Dubuque gaggle, fishermen proclamation and Stephen Hubbard clip. Only titles, dates, durations and link metadata were available; footage, audio and captions were not retrieved. The separate RSBN campaign-rally replay linked from Truth Social was reviewed as private campaign coverage, not Trump TV. No qualifying new item located in the material reviewed. Fallback error text was not treated as outage proof, no new channel-resource finding was verified and the complete broadcast boundary remains unadvanced.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1386,7 +1384,8 @@
       "November1 noon: new gaggle3oucO26En9g unavailable audiovisually; date conflict and earlier content gaps retained. Stream fallback not outage proof. No verified new channel costs, staffing, editorial-control or distribution evidence. Supplementary remarks not a complete transcript feed.",
       "November1afternoon: repeatedmetadata/IDs/dateconflict, AV/captions unreviewed; no channel-budget/staffing/distribution finding. Supplementaryremarks not complete transcript feed.",
       "November1 evening: same stream and gaggle metadata; footage/audio/captions inaccessible, date conflict unresolved, and no verified channel cost, contract, staffing, editorial-control or distribution record. Complete broadcast coverage remains unadvanced.",
-      "November2 midnight: Dubuque gaggle zgHIpU0pAAk and A4gNgHfZ-v4 stream were metadata-only/JavaScript-throttled; no footage, audio or captions reviewed. No verified new channel costs, contracts, staffing, editorial-control or distribution record; complete broadcast coverage remains unadvanced."
+      "November2 midnight: Dubuque gaggle zgHIpU0pAAk and A4gNgHfZ-v4 stream were metadata-only/JavaScript-throttled; no footage, audio or captions reviewed. No verified new channel costs, contracts, staffing, editorial-control or distribution record; complete broadcast coverage remains unadvanced.",
+      "November2 morning: the official Trump TV, live, videos, remarks and releases indexes were rechecked. No newer dated library item or transcript was exposed; audiovisual and channel-resource gaps remain. The RSBN campaign-rally link was kept separate from Trump TV."
     ],
     "items": [
       {
@@ -2116,9 +2115,19 @@
         "library_date": "2026-11-01",
         "detail_date": "2026-11-01",
         "date_conflict": false
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "observed_at_utc": "2026-11-02T11:06:17Z",
+        "observed_at_eastern": "2026-11-02 6:06 AM EST",
+        "inspection": "Official Trump TV, live, dated video-library, remarks and releases metadata rechecked. The linked stream remained A4gNgHfZ-v4; no newer dated library item, accessible recording, caption or transcript was exposed. The RSBN campaign-rally replay was separately identified as private campaign coverage.",
+        "original_event_date": null,
+        "posted_or_broadcast_at": null,
+        "recording_state": "unknown; metadata-only inspection",
+        "video_id": "A4gNgHfZ-v4"
       }
     ],
-    "checked_at_utc": "2026-11-02T05:07:58Z"
+    "checked_at_utc": "2026-11-02T11:06:17Z"
   },
   "truth_social_inspection": {
     "new_posts": 2,
@@ -2126,25 +2135,25 @@
     "new_media_reviewed": 1,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-02T05:03:12.337871Z",
-    "checked_at_eastern": "2026-11-02 12:03:12 AM EST",
-    "latest_post_id": "117544455342530109",
-    "latest_post_at_eastern": "2026-11-01 9:20:49 PM EST",
+    "checked_at_utc": "2026-11-02T11:02:11.708877Z",
+    "checked_at_eastern": "2026-11-02 6:02:11 AM EST",
+    "latest_post_id": "117545523777020082",
+    "latest_post_at_eastern": "2026-11-02 1:52:32 AM EST",
     "counts": {
       "text_status": {
         "not_recorded": 154,
-        "reviewed": 1372,
+        "reviewed": 1374,
         "pending": 971
       },
       "media_status": {
-        "not_applicable": 1349,
+        "not_applicable": 1350,
         "not_recorded": 19,
         "unavailable": 294,
         "pending": 534,
-        "reviewed": 301
+        "reviewed": 302
       }
     },
-    "note": "Two new post IDs followed the prior validated snapshot. The newest post was published November 1 at 9:20:49 PM EST (November 2 UTC). Both text fields and the one attached still image were reviewed; neither post independently established a qualifying federal action."
+    "note": "Two new post IDs followed the prior validated snapshot. The newest post was published November 2 at 1:52:32 AM EST (06:52:32 UTC); this is the local publication date, not the UTC date alone. One post linked an RSBN campaign-rally replay and the other attached an 8.94-second RSBN-branded rally-crowd video. Both text fields and the attached video were reviewed; neither post independently established a qualifying federal action."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -2156,16 +2165,35 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-02T05:07:58Z",
-    "note": "Four primary projects checked as discovery inputs. Trump Archive advanced to 15,683 total items, 13,010 Truth Social posts and 2,015 speeches/transcripts; UndoTrump remained at 1,264 actions tracked, 995 active, 44 courts and 42 restored; IPTP remained at 1,826 policy actions; Record47 headline counters did not render reliably. Unlike units were not summed and zero external items were imported."
+    "checked_at": "2026-11-02T11:06:17Z",
+    "note": "Four primary projects checked as discovery inputs. Trump Archive displayed 15,684 total items, 13,010 Truth Social posts and 2,016 speeches/transcripts; UndoTrump remained at 1,264 actions tracked, 995 active, 44 courts and 42 restored; IPTP remained at 1,826 policy actions; Record47 headline counters did not render reliably while its quick-access unit counters remained visible. Unlike units were not summed, zero external items were imported, and archive_registry measurements were left unchanged because this release preserves the 10.211.0 editorial snapshot byte-for-byte."
   },
   "editorial_notes": [
-    "This run adds one final-rule record. Fewer than four items passed the threshold; no quota padding and no factual corrections.",
-    "The PBM rule is finalized and published, effective January 4, 2027 and applicable to plan years beginning on or after July 1, 2027. Implementation and the agency savings projection remain unmeasured.",
-    "Two newer Truth Social posts were text-reviewed and the one attached still image was visually reviewed; neither post was treated as independent verification of its content.",
+    "Editorial no-op: no post-boundary national development completed the publication threshold; no quota padding and no factual corrections.",
+    "Full 10.211.0 canonical data and entry/aggregate evidence packs are preserved byte-for-byte. No current record, source-ledger, legacy, federation, archive-registry or IN-6 factual change was made.",
+    "Two newer Truth Social posts were text-reviewed and the attached 8.94-second video was visually reviewed; neither post was treated as independent verification of its content.",
     "Trump TV remained a metadata-only partial check. No continuous-coverage or outage claim is made, and the broadcast-review boundary remains unadvanced.",
     "Publish to both sites only after deterministic local acceptance, CI, exact-tree transport and post-deployment parity checks pass."
   ],
+  "editorial_snapshot": {
+    "version": "10.211.0",
+    "national_pack": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-11-02_v10.211.0.zip",
+      "sha256": "c6d946482c0506986cac4c33df73f644bede49c2a46e274e537508a8abb858d0"
+    },
+    "complete_pack": {
+      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-11-02_v10.211.0.zip",
+      "sha256": "9f5b43a9b16e1eba2eb68a770bd8d65e2e48c8471de92701b33b4dcb2dbf1165"
+    },
+    "national_brief": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-11-02_v10.211.0.md",
+      "sha256": "192b48832a10eac4f63d6e6755aa034f9b9c4eb102967400767157c37f22583d"
+    },
+    "in6_brief": {
+      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-11-02_v10.211.0.md",
+      "sha256": "618cad05ccecdb7539b4e2a019c6bd6ee8799782724c58e99d3e04636a947b30"
+    }
+  },
   "retained_stages": [
     {
       "version": "10.205.0",
