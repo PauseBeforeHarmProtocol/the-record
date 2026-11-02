@@ -9745,6 +9745,18 @@
       "provenance_path": "data/editorial_change_notes/10.210.0.json",
       "provenance_sha256": "6216921035fc2d089051e7f05820a2a1dd0bba00a9f4fd925dbcbdbec1b1f253",
       "note": "Distinct lifecycle from the related criminal-prosecution dismissal; no final technical cause or audited lifecycle cost asserted."
+    },
+    {
+      "change_id": "10.211.0:NAT-2026-11-02-001:added",
+      "entry_id": "NAT-2026-11-02-001",
+      "as_of_utc": "2026-11-02T05:07:58Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.211.0",
+      "summary": "Final PBM compensation-disclosure rule published with future effective and applicability dates; implementation and savings remain unmeasured.",
+      "provenance_path": "data/editorial_change_notes/10.211.0.json",
+      "provenance_sha256": "f014c378ec0f961b8e8eaaec4735508252e7f6d5b70695f50fe950d55dab4ce0",
+      "note": "Official rule publication and independent scope review accepted; no compliance, savings or lower-price outcome asserted."
     }
   ],
   "reviews": [
@@ -125408,6 +125420,115 @@
       "unresolved_questions": [
         "Complete obligations, contract modifications, warranty or recovery actions and audited lifecycle cost were not retrieved.",
         "Final engineering cause, responsibility, reopening and long-term water-quality effectiveness remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.211.0:NAT-2026-11-02-001",
+      "entry_id": "NAT-2026-11-02-001",
+      "content_sha256": "eda72b7c6eed222e202653833e3ddba7ea2f3d4245ff5a8c6c670ffc6065cadd",
+      "reviewed_at": "2026-11-02T05:07:58Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "60c57a169ec578cbb70af81abc4e506b788cb93a553884c54cb761e886100543",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_pbm_disclosure_nov2",
+              "locator": "Heading, pages 69092–69196, RIN 1210-AB37 and DATES paragraph: effective January 4, 2027; applicable to plan years beginning on or after July 1, 2027.",
+              "document_sha256": "e55ca022dc80df80fa37cb2fbefeccfa7c34e849748c13c048463548d339a02f",
+              "inspected_at": "2026-11-02T05:07:58Z",
+              "origin_group": "Federal Register / GovInfo",
+          "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "a7f2a283e30d2659808d9b10f1365dff1c5799091392c6d0abe495732f6eafdb",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_pbm_disclosure_nov2",
+              "locator": "Final regulatory text and preamble describing covered providers, compensation categories, contract/renewal and continuing disclosures, and plan audit rights.",
+              "document_sha256": "e55ca022dc80df80fa37cb2fbefeccfa7c34e849748c13c048463548d339a02f",
+              "inspected_at": "2026-11-02T05:07:58Z",
+              "origin_group": "Federal Register / GovInfo",
+          "evidence_status": "ordered"
+            },
+            {
+              "source_id": "dol_pbm_disclosure_rule_oct29",
+              "locator": "Agency description of covered large self-insured plans, disclosed rebates/spread/recoupments and audit rights.",
+              "document_sha256": "9a1dc63e24d1e6057f10b8be542c2babbfbcc5b73f1a536db4e08c663ae9d53d",
+              "inspected_at": "2026-11-02T05:07:58Z",
+              "origin_group": "Department of Labor",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "f8db714d1d29b6e680db2678f3b6928b1cf17a4ffe992154da71f2d977007ad4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dol_pbm_disclosure_rule_oct29",
+              "locator": "Agency projection of as much as $22 billion undiscounted savings over ten years and negotiation rationale.",
+              "document_sha256": "9a1dc63e24d1e6057f10b8be542c2babbfbcc5b73f1a536db4e08c663ae9d53d",
+              "inspected_at": "2026-11-02T05:07:58Z",
+              "origin_group": "Department of Labor",
+          "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "21f9539726f69073e5943a2b4398f1a4d9d25697b8cb8eedac4149d8da0e1571",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "axios_pbm_disclosure_oct30",
+              "locator": "Reporting on narrower plan coverage, absence of direct pricing/compensation restrictions and PCMA response.",
+              "document_sha256": "05f23f51e3a4869e6d8f07f40cc26bba14296253d01d4664f8c5a15ff73a2553",
+              "inspected_at": "2026-11-02T05:07:58Z",
+              "origin_group": "Axios",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "healthcare_dive_pbm_disclosure_oct29",
+              "locator": "Reporting on rule scope, projected savings, compliance costs, CAA overlap and attributed employer/PBM responses.",
+              "document_sha256": "23ffc76c790c5128c0f0612099de8bb8e2b6dcec55c6452a1dea836495254a56",
+              "inspected_at": "2026-11-02T05:07:58Z",
+              "origin_group": "Healthcare Dive",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "0429a8bb565b76354b76242c6463a07a8781b8ecd9a1341f831aa72ad4bf0831",
+          "review_note": "Separately reviewed as a future-applicability transparency and audit framework; outcome tests are explicit and no projected saving is treated as measured."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "6301ad2cf203e07e592fbf745ed0d777aeec4ca484b9018333b490e4184543ff",
+          "review_note": "Strongest agency justification and PBM-industry objection are preserved as attributed positions with post-implementation testing required."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "f4dfc6a60b6091418447a5e111e25b53c7245a28d01d15074fc1436f6539f627",
+          "review_note": "Competing bargaining, compliance-cost and fee-redesign possibilities are separated from the documented finalization and publication facts."
+        }
+      ],
+      "unresolved_questions": [
+        "Compliance, enforcement, litigation and actual disclosure quality cannot be measured before the rule becomes applicable.",
+        "The agency savings projection and industry cost/competition warnings remain prospective."
       ]
     }
   ],
