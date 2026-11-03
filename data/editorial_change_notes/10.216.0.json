@@ -1,0 +1,51 @@
+{
+  "release_version": "10.216.0",
+  "as_of_utc": "2026-11-03T11:09:35Z",
+  "custody": "Compact hash-bound change receipt. Complete prior states for refreshed entries remain losslessly reconstructable from append-only version_history; complete current states remain canonical.",
+  "changes": {
+    "NAT-2026-10-15-005": {
+      "kind": "material_refresh",
+      "before_sha256": "e3236c5405d447c7b68179e11ddc5b2e917bcef679f7e4cdb02a7777fe481606",
+      "after_sha256": "c37ef166fb5a886747529901527764686a10661485807fb2a5792c78e7dd2fbd",
+      "changed_fields": [
+        "checked_at",
+        "dek",
+        "display_date",
+        "evidence",
+        "facts",
+        "goalpost",
+        "maybe_therefore",
+        "significance",
+        "sources",
+        "title",
+        "version_history"
+      ],
+      "summary": "Added the November 2 preliminary injunction and APA stay limiting voter-list disclosures and ballot-segregation demands while preserving individual SAVE inquiries and non-final status."
+    },
+    "NAT-2026-09-15-003": {
+      "kind": "material_refresh",
+      "before_sha256": "d2903b41399e85742aae38268a0435192b66060b15ce8594c8d49c0e68a0a4d5",
+      "after_sha256": "5b7bf1e1580bf0801cc69090dde1bbb3550fbcef923e3d4f4e090d6cdecfc811",
+      "changed_fields": [
+        "checked_at",
+        "dek",
+        "evidence",
+        "facts",
+        "goalpost",
+        "maybe_therefore",
+        "sources",
+        "version_history"
+      ],
+      "summary": "Added inspected primary November 2 Trujillo order and memorandum, replacing the prior report-only limitation without creating a parallel election-enforcement record."
+    },
+    "NAT-2026-11-01-003": {
+      "kind": "added",
+      "before_sha256": null,
+      "after_sha256": "00ebff0ca176f0fcc2e07cc3e8270f64174c2d1fb6979be78f9300568ac13464",
+      "changed_fields": [
+        "new_entry"
+      ],
+      "summary": "Added one four-state SNAP implementation record with state-specific scopes, unchanged benefit amounts and unmeasured outcomes."
+    }
+  }
+}
