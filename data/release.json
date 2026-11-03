@@ -1,46 +1,32 @@
 {
-  "version": "10.217.0",
-  "artifact_mode": "full",
+  "version": "10.217.1",
+  "artifact_mode": "feed-only",
   "run_changes": {
-    "added_entry_ids": [
-      "NAT-2026-11-03-001",
-      "NAT-2026-11-03-002"
-    ],
-    "refreshed_entry_ids": [
-      "NAT-2026-10-28-003"
-    ],
+    "added_entry_ids": [],
+    "refreshed_entry_ids": [],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-03T11:09:35Z",
-    "through_utc": "2026-11-03T17:07:02Z",
+    "from_utc": "2026-11-03T17:07:02Z",
+    "through_utc": "2026-11-03T18:13:00Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact prior checked_at boundary through this run cutoff. The HHS and CMS rules were released for public inspection October 30 and became authoritative November 3 Federal Register publications inside this window; both dates are preserved."
+    "note": "Exact prior checked_at boundary through this run cutoff. No qualifying new national record was located in the material reviewed; this is a strict feed-only release preserving the 10.217.0 editorial snapshot."
   },
   "release_iso": "2026-11-03",
   "release_human": "November 3, 2026",
-  "checked_at": "2026-11-03 12:07 PM EST",
-  "previous_version": "10.216.0",
-  "previous_checked_at": "2026-11-03 6:09 AM EST",
-  "window_started_at": "2026-11-03T11:09:35Z",
-  "window_ended_at": "2026-11-03T17:07:02Z",
+  "checked_at": "2026-11-03 1:13 PM EST",
+  "previous_version": "10.217.0",
+  "previous_checked_at": "2026-11-03 12:07 PM EST",
+  "window_started_at": "2026-11-03T17:07:02Z",
+  "window_ended_at": "2026-11-03T18:13:00Z",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
   "week_label": "November 2–8, 2026",
   "cutoff_start": "2026-07-20",
-  "new_entry_ids": [
-    "NAT-2026-10-28-003",
-    "NAT-2026-11-03-001",
-    "NAT-2026-11-03-002"
-  ],
-  "added_entry_ids": [
-    "NAT-2026-11-03-001",
-    "NAT-2026-11-03-002"
-  ],
-  "refreshed_entry_ids": [
-    "NAT-2026-10-28-003"
-  ],
+  "new_entry_ids": [],
+  "added_entry_ids": [],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -1329,35 +1315,31 @@
   ],
   "rejected_candidates": [
     {
-      "title": "117 newer Truth Social posts",
-      "reason": "All text and 43 media attachments across 42 posts were reviewed. They were election endorsements, state endorsement cards or political attacks and did not independently establish another qualifying federal action."
+      "title": "Four newer Truth Social posts",
+      "reason": "All four text-only posts were reviewed. They concerned Guam election results, campaign travel, or a dispute over a reported Reflecting Pool joke and did not independently establish a qualifying federal action."
     },
     {
       "title": "Trump TV and White House video metadata recheck",
-      "reason": "Only title/date/duration/link metadata were accessible; playback and captions were unavailable. No qualifying new item was located in the material reviewed and no complete broadcast boundary was advanced."
+      "reason": "The official stream and November 2 listings were unchanged. Only page and listing metadata were accessible; playback and captions were unavailable. No qualifying new item was located in the material reviewed and no broadcast boundary was advanced."
     },
     {
-      "title": "Announced November 5 First Lady meeting",
-      "reason": "A future-event announcement did not establish that the meeting occurred or produced a material action."
+      "title": "PHMSA LNG facility siting proposal",
+      "reason": "PHMSA announced the proposal October 28 and its November 3 publication preceded this run's exact boundary. It was retained for complete original-record and deduplication review rather than misrepresented as a new post-boundary action."
     },
     {
-      "title": "FCC conforming EEO deletion",
-      "reason": "The item stated that its conforming amendment after a judicial vacatur had no operative effect."
-    },
-    {
-      "title": "Fourth archive addition",
-      "reason": "No fourth candidate independently cleared the publication threshold; the archive was not padded."
+      "title": "National archive additions",
+      "reason": "No candidate in the exact post-boundary source window independently cleared the publication threshold. The archive was not padded."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-03 12:07 PM EST",
-    "checked_at_eastern": "2026-11-03 12:07 PM EST",
+    "checked_at": "2026-11-03 1:13 PM EST",
+    "checked_at_eastern": "2026-11-03 1:13 PM EST",
     "inspection_status": "official pages and listing metadata inspected; audiovisual playback and captions unavailable",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-03T17:07:02Z",
+    "last_successful_page_inspection_at": "2026-11-03T18:13:00Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1368,7 +1350,7 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, video-library, remarks and releases pages were inspected. Trump TV still linked A4gNgHfZ-v4. The library exposed three November 2 items, including 2xrn-nfxk2w and two short clips, but only title/date/duration/link metadata were accessible; detail and listing dates conflicted for the short clips. No qualifying new item located in the material reviewed. Playback/captions were unavailable, fallback text was not treated as outage proof and the broadcast-review boundary remains unadvanced.",
+    "summary": "Official Trump TV, live, video-library, remarks and releases pages were rechecked. Trump TV still linked A4gNgHfZ-v4 and the library still exposed the same three November 2 items. Only page and listing metadata were accessible; playback and captions were unavailable. No qualifying new item located in the material reviewed. Fallback text was not treated as outage proof and the broadcast-review boundary remains unadvanced.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1398,7 +1380,8 @@
       "November 2 recordings were available only as title/date/duration/link metadata in this review; embeds were throttled and captions/transcripts were not retrieved.",
       "The page's fallback text does not prove that Trump TV or White House Live was offline.",
       "November 3 morning: same Trump TV stream and November 2 library listings; live hub linked icuRZ2LXk1E. Playback/captions unavailable, fallback text not outage proof, and no verified new channel cost, contract, staffing, editorial-control, distribution or press-access finding.",
-      "November 3 noon: three November 2 video listings were inspected as metadata only. Short-clip listing/detail dates conflicted; embeds and captions were inaccessible. No footage was claimed watched, no outage inferred, no channel-resource finding established and complete broadcast coverage remains unadvanced."
+      "November 3 noon: three November 2 video listings were inspected as metadata only. Short-clip listing/detail dates conflicted; embeds and captions were inaccessible. No footage was claimed watched, no outage inferred, no channel-resource finding established and complete broadcast coverage remains unadvanced.",
+      "November 3 1:13 PM EST: the same stream ID and November 2 listings were rechecked as page/listing metadata only. Playback and captions remained unavailable; no footage was claimed watched, no outage was inferred and no complete broadcast boundary was advanced."
     ],
     "items": [
       {
@@ -2456,30 +2439,30 @@
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 117,
-    "new_text_reviewed": 117,
-    "new_media_reviewed": 42,
+    "new_posts": 4,
+    "new_text_reviewed": 4,
+    "new_media_reviewed": 0,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-03T17:06:50.925978Z",
-    "checked_at_eastern": "2026-11-03 12:06:50 PM EST",
-    "latest_post_id": "117552850047209387",
-    "latest_post_at_eastern": "2026-11-03 8:55:42 AM EST",
+    "checked_at_utc": "2026-11-03T18:11:59.684338Z",
+    "checked_at_eastern": "2026-11-03 1:11:59 PM EST",
+    "latest_post_id": "117553680973466314",
+    "latest_post_at_eastern": "2026-11-03 12:27:01 PM EST",
     "counts": {
       "text_status": {
         "not_recorded": 154,
-        "reviewed": 1632,
+        "reviewed": 1636,
         "pending": 971
       },
       "media_status": {
-        "not_applicable": 1547,
+        "not_applicable": 1551,
         "not_recorded": 19,
         "unavailable": 295,
         "pending": 534,
         "reviewed": 362
       }
     },
-    "note": "117 post IDs were absent from the prior validated snapshot. All text and 43 media attachments across 42 posts were reviewed; they were election endorsements, state endorsement cards or political attacks and did not independently establish another qualifying federal action. The newest post was published November 3 at 8:55:42 AM EST (13:55:42 UTC), preserving the local publication date. A final updater refresh found no additional post after that item."
+    "note": "Four post IDs were absent from the prior validated snapshot. All four text-only posts were reviewed; they concerned Guam election results, campaign travel, or a dispute over a reported Reflecting Pool joke and did not independently establish a qualifying federal action. The newest post was published November 3 at 12:27:01 PM EST (17:27:01 UTC), preserving the local publication date. A final updater refresh found no additional post after that item."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -2491,10 +2474,29 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-03T17:07:02Z",
-    "note": "All four registered primary projects were checked as discovery inputs. Trump Archive measurements advanced; UndoTrump and IPTP remained unchanged; Record47 quick-access counters were visible but its API total could not be re-fetched. Unlike units were not summed and zero external items were imported."
+    "checked_at": "2026-11-03T18:13:00Z",
+    "note": "All four registered primary projects were checked as discovery inputs. Trump Archive, UndoTrump and IPTP displayed unchanged measurements; Record47's project page loaded but its dynamic API total could not be re-fetched. Unlike units were not summed, archive_registry measurements were not advanced and zero external items were imported."
   },
-  "editorial_notes": "Three worthy changes passed the threshold: two November 3 final-rule records and one same-event election-monitor deployment refresh. Fewer than four were published because no fourth candidate independently met the threshold. No legacy entry was changed; the objective remediation queue remains visible.",
+  "editorial_snapshot": {
+    "version": "10.217.0",
+    "national_pack": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-11-03_v10.217.0.zip",
+      "sha256": "7145d110613663e80ce7bc09b78b887f155979e446948a8579c5516e20d2eea8"
+    },
+    "complete_pack": {
+      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-11-03_v10.217.0.zip",
+      "sha256": "dab04f35271a738a90a2b99dd75fd43cc0199c2d96cbd589425efefade7d6f97"
+    },
+    "national_brief": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-11-03_v10.217.0.md",
+      "sha256": "81d05c97f77c0e0a34556c7f3580ed0c7a8dd018fcc3dd65308ea1610d8ca36c"
+    },
+    "in6_brief": {
+      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-11-03_v10.217.0.md",
+      "sha256": "7694066e48dacdf1b2a8c9267531cc09505ad83bcb5906721b67032fdce22d8e"
+    }
+  },
+  "editorial_notes": "Strict feed-only editorial no-op. No qualifying new national item was located in the exact post-boundary material reviewed; the four new Truth Social posts and repeated Trump TV listings were withheld, and the pre-boundary PHMSA proposal was queued for full review. No current, legacy, source-ledger, federation or schema content changed.",
   "retained_stages": [
     {
       "version": "10.205.0",
