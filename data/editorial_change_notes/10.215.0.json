@@ -1,0 +1,35 @@
+{
+  "release_version": "10.215.0",
+  "as_of_utc": "2026-11-03T05:08:00Z",
+  "custody": "Compact hash-bound change receipt. Complete prior states for refreshed entries remain losslessly reconstructable from each canonical entry's append-only version_history; complete current states remain in data/current_entries.json.",
+  "changes": {
+    "NAT-2026-08-17-001": {
+      "kind": "material_refresh",
+      "before_sha256": "73aa79d4017bb8dcca86b093c99122a9740de292f1bb25bf3196fc69b10d731c",
+      "after_sha256": "d07228085fd7de6c639879db88adb5ece65d9b10728404be46ce93ed0f5187d4",
+      "changed_fields": ["checked_at", "dek", "display_date", "evidence", "facts", "goalpost", "maybe_therefore", "significance", "sources", "title", "version_history"],
+      "summary": "Added Trump's November 2 rejection of renewed post-midterm attacks and independently reported continuing Doha mediation; no ceasefire, written order, settlement or operational change was inferred."
+    },
+    "NAT-2026-09-15-003": {
+      "kind": "material_refresh",
+      "before_sha256": "5f2d3d0fe77f42d727626ceefdb81bd4d2fa0b7ce3b9a71444ac7bb71caab17a",
+      "after_sha256": "862b02da49b6a1ffc331c5863eeeab73db8d6be14656b241efa302b048b4a6e1",
+      "changed_fields": ["checked_at", "dek", "evidence", "facts", "goalpost", "maybe_therefore", "version_history"],
+      "summary": "Added the primary Supreme Court denial docket and DOJ's 63-person charging announcement while separating accusations, convictions, unique ballots, list accuracy and election effects."
+    },
+    "NAT-2026-11-02-003": {
+      "kind": "added",
+      "before_sha256": null,
+      "after_sha256": "cad79bc3b1d813f6bf432f629aecd92be2a6abbe99ba8e3349174dd49cd7cbab",
+      "changed_fields": ["new_entry"],
+      "summary": "Added the procedural dismissal without prejudice of the Harvard admissions-record enforcement suit; no merits finding, permanent investigative bar or production obligation was inferred."
+    },
+    "NAT-2026-11-02-004": {
+      "kind": "added",
+      "before_sha256": null,
+      "after_sha256": "9bdca538bd8c16a212c93619e00fceaec8388bbc3b3d4f373cdede3becf922ab",
+      "changed_fields": ["new_entry"],
+      "summary": "Added the court-ordered sworn testimony in the Broadview Six prosecutorial-conduct inquiry; no misconduct, contempt or retaliation finding was inferred."
+    }
+  }
+}
