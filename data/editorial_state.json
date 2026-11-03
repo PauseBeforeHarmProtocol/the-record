@@ -9913,6 +9913,42 @@
       "provenance_path": "data/editorial_change_notes/10.216.0.json",
       "provenance_sha256": "c94bd3718b8609bcb8a6a0db48948fb07546ba9f19e6eeb0a2eb6e261d4ac977",
       "note": "Benefit amounts were not reduced and health or access outcomes remain unmeasured."
+    },
+    {
+      "change_id": "10.217.0:NAT-2026-10-28-003:material_refresh",
+      "entry_id": "NAT-2026-10-28-003",
+      "as_of_utc": "2026-11-03T17:07:02Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.217.0",
+      "summary": "DOJ's announced nationwide Election Day deployment and the court-ordered interim limits were added to the existing monitor record.",
+      "provenance_path": "data/editorial_change_notes/10.217.0.json",
+      "provenance_sha256": "f994422cd1a2b53a453749b852e7de3410807caeb8071cb994ebcd946f09dd88",
+      "note": "Actual attendance, conduct, outcomes and merits remain unresolved."
+    },
+    {
+      "change_id": "10.217.0:NAT-2026-11-03-001:added",
+      "entry_id": "NAT-2026-11-03-001",
+      "as_of_utc": "2026-11-03T17:07:02Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.217.0",
+      "summary": "HHS Section 504 final rule published with a January 4, 2027 effective date.",
+      "provenance_path": "data/editorial_change_notes/10.217.0.json",
+      "provenance_sha256": "f994422cd1a2b53a453749b852e7de3410807caeb8071cb994ebcd946f09dd88",
+      "note": "Individual coverage, recipient implementation, outcomes and litigation remain unresolved."
+    },
+    {
+      "change_id": "10.217.0:NAT-2026-11-03-002:added",
+      "entry_id": "NAT-2026-11-03-002",
+      "as_of_utc": "2026-11-03T17:07:02Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.217.0",
+      "summary": "CMS OPO oversight and competition final rule published with a January 4, 2027 effective date.",
+      "provenance_path": "data/editorial_change_notes/10.217.0.json",
+      "provenance_sha256": "f994422cd1a2b53a453749b852e7de3410807caeb8071cb994ebcd946f09dd88",
+      "note": "Competition, decertification, transition, costs and transplant outcomes remain prospective."
     }
   ],
   "reviews": [
@@ -134442,6 +134478,469 @@
       ],
       "unresolved_questions": [
         "Evaluation results, error rates, substitution, household food security, retailer costs and any litigation remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.217.0:NAT-2026-10-28-003:bf5b9dadeca3",
+      "entry_id": "NAT-2026-10-28-003",
+      "content_sha256": "bf5b9dadeca35ac65e5dfd32c0cb26ae8b34cf2548f94593cb51237582431d82",
+      "reviewed_at": "2026-11-03T17:07:02Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "2bc1f378f87a41d3335752fe7515fecd67266fe266c15f807677e9d882d6355c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_all_state_poll_monitors_nov3",
+              "locator": "Inspected source supports fact 1: On November 3, DOJ announced that approximately 1,000 federal personnel were being deployed to monitor the general elect",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "9baa935ef2dba94e8e14bb6eeb5af8eb1c122cb5435ef4b77705f41a71356f73",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_all_state_poll_monitors_nov3",
+              "locator": "Inspected source supports fact 1: On November 3, DOJ announced that approximately 1,000 federal personnel were being deployed to monitor the general elect",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "cc4f12a64130d6ea72748fae101593de1fcc737d29e29bf1cb6f566feaaa916c",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "495e1d4ff073a48af960b513b39b059a173c3c83a27bff03a1e063e4ebbcd783",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_all_state_poll_monitors_nov3",
+              "locator": "Inspected source supports fact 2: DOJ said the Civil Rights Division coordinated personnel from other department components, U.S. Attorneys' Offices and a",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "64b756d495dc2a75c0cbe383ffd8a87bc5d50055cde59163ab01835b111490d6",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "762052609035d6945f50d9fe0393e63fffd0e379f281c6d9b809888016c0c6db",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ddc_poll_monitor_order_nov2",
+              "locator": "Inspected source supports fact 3: In NAACP v. Blanche, the district court on November 2 denied a temporary restraining order without prejudice but ordered",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "8fcf16160251b558bdd400679a5504a9ead23c06a636decc6aebaa1d6d209f72",
+              "origin_group": "U.S. District Court for the District of Columbia",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "bloomberglaw_poll_monitor_order_nov3",
+              "locator": "Inspected source supports fact 3: In NAACP v. Blanche, the district court on November 2 denied a temporary restraining order without prejudice but ordered",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "024a7921b763922f1a72039f4f99cc9dfa69be7e4dc1fa63fffce04a7598827f",
+              "origin_group": "Bloomberg Law",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "9eecf82d16c3d68032eeca9a6bbad0c9cb1f1e46dbb7f4b1f491d74d2c9050a2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_all_state_poll_monitors_nov3",
+              "locator": "Inspected source supports fact 4: Reuters and Bloomberg Law independently reported the announced nationwide scale and the court's limits. Reuters describe",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "14cb600060e05a35297f57a98ed0322b3a5f8f20b9aaf14db4ec9b35df683919",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "bloomberglaw_poll_monitor_order_nov3",
+              "locator": "Inspected source supports fact 4: Reuters and Bloomberg Law independently reported the announced nationwide scale and the court's limits. Reuters describe",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "3d336b935b129d0acb73bd8e9efbee93f340f3ea0eceac7e105769f3af140cb5",
+              "origin_group": "Bloomberg Law",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "c2ca5b582f001b35079a1a2293e28566faacb4753e91494a86182e527e64a146",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ddc_monitor_records_notice_oct27",
+              "locator": "Inspected source supports fact 5: The earlier October record remains relevant: a DOJ notice in a separate records case reported searches yielding 18,993 a",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "fdb3ebbdbc20f3d607ac6bd532d1579f4aca81b2eb9261cdfead4097849650cd",
+              "origin_group": "U.S. District Court for the District of Columbia",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ddc_poll_monitors_complaint_oct16",
+              "locator": "Inspected source supports fact 5: The earlier October record remains relevant: a DOJ notice in a separate records case reported searches yielding 18,993 a",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "ecc4e0b544085070f5d297c2aa8460033c32169be7df115f83100f6ac49aae8c",
+              "origin_group": "U.S. District Court for the District of Columbia",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "50aa75abe24f508ef26082991efc64cf9119f41d8bfd13cbbb4b04550de74440",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_all_state_poll_monitors_nov3",
+              "locator": "Inspected source supports fact 6: No inspected source established a verified incident total, complaint disposition, turnout effect, prevented violation, e",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "ef2e67afb1afac04c006bf5e8d30ba92e7fb296c001130a7498359dbe5632c1c",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ddc_poll_monitor_order_nov2",
+              "locator": "Inspected source supports fact 6: No inspected source established a verified incident total, complaint disposition, turnout effect, prevented violation, e",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "effdce1ac40b519a8931f1783232a22ee59ff31bb4ae5b7daa958a3f798ff96e",
+              "origin_group": "U.S. District Court for the District of Columbia",
+              "evidence_status": "ordered"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "f978a9cbc657eee131d1838621de6ee1f3bd162879285a715f33688339183bd4",
+          "review_note": "Separately reviewed for bounded institutional consequence, lifecycle precision and explicit outcome tests."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "6db24dde958a4ddef3821046a630dc1eba6c336f40ffbdfacc2372ad9dea9263",
+          "review_note": "Strongest relevant administration rationale and competing response preserved as attributed positions."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "9a3bcf1c1dcdd0eea81bab8a55e7c9880932dae84403f2973d77def7150295de",
+          "review_note": "Plausible alternatives are separated from established action, scope and non-findings."
+        }
+      ],
+      "unresolved_questions": [
+        "Actual monitor attendance, conduct, complaints, outcomes, expenditures and final merits remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.217.0:NAT-2026-11-03-001:b69491becaa5",
+      "entry_id": "NAT-2026-11-03-001",
+      "content_sha256": "b69491becaa5c1a4a86613ebd426eb8a92cf1b56fca403d83ad722e6f36a287f",
+      "reviewed_at": "2026-11-03T17:07:02Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "58bd358bd966e57618a6f772805a08fc38ea97f69c3d9bb85a1d356c8c20551e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_section504_gender_dysphoria_nov3",
+              "locator": "Inspected source supports fact 1: HHS published a final rule at 91 FR 69207 on November 3. It amends the Section 504 regulation for programs and activitie",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "45d653691b1cac3a6bd9d7bc45255ca3a7e68b6b5c0622fdf93473c45fd27a28",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "hhs_section504_gender_dysphoria_oct30",
+              "locator": "Inspected source supports fact 1: HHS published a final rule at 91 FR 69207 on November 3. It amends the Section 504 regulation for programs and activitie",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "d9bb923072fa8e87da747e2f66e408fb13a1701f49c3807cdf3f579919fc8a1b",
+              "origin_group": "U.S. Department of Health and Human Services",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "004777a1c974d32a18404bc5a16938aadc33e1885914365f2cf4515198b5c1f6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_section504_gender_dysphoria_nov3",
+              "locator": "Inspected source supports fact 2: The rule adds the Rehabilitation Act's statutory exclusions to 45 CFR 84.4(g) and interprets the exclusion for gender id",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "d1dacaa56e28e8fb6036f3fe93c51ce1a04f3473fd0c2165bf6b9a415e8ef1a8",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "a07ac4fe3ed13d35a625cbd4d51b346a49cbf54ad880d3576a459a703ca32992",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "hhs_section504_gender_dysphoria_oct30",
+              "locator": "Inspected source supports fact 3: HHS said the rule resolves ambiguity it saw in the 2024 rule's preamble, conforms the regulation to statutory text and r",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "0e8839ffd6c371e422c516aeb30d622f406cd0f7c7e45cf587f574496e801d2a",
+              "origin_group": "U.S. Department of Health and Human Services",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "federal_register_section504_gender_dysphoria_nov3",
+              "locator": "Inspected source supports fact 3: HHS said the rule resolves ambiguity it saw in the 2024 rule's preamble, conforms the regulation to statutory text and r",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "e44f8199f0131671857f0939638703594e9f1a8f681f6d99f741987d7127cb50",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "663115b044b9c6c335371baa187b8907dd710421ed5f8d6f13dd0d4505f69a40",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cpr_section504_response_oct30",
+              "locator": "Inspected source supports fact 4: The Center for Public Representation and the Disability Rights Education and Defense Fund opposed the final rule, warnin",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "d3eca7dc3309b6e9e357d681e912328363db8faf0a0935542421cd31ad48c364",
+              "origin_group": "Center for Public Representation",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "dredf_section504_response_nov2",
+              "locator": "Inspected source supports fact 4: The Center for Public Representation and the Disability Rights Education and Defense Fund opposed the final rule, warnin",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "c41cb439adb647062dfbd6304c54a1c52cb4874e3332f936d77ef54fb0d072e7",
+              "origin_group": "Disability Rights Education and Defense Fund",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "691272e0b95fa235d4582d43a737b50ab4f7997aa3befa9b6659705159c7a827",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_section504_gender_dysphoria_nov3",
+              "locator": "Inspected source supports fact 5: The operative scope is bounded: HHS-funded programs under this regulation, the specified statutory category and a future",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "d9a805ba599be0187dd48326c9d7741d272e3196a27dd058c3b3a0ac4a9241ea",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "18b42666566fc7a3ad467100dd895dc76dc02a315a1dc7a88714ffd3a48c4137",
+          "review_note": "Separately reviewed for bounded institutional consequence, lifecycle precision and explicit outcome tests."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "0803e695d68ef639cac7d2aba2b16c272a6d375980eb609a69a8f628657b03be",
+          "review_note": "Strongest relevant administration rationale and competing response preserved as attributed positions."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "46a68181057ff7e017d2ac37e23142013bf3a2deecb8357b364427e3e54c10be",
+          "review_note": "Plausible alternatives are separated from established action, scope and non-findings."
+        }
+      ],
+      "unresolved_questions": [
+        "Recipient implementation, individual coverage, enforcement, outcomes and judicial review remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.217.0:NAT-2026-11-03-002:ee411f107f5e",
+      "entry_id": "NAT-2026-11-03-002",
+      "content_sha256": "ee411f107f5e7a88a9cde2695f654deef59e08d2029eb92570eb0b54ef2d0dc2",
+      "reviewed_at": "2026-11-03T17:07:02Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "5947ea8127283f089e21f358b1b51314b5d4eefc5b2f608fd9bb42cbbee27abf",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_opo_final_nov3",
+              "locator": "Inspected source supports fact 1: CMS published a final rule at 91 FR 69390 on November 3, scheduled to take effect January 4, 2027. It revises Medicare c",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "2f80c083a80b9e3e94cd1c9da74fd7136a0101980f14bb867fc97b78f7533f5b",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "cms_opo_final_fact_sheet_oct30",
+              "locator": "Inspected source supports fact 1: CMS published a final rule at 91 FR 69390 on November 3, scheduled to take effect January 4, 2027. It revises Medicare c",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "636a731ce708e631fb3c870e3173aed9c5914335eb53d5577d5a9d950c4b43f4",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "2804ae77d38b0d0d2d9f62e77530dc2d99057a39e3547fd13c6b70fb7241a78f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_opo_final_nov3",
+              "locator": "Inspected source supports fact 2: CMS retained donation-rate and transplant-rate outcome measures and three performance tiers. Under the final policy, tie",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "15cd79ad209425acad7e7220fbbb5484c89a069718396d991acf38a084bbc26c",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "cms_opo_final_fact_sheet_oct30",
+              "locator": "Inspected source supports fact 2: CMS retained donation-rate and transplant-rate outcome measures and three performance tiers. Under the final policy, tie",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "5d66144c1d7e9b05aeaeda622b45f6040412a2e641fc99502a05de1215bdfcbe",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "10d173d9a49edbdd56a673579279fe36ac37f34dd49760b3922ab7c0fa2c359c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_opo_final_nov3",
+              "locator": "Inspected source supports fact 3: The rule defines specified unsound medical practices that can support urgent decertification and requires quality-assess",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "fc28b202505aabb8c18a3c7c26780e17a2c934d1a62ef9bdadc72afcab3ce4a3",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "cms_opo_final_fact_sheet_oct30",
+              "locator": "Inspected source supports fact 3: The rule defines specified unsound medical practices that can support urgent decertification and requires quality-assess",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "53fe4092cfe954703f54d8b96303fc910a8e4a109a0a3bb532656c7e4a29beb4",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "e8c652489337c3bf9778f289104031969d759ce49bc13fbbe44aabbe1272fb77",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_opo_final_nov3",
+              "locator": "Inspected source supports fact 4: For performance calculations, CMS removes pancreata used only for islet-cell research from the transplant-rate numerator",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "878e97f86bb764380aade3b709f3f37efc19218ef455600afcbff4bd5db37914",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "cms_opo_final_fact_sheet_oct30",
+              "locator": "Inspected source supports fact 4: For performance calculations, CMS removes pancreata used only for islet-cell research from the transplant-rate numerator",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "1979587e9a749e9d96ed22b8e17b02ab4549a04e9bd4950166c35fcf01bf3a9a",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "ef9c7ae99e6ffd8e9bb286d632bd96d2a33d1402c1466b22e92ba494a5687197",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "hhs_opo_final_release_oct30",
+              "locator": "Inspected source supports fact 5: HHS cited a 36% rise in organ donations and a 30% rise in transplants since 2020 as context for stronger accountability.",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "f17a8e5e97382ed78acf6f07963342490741e43e9cb17562afe7cf2112806c9e",
+              "origin_group": "U.S. Department of Health and Human Services",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "federal_register_opo_final_nov3",
+              "locator": "Inspected source supports fact 5: HHS cited a 36% rise in organ donations and a 30% rise in transplants since 2020 as context for stronger accountability.",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "0fd9ccc02a6477131bd87472944eec0f1a3b93fa048e17f2b790c715c1f5c0ac",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "0336f3e6ce67eb66d352802b160e57186ff38cb880368519d623217267ec2116",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "aha_opo_final_nov2",
+              "locator": "Inspected source supports fact 6: The American Hospital Association independently summarized the final performance, competition and decertification provis",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "3b2151b6c7633fc8d5875bf8f7db94e217a50a98bbf2e1c2f459a4865fc6c949",
+              "origin_group": "American Hospital Association",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "federal_register_opo_final_nov3",
+              "locator": "Inspected source supports fact 6: The American Hospital Association independently summarized the final performance, competition and decertification provis",
+              "inspected_at": "2026-11-03T17:07:02Z",
+              "document_sha256": "ee7203b2ac95a2a9eb2f1328c6b61af83170c64bf57d39176c5431b8db318a69",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "3b05e9981271e7d50cd0a5fc4c764ee2f788f2a616c459b2b2f701ea055b395d",
+          "review_note": "Separately reviewed for bounded institutional consequence, lifecycle precision and explicit outcome tests."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "3574a204b87cfd6160e9d717ee6ee327e7f49b172da1fd4521293508e40de62a",
+          "review_note": "Strongest relevant administration rationale and competing response preserved as attributed positions."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "437ceb6f522da21e58deeb1daf99a4bb18da700d641122db5092399efd566f57",
+          "review_note": "Plausible alternatives are separated from established action, scope and non-findings."
+        }
+      ],
+      "unresolved_questions": [
+        "Competitions, appeals, transitions, decertifications, costs, safety and transplant outcomes remain unresolved."
       ]
     }
   ],
