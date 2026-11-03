@@ -1,0 +1,44 @@
+{
+  "release_version": "10.217.0",
+  "as_of_utc": "2026-11-03T17:07:02Z",
+  "custody": "Compact hash-bound change receipt. Complete prior states for refreshed entries remain losslessly reconstructable from append-only version_history; complete current states remain canonical.",
+  "changes": {
+    "NAT-2026-10-28-003": {
+      "kind": "material_refresh",
+      "before_sha256": "4f6a0eb2e92d32d53b3d23464490b48ee2730a420b0690f951da2b0201a90f8c",
+      "after_sha256": "35d89fb07d5310af71b97c94a4b9bc0f92d723059a2f953122ecde9fb0a25eb2",
+      "changed_fields": [
+        "checked_at",
+        "dek",
+        "display_date",
+        "evidence",
+        "facts",
+        "goalpost",
+        "maybe_therefore",
+        "significance",
+        "sources",
+        "title",
+        "version_history"
+      ],
+      "summary": "Added the implemented nationwide deployment, approximate staffing, November 2 court order and explicit unmeasured-outcome limits without creating a parallel election-monitor record."
+    },
+    "NAT-2026-11-03-001": {
+      "kind": "added",
+      "before_sha256": null,
+      "after_sha256": "80a0a6623197280cfa40ce41d816f9935e636bab21fe7eb88906d4a86ab33d59",
+      "changed_fields": [
+        "new_entry"
+      ],
+      "summary": "Added the published Section 504 final rule with its narrow statutory scope, future effective date, administration rationale and attributed disability-rights response."
+    },
+    "NAT-2026-11-03-002": {
+      "kind": "added",
+      "before_sha256": null,
+      "after_sha256": "4464888762366b0f3d04b2e49775e55c55513613db6f11deb127d8d9303765d7",
+      "changed_fields": [
+        "new_entry"
+      ],
+      "summary": "Added the published OPO oversight final rule with prospective competition, safety and measurement provisions and no claim of completed outcomes."
+    }
+  }
+}
