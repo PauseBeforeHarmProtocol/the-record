@@ -1,0 +1,62 @@
+{
+  "release_version": "10.218.0",
+  "as_of_utc": "2026-11-03T23:11:29Z",
+  "custody": "Compact hash-bound change receipt. Complete prior states for refreshed entries remain losslessly reconstructable from append-only version_history; complete current states remain canonical.",
+  "changes": {
+    "NAT-2026-09-15-003": {
+      "kind": "material_refresh",
+      "before_sha256": "5b7bf1e1580bf0801cc69090dde1bbb3550fbcef923e3d4f4e090d6cdecfc811",
+      "after_sha256": "99c9268a3a15373aba4061af918a622e9da2e303f3b4cdf4dec5602625eabe4e",
+      "changed_fields": [
+        "checked_at",
+        "dek",
+        "display_date",
+        "evidence",
+        "facts",
+        "goalpost",
+        "maybe_therefore",
+        "significance",
+        "sources",
+        "version_history"
+      ],
+      "summary": "Added the primary en banc order vacating the panel disposition and granting rehearing without converting interim procedure into a final merits result."
+    },
+    "NAT-2026-10-30-004": {
+      "kind": "material_refresh",
+      "before_sha256": "ff0295dd1b4bc3d4081abf66988090b9a78d779a0ddc17f2d146733e2ae7741b",
+      "after_sha256": "d90842b74f596e76d1f353dc83134902ba380707d2827d8b31f83f7eaf3cffe0",
+      "changed_fields": [
+        "checked_at",
+        "dek",
+        "display_date",
+        "evidence",
+        "facts",
+        "goalpost",
+        "maybe_therefore",
+        "significance",
+        "sources",
+        "title",
+        "version_history"
+      ],
+      "summary": "Added two temporary court restraints and the government's no-immediate-flight representation to the existing planned-removals record."
+    },
+    "NAT-2026-11-03-003": {
+      "kind": "added",
+      "before_sha256": null,
+      "after_sha256": "eddf030f8f5d570e9d97672628111b8d9340cc238c84805f3b0c4dd68b240af6",
+      "changed_fields": [
+        "new_entry"
+      ],
+      "summary": "Added two signed laws from the White House notice and enrolled statutory texts, separating authorization and deadlines from implementation and outcomes."
+    },
+    "NAT-2026-11-03-004": {
+      "kind": "added",
+      "before_sha256": null,
+      "after_sha256": "d7fea96517b49baea86cd3676c08216a85d105fd67efaf9d27ccb619a1e99a74",
+      "changed_fields": [
+        "new_entry"
+      ],
+      "summary": "Added the verified presidential announcement on future Israel aid, explicitly preserving the absence of an implementing instrument or confirmed bilateral agreement."
+    }
+  }
+}
