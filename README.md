@@ -26,7 +26,7 @@ The Record pairs a concise, source-bound editorial front page with a full search
 <!-- GENERATED_ARCHIVE_METRICS_START -->
 ## Generated Scope and Quality Snapshot
 
-Generated deterministically from canonical JSON for maintenance release **10.218.0**. Editorial news currentness was checked **2026-11-03 6:16 PM EST**; QA inputs were updated **2026-11-03T17:07:02Z**.
+Generated deterministically from canonical JSON for maintenance release **10.219.0**. Editorial news currentness was checked **2026-11-04 12:04 AM EST**; QA inputs were updated **2026-11-04T05:03:57Z**.
 
 | Measure | Exact count |
 |---|---:|
@@ -35,8 +35,8 @@ Generated deterministically from canonical JSON for maintenance release **10.218
 | Superseded duplicate tombstones (excluded from totals/search) | 11 |
 | Current national entries bridged into the archive | 482 |
 | Full archive entries rendered at runtime | 5,213 |
-| Attached source references at runtime | 8,323 |
-| Distinct stored source URLs at runtime | 6,920 |
+| Attached source references at runtime | 8,325 |
+| Distinct stored source URLs at runtime | 6,922 |
 | Current entries with Maybe / Therefore | 486 |
 | Current entries awaiting Maybe / Therefore | 0 |
 | Current entries explicitly reviewed or corrected | 486 |

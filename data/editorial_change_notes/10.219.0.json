@@ -1,0 +1,25 @@
+{
+  "release_version": "10.219.0",
+  "as_of_utc": "2026-11-04T05:04:40Z",
+  "custody": "Compact hash-bound change receipt. Complete prior states for refreshed entries remain losslessly reconstructable from append-only version_history; complete current states remain canonical.",
+  "changes": {
+    "NAT-2026-09-15-003": {
+      "kind": "material_refresh",
+      "before_sha256": "99c9268a3a15373aba4061af918a622e9da2e303f3b4cdf4dec5602625eabe4e",
+      "after_sha256": "51e81c909e20f49ae3bfd3065340b2625ece4424ccf0d1500d74bde122100e3d",
+      "changed_fields": [
+        "checked_at",
+        "dek",
+        "evidence",
+        "facts",
+        "goalpost",
+        "maybe_therefore",
+        "significance",
+        "sources",
+        "title",
+        "version_history"
+      ],
+      "summary": "Added the November 3 limited en banc order reinstating the government's emergency stay, while preserving the interim posture and separate California rulings."
+    }
+  }
+}
