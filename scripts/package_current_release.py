@@ -231,6 +231,9 @@ def run_receipt(entries: list[dict], ledger: dict) -> bytes:
     run_changes = RELEASE.get("run_changes")
     if run_changes:
         window = RELEASE["research_window"]
+        editorial_notes = RELEASE.get("editorial_notes", [])
+        if isinstance(editorial_notes, str):
+            editorial_notes = [editorial_notes]
         lines.extend([
             "", "## This research run versus retained PR candidates", "",
             f"- Exact source window: {window['from_utc']} through {window['through_utc']} ({window['timezone']})",
@@ -238,7 +241,7 @@ def run_receipt(entries: list[dict], ledger: dict) -> bytes:
             f"- Materially refreshed in this run: {', '.join(run_changes['refreshed_entry_ids']) or 'none'}",
             f"- Retained unchanged from earlier PR stages: {', '.join(run_changes['retained_entry_ids']) or 'none'}",
             "- Added/refreshed totals below enumerate the complete PR diff against public main, not additional government actions or fresh reviews in this run.",
-            "", "\n\n".join(RELEASE.get("editorial_notes", [])), "",
+            "", "\n\n".join(editorial_notes), "",
         ])
     if consolidation:
         lines.extend([
