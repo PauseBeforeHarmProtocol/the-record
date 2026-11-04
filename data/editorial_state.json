@@ -10009,6 +10009,18 @@
       "provenance_path": "data/editorial_change_notes/10.219.0.json",
       "provenance_sha256": "3051e0db64147eb4ab8f2a5ddddfb1b83d33afe397cad42a1b9d947f57cb6e22",
       "note": "Further appellate orders, merits review, state responses, list accuracy, prosecutions and measured election effects remain unresolved."
+    },
+    {
+      "change_id": "10.220.0:NAT-2026-11-04-001:added",
+      "entry_id": "NAT-2026-11-04-001",
+      "as_of_utc": "2026-11-04T23:02:52Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.220.0",
+      "summary": "Added the reported November 4 bench ruling permanently enjoining specified immigration conditions on two DOJ grant programs, while preserving the missing written-order and appellate limits.",
+      "provenance_path": "data/editorial_change_notes/10.220.0.json",
+      "provenance_sha256": "d38d263898df0b6636a25b3f8857ad194edb857859bffb5575dcb42b85a24c3f",
+      "note": "Written order or transcript, appeal or stay, revised grant terms and disbursement remain unresolved."
     }
   ],
   "reviews": [
@@ -138703,6 +138715,160 @@
       ],
       "unresolved_questions": [
         "Further appellate orders, merits review, state responses, list accuracy, prosecutions and measured election effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.220.0:NAT-2026-11-04-001:eba7206fea2d",
+      "entry_id": "NAT-2026-11-04-001",
+      "content_sha256": "eba7206fea2d4dd23cd2d5118f4721e3a84d3ab3b5a515e8144277171865bfd2",
+      "reviewed_at": "2026-11-04T23:02:52Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "422e9e7172fe43ebcfacac170cb34be632e1aa1618b8c87d4a8540db698821eb",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_doj_grant_conditions_nov4",
+              "locator": "Reuters inspected report: Chief Judge McConnell ruled from the bench for 22 states and DC, permanently enjoined conditions on Byrne SCIP and OJJDP grants, described the access and release-notice terms, formula-grant reasoning, excluded Byrne JAG, abandoned VOCA terms, and reported DOJ did not comment.",
+              "inspected_at": "2026-11-04T23:02:52Z",
+              "document_sha256": "57d99bf26f198ba226252f3cc9c04ada45ab4d8aac34b69d800fad67cf9b40e1",
+              "origin_group": "Reuters",
+              "evidence_status": "enjoined"
+            },
+            {
+              "source_id": "njoag_doj_grant_conditions_aug21",
+              "locator": "Official New Jersey Attorney General page inspected: amended challenge, plaintiff coalition, affected public-safety programs, asserted coercion theory and requested relief.",
+              "inspected_at": "2026-11-04T23:02:52Z",
+              "document_sha256": "8bc7b0d9fbf5879cd6c1bdf9484ba021cfd354b5e2bb5917d511d4056bf59a83",
+              "origin_group": "Office of the New Jersey Attorney General",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "ed31f971d8c203c78e5d6e823019a4bd4416411d2fe3cbfb972b5657845266f5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_doj_grant_conditions_nov4",
+              "locator": "Reuters inspected report: Chief Judge McConnell ruled from the bench for 22 states and DC, permanently enjoined conditions on Byrne SCIP and OJJDP grants, described the access and release-notice terms, formula-grant reasoning, excluded Byrne JAG, abandoned VOCA terms, and reported DOJ did not comment.",
+              "inspected_at": "2026-11-04T23:02:52Z",
+              "document_sha256": "57d99bf26f198ba226252f3cc9c04ada45ab4d8aac34b69d800fad67cf9b40e1",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ojp_byrne_scip_nofo_2025",
+              "locator": "Official OJP grant notice inspected: program goal and out-of-scope language covering programs said to violate or impede federal immigration law, including access and DHS notice conditions.",
+              "inspected_at": "2026-11-04T23:02:52Z",
+              "document_sha256": "7827721c8b5147db8f778e84d18445e55cabe3ca5c07214423a84ed470a7a602",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "316fe64bba8e3e7fb3e1f40d05c3546a5341baaa05f25b4263b1c194f0660012",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_doj_grant_conditions_nov4",
+              "locator": "Reuters inspected report: Chief Judge McConnell ruled from the bench for 22 states and DC, permanently enjoined conditions on Byrne SCIP and OJJDP grants, described the access and release-notice terms, formula-grant reasoning, excluded Byrne JAG, abandoned VOCA terms, and reported DOJ did not comment.",
+              "inspected_at": "2026-11-04T23:02:52Z",
+              "document_sha256": "57d99bf26f198ba226252f3cc9c04ada45ab4d8aac34b69d800fad67cf9b40e1",
+              "origin_group": "Reuters",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "fa433211e6e43bf93e91c00e9d0babf937132ca919ab2d65e39c17d48ba70e9d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_doj_grant_conditions_nov4",
+              "locator": "Reuters inspected report: Chief Judge McConnell ruled from the bench for 22 states and DC, permanently enjoined conditions on Byrne SCIP and OJJDP grants, described the access and release-notice terms, formula-grant reasoning, excluded Byrne JAG, abandoned VOCA terms, and reported DOJ did not comment.",
+              "inspected_at": "2026-11-04T23:02:52Z",
+              "document_sha256": "57d99bf26f198ba226252f3cc9c04ada45ab4d8aac34b69d800fad67cf9b40e1",
+              "origin_group": "Reuters",
+              "evidence_status": "enjoined"
+            },
+            {
+              "source_id": "ojp_grant_legal_notices_2026",
+              "locator": "Official OJP legal-notices page inspected: affected conditions and prior injunction-specific nonenforcement notices for related Byrne grants.",
+              "inspected_at": "2026-11-04T23:02:52Z",
+              "document_sha256": "8c7bffdface40717a36bc8b87f79677de5c02eab4b1766219f738a0591b517a8",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "enjoined"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "deecd4dd5dd35265789bdc114fa179e6f4942e50f243cab226ba18e7d6383a9a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_doj_grant_conditions_nov4",
+              "locator": "Reuters inspected report: Chief Judge McConnell ruled from the bench for 22 states and DC, permanently enjoined conditions on Byrne SCIP and OJJDP grants, described the access and release-notice terms, formula-grant reasoning, excluded Byrne JAG, abandoned VOCA terms, and reported DOJ did not comment.",
+              "inspected_at": "2026-11-04T23:02:52Z",
+              "document_sha256": "57d99bf26f198ba226252f3cc9c04ada45ab4d8aac34b69d800fad67cf9b40e1",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ojp_byrne_scip_nofo_2025",
+              "locator": "Official OJP grant notice inspected: program goal and out-of-scope language covering programs said to violate or impede federal immigration law, including access and DHS notice conditions.",
+              "inspected_at": "2026-11-04T23:02:52Z",
+              "document_sha256": "7827721c8b5147db8f778e84d18445e55cabe3ca5c07214423a84ed470a7a602",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "5da116a25feea1152dbd5b9530004d39884b0a2375bb5a9990e216b97c99078f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_doj_grant_conditions_nov4",
+              "locator": "Reuters inspected report: Chief Judge McConnell ruled from the bench for 22 states and DC, permanently enjoined conditions on Byrne SCIP and OJJDP grants, described the access and release-notice terms, formula-grant reasoning, excluded Byrne JAG, abandoned VOCA terms, and reported DOJ did not comment.",
+              "inspected_at": "2026-11-04T23:02:52Z",
+              "document_sha256": "57d99bf26f198ba226252f3cc9c04ada45ab4d8aac34b69d800fad67cf9b40e1",
+              "origin_group": "Reuters",
+              "evidence_status": "enjoined"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "3b9aa6d59fa7f6496dff28b114da06efac822fd07cd9999f7dda7c228a7a009c",
+          "review_note": "Separately reviewed for bounded institutional consequence, program scope and appellate uncertainty."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "242917f214658d068e6b94e2b2bcccec19d83927b63c2dcb8c1d092814c6eeeb",
+          "review_note": "Strongest available administration rationale is attributed to DOJ's own grant notice; absence of post-ruling comment and missing written order are explicit."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "ff65d5525f302fcd2fd384482c1610ec03a36f05b9b8977f7c934d1d5bb71dac",
+          "review_note": "Appeal and statutory alternatives are separated from the established reported injunction and its bounded scope."
+        }
+      ],
+      "unresolved_questions": [
+        "Written order or transcript, final judgment, appeal or stay, revised grant terms and actual disbursement remain unresolved."
       ]
     }
   ],

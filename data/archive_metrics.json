@@ -1,11 +1,11 @@
 {
   "schema_version": 3,
-  "editorial_checked_at": "2026-11-04 12:04 AM EST",
-  "quality_inputs_updated_at": "2026-11-04T05:03:57Z",
-  "external_registry_checked_at": "2026-11-04T05:03:57Z",
+  "editorial_checked_at": "2026-11-04 6:02 PM EST",
+  "quality_inputs_updated_at": "2026-11-04T23:02:52Z",
+  "external_registry_checked_at": "2026-11-04T23:02:52Z",
   "federation_last_modified_at": "2026-08-25T14:40:23Z",
   "legacy_revisions_through": "2026-10-13",
-  "release_version": "10.219.0",
+  "release_version": "10.220.0",
   "canonical_files": {
     "legacy": "data/legacy_entries.json",
     "current": "data/current_entries.json",
@@ -18,26 +18,26 @@
   },
   "canonical_sha256": {
     "legacy": "1ce7d5d6735f662bb6e17fc0ae7bbcf42ac7fab9953499ac42e3dd878890e010",
-    "current": "b7b33cef6a1a47c34b35ad2eec410f4c09eb586391fcc1d6314e669809b09c5b",
-    "source_ledger": "f02a579e421f7756c4d11630001470b436bed9d797200316907950c120099689",
+    "current": "17286e081dacdaab2033649b88d5c39edaf15ae17c4901081e00ff5d8c1367b5",
+    "source_ledger": "80ef14f0144ee435006eb5c89099bf4b0d6840eecf1ee0f90b07d7d8b71cd5bb",
     "federated": "4c2b2804949098a9b0a314b3f0ed44e74fc8ccb688ab84741922dd30fa1083f3",
     "legacy_revisions": "c773aacc26f76bd2e3d85bad9758d5085c7bb837726779be557921f84809de2d",
-    "archive_registry": "b33f58f50009fdbfa8d6d38c264e478da6f9881249ccac87f94d7901618ba386",
-    "editorial_state": "5d1efab39fd16724286cf70738bcdbee250e8e35ef9f36506f43f46fb93493aa",
-    "truth_social_reviews": "fbaa50639043809b57b9922117ce7aae5eef52a95daf271e3071acb6a290e466"
+    "archive_registry": "58bb991976998f41d20455d6aa2aca9c92ba7e9ae149d4909e583fdf7a627b10",
+    "editorial_state": "c2937e27e5152f5495fa4d0011b1e832ae0adf245c6ae86e134c06e5a3e68ac5",
+    "truth_social_reviews": "e00df9acd83c07d77e580b09c786ba88a329539f37e098da296168ccff4f21ab"
   },
   "totals": {
     "canonical_legacy_rows": 4742,
     "canonical_legacy_entries": 4731,
     "active_legacy_entries": 4731,
     "superseded_legacy_tombstones": 11,
-    "bridged_national_entries": 482,
-    "full_archive_runtime_entries": 5213,
-    "current_layer_entries": 486,
+    "bridged_national_entries": 483,
+    "full_archive_runtime_entries": 5214,
+    "current_layer_entries": 487,
     "legacy_source_references": 6716,
-    "current_source_references": 1617,
-    "full_archive_runtime_source_references": 8325,
-    "full_archive_runtime_unique_urls": 6922
+    "current_source_references": 1621,
+    "full_archive_runtime_source_references": 8329,
+    "full_archive_runtime_unique_urls": 6926
   },
   "coverage": {
     "legacy_last_date": "2026-08-01",
@@ -420,30 +420,30 @@
     }
   },
   "current": {
-    "entries": 486,
-    "national_entries": 482,
+    "entries": 487,
+    "national_entries": 483,
     "in6_entries": 4,
-    "source_references": 1617,
-    "national_source_references": 1609,
-    "source_ledger_rows": 1624,
-    "used_source_ledger_rows": 1600,
+    "source_references": 1621,
+    "national_source_references": 1613,
+    "source_ledger_rows": 1628,
+    "used_source_ledger_rows": 1604,
     "unused_source_ledger_rows": 24,
     "entries_with_one_source": 101,
-    "entries_with_one_source_percent": 20.8,
+    "entries_with_one_source_percent": 20.7,
     "national_entries_with_one_source": 99,
     "national_entries_with_one_source_percent": 20.5,
-    "maybe_therefore_present": 486,
+    "maybe_therefore_present": 487,
     "maybe_therefore_missing": 0,
     "review_states": {
       "corrected": 3,
-      "current-standard-reviewed": 483
+      "current-standard-reviewed": 484
     },
-    "current_standard_reviewed": 486,
+    "current_standard_reviewed": 487,
     "current_standard_pending": 0,
     "most_used_publishers": [
       {
         "publisher": "Reuters",
-        "references": 444
+        "references": 445
       },
       {
         "publisher": "Associated Press",
@@ -484,9 +484,9 @@
     ]
   },
   "review_traceability": {
-    "current_entries_with_content_bound_review": 364,
+    "current_entries_with_content_bound_review": 365,
     "current_entries_with_prior_status_only": 122,
-    "material_development_records": 821,
+    "material_development_records": 822,
     "retained_posts": 1000,
     "retained_post_text_states": {
       "not_recorded": 7,
@@ -494,9 +494,9 @@
       "reviewed": 990
     },
     "retained_post_media_states": {
-      "not_applicable": 713,
+      "not_applicable": 712,
       "pending": 31,
-      "reviewed": 227,
+      "reviewed": 228,
       "unavailable": 29
     },
     "definition": "Review-receipt coverage is separate from prior canonical review-state labels. Missing inspection records do not establish that content is false or that it was reviewed. Post-state counts refer only to the retained fallback, not the upstream archive total."
