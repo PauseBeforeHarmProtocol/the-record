@@ -1,32 +1,52 @@
 {
-  "version": "10.221.1",
-  "artifact_mode": "feed-only",
+  "version": "10.222.0",
+  "artifact_mode": "full",
   "run_changes": {
-    "added_entry_ids": [],
-    "refreshed_entry_ids": [],
+    "added_entry_ids": [
+      "NAT-2026-11-03-005"
+    ],
+    "refreshed_entry_ids": [
+      "NAT-2026-09-05-001",
+      "NAT-2026-10-30-001",
+      "NAT-2026-08-27-008",
+      "NAT-2026-09-19-001"
+    ],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-05T05:07:32Z",
-    "through_utc": "2026-11-05T11:02:48Z",
+    "from_utc": "2026-11-05T11:02:48Z",
+    "through_utc": "2026-11-05T17:08:46Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact prior checked_at boundary through the final validated Truth Social refresh. Editorial no-op with one newer media-only raw-feed post retained and visually reviewed; no qualifying canonical national item located in the material reviewed."
+    "note": "Exact prior checked_at boundary through the final validated Truth Social refresh. The November 3 Lockheed settlement is a disclosed pre-boundary backfill whose independent AP confirmation was published November 4; it is not represented as a post-boundary action."
   },
   "release_iso": "2026-11-05",
   "release_human": "November 5, 2026",
-  "checked_at": "2026-11-05 6:02 AM EST",
-  "previous_version": "10.221.0",
-  "previous_checked_at": "2026-11-05 12:07 AM EST",
-  "window_started_at": "2026-11-05T05:07:32Z",
-  "window_ended_at": "2026-11-05T11:02:48Z",
+  "checked_at": "2026-11-05 12:08 PM EST",
+  "previous_version": "10.221.1",
+  "previous_checked_at": "2026-11-05 6:02 AM EST",
+  "window_started_at": "2026-11-05T11:02:48Z",
+  "window_ended_at": "2026-11-05T17:08:46Z",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
   "week_label": "November 2–8, 2026",
   "cutoff_start": "2026-07-20",
-  "new_entry_ids": [],
-  "added_entry_ids": [],
-  "refreshed_entry_ids": [],
+  "new_entry_ids": [
+    "NAT-2026-11-03-005",
+    "NAT-2026-09-05-001",
+    "NAT-2026-10-30-001",
+    "NAT-2026-08-27-008",
+    "NAT-2026-09-19-001"
+  ],
+  "added_entry_ids": [
+    "NAT-2026-11-03-005"
+  ],
+  "refreshed_entry_ids": [
+    "NAT-2026-09-05-001",
+    "NAT-2026-10-30-001",
+    "NAT-2026-08-27-008",
+    "NAT-2026-09-19-001"
+  ],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-09-11-015",
@@ -1329,43 +1349,67 @@
       "target_id": "NAT-2026-11-04-001",
       "decision": "false_positive",
       "notes": "No existing current event, normalized title, stored source URL or recent maintenance pull request covered the November 4 permanent injunction on the two identified DOJ grant programs."
+    },
+    {
+      "entry_id": "NAT-2026-11-03-005",
+      "target_id": "NAT-2026-11-03-005",
+      "decision": "false_positive",
+      "notes": "No existing event, normalized title, source URL or recent maintenance pull request covered the two-part Lockheed employment-practice settlement."
+    },
+    {
+      "entry_id": "NAT-2026-10-30-001",
+      "target_id": "NAT-2026-10-30-001",
+      "decision": "same_event_update",
+      "notes": "The East Baton Rouge dollar-specific award advances the same Model Cities selection and implementation lifecycle; the stable record was refreshed."
+    },
+    {
+      "entry_id": "NAT-2026-08-27-008",
+      "target_id": "NAT-2026-08-27-008",
+      "decision": "same_event_update",
+      "notes": "The Penn State complaint is another filed challenge in the same national in-state-tuition litigation campaign and was consolidated into the stable record."
+    },
+    {
+      "entry_id": "NAT-2026-09-19-001",
+      "target_id": "NAT-2026-09-19-001",
+      "decision": "same_event_update",
+      "notes": "The DOJ memorandum and planned regulatory map implement and extend the existing Super Intelligence coordination record; no parallel event was created."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Media-only Truth Social repost of Joel Pollak commentary",
-      "reason": "Visually reviewed political commentary did not establish a new federal action or independently verified outcome."
+      "title": "Trump vote-total reassignment post",
+      "reason": "Election rhetoric and pressure did not independently establish a qualifying federal action."
     },
     {
-      "title": "White House Wire farm-relief and election-charge headlines",
-      "reason": "The underlying USDA and DOJ actions were dated October 19 and resurfaced without a new lifecycle stage."
+      "title": "Trump link to White House promotional post",
+      "reason": "The upstream post was not directly retrieved and accessible metadata did not establish an independently verified qualifying action."
     },
     {
-      "title": "Scheduled New York hush-money appeal hearing",
-      "reason": "A scheduled hearing in Trump's personal state criminal case produced no ruling by cutoff and is not an administration action."
+      "title": "November 5 Trump TV short clip",
+      "reason": "Only conflicting-date metadata and a stable embed ID were retrieved; playback and captions were unavailable. No qualifying new item located in the material reviewed."
     },
     {
-      "title": "Scheduled Memorial Circle arch approval vote",
-      "reason": "The proposal and litigation are already represented in the stable arch record; no vote or new operative approval was located by cutoff."
+      "title": "Memorial Circle arch commission vote",
+      "reason": "The meeting was scheduled after the research cutoff and the official project page did not yet show an action; a fallback message was not treated as evidence of a vote."
     },
     {
-      "title": "November 5 Trump TV source check",
-      "reason": "Official pages exposed no new or changed accessible recording after the prior check; no qualifying new item located in the material reviewed."
+      "title": "Trump New York personal criminal appeal hearing",
+      "reason": "No ruling was issued by cutoff, and the hearing concerned a personal state criminal case rather than a new administration action."
     },
     {
-      "title": "Post-election political results and ballroom remarks",
-      "reason": "Election results, partisan reaction and a repeated project presentation did not establish a new signed, funded, implemented or adjudicated federal action."
+      "title": "Matter of Ontiveros-Diaz immigration precedent",
+      "reason": "The administrative adjudication was retained as a lead because independent context and consequence review were incomplete; it was not added to meet a numerical target."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-05 6:02 AM EST",
-    "checked_at_eastern": "2026-11-05 6:02 AM EST",
-    "inspection_status": "official pages and listing metadata inspected; no new or changed accessible recording; audiovisual playback and captions unavailable",
+    "checked_at": "2026-11-05 12:08 PM EST",
+    "checked_at_eastern": "2026-11-05 12:08 PM EST",
+    "inspection_status": "official pages, stream link, listing and detail metadata inspected; new short clip remained audiovisually unavailable",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-05T11:02:48Z",
+    "last_successful_page_inspection_at": "2026-11-05T17:08:46Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1376,7 +1420,7 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, video-library, remarks and releases pages were rechecked. Trump TV still linked A4gNgHfZ-v4 and the dated library still led with the November 4, 41:51 remarks item LHT-znOQXkA. No newer or changed accessible recording, caption or transcript was exposed. No qualifying new item located in the material reviewed. Fallback text was not treated as outage proof and the broadcast-review boundary remains unadvanced.",
+    "summary": "Official Trump TV, live, videos, remarks and releases pages were inspected. Trump TV still linked stream A4gNgHfZ-v4. The library newly listed a 00:39 short titled ‘We aren’t going anywhere. We play for the United States of America’; its listing displayed November 5 while the detail page displayed November 4, and stable embed ID ygRFHhrO6tk was identified. Playback, audio and captions were not retrieved, so no claim is made that the clip was watched. No qualifying new item located in the material reviewed. Fallback text was not treated as outage proof and the broadcast-review boundary remains unadvanced.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1412,7 +1456,8 @@
       "November 4 midnight check: four November 3 listings were metadata-only. Playback, audio and captions were not retrieved; no outage or complete-coverage claim was made, and no verified channel cost, contract, staffing, editorial-control, distribution or press-access finding was located.",
       "November 4 evening: the stable stream and November 3 library metadata were rechecked; playback, audio and captions were unavailable. No outage or complete-coverage claim was made, and no verified channel cost, contract, staffing, editorial-control, distribution or press-access finding was located.",
       "November 5 midnight check: the November 4 remarks listing and embed ID LHT-znOQXkA were metadata-only; playback, audio and captions were not retrieved. No outage or complete-coverage claim was made, and no verified channel cost, contract, staffing, editorial-control, distribution or press-access finding was located.",
-      "November 5 6:02 AM EST check: the official stream and November 4 remarks listing repeated. Playback, audio and captions were not retrieved; no outage or complete-coverage claim was made, and no verified new channel cost, contract, staffing, editorial-control, distribution or press-access finding was located."
+      "November 5 6:02 AM EST check: the official stream and November 4 remarks listing repeated. Playback, audio and captions were not retrieved; no outage or complete-coverage claim was made, and no verified new channel cost, contract, staffing, editorial-control, distribution or press-access finding was located.",
+      "November 5 12:08 PM EST: new 00:39 short ygRFHhrO6tk was metadata-only; listing/detail dates conflict, playback and captions were unavailable, and live/replay/editing status remains unknown. No outage or complete-coverage claim and no verified new channel cost, contract, staffing, editorial-control, distribution, advertising or press-access finding."
     ],
     "items": [
       {
@@ -2697,9 +2742,22 @@
         "observed_at_eastern": "2026-11-05 6:02:48 AM EST",
         "format": "supplementary official releases index",
         "inspection": "Recent releases inspected as text leads; no separate qualifying Trump TV action, cost, contract or control finding was located."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/we-arent-going-anywhere-we-play-for-the-united-states-of-america/",
+        "video_ids": [
+          "ygRFHhrO6tk"
+        ],
+        "posted_date": "2026-11-04",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-05T17:08:46Z",
+        "observed_at_eastern": "2026-11-05 12:08 PM EST",
+        "format": "00:39 official short/edited-clip metadata; listing displayed November 5, detail displayed November 4",
+        "inspection": "Title, conflicting displayed dates, duration, stable detail URL and embed ID inspected. Playback, audio and captions were unavailable; no footage was claimed watched and no qualifying action was inferred."
       }
     ],
-    "checked_at_utc": "2026-11-05T11:02:48Z",
+    "checked_at_utc": "2026-11-05T17:08:46Z",
     "inspection_history": [
       {
         "url": "https://www.whitehouse.gov/trumptv/",
@@ -2888,34 +2946,47 @@
         "observed_at_eastern": "2026-11-04 6:02 PM EST",
         "format": "supplementary official releases index",
         "inspection": "November 4 promotional release inspected as text; it did not independently establish a qualifying action or measured result."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/we-arent-going-anywhere-we-play-for-the-united-states-of-america/",
+        "video_ids": [
+          "ygRFHhrO6tk"
+        ],
+        "posted_date": "2026-11-04",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-05T17:08:46Z",
+        "observed_at_eastern": "2026-11-05 12:08 PM EST",
+        "format": "00:39 official short/edited-clip metadata; listing displayed November 5, detail displayed November 4",
+        "inspection": "Title, conflicting displayed dates, duration, stable detail URL and embed ID inspected. Playback, audio and captions were unavailable; no footage was claimed watched and no qualifying action was inferred."
       }
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 1,
-    "new_text_reviewed": 1,
-    "new_media_reviewed": 1,
+    "new_posts": 2,
+    "new_text_reviewed": 2,
+    "new_media_reviewed": 0,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-05T11:02:48.605918Z",
-    "checked_at_eastern": "2026-11-05 6:02:48 AM EST",
-    "latest_post_id": "117563218876256792",
-    "latest_post_at_eastern": "2026-11-05 4:52:38 AM EST",
+    "checked_at_utc": "2026-11-05T17:08:46.536272Z",
+    "checked_at_eastern": "2026-11-05 12:08:46 PM EST",
+    "latest_post_id": "117564115835486203",
+    "latest_post_at_eastern": "2026-11-05 8:40:44 AM EST",
     "counts": {
       "text_status": {
         "not_recorded": 154,
-        "pending": 972,
-        "reviewed": 1655
+        "reviewed": 1657,
+        "pending": 972
       },
       "media_status": {
-        "not_applicable": 1563,
+        "not_applicable": 1565,
         "not_recorded": 19,
+        "unavailable": 295,
         "pending": 538,
-        "reviewed": 366,
-        "unavailable": 295
+        "reviewed": 366
       }
     },
-    "note": "One newer media-only post was acquired and its still image visually reviewed. It republishes political commentary and did not independently establish a qualifying federal action. The newest post was published November 5 at 4:52:38 AM EST (09:52:38 UTC), preserving the local publication date. The final updater refresh at 2026-11-05 6:02:48 AM EST found no newer post."
+    "note": "Two text-only posts were newer than the prior validated snapshot. One urged reassignment of election vote totals; the other linked to a White House promotional post whose upstream content was not directly retrieved. Neither independently established a qualifying federal action. The newest post was published November 5 at 8:40:44 AM EST (13:40:44 UTC), preserving the local publication date. The final updater refresh at 12:08:46 PM EST found no additional newer post."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -2927,37 +2998,19 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-05 6:02 AM EST",
-    "checked_at_utc": "2026-11-05T11:02:48Z",
-    "summary": "Four registered primary project pages were rechecked. Trump Archive's client-side headline counters did not render, while its November calendar remained 376 items through November 4; the prior verified 15,997 / 13,293 / 2,044 measurements were preserved. UndoTrump remained 1,264 actions, 995 active, 44 in courts and 42 restored; IPTP remained 1,826 policy actions. Record47 rendered 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts, but not a reliable entry total, so prior measurements were preserved. Distinct units were not summed and zero external items were imported by default.",
-    "updated_archives": [],
-    "unchanged_archives": [
+    "checked_at": "2026-11-05 12:08 PM EST",
+    "checked_at_utc": "2026-11-05T17:08:46Z",
+    "summary": "Four registered primary project pages were rechecked. Trump Archive displayed revised lower counters of 15,990 total items, 13,292 Truth Social posts and 2,038 speeches/transcripts; the prior measurements remain in history and no cause for the revision is inferred. UndoTrump remained 1,264 actions and 533 Term II actions, with 995 active, 44 in courts and 42 restored. IPTP's policy browse page advanced to 1,827 while its separately scoped homepage measurement was preserved because that counter was not independently verified. Record47 displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts; its API entry total was preserved. Distinct units were not summed and zero external items were imported by default.",
+    "updated_archives": [
       "trump_archive",
+      "immigration_policy_tracking_project"
+    ],
+    "unchanged_archives": [
       "undotrump",
-      "immigration_policy_tracking_project",
       "record47"
     ]
   },
-  "editorial_snapshot": {
-    "version": "10.221.0",
-    "national_pack": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-11-05_v10.221.0.zip",
-      "sha256": "62cec8db364d6feb00424ed87c206beadbb881889bd5fb027f9fcc7fab2744ef"
-    },
-    "complete_pack": {
-      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-11-05_v10.221.0.zip",
-      "sha256": "46d9018048d621c15ea559c6a1591a0b8b6d340ed86945bdd7c517a934c9797a"
-    },
-    "national_brief": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-11-05_v10.221.0.md",
-      "sha256": "092551fae98b075dbe4b379625c0cd0bfe4e761b7517c26ccc44862c46425842"
-    },
-    "in6_brief": {
-      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-11-05_v10.221.0.md",
-      "sha256": "0ebaae46e6d127b94442b6463b567ff2e955ad3197ffc1e7a57d35184c337d65"
-    }
-  },
-  "editorial_notes": "Editorial no-op: no qualifying canonical national item completed review; one newer media-only Truth Social post was retained and visually reviewed. Full 10.221.0 canonical data and evidence packs are reused byte-for-byte. No current entry, source ledger, legacy record, federation record, correction or IN-6 fact changed.",
+  "editorial_notes": "One qualifying federal settlement record and four material lifecycle updates passed the publication threshold. The archive was not padded. No legacy entry changed because no queued historical candidate was responsibly resolved within this run; the objective remediation and duplicate-candidate queues remain visible.",
   "retained_stages": [],
   "publication_transport_attempts": []
 }
