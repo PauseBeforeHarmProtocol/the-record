@@ -10021,6 +10021,42 @@
       "provenance_path": "data/editorial_change_notes/10.220.0.json",
       "provenance_sha256": "d38d263898df0b6636a25b3f8857ad194edb857859bffb5575dcb42b85a24c3f",
       "note": "Written order or transcript, appeal or stay, revised grant terms and disbursement remain unresolved."
+    },
+    {
+      "change_id": "10.221.0:NAT-2026-11-04-002:added",
+      "entry_id": "NAT-2026-11-04-002",
+      "as_of_utc": "2026-11-05T05:07:32Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.221.0",
+      "summary": "Added the CY 2027 physician-fee final rule as a disclosed pre-boundary same-day backfill, preserving finalized rates, effective posture and unmeasured outcomes.",
+      "provenance_path": "data/editorial_change_notes/10.221.0.json",
+      "provenance_sha256": "3e52ad14a1f5cbb4ae135d242b4ce861193fdaf8d24d8cffd62694205adc4bb7",
+      "note": "Same-day action occurred before the prior cutoff; it was discovered and fully inspected in this run and is not represented as a post-boundary action."
+    },
+    {
+      "change_id": "10.221.0:NAT-2026-11-04-003:added",
+      "entry_id": "NAT-2026-11-04-003",
+      "as_of_utc": "2026-11-05T05:07:32Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.221.0",
+      "summary": "Added the CY 2027 OPPS/ASC final rule as a disclosed pre-boundary same-day backfill, separating finalized formulas from projected savings and stakeholder warnings.",
+      "provenance_path": "data/editorial_change_notes/10.221.0.json",
+      "provenance_sha256": "3e52ad14a1f5cbb4ae135d242b4ce861193fdaf8d24d8cffd62694205adc4bb7",
+      "note": "Same-day action occurred before the prior cutoff; it was discovered and fully inspected in this run and is not represented as a post-boundary action."
+    },
+    {
+      "change_id": "10.221.0:NAT-2026-11-04-004:added",
+      "entry_id": "NAT-2026-11-04-004",
+      "as_of_utc": "2026-11-05T05:07:32Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.221.0",
+      "summary": "Added the CY 2027 home-health final rule as a disclosed pre-boundary same-day backfill, preserving aggregate estimates and unresolved enrollment-enforcement outcomes.",
+      "provenance_path": "data/editorial_change_notes/10.221.0.json",
+      "provenance_sha256": "3e52ad14a1f5cbb4ae135d242b4ce861193fdaf8d24d8cffd62694205adc4bb7",
+      "note": "Same-day action occurred before the prior cutoff; it was discovered and fully inspected in this run and is not represented as a post-boundary action."
     }
   ],
   "reviews": [
@@ -138869,6 +138905,519 @@
       ],
       "unresolved_questions": [
         "Written order or transcript, final judgment, appeal or stay, revised grant terms and actual disbursement remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.221.0:NAT-2026-11-04-002:3ffbcd4df61f",
+      "entry_id": "NAT-2026-11-04-002",
+      "content_sha256": "3ffbcd4df61f752a14dbc1066ba795cc68c090c9e9285d97979c343c1afa908c",
+      "reviewed_at": "2026-11-05T05:07:32Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "d763a99d9f0d0a1dc06b23ef8bc6151a40db29c46db152338d218809ea6e9f6f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_pfs_final_2027",
+              "locator": "CMS fact sheet inspected November 5: Nov. 4 final rule; policies effective on or after Jan. 1, 2027; QP conversion factor $32.95 (-1.83%); non-QP $32.63 (-2.31%); one-year 2.5% CY 2026 increase expires; same-day zero-day global procedure policy pays the other service at 80%; G2211 becomes modifier B1 with a 16% increase.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "5257512ddfb1b177fb5643a525657c16ea00d2dbfbac143a8435540194038335",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fr_pfs_final_2027",
+              "locator": "Federal Register public-inspection page and rule summary inspected November 5: CMS-1848-F, RIN 0938-AV82, final rule, scheduled publication November 9, 2026, effective January 1, 2027.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "fcbb3e15dc8c49784ef51b7c3b43d548c0ca3050a14291b94edca36031e07e3b",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "126f5b328a46359a022d167a7d7e71a939e9e7c98b761908b4fdd198c3f3cb7e",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_pfs_final_2027",
+              "locator": "CMS fact sheet inspected November 5: Nov. 4 final rule; policies effective on or after Jan. 1, 2027; QP conversion factor $32.95 (-1.83%); non-QP $32.63 (-2.31%); one-year 2.5% CY 2026 increase expires; same-day zero-day global procedure policy pays the other service at 80%; G2211 becomes modifier B1 with a 16% increase.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "5257512ddfb1b177fb5643a525657c16ea00d2dbfbac143a8435540194038335",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fr_pfs_final_2027",
+              "locator": "Federal Register public-inspection page and rule summary inspected November 5: CMS-1848-F, RIN 0938-AV82, final rule, scheduled publication November 9, 2026, effective January 1, 2027.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "fcbb3e15dc8c49784ef51b7c3b43d548c0ca3050a14291b94edca36031e07e3b",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "aha_pfs_final_2027",
+              "locator": "AHA summary inspected November 5: Nov. 4 final PFS rule; -1.83% and -2.31% conversion-factor changes; same-day E/M modification; remote-monitoring policies; contractor restriction delayed to 2029; MIPS sunset delayed to 2031.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "f412c8efccb07383ae18c65f7ce344ea7bdb755d5a7d03605fefffeaaf886ef9",
+              "origin_group": "American Hospital Association",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "186e766219fb745c536489cd99099ca41d296fbffd66417013e4d104ea3d47ec",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_pfs_final_2027",
+              "locator": "CMS fact sheet inspected November 5: Nov. 4 final rule; policies effective on or after Jan. 1, 2027; QP conversion factor $32.95 (-1.83%); non-QP $32.63 (-2.31%); one-year 2.5% CY 2026 increase expires; same-day zero-day global procedure policy pays the other service at 80%; G2211 becomes modifier B1 with a 16% increase.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "5257512ddfb1b177fb5643a525657c16ea00d2dbfbac143a8435540194038335",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fr_pfs_final_2027",
+              "locator": "Federal Register public-inspection page and rule summary inspected November 5: CMS-1848-F, RIN 0938-AV82, final rule, scheduled publication November 9, 2026, effective January 1, 2027.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "fcbb3e15dc8c49784ef51b7c3b43d548c0ca3050a14291b94edca36031e07e3b",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "aha_pfs_final_2027",
+              "locator": "AHA summary inspected November 5: Nov. 4 final PFS rule; -1.83% and -2.31% conversion-factor changes; same-day E/M modification; remote-monitoring policies; contractor restriction delayed to 2029; MIPS sunset delayed to 2031.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "f412c8efccb07383ae18c65f7ce344ea7bdb755d5a7d03605fefffeaaf886ef9",
+              "origin_group": "American Hospital Association",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "bad32cc2f44ac5cb6fef2e063a84bb12ca397825ea90c60e95c10debca1ca50b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_pfs_final_2027",
+              "locator": "CMS fact sheet inspected November 5: Nov. 4 final rule; policies effective on or after Jan. 1, 2027; QP conversion factor $32.95 (-1.83%); non-QP $32.63 (-2.31%); one-year 2.5% CY 2026 increase expires; same-day zero-day global procedure policy pays the other service at 80%; G2211 becomes modifier B1 with a 16% increase.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "5257512ddfb1b177fb5643a525657c16ea00d2dbfbac143a8435540194038335",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fr_pfs_final_2027",
+              "locator": "Federal Register public-inspection page and rule summary inspected November 5: CMS-1848-F, RIN 0938-AV82, final rule, scheduled publication November 9, 2026, effective January 1, 2027.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "fcbb3e15dc8c49784ef51b7c3b43d548c0ca3050a14291b94edca36031e07e3b",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "aha_pfs_final_2027",
+              "locator": "AHA summary inspected November 5: Nov. 4 final PFS rule; -1.83% and -2.31% conversion-factor changes; same-day E/M modification; remote-monitoring policies; contractor restriction delayed to 2029; MIPS sunset delayed to 2031.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "f412c8efccb07383ae18c65f7ce344ea7bdb755d5a7d03605fefffeaaf886ef9",
+              "origin_group": "American Hospital Association",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "283bbf892f50f5e10861608d5754033cdcb847e4a2dd499df6e19815d6e1c891",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_pfs_final_2027",
+              "locator": "CMS fact sheet inspected November 5: Nov. 4 final rule; policies effective on or after Jan. 1, 2027; QP conversion factor $32.95 (-1.83%); non-QP $32.63 (-2.31%); one-year 2.5% CY 2026 increase expires; same-day zero-day global procedure policy pays the other service at 80%; G2211 becomes modifier B1 with a 16% increase.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "5257512ddfb1b177fb5643a525657c16ea00d2dbfbac143a8435540194038335",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "aha_pfs_final_2027",
+              "locator": "AHA summary inspected November 5: Nov. 4 final PFS rule; -1.83% and -2.31% conversion-factor changes; same-day E/M modification; remote-monitoring policies; contractor restriction delayed to 2029; MIPS sunset delayed to 2031.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "f412c8efccb07383ae18c65f7ce344ea7bdb755d5a7d03605fefffeaaf886ef9",
+              "origin_group": "American Hospital Association",
+              "evidence_status": "ordered"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "38d4d5be0024459ea1a7ccb0e89947225d3e3ca51913940bd38bb44bd2575a8c",
+          "review_note": "Separately reviewed for bounded national consequences and explicit distinction between finalized policy and unmeasured outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "90783bd193e40b2a61362b0e1175c91eff854dcd6362e96fb26e5a0f2930538d",
+          "review_note": "Strongest administration rationale and relevant stakeholder response are attributed; concrete post-implementation tests are stated."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "bf5fdd9845d2a546063216a2fb2b68ef5b56b3f779343c5af905e45a12d96c40",
+          "review_note": "Plausible alternatives and implementation uncertainty remain separate from the established final-rule action."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation guidance, litigation or legislative changes, distributional effects, access, utilization, payment and quality outcomes remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.221.0:NAT-2026-11-04-003:8aaa7ed73b05",
+      "entry_id": "NAT-2026-11-04-003",
+      "content_sha256": "8aaa7ed73b050f737fb5bba4cdf58207e83754f1ae7aaa30209904e865a113f1",
+      "reviewed_at": "2026-11-05T05:07:32Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "c9d520d64a2db0f62cae7d6b15f166f78d3664da91157d6967bdefd3072423a5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_opps_final_2027",
+              "locator": "CMS fact sheet inspected November 5: Nov. 4 OPPS/ASC final rule; 2.3% qualifying rate updates; imaging-without-contrast site-neutral policy; projected $260 million first-year Part B reduction; 340B drugs at ASP minus 28%; projected $4.35 billion Original Medicare and $1.1 billion beneficiary drug-payment reductions, implemented budget-neutrally.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "7ad410db4c9df45ba53e53fbd769e94cd44c4e85bc07510b0008881d44b2cb27",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fr_opps_final_2027",
+              "locator": "Federal Register public-inspection rule summary inspected November 5: CMS-1850-FC, RIN 0938-AV83, final rule with comment period, scheduled publication November 6, 2026, revising CY 2027 OPPS and ASC payment systems and quality programs.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "ea2fac8251004f9ad24abdf895f2c21bf591d72ea75cc92b4c776371a4261ec9",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "fdee179bc153c350748f31aae785756fc8f2278267151fe9026e070be260eca5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_opps_final_2027",
+              "locator": "CMS fact sheet inspected November 5: Nov. 4 OPPS/ASC final rule; 2.3% qualifying rate updates; imaging-without-contrast site-neutral policy; projected $260 million first-year Part B reduction; 340B drugs at ASP minus 28%; projected $4.35 billion Original Medicare and $1.1 billion beneficiary drug-payment reductions, implemented budget-neutrally.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "7ad410db4c9df45ba53e53fbd769e94cd44c4e85bc07510b0008881d44b2cb27",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fr_opps_final_2027",
+              "locator": "Federal Register public-inspection rule summary inspected November 5: CMS-1850-FC, RIN 0938-AV83, final rule with comment period, scheduled publication November 6, 2026, revising CY 2027 OPPS and ASC payment systems and quality programs.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "ea2fac8251004f9ad24abdf895f2c21bf591d72ea75cc92b4c776371a4261ec9",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "aha_opps_final_2027",
+              "locator": "AHA summary and attributed response inspected November 5: 2.3% rate increase; site-neutral imaging at 40% of OPPS; ASP minus 28% for 340B drugs; 2% annual prior-remedy recoupment; 637 additional inpatient-only removals; AHA access and 340B objections.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "7325242f93dfdde15423569dd33dc73ddf18c46742e4838e08752e717ef4c971",
+              "origin_group": "American Hospital Association",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "f4a5139725f255ab4a091f60cab2a3528d6a7a62cba7aeb06583ded8d26a6698",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_opps_final_2027",
+              "locator": "CMS fact sheet inspected November 5: Nov. 4 OPPS/ASC final rule; 2.3% qualifying rate updates; imaging-without-contrast site-neutral policy; projected $260 million first-year Part B reduction; 340B drugs at ASP minus 28%; projected $4.35 billion Original Medicare and $1.1 billion beneficiary drug-payment reductions, implemented budget-neutrally.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "7ad410db4c9df45ba53e53fbd769e94cd44c4e85bc07510b0008881d44b2cb27",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fr_opps_final_2027",
+              "locator": "Federal Register public-inspection rule summary inspected November 5: CMS-1850-FC, RIN 0938-AV83, final rule with comment period, scheduled publication November 6, 2026, revising CY 2027 OPPS and ASC payment systems and quality programs.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "ea2fac8251004f9ad24abdf895f2c21bf591d72ea75cc92b4c776371a4261ec9",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "aha_opps_final_2027",
+              "locator": "AHA summary and attributed response inspected November 5: 2.3% rate increase; site-neutral imaging at 40% of OPPS; ASP minus 28% for 340B drugs; 2% annual prior-remedy recoupment; 637 additional inpatient-only removals; AHA access and 340B objections.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "7325242f93dfdde15423569dd33dc73ddf18c46742e4838e08752e717ef4c971",
+              "origin_group": "American Hospital Association",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "9232c30144d75d612e22a6c165fbc09389ed436b009f7d9a46c499bd601a376b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_opps_final_2027",
+              "locator": "CMS fact sheet inspected November 5: Nov. 4 OPPS/ASC final rule; 2.3% qualifying rate updates; imaging-without-contrast site-neutral policy; projected $260 million first-year Part B reduction; 340B drugs at ASP minus 28%; projected $4.35 billion Original Medicare and $1.1 billion beneficiary drug-payment reductions, implemented budget-neutrally.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "7ad410db4c9df45ba53e53fbd769e94cd44c4e85bc07510b0008881d44b2cb27",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fr_opps_final_2027",
+              "locator": "Federal Register public-inspection rule summary inspected November 5: CMS-1850-FC, RIN 0938-AV83, final rule with comment period, scheduled publication November 6, 2026, revising CY 2027 OPPS and ASC payment systems and quality programs.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "ea2fac8251004f9ad24abdf895f2c21bf591d72ea75cc92b4c776371a4261ec9",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "aha_opps_final_2027",
+              "locator": "AHA summary and attributed response inspected November 5: 2.3% rate increase; site-neutral imaging at 40% of OPPS; ASP minus 28% for 340B drugs; 2% annual prior-remedy recoupment; 637 additional inpatient-only removals; AHA access and 340B objections.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "7325242f93dfdde15423569dd33dc73ddf18c46742e4838e08752e717ef4c971",
+              "origin_group": "American Hospital Association",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "58ee68e73af5347084429f2fd9f7fa6267137a37f784eb8fafe9cfb22b16921d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_opps_final_2027",
+              "locator": "CMS fact sheet inspected November 5: Nov. 4 OPPS/ASC final rule; 2.3% qualifying rate updates; imaging-without-contrast site-neutral policy; projected $260 million first-year Part B reduction; 340B drugs at ASP minus 28%; projected $4.35 billion Original Medicare and $1.1 billion beneficiary drug-payment reductions, implemented budget-neutrally.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "7ad410db4c9df45ba53e53fbd769e94cd44c4e85bc07510b0008881d44b2cb27",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "aha_opps_final_2027",
+              "locator": "AHA summary and attributed response inspected November 5: 2.3% rate increase; site-neutral imaging at 40% of OPPS; ASP minus 28% for 340B drugs; 2% annual prior-remedy recoupment; 637 additional inpatient-only removals; AHA access and 340B objections.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "7325242f93dfdde15423569dd33dc73ddf18c46742e4838e08752e717ef4c971",
+              "origin_group": "American Hospital Association",
+              "evidence_status": "ordered"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "999882e5ed18e71c924c38f94a59c174a4f680e57fcc9536e34eb4a784bd3190",
+          "review_note": "Separately reviewed for bounded national consequences and explicit distinction between finalized policy and unmeasured outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "640b2a2f156d7a22e4409e1ea83a013d215d50ac6cab3e7a99f5bf2062c05499",
+          "review_note": "Strongest administration rationale and relevant stakeholder response are attributed; concrete post-implementation tests are stated."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "0a84148445f7579ca2e64c4a485606317eb1fe8c03000f71417a90314abd46a1",
+          "review_note": "Plausible alternatives and implementation uncertainty remain separate from the established final-rule action."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation guidance, litigation or legislative changes, distributional effects, access, utilization, payment and quality outcomes remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.221.0:NAT-2026-11-04-004:14dd7fa8ddec",
+      "entry_id": "NAT-2026-11-04-004",
+      "content_sha256": "14dd7fa8ddec1c891b621414d8aaf46799b8db2e6834d40e66b299e683c315c3",
+      "reviewed_at": "2026-11-05T05:07:32Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "ef69cfba84864e348fd21fde33b6271c832cbc0ab61e020da756248ff88c1713",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_hh_final_2027",
+              "locator": "CMS fact sheet and press release inspected November 5: Nov. 4 home-health final rule; projected 2.4% or $415 million aggregate payment increase; 3.0% temporary base-rate adjustment; retroactive revocations and added enrollment denial/revocation grounds; projected $82 million annual savings; palliative-care clarification creates no new benefit.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "fceb4c1a3cbc4382f16c2864040b5745dea45e6217b6474b4e4ca4a6560013da",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fr_hh_final_2027",
+              "locator": "Federal Register public-inspection rule summary inspected November 5: CMS-1844-F, RIN 0938-AV80, final rule, scheduled publication November 9, 2026, setting CY 2027 home-health payment, quality, enrollment and DME/DMEPOS policies.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "1962ec96d7aa98c4adf45b8ca64915f31fd84bbb46132357f09f6765405a7576",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "24784a084c4054732d5025d58c7bae5b79a7ef4b3f81f28374289f563355021d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_hh_final_2027",
+              "locator": "CMS fact sheet and press release inspected November 5: Nov. 4 home-health final rule; projected 2.4% or $415 million aggregate payment increase; 3.0% temporary base-rate adjustment; retroactive revocations and added enrollment denial/revocation grounds; projected $82 million annual savings; palliative-care clarification creates no new benefit.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "fceb4c1a3cbc4382f16c2864040b5745dea45e6217b6474b4e4ca4a6560013da",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fr_hh_final_2027",
+              "locator": "Federal Register public-inspection rule summary inspected November 5: CMS-1844-F, RIN 0938-AV80, final rule, scheduled publication November 9, 2026, setting CY 2027 home-health payment, quality, enrollment and DME/DMEPOS policies.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "1962ec96d7aa98c4adf45b8ca64915f31fd84bbb46132357f09f6765405a7576",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "aha_hh_final_2027",
+              "locator": "AHA summary inspected November 5: Nov. 4 home-health final rule; 2.4% estimated payment increase; 3.0% temporary reduction; retroactive revocations and expanded enrollment authorities across provider types.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "8b6aa5dc1a4ef5e1dfa6c9f82bf6807f4990744f92aba565ec09039ef48808ed",
+              "origin_group": "American Hospital Association",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "0d8ac68ea4d3da16332769ee655341e86643165b36edc7444264695374f9fb83",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_hh_final_2027",
+              "locator": "CMS fact sheet and press release inspected November 5: Nov. 4 home-health final rule; projected 2.4% or $415 million aggregate payment increase; 3.0% temporary base-rate adjustment; retroactive revocations and added enrollment denial/revocation grounds; projected $82 million annual savings; palliative-care clarification creates no new benefit.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "fceb4c1a3cbc4382f16c2864040b5745dea45e6217b6474b4e4ca4a6560013da",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fr_hh_final_2027",
+              "locator": "Federal Register public-inspection rule summary inspected November 5: CMS-1844-F, RIN 0938-AV80, final rule, scheduled publication November 9, 2026, setting CY 2027 home-health payment, quality, enrollment and DME/DMEPOS policies.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "1962ec96d7aa98c4adf45b8ca64915f31fd84bbb46132357f09f6765405a7576",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "aha_hh_final_2027",
+              "locator": "AHA summary inspected November 5: Nov. 4 home-health final rule; 2.4% estimated payment increase; 3.0% temporary reduction; retroactive revocations and expanded enrollment authorities across provider types.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "8b6aa5dc1a4ef5e1dfa6c9f82bf6807f4990744f92aba565ec09039ef48808ed",
+              "origin_group": "American Hospital Association",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "9b3345232c6075e8af436a330bae4bbfdd2091cf0bddffcb27d2c66c6e5722d4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_hh_final_2027",
+              "locator": "CMS fact sheet and press release inspected November 5: Nov. 4 home-health final rule; projected 2.4% or $415 million aggregate payment increase; 3.0% temporary base-rate adjustment; retroactive revocations and added enrollment denial/revocation grounds; projected $82 million annual savings; palliative-care clarification creates no new benefit.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "fceb4c1a3cbc4382f16c2864040b5745dea45e6217b6474b4e4ca4a6560013da",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fr_hh_final_2027",
+              "locator": "Federal Register public-inspection rule summary inspected November 5: CMS-1844-F, RIN 0938-AV80, final rule, scheduled publication November 9, 2026, setting CY 2027 home-health payment, quality, enrollment and DME/DMEPOS policies.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "1962ec96d7aa98c4adf45b8ca64915f31fd84bbb46132357f09f6765405a7576",
+              "origin_group": "Office of the Federal Register",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "aha_hh_final_2027",
+              "locator": "AHA summary inspected November 5: Nov. 4 home-health final rule; 2.4% estimated payment increase; 3.0% temporary reduction; retroactive revocations and expanded enrollment authorities across provider types.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "8b6aa5dc1a4ef5e1dfa6c9f82bf6807f4990744f92aba565ec09039ef48808ed",
+              "origin_group": "American Hospital Association",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "5da304af12e27567639baa79a371a12729603d67504691c1f226a01f318c724b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cms_hh_final_2027",
+              "locator": "CMS fact sheet and press release inspected November 5: Nov. 4 home-health final rule; projected 2.4% or $415 million aggregate payment increase; 3.0% temporary base-rate adjustment; retroactive revocations and added enrollment denial/revocation grounds; projected $82 million annual savings; palliative-care clarification creates no new benefit.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "fceb4c1a3cbc4382f16c2864040b5745dea45e6217b6474b4e4ca4a6560013da",
+              "origin_group": "Centers for Medicare & Medicaid Services",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "aha_hh_final_2027",
+              "locator": "AHA summary inspected November 5: Nov. 4 home-health final rule; 2.4% estimated payment increase; 3.0% temporary reduction; retroactive revocations and expanded enrollment authorities across provider types.",
+              "inspected_at": "2026-11-05T05:07:32Z",
+              "document_sha256": "8b6aa5dc1a4ef5e1dfa6c9f82bf6807f4990744f92aba565ec09039ef48808ed",
+              "origin_group": "American Hospital Association",
+              "evidence_status": "ordered"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "3911a3f37bfa10964a03e8a4f310f382eff310fedfe95b072e0b3a9ea3754e4b",
+          "review_note": "Separately reviewed for bounded national consequences and explicit distinction between finalized policy and unmeasured outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "f6b4e2a3c51721979b510f04639c1584c31a91284013d5458818e721ef222a5a",
+          "review_note": "Strongest administration rationale and relevant stakeholder response are attributed; concrete post-implementation tests are stated."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "17594a3247656c989db555c26cb29e79e4cd3a119f4f4fee811c3b683cd8fc2b",
+          "review_note": "Plausible alternatives and implementation uncertainty remain separate from the established final-rule action."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation guidance, litigation or legislative changes, distributional effects, access, utilization, payment and quality outcomes remain unresolved."
       ]
     }
   ],

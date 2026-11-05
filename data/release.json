@@ -1,36 +1,42 @@
 {
-  "version": "10.220.0",
+  "version": "10.221.0",
   "artifact_mode": "full",
   "run_changes": {
     "added_entry_ids": [
-      "NAT-2026-11-04-001"
+      "NAT-2026-11-04-002",
+      "NAT-2026-11-04-003",
+      "NAT-2026-11-04-004"
     ],
     "refreshed_entry_ids": [],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-04T05:04:40Z",
-    "through_utc": "2026-11-04T23:02:52Z",
+    "from_utc": "2026-11-04T23:02:52Z",
+    "through_utc": "2026-11-05T05:07:32Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact prior checked_at boundary through the final validated Truth Social feed check. The qualifying bench ruling was reported at 20:58 UTC and inspected before cutoff."
+    "note": "Exact prior checked_at boundary through the final validated Truth Social feed check. Three November 4 CMS final rules displayed before the prior boundary were discovered and fully inspected during this run and are explicitly published as same-day backfills, not as post-boundary actions."
   },
-  "release_iso": "2026-11-04",
-  "release_human": "November 4, 2026",
-  "checked_at": "2026-11-04 6:02 PM EST",
-  "previous_version": "10.219.0",
-  "previous_checked_at": "2026-11-04 12:04 AM EST",
-  "window_started_at": "2026-11-04T05:04:40Z",
-  "window_ended_at": "2026-11-04T23:02:52Z",
+  "release_iso": "2026-11-05",
+  "release_human": "November 5, 2026",
+  "checked_at": "2026-11-05 12:07 AM EST",
+  "previous_version": "10.220.0",
+  "previous_checked_at": "2026-11-04 6:02 PM EST",
+  "window_started_at": "2026-11-04T23:02:52Z",
+  "window_ended_at": "2026-11-05T05:07:32Z",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
   "week_label": "November 2–8, 2026",
   "cutoff_start": "2026-07-20",
   "new_entry_ids": [
-    "NAT-2026-11-04-001"
+    "NAT-2026-11-04-002",
+    "NAT-2026-11-04-003",
+    "NAT-2026-11-04-004"
   ],
   "added_entry_ids": [
-    "NAT-2026-11-04-001"
+    "NAT-2026-11-04-002",
+    "NAT-2026-11-04-003",
+    "NAT-2026-11-04-004"
   ],
   "refreshed_entry_ids": [],
   "dedupe_resolutions": [
@@ -1339,35 +1345,35 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Two newer Truth Social posts",
-      "reason": "The text and three attached newspaper images were reviewed. They were a market boast and third-party geopolitical coverage; neither independently established another qualifying federal action or causal finding."
+      "title": "Sunshine Protection Act Truth Social post",
+      "reason": "Support for pending legislation and a future advocacy promise did not establish enactment, an order or implementation."
     },
     {
-      "title": "Trump TV and White House video metadata recheck",
-      "reason": "Official pages were inspected as metadata. Playback and captions were unavailable, no November 4 dated library item or transcript was located, and no qualifying new item was located in the material reviewed; no broadcast boundary was advanced."
+      "title": "November 4 Trump TV and White House video listing",
+      "reason": "Only title, date, duration and stable-link metadata were accessible; playback and captions were unavailable. No qualifying new item located in the material reviewed."
     },
     {
-      "title": "White House election-outcome release",
-      "reason": "Political and promotional rhetoric did not independently establish a new signed, implemented, funded or adjudicated federal action."
+      "title": "Pentagon domestic AI-lab framework announcement",
+      "reason": "A forthcoming overview was announced, but no substantive framework or implementing instrument was published by cutoff."
     },
     {
-      "title": "Routine Justice Department fraud indictment",
-      "reason": "A routine individual criminal case did not meet the archive's material national-administration threshold."
+      "title": "First Lady and LSU fostering endowment",
+      "reason": "The announcement did not establish a material federal appropriation, expenditure, order or implemented national policy."
     },
     {
-      "title": "Alaska election-certification investigation coverage",
-      "reason": "The target-letter investigation was reported before the active boundary and remains an unresolved same-event lead; later coverage did not establish a new post-boundary action or adjudicated finding."
+      "title": "White House election-outcome promotional release",
+      "reason": "Political rhetoric did not independently establish a signed, funded, implemented or adjudicated federal action."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-04 6:02 PM EST",
-    "checked_at_eastern": "2026-11-04 6:02 PM EST",
+    "checked_at": "2026-11-05 12:07 AM EST",
+    "checked_at_eastern": "2026-11-05 12:07 AM EST",
     "inspection_status": "official pages and listing metadata inspected; audiovisual playback and captions unavailable",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-04T23:02:52Z",
+    "last_successful_page_inspection_at": "2026-11-05T05:07:32Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1378,7 +1384,7 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, video-library, remarks and releases pages were rechecked. Trump TV still linked A4gNgHfZ-v4, and the library exposed no November 4 dated item. Only page/listing metadata were accessible; playback and captions were unavailable. No qualifying new item located in the material reviewed. Fallback text was not treated as outage proof and the broadcast-review boundary remains unadvanced.",
+    "summary": "Official Trump TV, live, video-library, remarks and releases pages were rechecked. Trump TV still linked A4gNgHfZ-v4. The library newly exposed a November 4, 41:51 remarks listing and stable embed ID LHT-znOQXkA; only title, date, duration and link metadata were retrieved. Playback and captions were unavailable. No qualifying new item located in the material reviewed. Fallback text was not treated as outage proof and the broadcast-review boundary remains unadvanced.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1412,7 +1418,8 @@
       "November 3 1:13 PM EST: the same stream ID and November 2 listings were rechecked as page/listing metadata only. Playback and captions remained unavailable; no footage was claimed watched, no outage was inferred and no complete broadcast boundary was advanced.",
       "November 3 evening: listing/detail dates conflicted for two short clips, and all three November 2 items were metadata-only. Playback, audio and captions were unavailable; no outage or full-coverage claim and no verified channel-resource finding.",
       "November 4 midnight check: four November 3 listings were metadata-only. Playback, audio and captions were not retrieved; no outage or complete-coverage claim was made, and no verified channel cost, contract, staffing, editorial-control, distribution or press-access finding was located.",
-      "November 4 evening: the stable stream and November 3 library metadata were rechecked; playback, audio and captions were unavailable. No outage or complete-coverage claim was made, and no verified channel cost, contract, staffing, editorial-control, distribution or press-access finding was located."
+      "November 4 evening: the stable stream and November 3 library metadata were rechecked; playback, audio and captions were unavailable. No outage or complete-coverage claim was made, and no verified channel cost, contract, staffing, editorial-control, distribution or press-access finding was located.",
+      "November 5 midnight check: the November 4 remarks listing and embed ID LHT-znOQXkA were metadata-only; playback, audio and captions were not retrieved. No outage or complete-coverage claim was made, and no verified channel cost, contract, staffing, editorial-control, distribution or press-access finding was located."
     ],
     "items": [
       {
@@ -2575,6 +2582,67 @@
         "observed_at_eastern": "2026-11-04 6:02 PM EST",
         "format": "supplementary official releases index",
         "inspection": "November 4 promotional release inspected as text; it did not independently establish a qualifying action or measured result."
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-05T05:07:32Z",
+        "observed_at_eastern": "2026-11-05 12:07 AM EST",
+        "format": "official page metadata; audiovisual content unreviewed",
+        "inspection": "Same 24/7 official stream link inspected; playback and captions were not retrieved and fallback text was not treated as outage proof.",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ]
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-05T05:07:32Z",
+        "observed_at_eastern": "2026-11-05 12:07 AM EST",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "Current official links and fallback text inspected; no footage, audio or captions were retrieved and no outage was inferred."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-delivers-remarks-nov-4-2026/",
+        "video_ids": [
+          "LHT-znOQXkA"
+        ],
+        "posted_date": "2026-11-04",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-05T05:07:32Z",
+        "observed_at_eastern": "2026-11-05 12:07 AM EST",
+        "format": "official dated-library and detail-page metadata; replay or edited status unknown",
+        "inspection": "Title, displayed date, 41:51 duration and stable embed ID inspected. Playback and captions were unavailable; no claim is made that the recording was watched."
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "video_ids": [],
+        "posted_date": "2026-09-28",
+        "original_event_date": "2026-09-28",
+        "broadcast_time": null,
+        "observed_at": "2026-11-05T05:07:32Z",
+        "observed_at_eastern": "2026-11-05 12:07 AM EST",
+        "format": "supplementary remarks index; not assumed complete",
+        "inspection": "Index inspected; no corresponding November 4 transcript was exposed, and the index was not treated as a complete transcript feed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "video_ids": [],
+        "posted_date": "2026-11-04",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-05T05:07:32Z",
+        "observed_at_eastern": "2026-11-05 12:07 AM EST",
+        "format": "supplementary official releases index",
+        "inspection": "Recent releases inspected as text leads; no separate qualifying Trump TV action, cost, contract or control finding was located."
       }
     ],
     "checked_at_utc": "2026-11-04T23:02:52Z",
@@ -2770,30 +2838,30 @@
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 2,
-    "new_text_reviewed": 2,
-    "new_media_reviewed": 3,
+    "new_posts": 1,
+    "new_text_reviewed": 1,
+    "new_media_reviewed": 0,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-04T23:02:52.862092Z",
-    "checked_at_eastern": "2026-11-04 6:02:52 PM EST",
-    "latest_post_id": "117559346773956882",
-    "latest_post_at_eastern": "2026-11-04 12:27:54 PM EST",
+    "checked_at_utc": "2026-11-05T05:07:32.097498Z",
+    "checked_at_eastern": "2026-11-05 12:07:32 AM EST",
+    "latest_post_id": "117560785494219046",
+    "latest_post_at_eastern": "2026-11-04 6:33:47 PM EST",
     "counts": {
       "text_status": {
         "not_recorded": 154,
-        "reviewed": 1653,
+        "reviewed": 1654,
         "pending": 972
       },
       "media_status": {
-        "not_applicable": 1562,
+        "not_applicable": 1563,
         "not_recorded": 19,
         "unavailable": 295,
         "pending": 538,
         "reviewed": 365
       }
     },
-    "note": "Two post IDs were absent from the prior validated snapshot. Both texts and all three attached newspaper images were reviewed; they did not independently establish another qualifying federal action. The newest post was published November 4 at 12:27:54 PM EST (17:27:54 UTC), preserving the local publication date. A final updater refresh at 6:02:52 PM EST found no newer post."
+    "note": "One text-only post was newer than the prior validated snapshot. It supported the pending Sunshine Protection Act and did not independently establish a qualifying federal action. The newest post was published November 4 at 6:33:47 PM EST (23:33:47 UTC), preserving the local publication date. The final updater refresh at 12:07:32 AM EST found no newer post."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -2805,9 +2873,9 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-04 6:02 PM EST",
-    "checked_at_utc": "2026-11-04T23:02:52Z",
-    "summary": "Four registered primary project pages were rechecked. Trump Archive advanced to 15,990 total items, 13,292 Truth Social posts and 2,038 speeches/transcripts, with November at 369 items (342 Truth Social, 25 speeches/transcripts and 2 White House documents). UndoTrump and IPTP were unchanged; Record47 counters did not reliably render, so prior verified measurements were preserved. Distinct units were preserved and zero external items were imported by default.",
+    "checked_at": "2026-11-05 12:07 AM EST",
+    "checked_at_utc": "2026-11-05T05:07:32Z",
+    "summary": "Four registered primary project pages were rechecked. Trump Archive advanced to 15,997 total items, 13,293 Truth Social posts and 2,044 speeches/transcripts, with November at 376 items (343 Truth Social, 31 speeches/transcripts and 2 White House documents). UndoTrump remained 1,264/995/44/42 and IPTP remained 1,826. Record47 counters did not reliably render, so prior verified measurements were preserved. Distinct units were preserved and zero external items were imported by default.",
     "updated_archives": [
       "trump_archive"
     ],
@@ -2818,7 +2886,7 @@
     ]
   },
   "editorial_snapshot": null,
-  "editorial_notes": "One new court-ruling record passed the threshold. The archive was not padded to meet the four-item research target. No legacy entry changed; the objective remediation queue remains visible.",
+  "editorial_notes": "Three qualifying CMS final-rule records passed the threshold as disclosed pre-boundary same-day backfills. The archive was not padded to meet the four-item research target. No legacy entry changed; the objective remediation queue remains visible.",
   "retained_stages": [],
   "publication_transport_attempts": []
 }
