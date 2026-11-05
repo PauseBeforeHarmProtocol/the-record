@@ -1,0 +1,222 @@
+# The Record — Maintenance Run Receipt
+
+- Release: 10.221.1
+- Checked: 2026-11-05 6:02 AM EST
+- Editorial window: 2026-11-05T05:07:32Z through 2026-11-05T11:02:48Z
+- Current layer: 490 records backed by 1637 source-ledger records
+- Full archive runtime: 5,217 records; 8,338 source references; 6,935 distinct stored URLs
+- Legacy custody: 4,742 stored rows; 4,731 active; 11 duplicate tombstones excluded from totals
+- Truth Social source: 37,952 posts; 1,000 retained in the validated local fallback
+- Newest Truth Social post: 2026-11-05 4:52:38 AM EST
+- Truth Social fallback checked: 2026-11-05 6:02:48 AM EST
+
+## This research run versus retained PR candidates
+
+- Exact source window: 2026-11-05T05:07:32Z through 2026-11-05T11:02:48Z (America/Indiana/Indianapolis)
+- Added in this run: none
+- Materially refreshed in this run: none
+- Retained unchanged from earlier PR stages: none
+- Added/refreshed totals below enumerate the complete PR diff against public main, not additional government actions or fresh reviews in this run.
+
+Editorial no-op: no qualifying canonical national item completed review; one newer media-only Truth Social post was retained and visually reviewed. Full 10.221.0 canonical data and evidence packs are reused byte-for-byte. No current entry, source ledger, legacy record, federation record, correction or IN-6 fact changed.
+
+- Added: 0 national records
+- Materially refreshed: 0 national records
+
+## Added or materially refreshed records
+
+
+## Withheld candidates
+
+- Media-only Truth Social repost of Joel Pollak commentary: Visually reviewed political commentary did not establish a new federal action or independently verified outcome.
+- White House Wire farm-relief and election-charge headlines: The underlying USDA and DOJ actions were dated October 19 and resurfaced without a new lifecycle stage.
+- Scheduled New York hush-money appeal hearing: A scheduled hearing in Trump's personal state criminal case produced no ruling by cutoff and is not an administration action.
+- Scheduled Memorial Circle arch approval vote: The proposal and litigation are already represented in the stable arch record; no vote or new operative approval was located by cutoff.
+- November 5 Trump TV source check: Official pages exposed no new or changed accessible recording after the prior check; no qualifying new item located in the material reviewed.
+- Post-election political results and ballroom remarks: Election results, partisan reaction and a repeated project presentation did not establish a new signed, funded, implemented or adjudicated federal action.
+
+## Truth Social inspection
+
+- New retained posts: 1
+- Current retained inspection states: {"media_status": {"not_applicable": 1563, "not_recorded": 19, "pending": 538, "reviewed": 366, "unavailable": 295}, "text_status": {"not_recorded": 154, "pending": 972, "reviewed": 1655}}
+
+One newer media-only post was acquired and its still image visually reviewed. It republishes political commentary and did not independently establish a qualifying federal action. The newest post was published November 5 at 4:52:38 AM EST (09:52:38 UTC), preserving the local publication date. The final updater refresh at 2026-11-05 6:02:48 AM EST found no newer post.
+
+## Trump TV monitoring
+
+- Checked: 2026-11-05 6:02 AM EST
+- Inspection state: official pages and listing metadata inspected; no new or changed accessible recording; audiovisual playback and captions unavailable
+- Current official stream link: https://www.youtube.com/embed/A4gNgHfZ-v4
+- Last successful complete broadcast review: none; coverage boundary unknown
+
+Official Trump TV, live, video-library, remarks and releases pages were rechecked. Trump TV still linked A4gNgHfZ-v4 and the dated library still led with the November 4, 41:51 remarks item LHT-znOQXkA. No newer or changed accessible recording, caption or transcript was exposed. No qualifying new item located in the material reviewed. Fallback text was not treated as outage proof and the broadcast-review boundary remains unadvanced.
+
+Sources and material actually inspected:
+
+- https://www.whitehouse.gov/trumptv/
+- https://www.whitehouse.gov/live/
+- https://www.whitehouse.gov/videos/
+- https://www.whitehouse.gov/remarks/
+- https://www.whitehouse.gov/releases/
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/trumptv/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/live/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/videos/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/remarks/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/releases/)
+- Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Retained earlier inspection (2026-10-28T22:02:29Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Prior direct-detail check (October 28, 6:02 PM EDT): Official page title/date inspected. YouTube embed fetch throttled; no audiovisual or caption inspection and no verified posting/broadcast time. This run rechecked the repeated library listing only; original observation time retained. (https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-arrival-at-joint-base-andrews-oct-28-2026/)
+- Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Retained earlier inspection (2026-10-28T22:02:29Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Prior direct-detail check (October 28, 6:02 PM EDT): Official page title/date inspected. YouTube embed fetch throttled; no audiovisual or caption inspection and no verified posting/broadcast time. This run rechecked the repeated library listing only; original observation time retained. (https://www.whitehouse.gov/videos/lego-music-video/)
+- Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Retained earlier inspection (2026-10-29T10:06:59Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Detail metadata rechecked, same October 28 title/date and library duration; embed throttled. Original event and exact posting/broadcast time unknown, no content claim promoted. (https://www.whitehouse.gov/videos/france-then-vs-now/)
+- Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Retained earlier inspection (2026-10-30T10:06:49Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Rechecked official page/detail metadata only; repeated listing, no newly reviewed footage or captions. Original dates and unknown broadcast time retained. (https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-arrival-at-joint-base-andrews-oct-29-2026/)
+- Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Retained earlier inspection (2026-10-30T10:06:49Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Rechecked official page/detail metadata only; repeated listing, no newly reviewed footage or captions. Original dates and unknown broadcast time retained. (https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-joint-base-andrews-oct-29-2026/)
+- Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Retained earlier inspection (2026-10-30T04:06:20Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Official detail title/date and linked video ID inspected; YouTube embed throttled. No audio/video or captions reviewed, exact posting/broadcast time unknown. (https://www.whitehouse.gov/videos/the-great-american-comeback-%F0%9F%87%BA%F0%9F%87%B8/)
+- Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Retained earlier inspection (2026-10-30T04:06:20Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Official detail title/date and linked video ID inspected; YouTube embed throttled. No audio/video or captions reviewed, exact posting/broadcast time unknown. (https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-joint-base-andrews-oct-27-2026/)
+- Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Retained earlier inspection (2026-10-30T10:06:49Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Intent-to-use application50128823 pending examination; private applicant DTTM Operations. No original application/consent, government license/payment or registration outcome reviewed; queued, not canonically published. (https://tsdr.uspto.gov/statusview/sn50128823)
+- Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Direct repeated detail and library metadata rechecked: libraryOct30/detailOct29 conflict unchanged. Original event date, exact posting/broadcast time and live/replay state unknown. Linked embed inspected but JavaScript-only, no footage/audio/captions reviewed. (https://www.whitehouse.gov/videos/president-trump-and-the-first-lady-host-halloween-at-the-white-house/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/trumptv/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/live/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/videos/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/remarks/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/releases/)
+- Retained earlier inspection, not a new direct-detail check in this run. Official page metadata/title/date/linked video ID inspected where present; original event/time and live/replay state unknown. No audiovisual or caption review; a replay or new upload is not a new government action. (https://www.whitehouse.gov/videos/president-trump-meets-with-artemis-iii-crew-at-the-white-house/)
+- Retained earlier inspection, not a new direct-detail check in this run. Official page metadata/title/date/linked video ID inspected where present; original event/time and live/replay state unknown. No audiovisual or caption review; a replay or new upload is not a new government action. (https://www.whitehouse.gov/videos/secretary-of-the-treasury-scott-bessent-holds-a-fraud-task-force-press-conference-in-st-cloud-mn/)
+- Retained earlier inspection, not a new direct-detail check in this run. Official page metadata/title/date/linked video ID inspected where present; original event/time and live/replay state unknown. No audiovisual or caption review; a replay or new upload is not a new government action. (https://www.whitehouse.gov/videos/president-trump-delivers-remarks-oct-30-2026/)
+- Retained earlier inspection, not a new direct-detail check in this run. Official page metadata/title/date/linked video ID inspected where present; original event/time and live/replay state unknown. No audiovisual or caption review; a replay or new upload is not a new government action. (https://www.whitehouse.gov/videos/president-trump-and-the-first-lady-host-halloween-at-the-white-house/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/trumptv/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/live/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/videos/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/remarks/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/releases/)
+- Page/index metadata inspected; Hello America indexOct31/detailOct30 conflict. No audiovisual review; unknown event/broadcast times retained. (https://www.whitehouse.gov/videos/hello-america/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/trumptv/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/live/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/videos/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/remarks/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/releases/)
+- Evening metadata recheck; same stream and Hello America listing. Conflicting index/detail dates preserved; no footage/audio/captions inspected. Current remarks/releases not assumed complete transcript feeds. (https://www.whitehouse.gov/videos/hello-america/)
+- Official listing/detail/link metadata only; index datedOctober31, original event and exact posting time unknown. Linked embed throttled; no audiovisual inspection. (https://www.whitehouse.gov/videos/halloween-at-the-white-house-2026/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/trumptv/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/live/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/videos/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/remarks/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/releases/)
+- Morning page/index/detail metadata recheck only. Halloween detailOct31; Hello America detailOct30/indexOct31. Unknown original event and exact posting times retained; no audiovisual review. (https://www.whitehouse.gov/videos/halloween-at-the-white-house-2026/)
+- Morning page/index/detail metadata recheck only. Halloween detailOct31; Hello America detailOct30/indexOct31. Unknown original event and exact posting times retained; no audiovisual review. (https://www.whitehouse.gov/videos/hello-america/)
+- New official detail and library metadata inspected; indexNov1/detailOct31 conflict, embed throttled. No audiovisual or caption review; original event date from explicit title, exact time unknown. (https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-at-a-halloween-party-at-mar-a-lago-oct-31-2026/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/trumptv/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/live/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/videos/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/remarks/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/releases/)
+- Officialpage/index/detail metadata only; same listings, no audiovisual review. Earlier evidence and dateconflicts retained. (https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-at-a-halloween-party-at-mar-a-lago-oct-31-2026/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/trumptv/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/live/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/videos/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/remarks/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/releases/)
+- Official page/index/detail metadata only; same listings and unresolved date conflict. No audiovisual or caption review. (https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-at-a-halloween-party-at-mar-a-lago-oct-31-2026/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/trumptv/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/live/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/videos/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/remarks/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/releases/)
+- Official title/detail/link metadata inspected. Linked embed was throttled; no audiovisual or caption review and no policy claim extracted. (https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-arrival-at-dubuque-ia-nov-1-2026/)
+- Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/trumptv/)
+- Evening metadata recheck. Same stream and November 1 library lead; no November 2 listing. No footage, audio or captions reviewed, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/trumptv/)
+- Evening metadata recheck. Same stream and November 1 library lead; no November 2 listing. No footage, audio or captions reviewed, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/live/)
+- Evening metadata recheck. Same stream and November 1 library lead; no November 2 listing. No footage, audio or captions reviewed, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/videos/)
+- Evening metadata recheck. Same stream and November 1 library lead; no November 2 listing. No footage, audio or captions reviewed, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/remarks/)
+- Evening metadata recheck. Same stream and November 1 library lead; no November 2 listing. No footage, audio or captions reviewed, no outage inference, and no complete transcript-feed assumption. (https://www.whitehouse.gov/releases/)
+- Evening direct page/index metadata recheck. A4gNgHfZ-v4 remained linked and the video library still led with November 1; no post-boundary dated listing was located. No footage, audio or captions were reviewed, no outage was inferred, and no complete transcript-feed assumption was made. (https://www.whitehouse.gov/trumptv/)
+- Evening direct page/index metadata recheck. A4gNgHfZ-v4 remained linked and the video library still led with November 1; no post-boundary dated listing was located. No footage, audio or captions were reviewed, no outage was inferred, and no complete transcript-feed assumption was made. (https://www.whitehouse.gov/live/)
+- Evening direct page/index metadata recheck. A4gNgHfZ-v4 remained linked and the video library still led with November 1; no post-boundary dated listing was located. No footage, audio or captions were reviewed, no outage was inferred, and no complete transcript-feed assumption was made. (https://www.whitehouse.gov/videos/)
+- Evening direct page/index metadata recheck. A4gNgHfZ-v4 remained linked and the video library still led with November 1; no post-boundary dated listing was located. No footage, audio or captions were reviewed, no outage was inferred, and no complete transcript-feed assumption was made. (https://www.whitehouse.gov/remarks/)
+- Evening direct page/index metadata recheck. A4gNgHfZ-v4 remained linked and the video library still led with November 1; no post-boundary dated listing was located. No footage, audio or captions were reviewed, no outage was inferred, and no complete transcript-feed assumption was made. (https://www.whitehouse.gov/releases/)
+- Same official stream ID remained linked. Fallback text observed but not treated as outage proof; no footage, audio or captions reviewed. (https://www.whitehouse.gov/trumptv/)
+- Title, date, duration, stable White House URL and YouTube ID inspected. Embed throttled; no audiovisual or caption review. Independent descriptions identify Reflecting Pool/campaign remarks and no qualifying new action was located in the material reviewed. (https://www.whitehouse.gov/videos/president-trump-delivers-remarks-nov-2-2026/)
+- Metadata/link only; embed throttled and no audiovisual or caption review. Promotional title did not independently establish a policy action or measured result. (https://www.whitehouse.gov/videos/president-trumps-second-term-has-achieved-more-than-any-administration-in-american-history/)
+- Metadata/link only; embed throttled and no audiovisual or caption review. Promotional title did not independently establish a policy action or measured result. (https://www.whitehouse.gov/videos/fighting-harder-than-ever-for-the-american-people-%F0%9F%A5%8A%F0%9F%87%BA%F0%9F%87%B8the-hardest-working-president-in-history/)
+- Stable stream link inspected. No footage, audio or captions were retrieved; no outage inferred and no complete broadcast coverage claimed. (https://www.whitehouse.gov/trumptv/)
+- Live hub inspected for current official links. No footage, audio or captions were retrieved; no outage inferred. (https://www.whitehouse.gov/live/)
+- Titles, displayed dates, durations and video IDs inspected. Library/detail dates conflicted for the two short clips. Embeds and captions were unavailable, so no audiovisual-content claim was promoted. (https://www.whitehouse.gov/videos/)
+- Index inspected; newest complete listing remained September 28. It was not treated as a complete transcript feed. (https://www.whitehouse.gov/remarks/)
+- Release listings inspected for corroborating statements; future-event announcements were not treated as completed actions. (https://www.whitehouse.gov/releases/)
+- Stable official stream link inspected. Fallback text was not treated as outage proof; no footage, audio or captions were retrieved. (https://www.whitehouse.gov/trumptv/)
+- Current official links inspected; no footage, audio or captions were retrieved and no outage was inferred. (https://www.whitehouse.gov/live/)
+- Titles, displayed dates, durations, stable White House URLs and video IDs inspected. Playback/captions unavailable; one drug-price listing/detail date conflict retained. (https://www.whitehouse.gov/videos/)
+- Index inspected for supplementary statements; it was not treated as a complete transcript feed. (https://www.whitehouse.gov/remarks/)
+- Release listings inspected for corroborating statements; promotional claims were not treated as measured outcomes. (https://www.whitehouse.gov/releases/)
+- Title/date/link metadata only; playback and captions unavailable. Promotional title did not independently establish a policy action or measured result. (https://www.whitehouse.gov/videos/a-pace-that-has-yet-to-slow-an-america-that-never-surrenders/)
+- Title/date/link metadata only; playback and captions unavailable. No qualifying new item located in the material reviewed. (https://www.whitehouse.gov/videos/its-go-time-patriots/)
+- Title/date/link metadata only; listing/detail date conflict retained. Playback and captions unavailable, so the superlative claim was not treated as independently verified. (https://www.whitehouse.gov/videos/we-had-the-highest-drug-prices-in-the-world-and-now-we-have-the-lowest-drug-prices-in-the-world/)
+- Title/date/link metadata only; playback and captions unavailable. A newly uploaded short clip was not treated as a new government action. (https://www.whitehouse.gov/videos/president-trump-gives-remarks-at-the-lincoln-memorial-reflecting-pool/)
+- Stable official stream link inspected. Fallback text was not treated as outage proof; no footage, audio or captions were retrieved. (https://www.whitehouse.gov/trumptv/)
+- Current official links inspected; no footage, audio or captions were retrieved and no outage was inferred. (https://www.whitehouse.gov/live/)
+- Newest displayed items remained dated November 3. Titles, dates and stable links were inspected; playback and captions were unavailable. (https://www.whitehouse.gov/videos/)
+- Index inspected; it was not treated as a complete transcript feed. (https://www.whitehouse.gov/remarks/)
+- November 4 promotional release inspected as text; it did not independently establish a qualifying action or measured result. (https://www.whitehouse.gov/releases/)
+- Same 24/7 official stream link inspected; playback and captions were not retrieved and fallback text was not treated as outage proof. (https://www.whitehouse.gov/trumptv/)
+- Current official links and fallback text inspected; no footage, audio or captions were retrieved and no outage was inferred. (https://www.whitehouse.gov/live/)
+- Title, displayed date, 41:51 duration and stable embed ID inspected. Playback and captions were unavailable; no claim is made that the recording was watched. (https://www.whitehouse.gov/videos/president-trump-delivers-remarks-nov-4-2026/)
+- Index inspected; no corresponding November 4 transcript was exposed, and the index was not treated as a complete transcript feed. (https://www.whitehouse.gov/remarks/)
+- Recent releases inspected as text leads; no separate qualifying Trump TV action, cost, contract or control finding was located. (https://www.whitehouse.gov/releases/)
+- Same official 24/7 stream link; playback and captions were not retrieved and fallback text was not treated as outage proof. (https://www.whitehouse.gov/trumptv/)
+- Current official links and fallback text inspected; no footage, audio or captions were retrieved and no outage was inferred. (https://www.whitehouse.gov/live/)
+- Repeated title, displayed date, 41:51 duration and stable embed ID; no newer listing, playback or captions were retrieved. (https://www.whitehouse.gov/videos/president-trump-delivers-remarks-nov-4-2026/)
+- Index inspected; no corresponding November 5 transcript was exposed and the index was not treated as a complete transcript feed. (https://www.whitehouse.gov/remarks/)
+- Recent releases inspected as text leads; no separate qualifying Trump TV action, cost, contract or control finding was located. (https://www.whitehouse.gov/releases/)
+
+Access gaps and recheck requirements:
+
+- Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.
+- Current live/replay state was not independently verified; fallback error text alone does not establish an outage.
+- No complete transcript feed, channel budget, contract, staffing record or editorial-control record was available in the inspected official pages.
+- Lego library date October 28 conflicts with detail-page October 27; event date and exact publication time remain unknown.
+- New France clip and linked private campaign stream remain audiovisually unreviewed; no costs/contracts, staff, editorial-control or distribution finding established.
+- October 29 noon France detail retrieval failed; prior successful direct inspection time retained. Four new private campaign videos are separate from Trump TV and remain pending.
+- October 29 evening: current stream watch fetch throttled, Halloween embed throttled and France direct-detail retrieval failed. Unknown dates/status retained; no channel budget/contract/staffing/distribution record established in targeted search.
+- October 30 midnight: new four linked embeds throttled; stream remains JavaScript-only. France detail retrieved as metadata; audiovisual gap remains. No channel cost/contract/staffing/distribution finding established.
+- October30 morning: four recent embeds unavailable; no complete transcript, verified channel cost/contract/staffing/distribution or trademark licensing record retrieved. September24 trademark application is a retrospective lead, not a new government expenditure.
+- October30 midday: search service unavailable; direct official pages accessible. Halloween libraryOct30/detailOct29 conflict, no playable footage/captions. No verified channel costs, licensing, staffing or distribution finding; do not infer outage from fallback text.
+- October30 evening: unchanged official listings, same unresolved Halloween dates; stream/Halloween embeds JavaScript-only, not outage proof. No verified new costs, contracts, staffing, editorial-control, licensing or distribution finding. Remarks is supplementary, not a complete transcript feed.
+- Midnight check: repeated listings; original Halloween event/time/live-replay status unknown, stream JavaScript-only. No new verified channel costs/contracts/staffing/control/distribution finding. Older detail inspection timestamps are retained history, not new inspections.
+- October31 morning: new Artemis/St.Cloud/remarks listings inspected only as metadata. Linked streams/clips remain unavailable or JavaScript-only, not proof of outage. Retain all prior unreviewed-content and date-conflict gaps and recheck original statements/transcripts and channel resource records.
+- October31 noon: Hello America date conflict and throttled embed; prior recordings and captions remain unreviewed. Recheck original statements and channel-resource records without advancing complete broadcast coverage.
+- October31 evening: stream JavaScript-only and Hello America embed throttled; conflicting displayed dates unresolved. Prior clips/captions, original event times and complete broadcast boundary remain unreviewed. Recheck gaps without claiming outage or full coverage.
+- November1 midnight: new55-second Halloween embed throttled; prior playback/caption/date gaps remain. No newly verified channel-cost/contract/staffing/control/distribution finding; no complete broadcast boundary advanced.
+- November1 morning: repeated metadata, same inaccessible embeds. Prior audiovisual/date/resource gaps retained. No full coverage or outage claim; private Truth+, campaign broadcasts and separate taxpayer ads not assigned to this White House channel.
+- November1 noon: new gaggle3oucO26En9g unavailable audiovisually; date conflict and earlier content gaps retained. Stream fallback not outage proof. No verified new channel costs, staffing, editorial-control or distribution evidence. Supplementary remarks not a complete transcript feed.
+- November1afternoon: repeatedmetadata/IDs/dateconflict, AV/captions unreviewed; no channel-budget/staffing/distribution finding. Supplementaryremarks not complete transcript feed.
+- November1 evening: same stream and gaggle metadata; footage/audio/captions inaccessible, date conflict unresolved, and no verified channel cost, contract, staffing, editorial-control or distribution record. Complete broadcast coverage remains unadvanced.
+- November2 midnight: Dubuque gaggle zgHIpU0pAAk and A4gNgHfZ-v4 stream were metadata-only/JavaScript-throttled; no footage, audio or captions reviewed. No verified new channel costs, contracts, staffing, editorial-control or distribution record; complete broadcast coverage remains unadvanced.
+- November2 morning: the official Trump TV, live, videos, remarks and releases indexes were rechecked. No newer dated library item or transcript was exposed; audiovisual and channel-resource gaps remain. The RSBN campaign-rally link was kept separate from Trump TV.
+- November2 noon: A4gNgHfZ-v4 remained linked and the dated library exposed no post-boundary listing. Stream playback/captions remained JavaScript-only or unavailable; fallback text was not outage proof. No verified new channel costs, contracts, staffing, editorial-control, distribution or press-access finding; complete broadcast coverage remains unadvanced.
+- November2 evening: same A4gNgHfZ-v4 stream and November1 library lead; no November2 listing. Playback, audio and captions remained unavailable; no outage or complete-coverage claim and no verified channel cost, contract, staffing, editorial-control, distribution or press-access finding.
+- November2 7:11 PM EST: A4gNgHfZ-v4 remained linked and the video library still led with November1 material. Playback/audio/captions were not retrieved; fallback text was not outage proof. No verified new channel costs, contracts, staffing, editorial control, distribution or press-access finding; complete broadcast coverage remains unadvanced.
+- November 2 recordings were available only as title/date/duration/link metadata in this review; embeds were throttled and captions/transcripts were not retrieved.
+- The page's fallback text does not prove that Trump TV or White House Live was offline.
+- November 3 morning: same Trump TV stream and November 2 library listings; live hub linked icuRZ2LXk1E. Playback/captions unavailable, fallback text not outage proof, and no verified new channel cost, contract, staffing, editorial-control, distribution or press-access finding.
+- November 3 noon: three November 2 video listings were inspected as metadata only. Short-clip listing/detail dates conflicted; embeds and captions were inaccessible. No footage was claimed watched, no outage inferred, no channel-resource finding established and complete broadcast coverage remains unadvanced.
+- November 3 1:13 PM EST: the same stream ID and November 2 listings were rechecked as page/listing metadata only. Playback and captions remained unavailable; no footage was claimed watched, no outage was inferred and no complete broadcast boundary was advanced.
+- November 3 evening: listing/detail dates conflicted for two short clips, and all three November 2 items were metadata-only. Playback, audio and captions were unavailable; no outage or full-coverage claim and no verified channel-resource finding.
+- November 4 midnight check: four November 3 listings were metadata-only. Playback, audio and captions were not retrieved; no outage or complete-coverage claim was made, and no verified channel cost, contract, staffing, editorial-control, distribution or press-access finding was located.
+- November 4 evening: the stable stream and November 3 library metadata were rechecked; playback, audio and captions were unavailable. No outage or complete-coverage claim was made, and no verified channel cost, contract, staffing, editorial-control, distribution or press-access finding was located.
+- November 5 midnight check: the November 4 remarks listing and embed ID LHT-znOQXkA were metadata-only; playback, audio and captions were not retrieved. No outage or complete-coverage claim was made, and no verified channel cost, contract, staffing, editorial-control, distribution or press-access finding was located.
+- November 5 6:02 AM EST check: the official stream and November 4 remarks listing repeated. Playback, audio and captions were not retrieved; no outage or complete-coverage claim was made, and no verified new channel cost, contract, staffing, editorial-control, distribution or press-access finding was located.
+
+## Verification
+
+Current front-door pages, canonical datasets, archive bridge, individual evidence packs, versioned aggregate packs, source ledgers, and checksums are generated deterministically. Earlier date-only base aggregates remain byte-frozen and separately addressable; every new same-day aggregate is version-keyed. Candidate publication requires the repository validator, GitHub Actions and acceptance from the publication authority. An already-recorded explicit release instruction satisfies that acceptance for its stated scope; validation alone does not.
+
+## Review traceability
+
+- Current entries with content-bound claim-level receipts: 368 / 490
+- Prior review-state labels are distinct from claim-level review receipt coverage.
+- Stored post inspection-state records: 2781. Acquisition is not inspection.
+- Per-post text/media states: data/truth_social_reviews.json; deferred follow-ups: data/research_queue.json.
+- Actual acceptance results are recorded by scripts/accept_release.py and retained as a CI artifact; this generated receipt is not a test attestation.
+
+## Reused editorial snapshot
+
+Editorial snapshot v10.221.0 is byte-preserved. Its embedded release metadata and metrics remain historical; only this feed receipt is current.
+- Current feed data SHA-256: 6e1edaca00834588677f45cb3cc0eca2a94b8135ba533655348c559f551de0ae
+- Current feed metadata SHA-256: 268789e4a650ef280ab0b53b90a59049d4bc506b4f1b612c708378aa5a75d4c1
