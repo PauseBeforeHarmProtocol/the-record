@@ -10261,6 +10261,30 @@
       "provenance_path": "data/editorial_change_notes/10.225.0.json",
       "provenance_sha256": "5f1aa2fc9c6f04892c064664a585d3086f1e04c263be952f1c7a333db2111454",
       "note": "Preliminary monthly estimates remain subject to revision; the administration's policy-causation claim is preserved as response, not established fact."
+    },
+    {
+      "change_id": "10.226.0:NAT-2026-11-06-002:added",
+      "entry_id": "NAT-2026-11-06-002",
+      "as_of_utc": "2026-11-06T23:10:10Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.226.0",
+      "summary": "Added the formally announced chief-of-staff transition with its future effective date, administration rationale and unresolved implementation and policy consequences.",
+      "provenance_path": "data/editorial_change_notes/10.226.0.json",
+      "provenance_sha256": "302dc8e61c70bcd7f24518f7bd3ff371ee81040d5c373cd6bd6cb3f1bb19f4d4",
+      "note": "Whether the transition occurs on November 9 and what documented management, policy or oversight consequences follow."
+    },
+    {
+      "change_id": "10.226.0:NAT-2026-11-06-003:added",
+      "entry_id": "NAT-2026-11-06-003",
+      "as_of_utc": "2026-11-06T23:10:10Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.226.0",
+      "summary": "Added the implemented Canadian financial designations and separate future-effective MEXC transfer order while keeping allegations and measured effectiveness distinct.",
+      "provenance_path": "data/editorial_change_notes/10.226.0.json",
+      "provenance_sha256": "302dc8e61c70bcd7f24518f7bd3ff371ee81040d5c373cd6bd6cb3f1bb19f4d4",
+      "note": "Federal Register publication and effective date of the MEXC order; blocked-property, rejected-transfer, enforcement, litigation and target-response evidence."
     }
   ],
   "reviews": [
@@ -143446,6 +143470,326 @@
       ],
       "unresolved_questions": [
         "How later revisions change the October estimate and whether hiring breadth, real wages, participation and manufacturing employment show durable improvement."
+      ]
+    },
+    {
+      "review_id": "10.226.0:NAT-2026-11-06-002:d360a46ee82f",
+      "entry_id": "NAT-2026-11-06-002",
+      "content_sha256": "d360a46ee82f7f3dfeaf747c6e50c847a2d3f4f26ed55f2675ba8f1a5f3d3713",
+      "reviewed_at": "2026-11-06T23:10:10Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "3ec2d7b3ac15240b906c5c0488db37b49974af70af70fd1c4d2cf882770b6ff4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_miller_chief_staff_nov6",
+              "locator": "Inspected source: Trump Truth Social — Stephen Miller chief-of-staff announcement.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "75f1939338e829c53207785d5c68356aed4871089cd7483b7ea4bee3b4b3bcb7",
+              "origin_group": "Donald J. Trump on Truth Social",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "whitehouse_miller_chief_staff_nov6",
+              "locator": "Inspected source: White House — President Trump names Stephen Miller as 33rd White House Chief of Staff.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "a66c8371fa64c4631e31b6b4eeed5780cdc0a034f66fdcde739ca639ca84654e",
+              "origin_group": "White House",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_miller_chief_staff_nov6",
+              "locator": "Inspected source: AP — Stephen Miller replaces Susie Wiles as Trump's White House chief of staff.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "6dbfa16fab61f04e7e7109011de9846948f570b5abe9f8e5b59d9174450a8c8b",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_miller_chief_staff_nov6",
+              "locator": "Inspected source: Reuters — Trump makes Stephen Miller his chief of staff.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "ed9152038ff3fa2d1b65f0c374c85a472d0450f2998bf37940711a06f22df435",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "bf46dbde177caedbb0b26c49441ff63c37e06d43640519a9f9b2ca5f88c996d9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_miller_chief_staff_nov6",
+              "locator": "Inspected source: Trump Truth Social — Stephen Miller chief-of-staff announcement.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "75f1939338e829c53207785d5c68356aed4871089cd7483b7ea4bee3b4b3bcb7",
+              "origin_group": "Donald J. Trump on Truth Social",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_miller_chief_staff_nov6",
+              "locator": "Inspected source: AP — Stephen Miller replaces Susie Wiles as Trump's White House chief of staff.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "6dbfa16fab61f04e7e7109011de9846948f570b5abe9f8e5b59d9174450a8c8b",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_miller_chief_staff_nov6",
+              "locator": "Inspected source: Reuters — Trump makes Stephen Miller his chief of staff.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "ed9152038ff3fa2d1b65f0c374c85a472d0450f2998bf37940711a06f22df435",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "00f91c3043103aefb79b47cb04fc62f6e64964aadf9702ff49151f9b06a7ee7b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "whitehouse_miller_chief_staff_nov6",
+              "locator": "Inspected source: White House — President Trump names Stephen Miller as 33rd White House Chief of Staff.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "a66c8371fa64c4631e31b6b4eeed5780cdc0a034f66fdcde739ca639ca84654e",
+              "origin_group": "White House",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "reuters_miller_chief_staff_nov6",
+              "locator": "Inspected source: Reuters — Trump makes Stephen Miller his chief of staff.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "ed9152038ff3fa2d1b65f0c374c85a472d0450f2998bf37940711a06f22df435",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "5fd1db7293601014a47c3e1670a43e7abe79f5176dd8a520c447d723bab7e344",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "truth_miller_chief_staff_nov6",
+              "locator": "Inspected source: Trump Truth Social — Stephen Miller chief-of-staff announcement.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "75f1939338e829c53207785d5c68356aed4871089cd7483b7ea4bee3b4b3bcb7",
+              "origin_group": "Donald J. Trump on Truth Social",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "whitehouse_miller_chief_staff_nov6",
+              "locator": "Inspected source: White House — President Trump names Stephen Miller as 33rd White House Chief of Staff.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "a66c8371fa64c4631e31b6b4eeed5780cdc0a034f66fdcde739ca639ca84654e",
+              "origin_group": "White House",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_miller_chief_staff_nov6",
+              "locator": "Inspected source: AP — Stephen Miller replaces Susie Wiles as Trump's White House chief of staff.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "6dbfa16fab61f04e7e7109011de9846948f570b5abe9f8e5b59d9174450a8c8b",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_miller_chief_staff_nov6",
+              "locator": "Inspected source: Reuters — Trump makes Stephen Miller his chief of staff.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "ed9152038ff3fa2d1b65f0c374c85a472d0450f2998bf37940711a06f22df435",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "5216ebfe359ef0ed4e255a310880a5ef217ec883e15cea201a6dddf0d24056f8",
+          "review_note": "Separately reviewed for bounded national consequence and the precise announced or implemented stage."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "3f77b53b121b478dd79537fd1eb2667391485bd16a8fb57ec09e195fe96c624a",
+          "review_note": "Separately reviewed to preserve the strongest administration explanation and observable tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "4efd19214cfe6068c22bedb5dcfc075b2e31cf72f89c58a936c5a767a9824ddb",
+          "review_note": "Separately reviewed to distinguish uncertainty from the evidence-supported conclusion without speculation."
+        }
+      ],
+      "unresolved_questions": [
+        "Whether the transition occurs on November 9 and what documented management, policy or oversight consequences follow."
+      ]
+    },
+    {
+      "review_id": "10.226.0:NAT-2026-11-06-003:92de3507376a",
+      "entry_id": "NAT-2026-11-06-003",
+      "content_sha256": "92de3507376a71a5088d3f2c0562059679d2f8adb9e2015cc3cb88af4f73dcbc",
+      "reviewed_at": "2026-11-06T23:10:10Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "9b29d060f7b7773e6c90d96f3487bc3bc964cebe134cd6d1ce0e1b2a58904088",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_canada_iran_sanctions_nov6",
+              "locator": "Inspected source: Treasury — sanctions eight Canadian money services businesses enabling Iran.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "8da11076c7e6edeeb72a59eeede4cb5d06daf52108c27c2aad317d8ef186cd18",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ofac_canada_iran_designations_nov6",
+              "locator": "Inspected source: OFAC — Iran-related designations, November 6, 2026.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "4592cf4f089e7656e3cbdf5e9d55437f3502687c6feb5d870cbf3de20a35286b",
+              "origin_group": "Office of Foreign Assets Control",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_canada_iran_sanctions_nov6",
+              "locator": "Inspected source: Reuters — U.S. Treasury sanctions Canadian money-services firms over Iran-related transactions.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "dc449f212fce247dbd40b279d6984ac561bbfad604d4e3a297b44f45a223aba4",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "152fa06b6dff607729e62d675adda3c2c147f7a971d99c7641e404f65e9288d6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_mexc_order_nov6",
+              "locator": "Inspected source: Treasury — Operation Economic Outcast severs MEXC Global's access to the U.S. financial system.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "9c1c724fad140cd8b990c0f452fad59e65e34394fc04a6e409a4936dc2288afc",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "fincen_mexc_order_nov6",
+              "locator": "Inspected source: FinCEN — Operation Economic Outcast severs MEXC Global's access to the U.S. financial system.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "dc470e409d93bba455c798085774f6c73311b162f2d85df9286ac645accfb527",
+              "origin_group": "Financial Crimes Enforcement Network",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_canada_iran_sanctions_nov6",
+              "locator": "Inspected source: Reuters — U.S. Treasury sanctions Canadian money-services firms over Iran-related transactions.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "dc449f212fce247dbd40b279d6984ac561bbfad604d4e3a297b44f45a223aba4",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "1b10c3cb3a98f1e20d8021640a64d9b8cfb7f01d9f1b9fff7d954aa00608f656",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_mexc_order_nov6",
+              "locator": "Inspected source: Treasury — Operation Economic Outcast severs MEXC Global's access to the U.S. financial system.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "9c1c724fad140cd8b990c0f452fad59e65e34394fc04a6e409a4936dc2288afc",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "treasury_canada_iran_sanctions_nov6",
+              "locator": "Inspected source: Treasury — sanctions eight Canadian money services businesses enabling Iran.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "8da11076c7e6edeeb72a59eeede4cb5d06daf52108c27c2aad317d8ef186cd18",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_canada_iran_sanctions_nov6",
+              "locator": "Inspected source: Reuters — U.S. Treasury sanctions Canadian money-services firms over Iran-related transactions.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "dc449f212fce247dbd40b279d6984ac561bbfad604d4e3a297b44f45a223aba4",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "0adbebb00749aff83718617c0e65c40d700bc167713a685a5bbcb50677b4e6d6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "treasury_mexc_order_nov6",
+              "locator": "Inspected source: Treasury — Operation Economic Outcast severs MEXC Global's access to the U.S. financial system.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "9c1c724fad140cd8b990c0f452fad59e65e34394fc04a6e409a4936dc2288afc",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "treasury_canada_iran_sanctions_nov6",
+              "locator": "Inspected source: Treasury — sanctions eight Canadian money services businesses enabling Iran.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "8da11076c7e6edeeb72a59eeede4cb5d06daf52108c27c2aad317d8ef186cd18",
+              "origin_group": "U.S. Department of the Treasury",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_canada_iran_sanctions_nov6",
+              "locator": "Inspected source: Reuters — U.S. Treasury sanctions Canadian money-services firms over Iran-related transactions.",
+              "inspected_at": "2026-11-06T23:10:10Z",
+              "document_sha256": "dc449f212fce247dbd40b279d6984ac561bbfad604d4e3a297b44f45a223aba4",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "b6f794649ad5c853c6c71dbffd64d543dd775a5742f99dcbcf905228526f0492",
+          "review_note": "Separately reviewed for bounded national consequence and the precise announced or implemented stage."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "2fa9abdf031d95b6d1dd8ad2a82886a991bafbcac1b8470fead605292d2a6db8",
+          "review_note": "Separately reviewed to preserve the strongest administration explanation and observable tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "e0b36727685806a162659b39b5277454ca34dca8faad1d3bbe5886b4f69ef708",
+          "review_note": "Separately reviewed to distinguish uncertainty from the evidence-supported conclusion without speculation."
+        }
+      ],
+      "unresolved_questions": [
+        "Federal Register publication and effective date of the MEXC order; blocked-property, rejected-transfer, enforcement, litigation and target-response evidence."
       ]
     }
   ],
