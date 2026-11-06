@@ -10249,6 +10249,18 @@
       "provenance_path": "data/editorial_change_notes/10.224.0.json",
       "provenance_sha256": "d7a33ef3ffbe388f7a94d5f4fe13df4efe4d7e02a8ea13eadf1825d06cf7d2fb",
       "note": "No specific grant cancellation or judicial adoption was established by cutoff."
+    },
+    {
+      "change_id": "10.225.0:NAT-2026-11-06-001:added",
+      "entry_id": "NAT-2026-11-06-001",
+      "as_of_utc": "2026-11-06T17:09:30Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.225.0",
+      "summary": "Added the preliminary October employment outcome, upward revisions and administration response while preserving labor-market caveats and unresolved policy causation.",
+      "provenance_path": "data/editorial_change_notes/10.225.0.json",
+      "provenance_sha256": "5f1aa2fc9c6f04892c064664a585d3086f1e04c263be952f1c7a333db2111454",
+      "note": "Preliminary monthly estimates remain subject to revision; the administration's policy-causation claim is preserved as response, not established fact."
     }
   ],
   "reviews": [
@@ -143295,6 +143307,145 @@
       ],
       "unresolved_questions": [
         "Which active or future grants Education modifies, pauses or cancels and how courts treat the opinion."
+      ]
+    },
+    {
+      "review_id": "10.225.0:NAT-2026-11-06-001:9e96f078e5b7",
+      "entry_id": "NAT-2026-11-06-001",
+      "content_sha256": "9e96f078e5b78f96b6bbf2ee685880252dd10df5c49b47daa1a1bd3bb4663740",
+      "reviewed_at": "2026-11-06T17:09:30Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "2de3f64dfcd82db89e6dc92d15ceb3e9d3196d2094f5ef6f3bbb49e007c7c144",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_october_nov6",
+              "locator": "Inspected source: BLS — Employment Situation, October 2026.",
+              "inspected_at": "2026-11-06T17:09:30Z",
+              "document_sha256": "5a49394d2a0ab214ec32321da79b145fab7574fe75573f00996fd9c972a09f97",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "ap_employment_october_nov6",
+              "locator": "Inspected source: AP — U.S. employers added 165,000 jobs in October.",
+              "inspected_at": "2026-11-06T17:09:30Z",
+              "document_sha256": "af750e5f4e0ad18f546d8d4028d85ea1c29823ad5e1f514bb397c1e4c80671e1",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "809b10aa02f0af77a3418936742f7cc5863c39fb17a2de80b0d38c6b07254562",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_october_nov6",
+              "locator": "Inspected source: BLS — Employment Situation, October 2026.",
+              "inspected_at": "2026-11-06T17:09:30Z",
+              "document_sha256": "5a49394d2a0ab214ec32321da79b145fab7574fe75573f00996fd9c972a09f97",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "0118fdc8479e75aa6c4ad17b0e4f10a95c10d10860dbecc84d28202ce473d35b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_october_nov6",
+              "locator": "Inspected source: BLS — Employment Situation, October 2026.",
+              "inspected_at": "2026-11-06T17:09:30Z",
+              "document_sha256": "5a49394d2a0ab214ec32321da79b145fab7574fe75573f00996fd9c972a09f97",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "ap_employment_october_nov6",
+              "locator": "Inspected source: AP — U.S. employers added 165,000 jobs in October.",
+              "inspected_at": "2026-11-06T17:09:30Z",
+              "document_sha256": "af750e5f4e0ad18f546d8d4028d85ea1c29823ad5e1f514bb397c1e4c80671e1",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "0e75371767f0e6c2bb7a4697b8f657969b6df97d32adafb44ad4ad5befd8df53",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "bls_employment_october_nov6",
+              "locator": "Inspected source: BLS — Employment Situation, October 2026.",
+              "inspected_at": "2026-11-06T17:09:30Z",
+              "document_sha256": "5a49394d2a0ab214ec32321da79b145fab7574fe75573f00996fd9c972a09f97",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "56e4f3f7b1592e5853ca3eb43a58125bed6484157982e4b11235425fb0490350",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "whitehouse_jobs_response_nov6",
+              "locator": "Inspected source: White House — tariffs and tax cuts are reshoring manufacturing, creating jobs.",
+              "inspected_at": "2026-11-06T17:09:30Z",
+              "document_sha256": "132df3d8395a75d908fdba37133e1f56ea0f33f5d44b98842d3a50ebd9242b2d",
+              "origin_group": "White House",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "bls_employment_october_nov6",
+              "locator": "Inspected source: BLS — Employment Situation, October 2026.",
+              "inspected_at": "2026-11-06T17:09:30Z",
+              "document_sha256": "5a49394d2a0ab214ec32321da79b145fab7574fe75573f00996fd9c972a09f97",
+              "origin_group": "U.S. Bureau of Labor Statistics",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "ap_employment_october_nov6",
+              "locator": "Inspected source: AP — U.S. employers added 165,000 jobs in October.",
+              "inspected_at": "2026-11-06T17:09:30Z",
+              "document_sha256": "af750e5f4e0ad18f546d8d4028d85ea1c29823ad5e1f514bb397c1e4c80671e1",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "bebe6071a2f7117a65e538d84f9e8e9fe330c740b94f8be3b40958c6ad6fee4a",
+          "review_note": "Separately reviewed for bounded national consequence and measured-outcome context."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "e53286773a27f37bf7d6805fb6eb4d9653d2e5c61b99d252ececd62a5b818776",
+          "review_note": "Separately reviewed to preserve the strongest administration explanation and observable tests without accepting causation."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "e63b99532cdedc49dfe6364bace053dc6e50f99c6b3db28a1b0f83b7fa896d18",
+          "review_note": "Separately reviewed to distinguish uncertainty from the measured preliminary conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "How later revisions change the October estimate and whether hiring breadth, real wages, participation and manufacturing employment show durable improvement."
       ]
     }
   ],
