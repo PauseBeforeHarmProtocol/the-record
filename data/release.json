@@ -1,51 +1,57 @@
 {
-  "version": "10.222.0",
+  "version": "10.223.0",
   "artifact_mode": "full",
   "run_changes": {
     "added_entry_ids": [
-      "NAT-2026-11-03-005"
+      "NAT-2026-11-05-001",
+      "NAT-2026-11-05-002",
+      "NAT-2026-11-05-003",
+      "NAT-2026-11-05-004"
     ],
     "refreshed_entry_ids": [
-      "NAT-2026-09-05-001",
-      "NAT-2026-10-30-001",
-      "NAT-2026-08-27-008",
-      "NAT-2026-09-19-001"
+      "NAT-2026-09-03-003",
+      "NAT-2026-10-09-003",
+      "NAT-2026-08-28-012"
     ],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-05T11:02:48Z",
-    "through_utc": "2026-11-05T17:08:46Z",
+    "from_utc": "2026-11-05T17:08:46Z",
+    "through_utc": "2026-11-06T05:07:46.608515Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact prior checked_at boundary through the final validated Truth Social refresh. The November 3 Lockheed settlement is a disclosed pre-boundary backfill whose independent AP confirmation was published November 4; it is not represented as a post-boundary action."
+    "note": "Exact prior checked_at boundary through the final validated Truth Social refresh."
   },
-  "release_iso": "2026-11-05",
-  "release_human": "November 5, 2026",
-  "checked_at": "2026-11-05 12:08 PM EST",
-  "previous_version": "10.221.1",
-  "previous_checked_at": "2026-11-05 6:02 AM EST",
-  "window_started_at": "2026-11-05T11:02:48Z",
-  "window_ended_at": "2026-11-05T17:08:46Z",
+  "release_iso": "2026-11-06",
+  "release_human": "November 6, 2026",
+  "checked_at": "2026-11-06 12:07 AM EST",
+  "previous_version": "10.222.0",
+  "previous_checked_at": "2026-11-05 12:08 PM EST",
+  "window_started_at": "2026-11-05T17:08:46Z",
+  "window_ended_at": "2026-11-06T05:07:46.608515Z",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
   "week_label": "November 2–8, 2026",
   "cutoff_start": "2026-07-20",
   "new_entry_ids": [
-    "NAT-2026-11-03-005",
-    "NAT-2026-09-05-001",
-    "NAT-2026-10-30-001",
-    "NAT-2026-08-27-008",
-    "NAT-2026-09-19-001"
+    "NAT-2026-09-03-003",
+    "NAT-2026-10-09-003",
+    "NAT-2026-08-28-012",
+    "NAT-2026-11-05-001",
+    "NAT-2026-11-05-002",
+    "NAT-2026-11-05-003",
+    "NAT-2026-11-05-004"
   ],
   "added_entry_ids": [
-    "NAT-2026-11-03-005"
+    "NAT-2026-11-05-001",
+    "NAT-2026-11-05-002",
+    "NAT-2026-11-05-003",
+    "NAT-2026-11-05-004"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-09-05-001",
-    "NAT-2026-10-30-001",
-    "NAT-2026-08-27-008",
-    "NAT-2026-09-19-001"
+    "NAT-2026-09-03-003",
+    "NAT-2026-10-09-003",
+    "NAT-2026-08-28-012"
   ],
   "dedupe_resolutions": [
     {
@@ -1373,43 +1379,63 @@
       "target_id": "NAT-2026-09-19-001",
       "decision": "same_event_update",
       "notes": "The DOJ memorandum and planned regulatory map implement and extend the existing Super Intelligence coordination record; no parallel event was created."
+    },
+    {
+      "entry_id": "NAT-2026-11-05-001",
+      "target_id": "NAT-2026-11-05-001",
+      "decision": "false_positive",
+      "notes": "The same OFAC notice also carried Cuba designations, but Prince Group/cyber targets use different authorities, actors, conduct and outcome tests; one notice does not make the programs one event."
+    },
+    {
+      "entry_id": "NAT-2026-11-05-002",
+      "target_id": "NAT-2026-09-15-020",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The prior Venezuela determination mentions Tren de Aragua in a different foreign-policy instrument. These named reward authorizations are a separate law-enforcement action and do not duplicate that record."
+    },
+    {
+      "entry_id": "NAT-2026-11-05-003",
+      "target_id": "NAT-2026-11-05-003",
+      "decision": "false_positive",
+      "notes": "Final SIP approval for Rule 205 has its own federal instrument, effective date and environmental outcome tests; it is not merged with unrelated EPA proposals or Maricopa rules."
+    },
+    {
+      "entry_id": "NAT-2026-09-03-003",
+      "target_id": "NAT-2026-11-05-001",
+      "decision": "false_positive",
+      "notes": "The shared OFAC action notice carried two separate programs. Cuba targets and sector authority concern different actors, legal predicates and outcome tests from the Prince Group and cyber-fraud designations."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Trump vote-total reassignment post",
-      "reason": "Election rhetoric and pressure did not independently establish a qualifying federal action."
+      "title": "Three newer Trump Truth Social posts",
+      "reason": "All three text-only posts were reviewed. Two attributed stock-market declines to election results and Democrats, and one attributed Republican losses to Trump's absence from the ballot. They establish publication of rhetoric, not independently verified causation or qualifying federal action."
     },
     {
-      "title": "Trump link to White House promotional post",
-      "reason": "The upstream post was not directly retrieved and accessible metadata did not establish an independently verified qualifying action."
+      "title": "Trump TV and White House video metadata beyond the independently sourced proclamation",
+      "reason": "New November 5 titles, dates, durations and stable embed IDs were inspected, but playback and captions were unavailable. The Oval Office proclamation qualified through signed text and wire reporting; no additional qualifying new item was located in the remaining material reviewed."
     },
     {
-      "title": "November 5 Trump TV short clip",
-      "reason": "Only conflicting-date metadata and a stable embed ID were retrieved; playback and captions were unavailable. No qualifying new item located in the material reviewed."
+      "title": "Reported Lisa Cook hearing postponement",
+      "reason": "The report depended on one unnamed-source account; no filed notice, second independent confirmation or substantive action was located."
     },
     {
-      "title": "Memorial Circle arch commission vote",
-      "reason": "The meeting was scheduled after the research cutoff and the official project page did not yet show an action; a fallback message was not treated as evidence of a vote."
+      "title": "Trump personal New York criminal appeal hearing",
+      "reason": "No ruling issued by cutoff and the hearing did not establish a new administration action."
     },
     {
-      "title": "Trump New York personal criminal appeal hearing",
-      "reason": "No ruling was issued by cutoff, and the hearing concerned a personal state criminal case rather than a new administration action."
-    },
-    {
-      "title": "Matter of Ontiveros-Diaz immigration precedent",
-      "reason": "The administrative adjudication was retained as a lead because independent context and consequence review were incomplete; it was not added to meet a numerical target."
+      "title": "First Lady Russia-Ukraine meeting",
+      "reason": "The statement was deduplicated to the already refreshed Oleshky humanitarian-pause record and did not establish a separate implemented policy."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-05 12:08 PM EST",
-    "checked_at_eastern": "2026-11-05 12:08 PM EST",
-    "inspection_status": "official pages, stream link, listing and detail metadata inspected; new short clip remained audiovisually unavailable",
+    "checked_at": "2026-11-06 12:07 AM EST",
+    "checked_at_eastern": "2026-11-06 12:07:46 AM EST",
+    "inspection_status": "official pages, stream link, dated-library and detail metadata inspected; audiovisual content unavailable",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-05T17:08:46Z",
+    "last_successful_page_inspection_at": "2026-11-06T05:07:46.608515Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1420,7 +1446,7 @@
       "https://www.whitehouse.gov/remarks/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, videos, remarks and releases pages were inspected. Trump TV still linked stream A4gNgHfZ-v4. The library newly listed a 00:39 short titled ‘We aren’t going anywhere. We play for the United States of America’; its listing displayed November 5 while the detail page displayed November 4, and stable embed ID ygRFHhrO6tk was identified. Playback, audio and captions were not retrieved, so no claim is made that the clip was watched. No qualifying new item located in the material reviewed. Fallback text was not treated as outage proof and the broadcast-review boundary remains unadvanced.",
+    "summary": "Official Trump TV, live, videos, remarks and releases pages were rechecked. Stream A4gNgHfZ-v4 remained linked. New November 5 library metadata included a 27:12 Signing Time recording (6YLUH8zRzgk), a 01:22 edited clip (dHTb7U2wvnw) and a 00:33 policy-claim clip (uwvHT9OaCXE). Playback, audio and captions were not retrieved, so no footage is claimed watched. The Oval Office proclamation independently qualified from signed text and wire reporting; no qualifying additional item was located in the remaining material reviewed. Fallback text was not treated as outage proof and the complete broadcast-review boundary remains unadvanced.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1457,7 +1483,8 @@
       "November 4 evening: the stable stream and November 3 library metadata were rechecked; playback, audio and captions were unavailable. No outage or complete-coverage claim was made, and no verified channel cost, contract, staffing, editorial-control, distribution or press-access finding was located.",
       "November 5 midnight check: the November 4 remarks listing and embed ID LHT-znOQXkA were metadata-only; playback, audio and captions were not retrieved. No outage or complete-coverage claim was made, and no verified channel cost, contract, staffing, editorial-control, distribution or press-access finding was located.",
       "November 5 6:02 AM EST check: the official stream and November 4 remarks listing repeated. Playback, audio and captions were not retrieved; no outage or complete-coverage claim was made, and no verified new channel cost, contract, staffing, editorial-control, distribution or press-access finding was located.",
-      "November 5 12:08 PM EST: new 00:39 short ygRFHhrO6tk was metadata-only; listing/detail dates conflict, playback and captions were unavailable, and live/replay/editing status remains unknown. No outage or complete-coverage claim and no verified new channel cost, contract, staffing, editorial-control, distribution, advertising or press-access finding."
+      "November 5 12:08 PM EST: new 00:39 short ygRFHhrO6tk was metadata-only; listing/detail dates conflict, playback and captions were unavailable, and live/replay/editing status remains unknown. No outage or complete-coverage claim and no verified new channel cost, contract, staffing, editorial-control, distribution, advertising or press-access finding.",
+      "November 6 12:07 AM EST check: new November 5 listings were title/date/duration/link metadata only. Playback, audio and captions were not retrieved; exact posting and broadcast times and live/replay/editing state remain unknown. No outage, complete-coverage, channel-cost, contract, staffing, editorial-control, distribution, advertising or press-access finding was inferred."
     ],
     "items": [
       {
@@ -2755,9 +2782,85 @@
         "observed_at_eastern": "2026-11-05 12:08 PM EST",
         "format": "00:39 official short/edited-clip metadata; listing displayed November 5, detail displayed November 4",
         "inspection": "Title, conflicting displayed dates, duration, stable detail URL and embed ID inspected. Playback, audio and captions were unavailable; no footage was claimed watched and no qualifying action was inferred."
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-06T05:07:46.608515Z",
+        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
+        "format": "official Trump TV page and stream-link metadata; audiovisual content unreviewed",
+        "inspection": "Stable stream link inspected. Fallback text was not treated as outage proof; no footage, audio or captions were retrieved."
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-06T05:07:46.608515Z",
+        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "Current stream link and hub metadata inspected; no footage, audio or captions were retrieved and no outage was inferred."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "video_ids": [
+          "dHTb7U2wvnw",
+          "uwvHT9OaCXE",
+          "6YLUH8zRzgk"
+        ],
+        "posted_date": "2026-11-05",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-06T05:07:46.608515Z",
+        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
+        "format": "official dated-library metadata for edited clips and a 27:12 signing recording",
+        "inspection": "Titles, displayed dates, durations, detail URLs and stable embed IDs inspected. Playback and captions were unavailable; no claim is made that the recordings were watched."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-participates-in-signing-time-nov-5-2026/",
+        "video_ids": [
+          "6YLUH8zRzgk"
+        ],
+        "posted_date": "2026-11-05",
+        "original_event_date": "2026-11-05",
+        "broadcast_time": null,
+        "observed_at": "2026-11-06T05:07:46.608515Z",
+        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
+        "format": "27:12 official recording metadata; live/replay/editing status unknown",
+        "inspection": "Title/date/link and embed ID inspected. Playback and captions were unavailable. The Oval Office action was verified from the signed proclamation and independent reporting, not from this recording."
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "video_ids": [],
+        "posted_date": "2026-09-28",
+        "original_event_date": "2026-09-28",
+        "broadcast_time": null,
+        "observed_at": "2026-11-06T05:07:46.608515Z",
+        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
+        "format": "supplementary remarks index; not assumed complete",
+        "inspection": "Index inspected; it exposed no November 5 transcript and was not treated as a complete transcript feed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "video_ids": [],
+        "posted_date": "2026-11-04",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-06T05:07:46.608515Z",
+        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
+        "format": "supplementary official releases index",
+        "inspection": "Recent release listings inspected as text leads; no separate qualifying Trump TV cost, contract, control or policy finding was located."
       }
     ],
-    "checked_at_utc": "2026-11-05T17:08:46Z",
+    "checked_at_utc": "2026-11-06T05:07:46.608515Z",
     "inspection_history": [
       {
         "url": "https://www.whitehouse.gov/trumptv/",
@@ -2959,34 +3062,124 @@
         "observed_at_eastern": "2026-11-05 12:08 PM EST",
         "format": "00:39 official short/edited-clip metadata; listing displayed November 5, detail displayed November 4",
         "inspection": "Title, conflicting displayed dates, duration, stable detail URL and embed ID inspected. Playback, audio and captions were unavailable; no footage was claimed watched and no qualifying action was inferred."
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "video_ids": [
+          "A4gNgHfZ-v4",
+          "ygRFHhrO6tk"
+        ],
+        "posted_date": "2026-11-04",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-05T23:08:38.906877Z",
+        "observed_at_eastern": "2026-11-05 6:08 PM EST",
+        "format": "official stream and repeated short-clip metadata; audiovisual content unreviewed",
+        "inspection": "Official page, live hub, dated video library, remarks and releases were inspected. Playback and captions were unavailable; repeated footage was deduplicated, no outage inferred and no broadcast boundary advanced."
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-06T05:07:46.608515Z",
+        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
+        "format": "official Trump TV page and stream-link metadata; audiovisual content unreviewed",
+        "inspection": "Stable stream link inspected. Fallback text was not treated as outage proof; no footage, audio or captions were retrieved."
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-06T05:07:46.608515Z",
+        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "Current stream link and hub metadata inspected; no footage, audio or captions were retrieved and no outage was inferred."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "video_ids": [
+          "dHTb7U2wvnw",
+          "uwvHT9OaCXE",
+          "6YLUH8zRzgk"
+        ],
+        "posted_date": "2026-11-05",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-06T05:07:46.608515Z",
+        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
+        "format": "official dated-library metadata for edited clips and a 27:12 signing recording",
+        "inspection": "Titles, displayed dates, durations, detail URLs and stable embed IDs inspected. Playback and captions were unavailable; no claim is made that the recordings were watched."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-participates-in-signing-time-nov-5-2026/",
+        "video_ids": [
+          "6YLUH8zRzgk"
+        ],
+        "posted_date": "2026-11-05",
+        "original_event_date": "2026-11-05",
+        "broadcast_time": null,
+        "observed_at": "2026-11-06T05:07:46.608515Z",
+        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
+        "format": "27:12 official recording metadata; live/replay/editing status unknown",
+        "inspection": "Title/date/link and embed ID inspected. Playback and captions were unavailable. The Oval Office action was verified from the signed proclamation and independent reporting, not from this recording."
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "video_ids": [],
+        "posted_date": "2026-09-28",
+        "original_event_date": "2026-09-28",
+        "broadcast_time": null,
+        "observed_at": "2026-11-06T05:07:46.608515Z",
+        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
+        "format": "supplementary remarks index; not assumed complete",
+        "inspection": "Index inspected; it exposed no November 5 transcript and was not treated as a complete transcript feed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "video_ids": [],
+        "posted_date": "2026-11-04",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-06T05:07:46.608515Z",
+        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
+        "format": "supplementary official releases index",
+        "inspection": "Recent release listings inspected as text leads; no separate qualifying Trump TV cost, contract, control or policy finding was located."
       }
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 2,
-    "new_text_reviewed": 2,
+    "new_posts": 3,
+    "new_text_reviewed": 3,
     "new_media_reviewed": 0,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-05T17:08:46.536272Z",
-    "checked_at_eastern": "2026-11-05 12:08:46 PM EST",
-    "latest_post_id": "117564115835486203",
-    "latest_post_at_eastern": "2026-11-05 8:40:44 AM EST",
+    "checked_at_utc": "2026-11-06T05:07:46.608515Z",
+    "checked_at_eastern": "2026-11-06 12:07:46 AM EST",
+    "latest_post_id": "117566606657912243",
+    "latest_post_at_eastern": "2026-11-05 7:14:11 PM EST",
     "counts": {
       "text_status": {
         "not_recorded": 154,
-        "reviewed": 1657,
-        "pending": 972
+        "pending": 972,
+        "reviewed": 1660
       },
       "media_status": {
-        "not_applicable": 1565,
+        "not_applicable": 1568,
         "not_recorded": 19,
-        "unavailable": 295,
         "pending": 538,
-        "reviewed": 366
+        "reviewed": 366,
+        "unavailable": 295
       }
     },
-    "note": "Two text-only posts were newer than the prior validated snapshot. One urged reassignment of election vote totals; the other linked to a White House promotional post whose upstream content was not directly retrieved. Neither independently established a qualifying federal action. The newest post was published November 5 at 8:40:44 AM EST (13:40:44 UTC), preserving the local publication date. The final updater refresh at 12:08:46 PM EST found no additional newer post."
+    "note": "Three posts were newer than the prior validated snapshot; all were text-only and reviewed as political or market-blame rhetoric rather than independently qualifying actions. A final refresh found no post newer than the November 5 post published at 7:14:11 PM EST (00:14:11 UTC November 6), preserving the local publication date. Feed check completed at 12:07:46 AM EST November 6."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -2998,19 +3191,19 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-05 12:08 PM EST",
-    "checked_at_utc": "2026-11-05T17:08:46Z",
-    "summary": "Four registered primary project pages were rechecked. Trump Archive displayed revised lower counters of 15,990 total items, 13,292 Truth Social posts and 2,038 speeches/transcripts; the prior measurements remain in history and no cause for the revision is inferred. UndoTrump remained 1,264 actions and 533 Term II actions, with 995 active, 44 in courts and 42 restored. IPTP's policy browse page advanced to 1,827 while its separately scoped homepage measurement was preserved because that counter was not independently verified. Record47 displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts; its API entry total was preserved. Distinct units were not summed and zero external items were imported by default.",
+    "checked_at": "2026-11-06 12:07 AM EST",
+    "checked_at_utc": "2026-11-06T05:07:46.608515Z",
+    "summary": "Four registered primary project pages were rechecked. Trump Archive displayed 16,005 total items, 13,299 Truth Social posts and 2,045 speeches/transcripts. UndoTrump remained 1,264 actions and 533 Term II actions, with 995 active, 44 in courts and 42 restored. IPTP's policy browse page remained at 1,827; its separately scoped homepage measurement was preserved. Record47 displayed 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts; its API entry total was preserved because it was not reverified. Distinct units were not summed and zero external items were imported by default.",
     "updated_archives": [
-      "trump_archive",
-      "immigration_policy_tracking_project"
+      "trump_archive"
     ],
     "unchanged_archives": [
       "undotrump",
+      "immigration_policy_tracking_project",
       "record47"
     ]
   },
-  "editorial_notes": "One qualifying federal settlement record and four material lifecycle updates passed the publication threshold. The archive was not padded. No legacy entry changed because no queued historical candidate was responsibly resolved within this run; the objective remediation and duplicate-candidate queues remain visible.",
+  "editorial_notes": "Four qualifying federal actions and three material same-event lifecycle updates passed the threshold. The archive was not padded. No legacy entry changed because no queued historical candidate was responsibly resolved within this run; the objective remediation and duplicate-candidate queues remain visible.",
   "retained_stages": [],
   "publication_transport_attempts": []
 }
