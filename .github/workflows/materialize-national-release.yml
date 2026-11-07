@@ -1,0 +1,32 @@
+name: Materialize accepted national release payload
+
+on:
+  push:
+    branches:
+      - maintenance/national-20261107-1756
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Materialize and verify accepted tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          gzip -dc transport-current_entries.json.gz > data/current_entries.json
+          rm transport-current_entries.json.gz
+          rm .github/workflows/materialize-national-release.yml
+          git add -A
+          actual_tree="$(git write-tree)"
+          expected_tree="b7dc6a9b42f64d485fd2c0ec9e43ebad24c8f794"
+          test "$actual_tree" = "$expected_tree"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Materialize accepted current-entry payload"
+          git push origin HEAD:refs/heads/maintenance/national-20261107-1756
