@@ -10297,6 +10297,54 @@
       "provenance_path": "data/editorial_change_notes/10.227.0.json",
       "provenance_sha256": "ecb23732429a50ac693ff50313dbf1dc5ca8d6835a00edf60c1296dfc3693ff0",
       "note": "The dismissal ends this case without a final merits judgment, voter-list validation or adjudication of individual eligibility."
+    },
+    {
+      "change_id": "10.228.0:NAT-2026-09-10-007:material_refresh",
+      "entry_id": "NAT-2026-09-10-007",
+      "as_of_utc": "2026-11-07T17:07:52Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.228.0",
+      "summary": "Recorded the confirmed resignations of the lead U.S. attorney and the National Security Division chief while preserving the inquiry's unresolved evidentiary status.",
+      "provenance_path": "data/editorial_change_notes/10.228.0.json",
+      "provenance_sha256": "cb8f55178ee233d2ea3651a1b1d695a8739a672647cbe87a1c5321abf08bb899",
+      "note": "two senior resignations and the absence of an overarching conspiracy charge are established; motives, future staffing, investigative viability and the truth of the alleged conspiracy remain unresolved."
+    },
+    {
+      "change_id": "10.228.0:NAT-2026-10-30-001:material_refresh",
+      "entry_id": "NAT-2026-10-30-001",
+      "as_of_utc": "2026-11-07T17:07:52Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.228.0",
+      "summary": "Recorded Jacksonville's more-than-$73-million Model Cities award as a second disclosed dollar-specific award, without treating plans as spending or measured outcomes.",
+      "provenance_path": "data/editorial_change_notes/10.228.0.json",
+      "provenance_sha256": "cb8f55178ee233d2ea3651a1b1d695a8739a672647cbe87a1c5321abf08bb899",
+      "note": "two dollar-specific awards are now publicly disclosed; disbursement, completed spending, implementation and causal crime reduction remain unverified, and Jackson and St. Louis dollar amounts remain unresolved."
+    },
+    {
+      "change_id": "10.228.0:NAT-2026-11-06-004:added",
+      "entry_id": "NAT-2026-11-06-004",
+      "as_of_utc": "2026-11-07T17:07:52Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.228.0",
+      "summary": "Added the joint withdrawal of the 2020 cross-border transfer and digital-asset proposal while preserving the existing-rule and future-rulemaking distinctions.",
+      "provenance_path": "data/editorial_change_notes/10.228.0.json",
+      "provenance_sha256": "cb8f55178ee233d2ea3651a1b1d695a8739a672647cbe87a1c5321abf08bb899",
+      "note": "the 2020 proposal is withdrawn and the current threshold remains—not that the underlying policy debate or digital-asset risks are resolved."
+    },
+    {
+      "change_id": "10.228.0:NAT-2026-11-06-005:added",
+      "entry_id": "NAT-2026-11-06-005",
+      "as_of_utc": "2026-11-07T17:07:52Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.228.0",
+      "summary": "Added DOJ's closure of the Fox–Roku investigation and transaction completion while separating company commitments from measured compliance.",
+      "provenance_path": "data/editorial_change_notes/10.228.0.json",
+      "provenance_sha256": "cb8f55178ee233d2ea3651a1b1d695a8739a672647cbe87a1c5321abf08bb899",
+      "note": "DOJ closed the investigation and the acquisition completed—not that future discrimination is impossible or that the commitments have already been tested."
     }
   ],
   "reviews": [
@@ -145464,6 +145512,670 @@
       ],
       "unresolved_questions": [
         "Any post-dismissal order, disposition of related election-enforcement cases, validated list methodology, prosecutions and measured election effects remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.228.0:NAT-2026-09-10-007:b0f9ad4170de",
+      "entry_id": "NAT-2026-09-10-007",
+      "content_sha256": "b0f9ad4170dee25a0728b51c6ab34d8058b38617adf724e78770034f259e5171",
+      "reviewed_at": "2026-11-07T17:07:52Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "27c1ceb316a9c46fb9fe0e98caae96bcd4625debf4fe72b60ed1fc9a7737750b",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_digenova_resignation_sep10",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "50b5a9f4bbb27a49dce3141d97d06c9759a23541dac92e92c52304e69aa3ac3c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_digenova_resignation_sep10",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "9039162e8bf410dfb1231f4ec908a8eb9e6214e9956015de26a26c9948bc869e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "18463baaf22f5eaefca8d7cb5044d6e574717f648774d0ee4201018ed4e8fa0a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_digenova_resignation_sep10",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "50b5a9f4bbb27a49dce3141d97d06c9759a23541dac92e92c52304e69aa3ac3c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_digenova_resignation_sep10",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "9039162e8bf410dfb1231f4ec908a8eb9e6214e9956015de26a26c9948bc869e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "adaaa2e97d664e1991593b1888add659cf7eed3575448f425b9d4710c141c910",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_olsen_resignation_sep29",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "93c2a21d82693aabfc53a27b3cee29650b39f02573accb3392fc1d862a06302c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_olsen_resignation_sep29",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "bebb4ebe274e41a3b109e5cdf71b4692bd7d814635c83b2fe9e55a23d6adfc5e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "washpost_olsen_resignation_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "b9b5a4bf2dfd81772085c84383e5b72275f45bebf1d42f2a3820147c99b48f46",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "f03a7d9c54daef6e2a1535c40741e65974c36d2239a5e3b249e2898dbd12aef4",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "washpost_olsen_resignation_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "b9b5a4bf2dfd81772085c84383e5b72275f45bebf1d42f2a3820147c99b48f46",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "ae06f5070943feb83ceac2a936bae318db7807ee9022d65d2bc5dbbde37441c6",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_olsen_resignation_sep29",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "93c2a21d82693aabfc53a27b3cee29650b39f02573accb3392fc1d862a06302c",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_olsen_resignation_sep29",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "bebb4ebe274e41a3b109e5cdf71b4692bd7d814635c83b2fe9e55a23d6adfc5e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "washpost_olsen_resignation_sep28",
+              "locator": "Inspected source text or filing; hash preserves the exact reviewed source extract.",
+              "inspected_at": "2026-09-29T10:04:38.986658Z",
+              "document_sha256": "b9b5a4bf2dfd81772085c84383e5b72275f45bebf1d42f2a3820147c99b48f46",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "e40cf0497db1132f5d147b17b282aa4f8f25625f73a7b6f9de7f5f8428d146db",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "courtlistener_brennan_docket_oct15",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.152.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T04:02:26Z",
+              "document_sha256": "c1dfbc0aa74a28a8ceb6c357d1ca567120da083c31797d31dcde5d7bf1f3f685",
+              "origin_group": "CourtListener",
+              "evidence_status": "publication_only"
+            },
+            {
+              "source_id": "ap_brennan_preservation_dismissal_oct15",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.152.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T04:02:26Z",
+              "document_sha256": "d6f2774dd6d189522613240a0c49a84366a9c15fd911843c6d91f9404c527a75",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "wapo_brennan_preservation_dismissal_oct15",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.152.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T04:02:26Z",
+              "document_sha256": "9d09de98287dfc378a335a32d5cef2160a56ffb8172c66803983f0277b2c6ac5",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 6,
+          "fact_sha256": "7db38dcca65a09e380ef9b1df820ed0dcdefe0d6bcc98bec7523b454fc6c58be",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_brennan_preservation_dismissal_oct15",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.152.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T04:02:26Z",
+              "document_sha256": "d6f2774dd6d189522613240a0c49a84366a9c15fd911843c6d91f9404c527a75",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "wapo_brennan_preservation_dismissal_oct15",
+              "locator": "Exact normalized evidence extract retained in data/editorial_change_notes/10.152.0.json; scope and status bounded in the entry.",
+              "inspected_at": "2026-10-16T04:02:26Z",
+              "document_sha256": "9d09de98287dfc378a335a32d5cef2160a56ffb8172c66803983f0277b2c6ac5",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 7,
+          "fact_sha256": "fbb51a6661aff5afed7bcb65585eef09ea7c7415384b9e40dc56bb0f29e760fc",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_quinones_eisenberg_resignations_nov6",
+              "locator": "AP report lines 1794–1823: confirmed Quiñones resignation, Blanche response and Quiñones statement.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "c2da7ec6044b0de837a5a70a6ade59fa94109a2fe0e57b218f5ca6a4670b8046",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "cbs_quinones_resignation_nov6",
+              "locator": "CBS lines 121–140: confirmed resignation, no stated reason and investigation status.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "75f015b0ce6c7a515b0076e666c8898fd41cac52e5adb04e9bc51b26e86f648b",
+              "origin_group": "CBS News",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 8,
+          "fact_sha256": "846c8f303033f3c15f6c5aaa91ca3a2325d5b26db8f1d3f5468b6ef49e6a00ce",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_quinones_eisenberg_resignations_nov6",
+              "locator": "AP lines 1794–1832: Blanche confirmation and praise for Eisenberg.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "a2670f295a9c845391c731da40e25d42edf892a9c80efb84656ae9ce5149af6f",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_quinones_eisenberg_resignations_nov6",
+              "locator": "Reuters wire report independently confirming both senior resignations.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "6e2180e194e7a69268dd86e75942872a9afcedb1110ae54edf6f62abc6c0c271",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 9,
+          "fact_sha256": "4dcbd9cb7b75ac12fbbca80074adcbfe0a729e53a22548dcb763df33e0e8012a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cbs_quinones_resignation_nov6",
+              "locator": "CBS lines 130–140: extensive grand-jury activity, no overarching charge and Blanche's named response.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "368f9f16569a24c2881c1023f1dc38545c5c8dd92a16ea4e1fb155f8a7bec554",
+              "origin_group": "CBS News",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "ap_quinones_eisenberg_resignations_nov6",
+              "locator": "AP lines 1822–1832: inquiry history, no charges after prior lead departure and official responses.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "a5b701b58b899b648f351e637105d84fdad029a58add036d7ec4f0c52e7f849e",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "023ef610d52ddf7f56c9f0d8137625a6892464b4f9876dcd6add3cf49c014879",
+          "review_note": "Separately reviewed to state the institutional consequence without converting a formal action or reported development into a measured outcome."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "ddf7051a0e139bee9011ce26e6b7b52c4a91a96e4a2fa463d2dc36468ad6a9b6",
+          "review_note": "Separately reviewed to preserve the strongest relevant administration or institutional explanation and observable tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "c9178cb5114a1eca7a315d0eb742d4722dc606d73dcd1b6927d45f0394158ec2",
+          "review_note": "Separately reviewed to distinguish plausible interpretations from the bounded supported conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, enforcement, litigation, compliance and measured consequences identified in the entry remain subject to later evidence."
+      ]
+    },
+    {
+      "review_id": "10.228.0:NAT-2026-10-30-001:07bd72a86f64",
+      "entry_id": "NAT-2026-10-30-001",
+      "content_sha256": "07bd72a86f643bce3341fab712ff424096bc7f91fd083165c577e075b31cb9b8",
+      "reviewed_at": "2026-11-07T17:07:52Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "2617d871bf3851f95e6cf3aac104c6299d6c1bb114aa0ec63c72a7ba87bce4c1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_model_cities_awards_oct30",
+              "locator": "Complete release26-1297, published1:57PM EDT and modified2:51PM; four departments, planned implementation/award visits and stated safety rationale. No disbursement ledger or completed outcomes.",
+              "inspected_at": "2026-10-30T22:11:25Z",
+              "document_sha256": "7996c825f8c509227ceedfd9f4e518a10d61a2f8909fd77f67e055b0afe9f96c",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "ms_model_cities_award_oct30",
+              "locator": "Full state announcement, intended technology/investigation/prevention uses and November presentation; no expenditure verification.",
+              "inspected_at": "2026-10-30T22:11:25Z",
+              "document_sha256": "64a3cbdee4adfd77adc2e07943696b94a259036ca0ad44abb390018e05b79adb",
+              "origin_group": "Office of Governor Tate Reeves",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "888f58c0b11d35c6a2b9b2183ac4ed9eb049e3a5b0fec8581c5c758e2f030327",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_model_cities_notice_jun3",
+              "locator": "PDF pp.4–8 and12–13: cooperative agreements, eligibility/immigration/priorities, substantial DOJ role, implementation/budget approval and milestone-based releases. Not final city-specific award terms.",
+              "inspected_at": "2026-10-30T22:11:25Z",
+              "document_sha256": "b7fe43bbfed9427f3efef76ea8625df2bf87a429c2f31cb3e5b06de4319d33f0",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "08f7c1d68098ad0e27374fcfc5518b2afb88556ac87c2320153d914a466d1085",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "mt_model_cities_conditions_oct30",
+              "locator": "Full written Molly Minta story, not automated audio: council acceptance still required, $125m requested rather than granted, planned surveillance/lab and cooperative-agreement conditions.",
+              "inspected_at": "2026-10-30T22:11:25Z",
+              "document_sha256": "1b2b3d5cf509e5ad0f02484d93d9bc6efb8fc8811d3869aae51bf83cfa39c557",
+              "origin_group": "Mississippi Today",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "971873d17289276edad574efaf075e8404d95b0d4689e014a350b25de54879ac",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_model_cities_baton_rouge_award_nov5",
+              "locator": "DOJ award announcement inspected: $63,532,285 awarded November 4; planned uses; plans still to be finalized and implemented.",
+              "inspected_at": "2026-11-05T17:05:03Z",
+              "document_sha256": "95f85b0fcd550fc94701827119f06eb6c2b64e108596f2b53b232987c6667f53",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "b36215f98a68bedca13724f07990440ddcecc736f74bb6771b1a75fff069259f",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_jacksonville_model_cities_nov6",
+              "locator": "DOJ release lines 62–85: award amount, program stage and ongoing plan finalization.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "ded3e6aac40f8cdd6ba5cdfd315ff2feab087d8f02de9d80b68b3d2da5ccb246",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "news4jax_model_cities_nov6",
+              "locator": "Local report lines 79–100: three-year award and plans still being finalized.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "1fec15e93dab92b007fe40756b9e95257aa04fd255f479487ce2eb4789155c6e",
+              "origin_group": "News4JAX / WJXT",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "fbcbafc61ca3345f2f72d903b86a49b4f9591e7ea68ed4c467ae1f9f9fb84555",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_jacksonville_model_cities_nov6",
+              "locator": "DOJ release lines 67–86: planned capacity, technology, forensic and personnel uses.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "0d5f4a60e9ccff322157718eb1ea4ac1099d564fe565fc7d23bb2a4eac5e5dea",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "news4jax_model_cities_nov6",
+              "locator": "Local report lines 88–105: 40 planned officers and technology uses.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "1976f581968bf7be82f30b815e583c43c9428d7f37a889faa03da799941cfecd",
+              "origin_group": "News4JAX / WJXT",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "jax_daily_record_model_cities_nov6",
+              "locator": "Local report lines 60–77: proposed uses and pre-award crime measures.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "82958dc078b560bbfa26fc81423e78286156e02ea06ed20355c1d8a464b6b4ca",
+              "origin_group": "Jacksonville Daily Record",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "f919257beee0874c7a94a2bfd3c947e60302493eaa18442b2a0227ae6dd72dbc",
+          "review_note": "Separately reviewed to state the institutional consequence without converting a formal action or reported development into a measured outcome."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "96ced40f9425d3f20a623258113da02c5d32c179ffe0e1c5f6aadb8973dc8a45",
+          "review_note": "Separately reviewed to preserve the strongest relevant administration or institutional explanation and observable tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "5a224d4a9b8723fa370025f24bef32f307d8bcb3b2b46cf8382bb2485961ec4e",
+          "review_note": "Separately reviewed to distinguish plausible interpretations from the bounded supported conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, enforcement, litigation, compliance and measured consequences identified in the entry remain subject to later evidence."
+      ]
+    },
+    {
+      "review_id": "10.228.0:NAT-2026-11-06-004:d29830cfc2ca",
+      "entry_id": "NAT-2026-11-06-004",
+      "content_sha256": "d29830cfc2cab96139f1ca638d742c9f96a54728c4196f35764187ff547e49d9",
+      "reviewed_at": "2026-11-07T17:07:52Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "11a0f5ff95ea7e3882763538793e892b8f0bde4ed05cf83ed6378dafddb24bc5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_travel_rule_withdrawal_nov6",
+              "locator": "Filed withdrawal notice: action, docket history and November 9 scheduled publication.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "6771266e58c730f751b64887e5757825f03e96cc4ba8ef85628fc9f4d5f9bf92",
+              "origin_group": "Federal Register public inspection",
+              "evidence_status": "reversed"
+            },
+            {
+              "source_id": "fincen_travel_rule_withdrawal_nov6",
+              "locator": "Immediate release identifying the jointly withdrawn proposal.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "a6e56aa1fd857875f722f3c2cafe7e9de420da9eb1856799115c9001872e0d8b",
+              "origin_group": "Financial Crimes Enforcement Network",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "4ba1e2f398dbe6271bee4200be42dcc5b95afd9c3072f10c2bb242f3ba5c2c01",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_travel_rule_withdrawal_nov6",
+              "locator": "Withdrawal notice: proposed $250 threshold, retained existing framework and no final rule from this docket.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "ac8b2e9dcac470ac3c10b487ecc1bb487cf66dbe0c93c503d2a4644eeec42c33",
+              "origin_group": "Federal Register public inspection",
+              "evidence_status": "reversed"
+            },
+            {
+              "source_id": "aba_travel_rule_withdrawal_nov6",
+              "locator": "Independent report identifying the existing $3,000 and proposed $250 thresholds.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "4184b78cba9c889d5e4daa0b0aff8909c6c06301c77748ec4b723149f09bdc4e",
+              "origin_group": "ABA Banking Journal",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "dc1eab059492c60028d9e4412e3c7969408263003c254df0f5b194f7416f7239",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_travel_rule_withdrawal_nov6",
+              "locator": "Withdrawal notice describing proposed treatment of convertible virtual currency and digital assets.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "ffaeefdeb1c62b84ea91095695d3ddb942b561e70b9031afd748ba0b3cafad14",
+              "origin_group": "Federal Register public inspection",
+              "evidence_status": "reversed"
+            },
+            {
+              "source_id": "fincen_travel_rule_withdrawal_nov6",
+              "locator": "Agency description of the withdrawn digital-asset and cross-border proposal.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "db58c4b28076e0274348c516ed2f619f3374a9b069d041dbbc4e99d813358416",
+              "origin_group": "Financial Crimes Enforcement Network",
+              "evidence_status": "announced"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "54ba17e7caa88b9b584dbbebb3f7b1dc19fbd9cf6c5dd6ec15c8106a387debe9",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "federal_register_travel_rule_withdrawal_nov6",
+              "locator": "Agency rationale, burden comments and renewed-comment assurance.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "42276c02bd42088c31d6ec5362220093619e8f7f154e7a1843518a1f2868b058",
+              "origin_group": "Federal Register public inspection",
+              "evidence_status": "reversed"
+            },
+            {
+              "source_id": "aba_travel_rule_withdrawal_nov6",
+              "locator": "Independent report on burden rationale and no-final-rule assurance.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "895cdda4835b0214d4ff87e464ea6d7b6a9df972ef2b81e493e9054183942611",
+              "origin_group": "ABA Banking Journal",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "7a123e288ad312bf64663fbd91422663a4969bfeb25c65f3ce6281f97cf8d583",
+          "review_note": "Separately reviewed to state the institutional consequence without converting a formal action or reported development into a measured outcome."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "61df5fa2ef07f879c09718e59b2566d4d563f2260600b0e504e0d461254eea29",
+          "review_note": "Separately reviewed to preserve the strongest relevant administration or institutional explanation and observable tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "4fe3750bc7212ff5e797a2df78ae3a689ca4e673d7ad4c3be685994ecaa4bc99",
+          "review_note": "Separately reviewed to distinguish plausible interpretations from the bounded supported conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, enforcement, litigation, compliance and measured consequences identified in the entry remain subject to later evidence."
+      ]
+    },
+    {
+      "review_id": "10.228.0:NAT-2026-11-06-005:fa46a8c9d93c",
+      "entry_id": "NAT-2026-11-06-005",
+      "content_sha256": "fa46a8c9d93c88e16e3cbb62ddd9e05f1ac8152396b8f07d92ae6d85c47b72ca",
+      "reviewed_at": "2026-11-07T17:07:52Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "c28ff90adf1d975636075a606b96094beca1602b0583367c85e1e698a3f68034",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_fox_roku_clearance_nov6",
+              "locator": "DOJ statement lines 63–65: transaction, second requests and theories of competitive harm.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "ce9789dd649c42dbd95936e9cb0f5439099825d07efbf4bd2eef0f0b6f1234fe",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "729fdfd1b0c855a1383845f001db1f7354ac085e2e1df3989cd39e019d3ecdf7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_fox_roku_clearance_nov6",
+              "locator": "DOJ statement lines 66–73: competitive analysis and closure of investigation.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "597732bce29b4a30b41781c3996ab753d2a1a8559e6f1c5b471315ea8114506e",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "e804fed1c4bb7acdba9a88020ecf3779f7072c17bf8e6100b2de074249ba6295",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "doj_fox_roku_clearance_nov6",
+              "locator": "DOJ statement lines 68–72: four recorded commitments; no public consent decree identified.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "ca10aa55e5d4e12a63ce17652e461c71c08ceeaa5e530b8eddc63df7a85464ac",
+              "origin_group": "U.S. Department of Justice",
+              "evidence_status": "announced"
+            },
+            {
+              "source_id": "wapo_fox_roku_completion_nov6",
+              "locator": "Independent report confirming three-year carriage and nondiscrimination commitments.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "2f452f960b3f190477bab551ec6414e9796505b625ed7ab07f1aadba8907c13c",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "ad1ac3cf40e42264b4982f0dd8058153dcaf8781b0daab9f3d7594feb9d9d9b7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_fox_roku_completion_nov6",
+              "locator": "Reuters report lines 153–177: transaction completion, value and household reach.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "8275d7242e87f30023f8ea819f3aa9e7b41934ca6e03ea9f1b81831e8a6a49f9",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "wapo_fox_roku_completion_nov6",
+              "locator": "Independent report confirming effective closing and DOJ review.",
+              "inspected_at": "2026-11-07T17:07:52Z",
+              "document_sha256": "e7bea1ca3d0160c251012dfc1d41b6de5c3ce03304881d4a5c75c3de737e032b",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "91ef6e944a7543bc919bea6a012b7a5bc2965b50994ac76b0c71bbb353dce96e",
+          "review_note": "Separately reviewed to state the institutional consequence without converting a formal action or reported development into a measured outcome."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "8cab1b151c3ea670e6908b1577f1ca6a55c4cfd4915c80efaf27b1ada825bb2a",
+          "review_note": "Separately reviewed to preserve the strongest relevant administration or institutional explanation and observable tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "f512ceefcdc1a9eed3f44b9ada88fa4112879011ec64486a5b222fac971de8c9",
+          "review_note": "Separately reviewed to distinguish plausible interpretations from the bounded supported conclusion."
+        }
+      ],
+      "unresolved_questions": [
+        "Implementation, enforcement, litigation, compliance and measured consequences identified in the entry remain subject to later evidence."
       ]
     }
   ],
