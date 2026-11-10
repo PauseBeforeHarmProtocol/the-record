@@ -14424,14 +14424,30 @@
     "candidate_id": "QUEUE-20261110-1207-EAST-POTOMAC-STAY",
     "first_seen_at": "2026-11-10T17:07:35.690006Z",
     "timestamp_precision": "second",
-    "status": "pending",
-    "title": "Reported denial of East Potomac injunction stay",
-    "reason": "The Washington Post reported that Judge Ana C. Reyes denied the government's stay request and left the tree-cutting injunction in force, but the underlying order and a second independent account were not located before cutoff. The existing canonical event was not refreshed from one secondary report alone.",
+    "status": "published",
+    "title": "East Potomac stay denial",
+    "reason": "The retrieved November 9 order and independent November 10 reporting resolved the prior evidence gap and materially refreshed the existing East Potomac record rather than creating a parallel event.",
     "provenance": [
+      "https://storage.courtlistener.com/recap/gov.uscourts.dcd.289401/gov.uscourts.dcd.289401.144.0.pdf",
       "https://www.washingtonpost.com/sports/2026/11/10/judge-keeps-east-potomac-tree-cutting-ban-place-ahead-planned-closure/"
     ],
-    "recheck_trigger": "The original district-court order, appellate docket action or an independent second report.",
-    "revisions": []
+    "recheck_trigger": "D.C. Circuit stay or merits action, closure ruling, special-master order, compliance event or final merits decision.",
+    "canonical_id": "NAT-2026-10-10-001",
+    "revisions": [
+      {
+        "candidate_id": "QUEUE-20261110-1207-EAST-POTOMAC-STAY",
+        "first_seen_at": "2026-11-10T17:07:35.690006Z",
+        "timestamp_precision": "second",
+        "status": "pending",
+        "title": "Reported denial of East Potomac injunction stay",
+        "reason": "The Washington Post reported that Judge Ana C. Reyes denied the government's stay request and left the tree-cutting injunction in force, but the underlying order and a second independent account were not located before cutoff. The existing canonical event was not refreshed from one secondary report alone.",
+        "provenance": [
+          "https://www.washingtonpost.com/sports/2026/11/10/judge-keeps-east-potomac-tree-cutting-ban-place-ahead-planned-closure/"
+        ],
+        "recheck_trigger": "The original district-court order, appellate docket action or an independent second report.",
+        "revisions": []
+      }
+    ]
   },
   {
     "candidate_id": "QUEUE-20261110-1207-RURAL-HEALTH-YEAR2",
@@ -14472,6 +14488,50 @@
     "status": "withheld",
     "title": "Trump TV and official video-library check through November 10 noon",
     "reason": "Official Trump TV, live, videos, remarks and release/news pages were inspected as page and listing metadata. The stream ID remained A4gNgHfZ-v4 and the library still led with November 9 material. Footage, complete audio and captions were unavailable; no qualifying new item located in the material reviewed.",
+    "provenance": [
+      "https://www.whitehouse.gov/trumptv/",
+      "https://www.whitehouse.gov/live/",
+      "https://www.whitehouse.gov/videos/",
+      "https://www.whitehouse.gov/remarks/",
+      "https://www.whitehouse.gov/releases/"
+    ],
+    "recheck_trigger": "A new accessible recording or transcript, programming action, appropriation, contract, staffing or editorial-control record, investigation or court/congressional finding.",
+    "revisions": []
+  },
+  {
+    "candidate_id": "QUEUE-20261110-1812-TRUTH-ALASKA",
+    "first_seen_at": "2026-11-10T23:03:21.171956Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "title": "Truth Social Alaska Senate result graphic",
+    "reason": "The image-only post was visually reviewed as a publication record. It concerned an election result and supplied no independently verified Trump-administration action meeting the national archive threshold.",
+    "provenance": [
+      "https://truthsocial.com/@realDonaldTrump/117594425631546017"
+    ],
+    "recheck_trigger": "A formal federal action, court ruling, investigation or independently verified governance consequence distinct from the election result itself.",
+    "revisions": []
+  },
+  {
+    "candidate_id": "QUEUE-20261110-1812-HERMOSA",
+    "first_seen_at": "2026-11-10T23:12:41.159552Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "title": "DOJ highlights November 6 Hermosa critical-minerals preliminary-injunction denial",
+    "reason": "DOJ's November 10 release described a November 6 ruling outside the exact source window. The original order and independent reporting were retained as a retrospective lead rather than represented as a new-window court event.",
+    "provenance": [
+      "https://www.justice.gov/opa/pr/arizona-federal-court-denies-request-halt-hermosa-critical-minerals-project",
+      "https://docs.justia.com/cases/federal/district-courts/arizona/azdce/4%3A2026cv00496/1521121/32"
+    ],
+    "recheck_trigger": "A post-boundary merits order, appeal, injunction change, construction milestone, expenditure or measured environmental or production outcome.",
+    "revisions": []
+  },
+  {
+    "candidate_id": "QUEUE-20261110-1812-TRUMP-TV",
+    "first_seen_at": "2026-11-10T23:12:41.159552Z",
+    "timestamp_precision": "second",
+    "status": "withheld",
+    "title": "Trump TV and official video-library evening check",
+    "reason": "Official Trump TV, live, video, remarks and releases pages were inspected as page and listing metadata. The stream remained A4gNgHfZ-v4 and the library still led with November 9 items; no qualifying new item located in the material reviewed.",
     "provenance": [
       "https://www.whitehouse.gov/trumptv/",
       "https://www.whitehouse.gov/live/",
