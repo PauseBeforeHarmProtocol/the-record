@@ -1,0 +1,52 @@
+{
+  "release_version": "10.231.0",
+  "as_of_utc": "2026-11-10T17:07:35.690006Z",
+  "custody": "Hash-bound change receipt. The complete prior CPI state is preserved by append-only encoded version_history; the added SNAP entry has no prior canonical state.",
+  "changes": {
+    "NAT-2026-09-11-006": {
+      "kind": "material_refresh",
+      "before_sha256": "8ebcc07cc9adad51380a137a78a70b3f89dcb394ac68441d032d10c98847aa78",
+      "after_sha256": "816b9019edba5bb39ac22cd6b2ba62e137c1aada6a6f655a6f32ab3ca52e1710",
+      "changed_fields": [
+        "checked_at",
+        "dek",
+        "display_date",
+        "evidence",
+        "facts",
+        "goalpost",
+        "maybe_therefore",
+        "significance",
+        "sources",
+        "title",
+        "version_history"
+      ],
+      "summary": "Recorded October CPI's 0.4% monthly rise, 0.3% core increase and the missing shutdown-era annual comparison without assigning a single cause."
+    },
+    "NAT-2026-11-10-001": {
+      "kind": "added",
+      "before_sha256": null,
+      "after_sha256": "0178d7af59788c486a1643e468879e6c6c6e50ca37f8c8e9097228ce985a65d9",
+      "changed_fields": [
+        "checked_at",
+        "date",
+        "dek",
+        "display_date",
+        "evidence",
+        "facts",
+        "goalpost",
+        "id",
+        "institutions",
+        "maybe_therefore",
+        "pack_filename",
+        "pack_path",
+        "review_status",
+        "scope",
+        "significance",
+        "sources",
+        "tags",
+        "title"
+      ],
+      "summary": "Added USDA's proposed SNAP categorical-eligibility contraction and agency-modeled effects without treating the proposal as final or implemented."
+    }
+  }
+}
