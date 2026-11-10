@@ -1,48 +1,54 @@
 {
-  "version": "10.229.0",
+  "version": "10.230.0",
   "artifact_mode": "full",
   "run_changes": {
     "added_entry_ids": [
-      "NAT-2026-11-06-006",
-      "NAT-2026-11-07-001"
+      "NAT-2026-11-09-001",
+      "NAT-2026-11-09-002",
+      "NAT-2026-11-09-003",
+      "NAT-2026-11-09-004"
     ],
     "refreshed_entry_ids": [
-      "NAT-2026-08-17-001",
-      "NAT-2026-10-10-001"
+      "NAT-2026-09-14-009",
+      "NAT-2026-10-30-001"
     ],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-07T17:12:07.166261Z",
-    "through_utc": "2026-11-07T23:02:55.535264Z",
+    "from_utc": "2026-11-07T23:02:55.535264Z",
+    "through_utc": "2026-11-10T11:10:27.177961Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Repository-enforced prior published boundary through the final validated Truth Social refresh; a preserved no-op inspection reached 2026-11-07T17:37:51.960278Z, while this release retains the full published-boundary window and records later-discovered prior-window litigation explicitly."
+    "note": "Repository-enforced prior published boundary through the final validated Truth Social refresh."
   },
-  "release_iso": "2026-11-07",
-  "release_human": "November 7, 2026",
-  "checked_at": "2026-11-07 6:02 PM EST",
-  "previous_version": "10.228.0",
-  "previous_checked_at": "2026-11-07 12:12 PM EST",
-  "window_started_at": "2026-11-07T17:12:07.166261Z",
-  "window_ended_at": "2026-11-07T23:02:55.535264Z",
-  "week_start": "2026-11-02",
-  "week_end": "2026-11-08",
-  "week_label": "November 2–8, 2026",
+  "release_iso": "2026-11-10",
+  "release_human": "November 10, 2026",
+  "checked_at": "2026-11-10 6:10 AM EST",
+  "previous_version": "10.229.0",
+  "previous_checked_at": "2026-11-07 6:02 PM EST",
+  "window_started_at": "2026-11-07T23:02:55.535264Z",
+  "window_ended_at": "2026-11-10T11:10:27.177961Z",
+  "week_start": "2026-11-09",
+  "week_end": "2026-11-15",
+  "week_label": "November 9–15, 2026",
   "cutoff_start": "2026-07-20",
   "new_entry_ids": [
-    "NAT-2026-08-17-001",
-    "NAT-2026-10-10-001",
-    "NAT-2026-11-06-006",
-    "NAT-2026-11-07-001"
+    "NAT-2026-09-14-009",
+    "NAT-2026-10-30-001",
+    "NAT-2026-11-09-001",
+    "NAT-2026-11-09-002",
+    "NAT-2026-11-09-003",
+    "NAT-2026-11-09-004"
   ],
   "added_entry_ids": [
-    "NAT-2026-11-06-006",
-    "NAT-2026-11-07-001"
+    "NAT-2026-11-09-001",
+    "NAT-2026-11-09-002",
+    "NAT-2026-11-09-003",
+    "NAT-2026-11-09-004"
   ],
   "refreshed_entry_ids": [
-    "NAT-2026-08-17-001",
-    "NAT-2026-10-10-001"
+    "NAT-2026-09-14-009",
+    "NAT-2026-10-30-001"
   ],
   "dedupe_resolutions": [
     {
@@ -1210,12 +1216,6 @@
       "notes": "Trump's no-swap assertion concerns the release terms of the already catalogued Hubbard event and was preserved as an attributed claim in the stable record."
     },
     {
-      "entry_id": "NAT-2026-09-14-009",
-      "target_id": "NAT-2026-09-14-009",
-      "decision": "same_event_update",
-      "notes": "The reported October 21 emergency Supreme Court application concerns the October 2 preliminary injunction already tracked in the stable Big Bend litigation record and was consolidated rather than counted as a parallel event."
-    },
-    {
       "entry_id": "NAT-2026-10-21-003",
       "target_id": "NAT-2026-10-21-003",
       "decision": "false_positive",
@@ -1384,12 +1384,6 @@
       "notes": "No existing event, normalized title, source URL or recent maintenance pull request covered the two-part Lockheed employment-practice settlement."
     },
     {
-      "entry_id": "NAT-2026-10-30-001",
-      "target_id": "NAT-2026-10-30-001",
-      "decision": "same_event_update",
-      "notes": "Jacksonville's dollar-specific award advances the existing Model Cities selection record and was merged into that stable ID."
-    },
-    {
       "entry_id": "NAT-2026-08-27-008",
       "target_id": "NAT-2026-08-27-008",
       "decision": "same_event_update",
@@ -1436,27 +1430,33 @@
       "target_id": "NAT-2026-10-29-003",
       "decision": "distinct_lifecycle_stage",
       "notes": "The Fox–Roku antitrust clearance concerns a completed media-platform acquisition and recorded commitments, not an earlier unrelated merger or platform action."
+    },
+    {
+      "entry_id": "NAT-2026-11-09-001",
+      "target_id": "NAT-2026-08-17-001",
+      "decision": "distinct_lifecycle_stage",
+      "notes": "The impeachment resolution cites the Iran conflict but is a separate congressional oversight procedure; the underlying military campaign remains cross-context, not a duplicated new war event."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Dana White press-secretary offer",
-      "reason": "Reviewed announcement and graphic; no acceptance, appointment instrument or material policy consequence, and presentation was theatrical personnel chatter."
+      "title": "Truth Social Iran, election, market and blockade rhetoric",
+      "reason": "Reviewed as publication-only leads; no independently verified new instrument, implemented action or outcome beyond existing records was established."
     },
     {
-      "title": "Alaska Senate result claim and charts",
-      "reason": "Independent reporting still described the race as uncalled; publication did not establish a result or federal action."
+      "title": "David MacNeil special-envoy announcement",
+      "reason": "Trump announced an intended personnel role, but no appointment instrument, duties record or material implemented consequence was located by cutoff."
     },
     {
-      "title": "First Lady/LSU $7.2 million fostering endowment",
-      "reason": "Verified event and contribution display, but no federal appropriation, expenditure, contract or material federal policy action was established."
+      "title": "161 nominations and 25 judges confirmation request",
+      "reason": "A presidential request for Senate action was routine advocacy and did not establish confirmation or another completed action."
     },
     {
-      "title": "Truth Social promotional, flyover and event media",
-      "reason": "Images and representative video frames were reviewed; complete audio/transcripts were unavailable and no separate qualifying action was established."
+      "title": "Truth Social reflecting-pool, Dana White and cartoon media",
+      "reason": "Attached images and representative downloaded video frames were reviewed; complete audio/transcripts were unavailable and no separate qualifying action was established."
     },
     {
-      "title": "Trump TV November 7 pages",
+      "title": "Trump TV November 9 page and video metadata",
       "reason": "Official page and listing metadata were inspected; no footage was claimed watched and no qualifying new item located in the material reviewed."
     }
   ],
@@ -1468,7 +1468,7 @@
     "checked_at_eastern": "2026-11-07 6:02:55 PM EST",
     "inspection_status": "official pages, stable stream links and dated-library metadata inspected; full audiovisual content unavailable",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-07T23:02:55.535264Z",
+    "last_successful_page_inspection_at": "2026-11-10T11:10:27.177961Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1480,7 +1480,7 @@
       "https://www.whitehouse.gov/news/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, videos, remarks and releases pages were inspected. Trump TV and live still embedded A4gNgHfZ-v4. The dated library still led with November 6 recordings and exposed no November 7 listing. Titles, dates, durations and stable links were inspected; playback, complete audio and captions were not retrieved. Replays were deduplicated, fallback text was not treated as outage proof, no footage is claimed watched, and no qualifying new item located in the material reviewed. The complete broadcast-review boundary remains unadvanced.",
+    "summary": "Official Trump TV, live, videos, remarks and releases/news pages were inspected. Trump TV still linked stream A4gNgHfZ-v4. The dated library exposed five November 9 listings: a 35:12 Trump remarks recording, a 2:52 60 Minutes clip, a 28:06 Vance event recording, a 1:00 NASA clip and a 10:48 Palm Beach departure gaggle posted November 9 for a November 8 event. Only titles, dates, durations and stable links were inspected; footage, complete audio and captions were not retrieved. Replays were deduplicated, fallback text was not treated as outage proof, no footage is claimed watched, and no qualifying new item located in the remaining material reviewed. The complete broadcast-review boundary remains unadvanced.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -3211,6 +3211,65 @@
         "observed_at_eastern": "2026-11-07 6:02:55 PM EST",
         "format": "supplementary official releases index",
         "inspection": "Page/listing metadata and stable links inspected. No footage, complete audio or captions were retrieved; no outage or complete broadcast coverage is claimed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-10T11:10:27.177961Z",
+        "observed_at_eastern": "2026-11-10 6:10:27 AM EST",
+        "format": "official Trump TV page and stream-link metadata; audiovisual content unreviewed",
+        "inspection": "Stable stream link inspected. Fallback text was not treated as outage proof; no footage, audio or captions were retrieved."
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-10T11:10:27.177961Z",
+        "observed_at_eastern": "2026-11-10 6:10:27 AM EST",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "Live-hub state and links inspected. The displayed off-air language was not treated as outage proof."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "video_ids": [],
+        "posted_date": "2026-11-09",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-10T11:10:27.177961Z",
+        "observed_at_eastern": "2026-11-10 6:10:27 AM EST",
+        "format": "official dated-library metadata for five recordings and edited clips",
+        "inspection": "Titles, dates, durations and stable detail URLs were inspected. Playback, complete audio and captions were unavailable; no recording is claimed watched."
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "video_ids": [],
+        "posted_date": "2026-09-28",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-10T11:10:27.177961Z",
+        "observed_at_eastern": "2026-11-10 6:10:27 AM EST",
+        "format": "supplementary remarks index; not assumed complete",
+        "inspection": "Index inspected; it remained stale and was not treated as a complete transcript feed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "video_ids": [],
+        "posted_date": "2026-11-09",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-10T11:10:27.177961Z",
+        "observed_at_eastern": "2026-11-10 6:10:27 AM EST",
+        "format": "supplementary official releases/news metadata",
+        "inspection": "Recent releases were inspected as text leads; no separate qualifying Trump TV cost, contract, staffing, editorial-control or distribution finding was located."
       }
     ],
     "checked_at_utc": "2026-11-07T23:02:55.535264Z",
@@ -3631,33 +3690,40 @@
         "format": "supplementary official news/releases index",
         "inspection": "Recent official releases were inspected as text leads; no separate qualifying Trump TV cost, contract, staffing, editorial-control or distribution finding was located."
       }
+    ],
+    "last_successful_broadcast_boundary": null,
+    "access_gaps": [
+      {
+        "observed_at": "2026-11-10T11:10:27.177961Z",
+        "note": "Playback, complete audio and captions/transcripts were not retrieved for the November 9 listings; only official metadata and stable URLs were inspected, so no continuous-coverage claim or broadcast boundary was advanced."
+      }
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 17,
-    "new_text_reviewed": 17,
-    "new_media_reviewed": 14,
+    "new_posts": 16,
+    "new_text_reviewed": 16,
+    "new_media_reviewed": 7,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-07T23:02:55.535264Z",
-    "checked_at_eastern": "2026-11-07 6:02:55 PM EST",
-    "latest_post_id": "117577381997659473",
-    "latest_post_at_eastern": "2026-11-07 4:54:30 PM EST",
+    "checked_at_utc": "2026-11-10T11:10:27.177961Z",
+    "checked_at_eastern": "2026-11-10 6:10:27 AM EST",
+    "latest_post_id": "117589581287691662",
+    "latest_post_at_eastern": "2026-11-09 8:36:56 PM EST",
     "counts": {
       "text_status": {
         "not_recorded": 154,
-        "reviewed": 1690,
-        "pending": 972
+        "pending": 972,
+        "reviewed": 1706
       },
       "media_status": {
-        "not_applicable": 1576,
+        "not_applicable": 1585,
         "not_recorded": 19,
-        "unavailable": 295,
         "pending": 539,
-        "reviewed": 387
+        "reviewed": 394,
+        "unavailable": 295
       }
     },
-    "note": "Seventeen posts were newer than the prior published snapshot. The newest was published November 7 at 4:54:30 PM EST. Text, attached images and representative video frames were reviewed; complete audio/transcripts for videos were unavailable. One post supplied primary evidence of Trump's announced DOJ direction; the rest were withheld or deduplicated. No post newer than 4:54:30 PM EST appeared before the final validated 6:02:55 PM EST refresh."
+    "note": "Sixteen posts were newer than the prior published snapshot. The newest was published November 9 at 8:36:56 PM EST. Text, attached images and representative video frames were reviewed; complete audio/transcripts for videos were unavailable. Two posts supplied publication-only evidence for independently verified records. No post newer than 8:36:56 PM EST appeared before the final validated November 10 6:10:27 AM EST refresh."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -3669,9 +3735,9 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-07 6:02 PM EST",
-    "checked_at_utc": "2026-11-07T23:02:55.535264Z",
-    "summary": "Four registered primary project pages were rechecked. Trump Archive displayed 16,031 total items, 13,319 Truth Social posts and 2,051 speeches/transcripts. UndoTrump remained at 1,264 actions and 533 Term II actions, with 995 active, 44 in courts and 42 restored. IPTP displayed 1,829 policy actions. Record47's dynamic primary-page counters did not yield a reliable new measurement, so prior verified values were preserved. Distinct units were not summed and zero external items were imported by default.",
+    "checked_at": "2026-11-10 6:10 AM EST",
+    "checked_at_utc": "2026-11-10T11:10:27.177961Z",
+    "summary": "Four registered primary project pages were rechecked. Trump Archive displayed 16,066 total items, 13,345 Truth Social posts and 2,059 speeches/transcripts. UndoTrump remained at 1,264 actions, with 995 active, 44 in courts and 42 restored; the prior 533 Term II value was preserved because that filter was not independently re-observed. IPTP displayed 1,832 policy actions. Record47's dynamic primary-page counters did not yield a reliable new measurement, so prior verified values were preserved. Distinct units were not summed and zero external items were imported by default.",
     "updated_archives": [
       "trump_archive",
       "immigration_policy_tracking_project"
@@ -3684,9 +3750,9 @@
     ]
   },
   "editorial_notes": [
-    "Published two new records and two material refreshes; the quota was met through qualifying evidence, not duplication.",
-    "The Planned Parenthood filing occurred Friday night and is disclosed as a prior-window omission discovered in new reporting; the original filing remains a source gap.",
-    "No legacy entry was changed. The disclosed legacy duplicate and source-health queues remain visible for a later evidence-complete batch."
+    "Published four new records and two material refreshes; the target was met through qualifying evidence, not duplication.",
+    "No correction was required. Allegations, procedural votes, temporary relief, announced awards and publication-only statements remain explicitly bounded.",
+    "No legacy entry was changed in this evidence-heavy current batch. The disclosed duplicate and source-health queues remain visible for a later evidence-complete review."
   ],
   "retained_stages": [],
   "publication_transport_attempts": [],
