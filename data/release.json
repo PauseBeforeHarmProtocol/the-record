@@ -1,50 +1,49 @@
 {
-  "version": "10.233.1",
-  "artifact_mode": "feed-only",
-  "editorial_snapshot": {
-    "version": "10.233.0",
-    "national_pack": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-11-11_v10.233.0.zip",
-      "sha256": "ad078dfeb3cab24e2effacec18a2ebdac7db63d253f3de486b29031a54256fa1"
-    },
-    "complete_pack": {
-      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-11-11_v10.233.0.zip",
-      "sha256": "e041b0b3748a34ffb562e383af134a99021521a153e746fe5f63416619884eb1"
-    },
-    "national_brief": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-11-11_v10.233.0.md",
-      "sha256": "fdc9c18ad1a2b5afd2b6725ae32832c6912f28615427addbbdce965eb2476126"
-    },
-    "in6_brief": {
-      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-11-11_v10.233.0.md",
-      "sha256": "6dfa2a7f8aee20c348b0561c19c96376cadb8049eb1b96a7aa7850e33d3d4378"
-    }
-  },
+  "version": "10.234.0",
+  "artifact_mode": "full",
   "run_changes": {
-    "added_entry_ids": [],
+    "added_entry_ids": [
+      "NAT-2026-11-10-009",
+      "NAT-2026-11-10-010",
+      "NAT-2026-11-10-011",
+      "NAT-2026-11-10-012",
+      "NAT-2026-11-10-013"
+    ],
     "refreshed_entry_ids": [],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-11T05:05:03.012699Z",
-    "through_utc": "2026-11-11T11:01:04.120308Z",
+    "from_utc": "2026-11-11T11:01:04.120308Z",
+    "through_utc": "2026-11-11T17:09:17.815495Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact prior checked_at boundary through the final validated Truth Social refresh. Editorial no-op with two newer text-only raw-feed posts retained and reviewed; no qualifying canonical national item located in the material reviewed."
+    "note": "Exact prior published boundary through the final validated Truth Social refresh and publication cutoff. Five accepted items are explicitly labeled retrospective because their official announcements or publications preceded the boundary; no post-boundary action time is claimed."
   },
   "release_iso": "2026-11-11",
   "release_human": "November 11, 2026",
-  "checked_at": "2026-11-11 6:01 AM EST",
-  "previous_version": "10.233.0",
-  "previous_checked_at": "2026-11-11 12:05 AM EST",
-  "window_started_at": "2026-11-11T05:05:03.012699Z",
-  "window_ended_at": "2026-11-11T11:01:04.120308Z",
+  "checked_at": "2026-11-11 12:09 PM EST",
+  "previous_version": "10.233.1",
+  "previous_checked_at": "2026-11-11 6:01 AM EST",
+  "window_started_at": "2026-11-11T11:01:04.120308Z",
+  "window_ended_at": "2026-11-11T17:09:17.815495Z",
   "week_start": "2026-11-09",
   "week_end": "2026-11-15",
   "week_label": "November 9–15, 2026",
   "cutoff_start": "2026-07-20",
-  "new_entry_ids": [],
-  "added_entry_ids": [],
+  "new_entry_ids": [
+    "NAT-2026-11-10-009",
+    "NAT-2026-11-10-010",
+    "NAT-2026-11-10-011",
+    "NAT-2026-11-10-012",
+    "NAT-2026-11-10-013"
+  ],
+  "added_entry_ids": [
+    "NAT-2026-11-10-009",
+    "NAT-2026-11-10-010",
+    "NAT-2026-11-10-011",
+    "NAT-2026-11-10-012",
+    "NAT-2026-11-10-013"
+  ],
   "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
@@ -1450,35 +1449,41 @@
       "target_id": "NAT-2026-08-17-001",
       "decision": "distinct_lifecycle_stage",
       "notes": "The impeachment resolution cites the Iran conflict but is a separate congressional oversight procedure; the underlying military campaign remains cross-context, not a duplicated new war event."
+    },
+    {
+      "entry_id": "NAT-2026-11-10-010",
+      "target_id": "NAT-2026-11-10-001",
+      "decision": "false_positive",
+      "notes": "Both are SNAP proposed rules published November 10, but NAT-2026-11-10-001 addresses categorical eligibility tied to TANF assistance; NAT-2026-11-10-010 separately implements statutory time limits, individual exceptions and geographic waivers under a different RIN and docket."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Truth Social complaints about New York Times reporting",
-      "reason": "Two text-only posts were reviewed as publication evidence only. The C-SPAN notice complaint and private Bedminster-case denial established no operative federal action, ruling, investigation, expenditure or independently verified administration consequence."
+      "title": "Defense Department WuXi AppTec delisting",
+      "reason": "The notice implements an August preliminary injunction, but the underlying court order was not retrieved; the target-level action remains queued for evidence-complete context."
     },
     {
-      "title": "Bessent U.S.-China gala remarks",
-      "reason": "The November 11 speech restated the September trade-board, reciprocal $30 billion treatment, superintelligence-dialogue and incident-channel framework already recorded in NAT-2026-09-20-001; no new implementation or distinct lifecycle stage was established."
+      "title": "Vietnam investigation extension, CFTC interpretation and NLRB correction",
+      "reason": "These procedural, interpretive or technical items did not establish a sufficiently material new consequence; they remain queued for substantive findings or implementation."
     },
     {
-      "title": "Ceremonial and pre-boundary official material",
-      "reason": "Veterans Day material and the November 10 wildfire determination were ceremonial, already reviewed, pre-boundary or previously dispositioned; no new post-boundary lifecycle stage was located."
+      "title": "Judicial nominee substitution and Veterans Day ceremony",
+      "reason": "Routine personnel and ceremonial activity remained below the publication threshold."
     },
     {
       "title": "Trump TV and official video-library metadata",
-      "reason": "Official pages and listing metadata were inspected; the stream link and November 9 library lead repeated, no footage is claimed watched, and no qualifying new item located in the material reviewed."
+      "reason": "Official pages and live-event metadata were inspected; no footage is claimed watched, fallback text was not outage proof, and no qualifying new item located in the material reviewed."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-11 6:01 AM EST",
-    "checked_at_eastern": "2026-11-11 6:01:04 AM EST",
-    "inspection_status": "official pages, stable stream link and dated-library metadata inspected; full audiovisual content unavailable",
+    "checked_at": "2026-11-11 12:02 PM EST",
+    "checked_at_eastern": "2026-11-11 12:02:58 PM EST",
+    "inspection_status": "official pages, live-event link and dated-library metadata inspected; full audiovisual content unavailable",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-11T11:01:04.120308Z",
+    "last_successful_page_inspection_at": "2026-11-11T17:02:58.976658Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1490,7 +1495,7 @@
       "https://www.whitehouse.gov/news/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, videos, remarks and releases pages were inspected. Trump TV still linked stream A4gNgHfZ-v4, and the dated library still led with November 9 material already identified before the boundary. Only page and listing metadata were inspected; footage, complete audio and captions were not retrieved. Replays were deduplicated, fallback text was not treated as outage proof, no footage is claimed watched, and no qualifying new item located in the material reviewed. The complete broadcast-review boundary remains unadvanced.",
+    "summary": "Official Trump TV, live, videos, remarks and releases pages were inspected. The live page linked the November 11 National Veterans Day Ceremony and Trump TV, while the Trump TV page retained its channel link. Only page and listing metadata were inspected; footage, complete audio and captions were not retrieved. Fallback error text was not treated as outage proof, no footage is claimed watched, no qualifying new item located in the material reviewed, and the complete broadcast-review boundary remains unadvanced.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1536,7 +1541,8 @@
       "November 7 6:02 PM EST: A4gNgHfZ-v4 remained the official Trump TV/live embed and the video library still led with November 6 material. Only page/listing metadata were inspected; playback, complete audio and captions were unavailable. No outage, full-coverage or channel-resource finding was inferred.",
       "The remarks index is supplementary, not a complete transcript feed.",
       "No verified new channel cost, contract, staffing, editorial-control, distribution, advertising or press-access record was located in the official material reviewed.",
-      "November 11 12:05 AM EST: A4gNgHfZ-v4 remained linked and the library still led with November 9 metadata. Playback, complete audio and captions were not retrieved; fallback text was not outage proof. No verified new channel costs, contracts, staffing, editorial-control, distribution, advertising or press-access finding; complete broadcast coverage remains unadvanced."
+      "November 11 12:05 AM EST: A4gNgHfZ-v4 remained linked and the library still led with November 9 metadata. Playback, complete audio and captions were not retrieved; fallback text was not outage proof. No verified new channel costs, contracts, staffing, editorial-control, distribution, advertising or press-access finding; complete broadcast coverage remains unadvanced.",
+      "November 11 12:02 PM EST: the live page linked the National Veterans Day Ceremony and Trump TV, but playback, complete audio and captions were not retrieved. Fallback text was not outage proof; no channel cost, contract, staffing, editorial-control, distribution, advertising or press-access finding was established."
     ],
     "items": [
       {
@@ -3461,6 +3467,39 @@
         "format": "supplementary official releases index",
         "inspection": "Recent official releases were inspected as text leads. No separate qualifying Trump TV action, cost, contract, staffing, editorial-control, distribution or press-access finding was located.",
         "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-11T17:02:58.976658Z",
+        "observed_at_eastern": "2026-11-11 12:02:58 PM EST",
+        "format": "official page and channel-link metadata; audiovisual content unreviewed",
+        "inspection": "Trump TV channel link inspected; fallback text was not treated as outage proof. No playback, complete audio or captions reviewed.",
+        "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "posted_date": "2026-11-11",
+        "original_event_date": "2026-11-11",
+        "broadcast_time": null,
+        "observed_at": "2026-11-11T17:02:58.976658Z",
+        "observed_at_eastern": "2026-11-11 12:02:58 PM EST",
+        "format": "official live-event metadata; live/replay state unverified",
+        "inspection": "National Veterans Day Ceremony title and official linked video metadata inspected. No playback, complete audio or captions reviewed; ceremonial listing did not establish a separate policy action.",
+        "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-11T17:02:58.976658Z",
+        "observed_at_eastern": "2026-11-11 12:02:58 PM EST",
+        "format": "official dated-library metadata; audiovisual content unreviewed",
+        "inspection": "Library page inspected as listing metadata only. No qualifying new item located in the material reviewed.",
+        "video_ids": []
       }
     ],
     "checked_at_utc": "2026-11-11T11:01:04.120308Z",
@@ -3967,13 +4006,13 @@
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 2,
-    "new_text_reviewed": 2,
+    "new_posts": 0,
+    "new_text_reviewed": 0,
     "new_media_reviewed": 0,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-11T11:01:04.120308Z",
-    "checked_at_eastern": "2026-11-11 6:01:04 AM EST",
+    "checked_at_utc": "2026-11-11T17:09:17.815495Z",
+    "checked_at_eastern": "2026-11-11 12:09:17 PM EST",
     "latest_post_id": "117596464128874330",
     "latest_post_at_eastern": "2026-11-11 1:47:20 AM EST",
     "counts": {
@@ -3990,7 +4029,7 @@
         "reviewed": 395
       }
     },
-    "note": "Two text-only posts were newer than the prior published snapshot. Both were reviewed only as evidence of what Trump published: the 1:25:25 AM EST post disputed notice wording for a C-SPAN call, and the 1:47:20 AM EST post denied involvement in a settled private Bedminster-club case. Neither post was treated as independent proof and neither established a qualifying federal action. No post newer than 1:47:20 AM EST appeared before the final validated 6:01:04 AM EST refresh."
+    "note": "No post newer than the prior snapshot appeared in either the startup or final validated refresh. The newest retained post remained the November 11 1:47:20 AM EST text-only post; no UTC date was substituted for its local publication date."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -4002,22 +4041,25 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-11 6:01 AM EST",
-    "checked_at_utc": "2026-11-11T11:01:04.120308Z",
-    "summary": "Four registered primary project pages were rechecked. Trump Archive displayed 16,078 total items, 13,354 Truth Social posts and 2,059 speeches/transcripts; UndoTrump remained at 1,264 actions; IPTP displayed 1,836 Policy Actions; Record47 exposed no stable counters. Because this is a strictly feed-only editorial no-op, canonical archive measurements were not changed; the observed changes remain queued for the next evidence-complete full release. Distinct units were not summed and zero external items were imported by default.",
-    "updated_archives": [],
+    "checked_at": "2026-11-11 12:02 PM EST",
+    "checked_at_utc": "2026-11-11T17:02:58.976658Z",
+    "summary": "Four registered primary project pages were rechecked. Trump Archive advanced to 16,080 total items and 13,356 Truth Social posts while remaining at 2,059 speeches/transcripts; UndoTrump remained at 1,264 actions and IPTP remained at 1,836 policy actions. Record47 exposed no stable numeric counter in accessible page text. Distinct units were not summed and zero external items were imported by default.",
+    "updated_archives": [
+      "trump_archive"
+    ],
     "unchanged_archives": [
-      "undotrump"
+      "undotrump",
+      "immigration_policy_tracking_project"
     ],
     "access_gap_archives": [
       "record47"
     ]
   },
   "editorial_notes": [
-    "Editorial no-op: no qualifying canonical national item completed review; two newer text-only Truth Social posts were retained and reviewed in the validated fallback.",
-    "The November 11 Bessent remarks duplicate the September U.S.-China trade-board and superintelligence-dialogue record and supplied no distinct operative lifecycle stage.",
-    "No correction, current entry, source-ledger record, legacy entry, federation record or schema changed. Full 10.233.0 canonical data and evidence packs are reused byte-for-byte.",
-    "External archive measurement changes observed during this strictly feed-only run were not applied to canonical metrics and remain queued for the next full evidence-complete release."
+    "Published five new national records; the archive was not padded.",
+    "All five are retrospective discoveries from primary November 5–10 announcements or Federal Register publications that preceded the prior boundary; their original dates and evidence status are preserved, and no post-boundary action time is claimed.",
+    "No correction or material refresh was required. Proposals are not described as final or implemented; the two USTR notices are limited to implemented temporary extensions.",
+    "No legacy entry was changed in this evidence batch. The disclosed duplicate and source-health queues remain visible for later evidence-complete review."
   ],
   "retained_stages": [],
   "publication_transport_attempts": [],
