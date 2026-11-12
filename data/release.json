@@ -1,49 +1,32 @@
 {
-  "version": "10.238.0",
-  "artifact_mode": "full",
+  "version": "10.238.1",
+  "artifact_mode": "feed-only",
   "run_changes": {
-    "added_entry_ids": [
-      "NAT-2026-11-12-007",
-      "NAT-2026-11-12-008",
-      "NAT-2026-11-12-009"
-    ],
-    "refreshed_entry_ids": [
-      "NAT-2026-09-14-003"
-    ],
+    "added_entry_ids": [],
+    "refreshed_entry_ids": [],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-12T17:11:02.801260Z",
-    "through_utc": "2026-11-12T23:06:04.714372Z",
+    "from_utc": "2026-11-12T23:06:04.714372Z",
+    "through_utc": "2026-11-12T23:42:55.551018Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact prior published boundary through the final source search and validated Truth Social refresh. One pre-boundary fiscal-year outcome discovered during review is explicitly labeled retrospective; proposals, awards, arrests and reported aggregates remain distinguished from enacted spending, approved treatment, guilt or proven effectiveness."
+    "note": "Exact prior checked_at boundary through the final validated Truth Social refresh and bounded source review. Editorial no-op with one newer text-only raw-feed post retained and reviewed; no qualifying canonical national item located in the material reviewed."
   },
   "release_iso": "2026-11-12",
   "release_human": "November 12, 2026",
-  "checked_at": "2026-11-12 6:06 PM EST",
-  "previous_version": "10.237.0",
-  "previous_checked_at": "2026-11-12 12:11 PM EST",
-  "window_started_at": "2026-11-12T17:11:02.801260Z",
-  "window_ended_at": "2026-11-12T23:06:04.714372Z",
+  "checked_at": "2026-11-12 6:42 PM EST",
+  "previous_version": "10.238.0",
+  "previous_checked_at": "2026-11-12 6:06 PM EST",
+  "window_started_at": "2026-11-12T23:06:04.714372Z",
+  "window_ended_at": "2026-11-12T23:42:55.551018Z",
   "week_start": "2026-11-09",
   "week_end": "2026-11-15",
   "week_label": "November 9–15, 2026",
   "cutoff_start": "2026-07-20",
-  "new_entry_ids": [
-    "NAT-2026-09-14-003",
-    "NAT-2026-11-12-007",
-    "NAT-2026-11-12-008",
-    "NAT-2026-11-12-009"
-  ],
-  "added_entry_ids": [
-    "NAT-2026-11-12-007",
-    "NAT-2026-11-12-008",
-    "NAT-2026-11-12-009"
-  ],
-  "refreshed_entry_ids": [
-    "NAT-2026-09-14-003"
-  ],
+  "new_entry_ids": [],
+  "added_entry_ids": [],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-11-10-006",
@@ -1470,15 +1453,15 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Trump post alleging blue-state corruption",
-      "reason": "Reviewed as publication evidence, but its claims were not independently verified and no separate qualifying action, investigation, expenditure, ruling or measured outcome was located.",
+      "title": "Truth Social repost of Hugh Hewitt interview praise",
+      "reason": "Reviewed as publication evidence only. The praise and any implied claims were not independently verified, and the post established no operative federal action, formal proposal, investigation, expenditure, ruling or measured outcome.",
       "source_urls": [
-        "https://truthsocial.com/@realDonaldTrump/117604932901982469"
+        "https://truthsocial.com/@realDonaldTrump/117606070721302149"
       ]
     },
     {
       "title": "Trump TV and November 12 official-page metadata",
-      "reason": "Official pages and stream metadata were inspected, but playback, complete audio and captions were unavailable. The border-convoy release duplicated an existing record; no qualifying new item located in the material reviewed.",
+      "reason": "Official pages and listing metadata were inspected. The stable stream link and November 11 ceremonial recordings repeated previously reviewed material; playback, complete audio and captions were unavailable, no footage is claimed watched, and no qualifying new item located in the material reviewed.",
       "source_urls": [
         "https://www.whitehouse.gov/trumptv/",
         "https://www.whitehouse.gov/live/",
@@ -1486,17 +1469,21 @@
         "https://www.whitehouse.gov/remarks/",
         "https://www.whitehouse.gov/releases/"
       ]
+    },
+    {
+      "title": "Routine official releases and local prosecution updates",
+      "reason": "The First Lady military-family item was ceremonial, and the reviewed local DOJ sentencing and already-catalogued policy coverage supplied no distinct material national action or lifecycle stage."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-12 6:06 PM EST",
-    "checked_at_eastern": "2026-11-12 6:06:04 PM EST",
+    "checked_at": "2026-11-12 6:42 PM EST",
+    "checked_at_eastern": "2026-11-12 6:42:55 PM EST",
     "inspection_status": "official pages, stable stream link, dated-library and release metadata inspected; full audiovisual content unavailable",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-12T23:06:04.714372Z",
+    "last_successful_page_inspection_at": "2026-11-12T23:42:55.551018Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1508,7 +1495,7 @@
       "https://www.whitehouse.gov/news/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, videos, remarks and releases pages were rechecked. Stream A4gNgHfZ-v4 remained linked and the dated library still led with four November 11 ceremonial items. A November 12 border-caravan release duplicated NAT-2026-11-12-006. Only page, title, date, duration and link metadata were inspected; playback, complete audio and captions were unavailable. Fallback text was not treated as outage proof, no footage is claimed watched, no qualifying new item located in the material reviewed, and the complete broadcast-review boundary remains unadvanced.",
+    "summary": "Official Trump TV, live, videos, remarks and releases pages were rechecked. Stream A4gNgHfZ-v4 remained the retained stable link and the dated library still led with four November 11 ceremonial items already reviewed. Only page, title, date, duration and link metadata were inspected; playback, complete audio and captions were unavailable. Fallback text was not treated as outage proof, no footage is claimed watched, no qualifying new item located in the material reviewed, and the complete broadcast-review boundary remains unadvanced.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -3647,7 +3634,7 @@
         "video_ids": []
       }
     ],
-    "checked_at_utc": "2026-11-12T17:11:02.801260Z",
+    "checked_at_utc": "2026-11-12T23:42:55.551018Z",
     "last_successful_broadcast_boundary": null,
     "inspection_history": [
       {
@@ -4155,6 +4142,10 @@
       {
         "observed_at": "2026-11-12T23:06:04.714372Z",
         "note": "Playback, complete audio and captions/transcripts were not retrieved for the repeated November 11 listings; only official page and listing metadata were inspected. Fallback text was not treated as outage proof, and no continuous-coverage claim or broadcast boundary was advanced."
+      },
+      {
+        "observed_at": "2026-11-12T23:42:55.551018Z",
+        "note": "Playback, complete audio and captions/transcripts were not retrieved for the repeated November 11 listings; only official page and listing metadata were inspected. Fallback text was not treated as outage proof, and no continuous-coverage claim or broadcast boundary was advanced."
       }
     ],
     "inspected_items": [
@@ -4221,34 +4212,98 @@
         "observed_at_eastern": "2026-11-12 6:06:04 PM EST",
         "format": "supplementary official releases index",
         "inspection": "November 12 border-caravan release inspected as a text lead and deduplicated to existing record NAT-2026-11-12-006; no separate Trump TV finding."
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-12T23:42:55.551018Z",
+        "observed_at_eastern": "2026-11-12 6:42:55 PM EST",
+        "format": "official Trump TV page and retained stable stream-link metadata; audiovisual content unreviewed",
+        "inspection": "Only page and listing metadata were inspected. Playback, complete audio and captions were not retrieved; no footage is claimed watched, no outage is inferred and no complete broadcast boundary was advanced."
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-12T23:42:55.551018Z",
+        "observed_at_eastern": "2026-11-12 6:42:55 PM EST",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "Only page and listing metadata were inspected. Playback, complete audio and captions were not retrieved; no footage is claimed watched, no outage is inferred and no complete broadcast boundary was advanced."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "video_ids": [
+          "oYeoY2uS-YU",
+          "VVo0xJr_7iQ",
+          "BsMrRrcU_KI",
+          "G5jsCeH4ovs"
+        ],
+        "posted_date": "2026-11-11",
+        "original_event_date": "2026-11-11",
+        "broadcast_time": null,
+        "observed_at": "2026-11-12T23:42:55.551018Z",
+        "observed_at_eastern": "2026-11-12 6:42:55 PM EST",
+        "format": "official dated-library metadata for repeated Veterans Day ceremony and edited clips",
+        "inspection": "Titles, displayed dates, durations and detail links were inspected as metadata only. The repeated recordings were deduplicated and not treated as new government actions; no footage, complete audio or captions were retrieved."
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "video_ids": [],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-12T23:42:55.551018Z",
+        "observed_at_eastern": "2026-11-12 6:42:55 PM EST",
+        "format": "supplementary remarks index; not assumed complete",
+        "inspection": "Index metadata was inspected for supplementary statements and was not treated as a complete transcript feed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "video_ids": [],
+        "posted_date": "2026-11-12",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-12T23:42:55.551018Z",
+        "observed_at_eastern": "2026-11-12 6:42:55 PM EST",
+        "format": "supplementary official releases index",
+        "inspection": "Recent release metadata was inspected as text leads. No separate qualifying Trump TV action, cost, contract, staffing, editorial-control, distribution or press-access finding was located."
       }
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 2,
-    "new_text_reviewed": 2,
+    "new_posts": 1,
+    "new_text_reviewed": 1,
     "new_media_reviewed": 0,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-12T23:06:01.389560Z",
-    "checked_at_eastern": "2026-11-12 6:06:01 PM EST",
-    "latest_post_id": "117604932901982469",
-    "latest_post_at_eastern": "2026-11-12 1:41:03 PM EST",
+    "checked_at_utc": "2026-11-12T23:42:52.681374Z",
+    "checked_at_eastern": "2026-11-12 6:42:52 PM EST",
+    "latest_post_id": "117606070721302149",
+    "latest_post_at_eastern": "2026-11-12 6:30:25 PM EST",
     "counts": {
       "text_status": {
         "not_recorded": 154,
-        "reviewed": 1730,
+        "reviewed": 1731,
         "pending": 972
       },
       "media_status": {
-        "not_applicable": 1605,
+        "not_applicable": 1606,
         "not_recorded": 19,
         "unavailable": 295,
         "pending": 539,
         "reviewed": 398
       }
     },
-    "note": "Two posts newer than the prior snapshot were reviewed. The 12:24:53 PM EST defense-reconciliation request supplied publication evidence for an independently researched qualifying proposal; the 1:41:03 PM EST corruption post was withheld. The newest post was published November 12 at 1:41:03 PM EST; its local publication date, not its UTC date, is reported. The final validated refresh at 6:06:01 PM EST found no additional post beyond the two reviewed."
+    "note": "One text-only post was newer than the prior published snapshot. It was reviewed only as evidence that Trump republished Hugh Hewitt's praise of an interview; the praise and implied claims were not independently verified and no qualifying federal action was established. The newest post was published November 12 at 6:30:25 PM EST; its America/Indiana/Indianapolis publication date, not its UTC date, is reported. No post newer than 6:30:25 PM EST appeared before the final validated 6:42:52 PM EST refresh."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -4260,13 +4315,12 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-12 6:06 PM EST",
-    "checked_at_utc": "2026-11-12T23:06:04.714372Z",
-    "summary": "All four registered primary project pages were rechecked. Trump Archive advanced to 16,094 total items and 13,369 Truth Social posts while remaining at 2,060 speeches/transcripts; UndoTrump remained at 1,264 actions and IPTP remained at 1,836. Record47 counters did not render reliably, so prior measurements were preserved. Distinct units were not summed and zero external items were imported by default.",
-    "updated_archives": [
-      "trump_archive"
-    ],
+    "checked_at": "2026-11-12 6:42 PM EST",
+    "checked_at_utc": "2026-11-12T23:42:55.551018Z",
+    "summary": "All four registered primary project pages were rechecked. Trump Archive remained at 16,094 total items, 13,369 Truth Social posts and 2,060 speeches/transcripts; UndoTrump remained at 1,264 actions; IPTP remained at 1,836 Trump actions; Record47 exposed no stable numeric counters. Distinct units were not summed and zero external items were imported by default.",
+    "updated_archives": [],
     "unchanged_archives": [
+      "trump_archive",
       "undotrump",
       "immigration_policy_tracking_project"
     ],
@@ -4275,14 +4329,32 @@
     ]
   },
   "editorial_notes": [
-    "Published three new national records and materially refreshed one existing event; the archive was not padded.",
-    "The ICE fiscal-year result is explicitly retrospective evidence announced before this run boundary and was reconciled into the existing September event rather than presented as a new action.",
-    "The ibogaine awards are research groundwork, not patient treatment or FDA approval; the defense request is proposed, not enacted; Operation TorNado arrest and seizure aggregates are implemented enforcement results, not convictions or proven long-term effectiveness.",
-    "No correction or legacy entry change was made; the disclosed legacy duplicate and source-health queues remain visible because no additional historical candidate could be resolved responsibly within this evidence window.",
-    "Trump’s separate corruption post and inaccessible Trump TV audiovisual material were withheld with recheck triggers."
+    "Editorial no-op: no qualifying canonical national item completed review; one newer text-only Truth Social post was retained and reviewed in the validated fallback.",
+    "The Hugh Hewitt praise repost is evidence only of what Trump published and was not treated as independent proof of any claim or as a federal action.",
+    "No correction, current entry, source-ledger record, legacy entry, federation record, archive measurement or schema changed. Full 10.238.0 canonical data and evidence packs are reused byte-for-byte.",
+    "The four registered external archives were rechecked as discovery inputs. Their observed values were unchanged or unavailable, distinct units were not summed, and zero external items were imported."
   ],
   "retained_stages": [],
   "publication_transport_attempts": [],
   "maintenance_revision": null,
-  "engineering_revision": null
+  "engineering_revision": null,
+  "editorial_snapshot": {
+    "version": "10.238.0",
+    "national_pack": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-11-12_v10.238.0.zip",
+      "sha256": "71918c2ab61aadadf5fe31dcb1751d5d59087482f7531498af42c02606686a64"
+    },
+    "complete_pack": {
+      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-11-12_v10.238.0.zip",
+      "sha256": "ad2b52564913527046fb60434878dd00e04eb21855e243570f8db37eca5bf9bf"
+    },
+    "national_brief": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-11-12_v10.238.0.md",
+      "sha256": "891532ae5498e9b46b613aba14a913df6a86d7236bd2d877458274fbd3deddd4"
+    },
+    "in6_brief": {
+      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-11-12_v10.238.0.md",
+      "sha256": "d91f3ceef66e05ebc9f6c0fb980424f5a7a9f6f76975b54470ecdfd85b45ff03"
+    }
+  }
 }
