@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "status": "active_registry",
-  "checked_at": "2026-11-11T23:08:30.000000Z",
+  "checked_at": "2026-11-12T11:13:23.744599Z",
   "registry_purpose": "Describe independent Trump-related archives as a federated research network without pretending that unlike record units are interchangeable or additive.",
   "invariants": [
     "An upstream archive is a discovery and corroboration source, not an automatic authority for The Record.",
@@ -115,11 +115,11 @@
         {
           "metric_id": "trump_archive.total_items",
           "as_reported_label": "total items",
-          "value": 16083,
+          "value": 16084,
           "unit": "public_statement_or_document_item",
           "scope": "all items displayed in the archive monthly index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-11-11T23:08:30.000000Z",
+          "observed_at": "2026-11-12T11:13:23.744599Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null,
           "note": "Primary /archive index directly displayed this distinct unit and scope. No canonical import or sum with The Record events."
@@ -139,11 +139,11 @@
         {
           "metric_id": "trump_archive.speeches_transcripts",
           "as_reported_label": "speeches & transcripts",
-          "value": 2059,
+          "value": 2060,
           "unit": "speech_or_transcript",
           "scope": "speeches and transcripts within the archive index",
           "comparability_group": "raw_public_expression",
-          "observed_at": "2026-11-11T23:08:30.000000Z",
+          "observed_at": "2026-11-12T11:13:23.744599Z",
           "source_url": "https://trump-archive.com/archive",
           "upstream_display_date": null,
           "note": "Primary /archive index directly displayed this distinct unit and scope. No canonical import or sum with The Record events."
@@ -192,12 +192,12 @@
         "content_import_permission_state": "license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-11-11T23:08:30.000000Z",
-        "state": "verified_changed",
+        "checked_at": "2026-11-12T11:13:23.744599Z",
+        "state": "verified",
         "verification_pages": [
           "https://trump-archive.com/archive"
         ],
-        "note": "Primary index displayed 16,083 total items, 13,359 Truth Social posts and 2,059 speeches/transcripts. Distinct units preserved; zero imports."
+        "note": "Primary archive index displayed 16,084 total items, 13,359 Truth Social posts and 2,060 speeches/transcripts. Distinct upstream units preserved; zero canonical imports."
       },
       "check_history": [
         {
@@ -911,6 +911,14 @@
             "https://trump-archive.com/archive"
           ],
           "note": "Primary index remained at 16,072 total items, 13,351 Truth Social posts and 2,059 speeches/transcripts. Distinct source-artifact units preserved; zero imports."
+        },
+        {
+          "checked_at": "2026-11-11T23:08:30.000000Z",
+          "state": "verified_changed",
+          "verification_pages": [
+            "https://trump-archive.com/archive"
+          ],
+          "note": "Primary index displayed 16,083 total items, 13,359 Truth Social posts and 2,059 speeches/transcripts. Distinct units preserved; zero imports."
         }
       ],
       "measurement_history": [
@@ -2440,6 +2448,30 @@
               "note": "Primary /archive index directly displayed this distinct unit and scope. No canonical import or sum with The Record events."
             }
           ]
+        },
+        {
+          "metric_id": "trump_archive.total_items",
+          "as_reported_label": "total items",
+          "value": 16083,
+          "unit": "public_statement_or_document_item",
+          "scope": "all items displayed in the archive monthly index",
+          "comparability_group": "raw_public_expression",
+          "observed_at": "2026-11-11T23:08:30.000000Z",
+          "source_url": "https://trump-archive.com/archive",
+          "upstream_display_date": null,
+          "note": "Primary /archive index directly displayed this distinct unit and scope. No canonical import or sum with The Record events."
+        },
+        {
+          "metric_id": "trump_archive.speeches_transcripts",
+          "as_reported_label": "speeches & transcripts",
+          "value": 2059,
+          "unit": "speech_or_transcript",
+          "scope": "speeches and transcripts within the archive index",
+          "comparability_group": "raw_public_expression",
+          "observed_at": "2026-11-11T23:08:30.000000Z",
+          "source_url": "https://trump-archive.com/archive",
+          "upstream_display_date": null,
+          "note": "Primary /archive index directly displayed this distinct unit and scope. No canonical import or sum with The Record events."
         }
       ]
     },
@@ -2629,12 +2661,12 @@
         "content_import_permission_state": "bulk_permission_or_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-11-11T23:08:30.000000Z",
-        "state": "verified",
+        "checked_at": "2026-11-12T11:13:23.744599Z",
+        "state": "verified_unchanged",
         "verification_pages": [
           "https://www.undotrump.com/"
         ],
-        "note": "Primary page remained at 1,264 actions tracked. No canonical import or cross-archive sum."
+        "note": "Primary page remained at 1,264 confirmed policy actions. Distinct unit preserved; zero canonical imports."
       },
       "check_history": [
         {
@@ -3335,6 +3367,14 @@
             "https://www.undotrump.com/"
           ],
           "note": "Primary page still displayed 1,264 actions tracked. Distinct policy-action unit preserved; zero imports."
+        },
+        {
+          "checked_at": "2026-11-11T23:08:30.000000Z",
+          "state": "verified",
+          "verification_pages": [
+            "https://www.undotrump.com/"
+          ],
+          "note": "Primary page remained at 1,264 actions tracked. No canonical import or cross-archive sum."
         }
       ],
       "measurement_history": [
@@ -3586,12 +3626,13 @@
         "content_import_permission_state": "permission_or_documented_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-11-11T23:08:30.000000Z",
-        "state": "verified_changed",
+        "checked_at": "2026-11-12T11:13:23.744599Z",
+        "state": "source_inconsistency",
         "verification_pages": [
+          "https://immpolicytracking.org/",
           "https://immpolicytracking.org/policies/"
         ],
-        "note": "Primary policy browse displayed 1,836 policy actions. Domain-specific units preserved; zero imports."
+        "note": "Accessible primary project pages exposed conflicting 1,833 and 1,836 policy-action counts. Prior verified 1,836 browse-page measurement retained without inference; zero canonical imports."
       },
       "check_history": [
         {
@@ -4314,6 +4355,14 @@
             "https://immpolicytracking.org/policies/"
           ],
           "note": "Primary page displayed 1,833 Policy Actions while its filters remained scoped to first-term years; no verified comparable current-policy measurement was substituted or summed. Zero imports."
+        },
+        {
+          "checked_at": "2026-11-11T23:08:30.000000Z",
+          "state": "verified_changed",
+          "verification_pages": [
+            "https://immpolicytracking.org/policies/"
+          ],
+          "note": "Primary policy browse displayed 1,836 policy actions. Domain-specific units preserved; zero imports."
         }
       ],
       "measurement_history": [
@@ -4861,12 +4910,12 @@
         "content_import_permission_state": "metadata_and_citation_allowed_full_content_license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-11-11T23:08:30.000000Z",
+        "checked_at": "2026-11-12T11:13:23.744599Z",
         "state": "access_gap",
         "verification_pages": [
           "https://record47.org/"
         ],
-        "note": "Primary page loaded but exposed no stable numeric counters in accessible text; prior measurements retained without inference."
+        "note": "Primary page loaded but did not expose stable numeric counters in the inspected response. Prior verified distinct-unit measurements retained; zero canonical imports."
       },
       "check_history": [
         {
@@ -5616,6 +5665,14 @@
             "https://record47.org/"
           ],
           "note": "Primary page returned an access denial in this check, so prior verified distinct-unit measurements were retained. Zero imports."
+        },
+        {
+          "checked_at": "2026-11-11T23:08:30.000000Z",
+          "state": "access_gap",
+          "verification_pages": [
+            "https://record47.org/"
+          ],
+          "note": "Primary page loaded but exposed no stable numeric counters in accessible text; prior measurements retained without inference."
         }
       ],
       "measurement_history": [
