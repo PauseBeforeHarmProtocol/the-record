@@ -1,46 +1,41 @@
 {
-  "version": "10.239.0",
+  "version": "10.240.0",
   "artifact_mode": "full",
   "run_changes": {
     "added_entry_ids": [
-      "NAT-2026-11-12-010",
-      "NAT-2026-11-10-016"
+      "NAT-2026-11-13-001",
+      "NAT-2026-11-13-002"
     ],
-    "refreshed_entry_ids": [
-      "NAT-2026-09-28-008"
-    ],
+    "refreshed_entry_ids": [],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-13T05:03:55.954790Z",
-    "through_utc": "2026-11-13T11:02:28.320089Z",
+    "from_utc": "2026-11-13T11:02:28.320089Z",
+    "through_utc": "2026-11-13T17:05:55.643912Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact prior checked_at boundary through the final validated Truth Social refresh and bounded source review. One post-boundary aviation request materially refreshes an existing event; two November 12 actions are explicitly labeled late discoveries from the immediately preceding window, and the November 10 EPA waivers are labeled retrospective discoveries. No event was added merely to reach a quota."
+    "note": "Exact prior checked_at boundary through the final validated Truth Social refresh and bounded source review. Two qualifying developments were published; no item was added merely to reach a quota."
   },
   "release_iso": "2026-11-13",
   "release_human": "November 13, 2026",
-  "checked_at": "2026-11-13 6:02 AM EST",
-  "previous_version": "10.238.2",
-  "previous_checked_at": "2026-11-13 12:03 AM EST",
-  "window_started_at": "2026-11-13T05:03:55.954790Z",
-  "window_ended_at": "2026-11-13T11:02:28.320089Z",
+  "checked_at": "2026-11-13 12:05 PM EST",
+  "previous_version": "10.239.0",
+  "previous_checked_at": "2026-11-13 6:02 AM EST",
+  "window_started_at": "2026-11-13T11:02:28.320089Z",
+  "window_ended_at": "2026-11-13T17:05:55.643912Z",
   "week_start": "2026-11-09",
   "week_end": "2026-11-15",
   "week_label": "November 9–15, 2026",
   "cutoff_start": "2026-07-20",
   "new_entry_ids": [
-    "NAT-2026-09-28-008",
-    "NAT-2026-11-12-010",
-    "NAT-2026-11-10-016"
+    "NAT-2026-11-13-001",
+    "NAT-2026-11-13-002"
   ],
   "added_entry_ids": [
-    "NAT-2026-11-12-010",
-    "NAT-2026-11-10-016"
+    "NAT-2026-11-13-001",
+    "NAT-2026-11-13-002"
   ],
-  "refreshed_entry_ids": [
-    "NAT-2026-09-28-008"
-  ],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-11-10-006",
@@ -1463,22 +1458,34 @@
       "target_id": "NAT-2026-09-15-009",
       "decision": "distinct_lifecycle_stage",
       "notes": "The September record concerns one subpoena-contempt referral; the November report is the committee's broader investigative findings and recommendations after a 15-month review."
+    },
+    {
+      "entry_id": "117608870505558230",
+      "target_id": "NAT-2026-11-12-006",
+      "decision": "same_event_update",
+      "notes": "The sampled Fox News frames concern Trump’s Mexico/border-caravan warning already tracked in NAT-2026-11-12-006. The raw repost remains in the Truth Social feed; incomplete media review and no distinct underlying action prevent a second canonical count."
     }
   ],
   "rejected_candidates": [
-    {
-      "title": "ICE fiscal 2026 arrest and removal totals",
-      "reason": "Deduplicated to the November 12 material refresh already published in NAT-2026-09-14-003; no parallel record or second count was created.",
-      "source_urls": [
-        "https://www.dhs.gov/news/2026/11/12/ice-breaks-records-fiscal-year-2026-most-arrests-and-deportations-agencys-history",
-        "https://apnews.com/article/2e8f9b619c009ddc183d1a80eb21629a"
-      ]
-    },
     {
       "title": "White House AI task-force meeting on cyberattack reporting and possible national standards",
       "reason": "Reuters reported a meeting and discussions, but no issued standard, signed directive, formal proposal text, expenditure or implemented reporting regime was located by cutoff.",
       "source_urls": [
         "https://www.reuters.com/world/us/trumps-ai-task-force-met-thursday-discussed-ai-powered-cyberattacks-2026-11-13/"
+      ]
+    },
+    {
+      "title": "Trump repost of Fox News Tom Homan border-warning segment",
+      "reason": "Representative opening and early video frames were sampled, but complete playback, audio and captions were not reviewed. The visible material duplicated the warning already tracked in NAT-2026-11-12-006 and supplied no independently verified separate action.",
+      "source_urls": [
+        "https://truthsocial.com/@realDonaldTrump/117608870505558230"
+      ]
+    },
+    {
+      "title": "Promotional Trump image",
+      "reason": "The reviewed image praised Trump but supplied no independently verified qualifying federal action, proposal, investigation, expenditure, ruling or measured outcome.",
+      "source_urls": [
+        "https://truthsocial.com/@realDonaldTrump/117609500488513990"
       ]
     },
     {
@@ -1493,19 +1500,19 @@
       ]
     },
     {
-      "title": "Routine White House releases, ceremonial material and local enforcement notices",
-      "reason": "The material reviewed supplied no distinct material national action, court stage, appropriation, expenditure, investigation or independently measured outcome beyond records accepted or deduplicated in this release."
+      "title": "Routine official releases, ceremonies and local enforcement notices",
+      "reason": "The material reviewed supplied no distinct material national action, court stage, appropriation, expenditure, investigation or independently measured outcome beyond the two accepted records."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-13 6:02 AM EST",
-    "checked_at_eastern": "2026-11-13 6:02:28 AM EST",
+    "checked_at": "2026-11-13 12:05 PM EST",
+    "checked_at_eastern": "2026-11-13 12:05:55 PM EST",
     "inspection_status": "official pages, stable stream link, dated-library, remarks and release metadata inspected; full audiovisual content unavailable",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-13T11:02:28.320089Z",
+    "last_successful_page_inspection_at": "2026-11-13T17:05:55.643912Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1517,7 +1524,7 @@
       "https://www.whitehouse.gov/news/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, videos, remarks and releases pages were rechecked. Stream A4gNgHfZ-v4 remained the stable official link and the video library still led with November 11 Veterans Day ceremony and edited-clip metadata already reviewed. Only page, title, date, duration and link metadata were inspected; playback, complete audio and captions were unavailable. Fallback text was not treated as outage proof, no footage is claimed watched, no qualifying new item located in the material reviewed, and the complete broadcast-review boundary remains unadvanced.",
+    "summary": "Official Trump TV, live, videos, remarks and releases pages were rechecked. Stream A4gNgHfZ-v4 remained the retained stable official link and the video library still led with November 11 Veterans Day ceremony and edited-clip metadata already reviewed. Only page, title, date and link metadata were inspected; playback, complete audio and captions were unavailable. Fallback text was not treated as outage proof, no footage is claimed watched, no qualifying new item located in the material reviewed, and the complete broadcast-review boundary remains unadvanced.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
@@ -1568,7 +1575,8 @@
       "November 11 evening: same A4gNgHfZ-v4 stream and November 9 library lead. Playback, complete audio and captions unavailable; no outage inference, no complete coverage claim and no new verified channel-resource finding.",
       "November 12 6:13 AM EST: the stable stream remained A4gNgHfZ-v4 and the library led with November 11 ceremony and edited-clip metadata. Playback, complete audio and captions were unavailable; no outage, complete-coverage or channel-resource finding was inferred.",
       "November 12 12:11 PM EST: the stable stream remained A4gNgHfZ-v4 and the library still led with November 11 ceremony and edited-clip metadata. Playback, complete audio and captions were unavailable; no outage, complete-coverage or channel-resource finding was inferred.",
-      "November 12 6:06 PM EST: official page, stream, library, remarks and releases metadata were inspected. Playback, complete audio and captions were unavailable; no footage is claimed watched, no outage inferred and no complete broadcast boundary advanced. The border-caravan release was deduplicated to NAT-2026-11-12-006."
+      "November 12 6:06 PM EST: official page, stream, library, remarks and releases metadata were inspected. Playback, complete audio and captions were unavailable; no footage is claimed watched, no outage inferred and no complete broadcast boundary advanced. The border-caravan release was deduplicated to NAT-2026-11-12-006.",
+      "November 13 12:05 PM EST: the stable stream and November 11 library metadata repeated. Playback, complete audio and captions were unavailable; no outage or complete-coverage claim and no verified new channel-resource finding."
     ],
     "items": [
       {
@@ -3654,9 +3662,68 @@
         "format": "supplementary official releases index",
         "inspection": "Page and listing metadata only. The library still led with November 11 ceremonial material; no playback, complete audio or captions were retrieved. No footage is claimed watched, no outage is inferred and no complete broadcast boundary was advanced.",
         "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-13T17:05:55.643912Z",
+        "observed_at_eastern": "2026-11-13 12:05:55 PM EST",
+        "format": "official Trump TV channel page; stable-link metadata only",
+        "inspection": "Page, title, displayed-date and link metadata were inspected. The library still led with November 11 material; playback, complete audio and captions were not retrieved. Repeated footage was not treated as a new action, fallback text was not treated as outage proof and no complete broadcast boundary was advanced.",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ]
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-13T17:05:55.643912Z",
+        "observed_at_eastern": "2026-11-13 12:05:55 PM EST",
+        "format": "official live page; stable-link metadata only",
+        "inspection": "Page, title, displayed-date and link metadata were inspected. The library still led with November 11 material; playback, complete audio and captions were not retrieved. Repeated footage was not treated as a new action, fallback text was not treated as outage proof and no complete broadcast boundary was advanced.",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ]
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "posted_date": "2026-11-11",
+        "original_event_date": "2026-11-11",
+        "broadcast_time": null,
+        "observed_at": "2026-11-13T17:05:55.643912Z",
+        "observed_at_eastern": "2026-11-13 12:05:55 PM EST",
+        "format": "official dated video-library metadata",
+        "inspection": "Page, title, displayed-date and link metadata were inspected. The library still led with November 11 material; playback, complete audio and captions were not retrieved. Repeated footage was not treated as a new action, fallback text was not treated as outage proof and no complete broadcast boundary was advanced.",
+        "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "posted_date": "2026-09-28",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-13T17:05:55.643912Z",
+        "observed_at_eastern": "2026-11-13 12:05:55 PM EST",
+        "format": "supplementary remarks index; not assumed complete",
+        "inspection": "Page, title, displayed-date and link metadata were inspected. The library still led with November 11 material; playback, complete audio and captions were not retrieved. Repeated footage was not treated as a new action, fallback text was not treated as outage proof and no complete broadcast boundary was advanced.",
+        "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "posted_date": "2026-11-12",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-13T17:05:55.643912Z",
+        "observed_at_eastern": "2026-11-13 12:05:55 PM EST",
+        "format": "supplementary official releases index",
+        "inspection": "Page, title, displayed-date and link metadata were inspected. The library still led with November 11 material; playback, complete audio and captions were not retrieved. Repeated footage was not treated as a new action, fallback text was not treated as outage proof and no complete broadcast boundary was advanced.",
+        "video_ids": []
       }
     ],
-    "checked_at_utc": "2026-11-12T23:42:55.551018Z",
+    "checked_at_utc": "2026-11-13T17:05:55.643912Z",
     "last_successful_broadcast_boundary": null,
     "inspection_history": [
       {
@@ -4176,6 +4243,10 @@
       {
         "observed_at": "2026-11-13T11:02:28.320089Z",
         "note": "Playback, complete audio and captions/transcripts were not retrieved for the repeated November 11 listings; only official page and listing metadata were inspected. Fallback text was not treated as outage proof, and no continuous-coverage claim or broadcast boundary was advanced."
+      },
+      {
+        "observed_at": "2026-11-13T17:05:55.643912Z",
+        "note": "Playback, complete audio and captions/transcripts were not retrieved for the repeated November 11 listings; only official page and listing metadata were inspected. Fallback text was not treated as outage proof, and no continuous-coverage claim or broadcast boundary was advanced."
       }
     ],
     "inspected_items": [
@@ -4429,34 +4500,93 @@
         "observed_at_eastern": "2026-11-13 6:02:28 AM EST",
         "format": "supplementary official releases index",
         "inspection": "Recent release metadata was inspected as text leads. No separate qualifying Trump TV action, cost, contract, staffing, editorial-control, distribution or press-access finding was located."
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-13T17:05:55.643912Z",
+        "observed_at_eastern": "2026-11-13 12:05:55 PM EST",
+        "format": "official Trump TV channel page; stable-link metadata only",
+        "inspection": "Page, title, displayed-date and link metadata were inspected. The library still led with November 11 material; playback, complete audio and captions were not retrieved. Repeated footage was not treated as a new action, fallback text was not treated as outage proof and no complete broadcast boundary was advanced.",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ]
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-13T17:05:55.643912Z",
+        "observed_at_eastern": "2026-11-13 12:05:55 PM EST",
+        "format": "official live page; stable-link metadata only",
+        "inspection": "Page, title, displayed-date and link metadata were inspected. The library still led with November 11 material; playback, complete audio and captions were not retrieved. Repeated footage was not treated as a new action, fallback text was not treated as outage proof and no complete broadcast boundary was advanced.",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ]
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "posted_date": "2026-11-11",
+        "original_event_date": "2026-11-11",
+        "broadcast_time": null,
+        "observed_at": "2026-11-13T17:05:55.643912Z",
+        "observed_at_eastern": "2026-11-13 12:05:55 PM EST",
+        "format": "official dated video-library metadata",
+        "inspection": "Page, title, displayed-date and link metadata were inspected. The library still led with November 11 material; playback, complete audio and captions were not retrieved. Repeated footage was not treated as a new action, fallback text was not treated as outage proof and no complete broadcast boundary was advanced.",
+        "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "posted_date": "2026-09-28",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-13T17:05:55.643912Z",
+        "observed_at_eastern": "2026-11-13 12:05:55 PM EST",
+        "format": "supplementary remarks index; not assumed complete",
+        "inspection": "Page, title, displayed-date and link metadata were inspected. The library still led with November 11 material; playback, complete audio and captions were not retrieved. Repeated footage was not treated as a new action, fallback text was not treated as outage proof and no complete broadcast boundary was advanced.",
+        "video_ids": []
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "posted_date": "2026-11-12",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-13T17:05:55.643912Z",
+        "observed_at_eastern": "2026-11-13 12:05:55 PM EST",
+        "format": "supplementary official releases index",
+        "inspection": "Page, title, displayed-date and link metadata were inspected. The library still led with November 11 material; playback, complete audio and captions were not retrieved. Repeated footage was not treated as a new action, fallback text was not treated as outage proof and no complete broadcast boundary was advanced.",
+        "video_ids": []
       }
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 0,
-    "new_text_reviewed": 0,
-    "new_media_reviewed": 0,
-    "new_media_pending": 0,
+    "new_posts": 2,
+    "new_text_reviewed": 2,
+    "new_media_reviewed": 1,
+    "new_media_pending": 1,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-13T11:02:28.320089Z",
-    "checked_at_eastern": "2026-11-13 6:02:28 AM EST",
-    "latest_post_id": "117606259365899322",
-    "latest_post_at_eastern": "2026-11-12 7:18:24 PM EST",
+    "checked_at_utc": "2026-11-13T17:05:55.643912Z",
+    "checked_at_eastern": "2026-11-13 12:05:55 PM EST",
+    "latest_post_id": "117609500488513990",
+    "latest_post_at_eastern": "2026-11-13 9:02:39 AM EST",
     "counts": {
       "text_status": {
         "not_recorded": 154,
-        "reviewed": 1732,
+        "reviewed": 1734,
         "pending": 972
       },
       "media_status": {
         "not_applicable": 1607,
         "not_recorded": 19,
         "unavailable": 295,
-        "pending": 539,
-        "reviewed": 398
+        "pending": 540,
+        "reviewed": 399
       }
     },
-    "note": "No Truth Social post was newer than the prior validated snapshot. The newest retained post remained ID 117606259365899322, published November 12 at 7:18:24 PM EST in America/Indiana/Indianapolis; its local publication date, not its November 13 UTC date, is reported. The fallback was refreshed and validated at 6:02:28 AM EST."
+    "note": "Two posts were newer than the prior validated snapshot. The newest was ID 117609500488513990, published November 13 at 9:02:39 AM EST in America/Indiana/Indianapolis. Its promotional image did not qualify. A 6:22:26 AM EST video repost was partially inspected and remains pending complete audiovisual review; it was not treated as independent verification or a separate action. The fallback was refreshed and validated at 12:05:55 PM EST."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -4468,27 +4598,27 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-13 6:02 AM EST",
-    "checked_at_utc": "2026-11-13T11:02:28.320089Z",
-    "summary": "All four registered primary project pages were rechecked. Trump Archive changed to 16,099 total items, 13,371 Truth Social posts and 2,062 speeches/transcripts; UndoTrump remained at 1,264 actions; IPTP remained at 1,836 policy actions; Record47 exposed labels but no stable numeric counters in accessible text. Distinct units were not summed and zero external items were imported by default.",
+    "checked_at": "2026-11-13 12:05 PM EST",
+    "checked_at_utc": "2026-11-13T17:05:55.643912Z",
+    "summary": "All four registered primary project pages were rechecked. Trump Archive changed to 16,100 total items, 13,372 Truth Social posts and 2,062 speeches/transcripts; UndoTrump remained at 1,264 actions; IPTP changed to 1,837 policy actions; Record47 exposed labels but no stable numeric counters in accessible text. Distinct units were not summed and zero external items were imported by default.",
     "updated_archives": [
-      "trump_archive"
+      "trump_archive",
+      "immigration_policy_tracking_project"
     ],
     "unchanged_archives": [
-      "undotrump",
-      "immigration_policy_tracking_project"
+      "undotrump"
     ],
     "access_gap_archives": [
       "record47"
     ]
   },
   "editorial_notes": [
-    "Published one material refresh and two additions. The aviation request is post-boundary; the Venezuela account and EPA waivers are explicitly labeled late or retrospective discoveries.",
-    "The fiscal 2026 ICE totals were deduplicated to NAT-2026-09-14-003, which release 10.238.0 already materially refreshed with the same annual outcome; no parallel record was created.",
-    "The KPMG/State Department Venezuela report was consistently described by Reuters and AP, but a stable State Department copy was not independently retrieved by cutoff; that access limitation is preserved in the entry.",
-    "The EPA waivers were inspected through the agency index and signed PDF letters. They establish legal scope and dates, not quantified supply, price or environmental outcomes.",
+    "Published two qualifying developments rather than padding the archive to four: a judicial invalidation of a $73.5 million highway-funding penalty and a formal Senate inquiry into a $495.6 million detention-facility purchase.",
+    "The November 13 Second Circuit opinion PDF was not independently retrieved by cutoff. Reuters supplied the ruling and operative reasoning; the agency determination, petition and docket were inspected directly. The entry does not claim that withheld funds were already disbursed.",
+    "The Minnesota inquiry establishes the purchase, preservation requests and investigation. Overpayment, improper influence and corruption remain allegations or questions, not findings; CoreCivic’s valuation response is preserved.",
+    "Two post-boundary Truth Social posts were reviewed as publication evidence only. The promotional image did not qualify; the Fox News video received representative-frame review only, remains audiovisually pending and was deduplicated to NAT-2026-11-12-006.",
     "No objective legacy candidate was responsibly resolved in this bounded run; the disclosed source-health and duplicate-candidate queues remain visible and unchanged.",
-    "External archive measurements retain distinct units. Only the directly displayed Trump Archive counts changed; no external item entered the canonical archive by default."
+    "External archive measurements retain distinct units. Trump Archive and IPTP changed, UndoTrump was unchanged, Record47 retained an access gap, and no external item entered the canonical archive by default."
   ],
   "retained_stages": [],
   "publication_transport_attempts": [],
