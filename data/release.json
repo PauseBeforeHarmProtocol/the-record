@@ -1,5 +1,5 @@
 {
-  "version": "10.238.1",
+  "version": "10.238.2",
   "artifact_mode": "feed-only",
   "run_changes": {
     "added_entry_ids": [],
@@ -7,19 +7,19 @@
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-12T23:06:04.714372Z",
-    "through_utc": "2026-11-12T23:42:55.551018Z",
+    "from_utc": "2026-11-12T23:42:55.551018Z",
+    "through_utc": "2026-11-13T05:03:55.954790Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
     "note": "Exact prior checked_at boundary through the final validated Truth Social refresh and bounded source review. Editorial no-op with one newer text-only raw-feed post retained and reviewed; no qualifying canonical national item located in the material reviewed."
   },
-  "release_iso": "2026-11-12",
-  "release_human": "November 12, 2026",
-  "checked_at": "2026-11-12 6:42 PM EST",
-  "previous_version": "10.238.0",
-  "previous_checked_at": "2026-11-12 6:06 PM EST",
-  "window_started_at": "2026-11-12T23:06:04.714372Z",
-  "window_ended_at": "2026-11-12T23:42:55.551018Z",
+  "release_iso": "2026-11-13",
+  "release_human": "November 13, 2026",
+  "checked_at": "2026-11-13 12:03 AM EST",
+  "previous_version": "10.238.1",
+  "previous_checked_at": "2026-11-12 6:42 PM EST",
+  "window_started_at": "2026-11-12T23:42:55.551018Z",
+  "window_ended_at": "2026-11-13T05:03:55.954790Z",
   "week_start": "2026-11-09",
   "week_end": "2026-11-15",
   "week_label": "November 9–15, 2026",
@@ -1453,14 +1453,30 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Truth Social repost of Hugh Hewitt interview praise",
-      "reason": "Reviewed as publication evidence only. The praise and any implied claims were not independently verified, and the post established no operative federal action, formal proposal, investigation, expenditure, ruling or measured outcome.",
+      "title": "Truth Social post promoting Eli Lilly Lehigh Valley groundbreaking",
+      "reason": "Reviewed as publication evidence only. Lilly's primary release and Pennsylvania's project announcement independently establish a $3.5 billion private manufacturing investment and proposed state incentives, but no new Trump-administration federal action, appropriation, contract, implementation or measured federal outcome was established.",
       "source_urls": [
-        "https://truthsocial.com/@realDonaldTrump/117606070721302149"
+        "https://truthsocial.com/@realDonaldTrump/117606259365899322",
+        "https://investor.lilly.com/news-releases/news-release-details/lilly-breaks-ground-pennsylvanias-lehigh-valley-35-billion-site",
+        "https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-announces-eli-lilly-and-company-will-invest-3-5"
       ]
     },
     {
-      "title": "Trump TV and November 12 official-page metadata",
+      "title": "Super Intelligence Task Force cybersecurity discussion",
+      "reason": "Reuters reported that the task force met and discussed possible reporting standards and legal protections. No formal order, rule, standard, appropriation, implementation instrument or independently measured outcome was located by the cutoff, so the discussion remains a lead rather than a completed action.",
+      "source_urls": [
+        "https://www.reuters.com/world/us/trumps-ai-task-force-met-thursday-discussed-ai-powered-cyberattacks-2026-11-13/"
+      ]
+    },
+    {
+      "title": "Possible Jones Act waiver extension",
+      "reason": "Reuters reported expectations based mainly on industry sources while quoting a White House official that no decision had been made. No implementing waiver or official decision was located by the cutoff; the previously withheld lead remains pending rather than being stated as completed.",
+      "source_urls": [
+        "https://www.reuters.com/world/us/white-house-set-extend-set-extend-jones-act-waiver-sources-say-2026-11-12/"
+      ]
+    },
+    {
+      "title": "Trump TV and November 12–13 official-page metadata",
       "reason": "Official pages and listing metadata were inspected. The stable stream link and November 11 ceremonial recordings repeated previously reviewed material; playback, complete audio and captions were unavailable, no footage is claimed watched, and no qualifying new item located in the material reviewed.",
       "source_urls": [
         "https://www.whitehouse.gov/trumptv/",
@@ -1471,19 +1487,19 @@
       ]
     },
     {
-      "title": "Routine official releases and local prosecution updates",
-      "reason": "The First Lady military-family item was ceremonial, and the reviewed local DOJ sentencing and already-catalogued policy coverage supplied no distinct material national action or lifecycle stage."
+      "title": "Routine nominations, ceremonial releases and local prosecution updates",
+      "reason": "The reviewed nominations, monthly messages, First Lady military-family items and local DOJ matters did not establish a distinct material national policy action, lifecycle stage or evidence-based outcome."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-12 6:42 PM EST",
-    "checked_at_eastern": "2026-11-12 6:42:55 PM EST",
-    "inspection_status": "official pages, stable stream link, dated-library and release metadata inspected; full audiovisual content unavailable",
+    "checked_at": "2026-11-13 12:03 AM EST",
+    "checked_at_eastern": "2026-11-13 12:03:55 AM EST",
+    "inspection_status": "official pages, retained stable stream link, dated-library and release metadata inspected; full audiovisual content unavailable",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-12T23:42:55.551018Z",
+    "last_successful_page_inspection_at": "2026-11-13T05:03:55.954790Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -4146,6 +4162,10 @@
       {
         "observed_at": "2026-11-12T23:42:55.551018Z",
         "note": "Playback, complete audio and captions/transcripts were not retrieved for the repeated November 11 listings; only official page and listing metadata were inspected. Fallback text was not treated as outage proof, and no continuous-coverage claim or broadcast boundary was advanced."
+      },
+      {
+        "observed_at": "2026-11-13T05:03:55.954790Z",
+        "note": "Playback, complete audio and captions/transcripts were not retrieved for the repeated November 11 listings; only official page, stable-link and listing metadata were inspected. Fallback text was not treated as outage proof, and no continuous-coverage claim or broadcast boundary was advanced."
       }
     ],
     "inspected_items": [
@@ -4276,6 +4296,70 @@
         "observed_at_eastern": "2026-11-12 6:42:55 PM EST",
         "format": "supplementary official releases index",
         "inspection": "Recent release metadata was inspected as text leads. No separate qualifying Trump TV action, cost, contract, staffing, editorial-control, distribution or press-access finding was located."
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-13T05:03:55.954790Z",
+        "observed_at_eastern": "2026-11-13 12:03:55 AM EST",
+        "format": "official Trump TV page and retained stable stream-link metadata; audiovisual content unreviewed",
+        "inspection": "Stable stream link and page metadata inspected. Playback, complete audio and captions were not retrieved; fallback text was not treated as outage proof."
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-13T05:03:55.954790Z",
+        "observed_at_eastern": "2026-11-13 12:03:55 AM EST",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "Current stream link and hub metadata inspected; no footage, complete audio or captions were retrieved and no outage was inferred."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "video_ids": [
+          "oYeoY2uS-YU",
+          "VVo0xJr_7iQ",
+          "BsMrRrcU_KI",
+          "G5jsCeH4ovs"
+        ],
+        "posted_date": "2026-11-11",
+        "original_event_date": "2026-11-11",
+        "broadcast_time": null,
+        "observed_at": "2026-11-13T05:03:55.954790Z",
+        "observed_at_eastern": "2026-11-13 12:03:55 AM EST",
+        "format": "official dated-library metadata for repeated Veterans Day ceremony and edited clips",
+        "inspection": "Titles, displayed dates, durations and detail links were inspected as metadata only. Repeated recordings were deduplicated and not treated as new government actions; no footage, complete audio or captions were retrieved."
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "video_ids": [],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-13T05:03:55.954790Z",
+        "observed_at_eastern": "2026-11-13 12:03:55 AM EST",
+        "format": "supplementary remarks index; not assumed complete",
+        "inspection": "Index metadata was inspected for supplementary statements and was not treated as a complete transcript feed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "video_ids": [],
+        "posted_date": "2026-11-12",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-13T05:03:55.954790Z",
+        "observed_at_eastern": "2026-11-13 12:03:55 AM EST",
+        "format": "supplementary official releases index",
+        "inspection": "Recent release metadata was inspected as text leads. No separate qualifying Trump TV action, cost, contract, staffing, editorial-control, distribution or press-access finding was located."
       }
     ]
   },
@@ -4285,25 +4369,25 @@
     "new_media_reviewed": 0,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-12T23:42:52.681374Z",
-    "checked_at_eastern": "2026-11-12 6:42:52 PM EST",
-    "latest_post_id": "117606070721302149",
-    "latest_post_at_eastern": "2026-11-12 6:30:25 PM EST",
+    "checked_at_utc": "2026-11-13T05:03:55.954790Z",
+    "checked_at_eastern": "2026-11-13 12:03:55 AM EST",
+    "latest_post_id": "117606259365899322",
+    "latest_post_at_eastern": "2026-11-12 7:18:24 PM EST",
     "counts": {
       "text_status": {
         "not_recorded": 154,
-        "reviewed": 1731,
+        "reviewed": 1732,
         "pending": 972
       },
       "media_status": {
-        "not_applicable": 1606,
+        "not_applicable": 1607,
         "not_recorded": 19,
         "unavailable": 295,
         "pending": 539,
         "reviewed": 398
       }
     },
-    "note": "One text-only post was newer than the prior published snapshot. It was reviewed only as evidence that Trump republished Hugh Hewitt's praise of an interview; the praise and implied claims were not independently verified and no qualifying federal action was established. The newest post was published November 12 at 6:30:25 PM EST; its America/Indiana/Indianapolis publication date, not its UTC date, is reported. No post newer than 6:30:25 PM EST appeared before the final validated 6:42:52 PM EST refresh."
+    "note": "One text-only post was newer than the prior published snapshot. It was reviewed only as evidence that Trump published Eli Lilly's $3.5 billion Lehigh Valley groundbreaking announcement; independent Lilly and Pennsylvania sources establish a private investment with proposed state support, not a new federal action or measured federal outcome. The newest post was published November 12 at 7:18:24 PM EST; its America/Indiana/Indianapolis publication date, not its UTC date, is reported. No post newer than 7:18:24 PM EST appeared before the final validated 12:03:55 AM EST refresh on November 13."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -4315,14 +4399,23 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-12 6:42 PM EST",
-    "checked_at_utc": "2026-11-12T23:42:55.551018Z",
-    "summary": "All four registered primary project pages were rechecked. Trump Archive remained at 16,094 total items, 13,369 Truth Social posts and 2,060 speeches/transcripts; UndoTrump remained at 1,264 actions; IPTP remained at 1,836 Trump actions; Record47 exposed no stable numeric counters. Distinct units were not summed and zero external items were imported by default.",
+    "checked_at": "2026-11-13 12:03 AM EST",
+    "checked_at_utc": "2026-11-13T05:03:55.954790Z",
+    "summary": "All four registered primary project pages were rechecked. Trump Archive remained at 16,094 total items, 13,369 Truth Social posts and 2,060 speeches/transcripts; UndoTrump remained at 1,264 actions; IPTP displayed 1,837 first-term Trump actions, one above the stored 1,836 observation, and that verified measurement is queued for the next full release under the editorial no-op rule; Record47 exposed no stable numeric counters. Distinct units were not summed and zero external items were imported by default.",
     "updated_archives": [],
     "unchanged_archives": [
       "trump_archive",
-      "undotrump",
-      "immigration_policy_tracking_project"
+      "undotrump"
+    ],
+    "observed_newer_not_committed": [
+      {
+        "archive_id": "immigration_policy_tracking_project",
+        "observed_value": 1837,
+        "unit": "Trump actions (2017–2021)",
+        "source_url": "https://immpolicytracking.org/",
+        "observed_at": "2026-11-13T05:03:55.954790Z",
+        "reason": "Verified discovery measurement queued for the next full release; no canonical event passed the threshold in this feed-only run."
+      }
     ],
     "access_gap_archives": [
       "record47"
@@ -4330,9 +4423,10 @@
   },
   "editorial_notes": [
     "Editorial no-op: no qualifying canonical national item completed review; one newer text-only Truth Social post was retained and reviewed in the validated fallback.",
-    "The Hugh Hewitt praise repost is evidence only of what Trump published and was not treated as independent proof of any claim or as a federal action.",
-    "No correction, current entry, source-ledger record, legacy entry, federation record, archive measurement or schema changed. Full 10.238.0 canonical data and evidence packs are reused byte-for-byte.",
-    "The four registered external archives were rechecked as discovery inputs. Their observed values were unchanged or unavailable, distinct units were not summed, and zero external items were imported."
+    "The Lilly post is evidence only of what Trump published. Independent primary sources establish a private investment with proposed Pennsylvania support, not a new qualifying federal action or measured federal outcome.",
+    "The Super Intelligence Task Force report described discussion and progress toward possible standards; no formal or implemented federal instrument was located by the cutoff.",
+    "No correction, current entry, source-ledger record, legacy entry, federation record, archive-registry measurement or schema changed. Full 10.238.0 canonical data and evidence packs are reused byte-for-byte.",
+    "The four registered external archives were rechecked as discovery inputs. Trump Archive and UndoTrump remained unchanged; IPTP displayed 1,837 first-term actions, one above the stored 1,836 observation, but the no-canonical-change rule leaves that verified measurement queued for the next full release. Record47 exposed no stable numeric counters. Distinct units were not summed and zero external items were imported."
   ],
   "retained_stages": [],
   "publication_transport_attempts": [],
