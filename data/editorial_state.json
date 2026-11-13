@@ -10897,6 +10897,30 @@
       "provenance_path": "data/editorial_change_notes/10.239.0.json",
       "provenance_sha256": "2ed964e7b7229745cc16d91276daaddb7c7f9d5110a88fcbe828c798bcac9e69",
       "note": "Maybe U.S. custody and compliance review protected Venezuelan revenue while quickly returning it for public needs, or concentrated approval power and redacted counterparties may conceal favoritism, leakage or policy leverage. Therefore the record establishes a reported $12.26 billion account and $12.11 billion in disbursements through September 30—not a complete public audit, proof that every payment was proper or proof of economic recovery."
+    },
+    {
+      "change_id": "10.240.0:NAT-2026-11-13-001:added",
+      "entry_id": "NAT-2026-11-13-001",
+      "as_of_utc": "2026-11-13T17:05:55.643912Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.240.0",
+      "summary": "Added: Second Circuit invalidates $73.5 million New York highway-funding penalty.",
+      "provenance_path": "data/editorial_change_notes/10.240.0.json",
+      "provenance_sha256": "a7b19a00e12525a376ffbe924bc77a365290fd58bde81604faf12d3b17c1caf8",
+      "note": "Maybe the ruling principally constrains an old regulatory interpretation while a clearer prospective rule can support future enforcement, or it may expose a broader mismatch between the funding sanction and the governing statute and regulations. Therefore the record establishes that this $73.5 million withholding decision was judicially invalidated—not that every challenged license was valid, that the funds were already paid or that future lawful sanctions are barred."
+    },
+    {
+      "change_id": "10.240.0:NAT-2026-11-13-002:added",
+      "entry_id": "NAT-2026-11-13-002",
+      "as_of_utc": "2026-11-13T17:05:55.643912Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.240.0",
+      "summary": "Added: Hassan opens inquiry into DHS's $495.6 million Minnesota detention-facility purchase.",
+      "provenance_path": "data/editorial_change_notes/10.240.0.json",
+      "provenance_sha256": "a7b19a00e12525a376ffbe924bc77a365290fd58bde81604faf12d3b17c1caf8",
+      "note": "Maybe the price reflected a renovated, specialized 1,600-bed property and rapid federal capacity needs, or the records may show weak competition, inflated assumptions or improper influence. Therefore the record establishes the $495.6 million purchase and a formal congressional preservation-and-production inquiry—not a finding of corruption, unlawful procurement or overpayment."
     }
   ],
   "reviews": [
@@ -156229,6 +156253,278 @@
       ],
       "unresolved_questions": [
         "Actual higher-sulfur or higher-volatility fuel volumes, price relief, misfueling, equipment damage and emissions outcomes remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.240.0:NAT-2026-11-13-001:fe712d156c26",
+      "entry_id": "NAT-2026-11-13-001",
+      "content_sha256": "fe712d156c269b929f83ce36568ef305cad286b5c574f5d9ba2f1fb0341f6447",
+      "reviewed_at": "2026-11-13T17:05:55.643912Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "4c6f6b3b49bfb7358157321ed42318579c85212396ab33d615bce3e14ba1b974",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ny_highway_ruling_nov13",
+              "locator": "Reuters report inspected for the November 13 ruling, amount, court and legal effect.",
+              "inspected_at": "2026-11-13T17:05:55.643912Z",
+              "document_sha256": "7e928a7cd8978e8d7e62eb3f9ddcb8e47f3e44ad8266d0da5dca5bacd95e29a1",
+              "origin_group": "Reuters",
+              "evidence_status": "reversed"
+            },
+            {
+              "source_id": "fmcsa_ny_final_determination_apr16",
+              "locator": "FMCSA final determination inspected for the exact withholding amount, programs and asserted licensing basis.",
+              "inspected_at": "2026-11-13T17:05:55.643912Z",
+              "document_sha256": "86fc669a8c7d54445875d631421cf1971d18d325ccca2123125580f66d0fca8e",
+              "origin_group": "Federal Motor Carrier Safety Administration",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "5a6da929d021a82ad73ee08902e89f95eabf3d807de0793189c69981972a3258",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_ny_highway_ruling_nov13",
+              "locator": "Reuters report inspected for the court’s quoted fair-notice and regulatory-text reasoning.",
+              "inspected_at": "2026-11-13T17:05:55.643912Z",
+              "document_sha256": "7e928a7cd8978e8d7e62eb3f9ddcb8e47f3e44ad8266d0da5dca5bacd95e29a1",
+              "origin_group": "Reuters",
+              "evidence_status": "reversed"
+            },
+            {
+              "source_id": "courtlistener_ny_dot_26_1097",
+              "locator": "Appellate docket inspected for case identity and procedural record; the November 13 opinion PDF was not independently retrieved.",
+              "inspected_at": "2026-11-13T17:05:55.643912Z",
+              "document_sha256": "73cab3d4fc53a2d53f48f5f3180395db8378f27f53c1b3a952a12f40d3f0ff97",
+              "origin_group": "CourtListener",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "dc42101cfd6abf50339937719a2a807d30d600c3e11e7f6d1c2eb9e83371d3c7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fmcsa_ny_final_determination_apr16",
+              "locator": "FMCSA final determination inspected for the audit sample, corrective plan and possible following-year penalty.",
+              "inspected_at": "2026-11-13T17:05:55.643912Z",
+              "document_sha256": "86fc669a8c7d54445875d631421cf1971d18d325ccca2123125580f66d0fca8e",
+              "origin_group": "Federal Motor Carrier Safety Administration",
+              "evidence_status": "ordered"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "411dfb769a7e487781cc3962b88c0112c4f0caddd03564581d509d47b91796d5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "nyag_ny_dot_petition_apr24",
+              "locator": "New York petition inspected for the state’s challenge to regulatory interpretation and agency authority.",
+              "inspected_at": "2026-11-13T17:05:55.643912Z",
+              "document_sha256": "8c9a4ffe6f74acdfd9c7efe5e7f0fad9c9665805dde10c27e7a8f5108e069c0c",
+              "origin_group": "New York Attorney General",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_ny_highway_ruling_nov13",
+              "locator": "Reuters report inspected for invalidation of the withholding decision; no completed disbursement was reported.",
+              "inspected_at": "2026-11-13T17:05:55.643912Z",
+              "document_sha256": "7e928a7cd8978e8d7e62eb3f9ddcb8e47f3e44ad8266d0da5dca5bacd95e29a1",
+              "origin_group": "Reuters",
+              "evidence_status": "reversed"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "8e871bdcbd4a702ba5afdcef0b35ab06d9131f3d151ba31fcceaceb3895ccb4a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fmcsa_ny_final_determination_apr16",
+              "locator": "FMCSA final determination inspected for the agency’s compliance and public-safety explanation.",
+              "inspected_at": "2026-11-13T17:05:55.643912Z",
+              "document_sha256": "86fc669a8c7d54445875d631421cf1971d18d325ccca2123125580f66d0fca8e",
+              "origin_group": "Federal Motor Carrier Safety Administration",
+              "evidence_status": "ordered"
+            },
+            {
+              "source_id": "reuters_ny_highway_ruling_nov13",
+              "locator": "Reuters report inspected for the ruling’s legal scope and the parties’ positions.",
+              "inspected_at": "2026-11-13T17:05:55.643912Z",
+              "document_sha256": "7e928a7cd8978e8d7e62eb3f9ddcb8e47f3e44ad8266d0da5dca5bacd95e29a1",
+              "origin_group": "Reuters",
+              "evidence_status": "reversed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "6887981ad26e969b3c9a99c9625397d851e9f78f2fa4fc86e671b1a98d938497",
+          "review_note": "Separately reviewed to preserve the distinction among sourced fact, significance, the strongest relevant response or test, and the explicit Maybe/Therefore conclusion without converting an allegation, inquiry or judicial ruling into a broader completed result."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "99df6fbbe09bc3fafae6cb06d892da93ec26441f8eb0db00cf5c07053804a797",
+          "review_note": "Separately reviewed to preserve the distinction among sourced fact, significance, the strongest relevant response or test, and the explicit Maybe/Therefore conclusion without converting an allegation, inquiry or judicial ruling into a broader completed result."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "99e41417b102daa7d26939b8f84fcf3a0e83fce966d0bed094f8eb647fbc2f62",
+          "review_note": "Separately reviewed to preserve the distinction among sourced fact, significance, the strongest relevant response or test, and the explicit Maybe/Therefore conclusion without converting an allegation, inquiry or judicial ruling into a broader completed result."
+        }
+      ],
+      "unresolved_questions": [
+        "The November 13 appellate opinion PDF and mandate were not independently retrieved by cutoff.",
+        "Actual restoration or disbursement of the withheld funds, rehearing or appeal, and any new agency determination remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.240.0:NAT-2026-11-13-002:8d535361d2c1",
+      "entry_id": "NAT-2026-11-13-002",
+      "content_sha256": "8d535361d2c1418c238f0d15e57667ee98d8e3034d93493e6d06d5e558b8dfee",
+      "reviewed_at": "2026-11-13T17:05:55.643912Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "91bc704b2ec70e2c0d5ea3cbff12c8ff3ae7fa9473f359a6761e367123fd00e7",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_corecivic_probe_nov13",
+              "locator": "Reuters report inspected for the dated Senate inquiry, preservation request, committee role and facility capacity.",
+              "inspected_at": "2026-11-13T17:05:55.643912Z",
+              "document_sha256": "a216508c88a8d0bca0c79886abcc157bc87dabb40f2a9589e1729002c60eff2d",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "wapo_corecivic_probe_nov13",
+              "locator": "Washington Post report inspected for the investigation’s scope and dated letters.",
+              "inspected_at": "2026-11-13T17:05:55.643912Z",
+              "document_sha256": "aa7f0adea7cba6cb989f331a84ce8d82f27710163ff3a0c6115518c14fd09cd3",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "c193f451ad33929084a67dfc778fd8578af7a08047892eac4611f38d5965b650",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "corecivic_prairie_sale_aug5",
+              "locator": "CoreCivic transaction release inspected for both facility prices, total transaction value, capacity and continuing-operation statement.",
+              "inspected_at": "2026-11-13T17:05:55.643912Z",
+              "document_sha256": "38664c2abd64f40f81d5ea77b6ea5ad2411e85a7ac85f7caefd8ff13da55da30",
+              "origin_group": "CoreCivic",
+              "evidence_status": "implemented"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "4a5622738ace5998da9b41ab8742f75f5fc29982ad808ed8175d84132f774472",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_corecivic_probe_nov13",
+              "locator": "Reuters report inspected for Hassan’s valuation concern and the reported prior state offer.",
+              "inspected_at": "2026-11-13T17:05:55.643912Z",
+              "document_sha256": "a216508c88a8d0bca0c79886abcc157bc87dabb40f2a9589e1729002c60eff2d",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "wapo_corecivic_probe_nov13",
+              "locator": "Washington Post report inspected for the explicitly attributed oversight questions and allegation status.",
+              "inspected_at": "2026-11-13T17:05:55.643912Z",
+              "document_sha256": "aa7f0adea7cba6cb989f331a84ce8d82f27710163ff3a0c6115518c14fd09cd3",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "a31d3a647463e402f0144570539bc520ba5f6011683c85cfd1b9368763cf89c1",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "wapo_corecivic_probe_nov13",
+              "locator": "Washington Post report inspected for CoreCivic’s independent-appraisal, renovation and replacement-cost response.",
+              "inspected_at": "2026-11-13T17:05:55.643912Z",
+              "document_sha256": "aa7f0adea7cba6cb989f331a84ce8d82f27710163ff3a0c6115518c14fd09cd3",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "336ec94a977930960e42010b45cc4c931c88b87a8940f5c60c38e3070b330e62",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_corecivic_probe_nov13",
+              "locator": "Reuters report inspected for the absence of an immediate transaction-specific response.",
+              "inspected_at": "2026-11-13T17:05:55.643912Z",
+              "document_sha256": "a216508c88a8d0bca0c79886abcc157bc87dabb40f2a9589e1729002c60eff2d",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "wapo_corecivic_probe_nov13",
+              "locator": "Washington Post report inspected for the DHS general-counsel response to the broader inquiry campaign.",
+              "inspected_at": "2026-11-13T17:05:55.643912Z",
+              "document_sha256": "aa7f0adea7cba6cb989f331a84ce8d82f27710163ff3a0c6115518c14fd09cd3",
+              "origin_group": "The Washington Post",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "44252e770dfbbca3d35938d96d2313adbe405e7d819420c692e92cacb229181d",
+          "review_note": "Separately reviewed to preserve the distinction among sourced fact, significance, the strongest relevant response or test, and the explicit Maybe/Therefore conclusion without converting an allegation, inquiry or judicial ruling into a broader completed result."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "c0b1022e027dc1974e060b1ea6cf9bc0174521f17b20288dbbf247042d737208",
+          "review_note": "Separately reviewed to preserve the distinction among sourced fact, significance, the strongest relevant response or test, and the explicit Maybe/Therefore conclusion without converting an allegation, inquiry or judicial ruling into a broader completed result."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "f83097659cdb6d9c08bf9d1d0aaf231fbc6c5ffcbb5e6e795b4a255954d82f65",
+          "review_note": "Separately reviewed to preserve the distinction among sourced fact, significance, the strongest relevant response or test, and the explicit Maybe/Therefore conclusion without converting an allegation, inquiry or judicial ruling into a broader completed result."
+        }
+      ],
+      "unresolved_questions": [
+        "The Senate letters themselves, appraisal, procurement file, renovation assumptions and management-contract terms were not independently retrieved by cutoff.",
+        "The inquiry has not established overpayment, improper influence, corruption or a procurement violation, and DHS had not supplied a transaction-specific response in the inspected reporting."
       ]
     }
   ],
