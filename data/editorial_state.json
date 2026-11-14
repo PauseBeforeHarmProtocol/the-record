@@ -11065,6 +11065,18 @@
       "release_version": "10.243.0",
       "summary": "Added: Court permanently bars federal pressure to suppress two ICE-reporting platforms.",
       "timestamp_precision": "second"
+    },
+    {
+      "change_id": "10.244.0:NAT-2026-11-13-003:material_refresh",
+      "entry_id": "NAT-2026-11-13-003",
+      "as_of_utc": "2026-11-14T17:05:18.782018Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.244.0",
+      "summary": "Materially refreshed: FAA recovery enters second day as contractor equipment change becomes investigation focus.",
+      "provenance_path": "data/editorial_change_notes/10.244.0.json",
+      "provenance_sha256": "68044c517a92e73dc37ae6ca405929c83089dcf99746338f4e9625909bc6f267",
+      "note": "Maybe this was an isolated migration fault contained by a prudent safety stop, or it may expose a change-control vulnerability in a fragile national system. Therefore the record establishes the contractor-focused preliminary investigation, measured second-day disruption and a larger funding proposal—not final causation, contractor liability, enacted funding, complete recovery or protection against recurrence."
     }
   ],
   "reviews": [
@@ -158137,6 +158149,145 @@
       },
       "unresolved_questions": [
         "Required notice compliance, platform restoration decisions and effects beyond the named plaintiffs and platforms remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.244.0:NAT-2026-11-13-003:11eaa902ad23",
+      "entry_id": "NAT-2026-11-13-003",
+      "content_sha256": "11eaa902ad2343f22042842bc2a82ad3b4500b72e519aa83e8f71007ac28848c",
+      "reviewed_at": "2026-11-14T17:05:18.782018Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "b7708e93f949b87a42a2ade5bcb5b2a148951778d8e6f8940a2e6639de95d035",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_faa_national_ground_stop_nov13",
+              "locator": "Initial report inspected for the 3:54 p.m. stop, national departure scope and treatment of airborne flights.",
+              "inspected_at": "2026-11-14T17:05:18.782018Z",
+              "document_sha256": "4a1ccb6e1125b27159e0068ca186cc0b841dd41f7dcedca02eaf828eb16d0c0c",
+              "origin_group": "Reuters",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "ap_faa_ground_stop_lifted_nov13",
+              "locator": "Updated report inspected for operational scope and subsequent lifting.",
+              "inspected_at": "2026-11-14T17:05:18.782018Z",
+              "document_sha256": "e4680092e7a8776596063422ac681898988d8f3d4e2b1c06a7881d6424eb589a",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "3aa8d2a5376d45f4da7b355a998311643dddfe015aa915965db413c28470ec6d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dot_faa_ground_stop_lifted_nov13",
+              "locator": "Official timeline inspected for the 8:15 p.m. lifting and almost-five-hour duration.",
+              "inspected_at": "2026-11-14T17:05:18.782018Z",
+              "document_sha256": "e73a6834d34a9fcfbc326714932ab92c9c2646a357369c5c1f21ccd92d759211",
+              "origin_group": "U.S. Department of Transportation",
+              "evidence_status": "implemented"
+            },
+            {
+              "source_id": "reuters_faa_recovery_nov14",
+              "locator": "Article inspected for Friday cancellation and delay totals and recovery limits.",
+              "inspected_at": "2026-11-14T17:05:18.782018Z",
+              "document_sha256": "88fbfe6d62304e0a3eeae908519d4d2d6d1920b60ffdbd8e3c2972ef02bf4443",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "8328f0d3a9399d206a6557fdd5f86701aa653740046b34dbd128604531751b07",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dot_faa_ground_stop_lifted_nov13",
+              "locator": "Official briefing account inspected for system overload, legacy/new equipment distinction, SMART exclusion and investigation.",
+              "inspected_at": "2026-11-14T17:05:18.782018Z",
+              "document_sha256": "e73a6834d34a9fcfbc326714932ab92c9c2646a357369c5c1f21ccd92d759211",
+              "origin_group": "U.S. Department of Transportation",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_faa_recovery_nov14",
+              "locator": "Article inspected for L3Harris conversion work, connection-attempt frequency, unresolved installer-versus-router question and cyber-investigation status.",
+              "inspected_at": "2026-11-14T17:05:18.782018Z",
+              "document_sha256": "88fbfe6d62304e0a3eeae908519d4d2d6d1920b60ffdbd8e3c2972ef02bf4443",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "7e62f9831279801430f345276d8738fd0f52a869881a6df10801efdaae2ff9c0",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_faa_recovery_nov14",
+              "locator": "Article inspected for Saturday cancellations, delays, passenger effects and carrier rates.",
+              "inspected_at": "2026-11-14T17:05:18.782018Z",
+              "document_sha256": "88fbfe6d62304e0a3eeae908519d4d2d6d1920b60ffdbd8e3c2972ef02bf4443",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "54fe8e685d87c1b24c0cd9342d2b0f7346e323a4523161250f18b902aa853c7c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "dot_faa_ground_stop_lifted_nov13",
+              "locator": "Official account inspected for the $12.5 billion partial investment, request for the balance and safety/restoration explanation.",
+              "inspected_at": "2026-11-14T17:05:18.782018Z",
+              "document_sha256": "e73a6834d34a9fcfbc326714932ab92c9c2646a357369c5c1f21ccd92d759211",
+              "origin_group": "U.S. Department of Transportation",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "reuters_faa_recovery_nov14",
+              "locator": "Article inspected for the increased $50 billion request, immediate repair and unresolved modernization and recovery work.",
+              "inspected_at": "2026-11-14T17:05:18.782018Z",
+              "document_sha256": "88fbfe6d62304e0a3eeae908519d4d2d6d1920b60ffdbd8e3c2972ef02bf4443",
+              "origin_group": "Reuters",
+              "evidence_status": "proposed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "86e8bef8fbfbd94bd1d48c907c5b33fe16ed19b7d646bf059ac3370b2f8111c1",
+          "review_note": "Separately reviewed to preserve sourced facts, significance, the strongest administration explanation or response, and the explicit Maybe/Therefore conclusion while keeping preliminary causation, proposed funding and measured recovery distinct from completed findings."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "390483864dbc996a4786d905fdaafc21d1f43380c664b4c5b0da2a0fc4ba6cf0",
+          "review_note": "Separately reviewed to preserve sourced facts, significance, the strongest administration explanation or response, and the explicit Maybe/Therefore conclusion while keeping preliminary causation, proposed funding and measured recovery distinct from completed findings."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "50e18bde8fc7202f3920dc1318f6708a1b959c63a4c9a49a446816b74a2c422b",
+          "review_note": "Separately reviewed to preserve sourced facts, significance, the strongest administration explanation or response, and the explicit Maybe/Therefore conclusion while keeping preliminary causation, proposed funding and measured recovery distinct from completed findings."
+        }
+      ],
+      "unresolved_questions": [
+        "Final root cause, change-control findings, contractor response or liability, after-action findings, itemized and appropriated modernization funding, full recovery and recurrence controls remain unresolved."
       ]
     }
   ],

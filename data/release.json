@@ -1,44 +1,38 @@
 {
-  "version": "10.243.0",
+  "version": "10.244.0",
   "artifact_mode": "full",
   "run_changes": {
-    "added_entry_ids": [
-      "NAT-2026-11-13-011",
-      "NAT-2026-11-13-012",
-      "NAT-2026-11-13-013"
+    "added_entry_ids": [],
+    "refreshed_entry_ids": [
+      "NAT-2026-11-13-003"
     ],
-    "refreshed_entry_ids": [],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-14T05:08:04.295335Z",
-    "through_utc": "2026-11-14T11:05:39.933970Z",
+    "from_utc": "2026-11-14T11:05:39.933970Z",
+    "through_utc": "2026-11-14T17:05:18.782018Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact prior checked_at boundary through the final validated Truth Social refresh and bounded source review. No post-boundary qualifying action was located; three same-day recovered omissions were published without padding and are not represented as post-boundary events."
+    "note": "Exact prior checked_at boundary through the final validated Truth Social refresh and bounded source review. One same-event FAA development passed the publication threshold; no parallel event was created."
   },
   "release_iso": "2026-11-14",
   "release_human": "November 14, 2026",
-  "checked_at": "2026-11-14 6:05 AM EST",
-  "previous_version": "10.242.0",
-  "previous_checked_at": "2026-11-14 12:08 AM EST",
-  "window_started_at": "2026-11-14T05:08:04.295335Z",
-  "window_ended_at": "2026-11-14T11:05:39.933970Z",
+  "checked_at": "2026-11-14 12:05 PM EST",
+  "previous_version": "10.243.0",
+  "previous_checked_at": "2026-11-14 6:05 AM EST",
+  "window_started_at": "2026-11-14T11:05:39.933970Z",
+  "window_ended_at": "2026-11-14T17:05:18.782018Z",
   "week_start": "2026-11-09",
   "week_end": "2026-11-15",
   "week_label": "November 9–15, 2026",
   "cutoff_start": "2026-07-20",
   "new_entry_ids": [
-    "NAT-2026-11-13-011",
-    "NAT-2026-11-13-012",
-    "NAT-2026-11-13-013"
+    "NAT-2026-11-13-003"
   ],
-  "added_entry_ids": [
-    "NAT-2026-11-13-011",
-    "NAT-2026-11-13-012",
-    "NAT-2026-11-13-013"
+  "added_entry_ids": [],
+  "refreshed_entry_ids": [
+    "NAT-2026-11-13-003"
   ],
-  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-11-10-006",
@@ -1469,12 +1463,6 @@
       "notes": "The sampled Fox News frames concern Trump’s Mexico/border-caravan warning already tracked in NAT-2026-11-12-006. The raw repost remains in the Truth Social feed; incomplete media review and no distinct underlying action prevent a second canonical count."
     },
     {
-      "entry_id": "NAT-2026-11-13-003",
-      "target_id": "NAT-2026-11-13-003",
-      "decision": "false_positive",
-      "notes": "No canonical entry, normalized title, source URL or recent maintenance pull request covered the November 13 nationwide communications-outage ground stop. Existing FAA entries concern different rules, grants, projects or prior events."
-    },
-    {
       "entry_id": "NAT-2026-11-13-004",
       "target_id": "NAT-2026-11-13-004",
       "decision": "false_positive",
@@ -1539,28 +1527,48 @@
       "target_id": "NAT-2026-08-26-003",
       "decision": "false_positive",
       "notes": "Both cite Executive Order 13224, but the August 26 and November 13 actions concern distinct target sets, factual predicates and designation notices; shared authority alone is a false-positive signal."
+    },
+    {
+      "entry_id": "NAT-2026-11-13-003",
+      "target_id": "NAT-2026-11-13-003",
+      "decision": "same_event_update",
+      "notes": "The November 14 measured disruption, contractor-focused preliminary investigation and larger funding request advance the November 13 FAA outage record. The stable event was refreshed rather than counted again; raw Trump TV replays remain deduplicated."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "Announced Trump-Xi-Putin APEC meetings",
-      "reason": "Scheduled diplomacy did not establish a completed agreement or implemented action; material agenda details relied on unnamed sources without the required second confirmation.",
+      "title": "Reported conditional pause in further Iran attacks",
+      "reason": "The private decision rested mainly on unnamed sources, lacked a second independent original confirmation and established no public order, ceasefire, strike, War Powers report or operational change.",
       "source_urls": [
-        "https://apnews.com/"
+        "https://www.reuters.com/world/middle-east/trump-tells-advisers-he-may-hold-off-iran-attacks-barring-new-provocations-2026-11-14/"
       ]
     },
     {
-      "title": "Superseding terrorism charge in WHCA dinner shooting case",
-      "reason": "The new count remains an allegation, not a conviction or adjudicated fact; it was not used to pad the release.",
+      "title": "Pending Supreme Court appeal over universal APA vacatur",
+      "reason": "The November 14 article analyzed an October 14 petition; the Court had not granted review or issued a merits ruling, and no new operative filing was established in the window.",
       "source_urls": [
-        "https://www.justice.gov/usao-dc/pr/new-terrorism-charge-filed-against-alleged-shooter-white-house-correspondents"
+        "https://www.reuters.com/legal/government/supreme-court-trump-aims-cut-power-judges-again-2026-11-14/"
       ]
     },
     {
-      "title": "Iran and Nvidia administration statements",
-      "reason": "The Iran statement duplicated an existing materially refreshed event; the Nvidia dispute produced no issued restriction, formal proposal or implemented change.",
+      "title": "DOJ objection to proposed East Potomac special master",
+      "reason": "A litigating position was reported, but the original response was not retrieved and no appointment, investigative finding, contempt or sanctions order was established by cutoff.",
       "source_urls": [
-        "https://www.reuters.com/"
+        "https://www.washingtonpost.com/politics/2026/11/14/judge-golf-course-case-says-inquiry-into-doj-lawyers-will-proceed/"
+      ]
+    },
+    {
+      "title": "Trump post criticizing California execution moratorium",
+      "reason": "The post verified publication of state-focused political advocacy but announced no qualifying federal action.",
+      "source_urls": [
+        "https://truthsocial.com/@realDonaldTrump/117615368066065400"
+      ]
+    },
+    {
+      "title": "Trump TV FAA replays and metadata",
+      "reason": "Two newly listed official videos repeated the canonical FAA event. Playback, complete audio and captions were unavailable, and no separate qualifying action was located in the material reviewed.",
+      "source_urls": [
+        "https://www.whitehouse.gov/videos/"
       ]
     },
     {
@@ -1572,11 +1580,11 @@
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-14 6:05 AM EST",
-    "checked_at_eastern": "2026-11-14 6:05 AM EST",
-    "inspection_status": "official Trump TV, live, dated-library, remarks and release metadata inspected; full audiovisual content unavailable",
+    "checked_at": "2026-11-14 12:05 PM EST",
+    "checked_at_eastern": "2026-11-14 12:05 PM EST",
+    "inspection_status": "official Trump TV, live, dated-library, detail-page, remarks and release metadata inspected; full audiovisual content unavailable",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-14T11:05:39.933970Z",
+    "last_successful_page_inspection_at": "2026-11-14T17:05:18.782018Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1588,14 +1596,40 @@
       "https://www.whitehouse.gov/news/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, videos, remarks and releases pages were rechecked. The dated library still showed the November 13 FAA edited clip already consolidated into NAT-2026-11-13-003 and a 54-second Veterans Day at Arlington clip. Only page, title, date, duration and link metadata were inspected; playback, complete audio and captions were not retrieved, no footage is claimed watched, and the Veterans item was ceremonial or repeated. Fallback text was not treated as outage proof, no qualifying new item located in the material reviewed, and the complete broadcast-review boundary remains unadvanced.",
+    "summary": "Official Trump TV, live, videos, two FAA detail pages, remarks and releases pages were rechecked. The library newly listed two FAA briefings with November 14 listing dates while both detail pages displayed November 13. Only page, title, displayed-date, duration, link and video-ID metadata were inspected; playback, complete audio and captions were not retrieved, no footage is claimed watched, and the items repeat NAT-2026-11-13-003. Fallback text was not treated as outage proof, no qualifying separate new item located in the material reviewed, and the complete broadcast-review boundary remains unadvanced.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
-      "The November 13 FAA and Veterans Day listings were inspected only through official page, title, date, duration and link metadata; the FAA lead was already canonical and the Veterans item was ceremonial or repeated.",
+      "The video library displayed November 14 while both FAA detail pages displayed November 13; exact posting and broadcast times remain unknown.",
       "No complete transcript feed, channel budget, contract, staffing record or editorial-control record was available in the inspected official pages."
     ],
     "items": [
+      {
+        "url": "https://www.whitehouse.gov/videos/secretary-mullin-secretary-duffy-provide-an-update-on-the-faa-national-ground-stop/",
+        "posted_date": null,
+        "original_event_date": "2026-11-13",
+        "broadcast_time": null,
+        "observed_at": "2026-11-14T17:05:18.782018Z",
+        "observed_at_eastern": "2026-11-14 12:05 PM EST",
+        "format": "official 4:30 video-detail metadata; live/replay/edit status and exact posting time unknown; audiovisual content unreviewed",
+        "inspection": "Library title/date/duration and detail-page title/date/link/video ID inspected. Library displayed November 14; detail page displayed November 13. Playback, complete audio and captions were not retrieved; no footage is claimed watched. Repeated FAA event consolidated into NAT-2026-11-13-003.",
+        "video_ids": [
+          "aH2db_pvy38"
+        ]
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/secretary-mullin-and-secretary-duffy-brief-members-of-the-press-on-the-faa-ground-stop/",
+        "posted_date": null,
+        "original_event_date": "2026-11-13",
+        "broadcast_time": null,
+        "observed_at": "2026-11-14T17:05:18.782018Z",
+        "observed_at_eastern": "2026-11-14 12:05 PM EST",
+        "format": "official 33:57 video-detail metadata; live/replay/edit status and exact posting time unknown; audiovisual content unreviewed",
+        "inspection": "Library title/date/duration and detail-page title/date/link/video ID inspected. Library displayed November 14; detail page displayed November 13. Playback, complete audio and captions were not retrieved; no footage is claimed watched. Repeated FAA event consolidated into NAT-2026-11-13-003.",
+        "video_ids": [
+          "Mh2q-y0wIu8"
+        ]
+      },
       {
         "url": "https://www.whitehouse.gov/videos/",
         "posted_date": "2026-11-13",
@@ -4604,15 +4638,15 @@
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 0,
-    "new_text_reviewed": 0,
+    "new_posts": 1,
+    "new_text_reviewed": 1,
     "new_media_reviewed": 0,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-14T11:05:39.933970Z",
-    "checked_at_eastern": "2026-11-14 6:05 AM EST",
-    "latest_post_id": "117611608680849019",
-    "latest_post_at_eastern": "2026-11-13 5:58:48 PM EST",
+    "checked_at_utc": "2026-11-14T17:05:18.782018Z",
+    "checked_at_eastern": "2026-11-14 12:05:18 PM EST",
+    "latest_post_id": "117615368066065400",
+    "latest_post_at_eastern": "2026-11-14 9:54:51 AM EST",
     "counts": {
       "text_status": {
         "not_recorded": 7,
@@ -4620,13 +4654,13 @@
         "reviewed": 990
       },
       "media_status": {
-        "not_applicable": 716,
+        "not_applicable": 717,
         "pending": 33,
-        "reviewed": 226,
+        "reviewed": 225,
         "unavailable": 25
       }
     },
-    "note": "No post newer than ID 117611608680849019 was present at the November 14 6:05:39 AM EST validated check. The newest post remained published November 13 at 5:58:48 PM EST in America/Indiana/Indianapolis. No UTC date was substituted for the local publication date; the fallback and its check-time metadata were refreshed and validated."
+    "note": "One post newer than the prior snapshot was present at the validated November 14 12:05:18 PM EST check. The newest post was published November 14 at 9:54:51 AM EST in America/Indiana/Indianapolis. Its complete text was reviewed only as evidence of publication; it concerned a California state decision and did not qualify as a federal record. No UTC date was substituted for the local publication date."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -4638,8 +4672,8 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-14 6:05 AM EST",
-    "checked_at_utc": "2026-11-14T11:05:39.933970Z",
+    "checked_at": "2026-11-14 12:05 PM EST",
+    "checked_at_utc": "2026-11-14T17:05:18.782018Z",
     "summary": "All four registered primary project pages were checked as discovery inputs. Trump Archive remained at 16,106 total items, 13,375 Truth Social posts and 2,065 speeches/transcripts; UndoTrump remained at 1,264 actions; the Immigration Policy Tracking Project remained at 1,836 policy actions; Record47 exposed labels but no stable current numeric counters in accessible text. Distinct units were not summed and zero external items were imported by default.",
     "updated_archives": [],
     "unchanged_archives": [
@@ -4652,10 +4686,10 @@
     ]
   },
   "editorial_notes": [
-    "Published three qualifying same-day recovered omissions without padding: the Head Start compensation final rule, optional Medicaid work-requirement hold-harmless guidance and the Rosado permanent injunction.",
-    "The Head Start rescission is finalized and scheduled for November 16 publication, not yet effective. The Medicaid transition is optional and plan-dependent, not a universal delay. The Rosado order is permanent relief by agreement, not damages or a merits trial verdict.",
-    "No material correction was required. No objective legacy correction was completed; the disclosed duplicate-candidate and source-health queues remain visible rather than being mass-transformed.",
-    "All four registered external archives were rechecked as discovery inputs. Verified values were unchanged, distinct units were not summed and zero external items entered the canonical archive by default."
+    "Materially refreshed one stable FAA record with second-day measured disruption, a contractor-focused preliminary investigation and a larger modernization funding proposal; no parallel event was created.",
+    "The root cause, contractor liability, complete recovery, after-action findings and enacted modernization funding remain unresolved. The archive records a proposal and preliminary investigation, not completed causation or appropriation.",
+    "One newer Truth Social text post was preserved and reviewed only as evidence that Trump published it; its state-focused advocacy did not qualify as a federal record.",
+    "No material correction or objective legacy correction was completed. All four registered external archives were rechecked; verified values were unchanged, distinct units were not summed and zero external items entered the canonical archive by default."
   ],
   "retained_stages": [],
   "publication_transport_attempts": [],
