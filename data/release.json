@@ -1,47 +1,52 @@
 {
-  "version": "10.241.0",
+  "version": "10.242.0",
   "artifact_mode": "full",
   "run_changes": {
     "added_entry_ids": [
-      "NAT-2026-11-13-003",
-      "NAT-2026-11-13-004",
-      "NAT-2026-11-13-005",
-      "NAT-2026-11-13-006"
+      "NAT-2026-11-13-007",
+      "NAT-2026-11-13-008",
+      "NAT-2026-11-13-009",
+      "NAT-2026-11-13-010"
     ],
-    "refreshed_entry_ids": [],
+    "refreshed_entry_ids": [
+      "NAT-2026-11-13-003"
+    ],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-13T17:05:55.643912Z",
-    "through_utc": "2026-11-13T23:03:19.177640Z",
+    "from_utc": "2026-11-13T23:03:19.177640Z",
+    "through_utc": "2026-11-14T05:08:04.295335Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact prior checked_at boundary through the final validated Truth Social refresh and bounded source review. Four qualifying developments were published without padding; two same-day items are explicitly identified as recovered omissions rather than post-boundary events."
+    "note": "Exact prior checked_at boundary through the final validated Truth Social refresh and bounded source review. One post-boundary action, three same-day recovered omissions and one material same-event refresh were published without padding; recovered items are not represented as post-boundary events."
   },
-  "release_iso": "2026-11-13",
-  "release_human": "November 13, 2026",
-  "checked_at": "2026-11-13 6:03 PM EST",
-  "previous_version": "10.240.0",
-  "previous_checked_at": "2026-11-13 12:05 PM EST",
-  "window_started_at": "2026-11-13T17:05:55.643912Z",
-  "window_ended_at": "2026-11-13T23:03:19.177640Z",
+  "release_iso": "2026-11-14",
+  "release_human": "November 14, 2026",
+  "checked_at": "2026-11-14 12:08 AM EST",
+  "previous_version": "10.241.0",
+  "previous_checked_at": "2026-11-13 6:03 PM EST",
+  "window_started_at": "2026-11-13T23:03:19.177640Z",
+  "window_ended_at": "2026-11-14T05:08:04.295335Z",
   "week_start": "2026-11-09",
   "week_end": "2026-11-15",
   "week_label": "November 9–15, 2026",
   "cutoff_start": "2026-07-20",
   "new_entry_ids": [
     "NAT-2026-11-13-003",
-    "NAT-2026-11-13-004",
-    "NAT-2026-11-13-005",
-    "NAT-2026-11-13-006"
+    "NAT-2026-11-13-007",
+    "NAT-2026-11-13-008",
+    "NAT-2026-11-13-009",
+    "NAT-2026-11-13-010"
   ],
   "added_entry_ids": [
-    "NAT-2026-11-13-003",
-    "NAT-2026-11-13-004",
-    "NAT-2026-11-13-005",
-    "NAT-2026-11-13-006"
+    "NAT-2026-11-13-007",
+    "NAT-2026-11-13-008",
+    "NAT-2026-11-13-009",
+    "NAT-2026-11-13-010"
   ],
-  "refreshed_entry_ids": [],
+  "refreshed_entry_ids": [
+    "NAT-2026-11-13-003"
+  ],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-11-10-006",
@@ -1500,53 +1505,93 @@
       "target_id": "NAT-2026-09-28-008",
       "decision": "same_event_update",
       "notes": "The November 13 FAA and White House request repeated the existing $30.1 billion aviation-modernization proposal tracked in NAT-2026-09-28-008; it was not counted again."
+    },
+    {
+      "entry_id": "NAT-2026-11-13-007",
+      "target_id": "NAT-2026-11-13-007",
+      "decision": "false_positive",
+      "notes": "No canonical event, normalized title, source URL or recent maintenance pull request covered the third Jones Act waiver extension and its voyage-specific conditions."
+    },
+    {
+      "entry_id": "NAT-2026-11-13-008",
+      "target_id": "NAT-2026-11-13-008",
+      "decision": "false_positive",
+      "notes": "No canonical event, normalized title, source URL or recent maintenance pull request covered the Covetrus-MWI antitrust complaint."
+    },
+    {
+      "entry_id": "NAT-2026-11-13-009",
+      "target_id": "NAT-2026-11-13-009",
+      "decision": "false_positive",
+      "notes": "No canonical event, normalized title, source URL or recent maintenance pull request covered the SEC executive-compensation disclosure proposal."
+    },
+    {
+      "entry_id": "NAT-2026-11-13-010",
+      "target_id": "NAT-2026-11-13-010",
+      "decision": "false_positive",
+      "notes": "No canonical event, normalized title, source URL or recent maintenance pull request covered the coordinated November 13 Guatemala designations."
+    },
+    {
+      "entry_id": "NAT-2026-11-13-010",
+      "target_id": "NAT-2026-10-02-003",
+      "decision": "false_positive",
+      "notes": "Both cite Executive Order 13224, but the October 2 and November 13 actions designate different targets in different programs and factual events; shared legal authority does not make them one event."
+    },
+    {
+      "entry_id": "NAT-2026-11-13-010",
+      "target_id": "NAT-2026-09-11-015",
+      "decision": "false_positive",
+      "notes": "Both cite Executive Order 13224, but the September 11 and November 13 designations concern different targets, conduct, source records and consequences; shared legal authority is not an event match."
+    },
+    {
+      "entry_id": "NAT-2026-11-13-010",
+      "target_id": "NAT-2026-08-26-003",
+      "decision": "false_positive",
+      "notes": "Both cite Executive Order 13224, but the August 26 and November 13 actions concern distinct target sets, factual predicates and designation notices; shared authority alone is a false-positive signal."
     }
   ],
   "rejected_candidates": [
     {
-      "title": "White House executive-action results roundup",
-      "reason": "The November 13 release summarized and promoted earlier actions and outcome claims but supplied no distinct newly signed, implemented or adjudicated action. Individual claims remain research leads requiring source-level verification.",
+      "title": "Trump statement on Louisiana ship collision",
+      "reason": "The late-arriving post proves only that Trump published praise and casualty claims. The claims were not independently verified in this bounded run, the underlying event is local, and no distinct material national action, proposal, ruling, expenditure or investigation was established.",
       "source_urls": [
-        "https://www.whitehouse.gov/releases/2026/11/trump-administration-delivers-record-setting-results-through-executive-action/"
+        "https://truthsocial.com/@realDonaldTrump/117611608680849019"
       ]
     },
     {
-      "title": "White House Veterans Day edited clip",
-      "reason": "The video library exposed title, date, duration and link metadata for a 54-second ceremonial clip of earlier Veterans Day material. Playback, complete audio and captions were not retrieved; a new upload is not a new government action.",
+      "title": "Announced Trump-Xi-Putin APEC meetings",
+      "reason": "The material described scheduled diplomacy rather than a completed agreement or implemented action, and consequential agenda details relied on unnamed-source reporting without the required second independent confirmation.",
       "source_urls": [
-        "https://www.whitehouse.gov/videos/",
-        "https://www.whitehouse.gov/trumptv/",
-        "https://www.whitehouse.gov/live/"
+        "https://apnews.com/"
       ]
     },
     {
-      "title": "AI task-force cyberattack-reporting discussion",
-      "reason": "The report predated the research boundary and described deliberations without an issued standard, signed directive, formal proposal text, expenditure or implemented reporting regime.",
+      "title": "$20 million Great American Digital Corridors grant opportunity",
+      "reason": "The notice predated the exact boundary and was a lower-priority funding opportunity without an award or expenditure. It remains a research lead and was not added to reach a quota.",
       "source_urls": [
-        "https://www.reuters.com/world/us/trumps-ai-task-force-met-thursday-discussed-ai-powered-cyberattacks-2026-11-13/"
+        "https://www.transportation.gov/"
       ]
     },
     {
-      "title": "$30.1 billion aviation-modernization request",
-      "reason": "The request was published before the bounded window and duplicates the proposal already tracked in NAT-2026-09-28-008. The nationwide ground stop is a separate operational event and was published as NAT-2026-11-13-003.",
+      "title": "Superseding terrorism charge in White House Correspondents' Association dinner shooting case",
+      "reason": "The new count is a formal allegation, not a conviction. It remains a potential enforcement-stage lead but was not needed to pad a release already supported by stronger national policy and regulatory actions.",
       "source_urls": [
-        "https://www.reuters.com/world/us/trump-administration-asks-congress-301-billion-new-airports-air-traffic-2026-11-13/"
+        "https://www.justice.gov/"
       ]
     },
     {
       "title": "Routine personnel, ceremonial and rhetorical material",
-      "reason": "The material reviewed supplied no distinct material national action, formal proposal, appropriation, expenditure, court stage, investigation or independently measured outcome beyond the four accepted records."
+      "reason": "The material reviewed supplied no additional distinct material national action, formal proposal, appropriation, expenditure, court stage, investigation or independently measured outcome beyond the accepted records."
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-13 6:03 PM EST",
-    "checked_at_eastern": "2026-11-13 6:03:19 PM EST",
+    "checked_at": "2026-11-14 12:08 AM EST",
+    "checked_at_eastern": "2026-11-14 12:08:04 AM EST",
     "inspection_status": "official Trump TV, live, dated-library, remarks and release metadata inspected; full audiovisual content unavailable",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-13T23:03:19.177640Z",
+    "last_successful_page_inspection_at": "2026-11-14T05:08:04.295335Z",
     "last_successful_broadcast_review_through": null,
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
@@ -1558,15 +1603,28 @@
       "https://www.whitehouse.gov/news/",
       "https://www.whitehouse.gov/releases/"
     ],
-    "summary": "Official Trump TV, live, videos, remarks and releases pages were rechecked. The library led with a 54-second Veterans Day at Arlington National Cemetery 2026 edited clip whose listing date and detail-page date differed; only page, title, date, duration and link metadata were inspected. Playback, complete audio and captions were unavailable, no footage is claimed watched, fallback text was not treated as outage proof, no qualifying new item located in the material reviewed, and the complete broadcast-review boundary remains unadvanced.",
+    "summary": "Official Trump TV, live, videos, remarks and releases pages were rechecked. The dated library led with a 39-second edited clip titled ‘DHS Secretary Markwayne Mullin Speaks on FAA Ground Stop: Everybody is safe.’ Only page, title, date, duration, link and video-ID metadata were inspected; playback, complete audio and captions were not retrieved, no footage is claimed watched, and the clip duplicates the independently sourced FAA development consolidated into NAT-2026-11-13-003. Fallback text was not treated as outage proof, no qualifying new item located in the material reviewed as a distinct record, and the complete broadcast-review boundary remains unadvanced.",
     "gaps": [
       "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
       "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
-      "The November 13 library listing dated the 54-second Veterans Day clip November 13 while its detail page displayed November 12; the underlying ceremony was earlier and no new action was inferred.",
-      "The current official pages did not expose an independently inspectable new stream identifier; the previously retained stable official link was not treated as proof of current playback state.",
+      "The November 13 FAA clip was inspected only through official listing/detail metadata and linked video ID; its policy lead was corroborated through the existing FAA record rather than treated as a separate action.",
+      "The current official pages did not expose an independently inspectable replacement live-stream identifier; the previously retained stable link was not treated as proof of current playback state.",
       "No complete transcript feed, channel budget, contract, staffing record or editorial-control record was available in the inspected official pages."
     ],
     "items": [
+      {
+        "url": "https://www.whitehouse.gov/videos/dhs-secretary-markwayne-mullin-speaks-on-faa-ground-stop-everybody-is-safe/",
+        "posted_date": "2026-11-13",
+        "original_event_date": "2026-11-13",
+        "broadcast_time": null,
+        "observed_at": "2026-11-14T05:08:04.295335Z",
+        "observed_at_eastern": "2026-11-14 12:08:04 AM EST",
+        "format": "official 39-second edited-clip metadata; audiovisual content unreviewed",
+        "inspection": "Official title, date, duration, detail-page link and linked YouTube video ID inspected. Playback, complete audio and captions were not retrieved. The clip was treated only as a lead and duplicates the FAA event materially refreshed in NAT-2026-11-13-003.",
+        "video_ids": [
+          "-4DmVkkIymA"
+        ]
+      },
       {
         "url": "https://www.whitehouse.gov/trumptv/",
         "posted_date": null,
@@ -4556,25 +4614,25 @@
     "new_media_reviewed": 0,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-13T23:03:19.177640Z",
-    "checked_at_eastern": "2026-11-13 6:03:19 PM EST",
-    "latest_post_id": "117611584206041319",
-    "latest_post_at_eastern": "2026-11-13 5:52:34 PM EST",
+    "checked_at_utc": "2026-11-14T05:08:04.295335Z",
+    "checked_at_eastern": "2026-11-14 12:08:04 AM EST",
+    "latest_post_id": "117611608680849019",
+    "latest_post_at_eastern": "2026-11-13 5:58:48 PM EST",
     "counts": {
       "text_status": {
         "not_recorded": 154,
-        "reviewed": 1735,
-        "pending": 972
+        "pending": 972,
+        "reviewed": 1736
       },
       "media_status": {
-        "not_applicable": 1608,
+        "not_applicable": 1609,
         "not_recorded": 19,
-        "unavailable": 295,
         "pending": 540,
-        "reviewed": 399
+        "reviewed": 399,
+        "unavailable": 295
       }
     },
-    "note": "One post was newer than the prior validated snapshot. The newest was ID 117611584206041319, published November 13 at 5:52:34 PM EST in America/Indiana/Indianapolis; no post newer than it was present at the 6:03:19 PM EST feed check. Its text was reviewed as publication evidence only, and the underlying pending bills were independently inspected for NAT-2026-11-13-005. The fallback was refreshed and validated."
+    "note": "One late-arriving post was newer than the prior validated snapshot, although its 5:58:48 PM EST publication time preceded the exact 6:03:19 PM EST research boundary. The newest was ID 117611608680849019, published November 13 at 5:58:48 PM EST in America/Indiana/Indianapolis; no post newer than it was present at the November 14 12:08:04 AM EST final check. Its text was reviewed as publication evidence only, its factual claims were not independently accepted, and it was withheld from canonical records. The fallback was refreshed and validated."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -4586,27 +4644,27 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-13 6:03 PM EST",
-    "checked_at_utc": "2026-11-13T23:03:19.177640Z",
-    "summary": "All four registered primary project pages were checked as discovery inputs. Trump Archive changed to 16,101 total items, 13,373 Truth Social posts and 2,062 speeches/transcripts; UndoTrump remained at 1,264 actions. The Immigration Policy Tracking Project measurement could not be reverified, and Record47 exposed labels but no stable numeric counters in accessible text. Distinct units were not summed and zero external items were imported by default.",
+    "checked_at": "2026-11-14 12:08 AM EST",
+    "checked_at_utc": "2026-11-14T05:08:04.295335Z",
+    "summary": "All four registered primary project pages were checked as discovery inputs. Trump Archive displayed 16,106 total items, 13,375 Truth Social posts and 2,065 speeches/transcripts; UndoTrump remained at 1,264 actions; the Immigration Policy Tracking Project displayed 1,836 policy actions; Record47 exposed labels but no stable numeric counters in accessible text. Distinct units were not summed and zero external items were imported by default.",
     "updated_archives": [
-      "trump_archive"
+      "trump_archive",
+      "immigration_policy_tracking_project"
     ],
     "unchanged_archives": [
       "undotrump"
     ],
     "access_gap_archives": [
-      "immigration_policy_tracking_project",
       "record47"
     ]
   },
   "editorial_notes": [
-    "Published four qualifying developments without padding: a nationwide FAA departure stop, Supreme Court certiorari in the asylum-suspension case, a current presidential endorsement of pending film-tax-credit legislation and a $5 million federal contractor-cybersecurity settlement.",
-    "The Supreme Court grant and Johnson Controls settlement are same-day omissions recovered in this run; neither is represented as a post-boundary event. The court entry is a grant of review, not a merits ruling, and the settlement resolves allegations rather than adjudicating liability.",
-    "The FAA record preserves the temporary departure-only scope, contemporaneous disruption count and unknown cause. It does not call airports closed, infer a cyberattack or claim recovery was complete.",
-    "The Truth Social post proves Trump's current endorsement only. GovInfo and sponsor records establish the bill text and pending status; the tenfold fiscal-return and workforce assertions remain unverified.",
-    "No objective legacy candidate was responsibly resolved in this bounded run; the disclosed source-health and duplicate-candidate queues remain visible and unchanged.",
-    "External archive measurements retain distinct units. Only Trump Archive's verified measurement changed; access gaps did not become zero values or inferred updates, and no external item entered the canonical archive by default."
+    "Published four qualifying additions and one material same-event refresh without padding. The Guatemalan designations are the post-boundary action; the Jones Act extension, FTC complaint and SEC proposal are explicitly recovered same-day omissions.",
+    "The FAA record was refreshed rather than duplicated: the national stop was lifted after about five hours, but the reported equipment-overload explanation remains under investigation and full recovery or recurrence prevention is not established.",
+    "The Jones Act extension is effective November 16 and retains a voyage-specific vessel-availability process; no blanket authorization or measured price effect is claimed.",
+    "The FTC filing is a complaint, not a court-ordered block or merits finding. The SEC item is a proposal, not a final or effective rule. The Guatemala record distinguishes implemented designations from attributed conduct allegations and measured operational effect.",
+    "No material correction was required. Three disclosed same-date legacy duplicate candidates were reviewed as distinct events, but no canonical legacy text or revision ledger was changed; the queue remains visible.",
+    "External archive measurements retain distinct units. Trump Archive and the Immigration Policy Tracking Project were updated only to values visible on their primary pages; no external item entered the canonical archive by default."
   ],
   "retained_stages": [],
   "publication_transport_attempts": [],
