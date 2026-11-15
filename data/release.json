@@ -1,51 +1,47 @@
 {
-  "version": "10.244.1",
-  "artifact_mode": "feed-only",
-  "editorial_snapshot": {
-    "version": "10.244.0",
-    "national_pack": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-11-14_v10.244.0.zip",
-      "sha256": "c23ee5876ce1d84a7b62cc458f4a5fd3732c806449c23243af46013cea15a778"
-    },
-    "complete_pack": {
-      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-11-14_v10.244.0.zip",
-      "sha256": "58d89ede53fbd131a50b03406e85f60fda61eb466a83e5aedca02f1a79ecb470"
-    },
-    "national_brief": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-11-14_v10.244.0.md",
-      "sha256": "0b3b8c5573f0786c2555ac16d6930ebc1f6bb3cdd0cced3ed462b44c8726f766"
-    },
-    "in6_brief": {
-      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-11-14_v10.244.0.md",
-      "sha256": "841d5f85421234c0a266aae37a33e79e99a18a40dd7d006be7abffcfb807b1e8"
-    }
-  },
+  "version": "10.245.0",
+  "artifact_mode": "full",
+  "editorial_snapshot": null,
   "run_changes": {
-    "added_entry_ids": [],
-    "refreshed_entry_ids": [],
+    "added_entry_ids": [
+      "NAT-2026-11-14-001"
+    ],
+    "refreshed_entry_ids": [
+      "NAT-2026-10-10-001",
+      "NAT-2026-11-13-003"
+    ],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-14T17:05:18.782018Z",
-    "through_utc": "2026-11-14T23:10:31.970882Z",
+    "from_utc": "2026-11-14T23:10:31.970882Z",
+    "through_utc": "2026-11-15T05:09:43.812289Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact prior checked_at boundary through the final validated Truth Social refresh and bounded source review. Editorial no-op with eleven newer raw-feed posts retained and reviewed; no qualifying canonical national item located in the material reviewed."
+    "note": "Exact prior checked_at boundary through the final validated Truth Social refresh and bounded source review. Three records passed: one new federal safety-investigation record and two material same-event refreshes; the archive was not padded to four."
   },
-  "release_iso": "2026-11-14",
-  "release_human": "November 14, 2026",
-  "checked_at": "2026-11-14 6:10 PM EST",
-  "previous_version": "10.244.0",
-  "previous_checked_at": "2026-11-14 12:05 PM EST",
-  "window_started_at": "2026-11-14T17:05:18.782018Z",
-  "window_ended_at": "2026-11-14T23:10:31.970882Z",
+  "release_iso": "2026-11-15",
+  "release_human": "November 15, 2026",
+  "checked_at": "2026-11-15 12:09 AM EST",
+  "previous_version": "10.244.1",
+  "previous_checked_at": "2026-11-14 6:10 PM EST",
+  "window_started_at": "2026-11-14T23:10:31.970882Z",
+  "window_ended_at": "2026-11-15T05:09:43.812289Z",
   "week_start": "2026-11-09",
   "week_end": "2026-11-15",
   "week_label": "November 9–15, 2026",
   "cutoff_start": "2026-07-20",
-  "new_entry_ids": [],
-  "added_entry_ids": [],
-  "refreshed_entry_ids": [],
+  "new_entry_ids": [
+    "NAT-2026-11-14-001",
+    "NAT-2026-10-10-001",
+    "NAT-2026-11-13-003"
+  ],
+  "added_entry_ids": [
+    "NAT-2026-11-14-001"
+  ],
+  "refreshed_entry_ids": [
+    "NAT-2026-10-10-001",
+    "NAT-2026-11-13-003"
+  ],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-11-10-006",
@@ -1550,467 +1546,331 @@
   ],
   "rejected_candidates": [
     {
+      "title": "Five newer Truth Social posts",
+      "reason": "Reviewed publication evidence contained routine rhetoric, awards material and a personal anecdote; unverified market and anecdotal claims did not independently meet the publication threshold.",
+      "source_urls": [
+        "https://truthsocial.com/@realDonaldTrump/117617708553644602",
+        "https://truthsocial.com/@realDonaldTrump/117617925898523147",
+        "https://truthsocial.com/@realDonaldTrump/117618181388403813",
+        "https://truthsocial.com/@realDonaldTrump/117618182102449443",
+        "https://truthsocial.com/@realDonaldTrump/117618190139423939"
+      ]
+    },
+    {
+      "title": "Trump TV Stephen A. Smith clip and repeated FAA recordings",
+      "reason": "Only official title/date/duration/link metadata was available. The 1:14 clip was routine retrospective rhetoric, the FAA recordings duplicate NAT-2026-11-13-003, and no qualifying new item was located in the material reviewed.",
+      "source_urls": [
+        "https://www.whitehouse.gov/videos/",
+        "https://www.whitehouse.gov/videos/president-trump-on-stephen-a-smith-accomplishments-for-black-americans/"
+      ]
+    },
+    {
+      "title": "Reported progress in U.S.–Canada trade talks",
+      "reason": "Talks and instructions to continue negotiating established no agreement, tariff instrument, formal text or implemented change.",
+      "source_urls": [
+        "https://www.reuters.com/world/americas/canada-us-make-progress-trade-deal-carney-says-2026-11-14/"
+      ]
+    },
+    {
       "title": "Reported conditional pause in further Iran attacks",
-      "reason": "The private decision rested mainly on unnamed sources, lacked a second independent original confirmation and established no public order, ceasefire, strike, War Powers report or operational change.",
+      "reason": "The private decision remained based mainly on unnamed sources without a second independent original confirmation and established no public order, ceasefire, War Powers report or implemented operational change.",
       "source_urls": [
         "https://www.reuters.com/world/middle-east/trump-tells-advisers-he-may-hold-off-iran-attacks-barring-new-provocations-2026-11-14/"
       ]
     },
     {
-      "title": "East Potomac image thread and pending closure ruling",
-      "reason": "Trump's text and 24 attached images were reviewed as publication evidence, but the photographs did not independently establish their date, location or the post's safety, crime, cost and economic claims. The project and litigation duplicate NAT-2026-10-10-001, and no Saturday closure ruling, sanctions order or investigative finding had issued by cutoff.",
-      "source_urls": [
-        "https://truthsocial.com/@realDonaldTrump/117616471014747868",
-        "https://www.washingtonpost.com/politics/2026/11/14/judge-golf-course-case-says-inquiry-into-doj-lawyers-will-proceed/"
-      ]
-    },
-    {
-      "title": "Renewed endorsement of film and television tax-credit bills",
-      "reason": "GovInfo confirms H.R. 10582 and S. 5552 remain introduced and referred to committee. Trump's newer post supplied no committee action, vote, score or enactment and duplicates NAT-2026-11-13-005.",
-      "source_urls": [
-        "https://truthsocial.com/@realDonaldTrump/117616010798312169",
-        "https://www.govinfo.gov/app/details/BILLS-119hr10582ih",
-        "https://www.govinfo.gov/app/details/BILLS-119s5552is"
-      ]
-    },
-    {
-      "title": "Senator Kennedy legislative wish list",
-      "reason": "The republished quote described desired confirmations, permitting, reconciliation, military, air-traffic-control, stock-trading, pardon-broker and fraud measures, but did not establish filed text for several items, passage, appropriation or implementation.",
-      "source_urls": [
-        "https://truthsocial.com/@realDonaldTrump/117616014481394036"
-      ]
-    },
-    {
-      "title": "Trump criticism of California death-penalty policy",
-      "reason": "The post verified publication of state-focused political advocacy but announced no qualifying federal action.",
-      "source_urls": [
-        "https://truthsocial.com/@realDonaldTrump/117617041335738125"
-      ]
-    },
-    {
-      "title": "Trump TV FAA replays and metadata",
-      "reason": "The official library still led with the same two FAA recordings previously reviewed by metadata and consolidated into NAT-2026-11-13-003. Playback, complete audio and captions remained unavailable, and no separate qualifying action was located in the material reviewed.",
-      "source_urls": [
-        "https://www.whitehouse.gov/videos/"
-      ]
-    },
-    {
-      "title": "Routine personnel, ceremonial, promotional and rhetorical material",
-      "reason": "The material supplied no distinct material national action, formal proposal, appropriation, expenditure, ruling, investigation or independently measured outcome."
+      "title": "Legacy duplicate-candidate batch",
+      "reason": "The three current same-date same-heading candidate pairs were inspected and were distinct events. No mass transformation or unsupported historical revision was made.",
+      "source_urls": []
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
-    "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-14 6:10 PM EST",
-    "checked_at_eastern": "2026-11-14 6:10:31 PM EST",
-    "inspection_status": "official Trump TV, live, dated-library, detail-page, remarks and release metadata inspected; full audiovisual content unavailable",
-    "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-14T23:10:31.970882Z",
-    "last_successful_broadcast_review_through": null,
+    "checked_at_utc": "2026-11-15T05:09:43.812289Z",
+    "checked_at_eastern": "2026-11-15 12:09:43 AM EST",
+    "inspection_status": "official Trump TV, live, dated-library, detail-page, remarks and release metadata inspected; complete audiovisual content unavailable",
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
+    "last_successful_broadcast_review_through": null,
+    "summary": "The official channel, live hub, video library, new 1:14 Stephen A. Smith detail page, repeated FAA detail pages, remarks and releases were inspected as metadata. The new clip was routine retrospective rhetoric and the FAA recordings duplicate NAT-2026-11-13-003. No footage, complete audio or captions are claimed reviewed; fallback text was not treated as outage proof. No qualifying new item located in the material reviewed, and the complete broadcast-review boundary remains unadvanced.",
     "sources": [
       "https://www.whitehouse.gov/trumptv/",
       "https://www.whitehouse.gov/live/",
       "https://www.whitehouse.gov/videos/",
       "https://www.whitehouse.gov/remarks/",
-      "https://www.whitehouse.gov/news/",
-      "https://www.whitehouse.gov/releases/"
+      "https://www.whitehouse.gov/releases/",
+      "https://www.whitehouse.gov/videos/president-trump-on-stephen-a-smith-accomplishments-for-black-americans/"
     ],
-    "summary": "Official Trump TV, live, videos, the two FAA detail pages, remarks and releases pages were rechecked. The library still led with the same FAA recordings; the library displayed November 14 while both detail pages displayed November 13. Only page, title, displayed-date, duration, link and video-ID metadata were inspected; playback, complete audio and captions were not retrieved, no footage is claimed watched, and the items remain consolidated into NAT-2026-11-13-003. Fallback text was not treated as outage proof, no qualifying new item located in the material reviewed, and the complete broadcast-review boundary remains unadvanced.",
     "gaps": [
-      "Broadcast footage, audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
-      "Current live/replay state was not independently verified; fallback error text alone does not establish an outage.",
-      "The video library displayed November 14 while both FAA detail pages displayed November 13; exact posting and broadcast times remain unknown.",
+      "Broadcast footage, complete audio and captions were not retrieved, so no claim is made that every broadcast minute was reviewed.",
+      "Current live or replay state was not independently verified; fallback error text alone does not establish an outage.",
+      "Exact posting and broadcast times remain unknown for the November 14 clip and the repeated FAA recordings.",
       "No complete transcript feed, channel budget, contract, staffing record or editorial-control record was available in the inspected official pages."
     ],
     "items": [
       {
-        "url": "https://www.whitehouse.gov/videos/secretary-mullin-secretary-duffy-provide-an-update-on-the-faa-national-ground-stop/",
-        "posted_date": null,
-        "original_event_date": "2026-11-13",
-        "broadcast_time": null,
-        "observed_at": "2026-11-14T17:05:18.782018Z",
-        "observed_at_eastern": "2026-11-14 12:05 PM EST",
-        "format": "official 4:30 video-detail metadata; live/replay/edit status and exact posting time unknown; audiovisual content unreviewed",
-        "inspection": "Library title/date/duration and detail-page title/date/link/video ID inspected. Library displayed November 14; detail page displayed November 13. Playback, complete audio and captions were not retrieved; no footage is claimed watched. Repeated FAA event consolidated into NAT-2026-11-13-003.",
+        "url": "https://www.whitehouse.gov/trumptv/",
         "video_ids": [
-          "aH2db_pvy38"
-        ]
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "official channel page and stable stream-link metadata; audiovisual content unreviewed",
+        "inspection": "Page and stable stream-link metadata inspected. Fallback text was not treated as outage proof; no playback, complete audio or captions reviewed."
       },
       {
-        "url": "https://www.whitehouse.gov/videos/secretary-mullin-and-secretary-duffy-brief-members-of-the-press-on-the-faa-ground-stop/",
-        "posted_date": null,
-        "original_event_date": "2026-11-13",
-        "broadcast_time": null,
-        "observed_at": "2026-11-14T17:05:18.782018Z",
-        "observed_at_eastern": "2026-11-14 12:05 PM EST",
-        "format": "official 33:57 video-detail metadata; live/replay/edit status and exact posting time unknown; audiovisual content unreviewed",
-        "inspection": "Library title/date/duration and detail-page title/date/link/video ID inspected. Library displayed November 14; detail page displayed November 13. Playback, complete audio and captions were not retrieved; no footage is claimed watched. Repeated FAA event consolidated into NAT-2026-11-13-003.",
+        "url": "https://www.whitehouse.gov/live/",
         "video_ids": [
-          "Mh2q-y0wIu8"
-        ]
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "Live-hub and linked-channel metadata inspected. No live/replay state or outage inferred; no playback, complete audio or captions reviewed."
       },
       {
         "url": "https://www.whitehouse.gov/videos/",
+        "video_ids": [
+          "e9vLyeVPxFM",
+          "aH2db_pvy38",
+          "Mh2q-y0wIu8"
+        ],
+        "posted_date": "2026-11-14",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "official dated-library listing metadata; audiovisual content unreviewed",
+        "inspection": "Titles, displayed dates, durations, detail links and stable IDs inspected. New 1:14 retrospective rhetoric was withheld; repeated FAA listings were deduplicated to NAT-2026-11-13-003."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-on-stephen-a-smith-accomplishments-for-black-americans/",
+        "video_ids": [
+          "e9vLyeVPxFM"
+        ],
+        "posted_date": "2026-11-14",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "official 1:14 edited-clip metadata; live/replay state and exact posting time unknown",
+        "inspection": "Official title, date, duration, detail link and video ID inspected. Playback, complete audio and captions were not retrieved; no footage is claimed watched and the routine retrospective claim was withheld."
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "video_ids": [],
+        "posted_date": "2026-09-28",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "supplementary remarks index; not assumed complete",
+        "inspection": "Index metadata inspected for supplementary statements and not treated as a complete transcript feed; no post-boundary transcript exposed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "video_ids": [],
         "posted_date": "2026-11-13",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "supplementary official releases index",
+        "inspection": "Recent release metadata inspected as text leads. No November 14 release or separate qualifying Trump TV cost, contract, staffing, editorial-control, distribution or press-access finding located."
+      }
+    ],
+    "baseline_established_at": "2026-09-26T16:06:37Z",
+    "checked_at": "2026-11-15 12:09 AM EST",
+    "retrospective_start_date": "2026-09-21",
+    "last_successful_page_inspection_at": "2026-11-15T05:09:43.812289Z",
+    "last_successful_broadcast_boundary": null,
+    "inspected_items": [
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "official channel page and stable stream-link metadata; audiovisual content unreviewed",
+        "inspection": "Page and stable stream-link metadata inspected. Fallback text was not treated as outage proof; no playback, complete audio or captions reviewed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "Live-hub and linked-channel metadata inspected. No live/replay state or outage inferred; no playback, complete audio or captions reviewed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "video_ids": [
+          "e9vLyeVPxFM",
+          "aH2db_pvy38",
+          "Mh2q-y0wIu8"
+        ],
+        "posted_date": "2026-11-14",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "official dated-library listing metadata; audiovisual content unreviewed",
+        "inspection": "Titles, displayed dates, durations, detail links and stable IDs inspected. New 1:14 retrospective rhetoric was withheld; repeated FAA listings were deduplicated to NAT-2026-11-13-003."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-on-stephen-a-smith-accomplishments-for-black-americans/",
+        "video_ids": [
+          "e9vLyeVPxFM"
+        ],
+        "posted_date": "2026-11-14",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "official 1:14 edited-clip metadata; live/replay state and exact posting time unknown",
+        "inspection": "Official title, date, duration, detail link and video ID inspected. Playback, complete audio and captions were not retrieved; no footage is claimed watched and the routine retrospective claim was withheld."
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "video_ids": [],
+        "posted_date": "2026-09-28",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "supplementary remarks index; not assumed complete",
+        "inspection": "Index metadata inspected for supplementary statements and not treated as a complete transcript feed; no post-boundary transcript exposed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "video_ids": [],
+        "posted_date": "2026-11-13",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "supplementary official releases index",
+        "inspection": "Recent release metadata inspected as text leads. No November 14 release or separate qualifying Trump TV cost, contract, staffing, editorial-control, distribution or press-access finding located."
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-14T23:10:31.970882Z",
+        "observed_at_eastern": "2026-11-14 6:10:31 PM EST",
+        "format": "official Trump TV page and retained stable stream-link metadata; audiovisual content unreviewed",
+        "inspection": "Stable stream-link and page metadata rechecked. Playback, complete audio and captions were not retrieved; fallback text was not treated as outage proof."
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-14T23:10:31.970882Z",
+        "observed_at_eastern": "2026-11-14 6:10:31 PM EST",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "Current hub and retained stream-link metadata rechecked. No footage, complete audio or captions were retrieved and no outage was inferred."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "video_ids": [
+          "aH2db_pvy38",
+          "Mh2q-y0wIu8"
+        ],
+        "posted_date": null,
+        "original_event_date": "2026-11-13",
+        "broadcast_time": null,
+        "observed_at": "2026-11-14T23:10:31.970882Z",
+        "observed_at_eastern": "2026-11-14 6:10:31 PM EST",
+        "format": "official dated-library and detail-page metadata for repeated 4:30 and 33:57 FAA recordings; audiovisual content unreviewed",
+        "inspection": "Titles, conflicting displayed dates, durations, detail links and stable IDs were rechecked as metadata only. The recordings repeat NAT-2026-11-13-003; playback, complete audio and captions were not retrieved."
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "video_ids": [],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-14T23:10:31.970882Z",
+        "observed_at_eastern": "2026-11-14 6:10:31 PM EST",
+        "format": "supplementary remarks index; not assumed complete",
+        "inspection": "Index metadata was inspected for supplementary statements and was not treated as a complete transcript feed. No November 14 item was exposed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "video_ids": [],
+        "posted_date": "2026-11-13",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-14T23:10:31.970882Z",
+        "observed_at_eastern": "2026-11-14 6:10:31 PM EST",
+        "format": "supplementary official releases index",
+        "inspection": "Recent official release metadata was inspected as text leads. No November 14 release or separate qualifying Trump TV action, cost, contract, staffing, editorial-control, distribution or press-access finding was located."
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-12T23:06:04.714372Z",
+        "observed_at_eastern": "2026-11-12 6:06:04 PM EST",
+        "format": "official Trump TV page and stable stream-link metadata; audiovisual content unreviewed",
+        "inspection": "Stable stream link and page metadata inspected. Playback, audio and captions were not retrieved; fallback text was not treated as outage proof."
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-12T23:06:04.714372Z",
+        "observed_at_eastern": "2026-11-12 6:06:04 PM EST",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "Current stream link and hub metadata inspected; no footage, audio or captions were retrieved and no outage was inferred."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "video_ids": [
+          "oYeoY2uS-YU",
+          "VVo0xJr_7iQ",
+          "BsMrRrcU_KI",
+          "G5jsCeH4ovs"
+        ],
+        "posted_date": "2026-11-11",
         "original_event_date": "2026-11-11",
         "broadcast_time": null,
-        "observed_at": "2026-11-14T11:05:39.933970Z",
-        "observed_at_eastern": "2026-11-14 6:05 AM EST",
-        "format": "official dated-library metadata; audiovisual content unreviewed",
-        "inspection": "Official channel, live, videos, remarks and releases pages were inspected. The library exposed repeated FAA metadata and a 54-second Veterans Day at Arlington listing. Playback, complete audio and captions were not retrieved; no footage is claimed watched, and no qualifying new item located in the material reviewed.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/dhs-secretary-markwayne-mullin-speaks-on-faa-ground-stop-everybody-is-safe/",
-        "posted_date": "2026-11-13",
-        "original_event_date": "2026-11-13",
-        "broadcast_time": null,
-        "observed_at": "2026-11-14T05:08:04.295335Z",
-        "observed_at_eastern": "2026-11-14 12:08:04 AM EST",
-        "format": "official 39-second edited-clip metadata; audiovisual content unreviewed",
-        "inspection": "Official title, date, duration, detail-page link and linked YouTube video ID inspected. Playback, complete audio and captions were not retrieved. The clip was treated only as a lead and duplicates the FAA event materially refreshed in NAT-2026-11-13-003.",
-        "video_ids": [
-          "-4DmVkkIymA"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "official page metadata; audiovisual content unreviewed",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "posted_date": "2026-10-30",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "official dated-library metadata; audiovisual content unreviewed",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "video_ids": [
-          "tcTeKoKBR6Q",
-          "jikmROaDmLU",
-          "KtQ0nbSIi2Y",
-          "FAtglEVDYs8",
-          "yNMNBcV2UKM"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "posted_date": "2026-09-28",
-        "original_event_date": "2026-09-28",
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "supplementary remarks index",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "posted_date": "2026-10-30",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-arrival-at-joint-base-andrews-oct-28-2026/",
-        "posted_date": "2026-10-28",
-        "original_event_date": "2026-10-28",
-        "broadcast_time": null,
-        "observed_at": "2026-10-28T22:02:29Z",
-        "observed_at_eastern": "2026-10-28 6:02 PM EDT",
-        "format": "official gaggle recording metadata; live/replay state unknown",
-        "inspection": "Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Retained earlier inspection (2026-10-28T22:02:29Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Prior direct-detail check (October 28, 6:02 PM EDT): Official page title/date inspected. YouTube embed fetch throttled; no audiovisual or caption inspection and no verified posting/broadcast time. This run rechecked the repeated library listing only; original observation time retained.",
-        "video_ids": [
-          "C7OR400n_mc"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/lego-music-video/",
-        "posted_date": "2026-10-27",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-10-28T22:02:29Z",
-        "observed_at_eastern": "2026-10-28 6:02 PM EDT",
-        "format": "official edited/music clip metadata; original event unknown",
-        "inspection": "Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Retained earlier inspection (2026-10-28T22:02:29Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Prior direct-detail check (October 28, 6:02 PM EDT): Official page title/date inspected. YouTube embed fetch throttled; no audiovisual or caption inspection and no verified posting/broadcast time. This run rechecked the repeated library listing only; original observation time retained.",
-        "video_ids": [
-          "sWRTm0t1ixE"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/france-then-vs-now/",
-        "posted_date": "2026-10-28",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-10-29T10:06:59Z",
-        "observed_at_eastern": "2026-10-29 6:06 AM EDT",
-        "format": "official short/edited-clip listing; audiovisual content unavailable",
-        "inspection": "Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Retained earlier inspection (2026-10-29T10:06:59Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Detail metadata rechecked, same October 28 title/date and library duration; embed throttled. Original event and exact posting/broadcast time unknown, no content claim promoted.",
-        "video_ids": [
-          "0ea83o4KN28"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-arrival-at-joint-base-andrews-oct-29-2026/",
-        "posted_date": "2026-10-29",
-        "original_event_date": "2026-10-29",
-        "broadcast_time": null,
-        "observed_at": "2026-10-30T10:06:49Z",
-        "observed_at_eastern": "2026-10-30 6:06 AM EDT",
-        "format": "gaggle recording metadata; live/replay status unknown",
-        "inspection": "Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Retained earlier inspection (2026-10-30T10:06:49Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Rechecked official page/detail metadata only; repeated listing, no newly reviewed footage or captions. Original dates and unknown broadcast time retained.",
-        "video_ids": [
-          "jikmROaDmLU"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-joint-base-andrews-oct-29-2026/",
-        "posted_date": "2026-10-29",
-        "original_event_date": "2026-10-29",
-        "broadcast_time": null,
-        "observed_at": "2026-10-30T10:06:49Z",
-        "observed_at_eastern": "2026-10-30 6:06 AM EDT",
-        "format": "gaggle recording metadata; live/replay status unknown",
-        "inspection": "Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Retained earlier inspection (2026-10-30T10:06:49Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Rechecked official page/detail metadata only; repeated listing, no newly reviewed footage or captions. Original dates and unknown broadcast time retained.",
-        "video_ids": [
-          "KtQ0nbSIi2Y"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/the-great-american-comeback-%F0%9F%87%BA%F0%9F%87%B8/",
-        "posted_date": "2026-10-29",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-10-30T04:06:20Z",
-        "observed_at_eastern": "2026-10-30 12:06 AM EDT",
-        "format": "edited short metadata; live/replay status unknown",
-        "inspection": "Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Retained earlier inspection (2026-10-30T04:06:20Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Official detail title/date and linked video ID inspected; YouTube embed throttled. No audio/video or captions reviewed, exact posting/broadcast time unknown.",
-        "video_ids": [
-          "FAtglEVDYs8"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-joint-base-andrews-oct-27-2026/",
-        "posted_date": "2026-10-29",
-        "original_event_date": "2026-10-27",
-        "broadcast_time": null,
-        "observed_at": "2026-10-30T04:06:20Z",
-        "observed_at_eastern": "2026-10-30 12:06 AM EDT",
-        "format": "retrospective gaggle recording metadata; live/replay status unknown",
-        "inspection": "Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Retained earlier inspection (2026-10-30T04:06:20Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Official detail title/date and linked video ID inspected; YouTube embed throttled. No audio/video or captions reviewed, exact posting/broadcast time unknown.",
-        "video_ids": [
-          "yNMNBcV2UKM"
-        ]
-      },
-      {
-        "url": "https://tsdr.uspto.gov/statusview/sn50128823",
-        "posted_date": "2026-09-24",
-        "original_event_date": "2026-09-24",
-        "broadcast_time": null,
-        "observed_at": "2026-10-30T10:06:49Z",
-        "observed_at_eastern": "2026-10-30 6:06 AM EDT",
-        "format": "retrospective official trademark status metadata, not broadcast footage",
-        "inspection": "Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Retained earlier inspection (2026-10-30T10:06:49Z); not a new direct-detail inspection in this run. Current run checked the official library listing only; the USPTO status page was not re-fetched. Earlier record: Intent-to-use application50128823 pending examination; private applicant DTTM Operations. No original application/consent, government license/payment or registration outcome reviewed; queued, not canonically published.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-and-the-first-lady-host-halloween-at-the-white-house/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-10-30T22:09:28Z",
-        "observed_at_eastern": "2026-10-30 6:09 PM EDT",
-        "format": "official recording metadata; live/replay state unknown",
-        "inspection": "Retained earlier inspection, not a new direct-detail check in this run. Retained earlier inspection; not a new direct-detail inspection in this run. Direct repeated detail and library metadata rechecked: libraryOct30/detailOct29 conflict unchanged. Original event date, exact posting/broadcast time and live/replay state unknown. Linked embed inspected but JavaScript-only, no footage/audio/captions reviewed.",
-        "video_ids": [
-          "tcTeKoKBR6Q"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "official channel metadata",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "official live hub metadata",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "posted_date": "2026-10-30",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "dated library listings, audiovisual content unreviewed",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "video_ids": [
-          "YZT8jsIJyQU",
-          "RyCfzP3I4eA",
-          "wET2hazuFD4",
-          "tcTeKoKBR6Q"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "posted_date": "2026-09-28",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "supplementary remarks index",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "posted_date": "2026-10-30",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-meets-with-artemis-iii-crew-at-the-white-house/",
-        "posted_date": "2026-10-30",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-10-31T10:02:13Z",
-        "observed_at_eastern": "2026-10-31 6:02 AM EDT",
-        "format": "48-second clip listing; footage not reviewed",
-        "inspection": "Retained earlier inspection, not a new direct-detail check in this run. Official page metadata/title/date/linked video ID inspected where present; original event/time and live/replay state unknown. No audiovisual or caption review; a replay or new upload is not a new government action.",
-        "video_ids": [
-          "YZT8jsIJyQU"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/secretary-of-the-treasury-scott-bessent-holds-a-fraud-task-force-press-conference-in-st-cloud-mn/",
-        "posted_date": "2026-10-30",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-10-31T10:02:13Z",
-        "observed_at_eastern": "2026-10-31 6:02 AM EDT",
-        "format": "1:37:40 recording listing; footage not reviewed",
-        "inspection": "Retained earlier inspection, not a new direct-detail check in this run. Official page metadata/title/date/linked video ID inspected where present; original event/time and live/replay state unknown. No audiovisual or caption review; a replay or new upload is not a new government action.",
-        "video_ids": [
-          "RyCfzP3I4eA"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-delivers-remarks-oct-30-2026/",
-        "posted_date": "2026-10-30",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-10-31T10:02:13Z",
-        "observed_at_eastern": "2026-10-31 6:02 AM EDT",
-        "format": "12:15 recording listing; footage not reviewed",
-        "inspection": "Retained earlier inspection, not a new direct-detail check in this run. Official page metadata/title/date/linked video ID inspected where present; original event/time and live/replay state unknown. No audiovisual or caption review; a replay or new upload is not a new government action.",
-        "video_ids": [
-          "wET2hazuFD4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-and-the-first-lady-host-halloween-at-the-white-house/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-10-31T10:02:13Z",
-        "observed_at_eastern": "2026-10-31 6:02 AM EDT",
-        "format": "repeated recording detail; library/detail date conflict",
-        "inspection": "Retained earlier inspection, not a new direct-detail check in this run. Official page metadata/title/date/linked video ID inspected where present; original event/time and live/replay state unknown. No audiovisual or caption review; a replay or new upload is not a new government action.",
-        "video_ids": [
-          "tcTeKoKBR6Q"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "official metadata only; live/replay status unknown",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "official metadata only; live/replay status unknown",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "video_ids": [
-          "N464mBP5dmE"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "official metadata only; live/replay status unknown",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption."
+        "observed_at": "2026-11-12T23:06:04.714372Z",
+        "observed_at_eastern": "2026-11-12 6:06:04 PM EST",
+        "format": "official dated-library metadata for repeated Veterans Day ceremony and edited clips",
+        "inspection": "Titles, displayed dates, durations, detail links and stable IDs were inspected as metadata only. Repeated footage was deduplicated and not counted as a new government action."
       },
       {
         "url": "https://www.whitehouse.gov/remarks/",
@@ -2018,763 +1878,21 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "official metadata only; live/replay status unknown",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption."
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "video_ids": [],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "official metadata only; live/replay status unknown",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/hello-america/",
-        "video_ids": [
-          "N464mBP5dmE"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-10-31T15:58:13Z",
-        "observed_at_eastern": "2026-10-31 11:58 AM EDT",
-        "format": "official metadata only; live/replay status unknown",
-        "inspection": "Page/index metadata inspected; Hello America indexOct31/detailOct30 conflict. No audiovisual review; unknown event/broadcast times retained."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "official index/detail metadata only; live/replay or edited-clip status unverified",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "official index/detail metadata only; live/replay or edited-clip status unverified",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "video_ids": [
-          "N464mBP5dmE"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "official index/detail metadata only; live/replay or edited-clip status unverified",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "video_ids": [],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "official index/detail metadata only; live/replay or edited-clip status unverified",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption."
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "video_ids": [],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "official index/detail metadata only; live/replay or edited-clip status unverified",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/hello-america/",
-        "video_ids": [
-          "N464mBP5dmE"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-10-31T22:09:22Z",
-        "observed_at_eastern": "2026-10-31 6:09 PM EDT",
-        "format": "official index/detail metadata only; live/replay or edited-clip status unverified",
-        "inspection": "Evening metadata recheck; same stream and Hello America listing. Conflicting index/detail dates preserved; no footage/audio/captions inspected. Current remarks/releases not assumed complete transcript feeds."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/halloween-at-the-white-house-2026/",
-        "video_ids": [
-          "uW6gG8q9fkg"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-01T04:06:22Z",
-        "observed_at_eastern": "2026-11-01 12:06 AM EDT",
-        "format": "55-second library clip; editing/live/replay status unverified",
-        "inspection": "Official listing/detail/link metadata only; index datedOctober31, original event and exact posting time unknown. Linked embed throttled; no audiovisual inspection."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "repeated official metadata; audiovisual content and live/replay status unreviewed",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "repeated official metadata; audiovisual content and live/replay status unreviewed",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "video_ids": [
-          "uW6gG8q9fkg",
-          "N464mBP5dmE"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "repeated official metadata; audiovisual content and live/replay status unreviewed",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "video_ids": [],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "repeated official metadata; audiovisual content and live/replay status unreviewed",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption."
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "video_ids": [],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T17:09:07Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "format": "repeated official metadata; audiovisual content and live/replay status unreviewed",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/halloween-at-the-white-house-2026/",
-        "video_ids": [
-          "uW6gG8q9fkg"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-01T11:04:37Z",
-        "observed_at_eastern": "2026-11-01 6:04 AM EST",
-        "format": "repeated official metadata; audiovisual content and live/replay status unreviewed",
-        "inspection": "Morning page/index/detail metadata recheck only. Halloween detailOct31; Hello America detailOct30/indexOct31. Unknown original event and exact posting times retained; no audiovisual review."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/hello-america/",
-        "video_ids": [
-          "N464mBP5dmE"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-01T11:04:37Z",
-        "observed_at_eastern": "2026-11-01 6:04 AM EST",
-        "format": "repeated official metadata; audiovisual content and live/replay status unreviewed",
-        "inspection": "Morning page/index/detail metadata recheck only. Halloween detailOct31; Hello America detailOct30/indexOct31. Unknown original event and exact posting times retained; no audiovisual review."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-at-a-halloween-party-at-mar-a-lago-oct-31-2026/",
-        "posted_date": null,
-        "original_event_date": "2026-10-31",
-        "broadcast_time": null,
-        "observed_at": "2026-11-01T17:04:31Z",
-        "observed_at_eastern": "2026-11-01 12:04 PM EST",
-        "format": "11:23 recording listing; live/replay/editing status unknown",
-        "video_ids": [
-          "3oucO26En9g"
-        ],
-        "inspection": "New official detail and library metadata inspected; indexNov1/detailOct31 conflict, embed throttled. No audiovisual or caption review; original event date from explicit title, exact time unknown."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "observed_at_utc": "2026-11-01T21:03:19Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "original_event_date": null,
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection",
-        "observed_at": "2026-11-02T17:09:07Z"
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "observed_at_utc": "2026-11-01T21:03:19Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "original_event_date": null,
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection",
-        "observed_at": "2026-11-02T17:09:07Z"
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "observed_at_utc": "2026-11-01T21:03:19Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "original_event_date": null,
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection",
-        "observed_at": "2026-11-02T17:09:07Z"
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "observed_at_utc": "2026-11-01T21:03:19Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "original_event_date": null,
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection",
-        "observed_at": "2026-11-02T17:09:07Z"
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "observed_at_utc": "2026-11-01T21:03:19Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "original_event_date": null,
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection",
-        "observed_at": "2026-11-02T17:09:07Z"
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-at-a-halloween-party-at-mar-a-lago-oct-31-2026/",
-        "observed_at_utc": "2026-11-01T21:03:19Z",
-        "observed_at_eastern": "2026-11-01 4:03 PM EST",
-        "inspection": "Officialpage/index/detail metadata only; same listings, no audiovisual review. Earlier evidence and dateconflicts retained.",
-        "original_event_date": "2026-10-31",
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection",
-        "video_id": "3oucO26En9g",
-        "library_date": "2026-11-01",
-        "detail_date": "2026-10-31",
-        "date_conflict": true
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "observed_at_utc": "2026-11-01T23:03:39Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "original_event_date": null,
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection",
-        "observed_at": "2026-11-02T17:09:07Z"
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "observed_at_utc": "2026-11-01T23:03:39Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "original_event_date": null,
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection",
-        "observed_at": "2026-11-02T17:09:07Z"
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "observed_at_utc": "2026-11-01T23:03:39Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "original_event_date": null,
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection",
-        "observed_at": "2026-11-02T17:09:07Z"
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "observed_at_utc": "2026-11-01T23:03:39Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "original_event_date": null,
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection",
-        "observed_at": "2026-11-02T17:09:07Z"
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "observed_at_utc": "2026-11-01T23:03:39Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "original_event_date": null,
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection",
-        "observed_at": "2026-11-02T17:09:07Z"
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-at-a-halloween-party-at-mar-a-lago-oct-31-2026/",
-        "observed_at_utc": "2026-11-01T23:03:39Z",
-        "observed_at_eastern": "2026-11-01 6:03 PM EST",
-        "inspection": "Official page/index/detail metadata only; same listings and unresolved date conflict. No audiovisual or caption review.",
-        "original_event_date": "2026-10-31",
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection"
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "observed_at_utc": "2026-11-02T05:07:58Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "original_event_date": null,
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection",
-        "observed_at": "2026-11-02T17:09:07Z"
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "observed_at_utc": "2026-11-02T05:07:58Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "original_event_date": null,
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection",
-        "observed_at": "2026-11-02T17:09:07Z"
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "observed_at_utc": "2026-11-02T05:07:58Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "original_event_date": null,
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection",
-        "observed_at": "2026-11-02T17:09:07Z"
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "observed_at_utc": "2026-11-02T05:07:58Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "original_event_date": null,
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection",
-        "observed_at": "2026-11-02T17:09:07Z"
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "observed_at_utc": "2026-11-02T05:07:58Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "original_event_date": null,
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection",
-        "observed_at": "2026-11-02T17:09:07Z"
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-arrival-at-dubuque-ia-nov-1-2026/",
-        "observed_at_utc": "2026-11-02T05:07:58Z",
-        "observed_at_eastern": "2026-11-02 12:07 AM EST",
-        "inspection": "Official title/detail/link metadata inspected. Linked embed was throttled; no audiovisual or caption review and no policy claim extracted.",
-        "original_event_date": "2026-11-01",
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; 09:06 listing, live/replay/editing status unverified",
-        "video_id": "zgHIpU0pAAk",
-        "library_date": "2026-11-01",
-        "detail_date": "2026-11-01",
-        "date_conflict": false
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "observed_at_utc": "2026-11-02T11:06:17Z",
-        "observed_at_eastern": "2026-11-02 12:09:07 PM EST",
-        "inspection": "Noon direct page/index metadata recheck. Same A4gNgHfZ-v4 stream and November 1 library lead; no post-boundary listing located. No audiovisual or caption review, no outage inference, and no complete transcript-feed assumption.",
-        "original_event_date": null,
-        "posted_or_broadcast_at": null,
-        "recording_state": "unknown; metadata-only inspection",
-        "video_id": "A4gNgHfZ-v4",
-        "observed_at": "2026-11-02T17:09:07Z"
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T23:09:07Z",
-        "observed_at_eastern": "2026-11-02 6:09:07 PM EST",
-        "format": "official index metadata; audiovisual content unreviewed",
-        "inspection": "Evening metadata recheck. Same stream and November 1 library lead; no November 2 listing. No footage, audio or captions reviewed, no outage inference, and no complete transcript-feed assumption.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T23:09:07Z",
-        "observed_at_eastern": "2026-11-02 6:09:07 PM EST",
-        "format": "official index metadata; audiovisual content unreviewed",
-        "inspection": "Evening metadata recheck. Same stream and November 1 library lead; no November 2 listing. No footage, audio or captions reviewed, no outage inference, and no complete transcript-feed assumption.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "posted_date": "2026-11-01",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T23:09:07Z",
-        "observed_at_eastern": "2026-11-02 6:09:07 PM EST",
-        "format": "official index metadata; audiovisual content unreviewed",
-        "inspection": "Evening metadata recheck. Same stream and November 1 library lead; no November 2 listing. No footage, audio or captions reviewed, no outage inference, and no complete transcript-feed assumption.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T23:09:07Z",
-        "observed_at_eastern": "2026-11-02 6:09:07 PM EST",
-        "format": "official index metadata; audiovisual content unreviewed",
-        "inspection": "Evening metadata recheck. Same stream and November 1 library lead; no November 2 listing. No footage, audio or captions reviewed, no outage inference, and no complete transcript-feed assumption.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-02T23:09:07Z",
-        "observed_at_eastern": "2026-11-02 6:09:07 PM EST",
-        "format": "official index metadata; audiovisual content unreviewed",
-        "inspection": "Evening metadata recheck. Same stream and November 1 library lead; no November 2 listing. No footage, audio or captions reviewed, no outage inference, and no complete transcript-feed assumption.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-03T00:11:05Z",
-        "observed_at_eastern": "2026-11-02 7:11:05 PM EST",
-        "format": "official Trump TV page metadata; audiovisual content unreviewed",
-        "inspection": "Evening direct page/index metadata recheck. A4gNgHfZ-v4 remained linked and the video library still led with November 1; no post-boundary dated listing was located. No footage, audio or captions were reviewed, no outage was inferred, and no complete transcript-feed assumption was made.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-03T00:11:05Z",
-        "observed_at_eastern": "2026-11-02 7:11:05 PM EST",
-        "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Evening direct page/index metadata recheck. A4gNgHfZ-v4 remained linked and the video library still led with November 1; no post-boundary dated listing was located. No footage, audio or captions were reviewed, no outage was inferred, and no complete transcript-feed assumption was made.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "posted_date": "2026-11-01",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-03T00:11:05Z",
-        "observed_at_eastern": "2026-11-02 7:11:05 PM EST",
-        "format": "official dated-library metadata; audiovisual content unreviewed",
-        "inspection": "Evening direct page/index metadata recheck. A4gNgHfZ-v4 remained linked and the video library still led with November 1; no post-boundary dated listing was located. No footage, audio or captions were reviewed, no outage was inferred, and no complete transcript-feed assumption was made.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "posted_date": "2026-09-28",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-03T00:11:05Z",
-        "observed_at_eastern": "2026-11-02 7:11:05 PM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Evening direct page/index metadata recheck. A4gNgHfZ-v4 remained linked and the video library still led with November 1; no post-boundary dated listing was located. No footage, audio or captions were reviewed, no outage was inferred, and no complete transcript-feed assumption was made.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "posted_date": "2026-11-02",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-03T00:11:05Z",
-        "observed_at_eastern": "2026-11-02 7:11:05 PM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Evening direct page/index metadata recheck. A4gNgHfZ-v4 remained linked and the video library still led with November 1; no post-boundary dated listing was located. No footage, audio or captions were reviewed, no outage was inferred, and no complete transcript-feed assumption was made.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-03T05:08:00Z",
-        "observed_at_eastern": "2026-11-03 12:08 AM EST",
-        "format": "official page metadata; audiovisual content unreviewed",
-        "inspection": "Same official stream ID remained linked. Fallback text observed but not treated as outage proof; no footage, audio or captions reviewed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-delivers-remarks-nov-2-2026/",
-        "video_ids": [
-          "2xrn-nfxk2w"
-        ],
-        "posted_date": "2026-11-02",
-        "original_event_date": "2026-11-02",
-        "broadcast_time": null,
-        "observed_at": "2026-11-03T05:08:00Z",
-        "observed_at_eastern": "2026-11-03 12:08 AM EST",
-        "format": "55:09 official recording listing; live/replay/editing status unverified",
-        "inspection": "Title, date, duration, stable White House URL and YouTube ID inspected. Embed throttled; no audiovisual or caption review. Independent descriptions identify Reflecting Pool/campaign remarks and no qualifying new action was located in the material reviewed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trumps-second-term-has-achieved-more-than-any-administration-in-american-history/",
-        "video_ids": [
-          "RnqiSqt3m-Y"
-        ],
-        "posted_date": "2026-11-02",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-03T05:08:00Z",
-        "observed_at_eastern": "2026-11-03 12:08 AM EST",
-        "format": "02:07 edited promotional clip listing; exact event date unknown",
-        "inspection": "Metadata/link only; embed throttled and no audiovisual or caption review. Promotional title did not independently establish a policy action or measured result."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/fighting-harder-than-ever-for-the-american-people-%F0%9F%A5%8A%F0%9F%87%BA%F0%9F%87%B8the-hardest-working-president-in-history/",
-        "video_ids": [
-          "_2tsFHETHy0"
-        ],
-        "posted_date": "2026-11-02",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-03T05:08:00Z",
-        "observed_at_eastern": "2026-11-03 12:08 AM EST",
-        "format": "00:47 edited promotional clip listing; exact event date unknown",
-        "inspection": "Metadata/link only; embed throttled and no audiovisual or caption review. Promotional title did not independently establish a policy action or measured result."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-03T17:07:02Z",
-        "observed_at_eastern": "2026-11-03 12:07 PM EST",
-        "format": "official page metadata; audiovisual content unreviewed",
-        "inspection": "Stable stream link inspected. No footage, audio or captions were retrieved; no outage inferred and no complete broadcast coverage claimed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-03T17:07:02Z",
-        "observed_at_eastern": "2026-11-03 12:07 PM EST",
-        "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Live hub inspected for current official links. No footage, audio or captions were retrieved; no outage inferred."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "video_ids": [
-          "iams8cvtzgE",
-          "dvcNqlBMHfY",
-          "2xrn-nfxk2w"
-        ],
-        "posted_date": "2026-11-02",
-        "original_event_date": "2026-11-02",
-        "broadcast_time": null,
-        "observed_at": "2026-11-03T17:07:02Z",
-        "observed_at_eastern": "2026-11-03 12:07 PM EST",
-        "format": "official dated-library metadata; short clips and a speech recording",
-        "inspection": "Titles, displayed dates, durations and video IDs inspected. Library/detail dates conflicted for the two short clips. Embeds and captions were unavailable, so no audiovisual-content claim was promoted."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "video_ids": [],
-        "posted_date": "2026-09-28",
-        "original_event_date": "2026-09-28",
-        "broadcast_time": null,
-        "observed_at": "2026-11-03T17:07:02Z",
-        "observed_at_eastern": "2026-11-03 12:07 PM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Index inspected; newest complete listing remained September 28. It was not treated as a complete transcript feed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "video_ids": [],
-        "posted_date": "2026-11-03",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-03T17:07:02Z",
-        "observed_at_eastern": "2026-11-03 12:07 PM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Release listings inspected for corroborating statements; future-event announcements were not treated as completed actions."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-04T05:03:57Z",
-        "observed_at_eastern": "2026-11-04 12:03:57 AM EST",
-        "format": "official Trump TV page metadata; audiovisual content unreviewed",
-        "inspection": "Stable official stream link inspected. Fallback text was not treated as outage proof; no footage, audio or captions were retrieved."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-04T05:03:57Z",
-        "observed_at_eastern": "2026-11-04 12:03:57 AM EST",
-        "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Current official links inspected; no footage, audio or captions were retrieved and no outage was inferred."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "video_ids": [
-          "lDY6BI5F1sA",
-          "z0GI55bQH6I",
-          "iams8cvtzgE",
-          "dvcNqlBMHfY"
-        ],
-        "posted_date": "2026-11-03",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-04T05:03:57Z",
-        "observed_at_eastern": "2026-11-04 12:03:57 AM EST",
-        "format": "official dated-library metadata; edited and short clips",
-        "inspection": "Titles, displayed dates, durations, stable White House URLs and video IDs inspected. Playback/captions unavailable; one drug-price listing/detail date conflict retained."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "video_ids": [],
-        "posted_date": "2026-09-28",
-        "original_event_date": "2026-09-28",
-        "broadcast_time": null,
-        "observed_at": "2026-11-04T05:03:57Z",
-        "observed_at_eastern": "2026-11-04 12:03:57 AM EST",
+        "observed_at": "2026-11-12T23:06:04.714372Z",
+        "observed_at_eastern": "2026-11-12 6:06:04 PM EST",
         "format": "supplementary remarks index; not assumed complete",
         "inspection": "Index inspected for supplementary statements; it was not treated as a complete transcript feed."
       },
       {
         "url": "https://www.whitehouse.gov/releases/",
         "video_ids": [],
-        "posted_date": "2026-11-03",
+        "posted_date": "2026-11-12",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-04T05:03:57Z",
-        "observed_at_eastern": "2026-11-04 12:03:57 AM EST",
+        "observed_at": "2026-11-12T23:06:04.714372Z",
+        "observed_at_eastern": "2026-11-12 6:06:04 PM EST",
         "format": "supplementary official releases index",
-        "inspection": "Release listings inspected for corroborating statements; promotional claims were not treated as measured outcomes."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/a-pace-that-has-yet-to-slow-an-america-that-never-surrenders/",
-        "video_ids": [
-          "lDY6BI5F1sA"
-        ],
-        "posted_date": "2026-11-03",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-04T05:03:57Z",
-        "observed_at_eastern": "2026-11-04 12:03:57 AM EST",
-        "format": "01:23 edited promotional clip metadata",
-        "inspection": "Title/date/link metadata only; playback and captions unavailable. Promotional title did not independently establish a policy action or measured result."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/its-go-time-patriots/",
-        "video_ids": [
-          "z0GI55bQH6I"
-        ],
-        "posted_date": "2026-11-03",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-04T05:03:57Z",
-        "observed_at_eastern": "2026-11-04 12:03:57 AM EST",
-        "format": "00:37 edited promotional clip metadata",
-        "inspection": "Title/date/link metadata only; playback and captions unavailable. No qualifying new item located in the material reviewed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/we-had-the-highest-drug-prices-in-the-world-and-now-we-have-the-lowest-drug-prices-in-the-world/",
-        "video_ids": [
-          "iams8cvtzgE"
-        ],
-        "posted_date": "2026-11-02",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-04T05:03:57Z",
-        "observed_at_eastern": "2026-11-04 12:03:57 AM EST",
-        "format": "01:30 edited claim clip metadata; library displayed November 3",
-        "inspection": "Title/date/link metadata only; listing/detail date conflict retained. Playback and captions unavailable, so the superlative claim was not treated as independently verified."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-gives-remarks-at-the-lincoln-memorial-reflecting-pool/",
-        "video_ids": [
-          "dvcNqlBMHfY"
-        ],
-        "posted_date": "2026-11-03",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-04T05:03:57Z",
-        "observed_at_eastern": "2026-11-04 12:03:57 AM EST",
-        "format": "00:47 official remarks clip metadata; live/replay/editing status unverified",
-        "inspection": "Title/date/link metadata only; playback and captions unavailable. A newly uploaded short clip was not treated as a new government action."
+        "inspection": "November 12 border-caravan release inspected as a text lead and deduplicated to existing record NAT-2026-11-12-006; no separate Trump TV finding."
       },
       {
         "url": "https://www.whitehouse.gov/trumptv/",
@@ -2784,72 +1902,74 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-04T23:02:52Z",
-        "observed_at_eastern": "2026-11-04 6:02 PM EST",
-        "format": "official Trump TV page metadata; audiovisual content unreviewed",
-        "inspection": "Stable official stream link inspected. Fallback text was not treated as outage proof; no footage, audio or captions were retrieved."
+        "observed_at": "2026-11-12T23:42:55.551018Z",
+        "observed_at_eastern": "2026-11-12 6:42:55 PM EST",
+        "format": "official Trump TV page and retained stable stream-link metadata; audiovisual content unreviewed",
+        "inspection": "Only page and listing metadata were inspected. Playback, complete audio and captions were not retrieved; no footage is claimed watched, no outage is inferred and no complete broadcast boundary was advanced."
       },
       {
         "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [],
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-04T23:02:52Z",
-        "observed_at_eastern": "2026-11-04 6:02 PM EST",
+        "observed_at": "2026-11-12T23:42:55.551018Z",
+        "observed_at_eastern": "2026-11-12 6:42:55 PM EST",
         "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Current official links inspected; no footage, audio or captions were retrieved and no outage was inferred."
+        "inspection": "Only page and listing metadata were inspected. Playback, complete audio and captions were not retrieved; no footage is claimed watched, no outage is inferred and no complete broadcast boundary was advanced."
       },
       {
         "url": "https://www.whitehouse.gov/videos/",
         "video_ids": [
-          "lDY6BI5F1sA",
-          "z0GI55bQH6I",
-          "iams8cvtzgE",
-          "dvcNqlBMHfY"
+          "oYeoY2uS-YU",
+          "VVo0xJr_7iQ",
+          "BsMrRrcU_KI",
+          "G5jsCeH4ovs"
         ],
-        "posted_date": "2026-11-03",
-        "original_event_date": null,
+        "posted_date": "2026-11-11",
+        "original_event_date": "2026-11-11",
         "broadcast_time": null,
-        "observed_at": "2026-11-04T23:02:52Z",
-        "observed_at_eastern": "2026-11-04 6:02 PM EST",
-        "format": "official dated-library metadata; no November 4 listing",
-        "inspection": "Newest displayed items remained dated November 3. Titles, dates and stable links were inspected; playback and captions were unavailable."
+        "observed_at": "2026-11-12T23:42:55.551018Z",
+        "observed_at_eastern": "2026-11-12 6:42:55 PM EST",
+        "format": "official dated-library metadata for repeated Veterans Day ceremony and edited clips",
+        "inspection": "Titles, displayed dates, durations and detail links were inspected as metadata only. The repeated recordings were deduplicated and not treated as new government actions; no footage, complete audio or captions were retrieved."
       },
       {
         "url": "https://www.whitehouse.gov/remarks/",
         "video_ids": [],
-        "posted_date": "2026-09-28",
-        "original_event_date": "2026-09-28",
+        "posted_date": null,
+        "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-04T23:02:52Z",
-        "observed_at_eastern": "2026-11-04 6:02 PM EST",
+        "observed_at": "2026-11-12T23:42:55.551018Z",
+        "observed_at_eastern": "2026-11-12 6:42:55 PM EST",
         "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Index inspected; it was not treated as a complete transcript feed."
+        "inspection": "Index metadata was inspected for supplementary statements and was not treated as a complete transcript feed."
       },
       {
         "url": "https://www.whitehouse.gov/releases/",
         "video_ids": [],
-        "posted_date": "2026-11-04",
+        "posted_date": "2026-11-12",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-04T23:02:52Z",
-        "observed_at_eastern": "2026-11-04 6:02 PM EST",
+        "observed_at": "2026-11-12T23:42:55.551018Z",
+        "observed_at_eastern": "2026-11-12 6:42:55 PM EST",
         "format": "supplementary official releases index",
-        "inspection": "November 4 promotional release inspected as text; it did not independently establish a qualifying action or measured result."
+        "inspection": "Recent release metadata was inspected as text leads. No separate qualifying Trump TV action, cost, contract, staffing, editorial-control, distribution or press-access finding was located."
       },
       {
         "url": "https://www.whitehouse.gov/trumptv/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-05T05:07:32Z",
-        "observed_at_eastern": "2026-11-05 12:07 AM EST",
-        "format": "official page metadata; audiovisual content unreviewed",
-        "inspection": "Same 24/7 official stream link inspected; playback and captions were not retrieved and fallback text was not treated as outage proof.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
+        "observed_at": "2026-11-13T05:03:55.954790Z",
+        "observed_at_eastern": "2026-11-13 12:03:55 AM EST",
+        "format": "official Trump TV page and retained stable stream-link metadata; audiovisual content unreviewed",
+        "inspection": "Stable stream link and page metadata inspected. Playback, complete audio and captions were not retrieved; fallback text was not treated as outage proof."
       },
       {
         "url": "https://www.whitehouse.gov/live/",
@@ -2859,195 +1979,48 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-05T05:07:32Z",
-        "observed_at_eastern": "2026-11-05 12:07 AM EST",
+        "observed_at": "2026-11-13T05:03:55.954790Z",
+        "observed_at_eastern": "2026-11-13 12:03:55 AM EST",
         "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Current official links and fallback text inspected; no footage, audio or captions were retrieved and no outage was inferred."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-delivers-remarks-nov-4-2026/",
-        "video_ids": [
-          "LHT-znOQXkA"
-        ],
-        "posted_date": "2026-11-04",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-05T05:07:32Z",
-        "observed_at_eastern": "2026-11-05 12:07 AM EST",
-        "format": "official dated-library and detail-page metadata; replay or edited status unknown",
-        "inspection": "Title, displayed date, 41:51 duration and stable embed ID inspected. Playback and captions were unavailable; no claim is made that the recording was watched."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "video_ids": [],
-        "posted_date": "2026-09-28",
-        "original_event_date": "2026-09-28",
-        "broadcast_time": null,
-        "observed_at": "2026-11-05T05:07:32Z",
-        "observed_at_eastern": "2026-11-05 12:07 AM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Index inspected; no corresponding November 4 transcript was exposed, and the index was not treated as a complete transcript feed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "video_ids": [],
-        "posted_date": "2026-11-04",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-05T05:07:32Z",
-        "observed_at_eastern": "2026-11-05 12:07 AM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Recent releases inspected as text leads; no separate qualifying Trump TV action, cost, contract or control finding was located."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-05T11:02:48Z",
-        "observed_at_eastern": "2026-11-05 6:02:48 AM EST",
-        "format": "official page metadata; audiovisual content unreviewed",
-        "inspection": "Same official 24/7 stream link; playback and captions were not retrieved and fallback text was not treated as outage proof."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-05T11:02:48Z",
-        "observed_at_eastern": "2026-11-05 6:02:48 AM EST",
-        "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Current official links and fallback text inspected; no footage, audio or captions were retrieved and no outage was inferred."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-delivers-remarks-nov-4-2026/",
-        "video_ids": [
-          "LHT-znOQXkA"
-        ],
-        "posted_date": "2026-11-04",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-05T11:02:48Z",
-        "observed_at_eastern": "2026-11-05 6:02:48 AM EST",
-        "format": "official dated-library and detail-page metadata; replay or edited status unknown",
-        "inspection": "Repeated title, displayed date, 41:51 duration and stable embed ID; no newer listing, playback or captions were retrieved."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "video_ids": [],
-        "posted_date": "2026-09-28",
-        "original_event_date": "2026-09-28",
-        "broadcast_time": null,
-        "observed_at": "2026-11-05T11:02:48Z",
-        "observed_at_eastern": "2026-11-05 6:02:48 AM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Index inspected; no corresponding November 5 transcript was exposed and the index was not treated as a complete transcript feed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "video_ids": [],
-        "posted_date": "2026-11-04",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-05T11:02:48Z",
-        "observed_at_eastern": "2026-11-05 6:02:48 AM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Recent releases inspected as text leads; no separate qualifying Trump TV action, cost, contract or control finding was located."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/we-arent-going-anywhere-we-play-for-the-united-states-of-america/",
-        "video_ids": [
-          "ygRFHhrO6tk"
-        ],
-        "posted_date": "2026-11-04",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-05T17:08:46Z",
-        "observed_at_eastern": "2026-11-05 12:08 PM EST",
-        "format": "00:39 official short/edited-clip metadata; listing displayed November 5, detail displayed November 4",
-        "inspection": "Title, conflicting displayed dates, duration, stable detail URL and embed ID inspected. Playback, audio and captions were unavailable; no footage was claimed watched and no qualifying action was inferred."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-06T05:07:46.608515Z",
-        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
-        "format": "official Trump TV page and stream-link metadata; audiovisual content unreviewed",
-        "inspection": "Stable stream link inspected. Fallback text was not treated as outage proof; no footage, audio or captions were retrieved."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-06T05:07:46.608515Z",
-        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
-        "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Current stream link and hub metadata inspected; no footage, audio or captions were retrieved and no outage was inferred."
+        "inspection": "Current stream link and hub metadata inspected; no footage, complete audio or captions were retrieved and no outage was inferred."
       },
       {
         "url": "https://www.whitehouse.gov/videos/",
         "video_ids": [
-          "dHTb7U2wvnw",
-          "uwvHT9OaCXE",
-          "6YLUH8zRzgk"
+          "oYeoY2uS-YU",
+          "VVo0xJr_7iQ",
+          "BsMrRrcU_KI",
+          "G5jsCeH4ovs"
         ],
-        "posted_date": "2026-11-05",
-        "original_event_date": null,
+        "posted_date": "2026-11-11",
+        "original_event_date": "2026-11-11",
         "broadcast_time": null,
-        "observed_at": "2026-11-06T05:07:46.608515Z",
-        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
-        "format": "official dated-library metadata for edited clips and a 27:12 signing recording",
-        "inspection": "Titles, displayed dates, durations, detail URLs and stable embed IDs inspected. Playback and captions were unavailable; no claim is made that the recordings were watched."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-participates-in-signing-time-nov-5-2026/",
-        "video_ids": [
-          "6YLUH8zRzgk"
-        ],
-        "posted_date": "2026-11-05",
-        "original_event_date": "2026-11-05",
-        "broadcast_time": null,
-        "observed_at": "2026-11-06T05:07:46.608515Z",
-        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
-        "format": "27:12 official recording metadata; live/replay/editing status unknown",
-        "inspection": "Title/date/link and embed ID inspected. Playback and captions were unavailable. The Oval Office action was verified from the signed proclamation and independent reporting, not from this recording."
+        "observed_at": "2026-11-13T05:03:55.954790Z",
+        "observed_at_eastern": "2026-11-13 12:03:55 AM EST",
+        "format": "official dated-library metadata for repeated Veterans Day ceremony and edited clips",
+        "inspection": "Titles, displayed dates, durations and detail links were inspected as metadata only. Repeated recordings were deduplicated and not treated as new government actions; no footage, complete audio or captions were retrieved."
       },
       {
         "url": "https://www.whitehouse.gov/remarks/",
         "video_ids": [],
-        "posted_date": "2026-09-28",
-        "original_event_date": "2026-09-28",
+        "posted_date": null,
+        "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-06T05:07:46.608515Z",
-        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
+        "observed_at": "2026-11-13T05:03:55.954790Z",
+        "observed_at_eastern": "2026-11-13 12:03:55 AM EST",
         "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Index inspected; it exposed no November 5 transcript and was not treated as a complete transcript feed."
+        "inspection": "Index metadata was inspected for supplementary statements and was not treated as a complete transcript feed."
       },
       {
         "url": "https://www.whitehouse.gov/releases/",
         "video_ids": [],
-        "posted_date": "2026-11-04",
+        "posted_date": "2026-11-12",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-06T05:07:46.608515Z",
-        "observed_at_eastern": "2026-11-06 12:07:46 AM EST",
+        "observed_at": "2026-11-13T05:03:55.954790Z",
+        "observed_at_eastern": "2026-11-13 12:03:55 AM EST",
         "format": "supplementary official releases index",
-        "inspection": "Recent release listings inspected as text leads; no separate qualifying Trump TV cost, contract, control or policy finding was located."
+        "inspection": "Recent release metadata was inspected as text leads. No separate qualifying Trump TV action, cost, contract, staffing, editorial-control, distribution or press-access finding was located."
       },
       {
         "url": "https://www.whitehouse.gov/trumptv/",
@@ -3057,709 +2030,56 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-06T11:10:50.341335Z",
-        "observed_at_eastern": "2026-11-06 6:10:50 AM EST",
-        "format": "official Trump TV page and stream-link metadata; audiovisual content unreviewed",
-        "inspection": "Stable stream link inspected. Fallback text was not treated as outage proof; no footage, audio or captions were retrieved."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-06T11:10:50.341335Z",
-        "observed_at_eastern": "2026-11-06 6:10:50 AM EST",
-        "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Current stream link and hub metadata inspected; no footage, audio or captions were retrieved and no outage was inferred."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "video_ids": [
-          "dHTb7U2wvnw",
-          "uwvHT9OaCXE",
-          "6YLUH8zRzgk"
-        ],
-        "posted_date": "2026-11-05",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-06T11:10:50.341335Z",
-        "observed_at_eastern": "2026-11-06 6:10:50 AM EST",
-        "format": "official dated-library metadata; no post-boundary listing",
-        "inspection": "November 5 titles, dates, durations and stable IDs repeated. No playback or captions were retrieved; a replay was not treated as a new action."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "video_ids": [],
-        "posted_date": "2026-09-28",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-06T11:10:50.341335Z",
-        "observed_at_eastern": "2026-11-06 6:10:50 AM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Index inspected; it exposed no post-boundary transcript and was not treated as a complete transcript feed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "video_ids": [],
-        "posted_date": "2026-11-04",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-06T11:10:50.341335Z",
-        "observed_at_eastern": "2026-11-06 6:10:50 AM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Release listings inspected as text leads; no separate qualifying Trump TV finding was located."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-06T23:10:10.386931Z",
-        "observed_at_eastern": "2026-11-06 6:10:10 PM EST",
-        "format": "official Trump TV page and stream-link metadata; audiovisual content unreviewed",
-        "inspection": "Stable stream link inspected. Fallback text was not treated as outage proof; no footage, audio or captions were retrieved."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [
-          "e038Q_qaltQ",
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": "2026-11-06",
-        "original_event_date": "2026-11-06",
-        "broadcast_time": null,
-        "observed_at": "2026-11-06T23:10:10.386931Z",
-        "observed_at_eastern": "2026-11-06 6:10:10 PM EST",
-        "format": "official live-event metadata; live/replay completion state unknown",
-        "inspection": "Title and stable video ID inspected. Playback, audio and captions were unavailable; no statement from the event is claimed reviewed and no outage was inferred."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "video_ids": [
-          "dHTb7U2wvnw",
-          "uwvHT9OaCXE",
-          "6YLUH8zRzgk"
-        ],
-        "posted_date": "2026-11-05",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-06T23:10:10.386931Z",
-        "observed_at_eastern": "2026-11-06 6:10:10 PM EST",
-        "format": "official dated-library metadata; no November 6 replay listed by cutoff",
-        "inspection": "Library titles, dates and durations inspected; newest listed items remained November 5. Repeated footage was not counted as a new action."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "video_ids": [],
-        "posted_date": "2026-09-28",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-06T23:10:10.386931Z",
-        "observed_at_eastern": "2026-11-06 6:10:10 PM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Index inspected; it exposed no transcript for the Nov. 6 live event and was not treated as a complete transcript feed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "video_ids": [],
-        "posted_date": "2026-11-06",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-06T23:10:10.386931Z",
-        "observed_at_eastern": "2026-11-06 6:10:10 PM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Chief-of-staff and jobs releases inspected as text leads. The former independently qualified; the latter was a duplicate response to the existing employment record."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-07T05:11:52.355762Z",
-        "observed_at_eastern": "2026-11-07 12:11:52 AM EST",
-        "format": "official Trump TV page and stream-link metadata; audiovisual content unreviewed",
-        "inspection": "Stable stream link inspected. Fallback text was not treated as outage proof; no footage, audio or captions were retrieved."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [
-          "A4gNgHfZ-v4",
-          "e038Q_qaltQ"
-        ],
-        "posted_date": "2026-11-06",
-        "original_event_date": "2026-11-06",
-        "broadcast_time": null,
-        "observed_at": "2026-11-07T05:11:52.355762Z",
-        "observed_at_eastern": "2026-11-07 12:11:52 AM EST",
-        "format": "official live-hub and replay metadata; original event time not independently verified",
-        "inspection": "Stable stream and Nov. 6 remarks replay links inspected. Full playback, audio and captions were unavailable; no footage is claimed watched."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "video_ids": [
-          "e038Q_qaltQ"
-        ],
-        "posted_date": "2026-11-06",
-        "original_event_date": "2026-11-06",
-        "broadcast_time": null,
-        "observed_at": "2026-11-07T05:11:52.355762Z",
-        "observed_at_eastern": "2026-11-07 12:11:52 AM EST",
-        "format": "official dated-library metadata for a 31:11 replay and five edited/short clips",
-        "inspection": "Titles, displayed date, durations and stable detail links were inspected. Full playback/audio and captions were unavailable; repeated clips were not counted as new government actions."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "video_ids": [],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-07T05:11:52.355762Z",
-        "observed_at_eastern": "2026-11-07 12:11:52 AM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Index inspected for a Nov. 6 transcript; no complete transcript was retrieved and the index was not treated as a complete feed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/news/",
-        "video_ids": [],
-        "posted_date": "2026-11-06",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-07T05:11:52.355762Z",
-        "observed_at_eastern": "2026-11-07 12:11:52 AM EST",
-        "format": "supplementary official news/releases index",
-        "inspection": "Recent official releases were inspected as text leads; no separate qualifying Trump TV cost, contract, staffing, editorial-control or distribution finding was located."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-07T17:07:52.355762Z",
-        "observed_at_eastern": "2026-11-07 12:07:52 PM EST",
-        "format": "official Trump TV page and stream-link metadata; audiovisual content unreviewed",
-        "inspection": "Stable stream link inspected. Fallback text was not treated as outage proof; no footage, audio or captions were retrieved."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [
-          "A4gNgHfZ-v4",
-          "e038Q_qaltQ"
-        ],
-        "posted_date": "2026-11-06",
-        "original_event_date": "2026-11-06",
-        "broadcast_time": null,
-        "observed_at": "2026-11-07T17:07:52.355762Z",
-        "observed_at_eastern": "2026-11-07 12:07:52 PM EST",
-        "format": "official live-hub and replay metadata",
-        "inspection": "Stable stream and November 6 replay links inspected. Full playback, audio and captions were unavailable; no footage is claimed watched."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "video_ids": [
-          "VNMM7UcJCNY",
-          "e038Q_qaltQ",
-          "qveFmi4I3BY"
-        ],
-        "posted_date": "2026-11-06",
-        "original_event_date": "2026-11-06",
-        "broadcast_time": null,
-        "observed_at": "2026-11-07T17:07:52.355762Z",
-        "observed_at_eastern": "2026-11-07 12:07:52 PM EST",
-        "format": "official dated-library metadata for a replay and edited clips",
-        "inspection": "Titles, dates, durations, detail URLs and stable IDs inspected. No November 7 listing appeared; playback and captions were unavailable."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "video_ids": [],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-07T17:07:52.355762Z",
-        "observed_at_eastern": "2026-11-07 12:07:52 PM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Index inspected; no complete November 6 transcript was retrieved and it was not treated as a complete feed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "video_ids": [],
-        "posted_date": "2026-11-06",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-07T17:07:52.355762Z",
-        "observed_at_eastern": "2026-11-07 12:07:52 PM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Recent releases were inspected as text leads; no separate Trump TV cost, contract, staffing, editorial-control or distribution finding was located."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-07T23:02:55.535264Z",
-        "observed_at_eastern": "2026-11-07 6:02:55 PM EST",
-        "format": "official Trump TV page and stable stream metadata; audiovisual content unreviewed",
-        "inspection": "Page/listing metadata and stable links inspected. No footage, complete audio or captions were retrieved; no outage or complete broadcast coverage is claimed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-07T23:02:55.535264Z",
-        "observed_at_eastern": "2026-11-07 6:02:55 PM EST",
-        "format": "official live-hub and stable stream metadata; audiovisual content unreviewed",
-        "inspection": "Page/listing metadata and stable links inspected. No footage, complete audio or captions were retrieved; no outage or complete broadcast coverage is claimed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "video_ids": [
-          "e038Q_qaltQ"
-        ],
-        "posted_date": "2026-11-06",
-        "original_event_date": "2026-11-06",
-        "broadcast_time": null,
-        "observed_at": "2026-11-07T23:02:55.535264Z",
-        "observed_at_eastern": "2026-11-07 6:02:55 PM EST",
-        "format": "official dated-library metadata; November 6 listings repeated",
-        "inspection": "Page/listing metadata and stable links inspected. No footage, complete audio or captions were retrieved; no outage or complete broadcast coverage is claimed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "video_ids": [],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-07T23:02:55.535264Z",
-        "observed_at_eastern": "2026-11-07 6:02:55 PM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Page/listing metadata and stable links inspected. No footage, complete audio or captions were retrieved; no outage or complete broadcast coverage is claimed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "video_ids": [],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-07T23:02:55.535264Z",
-        "observed_at_eastern": "2026-11-07 6:02:55 PM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Page/listing metadata and stable links inspected. No footage, complete audio or captions were retrieved; no outage or complete broadcast coverage is claimed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-10T11:10:27.177961Z",
-        "observed_at_eastern": "2026-11-10 6:10:27 AM EST",
-        "format": "official Trump TV page and stream-link metadata; audiovisual content unreviewed",
-        "inspection": "Stable stream link inspected. Fallback text was not treated as outage proof; no footage, audio or captions were retrieved."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-10T11:10:27.177961Z",
-        "observed_at_eastern": "2026-11-10 6:10:27 AM EST",
-        "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Live-hub state and links inspected. The displayed off-air language was not treated as outage proof."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "video_ids": [],
-        "posted_date": "2026-11-09",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-10T11:10:27.177961Z",
-        "observed_at_eastern": "2026-11-10 6:10:27 AM EST",
-        "format": "official dated-library metadata for five recordings and edited clips",
-        "inspection": "Titles, dates, durations and stable detail URLs were inspected. Playback, complete audio and captions were unavailable; no recording is claimed watched."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "video_ids": [],
-        "posted_date": "2026-09-28",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-10T11:10:27.177961Z",
-        "observed_at_eastern": "2026-11-10 6:10:27 AM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Index inspected; it remained stale and was not treated as a complete transcript feed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "video_ids": [],
-        "posted_date": "2026-11-09",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-10T11:10:27.177961Z",
-        "observed_at_eastern": "2026-11-10 6:10:27 AM EST",
-        "format": "supplementary official releases/news metadata",
-        "inspection": "Recent releases were inspected as text leads; no separate qualifying Trump TV cost, contract, staffing, editorial-control or distribution finding was located."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-10T17:07:35.690006Z",
-        "observed_at_eastern": "2026-11-10 12:07:35 PM EST",
-        "format": "official page metadata; audiovisual content unreviewed",
-        "inspection": "Noon official page and dated-library metadata recheck. The stable Trump TV stream remained A4gNgHfZ-v4 and the library still led with November 9 material already identified in the prior run. Playback, complete audio and captions were not retrieved; no footage is claimed watched, no outage is inferred, and complete broadcast coverage remains unadvanced.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-10T17:07:35.690006Z",
-        "observed_at_eastern": "2026-11-10 12:07:35 PM EST",
-        "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Noon official page and dated-library metadata recheck. The stable Trump TV stream remained A4gNgHfZ-v4 and the library still led with November 9 material already identified in the prior run. Playback, complete audio and captions were not retrieved; no footage is claimed watched, no outage is inferred, and complete broadcast coverage remains unadvanced.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "posted_date": "2026-11-09",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-10T17:07:35.690006Z",
-        "observed_at_eastern": "2026-11-10 12:07:35 PM EST",
-        "format": "official dated-library metadata; audiovisual content unreviewed",
-        "inspection": "Noon official page and dated-library metadata recheck. The stable Trump TV stream remained A4gNgHfZ-v4 and the library still led with November 9 material already identified in the prior run. Playback, complete audio and captions were not retrieved; no footage is claimed watched, no outage is inferred, and complete broadcast coverage remains unadvanced.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "posted_date": "2026-09-28",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-10T17:07:35.690006Z",
-        "observed_at_eastern": "2026-11-10 12:07:35 PM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Noon official page and dated-library metadata recheck. The stable Trump TV stream remained A4gNgHfZ-v4 and the library still led with November 9 material already identified in the prior run. Playback, complete audio and captions were not retrieved; no footage is claimed watched, no outage is inferred, and complete broadcast coverage remains unadvanced.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/news/",
-        "posted_date": "2026-11-09",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-10T17:07:35.690006Z",
-        "observed_at_eastern": "2026-11-10 12:07:35 PM EST",
-        "format": "supplementary official news index",
-        "inspection": "Noon official page and dated-library metadata recheck. The stable Trump TV stream remained A4gNgHfZ-v4 and the library still led with November 9 material already identified in the prior run. Playback, complete audio and captions were not retrieved; no footage is claimed watched, no outage is inferred, and complete broadcast coverage remains unadvanced.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "posted_date": "2026-11-09",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-10T17:07:35.690006Z",
-        "observed_at_eastern": "2026-11-10 12:07:35 PM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Noon official page and dated-library metadata recheck. The stable Trump TV stream remained A4gNgHfZ-v4 and the library still led with November 9 material already identified in the prior run. Playback, complete audio and captions were not retrieved; no footage is claimed watched, no outage is inferred, and complete broadcast coverage remains unadvanced.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "posted_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-10T23:12:41.159552Z",
-        "observed_at_eastern": "2026-11-10 6:12:41 PM EST",
-        "format": "official page metadata; audiovisual content unreviewed",
-        "inspection": "Evening official page and dated-library metadata recheck. The stable Trump TV stream remained A4gNgHfZ-v4 and the library still led with November 9 material already identified before the boundary. Playback, complete audio and captions were not retrieved; no footage is claimed watched, no outage is inferred, and complete broadcast coverage remains unadvanced.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "posted_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-10T23:12:41.159552Z",
-        "observed_at_eastern": "2026-11-10 6:12:41 PM EST",
-        "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Evening official page and dated-library metadata recheck. The stable Trump TV stream remained A4gNgHfZ-v4 and the library still led with November 9 material already identified before the boundary. Playback, complete audio and captions were not retrieved; no footage is claimed watched, no outage is inferred, and complete broadcast coverage remains unadvanced.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "posted_date": "2026-11-09",
-        "broadcast_time": null,
-        "observed_at": "2026-11-10T23:12:41.159552Z",
-        "observed_at_eastern": "2026-11-10 6:12:41 PM EST",
-        "format": "official dated-library metadata; audiovisual content unreviewed",
-        "inspection": "Evening official page and dated-library metadata recheck. The stable Trump TV stream remained A4gNgHfZ-v4 and the library still led with November 9 material already identified before the boundary. Playback, complete audio and captions were not retrieved; no footage is claimed watched, no outage is inferred, and complete broadcast coverage remains unadvanced.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "posted_date": "2026-09-28",
-        "broadcast_time": null,
-        "observed_at": "2026-11-10T23:12:41.159552Z",
-        "observed_at_eastern": "2026-11-10 6:12:41 PM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Evening official page and dated-library metadata recheck. The stable Trump TV stream remained A4gNgHfZ-v4 and the library still led with November 9 material already identified before the boundary. Playback, complete audio and captions were not retrieved; no footage is claimed watched, no outage is inferred, and complete broadcast coverage remains unadvanced.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "posted_date": "2026-11-10",
-        "broadcast_time": null,
-        "observed_at": "2026-11-10T23:12:41.159552Z",
-        "observed_at_eastern": "2026-11-10 6:12:41 PM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Evening official page and dated-library metadata recheck. The stable Trump TV stream remained A4gNgHfZ-v4 and the library still led with November 9 material already identified before the boundary. Playback, complete audio and captions were not retrieved; no footage is claimed watched, no outage is inferred, and complete broadcast coverage remains unadvanced.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "posted_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-11T11:01:04.120308Z",
-        "observed_at_eastern": "2026-11-11 6:01:04 AM EST",
+        "observed_at": "2026-11-13T11:02:28.320089Z",
+        "observed_at_eastern": "2026-11-13 6:02:28 AM EST",
         "format": "official Trump TV page and stable stream-link metadata; audiovisual content unreviewed",
-        "inspection": "Morning page and link metadata inspected. Stream A4gNgHfZ-v4 remained linked. Playback, complete audio and captions were not retrieved; fallback text was not treated as outage proof and no footage is claimed watched.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
+        "inspection": "Stable stream link and page metadata inspected. Playback, audio and captions were not retrieved; fallback text was not treated as outage proof."
       },
       {
         "url": "https://www.whitehouse.gov/live/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
         "posted_date": null,
+        "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-11T11:01:04.120308Z",
-        "observed_at_eastern": "2026-11-11 6:01:04 AM EST",
+        "observed_at": "2026-11-13T11:02:28.320089Z",
+        "observed_at_eastern": "2026-11-13 6:02:28 AM EST",
         "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Morning page metadata inspected. Playback, complete audio and captions were not retrieved; fallback text was not treated as outage proof and the complete broadcast boundary remains unadvanced.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
+        "inspection": "Current stream link and hub metadata inspected; no footage, audio or captions were retrieved and no outage was inferred."
       },
       {
         "url": "https://www.whitehouse.gov/videos/",
-        "posted_date": "2026-11-09",
+        "video_ids": [],
+        "posted_date": "2026-11-11",
+        "original_event_date": "2026-11-11",
         "broadcast_time": null,
-        "observed_at": "2026-11-11T11:01:04.120308Z",
-        "observed_at_eastern": "2026-11-11 6:01:04 AM EST",
-        "format": "official dated-library listing metadata; audiovisual content unreviewed",
-        "inspection": "The library still led with November 9 titles and durations already identified before the boundary. No footage, complete audio or captions were retrieved; repeated listings and replays were not treated as new government actions.",
-        "video_ids": []
+        "observed_at": "2026-11-13T11:02:28.320089Z",
+        "observed_at_eastern": "2026-11-13 6:02:28 AM EST",
+        "format": "official dated-library metadata for repeated Veterans Day ceremony and edited clips",
+        "inspection": "Titles, displayed dates, durations and detail links were inspected as metadata only. Repeated recordings were not treated as new government actions; no footage, complete audio or captions were retrieved."
       },
       {
         "url": "https://www.whitehouse.gov/remarks/",
+        "video_ids": [],
         "posted_date": "2026-09-28",
+        "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-11T11:01:04.120308Z",
-        "observed_at_eastern": "2026-11-11 6:01:04 AM EST",
+        "observed_at": "2026-11-13T11:02:28.320089Z",
+        "observed_at_eastern": "2026-11-13 6:02:28 AM EST",
         "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Index inspected for supplementary statements. No post-boundary transcript was exposed and the index was not treated as a complete transcript feed.",
-        "video_ids": []
+        "inspection": "Index metadata was inspected for supplementary statements and was not treated as a complete transcript feed."
       },
       {
         "url": "https://www.whitehouse.gov/releases/",
-        "posted_date": "2026-11-10",
+        "video_ids": [],
+        "posted_date": "2026-11-12",
+        "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-11T11:01:04.120308Z",
-        "observed_at_eastern": "2026-11-11 6:01:04 AM EST",
+        "observed_at": "2026-11-13T11:02:28.320089Z",
+        "observed_at_eastern": "2026-11-13 6:02:28 AM EST",
         "format": "supplementary official releases index",
-        "inspection": "Recent official releases were inspected as text leads. No separate qualifying Trump TV action, cost, contract, staffing, editorial-control, distribution or press-access finding was located.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-11T17:02:58.976658Z",
-        "observed_at_eastern": "2026-11-11 12:02:58 PM EST",
-        "format": "official page and channel-link metadata; audiovisual content unreviewed",
-        "inspection": "Trump TV channel link inspected; fallback text was not treated as outage proof. No playback, complete audio or captions reviewed.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "posted_date": "2026-11-11",
-        "original_event_date": "2026-11-11",
-        "broadcast_time": null,
-        "observed_at": "2026-11-11T17:02:58.976658Z",
-        "observed_at_eastern": "2026-11-11 12:02:58 PM EST",
-        "format": "official live-event metadata; live/replay state unverified",
-        "inspection": "National Veterans Day Ceremony title and official linked video metadata inspected. No playback, complete audio or captions reviewed; ceremonial listing did not establish a separate policy action.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-11T17:02:58.976658Z",
-        "observed_at_eastern": "2026-11-11 12:02:58 PM EST",
-        "format": "official dated-library metadata; audiovisual content unreviewed",
-        "inspection": "Library page inspected as listing metadata only. No qualifying new item located in the material reviewed.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T11:13:23.744599Z",
-        "observed_at_eastern": "2026-11-12 6:13:23 AM EST",
-        "format": "official channel page metadata",
-        "inspection": "Page and listing metadata only. No playback, complete audio or captions were retrieved; no footage is claimed watched and no complete broadcast boundary was advanced.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T11:13:23.744599Z",
-        "observed_at_eastern": "2026-11-12 6:13:23 AM EST",
-        "format": "official live-hub metadata",
-        "inspection": "Page and listing metadata only. No playback, complete audio or captions were retrieved; no footage is claimed watched and no complete broadcast boundary was advanced.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "posted_date": "2026-11-11",
-        "original_event_date": "2026-11-11",
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T11:13:23.744599Z",
-        "observed_at_eastern": "2026-11-12 6:13:23 AM EST",
-        "format": "dated video-library metadata; audiovisual content unreviewed",
-        "inspection": "Page and listing metadata only. No playback, complete audio or captions were retrieved; no footage is claimed watched and no complete broadcast boundary was advanced.",
-        "video_ids": [
-          "oYeoY2uS-YU",
-          "VVo0xJr_7iQ",
-          "BsMrRrcU_KI",
-          "G5jsCeH4ovs"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T11:13:23.744599Z",
-        "observed_at_eastern": "2026-11-12 6:13:23 AM EST",
-        "format": "supplementary remarks index; not a complete transcript feed",
-        "inspection": "Page and listing metadata only. No playback, complete audio or captions were retrieved; no footage is claimed watched and no complete broadcast boundary was advanced.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T11:13:23.744599Z",
-        "observed_at_eastern": "2026-11-12 6:13:23 AM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Page and listing metadata only. No playback, complete audio or captions were retrieved; no footage is claimed watched and no complete broadcast boundary was advanced.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T17:11:02.801260Z",
-        "observed_at_eastern": "2026-11-12 12:11:02 PM EST",
-        "format": "official page and stream-link metadata",
-        "inspection": "Page and listing metadata only. The library still led with November 11 ceremonial material; no playback, complete audio or captions were retrieved. No footage is claimed watched, no outage is inferred and no complete broadcast boundary was advanced.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T17:11:02.801260Z",
-        "observed_at_eastern": "2026-11-12 12:11:02 PM EST",
-        "format": "official page and stream-link metadata",
-        "inspection": "Page and listing metadata only. The library still led with November 11 ceremonial material; no playback, complete audio or captions were retrieved. No footage is claimed watched, no outage is inferred and no complete broadcast boundary was advanced.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "posted_date": "2026-11-11",
-        "original_event_date": "2026-11-11",
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T17:11:02.801260Z",
-        "observed_at_eastern": "2026-11-12 12:11:02 PM EST",
-        "format": "dated video-library metadata; audiovisual content unreviewed",
-        "inspection": "Page and listing metadata only. The library still led with November 11 ceremonial material; no playback, complete audio or captions were retrieved. No footage is claimed watched, no outage is inferred and no complete broadcast boundary was advanced.",
-        "video_ids": [
-          "oYeoY2uS-YU",
-          "VVo0xJr_7iQ",
-          "BsMrRrcU_KI",
-          "G5jsCeH4ovs"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T17:11:02.801260Z",
-        "observed_at_eastern": "2026-11-12 12:11:02 PM EST",
-        "format": "supplementary remarks index; not a complete transcript feed",
-        "inspection": "Page and listing metadata only. The library still led with November 11 ceremonial material; no playback, complete audio or captions were retrieved. No footage is claimed watched, no outage is inferred and no complete broadcast boundary was advanced.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T17:11:02.801260Z",
-        "observed_at_eastern": "2026-11-12 12:11:02 PM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Page and listing metadata only. The library still led with November 11 ceremonial material; no playback, complete audio or captions were retrieved. No footage is claimed watched, no outage is inferred and no complete broadcast boundary was advanced.",
-        "video_ids": []
+        "inspection": "Recent release metadata was inspected as text leads. No separate qualifying Trump TV action, cost, contract, staffing, editorial-control, distribution or press-access finding was located."
       },
       {
         "url": "https://www.whitehouse.gov/trumptv/",
@@ -3821,9 +2141,83 @@
         "video_ids": []
       }
     ],
-    "checked_at_utc": "2026-11-13T17:05:55.643912Z",
-    "last_successful_broadcast_boundary": null,
     "inspection_history": [
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "official channel page and stable stream-link metadata; audiovisual content unreviewed",
+        "inspection": "Page and stable stream-link metadata inspected. Fallback text was not treated as outage proof; no playback, complete audio or captions reviewed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "Live-hub and linked-channel metadata inspected. No live/replay state or outage inferred; no playback, complete audio or captions reviewed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "video_ids": [
+          "e9vLyeVPxFM",
+          "aH2db_pvy38",
+          "Mh2q-y0wIu8"
+        ],
+        "posted_date": "2026-11-14",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "official dated-library listing metadata; audiovisual content unreviewed",
+        "inspection": "Titles, displayed dates, durations, detail links and stable IDs inspected. New 1:14 retrospective rhetoric was withheld; repeated FAA listings were deduplicated to NAT-2026-11-13-003."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-on-stephen-a-smith-accomplishments-for-black-americans/",
+        "video_ids": [
+          "e9vLyeVPxFM"
+        ],
+        "posted_date": "2026-11-14",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "official 1:14 edited-clip metadata; live/replay state and exact posting time unknown",
+        "inspection": "Official title, date, duration, detail link and video ID inspected. Playback, complete audio and captions were not retrieved; no footage is claimed watched and the routine retrospective claim was withheld."
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "video_ids": [],
+        "posted_date": "2026-09-28",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "supplementary remarks index; not assumed complete",
+        "inspection": "Index metadata inspected for supplementary statements and not treated as a complete transcript feed; no post-boundary transcript exposed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "video_ids": [],
+        "posted_date": "2026-11-13",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "observed_at_eastern": "2026-11-15 12:09:43 AM EST",
+        "format": "supplementary official releases index",
+        "inspection": "Recent release metadata inspected as text leads. No November 14 release or separate qualifying Trump TV cost, contract, staffing, editorial-control, distribution or press-access finding located."
+      },
       {
         "url": "https://www.whitehouse.gov/trumptv/",
         "video_ids": [
@@ -4307,6 +2701,10 @@
     ],
     "access_gaps": [
       {
+        "observed_at": "2026-11-15T05:09:43.812289Z",
+        "note": "Playback, complete audio and captions/transcripts were not retrieved for the November 14 Stephen A. Smith clip or repeated FAA recordings; only official page, listing and detail-page metadata were inspected. Fallback text was not treated as outage proof, and no continuous-coverage claim or broadcast boundary was advanced."
+      },
+      {
         "observed_at": "2026-11-14T23:10:31.970882Z",
         "note": "Playback, complete audio and captions/transcripts were not retrieved for the repeated FAA recordings; only official page, listing and detail-page metadata were inspected. Fallback text was not treated as outage proof, and no continuous-coverage claim or broadcast boundary was advanced."
       },
@@ -4350,406 +2748,33 @@
         "observed_at": "2026-11-13T17:05:55.643912Z",
         "note": "Playback, complete audio and captions/transcripts were not retrieved for the repeated November 11 listings; only official page and listing metadata were inspected. Fallback text was not treated as outage proof, and no continuous-coverage claim or broadcast boundary was advanced."
       }
-    ],
-    "inspected_items": [
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-14T23:10:31.970882Z",
-        "observed_at_eastern": "2026-11-14 6:10:31 PM EST",
-        "format": "official Trump TV page and retained stable stream-link metadata; audiovisual content unreviewed",
-        "inspection": "Stable stream-link and page metadata rechecked. Playback, complete audio and captions were not retrieved; fallback text was not treated as outage proof."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-14T23:10:31.970882Z",
-        "observed_at_eastern": "2026-11-14 6:10:31 PM EST",
-        "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Current hub and retained stream-link metadata rechecked. No footage, complete audio or captions were retrieved and no outage was inferred."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "video_ids": [
-          "aH2db_pvy38",
-          "Mh2q-y0wIu8"
-        ],
-        "posted_date": null,
-        "original_event_date": "2026-11-13",
-        "broadcast_time": null,
-        "observed_at": "2026-11-14T23:10:31.970882Z",
-        "observed_at_eastern": "2026-11-14 6:10:31 PM EST",
-        "format": "official dated-library and detail-page metadata for repeated 4:30 and 33:57 FAA recordings; audiovisual content unreviewed",
-        "inspection": "Titles, conflicting displayed dates, durations, detail links and stable IDs were rechecked as metadata only. The recordings repeat NAT-2026-11-13-003; playback, complete audio and captions were not retrieved."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "video_ids": [],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-14T23:10:31.970882Z",
-        "observed_at_eastern": "2026-11-14 6:10:31 PM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Index metadata was inspected for supplementary statements and was not treated as a complete transcript feed. No November 14 item was exposed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "video_ids": [],
-        "posted_date": "2026-11-13",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-14T23:10:31.970882Z",
-        "observed_at_eastern": "2026-11-14 6:10:31 PM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Recent official release metadata was inspected as text leads. No November 14 release or separate qualifying Trump TV action, cost, contract, staffing, editorial-control, distribution or press-access finding was located."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T23:06:04.714372Z",
-        "observed_at_eastern": "2026-11-12 6:06:04 PM EST",
-        "format": "official Trump TV page and stable stream-link metadata; audiovisual content unreviewed",
-        "inspection": "Stable stream link and page metadata inspected. Playback, audio and captions were not retrieved; fallback text was not treated as outage proof."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T23:06:04.714372Z",
-        "observed_at_eastern": "2026-11-12 6:06:04 PM EST",
-        "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Current stream link and hub metadata inspected; no footage, audio or captions were retrieved and no outage was inferred."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "video_ids": [
-          "oYeoY2uS-YU",
-          "VVo0xJr_7iQ",
-          "BsMrRrcU_KI",
-          "G5jsCeH4ovs"
-        ],
-        "posted_date": "2026-11-11",
-        "original_event_date": "2026-11-11",
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T23:06:04.714372Z",
-        "observed_at_eastern": "2026-11-12 6:06:04 PM EST",
-        "format": "official dated-library metadata for repeated Veterans Day ceremony and edited clips",
-        "inspection": "Titles, displayed dates, durations, detail links and stable IDs were inspected as metadata only. Repeated footage was deduplicated and not counted as a new government action."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "video_ids": [],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T23:06:04.714372Z",
-        "observed_at_eastern": "2026-11-12 6:06:04 PM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Index inspected for supplementary statements; it was not treated as a complete transcript feed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "video_ids": [],
-        "posted_date": "2026-11-12",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T23:06:04.714372Z",
-        "observed_at_eastern": "2026-11-12 6:06:04 PM EST",
-        "format": "supplementary official releases index",
-        "inspection": "November 12 border-caravan release inspected as a text lead and deduplicated to existing record NAT-2026-11-12-006; no separate Trump TV finding."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T23:42:55.551018Z",
-        "observed_at_eastern": "2026-11-12 6:42:55 PM EST",
-        "format": "official Trump TV page and retained stable stream-link metadata; audiovisual content unreviewed",
-        "inspection": "Only page and listing metadata were inspected. Playback, complete audio and captions were not retrieved; no footage is claimed watched, no outage is inferred and no complete broadcast boundary was advanced."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T23:42:55.551018Z",
-        "observed_at_eastern": "2026-11-12 6:42:55 PM EST",
-        "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Only page and listing metadata were inspected. Playback, complete audio and captions were not retrieved; no footage is claimed watched, no outage is inferred and no complete broadcast boundary was advanced."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "video_ids": [
-          "oYeoY2uS-YU",
-          "VVo0xJr_7iQ",
-          "BsMrRrcU_KI",
-          "G5jsCeH4ovs"
-        ],
-        "posted_date": "2026-11-11",
-        "original_event_date": "2026-11-11",
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T23:42:55.551018Z",
-        "observed_at_eastern": "2026-11-12 6:42:55 PM EST",
-        "format": "official dated-library metadata for repeated Veterans Day ceremony and edited clips",
-        "inspection": "Titles, displayed dates, durations and detail links were inspected as metadata only. The repeated recordings were deduplicated and not treated as new government actions; no footage, complete audio or captions were retrieved."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "video_ids": [],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T23:42:55.551018Z",
-        "observed_at_eastern": "2026-11-12 6:42:55 PM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Index metadata was inspected for supplementary statements and was not treated as a complete transcript feed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "video_ids": [],
-        "posted_date": "2026-11-12",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-12T23:42:55.551018Z",
-        "observed_at_eastern": "2026-11-12 6:42:55 PM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Recent release metadata was inspected as text leads. No separate qualifying Trump TV action, cost, contract, staffing, editorial-control, distribution or press-access finding was located."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-13T05:03:55.954790Z",
-        "observed_at_eastern": "2026-11-13 12:03:55 AM EST",
-        "format": "official Trump TV page and retained stable stream-link metadata; audiovisual content unreviewed",
-        "inspection": "Stable stream link and page metadata inspected. Playback, complete audio and captions were not retrieved; fallback text was not treated as outage proof."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-13T05:03:55.954790Z",
-        "observed_at_eastern": "2026-11-13 12:03:55 AM EST",
-        "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Current stream link and hub metadata inspected; no footage, complete audio or captions were retrieved and no outage was inferred."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "video_ids": [
-          "oYeoY2uS-YU",
-          "VVo0xJr_7iQ",
-          "BsMrRrcU_KI",
-          "G5jsCeH4ovs"
-        ],
-        "posted_date": "2026-11-11",
-        "original_event_date": "2026-11-11",
-        "broadcast_time": null,
-        "observed_at": "2026-11-13T05:03:55.954790Z",
-        "observed_at_eastern": "2026-11-13 12:03:55 AM EST",
-        "format": "official dated-library metadata for repeated Veterans Day ceremony and edited clips",
-        "inspection": "Titles, displayed dates, durations and detail links were inspected as metadata only. Repeated recordings were deduplicated and not treated as new government actions; no footage, complete audio or captions were retrieved."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "video_ids": [],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-13T05:03:55.954790Z",
-        "observed_at_eastern": "2026-11-13 12:03:55 AM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Index metadata was inspected for supplementary statements and was not treated as a complete transcript feed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "video_ids": [],
-        "posted_date": "2026-11-12",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-13T05:03:55.954790Z",
-        "observed_at_eastern": "2026-11-13 12:03:55 AM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Recent release metadata was inspected as text leads. No separate qualifying Trump TV action, cost, contract, staffing, editorial-control, distribution or press-access finding was located."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-13T11:02:28.320089Z",
-        "observed_at_eastern": "2026-11-13 6:02:28 AM EST",
-        "format": "official Trump TV page and stable stream-link metadata; audiovisual content unreviewed",
-        "inspection": "Stable stream link and page metadata inspected. Playback, audio and captions were not retrieved; fallback text was not treated as outage proof."
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ],
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-13T11:02:28.320089Z",
-        "observed_at_eastern": "2026-11-13 6:02:28 AM EST",
-        "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Current stream link and hub metadata inspected; no footage, audio or captions were retrieved and no outage was inferred."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "video_ids": [],
-        "posted_date": "2026-11-11",
-        "original_event_date": "2026-11-11",
-        "broadcast_time": null,
-        "observed_at": "2026-11-13T11:02:28.320089Z",
-        "observed_at_eastern": "2026-11-13 6:02:28 AM EST",
-        "format": "official dated-library metadata for repeated Veterans Day ceremony and edited clips",
-        "inspection": "Titles, displayed dates, durations and detail links were inspected as metadata only. Repeated recordings were not treated as new government actions; no footage, complete audio or captions were retrieved."
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "video_ids": [],
-        "posted_date": "2026-09-28",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-13T11:02:28.320089Z",
-        "observed_at_eastern": "2026-11-13 6:02:28 AM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Index metadata was inspected for supplementary statements and was not treated as a complete transcript feed."
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "video_ids": [],
-        "posted_date": "2026-11-12",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-13T11:02:28.320089Z",
-        "observed_at_eastern": "2026-11-13 6:02:28 AM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Recent release metadata was inspected as text leads. No separate qualifying Trump TV action, cost, contract, staffing, editorial-control, distribution or press-access finding was located."
-      },
-      {
-        "url": "https://www.whitehouse.gov/trumptv/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-13T17:05:55.643912Z",
-        "observed_at_eastern": "2026-11-13 12:05:55 PM EST",
-        "format": "official Trump TV channel page; stable-link metadata only",
-        "inspection": "Page, title, displayed-date and link metadata were inspected. The library still led with November 11 material; playback, complete audio and captions were not retrieved. Repeated footage was not treated as a new action, fallback text was not treated as outage proof and no complete broadcast boundary was advanced.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/live/",
-        "posted_date": null,
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-13T17:05:55.643912Z",
-        "observed_at_eastern": "2026-11-13 12:05:55 PM EST",
-        "format": "official live page; stable-link metadata only",
-        "inspection": "Page, title, displayed-date and link metadata were inspected. The library still led with November 11 material; playback, complete audio and captions were not retrieved. Repeated footage was not treated as a new action, fallback text was not treated as outage proof and no complete broadcast boundary was advanced.",
-        "video_ids": [
-          "A4gNgHfZ-v4"
-        ]
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/",
-        "posted_date": "2026-11-11",
-        "original_event_date": "2026-11-11",
-        "broadcast_time": null,
-        "observed_at": "2026-11-13T17:05:55.643912Z",
-        "observed_at_eastern": "2026-11-13 12:05:55 PM EST",
-        "format": "official dated video-library metadata",
-        "inspection": "Page, title, displayed-date and link metadata were inspected. The library still led with November 11 material; playback, complete audio and captions were not retrieved. Repeated footage was not treated as a new action, fallback text was not treated as outage proof and no complete broadcast boundary was advanced.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/remarks/",
-        "posted_date": "2026-09-28",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-13T17:05:55.643912Z",
-        "observed_at_eastern": "2026-11-13 12:05:55 PM EST",
-        "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Page, title, displayed-date and link metadata were inspected. The library still led with November 11 material; playback, complete audio and captions were not retrieved. Repeated footage was not treated as a new action, fallback text was not treated as outage proof and no complete broadcast boundary was advanced.",
-        "video_ids": []
-      },
-      {
-        "url": "https://www.whitehouse.gov/releases/",
-        "posted_date": "2026-11-12",
-        "original_event_date": null,
-        "broadcast_time": null,
-        "observed_at": "2026-11-13T17:05:55.643912Z",
-        "observed_at_eastern": "2026-11-13 12:05:55 PM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Page, title, displayed-date and link metadata were inspected. The library still led with November 11 material; playback, complete audio and captions were not retrieved. Repeated footage was not treated as a new action, fallback text was not treated as outage proof and no complete broadcast boundary was advanced.",
-        "video_ids": []
-      }
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 11,
-    "new_text_reviewed": 11,
-    "new_media_reviewed": 7,
-    "new_media_pending": 0,
+    "new_posts": 5,
+    "new_text_reviewed": 5,
+    "new_media_reviewed": 3,
+    "new_media_pending": 1,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-14T23:10:31.970882Z",
-    "checked_at_eastern": "2026-11-14 6:10:31 PM EST",
-    "latest_post_id": "117617041335738125",
-    "latest_post_at_eastern": "2026-11-14 5:00:23 PM EST",
+    "checked_at_utc": "2026-11-15T05:09:43.812289Z",
+    "checked_at_eastern": "2026-11-15 12:09:43 AM EST",
+    "latest_post_id": "117618190139423939",
+    "latest_post_at_eastern": "2026-11-14 9:52:33 PM EST",
     "counts": {
       "text_status": {
-        "not_recorded": 7,
-        "pending": 3,
-        "reviewed": 990
+        "not_recorded": 154,
+        "reviewed": 1753,
+        "pending": 972
       },
       "media_status": {
-        "not_applicable": 721,
-        "pending": 33,
-        "reviewed": 221,
-        "unavailable": 25
+        "not_applicable": 1615,
+        "not_recorded": 19,
+        "unavailable": 295,
+        "pending": 541,
+        "reviewed": 409
       }
     },
-    "note": "Eleven posts newer than the prior snapshot were present at the validated November 14 6:10:31 PM EST check. The newest post was published November 14 at 5:00:23 PM EST in America/Indiana/Indianapolis, so there is no no-new-post finding for this run. Complete text and all 24 attached images across seven East Potomac posts were reviewed only as evidence of what Trump published; image dates, precise locations and claims were not independently verified. The East Potomac and entertainment leads were deduplicated to NAT-2026-10-10-001 and NAT-2026-11-13-005, while the remaining posts were routine rhetoric or state-focused advocacy. No UTC date was substituted for the local publication date."
+    "note": "Five posts newer than the prior snapshot were present at the validated November 15 12:09:43 AM EST check. The newest was published November 14 at 9:52:33 PM EST in America/Indiana/Indianapolis, so a no-new-post finding does not apply. Text and four still-image posts were reviewed as publication evidence only; sampled frames, but not complete audio or captions, were reviewed for the 7:13 video. No UTC date was substituted for the local publication date and no post produced a qualifying canonical action."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -4761,23 +2786,24 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-14 6:10 PM EST",
-    "checked_at_utc": "2026-11-14T23:10:31.970882Z",
-    "summary": "All four registered primary project pages were checked as discovery inputs. Trump Archive displayed 16,117 total items, 13,386 Truth Social posts and 2,065 speeches/transcripts; UndoTrump remained at 1,264 actions; the Immigration Policy Tracking Project remained at 1,836 policy actions. Record47's static page became accessible but its numeric counters remained dynamically unrendered in the material inspected. The strict feed-only no-op preserves the 10.244.0 canonical registry snapshot; distinct units were not summed and zero external items were imported by default.",
-    "updated_archives": [],
-    "unchanged_archives": [
-      "undotrump",
+    "checked_at": "2026-11-15 12:09 AM EST",
+    "checked_at_utc": "2026-11-15T05:09:43.812289Z",
+    "summary": "All four registered primary project pages were checked as discovery inputs. Trump Archive displayed 16,123 total items, 13,392 Truth Social posts and 2,065 speeches/transcripts; UndoTrump remained at 1,264 actions; the Immigration Policy Tracking Project displayed 1,838 policy actions. Record47 exposed labels but not stable numeric counters in accessible content. Distinct units were not summed and zero external items were imported by default.",
+    "updated_archives": [
+      "trump_archive",
       "immigration_policy_tracking_project"
+    ],
+    "unchanged_archives": [
+      "undotrump"
     ],
     "access_gap_archives": [
       "record47"
     ]
   },
   "editorial_notes": [
-    "Strict feed-only editorial no-op: no qualifying canonical national item was located in the material reviewed, so the complete 10.244.0 editorial snapshot is reused byte-for-byte.",
-    "Eleven newer Truth Social posts and all 24 attached images were preserved and reviewed as publication evidence only. East Potomac and entertainment material was deduplicated to existing records; routine rhetoric, state-focused advocacy and unimplemented legislative wishes were withheld.",
-    "Official Trump TV, live, video-library, FAA detail, remarks and release metadata were rechecked. The repeated FAA recordings supplied no separate action; audiovisual and complete-transcript gaps remain and the broadcast-review boundary was not advanced.",
-    "No current record, source-ledger record, legacy entry, correction, federation record or schema changed. Four registered external archives were rechecked as discovery inputs; distinct units were not summed and zero external items entered the canonical archive by default."
+    "Three records passed the threshold: one new federal safety-investigation record and two material refreshes. The archive was not padded to four.",
+    "No legacy row was changed: the generated duplicate queue's same-date pairs were inspected and were distinct events, while no additional historical candidate had sufficient direct source review for a guarded material revision in this short window.",
+    "External archives remained discovery inputs only; two verified measurement changes use distinct units and contribute zero canonical entries by default."
   ],
   "retained_stages": [],
   "publication_transport_attempts": [],
