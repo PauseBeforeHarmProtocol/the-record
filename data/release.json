@@ -1,51 +1,42 @@
 {
-  "version": "10.245.1",
-  "artifact_mode": "feed-only",
-  "editorial_snapshot": {
-    "version": "10.245.0",
-    "national_pack": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-11-15_v10.245.0.zip",
-      "sha256": "0c710b66a663262102b5d9ed7589df6bdc17d7d867032c96aeeed673726d436d"
-    },
-    "complete_pack": {
-      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-11-15_v10.245.0.zip",
-      "sha256": "096bb7f9e3981392d831d8af92997a2d1e20ed3df8ee92af55ee3d9cf37aeff4"
-    },
-    "national_brief": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-11-15_v10.245.0.md",
-      "sha256": "e17016866b78223c0a59e03395da4866382a778ce2fd0b4d66f1c95d123d0c41"
-    },
-    "in6_brief": {
-      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-11-15_v10.245.0.md",
-      "sha256": "eb6cb3eeed476950ae08759f8e7e932f50de966226c0ad619e5896c4e37a4ad7"
-    }
-  },
+  "version": "10.246.0",
+  "artifact_mode": "full",
+  "editorial_snapshot": null,
   "run_changes": {
     "added_entry_ids": [],
-    "refreshed_entry_ids": [],
+    "refreshed_entry_ids": [
+      "NAT-2026-11-13-003",
+      "NAT-2026-11-14-001"
+    ],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-15T05:09:43.812289Z",
-    "through_utc": "2026-11-15T16:58:03.940358Z",
+    "from_utc": "2026-11-15T16:58:03.940358Z",
+    "through_utc": "2026-11-15T23:03:42.322426Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact prior checked_at boundary through the final validated Truth Social refresh and bounded source review. Editorial no-op with six newer raw-feed posts retained and reviewed; no qualifying canonical national item located in the material reviewed."
+    "note": "Exact prior checked_at boundary through the final bounded source review. Two same-event records were materially refreshed; one recovered Reuters report published nine minutes before the boundary was explicitly identified rather than represented as post-boundary publication."
   },
   "release_iso": "2026-11-15",
   "release_human": "November 15, 2026",
-  "checked_at": "2026-11-15 11:58 AM EST",
-  "previous_version": "10.245.0",
-  "previous_checked_at": "2026-11-15 12:09 AM EST",
-  "window_started_at": "2026-11-15T05:09:43.812289Z",
-  "window_ended_at": "2026-11-15T16:58:03.940358Z",
+  "checked_at": "2026-11-15 6:03 PM EST",
+  "previous_version": "10.245.1",
+  "previous_checked_at": "2026-11-15 11:58 AM EST",
+  "window_started_at": "2026-11-15T16:58:03.940358Z",
+  "window_ended_at": "2026-11-15T23:03:42.322426Z",
   "week_start": "2026-11-09",
   "week_end": "2026-11-15",
   "week_label": "November 9–15, 2026",
   "cutoff_start": "2026-07-20",
-  "new_entry_ids": [],
+  "new_entry_ids": [
+    "NAT-2026-11-13-003",
+    "NAT-2026-11-14-001"
+  ],
   "added_entry_ids": [],
-  "refreshed_entry_ids": [],
+  "refreshed_entry_ids": [
+    "NAT-2026-11-13-003",
+    "NAT-2026-11-14-001"
+  ],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-11-10-006",
@@ -1550,35 +1541,37 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Six newer Truth Social posts",
-      "reason": "Two posts requested unspecified FAA funding without bill text, a new amount or an appropriation; one described unspecified meetings; one announced an East Potomac appeal without a filing; and two image-only posts were election-comparison graphics. They were reviewed as publication evidence only and produced no separate qualifying canonical action.",
+      "title": "Truth Social headline praising Trump as a peacemaker",
+      "reason": "The post proves only that Trump published the linked praise. It supplied no independently verified material federal action, order, proposal, finding or risk change.",
       "source_urls": [
-        "https://truthsocial.com/@realDonaldTrump/117620643696909295",
-        "https://truthsocial.com/@realDonaldTrump/117620719333478761",
-        "https://truthsocial.com/@realDonaldTrump/117620744239777031",
-        "https://truthsocial.com/@realDonaldTrump/117620933637807515",
-        "https://truthsocial.com/@realDonaldTrump/117621326974892115",
-        "https://truthsocial.com/@realDonaldTrump/117621327546745159"
-      ]
-    },
-    {
-      "title": "Trump request for additional air-traffic-control funding",
-      "reason": "AP independently confirmed the request, but Trump supplied no bill text or new requested amount and Congress had not appropriated new funds. The statement did not materially advance NAT-2026-11-13-003.",
-      "source_urls": [
-        "https://apnews.com/article/1a308c557552b2ce24a0532fee0be191"
+        "https://truthsocial.com/@realDonaldTrump/117622076975145007"
       ]
     },
     {
       "title": "Announced expedited appeal of East Potomac temporary restraining order",
-      "reason": "Trump announced an appeal, but no notice of appeal, appellate order or implemented project change was located by cutoff. The statement remains a litigating intention tied to NAT-2026-10-10-001.",
+      "reason": "No notice of appeal, appellate order or implemented project change was located by cutoff. The intention remains deduplicated to NAT-2026-10-10-001.",
       "source_urls": [
         "https://www.reuters.com/legal/government/us-judge-again-blocks-trumps-makeover-plan-dc-golf-course-2026-11-15/",
         "https://apnews.com/article/d56a2ca061ac54ba6367411bb972c29c"
       ]
     },
     {
+      "title": "Scheduled Asia trip and prospective nuclear talks",
+      "reason": "The reviewed statements described future travel or talks without an implemented diplomatic action, signed agreement or verified outcome by cutoff.",
+      "source_urls": [
+        "https://www.whitehouse.gov/releases/"
+      ]
+    },
+    {
+      "title": "Pending judicial nominations and confirmation resistance",
+      "reason": "The reviewed analysis described pending nominations and political resistance but no new nomination, withdrawal, confirmation, order or measurable institutional outcome within the window.",
+      "source_urls": [
+        "https://www.reuters.com/world/us/"
+      ]
+    },
+    {
       "title": "Trump TV metadata recheck",
-      "reason": "The official channel, live hub, video library, remarks and releases exposed no new post-boundary recording or transcript. Existing Stephen A. Smith and FAA items were repeated or already deduplicated, and no qualifying new item was located in the material reviewed.",
+      "reason": "Official page, live, library, remarks and releases metadata exposed no new recording or transcript. The Sunday FAA text release supports the existing FAA event; repeated clips were deduplicated and no qualifying new item was located in the material reviewed.",
       "source_urls": [
         "https://www.whitehouse.gov/trumptv/",
         "https://www.whitehouse.gov/live/",
@@ -1586,18 +1579,23 @@
         "https://www.whitehouse.gov/remarks/",
         "https://www.whitehouse.gov/releases/"
       ]
+    },
+    {
+      "title": "Legacy duplicate-candidate queue",
+      "reason": "LEG-004656/004657, LEG-004685/004687 and LEG-004713/004714 remain distinct same-date events after bounded recheck; no material historical change or guarded revision was justified.",
+      "source_urls": []
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
-    "checked_at_utc": "2026-11-15T16:58:03.940358Z",
-    "checked_at_eastern": "2026-11-15 11:58:03 AM EST",
+    "checked_at_utc": "2026-11-15T23:03:42.322426Z",
+    "checked_at_eastern": "2026-11-15 6:03:42 PM EST",
     "inspection_status": "official Trump TV, live, dated-library, remarks and release metadata inspected; complete audiovisual content unavailable",
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
     "last_successful_broadcast_review_through": null,
-    "summary": "The official channel, live hub, video library, remarks and releases were inspected as metadata. No November 15 recording or transcript appeared; the listed Stephen A. Smith and FAA clips were repeated or already deduplicated. No footage, complete audio or captions are claimed reviewed; fallback text was not treated as outage proof. No qualifying new item located in the material reviewed, and the complete broadcast-review boundary remains unadvanced.",
+    "summary": "The official channel, live hub, video library, remarks and releases were inspected as page, listing and detail metadata. No November 15 recording or transcript appeared; the November 14 Stephen A. Smith and FAA clips were repeated or already deduplicated. The Sunday FAA text release independently supports the FAA canonical refresh, not a separate broadcast event. No footage, complete audio or captions are claimed reviewed; fallback text was not treated as outage proof. No qualifying new item located in the material reviewed, and the complete broadcast-review boundary remains unadvanced.",
     "sources": [
       "https://www.whitehouse.gov/trumptv/",
       "https://www.whitehouse.gov/live/",
@@ -1620,10 +1618,10 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-15T16:58:03.940358Z",
-        "observed_at_eastern": "2026-11-15 11:58:03 AM EST",
+        "observed_at": "2026-11-15T23:03:42.322426Z",
+        "observed_at_eastern": "2026-11-15 6:03:42 PM EST",
         "format": "official channel page and stable stream-link metadata; audiovisual content unreviewed",
-        "inspection": "Page and linked stream metadata inspected. The page's fallback text was not treated as outage proof; no playback, complete audio or captions reviewed."
+        "inspection": "Page and linked stream metadata inspected. Fallback text was not treated as outage proof; no playback, complete audio or captions reviewed."
       },
       {
         "url": "https://www.whitehouse.gov/live/",
@@ -1633,8 +1631,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-15T16:58:03.940358Z",
-        "observed_at_eastern": "2026-11-15 11:58:03 AM EST",
+        "observed_at": "2026-11-15T23:03:42.322426Z",
+        "observed_at_eastern": "2026-11-15 6:03:42 PM EST",
         "format": "official live-hub metadata; audiovisual content unreviewed",
         "inspection": "Live-hub and linked-channel metadata inspected. No live/replay state or outage inferred; no playback, complete audio or captions reviewed."
       },
@@ -1648,10 +1646,10 @@
         "posted_date": "2026-11-14",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-15T16:58:03.940358Z",
-        "observed_at_eastern": "2026-11-15 11:58:03 AM EST",
+        "observed_at": "2026-11-15T23:03:42.322426Z",
+        "observed_at_eastern": "2026-11-15 6:03:42 PM EST",
         "format": "official dated-library listing metadata; audiovisual content unreviewed",
-        "inspection": "Titles, displayed dates, durations and links inspected. No November 15 item appeared; the listed Stephen A. Smith and FAA clips were repeated and supplied no new qualifying action."
+        "inspection": "Titles, displayed dates, durations and links inspected. No November 15 item appeared; the November 14 items were repeated and supplied no new action beyond the separately sourced FAA refresh."
       },
       {
         "url": "https://www.whitehouse.gov/remarks/",
@@ -1659,29 +1657,92 @@
         "posted_date": "2026-09-28",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-15T16:58:03.940358Z",
-        "observed_at_eastern": "2026-11-15 11:58:03 AM EST",
+        "observed_at": "2026-11-15T23:03:42.322426Z",
+        "observed_at_eastern": "2026-11-15 6:03:42 PM EST",
         "format": "supplementary remarks index; not assumed complete",
         "inspection": "Index metadata inspected and not treated as a complete transcript feed; no post-boundary transcript was exposed."
       },
       {
         "url": "https://www.whitehouse.gov/releases/",
         "video_ids": [],
-        "posted_date": "2026-11-13",
+        "posted_date": "2026-11-15",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-15T16:58:03.940358Z",
-        "observed_at_eastern": "2026-11-15 11:58:03 AM EST",
+        "observed_at": "2026-11-15T23:03:42.322426Z",
+        "observed_at_eastern": "2026-11-15 6:03:42 PM EST",
         "format": "supplementary official releases index",
-        "inspection": "Recent release metadata inspected as text leads. No November 15 release or separate qualifying Trump TV cost, contract, staffing, editorial-control, distribution or press-access finding was located."
+        "inspection": "Sunday FAA release inspected as text and used only to source NAT-2026-11-13-003. No separate qualifying Trump TV cost, contract, staffing, editorial-control, distribution or press-access finding was located."
       }
     ],
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-15 11:58 AM EST",
+    "checked_at": "2026-11-15 6:03 PM EST",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-15T16:58:03.940358Z",
+    "last_successful_page_inspection_at": "2026-11-15T23:03:42.322426Z",
     "last_successful_broadcast_boundary": null,
     "inspected_items": [
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T23:03:42.322426Z",
+        "observed_at_eastern": "2026-11-15 6:03:42 PM EST",
+        "format": "official channel page and stable stream-link metadata; audiovisual content unreviewed",
+        "inspection": "Page and linked stream metadata inspected. Fallback text was not treated as outage proof; no playback, complete audio or captions reviewed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T23:03:42.322426Z",
+        "observed_at_eastern": "2026-11-15 6:03:42 PM EST",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "Live-hub and linked-channel metadata inspected. No live/replay state or outage inferred; no playback, complete audio or captions reviewed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "video_ids": [
+          "e9vLyeVPxFM",
+          "aH2db_pvy38",
+          "Mh2q-y0wIu8"
+        ],
+        "posted_date": "2026-11-14",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T23:03:42.322426Z",
+        "observed_at_eastern": "2026-11-15 6:03:42 PM EST",
+        "format": "official dated-library listing metadata; audiovisual content unreviewed",
+        "inspection": "Titles, displayed dates, durations and links inspected. No November 15 item appeared; the November 14 items were repeated and supplied no new action beyond the separately sourced FAA refresh."
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "video_ids": [],
+        "posted_date": "2026-09-28",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T23:03:42.322426Z",
+        "observed_at_eastern": "2026-11-15 6:03:42 PM EST",
+        "format": "supplementary remarks index; not assumed complete",
+        "inspection": "Index metadata inspected and not treated as a complete transcript feed; no post-boundary transcript was exposed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "video_ids": [],
+        "posted_date": "2026-11-15",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-15T23:03:42.322426Z",
+        "observed_at_eastern": "2026-11-15 6:03:42 PM EST",
+        "format": "supplementary official releases index",
+        "inspection": "Sunday FAA release inspected as text and used only to source NAT-2026-11-13-003. No separate qualifying Trump TV cost, contract, staffing, editorial-control, distribution or press-access finding was located."
+      },
       {
         "url": "https://www.whitehouse.gov/trumptv/",
         "video_ids": [
@@ -2754,6 +2815,10 @@
     ],
     "access_gaps": [
       {
+        "observed_at": "2026-11-15T23:03:42.322426Z",
+        "note": "Playback, complete audio and captions/transcripts were not retrieved for the repeated November 14 listings; only official page, listing and release text were inspected. Fallback text was not treated as outage proof, and no continuous-coverage claim or broadcast boundary was advanced."
+      },
+      {
         "observed_at": "2026-11-15T05:09:43.812289Z",
         "note": "Playback, complete audio and captions/transcripts were not retrieved for the November 14 Stephen A. Smith clip or repeated FAA recordings; only official page, listing and detail-page metadata were inspected. Fallback text was not treated as outage proof, and no continuous-coverage claim or broadcast boundary was advanced."
       },
@@ -2804,30 +2869,30 @@
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 6,
-    "new_text_reviewed": 6,
-    "new_media_reviewed": 2,
+    "new_posts": 1,
+    "new_text_reviewed": 1,
+    "new_media_reviewed": 0,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-15T16:58:03.940358Z",
-    "checked_at_eastern": "2026-11-15 11:58:03 AM EST",
-    "latest_post_id": "117621327546745159",
-    "latest_post_at_eastern": "2026-11-15 11:10:26 AM EST",
+    "checked_at_utc": "2026-11-15T22:59:27.466733Z",
+    "checked_at_eastern": "2026-11-15 5:59:27 PM EST",
+    "latest_post_id": "117622076975145007",
+    "latest_post_at_eastern": "2026-11-15 2:21:01 PM EST",
     "counts": {
       "text_status": {
         "not_recorded": 154,
         "pending": 972,
-        "reviewed": 1759
+        "reviewed": 1760
       },
       "media_status": {
-        "not_applicable": 1619,
+        "not_applicable": 1620,
         "not_recorded": 19,
         "pending": 541,
         "reviewed": 411,
         "unavailable": 295
       }
     },
-    "note": "Six posts newer than the prior snapshot were present at the validated November 15 11:58:03 AM EST check. The newest was published November 15 at 11:10:26 AM EST in America/Indiana/Indianapolis, so a no-new-post finding does not apply. All six text states and both still images were reviewed as publication evidence only; claims inside the posts were not treated as independently verified. No UTC date was substituted for the local publication date and no post produced a qualifying canonical action."
+    "note": "One post newer than the prior snapshot was present at the validated November 15 5:59:27 PM EST check. The newest was published November 15 at 2:21:01 PM EST in America/Indiana/Indianapolis, so a no-new-post finding does not apply. Its text linked a headline praising Trump as a peacemaker; it was reviewed as publication evidence only, claims inside it were not independently verified, and it produced no qualifying canonical action. No UTC date was substituted for the local publication date."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -2839,28 +2904,28 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-15 11:58 AM EST",
-    "checked_at_utc": "2026-11-15T16:58:03.940358Z",
-    "summary": "All four registered primary project pages were checked as discovery inputs. Trump Archive displayed 16,127 total items, 13,396 Truth Social posts and 2,065 speeches/transcripts; UndoTrump remained at 1,264 actions; the Immigration Policy Tracking Project remained at 1,838 policy actions. Record47 exposed labels but not stable numeric counters in accessible page text. Distinct units were not summed and zero external items were imported by default. The strict feed-only no-op preserved the prior canonical registry measurements.",
-    "updated_archives": [],
+    "checked_at": "2026-11-15 6:03 PM EST",
+    "checked_at_utc": "2026-11-15T23:03:42.322426Z",
+    "summary": "All four registered primary project pages were checked as discovery inputs. Trump Archive displayed 16,130 total items, 13,399 Truth Social posts and 2,065 speeches/transcripts; UndoTrump remained at 1,264 actions and the Immigration Policy Tracking Project at 1,838 policy actions. Record47 exposed labels but not stable current numeric counters in accessible page text. Distinct units were not summed and zero external items were imported by default.",
+    "updated_archives": [
+      "trump_archive"
+    ],
     "unchanged_archives": [
       "undotrump",
       "immigration_policy_tracking_project"
-    ],
-    "observed_changed_archives": [
-      "trump_archive"
     ],
     "access_gap_archives": [
       "record47"
     ]
   },
   "editorial_notes": [
-    "No national candidate passed the publication threshold. The archive was not padded to four; this release preserves only the materially newer validated Truth Social fallback and completed post inspections.",
-    "No legacy row was changed because strict feed-only snapshot reuse forbids historical or canonical editorial changes, and no independently sourced historical correction was required by this window.",
+    "Two same-event developments passed the publication threshold. The archive was not padded to four; both stable IDs were refreshed with complete predecessor snapshots and separately reviewed Maybe/Therefore fields.",
+    "No legacy row was changed. The three disclosed same-date-heading candidate pairs were rechecked as distinct events and remain visible in the generated queue; no independently sourced correction justified a guarded revision in this run.",
     "External archives remained discovery inputs only; distinct units were not summed and zero external records were imported."
   ],
   "retained_stages": [],
   "publication_transport_attempts": [],
   "maintenance_revision": null,
-  "engineering_revision": null
+  "engineering_revision": null,
+  "legacy_quality": null
 }
