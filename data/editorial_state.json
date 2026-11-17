@@ -11257,6 +11257,30 @@
       "provenance_path": "data/editorial_change_notes/10.249.0.json",
       "provenance_sha256": "6f915deffbd52cb7b3599073bc0fee82c3c52a5306e90ff9a0d337da1d89a730",
       "note": "Maybe a narrower, better-supported review system could improve compliance without major disruption, or fixed periods may burden institutions and deter talent without materially reducing fraud. Therefore the November 16 judgment vacates this rule on the merits and preserves duration of status for now—it does not prevent every future rule, foreclose appellate review or measure long-term immigration, education or security effects."
+    },
+    {
+      "change_id": "10.250.0:NAT-2026-11-17-001:added",
+      "entry_id": "NAT-2026-11-17-001",
+      "as_of_utc": "2026-11-17T11:31:00.000000Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.250.0",
+      "summary": "Added formal PERM modernization proposal at Federal Register publication.",
+      "provenance_path": "data/editorial_change_notes/10.250.0.json",
+      "provenance_sha256": "b15297b12b1167d957832bc1dd75d66e8d8fd6ac546bab9be5a4942c571332e1",
+      "note": "Maybe broader recruitment and layoff safeguards will reveal qualified U.S. workers and reduce abuse, or ending shortage-occupation exemptions and adding process may worsen health-care and skilled-worker bottlenecks without improving placement. Therefore DOL has formally proposed a nationwide PERM overhaul for comment—not finalized it, implemented it or demonstrated its effects."
+    },
+    {
+      "change_id": "10.250.0:NAT-2026-09-04-014:refreshed",
+      "entry_id": "NAT-2026-09-04-014",
+      "as_of_utc": "2026-11-17T11:31:00.000000Z",
+      "timestamp_precision": "second",
+      "kind": "material_refresh",
+      "release_version": "10.250.0",
+      "summary": "Refreshed measles surveillance, vaccination and pregnancy evidence.",
+      "provenance_path": "data/editorial_change_notes/10.250.0.json",
+      "provenance_sha256": "b15297b12b1167d957832bc1dd75d66e8d8fd6ac546bab9be5a4942c571332e1",
+      "note": "Maybe long-running vaccination decline and local variation explain much of the resurgence, or federal messaging, funding and response choices worsened an already fragile baseline. Therefore the evidence establishes sharply higher confirmed cases, declining coverage and reported pregnancy-associated harm, plus a reported loss of elimination status—not a single-cause finding, a final mortality ledger or proof that any one intervention would have prevented every case."
     }
   ],
   "reviews": [
@@ -161968,6 +161992,276 @@
       ],
       "unresolved_questions": [
         "Implementation, appeal, enforcement and measured outcomes remain limited to the evidence boundaries stated in the entry."
+      ]
+    },
+    {
+      "review_id": "10.250.0:NAT-2026-09-04-014:adbdd4ebc310",
+      "entry_id": "NAT-2026-09-04-014",
+      "content_sha256": "adbdd4ebc3102317136d02f396a09c943ea6bd1583224becf701639f7e1d8ea8",
+      "reviewed_at": "2026-11-17T11:31:00.000000Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "e7c6b02361c23e65138741f5b370ec4ab09e4ec057f88553f671c718241a42ef",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cdc_measles_cases_sep4",
+              "locator": "Current 2026 totals, jurisdiction and outbreak tables; data through November 12.",
+              "inspected_at": "2026-11-17T11:31:00.000000Z",
+              "document_sha256": "37f0292a965436a84d638e0e0fc889eb9847024ffa5597c46a81cfccbff0c959",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "99d5e3dbc745f39e5dbe61a4a9d565b6ecc06743faa97f010eab71a7b9110dab",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cdc_measles_cases_sep4",
+              "locator": "Deaths table and methodological note.",
+              "inspected_at": "2026-11-17T11:31:00.000000Z",
+              "document_sha256": "37f0292a965436a84d638e0e0fc889eb9847024ffa5597c46a81cfccbff0c959",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_measles_investigation_nov17",
+              "locator": "National state-reported total and scope.",
+              "inspected_at": "2026-11-17T11:31:00.000000Z",
+              "document_sha256": "a3120e4ed7d9331531141873eb6008077789a3c341e75bba27f717d96a3dbf53",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "bea3a125557e68b03d77acdd6d48c0a59344a3e061365411fd12582689db14fe",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "cdc_measles_cases_sep4",
+              "locator": "Kindergarten coverage section.",
+              "inspected_at": "2026-11-17T11:31:00.000000Z",
+              "document_sha256": "37f0292a965436a84d638e0e0fc889eb9847024ffa5597c46a81cfccbff0c959",
+              "origin_group": "Centers for Disease Control and Prevention",
+              "evidence_status": "measured"
+            },
+            {
+              "source_id": "reuters_measles_investigation_nov17",
+              "locator": "Thirteen-state and New York City analysis; Utah rates.",
+              "inspected_at": "2026-11-17T11:31:00.000000Z",
+              "document_sha256": "a3120e4ed7d9331531141873eb6008077789a3c341e75bba27f717d96a3dbf53",
+              "origin_group": "Reuters",
+              "evidence_status": "measured"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "820dac82457f1d2b4c978e02961f6c396baf6900c9423f5469cadcb74b969629",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_congenital_measles_nov17",
+              "locator": "Reported preliminary CDC pregnancy and congenital-case findings.",
+              "inspected_at": "2026-11-17T11:31:00.000000Z",
+              "document_sha256": "26da0b49d91ec21f80ce4812688b29ee377b1e68156eb144663d4828643c7e06",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "281682801017ef7ff22ed81c3a19b1a45e532d83f8030758ec074f375315d724",
+          "relies_on_unnamed_sources": true,
+          "supports": [
+            {
+              "source_id": "reuters_measles_investigation_nov17",
+              "locator": "Senior administration official and pending-publication status.",
+              "inspected_at": "2026-11-17T11:31:00.000000Z",
+              "document_sha256": "a3120e4ed7d9331531141873eb6008077789a3c341e75bba27f717d96a3dbf53",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "kff_measles_status_nov14",
+              "locator": "Independent direct-knowledge reporting and planned announcement date.",
+              "inspected_at": "2026-11-17T11:31:00.000000Z",
+              "document_sha256": "de05dbe5a7b41a9e304403ce56bbd2fc633979a98ddb8f99f82f76546c5b9047",
+              "origin_group": "KFF Health News",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 5,
+          "fact_sha256": "ebbfaa3338f55a08489213cbc39d1e6ab11e420557276a23796d1e8768ad7a33",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "reuters_measles_investigation_nov17",
+              "locator": "HHS, White House and CDC attributed responses.",
+              "inspected_at": "2026-11-17T11:31:00.000000Z",
+              "document_sha256": "a3120e4ed7d9331531141873eb6008077789a3c341e75bba27f717d96a3dbf53",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "kff_measles_status_nov14",
+              "locator": "HHS and White House attributed responses.",
+              "inspected_at": "2026-11-17T11:31:00.000000Z",
+              "document_sha256": "de05dbe5a7b41a9e304403ce56bbd2fc633979a98ddb8f99f82f76546c5b9047",
+              "origin_group": "KFF Health News",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "e905df911d00591ce557e6f5d0551be7f0c7e631c8175125a679827f847ea371",
+          "review_note": "Separately reviewed to distinguish sourced facts, administration response, uncertainty and observable outcome tests."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "ceae97d6fa21fd6a65c14eb28cec9f7b46b70dc233f418283ee6015d2d8ac14f",
+          "review_note": "Separately reviewed to distinguish sourced facts, administration response, uncertainty and observable outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "ce022b4f5ebbe0abbde2ff931f6f7d85ff99a8e2919f258279d2bc4a09908d85",
+          "review_note": "Separately reviewed to distinguish sourced facts, administration response, uncertainty and observable outcome tests."
+        }
+      ],
+      "unresolved_questions": [
+        "PAHO public decision page was not located by cutoff; the classification remains independently reported here.",
+        "Surveillance, death and pregnancy counts remain provisional and may be revised."
+      ]
+    },
+    {
+      "review_id": "10.250.0:NAT-2026-11-17-001:309c53e42e33",
+      "entry_id": "NAT-2026-11-17-001",
+      "content_sha256": "309c53e42e33c26b146ddb2b9b578830704a6bc988ab7733880d84884955b70e",
+      "reviewed_at": "2026-11-17T11:31:00.000000Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "68b0f694665cf5e323e25fc4a5ae897894d331cceaba846712265ccfbe6df692",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_perm_proposed_nov17",
+              "locator": "Cover, docket, RIN, publication and comment deadline.",
+              "inspected_at": "2026-11-17T11:31:00.000000Z",
+              "document_sha256": "b9bd95fa7026d6e9a88c5feec655f5564a104a42db124b20c03bede9b4e39088",
+              "origin_group": "U.S. Department of Labor / Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "b4591ecf2f7d275412a1b27fd7b3c2dc7589709897a34914785c70a267fb80d2",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_perm_proposed_nov17",
+              "locator": "Schedule A proposal and transition discussion.",
+              "inspected_at": "2026-11-17T11:31:00.000000Z",
+              "document_sha256": "b9bd95fa7026d6e9a88c5feec655f5564a104a42db124b20c03bede9b4e39088",
+              "origin_group": "U.S. Department of Labor / Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "1944bb3db226c6a90a0965d505a1b5afe82c502f30519eedad1c7ba5e118a3a5",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_perm_proposed_nov17",
+              "locator": "Recruitment, layoff, third-party, recordkeeping and enforcement provisions.",
+              "inspected_at": "2026-11-17T11:31:00.000000Z",
+              "document_sha256": "b9bd95fa7026d6e9a88c5feec655f5564a104a42db124b20c03bede9b4e39088",
+              "origin_group": "U.S. Department of Labor / Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "73401899bfca2c4eedc897d6d7b600f27843b25eb24dc2b96c0a4453dea8be41",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_perm_proposed_nov17",
+              "locator": "Agency rationale and regulatory history.",
+              "inspected_at": "2026-11-17T11:31:00.000000Z",
+              "document_sha256": "b9bd95fa7026d6e9a88c5feec655f5564a104a42db124b20c03bede9b4e39088",
+              "origin_group": "U.S. Department of Labor / Federal Register",
+              "evidence_status": "proposed"
+            },
+            {
+              "source_id": "reuters_perm_proposal_nov16",
+              "locator": "Independent description and October-program context.",
+              "inspected_at": "2026-11-17T11:31:00.000000Z",
+              "document_sha256": "d824f81b5b2589bbd449b90cefe3905d7c97711f3355d53520af640e42a1bc3e",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "f3fda3e74cd843939ba7d0643a4a1db3000e4e570223341ad90bc201e429472c",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "fr_perm_proposed_nov17",
+              "locator": "Proposed-rule status, request for comments and regulatory analyses.",
+              "inspected_at": "2026-11-17T11:31:00.000000Z",
+              "document_sha256": "b9bd95fa7026d6e9a88c5feec655f5564a104a42db124b20c03bede9b4e39088",
+              "origin_group": "U.S. Department of Labor / Federal Register",
+              "evidence_status": "proposed"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "4dd3b5cb8528d53dd399b3d1b6a6ef5198b07f74649d8348b8fb84798be381af",
+          "review_note": "Separately reviewed to distinguish sourced facts, administration response, uncertainty and observable outcome tests."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "bf5df7dcd1fb3c68cbb9c6cf5cefdcb7825d5c26b90f83e1de5879cf40f516ac",
+          "review_note": "Separately reviewed to distinguish sourced facts, administration response, uncertainty and observable outcome tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "c81b5a152b42d83fe7b9ae115a7eca6f0c424e39d3b626946640058e20b0d38d",
+          "review_note": "Separately reviewed to distinguish sourced facts, administration response, uncertainty and observable outcome tests."
+        }
+      ],
+      "unresolved_questions": [
+        "Final text, effective date, transition treatment, implementation outcomes and litigation remain unresolved."
       ]
     }
   ],
