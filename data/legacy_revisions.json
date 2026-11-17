@@ -14411,7 +14411,9 @@
       },
       {
         "field": "mt",
-        "expected": {"$missing": true},
+        "expected": {
+          "$missing": true
+        },
         "replacement": "Maybe DOGE's advisory relationship supports confidentiality and exemption from FOIA, or its operational role may make ordinary agency-transparency duties applicable. Therefore the October 13 action establishes Supreme Court review of the dispute—not a merits decision, a completed disclosure or proof that either side's institutional characterization is correct."
       },
       {
@@ -14422,12 +14424,99 @@
       {
         "field": "src",
         "expected": [
-          {"t": "Washington Post", "url": "https://www.washingtonpost.com/national-security/2025/09/22/trump-justice-department-prosecutions/"}
+          {
+            "t": "Washington Post",
+            "url": "https://www.washingtonpost.com/national-security/2025/09/22/trump-justice-department-prosecutions/"
+          }
         ],
         "replacement": [
-          {"t": "Supreme Court docket 25-1103", "url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/25-1103.html"},
-          {"t": "Reuters", "url": "https://www.reuters.com/world/supreme-court-hear-trumps-fight-with-watchdog-group-over-doge-2026-10-13/"},
-          {"t": "Associated Press", "url": "https://apnews.com/article/supreme-court-elon-musk-doge-e04914af1491ed395e54efc783e0f19d"}
+          {
+            "t": "Supreme Court docket 25-1103",
+            "url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/25-1103.html"
+          },
+          {
+            "t": "Reuters",
+            "url": "https://www.reuters.com/world/supreme-court-hear-trumps-fight-with-watchdog-group-over-doge-2026-10-13/"
+          },
+          {
+            "t": "Associated Press",
+            "url": "https://apnews.com/article/supreme-court-elon-musk-doge-e04914af1491ed395e54efc783e0f19d"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "revision_id": "LR-2026-11-17-126",
+    "recorded_at": "2026-11-17",
+    "legacy_id": "LEG-002843",
+    "kind": "date-fact-source-and-reasoning-correction",
+    "summary": "Correct the malformed date, separate the April 22 lingerie-photo episode from earlier sexual-misconduct allegations, replace an unrelated Mueller citation, and add complete evidence-bounded reasoning layers.",
+    "provenance": [
+      {
+        "type": "record-specific-reporting",
+        "supports": "April 22 photo publication, Cawthorn's response and contemporaneous political context.",
+        "url": "https://www.newsobserver.com/news/politics-government/article260682662.html"
+      },
+      {
+        "type": "record-specific-reporting",
+        "supports": "Trump's April rally support and endorsement context.",
+        "url": "https://www.wral.com/archive/20227320/"
+      }
+    ],
+    "changes": [
+      {
+        "field": "review_status",
+        "expected": "legacy-unreviewed",
+        "replacement": "corrected"
+      },
+      {
+        "field": "sort",
+        "expected": "2022-04-28",
+        "replacement": "2022-04-22"
+      },
+      {
+        "field": "date",
+        "expected": "Thu 28, 2022",
+        "replacement": "April 22, 2022"
+      },
+      {
+        "field": "text",
+        "expected": "Rep. Madison Cawthorn faced scandal over reports of sexual harassment allegations from college classmates and photos showing him in drag. Cawthorn had been cultivated as Trump-backed star candidate for 2024.",
+        "replacement": "Photographs published on April 22 showed Representative Madison Cawthorn wearing lingerie during a cruise-ship game before he entered Congress. Cawthorn acknowledged the images and called them harmless vacation photos. Trump had endorsed Cawthorn's reelection and featured him at an April rally, while several senior North Carolina Republicans backed a primary challenger."
+      },
+      {
+        "field": "sig",
+        "expected": "Exposed Trump's judgment in backing candidates and pattern of support for figures with serious ethical and legal problems.",
+        "replacement": "The episode documents the political risk around Trump's continued endorsement of an embattled ally, but the photographs themselves do not establish misconduct. Earlier sexual-misconduct allegations and later campaign controversies are separate events and are not proved by these images."
+      },
+      {
+        "field": "goal",
+        "expected": "Remember when this would have been a scandal? They moved the goalpost to: normalizing the previously unacceptable.",
+        "replacement": "Cawthorn said the images came from a goofy cruise vacation long before he ran for office and treated their release as an opposition effort. Trump continued to back him; the observable tests were the May primary result and whether the endorsement survived documented controversies."
+      },
+      {
+        "field": "mt",
+        "expected": "Maybe a defender can argue that endorsement decisions made early in a candidate's career sometimes age badly, that Cawthorn's eventual implosion is a problem of the candidate not the endorser, and that every party has at some point backed figures who later turned out to have hidden conduct. The endorsement process is not character certification. Therefore the entry engages that bad-luck-endorsement framing before noting the structural problem: the warning signs around Cawthorn were available before he was elevated as a Trump-aligned star, not after. The endorsement system that selected him is the same one rewarding loyalty over vetting in every cycle the system has been measured. The case is interesting because it is not exceptional; it is the predictable output of a selection process that filters for affiliation rather than fitness, and then expresses surprise when the resulting candidate has problems unrelated to affiliation.",
+        "replacement": "Maybe the photographs were merely embarrassing private vacation images with no bearing on fitness for office, and an endorser cannot anticipate or control every controversy involving a candidate. Therefore this record establishes the April 22 publication, Cawthorn's response and Trump's then-current political backing—not sexual misconduct, illegality or proof that the images caused the later primary loss."
+      },
+      {
+        "field": "src",
+        "expected": [
+          {
+            "t": "PBS",
+            "url": "https://www.pbs.org/newshour/politics/mueller-i-did-not-clear-trump-of-obstruction-of-justice"
+          }
+        ],
+        "replacement": [
+          {
+            "t": "The News & Observer: Cawthorn response and political context",
+            "url": "https://www.newsobserver.com/news/politics-government/article260682662.html"
+          },
+          {
+            "t": "WRAL: Trump rally and Cawthorn endorsement context",
+            "url": "https://www.wral.com/archive/20227320/"
+          }
         ]
       }
     ]

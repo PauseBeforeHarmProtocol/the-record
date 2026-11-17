@@ -1,52 +1,38 @@
 {
-  "version": "10.251.0",
+  "version": "10.252.0",
   "artifact_mode": "full",
   "editorial_snapshot": null,
   "run_changes": {
-    "added_entry_ids": [
-      "NAT-2026-11-17-002",
-      "NAT-2026-11-17-003"
-    ],
+    "added_entry_ids": [],
     "refreshed_entry_ids": [
-      "NAT-2026-07-18-001",
-      "NAT-2026-09-04-014",
-      "NAT-2026-10-10-001"
+      "NAT-2026-08-28-014"
     ],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-17T11:38:20.000000Z",
-    "through_utc": "2026-11-17T17:05:32.559335Z",
+    "from_utc": "2026-11-17T17:05:32.559335Z",
+    "through_utc": "2026-11-17T23:06:40.507001Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact prior checked_at boundary through the final bounded source review. Two new records and three same-event material refreshes passed; preliminary procurement and trade stages were not converted into implementation."
+    "note": "Exact prior checked_at boundary through the final bounded source review. One same-event court refresh passed; no additional records were added merely to reach a target count."
   },
   "release_iso": "2026-11-17",
   "release_human": "November 17, 2026",
-  "checked_at": "2026-11-17 12:05 PM EST",
-  "previous_version": "10.250.0",
-  "previous_checked_at": "2026-11-17 6:38 AM EST",
-  "window_started_at": "2026-11-17T11:38:20.000000Z",
-  "window_ended_at": "2026-11-17T17:05:32.559335Z",
+  "checked_at": "2026-11-17 6:06 PM EST",
+  "previous_version": "10.251.0",
+  "previous_checked_at": "2026-11-17 12:05 PM EST",
+  "window_started_at": "2026-11-17T17:05:32.559335Z",
+  "window_ended_at": "2026-11-17T23:06:40.507001Z",
   "week_start": "2026-11-11",
   "week_end": "2026-11-17",
   "week_label": "November 11–17, 2026",
-  "cutoff_start": "2026-07-18",
+  "cutoff_start": "2026-08-28",
   "new_entry_ids": [
-    "NAT-2026-11-17-002",
-    "NAT-2026-11-17-003",
-    "NAT-2026-07-18-001",
-    "NAT-2026-09-04-014",
-    "NAT-2026-10-10-001"
+    "NAT-2026-08-28-014"
   ],
-  "added_entry_ids": [
-    "NAT-2026-11-17-002",
-    "NAT-2026-11-17-003"
-  ],
+  "added_entry_ids": [],
   "refreshed_entry_ids": [
-    "NAT-2026-07-18-001",
-    "NAT-2026-09-04-014",
-    "NAT-2026-10-10-001"
+    "NAT-2026-08-28-014"
   ],
   "dedupe_resolutions": [
     {
@@ -1558,49 +1544,53 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Trump TV arrival and photo-op clips",
-      "reason": "Official metadata identified ceremonial or repeated footage. Playback, complete audio and captions were unavailable; the policy-bearing Quad release was independently sourced in NAT-2026-11-17-003 and no separate qualifying item was located in the material reviewed.",
+      "title": "Trump gasoline-price repost",
+      "reason": "Publication was verified, but the asserted 18-year comparison was not independently established and the post announced no new action; retained in the separate Truth Social feed.",
       "source_urls": [
-        "https://www.whitehouse.gov/trumptv/",
-        "https://www.whitehouse.gov/live/",
-        "https://www.whitehouse.gov/videos/"
+        "https://truthsocial.com/@realDonaldTrump/117634065135557984"
       ]
     },
     {
-      "title": "Final U.S.–Thailand reciprocal-trade agreement",
-      "reason": "The signed joint statement records substantial conclusion only. Final legal text, signature, entry into force and tariff implementation remain pending.",
+      "title": "Trump TV U.S.–Thai signing replay",
+      "reason": "Metadata-only replay duplicated NAT-2026-11-17-002; playback, complete audio and captions were unavailable and no separate action was inferred.",
       "source_urls": [
-        "https://www.whitehouse.gov/briefings-statements/2026/11/joint-statement-on-an-agreement-between-the-united-states-of-america-and-the-kingdom-of-thailand-on-reciprocal-trade/",
-        "https://www.thaigov.go.th/th/news/171295"
+        "https://www.whitehouse.gov/videos/president-trump-participates-in-a-u-s-thai-trade-deal-signing/"
       ]
     },
     {
-      "title": "East Potomac construction award or start",
-      "reason": "The official notice is an unfunded presolicitation, not a solicitation, award, notice to proceed or construction record.",
+      "title": "Ilhan Omar search-records unsealing hearing",
+      "reason": "Argument and future redaction steps were reported, but no qualifying unsealing order, released record, charge or closure existed at cutoff.",
       "source_urls": [
-        "https://sam.gov/workspace/contract/opp/0583f871645a4c45a66a1e42d32902d8/view"
+        "https://apnews.com/article/09bdfb77222f049dbd2d53b0f0bcc808"
+      ]
+    },
+    {
+      "title": "VA-benefits fraud enforcement surge",
+      "reason": "The announcement aggregated 15 charges and earlier case outcomes involving about $3.4 million in alleged intended loss; allegations remain unadjudicated and the routine package did not meet this archive's material national threshold.",
+      "source_urls": [
+        "https://www.justice.gov/opa/pr/justice-department-va-and-va-oig-announce-enforcement-actions-against-15-defendants"
       ]
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
-    "checked_at_utc": "2026-11-17T17:05:32.559335Z",
-    "checked_at_eastern": "2026-11-17 12:05 PM EST",
+    "checked_at_utc": "2026-11-17T23:06:40.507001Z",
+    "checked_at_eastern": "2026-11-17 6:06 PM EST",
     "inspection_status": "official Trump TV, live, dated-library, remarks and release metadata inspected; complete audiovisual content unavailable",
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
     "last_successful_broadcast_review_through": null,
-    "summary": "Official Trump TV, live-hub, dated video-library, remarks and release metadata were inspected. Trump TV retained stream ID A4gNgHfZ-v4. Three November 17 Quad video pages exposed stable IDs, titles, dates and durations; playback, complete audio and official captions were not retrieved. The multilateral-meeting metadata was deduplicated to independently verified NAT-2026-11-17-003, ceremonial footage was withheld, fallback text was not treated as outage proof and no qualifying separate item was located in the material reviewed.",
+    "summary": "Official Trump TV, live hub, dated video library, remarks and news metadata were inspected. Stream ID A4gNgHfZ-v4 persisted. A newly listed Thai signing replay exposed metadata and video ID ehxbN5Sbbnk, but playback, complete audio and captions were not retrieved; it duplicated NAT-2026-11-17-002. Fallback text was not treated as outage proof, no broadcast boundary was advanced and no qualifying new item was located in the material reviewed.",
     "sources": [
       "https://www.whitehouse.gov/trumptv/",
       "https://www.whitehouse.gov/live/",
       "https://www.whitehouse.gov/videos/",
       "https://www.whitehouse.gov/remarks/",
-      "https://www.whitehouse.gov/releases/"
+      "https://www.whitehouse.gov/news/"
     ],
     "gaps": [
-      "Playback, complete audio and official captions/transcripts were not retrieved; only official page, listing and stream-link metadata were inspected. Fallback text was not treated as outage proof and no continuous-coverage claim or complete broadcast boundary was advanced."
+      "Playback, complete audio and official captions/transcripts were not retrieved; only official page, listing and stream-link metadata were inspected. Fallback text was not treated as outage proof and no continuous-coverage claim or broadcast boundary was advanced."
     ],
     "items": [
       {
@@ -1611,62 +1601,36 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-17T17:05:32.559335Z",
-        "observed_at_eastern": "2026-11-17 12:05 PM EST",
+        "observed_at": "2026-11-17T23:06:40.507001Z",
+        "observed_at_eastern": "2026-11-17 6:06 PM EST",
         "format": "official channel page and stable stream-link metadata; audiovisual content unreviewed",
-        "inspection": "Stable stream link inspected; fallback text was not treated as outage proof."
+        "inspection": "Stable stream ID remained A4gNgHfZ-v4. Fallback text was not treated as outage proof; playback, complete audio and captions were not retrieved."
       },
       {
         "url": "https://www.whitehouse.gov/live/",
         "video_ids": [
-          "XpUTq17by4Y"
+          "A4gNgHfZ-v4"
         ],
-        "posted_date": "2026-11-17",
-        "original_event_date": "2026-11-17",
+        "posted_date": null,
+        "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-17T17:05:32.559335Z",
-        "observed_at_eastern": "2026-11-17 12:05 PM EST",
-        "format": "official live-hub Quad photo-op metadata; audiovisual content unreviewed",
-        "inspection": "Title and linked video ID inspected. No playback, complete audio or captions were retrieved; ceremonial footage was not treated as a new action."
+        "observed_at": "2026-11-17T23:06:40.507001Z",
+        "observed_at_eastern": "2026-11-17 6:06 PM EST",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "White House Live and Trump TV fallback text and stable stream link inspected; no outage or continuous-coverage claim was made."
       },
       {
-        "url": "https://www.whitehouse.gov/videos/multilateral-meeting-with-quad-leaders/",
+        "url": "https://www.whitehouse.gov/videos/president-trump-participates-in-a-u-s-thai-trade-deal-signing/",
         "video_ids": [
-          "mOkdqMg0jb4"
+          "ehxbN5Sbbnk"
         ],
         "posted_date": "2026-11-17",
-        "original_event_date": "2026-11-17",
+        "original_event_date": "2026-11-16",
         "broadcast_time": null,
-        "observed_at": "2026-11-17T17:05:32.559335Z",
-        "observed_at_eastern": "2026-11-17 12:05 PM EST",
-        "format": "official dated-library listing for a 13:06 replay; audiovisual content unreviewed",
-        "inspection": "Title, displayed date, duration and stable ID inspected. Metadata lead deduplicated to independently sourced NAT-2026-11-17-003."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-greets-quad-leaders-and-participates-in-a-photo-opportunity/",
-        "video_ids": [
-          "XpUTq17by4Y"
-        ],
-        "posted_date": "2026-11-17",
-        "original_event_date": "2026-11-17",
-        "broadcast_time": null,
-        "observed_at": "2026-11-17T17:05:32.559335Z",
-        "observed_at_eastern": "2026-11-17 12:05 PM EST",
-        "format": "official dated-library listing for a 4:23 replay; audiovisual content unreviewed",
-        "inspection": "Title, displayed date, duration and stable ID inspected; ceremonial footage did not independently meet the publication threshold."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-participates-in-an-arrival-ceremony/",
-        "video_ids": [
-          "8G2_9Ybg9EI"
-        ],
-        "posted_date": "2026-11-17",
-        "original_event_date": "2026-11-17",
-        "broadcast_time": null,
-        "observed_at": "2026-11-17T17:05:32.559335Z",
-        "observed_at_eastern": "2026-11-17 12:05 PM EST",
-        "format": "official dated-library listing for a 3:42 replay; audiovisual content unreviewed",
-        "inspection": "Title, displayed date, duration and stable ID inspected; ceremonial footage did not independently meet the publication threshold."
+        "observed_at": "2026-11-17T23:06:40.507001Z",
+        "observed_at_eastern": "2026-11-17 6:06 PM EST",
+        "format": "official dated-library replay metadata; displayed duration 00:00; audiovisual content unreviewed",
+        "inspection": "Listing title, library date, detail-page event date and stable YouTube ID inspected. Date discrepancy retained; replay deduplicated to NAT-2026-11-17-002 and not counted as a new action."
       },
       {
         "url": "https://www.whitehouse.gov/remarks/",
@@ -1674,27 +1638,27 @@
         "posted_date": "2026-09-28",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-17T17:05:32.559335Z",
-        "observed_at_eastern": "2026-11-17 12:05 PM EST",
+        "observed_at": "2026-11-17T23:06:40.507001Z",
+        "observed_at_eastern": "2026-11-17 6:06 PM EST",
         "format": "supplementary remarks index; not assumed complete",
-        "inspection": "No November 17 official transcript was exposed."
+        "inspection": "No post-boundary official transcript was exposed."
       },
       {
-        "url": "https://www.whitehouse.gov/releases/",
+        "url": "https://www.whitehouse.gov/news/",
         "video_ids": [],
         "posted_date": "2026-11-17",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-17T17:05:32.559335Z",
-        "observed_at_eastern": "2026-11-17 12:05 PM EST",
-        "format": "supplementary official releases index",
-        "inspection": "Quad and trade text releases were inspected separately; no channel cost, contract, staffing, editorial-control, distribution or press-access finding was located."
+        "observed_at": "2026-11-17T23:06:40.507001Z",
+        "observed_at_eastern": "2026-11-17 6:06 PM EST",
+        "format": "supplementary official news and release index",
+        "inspection": "Index still led with the already-reviewed Quad and Thailand releases; no new channel cost, contract, staffing, editorial-control, distribution or press-access finding was located."
       }
     ],
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-17 12:05 PM EST",
+    "checked_at": "2026-11-17 6:06 PM EST",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-17T17:05:32.559335Z",
+    "last_successful_page_inspection_at": "2026-11-17T23:06:40.507001Z",
     "last_successful_broadcast_boundary": null,
     "inspected_items": [
       {
@@ -2682,34 +2646,95 @@
         "observed_at_eastern": "2026-11-17 12:05 PM EST",
         "format": "supplementary official releases index",
         "inspection": "Quad and trade text releases were inspected separately; no channel cost, contract, staffing, editorial-control, distribution or press-access finding was located."
+      },
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-17T23:06:40.507001Z",
+        "observed_at_eastern": "2026-11-17 6:06 PM EST",
+        "format": "official channel page and stable stream-link metadata; audiovisual content unreviewed",
+        "inspection": "Stable stream ID remained A4gNgHfZ-v4. Fallback text was not treated as outage proof; playback, complete audio and captions were not retrieved."
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-17T23:06:40.507001Z",
+        "observed_at_eastern": "2026-11-17 6:06 PM EST",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "White House Live and Trump TV fallback text and stable stream link inspected; no outage or continuous-coverage claim was made."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-participates-in-a-u-s-thai-trade-deal-signing/",
+        "video_ids": [
+          "ehxbN5Sbbnk"
+        ],
+        "posted_date": "2026-11-17",
+        "original_event_date": "2026-11-16",
+        "broadcast_time": null,
+        "observed_at": "2026-11-17T23:06:40.507001Z",
+        "observed_at_eastern": "2026-11-17 6:06 PM EST",
+        "format": "official dated-library replay metadata; displayed duration 00:00; audiovisual content unreviewed",
+        "inspection": "Listing title, library date, detail-page event date and stable YouTube ID inspected. Date discrepancy retained; replay deduplicated to NAT-2026-11-17-002 and not counted as a new action."
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "video_ids": [],
+        "posted_date": "2026-09-28",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-17T23:06:40.507001Z",
+        "observed_at_eastern": "2026-11-17 6:06 PM EST",
+        "format": "supplementary remarks index; not assumed complete",
+        "inspection": "No post-boundary official transcript was exposed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/news/",
+        "video_ids": [],
+        "posted_date": "2026-11-17",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-17T23:06:40.507001Z",
+        "observed_at_eastern": "2026-11-17 6:06 PM EST",
+        "format": "supplementary official news and release index",
+        "inspection": "Index still led with the already-reviewed Quad and Thailand releases; no new channel cost, contract, staffing, editorial-control, distribution or press-access finding was located."
       }
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 0,
-    "new_text_reviewed": 0,
+    "new_posts": 1,
+    "new_text_reviewed": 1,
     "new_media_reviewed": 0,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-17T17:01:45.209124Z",
-    "checked_at_eastern": "2026-11-17 12:01:45 PM EST",
-    "latest_post_id": "117629573147086367",
-    "latest_post_at_eastern": "2026-11-16 10:07:24 PM EST",
+    "checked_at_utc": "2026-11-17T23:03:51.050733Z",
+    "checked_at_eastern": "2026-11-17 6:03:51 PM EST",
+    "latest_post_id": "117634065135557984",
+    "latest_post_at_eastern": "2026-11-17 5:09:46 PM EST",
     "counts": {
       "text_status": {
         "not_recorded": 154,
-        "reviewed": 1779,
+        "reviewed": 1780,
         "pending": 972
       },
       "media_status": {
-        "not_applicable": 1623,
+        "not_applicable": 1624,
         "not_recorded": 19,
         "unavailable": 296,
         "pending": 541,
         "reviewed": 426
       }
     },
-    "note": "No post was newer than the prior snapshot. The newest retained post was published November 16 at 10:07:24 PM EST in America/Indiana/Indianapolis; its UTC timestamp falls on November 17 and was not mistaken for the local publication date."
+    "note": "One post was newer than the prior snapshot. The newest retained post was published November 17 at 5:09:46 PM EST in America/Indiana/Indianapolis. Its gasoline-price comparison was treated only as Trump's publication, was not independently verified and remains feed-only."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -2721,34 +2746,33 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-17 12:05 PM EST",
-    "checked_at_utc": "2026-11-17T17:05:32.559335Z",
-    "summary": "All four registered projects were checked as discovery inputs. Trump Archive displayed 16,154 total items, 13,418 Truth Social posts and 2,069 speeches/transcripts; UndoTrump remained at 1,264 actions; IPTP displayed 1,840 actions, revising the prior 1,841 observation. Record47 did not expose a stable numeric counter. Distinct units were not summed and zero external items were imported.",
+    "checked_at": "2026-11-17 6:06 PM EST",
+    "checked_at_utc": "2026-11-17T23:06:40.507001Z",
+    "summary": "All four registered projects were checked as discovery inputs. Trump Archive displayed 16,155 total items, 13,418 Truth Social posts and 2,070 speeches/transcripts; UndoTrump remained at 1,264 actions; IPTP remained at 1,840 actions; Record47 did not expose a stable numeric counter. Distinct units were not summed and zero external items were imported.",
     "updated_archives": [
-      "trump_archive",
-      "immigration_policy_tracking_project"
+      "trump_archive"
     ],
     "unchanged_archives": [
-      "undotrump"
+      "undotrump",
+      "immigration_policy_tracking_project"
     ],
     "access_gap_archives": [
       "record47"
     ]
   },
   "editorial_notes": [
-    "Published 10.251.0 with two new national records and three material same-event refreshes.",
-    "Five records passed; no archive padding.",
-    "No correction was required.",
-    "Truth Social had no post newer than the prior snapshot.",
-    "Trump TV review was metadata-limited; its Quad meeting lead was deduplicated to independently verified policy records and no qualifying separate item was located in the material reviewed."
+    "Published 10.252.0 with one material same-event court refresh and no padded additions.",
+    "One newer Truth Social post was reviewed and retained feed-only because its internal claim was not independently verified.",
+    "Trump TV review was metadata-limited; the newly listed Thai signing replay duplicated the noon trade record and no qualifying separate item was located in the material reviewed.",
+    "Completed one guarded legacy correction for malformed date, unrelated citation and conflated allegations in LEG-002843."
   ],
   "retained_stages": [],
   "publication_transport_attempts": [],
   "maintenance_revision": null,
   "engineering_revision": null,
   "legacy_quality": {
-    "checked_at_utc": "2026-11-17T17:05:32.559335Z",
-    "result": "no_material_change",
-    "summary": "The disclosed duplicate-candidate queue and generated source-health priorities were reviewed. No direct record-specific evidence justified a guarded historical revision in this bounded publishing run; candidates remain visible in the queue."
+    "checked_at_utc": "2026-11-17T23:06:40.507001Z",
+    "result": "one_guarded_revision",
+    "summary": "Corrected LEG-002843's malformed date and unrelated Mueller citation, separated the April 22 photo episode from earlier misconduct allegations, preserved the stable ID and added complete Facts / Significance / Response / Maybe / Therefore distinctions with record-specific sources. Other disclosed candidates remain queued."
   }
 }
