@@ -1,50 +1,51 @@
 {
-  "version": "10.249.0",
-  "artifact_mode": "full",
-  "editorial_snapshot": null,
+  "version": "10.249.1",
+  "artifact_mode": "feed-only",
+  "editorial_snapshot": {
+    "version": "10.249.0",
+    "complete_pack": {
+      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-11-16_v10.249.0.zip",
+      "sha256": "9d5b82005e3623a761520fea0ecccc5478008bc4eb5ffbf21ad17ec4125562d3"
+    },
+    "national_pack": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-11-16_v10.249.0.zip",
+      "sha256": "88ebaf957e260a5b31975d99bdf6c8d6eb0b9901943e273fc383a707450fd7a3"
+    },
+    "national_brief": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-11-16_v10.249.0.md",
+      "sha256": "a0af6430a2791fa6aa918f9455c8fd03d12f2504b6e2e333b8514c99111aeb8a"
+    },
+    "in6_brief": {
+      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-11-16_v10.249.0.md",
+      "sha256": "100461e0f09c124a53b0eb47346aaf26b4f1fe9e63ffb0d081ffae06efd559e4"
+    }
+  },
   "run_changes": {
-    "added_entry_ids": [
-      "NAT-2026-11-16-005",
-      "NAT-2026-11-16-006",
-      "NAT-2026-11-16-007"
-    ],
-    "refreshed_entry_ids": [
-      "NAT-2026-09-14-008"
-    ],
+    "added_entry_ids": [],
+    "refreshed_entry_ids": [],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-16T17:08:38.782093Z",
-    "through_utc": "2026-11-16T23:04:17.166595Z",
+    "from_utc": "2026-11-16T23:04:17.166595Z",
+    "through_utc": "2026-11-17T05:06:25.851008Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact prior checked_at boundary through the final validated Truth Social refresh and bounded source review. Three new records and one same-event material refresh passed; the White House memo is transparently identified as a recovered near-boundary report first published minutes before the prior cutoff. The final feed refresh found no additional post after the one reviewed in this run."
+    "note": "Exact prior checked_at boundary through the final validated Truth Social refresh and bounded source review. Editorial no-op with eight newer raw-feed posts retained and reviewed; no qualifying new item was located in the material reviewed."
   },
-  "release_iso": "2026-11-16",
-  "release_human": "November 16, 2026",
-  "checked_at": "2026-11-16 6:04 PM EST",
-  "previous_version": "10.248.0",
-  "previous_checked_at": "2026-11-16 12:08 PM EST",
-  "window_started_at": "2026-11-16T17:08:38.782093Z",
-  "window_ended_at": "2026-11-16T23:04:17.166595Z",
-  "week_start": "2026-11-10",
-  "week_end": "2026-11-16",
-  "week_label": "November 10–16, 2026",
+  "release_iso": "2026-11-17",
+  "release_human": "November 17, 2026",
+  "checked_at": "2026-11-17 12:06 AM EST",
+  "previous_version": "10.249.0",
+  "previous_checked_at": "2026-11-16 6:04 PM EST",
+  "window_started_at": "2026-11-16T23:04:17.166595Z",
+  "window_ended_at": "2026-11-17T05:06:25.851008Z",
+  "week_start": "2026-11-11",
+  "week_end": "2026-11-17",
+  "week_label": "November 11–17, 2026",
   "cutoff_start": "2026-07-20",
-  "new_entry_ids": [
-    "NAT-2026-11-16-005",
-    "NAT-2026-11-16-006",
-    "NAT-2026-11-16-007",
-    "NAT-2026-09-14-008"
-  ],
-  "added_entry_ids": [
-    "NAT-2026-11-16-005",
-    "NAT-2026-11-16-006",
-    "NAT-2026-11-16-007"
-  ],
-  "refreshed_entry_ids": [
-    "NAT-2026-09-14-008"
-  ],
+  "new_entry_ids": [],
+  "added_entry_ids": [],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-11-10-006",
@@ -1555,27 +1556,37 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Truth Social monuments-cleaning map",
-      "reason": "The empty text field and attached promotional map were visually reviewed. The image thanks the president for cleaned monuments but supplies no independently verified, material national action, appropriation, contract or measured result; it remains feed-only.",
+      "title": "Eight newer Truth Social posts",
+      "reason": "Promotional monument photographs and their repost, two unsupported economic charts, an election-oriented newspaper image, economic and energy claims, and general rhetoric were reviewed as evidence only that Trump published them. No independently verified qualifying action, formal proposal, appropriation or measured finding was established.",
       "source_urls": [
-        "https://truthsocial.com/@realDonaldTrump/117628158994757478"
+        "https://truthsocial.com/@realDonaldTrump/117628855811516036",
+        "https://truthsocial.com/@realDonaldTrump/117628858669518545",
+        "https://truthsocial.com/@realDonaldTrump/117629001831609398",
+        "https://truthsocial.com/@realDonaldTrump/117629011695762969",
+        "https://truthsocial.com/@realDonaldTrump/117629430343436515",
+        "https://truthsocial.com/@realDonaldTrump/117629431646825873",
+        "https://truthsocial.com/@realDonaldTrump/117629431855296138",
+        "https://truthsocial.com/@realDonaldTrump/117629573147086367"
       ]
     },
     {
-      "title": "Trump Asia-trip meeting announcements",
-      "reason": "Possible discussions with foreign leaders remained announced; no completed agreement or separately qualifying implemented action was located by cutoff.",
+      "title": "AP retrospective on withdrawn airline compensation proposal",
+      "reason": "The report supplied retrospective context about a 2025 rule withdrawal and the November 14 ground stop; it did not establish a new post-boundary administration action or materially change the existing FAA event.",
       "source_urls": [
-        "https://apnews.com/article/a31165456bf217de16f1c4e646b72bd2"
+        "https://apnews.com/article/2d4441b7387ba31c691e0d2d52cb543d"
       ]
     },
     {
-      "title": "Routine federal criminal announcements",
-      "reason": "Same-day charging announcements were reviewed as leads but did not independently establish a material administration-wide policy change, adjudicated finding or national outcome warranting a separate record.",
-      "source_urls": []
+      "title": "Recovered pre-boundary CDC overdose measurement and third-carrier arrival",
+      "reason": "Both material leads were first published before the exact 6:04:17 PM EST boundary and were not presented as post-boundary developments. They remain candidates for source-complete recovery rather than being forced into this strict feed-only no-op.",
+      "source_urls": [
+        "https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm",
+        "https://www.dvidshub.net/"
+      ]
     },
     {
-      "title": "Trump TV metadata recheck",
-      "reason": "Official channel, live-hub, dated-library, remarks and release metadata exposed no new post-boundary recording or transcript. The live hub listed a Military Spouse Commission meeting, while the video library still led with November 14 material; no qualifying new item located in the material reviewed.",
+      "title": "Trump TV November 16 replay listings",
+      "reason": "The Military Spouse Commission meeting and departure gaggle appeared as new library replays of earlier November 16 events. Only official metadata and a third-party gaggle transcript were retrieved; the content was ceremonial, routine or already covered, and no qualifying new item was located in the material reviewed.",
       "source_urls": [
         "https://www.whitehouse.gov/trumptv/",
         "https://www.whitehouse.gov/live/",
@@ -1586,20 +1597,20 @@
     },
     {
       "title": "Legacy duplicate-candidate queue",
-      "reason": "The disclosed pairs remain unresolved or distinct after bounded review; no direct source record justified a guarded historical revision in this run.",
+      "reason": "The disclosed pairs remain unresolved or distinct after bounded review; no direct source record justified a guarded historical revision in this strict feed-only run.",
       "source_urls": []
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
-    "checked_at_utc": "2026-11-16T23:00:00.000000Z",
-    "checked_at_eastern": "2026-11-16 6:00 PM EST",
-    "inspection_status": "official Trump TV, live, dated-library, remarks and release metadata inspected; complete audiovisual content unavailable",
+    "checked_at_utc": "2026-11-17T05:06:25.851008Z",
+    "checked_at_eastern": "2026-11-17 12:06 AM EST",
+    "inspection_status": "official Trump TV, live, dated-library, remarks and release metadata inspected; two replay listings and one third-party transcript inspected; complete audiovisual content unavailable",
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
     "last_successful_broadcast_review_through": null,
-    "summary": "Official Trump TV, live-hub, dated video-library, remarks and release metadata were inspected. Stream ID A4gNgHfZ-v4 remained stable; the live hub listed a Military Spouse Commission meeting and the library still led with November 14 items. No playback, complete audio or captions were retrieved, fallback text was not treated as outage proof, and no qualifying new item was located in the material reviewed.",
+    "summary": "Official Trump TV, live-hub, dated video-library, remarks and release metadata were inspected. Stream ID A4gNgHfZ-v4 remained stable. The library newly listed November 16 Military Spouse Commission and departure-gaggle replays; page metadata and a third-party gaggle transcript were inspected, but playback, complete audio and official captions were not retrieved. The replays duplicated earlier or routine material, and no qualifying new item was located in the material reviewed.",
     "sources": [
       "https://www.whitehouse.gov/trumptv/",
       "https://www.whitehouse.gov/live/",
@@ -1608,7 +1619,7 @@
       "https://www.whitehouse.gov/releases/"
     ],
     "gaps": [
-      "Playback, complete audio and captions/transcripts were not retrieved; only official page, listing and text metadata were inspected. Fallback text was not treated as outage proof and no continuous-coverage claim or broadcast boundary was advanced."
+      "Playback, complete audio and official captions/transcripts were not retrieved for the two November 16 replay listings; only official page/listing metadata and an accessible third-party gaggle transcript were inspected. Fallback text was not treated as outage proof, and no continuous-coverage claim or broadcast boundary was advanced."
     ],
     "items": [
       {
@@ -1619,8 +1630,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-16T23:00:00.000000Z",
-        "observed_at_eastern": "2026-11-16 6:00 PM EST",
+        "observed_at": "2026-11-17T05:06:25.851008Z",
+        "observed_at_eastern": "2026-11-17 12:06 AM EST",
         "format": "official channel page and stable stream-link metadata; audiovisual content unreviewed",
         "inspection": "Stable stream link inspected. Fallback text was not treated as outage proof; no playback, complete audio or captions were reviewed."
       },
@@ -1632,25 +1643,36 @@
         "posted_date": "2026-11-16",
         "original_event_date": "2026-11-16",
         "broadcast_time": null,
-        "observed_at": "2026-11-16T23:00:00.000000Z",
-        "observed_at_eastern": "2026-11-16 6:00 PM EST",
+        "observed_at": "2026-11-17T05:06:25.851008Z",
+        "observed_at_eastern": "2026-11-17 12:06 AM EST",
         "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "The page listed a Military Spouse Commission Meeting for November 16 and retained the stable Trump TV stream. Only page metadata was inspected; no live/replay state, content claim or outage was inferred."
+        "inspection": "The page retained the Military Spouse Commission Meeting listing and stable Trump TV stream. Only page metadata was inspected; no live/replay state, content claim or outage was inferred."
       },
       {
-        "url": "https://www.whitehouse.gov/videos/",
+        "url": "https://www.whitehouse.gov/videos/military-spouse-commission-meeting/",
         "video_ids": [
-          "e9vLyeVPxFM",
-          "aH2db_pvy38",
-          "Mh2q-y0wIu8"
+          "IvN4FEQ2JyI"
         ],
-        "posted_date": "2026-11-14",
-        "original_event_date": null,
+        "posted_date": "2026-11-16",
+        "original_event_date": "2026-11-16",
         "broadcast_time": null,
-        "observed_at": "2026-11-16T23:00:00.000000Z",
-        "observed_at_eastern": "2026-11-16 6:00 PM EST",
-        "format": "official dated-library listing metadata; audiovisual content unreviewed",
-        "inspection": "Titles, dates, durations and stable links were inspected. The library still led with November 14 material; no new November 16 recording was listed and repeated footage was deduplicated."
+        "observed_at": "2026-11-17T05:06:25.851008Z",
+        "observed_at_eastern": "2026-11-17 12:06 AM EST",
+        "format": "official dated-library listing for a 35:13 replay; audiovisual content unreviewed",
+        "inspection": "Title, displayed date, duration, detail link and stable YouTube ID were inspected. Playback and captions were not retrieved; the ceremonial meeting replay was not treated as a new government action."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-20/",
+        "video_ids": [
+          "GNs68BQUi7U"
+        ],
+        "posted_date": "2026-11-16",
+        "original_event_date": "2026-11-16",
+        "broadcast_time": null,
+        "observed_at": "2026-11-17T05:06:25.851008Z",
+        "observed_at_eastern": "2026-11-17 12:06 AM EST",
+        "format": "official dated-library listing for a 19:16 replay; third-party transcript inspected, audiovisual content unreviewed",
+        "inspection": "Title, displayed date, duration, detail link and stable YouTube ID were inspected, along with an accessible third-party gaggle transcript. Playback and captions were not retrieved; statements repeated already reviewed Asia-trip, FAA and economic leads and did not establish a new qualifying action."
       },
       {
         "url": "https://www.whitehouse.gov/remarks/",
@@ -1658,29 +1680,103 @@
         "posted_date": "2026-09-28",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-16T23:00:00.000000Z",
-        "observed_at_eastern": "2026-11-16 6:00 PM EST",
+        "observed_at": "2026-11-17T05:06:25.851008Z",
+        "observed_at_eastern": "2026-11-17 12:06 AM EST",
         "format": "supplementary remarks index; not assumed complete",
-        "inspection": "Index metadata was inspected and not treated as a complete transcript feed; no post-boundary transcript was exposed."
+        "inspection": "Index metadata was inspected and not treated as a complete transcript feed; no post-boundary official transcript was exposed."
       },
       {
         "url": "https://www.whitehouse.gov/releases/",
         "video_ids": [],
-        "posted_date": "2026-11-15",
+        "posted_date": "2026-11-16",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-16T23:00:00.000000Z",
-        "observed_at_eastern": "2026-11-16 6:00 PM EST",
+        "observed_at": "2026-11-17T05:06:25.851008Z",
+        "observed_at_eastern": "2026-11-17 12:06 AM EST",
         "format": "supplementary official releases index",
-        "inspection": "Recent release and news metadata were inspected as research leads. No separate Trump TV cost, contract, staffing, editorial-control, distribution or press-access finding was located."
+        "inspection": "Recent release metadata was inspected as research leads. No separate Trump TV cost, contract, staffing, editorial-control, distribution or press-access finding was located."
       }
     ],
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-16 6:00 PM EST",
+    "checked_at": "2026-11-17 12:06 AM EST",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-16T23:00:00.000000Z",
+    "last_successful_page_inspection_at": "2026-11-17T05:06:25.851008Z",
     "last_successful_broadcast_boundary": null,
     "inspected_items": [
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-17T05:06:25.851008Z",
+        "observed_at_eastern": "2026-11-17 12:06 AM EST",
+        "format": "official channel page and stable stream-link metadata; audiovisual content unreviewed",
+        "inspection": "Stable stream link inspected. Fallback text was not treated as outage proof; no playback, complete audio or captions were reviewed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": "2026-11-16",
+        "original_event_date": "2026-11-16",
+        "broadcast_time": null,
+        "observed_at": "2026-11-17T05:06:25.851008Z",
+        "observed_at_eastern": "2026-11-17 12:06 AM EST",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "The page retained the Military Spouse Commission Meeting listing and stable Trump TV stream. Only page metadata was inspected; no live/replay state, content claim or outage was inferred."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/military-spouse-commission-meeting/",
+        "video_ids": [
+          "IvN4FEQ2JyI"
+        ],
+        "posted_date": "2026-11-16",
+        "original_event_date": "2026-11-16",
+        "broadcast_time": null,
+        "observed_at": "2026-11-17T05:06:25.851008Z",
+        "observed_at_eastern": "2026-11-17 12:06 AM EST",
+        "format": "official dated-library listing for a 35:13 replay; audiovisual content unreviewed",
+        "inspection": "Title, displayed date, duration, detail link and stable YouTube ID were inspected. Playback and captions were not retrieved; the ceremonial meeting replay was not treated as a new government action."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-20/",
+        "video_ids": [
+          "GNs68BQUi7U"
+        ],
+        "posted_date": "2026-11-16",
+        "original_event_date": "2026-11-16",
+        "broadcast_time": null,
+        "observed_at": "2026-11-17T05:06:25.851008Z",
+        "observed_at_eastern": "2026-11-17 12:06 AM EST",
+        "format": "official dated-library listing for a 19:16 replay; third-party transcript inspected, audiovisual content unreviewed",
+        "inspection": "Title, displayed date, duration, detail link and stable YouTube ID were inspected, along with an accessible third-party gaggle transcript. Playback and captions were not retrieved; statements repeated already reviewed Asia-trip, FAA and economic leads and did not establish a new qualifying action."
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "video_ids": [],
+        "posted_date": "2026-09-28",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-17T05:06:25.851008Z",
+        "observed_at_eastern": "2026-11-17 12:06 AM EST",
+        "format": "supplementary remarks index; not assumed complete",
+        "inspection": "Index metadata was inspected and not treated as a complete transcript feed; no post-boundary official transcript was exposed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "video_ids": [],
+        "posted_date": "2026-11-16",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-17T05:06:25.851008Z",
+        "observed_at_eastern": "2026-11-17 12:06 AM EST",
+        "format": "supplementary official releases index",
+        "inspection": "Recent release metadata was inspected as research leads. No separate Trump TV cost, contract, staffing, editorial-control, distribution or press-access finding was located."
+      },
       {
         "url": "https://www.whitehouse.gov/trumptv/",
         "video_ids": [
@@ -3131,6 +3227,10 @@
     ],
     "access_gaps": [
       {
+        "observed_at": "2026-11-17T05:06:25.851008Z",
+        "note": "Playback, complete audio and official captions/transcripts were not retrieved for the two November 16 replay listings; only official page/listing metadata and an accessible third-party gaggle transcript were inspected. Fallback text was not treated as outage proof, and no continuous-coverage claim or broadcast boundary was advanced."
+      },
+      {
         "observed_at": "2026-11-15T23:03:42.322426Z",
         "note": "Playback, complete audio and captions/transcripts were not retrieved for the repeated November 14 listings; only official page, listing and release text were inspected. Fallback text was not treated as outage proof, and no continuous-coverage claim or broadcast boundary was advanced."
       },
@@ -3197,30 +3297,30 @@
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 1,
-    "new_text_reviewed": 1,
-    "new_media_reviewed": 1,
+    "new_posts": 8,
+    "new_text_reviewed": 8,
+    "new_media_reviewed": 6,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-16T23:04:17.166595Z",
-    "checked_at_eastern": "2026-11-16 6:04:17 PM EST",
-    "latest_post_id": "117628158994757478",
-    "latest_post_at_eastern": "2026-11-16 4:07:45 PM EST",
+    "checked_at_utc": "2026-11-17T05:06:03.695670Z",
+    "checked_at_eastern": "2026-11-17 12:06:03 AM EST",
+    "latest_post_id": "117629573147086367",
+    "latest_post_at_eastern": "2026-11-16 10:07:24 PM EST",
     "counts": {
       "text_status": {
         "not_recorded": 154,
-        "pending": 972,
-        "reviewed": 1771
+        "reviewed": 1779,
+        "pending": 972
       },
       "media_status": {
-        "not_applicable": 1621,
+        "not_applicable": 1623,
         "not_recorded": 19,
+        "unavailable": 296,
         "pending": 541,
-        "reviewed": 420,
-        "unavailable": 296
+        "reviewed": 426
       }
     },
-    "note": "One post newer than the prior snapshot was reviewed, including its attached image. The newest post was published November 16 at 4:07:45 PM EST in America/Indiana/Indianapolis and remained feed-only. The final validated refresh at 6:04:17 PM EST found no additional post."
+    "note": "Eight posts newer than the prior snapshot were reviewed, including six with attached images. The newest post was published November 16 at 10:07:24 PM EST in America/Indiana/Indianapolis. The final validated refresh at November 17 12:06:03 AM EST found no additional post."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -3232,33 +3332,35 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-16 6:00 PM EST",
-    "checked_at_utc": "2026-11-16T23:00:00.000000Z",
-    "summary": "All four registered projects were checked as discovery inputs. Trump Archive displayed 16,141 total items, 13,409 Truth Social posts and 2,066 speeches/transcripts; UndoTrump remained at 1,264 actions; IPTP displayed 1,841 actions on both inspected primary pages. Record47 exposed inconsistent static and dynamic counts, so prior measurements were retained. Distinct units were not summed and zero external items were imported.",
-    "updated_archives": [
-      "trump_archive",
+    "checked_at": "2026-11-17 12:06 AM EST",
+    "checked_at_utc": "2026-11-17T05:06:25.851008Z",
+    "summary": "All four registered primary project pages were checked as discovery inputs. Trump Archive displayed 16,143 total items, 13,410 Truth Social posts and 2,066 speeches/transcripts; UndoTrump remained at 1,264 actions; IPTP remained at 1,841 policy actions. Record47 exposed labels but no stable numeric counters in accessible page text. Distinct units were not summed and zero external items were imported. The strict feed-only no-op preserved prior canonical registry measurements.",
+    "updated_archives": [],
+    "unchanged_archives": [
+      "undotrump",
       "immigration_policy_tracking_project"
     ],
-    "unchanged_archives": [
-      "undotrump"
+    "observed_changed_archives": [
+      "trump_archive"
     ],
     "access_gap_archives": [
       "record47"
     ]
   },
   "editorial_notes": [
-    "Three new records and one same-event material refresh passed the publication threshold; each includes separately reviewed Maybe and Therefore fields. No candidate was added merely to reach the editorial aim.",
-    "The White House testimony memorandum was recovered as a near-boundary omission: Axios first published it about eight minutes before the prior exact cutoff, and AP independently confirmed it. The release does not imply it arose after the boundary.",
-    "No legacy row was changed; unresolved duplicate and source-health candidates remain visible.",
-    "External archives remained discovery inputs only; distinct units were not summed and zero external records were imported."
+    "No post-boundary candidate passed the publication threshold; no canonical record was added, refreshed or corrected merely to reach the editorial aim.",
+    "Eight newer Truth Social posts were retained and separately reviewed as publication evidence only. Promotional monument photographs, economic charts, energy rhetoric and election commentary remained in the raw feed.",
+    "The official Trump TV page, live hub, dated video library, remarks and releases were inspected. Two November 16 replay listings were new to the library, but no qualifying new item was located in the material reviewed and no broadcast-coverage boundary was advanced.",
+    "All four registered external archive project pages were checked as discovery inputs. Distinct units were not summed, no external item was imported, and the strict feed-only release preserved canonical registry measurements.",
+    "No legacy row was changed; unresolved duplicate and source-health candidates remain visible."
   ],
   "retained_stages": [],
   "publication_transport_attempts": [],
   "maintenance_revision": null,
   "engineering_revision": null,
   "legacy_quality": {
-    "checked_at_utc": "2026-11-16T23:00:00.000000Z",
+    "checked_at_utc": "2026-11-17T05:06:25.851008Z",
     "result": "no_material_change",
-    "summary": "The disclosed duplicate-candidate queue and generated source-health priorities were reviewed. No direct record-specific evidence justified a guarded revision in this bounded publishing run; candidates remain visible in the queue."
+    "summary": "The disclosed duplicate-candidate queue and generated source-health priorities were reviewed. The strict feed-only no-op made no historical edit; unresolved candidates remain visible."
   }
 }
