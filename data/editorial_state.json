@@ -11353,6 +11353,18 @@
       "provenance_path": "data/editorial_change_notes/10.252.0.json",
       "provenance_sha256": "5ea2747b85d9bf5b3ff36a1afcf8b2c89ce0aeaf23d89934504dea65cac17ae8",
       "note": "Maybe the Supreme Court will stay the mandate, grant review and uphold greater military discretion, or it may leave the narrowed protection in place while trial and ordinary appellate review continue. Therefore the D.C. Circuit has made its preliminary protection effective for the named serving plaintiffs—not authorized new enlistment, invalidated the policy nationwide, resolved the merits finally or determined what the Supreme Court will do."
+    },
+    {
+      "change_id": "10.253.0:NAT-2026-11-17-004:added",
+      "entry_id": "NAT-2026-11-17-004",
+      "as_of_utc": "2026-11-18T05:06:17.689092Z",
+      "timestamp_precision": "second",
+      "kind": "added",
+      "release_version": "10.253.0",
+      "summary": "White House withdraws Heidi Overton's FDA nomination before the scheduled committee vote.",
+      "provenance_path": "data/editorial_change_notes/10.253.0.json",
+      "provenance_sha256": "4e093bf4522b0677ceadc800d379c14c4a15a129882d4731e1623f02d80f0a67",
+      "note": "Maybe the withdrawal will allow a replacement with broader Senate and scientific support, or it may prolong acting leadership and policy uncertainty at FDA. Therefore the White House ended Overton's pending nomination before the committee vote—not filled the office, established a single undisputed reason, or determined the next commissioner's policies."
     }
   ],
   "reviews": [
@@ -163626,6 +163638,154 @@
       "unresolved_questions": [
         "Supreme Court stay and certiorari disposition, the January trial, broader class treatment and final merits judgment remain unresolved.",
         "Implementation for people outside the named serving plaintiffs and measured readiness consequences remain unresolved."
+      ]
+    },
+    {
+      "review_id": "10.253.0:NAT-2026-11-17-004:74bc0ddfdb2b",
+      "entry_id": "NAT-2026-11-17-004",
+      "content_sha256": "74bc0ddfdb2be5fb5c0ffe67dd734e9e3eded931cdd016178b9322248ae04c9c",
+      "reviewed_at": "2026-11-18T05:06:17.689092Z",
+      "reviewer": {
+        "name": "OpenAI Codex editorial maintenance",
+        "kind": "ai_assisted"
+      },
+      "claims": [
+        {
+          "fact_index": 0,
+          "fact_sha256": "a6d3087443ec4597868df6d1ecd7c2a5ded62a4f1aa3d35af8e01dd8127eb51d",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_overton_withdrawal_nov17",
+              "document_sha256": "fbf23200e1485b52556c62a727985afb94f4a3f13ecaf794e06045fbe41b97c9",
+              "locator": "White House confirmation and completed withdrawal reported in headline and lead.",
+              "inspected_at": "2026-11-18T05:06:17.689092Z",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_overton_withdrawal_nov18",
+              "document_sha256": "fba377a999b31e709dd8bc6d3dcb3800619a98644cc9b5fdb003369524254551",
+              "locator": "Lines 152–167: completed withdrawal and pre-vote timing.",
+              "inspected_at": "2026-11-18T05:06:17.689092Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 1,
+          "fact_sha256": "8d1d6e2c465921c41fac581282c3bfb087c3e4ab35272076f7da637fb74c92ea",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "senate_help_overton_vote_nov11",
+              "document_sha256": "fb6cf6ac370289540036e0e46cf92620f5cab7a1fa3e1e708d53fa1e07e12b1e",
+              "locator": "Official agenda listing Overton and the November 18 committee vote.",
+              "inspected_at": "2026-11-18T05:06:17.689092Z",
+              "origin_group": "U.S. Senate Committee on Health, Education, Labor and Pensions",
+            "evidence_status": "announced"
+            },
+            {
+              "source_id": "ap_overton_withdrawal_nov17",
+              "document_sha256": "fbf23200e1485b52556c62a727985afb94f4a3f13ecaf794e06045fbe41b97c9",
+              "locator": "Committee-vote timing and status context.",
+              "inspected_at": "2026-11-18T05:06:17.689092Z",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "fact_sha256": "0015ad7e7e5b3b21c540d4fbc860260d506e8291fb9fed90ab672d660ac2db02",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_overton_withdrawal_nov17",
+              "document_sha256": "fbf23200e1485b52556c62a727985afb94f4a3f13ecaf794e06045fbe41b97c9",
+              "locator": "Senate questions on scientific independence, vaccines, abortion and flavored e-cigarettes.",
+              "inspected_at": "2026-11-18T05:06:17.689092Z",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_overton_withdrawal_nov18",
+              "document_sha256": "fba377a999b31e709dd8bc6d3dcb3800619a98644cc9b5fdb003369524254551",
+              "locator": "Lines 173–185: support concerns and policy disputes.",
+              "inspected_at": "2026-11-18T05:06:17.689092Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "fact_sha256": "932dcaf878be1432f50c915b4300e47a18097d87f1b21bdab024fdfc521ba588",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_overton_withdrawal_nov17",
+              "document_sha256": "fbf23200e1485b52556c62a727985afb94f4a3f13ecaf794e06045fbe41b97c9",
+              "locator": "Named Cassidy response and competing abortion-commitment explanation.",
+              "inspected_at": "2026-11-18T05:06:17.689092Z",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_overton_withdrawal_nov18",
+              "document_sha256": "fba377a999b31e709dd8bc6d3dcb3800619a98644cc9b5fdb003369524254551",
+              "locator": "Lines 165–179: insufficient-support account from multiple sources.",
+              "inspected_at": "2026-11-18T05:06:17.689092Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        },
+        {
+          "fact_index": 4,
+          "fact_sha256": "b92358ffc2b0d5a0c96d81e4d2fc542ba47e1cd58b9f3f731be1b04bc0adb50a",
+          "relies_on_unnamed_sources": false,
+          "supports": [
+            {
+              "source_id": "ap_overton_withdrawal_nov17",
+              "document_sha256": "fbf23200e1485b52556c62a727985afb94f4a3f13ecaf794e06045fbe41b97c9",
+              "locator": "No replacement announced and acting leadership context.",
+              "inspected_at": "2026-11-18T05:06:17.689092Z",
+              "origin_group": "Associated Press",
+              "evidence_status": "reported"
+            },
+            {
+              "source_id": "reuters_overton_withdrawal_nov18",
+              "document_sha256": "fba377a999b31e709dd8bc6d3dcb3800619a98644cc9b5fdb003369524254551",
+              "locator": "Lines 170 and 187: possible replacement remained under consideration and Diamantas was acting commissioner.",
+              "inspected_at": "2026-11-18T05:06:17.689092Z",
+              "origin_group": "Reuters",
+              "evidence_status": "reported"
+            }
+          ]
+        }
+      ],
+      "reasoning_review": [
+        {
+          "field": "significance",
+          "text_sha256": "8343f08f97bb2b7cf70e7279b3169a03596d87836f9230102b121f135cf038a2",
+          "review_note": "Separately reviewed to identify the completed leadership-path change without inferring downstream regulatory outcomes."
+        },
+        {
+          "field": "goalpost",
+          "text_sha256": "9e60f8b4974d6c1b8165c67e6396bf89af8926d51322f254cfee5923c028bfc8",
+          "review_note": "Separately reviewed to preserve the administration's reported explanation, Cassidy's competing account and observable confirmation tests."
+        },
+        {
+          "field": "maybe_therefore",
+          "text_sha256": "638da8be1b013e7f36eed34c5b6367923fc5b8f6cf3b3a211739878802211400",
+          "review_note": "Separately reviewed to distinguish possible replacement and continuity outcomes from the completed nomination withdrawal."
+        }
+      ],
+      "unresolved_questions": [
+        "Formal Senate withdrawal status, replacement nomination and timing remain unresolved.",
+        "Duration and legality of continued acting service, and measurable FDA policy, staffing or regulatory consequences, remain unresolved."
       ]
     }
   ],
