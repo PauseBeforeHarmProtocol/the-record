@@ -1,31 +1,51 @@
 {
-  "version": "10.254.1",
+  "version": "10.255.0",
   "run_changes": {
-    "added_entry_ids": [],
-    "refreshed_entry_ids": [],
+    "added_entry_ids": [
+      "NAT-2026-11-18-001",
+      "NAT-2026-11-18-002",
+      "NAT-2026-11-18-003"
+    ],
+    "refreshed_entry_ids": [
+      "NAT-2026-08-28-012",
+      "NAT-2026-10-05-004"
+    ],
     "retained_entry_ids": []
   },
   "research_window": {
     "from_utc": "2026-11-18T17:05:50.324803Z",
-    "through_utc": "2026-11-18T17:05:50.324803Z",
+    "through_utc": "2026-11-18T23:21:17.890634Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Correction-only release. The 10.254.0 source-review boundary is preserved and not advanced; no new national item, Truth Social post or Trump TV coverage claim is asserted."
+    "note": "Exact prior boundary preserved. The arch extension and TPS application were published after the boundary; the Philippines fact sheet, completed ICE-hearing coverage and Venezuela military agreement were late-indexed formal leads inspected during this run and are labeled by their original publication or event times rather than misdated as post-boundary actions."
   },
   "release_iso": "2026-11-18",
   "release_human": "November 18, 2026",
-  "checked_at": "2026-11-18 12:05 PM EST",
-  "previous_version": "10.254.0",
+  "checked_at": "2026-11-18 6:21 PM EST",
+  "previous_version": "10.254.1",
   "previous_checked_at": "2026-11-18 12:05 PM EST",
   "window_started_at": "2026-11-18T17:05:50.324803Z",
-  "window_ended_at": "2026-11-18T17:05:50.324803Z",
+  "window_ended_at": "2026-11-18T23:21:17.890634Z",
   "week_start": "2026-11-12",
   "week_end": "2026-11-18",
   "week_label": "November 12–18, 2026",
   "cutoff_start": "2026-08-24",
-  "new_entry_ids": [],
-  "added_entry_ids": [],
-  "refreshed_entry_ids": [],
+  "new_entry_ids": [
+    "NAT-2026-08-28-012",
+    "NAT-2026-10-05-004",
+    "NAT-2026-11-18-001",
+    "NAT-2026-11-18-002",
+    "NAT-2026-11-18-003"
+  ],
+  "added_entry_ids": [
+    "NAT-2026-11-18-001",
+    "NAT-2026-11-18-002",
+    "NAT-2026-11-18-003"
+  ],
+  "refreshed_entry_ids": [
+    "NAT-2026-08-28-012",
+    "NAT-2026-10-05-004"
+  ],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-11-10-006",
@@ -1537,51 +1557,54 @@
   "rejected_candidates": [
     {
       "title": "Reported Chinese-AI disclosure mandate under discussion",
-      "reason": "Withheld because the consequential proposal rested on three unnamed Reuters sources, no formal instrument or on-record agency confirmation was located, and no second independent outlet supplied distinct confirmation.",
+      "reason": "Still withheld because the consequential proposal rests on unnamed Reuters sources, no formal instrument or on-record agency confirmation was located, and no second independent outlet supplied distinct confirmation.",
       "source_urls": [
         "https://www.reuters.com/world/china/trump-administration-weighs-forcing-us-firms-disclose-chinese-ai-use-2026-11-18/"
       ]
     },
     {
       "title": "FCC nominee Danielle Thumann advances from committee",
-      "reason": "Verified intermediate committee action, but full Senate confirmation and assumption of office remain pending; routine personnel process did not independently clear the material-action threshold.",
+      "reason": "Full Senate confirmation and assumption of office remain pending; the intermediate committee vote remains routine personnel process rather than a material policy action.",
       "source_urls": [
         "https://www.reuters.com/business/media-telecom/senate-panel-advances-trump-nominee-us-fcc-2026-11-18/",
         "https://www.commerce.senate.gov/meetings/executive-session-26-11-18-2026/"
       ]
     },
     {
-      "title": "Trump TV Philippines ceremony and replay metadata",
-      "reason": "Only official titles, dates and durations were inspected; complete playback, captions and transcripts were unavailable, and the material was ceremonial or repeated already reviewed Philippines leads. No qualifying new item located in the material reviewed.",
+      "title": "Senator Cornyn's announced hold on judicial nominee Jonathan Mizel",
+      "reason": "A senator's opposition is verified, but the nomination remains pending and no institutional disposition occurred; routine personnel positioning was not promoted.",
       "source_urls": [
-        "https://www.whitehouse.gov/videos/"
+        "https://www.reuters.com/world/us/senator-cornyn-block-trumps-judicial-nominee-over-attack-pac-2026-11-18/"
       ]
     },
     {
       "title": "Trump claims a completed U.S.–Philippines trade deal",
-      "reason": "Retained as unresolved: no signed instrument or operative terms were published, and Manila described an understanding rather than a signed deal.",
+      "reason": "No signed trade instrument or operative terms were published, and Reuters reported Manila described an understanding rather than a signed deal. The separate, formal security-financing announcement was published without converting the trade claim into a completed agreement.",
       "source_urls": [
         "https://truthsocial.com/@realDonaldTrump/117636323928351024",
         "https://www.reuters.com/world/asia-pacific/trump-says-us-has-concluded-very-big-trade-deal-with-philippines-2026-11-18/"
       ]
-    }
-  ],
-  "corrections": [
+    },
     {
-      "entry_id": "RELEASE-10.254.0",
-      "checked_at": "2026-11-18 12:45 PM EST",
-      "summary": "Corrected the publication-transport receipt: the connector's 16 MiB request rejection applied to the 15,492,092-byte data/current_entries.json blob sent as base64, not to a generated historical page. The exact canonical blob was subsequently uploaded successfully as UTF-8 and its returned SHA matched the locally accepted SHA. LEG-001565 remains unchanged and queued because the optional repair was conservatively removed before final acceptance; no file-size claim is made about that candidate."
+      "title": "Trump TV Philippines ceremony and replay metadata",
+      "reason": "Official titles, dates, durations and stable video IDs were inspected, but complete playback, captions and transcripts were unavailable. The items were ceremonial or repeated already reviewed Philippines events; no qualifying new item was located in the material reviewed.",
+      "source_urls": [
+        "https://www.whitehouse.gov/trumptv/",
+        "https://www.whitehouse.gov/live/",
+        "https://www.whitehouse.gov/videos/"
+      ]
     }
   ],
+  "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
-    "checked_at_utc": "2026-11-18T17:05:50.324803Z",
-    "checked_at_eastern": "2026-11-18 12:05 PM EST",
+    "checked_at_utc": "2026-11-18T23:08:43.925219Z",
+    "checked_at_eastern": "2026-11-18 6:08 PM EST",
     "inspection_status": "official Trump TV, live, dated-library, remarks and statements metadata inspected; complete audiovisual content unavailable",
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
     "last_successful_broadcast_review_through": null,
-    "summary": "Official Trump TV, live hub, dated video library, remarks and statements metadata were inspected. Stream ID A4gNgHfZ-v4 persisted. The library added November 18 ceremonial clips and replays of November 17 Philippines events; only titles, dates and durations were inspected, with no complete playback, captions or transcripts. Fallback text was not treated as outage proof, repeated footage was deduplicated, no broadcast boundary was advanced and no qualifying new item was located in the material reviewed.",
+    "summary": "Official Trump TV, live hub, dated library, remarks and statements metadata were inspected. Stream ID A4gNgHfZ-v4 persisted. The newest visible items were the same November 18 ceremonial clip and November 17 replays already observed at noon; titles, dates, durations and stable IDs were inspected, but complete playback, captions and transcripts were unavailable. Fallback text was not treated as outage proof, repeated footage was deduplicated, no broadcast boundary was advanced and no qualifying new item was located in the material reviewed.",
     "sources": [
       "https://www.whitehouse.gov/trumptv/",
       "https://www.whitehouse.gov/live/",
@@ -1590,7 +1613,7 @@
       "https://www.whitehouse.gov/briefings-statements/"
     ],
     "gaps": [
-      "Playback, complete audio and official captions/transcripts were not retrieved; only official page, listing and stream-link metadata were inspected. Fallback text was not treated as outage proof and no continuous-coverage claim or broadcast boundary was advanced."
+      "Complete stream playback, complete audio, captions and transcripts were not retrieved; the inspection is metadata-bounded and does not claim review of every broadcast minute."
     ],
     "items": [
       {
@@ -1601,10 +1624,10 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-18T17:05:50.324803Z",
-        "observed_at_eastern": "2026-11-18 12:05 PM EST",
+        "observed_at": "2026-11-18T23:08:43.925219Z",
+        "observed_at_eastern": "2026-11-18 6:08 PM EST",
         "format": "official channel page and stable stream-link metadata; audiovisual content unreviewed",
-        "inspection": "Stable stream ID remained A4gNgHfZ-v4. Fallback text was not treated as outage proof."
+        "inspection": "Stable stream ID remained A4gNgHfZ-v4. Fallback error text was not treated as proof that the channel was offline."
       },
       {
         "url": "https://www.whitehouse.gov/live/",
@@ -1614,54 +1637,26 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-18T17:05:50.324803Z",
-        "observed_at_eastern": "2026-11-18 12:05 PM EST",
+        "observed_at": "2026-11-18T23:08:43.925219Z",
+        "observed_at_eastern": "2026-11-18 6:08 PM EST",
         "format": "official live-hub metadata; audiovisual content unreviewed",
-        "inspection": "Live and channel metadata inspected; no outage or continuous-coverage claim inferred."
+        "inspection": "Live-hub and channel metadata were inspected; no continuous-coverage or outage claim was made."
       },
       {
-        "url": "https://www.whitehouse.gov/videos/president-trump-participates-in-a-departure-ceremony/",
-        "video_ids": [],
+        "url": "https://www.whitehouse.gov/videos/",
+        "video_ids": [
+          "cFFmlcxWnFk",
+          "pKFjYxpuGBI",
+          "ZVSJCD1h3Ak",
+          "4p4W6Pfjw8M"
+        ],
         "posted_date": "2026-11-18",
-        "original_event_date": "2026-11-18",
+        "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-18T17:05:50.324803Z",
-        "observed_at_eastern": "2026-11-18 12:05 PM EST",
-        "format": "official dated-library listing for a 1:41 edited clip; audiovisual content unreviewed",
-        "inspection": "Title, date and duration inspected; ceremonial metadata did not establish a qualifying action."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-participates-in-a-bilateral-lunch-nov-17-2026/",
-        "video_ids": [],
-        "posted_date": "2026-11-18",
-        "original_event_date": "2026-11-17",
-        "broadcast_time": null,
-        "observed_at": "2026-11-18T17:05:50.324803Z",
-        "observed_at_eastern": "2026-11-18 12:05 PM EST",
-        "format": "official dated-library listing for an 11:30 replay; audiovisual content unreviewed",
-        "inspection": "Title, upload date, stated event date and duration inspected; replay deduplicated to prior Philippines lead."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-participates-in-a-bilateral-meeting-nov-17-2026/",
-        "video_ids": [],
-        "posted_date": "2026-11-18",
-        "original_event_date": "2026-11-17",
-        "broadcast_time": null,
-        "observed_at": "2026-11-18T17:05:50.324803Z",
-        "observed_at_eastern": "2026-11-18 12:05 PM EST",
-        "format": "official dated-library listing for a 9:42 replay; audiovisual content unreviewed",
-        "inspection": "Title, upload date, stated event date and duration inspected; replay deduplicated to prior Philippines lead."
-      },
-      {
-        "url": "https://www.whitehouse.gov/videos/president-trump-participates-in-a-welcome-ceremony-with-the-president-of-the-philippines/",
-        "video_ids": [],
-        "posted_date": "2026-11-18",
-        "original_event_date": "2026-11-18",
-        "broadcast_time": null,
-        "observed_at": "2026-11-18T17:05:50.324803Z",
-        "observed_at_eastern": "2026-11-18 12:05 PM EST",
-        "format": "official dated-library listing for an 11:00 ceremony replay; audiovisual content unreviewed",
-        "inspection": "Title, date and duration inspected; ceremonial metadata did not establish a qualifying action."
+        "observed_at": "2026-11-18T23:08:43.925219Z",
+        "observed_at_eastern": "2026-11-18 6:08 PM EST",
+        "format": "official dated-library title, date, duration and stable-ID metadata; audiovisual content unreviewed",
+        "inspection": "The library still led with the 1:41 departure ceremony, November 17 lunch and meeting replays, and the 11:00 welcome ceremony. Complete playback and captions were unavailable; replays and ceremonial footage were deduplicated."
       },
       {
         "url": "https://www.whitehouse.gov/remarks/",
@@ -1669,8 +1664,8 @@
         "posted_date": "2026-09-28",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-18T17:05:50.324803Z",
-        "observed_at_eastern": "2026-11-18 12:05 PM EST",
+        "observed_at": "2026-11-18T23:08:43.925219Z",
+        "observed_at_eastern": "2026-11-18 6:08 PM EST",
         "format": "supplementary remarks index; not assumed complete",
         "inspection": "No post-boundary official transcript was exposed."
       },
@@ -1680,18 +1675,82 @@
         "posted_date": "2026-11-17",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-18T17:05:50.324803Z",
-        "observed_at_eastern": "2026-11-18 12:05 PM EST",
+        "observed_at": "2026-11-18T23:08:43.925219Z",
+        "observed_at_eastern": "2026-11-18 6:08 PM EST",
         "format": "supplementary statements index",
         "inspection": "No separate channel cost, contract, staffing, editorial-control, distribution or press-access finding was located."
       }
     ],
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-18 12:05 PM EST",
+    "checked_at": "2026-11-18 6:08 PM EST",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-18T17:05:50.324803Z",
+    "last_successful_page_inspection_at": "2026-11-18T23:08:43.925219Z",
     "last_successful_broadcast_boundary": null,
     "inspected_items": [
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-18T23:08:43.925219Z",
+        "observed_at_eastern": "2026-11-18 6:08 PM EST",
+        "format": "official channel page and stable stream-link metadata; audiovisual content unreviewed",
+        "inspection": "Stable stream ID remained A4gNgHfZ-v4. Fallback error text was not treated as proof that the channel was offline."
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-18T23:08:43.925219Z",
+        "observed_at_eastern": "2026-11-18 6:08 PM EST",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "Live-hub and channel metadata were inspected; no continuous-coverage or outage claim was made."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/",
+        "video_ids": [
+          "cFFmlcxWnFk",
+          "pKFjYxpuGBI",
+          "ZVSJCD1h3Ak",
+          "4p4W6Pfjw8M"
+        ],
+        "posted_date": "2026-11-18",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-18T23:08:43.925219Z",
+        "observed_at_eastern": "2026-11-18 6:08 PM EST",
+        "format": "official dated-library title, date, duration and stable-ID metadata; audiovisual content unreviewed",
+        "inspection": "The library still led with the 1:41 departure ceremony, November 17 lunch and meeting replays, and the 11:00 welcome ceremony. Complete playback and captions were unavailable; replays and ceremonial footage were deduplicated."
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "video_ids": [],
+        "posted_date": "2026-09-28",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-18T23:08:43.925219Z",
+        "observed_at_eastern": "2026-11-18 6:08 PM EST",
+        "format": "supplementary remarks index; not assumed complete",
+        "inspection": "No post-boundary official transcript was exposed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/briefings-statements/",
+        "video_ids": [],
+        "posted_date": "2026-11-17",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-18T23:08:43.925219Z",
+        "observed_at_eastern": "2026-11-18 6:08 PM EST",
+        "format": "supplementary statements index",
+        "inspection": "No separate channel cost, contract, staffing, editorial-control, distribution or press-access finding was located."
+      },
       {
         "url": "https://www.whitehouse.gov/trumptv/",
         "video_ids": [
@@ -2926,8 +2985,8 @@
     "new_media_reviewed": 0,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-18T17:01:13.835261Z",
-    "checked_at_eastern": "2026-11-18 12:01:13 PM EST",
+    "checked_at_utc": "2026-11-18T23:03:14.062452Z",
+    "checked_at_eastern": "2026-11-18 6:03:14 PM EST",
     "latest_post_id": "117636323928351024",
     "latest_post_at_eastern": "2026-11-18 2:44:12 AM EST",
     "counts": {
@@ -2944,7 +3003,7 @@
         "reviewed": 426
       }
     },
-    "note": "No retained post was newer than the prior snapshot. The newest retained post remains the November 18 2:44:12 AM EST Philippines trade claim; no UTC-to-local date substitution was made."
+    "note": "No retained post was newer than the prior snapshot. The newest retained post remains November 18 at 2:44:12 AM EST; the UTC timestamp was converted before assigning the local publication date."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -2956,46 +3015,45 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-18 12:05 PM EST",
-    "checked_at_utc": "2026-11-18T17:05:50.324803Z",
-    "summary": "All four registered primary project pages were checked. Trump Archive changed to 16,157 total items and 13,420 Truth Social posts with 2,070 speeches/transcripts; UndoTrump remained 1,264 actions; IPTP changed to 1,842 immigration-policy actions; Record47 feature counters remained 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts while no stable approved-entry counter rendered. Units were not summed and zero external items were imported.",
+    "checked_at": "2026-11-18 6:08 PM EST",
+    "checked_at_utc": "2026-11-18T23:08:43.925219Z",
+    "summary": "All four registered primary project pages were checked. Trump Archive changed to 16,158 total items and 13,421 Truth Social posts with 2,070 speeches/transcripts; UndoTrump remained 1,264 actions (731 term one, 533 term two); IPTP remained 1,842 immigration-policy actions; Record47 remained at 332 contradictions, 3,539 primary sources, 38 sequences and 6,348 social posts while its existing primary-API measurement changed to 7,579. Units were not summed and zero external items were imported.",
     "updated_archives": [
       "trump_archive",
-      "immigration_policy_tracking_project"
+      "record47"
     ],
     "unchanged_archives": [
       "undotrump",
-      "record47"
+      "immigration_policy_tracking_project"
     ],
     "observed_changed_archives": [
       "trump_archive",
-      "immigration_policy_tracking_project"
+      "record47"
     ],
-    "access_gap_archives": [
-      "record47.approved_entries"
-    ]
+    "access_gap_archives": []
   },
   "editorial_notes": [
-    "Correction-only release: no national record was added or materially refreshed and the 10.254.0 research boundary was not advanced.",
-    "The publication-transport receipt now correctly identifies data/current_entries.json as the oversized base64 request and records the successful exact UTF-8 upload; the three national changes remain those already published in 10.254.0.",
+    "Published two post-boundary court developments and three late-indexed formal developments located during the run; original event and publication times remain distinct from the exact research boundary.",
+    "The arch and TPS records were updated in place. The Philippines financing, ICE safeguard and U.S.–Venezuela military-agreement records are new and include separately reviewed Maybe / Therefore layers.",
     "Truth Social refresh found no post newer than the prior snapshot; the newest retained post remains November 18 at 2:44:12 AM EST.",
-    "Trump TV official page, live hub, dated library, remarks and statements were inspected. New ceremonial and replay metadata was recorded, complete audiovisual content was not reviewed, and no broadcast boundary was advanced.",
-    "The reviewed LEG-001565 source repair remains queued and unchanged. It was conservatively removed with its generated representations before final acceptance after an initially misidentified transport failure; no partial legacy correction or parity exception was accepted."
+    "Trump TV official surfaces were reinspected at 6:08 PM EST. The stable stream ID and visible replays were unchanged from noon; complete audiovisual content was unavailable and no broadcast boundary was advanced.",
+    "All four external archives were checked as discovery inputs; unlike units were preserved and zero external items were imported.",
+    "No material legacy correction cleared the evidence standard; the disclosed queues remain visible and generated historical representations were not hand-edited."
   ],
   "retained_stages": [],
   "publication_transport_attempts": [
     {
-      "attempted_at_utc": "2026-11-18T17:24:39Z",
+      "attempted_at_utc": "2026-11-18T23:36:47Z",
       "transport": "authenticated GitHub connector GitData",
-      "result": "completed_after_exact_utf8_retry",
-      "detail": "Two idempotent base64 blob-upload passes stopped before tree or commit creation when the connector rejected the 15,492,092-byte data/current_entries.json request with HTTP 400: MCP request body is invalid or exceeds the 16 MiB limit. The maintenance branch remained at the expected base commit. The exact UTF-8 blob was then uploaded successfully; GitHub returned SHA ef283001774a16e80f97b0aac96ca317cc34de19, matching the accepted local blob, and the final remote tree matched the accepted tree. The optional LEG-001565 repair had already been conservatively removed with all generated representations before final acceptance and remains queued."
+      "result": "retry_pending_after_compact_serialization",
+      "detail": "The connector returned HTTP 400 before tree or commit creation while sending the exact 17,927,914-byte UTF-8 data/current_entries.json blob; the response detail was truncated by the transport. The newly created maintenance branch remained at the expected base commit. The same parsed canonical array was compactly serialized to reduce the blob size, and the complete deterministic build and acceptance sequence was required again before retry."
     }
   ],
   "maintenance_revision": null,
   "engineering_revision": null,
   "legacy_quality": {
-    "checked_at_utc": "2026-11-18T17:05:50.324803Z",
+    "checked_at_utc": "2026-11-18T23:08:43.925219Z",
     "result": "reviewed_no_material_change",
-    "summary": "LEG-001565 was reviewed against record-specific June 17, 2018 reporting, but the optional correction was conservatively removed with all generated representations before final acceptance after an initially misidentified transport failure. The stable row and all generated copies remain unchanged, with the source-health candidate and other duplicate queues still visible."
+    "summary": "The disclosed source-health and duplicate-candidate queues were retained. No historical row received a material change because the previously reviewed LEG-001565 repair remained unresolved under the conservative evidence standard and current national acceptance work took priority; no generated legacy copy was hand-edited."
   }
 }
