@@ -1,38 +1,50 @@
 {
-  "version": "10.253.0",
-  "artifact_mode": "full",
-  "editorial_snapshot": null,
+  "version": "10.253.1",
+  "artifact_mode": "feed-only",
+  "editorial_snapshot": {
+    "version": "10.253.0",
+    "complete_pack": {
+      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-11-18_v10.253.0.zip",
+      "sha256": "c69ad3a172cd585cfd42ae8e4066faefcfe97c6deff812e0cb68e7923eeeab7a"
+    },
+    "national_pack": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-11-18_v10.253.0.zip",
+      "sha256": "c12d0b4e43295c7d506670642b0d1a596bef56cd125f27d46ab7aae65f39d74e"
+    },
+    "national_brief": {
+      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-11-18_v10.253.0.md",
+      "sha256": "cbfb567b2af06b56bff9be9ce55aaf43069cc8600c9f499497491e75184d6af6"
+    },
+    "in6_brief": {
+      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-11-18_v10.253.0.md",
+      "sha256": "9ef6901bcae672a4369de06e659e821137e395088ba90bbbc00b2918fd455ea1"
+    }
+  },
   "run_changes": {
-    "added_entry_ids": [
-      "NAT-2026-11-17-004"
-    ],
+    "added_entry_ids": [],
     "refreshed_entry_ids": [],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-17T23:06:40.507001Z",
-    "through_utc": "2026-11-18T05:06:17.689092Z",
+    "from_utc": "2026-11-18T05:06:17.689092Z",
+    "through_utc": "2026-11-18T11:01:59.125874Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact prior checked_at boundary through the final bounded source review. One completed nomination withdrawal passed; no additional records were added merely to reach a target count."
+    "note": "Exact prior checked_at boundary through the final bounded source review. Editorial no-op with one materially newer Truth Social post retained and reviewed; no qualifying new or materially refreshed canonical item was located in the material reviewed."
   },
   "release_iso": "2026-11-18",
   "release_human": "November 18, 2026",
-  "checked_at": "2026-11-18 12:06 AM EST",
-  "previous_version": "10.252.0",
-  "previous_checked_at": "2026-11-17 6:06 PM EST",
-  "window_started_at": "2026-11-17T23:06:40.507001Z",
-  "window_ended_at": "2026-11-18T05:06:17.689092Z",
+  "checked_at": "2026-11-18 6:01 AM EST",
+  "previous_version": "10.253.0",
+  "previous_checked_at": "2026-11-18 12:06 AM EST",
+  "window_started_at": "2026-11-18T05:06:17.689092Z",
+  "window_ended_at": "2026-11-18T11:01:59.125874Z",
   "week_start": "2026-11-12",
   "week_end": "2026-11-18",
   "week_label": "November 12–18, 2026",
   "cutoff_start": "2026-08-28",
-  "new_entry_ids": [
-    "NAT-2026-11-17-004"
-  ],
-  "added_entry_ids": [
-    "NAT-2026-11-17-004"
-  ],
+  "new_entry_ids": [],
+  "added_entry_ids": [],
   "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
@@ -1544,38 +1556,42 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Trump thanks John Daly and links a praise clip",
-      "reason": "Publication was verified, but it announced no material government action or independently verified consequential claim; retained in the separate Truth Social feed.",
+      "title": "Trump claims a completed U.S.–Philippines trade deal",
+      "reason": "The statement and Truth Social post were verified, but no terms or operative instrument were published. Reuters reported that Manila described only an understanding on economic cooperation and that the Philippine ambassador said nothing was signed. Withheld pending signed text, concrete terms or implementation rather than treating the claim as a completed agreement.",
       "source_urls": [
-        "https://truthsocial.com/@realDonaldTrump/117634741427255539"
+        "https://truthsocial.com/@realDonaldTrump/117636323928351024",
+        "https://www.reuters.com/world/asia-pacific/trump-says-us-has-concluded-very-big-trade-deal-with-philippines-2026-11-18/",
+        "https://www.pna.gov.ph/article/biggest-trade-deal-between-us-ph-sealed-trump",
+        "https://ustr.gov/countries-regions/southeast-asia-pacific/philippines"
       ]
     },
     {
-      "title": "Trump TV DNI outage clip",
-      "reason": "Metadata and title were available, but playback, complete audio, captions and a public investigative finding were not; the official assertion alone did not meet the publication threshold.",
+      "title": "Trump TV post-boundary recheck",
+      "reason": "The official channel, live hub, dated video library, remarks and statements pages exposed no newer recording than the already reviewed November 17 listings. Fallback text was not treated as outage proof, and no qualifying new item was located in the material reviewed.",
       "source_urls": [
-        "https://www.whitehouse.gov/videos/this-is-not-a-cyberattack-and-this-is-not-a-coordinated-effort-by-a-nation-state-dni-jay-clayton/"
+        "https://www.whitehouse.gov/trumptv/",
+        "https://www.whitehouse.gov/live/",
+        "https://www.whitehouse.gov/videos/",
+        "https://www.whitehouse.gov/remarks/",
+        "https://www.whitehouse.gov/briefings-statements/"
       ]
     },
     {
-      "title": "Trump TV U.S.–ASEAN recordings",
-      "reason": "Photo opportunity, arrival and dinner listings were ceremonial or replay metadata. No distinct qualifying action beyond already published Thailand and Quad events was established.",
-      "source_urls": [
-        "https://www.whitehouse.gov/videos/president-trump-participates-in-a-u-s-asean-photo-opportunity/",
-        "https://www.whitehouse.gov/videos/president-trump-participates-in-a-u-s-asean-dinner/"
-      ]
+      "title": "Legacy duplicate and source-health queues",
+      "reason": "No direct record-specific evidence justified a guarded historical revision in this strict feed-only run; all disclosed candidates remain visible for later adjudication.",
+      "source_urls": []
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
-    "checked_at_utc": "2026-11-18T05:06:17.689092Z",
-    "checked_at_eastern": "2026-11-18 12:06 AM EST",
+    "checked_at_utc": "2026-11-18T11:01:59.125874Z",
+    "checked_at_eastern": "2026-11-18 6:01 AM EST",
     "inspection_status": "official Trump TV, live, dated-library, remarks and news metadata inspected; complete audiovisual content unavailable",
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
     "last_successful_broadcast_review_through": null,
-    "summary": "Official Trump TV, live hub, dated video library, remarks and news metadata were inspected. Stream ID A4gNgHfZ-v4 persisted. Newly exposed DNI and U.S.–ASEAN clip metadata were inspected; playback, complete audio and captions were not retrieved. The DNI title records an official assertion, not a public investigative finding; ceremonial or replay footage did not establish a separate action. Fallback text was not treated as outage proof, no broadcast boundary was advanced and no qualifying new item was located in the material reviewed.",
+    "summary": "Official Trump TV, live hub, dated video library, remarks and statements metadata were inspected. Stream ID A4gNgHfZ-v4 persisted, and the library exposed no recording newer than the November 17 DNI and U.S.–ASEAN listings already reviewed in the prior run. Playback, complete audio and official captions were not retrieved. Fallback text was not treated as outage proof, no broadcast boundary was advanced and no qualifying new item was located in the material reviewed.",
     "sources": [
       "https://www.whitehouse.gov/trumptv/",
       "https://www.whitehouse.gov/live/",
@@ -1595,8 +1611,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-18T05:06:17.689092Z",
-        "observed_at_eastern": "2026-11-18 12:06 AM EST",
+        "observed_at": "2026-11-18T11:01:59.125874Z",
+        "observed_at_eastern": "2026-11-18 6:01 AM EST",
         "format": "official channel page and stable stream-link metadata; audiovisual content unreviewed",
         "inspection": "Stable stream ID remained A4gNgHfZ-v4. Fallback text was not treated as outage proof; playback, complete audio and captions were not retrieved."
       },
@@ -1608,8 +1624,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-18T05:06:17.689092Z",
-        "observed_at_eastern": "2026-11-18 12:06 AM EST",
+        "observed_at": "2026-11-18T11:01:59.125874Z",
+        "observed_at_eastern": "2026-11-18 6:01 AM EST",
         "format": "official live-hub metadata; audiovisual content unreviewed",
         "inspection": "Live and channel metadata were inspected; no outage, live/replay state or continuous-coverage claim was inferred."
       },
@@ -1621,10 +1637,10 @@
         "posted_date": "2026-11-17",
         "original_event_date": "2026-11-17",
         "broadcast_time": null,
-        "observed_at": "2026-11-18T05:06:17.689092Z",
-        "observed_at_eastern": "2026-11-18 12:06 AM EST",
+        "observed_at": "2026-11-18T11:01:59.125874Z",
+        "observed_at_eastern": "2026-11-18 6:01 AM EST",
         "format": "official dated-library listing for a 1:46 edited clip; audiovisual content unreviewed",
-        "inspection": "Title, displayed date, duration and stable ID inspected. Playback and captions were unavailable; the official assertion was not treated as an independent technical or investigative finding."
+        "inspection": "Title, displayed date, duration and stable ID were rechecked. No newer library item appeared; playback and captions remained unavailable, and the official assertion was not treated as an independent technical or investigative finding."
       },
       {
         "url": "https://www.whitehouse.gov/videos/president-trump-participates-in-a-u-s-asean-photo-opportunity/",
@@ -1634,8 +1650,8 @@
         "posted_date": "2026-11-17",
         "original_event_date": "2026-11-17",
         "broadcast_time": null,
-        "observed_at": "2026-11-18T05:06:17.689092Z",
-        "observed_at_eastern": "2026-11-18 12:06 AM EST",
+        "observed_at": "2026-11-18T11:01:59.125874Z",
+        "observed_at_eastern": "2026-11-18 6:01 AM EST",
         "format": "official dated-library listing for a 0:59 replay; audiovisual content unreviewed",
         "inspection": "Title, date, duration and stable ID inspected; ceremonial replay did not independently meet the publication threshold."
       },
@@ -1647,8 +1663,8 @@
         "posted_date": "2026-11-17",
         "original_event_date": "2026-11-17",
         "broadcast_time": null,
-        "observed_at": "2026-11-18T05:06:17.689092Z",
-        "observed_at_eastern": "2026-11-18 12:06 AM EST",
+        "observed_at": "2026-11-18T11:01:59.125874Z",
+        "observed_at_eastern": "2026-11-18 6:01 AM EST",
         "format": "official dated-library listing for a 14:45 replay; audiovisual content unreviewed",
         "inspection": "Title, date, duration and stable ID inspected. No transcript or distinct qualifying announcement was available; Thailand and Quad material was deduplicated to existing records."
       },
@@ -1658,8 +1674,8 @@
         "posted_date": "2026-09-28",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-18T05:06:17.689092Z",
-        "observed_at_eastern": "2026-11-18 12:06 AM EST",
+        "observed_at": "2026-11-18T11:01:59.125874Z",
+        "observed_at_eastern": "2026-11-18 6:01 AM EST",
         "format": "supplementary remarks index; not assumed complete",
         "inspection": "No post-boundary official transcript was exposed."
       },
@@ -1669,16 +1685,16 @@
         "posted_date": "2026-11-17",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-18T05:06:17.689092Z",
-        "observed_at_eastern": "2026-11-18 12:06 AM EST",
+        "observed_at": "2026-11-18T11:01:59.125874Z",
+        "observed_at_eastern": "2026-11-18 6:01 AM EST",
         "format": "supplementary official news and release index",
-        "inspection": "The index exposed no new channel cost, contract, staffing, editorial-control, distribution or press-access finding."
+        "inspection": "The statements and news indexes exposed no new channel cost, contract, staffing, editorial-control, distribution or press-access finding."
       }
     ],
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-18 12:06 AM EST",
+    "checked_at": "2026-11-18 6:01 AM EST",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-18T05:06:17.689092Z",
+    "last_successful_page_inspection_at": "2026-11-18T11:01:59.125874Z",
     "last_successful_broadcast_boundary": null,
     "inspected_items": [
       {
@@ -2823,25 +2839,25 @@
     "new_media_reviewed": 0,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-18T05:03:51.439982Z",
-    "checked_at_eastern": "2026-11-18 12:03:51 AM EST",
-    "latest_post_id": "117634741427255539",
-    "latest_post_at_eastern": "2026-11-17 8:01:45 PM EST",
+    "checked_at_utc": "2026-11-18T10:59:55.543917Z",
+    "checked_at_eastern": "2026-11-18 5:59:55 AM EST",
+    "latest_post_id": "117636323928351024",
+    "latest_post_at_eastern": "2026-11-18 2:44:12 AM EST",
     "counts": {
       "text_status": {
         "not_recorded": 154,
-        "reviewed": 1781,
+        "reviewed": 1782,
         "pending": 972
       },
       "media_status": {
-        "not_applicable": 1625,
+        "not_applicable": 1626,
         "not_recorded": 19,
         "unavailable": 296,
         "pending": 541,
         "reviewed": 426
       }
     },
-    "note": "One post was newer than the prior snapshot. The newest retained post was published November 17 at 8:01:45 PM EST in America/Indiana/Indianapolis. Its praise of John Daly and linked clip title were reviewed as evidence only that Trump published the statement; no qualifying national action or independently verified consequential claim was identified, so it remains feed-only."
+    "note": "One post was newer than the prior snapshot. The newest retained post was published November 18 at 2:44:12 AM EST in America/Indiana/Indianapolis. It was reviewed as evidence only that Trump claimed a completed U.S.–Philippines trade deal. Because Manila described an understanding, its ambassador said nothing was signed, and no operative U.S. text was located, the post remains feed-only pending signed terms or implementation."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -2853,33 +2869,35 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-18 12:06 AM EST",
-    "checked_at_utc": "2026-11-18T05:06:17.689092Z",
-    "summary": "All four registered projects were checked as discovery inputs. Trump Archive displayed 16,156 total items, 13,419 Truth Social posts and 2,070 speeches/transcripts; UndoTrump remained at 1,264 actions; IPTP remained at 1,840 actions; Record47 exposed unchanged feature metrics but no stable current approved-entry counter. Distinct units were not summed and zero external items were imported.",
-    "updated_archives": [
-      "trump_archive"
-    ],
+    "checked_at": "2026-11-18 6:01 AM EST",
+    "checked_at_utc": "2026-11-18T11:01:59.125874Z",
+    "summary": "All four registered primary project pages were checked as discovery inputs. Trump Archive displayed 16,157 total items, 13,420 Truth Social posts and 2,070 speeches/transcripts; UndoTrump remained at 1,264 actions; IPTP remained at 1,840 actions; Record47 remained inaccessible to the text retrieval tool and its prior feature measurements were not reasserted as a current counter. Distinct units were not summed, zero external items were imported and the strict feed-only release preserved canonical registry measurements.",
+    "updated_archives": [],
     "unchanged_archives": [
       "undotrump",
       "immigration_policy_tracking_project"
+    ],
+    "observed_changed_archives": [
+      "trump_archive"
     ],
     "access_gap_archives": [
       "record47"
     ]
   },
   "editorial_notes": [
-    "Published 10.253.0 with one completed nomination withdrawal and no padded additions.",
-    "One newer Truth Social post was reviewed and retained feed-only because it contained praise and no qualifying national action.",
-    "Trump TV review was metadata-limited; the DNI and U.S.–ASEAN clips did not independently establish a qualifying new item in the material reviewed.",
-    "No legacy entry was changed; the disclosed remediation and duplicate-candidate queues remain visible for evidence-backed future work."
+    "No post-boundary candidate passed the publication threshold; no canonical record was added, refreshed or corrected merely to reach the editorial aim.",
+    "One materially newer Truth Social post was retained and reviewed as publication evidence only. The claimed completed U.S.–Philippines trade deal remains withheld because no signed instrument or operative terms were published and Manila described only an understanding.",
+    "The official Trump TV page, live hub, dated video library, remarks and statements were inspected. No newer recording than the already reviewed November 17 listings was exposed, no qualifying new item was located in the material reviewed and no broadcast boundary was advanced.",
+    "All four registered external archive project pages were checked as discovery inputs. Distinct units were not summed, no external item was imported, and the strict feed-only release preserved canonical registry measurements.",
+    "No legacy row was changed; unresolved duplicate and source-health candidates remain visible."
   ],
   "retained_stages": [],
   "publication_transport_attempts": [],
   "maintenance_revision": null,
   "engineering_revision": null,
   "legacy_quality": {
-    "checked_at_utc": "2026-11-18T05:06:17.689092Z",
+    "checked_at_utc": "2026-11-18T11:01:59.125874Z",
     "result": "queue_retained_no_material_change",
-    "summary": "No objective legacy correction with complete record-specific evidence was completed in this bounded run. Existing remediation and duplicate-candidate queues remain visible; no mass transformation or generated-copy edit was made."
+    "summary": "The strict feed-only no-op made no historical edit. Existing remediation, source-health and duplicate-candidate queues remain visible; no mass transformation or generated-copy edit was made."
   }
 }
