@@ -1,45 +1,31 @@
 {
-  "version": "10.254.0",
+  "version": "10.254.1",
   "run_changes": {
-    "added_entry_ids": [
-      "NAT-2026-09-28-013"
-    ],
-    "refreshed_entry_ids": [
-      "NAT-2026-08-24-007",
-      "NAT-2026-11-07-001"
-    ],
+    "added_entry_ids": [],
+    "refreshed_entry_ids": [],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-18T11:01:59.125874Z",
+    "from_utc": "2026-11-18T17:05:50.324803Z",
     "through_utc": "2026-11-18T17:05:50.324803Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact prior checked_at boundary through the final bounded source review. Three qualifying changes were published—one added record and two material refreshes—including explicitly identified late-indexed sources; fewer than four passed without padding."
+    "note": "Correction-only release. The 10.254.0 source-review boundary is preserved and not advanced; no new national item, Truth Social post or Trump TV coverage claim is asserted."
   },
   "release_iso": "2026-11-18",
   "release_human": "November 18, 2026",
   "checked_at": "2026-11-18 12:05 PM EST",
-  "previous_version": "10.253.1",
-  "previous_checked_at": "2026-11-18 6:01 AM EST",
-  "window_started_at": "2026-11-18T11:01:59.125874Z",
+  "previous_version": "10.254.0",
+  "previous_checked_at": "2026-11-18 12:05 PM EST",
+  "window_started_at": "2026-11-18T17:05:50.324803Z",
   "window_ended_at": "2026-11-18T17:05:50.324803Z",
   "week_start": "2026-11-12",
   "week_end": "2026-11-18",
   "week_label": "November 12–18, 2026",
   "cutoff_start": "2026-08-24",
-  "new_entry_ids": [
-    "NAT-2026-09-28-013",
-    "NAT-2026-08-24-007",
-    "NAT-2026-11-07-001"
-  ],
-  "added_entry_ids": [
-    "NAT-2026-09-28-013"
-  ],
-  "refreshed_entry_ids": [
-    "NAT-2026-08-24-007",
-    "NAT-2026-11-07-001"
-  ],
+  "new_entry_ids": [],
+  "added_entry_ids": [],
+  "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
       "entry_id": "NAT-2026-11-10-006",
@@ -1580,7 +1566,13 @@
       ]
     }
   ],
-  "corrections": [],
+  "corrections": [
+    {
+      "entry_id": "RELEASE-10.254.0",
+      "checked_at": "2026-11-18 12:45 PM EST",
+      "summary": "Corrected the publication-transport receipt: the connector's 16 MiB request rejection applied to the 15,492,092-byte data/current_entries.json blob sent as base64, not to a generated historical page. The exact canonical blob was subsequently uploaded successfully as UTF-8 and its returned SHA matched the locally accepted SHA. LEG-001565 remains unchanged and queued because the optional repair was conservatively removed before final acceptance; no file-size claim is made about that candidate."
+    }
+  ],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
     "checked_at_utc": "2026-11-18T17:05:50.324803Z",
@@ -2984,19 +2976,19 @@
     ]
   },
   "editorial_notes": [
-    "One judicial-accountability record was added and two existing events were materially refreshed. Late-indexed November 17 sources were labeled as such rather than presented as post-boundary publication.",
-    "Only three items cleared the threshold; no fourth record was added to satisfy a quota.",
+    "Correction-only release: no national record was added or materially refreshed and the 10.254.0 research boundary was not advanced.",
+    "The publication-transport receipt now correctly identifies data/current_entries.json as the oversized base64 request and records the successful exact UTF-8 upload; the three national changes remain those already published in 10.254.0.",
     "Truth Social refresh found no post newer than the prior snapshot; the newest retained post remains November 18 at 2:44:12 AM EST.",
     "Trump TV official page, live hub, dated library, remarks and statements were inspected. New ceremonial and replay metadata was recorded, complete audiovisual content was not reviewed, and no broadcast boundary was advanced.",
-    "The reviewed LEG-001565 source repair remains queued: publishing its required generated historical representations exceeded the authenticated connector's 16 MiB request limit, so no partial legacy correction or parity exception was accepted."
+    "The reviewed LEG-001565 source repair remains queued and unchanged. It was conservatively removed with its generated representations before final acceptance after an initially misidentified transport failure; no partial legacy correction or parity exception was accepted."
   ],
   "retained_stages": [],
   "publication_transport_attempts": [
     {
       "attempted_at_utc": "2026-11-18T17:24:39Z",
       "transport": "authenticated GitHub connector GitData",
-      "result": "replanned_before_publication",
-      "detail": "Two idempotent blob-upload passes stopped before tree or commit creation when the connector rejected the 15,492,092-byte generated historical page blob with HTTP 400: MCP request body is invalid or exceeds the 16 MiB limit. The maintenance branch remained at the expected base commit. The optional legacy repair and all of its generated representations were removed together; national records and the validated Truth Social fallback were unchanged."
+      "result": "completed_after_exact_utf8_retry",
+      "detail": "Two idempotent base64 blob-upload passes stopped before tree or commit creation when the connector rejected the 15,492,092-byte data/current_entries.json request with HTTP 400: MCP request body is invalid or exceeds the 16 MiB limit. The maintenance branch remained at the expected base commit. The exact UTF-8 blob was then uploaded successfully; GitHub returned SHA ef283001774a16e80f97b0aac96ca317cc34de19, matching the accepted local blob, and the final remote tree matched the accepted tree. The optional LEG-001565 repair had already been conservatively removed with all generated representations before final acceptance and remains queued."
     }
   ],
   "maintenance_revision": null,
@@ -3004,6 +2996,6 @@
   "legacy_quality": {
     "checked_at_utc": "2026-11-18T17:05:50.324803Z",
     "result": "reviewed_no_material_change",
-    "summary": "LEG-001565 was reviewed against record-specific June 17, 2018 reporting, but the correction was not published because its parity-required generated historical representations exceeded the authenticated connector's 16 MiB request limit. The stable row and all generated copies remain unchanged, with the source-health candidate and other duplicate queues still visible."
+    "summary": "LEG-001565 was reviewed against record-specific June 17, 2018 reporting, but the optional correction was conservatively removed with all generated representations before final acceptance after an initially misidentified transport failure. The stable row and all generated copies remain unchanged, with the source-health candidate and other duplicate queues still visible."
   }
 }

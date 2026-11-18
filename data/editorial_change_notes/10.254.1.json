@@ -1,0 +1,16 @@
+{
+  "version": "10.254.1",
+  "checked_at_utc": "2026-11-18T17:45:00Z",
+  "changes": [],
+  "corrections": [
+    {
+      "entry_id": "RELEASE-10.254.0",
+      "corrected_at_utc": "2026-11-18T17:45:00Z",
+      "summary": "Corrected the run receipt to identify data/current_entries.json—not a generated historical page—as the 15,492,092-byte blob rejected when base64 expansion exceeded the connector's 16 MiB request limit. The exact UTF-8 blob upload succeeded and matched SHA ef283001774a16e80f97b0aac96ca317cc34de19. LEG-001565 remains unchanged and queued."
+    }
+  ],
+  "evidence_extracts": {
+    "transport_error": "HTTP 400 reported that the MCP request body was invalid or exceeded the 16 MiB limit.",
+    "exact_upload": "GitHub returned blob SHA ef283001774a16e80f97b0aac96ca317cc34de19 for the UTF-8 upload, matching the locally accepted data/current_entries.json blob."
+  }
+}
