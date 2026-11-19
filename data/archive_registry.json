@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "status": "active_registry",
-  "checked_at": "2026-11-18T23:08:43.925219Z",
+  "checked_at": "2026-11-19T05:07:12.984160Z",
   "registry_purpose": "Describe independent Trump-related archives as a federated research network without pretending that unlike record units are interchangeable or additive.",
   "invariants": [
     "An upstream archive is a discovery and corroboration source, not an automatic authority for The Record.",
@@ -192,12 +192,12 @@
         "content_import_permission_state": "license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-11-18T23:08:43.925219Z",
-        "state": "verified_changed",
+        "checked_at": "2026-11-19T05:07:12.984160Z",
+        "state": "verified_unchanged",
         "verification_pages": [
           "https://trump-archive.com/archive"
         ],
-        "note": "Primary archive index displayed 16,158 total items, 13,421 Truth Social posts and 2,070 speeches/transcripts. Distinct units preserved; zero canonical imports."
+        "note": "Primary archive index remained at 16,158 total items, 13,421 Truth Social posts and 2,070 speeches/transcripts. Distinct units preserved; zero canonical imports."
       },
       "check_history": [
         {
@@ -1063,6 +1063,14 @@
             "https://trump-archive.com/archive"
           ],
           "note": "Primary archive index displayed 16,154 total items, 13,418 Truth Social posts and 2,069 speeches/transcripts. Distinct units preserved; zero canonical imports."
+        },
+        {
+          "checked_at": "2026-11-19T05:07:12.984160Z",
+          "state": "verified_unchanged",
+          "verification_pages": [
+            "https://trump-archive.com/archive"
+          ],
+          "note": "Primary archive index remained at 16,158 total items, 13,421 Truth Social posts and 2,070 speeches/transcripts. Distinct units preserved; zero canonical imports."
         }
       ],
       "measurement_history": [
@@ -3116,14 +3124,14 @@
         "content_import_permission_state": "bulk_permission_or_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-11-18T23:08:43.925219Z",
+        "checked_at": "2026-11-19T05:07:12.984160Z",
         "state": "verified_unchanged",
         "verification_pages": [
           "https://www.undotrump.com/",
           "https://www.undotrump.com/?term=1",
           "https://www.undotrump.com/?term=2"
         ],
-        "note": "Primary pages displayed 1,264 total actions, 731 term-one actions and 533 term-two actions. Distinct action unit preserved; zero canonical imports."
+        "note": "Primary pages remained at 1,264 total actions, 731 term-one actions and 533 term-two actions. Distinct action unit preserved; zero canonical imports."
       },
       "check_history": [
         {
@@ -3976,6 +3984,16 @@
             "https://www.undotrump.com/"
           ],
           "note": "Primary project page remained at 1,264 actions. Distinct upstream unit preserved; zero canonical imports."
+        },
+        {
+          "checked_at": "2026-11-19T05:07:12.984160Z",
+          "state": "verified_unchanged",
+          "verification_pages": [
+            "https://www.undotrump.com/",
+            "https://www.undotrump.com/?term=1",
+            "https://www.undotrump.com/?term=2"
+          ],
+          "note": "Primary pages remained at 1,264 total actions, 731 term-one actions and 533 term-two actions. Distinct action unit preserved; zero canonical imports."
         }
       ],
       "measurement_history": [
@@ -4265,13 +4283,13 @@
         "content_import_permission_state": "permission_or_documented_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-11-18T23:08:43.925219Z",
-        "state": "verified_unchanged",
+        "checked_at": "2026-11-19T05:07:12.984160Z",
+        "state": "source_count_conflict",
         "verification_pages": [
           "https://immpolicytracking.org/",
           "https://immpolicytracking.org/policies/"
         ],
-        "note": "Primary pages displayed 1,842 immigration-policy actions. Domain-specific unit preserved; zero canonical imports."
+        "note": "Primary homepage displayed 1,843 Trump 1.0 actions while the policy browse page displayed 1,842 policy actions. Prior measurements were retained without changing observation times; zero canonical imports."
       },
       "check_history": [
         {
@@ -5155,6 +5173,15 @@
             "https://immpolicytracking.org/policies/"
           ],
           "note": "Primary project pages displayed 1,840 immigration-policy actions, revising the prior observed 1,841. Distinct upstream unit and scope caveat preserved; zero canonical imports."
+        },
+        {
+          "checked_at": "2026-11-19T05:07:12.984160Z",
+          "state": "source_count_conflict",
+          "verification_pages": [
+            "https://immpolicytracking.org/",
+            "https://immpolicytracking.org/policies/"
+          ],
+          "note": "Primary homepage displayed 1,843 Trump 1.0 actions while the policy browse page displayed 1,842 policy actions. Prior measurements were retained without changing observation times; zero canonical imports."
         }
       ],
       "measurement_history": [
@@ -5822,13 +5849,13 @@
         "content_import_permission_state": "metadata_and_citation_allowed_full_content_license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-11-18T23:08:43.925219Z",
-        "state": "verified_changed",
+        "checked_at": "2026-11-19T05:07:12.984160Z",
+        "state": "partial_metric_access",
         "verification_pages": [
-          "https://api.record47.org/entries?limit=1",
-          "https://record47.org/"
+          "https://record47.org/",
+          "https://api.record47.org/entries?limit=1"
         ],
-        "note": "Primary site displayed 6,348 social posts, 3,539 primary sources, 332 contradictions and 38 sequences; the primary API returned total 7,579 for the existing approved-entry measurement. Distinct feature units preserved; zero canonical imports."
+        "note": "Primary page exposed archive labels but no stable numeric counters in accessible text, and the API count endpoint was unavailable to the inspection tool. Prior distinct-unit measurements were retained; zero canonical imports."
       },
       "check_history": [
         {
@@ -6730,6 +6757,15 @@
             "https://record47.org/"
           ],
           "note": "Primary project page was inspected but did not expose a stable current numeric counter; prior measurements were retained and zero canonical imports were made."
+        },
+        {
+          "checked_at": "2026-11-19T05:07:12.984160Z",
+          "state": "partial_metric_access",
+          "verification_pages": [
+            "https://record47.org/",
+            "https://api.record47.org/entries?limit=1"
+          ],
+          "note": "Primary page exposed archive labels but no stable numeric counters in accessible text, and the API count endpoint was unavailable to the inspection tool. Prior distinct-unit measurements were retained; zero canonical imports."
         }
       ],
       "measurement_history": [
