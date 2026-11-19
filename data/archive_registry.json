@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "status": "active_registry",
-  "checked_at": "2026-11-19T05:07:12.984160Z",
+  "checked_at": "2026-11-19T17:16:06.304958Z",
   "registry_purpose": "Describe independent Trump-related archives as a federated research network without pretending that unlike record units are interchangeable or additive.",
   "invariants": [
     "An upstream archive is a discovery and corroboration source, not an automatic authority for The Record.",
@@ -192,7 +192,7 @@
         "content_import_permission_state": "license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-11-19T05:07:12.984160Z",
+        "checked_at": "2026-11-19T17:16:06.304958Z",
         "state": "verified_unchanged",
         "verification_pages": [
           "https://trump-archive.com/archive"
@@ -200,6 +200,14 @@
         "note": "Primary archive index remained at 16,158 total items, 13,421 Truth Social posts and 2,070 speeches/transcripts. Distinct units preserved; zero canonical imports."
       },
       "check_history": [
+        {
+          "checked_at": "2026-11-19T05:07:12.984160Z",
+          "state": "verified_unchanged",
+          "verification_pages": [
+            "https://trump-archive.com/archive"
+          ],
+          "note": "Primary archive index remained at 16,158 total items, 13,421 Truth Social posts and 2,070 speeches/transcripts. Distinct units preserved; zero canonical imports."
+        },
         {
           "checked_at": "2026-11-18T17:05:50.324803Z",
           "state": "verified_changed",
@@ -3124,16 +3132,24 @@
         "content_import_permission_state": "bulk_permission_or_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-11-19T05:07:12.984160Z",
+        "checked_at": "2026-11-19T17:16:06.304958Z",
         "state": "verified_unchanged",
         "verification_pages": [
-          "https://www.undotrump.com/",
-          "https://www.undotrump.com/?term=1",
-          "https://www.undotrump.com/?term=2"
+          "https://www.undotrump.com/"
         ],
-        "note": "Primary pages remained at 1,264 total actions, 731 term-one actions and 533 term-two actions. Distinct action unit preserved; zero canonical imports."
+        "note": "Primary page remained at 1,264 actions, 995 active, 44 in courts and 42 restored. Existing term counts were preserved; zero canonical imports."
       },
       "check_history": [
+        {
+          "checked_at": "2026-11-19T05:07:12.984160Z",
+          "state": "verified_unchanged",
+          "verification_pages": [
+            "https://www.undotrump.com/",
+            "https://www.undotrump.com/?term=1",
+            "https://www.undotrump.com/?term=2"
+          ],
+          "note": "Primary pages remained at 1,264 total actions, 731 term-one actions and 533 term-two actions. Distinct action unit preserved; zero canonical imports."
+        },
         {
           "checked_at": "2026-11-18T17:05:50.324803Z",
           "state": "verified_unchanged",
@@ -4283,15 +4299,24 @@
         "content_import_permission_state": "permission_or_documented_feed_required"
       },
       "last_check": {
-        "checked_at": "2026-11-19T05:07:12.984160Z",
-        "state": "source_count_conflict",
+        "checked_at": "2026-11-19T17:16:06.304958Z",
+        "state": "verified_unchanged",
         "verification_pages": [
           "https://immpolicytracking.org/",
           "https://immpolicytracking.org/policies/"
         ],
-        "note": "Primary homepage displayed 1,843 Trump 1.0 actions while the policy browse page displayed 1,842 policy actions. Prior measurements were retained without changing observation times; zero canonical imports."
+        "note": "Both primary pages displayed 1,843 policy actions in this check. The existing 1,843 measurement and its original observation time were preserved; zero canonical imports."
       },
       "check_history": [
+        {
+          "checked_at": "2026-11-19T05:07:12.984160Z",
+          "state": "source_count_conflict",
+          "verification_pages": [
+            "https://immpolicytracking.org/",
+            "https://immpolicytracking.org/policies/"
+          ],
+          "note": "Primary homepage displayed 1,843 Trump 1.0 actions while the policy browse page displayed 1,842 policy actions. Prior measurements were retained without changing observation times; zero canonical imports."
+        },
         {
           "checked_at": "2026-11-18T17:05:50.324803Z",
           "state": "verified_changed",
@@ -5849,15 +5874,23 @@
         "content_import_permission_state": "metadata_and_citation_allowed_full_content_license_review_required"
       },
       "last_check": {
-        "checked_at": "2026-11-19T05:07:12.984160Z",
-        "state": "partial_metric_access",
+        "checked_at": "2026-11-19T17:16:06.304958Z",
+        "state": "access_gap",
         "verification_pages": [
-          "https://record47.org/",
-          "https://api.record47.org/entries?limit=1"
+          "https://record47.org/"
         ],
-        "note": "Primary page exposed archive labels but no stable numeric counters in accessible text, and the API count endpoint was unavailable to the inspection tool. Prior distinct-unit measurements were retained; zero canonical imports."
+        "note": "Primary project page was inspected but did not expose stable numeric counters in retrievable text. Prior feature measurements were preserved; zero canonical imports."
       },
       "check_history": [
+        {
+          "checked_at": "2026-11-19T05:07:12.984160Z",
+          "state": "partial_metric_access",
+          "verification_pages": [
+            "https://record47.org/",
+            "https://api.record47.org/entries?limit=1"
+          ],
+          "note": "Primary page exposed archive labels but no stable numeric counters in accessible text, and the API count endpoint was unavailable to the inspection tool. Prior distinct-unit measurements were retained; zero canonical imports."
+        },
         {
           "checked_at": "2026-11-18T17:05:50.324803Z",
           "state": "partial_metric_access",
