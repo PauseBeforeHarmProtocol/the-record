@@ -1,11 +1,11 @@
 {
   "schema_version": 3,
-  "editorial_checked_at": "2026-11-19 6:07 PM EST",
+  "editorial_checked_at": "2026-11-19 11:59 PM EST",
   "quality_inputs_updated_at": "2026-11-19T23:07:44.379855Z",
   "external_registry_checked_at": "2026-11-19T23:07:44.379855Z",
   "federation_last_modified_at": "2026-08-25T14:40:23Z",
   "legacy_revisions_through": "2026-11-17",
-  "release_version": "10.258.0",
+  "release_version": "10.258.1",
   "canonical_files": {
     "legacy": "data/legacy_entries.json",
     "current": "data/current_entries.json",
@@ -24,7 +24,7 @@
     "legacy_revisions": "1647c42b6f9756a93a5786e30fe188673c6dd31ef8cb07fdf8b50ae3ceb7c47c",
     "archive_registry": "b2be7f1851c98565725fa4d27b006ed4ed3b6c4fe515399049334a343092df01",
     "editorial_state": "b04407043c41c0f7060b627bfdb703faa61f88ff086cf74f96c60e53fe674c34",
-    "truth_social_reviews": "3e5bef3846da8d368e30a94721c0e36cdd2967be18c32236028fa3623ae464ef"
+    "truth_social_reviews": "b5d65a4fb1f1386c6e27267b4d5b07025b4b5eff9173555ca165223a2338abd4"
   },
   "totals": {
     "canonical_legacy_rows": 4742,
@@ -488,13 +488,14 @@
     "material_development_records": 954,
     "retained_posts": 1000,
     "retained_post_text_states": {
+      "not_recorded": 2,
       "pending": 3,
-      "reviewed": 997
+      "reviewed": 995
     },
     "retained_post_media_states": {
-      "not_applicable": 705,
+      "not_applicable": 706,
       "pending": 38,
-      "reviewed": 238,
+      "reviewed": 237,
       "unavailable": 19
     },
     "definition": "Review-receipt coverage is separate from prior canonical review-state labels. Missing inspection records do not establish that content is false or that it was reviewed. Post-state counts refer only to the retained fallback, not the upstream archive total."
