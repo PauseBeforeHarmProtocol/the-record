@@ -1,30 +1,39 @@
 {
-  "version": "10.258.1",
+  "version": "10.259.0",
   "run_changes": {
-    "added_entry_ids": [],
+    "added_entry_ids": [
+      "NAT-2026-11-20-001",
+      "NAT-2026-11-20-002"
+    ],
     "refreshed_entry_ids": [],
     "retained_entry_ids": []
   },
   "research_window": {
-    "from_utc": "2026-11-19T23:07:44.379855Z",
-    "through_utc": "2026-11-20T04:59:30.927401Z",
+    "from_utc": "2026-11-20T04:59:30.927401Z",
+    "through_utc": "2026-11-20T11:04:50.364615Z",
     "precision": "second",
     "timezone": "America/Indiana/Indianapolis",
-    "note": "Exact prior checked_at boundary through the final bounded source review. Editorial no-op with six materially newer Truth Social posts retained and reviewed; no qualifying new or materially refreshed canonical item was located in the material reviewed."
+    "note": "Exact prior checked_at boundary through the bounded source review. Two qualifying post-boundary Federal Register actions were added; narrower or confirmatory notices were withheld rather than used to meet the editorial target."
   },
-  "release_iso": "2026-11-19",
-  "release_human": "November 19, 2026",
-  "checked_at": "2026-11-19 11:59 PM EST",
-  "previous_version": "10.258.0",
-  "previous_checked_at": "2026-11-19 6:07 PM EST",
-  "window_started_at": "2026-11-19T23:07:44.379855Z",
-  "window_ended_at": "2026-11-20T04:59:30.927401Z",
-  "week_start": "2026-11-13",
-  "week_end": "2026-11-19",
-  "week_label": "November 13–19, 2026",
+  "release_iso": "2026-11-20",
+  "release_human": "November 20, 2026",
+  "checked_at": "2026-11-20 6:04 AM EST",
+  "previous_version": "10.258.1",
+  "previous_checked_at": "2026-11-19 11:59 PM EST",
+  "window_started_at": "2026-11-20T04:59:30.927401Z",
+  "window_ended_at": "2026-11-20T11:04:50.364615Z",
+  "week_start": "2026-11-14",
+  "week_end": "2026-11-20",
+  "week_label": "November 14–20, 2026",
   "cutoff_start": "2026-07-13",
-  "new_entry_ids": [],
-  "added_entry_ids": [],
+  "new_entry_ids": [
+    "NAT-2026-11-20-001",
+    "NAT-2026-11-20-002"
+  ],
+  "added_entry_ids": [
+    "NAT-2026-11-20-001",
+    "NAT-2026-11-20-002"
+  ],
   "refreshed_entry_ids": [],
   "dedupe_resolutions": [
     {
@@ -1536,54 +1545,60 @@
   ],
   "rejected_candidates": [
     {
-      "title": "Six post-boundary Truth Social posts",
-      "reason": "The reviewed posts linked media coverage, a ceremonial honors announcement, an opinion article and a personnel profile, or contained scenic Washington/White House photographs. They establish only what Trump published and did not independently establish a material federal action, ruling, expenditure, formal proposal, investigation or measured outcome.",
+      "title": "White Sands pupfish threatened-species proposal and Mazama newt endangered-species proposal",
+      "reason": "Both notices are formal proposals with comments open through January 19, 2027, but the reviewed records concern geographically limited species determinations and do not yet impose final protections. They were retained as source leads and not used to pad the national archive target.",
       "source_urls": [
-        "https://truthsocial.com/@realDonaldTrump/117645941688172584",
-        "https://truthsocial.com/@realDonaldTrump/117645951137512393",
-        "https://truthsocial.com/@realDonaldTrump/117645971016970582",
-        "https://truthsocial.com/@realDonaldTrump/117646008897162950",
-        "https://truthsocial.com/@realDonaldTrump/117646011072437950",
+        "https://www.federalregister.gov/documents/2026/11/20/2026-23711/endangered-and-threatened-wildlife-and-plants-threatened-species-status-with-section-4d-rule-for",
+        "https://www.federalregister.gov/documents/2026/11/20/2026-23706/endangered-and-threatened-wildlife-and-plants-endangered-species-status-for-mazama-newt"
+      ]
+    },
+    {
+      "title": "OPM effective-date confirmations and routine November 20 regulatory notices",
+      "reason": "The OPM notices confirmed effective dates for rules published in July or August and did not create a new lifecycle stage after the source boundary. Remaining aviation, fishery, event-safety, pesticide and state-plan notices reviewed were routine or too narrow for the national publication threshold.",
+      "source_urls": [
+        "https://www.federalregister.gov/documents/2026/11/20/2026-23732/updates-and-amendments-to-the-civil-service-rules",
+        "https://www.federalregister.gov/documents/2026/11/20/2026-23730/flsa-claims-and-compliance",
+        "https://www.federalregister.gov/documents/2026/11/20/2026-23731/procedures-for-settling-claims"
+      ]
+    },
+    {
+      "title": "Truth Social refresh",
+      "reason": "No post was newer than the prior validated snapshot, so no new post supplied a research lead or independently qualified canonical action.",
+      "source_urls": [
         "https://truthsocial.com/@realDonaldTrump/117646261644090852"
       ]
     },
     {
-      "title": "White House National Rural Health Day retrospective",
-      "reason": "The release promoted the already enacted $50 billion Rural Health Transformation Fund and prior program announcements; it supplied no distinct post-boundary appropriation, obligation, implementing instrument or independently measured new outcome.",
-      "source_urls": [
-        "https://www.whitehouse.gov/releases/2026/11/national-rural-health-day-president-trump-delivers-largest-rural-health-investment-in-history/"
-      ]
-    },
-    {
-      "title": "Trump TV trilateral-summit excerpts",
-      "reason": "Two brief November 19 library listings were inspected through official title, date, duration, detail URL and stable video ID metadata. Complete playback, audio and captions were not retrieved; both excerpts concern the summit already represented by NAT-2026-11-19-003, and a newly uploaded replay is not a new government action.",
+      "title": "Trump TV November 19 clips and promotional replay",
+      "reason": "The official library still led with two brief summit excerpts already deduplicated to NAT-2026-11-19-003 and a 2:46 promotional clip whose detail page dates the underlying material November 18. Playback, complete audio and captions were not retrieved; no new government action was inferred.",
       "source_urls": [
         "https://www.whitehouse.gov/videos/president-trump-xi-and-putin-hold-trilateral-talks-in-china/",
-        "https://www.whitehouse.gov/videos/president-trump-addresses-historic-trilateral-meeting-with-president-xi-and-president-putin/"
+        "https://www.whitehouse.gov/videos/president-trump-addresses-historic-trilateral-meeting-with-president-xi-and-president-putin/",
+        "https://www.whitehouse.gov/videos/strength-on-the-world-stage-the-united-states-is-thriving-like-it-has-never-thrived-before-%F0%9F%87%BA%F0%9F%87%B8/"
       ]
     },
     {
       "title": "Legacy duplicate and source-health queues",
-      "reason": "No direct record-specific evidence justified a guarded historical revision in this strict feed-only run; all disclosed candidates remain visible for later adjudication.",
+      "reason": "No direct record-specific evidence justified a guarded historical revision in this current-source run; all disclosed candidates remain visible for later adjudication.",
       "source_urls": []
     }
   ],
   "corrections": [],
   "ai_credit": "Foundational archive: ChatGPT 5.6 Sol Max and Claude Fable 5 Max (Cowork). This release: OpenAI Codex (research, original-source inspection, deduplication, separate reasoning-layer review and maintenance). AI output is not evidence.",
   "trump_tv_monitoring": {
-    "checked_at_utc": "2026-11-20T04:59:30.927401Z",
-    "checked_at_eastern": "2026-11-19 11:59 PM EST",
-    "inspection_status": "official Trump TV, live, dated-library, remarks and news metadata inspected; complete audiovisual content unavailable",
+    "checked_at_utc": "2026-11-20T11:04:50.364615Z",
+    "checked_at_eastern": "2026-11-20 6:04 AM EST",
+    "inspection_status": "official Trump TV, live, dated-library, remarks and releases metadata inspected; complete audiovisual content unavailable",
     "stream_url": "https://www.youtube.com/embed/A4gNgHfZ-v4",
     "stream_video_id": "A4gNgHfZ-v4",
     "last_successful_broadcast_review_through": null,
-    "summary": "Official Trump TV, live hub, dated video library, remarks and news metadata were inspected. Stream ID A4gNgHfZ-v4 persisted. Two newly listed November 19 excerpts (0:18 and 0:52) were inspected through official metadata and deduplicated to the already represented trilateral summit. Playback, complete audio and official captions were not retrieved. Fallback text was not treated as outage proof, no broadcast boundary was advanced and no qualifying new item was located in the material reviewed.",
+    "summary": "Official Trump TV, live hub, dated video library, remarks and releases metadata were inspected. Stream ID A4gNgHfZ-v4 persisted. The two summit clips remained deduplicated to NAT-2026-11-19-003; the promotional clip exposed conflicting listing/detail dates and no new action. Playback, complete audio and official captions were not retrieved. Fallback text was not treated as outage proof, no broadcast boundary was advanced and no qualifying new item was located in the material reviewed.",
     "sources": [
       "https://www.whitehouse.gov/trumptv/",
       "https://www.whitehouse.gov/live/",
       "https://www.whitehouse.gov/videos/",
       "https://www.whitehouse.gov/remarks/",
-      "https://www.whitehouse.gov/news/"
+      "https://www.whitehouse.gov/releases/"
     ],
     "gaps": [
       "Playback, complete audio and official captions/transcripts were not retrieved; official page, listing, detail and stream-link metadata were inspected. Fallback text was not treated as outage proof and no continuous-coverage claim or broadcast boundary was advanced."
@@ -1597,8 +1612,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-20T04:59:30.927401Z",
-        "observed_at_eastern": "2026-11-19 11:59 PM EST",
+        "observed_at": "2026-11-20T11:04:50.364615Z",
+        "observed_at_eastern": "2026-11-20 6:04 AM EST",
         "format": "official channel page and stable stream-link metadata; audiovisual content unreviewed",
         "inspection": "Stable CH47 stream ID remained A4gNgHfZ-v4. Fallback text was not treated as proof of stream state; complete playback, audio and captions were not retrieved."
       },
@@ -1610,8 +1625,8 @@
         "posted_date": null,
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-20T04:59:30.927401Z",
-        "observed_at_eastern": "2026-11-19 11:59 PM EST",
+        "observed_at": "2026-11-20T11:04:50.364615Z",
+        "observed_at_eastern": "2026-11-20 6:04 AM EST",
         "format": "official live-hub metadata; audiovisual content unreviewed",
         "inspection": "CH45 and CH47 page metadata were inspected. Fallback text alone was not treated as an outage finding, and no live/replay or continuous-coverage claim was made."
       },
@@ -1623,10 +1638,10 @@
         "posted_date": "2026-11-19",
         "original_event_date": "2026-11-19",
         "broadcast_time": null,
-        "observed_at": "2026-11-20T04:59:30.927401Z",
-        "observed_at_eastern": "2026-11-19 11:59 PM EST",
+        "observed_at": "2026-11-20T11:04:50.364615Z",
+        "observed_at_eastern": "2026-11-20 6:04 AM EST",
         "format": "official dated-library listing for a 0:18 edited clip; audiovisual content unreviewed",
-        "inspection": "Title, displayed date, duration, detail URL and stable YouTube ID were inspected. Playback, complete audio and captions were not retrieved; the excerpt was deduplicated to NAT-2026-11-19-003 and not treated as a new action."
+        "inspection": "Title, date, duration, detail URL and stable ID were inspected. Playback, complete audio and captions were not retrieved; the clip was deduplicated to NAT-2026-11-19-003."
       },
       {
         "url": "https://www.whitehouse.gov/videos/president-trump-addresses-historic-trilateral-meeting-with-president-xi-and-president-putin/",
@@ -1636,10 +1651,23 @@
         "posted_date": "2026-11-19",
         "original_event_date": "2026-11-19",
         "broadcast_time": null,
-        "observed_at": "2026-11-20T04:59:30.927401Z",
-        "observed_at_eastern": "2026-11-19 11:59 PM EST",
+        "observed_at": "2026-11-20T11:04:50.364615Z",
+        "observed_at_eastern": "2026-11-20 6:04 AM EST",
         "format": "official dated-library listing for a 0:52 edited clip; audiovisual content unreviewed",
-        "inspection": "Title, displayed date, duration, detail URL and stable YouTube ID were inspected. Playback, complete audio and captions were not retrieved; the excerpt was deduplicated to NAT-2026-11-19-003 and not treated as a new action."
+        "inspection": "Title, date, duration, detail URL and stable ID were inspected. Playback, complete audio and captions were not retrieved; the clip was deduplicated to NAT-2026-11-19-003."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/strength-on-the-world-stage-the-united-states-is-thriving-like-it-has-never-thrived-before-%F0%9F%87%BA%F0%9F%87%B8/",
+        "video_ids": [
+          "4o-OUQyXBz0"
+        ],
+        "posted_date": "2026-11-19",
+        "original_event_date": "2026-11-18",
+        "broadcast_time": null,
+        "observed_at": "2026-11-20T11:04:50.364615Z",
+        "observed_at_eastern": "2026-11-20 6:04 AM EST",
+        "format": "official library listing for a 2:46 edited promotional clip; audiovisual content unreviewed",
+        "inspection": "The library displayed November 19 while the detail page displayed November 18. Title, duration, detail URL and stable ID were inspected; no new action was inferred from the replay metadata."
       },
       {
         "url": "https://www.whitehouse.gov/remarks/",
@@ -1647,29 +1675,116 @@
         "posted_date": "2026-09-28",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-20T04:59:30.927401Z",
-        "observed_at_eastern": "2026-11-19 11:59 PM EST",
+        "observed_at": "2026-11-20T11:04:50.364615Z",
+        "observed_at_eastern": "2026-11-20 6:04 AM EST",
         "format": "supplementary remarks index; not assumed complete",
-        "inspection": "No new post-boundary official transcript was exposed; the index was not treated as a complete transcript feed."
+        "inspection": "No post-boundary official transcript was exposed; the index was not treated as a complete transcript feed."
       },
       {
-        "url": "https://www.whitehouse.gov/news/",
+        "url": "https://www.whitehouse.gov/releases/",
         "video_ids": [],
         "posted_date": "2026-11-19",
         "original_event_date": null,
         "broadcast_time": null,
-        "observed_at": "2026-11-20T04:59:30.927401Z",
-        "observed_at_eastern": "2026-11-19 11:59 PM EST",
-        "format": "supplementary official news and releases index",
-        "inspection": "The Rural Health Day retrospective and summit material were reviewed as leads. No distinct channel cost, contract, staffing, editorial-control, distribution, advertising, investigation or press-access finding was located."
+        "observed_at": "2026-11-20T11:04:50.364615Z",
+        "observed_at_eastern": "2026-11-20 6:04 AM EST",
+        "format": "supplementary official releases index",
+        "inspection": "The index still led with November 19 rural-health and China material. No distinct post-boundary channel cost, contract, staffing, editorial-control, distribution, advertising, investigation or press-access finding was located."
       }
     ],
     "baseline_established_at": "2026-09-26T16:06:37Z",
-    "checked_at": "2026-11-19 11:59 PM EST",
+    "checked_at": "2026-11-20 6:04 AM EST",
     "retrospective_start_date": "2026-09-21",
-    "last_successful_page_inspection_at": "2026-11-20T04:59:30.927401Z",
+    "last_successful_page_inspection_at": "2026-11-20T11:04:50.364615Z",
     "last_successful_broadcast_boundary": null,
     "inspected_items": [
+      {
+        "url": "https://www.whitehouse.gov/trumptv/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-20T11:04:50.364615Z",
+        "observed_at_eastern": "2026-11-20 6:04 AM EST",
+        "format": "official channel page and stable stream-link metadata; audiovisual content unreviewed",
+        "inspection": "Stable CH47 stream ID remained A4gNgHfZ-v4. Fallback text was not treated as proof of stream state; complete playback, audio and captions were not retrieved."
+      },
+      {
+        "url": "https://www.whitehouse.gov/live/",
+        "video_ids": [
+          "A4gNgHfZ-v4"
+        ],
+        "posted_date": null,
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-20T11:04:50.364615Z",
+        "observed_at_eastern": "2026-11-20 6:04 AM EST",
+        "format": "official live-hub metadata; audiovisual content unreviewed",
+        "inspection": "CH45 and CH47 page metadata were inspected. Fallback text alone was not treated as an outage finding, and no live/replay or continuous-coverage claim was made."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-xi-and-putin-hold-trilateral-talks-in-china/",
+        "video_ids": [
+          "aZprGk2yZaE"
+        ],
+        "posted_date": "2026-11-19",
+        "original_event_date": "2026-11-19",
+        "broadcast_time": null,
+        "observed_at": "2026-11-20T11:04:50.364615Z",
+        "observed_at_eastern": "2026-11-20 6:04 AM EST",
+        "format": "official dated-library listing for a 0:18 edited clip; audiovisual content unreviewed",
+        "inspection": "Title, date, duration, detail URL and stable ID were inspected. Playback, complete audio and captions were not retrieved; the clip was deduplicated to NAT-2026-11-19-003."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/president-trump-addresses-historic-trilateral-meeting-with-president-xi-and-president-putin/",
+        "video_ids": [
+          "A9Z4qlR9Y_s"
+        ],
+        "posted_date": "2026-11-19",
+        "original_event_date": "2026-11-19",
+        "broadcast_time": null,
+        "observed_at": "2026-11-20T11:04:50.364615Z",
+        "observed_at_eastern": "2026-11-20 6:04 AM EST",
+        "format": "official dated-library listing for a 0:52 edited clip; audiovisual content unreviewed",
+        "inspection": "Title, date, duration, detail URL and stable ID were inspected. Playback, complete audio and captions were not retrieved; the clip was deduplicated to NAT-2026-11-19-003."
+      },
+      {
+        "url": "https://www.whitehouse.gov/videos/strength-on-the-world-stage-the-united-states-is-thriving-like-it-has-never-thrived-before-%F0%9F%87%BA%F0%9F%87%B8/",
+        "video_ids": [
+          "4o-OUQyXBz0"
+        ],
+        "posted_date": "2026-11-19",
+        "original_event_date": "2026-11-18",
+        "broadcast_time": null,
+        "observed_at": "2026-11-20T11:04:50.364615Z",
+        "observed_at_eastern": "2026-11-20 6:04 AM EST",
+        "format": "official library listing for a 2:46 edited promotional clip; audiovisual content unreviewed",
+        "inspection": "The library displayed November 19 while the detail page displayed November 18. Title, duration, detail URL and stable ID were inspected; no new action was inferred from the replay metadata."
+      },
+      {
+        "url": "https://www.whitehouse.gov/remarks/",
+        "video_ids": [],
+        "posted_date": "2026-09-28",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-20T11:04:50.364615Z",
+        "observed_at_eastern": "2026-11-20 6:04 AM EST",
+        "format": "supplementary remarks index; not assumed complete",
+        "inspection": "No post-boundary official transcript was exposed; the index was not treated as a complete transcript feed."
+      },
+      {
+        "url": "https://www.whitehouse.gov/releases/",
+        "video_ids": [],
+        "posted_date": "2026-11-19",
+        "original_event_date": null,
+        "broadcast_time": null,
+        "observed_at": "2026-11-20T11:04:50.364615Z",
+        "observed_at_eastern": "2026-11-20 6:04 AM EST",
+        "format": "supplementary official releases index",
+        "inspection": "The index still led with November 19 rural-health and China material. No distinct post-boundary channel cost, contract, staffing, editorial-control, distribution, advertising, investigation or press-access finding was located."
+      },
       {
         "url": "https://www.whitehouse.gov/trumptv/",
         "video_ids": [
@@ -3285,13 +3400,13 @@
     ]
   },
   "truth_social_inspection": {
-    "new_posts": 6,
-    "new_text_reviewed": 4,
-    "new_media_reviewed": 2,
+    "new_posts": 0,
+    "new_text_reviewed": 0,
+    "new_media_reviewed": 0,
     "new_media_pending": 0,
     "new_media_unavailable": 0,
-    "checked_at_utc": "2026-11-20T04:57:18.822100Z",
-    "checked_at_eastern": "2026-11-19 11:57:18 PM EST",
+    "checked_at_utc": "2026-11-20T10:59:06.461283Z",
+    "checked_at_eastern": "2026-11-20 5:59:06 AM EST",
     "latest_post_id": "117646261644090852",
     "latest_post_at_eastern": "2026-11-19 8:51:30 PM EST",
     "counts": {
@@ -3308,7 +3423,7 @@
         "reviewed": 438
       }
     },
-    "note": "Six retained posts were newer than the prior snapshot. The newest was published November 19 at 8:51:30 PM EST after converting its November 20 UTC timestamp to America/Indiana/Indianapolis. Four complete text/link posts and two attached still images were reviewed; no new media remains pending from this batch. No post was treated as independent proof of claims inside it."
+    "note": "No post was newer than the prior validated snapshot. The newest retained post was published November 19 at 8:51:30 PM EST after converting its November 20 UTC timestamp to America/Indiana/Indianapolis; no UTC date was used as the local publication date."
   },
   "publication_authorization": {
     "authority": "Phillip Linstrum",
@@ -3320,10 +3435,12 @@
     }
   },
   "external_archive_inspection": {
-    "checked_at": "2026-11-19 11:59 PM EST",
-    "checked_at_utc": "2026-11-20T04:59:30.927401Z",
-    "summary": "All four registered primary project pages were checked as discovery inputs. Trump Archive displayed 16,186 total items, 13,449 Truth Social posts and 2,070 speeches/transcripts; UndoTrump remained at 1,264 total actions, 731 term-one actions and 533 term-two actions; IPTP remained at 1,843 actions; Record47 exposed unchanged feature counters of 6,348 social posts, 3,539 primary sources, 332 contradictions and 38 sequences while its approved-entry API total was inaccessible. Distinct units were not summed, zero external items were imported and the strict feed-only release preserved canonical registry measurements.",
-    "updated_archives": [],
+    "checked_at": "2026-11-20 6:04 AM EST",
+    "checked_at_utc": "2026-11-20T11:04:50.364615Z",
+    "summary": "All four registered primary project pages were checked as discovery inputs. Trump Archive displayed 16,186 total items, 13,449 Truth Social posts and 2,070 speeches/transcripts; UndoTrump remained at 1,264 actions; IPTP remained at 1,843 policy actions; Record47 exposed unchanged feature counters of 6,348 social posts, 3,539 primary sources, 332 contradictions and 38 sequences while its approved-entry API total was inaccessible. Distinct units were not summed, zero external items were imported and only separately verified Trump Archive measurements were updated.",
+    "updated_archives": [
+      "trump_archive"
+    ],
     "unchanged_archives": [
       "undotrump",
       "immigration_policy_tracking_project"
@@ -3336,10 +3453,11 @@
     ]
   },
   "editorial_notes": [
-    "No post-boundary candidate passed the publication threshold; no canonical record was added, refreshed or corrected merely to reach the editorial aim.",
-    "Six materially newer Truth Social posts were retained and reviewed as publication evidence only. Media links, ceremonial material, opinion, a personnel profile and two scenic images did not independently establish qualifying federal developments.",
-    "Official Trump TV, live hub, dated video library, remarks and news metadata were inspected. Two newly listed brief summit excerpts were deduplicated to NAT-2026-11-19-003; complete audiovisual content remained unavailable, no qualifying new item was located in the material reviewed and no broadcast boundary was advanced.",
-    "All four registered external archive project pages were checked as discovery inputs. Distinct units were not summed, no external item was imported, and the strict feed-only release preserved canonical registry measurements.",
+    "Two post-boundary Federal Register actions passed the publication threshold: a future-effective DHS HAVANA Act compensation framework and an FDIC custodial-deposit proposal. Both preserve the precise lifecycle stage and unresolved implementation tests.",
+    "The two geographically limited species proposals, prior-rule effective-date confirmations and routine notices were withheld rather than used to reach the four-item research target.",
+    "The Truth Social fallback was refreshed and validated. No post was newer than the prior snapshot; the newest retained post remains November 19 at 8:51:30 PM EST.",
+    "Official Trump TV, live hub, dated video library, remarks and releases metadata were inspected. Repeated or promotional footage was deduplicated; complete audiovisual content remained unavailable, no qualifying new item was located in the material reviewed and no broadcast boundary was advanced.",
+    "All four registered external archive project pages were checked as discovery inputs. Distinct units were not summed and no external item was imported.",
     "No legacy row was changed; unresolved duplicate and source-health candidates remain visible."
   ],
   "retained_stages": [],
@@ -3347,28 +3465,9 @@
   "maintenance_revision": null,
   "engineering_revision": null,
   "legacy_quality": {
-    "checked_at_utc": "2026-11-20T04:59:30.927401Z",
+    "checked_at_utc": "2026-11-20T11:04:50.364615Z",
     "result": "queue_retained_no_material_change",
-    "summary": "The strict feed-only no-op made no historical edit. Existing remediation, source-health and duplicate-candidate queues remain visible; no mass transformation or generated-copy edit was made."
+    "summary": "Existing remediation, source-health and duplicate-candidate queues were reviewed. No direct record-specific evidence justified a guarded historical revision in this current-source run; no mass transformation or generated-copy edit was made."
   },
-  "artifact_mode": "feed-only",
-  "editorial_snapshot": {
-    "version": "10.258.0",
-    "complete_pack": {
-      "path": "artifacts/THE_RECORD_CURRENT_UPDATE_PACK_2026-11-19_v10.258.0.zip",
-      "sha256": "e54e8e8e15f7c786ef2c1e09a0d85b9ec7e94b6db96148b58b295a7cab6f0a84"
-    },
-    "national_pack": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_PACK_2026-11-19_v10.258.0.zip",
-      "sha256": "33713b3b9c4d4ff5bc7ace79244c0fa21552a400c698eb635d94fb47967be18f"
-    },
-    "national_brief": {
-      "path": "artifacts/THE_RECORD_NATIONAL_UPDATE_BRIEF_2026-11-19_v10.258.0.md",
-      "sha256": "3540a0cd76603b05bb63336ff8c84326260d17e1d391892dc4af95ebec86ce63"
-    },
-    "in6_brief": {
-      "path": "artifacts/THE_RECORD_IN6_CURRENT_BRIEF_2026-11-19_v10.258.0.md",
-      "sha256": "51f5a63035c2548bd9de590ce02e07ba3b29a9a1a416ed636a5c3f84b844d2d0"
-    }
-  }
+  "artifact_mode": "full"
 }
